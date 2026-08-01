@@ -1,0 +1,290 @@
+# 🍜 KOREAN FOOD GUIDE
+
+> [← Main Guide](../README.md)
+
+<img src="../images/foods/food-guide-header.jpg" width="100%" alt="Korean Food Guide">
+
+### 🇰🇷
+한국에서 먹어보면 좋은 음식들을 정리했습니다. 각 음식 페이지에서 음식 설명과 추천 음식점을 함께 확인할 수 있습니다.
+
+### 🇬🇧
+This guide introduces Korean foods worth trying. Each food page includes a short explanation and recommended restaurants.
+
+### 🇯🇵
+韓国で食べてみてほしい料理をまとめました。各料理ページでは、料理の説明とおすすめのお店を一緒に紹介しています。
+
+---
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/kimbap.md">
+<img src="../images/foods/kimbap-cover.jpg" width="100%">
+</a>
+
+## 🌯 김밥 · Kimbap · キンパ
+
+밥과 여러 재료를 김으로 말아 만든 한국 음식  
+Rice and fillings rolled in seaweed  
+ご飯と具材を海苔で巻いた韓国料理
+
+[자세히 보기 · View · 詳細 →](../foods/kimbap.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/sulbing.md">
+<img src="../images/foods/sulbing-cover.jpg" width="100%">
+</a>
+
+## 🍧 설빙 · Sulbing · ソルビン
+
+우유 얼음과 토핑을 올린 한국식 빙수  
+Korean shaved ice with milk ice and toppings  
+ミルク氷とトッピングの韓国式かき氷
+
+[자세히 보기 · View · 詳細 →](../foods/sulbing.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/naengmyeon.md">
+<img src="../images/foods/naengmyeon-cover.jpg" width="100%">
+</a>
+
+## 🍜 냉면 · Naengmyeon · 冷麺
+
+차갑게 먹는 한국식 면 요리  
+Korean cold noodle dish  
+冷たくして食べる韓国の麺料理
+
+[자세히 보기 · View · 詳細 →](../foods/naengmyeon.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/jeon.md">
+<img src="../images/foods/jeon-cover.jpg" width="100%">
+</a>
+
+## 🥞 지짐이·전 · Jeon · チヂミ
+
+재료를 반죽과 함께 부쳐 먹는 음식  
+Savory Korean pancake  
+具材を生地と一緒に焼いた料理
+
+[자세히 보기 · View · 詳細 →](../foods/jeon.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/jajangmyeon.md">
+<img src="../images/foods/jajangmyeon-cover.jpg" width="100%">
+</a>
+
+## 🍝 짜장면 · Jajangmyeon · ジャージャー麺
+
+춘장 소스를 비벼 먹는 면 요리  
+Noodles with black bean sauce  
+黒味噌ソースを絡めた麺料理
+
+[자세히 보기 · View · 詳細 →](../foods/jajangmyeon.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/dakhanmari.md">
+<img src="../images/foods/dakhanmari-cover.jpg" width="100%">
+</a>
+
+## 🍲 닭한마리 · Dak Hanmari · タッカンマリ
+
+닭 한 마리를 통째로 끓여 먹는 전골  
+Whole chicken hot pot  
+鶏一羽を丸ごと煮込む鍋料理
+
+[자세히 보기 · View · 詳細 →](../foods/dakhanmari.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/samgyeopsal.md">
+<img src="../images/foods/samgyeopsal-cover.jpg" width="100%">
+</a>
+
+## 🥩 삼겹살 · Samgyeopsal · サムギョプサル
+
+불판에 구워 먹는 돼지고기  
+Grilled pork belly  
+鉄板で焼いて食べる豚バラ肉
+
+[자세히 보기 · View · 詳細 →](../foods/samgyeopsal.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/budae-jjigae.md">
+<img src="../images/foods/budae-jjigae-cover.jpg" width="100%">
+</a>
+
+## 🍲 부대찌개 · Budae Jjigae · プデチゲ
+
+햄, 소시지, 김치를 넣은 찌개  
+Stew with sausage, ham and kimchi  
+ハム、ソーセージ、キムチの鍋料理
+
+[자세히 보기 · View · 詳細 →](../foods/budae-jjigae.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/dakgalbi.md">
+<img src="../images/foods/dakgalbi-cover.jpg" width="100%">
+</a>
+
+## 🍗 닭갈비 · Dakgalbi · タッカルビ
+
+양념 닭고기와 채소를 볶은 음식  
+Spicy stir-fried chicken and vegetables  
+味付けした鶏肉と野菜の炒め物
+
+[자세히 보기 · View · 詳細 →](../foods/dakgalbi.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/samgyetang.md">
+<img src="../images/foods/samgyetang-cover.jpg" width="100%">
+</a>
+
+## 🍗 삼계탕 · Samgyetang · サムゲタン
+
+인삼과 찹쌀을 넣은 닭백숙  
+Ginseng chicken soup  
+高麗人参ともち米入りの鶏スープ
+
+[자세히 보기 · View · 詳細 →](../foods/samgyetang.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/bibimbap.md">
+<img src="../images/foods/bibimbap-cover.jpg" width="100%">
+</a>
+
+## 🍚 비빔밥 · Bibimbap · ビビンバ
+
+밥과 채소, 고추장을 비벼 먹는 음식  
+Mixed rice with vegetables and chili paste  
+ご飯、野菜、コチュジャンを混ぜる料理
+
+[자세히 보기 · View · 詳細 →](../foods/bibimbap.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/ganjang-gejang.md">
+<img src="../images/foods/ganjang-gejang-cover.jpg" width="100%">
+</a>
+
+## 🦀 간장게장 · Ganjang Gejang · カンジャンケジャン
+
+게를 간장 양념에 숙성한 음식  
+Soy sauce marinated raw crab  
+カニを醤油だれに漬けた料理
+
+[자세히 보기 · View · 詳細 →](../foods/ganjang-gejang.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/yangnyeom-chicken.md">
+<img src="../images/foods/yangnyeom-chicken-cover.jpg" width="100%">
+</a>
+
+## 🍗 양념치킨 · Yangnyeom Chicken · ヤンニョムチキン
+
+달콤하고 매콤한 소스를 입힌 치킨  
+Sweet and spicy Korean fried chicken  
+甘辛いソースを絡めた韓国チキン
+
+[자세히 보기 · View · 詳細 →](../foods/yangnyeom-chicken.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/sundubu-jjigae.md">
+<img src="../images/foods/sundubu-jjigae-cover.jpg" width="100%">
+</a>
+
+## 🍲 순두부찌개 · Sundubu Jjigae · スンドゥブチゲ
+
+부드러운 순두부를 넣은 매콤한 찌개  
+Spicy soft tofu stew  
+柔らかい豆腐を使った辛い鍋料理
+
+[자세히 보기 · View · 詳細 →](../foods/sundubu-jjigae.md)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="../foods/paris-baguette.md">
+<img src="../images/foods/paris-baguette-cover.jpg" width="100%">
+</a>
+
+## 🥐 파리바게뜨 · Paris Baguette · パリバゲット
+
+한국에서 쉽게 찾을 수 있는 베이커리  
+Popular bakery chain in Korea  
+韓国でよく見かけるベーカリーチェーン
+
+[자세히 보기 · View · 詳細 →](../foods/paris-baguette.md)
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="../foods/tous-les-jours.md">
+<img src="../images/foods/tous-les-jours-cover.jpg" width="100%">
+</a>
+
+## 🥖 뚜레쥬르 · Tous Les Jours · トゥレジュール
+
+빵과 케이크 종류가 다양한 베이커리  
+Bakery with bread and cakes  
+パンとケーキが豊富なベーカリー
+
+[자세히 보기 · View · 詳細 →](../foods/tous-les-jours.md)
+
+</td>
+</tr>
+</table>
