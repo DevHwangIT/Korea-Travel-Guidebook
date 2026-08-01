@@ -1,12 +1,40 @@
-<div align="center">
+ChatGPT의 말:
+index.html에서 <style> 부분을 제거하고, 별도 styles.css 파일로 분리하면 됩니다.
+
+구조:
+
+Korea-Travel-Guidebook/
+├── index.html
+├── styles.css
+├── Images/
+└── pages/
+index.html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Korea Travel Guide</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<div>
 
   <img src="./Images/cover/korea-cover.png"
        width="100%"
        alt="Korea Travel Guide">
 
-  <h3>(KR) 한국 여행 가이드 | (EN) Korea Travel Guide | (JP) 韓国旅行ガイド</h3>
+  <h3>
+    (KR) 한국 여행 가이드 |
+    (EN) Korea Travel Guide |
+    (JP) 韓国旅行ガイド
+  </h3>
 
----
+  <hr>
 
   <p>
     (KR) 한국 여행을 조금 더 편하고 맛있게 즐길 수 있도록 만든 작은 여행 가이드입니다.
@@ -22,92 +50,92 @@
 
 </div>
 
+
 <hr>
 
-<div align="center">
+
+<div class="menu">
 
   <h2>✨ EXPLORE KOREA</h2>
-
-  <br>
 
   <p>
     <a href="pages/before-trip.md">
       <img src="./Images/menu/before-trip.png"
-           width="45%"
            alt="Before Your Trip">
     </a>
-    &nbsp;&nbsp;
+
     <a href="pages/transportation.md">
       <img src="./Images/menu/transportation.png"
-           width="45%"
            alt="Transportation Guide">
     </a>
   </p>
 
+
   <p>
     <a href="pages/apps.md">
       <img src="./Images/menu/apps.png"
-           width="45%"
            alt="Useful Apps">
     </a>
-    &nbsp;&nbsp;
+
     <a href="pages/foods.md">
       <img src="./Images/menu/foods.png"
-           width="45%"
            alt="Korean Food Guide">
     </a>
   </p>
 
+
   <p>
     <a href="pages/shopping.md">
       <img src="./Images/menu/shopping.png"
-           width="45%"
            alt="Shopping Guide">
     </a>
-    &nbsp;&nbsp;
+
     <a href="pages/souvenir.md">
       <img src="./Images/menu/souvenir.png"
-           width="45%"
            alt="Souvenir Guide">
     </a>
   </p>
 
+
   <p>
     <a href="pages/convenience-store.md">
       <img src="./Images/menu/convenience-store.png"
-           width="45%"
            alt="Convenience Store">
     </a>
-    &nbsp;&nbsp;
+
     <a href="pages/useful-korean.md">
       <img src="./Images/menu/useful-korean.png"
-           width="45%"
            alt="Useful Korean">
     </a>
   </p>
 
+
   <p>
     <a href="pages/travel-tips.md">
-      <img src="Images/menu/travel-tips.png"
-           width="45%"
+      <img src="./Images/menu/travel-tips.png"
            alt="Travel Tips">
     </a>
-    &nbsp;&nbsp;
+
     <a href="pages/emergency.md">
       <img src="./Images/menu/emergency.png"
-           width="45%"
            alt="Emergency Information">
     </a>
   </p>
 
 </div>
 
+
 <hr>
 
-<div align="center">
+
+<div>
 
   <img src="./Images/cover/footer-korea.png"
        width="100%"
        alt="Korea Travel">
 
 </div>
+
+
+</body>
+</html>
