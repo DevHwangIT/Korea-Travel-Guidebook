@@ -7,12 +7,10 @@ body {
   color: #222;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 hr {
   margin: 40px 0;
@@ -20,12 +18,21 @@ hr {
   border-top: 1px solid #ddd;
 }
 
-
+h1,
 h2 {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
+a {
+  text-decoration: none;
+  color: #1a5f8a;
+}
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* —— Main menu —— */
 .menu img {
   width: 45%;
   margin: 10px;
@@ -33,26 +40,156 @@ h2 {
   transition: transform 0.2s ease;
 }
 
-
 .menu img:hover {
   transform: scale(1.03);
 }
 
-
-a {
-  text-decoration: none;
+/* —— Shared page layout —— */
+.site-header {
+  margin-bottom: 16px;
 }
 
+.site-brand {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.site-tagline {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+  margin: 16px 0 24px;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar a {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page h1,
+.page h2,
+.page h3 {
+  text-align: center;
+}
+
+.back-link {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.intro {
+  margin-bottom: 32px;
+}
+
+.intro p {
+  line-height: 1.6;
+}
+
+/* —— Cards / food grid —— */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 20px;
+  margin: 32px 0;
+}
+
+.card {
+  text-align: left;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  margin: 8px 0 12px;
+  text-align: left;
+}
+
+.card p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* —— Content tables (restaurants, phrases) —— */
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  text-align: left;
+}
+
+.content-table th,
+.content-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  vertical-align: top;
+}
+
+.content-table th {
+  background: #f7f7f7;
+  width: 30%;
+}
+
+.restaurant {
+  margin: 40px 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.restaurant:last-child {
+  border-bottom: none;
+}
+
+.tip {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.site-footer {
+  margin-top: 48px;
+}
+
+.footer-note {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #777;
+}
 
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
 
   .menu img {
     width: 90%;
     margin: 8px 0;
   }
 
-  body {
-    padding: 10px;
+  .card-grid {
+    grid-template-columns: 1fr;
   }
-
 }

@@ -1,141 +1,97 @@
-ChatGPT의 말:
-index.html에서 <style> 부분을 제거하고, 별도 styles.css 파일로 분리하면 됩니다.
-
-구조:
-
-Korea-Travel-Guidebook/
-├── index.html
-├── styles.css
-├── Images/
-└── pages/
-index.html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Korea Travel Guide</title>
-
   <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
 
-<div>
+  <div>
+    <img src="./Images/cover/korea-cover.png"
+         width="100%"
+         alt="Korea Travel Guide">
 
-  <img src="./Images/cover/korea-cover.png"
-       width="100%"
-       alt="Korea Travel Guide">
+    <h1 class="site-brand">Korea Travel Guide</h1>
 
-  <h3>
-    (KR) 한국 여행 가이드 |
-    (EN) Korea Travel Guide |
-    (JP) 韓国旅行ガイド
-  </h3>
+    <h3>
+      (KR) 한국 여행 가이드 |
+      (EN) Korea Travel Guide |
+      (JP) 韓国旅行ガイド
+    </h3>
+
+    <hr>
+
+    <p>
+      (KR) 한국 여행을 조금 더 편하고 맛있게 즐길 수 있도록 만든 작은 여행 가이드입니다.
+    </p>
+    <p>
+      (EN) A small guide to help you enjoy Korea more comfortably and deliciously.
+    </p>
+    <p>
+      (JP) 韓国旅行をもっと快適に、もっと美味しく楽しむための小さな旅行ガイドです。
+    </p>
+  </div>
 
   <hr>
 
-  <p>
-    (KR) 한국 여행을 조금 더 편하고 맛있게 즐길 수 있도록 만든 작은 여행 가이드입니다.
-  </p>
+  <div class="menu">
+    <h2>EXPLORE KOREA</h2>
 
-  <p>
-    (EN) A small guide to help you enjoy Korea more comfortably and deliciously.
-  </p>
+    <p>
+      <a href="pages/before-trip/index.html">
+        <img src="./Images/menu/before-trip.png" alt="Before Your Trip">
+      </a>
+      <a href="pages/transportation/index.html">
+        <img src="./Images/menu/transportation.png" alt="Transportation Guide">
+      </a>
+    </p>
 
-  <p>
-    (JP) 韓国旅行をもっと快適に、もっと美味しく楽しむための小さな旅行ガイドです。
-  </p>
+    <p>
+      <a href="pages/apps/index.html">
+        <img src="./Images/menu/apps.png" alt="Useful Apps">
+      </a>
+      <a href="pages/foods/index.html">
+        <img src="./Images/menu/foods.png" alt="Korean Food Guide">
+      </a>
+    </p>
 
-</div>
+    <p>
+      <a href="pages/shopping/index.html">
+        <img src="./Images/menu/shopping.png" alt="Shopping Guide">
+      </a>
+      <a href="pages/souvenir/index.html">
+        <img src="./Images/menu/souvenir.png" alt="Souvenir Guide">
+      </a>
+    </p>
 
+    <p>
+      <a href="pages/convenience-store/index.html">
+        <img src="./Images/menu/convenience-store.png" alt="Convenience Store">
+      </a>
+      <a href="pages/useful-korean/index.html">
+        <img src="./Images/menu/useful-korean.png" alt="Useful Korean">
+      </a>
+    </p>
 
-<hr>
+    <p>
+      <a href="pages/travel-tips/index.html">
+        <img src="./Images/menu/travel-tips.png" alt="Travel Tips">
+      </a>
+      <a href="pages/emergency/index.html">
+        <img src="./Images/menu/emergency.png" alt="Emergency Information">
+      </a>
+    </p>
+  </div>
 
+  <hr>
 
-<div class="menu">
-
-  <h2>✨ EXPLORE KOREA</h2>
-
-  <p>
-    <a href="pages/before-trip.md">
-      <img src="./Images/menu/before-trip.png"
-           alt="Before Your Trip">
-    </a>
-
-    <a href="pages/transportation.md">
-      <img src="./Images/menu/transportation.png"
-           alt="Transportation Guide">
-    </a>
-  </p>
-
-
-  <p>
-    <a href="pages/apps.md">
-      <img src="./Images/menu/apps.png"
-           alt="Useful Apps">
-    </a>
-
-    <a href="pages/foods.md">
-      <img src="./Images/menu/foods.png"
-           alt="Korean Food Guide">
-    </a>
-  </p>
-
-
-  <p>
-    <a href="pages/shopping.md">
-      <img src="./Images/menu/shopping.png"
-           alt="Shopping Guide">
-    </a>
-
-    <a href="pages/souvenir.md">
-      <img src="./Images/menu/souvenir.png"
-           alt="Souvenir Guide">
-    </a>
-  </p>
-
-
-  <p>
-    <a href="pages/convenience-store.md">
-      <img src="./Images/menu/convenience-store.png"
-           alt="Convenience Store">
-    </a>
-
-    <a href="pages/useful-korean.md">
-      <img src="./Images/menu/useful-korean.png"
-           alt="Useful Korean">
-    </a>
-  </p>
-
-
-  <p>
-    <a href="pages/travel-tips.md">
-      <img src="./Images/menu/travel-tips.png"
-           alt="Travel Tips">
-    </a>
-
-    <a href="pages/emergency.md">
-      <img src="./Images/menu/emergency.png"
-           alt="Emergency Information">
-    </a>
-  </p>
-
-</div>
-
-
-<hr>
-
-
-<div>
-
-  <img src="./Images/cover/footer-korea.png"
-       width="100%"
-       alt="Korea Travel">
-
-</div>
-
+  <div>
+    <img src="./Images/cover/footer-korea.png"
+         width="100%"
+         alt="Korea Travel">
+  </div>
 
 </body>
 </html>
