@@ -32,13 +32,13 @@
 
   <p>
     <a href="pages/before-trip.md">
-      <img src="../Images/menu/before-trip.png"
+      <img src="./Images/menu/before-trip.png"
            width="45%"
            alt="Before Your Trip">
     </a>
     &nbsp;&nbsp;
     <a href="pages/transportation.md">
-      <img src="../Images/menu/transportation.png"
+      <img src="./Images/menu/transportation.png"
            width="45%"
            alt="Transportation Guide">
     </a>
@@ -46,13 +46,13 @@
 
   <p>
     <a href="pages/apps.md">
-      <img src="../Images/menu/apps.png"
+      <img src="./Images/menu/apps.png"
            width="45%"
            alt="Useful Apps">
     </a>
     &nbsp;&nbsp;
     <a href="pages/foods.md">
-      <img src="../Images/menu/foods.png"
+      <img src="./Images/menu/foods.png"
            width="45%"
            alt="Korean Food Guide">
     </a>
@@ -60,7 +60,7 @@
 
   <p>
     <a href="pages/shopping.md">
-      <img src="../Images/menu/shopping.png"
+      <img src="./Images/menu/shopping.png"
            width="45%"
            alt="Shopping Guide">
     </a>
@@ -74,13 +74,13 @@
 
   <p>
     <a href="pages/convenience-store.md">
-      <img src="../Images/menu/convenience-store.png"
+      <img src="./Images/menu/convenience-store.png"
            width="45%"
            alt="Convenience Store">
     </a>
     &nbsp;&nbsp;
     <a href="pages/useful-korean.md">
-      <img src="../Images/menu/useful-korean.png"
+      <img src="./Images/menu/useful-korean.png"
            width="45%"
            alt="Useful Korean">
     </a>
@@ -94,7 +94,7 @@
     </a>
     &nbsp;&nbsp;
     <a href="pages/emergency.md">
-      <img src="../Images/menu/emergency.png"
+      <img src="./Images/menu/emergency.png"
            width="45%"
            alt="Emergency Information">
     </a>
@@ -106,7 +106,7 @@
 
 <div align="center">
 
-  <img src="../Images/cover/footer-korea.png"
+  <img src="./Images/cover/footer-korea.png"
        width="100%"
        alt="Korea Travel">
 
