@@ -1,39 +1,113 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-i18n-title="misc.tipsTitle">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Tips | Korea Travel Guide</title>
+  <title>Travel Tips</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="ko">KR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="ja">JP</button>
+  </nav>
   <header class="site-header">
-    <a href="../../index.html" class="site-brand">Korea Travel Guide</a>
+    <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
   </header>
-
   <main class="page">
-    <p class="back-link">
-      <a href="../../index.html">← Main Guide</a>
-    </p>
+    <p class="back-link"><a href="../../index.html" data-i18n="common.backMain">← Main Guide</a></p>
+    <h1 data-i18n="misc.tipsTitle">여행 팁</h1>
+    <p data-i18n="misc.tipsIntro"></p>
 
-    <h1>TRAVEL TIPS</h1>
+    <div class="city-tabs" data-tabs="tipcat">
+      <div class="tab-list" role="tablist" aria-label="Tip categories">
+        <button type="button" class="tab-btn" role="tab" data-tipcat-tab="daily" data-i18n="tips.catDaily">일상생활</button>
+        <button type="button" class="tab-btn" role="tab" data-tipcat-tab="restaurant" data-i18n="tips.catRestaurant">식당 이용</button>
+        <button type="button" class="tab-btn" role="tab" data-tipcat-tab="transport" data-i18n="tips.catTransport">교통 이용</button>
+      </div>
 
-    <section class="intro">
-      <h2>🇰🇷</h2>
-      <p>한국 여행에 도움이 되는 팁을 정리하는 페이지입니다. 내용을 추가해 주세요.</p>
-      <h2>🇬🇧</h2>
-      <p>A page for travel tips in Korea. Add content here.</p>
-      <h2>🇯🇵</h2>
-      <p>韓国旅行の役立つヒントをまとめるページです。内容を追加してください。</p>
-    </section>
+      <div class="tab-panels">
+        <div class="tab-panel" role="tabpanel" data-tipcat-panel="daily" hidden>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.mapTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.mapMistake"></p>
+            <p data-i18n="tips.mapBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.cashTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.cashMistake"></p>
+            <p data-i18n="tips.cashBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.trashTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.trashMistake"></p>
+            <p data-i18n="tips.trashBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.wifiTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.wifiMistake"></p>
+            <p data-i18n="tips.wifiBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.weekendTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.weekendMistake"></p>
+            <p data-i18n="tips.weekendBody"></p>
+          </article>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" data-tipcat-panel="restaurant" hidden>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.restaurantTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.restaurantMistake"></p>
+            <p data-i18n="tips.restaurantBody1"></p>
+            <p data-i18n="tips.restaurantBody2"></p>
+            <p data-i18n="tips.restaurantBody3"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.queueTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.queueMistake"></p>
+            <p data-i18n="tips.queueBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.waterTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.waterMistake"></p>
+            <p data-i18n="tips.waterBody"></p>
+          </article>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" data-tipcat-panel="transport" hidden>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.cardTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.cardMistake"></p>
+            <p data-i18n="tips.cardBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.rushTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.rushMistake"></p>
+            <p data-i18n="tips.rushBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.taxiTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.taxiMistake"></p>
+            <p data-i18n="tips.taxiBody"></p>
+          </article>
+          <article class="tip tip-article">
+            <h2 data-i18n="tips.exitTitle"></h2>
+            <p class="tip-mistake" data-i18n="tips.exitMistake"></p>
+            <p data-i18n="tips.exitBody"></p>
+          </article>
+        </div>
+      </div>
+    </div>
   </main>
-
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
-    <p class="footer-note">© Korea Travel Guide</p>
+    <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-
+  <script src="../../i18n/messages.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <script src="../../js/region-tabs.js"></script>
 </body>
 </html>

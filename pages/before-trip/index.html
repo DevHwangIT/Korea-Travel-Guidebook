@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-i18n-title="beforeTrip.pageTitle">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Before Your Trip | Korea Travel Guide</title>
+  <title>Before Your Trip</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="ko">KR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="ja">JP</button>
+  </nav>
   <header class="site-header">
-    <a href="../../index.html" class="site-brand">Korea Travel Guide</a>
+    <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
   </header>
-
   <main class="page">
-    <p class="back-link">
-      <a href="../../index.html">← Main Guide</a>
-    </p>
+    <p class="back-link"><a href="../../index.html" data-i18n="common.backMain">← Main Guide</a></p>
+    <h1 data-i18n="beforeTrip.title">여행 전 준비</h1>
+    <p data-i18n="beforeTrip.intro"></p>
 
-    <h1>BEFORE YOUR TRIP</h1>
-
-    <section>
-      <h2>T-money · 티머니 · T-money交通カード</h2>
-      <ul>
-        <li>🇰🇷 서울의 버스와 지하철에서 사용하는 충전식 교통카드입니다.</li>
-        <li>🇬🇧 A rechargeable card for buses and subways in Seoul.</li>
-        <li>🇯🇵 ソウルのバスや地下鉄で使えるチャージ式交通カードです。</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Currency Exchange · 환전 · 両替</h2>
-      <ul>
-        <li>🇰🇷 공항과 명동 환전소의 환율을 비교해보세요.</li>
-        <li>🇬🇧 Compare airport rates with exchange offices in Myeongdong.</li>
-        <li>🇯🇵 空港と明洞の両替所のレートを比較してください。</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Electricity · 콘센트 · コンセント</h2>
-      <ul>
-        <li>Korea: 220V, Type C/F</li>
-        <li>Japan: 100V, Type A</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Useful Apps · 유용한 앱 · 便利なアプリ</h2>
-      <ul>
-        <li>Kakao Map</li>
-        <li>Naver Map</li>
-        <li>Papago</li>
-        <li>여기어때</li>
-        <li>야놀자</li>
-      </ul>
-    </section>
+    <div class="city-tabs" data-tabs="prep">
+      <div class="tab-list" role="tablist">
+        <button type="button" class="tab-btn" role="tab" data-prep-tab="docs" data-i18n="beforeTrip.tabDocs">서류·입국</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-tab="money" data-i18n="beforeTrip.tabMoney">돈·카드</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-tab="connect" data-i18n="beforeTrip.tabConnect">통신·전원</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-tab="pack" data-i18n="beforeTrip.tabPack">짐·예약</button>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel tip-article" role="tabpanel" data-prep-panel="docs" hidden>
+          <h2 data-i18n="beforeTrip.docsTitle">여권·비자·입국</h2>
+          <p data-i18n="beforeTrip.docs1"></p>
+          <p data-i18n="beforeTrip.docs2"></p>
+          <p data-i18n="beforeTrip.docs3"></p>
+        </div>
+        <div class="tab-panel tip-article" role="tabpanel" data-prep-panel="money" hidden>
+          <h2 data-i18n="beforeTrip.moneyTitle">환전·결제·교통카드</h2>
+          <p data-i18n="beforeTrip.money1"></p>
+          <p data-i18n="beforeTrip.money2"></p>
+          <p data-i18n="beforeTrip.money3"></p>
+        </div>
+        <div class="tab-panel tip-article" role="tabpanel" data-prep-panel="connect" hidden>
+          <h2 data-i18n="beforeTrip.connectTitle">유심·eSIM·콘센트</h2>
+          <p data-i18n="beforeTrip.connect1"></p>
+          <p data-i18n="beforeTrip.connect2"></p>
+          <p data-i18n="beforeTrip.connect3"></p>
+        </div>
+        <div class="tab-panel tip-article" role="tabpanel" data-prep-panel="pack" hidden>
+          <h2 data-i18n="beforeTrip.packTitle">짐·숙소·보험</h2>
+          <p data-i18n="beforeTrip.pack1"></p>
+          <p data-i18n="beforeTrip.pack2"></p>
+          <p data-i18n="beforeTrip.pack3"></p>
+        </div>
+      </div>
+    </div>
   </main>
-
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
-    <p class="footer-note">© Korea Travel Guide</p>
+    <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-
+  <script src="../../i18n/messages.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <script src="../../js/region-tabs.js"></script>
 </body>
 </html>

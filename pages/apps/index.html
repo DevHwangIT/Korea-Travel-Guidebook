@@ -1,47 +1,130 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-i18n-title="misc.appsTitle">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Useful Apps | Korea Travel Guide</title>
+  <title>Useful Apps</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="ko">KR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="ja">JP</button>
+  </nav>
   <header class="site-header">
-    <a href="../../index.html" class="site-brand">Korea Travel Guide</a>
+    <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
   </header>
-
   <main class="page">
-    <p class="back-link">
-      <a href="../../index.html">← Main Guide</a>
-    </p>
+    <p class="back-link"><a href="../../index.html" data-i18n="common.backMain">← Main Guide</a></p>
+    <h1 data-i18n="misc.appsTitle">유용한 앱</h1>
+    <p data-i18n="misc.appsIntro"></p>
 
-    <h1>USEFUL APPS</h1>
-
-    <section class="intro">
-      <h2>🇰🇷</h2>
-      <p>한국 여행에 유용한 앱을 정리하는 페이지입니다. 내용을 추가해 주세요.</p>
-      <h2>🇬🇧</h2>
-      <p>A page for useful apps in Korea. Add content here.</p>
-      <h2>🇯🇵</h2>
-      <p>韓国旅行に便利なアプリをまとめるページです。内容を追加してください。</p>
-    </section>
-
-    <ul>
-      <li>Kakao Map</li>
-      <li>Naver Map</li>
-      <li>Papago</li>
-      <li>여기어때</li>
-      <li>야놀자</li>
-    </ul>
+    <div class="app-grid">
+      <article class="app-card" data-app="kakao">
+        <div class="app-icon" aria-hidden="true">K</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.kakaoCat">지도 · 내비</p>
+          <h2 data-i18n="apps.kakaoName">카카오맵</h2>
+          <p data-i18n="apps.kakaoDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=net.daum.android.map" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id304608425" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="naver">
+        <div class="app-icon" aria-hidden="true">N</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.naverCat">지도 · 대중교통</p>
+          <h2 data-i18n="apps.naverName">네이버지도</h2>
+          <p data-i18n="apps.naverDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=com.nhn.android.nmap" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id311867728" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="papago">
+        <div class="app-icon" aria-hidden="true">P</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.papagoCat">번역</p>
+          <h2 data-i18n="apps.papagoName">파파고</h2>
+          <p data-i18n="apps.papagoDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=com.naver.labs.translator" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id1147958261" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="kakaotalk">
+        <div class="app-icon" aria-hidden="true">T</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.talkCat">메신저</p>
+          <h2 data-i18n="apps.talkName">카카오톡</h2>
+          <p data-i18n="apps.talkDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=com.kakao.talk" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id362057947" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="yanolja">
+        <div class="app-icon" aria-hidden="true">Y</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.stayCat">숙소</p>
+          <h2 data-i18n="apps.yanoljaName">야놀자</h2>
+          <p data-i18n="apps.yanoljaDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=com.yanolja.yanolja" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id453571740" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="yeogi">
+        <div class="app-icon" aria-hidden="true">여</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.stayCat">숙소</p>
+          <h2 data-i18n="apps.yeogiName">여기어때</h2>
+          <p data-i18n="apps.yeogiDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=kr.goodchoice.abouthere" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id1034832456" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="coupang">
+        <div class="app-icon" aria-hidden="true">C</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.shopCat">쇼핑 · 배달</p>
+          <h2 data-i18n="apps.coupangName">쿠팡 / 쿠팡이츠</h2>
+          <p data-i18n="apps.coupangDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=com.coupang.mobile" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id454434967" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="app-card" data-app="tmoney">
+        <div class="app-icon" aria-hidden="true">₩</div>
+        <div class="app-body">
+          <p class="app-cat" data-i18n="apps.payCat">교통 · 결제</p>
+          <h2 data-i18n="apps.tmoneyName">티머니 GO</h2>
+          <p data-i18n="apps.tmoneyDesc"></p>
+          <div class="app-store-links">
+            <a class="store-btn store-android" href="https://play.google.com/store/apps/details?id=com.tmoney.go" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.android">Android</span></a>
+            <a class="store-btn store-ios" href="https://apps.apple.com/app/id1480127590" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.ios">iOS</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
   </main>
-
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
-    <p class="footer-note">© Korea Travel Guide</p>
+    <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-
+  <script src="../../i18n/messages.js"></script>
+  <script src="../../js/i18n.js"></script>
 </body>
 </html>

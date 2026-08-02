@@ -1,46 +1,315 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-i18n-title="misc.transportTitle">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transportation Guide | Korea Travel Guide</title>
+  <title>Transportation Guide</title>
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="ko">KR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="ja">JP</button>
+  </nav>
 
   <header class="site-header">
-    <a href="../../index.html" class="site-brand">Korea Travel Guide</a>
+    <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
   </header>
 
   <main class="page">
     <p class="back-link">
-      <a href="../../index.html">← Main Guide</a>
+      <a href="../../index.html" data-i18n="common.backMain">← Main Guide</a>
     </p>
 
-    <h1>TRANSPORTATION GUIDE</h1>
+    <h1 data-i18n="misc.transportTitle">교통 가이드</h1>
+    <p data-i18n="misc.transportIntro"></p>
 
-    <section class="intro">
-      <h2>🇰🇷</h2>
-      <p>한국에서 이용하기 좋은 교통 수단을 정리하는 페이지입니다. 내용을 추가해 주세요.</p>
-      <h2>🇬🇧</h2>
-      <p>A page for transportation tips in Korea. Add content here.</p>
-      <h2>🇯🇵</h2>
-      <p>韓国での交通手段をまとめるページです。内容を追加してください。</p>
-    </section>
+    <div class="city-tabs" data-tabs="topic">
+      <div class="tab-list" role="tablist" aria-label="Transport topics">
+        <button type="button" class="tab-btn" role="tab" data-topic-tab="subway" data-i18n="transport.tabSubway">지하철 노선도</button>
+        <button type="button" class="tab-btn" role="tab" data-topic-tab="routes" data-i18n="transport.tabRoutes">대표 장소 이동</button>
+      </div>
 
-    <section>
-      <h2>관련 페이지 · Related · 関連</h2>
-      <p>
-        <a href="../airport-to-myeongdong/index.html">Airport → Myeongdong</a>
-      </p>
-    </section>
+      <div class="tab-panels">
+        <!-- —— 지하철 노선도 —— -->
+        <div class="tab-panel" role="tabpanel" data-topic-panel="subway" hidden>
+          <p class="metro-map-note" data-i18n="transport.subwayIntro"></p>
+
+          <section class="official-map-card">
+            <h2 data-i18n="transport.officialMapTitle">공식 노선도 (서울교통공사)</h2>
+            <p data-i18n="transport.officialMapDesc"></p>
+            <a
+              class="official-map-link"
+              href="https://www.seoulmetro.co.kr/kr/cyberStation.do"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="transport.officialMapCta"
+            >공식 사이버 스테이션 열기</a>
+          </section>
+
+          <section class="metro-map-block">
+            <h2 data-i18n="transport.interactiveMapTitle">지도에서 호선 보기</h2>
+            <p class="metro-map-note" data-i18n="transport.interactiveMapHelp"></p>
+            <div id="metro-leaflet" class="metro-leaflet" role="img" aria-label="Seoul metro interactive map"></div>
+            <p class="metro-map-source" data-i18n="transport.mapSource"></p>
+
+            <div class="metro-line-chips" role="group" aria-label="Metro lines">
+              <button type="button" class="metro-chip is-active" data-metro-line="all" data-i18n="transport.lineAll">전체</button>
+              <button type="button" class="metro-chip" data-metro-line="1" data-line-color="1">1</button>
+              <button type="button" class="metro-chip" data-metro-line="2" data-line-color="2">2</button>
+              <button type="button" class="metro-chip" data-metro-line="3" data-line-color="3">3</button>
+              <button type="button" class="metro-chip" data-metro-line="4" data-line-color="4">4</button>
+              <button type="button" class="metro-chip" data-metro-line="5" data-line-color="5">5</button>
+              <button type="button" class="metro-chip" data-metro-line="6" data-line-color="6">6</button>
+              <button type="button" class="metro-chip" data-metro-line="7" data-line-color="7">7</button>
+              <button type="button" class="metro-chip" data-metro-line="9" data-line-color="9">9</button>
+              <button type="button" class="metro-chip metro-chip-wide" data-metro-line="arex" data-line-color="arex" data-i18n="transport.arexChip">AREX</button>
+            </div>
+
+            <div class="metro-line-details">
+              <div class="metro-detail" data-metro-detail="all">
+                <p data-i18n="transport.linePickHint"></p>
+              </div>
+
+              <article class="metro-line metro-detail" data-line="1" data-metro-detail="1" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">1</span>
+                  <div>
+                    <h3 data-i18n="transport.line1Name">1호선</h3>
+                    <p class="metro-color" data-i18n="transport.line1Color">남색</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line1Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line1Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="2" data-metro-detail="2" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">2</span>
+                  <div>
+                    <h3 data-i18n="transport.line2Name">2호선</h3>
+                    <p class="metro-color" data-i18n="transport.line2Color">초록</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line2Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line2Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="3" data-metro-detail="3" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">3</span>
+                  <div>
+                    <h3 data-i18n="transport.line3Name">3호선</h3>
+                    <p class="metro-color" data-i18n="transport.line3Color">주황</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line3Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line3Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="4" data-metro-detail="4" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">4</span>
+                  <div>
+                    <h3 data-i18n="transport.line4Name">4호선</h3>
+                    <p class="metro-color" data-i18n="transport.line4Color">하늘색</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line4Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line4Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="5" data-metro-detail="5" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">5</span>
+                  <div>
+                    <h3 data-i18n="transport.line5Name">5호선</h3>
+                    <p class="metro-color" data-i18n="transport.line5Color">보라</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line5Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line5Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="6" data-metro-detail="6" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">6</span>
+                  <div>
+                    <h3 data-i18n="transport.line6Name">6호선</h3>
+                    <p class="metro-color" data-i18n="transport.line6Color">갈색</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line6Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line6Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="7" data-metro-detail="7" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">7</span>
+                  <div>
+                    <h3 data-i18n="transport.line7Name">7호선</h3>
+                    <p class="metro-color" data-i18n="transport.line7Color">올리브</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line7Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line7Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="9" data-metro-detail="9" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge">9</span>
+                  <div>
+                    <h3 data-i18n="transport.line9Name">9호선</h3>
+                    <p class="metro-color" data-i18n="transport.line9Color">금색</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.line9Desc"></p>
+                <p class="metro-stops" data-i18n="transport.line9Stops"></p>
+              </article>
+
+              <article class="metro-line metro-detail" data-line="arex" data-metro-detail="arex" hidden>
+                <div class="metro-line-head">
+                  <span class="metro-badge metro-badge-wide">A</span>
+                  <div>
+                    <h3 data-i18n="transport.arexName">공항철도 (AREX)</h3>
+                    <p class="metro-color" data-i18n="transport.arexColor">파랑</p>
+                  </div>
+                </div>
+                <p data-i18n="transport.arexDesc"></p>
+                <p class="metro-stops" data-i18n="transport.arexStops"></p>
+              </article>
+            </div>
+          </section>
+
+          <details class="metro-diagram-details" open>
+            <summary data-i18n="transport.diagramSummary">도식 노선도 (확대·축소)</summary>
+            <div class="map-zoom" data-map-zoom-root>
+              <div class="map-zoom-toolbar">
+                <button type="button" data-map-zoom="in" aria-label="Zoom in">+</button>
+                <button type="button" data-map-zoom="out" aria-label="Zoom out">−</button>
+                <button type="button" data-map-zoom="reset" aria-label="Reset">1:1</button>
+              </div>
+              <div class="map-zoom-viewport">
+                <img
+                  src="../../Images/transport/seoul-subway-linemap.png"
+                  alt="Seoul Metropolitan Subway schematic map"
+                  data-i18n-attr="alt:transport.mapAlt"
+                  class="map-zoom-img"
+                  draggable="false"
+                >
+              </div>
+              <p class="metro-map-source" data-i18n="transport.mapCaption"></p>
+            </div>
+          </details>
+
+          <div class="tip">
+            <h3 data-i18n="transport.subwayTipTitle">이용 팁</h3>
+            <p data-i18n="transport.subwayTip1"></p>
+            <p data-i18n="transport.subwayTip2"></p>
+            <p data-i18n="transport.subwayTip3"></p>
+          </div>
+        </div>
+
+        <!-- —— 대표 명소 소개 —— -->
+        <div class="tab-panel" role="tabpanel" data-topic-panel="routes" hidden>
+          <p data-i18n="transport.placesIntro"></p>
+
+          <div class="city-tabs nested-tabs" data-tabs="region">
+            <div class="tab-list" role="tablist" aria-label="Regions">
+              <button type="button" class="tab-btn" role="tab" data-region-tab="seoul" data-i18n="transport.regionSeoul">서울</button>
+              <button type="button" class="tab-btn" role="tab" data-region-tab="gyeonggi" data-i18n="transport.regionGyeonggi">경기</button>
+              <button type="button" class="tab-btn" role="tab" data-region-tab="busan" data-i18n="transport.regionBusan">부산</button>
+            </div>
+
+            <div class="tab-panels">
+              <div class="tab-panel" role="tabpanel" data-region-panel="seoul" hidden>
+                <div class="place-grid">
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_myeongdong_name"></h3>
+                    <p data-i18n="transport.place_myeongdong_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_myeongdong_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_gyeongbok_name"></h3>
+                    <p data-i18n="transport.place_gyeongbok_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_gyeongbok_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_gangnam_name"></h3>
+                    <p data-i18n="transport.place_gangnam_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_gangnam_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_hongdae_name"></h3>
+                    <p data-i18n="transport.place_hongdae_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_hongdae_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_itaewon_name"></h3>
+                    <p data-i18n="transport.place_itaewon_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_itaewon_how"></span></p>
+                  </article>
+                </div>
+              </div>
+              <div class="tab-panel" role="tabpanel" data-region-panel="gyeonggi" hidden>
+                <div class="place-grid">
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_suwon_name"></h3>
+                    <p data-i18n="transport.place_suwon_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_suwon_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_goyang_name"></h3>
+                    <p data-i18n="transport.place_goyang_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_goyang_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_gapyeong_name"></h3>
+                    <p data-i18n="transport.place_gapyeong_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_gapyeong_how"></span></p>
+                  </article>
+                </div>
+              </div>
+              <div class="tab-panel" role="tabpanel" data-region-panel="busan" hidden>
+                <div class="place-grid">
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_haeundae_name"></h3>
+                    <p data-i18n="transport.place_haeundae_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_haeundae_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_nampo_name"></h3>
+                    <p data-i18n="transport.place_nampo_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_nampo_how"></span></p>
+                  </article>
+                  <article class="place-card">
+                    <h3 data-i18n="transport.place_seomyeon_name"></h3>
+                    <p data-i18n="transport.place_seomyeon_desc"></p>
+                    <p class="place-how"><strong data-i18n="transport.howLabel"></strong> <span data-i18n="transport.place_seomyeon_how"></span></p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
-    <p class="footer-note">© Korea Travel Guide</p>
+    <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="../../data/metro/metro-data.js"></script>
+  <script src="../../i18n/messages.js"></script>
+  <script src="../../js/i18n.js"></script>
+  <script src="../../js/region-tabs.js"></script>
+  <script src="../../js/metro-map.js"></script>
+  <script src="../../js/map-zoom.js"></script>
 </body>
 </html>

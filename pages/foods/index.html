@@ -1,255 +1,107 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-i18n-title="foodsHub.pageTitle">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Korean Food Guide | Korea Travel Guide</title>
+  <title>Food & Dessert Guide | Korea Travel Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css">
 </head>
-<body>
+<body class="guide-page">
+
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="ko">KR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="ja">JP</button>
+  </nav>
 
   <header class="site-header">
-    <a href="../../index.html" class="site-brand">Korea Travel Guide</a>
+    <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
   </header>
 
-  <main class="page">
+  <main class="page guide-hub">
     <p class="back-link">
-      <a href="../../index.html">← Main Guide</a>
+      <a href="../../index.html" data-i18n="foodsHub.back">← Main Guide</a>
     </p>
 
-    <h1>KOREAN FOOD GUIDE</h1>
-
-    <img src="../../Images/foods/food-guide-header.jpg" width="100%" alt="Korean Food Guide">
-
-    <section class="intro">
-      <h2>🇰🇷</h2>
-      <p>한국에서 먹어보면 좋은 음식들을 정리했습니다. 각 음식 페이지에서 음식 설명과 추천 음식점을 함께 확인할 수 있습니다.</p>
-
-      <h2>🇬🇧</h2>
-      <p>This guide introduces Korean foods worth trying. Each food page includes a short explanation and recommended restaurants.</p>
-
-      <h2>🇯🇵</h2>
-      <p>韓国で食べてみてほしい料理をまとめました。各料理ページでは、料理の説明とおすすめのお店を一緒に紹介しています。</p>
+    <section class="guide-hero">
+      <img src="../../Images/foods/hub/food-guide-header.jpg" alt="Korean Food Guide">
+      <div class="guide-hero-text">
+        <p class="guide-eyebrow" data-i18n="foodsHub.eyebrow">Korea Travel Guidebook</p>
+        <h1 data-i18n="foodsHub.title">Food &amp; Dessert Guide</h1>
+        <p class="guide-hero-sub" data-i18n="foodsHub.heroSub">맛집 찾기 전에, 메뉴부터 고르세요.</p>
+      </div>
     </section>
 
-    <div class="card-grid">
+    <section class="guide-notice">
+      <h2 data-i18n="foodsHub.howtoTitle">이용 안내</h2>
+      <ol class="guide-steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <strong data-i18n="foodsHub.step1Title">음식 또는 디저트를 고릅니다.</strong>
+            <p data-i18n="foodsHub.step1Desc"></p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <strong data-i18n="foodsHub.step2Title">먹고 싶은 메뉴를 선택합니다.</strong>
+            <p data-i18n="foodsHub.step2Desc"></p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <strong data-i18n="foodsHub.step3Title">도시 탭에서 지역별 가게를 확인합니다.</strong>
+            <p data-i18n="foodsHub.step3Desc"></p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-      <article class="card">
-        <a href="./kimbap.html">
-          <img src="../../Images/foods/kimbap-cover.jpg" width="100%" alt="Kimbap">
+    <section class="guide-choices">
+      <h2 data-i18n="foodsHub.whereTitle">어디부터 볼까요?</h2>
+
+      <div class="guide-choice-list">
+        <a class="guide-choice" href="./meals/index.html">
+          <div class="guide-choice-media">
+            <img src="../../Images/cover/food-cover.png" alt="Meals">
+          </div>
+          <div class="guide-choice-body">
+            <p class="guide-choice-label" data-i18n="foodsHub.mealsLabel">Category 01</p>
+            <h3 data-i18n="foodsHub.mealsTitle">음식</h3>
+            <p data-i18n="foodsHub.mealsDesc"></p>
+            <span class="guide-choice-cta" data-i18n="foodsHub.mealsCta">음식 목록으로 →</span>
+          </div>
         </a>
-        <h2>김밥 · Kimbap · キンパ</h2>
-        <p>
-          밥과 여러 재료를 김으로 말아 만든 한국 음식<br>
-          Rice and fillings rolled in seaweed<br>
-          ご飯と具材を海苔で巻いた韓国料理
-        </p>
-        <p><a href="./kimbap.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
 
-      <article class="card">
-        <a href="./sulbing.html">
-          <img src="../../Images/foods/sulbing-cover.jpg" width="100%" alt="Sulbing">
+        <a class="guide-choice" href="./desserts/index.html">
+          <div class="guide-choice-media">
+            <img src="../../Images/cover/desert-cover.png" alt="Desserts">
+          </div>
+          <div class="guide-choice-body">
+            <p class="guide-choice-label" data-i18n="foodsHub.dessertsLabel">Category 02</p>
+            <h3 data-i18n="foodsHub.dessertsTitle">디저트</h3>
+            <p data-i18n="foodsHub.dessertsDesc"></p>
+            <span class="guide-choice-cta" data-i18n="foodsHub.dessertsCta">디저트 목록으로 →</span>
+          </div>
         </a>
-        <h2>설빙 · Sulbing · ソルビン</h2>
-        <p>
-          우유 얼음과 토핑을 올린 한국식 빙수<br>
-          Korean shaved ice with milk ice and toppings<br>
-          ミルク氷とトッピングの韓国式かき氷
-        </p>
-        <p><a href="./sulbing.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./naengmyeon.html">
-          <img src="../../Images/foods/naengmyeon-cover.jpg" width="100%" alt="Naengmyeon">
-        </a>
-        <h2>냉면 · Naengmyeon · 冷麺</h2>
-        <p>
-          차갑게 먹는 한국식 면 요리<br>
-          Korean cold noodle dish<br>
-          冷たくして食べる韓国の麺料理
-        </p>
-        <p><a href="./naengmyeon.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./jeon.html">
-          <img src="../../Images/foods/jeon-cover.jpg" width="100%" alt="Jeon">
-        </a>
-        <h2>지짐이·전 · Jeon · チヂミ</h2>
-        <p>
-          재료를 반죽과 함께 부쳐 먹는 음식<br>
-          Savory Korean pancake<br>
-          具材を生地と一緒に焼いた料理
-        </p>
-        <p><a href="./jeon.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./jajangmyeon.html">
-          <img src="../../Images/foods/jajangmyeon-cover.jpg" width="100%" alt="Jajangmyeon">
-        </a>
-        <h2>짜장면 · Jajangmyeon · ジャージャー麺</h2>
-        <p>
-          춘장 소스를 비벼 먹는 면 요리<br>
-          Noodles with black bean sauce<br>
-          黒味噌ソースを絡めた麺料理
-        </p>
-        <p><a href="./jajangmyeon.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./dakhanmari.html">
-          <img src="../../Images/foods/dakhanmari-cover.jpg" width="100%" alt="Dak Hanmari">
-        </a>
-        <h2>닭한마리 · Dak Hanmari · タッカンマリ</h2>
-        <p>
-          닭 한 마리를 통째로 끓여 먹는 전골<br>
-          Whole chicken hot pot<br>
-          鶏一羽を丸ごと煮込む鍋料理
-        </p>
-        <p><a href="./dakhanmari.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./samgyeopsal.html">
-          <img src="../../Images/foods/samgyeopsal-cover.jpg" width="100%" alt="Samgyeopsal">
-        </a>
-        <h2>삼겹살 · Samgyeopsal · サムギョプサル</h2>
-        <p>
-          불판에 구워 먹는 돼지고기<br>
-          Grilled pork belly<br>
-          鉄板で焼いて食べる豚バラ肉
-        </p>
-        <p><a href="./samgyeopsal.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./budae-jjigae.html">
-          <img src="../../Images/foods/budae-jjigae-cover.jpg" width="100%" alt="Budae Jjigae">
-        </a>
-        <h2>부대찌개 · Budae Jjigae · プデチゲ</h2>
-        <p>
-          햄, 소시지, 김치를 넣은 찌개<br>
-          Stew with sausage, ham and kimchi<br>
-          ハム、ソーセージ、キムチの鍋料理
-        </p>
-        <p><a href="./budae-jjigae.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./dakgalbi.html">
-          <img src="../../Images/foods/dakgalbi-cover.jpg" width="100%" alt="Dakgalbi">
-        </a>
-        <h2>닭갈비 · Dakgalbi · タッカルビ</h2>
-        <p>
-          양념 닭고기와 채소를 볶은 음식<br>
-          Spicy stir-fried chicken and vegetables<br>
-          味付けした鶏肉と野菜の炒め物
-        </p>
-        <p><a href="./dakgalbi.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./samgyetang.html">
-          <img src="../../Images/foods/samgyetang-cover.jpg" width="100%" alt="Samgyetang">
-        </a>
-        <h2>삼계탕 · Samgyetang · サムゲタン</h2>
-        <p>
-          인삼과 찹쌀을 넣은 닭백숙<br>
-          Ginseng chicken soup<br>
-          高麗人参ともち米入りの鶏スープ
-        </p>
-        <p><a href="./samgyetang.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./bibimbap.html">
-          <img src="../../Images/foods/bibimbap-cover.jpg" width="100%" alt="Bibimbap">
-        </a>
-        <h2>비빔밥 · Bibimbap · ビビンバ</h2>
-        <p>
-          밥과 채소, 고추장을 비벼 먹는 음식<br>
-          Mixed rice with vegetables and chili paste<br>
-          ご飯、野菜、コチュジャンを混ぜる料理
-        </p>
-        <p><a href="./bibimbap.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./ganjang-gejang.html">
-          <img src="../../Images/foods/ganjang-gejang-cover.jpg" width="100%" alt="Ganjang Gejang">
-        </a>
-        <h2>간장게장 · Ganjang Gejang · カンジャンケジャン</h2>
-        <p>
-          게를 간장 양념에 숙성한 음식<br>
-          Soy sauce marinated raw crab<br>
-          カニを醤油だれに漬けた料理
-        </p>
-        <p><a href="./ganjang-gejang.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./yangnyeom-chicken.html">
-          <img src="../../Images/foods/yangnyeom-chicken-cover.jpg" width="100%" alt="Yangnyeom Chicken">
-        </a>
-        <h2>양념치킨 · Yangnyeom Chicken · ヤンニョムチキン</h2>
-        <p>
-          달콤하고 매콤한 소스를 입힌 치킨<br>
-          Sweet and spicy Korean fried chicken<br>
-          甘辛いソースを絡めた韓国チキン
-        </p>
-        <p><a href="./yangnyeom-chicken.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./sundubu-jjigae.html">
-          <img src="../../Images/foods/sundubu-jjigae-cover.jpg" width="100%" alt="Sundubu Jjigae">
-        </a>
-        <h2>순두부찌개 · Sundubu Jjigae · スンドゥブチゲ</h2>
-        <p>
-          부드러운 순두부를 넣은 매콤한 찌개<br>
-          Spicy soft tofu stew<br>
-          柔らかい豆腐を使った辛い鍋料理
-        </p>
-        <p><a href="./sundubu-jjigae.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./paris-baguette.html">
-          <img src="../../Images/foods/paris-baguette-cover.jpg" width="100%" alt="Paris Baguette">
-        </a>
-        <h2>파리바게뜨 · Paris Baguette · パリバゲット</h2>
-        <p>
-          한국에서 쉽게 찾을 수 있는 베이커리<br>
-          Popular bakery chain in Korea<br>
-          韓国でよく見かけるベーカリーチェーン
-        </p>
-        <p><a href="./paris-baguette.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-      <article class="card">
-        <a href="./tous-les-jours.html">
-          <img src="../../Images/foods/tous-les-jours-cover.jpg" width="100%" alt="Tous Les Jours">
-        </a>
-        <h2>뚜레쥬르 · Tous Les Jours · トゥレジュール</h2>
-        <p>
-          빵과 케이크 종류가 다양한 베이커리<br>
-          Bakery with bread and cakes<br>
-          パンとケーキが豊富なベーカリー
-        </p>
-        <p><a href="./tous-les-jours.html">자세히 보기 · View · 詳細 →</a></p>
-      </article>
-
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
-    <p class="footer-note">© Korea Travel Guide</p>
+    <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
+  <p class="i18n-fallback" data-i18n-fallback data-i18n="misc.i18nFallback" hidden></p>
+
+  <script src="../../i18n/messages.js"></script>
+  <script src="../../js/i18n.js"></script>
 </body>
 </html>

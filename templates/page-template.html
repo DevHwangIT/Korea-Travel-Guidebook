@@ -1,56 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-i18n-title="common.brand">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>페이지 제목 · Page Title | Korea Travel Guide</title>
-  <!-- pages/섹션/index.html 기준. 한 단계 더 깊으면 ../../styles.css 유지 -->
+  <title>페이지 제목 | Korea Travel Guide</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <a href="../../index.html" class="site-brand">Korea Travel Guide</a>
-    <p class="site-tagline">
-      (KR) 한국 여행 가이드 · (EN) Korea Travel Guide · (JP) 韓国旅行ガイド
-    </p>
-  </header>
-
-  <nav class="navbar" aria-label="Main">
-    <a href="../../index.html">Home</a>
-    <a href="../../pages/before-trip/index.html">Before Trip</a>
-    <a href="../../pages/foods/index.html">Foods</a>
-    <a href="../../pages/shopping/index.html">Shopping</a>
-    <a href="../../pages/emergency/index.html">Emergency</a>
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="ko">KR</button>
+    <button type="button" data-set-lang="en">EN</button>
+    <button type="button" data-set-lang="ja">JP</button>
   </nav>
+
+  <header class="site-header">
+    <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
+  </header>
 
   <main class="page">
     <p class="back-link">
-      <a href="../../index.html">← Main Guide</a>
+      <a href="../../index.html" data-i18n="common.backMain">← Main Guide</a>
     </p>
 
-    <h1>페이지 제목 · Page Title · ページタイトル</h1>
-
-    <!-- 필요하면 헤더 이미지 -->
-    <!-- <img src="../../Images/.../header.jpg" width="100%" alt=""> -->
-
-    <section>
-      <h2>🇰🇷</h2>
-      <p>한국어 설명을 여기에 작성하세요.</p>
-
-      <h2>🇬🇧</h2>
-      <p>Add an English description here.</p>
-
-      <h2>🇯🇵</h2>
-      <p>ここに日本語の説明を追加してください。</p>
-    </section>
+    <h1>페이지 제목</h1>
+    <!-- 번역 키 예: <p data-i18n="section.key"></p> -->
+    <!-- 텍스트는 i18n/ko.json, en.json, ja.json 에 추가하세요 -->
+    <p>본문을 작성한 뒤 data-i18n 키를 연결하세요.</p>
   </main>
 
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
-    <p class="footer-note">© Korea Travel Guide</p>
+    <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
+  <script src="../../i18n/messages.js"></script>
+  <script src="../../js/i18n.js"></script>
 </body>
 </html>
