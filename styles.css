@@ -1485,6 +1485,14 @@ a.souvenir-card:hover {
   margin: 12px 0 20px;
 }
 
+.menu-photo-gallery {
+  margin: 24px 0 16px;
+}
+
+.menu-photo-gallery .menu-photo {
+  margin: 0 0 12px;
+}
+
 .menu-photo {
   margin: 24px 0 16px;
   padding: 0;

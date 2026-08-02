@@ -13,8 +13,10 @@ from urllib.parse import parse_qs, unquote
 class FormData:
     fields: dict[str, str] = field(default_factory=dict)
     files: dict[str, tuple[str, bytes]] = field(default_factory=dict)
+    file_lists: dict[str, list[tuple[str, bytes]]] = field(default_factory=dict)
     lists: dict[str, list[str]] = field(default_factory=dict)
-    # files[name] = (filename, raw_bytes)
+    # files[name] = last (filename, raw_bytes)
+    # file_lists[name] = all uploads for that field (supports multiple)
 
     def get(self, name: str, default: str = "") -> str:
         return self.fields.get(name, default)
@@ -24,6 +26,13 @@ class FormData:
             return list(self.lists[name])
         if name in self.fields:
             return [self.fields[name]]
+        return []
+
+    def getfiles(self, name: str) -> list[tuple[str, bytes]]:
+        if name in self.file_lists:
+            return list(self.file_lists[name])
+        if name in self.files:
+            return [self.files[name]]
         return []
 
 
@@ -104,7 +113,9 @@ def parse_multipart(body: bytes, boundary: bytes) -> FormData:
         filename = params.get("filename")
         if filename is not None:
             filename = unquote(filename)
-            form.files[name] = (filename, content)
+            item = (filename, content)
+            form.files[name] = item
+            form.file_lists.setdefault(name, []).append(item)
         else:
             _set_field(form, name, content.decode("utf-8", errors="replace"))
     return form

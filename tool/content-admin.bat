@@ -1,21 +1,22 @@
 @echo off
 setlocal EnableExtensions
+chcp 65001 >nul
 cd /d "%~dp0.."
 if errorlevel 1 (
-  echo [ERROR] 저장소 루트로 이동하지 못했습니다.
+  echo [ERROR] Failed to change to project root.
   pause
   exit /b 1
 )
 
 set "SCRIPT=%~dp0content-admin.py"
 if not exist "%SCRIPT%" (
-  echo [ERROR] 파일이 없습니다: %SCRIPT%
+  echo [ERROR] Missing: %SCRIPT%
   pause
   exit /b 1
 )
 
-echo [콘텐츠 관리] http://127.0.0.1:8765
-echo 종료: Ctrl+C
+echo [Content Admin] http://127.0.0.1:8765
+echo Stop: Ctrl+C
 echo.
 
 set "PY="
@@ -28,8 +29,8 @@ if not defined PY (
 
 if not defined PY (
   echo.
-  echo [ERROR] Python 3을 찾을 수 없습니다.
-  echo Python 3을 설치하고 PATH에 추가한 뒤 다시 실행하세요.
+  echo [ERROR] Python 3 not found.
+  echo Install Python 3 and add it to PATH, then retry.
   echo.
   pause
   exit /b 1
@@ -39,7 +40,7 @@ if not defined PY (
 set "ERR=%ERRORLEVEL%"
 if not "%ERR%"=="0" (
   echo.
-  echo [ERROR] content-admin 실패. exit=%ERR%
+  echo [ERROR] content-admin failed. exit=%ERR%
   pause
   exit /b %ERR%
 )

@@ -194,13 +194,6 @@ window.KOREAN_PHRASES = {
       "ja": "高すぎます"
     },
     {
-      "id": "cheaper",
-      "ko": "조금 깎아 주세요",
-      "rom": "Jogeum kkakka juseyo",
-      "en": "Can you lower the price a bit? (markets)",
-      "ja": "少し安くしてください（市場など）"
-    },
-    {
       "id": "tax-free",
       "ko": "택스프리 돼요?",
       "rom": "Taekseupeuri dwaeyo?",

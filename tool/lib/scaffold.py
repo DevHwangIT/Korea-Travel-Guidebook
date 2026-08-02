@@ -7,7 +7,13 @@ from pathlib import Path
 from urllib.parse import quote
 
 from .cache_bust import read_version
-from .images import dish_cover_path, rel_posix, shop_menu_path, shop_photo_path
+from .images import (
+    discover_menu_images,
+    dish_cover_path,
+    rel_posix,
+    shop_menu_numbered_path,
+    shop_photo_path,
+)
 from .paths import DESSERTS_DIR, MEALS_DIR, ROOT
 
 
@@ -46,6 +52,112 @@ def asset_prefix_from(html_path: Path) -> str:
     """Relative path from html_path's directory up to site root."""
     depth = len(html_path.parent.relative_to(ROOT).parts)
     return "../" * depth
+
+
+def render_menu_gallery_html(
+    kind: str,
+    dish_slug: str,
+    shop_slug: str,
+    *,
+    asset_prefix: str = "../../../../",
+) -> str:
+    """Render all menu images (or a menu-1 placeholder) for a shop page."""
+    menus = discover_menu_images(kind, dish_slug, shop_slug)
+    if not menus:
+        # Placeholder so new shops have a stable first slot
+        rel = rel_posix(shop_menu_numbered_path(kind, dish_slug, shop_slug, 1))
+        menus_data = [(1, rel)]
+    else:
+        menus_data = [(m.index, m.rel) for m in menus]
+
+    parts = ['    <div class="menu-photo-gallery">']
+    for i, (_idx, rel) in enumerate(menus_data):
+        caption = ""
+        if i == 0:
+            caption = (
+                '      <figcaption data-i18n="restaurantFields.menuPhoto"></figcaption>\n'
+            )
+        parts.append(
+            f'      <figure class="menu-photo">\n'
+            f"{caption}"
+            f'        <img src="{asset_prefix}{rel}" width="100%" alt="" '
+            f'data-i18n-attr="alt:restaurants.{shop_slug}.menu">\n'
+            f"      </figure>"
+        )
+    parts.append("    </div>")
+    return "\n".join(parts)
+
+
+_GALLERY_RE = re.compile(
+    r'(?:<div class="menu-photo-gallery">.*?</div>\s*'
+    r'|<figure class="menu-photo">.*?</figure>\s*)+',
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def patch_shop_menu_gallery(
+    html: str,
+    kind: str,
+    dish_slug: str,
+    shop_slug: str,
+    *,
+    asset_prefix: str = "../../../../",
+) -> str:
+    """Replace legacy single menu-photo figure(s) with full gallery."""
+    gallery = render_menu_gallery_html(
+        kind, dish_slug, shop_slug, asset_prefix=asset_prefix
+    )
+    if _GALLERY_RE.search(html):
+        return _GALLERY_RE.sub(gallery + "\n", html, count=1)
+    # Insert before tip block if present
+    tip = re.search(r'<div class="tip">', html, re.IGNORECASE)
+    if tip:
+        return html[: tip.start()] + gallery + "\n    " + html[tip.start() :]
+    main_close = re.search(r"</main>", html, re.IGNORECASE)
+    if main_close:
+        return html[: main_close.start()] + gallery + "\n  " + html[main_close.start() :]
+    return html + "\n" + gallery
+
+
+def sync_shop_page_menu_gallery(
+    kind: str, dish_slug: str, shop_slug: str
+) -> list[str]:
+    """Rewrite gallery on an existing shop HTML page. Returns notes."""
+    page = shop_page_path(kind, dish_slug, shop_slug)
+    if not page.is_file():
+        return []
+    text = page.read_text(encoding="utf-8")
+    prefix = asset_prefix_from(page)
+    updated = patch_shop_menu_gallery(
+        text, kind, dish_slug, shop_slug, asset_prefix=prefix
+    )
+    if updated != text:
+        page.write_text(updated, encoding="utf-8", newline="\n")
+        return [f"메뉴 갤러리 HTML 갱신: {page.relative_to(ROOT).as_posix()}"]
+    return []
+
+
+def patch_all_shop_menu_galleries() -> list[str]:
+    """One-time / on-demand: expand menu-photo on every shop detail page."""
+    notes: list[str] = []
+    for kind, base in (("meals", MEALS_DIR), ("desserts", DESSERTS_DIR)):
+        if not base.is_dir():
+            continue
+        for dish_dir_path in sorted(base.iterdir()):
+            if not dish_dir_path.is_dir():
+                continue
+            for page in sorted(dish_dir_path.glob("*.html")):
+                if page.name == "index.html":
+                    continue
+                shop_slug = page.stem
+                notes.extend(
+                    sync_shop_page_menu_gallery(kind, dish_dir_path.name, shop_slug)
+                )
+    if not notes:
+        notes.append("메뉴 갤러리: 변경된 페이지 없음 (이미 최신이거나 가게 없음)")
+    else:
+        notes.insert(0, f"메뉴 갤러리 패치: {len(notes)}개 페이지")
+    return notes
 
 
 def render_dish_page(kind: str, slug: str, emoji: str = "🍽️") -> str:
@@ -108,7 +220,9 @@ def render_shop_page(kind: str, dish_slug: str, shop_slug: str) -> str:
     version = current_asset_version()
     prefix = "../../../../"
     photo = rel_posix(shop_photo_path(kind, dish_slug, shop_slug))
-    menu_photo = rel_posix(shop_menu_path(kind, dish_slug, shop_slug))
+    gallery = render_menu_gallery_html(
+        kind, dish_slug, shop_slug, asset_prefix=prefix
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="ko" data-i18n-title="restaurants.{shop_slug}.name">
@@ -141,10 +255,7 @@ def render_shop_page(kind: str, dish_slug: str, shop_slug: str) -> str:
       <tr><th data-i18n="restaurantFields.menu"></th><td data-i18n="restaurants.{shop_slug}.menu"></td></tr>
       <tr><th data-i18n="restaurantFields.price"></th><td data-i18n="restaurants.{shop_slug}.price"></td></tr>
     </table>
-    <figure class="menu-photo">
-      <figcaption data-i18n="restaurantFields.menuPhoto"></figcaption>
-      <img src="{prefix}{menu_photo}" width="100%" alt="" data-i18n-attr="alt:restaurants.{shop_slug}.menu">
-    </figure>
+{gallery}
     <div class="tip">
       <h3 data-i18n="common.tip">TIP</h3>
       <p data-i18n="restaurants.{shop_slug}.tip"></p>
@@ -251,3 +362,19 @@ def remove_card_referencing(html: str, href_fragment: str) -> str:
 
 def ensure_parent_dir(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+
+
+def rewrite_shop_slug_in_html(html: str, old_slug: str, new_slug: str) -> str:
+    """Rewrite restaurant i18n keys and image basename references for a shop rename."""
+    text = html
+    text = text.replace(f"restaurants.{old_slug}.", f"restaurants.{new_slug}.")
+    text = text.replace(f"/{old_slug}.jpg", f"/{new_slug}.jpg")
+    text = text.replace(f"/{old_slug}-menu.jpg", f"/{new_slug}-menu.jpg")
+    # Numbered menus: -menu-1.jpg, -menu-01.jpg, …
+    text = re.sub(
+        rf"/({re.escape(old_slug)})-menu-(\d+)\.jpg",
+        rf"/{new_slug}-menu-\2.jpg",
+        text,
+        flags=re.IGNORECASE,
+    )
+    return text

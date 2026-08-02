@@ -10,13 +10,19 @@ from typing import Any
 
 from . import i18n_store
 from .images import (
+    delete_all_shop_images,
+    discover_menu_images,
     dish_cover_path,
+    relocate_all_shop_images,
     rel_posix,
+    rename_shop_images,
+    shop_menu_dir,
     shop_menu_path,
     shop_photo_path,
 )
 from .paths import (
     DESSERTS_DIR,
+    IMAGES_RESTAURANTS,
     MEALS_DIR,
     ROOT,
 )
@@ -30,8 +36,10 @@ from .scaffold import (
     remove_card_referencing,
     render_dish_page,
     render_shop_page,
+    rewrite_shop_slug_in_html,
     shop_card_html,
     shop_page_path,
+    sync_shop_page_menu_gallery,
 )
 
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -337,7 +345,7 @@ def get_shop(slug: str) -> dict[str, Any]:
     kind_eff = kind or "desserts"
     dish_eff = dish_slug or "desserts"
     photo = shop_photo_path(kind_eff, dish_eff, slug)
-    menu = shop_menu_path(kind_eff, dish_eff, slug)
+    menus = discover_menu_images(kind_eff, dish_eff, slug)
     return {
         "slug": slug,
         "kind": kind,
@@ -352,9 +360,20 @@ def get_shop(slug: str) -> dict[str, Any]:
         "about": texts["ko"]["about"],
         "page": page,
         "image_hint": rel_posix(photo),
-        "menu_image_hint": rel_posix(menu),
+        "menu_image_hint": menus[0].rel if menus else rel_posix(
+            shop_menu_path(kind_eff, dish_eff, slug)
+        ),
         "image_exists": photo.is_file(),
-        "menu_image_exists": menu.is_file(),
+        "menu_image_exists": bool(menus),
+        "menu_images": [
+            {
+                "index": m.index,
+                "rel": m.rel,
+                "legacy": m.legacy,
+                "exists": m.path.is_file(),
+            }
+            for m in menus
+        ],
     }
 
 
@@ -453,12 +472,17 @@ def rename_dish(kind: str, old_slug: str, new_slug: str) -> list[str]:
     old_dir.rename(new_dir)
     notes.append(f"폴더 이동: {old_dir.name} → {new_dir.name}")
 
-    # Rewrite i18n key references inside the dish folder HTML
+    # Rewrite i18n / image path references inside the dish folder HTML
     for html_path in new_dir.rglob("*.html"):
         text = html_path.read_text(encoding="utf-8")
         text2 = text.replace(f"dishes.{old_slug}.", f"dishes.{new_slug}.")
         text2 = text2.replace(f"/dishes/{old_slug}.jpg", f"/dishes/{new_slug}.jpg")
         text2 = text2.replace(f"./{old_slug}/", f"./{new_slug}/")
+        if kind == "meals":
+            text2 = text2.replace(
+                f"/restaurants/{old_slug}/",
+                f"/restaurants/{new_slug}/",
+            )
         if text2 != text:
             html_path.write_text(text2, encoding="utf-8", newline="\n")
 
@@ -476,6 +500,34 @@ def rename_dish(kind: str, old_slug: str, new_slug: str) -> list[str]:
     if old_img.is_file() and not new_img.exists():
         old_img.rename(new_img)
         notes.append(f"이미지 이름 변경: {old_img.name} → {new_img.name}")
+
+    # Meals: restaurant image folder is keyed by dish slug
+    if kind == "meals":
+        old_rest = IMAGES_RESTAURANTS / old_slug
+        new_rest = IMAGES_RESTAURANTS / new_slug
+        if old_rest.is_dir() and not new_rest.exists():
+            old_rest.rename(new_rest)
+            notes.append(
+                f"가게 이미지 폴더: restaurants/{old_slug} → restaurants/{new_slug}"
+            )
+        elif old_rest.is_dir() and new_rest.exists():
+            for src in old_rest.iterdir():
+                dst = new_rest / src.name
+                if dst.exists():
+                    if src.is_file():
+                        src.unlink()
+                    continue
+                shutil.move(str(src), str(dst))
+                notes.append(
+                    f"가게 이미지 병합: {src.name} → restaurants/{new_slug}/"
+                )
+            try:
+                old_rest.rmdir()
+            except OSError:
+                notes.append(f"경고: restaurants/{old_slug} 비우지 못함")
+            notes.append(
+                f"가게 이미지 폴더 병합: restaurants/{old_slug} → restaurants/{new_slug}"
+            )
 
     notes.append(i18n_store.build_bundle())
     return notes
@@ -617,11 +669,14 @@ def create_shop(
     notes.append("음식 Places 카드 추가")
 
     photo = shop_photo_path(kind, dish_slug, shop_slug)
-    menu_img = shop_menu_path(kind, dish_slug, shop_slug)
+    menu_dir = shop_menu_dir(kind, dish_slug)
     photo.parent.mkdir(parents=True, exist_ok=True)
-    menu_img.parent.mkdir(parents=True, exist_ok=True)
+    menu_dir.mkdir(parents=True, exist_ok=True)
     notes.append(f"상호 이미지 저장 위치: {rel_posix(photo)}")
-    notes.append(f"메뉴 이미지 저장 위치: {rel_posix(menu_img)}")
+    notes.append(
+        f"메뉴 이미지 저장 위치: {rel_posix(menu_dir)}/"
+        f"{{slug}}-menu-1.jpg, -menu-2.jpg, …"
+    )
 
     notes.append(i18n_store.build_bundle())
     return notes
@@ -631,13 +686,14 @@ def rename_shop(old_slug: str, new_slug: str) -> list[str]:
     new_slug = validate_slug(new_slug)
     if old_slug == new_slug:
         return ["슬러그가 동일합니다."]
-    found = find_shop_page(old_slug)
-    if not found:
+    memberships = find_all_shop_pages(old_slug)
+    if not memberships:
         raise ValueError(f"가게 페이지를 찾을 수 없습니다: {old_slug}")
-    kind, dish_slug, old_page = found
-    new_page = shop_page_path(kind, dish_slug, new_slug)
-    if new_page.exists():
-        raise ValueError(f"대상 페이지가 이미 있음: {new_page.relative_to(ROOT)}")
+
+    for kind, dish_slug, _old_page in memberships:
+        new_page = shop_page_path(kind, dish_slug, new_slug)
+        if new_page.exists():
+            raise ValueError(f"대상 페이지가 이미 있음: {new_page.relative_to(ROOT)}")
 
     notes: list[str] = []
     bundle = i18n_store.load_all()
@@ -647,43 +703,30 @@ def rename_shop(old_slug: str, new_slug: str) -> list[str]:
             raise ValueError(f"restaurants.{old_slug} 없음 ({lang})")
         if new_slug in restaurants:
             raise ValueError(f"restaurants.{new_slug} 이미 있음 ({lang})")
+        # mapsUrl and all fields move with the entry (unchanged)
         restaurants[new_slug] = restaurants.pop(old_slug)
     i18n_store.save_all(bundle)
-    notes.append(f"i18n restaurants.{old_slug} → {new_slug}")
+    notes.append(f"i18n restaurants.{old_slug} → {new_slug} (mapsUrl 유지)")
 
-    text = old_page.read_text(encoding="utf-8")
-    text = text.replace(f"restaurants.{old_slug}.", f"restaurants.{new_slug}.")
-    text = text.replace(f"/{old_slug}.jpg", f"/{new_slug}.jpg")
-    text = text.replace(f"/{old_slug}-menu.jpg", f"/{new_slug}-menu.jpg")
-    new_page.write_text(text, encoding="utf-8", newline="\n")
-    old_page.unlink()
-    notes.append(f"페이지 이름 변경: {old_page.name} → {new_page.name}")
+    for kind, dish_slug, old_page in memberships:
+        # Rename image files first so gallery sync sees menu-N under new slug
+        notes.extend(rename_shop_images(kind, dish_slug, old_slug, new_slug))
 
-    index = dish_dir(kind, dish_slug) / "index.html"
-    if index.is_file():
-        html = index.read_text(encoding="utf-8")
-        html = html.replace(f"./{old_slug}.html", f"./{new_slug}.html")
-        html = html.replace(f"restaurants.{old_slug}.", f"restaurants.{new_slug}.")
-        html = html.replace(f"/{old_slug}.jpg", f"/{new_slug}.jpg")
-        index.write_text(html, encoding="utf-8", newline="\n")
-        notes.append("부모 index 카드 링크 갱신")
+        text = old_page.read_text(encoding="utf-8")
+        text = rewrite_shop_slug_in_html(text, old_slug, new_slug)
+        new_page = shop_page_path(kind, dish_slug, new_slug)
+        new_page.write_text(text, encoding="utf-8", newline="\n")
+        old_page.unlink()
+        notes.append(f"페이지 이름 변경: {old_page.name} → {new_page.name}")
+        notes.extend(sync_shop_page_menu_gallery(kind, dish_slug, new_slug))
 
-    # Best-effort image rename along canonical paths
-    pairs = [
-        (
-            shop_photo_path(kind, dish_slug, old_slug),
-            shop_photo_path(kind, dish_slug, new_slug),
-        ),
-        (
-            shop_menu_path(kind, dish_slug, old_slug),
-            shop_menu_path(kind, dish_slug, new_slug),
-        ),
-    ]
-    for old_img, new_img in pairs:
-        if old_img.is_file() and not new_img.exists():
-            new_img.parent.mkdir(parents=True, exist_ok=True)
-            old_img.rename(new_img)
-            notes.append(f"이미지: {old_img.name} → {new_img.name}")
+        index = dish_dir(kind, dish_slug) / "index.html"
+        if index.is_file():
+            html = index.read_text(encoding="utf-8")
+            html = html.replace(f"./{old_slug}.html", f"./{new_slug}.html")
+            html = rewrite_shop_slug_in_html(html, old_slug, new_slug)
+            index.write_text(html, encoding="utf-8", newline="\n")
+            notes.append(f"부모 index 카드 갱신: {kind}/{dish_slug}")
 
     notes.append(i18n_store.build_bundle())
     return notes
@@ -714,14 +757,17 @@ def delete_shop(slug: str, *, delete_images: bool = False) -> list[str]:
                 index.write_text(html2, encoding="utf-8", newline="\n")
                 notes.append(f"Places 카드 제거: {mem_kind}/{mem_dish}")
 
-    if delete_images and kind and dish_slug:
-        for p in (
-            shop_photo_path(kind, dish_slug, slug),
-            shop_menu_path(kind, dish_slug, slug),
-        ):
-            if p.is_file():
-                p.unlink()
-                notes.append(f"이미지 삭제: {rel_posix(p)}")
+    if delete_images:
+        seen_dirs: set[str] = set()
+        targets = memberships or (
+            [(kind, dish_slug, None)] if kind and dish_slug else []
+        )
+        for mem_kind, mem_dish, _ in targets:
+            key = f"{mem_kind}|{mem_dish}"
+            if key in seen_dirs:
+                continue
+            seen_dirs.add(key)
+            notes.extend(delete_all_shop_images(mem_kind, mem_dish, slug))
 
     notes.append(i18n_store.build_bundle())
     return notes
@@ -782,33 +828,19 @@ def _rewrite_shop_html_for_dish(
     if src_dish != dest_dish:
         text = text.replace(f"dishes.{src_dish}.", f"dishes.{dest_dish}.")
     src_photo = rel_posix(shop_photo_path(src_kind, src_dish, shop_slug))
-    src_menu = rel_posix(shop_menu_path(src_kind, src_dish, shop_slug))
     dest_photo = rel_posix(shop_photo_path(dest_kind, dest_dish, shop_slug))
-    dest_menu = rel_posix(shop_menu_path(dest_kind, dest_dish, shop_slug))
     if src_photo != dest_photo:
         text = text.replace(src_photo, dest_photo)
-    if src_menu != dest_menu:
-        text = text.replace(src_menu, dest_menu)
+    src_menu_folder = rel_posix(shop_menu_dir(src_kind, src_dish))
+    dest_menu_folder = rel_posix(shop_menu_dir(dest_kind, dest_dish))
+    if src_menu_folder != dest_menu_folder:
+        text = text.replace(src_menu_folder + "/", dest_menu_folder + "/")
     if src_kind == "meals" and dest_kind == "meals" and src_dish != dest_dish:
         text = text.replace(
             f"/restaurants/{src_dish}/",
             f"/restaurants/{dest_dish}/",
         )
     return text
-
-
-def _relocate_shop_image(src: Path, dst: Path, notes: list[str]) -> None:
-    if src.resolve() == dst.resolve():
-        return
-    if not src.is_file():
-        return
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    if dst.exists():
-        src.unlink()
-        notes.append(f"이미지 정리(대상 유지): {rel_posix(src)}")
-        return
-    shutil.move(str(src), str(dst))
-    notes.append(f"이미지 이동: {rel_posix(src)} → {rel_posix(dst)}")
 
 
 def set_shop_parent(shop_slug: str, dest_kind: str, dest_dish: str) -> list[str]:
@@ -888,15 +920,10 @@ def set_shop_parent(shop_slug: str, dest_kind: str, dest_dish: str) -> list[str]
     if not image_sources and source:
         image_sources = [source]
     for src_kind, src_dish, _ in image_sources:
-        _relocate_shop_image(
-            shop_photo_path(src_kind, src_dish, shop_slug),
-            shop_photo_path(dest_kind, dest_dish, shop_slug),
-            notes,
-        )
-        _relocate_shop_image(
-            shop_menu_path(src_kind, src_dish, shop_slug),
-            shop_menu_path(dest_kind, dest_dish, shop_slug),
-            notes,
+        notes.extend(
+            relocate_all_shop_images(
+                src_kind, src_dish, dest_kind, dest_dish, shop_slug
+            )
         )
 
     for src_kind, src_dish, src_page in extras:
@@ -927,6 +954,8 @@ def set_shop_parent(shop_slug: str, dest_kind: str, dest_dish: str) -> list[str]
         if html2 != html:
             dest_index.write_text(html2, encoding="utf-8", newline="\n")
             notes.append(f"Places 카드 갱신: {dest_kind}/{dest_dish}")
+
+    notes.extend(sync_shop_page_menu_gallery(dest_kind, dest_dish, shop_slug))
 
     if extras or not already_here:
         notes.insert(0, f"부모 음식 → {dest_kind}/{dest_dish}")
