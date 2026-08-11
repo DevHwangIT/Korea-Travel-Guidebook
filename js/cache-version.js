@@ -2,4 +2,4 @@
  * Bump SITE_ASSET_VERSION via tool/update-version.py (or edit here),
  * then HTML ?v= is applied automatically by that tool / apply-cache-bust.
  */
-window.SITE_ASSET_VERSION = "20260811235149";
+window.SITE_ASSET_VERSION = "20260812000158";

@@ -34,10 +34,17 @@ def main() -> int:
     for rel in summary["files"]:
         print(f"updated: {rel}")
     print(
-        f"Done. version={version!r} files_updated={summary['files_updated']} "
+        f"Done. version={version!r} "
+        f"files_scanned={summary['files_scanned']} "
+        f"files_updated={summary['files_updated']} "
+        f"verified_ok={summary['files_ok']} "
         f"replacements~={summary['replacements']}"
     )
-    print("\n다음: 변경을 커밋·푸시하면 GitHub Pages 캐시가 새 ?v= 로 갱신됩니다.")
+    print(
+        "\n다음: 변경을 커밋·푸시하면 GitHub Pages가 새 HTML/?v= 를 배포합니다.\n"
+        "HTML은 Pages에서 약 10분(max-age=600) 캐시될 수 있으니, "
+        "확인 시 Ctrl+F5(강력 새로고침)를 사용하세요."
+    )
     return 0
 
 

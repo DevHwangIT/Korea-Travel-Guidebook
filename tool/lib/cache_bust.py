@@ -4,6 +4,10 @@
 Reads the version from js/cache-version.js (window.SITE_ASSET_VERSION).
 Idempotent: re-running with the same version is safe.
 Does not modify external CDN URLs (http/https/protocol-relative).
+
+Coverage: every *.html under the repo root except SKIP_DIR_NAMES
+(node_modules, .git, venv, tool, …) — includes nested pages/, templates/,
+components/. Used by tool/update-version.py and CMS refresh_public_assets().
 """
 from __future__ import annotations
 
@@ -23,6 +27,8 @@ ATTR_RE = re.compile(
     re.IGNORECASE,
 )
 ASSET_COMMENT_RE = re.compile(r"""<!--\s*asset-v:\s*[^>]*-->""")
+ASSET_COMMENT_VERSION_RE = re.compile(r"""<!--\s*asset-v:\s*(\S+)\s*-->""")
+V_QUERY_RE = re.compile(r"""[?&]v=([^"'&\s]+)""")
 
 
 def read_version(version_file: Path | None = None) -> str:
@@ -86,9 +92,11 @@ def with_version(url: str, version: str) -> str:
 
 
 def sync_asset_comment(html: str, version: str) -> str:
+    """Ensure every asset-v comment matches version; insert one in <head> if missing."""
     comment = f"<!-- asset-v: {version} -->"
     if ASSET_COMMENT_RE.search(html):
-        return ASSET_COMMENT_RE.sub(comment, html, count=1)
+        # Replace ALL occurrences so nested snippets cannot leave a stale marker.
+        return ASSET_COMMENT_RE.sub(comment, html)
 
     head_match = re.search(r"<head[^>]*>", html, re.IGNORECASE)
     if head_match:
@@ -116,12 +124,8 @@ def process_html(text: str, version: str) -> tuple[str, int]:
     updated = ATTR_RE.sub(repl, text)
     before_comment = updated
     updated = sync_asset_comment(updated, version)
-    if updated != before_comment and not ASSET_COMMENT_RE.search(text):
+    if updated != before_comment:
         changes += 1
-    elif ASSET_COMMENT_RE.search(text):
-        old = ASSET_COMMENT_RE.search(text)
-        if old and old.group(0) != f"<!-- asset-v: {version} -->":
-            changes += 1
     return updated, changes
 
 
@@ -133,6 +137,96 @@ def iter_html_files(root: Path | None = None):
         yield path
 
 
+def collect_html_version_issues(
+    version: str | None = None, root: Path | None = None
+) -> list[dict]:
+    """Return per-file problems when HTML is not fully on ``version``."""
+    ver = version or read_version()
+    base = root or ROOT
+    expected_comment = f"<!-- asset-v: {ver} -->"
+    issues: list[dict] = []
+
+    for html_path in iter_html_files(base):
+        text = html_path.read_text(encoding="utf-8")
+        rel = html_path.relative_to(base).as_posix()
+        problems: list[str] = []
+
+        comments = ASSET_COMMENT_VERSION_RE.findall(text)
+        if not comments:
+            # Snippets without <head> still get a leading comment from sync;
+            # flag only if the file references versioned site assets.
+            has_site_asset = False
+            for m in ATTR_RE.finditer(text):
+                url = m.group("url")
+                if is_external(url):
+                    continue
+                if is_local_site_asset(url.split("?", 1)[0]):
+                    has_site_asset = True
+                    break
+            if has_site_asset:
+                problems.append("missing asset-v comment")
+        else:
+            for c in comments:
+                if c != ver:
+                    problems.append(f"stale asset-v comment: {c}")
+            # Also catch malformed comments that ASSET_COMMENT_RE matches but
+            # version extract missed — compare raw comment text.
+            for raw in ASSET_COMMENT_RE.findall(text):
+                if raw != expected_comment and ver not in raw:
+                    problems.append(f"unexpected asset-v markup: {raw}")
+
+        for m in ATTR_RE.finditer(text):
+            url = m.group("url")
+            if is_external(url):
+                continue
+            path = url.split("?", 1)[0]
+            if not is_local_site_asset(path):
+                continue
+            vm = V_QUERY_RE.search(url)
+            if not vm:
+                problems.append(f"missing ?v= on {url}")
+            elif vm.group(1) != ver:
+                problems.append(f"stale ?v={vm.group(1)} on {url}")
+
+        if problems:
+            issues.append({"file": rel, "problems": problems})
+
+    return issues
+
+
+def verify_asset_versions(
+    version: str | None = None, root: Path | None = None
+) -> dict:
+    """Raise SystemExit if any public HTML is out of sync with the version."""
+    ver = version or read_version()
+    base = root or ROOT
+    scanned = sum(1 for _ in iter_html_files(base))
+    issues = collect_html_version_issues(ver, root=base)
+    summary = {
+        "version": ver,
+        "files_scanned": scanned,
+        "files_ok": scanned - len(issues),
+        "files_bad": len(issues),
+        "issues": issues,
+    }
+    if issues:
+        lines = [
+            f"Cache version mismatch: expected {ver!r}, "
+            f"{len(issues)}/{scanned} HTML file(s) out of sync."
+        ]
+        for item in issues[:40]:
+            detail = "; ".join(item["problems"][:5])
+            lines.append(f"  - {item['file']}: {detail}")
+        if len(issues) > 40:
+            lines.append(f"  ... +{len(issues) - 40} more")
+        lines.append(
+            "Fix: python tool/update-version.py "
+            "(or python scripts/apply-cache-bust.py)"
+        )
+        raise SystemExit("\n".join(lines))
+    return summary
+
+
 def apply_cache_bust(version: str | None = None, root: Path | None = None) -> dict:
     """Apply version query strings to all HTML. Returns a summary dict."""
     ver = version or read_version()
@@ -140,8 +234,10 @@ def apply_cache_bust(version: str | None = None, root: Path | None = None) -> di
     updated_files = 0
     total_attr_changes = 0
     files: list[str] = []
+    scanned = 0
 
     for html_path in iter_html_files(base):
+        scanned += 1
         original = html_path.read_text(encoding="utf-8")
         new_text, n = process_html(original, ver)
         if new_text != original:
@@ -150,11 +246,16 @@ def apply_cache_bust(version: str | None = None, root: Path | None = None) -> di
             total_attr_changes += n
             files.append(html_path.relative_to(base).as_posix())
 
+    # Re-read disk and fail loudly if anything was skipped (partial write / regex miss).
+    verify = verify_asset_versions(ver, root=base)
+
     return {
         "version": ver,
+        "files_scanned": scanned,
         "files_updated": updated_files,
         "replacements": total_attr_changes,
         "files": files,
+        "files_ok": verify["files_ok"],
     }
 
 
@@ -164,6 +265,10 @@ def new_asset_version() -> str:
 
 def bump_asset_version(root: Path | None = None) -> dict:
     """Write a fresh SITE_ASSET_VERSION and apply ?v= to all HTML.
+
+    Order: write version file first, then patch every HTML, then verify.
+    If a previous run died mid-apply, re-running apply_cache_bust() (or this
+    bump) finishes remaining files against js/cache-version.js.
 
     Used by update-version.py and by the local CMS after content/media saves
     so viewers pick up rebuilt i18n/messages.js and other assets.
@@ -189,6 +294,7 @@ def main() -> int:
         print(f"updated: {rel}")
     print(
         f"Done. version={summary['version']!r} "
+        f"files_scanned={summary['files_scanned']} "
         f"files_updated={summary['files_updated']} "
         f"replacements~={summary['replacements']}"
     )

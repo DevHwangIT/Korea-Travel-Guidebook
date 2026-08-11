@@ -77,7 +77,8 @@ def refresh_public_assets(notes: list[str] | None = None) -> list[str]:
         summary = bump_asset_version()
         out.append(
             f"캐시 버전 {summary['version']} "
-            f"(HTML {summary['files_updated']}개)"
+            f"(HTML {summary['files_updated']}/{summary['files_scanned']}개 갱신, "
+            f"검증 {summary['files_ok']}개)"
         )
     except Exception as exc:  # noqa: BLE001
         out.append(f"캐시 버전 자동 갱신 실패: {exc}")
@@ -1637,7 +1638,8 @@ class AdminHandler(BaseHTTPRequestHandler):
                         save_ok_message("사이트 새로고침을 끝냈어요"),
                         [
                             f"버전 {summary['version']}",
-                            f"HTML {summary['files_updated']}개 갱신",
+                            f"HTML {summary['files_updated']}/{summary['files_scanned']}개 갱신 "
+                            f"(검증 {summary['files_ok']}개)",
                         ],
                     ),
                 )
