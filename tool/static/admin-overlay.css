@@ -1,0 +1,252 @@
+/* Viewer-style admin chrome — thin overlay only (not a second CMS skin). */
+:root {
+  --ga-bar-h: 48px;
+  --ga-ink: #1f3a32;
+  --ga-paper: #f7f4ef;
+  --ga-accent: #2d6a5a;
+  --ga-danger: #a33b3b;
+  --ga-line: rgba(31, 58, 50, 0.14);
+}
+
+html.guide-admin-on {
+  scroll-padding-top: calc(var(--ga-bar-h) + 8px);
+}
+
+body.guide-admin-on {
+  padding-top: var(--ga-bar-h);
+}
+
+.ga-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10050;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--ga-bar-h);
+  padding: 6px 12px;
+  background: var(--ga-paper);
+  border-bottom: 1px solid var(--ga-line);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-size: 13px;
+  color: var(--ga-ink);
+}
+
+.ga-bar strong {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ga-bar .ga-spacer {
+  flex: 1;
+}
+
+.ga-bar .ga-note {
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.72;
+  max-width: min(42vw, 28rem);
+  line-height: 1.3;
+}
+
+.ga-btn {
+  appearance: none;
+  border: 1px solid var(--ga-line);
+  background: #fff;
+  color: var(--ga-ink);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.2;
+}
+
+.ga-btn:hover {
+  border-color: var(--ga-accent);
+}
+
+.ga-btn.primary {
+  background: var(--ga-accent);
+  border-color: var(--ga-accent);
+  color: #fff;
+}
+
+.ga-btn.danger {
+  color: var(--ga-danger);
+  border-color: rgba(163, 59, 59, 0.35);
+}
+
+.ga-btn.ghost {
+  background: transparent;
+}
+
+.ga-card-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
+  z-index: 5;
+}
+
+.place-card-link,
+.card,
+a.card,
+.souvenir-card,
+.combo-card,
+article.card {
+  position: relative;
+}
+
+.place-card-link {
+  position: relative;
+}
+
+.ga-fab-edit,
+.ga-fab-del {
+  appearance: none;
+  border: 1px solid var(--ga-line);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ga-ink);
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.ga-fab-del {
+  color: var(--ga-danger);
+}
+
+.ga-list-add {
+  margin: 12px 0 20px;
+}
+
+.ga-panel {
+  position: fixed;
+  top: var(--ga-bar-h);
+  right: 0;
+  bottom: 0;
+  width: min(440px, 100vw);
+  z-index: 10060;
+  background: #fff;
+  border-left: 1px solid var(--ga-line);
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  color: var(--ga-ink);
+  transform: translateX(105%);
+  transition: transform 0.22s ease;
+}
+
+.ga-panel.is-open {
+  transform: translateX(0);
+}
+
+.ga-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--ga-line);
+}
+
+.ga-panel-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  flex: 1;
+}
+
+.ga-panel-body {
+  flex: 1;
+  overflow: auto;
+  padding: 14px;
+}
+
+.ga-panel-body .field {
+  margin: 0 0 12px;
+}
+
+.ga-panel-body label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ga-panel-body input,
+.ga-panel-body select,
+.ga-panel-body textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--ga-line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.ga-panel-foot {
+  display: flex;
+  gap: 8px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--ga-line);
+}
+
+.ga-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 10080;
+  background: var(--ga-ink);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  max-width: min(90vw, 420px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ga-toast.error {
+  background: var(--ga-danger);
+}
+
+.ga-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10055;
+  background: rgba(20, 30, 26, 0.28);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.ga-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+  .ga-bar {
+    flex-wrap: wrap;
+    min-height: auto;
+  }
+  .ga-bar .ga-hide-sm {
+    display: none;
+  }
+  .ga-bar .ga-note {
+    display: none;
+  }
+}

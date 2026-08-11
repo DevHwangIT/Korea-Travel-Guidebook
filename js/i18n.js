@@ -1,8 +1,27 @@
 /**
  * Language switcher — loads local i18n messages and applies to [data-i18n] nodes.
+ *
+ * Languages are data-driven (GUIDE_LANGS). To add Chinese later:
+ *   1. Add { code: "zh", label: "中文" } to GUIDE_LANGS below
+ *   2. Create i18n/zh.json (copy ko.json and translate)
+ *   3. Add "zh" to i18n/build-bundle.py lang list and re-run it
+ *   4. No need to edit every page — .lang-switch is rendered from GUIDE_LANGS
+ *
+ * SEO: ?lang=ko|en|ja is read on load and kept in sync when the user switches
+ * language (for hreflang / shareable locale links). Primary storage remains localStorage.
  */
 (function () {
-  var SUPPORTED = ["ko", "en", "ja"];
+  /** @type {{ code: string, label: string }[]} */
+  var GUIDE_LANGS = [
+    { code: "ko", label: "KR" },
+    { code: "en", label: "EN" },
+    { code: "ja", label: "JP" },
+    // { code: "zh", label: "中文" },
+  ];
+
+  var SUPPORTED = GUIDE_LANGS.map(function (l) {
+    return l.code;
+  });
   var STORAGE_KEY = "korea-guide-lang";
   var cache = {};
 
@@ -21,13 +40,52 @@
     return scriptDir().replace(/\/js\/?$/, "/i18n/");
   }
 
+  function langFromQuery() {
+    try {
+      var q = new URLSearchParams(window.location.search).get("lang");
+      if (q) q = String(q).toLowerCase().split("-")[0];
+      if (SUPPORTED.indexOf(q) !== -1) return q;
+    } catch (e) {
+      /* ignore */
+    }
+    return null;
+  }
+
+  function syncLangQuery(lang) {
+    try {
+      var url = new URL(window.location.href);
+      if (url.searchParams.get("lang") === lang) return;
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+    } catch (e) {
+      /* ignore (file:// etc.) */
+    }
+  }
+
   function getLang() {
-    var saved = localStorage.getItem(STORAGE_KEY);
+    var fromQuery = langFromQuery();
+    if (fromQuery) {
+      try {
+        localStorage.setItem(STORAGE_KEY, fromQuery);
+      } catch (e) {
+        /* ignore */
+      }
+      return fromQuery;
+    }
+    var saved = null;
+    try {
+      saved = localStorage.getItem(STORAGE_KEY);
+    } catch (e2) {
+      saved = null;
+    }
     if (SUPPORTED.indexOf(saved) !== -1) return saved;
     var nav = (navigator.language || "ko").toLowerCase();
-    if (nav.indexOf("ja") === 0) return "ja";
-    if (nav.indexOf("en") === 0) return "en";
-    return "ko";
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      var code = SUPPORTED[i];
+      if (nav === code || nav.indexOf(code + "-") === 0) return code;
+    }
+    if (nav.indexOf("zh") === 0 && SUPPORTED.indexOf("zh") !== -1) return "zh";
+    return SUPPORTED[0] || "ko";
   }
 
   function lookup(obj, path) {
@@ -37,7 +95,32 @@
     }, obj);
   }
 
+  /** Rebuild every .lang-switch from GUIDE_LANGS so pages need not hardcode buttons. */
+  function renderLangSwitchers(lang) {
+    document.querySelectorAll("nav.lang-switch, .lang-switch").forEach(function (nav) {
+      if (nav.getAttribute("data-lang-static") === "1") return;
+      var html = GUIDE_LANGS.map(function (l) {
+        var on = l.code === lang;
+        return (
+          '<button type="button" data-set-lang="' +
+          l.code +
+          '"' +
+          (on ? ' class="is-active" aria-pressed="true"' : ' aria-pressed="false"') +
+          ">" +
+          l.label +
+          "</button>"
+        );
+      }).join("");
+      nav.innerHTML = html;
+      if (!nav.getAttribute("aria-label")) {
+        nav.setAttribute("aria-label", "Language");
+      }
+    });
+  }
+
   function apply(dict, lang) {
+    renderLangSwitchers(lang);
+
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
       var val = lookup(dict, key);
@@ -47,7 +130,11 @@
         }
         return;
       }
-      if (el.closest(".tip")) el.closest(".tip").hidden = false;
+      if (el.closest(".tip")) {
+        if (!el.closest(".tip").hasAttribute("data-shop-body-hides-tip")) {
+          el.closest(".tip").hidden = false;
+        }
+      }
       if (el.hasAttribute("data-i18n-html")) {
         el.innerHTML = String(val);
       } else {
@@ -76,7 +163,7 @@
           : String(pageTitle) + " | Korea Travel Guide";
     }
 
-    document.documentElement.lang = lang === "ja" ? "ja" : lang === "en" ? "en" : "ko";
+    document.documentElement.lang = lang;
 
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
       var on = btn.getAttribute("data-set-lang") === lang;
@@ -85,9 +172,17 @@
     });
   }
 
-  function load(lang) {
+  function notifyLang(lang) {
+    document.dispatchEvent(
+      new CustomEvent("guide:langchange", { detail: { lang: lang } })
+    );
+  }
+
+  function load(lang, opts) {
+    var silent = opts && opts.silent;
     function done(dict) {
       apply(dict, lang);
+      if (!silent) notifyLang(lang);
       return dict;
     }
 
@@ -117,9 +212,14 @@
 
   function setLang(lang) {
     if (SUPPORTED.indexOf(lang) === -1) return;
-    localStorage.setItem(STORAGE_KEY, lang);
-    load(lang).then(function () {
-      document.dispatchEvent(new CustomEvent("guide:langchange", { detail: { lang: lang } }));
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {
+      /* ignore */
+    }
+    syncLangQuery(lang);
+    load(lang, { silent: true }).then(function () {
+      notifyLang(lang);
     });
   }
 
@@ -127,6 +227,8 @@
     setLang: setLang,
     getLang: getLang,
     load: load,
+    languages: GUIDE_LANGS.slice(),
+    supported: SUPPORTED.slice(),
   };
 
   document.addEventListener("click", function (e) {
@@ -137,7 +239,11 @@
   });
 
   function init() {
-    load(getLang());
+    var lang = getLang();
+    // Persist discoverable ?lang= for SEO / share links (no-op on file://)
+    syncLangQuery(lang);
+    renderLangSwitchers(lang);
+    load(lang);
   }
 
   if (document.readyState === "loading") {

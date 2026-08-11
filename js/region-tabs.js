@@ -1,8 +1,9 @@
-/* Generic + food-page tab switcher */
+/* Generic tab / select switcher for guidebook sections */
 (function () {
   function activate(root, name, kind) {
     var buttons = root.querySelectorAll("[data-" + kind + "-tab]");
     var panels = root.querySelectorAll("[data-" + kind + "-panel]");
+    var select = root.querySelector("[data-" + kind + "-select]");
     buttons.forEach(function (btn) {
       var on = btn.getAttribute("data-" + kind + "-tab") === name;
       btn.classList.toggle("is-active", on);
@@ -13,32 +14,45 @@
       panel.classList.toggle("is-active", on);
       panel.hidden = !on;
     });
+    if (select && select.value !== name) {
+      select.value = name;
+    }
   }
 
   function bind(root, kind) {
     var buttons = root.querySelectorAll("[data-" + kind + "-tab]");
-    if (!buttons.length) return;
+    var select = root.querySelector("[data-" + kind + "-select]");
+    if (!buttons.length && !select) return;
+
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         activate(root, btn.getAttribute("data-" + kind + "-tab"), kind);
       });
     });
-    var first = buttons[0].getAttribute("data-" + kind + "-tab");
-    activate(root, first, kind);
+    if (select) {
+      select.addEventListener("change", function () {
+        if (select.value) activate(root, select.value, kind);
+      });
+    }
+
+    var first = select
+      ? select.value || (select.options[0] && select.options[0].value)
+      : buttons[0] && buttons[0].getAttribute("data-" + kind + "-tab");
+    if (first) activate(root, first, kind);
   }
 
   function bindRoot(root, kinds) {
     kinds.forEach(function (kind) {
       bind(root, kind);
-      root.querySelectorAll("[data-" + kind + "-panel] [data-tabs]").forEach(function (nested) {
-        // nested handled separately below
-      });
     });
     root.querySelectorAll("[data-tabs]").forEach(function (nested) {
       if (nested === root) return;
-      var nestedKinds = (nested.getAttribute("data-tabs") || "").split(",").map(function (k) {
-        return k.trim();
-      }).filter(Boolean);
+      var nestedKinds = (nested.getAttribute("data-tabs") || "")
+        .split(",")
+        .map(function (k) {
+          return k.trim();
+        })
+        .filter(Boolean);
       nestedKinds.forEach(function (k) {
         bind(nested, k);
       });
@@ -46,11 +60,13 @@
   }
 
   document.querySelectorAll("[data-tabs]").forEach(function (root) {
-    // only top-level data-tabs (not nested inside another data-tabs)
     if (root.parentElement && root.parentElement.closest("[data-tabs]")) return;
-    var kinds = (root.getAttribute("data-tabs") || "").split(",").map(function (k) {
-      return k.trim();
-    }).filter(Boolean);
+    var kinds = (root.getAttribute("data-tabs") || "")
+      .split(",")
+      .map(function (k) {
+        return k.trim();
+      })
+      .filter(Boolean);
     if (!kinds.length) return;
     bindRoot(root, kinds);
   });

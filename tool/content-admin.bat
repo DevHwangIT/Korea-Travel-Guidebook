@@ -15,7 +15,12 @@ if not exist "%SCRIPT%" (
   exit /b 1
 )
 
-echo [Content Admin] http://127.0.0.1:8765
+echo [Content Admin] CMS: http://127.0.0.1:8765/
+echo [Content Admin] Viewer overlay: http://127.0.0.1:8765/viewer
+echo.
+echo ※ Open http://127.0.0.1:8765/ (left sidebar = admin CMS).
+echo ※ Do NOT use file:// index.html or expect index.html?admin=1 to be the full CMS.
+echo ※ If an old server window is still open, press Ctrl+C there first, then re-run.
 echo Stop: Ctrl+C
 echo.
 

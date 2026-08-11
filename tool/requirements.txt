@@ -1,0 +1,4 @@
+# Optional — improves zero-config KO→EN/JA translation when no API key is set.
+# Preferred when env is set (no pip needed for these): DEEPL_API_KEY,
+# GOOGLE_TRANSLATE_API_KEY, or OPENAI_API_KEY.
+deep-translator>=1.11.4

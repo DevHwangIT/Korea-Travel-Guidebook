@@ -16,7 +16,6 @@ VOICE = "ko-KR-SunHiNeural"
 # Phrases whose Korean text changed or are newly added — always regenerate.
 FORCE = {
     "excuse-me",
-    "tax-free",
     "other-color",
     "to-airport",
     "how-to-go",

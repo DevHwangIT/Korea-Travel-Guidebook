@@ -60,6 +60,10 @@
     document.querySelectorAll("[data-metro-line]").forEach(function (btn) {
       btn.classList.toggle("is-active", btn.getAttribute("data-metro-line") === activeLine);
     });
+    var metroSelect = document.querySelector("[data-metro-select]");
+    if (metroSelect && metroSelect.value !== activeLine) {
+      metroSelect.value = activeLine;
+    }
 
     if (activeLine !== "all") setLineDetail(activeLine);
     else {
@@ -137,6 +141,12 @@
         highlight(btn.getAttribute("data-metro-line"));
       });
     });
+    var metroSelect = document.querySelector("[data-metro-select]");
+    if (metroSelect) {
+      metroSelect.addEventListener("change", function () {
+        if (metroSelect.value) highlight(metroSelect.value);
+      });
+    }
   }
 
   // When switching to subway tab, invalidate map size (hidden panels break Leaflet sizing)

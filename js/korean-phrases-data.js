@@ -194,13 +194,6 @@ window.KOREAN_PHRASES = {
       "ja": "高すぎます"
     },
     {
-      "id": "tax-free",
-      "ko": "택스프리 돼요?",
-      "rom": "Taekseupeuri dwaeyo?",
-      "en": "Is tax-free available?",
-      "ja": "免税できますか？"
-    },
-    {
       "id": "other-color",
       "ko": "다른 색깔 있어요?",
       "rom": "Dareun saekkkal isseoyo?",
