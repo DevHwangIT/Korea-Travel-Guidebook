@@ -33,11 +33,17 @@ a:hover {
 }
 
 /* —— Main menu —— */
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px 18px;
-  max-width: 720px;
+  gap: 18px 22px;
+  max-width: 920px;
   margin: 0 auto;
   text-align: left;
 }
@@ -45,9 +51,10 @@ a:hover {
 .menu-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 8px 10px;
-  border-radius: 14px;
+  gap: 18px;
+  min-height: 108px;
+  padding: 14px 16px;
+  border-radius: 18px;
   color: inherit;
   transition: background 0.18s ease, transform 0.18s ease;
 }
@@ -59,10 +66,10 @@ a:hover {
 }
 
 .menu-item img {
-  width: 42%;
-  max-width: 150px;
+  width: 46%;
+  max-width: 196px;
   margin: 0;
-  border-radius: 12px;
+  border-radius: 14px;
   flex-shrink: 0;
   transition: transform 0.2s ease;
 }
@@ -74,7 +81,7 @@ a:hover {
 .menu-item__title {
   flex: 1;
   min-width: 0;
-  font-size: 1.05rem;
+  font-size: 1.28rem;
   font-weight: 700;
   line-height: 1.35;
   color: #1f2a28;
@@ -1391,11 +1398,13 @@ html:has(body.places-map-app) {
 
 .places-map-legend {
   position: absolute;
-  left: 12px;
-  bottom: 16px;
-  z-index: 500;
+  left: max(12px, env(safe-area-inset-left));
+  top: 58px;
+  bottom: auto;
+  z-index: 15;
   margin: 0;
   padding: 10px 12px;
+  max-width: min(46vw, 180px);
   border-radius: 12px;
   background: rgba(8, 18, 28, 0.78);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1510,7 +1519,7 @@ html:has(body.places-map-app) {
 
 .places-map-panel {
   position: absolute;
-  z-index: 25;
+  z-index: 28;
   left: 12px;
   right: 12px;
   bottom: max(12px, env(safe-area-inset-bottom));
@@ -1676,7 +1685,13 @@ html:has(body.places-map-app) {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 4px;
+  margin-top: 10px;
+  padding: 10px 0 2px;
+  border-top: 1px solid rgba(22, 48, 40, 0.1);
+  background: linear-gradient(180deg, rgba(236, 244, 240, 0.94) 0%, rgba(236, 244, 240, 0.99) 40%);
+  position: sticky;
+  bottom: -2px;
+  z-index: 2;
 }
 
 .places-map-panel__expand,
@@ -1684,7 +1699,7 @@ html:has(body.places-map-app) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px;
+  margin-top: 0;
   padding: 10px 14px;
   border: 0;
   border-radius: 12px;
@@ -2093,21 +2108,28 @@ html:has(body.places-map-app) {
   }
 
   .places-map-legend {
-    left: 20px;
-    bottom: 24px;
+    left: max(20px, env(safe-area-inset-left));
+    top: 64px;
+    bottom: auto;
+    max-width: 200px;
   }
 }
 
 @media (max-width: 819px) {
   .places-map-legend {
-    left: 10px;
+    left: max(10px, env(safe-area-inset-left));
+    top: 54px;
     bottom: auto;
-    top: 58px;
     padding: 8px 10px;
+    max-width: min(42vw, 156px);
   }
 
   .places-map-legend__title {
     margin-bottom: 6px;
+  }
+
+  .places-map-panel {
+    z-index: 28;
   }
 
   .places-map-topbar__brand {
@@ -3064,21 +3086,22 @@ a.partner-strip__slot:focus-visible {
 
   .menu-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 14px;
   }
 
   .menu-item {
-    gap: 12px;
-    padding: 6px 4px;
+    gap: 16px;
+    min-height: 96px;
+    padding: 12px 12px;
   }
 
   .menu-item img {
-    width: 38%;
-    max-width: 120px;
+    width: 42%;
+    max-width: 148px;
   }
 
   .menu-item__title {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   .card-grid {

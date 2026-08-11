@@ -24,7 +24,7 @@ if str(TOOL_DIR) not in sys.path:
     sys.path.insert(0, str(TOOL_DIR))
 
 from lib import content, places, sections  # noqa: E402
-from lib.cache_bust import read_version  # noqa: E402
+from lib.cache_bust import bump_asset_version, read_version  # noqa: E402
 from lib.images import (  # noqa: E402
     MAX_UPLOAD_BYTES,
     append_menu_uploads,
@@ -53,9 +53,35 @@ HOST = "127.0.0.1"
 PORT = 8765
 MAX_BODY_BYTES = MAX_UPLOAD_BYTES * 12 + 512 * 1024
 
+# Shown after successful CMS saves so the open viewer tab is refreshed.
+VIEW_REFRESH_HINT = "강력 새로고침(Ctrl+F5) 또는 뷰어 다시 열기"
+
 
 def h(text: object) -> str:
     return html.escape("" if text is None else str(text), quote=True)
+
+
+def save_ok_message(base: str = "저장됨") -> str:
+    """Primary toast line: saved + how to see updates immediately."""
+    return f"{base} — {VIEW_REFRESH_HINT}"
+
+
+def refresh_public_assets(notes: list[str] | None = None) -> list[str]:
+    """Bump SITE_ASSET_VERSION + HTML ?v= after content/media changes.
+
+    i18n saves already call build-bundle; this forces browsers (and GitHub Pages
+    later) to fetch the new messages.js / CSS / JS instead of a stale ?v=.
+    """
+    out = list(notes or [])
+    try:
+        summary = bump_asset_version()
+        out.append(
+            f"캐시 버전 {summary['version']} "
+            f"(HTML {summary['files_updated']}개)"
+        )
+    except Exception as exc:  # noqa: BLE001
+        out.append(f"캐시 버전 자동 갱신 실패: {exc}")
+    return out
 
 
 REGION_OPTIONS = (
@@ -346,7 +372,7 @@ def layout(
         </div>
       </div>
       {"".join(nav_chunks)}
-      <div class="sidebar-foot">이 컴퓨터에서만 열립니다 · 저장하면 바로 반영돼요</div>
+      <div class="sidebar-foot">이 컴퓨터에서만 열림 · 저장 후 Ctrl+F5 또는 뷰어 다시 열기</div>
     </aside>
     <div class="main-wrap">
       <div class="topbar">
@@ -375,7 +401,7 @@ def layout(
     }});
     var stack = document.getElementById("toast-stack");
     if (stack) {{
-      setTimeout(function () {{ stack.remove(); }}, 5500);
+      setTimeout(function () {{ stack.remove(); }}, 9000);
     }}
     /* Required fields inside closed <details> used to fail submit with no visible error. */
     document.querySelectorAll("form").forEach(function (form) {{
@@ -1212,12 +1238,17 @@ class AdminHandler(BaseHTTPRequestHandler):
                     force_translate=force_tr,
                 )
                 notes.extend(body_notes)
+                notes = refresh_public_assets(notes)
                 if path.startswith("/api/"):
-                    self._send_json({"ok": True, "message": "저장했어요", "notes": notes})
+                    self._send_json({
+                        "ok": True,
+                        "message": save_ok_message("저장됨"),
+                        "notes": notes,
+                    })
                     return
                 self._redirect(
                     f"/place/edit?slug={content.validate_slug(form.get('slug',''))}",
-                    flash=save_flash("저장했어요", notes, tr_status),
+                    flash=save_flash(save_ok_message("저장됨"), notes, tr_status),
                 )
                 return
 
@@ -1232,11 +1263,12 @@ class AdminHandler(BaseHTTPRequestHandler):
                     body=body_blocks,
                 )
                 notes.extend(body_notes)
+                notes = refresh_public_assets(notes)
                 slug = content.validate_slug(form["slug"])
                 if path.startswith("/api/"):
                     self._send_json({
                         "ok": True,
-                        "message": "새 명소를 만들었어요",
+                        "message": save_ok_message("새 명소를 만들었어요"),
                         "slug": slug,
                         "href": f"/pages/transportation/places/{slug}/index.html?admin=1",
                         "notes": notes,
@@ -1244,7 +1276,9 @@ class AdminHandler(BaseHTTPRequestHandler):
                     return
                 self._redirect(
                     f"/place/edit?slug={slug}",
-                    flash=save_flash("새 명소를 만들었어요", notes, tr_status),
+                    flash=save_flash(
+                        save_ok_message("새 명소를 만들었어요"), notes, tr_status
+                    ),
                 )
                 return
 
@@ -1253,10 +1287,18 @@ class AdminHandler(BaseHTTPRequestHandler):
                     form.get("slug", ""),
                     delete_files=form.get("delete_files", "1") != "0",
                 )
+                notes = refresh_public_assets(notes)
                 if path.startswith("/api/"):
-                    self._send_json({"ok": True, "message": "삭제했어요", "notes": notes})
+                    self._send_json({
+                        "ok": True,
+                        "message": save_ok_message("삭제했어요"),
+                        "notes": notes,
+                    })
                     return
-                self._redirect("/places", flash=friendly_flash("삭제했어요", notes))
+                self._redirect(
+                    "/places",
+                    flash=friendly_flash(save_ok_message("삭제했어요"), notes),
+                )
                 return
 
             if path == "/dish/save":
@@ -1284,9 +1326,10 @@ class AdminHandler(BaseHTTPRequestHandler):
                     dish_image_targets(slug, kind), files
                 )
                 notes.extend(upload_notes or ["이미지: 새로 올린 파일 없음 (기존 유지)"])
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/dish/edit?kind={kind}&slug={slug}",
-                    flash=save_flash("저장했어요", notes, tr_status),
+                    flash=save_flash(save_ok_message("저장됨"), notes, tr_status),
                 )
                 return
 
@@ -1304,9 +1347,12 @@ class AdminHandler(BaseHTTPRequestHandler):
                     dish_image_targets(slug, kind), files
                 )
                 notes.extend(upload_notes or ["이미지: 업로드 없음 — 수정 화면에서 올릴 수 있습니다"])
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/dish/edit?kind={kind}&slug={slug}",
-                    flash=save_flash("새 글을 만들었어요", notes, tr_status),
+                    flash=save_flash(
+                        save_ok_message("새 글을 만들었어요"), notes, tr_status
+                    ),
                 )
                 return
 
@@ -1316,9 +1362,10 @@ class AdminHandler(BaseHTTPRequestHandler):
                     form.get("slug", ""),
                     delete_images=form.get("delete_images") == "1",
                 )
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/dishes?kind={form.get('kind','meals')}",
-                    flash=friendly_flash("삭제했어요", notes),
+                    flash=friendly_flash(save_ok_message("삭제했어요"), notes),
                 )
                 return
 
@@ -1362,9 +1409,10 @@ class AdminHandler(BaseHTTPRequestHandler):
                     notes.extend(sync_shop_page_menu_gallery(kind, dish_slug, slug))
                 notes.extend(sync_shop_page_body(kind, dish_slug, slug))
                 notes.extend(sync_shop_page_visual(kind, dish_slug, slug))
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/shop/edit?slug={slug}",
-                    flash=save_flash("저장했어요", notes, tr_status),
+                    flash=save_flash(save_ok_message("저장됨"), notes, tr_status),
                 )
                 return
 
@@ -1406,9 +1454,12 @@ class AdminHandler(BaseHTTPRequestHandler):
                     notes.extend(sync_shop_page_menu_gallery(kind, dish_slug, slug))
                 notes.extend(sync_shop_page_body(kind, dish_slug, slug))
                 notes.extend(sync_shop_page_visual(kind, dish_slug, slug))
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/shop/edit?slug={slug}",
-                    flash=save_flash("새 가게를 등록했어요", notes, tr_status),
+                    flash=save_flash(
+                        save_ok_message("새 가게를 등록했어요"), notes, tr_status
+                    ),
                 )
                 return
 
@@ -1417,7 +1468,11 @@ class AdminHandler(BaseHTTPRequestHandler):
                     form.get("slug", ""),
                     delete_images=form.get("delete_images") == "1",
                 )
-                self._redirect("/shops", flash=friendly_flash("삭제했어요", notes))
+                notes = refresh_public_assets(notes)
+                self._redirect(
+                    "/shops",
+                    flash=friendly_flash(save_ok_message("삭제했어요"), notes),
+                )
                 return
 
             if path == "/shop/menu/delete":
@@ -1430,7 +1485,11 @@ class AdminHandler(BaseHTTPRequestHandler):
                 idx = int(form.get("index") or "0")
                 notes = delete_menu_image_at(kind, dish, slug, idx)
                 notes.extend(sync_shop_page_menu_gallery(kind, dish, slug))
-                self._redirect(f"/shop/edit?slug={slug}", flash=friendly_flash("사진을 지웠어요", notes))
+                notes = refresh_public_assets(notes)
+                self._redirect(
+                    f"/shop/edit?slug={slug}",
+                    flash=friendly_flash(save_ok_message("사진을 지웠어요"), notes),
+                )
                 return
 
             if path == "/shop/menu/reorder":
@@ -1446,7 +1505,11 @@ class AdminHandler(BaseHTTPRequestHandler):
                 notes.extend(sync_shop_page_menu_gallery(kind, dish, slug))
                 if not notes:
                     notes = ["순서 변경 없음"]
-                self._redirect(f"/shop/edit?slug={slug}", flash=friendly_flash("순서를 바꿨어요", notes))
+                notes = refresh_public_assets(notes)
+                self._redirect(
+                    f"/shop/edit?slug={slug}",
+                    flash=friendly_flash(save_ok_message("순서를 바꿨어요"), notes),
+                )
                 return
 
             if path == "/section/save":
@@ -1508,9 +1571,10 @@ class AdminHandler(BaseHTTPRequestHandler):
                         )
                     i18n_store.save_all(bundle)
                     notes.append(i18n_store.build_bundle())
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/section?id={sid}",
-                    flash=save_flash("저장했어요", notes, tr_status),
+                    flash=save_flash(save_ok_message("저장됨"), notes, tr_status),
                     group=group,
                 )
                 return
@@ -1548,32 +1612,31 @@ class AdminHandler(BaseHTTPRequestHandler):
                     is_new=is_new,
                     force_translate=force_tr,
                 )
+                notes = refresh_public_assets(notes)
                 self._redirect(
                     f"/phrase/edit?cat={cat}&id={pid}",
-                    flash=save_flash("저장했어요", notes, tr_status),
+                    flash=save_flash(save_ok_message("저장됨"), notes, tr_status),
                 )
                 return
 
             if path == "/phrase/delete":
                 cat = form.get("cat", "daily")
                 notes = sections.delete_phrase_item(cat, form.get("id", ""))
-                self._redirect(f"/phrases?cat={cat}", flash=friendly_flash("삭제했어요", notes))
+                notes = refresh_public_assets(notes)
+                self._redirect(
+                    f"/phrases?cat={cat}",
+                    flash=friendly_flash(save_ok_message("삭제했어요"), notes),
+                )
                 return
 
             if path == "/version/run":
-                from datetime import datetime
-
-                from lib.cache_bust import apply_cache_bust, write_version
-
-                version = datetime.now().strftime("%Y%m%d%H%M%S")
-                write_version(version)
-                summary = apply_cache_bust(version)
+                summary = bump_asset_version()
                 self._redirect(
                     "/version",
                     flash=friendly_flash(
-                        "사이트 새로고침을 끝냈어요",
+                        save_ok_message("사이트 새로고침을 끝냈어요"),
                         [
-                            f"버전 {version}",
+                            f"버전 {summary['version']}",
                             f"HTML {summary['files_updated']}개 갱신",
                         ],
                     ),
@@ -1582,7 +1645,11 @@ class AdminHandler(BaseHTTPRequestHandler):
 
             if path == "/tools/patch-menus/run":
                 notes = patch_all_shop_menu_galleries()
-                self._redirect("/tools/patch-menus", flash=friendly_flash("메뉴 정리를 끝냈어요", notes))
+                notes = refresh_public_assets(notes)
+                self._redirect(
+                    "/tools/patch-menus",
+                    flash=friendly_flash(save_ok_message("메뉴 정리를 끝냈어요"), notes),
+                )
                 return
 
             if path == "/tools/migrate-body/run":
@@ -1592,7 +1659,11 @@ class AdminHandler(BaseHTTPRequestHandler):
                     notes = content_body.migrate_all_section_bodies(force=force)
                 else:
                     notes = content.migrate_all_shop_bodies(force=force)
-                self._redirect("/tools/migrate-body", flash=friendly_flash("본문 정리를 끝냈어요", notes))
+                notes = refresh_public_assets(notes)
+                self._redirect(
+                    "/tools/migrate-body",
+                    flash=friendly_flash(save_ok_message("본문 정리를 끝냈어요"), notes),
+                )
                 return
 
             self._send(
@@ -1857,7 +1928,8 @@ class AdminHandler(BaseHTTPRequestHandler):
             <a href="/viewer">사이트 화면에서 보기</a>도 가능합니다.</p>
         </div>
         {"".join(sections_html)}
-        <p class="dash-foot muted">배포 전에 <a href="/version">사이트 새로고침</a>을 한 번 눌러 주세요. · 현재 버전 {h(ver)}</p>
+        <p class="dash-foot muted">글 저장 시 캐시 버전이 자동으로 올라갑니다. 화면이 안 바뀌면 <strong>Ctrl+F5</strong> 또는
+          <a href="/viewer">뷰어</a>를 다시 여세요. · 현재 버전 {h(ver)}</p>
         """
         return layout(
             "대시보드",
@@ -2830,7 +2902,9 @@ class AdminHandler(BaseHTTPRequestHandler):
             ver = "(없음)"
         body = f"""
         <h1>사이트 새로고침</h1>
-        <p class="page-lead">배포 전에 한 번 누르면, 방문자가 예전 화면을 보지 않도록 갱신합니다.</p>
+        <p class="page-lead">글·이미지를 저장하면 캐시 버전이 자동으로 올라갑니다.
+          여기서는 수동으로 한 번 더 올릴 수 있습니다. 반영이 안 보이면
+          <strong>Ctrl+F5</strong> 또는 <a href="/viewer">뷰어</a>를 다시 여세요.</p>
         <form class="card" method="post" action="/version/run">
           <p class="muted" style="margin:0 0 .75rem">현재 버전: <strong>{h(ver)}</strong></p>
           <div class="row" style="margin-top:0">
@@ -2921,6 +2995,7 @@ def main() -> int:
     print(f"관리자(CMS): {url}")
     print(f"사이트 화면 모드: http://{HOST}:{PORT}/viewer")
     print("※ 반드시 이 창을 켠 채 브라우저에서 위 주소를 여세요. 예전에 켜 둔 서버가 있으면 종료 후 다시 실행하세요.")
+    print("※ 저장 후 공개 화면이 안 바뀌면 Ctrl+F5, 또는 /viewer 를 다시 여세요. file:// 로 열지 마세요.")
     print("※ GitHub Pages에는 관리자가 없습니다 (로컬 전용).")
     print(f"프로젝트 루트: {ROOT}")
     print("종료: Ctrl+C")

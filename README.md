@@ -94,7 +94,12 @@ Korea-Travel-Guidebook/
 
 ## 콘텐츠 관리 툴
 
-`tool/content-admin.bat` 실행 → 브라우저에서 `http://127.0.0.1:8765`. 음식·가게의 KO/EN/JA 문구·이미지 업로드·기존 가게를 음식 하위로 복수 연결할 수 있습니다. 저장 시 `i18n/build-bundle.py`가 자동 실행됩니다. 큰 배포 전에는 버전 툴도 한 번 실행하세요.
+`tool/content-admin.bat` 실행 → 브라우저에서 `http://127.0.0.1:8765`.
+
+- 음식·가게 KO/EN/JA · 이미지 업로드 · 가게 연결 가능
+- **저장 시** `i18n/build-bundle.py`(messages.js)와 캐시 버전(`SITE_ASSET_VERSION` + HTML `?v=`)이 **자동** 실행됩니다
+- 반영 확인: **http://127.0.0.1:8765/viewer** (또는 해당 페이지 URL)에서 **Ctrl+F5**. `file://`로 `index.html`을 열면 예전 화면이 남을 수 있습니다
+- 자세한 안내: `tool/README-admin.md`
 
 ## 주요 스크립트
 

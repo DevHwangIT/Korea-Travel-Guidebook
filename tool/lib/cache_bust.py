@@ -8,6 +8,7 @@ Does not modify external CDN URLs (http/https/protocol-relative).
 from __future__ import annotations
 
 import re
+from datetime import datetime
 from pathlib import Path
 
 from .paths import ROOT, SKIP_DIR_NAMES, VERSION_FILE
@@ -155,6 +156,31 @@ def apply_cache_bust(version: str | None = None, root: Path | None = None) -> di
         "replacements": total_attr_changes,
         "files": files,
     }
+
+
+def new_asset_version() -> str:
+    return datetime.now().strftime("%Y%m%d%H%M%S")
+
+
+def bump_asset_version(root: Path | None = None) -> dict:
+    """Write a fresh SITE_ASSET_VERSION and apply ?v= to all HTML.
+
+    Used by update-version.py and by the local CMS after content/media saves
+    so viewers pick up rebuilt i18n/messages.js and other assets.
+    """
+    old = None
+    try:
+        old = read_version()
+    except SystemExit:
+        pass
+    version = new_asset_version()
+    # Avoid colliding with a bump in the same second
+    if old == version:
+        version = str(int(version) + 1) if version.isdigit() else version + "1"
+    write_version(version)
+    summary = apply_cache_bust(version, root=root)
+    summary["old_version"] = old
+    return summary
 
 
 def main() -> int:
