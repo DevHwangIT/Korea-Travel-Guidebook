@@ -1,13 +1,13 @@
 /**
  * Language switcher — loads local i18n messages and applies to [data-i18n] nodes.
  *
- * Languages are data-driven (GUIDE_LANGS). To add Chinese later:
- *   1. Add { code: "zh", label: "中文" } to GUIDE_LANGS below
- *   2. Create i18n/zh.json (copy ko.json and translate)
- *   3. Add "zh" to i18n/build-bundle.py lang list and re-run it
- *   4. No need to edit every page — .lang-switch is rendered from GUIDE_LANGS
+ * Languages are data-driven (GUIDE_LANGS): ko / en / ja / zh (中文).
+ * To add another locale later:
+ *   1. Add { code, label } to GUIDE_LANGS below
+ *   2. Create i18n/{code}.json and add code to i18n/build-bundle.py LANGS
+ *   3. Re-run build-bundle — .lang-switch is rendered from GUIDE_LANGS site-wide
  *
- * SEO: ?lang=ko|en|ja is read on load and kept in sync when the user switches
+ * SEO: ?lang=ko|en|ja|zh is read on load and kept in sync when the user switches
  * language (for hreflang / shareable locale links). Primary storage remains localStorage.
  */
 (function () {
@@ -16,7 +16,7 @@
     { code: "ko", label: "KR" },
     { code: "en", label: "EN" },
     { code: "ja", label: "JP" },
-    // { code: "zh", label: "中文" },
+    { code: "zh", label: "中文" },
   ];
 
   var SUPPORTED = GUIDE_LANGS.map(function (l) {

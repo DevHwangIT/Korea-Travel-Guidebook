@@ -199,6 +199,26 @@ a:hover {
   color: #b9d4cf;
 }
 
+.sidebar-note {
+  margin: 0.75rem 0.85rem 0;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d7e8e3;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  display: grid;
+  gap: 0.25rem;
+}
+.sidebar-note strong {
+  font-size: 0.78rem;
+  color: #fff;
+}
+.sidebar-note code {
+  font-size: 0.68rem;
+  color: #9fd4c8;
+}
 .sidebar-foot {
   margin-top: auto;
   padding: 1rem 1.1rem 1.2rem;

@@ -416,64 +416,229 @@
   }
 
   function syncShopPlaceVisual(lang) {
-    var panels = document.querySelectorAll("[data-shop-place-panel]");
-    for (var i = 0; i < panels.length; i++) {
-      var panel = panels[i];
+    var details = document.querySelectorAll("[data-shop-detail], [data-shop-place-panel]");
+    for (var i = 0; i < details.length; i++) {
+      var panel = details[i];
       var slug = panel.getAttribute("data-shop-slug") || "";
       var r = slug ? lookupRestaurant(slug, lang) : null;
       var placeUrl = r && String(r.placeUrl || "").trim();
+      var openUrl =
+        (r && String(r.placeUrl || r.mapsUrl || "").trim()) || "";
       var embed = r && String(r.mapsEmbedUrl || "").trim();
-      var openUrl = r && String(r.mapsUrl || placeUrl || "").trim();
-      var previewTitle = r && String(r.previewTitle || "").trim();
       var previewImage = r && String(r.previewImage || "").trim();
-      // Prefer embed panel when a place link or embed URL was stored at admin save time
-      var preferEmbed = !!(placeUrl || embed);
-      panel.hidden = !preferEmbed;
+      var phone = r && String(r.phone || "").trim();
+      var hours = r && String(r.hours || "").trim();
+      var location = r && String(r.location || "").trim();
+      var name = r && String(r.name || "").trim();
+      var about = r && String(r.about || "").trim();
+      var sourceType = r && String(r.sourceType || "").trim().toLowerCase();
+      if (!sourceType) {
+        if (placeUrl || embed) sourceType = "google";
+        else sourceType = "custom";
+      }
+      panel.hidden = false;
+      panel.setAttribute("data-source", sourceType);
 
-      var mapWrap = panel.querySelector(".place-map-wrap");
-      var iframe = panel.querySelector("iframe.shop-map-embed, iframe.place-map-embed");
-      if (mapWrap) mapWrap.hidden = !embed;
+      var nameRow = panel.querySelector('[data-shop-info-row="name"]');
+      if (nameRow) {
+        nameRow.hidden = !name;
+        var nameDd = panel.querySelector("[data-shop-info-name]");
+        if (nameDd && name) nameDd.textContent = name;
+      }
+
+      var locRow = panel.querySelector('[data-shop-info-row="location"]');
+      if (locRow) locRow.hidden = !location;
+
+      var phoneRow = panel.querySelector('[data-shop-info-row="phone"]');
+      if (phoneRow) {
+        phoneRow.hidden = !phone;
+        var phoneDd = phoneRow.querySelector("dd");
+        if (phoneDd && phone) phoneDd.textContent = phone;
+      }
+
+      var hoursRow = panel.querySelector('[data-shop-info-row="hours"]');
+      if (hoursRow) {
+        hoursRow.hidden = !hours;
+        var hoursDd = hoursRow.querySelector("dd");
+        if (hoursDd && hours) hoursDd.textContent = hours;
+      }
+
+      var aboutRow = panel.querySelector('[data-shop-info-row="about"]');
+      if (aboutRow) {
+        aboutRow.hidden = !about;
+        var aboutDd =
+          panel.querySelector("[data-shop-info-about]") ||
+          (aboutRow && aboutRow.querySelector("dd"));
+        if (aboutDd && about) aboutDd.textContent = about;
+      }
+
+      var placeRow = panel.querySelector('[data-shop-info-row="place"]');
+      var placeLink = panel.querySelector("[data-shop-place-link]");
+      if (placeRow) placeRow.hidden = !openUrl;
+      if (placeLink) {
+        if (openUrl) {
+          placeLink.setAttribute("href", openUrl);
+          placeLink.removeAttribute("aria-disabled");
+        } else {
+          placeLink.setAttribute("href", "#");
+          placeLink.setAttribute("aria-disabled", "true");
+        }
+      }
+
+      // Legacy card markup (older HTML) — keep minimal wiring
+      var card = panel.querySelector("[data-shop-place-card]");
+      if (card) {
+        if (openUrl) {
+          card.setAttribute("href", openUrl);
+          card.removeAttribute("aria-disabled");
+        } else {
+          card.setAttribute("href", "#");
+          card.setAttribute("aria-disabled", "true");
+        }
+      }
+
+      var mapSection = panel.querySelector("[data-shop-map]");
+      var iframe = panel.querySelector(
+        "iframe.shop-map-embed, iframe.place-map-embed"
+      );
+      var showMap = !!embed;
+      if (mapSection) mapSection.hidden = !showMap;
       if (iframe) {
         if (embed) {
-          if (iframe.getAttribute("src") !== embed) iframe.setAttribute("src", embed);
+          if (iframe.getAttribute("src") !== embed) {
+            iframe.setAttribute("src", embed);
+          }
         } else {
           iframe.setAttribute("src", "about:blank");
         }
       }
 
-      var openBtn = panel.querySelector("a.shop-place-open");
-      if (openBtn) {
-        openBtn.hidden = !openUrl;
-        if (openUrl) openBtn.setAttribute("href", openUrl);
-      }
-
-      var preview = panel.querySelector("[data-shop-preview]");
-      if (preview) {
-        var showPrev = !!(previewTitle || previewImage);
-        preview.hidden = !showPrev;
-        var pImg = preview.querySelector("img");
-        var pTitle = preview.querySelector(".shop-place-preview-title");
-        if (pImg) {
-          if (previewImage) pImg.setAttribute("src", previewImage);
-          else pImg.removeAttribute("src");
-          if (previewTitle) pImg.setAttribute("alt", previewTitle);
-        }
-        if (pTitle) pTitle.textContent = previewTitle || "";
-      }
-
       var photo =
+        panel.querySelector("img.shop-photo[data-shop-photo]") ||
+        panel.querySelector("img.shop-photo") ||
         document.querySelector("img.shop-photo[data-shop-photo]") ||
         document.querySelector("img.shop-photo");
       if (photo) {
-        photo.hidden = preferEmbed;
+        photo.hidden = false;
+        if (!photo.getAttribute("data-cover-fallback-bound")) {
+          photo.setAttribute("data-cover-fallback-bound", "1");
+          photo.addEventListener("error", function () {
+            var img = previewImage;
+            if (!img && r) img = String(r.previewImage || "").trim();
+            if (img && photo.getAttribute("src") !== img) {
+              photo.setAttribute("src", img);
+            }
+          });
+        }
+        // Prefer remote preview when local cover is missing (empty natural size after load)
+        if (previewImage && photo.complete && photo.naturalWidth === 0) {
+          photo.setAttribute("src", previewImage);
+        }
       }
+
+      renderShopMenuBlock(panel, r);
+      renderShopGalleryBlock(panel, r);
     }
 
-    // Pages without panel markup: leave legacy photo alone
-    if (!panels.length) {
+    // Pages without detail markup: leave legacy photo alone
+    if (!details.length) {
       var legacy = document.querySelector("img.shop-photo");
       if (legacy) legacy.hidden = false;
     }
+  }
+
+  function menuItemName(item, lang) {
+    if (!item) return "";
+    var name = item.name;
+    if (name && typeof name === "object") {
+      var localized =
+        name[lang] || name.ko || name.en || name.ja || name.zh || "";
+      return String(localized || "").trim();
+    }
+    if (lang === "en" && item.nameEn) return String(item.nameEn).trim();
+    if (lang === "ja" && item.nameJa) return String(item.nameJa).trim();
+    if (lang === "zh" && item.nameZh) return String(item.nameZh).trim();
+    if (item.nameKo) return String(item.nameKo).trim();
+    return String(name || "").trim();
+  }
+
+  function renderShopMenuBlock(panel, restaurant) {
+    var block = panel.querySelector("[data-shop-menu-block]");
+    var list = panel.querySelector("[data-shop-menu-list]");
+    if (!block || !list) return;
+    var items = restaurant && Array.isArray(restaurant.menuItems)
+      ? restaurant.menuItems
+      : [];
+    var lang = currentLang();
+    list.innerHTML = "";
+    if (!items.length) {
+      block.hidden = true;
+      return;
+    }
+    block.hidden = false;
+    for (var i = 0; i < items.length; i++) {
+      var item = items[i] || {};
+      var name = menuItemName(item, lang);
+      if (!name) continue;
+      var price = String(item.price || "").trim();
+      var image = String(item.image || "").trim();
+      var li = document.createElement("li");
+      li.className = "shop-menu-item";
+      if (item.recommend) li.className += " shop-menu-item--recommend";
+
+      if (image) {
+        var thumb = document.createElement("img");
+        thumb.className = "shop-menu-item__thumb";
+        thumb.src = image;
+        thumb.alt = name;
+        thumb.loading = "lazy";
+        li.appendChild(thumb);
+      }
+
+      var meta = document.createElement("div");
+      meta.className = "shop-menu-item__meta";
+      var nameEl = document.createElement("span");
+      nameEl.className = "shop-menu-item__name";
+      nameEl.textContent = name;
+      meta.appendChild(nameEl);
+      if (price) {
+        var priceEl = document.createElement("span");
+        priceEl.className = "shop-menu-item__price";
+        priceEl.textContent = price;
+        meta.appendChild(priceEl);
+      }
+      li.appendChild(meta);
+      list.appendChild(li);
+    }
+    if (!list.children.length) block.hidden = true;
+  }
+
+  function renderShopGalleryBlock(panel, restaurant) {
+    var block = panel.querySelector("[data-shop-gallery-block]");
+    var gallery = panel.querySelector("[data-shop-gallery]");
+    if (!block || !gallery) return;
+    var photos = restaurant && Array.isArray(restaurant.photos)
+      ? restaurant.photos
+      : [];
+    gallery.innerHTML = "";
+    if (!photos.length) {
+      block.hidden = true;
+      return;
+    }
+    block.hidden = false;
+    for (var i = 0; i < photos.length; i++) {
+      var src = String(photos[i] || "").trim();
+      if (!src) continue;
+      var fig = document.createElement("figure");
+      fig.className = "shop-gallery__item";
+      var img = document.createElement("img");
+      img.src = src;
+      img.alt = "";
+      img.loading = "lazy";
+      fig.appendChild(img);
+      gallery.appendChild(fig);
+    }
+    if (!gallery.children.length) block.hidden = true;
   }
 
   function render(lang) {

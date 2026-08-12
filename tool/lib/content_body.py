@@ -70,6 +70,8 @@ APPS_SLOTS: list[BodySlot] = [
     BodySlot("yanoljaBody", "야놀자", "apps", "yanolja", group="yanolja"),
     BodySlot("yeogiBody", "여기어때", "apps", "yeogi", group="yeogi"),
     BodySlot("coupangBody", "쿠팡", "apps", "coupang", group="coupang"),
+    BodySlot("baeminBody", "배달의민족", "apps", "baemin", group="baemin"),
+    BodySlot("yogiyoBody", "요기요", "apps", "yogiyo", group="yogiyo"),
     BodySlot("tmoneyBody", "티머니 GO", "apps", "tmoney", group="tmoney"),
 ]
 

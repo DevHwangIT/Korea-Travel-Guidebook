@@ -5,7 +5,7 @@
  *   window.ADSENSE_CLIENT = "ca-pub-7139367317436403";
  *   Meta google-adsense-account on pages (site verification).
  *   Script loads via this file — do NOT also put adsbygoogle.js in <head>
- *   (double-load breaks push). Create an ad unit in AdSense and set data-ad-slot.
+ *   (double-load breaks push). Display unit: data-ad-slot="4192792767" (Bottom Ad).
  *
  * DEV / Google sample:
  *   window.ADSENSE_CLIENT = "ca-pub-3940256099942544";
@@ -20,6 +20,7 @@
 (function () {
   var TEST_CLIENT = "ca-pub-3940256099942544";
   var SAMPLE_SLOT = "6351476141";
+  var PROD_SLOT = "4192792767";
   var client = typeof window !== "undefined" ? window.ADSENSE_CLIENT : "";
   if (!client || typeof client !== "string" || !/^ca-pub-\d+$/.test(client.trim())) {
     return;
@@ -52,6 +53,10 @@
         ins.setAttribute("data-ad-slot", SAMPLE_SLOT);
       }
     } else {
+      var prodSlot = (ins.getAttribute("data-ad-slot") || "").trim();
+      if (!prodSlot) {
+        ins.setAttribute("data-ad-slot", PROD_SLOT);
+      }
       // Real publisher: never force adtest
       ins.removeAttribute("data-adtest");
     }

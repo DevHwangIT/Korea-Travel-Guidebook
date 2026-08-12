@@ -269,32 +269,69 @@ def render_shop_body_mount(shop_slug: str) -> str:
 
 def render_shop_visual(shop_slug: str) -> str:
     """
-    Prefer map embed panel when restaurants.{slug}.mapsEmbedUrl / placeUrl exists.
-    Cover photo is a fallback when there is no external place link.
+    Simple public shop layout:
+      1) Cover / storefront photo
+      2) Shop name (h1)
+      3) Detailed shop info (address, phone, hours, about/tips, optional map-app link)
+      4) Menu list + gallery (filled from i18n by content-body.js)
+      5) Location map iframe (Google Maps embed)
     """
-    return f"""    <div class="shop-place-panel" data-shop-place-panel data-shop-slug="{shop_slug}" hidden>
-      <div class="shop-place-preview" data-shop-preview hidden>
-        <img src="" alt="" data-i18n-attr="src:restaurants.{shop_slug}.previewImage,alt:restaurants.{shop_slug}.previewTitle">
-        <p class="shop-place-preview-title" data-i18n="restaurants.{shop_slug}.previewTitle"></p>
+    return f"""    <div class="shop-detail" data-shop-detail data-shop-slug="{shop_slug}">
+      <img class="shop-photo" data-shop-photo src="media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.{shop_slug}.name">
+      <h1 data-i18n="restaurants.{shop_slug}.name"></h1>
+      <section class="shop-info-block" data-shop-info-block>
+        <h2 class="shop-info-block__title" data-i18n="restaurantFields.detailInfo">자세한 가게 정보</h2>
+        <dl class="shop-info" data-shop-info>
+          <div class="shop-info__row" data-shop-info-row="name">
+            <dt data-i18n="restaurantFields.name">가게명</dt>
+            <dd data-i18n="restaurants.{shop_slug}.name" data-shop-info-name></dd>
+          </div>
+          <div class="shop-info__row" data-shop-info-row="location">
+            <dt data-i18n="restaurantFields.location">위치</dt>
+            <dd data-i18n="restaurants.{shop_slug}.location"></dd>
+          </div>
+          <div class="shop-info__row" data-shop-info-row="phone" hidden>
+            <dt data-i18n="restaurantFields.phone">전화</dt>
+            <dd data-i18n="restaurants.{shop_slug}.phone"></dd>
+          </div>
+          <div class="shop-info__row" data-shop-info-row="hours" hidden>
+            <dt data-i18n="restaurantFields.hours">영업시간</dt>
+            <dd data-i18n="restaurants.{shop_slug}.hours"></dd>
+          </div>
+          <div class="shop-info__row shop-info__row--about" data-shop-info-row="about" hidden>
+            <dt data-i18n="restaurantFields.about">소개</dt>
+            <dd data-i18n="restaurants.{shop_slug}.about" data-shop-info-about></dd>
+          </div>
+          <div class="shop-info__row shop-info__row--place" data-shop-info-row="place" hidden>
+            <dt data-i18n="restaurantFields.openOnMaps">지도 앱</dt>
+            <dd>
+              <a class="shop-place-link shop-place-link--subtle" data-shop-place-link href="#" target="_blank" rel="noopener noreferrer"
+                 data-i18n="restaurantFields.openPlace">지도에서 열기</a>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="shop-menu-block" data-shop-menu-block hidden>
+        <h2 class="shop-menu-block__title" data-i18n="restaurantFields.menuList">메뉴</h2>
+        <ul class="shop-menu-list" data-shop-menu-list></ul>
+      </section>
+      <section class="shop-gallery-block" data-shop-gallery-block hidden>
+        <h2 class="shop-gallery-block__title" data-i18n="restaurantFields.photoGallery">사진</h2>
+        <div class="shop-gallery" data-shop-gallery></div>
+      </section>
+      <div class="shop-map" data-shop-map hidden>
+        <div class="place-map-wrap">
+          <iframe
+            class="place-map-embed shop-map-embed"
+            title="map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            data-i18n-attr="src:restaurants.{shop_slug}.mapsEmbedUrl"
+            src="about:blank"></iframe>
+        </div>
       </div>
-      <div class="place-map-wrap">
-        <iframe
-          class="place-map-embed shop-map-embed"
-          title="map"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-          data-i18n-attr="src:restaurants.{shop_slug}.mapsEmbedUrl"
-          src="about:blank"></iframe>
-      </div>
-      <p class="shop-place-actions">
-        <a class="shop-place-open maps-link" href="#" target="_blank" rel="noopener noreferrer"
-           data-i18n-attr="href:restaurants.{shop_slug}.mapsUrl">
-          <span data-i18n="restaurantFields.openOnMaps">네이버/구글에서 보기</span>
-        </a>
-      </p>
-    </div>
-    <img class="shop-photo" data-shop-photo src="media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.{shop_slug}.name">"""
+    </div>"""
 
 
 _SHOP_BODY_SECTION_RE = re.compile(
@@ -430,15 +467,7 @@ def render_shop_page(kind: str, dish_slug: str, shop_slug: str) -> str:
     <p class="back-link">
       <a href="../index.html">← <span data-i18n="dishes.{dish_slug}.title"></span></a>
     </p>
-    <h1 data-i18n="restaurants.{shop_slug}.name"></h1>
 {visual}
-    <p data-i18n="restaurants.{shop_slug}.about"></p>
-    <table class="content-table">
-      <tr><th data-i18n="restaurantFields.name"></th><td data-i18n="restaurants.{shop_slug}.name"></td></tr>
-      <tr><th data-i18n="restaurantFields.location"></th><td><a class="maps-link" href="#" target="_blank" rel="noopener noreferrer" data-i18n-attr="href:restaurants.{shop_slug}.mapsUrl"><span data-i18n="restaurants.{shop_slug}.location"></span></a></td></tr>
-      <tr><th data-i18n="restaurantFields.menu"></th><td data-i18n="restaurants.{shop_slug}.menu"></td></tr>
-      <tr><th data-i18n="restaurantFields.price"></th><td data-i18n="restaurants.{shop_slug}.price"></td></tr>
-    </table>
 {body_mount}
   </main>
   <footer class="site-footer">
@@ -454,48 +483,185 @@ def render_shop_page(kind: str, dish_slug: str, shop_slug: str) -> str:
 """
 
 
-_SHOP_VISUAL_BLOCK_RE = re.compile(
+# Redundant about + content-table after visual (old layout clutter)
+_SHOP_CLUTTER_RE = re.compile(
     r'(?:'
-    r'<div class="shop-place-panel"[\s\S]*?'
-    r'<img class="shop-photo"[^>]*>'
-    r'|<img class="shop-photo"[^>]*>'
-    r')\s*',
+    r'<p\s+data-i18n="restaurants\.[^"]+\.about"[^>]*>.*?</p>\s*'
+    r')?'
+    r'<table class="content-table">[\s\S]*?</table>\s*',
+    re.IGNORECASE,
+)
+
+_SHOP_LEGACY_HEADING_RE = re.compile(
+    r'<h1\b[^>]*>[\s\S]*?</h1>\s*'
+    r'(?:<p class="region-badge">[\s\S]*?</p>\s*)?',
+    re.IGNORECASE,
+)
+
+_SHOP_BODY_START_RE = re.compile(
+    r'(?:'
+    r'<div id="shop-body"\b'
+    r'|<div class="tip"\b'
+    r'|</main>'
+    r')',
     re.IGNORECASE,
 )
 
 
+def _consume_shop_visual_prefix(rest: str) -> tuple[str, str]:
+    """
+    Strip one legacy/new shop visual block from the start of `rest`.
+    Returns (region_badge_html, remainder).
+    """
+    region_badge = ""
+    s = rest.lstrip("\n\r\t ")
+
+    # Optional legacy h1 (+ region badge) before visual
+    hm = _SHOP_LEGACY_HEADING_RE.match(s)
+    if hm:
+        bm = re.search(
+            r'(<p class="region-badge">[\s\S]*?</p>\s*)',
+            hm.group(0),
+            re.IGNORECASE,
+        )
+        if bm:
+            region_badge = bm.group(1)
+        s = s[hm.end() :].lstrip("\n\r\t ")
+
+    # New simple block
+    if re.match(r'<div class="shop-detail"\b', s, re.IGNORECASE):
+        end = _find_matching_div_end(s)
+        if end > 0:
+            return region_badge, s[end:].lstrip("\n\r\t ")
+        bm = _SHOP_BODY_START_RE.search(s)
+        if bm:
+            return region_badge, s[bm.start() :]
+
+    # Old dual panel
+    if re.match(r'<div class="shop-place-panel"\b', s, re.IGNORECASE):
+        end = _find_matching_div_end(s)
+        if end > 0:
+            s = s[end:].lstrip("\n\r\t ")
+        pm = re.match(r'<img class="shop-photo"[^>]*>\s*', s, re.IGNORECASE)
+        if pm:
+            s = s[pm.end() :].lstrip("\n\r\t ")
+        return region_badge, s
+
+    # Lone cover photo
+    pm = re.match(r'<img class="shop-photo"[^>]*>\s*', s, re.IGNORECASE)
+    if pm:
+        return region_badge, s[pm.end() :].lstrip("\n\r\t ")
+
+    return region_badge, rest if not region_badge else s
+
+
+def _find_matching_div_end(html: str) -> int:
+    """Return index after the closing </div> that matches the first opening <div>."""
+    open_re = re.compile(r"<div\b[^>]*>", re.IGNORECASE)
+    close_re = re.compile(r"</div\s*>", re.IGNORECASE)
+    m0 = open_re.match(html)
+    if not m0:
+        return -1
+    depth = 1
+    pos = m0.end()
+    while depth > 0 and pos < len(html):
+        mo = open_re.search(html, pos)
+        mc = close_re.search(html, pos)
+        if not mc:
+            return -1
+        if mo and mo.start() < mc.start():
+            depth += 1
+            pos = mo.end()
+        else:
+            depth -= 1
+            pos = mc.end()
+    return pos if depth == 0 else -1
+
+
 def sync_shop_page_visual(kind: str, dish_slug: str, shop_slug: str) -> list[str]:
-    """Ensure shop HTML has embed-first visual panel (idempotent)."""
+    """Ensure shop HTML has simple cover → name → info → map layout (idempotent)."""
     page = resolve_shop_page(kind, dish_slug, shop_slug)
     if not page or not page.is_file():
         return []
     html = page.read_text(encoding="utf-8")
     visual = render_shop_visual(shop_slug).rstrip() + "\n"
+    notes: list[str] = []
 
-    # Prefer replace after h1 (+ optional region badge)
-    anchor = re.search(
-        r'(<h1\b[^>]*>[\s\S]*?</h1>\s*)'
-        r'(?:<p class="region-badge">[\s\S]*?</p>\s*)?',
+    back = re.search(
+        r'(<p class="back-link">[\s\S]*?</p>\s*)',
         html,
         re.IGNORECASE,
     )
-    if not anchor:
+    if not back:
         return []
 
-    start = anchor.end(0)
-    # Skip existing visual block(s) at this position
-    rest = html[start:]
-    m = _SHOP_VISUAL_BLOCK_RE.match(rest)
-    if m:
-        rest_after = rest[m.end() :]
-        new_html = html[:start] + visual + rest_after
+    start = back.end(0)
+    # Prefer shop-body; also accept body mount bundled with tip fallback
+    body_m = re.search(r'<div\s+id="shop-body"', html[start:], re.IGNORECASE)
+    tip_m = re.search(
+        r'<div\s+class="tip"[^>]*data-shop-tip-fallback',
+        html[start:],
+        re.IGNORECASE,
+    )
+    main_m = re.search(r"</main>", html[start:], re.IGNORECASE)
+
+    if body_m:
+        cut = start + body_m.start()
+        tail = html[cut:]
+        # If a duplicate tip was inserted before an older tip, leave as-is
+    elif tip_m:
+        cut = start + tip_m.start()
+        # Only insert body mount (not tip) — tip already at cut
+        tail = (
+            f'    <div id="shop-body" class="shop-body" data-shop-slug="{shop_slug}"></div>\n'
+            + html[cut:]
+        )
+        notes.append("shop-body mount 복구")
+    elif main_m:
+        cut = start + main_m.start()
+        tail = render_shop_body_mount(shop_slug) + "\n  " + html[cut:]
+        notes.append("shop-body mount 복구")
     else:
-        new_html = html[:start] + visual + rest
+        return []
+
+    mid = html[start:cut]
+
+    region_badge = ""
+    bm = re.search(
+        r'(<p class="region-badge">[\s\S]*?</p>\s*)',
+        mid,
+        re.IGNORECASE,
+    )
+    if bm:
+        region_badge = bm.group(1)
+
+    if region_badge:
+        visual_out = visual.replace(
+            f'<h1 data-i18n="restaurants.{shop_slug}.name"></h1>',
+            f'<h1 data-i18n="restaurants.{shop_slug}.name"></h1>\n'
+            f"      {region_badge.strip()}",
+            1,
+        )
+    else:
+        visual_out = visual
+
+    new_html = html[:start] + visual_out + tail
+
+    cleaned, n_sub = _SHOP_CLUTTER_RE.subn("", new_html, count=1)
+    if n_sub:
+        new_html = cleaned
+        notes.append("중복 소개·정보 표 제거")
+
+    # Ensure content-body script is present
+    prefix = asset_prefix_from(page)
+    version = current_asset_version()
+    new_html = ensure_shop_body_script(new_html, asset_prefix=prefix, version=version)
 
     if new_html == html:
         return []
     page.write_text(new_html, encoding="utf-8", newline="\n")
-    return [f"가게 비주얼 동기화: {page.relative_to(ROOT).as_posix()}"]
+    notes.insert(0, f"가게 비주얼 동기화: {page.relative_to(ROOT).as_posix()}")
+    return notes
 
 
 def sync_all_shop_page_visuals() -> list[str]:

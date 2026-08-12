@@ -153,7 +153,17 @@
 
     ensureMeta("property", "og:type", path ? "article" : "website");
     ensureMeta("property", "og:site_name", SITE_NAME);
-    ensureMeta("property", "og:locale", lang === "ja" ? "ja_JP" : lang === "en" ? "en_US" : "ko_KR");
+    ensureMeta(
+      "property",
+      "og:locale",
+      lang === "ja"
+        ? "ja_JP"
+        : lang === "en"
+          ? "en_US"
+          : lang === "zh"
+            ? "zh_CN"
+            : "ko_KR"
+    );
     ensureMeta("property", "og:url", withLang(canonical, lang));
     ensureMeta("property", "og:title", title);
     if (desc) ensureMeta("property", "og:description", desc);

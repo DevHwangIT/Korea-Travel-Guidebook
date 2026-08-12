@@ -47,6 +47,7 @@ from lib.scaffold import (  # noqa: E402
     sync_shop_page_visual,
 )
 from lib import content_body  # noqa: E402
+from lib.shop_maps import resolve_shop_input  # noqa: E402
 from lib.shop_body import body_from_form  # noqa: E402
 
 HOST = "127.0.0.1"
@@ -195,6 +196,12 @@ NAV_GROUPS: list[tuple[str, list[tuple[str, str, str, str]]]] = [
         ],
     ),
     (
+        "축제 및 행사",
+        [
+            ("/section?id=festivals", "축제 및 행사", "축", "/section?id=festivals"),
+        ],
+    ),
+    (
         "여행 팁",
         [
             ("/section?id=tips", "여행 팁", "팁", "/section?id=tips"),
@@ -306,7 +313,7 @@ def render_force_translate_check() -> str:
         "<span>번역 다시 하기</span>"
         "</label>"
         '<p class="hint" style="margin:.35rem 0 0">'
-        "이미 있는 영어·일본어를 한국어 기준으로 다시 만듭니다."
+        "이미 있는 영어·일본어·중국어를 한국어 기준으로 다시 만듭니다."
         "</p>"
     )
 
@@ -373,7 +380,13 @@ def layout(
         </div>
       </div>
       {"".join(nav_chunks)}
-      <div class="sidebar-foot">이 컴퓨터에서만 열림 · 저장 후 Ctrl+F5 또는 뷰어 다시 열기</div>
+      <div class="sidebar-note">
+        <strong>제휴·추천(Partner)</strong>
+        <span>공개 사이트 사이드/중단 패널 · CMS 글 목록 없음 ·
+          <code>home.partnerTitle</code> / <code>home.partnerHint</code> 는 문의 섹션·홈 i18n에서 수정</span>
+      </div>
+      <div class="sidebar-foot">이 컴퓨터에서만 열림 · 저장 후 Ctrl+F5 또는 뷰어 다시 열기<br>
+        언어: 한국어 입력 → 저장 시 영어·일본어·중국어(中文) 자동 번역</div>
     </aside>
     <div class="main-wrap">
       <div class="topbar">
@@ -393,6 +406,7 @@ def layout(
   <script src="/static/vendor/quill/quill.js"></script>
   <script src="/static/admin-body.js"></script>
   <script src="/static/admin-list.js"></script>
+  <script src="/static/admin-shop-source.js"></script>
   <script>
   (function () {{
     document.querySelectorAll("[data-nav-select]").forEach(function (sel) {{
@@ -564,7 +578,7 @@ def shop_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
 
 
 def place_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
-    """KO-primary place fields; EN/JA filled on save."""
+    """KO-primary place fields; EN/JA/ZH filled on save."""
     ko = {
         "name": form.get("name_ko", ""),
         "desc": form.get("desc_ko", ""),
@@ -659,7 +673,7 @@ def render_dish_primary_fields(texts: dict[str, dict[str, str]] | None = None) -
 
 
 def render_dish_lang_fields(texts: dict[str, dict[str, str]] | None = None) -> str:
-    """Korean-only primary fields. EN/JA are filled on save via auto-translate."""
+    """Korean-only primary fields. EN/JA/ZH are filled on save via auto-translate."""
     return render_dish_primary_fields(texts)
 
 
@@ -667,6 +681,9 @@ def render_shop_primary_fields(
     texts: dict[str, dict[str, str]] | None = None,
     *,
     place_url: str = "",
+    source_type: str = "custom",
+    phone: str = "",
+    hours: str = "",
 ) -> str:
     texts = texts or {
         lang: {
@@ -680,41 +697,92 @@ def render_shop_primary_fields(
         for lang in ("ko", "en", "ja")
     }
     ko = texts.get("ko") or {}
+    st = (source_type or "custom").strip().lower()
+    if st not in ("naver", "kakao", "google", "custom"):
+        st = "custom"
     tip_hiddens = "".join(
         f'<input type="hidden" name="tip_{lang}" value="{h((texts.get(lang) or {}).get("tip", ""))}">'
         for lang in ("ko", "en", "ja")
     )
+
+    def _opt(value: str, label: str) -> str:
+        sel = " selected" if st == value else ""
+        return f'<option value="{value}"{sel}>{h(label)}</option>'
+
+    placeholders = {
+        "naver": "https://map.naver.com/… 또는 https://naver.me/…",
+        "kakao": "https://map.kakao.com/… 또는 https://kko.to/…",
+        "google": "https://maps.app.goo.gl/… 또는 Google Maps 공유 링크",
+        "custom": "서울 중구 … (주소만 입력해도 됩니다)",
+    }
     return (
         tip_hiddens
-        + '<div class="field field--hero">'
-        "<label>가게 이름 (한국어)</label>"
-        f'<input class="input-hero" type="text" name="name_ko" value="{h(ko.get("name", ""))}" '
-        'required placeholder="예: 신당동 떡볶이">'
-        "</div>"
-        '<div class="field field--hero">'
-        "<label>가게 링크 (Google Maps / 네이버 플레이스)</label>"
-        f'<input class="input-hero" type="text" name="place_url" value="{h(place_url)}" '
-        'inputmode="url" autocomplete="url" '
-        'placeholder="https://maps.app.goo.gl/… 또는 https://naver.me/…">'
+        + '<div class="field field--hero" data-shop-source-root>'
+        "<label>등록 방식</label>"
+        '<select class="input-hero" name="source_type" required data-shop-source-type>'
+        + _opt("naver", "네이버 플레이스")
+        + _opt("kakao", "카카오맵 가게")
+        + _opt("google", "구글 비즈니스/지도")
+        + _opt("custom", "주소로 등록")
+        + "</select>"
         '<span class="hint">'
-        "링크가 있으면 공개 페이지에 지도 임베드를 우선 보여 줍니다. "
-        "없을 때만 상호 사진·본문이 메인 비주얼이 됩니다. "
-        "(브라우저 URL 검사로 등록이 막히지 않도록 일반 텍스트 입력입니다.)"
+        "URL 또는 주소를 넣으면 <strong>URL/주소로 채우기</strong>로 이름·주소·지도를 자동 채웁니다. "
+        "공개 페이지는 <strong>사진 → 정보 → 지도</strong>만 보여 줍니다."
         "</span>"
         "</div>"
-        '<div class="meta-grid">'
+        '<div class="field field--hero" data-shop-resolve-row>'
+        "<label>가게 URL 또는 주소</label>"
+        '<div class="row-actions" style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:stretch">'
+        f'<input class="input-hero" type="text" name="resolve_input" value="{h(place_url)}" '
+        'inputmode="url" autocomplete="url" data-shop-resolve-input '
+        'style="flex:1;min-width:12rem" '
+        f'placeholder="{h(placeholders.get(st) or placeholders["google"])}">'
+        '<button type="button" class="btn secondary" data-shop-resolve-btn>URL/주소로 채우기</button>'
+        "</div>"
+        '<p class="hint" data-shop-resolve-status style="margin:.4rem 0 0"></p>'
+        '<span class="hint" data-shop-place-hint>'
+        "네이버·카카오·구글 공유 링크, 또는 도로명 주소를 붙여 넣으세요."
+        "</span>"
+        "</div>"
+        '<div class="field field--hero">'
+        "<label>가게 이름 (한국어)</label>"
+        f'<input class="input-hero" type="text" name="name_ko" value="{h(ko.get("name", ""))}" '
+        'required placeholder="예: 신당동 떡볶이" data-shop-field="name">'
+        "</div>"
+        '<div class="field field--hero" data-shop-source-panel="map">'
+        "<label>원본 가게 링크 (자동 채움)</label>"
+        f'<input class="input-hero" type="text" name="place_url" value="{h(place_url)}" '
+        'inputmode="url" autocomplete="url" data-shop-place-url data-shop-field="placeUrl" '
+        f'placeholder="{h(placeholders.get(st) or placeholders["google"])}">'
+        "</div>"
+        '<div class="meta-grid" data-shop-source-panel="meta">'
         '<div class="field"><label>주소 · 위치</label>'
         f'<input type="text" name="location_ko" value="{h(ko.get("location", ""))}" '
-        'placeholder="예: 서울 중구 …"></div>'
-        '<div class="field"><label>가격</label>'
+        'placeholder="예: 서울 중구 …" data-shop-field="address"></div>'
+        f'<div class="field"><label>전화</label>'
+        f'<input type="text" name="phone" value="{h(phone)}" '
+        'placeholder="예: 02-123-4567" data-shop-field="phone"></div>'
+        f'<div class="field"><label>영업시간</label>'
+        f'<input type="text" name="hours" value="{h(hours)}" '
+        'placeholder="예: 매일 10:00–22:00" data-shop-field="hours"></div>'
+        '<div class="field" data-shop-source-panel="custom-extra"><label>가격</label>'
         f'<input type="text" name="price_ko" value="{h(ko.get("price", ""))}" '
         'placeholder="예: 1인 8,000원~"></div>'
-        '<div class="field"><label>대표 메뉴</label>'
+        '<div class="field" data-shop-source-panel="custom-extra"><label>대표 메뉴</label>'
         f'<input type="text" name="menu_ko" value="{h(ko.get("menu", ""))}" '
         'placeholder="예: 즉석 떡볶이"></div>'
         '<div class="field"><label>짧은 카드 소개</label>'
         f'<input type="text" name="about_ko" value="{h(ko.get("about", ""))}" '
         'placeholder="목록 카드에 보이는 한 줄"></div>'
+        "</div>"
+        '<div class="field" data-shop-resolve-preview hidden>'
+        "<label>미리보기 이미지 (자동)</label>"
+        '<div style="display:flex;gap:.75rem;align-items:center;flex-wrap:wrap">'
+        '<img data-shop-preview-img alt="" style="width:96px;height:96px;object-fit:cover;border-radius:8px;background:#eee" hidden>'
+        '<span class="hint" data-shop-preview-note>자동으로 가져온 이미지가 있으면 여기에 보입니다. '
+        "공개 커버는 아래 상호 사진 업로드가 우선입니다.</span>"
+        "</div>"
+        f'<input type="hidden" name="preview_image" value="" data-shop-field="imageUrl">'
         "</div>"
     )
 
@@ -723,9 +791,18 @@ def render_shop_lang_fields(
     texts: dict[str, dict[str, str]] | None = None,
     *,
     place_url: str = "",
+    source_type: str = "custom",
+    phone: str = "",
+    hours: str = "",
 ) -> str:
-    """Korean-only primary fields. EN/JA are filled on save via auto-translate."""
-    return render_shop_primary_fields(texts, place_url=place_url)
+    """Korean-only primary fields. EN/JA/ZH are filled on save via auto-translate."""
+    return render_shop_primary_fields(
+        texts,
+        place_url=place_url,
+        source_type=source_type,
+        phone=phone,
+        hours=hours,
+    )
 
 
 def render_list_filters(
@@ -775,7 +852,7 @@ def render_body_editor(
     return f"""
     <fieldset class="fieldset highlight body-post-editor" data-body-editor data-body-prefix="{h(prefix)}" data-body-ko-only="1">
       <legend>{h(legend)}</legend>
-      <p class="muted body-post-lead">한국어로 쓰세요. 저장하면 자동 번역됩니다.{extra}</p>
+      <p class="muted body-post-lead">한국어로 쓰세요. 저장하면 영어·일본어·중국어로 자동 번역됩니다.{extra}</p>
       <input type="hidden" name="{h(prefix)}_count" value="{len(blocks)}" data-body-count>
       <input type="hidden" name="{h(prefix)}_json" value="" data-body-json>
       <script type="application/json" data-body-seed>{seed_json}</script>
@@ -1225,6 +1302,20 @@ class AdminHandler(BaseHTTPRequestHandler):
             form = form_data.fields
             files = form_data.files
 
+            if path == "/api/shop/resolve":
+                raw = (form.get("q") or form.get("url") or form.get("input") or "").strip()
+                if not raw:
+                    # JSON body fallback
+                    try:
+                        raw_body = form_data.raw if hasattr(form_data, "raw") else b""
+                    except Exception:
+                        raw_body = b""
+                    if not raw and isinstance(form.get("resolve_input"), str):
+                        raw = form.get("resolve_input", "").strip()
+                st = (form.get("source_type") or form.get("sourceType") or "").strip()
+                result = resolve_shop_input(raw, source_type=st, fetch_preview=True)
+                self._send_json(result, status=200 if result.get("ok") else 400)
+                return
 
             if path in ("/api/places/save", "/place/save"):
                 texts = place_texts_from_form(form)
@@ -1392,8 +1483,17 @@ class AdminHandler(BaseHTTPRequestHandler):
                     body=body_blocks,
                     force_translate=force_tr,
                     place_url=form.get("place_url", ""),
+                    source_type=form.get("source_type", ""),
                     fetch_preview=form.get("fetch_preview") == "1",
+                    phone=form.get("phone", ""),
+                    hours=form.get("hours", ""),
                 )
+                # Keep resolve-time preview image when OG fetch is empty
+                preview_img = (form.get("preview_image") or "").strip()
+                if preview_img:
+                    notes.extend(
+                        content.set_shop_preview_image(slug, preview_img)
+                    )
                 notes.extend(body_notes)
                 if form.get("new_slug", "").strip() and form.get("new_slug") != slug:
                     notes.extend(content.rename_shop(slug, form.get("new_slug", "")))
@@ -1439,7 +1539,10 @@ class AdminHandler(BaseHTTPRequestHandler):
                     texts,
                     body=body_blocks,
                     place_url=form.get("place_url", ""),
+                    source_type=form.get("source_type", ""),
                     fetch_preview=form.get("fetch_preview") == "1",
+                    phone=form.get("phone", ""),
+                    hours=form.get("hours", ""),
                 )
                 notes.extend(body_notes)
                 upload_notes = save_uploads_for_targets(
@@ -1449,6 +1552,9 @@ class AdminHandler(BaseHTTPRequestHandler):
                     upload_notes
                     or ["상호 이미지: 업로드 없음 — 수정 화면에서 올릴 수 있습니다"]
                 )
+                preview_img = (form.get("preview_image") or "").strip()
+                if preview_img:
+                    notes.extend(content.set_shop_preview_image(slug, preview_img))
                 menu_uploads = form_data.getfiles("menu_images")
                 if menu_uploads:
                     notes.extend(append_menu_uploads(kind, dish_slug, slug, menu_uploads))
@@ -2212,7 +2318,11 @@ class AdminHandler(BaseHTTPRequestHandler):
     def page_shop_edit(self, slug: str) -> str:
         s = content.get_shop(slug)
         lang_html = render_shop_lang_fields(
-            s.get("texts"), place_url=str(s.get("placeUrl") or "")
+            s.get("texts"),
+            place_url=str(s.get("placeUrl") or ""),
+            source_type=str(s.get("sourceType") or "custom"),
+            phone=str(s.get("phone") or ""),
+            hours=str(s.get("hours") or ""),
         )
         current_parent = (
             f"{s['kind']}|{s['dish_slug']}"
@@ -2234,7 +2344,7 @@ class AdminHandler(BaseHTTPRequestHandler):
             s.get("body") or [],
             shop_slug=slug,
             legend="추가 메모 · 본문",
-            hint_extra="가게 링크가 있으면 임베드가 메인입니다. 본문은 보충 설명용이에요.",
+            hint_extra="공개 페이지는 사진·정보·지도가 메인입니다. 본문은 보충 설명용이에요.",
         )
         name_ko = (s.get("texts") or {}).get("ko", {}).get("name") or slug
         expert = render_expert(
@@ -2257,7 +2367,7 @@ class AdminHandler(BaseHTTPRequestHandler):
           <div>
             <h1>글 수정</h1>
             <p class="page-lead">{h(name_ko)}</p>
-            <p class="note">링크 있으면 임베드 우선, 없을 때만 직접 사진·본문</p>
+            <p class="note">사진 → 가게 정보 → 지도 · URL/주소로 자동 채우기</p>
           </div>
         </div>
         <form class="card editor-card" id="shop-main-form" method="post" action="/shop/save" enctype="multipart/form-data">
@@ -2274,9 +2384,9 @@ class AdminHandler(BaseHTTPRequestHandler):
           </fieldset>
           {lang_html}
           {body_html}
-          <fieldset class="fieldset">
-            <legend>상호 사진 (선택 · 링크 없을 때)</legend>
-            <p class="hint" style="margin-top:0">가게 링크가 있으면 공개 페이지는 지도를 먼저 보여 줍니다.</p>
+          <fieldset class="fieldset" data-shop-source-panel="custom-media">
+            <legend>상호 사진 (가게 커버)</legend>
+            <p class="hint" style="margin-top:0">자동 이미지가 없거나 마음에 안 들면 여기에 올려 주세요. 공개 페이지 맨 위에 보입니다.</p>
             {img_html}
           </fieldset>
           {expert}
@@ -2300,17 +2410,17 @@ class AdminHandler(BaseHTTPRequestHandler):
         opts = []
         for kind, slug, label in content.dish_options_for_select():
             opts.append(f'<option value="{h(kind)}|{h(slug)}">{h(label)}</option>')
-        lang_html = render_shop_lang_fields()
+        lang_html = render_shop_lang_fields(source_type="naver")
         shop_upload = render_upload_zone(
             name="shop_image",
-            label="상호 사진 (선택 · 링크 없을 때)",
-            hint="가게 링크가 있으면 필수가 아닙니다 · JPG/PNG/WebP · 최대 8MB",
+            label="상호 사진 (가게 커버)",
+            hint="자동 이미지가 없으면 올려 주세요 · JPG/PNG/WebP · 최대 8MB",
         )
         body_html = render_body_editor(
             [],
             shop_slug="",
             legend="추가 메모 · 본문",
-            hint_extra="링크가 있으면 임베드가 메인입니다. 본문은 보충 설명용이에요.",
+            hint_extra="공개 페이지는 사진·정보·지도가 메인입니다. 본문은 보충용이에요.",
         )
         # Slug must stay visible — required fields inside closed <details> block submit silently.
         slug_field = (
@@ -2331,8 +2441,8 @@ class AdminHandler(BaseHTTPRequestHandler):
         <div class="toolbar">
           <div>
             <h1>새 가게 등록</h1>
-            <p class="page-lead">가게 링크를 넣으면 지도 임베드가 메인 비주얼이 됩니다.</p>
-            <p class="note">링크 있으면 임베드 우선, 없을 때만 직접 사진·본문</p>
+            <p class="page-lead">네이버·카카오·구글 URL 또는 주소를 넣고 <strong>URL/주소로 채우기</strong>를 누르세요.</p>
+            <p class="note">공개 화면: 사진 → 정보 → 지도</p>
           </div>
         </div>
         <form class="card editor-card" id="shop-main-form" method="post" action="/shop/create" enctype="multipart/form-data">
@@ -2349,8 +2459,8 @@ class AdminHandler(BaseHTTPRequestHandler):
           {lang_html}
           {slug_field}
           {body_html}
-          <fieldset class="fieldset">
-            <legend>상호 사진 (선택)</legend>
+          <fieldset class="fieldset" data-shop-source-panel="custom-media">
+            <legend>상호 사진 (가게 커버)</legend>
             {shop_upload}
           </fieldset>
           {expert}
@@ -2830,7 +2940,7 @@ class AdminHandler(BaseHTTPRequestHandler):
             <input type="text" name="rom" value="{h(item.get('rom',''))}"
                    placeholder="예: annyeonghaseyo">
           </div>
-          <p class="muted">의미(영어·일본어)는 저장할 때 한국어에서 자동 번역됩니다.</p>
+          <p class="muted">의미(영어·일본어·중국어)는 저장할 때 한국어에서 자동 번역됩니다.</p>
           {render_expert(render_force_translate_check())}
           {render_editor_actions(back_href=f"/phrases?cat={cat}")}
         </form>
@@ -2882,7 +2992,7 @@ class AdminHandler(BaseHTTPRequestHandler):
               placeholder="my-phrase" autocomplete="off">
             <span class="hint">영문 소문자·숫자·하이픈</span>
           </div>
-          <p class="muted">의미(영어·일본어)는 등록할 때 한국어에서 자동 번역됩니다.</p>
+          <p class="muted">의미(영어·일본어·중국어)는 등록할 때 한국어에서 자동 번역됩니다.</p>
           {render_editor_actions(save_label="등록", back_href=f"/phrases?cat={cat}")}
         </form>
         """

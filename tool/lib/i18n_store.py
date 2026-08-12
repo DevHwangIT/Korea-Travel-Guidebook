@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Load / save ko.json · en.json · ja.json and rebuild messages.js."""
+"""Load / save ko.json · en.json · ja.json · zh.json and rebuild messages.js."""
 from __future__ import annotations
 
 import json
@@ -11,7 +11,7 @@ from typing import Any
 
 from .paths import I18N_DIR, ROOT
 
-LANGS = ("ko", "en", "ja")
+LANGS = ("ko", "en", "ja", "zh")
 
 
 def load_lang(lang: str) -> dict[str, Any]:

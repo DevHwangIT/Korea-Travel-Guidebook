@@ -9,7 +9,7 @@ from typing import Any
 
 from . import i18n_store
 from .paths import ROOT
-from .translate import BatchStatus, fill_lang_pair
+from .translate import BatchStatus, fill_lang_pair, fill_lang_targets
 
 PHRASES_PATH = ROOT / "js" / "korean-phrases-data.js"
 
@@ -76,6 +76,23 @@ SECTIONS: list[SectionDef] = [
         group_by_prefix=True,
         preview_path="pages/before-trip/",
         board_group="떠나기 전에",
+    ),
+    SectionDef(
+        "festivals",
+        "축제 및 행사",
+        "플레이스홀더·지역별 축제 안내 (공개 IA 반영 · 추후 확장)",
+        "festivals",
+        key_filter=[
+            "pageTitle",
+            "title",
+            "intro",
+            "placeholder",
+            "regionsTitle",
+            "regionsHint",
+            "back",
+        ],
+        preview_path="pages/festivals/",
+        board_group="축제 및 행사",
     ),
     SectionDef(
         "tips",
@@ -252,7 +269,22 @@ def friendly_group_label(group: str) -> str:
         "yanolja": "야놀자",
         "yeogi": "여기어때",
         "coupang": "쿠팡",
+        "baemin": "배달의민족",
+        "yogiyo": "요기요",
         "tmoney": "티머니 GO",
+        "kakao-t": "카카오 T",
+        "gukbap": "국밥",
+        "gomtang": "곰탕",
+        "kalguksu": "칼국수",
+        "kongguksu": "콩국수",
+        "gopchang": "곱창",
+        "tangsuyuk": "탕수육",
+        "samgyeopsal": "고기집",
+        "dakhanmari": "닭한마리",
+        "knedlo": "크네들로",
+        "bread": "빵·베이커리",
+        "nangman-sandwich": "낭만샌드위치(리다이렉트)",
+        "butter-bread": "버터빵(리다이렉트)",
         "police": "경찰 (112)",
         "fire": "화재·구급 (119)",
         "tourist": "관광통역 (1330)",
@@ -460,18 +492,16 @@ def save_entry_texts(
     *,
     force_translate: bool = False,
 ) -> tuple[list[str], BatchStatus]:
-    """updates: { key: {ko,en,ja} } — EN/JA filled from KO when blank/unchanged."""
+    """updates: { key: {ko,en,ja,zh} } — EN/JA/ZH filled from KO when blank/unchanged."""
     notes: list[str] = []
     status = BatchStatus()
     bundle = i18n_store.load_all()
     for key, texts in updates.items():
         ko = (texts.get("ko") or "").strip()
-        form_en = (texts.get("en") or "").strip()
-        form_ja = (texts.get("ja") or "").strip()
-        if form_en == ko:
-            form_en = ""
-        if form_ja == ko:
-            form_ja = ""
+        form: dict[str, str] = {}
+        for lang in ("en", "ja", "zh"):
+            val = (texts.get(lang) or "").strip()
+            form[lang] = "" if val == ko else val
         old = {
             lang: str(
                 ((bundle[lang].get(section.root_key) or {}).get(key) or "")
@@ -480,28 +510,28 @@ def save_entry_texts(
             else ""
             for lang in i18n_store.LANGS
         }
-        if form_en and form_ja and not force_translate:
-            en, ja = form_en, form_ja
+        if all(form.values()) and not force_translate:
+            filled = dict(form)
             status.reused += 1
         else:
-            en, ja = fill_lang_pair(
+            filled = fill_lang_targets(
                 ko,
-                old_ko=old.get("ko", ""),
-                old_en=old.get("en", ""),
-                old_ja=old.get("ja", ""),
+                old=old,
                 force=force_translate,
                 status=status,
             )
-            if form_en and not force_translate:
-                en = form_en
-            if form_ja and not force_translate:
-                ja = form_ja
-        for lang, val in (("ko", ko), ("en", en), ("ja", ja)):
+            for lang in ("en", "ja", "zh"):
+                if form[lang] and not force_translate:
+                    filled[lang] = form[lang]
+        for lang, val in (
+            ("ko", ko),
+            ("en", filled.get("en") or ko),
+            ("ja", filled.get("ja") or ko),
+            ("zh", filled.get("zh") or ko),
+        ):
             root = bundle[lang].setdefault(section.root_key, {})
             if not isinstance(root, dict):
                 raise ValueError(f"{section.root_key}가 객체가 아닙니다 ({lang})")
-            if lang != "ko" and not val:
-                val = ko
             root[key] = val
     i18n_store.save_all(bundle)
     notes.append(f"{section.title}: {len(updates)}개 항목 저장")
@@ -521,23 +551,25 @@ def add_string_key(
         raise ValueError("키는 영문·숫자·_- 만 가능합니다.")
     status = BatchStatus()
     ko = (texts.get("ko") or "").strip()
-    form_en = (texts.get("en") or "").strip()
-    form_ja = (texts.get("ja") or "").strip()
-    if form_en == ko:
-        form_en = ""
-    if form_ja == ko:
-        form_ja = ""
-    if form_en and form_ja and not force_translate:
-        en, ja = form_en, form_ja
+    form: dict[str, str] = {}
+    for lang in ("en", "ja", "zh"):
+        val = (texts.get(lang) or "").strip()
+        form[lang] = "" if val == ko else val
+    if all(form.values()) and not force_translate:
+        filled = dict(form)
         status.reused += 1
     else:
-        en, ja = fill_lang_pair(ko, force=True, status=status)
-        if form_en:
-            en = form_en
-        if form_ja:
-            ja = form_ja
+        filled = fill_lang_targets(ko, force=True, status=status)
+        for lang in ("en", "ja", "zh"):
+            if form[lang]:
+                filled[lang] = form[lang]
     bundle = i18n_store.load_all()
-    for lang, val in (("ko", ko), ("en", en or ko), ("ja", ja or ko)):
+    for lang, val in (
+        ("ko", ko),
+        ("en", filled.get("en") or ko),
+        ("ja", filled.get("ja") or ko),
+        ("zh", filled.get("zh") or ko),
+    ):
         root = bundle[lang].setdefault(section.root_key, {})
         if key in root:
             raise ValueError(f"이미 있는 키: {section.root_key}.{key} ({lang})")
@@ -772,11 +804,19 @@ def dashboard_cards() -> list[DashboardCard]:
             "",
             "여행 팁",
         ),
+        DashboardCard(
+            "/section?id=festivals",
+            "축제 및 행사",
+            "플레이스홀더·지역 섹션 (추후 행사 목록 확장)",
+            "",
+            "축제 및 행사",
+        ),
     ]
     for s in SECTIONS:
         if s.id in (
             "beforeTrip",
             "tips",
+            "festivals",
             "emergency",
             "shopping",
             "souvenir",
@@ -835,6 +875,7 @@ BOARD_ORDER = (
     "먹거리",
     "쇼핑 및 놀거리",
     "명소",
+    "축제 및 행사",
     "여행 팁",
     "설정",
 )

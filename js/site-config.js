@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
   SITE_ORIGIN: "https://devhwangit.github.io/Korea-Travel-Guidebook",
   SITE_NAME: "Korea Travel Guide",
   DEFAULT_OG_IMAGE: "Images/cover/korea-cover.png",
-  LANGS: ["ko", "en", "ja"],
+  LANGS: ["ko", "en", "ja", "zh"],
   DEFAULT_LANG: "ko",
   /** Used as hreflang="x-default" target */
   X_DEFAULT_LANG: "en",

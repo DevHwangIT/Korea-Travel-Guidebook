@@ -7,21 +7,30 @@ var GUIDE_LANGS = [
   { code: "ko", label: "KR" },
   { code: "en", label: "EN" },
   { code: "ja", label: "JP" },
-  // { code: "zh", label: "中文" },
+  { code: "zh", label: "中文" },
 ];
 ```
 
 ## Steps
 
-1. Uncomment / add `{ code: "zh", label: "中文" }` in `GUIDE_LANGS`.
-2. Copy `i18n/ko.json` → `i18n/zh.json` and translate string leaves (keep body-block `ko`/`en`/`ja` keys; add `"zh"` on each block when you start using Chinese in freeform bodies).
-3. Update `i18n/build-bundle.py` to include `"zh"` in the lang list, then run:
+1. Ensure `{ code: "zh", label: "中文" }` is in `GUIDE_LANGS`.
+2. Keep `i18n/zh.json` in sync (copy from KO then translate). Helper:
 
-   ```bash
-   python i18n/build-bundle.py
-   ```
+    ```bash
+    python tool/translate_zh_locale.py
+    python tool/translate_zh_locale.py --all
+    ```
+
+   Body blocks use `ko`/`en`/`ja`/`zh` keys; `js/content-body.js` prefers the active lang.
+
+3. `i18n/build-bundle.py` LANGS includes `"zh"`. Rebuild:
+
+    ```bash
+    python i18n/build-bundle.py
+    ```
 
 4. Bump `js/cache-version.js` (or run `tool/update-version.py`) so browsers pick up `messages.js`.
+   Also keep `js/site-config.js` `LANGS` and SEO hreflang in sync.
 
 ## UI switcher
 

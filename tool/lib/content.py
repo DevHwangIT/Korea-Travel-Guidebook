@@ -47,7 +47,13 @@ from .scaffold import (
     sync_shop_page_menu_gallery,
     sync_shop_page_visual,
 )
-from .shop_maps import apply_maps_and_preview, normalize_place_url
+from .shop_maps import (
+    apply_maps_and_preview,
+    infer_source_type,
+    normalize_place_url,
+    normalize_source_type,
+    validate_place_for_source,
+)
 from .shop_body import (
     get_shop_body,
     migrate_shop_body_from_legacy,
@@ -78,21 +84,25 @@ MEAL_DISH_SLUGS_FALLBACK = {
     "jjimdak",
     "malatang",
     "tteokbokki",
+    "kalguksu",
+    "gukbap",
+    "gomtang",
+    "kongguksu",
+    "gopchang",
+    "tangsuyuk",
 }
 
+# Top-level dessert hubs only (brand shops like paris-baguette / sulbing live under bread / bingsu).
 DESSERT_DISH_SLUGS_FALLBACK = {
     "bingsu",
     "bread",
-    "cafe",
-    "nangman-sandwich",
-    "dubai-cookie",
     "butter-bread",
+    "cafe",
+    "dubai-cookie",
     "tanghulu",
     "yogurt-ice",
     "bungeoppang",
-    "sulbing",
-    "paris-baguette",
-    "tous-les-jours",
+    "nangman-sandwich",
 }
 
 
@@ -210,7 +220,7 @@ def normalize_dish_texts(
         out["ko"]["desc"] = out["ko"]["title"]
     if not out["ko"]["about"]:
         out["ko"]["about"] = out["ko"]["desc"]
-    for lang in ("en", "ja"):
+    for lang in ("en", "ja", "zh"):
         for f in DISH_TEXT_FIELDS:
             if not out[lang][f]:
                 out[lang][f] = out["ko"][f]
@@ -234,7 +244,7 @@ def normalize_shop_texts(
         out["ko"]["menu"] = out["ko"]["name"]
     if not out["ko"]["about"]:
         out["ko"]["about"] = out["ko"]["name"]
-    for lang in ("en", "ja"):
+    for lang in ("en", "ja", "zh"):
         for f in SHOP_TEXT_FIELDS:
             if not out[lang][f]:
                 out[lang][f] = out["ko"][f]
@@ -348,9 +358,13 @@ def list_shops() -> list[ShopItem]:
 def get_shop(slug: str) -> dict[str, Any]:
     bundle = i18n_store.load_all()
     texts = _empty_shop_texts()
+    phone = ""
+    hours = ""
     maps_url = ""
     place_url = ""
     maps_embed = ""
+    maps_provider = ""
+    source_type = ""
     preview_title = ""
     preview_image = ""
     for lang in i18n_store.LANGS:
@@ -361,8 +375,16 @@ def get_shop(slug: str) -> dict[str, Any]:
             maps_url = str(r.get("mapsUrl") or "")
             place_url = str(r.get("placeUrl") or "")
             maps_embed = str(r.get("mapsEmbedUrl") or "")
+            maps_provider = str(r.get("mapsProvider") or "")
+            source_type = infer_source_type(
+                source_type=str(r.get("sourceType") or ""),
+                place_url=place_url,
+                maps_provider=maps_provider,
+            )
             preview_title = str(r.get("previewTitle") or "")
             preview_image = str(r.get("previewImage") or "")
+            phone = str(r.get("phone") or "")
+            hours = str(r.get("hours") or "")
     found = find_shop_page(slug)
     kind = found[0] if found else ""
     dish_slug = found[1] if found else ""
@@ -379,9 +401,13 @@ def get_shop(slug: str) -> dict[str, Any]:
         "texts": texts,
         "name": texts["ko"]["name"],
         "location": texts["ko"]["location"],
+        "phone": phone,
+        "hours": hours,
         "placeUrl": place_url,
         "mapsUrl": maps_url,
         "mapsEmbedUrl": maps_embed,
+        "mapsProvider": maps_provider,
+        "sourceType": source_type,
         "previewTitle": preview_title,
         "previewImage": preview_image,
         "menu": texts["ko"]["menu"],
@@ -650,7 +676,10 @@ def save_shop_fields(
     body: list[dict[str, Any]] | None = None,
     force_translate: bool = False,
     place_url: str | None = None,
+    source_type: str | None = None,
     fetch_preview: bool = True,
+    phone: str | None = None,
+    hours: str | None = None,
 ) -> tuple[list[str], BatchStatus]:
     notes: list[str] = []
     status = BatchStatus()
@@ -671,23 +700,41 @@ def save_shop_fields(
     if place_url is None:
         place_url = str(old_ko.get("placeUrl") or "")
     place_url = normalize_place_url(place_url)
+    st = normalize_source_type(source_type) or infer_source_type(
+        source_type=str(old_ko.get("sourceType") or ""),
+        place_url=place_url,
+        maps_provider=str(old_ko.get("mapsProvider") or ""),
+    )
+    err = validate_place_for_source(st, place_url)
+    if err:
+        raise ValueError(err)
+    if st == "custom":
+        place_url = ""
 
     map_fields = apply_maps_and_preview(
         dict(old_ko),
         place_url=place_url,
         location=ko_loc,
         name=ko_name,
+        source_type=st,
         fetch_preview=bool(fetch_preview and place_url),
         regenerate=regenerate_maps,
     )
     # If no place link and not regenerating, keep prior mapsUrl when present
-    if not place_url and not regenerate_maps:
+    if not place_url and not regenerate_maps and st != "custom":
         map_fields["mapsUrl"] = str(
             old_ko.get("mapsUrl") or map_fields.get("mapsUrl") or ""
         )
         map_fields["mapsEmbedUrl"] = str(
             old_ko.get("mapsEmbedUrl") or map_fields.get("mapsEmbedUrl") or ""
         )
+
+    phone_val = (
+        str(old_ko.get("phone") or "") if phone is None else str(phone or "").strip()
+    )
+    hours_val = (
+        str(old_ko.get("hours") or "") if hours is None else str(hours or "").strip()
+    )
 
     for lang in i18n_store.LANGS:
         restaurants = bundle[lang].setdefault("restaurants", {})
@@ -698,11 +745,14 @@ def save_shop_fields(
             "mapsUrl",
             "mapsEmbedUrl",
             "mapsProvider",
+            "sourceType",
             "previewTitle",
             "previewImage",
         ):
             if key in map_fields:
                 entry[key] = map_fields[key]
+        entry["phone"] = phone_val
+        entry["hours"] = hours_val
         restaurants[slug] = entry
 
     if body is not None:
@@ -723,16 +773,42 @@ def save_shop_fields(
 
     i18n_store.save_all(bundle)
     notes.append("i18n 저장 완료")
+    notes.append(f"등록 방식: {st}")
     if place_url:
         notes.append("가게 링크로 mapsUrl / mapsEmbedUrl을 갱신했습니다.")
         if map_fields.get("previewTitle") or map_fields.get("previewImage"):
             notes.append("링크 미리보기(OG) 메타를 저장했습니다.")
         elif fetch_preview:
             notes.append("링크 미리보기(OG)는 가져오지 못했습니다 — 임베드·링크는 유지합니다.")
+    elif st == "custom":
+        notes.append("주소·이름으로 지도 임베드를 저장했습니다." if map_fields.get("mapsEmbedUrl") else "사용자 커스텀 — 제목·본문·사진 중심으로 저장했습니다.")
     elif regenerate_maps:
         notes.append("주소·이름으로 mapsUrl / mapsEmbedUrl을 재생성했습니다.")
     notes.append(i18n_store.build_bundle())
     return notes, status
+
+
+def set_shop_preview_image(slug: str, image_url: str) -> list[str]:
+    """Set previewImage on all langs if missing or empty (does not rebuild bundle)."""
+    url = (image_url or "").strip()
+    if not url:
+        return []
+    bundle = i18n_store.load_all()
+    changed = False
+    for lang in i18n_store.LANGS:
+        restaurants = bundle[lang].setdefault("restaurants", {})
+        entry = dict(restaurants.get(slug) or {})
+        if not entry:
+            continue
+        if str(entry.get("previewImage") or "").strip():
+            continue
+        entry["previewImage"] = url
+        restaurants[slug] = entry
+        changed = True
+    if not changed:
+        return []
+    i18n_store.save_all(bundle)
+    return ["미리보기 이미지를 저장했습니다.", i18n_store.build_bundle()]
 
 
 def create_shop(
@@ -743,7 +819,10 @@ def create_shop(
     *,
     body: list[dict[str, Any]] | None = None,
     place_url: str = "",
+    source_type: str = "",
     fetch_preview: bool = True,
+    phone: str = "",
+    hours: str = "",
 ) -> tuple[list[str], BatchStatus]:
     shop_slug = validate_slug(shop_slug)
     dish_slug = validate_slug(dish_slug)
@@ -768,11 +847,20 @@ def create_shop(
     normalized, fill_notes = normalize_shop_texts(texts)
     notes.extend(fill_notes)
     place_url = normalize_place_url(place_url)
+    st = normalize_source_type(source_type) or infer_source_type(
+        source_type=source_type, place_url=place_url
+    )
+    err = validate_place_for_source(st, place_url)
+    if err:
+        raise ValueError(err)
+    if st == "custom":
+        place_url = ""
     map_fields = apply_maps_and_preview(
         {},
         place_url=place_url,
         location=normalized["ko"]["location"],
         name=normalized["ko"]["name"],
+        source_type=st,
         fetch_preview=bool(fetch_preview and place_url),
         regenerate=True,
     )
@@ -785,6 +873,8 @@ def create_shop(
     body_blocks = normalize_body(body_blocks)
 
     bundle = i18n_store.load_all()
+    phone_val = str(phone or "").strip()
+    hours_val = str(hours or "").strip()
     for lang in i18n_store.LANGS:
         restaurants = bundle[lang].setdefault("restaurants", {})
         if shop_slug in restaurants:
@@ -795,25 +885,37 @@ def create_shop(
             "mapsUrl",
             "mapsEmbedUrl",
             "mapsProvider",
+            "sourceType",
             "previewTitle",
             "previewImage",
         ):
             if key in map_fields and map_fields[key] != "":
                 entry[key] = map_fields[key]
-            elif key in ("placeUrl", "mapsUrl", "mapsEmbedUrl"):
-                entry[key] = map_fields.get(key) or ""
+            elif key in ("placeUrl", "mapsUrl", "mapsEmbedUrl", "sourceType"):
+                entry[key] = map_fields.get(key) or (
+                    "custom" if key == "sourceType" else ""
+                )
+        entry["phone"] = phone_val
+        entry["hours"] = hours_val
         entry["body"] = body_blocks
         if body_blocks:
             entry["tip"] = ""
         restaurants[shop_slug] = entry
     i18n_store.save_all(bundle)
     notes.append("i18n restaurants 추가 (KO/EN/JA)")
+    notes.append(f"등록 방식: {st}")
     if body_blocks:
         notes.append(f"본문 body {len(body_blocks)} 블록")
     if place_url:
         notes.append("가게 링크 기반 지도 임베드를 저장했습니다.")
         if map_fields.get("previewTitle") or map_fields.get("previewImage"):
             notes.append("링크 미리보기(OG) 메타를 저장했습니다.")
+    elif st == "custom":
+        notes.append(
+            "주소·이름으로 지도 임베드를 저장했습니다."
+            if map_fields.get("mapsEmbedUrl")
+            else "사용자 커스텀 가게로 등록했습니다."
+        )
 
     page.parent.mkdir(parents=True, exist_ok=True)
     page.write_text(
@@ -837,12 +939,40 @@ def create_shop(
     notes.append(f"상호 이미지 저장 위치: {rel_posix(photo)}")
     notes.append(f"본문 이미지 저장 위치: {rel_posix(media)}/body-1.jpg, body-2.jpg, …")
     notes.append(
-        "안내: 가게 링크가 있으면 공개 페이지는 지도 임베드를 우선 보여 줍니다. "
-        "링크가 없을 때만 상호 사진·본문이 메인 비주얼이 됩니다."
+        "안내: 공개 페이지는 사진 → 가게 정보 → 지도 순으로 보여 줍니다. "
+        "사진이 없으면 링크 미리보기 이미지를 쓰거나 직접 업로드하세요."
     )
 
     notes.append(i18n_store.build_bundle())
     return notes, status
+
+
+def migrate_shop_source_types() -> list[str]:
+    """Persist inferred sourceType on existing restaurants (idempotent)."""
+    notes: list[str] = []
+    bundle = i18n_store.load_all()
+    restaurants = bundle["ko"].get("restaurants") or {}
+    changed = 0
+    for slug, entry in restaurants.items():
+        st = infer_source_type(
+            source_type=str(entry.get("sourceType") or ""),
+            place_url=str(entry.get("placeUrl") or ""),
+            maps_provider=str(entry.get("mapsProvider") or ""),
+        )
+        for lang in i18n_store.LANGS:
+            r = (bundle[lang].get("restaurants") or {}).get(slug)
+            if not isinstance(r, dict):
+                continue
+            if r.get("sourceType") != st:
+                r["sourceType"] = st
+                changed += 1
+    if changed:
+        i18n_store.save_all(bundle)
+        notes.append(f"sourceType 마이그레이션: {changed}개 항목 갱신")
+        notes.append(i18n_store.build_bundle())
+    else:
+        notes.append("sourceType 마이그레이션: 변경 없음")
+    return notes
 
 
 def rename_shop(old_slug: str, new_slug: str) -> list[str]:
