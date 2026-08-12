@@ -1,21 +1,21 @@
 /**
- * AdSense loader + DEV placeholder (test client / local only).
+ * AdSense unit filler + DEV placeholder (test client / local only).
  *
- * PROD (wired now):
- *   window.ADSENSE_CLIENT = "ca-pub-7139367317436403";
- *   Meta google-adsense-account on pages (site verification).
- *   Script loads via this file — do NOT also put adsbygoogle.js in <head>
- *   (double-load breaks push). Display unit: data-ad-slot="4192792767" (Bottom Ad).
+ * PROD:
+ *   - Head snippet loads adsbygoogle.js (official AdSense code).
+ *   - Meta google-adsense-account for site verification.
+ *   - This file only configures <ins> slots and calls adsbygoogle.push
+ *     (does NOT inject a second adsbygoogle.js — double-load breaks ads).
+ *   - Display unit: data-ad-slot="4192792767" (Bottom Ad).
  *
  * DEV / Google sample:
  *   window.ADSENSE_CLIENT = "ca-pub-3940256099942544";
- *   Forces data-adtest="on" + sample web slot 6351476141 when needed.
+ *   Forces data-adtest="on" + sample web slot when needed.
  *
  * Notes:
- *   - AdSense needs http(s) (localhost / GitHub Pages). file:// usually blocks ads.
- *   - Ad blockers / privacy extensions hide creatives.
- *   - Google’s mobile AdMob unit IDs (ca-app-pub-…/6300978111) are NOT web AdSense slots.
- *   - Placeholder UI only for TEST_CLIENT, file://, or localhost — not for PROD on HTTPS.
+ *   - AdSense needs http(s). file:// usually blocks ads.
+ *   - Ad blockers hide creatives.
+ *   - Placeholder UI only for TEST_CLIENT, file://, or localhost.
  */
 (function () {
   var TEST_CLIENT = "ca-pub-3940256099942544";
@@ -48,7 +48,6 @@
     if (isTest) {
       ins.setAttribute("data-adtest", "on");
       var slot = (ins.getAttribute("data-ad-slot") || "").trim();
-      // Migrate mistaken AdMob banner unit id → web sample slot
       if (!slot || slot === "6300978111" || slot === "1234567890") {
         ins.setAttribute("data-ad-slot", SAMPLE_SLOT);
       }
@@ -57,10 +56,8 @@
       if (!prodSlot) {
         ins.setAttribute("data-ad-slot", PROD_SLOT);
       }
-      // Real publisher: never force adtest
       ins.removeAttribute("data-adtest");
     }
-    // Ensure AdSense can measure a visible box (never display:none)
     var style = ins.getAttribute("style") || "";
     if (!/display\s*:/i.test(style)) {
       ins.setAttribute("style", "display:block;min-height:90px;width:100%;" + style);
@@ -97,8 +94,11 @@
     });
   }
 
+  var pushed = false;
   function pushAds() {
-    slots.forEach(function (ins) {
+    if (pushed) return;
+    pushed = true;
+    slots.forEach(function () {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {
@@ -106,7 +106,6 @@
       }
     });
     markReady(false);
-    // If a creative fills, hide the placeholder for that slot
     window.setTimeout(function () {
       slots.forEach(function (ins) {
         var h = ins.offsetHeight || 0;
@@ -123,9 +122,19 @@
     }, 2500);
   }
 
-  // file:// cannot load remote AdSense — keep placeholder only
   if (location.protocol === "file:") {
     markReady(false);
+    return;
+  }
+
+  // Prefer official <head> snippet; only inject if missing (no double-load).
+  var existing = document.querySelector(
+    'script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'
+  );
+  if (existing) {
+    existing.addEventListener("load", pushAds);
+    // Script may already be loaded by the time ads.js runs
+    pushAds();
     return;
   }
 
