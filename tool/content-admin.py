@@ -67,21 +67,26 @@ def save_ok_message(base: str = "저장됨") -> str:
     return f"{base} — {VIEW_REFRESH_HINT}"
 
 
-def refresh_public_assets(notes: list[str] | None = None) -> list[str]:
-    """Rebuild food recommend catalog, bump SITE_ASSET_VERSION + HTML ?v=.
+def refresh_public_assets(
+    notes: list[str] | None = None,
+    *,
+    rebuild_catalog: bool = False,
+) -> list[str]:
+    """Bump SITE_ASSET_VERSION + HTML ?v=; optionally rebuild food quiz catalog.
 
     i18n saves already call build-bundle; this forces browsers (and GitHub Pages
     later) to fetch the new messages.js / CSS / JS instead of a stale ?v=.
-    Also regenerates data/food/recommend-catalog.js so newly added menus
-    appear in the food-life quiz after a normal Update/save refresh.
+
+    Catalog rebuild is opt-in: dish create/rename/delete already call
+    rebuild_food_recommend_catalog() in lib.content, and most CMS saves
+    (shops, places, phrases) do not change the quiz catalog. Pass
+    rebuild_catalog=True for manual version refresh / tools that need it.
     """
     out = list(notes or [])
-    try:
+    if rebuild_catalog:
         from lib.content import rebuild_food_recommend_catalog
 
         out.append(rebuild_food_recommend_catalog())
-    except Exception as exc:  # noqa: BLE001
-        out.append(f"먹거리 추천 카탈로그 갱신 실패: {exc}")
     try:
         summary = bump_asset_version()
         out.append(
@@ -92,6 +97,15 @@ def refresh_public_assets(notes: list[str] | None = None) -> list[str]:
     except Exception as exc:  # noqa: BLE001
         out.append(f"캐시 버전 자동 갱신 실패: {exc}")
     return out
+
+
+def _is_under(path: Path, root: Path) -> bool:
+    """True if path resolves inside root (Windows-safe; avoids str.startswith)."""
+    try:
+        path.resolve().relative_to(root.resolve())
+        return True
+    except ValueError:
+        return False
 
 
 REGION_OPTIONS = (
@@ -1217,7 +1231,7 @@ class AdminHandler(BaseHTTPRequestHandler):
 
     def _serve_static(self, name: str, content_type: str) -> None:
         file_path = (STATIC_DIR / name).resolve()
-        if not str(file_path).startswith(str(STATIC_DIR.resolve())) or not file_path.is_file():
+        if not _is_under(file_path, STATIC_DIR) or not file_path.is_file():
             self.send_error(404, "Not Found")
             return
         data = file_path.read_bytes()
@@ -1263,7 +1277,7 @@ class AdminHandler(BaseHTTPRequestHandler):
             self.send_error(404, "Not Found")
             return
         file_path = (ROOT / rel).resolve()
-        if not str(file_path).startswith(str(ROOT.resolve())) or not file_path.is_file():
+        if not _is_under(file_path, ROOT) or not file_path.is_file():
             self.send_error(404, "Not Found")
             return
         data = file_path.read_bytes()
@@ -1745,16 +1759,13 @@ class AdminHandler(BaseHTTPRequestHandler):
                 return
 
             if path == "/version/run":
-                summary = bump_asset_version()
+                # Match tool/update-version.py: catalog + cache bump together.
+                notes = refresh_public_assets([], rebuild_catalog=True)
                 self._redirect(
                     "/version",
                     flash=friendly_flash(
                         save_ok_message("사이트 새로고침을 끝냈어요"),
-                        [
-                            f"버전 {summary['version']}",
-                            f"HTML {summary['files_updated']}/{summary['files_scanned']}개 갱신 "
-                            f"(검증 {summary['files_ok']}개)",
-                        ],
+                        notes,
                     ),
                 )
                 return
@@ -1825,11 +1836,11 @@ class AdminHandler(BaseHTTPRequestHandler):
             return False
         file_path = (ROOT / rel).resolve()
         root = ROOT.resolve()
-        if not str(file_path).startswith(str(root)) or not file_path.is_file():
+        if not _is_under(file_path, root) or not file_path.is_file():
             # directory → index.html
             if (ROOT / rel).is_dir():
                 file_path = (ROOT / rel / "index.html").resolve()
-                if not file_path.is_file():
+                if not file_path.is_file() or not _is_under(file_path, root):
                     return False
             else:
                 return False
@@ -2948,7 +2959,8 @@ class AdminHandler(BaseHTTPRequestHandler):
             <input type="text" name="rom" value="{h(item.get('rom',''))}"
                    placeholder="예: annyeonghaseyo">
           </div>
-          <p class="muted">의미(영어·일본어·중국어)는 저장할 때 한국어에서 자동 번역됩니다.</p>
+          <p class="muted">의미(영어·일본어)는 저장할 때 한국어에서 자동 번역됩니다.
+            (유용한 한국어 데이터는 EN/JA 구조입니다.)</p>
           {render_expert(render_force_translate_check())}
           {render_editor_actions(back_href=f"/phrases?cat={cat}")}
         </form>
@@ -3000,7 +3012,8 @@ class AdminHandler(BaseHTTPRequestHandler):
               placeholder="my-phrase" autocomplete="off">
             <span class="hint">영문 소문자·숫자·하이픈</span>
           </div>
-          <p class="muted">의미(영어·일본어·중국어)는 등록할 때 한국어에서 자동 번역됩니다.</p>
+          <p class="muted">의미(영어·일본어)는 등록할 때 한국어에서 자동 번역됩니다.
+            (유용한 한국어 데이터는 EN/JA 구조입니다.)</p>
           {render_editor_actions(save_label="등록", back_href=f"/phrases?cat={cat}")}
         </form>
         """
@@ -3023,7 +3036,8 @@ class AdminHandler(BaseHTTPRequestHandler):
         body = f"""
         <h1>사이트 새로고침</h1>
         <p class="page-lead">글·이미지를 저장하면 캐시 버전이 자동으로 올라갑니다.
-          여기서는 수동으로 한 번 더 올릴 수 있습니다. 반영이 안 보이면
+          여기서는 수동으로 먹거리 추천 카탈로그와 캐시 버전을 한 번에 갱신할 수 있습니다
+          (<code>tool/update-version.py</code>와 동일). 반영이 안 보이면
           <strong>Ctrl+F5</strong> 또는 <a href="/viewer">뷰어</a>를 다시 여세요.</p>
         <form class="card" method="post" action="/version/run">
           <p class="muted" style="margin:0 0 .75rem">현재 버전: <strong>{h(ver)}</strong></p>
@@ -3109,7 +3123,21 @@ class AdminHandler(BaseHTTPRequestHandler):
 
 
 def main() -> int:
-    server = ThreadingHTTPServer((HOST, PORT), AdminHandler)
+    try:
+        server = ThreadingHTTPServer((HOST, PORT), AdminHandler)
+    except OSError as exc:
+        print(f"ERROR: {HOST}:{PORT} 에 바인딩할 수 없습니다: {exc}", file=sys.stderr)
+        print(
+            "이미 content-admin이 실행 중이면 해당 창에서 Ctrl+C로 종료한 뒤 "
+            "다시 실행하세요.",
+            file=sys.stderr,
+        )
+        if sys.stdin.isatty() or sys.platform == "win32":
+            try:
+                input("\nEnter 키를 누르면 종료합니다...")
+            except EOFError:
+                pass
+        return 1
     server.flash = ""  # type: ignore[attr-defined]
     url = f"http://{HOST}:{PORT}/"
     print(f"관리자(CMS): {url}")

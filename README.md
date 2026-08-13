@@ -102,8 +102,10 @@ Korea-Travel-Guidebook/
 
 `tool/content-admin.bat` 실행 → 브라우저에서 `http://127.0.0.1:8765`.
 
-- 음식·가게 KO/EN/JA · 이미지 업로드 · 가게 연결 가능
+- 음식·가게 KO/EN/JA/ZH · 이미지 업로드 · 가게 연결 가능
 - **저장 시** `i18n/build-bundle.py`(messages.js)와 캐시 버전(`SITE_ASSET_VERSION` + HTML `?v=`)이 **자동** 실행됩니다
+- 식사·디저트 **생성/이름변경/삭제** 시 먹거리 추천 카탈로그(`data/food/recommend-catalog.js`)도 함께 갱신됩니다
+- CMS **사이트 새로고침**(`/version`)은 `tool/update-version.py`와 같이 카탈로그 + 캐시 버전을 함께 갱신합니다
 - 반영 확인: **http://127.0.0.1:8765/viewer** (또는 해당 페이지 URL)에서 **Ctrl+F5**. `file://`로 `index.html`을 열면 예전 화면이 남을 수 있습니다
 - 자세한 안내: `tool/README-admin.md`
 

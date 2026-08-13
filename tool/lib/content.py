@@ -66,23 +66,30 @@ from .translate import BatchStatus, fill_body_blocks, fill_scalar_texts
 
 
 def rebuild_food_recommend_catalog() -> str:
-    """Regenerate data/food/recommend-catalog.js for the food-life quiz."""
+    """Regenerate data/food/recommend-catalog.js for the food-life quiz.
+
+    Never raises: CRUD callers must not fail after pages/i18n are already written.
+    On failure returns a Korean note string so CMS toasts can surface it.
+    """
     import importlib.util
 
-    script = ROOT / "tool" / "build-food-recommend-catalog.py"
-    spec = importlib.util.spec_from_file_location(
-        "build_food_recommend_catalog", script
-    )
-    if spec is None or spec.loader is None:
-        return "먹거리 추천 카탈로그 갱신 실패: 스크립트 로드 불가"
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    catalog = mod.build_catalog()
-    path = mod.write_catalog(catalog)
-    return (
-        f"먹거리 추천 카탈로그 갱신: {path.relative_to(ROOT).as_posix()} "
-        f"({len(catalog)}개)"
-    )
+    try:
+        script = ROOT / "tool" / "build-food-recommend-catalog.py"
+        spec = importlib.util.spec_from_file_location(
+            "build_food_recommend_catalog", script
+        )
+        if spec is None or spec.loader is None:
+            return "먹거리 추천 카탈로그 갱신 실패: 스크립트 로드 불가"
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        catalog = mod.build_catalog()
+        path = mod.write_catalog(catalog)
+        return (
+            f"먹거리 추천 카탈로그 갱신: {path.relative_to(ROOT).as_posix()} "
+            f"({len(catalog)}개)"
+        )
+    except Exception as exc:  # noqa: BLE001
+        return f"먹거리 추천 카탈로그 갱신 실패: {exc}"
 
 
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -228,7 +235,7 @@ def _empty_shop_texts() -> dict[str, dict[str, str]]:
 def normalize_dish_texts(
     texts: dict[str, dict[str, str]],
 ) -> tuple[dict[str, dict[str, str]], list[str]]:
-    """Require KO title; fill blank EN/JA from KO as last resort."""
+    """Require KO title; fill blank EN/JA/ZH from KO as last resort."""
     notes: list[str] = []
     out = _empty_dish_texts()
     for lang in i18n_store.LANGS:
@@ -518,7 +525,7 @@ def create_dish(
             raise ValueError(f"i18n dishes.{slug} 키가 이미 있습니다 ({lang}).")
         dishes[slug] = dict(normalized[lang])
     i18n_store.save_all(bundle)
-    notes.append("i18n ko/en/ja에 dishes 항목 추가")
+    notes.append("i18n ko/en/ja/zh에 dishes 항목 추가")
 
     page.parent.mkdir(parents=True, exist_ok=True)
     default_emoji = emoji or ("🍽️" if kind == "meals" else "🍰")

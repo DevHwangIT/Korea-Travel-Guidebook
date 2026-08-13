@@ -27,7 +27,10 @@ def main() -> int:
         pass
 
     try:
-        print(rebuild_food_recommend_catalog())
+        msg = rebuild_food_recommend_catalog()
+        print(msg)
+        if "실패" in msg:
+            print(msg, file=sys.stderr)
     except Exception as exc:  # noqa: BLE001
         print(f"먹거리 추천 카탈로그 갱신 실패: {exc}", file=sys.stderr)
 

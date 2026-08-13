@@ -1,20 +1,21 @@
 @echo off
 setlocal EnableExtensions
+chcp 65001 >nul
 cd /d "%~dp0.."
 if errorlevel 1 (
-  echo [ERROR] 저장소 루트로 이동하지 못했습니다.
+  echo [ERROR] Failed to change to project root.
   pause
   exit /b 1
 )
 
 set "SCRIPT=%~dp0update-version.py"
 if not exist "%SCRIPT%" (
-  echo [ERROR] 파일이 없습니다: %SCRIPT%
+  echo [ERROR] Missing: %SCRIPT%
   pause
   exit /b 1
 )
 
-echo [버전 업데이트] SITE_ASSET_VERSION 갱신 및 HTML ?v= 일괄 적용
+echo [update-version] Rebuild food recommend catalog + bump SITE_ASSET_VERSION + HTML ?v=
 echo.
 
 set "PY="
@@ -27,8 +28,8 @@ if not defined PY (
 
 if not defined PY (
   echo.
-  echo [ERROR] Python 3을 찾을 수 없습니다.
-  echo Python 3을 설치하고 PATH에 추가한 뒤 다시 실행하세요.
+  echo [ERROR] Python 3 not found.
+  echo Install Python 3 and add it to PATH, then retry.
   echo.
   pause
   exit /b 1
@@ -38,7 +39,7 @@ if not defined PY (
 set "ERR=%ERRORLEVEL%"
 if not "%ERR%"=="0" (
   echo.
-  echo [ERROR] update-version 실패. exit=%ERR%
+  echo [ERROR] update-version failed. exit=%ERR%
   pause
   exit /b %ERR%
 )
