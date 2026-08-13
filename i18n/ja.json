@@ -982,7 +982,7 @@
       "mapsProvider": "naver",
       "previewTitle": "원조누드치즈김밥",
       "previewImage": "media/cover.jpg",
-      "hours": "営業中 · 18:00閉店",
+      "hours": "18:00閉店",
       "placeId": "37936207",
       "menuItems": [
         {
@@ -1172,7 +1172,7 @@
       ],
       "category": "粉食",
       "score": "4.38",
-      "hours": "営業中 · 20:00閉店"
+      "hours": "20:00閉店"
     },
     "horangi": {
       "name": "ホランイキンパ",
@@ -1197,7 +1197,7 @@
       "previewTitle": "호랑이김밥",
       "previewImage": "media/cover.jpg",
       "phone": "02-928-3454",
-      "hours": "営業中 · 18:30ラストオーダー",
+      "hours": "18:30ラストオーダー",
       "placeId": "1222951879",
       "menuItems": [
         {
@@ -1923,7 +1923,7 @@
       "previewTitle": "수아당 성북점",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1367-0625",
-      "hours": "営業中 · 20:30ラストオーダー",
+      "hours": "20:30ラストオーダー",
       "placeId": "1191942837",
       "menuItems": [
         {
@@ -2217,7 +2217,7 @@
       "previewTitle": "오월의김밥",
       "previewImage": "media/cover.jpg",
       "phone": "02-876-7792",
-      "hours": "本日休業 · 08/12休業",
+      "hours": "",
       "placeId": "37778826",
       "menuItems": [
         {
@@ -2330,7 +2330,7 @@
       "previewTitle": "서호김밥",
       "previewImage": "media/cover.jpg",
       "phone": "02-594-4434",
-      "hours": "営業中 · 14:00から休憩",
+      "hours": "14:00から休憩",
       "placeId": "19896363",
       "menuItems": [
         {
@@ -2513,7 +2513,7 @@
       "previewTitle": "한입소반",
       "previewImage": "media/cover.jpg",
       "phone": "02-701-4417",
-      "hours": "営業中 · 19:00閉店",
+      "hours": "19:00閉店",
       "placeId": "34556586",
       "menuItems": [
         {
@@ -2644,7 +2644,7 @@
       "previewTitle": "설빙 명동점",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1312-7994",
-      "hours": "営業中 · 22:20ラストオーダー",
+      "hours": "22:20ラストオーダー",
       "placeId": "1621273819",
       "menuItems": [
         {
@@ -2791,7 +2791,7 @@
       "previewTitle": "파리바게뜨 김포공항점",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1496-8202",
-      "hours": "영업 중 · 20:00에 영업 종료",
+      "hours": "20:00에 영업 종료",
       "placeId": "36693181",
       "menuItems": [
         {
@@ -2902,7 +2902,7 @@
       "previewTitle": "뚜레쥬르 무교점",
       "previewImage": "media/cover.jpg",
       "phone": "02-6031-8820",
-      "hours": "営業中 · 22:00閉店",
+      "hours": "22:00閉店",
       "placeId": "1140346755",
       "category": "ベーカリー",
       "score": "4.43"
@@ -2930,7 +2930,7 @@
       "previewTitle": "메가커피 용산후암점",
       "previewImage": "media/cover.jpg",
       "phone": "02-777-5333",
-      "hours": "営業中 · 22:00閉店",
+      "hours": "22:00閉店",
       "placeId": "1222355575",
       "category": "カフェ",
       "score": "4.56"
@@ -2958,7 +2958,7 @@
       "previewTitle": "스타벅스 무교동점",
       "previewImage": "media/cover.jpg",
       "phone": "1522-3232",
-      "hours": "営業中 · 22:00閉店",
+      "hours": "22:00閉店",
       "placeId": "11684710",
       "menuItems": [
         {
@@ -3105,7 +3105,7 @@
       "previewTitle": "컴포즈커피 종로르메이에르점",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1348-8113",
-      "hours": "営業中 · 21:00閉店",
+      "hours": "21:00閉店",
       "placeId": "1660822367",
       "menuItems": [
         {
@@ -3144,7 +3144,7 @@
       "previewTitle": "이디야커피 광화문점",
       "previewImage": "media/cover.jpg",
       "phone": "02-722-3164",
-      "hours": "営業中 · 22:50閉店",
+      "hours": "22:50閉店",
       "placeId": "1906828106",
       "menuItems": [
         {
@@ -3210,7 +3210,7 @@
       "previewTitle": "투썸플레이스 광화문점",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1476-2897",
-      "hours": "営業中 · 23:00閉店",
+      "hours": "23:00閉店",
       "placeId": "1766489447",
       "menuItems": [
         {
@@ -3288,7 +3288,7 @@
       "previewTitle": "빽다방 종로두산위브점",
       "previewImage": "media/cover.jpg",
       "phone": "0507-2093-2369",
-      "hours": "営業中 · 19:00閉店",
+      "hours": "19:00閉店",
       "placeId": "1234892960",
       "menuItems": [
         {
@@ -3337,7 +3337,7 @@
       "previewTitle": "요거트아이스크림의정석 신정네거리점",
       "previewImage": "media/cover.jpg",
       "phone": "070-4012-7413",
-      "hours": "営業中 · 23:00閉店",
+      "hours": "23:00閉店",
       "placeId": "1870236455",
       "menuItems": [
         {
@@ -3377,7 +3377,7 @@
       "sourceType": "naver",
       "previewTitle": "김가네 여의도KBS본관점",
       "phone": "02-6338-5464",
-      "hours": "営業中 · 20:00閉店",
+      "hours": "20:00閉店",
       "placeId": "32822552",
       "menuItems": [
         {
@@ -3919,7 +3919,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "0507-1366-5348",
-      "hours": "営業中 · 20:30ラストオーダー",
+      "hours": "20:30ラストオーダー",
       "body": [],
       "placeId": "11592650",
       "previewTitle": "명동교자 본점",
@@ -3989,7 +3989,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "0507-1448-1309",
-      "hours": "営業中 · 21:10ラストオーダー",
+      "hours": "21:10ラストオーダー",
       "body": [],
       "placeId": "1319831936",
       "previewTitle": "청와옥 을지로3가직영점",
@@ -4224,7 +4224,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-2265-0151",
-      "hours": "営業中 · 20:20ラストオーダー",
+      "hours": "20:20ラストオーダー",
       "body": [],
       "placeId": "11679381",
       "previewTitle": "우래옥",
@@ -4283,7 +4283,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-2267-9500",
-      "hours": "営業中 · 19:40ラストオーダー",
+      "hours": "19:40ラストオーダー",
       "body": [],
       "placeId": "19866570",
       "previewTitle": "오장동함흥냉면",
@@ -4378,7 +4378,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-515-3469",
-      "hours": "営業中 · 21:10ラストオーダー",
+      "hours": "21:10ラストオーダー",
       "body": [],
       "placeId": "37912785",
       "previewTitle": "진미평양냉면",
@@ -4545,7 +4545,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "0507-1447-8774",
-      "hours": "営業中 · 21:00ラストオーダー",
+      "hours": "21:00ラストオーダー",
       "body": [],
       "placeId": "1072356558",
       "previewTitle": "서령 롯데월드몰점",
@@ -4706,7 +4706,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-794-8592",
-      "hours": "営業中 · 21:00ラストオーダー",
+      "hours": "21:00ラストオーダー",
       "body": [],
       "placeId": "1810277002",
       "previewTitle": "몽탄",
@@ -4822,7 +4822,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "0507-1307-8750",
-      "hours": "営業中 · 23:00閉店",
+      "hours": "23:00閉店",
       "body": [],
       "placeId": "37869877",
       "previewTitle": "금돼지식당",
@@ -4909,7 +4909,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-2659-8188",
-      "hours": "営業中 · 22:00ラストオーダー",
+      "hours": "22:00ラストオーダー",
       "body": [],
       "placeId": "1774474024",
       "previewTitle": "산청숯불가든 마곡",
@@ -5042,7 +5042,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-712-7462",
-      "hours": "営業中 · 15:00から休憩",
+      "hours": "15:00から休憩",
       "body": [],
       "placeId": "11679456",
       "previewTitle": "원조 조박집 본관",
@@ -5211,7 +5211,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-753-5388",
-      "hours": "営業中 · 20:30ラストオーダー",
+      "hours": "20:30ラストオーダー",
       "body": [],
       "placeId": "11679660",
       "previewTitle": "진주회관",
@@ -5367,7 +5367,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-777-3733",
-      "hours": "営業中 · 14:30から休憩",
+      "hours": "14:30から休憩",
       "body": [],
       "placeId": "21235557",
       "previewTitle": "태향",
@@ -5453,7 +5453,7 @@
       "mapsProvider": "naver",
       "sourceType": "naver",
       "phone": "02-2275-7999",
-      "hours": "営業中 · 19:00閉店",
+      "hours": "19:00閉店",
       "body": [],
       "placeId": "2036690983",
       "previewTitle": "끄네들로 을지로본점",
@@ -5675,7 +5675,7 @@
       "sourceType": "naver",
       "previewImage": "media/cover.jpg",
       "phone": "02-2275-9666",
-      "hours": "営業中 · 23:30ラストオーダー",
+      "hours": "23:30ラストオーダー",
       "body": [],
       "previewTitle": "진옥화할매원조닭한마리",
       "placeId": "11619295",
@@ -5770,7 +5770,7 @@
       "sourceType": "naver",
       "previewImage": "media/cover.jpg",
       "phone": "070-7716-0081",
-      "hours": "営業中 · 15:00から休憩",
+      "hours": "15:00から休憩",
       "body": [],
       "previewTitle": "수인 인사동 닭한마리 본점",
       "placeId": "1954667241",
@@ -5928,7 +5928,7 @@
       "sourceType": "naver",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1442-3781",
-      "hours": "영업 중 · 21:30에 라스트오더",
+      "hours": "21:30에 라스트오더",
       "body": [],
       "previewTitle": "버터앤쉘터 강남신사점",
       "placeId": "2021650754",
@@ -6110,7 +6110,7 @@
       "sourceType": "naver",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1305-8399",
-      "hours": "영업 중 · 20:30에 영업 종료",
+      "hours": "20:30에 영업 종료",
       "body": [],
       "previewTitle": "인덱스카라멜 광화문 디타워",
       "placeId": "1120415606",
@@ -6170,7 +6170,7 @@
       "sourceType": "naver",
       "previewImage": "media/cover.jpg",
       "phone": "0507-1488-0581",
-      "hours": "브레이크타임 · 17:00에 영업 시작",
+      "hours": "17:00에 영업 시작",
       "body": [],
       "previewTitle": "효담칼국수 닭한마리 명동본점",
       "placeId": "1054209629",

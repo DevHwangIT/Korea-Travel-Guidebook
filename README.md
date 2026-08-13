@@ -2,7 +2,7 @@
 
 정적 HTML 기반 한국 여행 가이드 (KR / EN / JP).
 
-**GitHub Pages:** https://devhwangit.github.io/Korea-Travel-Guidebook/
+**Site:** https://korea-guidebook.cloud/  ·  GitHub Pages: https://devhwangit.github.io/Korea-Travel-Guidebook/
 
 ## SEO
 
@@ -11,7 +11,7 @@
 | `js/site-config.js` | 캐노니컬 origin (`SITE_ORIGIN`) · OG 기본 이미지 |
 | `js/seo.js` | canonical / Open Graph / Twitter / hreflang 동기화 |
 | `robots.txt` | 크롤 허용 + sitemap 위치 |
-| `sitemap.xml` | 홈·주요 허브·놀거리 등 우선 색인 URL (가게 전체는 제외) |
+| `sitemap.xml` | 공개 콘텐츠 페이지 URL (`tool/generate-sitemap.py`로 재생성) |
 
 - 홈·주요 허브 HTML에 `meta description`, OG/Twitter, `hreflang`(`?lang=ko|en|ja`), JSON-LD(홈)가 있습니다.
 - 언어는 클라이언트 i18n이라 **로케일별 별도 경로가 없습니다.** `?lang=` + hreflang으로 보완합니다. (한계는 Search Console에서 확인)

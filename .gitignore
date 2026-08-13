@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual envs / local env
+.env
+.env.*
+.venv/
+venv/
+ENV/
+
+# Tool scrape / local caches (keep tool/ source tracked)
+tool/.cache/
+**/.cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+*.swp
+*~
+
+# Temporary logs / local scratch
+*.log
+tmp/
+temp/
+.scratch/

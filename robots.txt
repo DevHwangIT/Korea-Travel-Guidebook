@@ -1,5 +1,5 @@
-# Korea Travel Guidebook — GitHub Pages
+# Korea Travel Guidebook — GitHub Pages (custom domain)
 User-agent: *
 Allow: /
 
-Sitemap: https://devhwangit.github.io/Korea-Travel-Guidebook/sitemap.xml
+Sitemap: https://korea-guidebook.cloud/sitemap.xml
