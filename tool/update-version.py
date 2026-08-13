@@ -15,6 +15,7 @@ if str(TOOL_DIR) not in sys.path:
     sys.path.insert(0, str(TOOL_DIR))
 
 from lib.cache_bust import bump_asset_version, read_version  # noqa: E402
+from lib.content import rebuild_food_recommend_catalog  # noqa: E402
 from lib.paths import ROOT, VERSION_FILE  # noqa: E402
 
 
@@ -24,6 +25,11 @@ def main() -> int:
         old = read_version()
     except SystemExit:
         pass
+
+    try:
+        print(rebuild_food_recommend_catalog())
+    except Exception as exc:  # noqa: BLE001
+        print(f"먹거리 추천 카탈로그 갱신 실패: {exc}", file=sys.stderr)
 
     summary = bump_asset_version()
     version = summary["version"]

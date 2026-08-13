@@ -68,12 +68,20 @@ def save_ok_message(base: str = "저장됨") -> str:
 
 
 def refresh_public_assets(notes: list[str] | None = None) -> list[str]:
-    """Bump SITE_ASSET_VERSION + HTML ?v= after content/media changes.
+    """Rebuild food recommend catalog, bump SITE_ASSET_VERSION + HTML ?v=.
 
     i18n saves already call build-bundle; this forces browsers (and GitHub Pages
     later) to fetch the new messages.js / CSS / JS instead of a stale ?v=.
+    Also regenerates data/food/recommend-catalog.js so newly added menus
+    appear in the food-life quiz after a normal Update/save refresh.
     """
     out = list(notes or [])
+    try:
+        from lib.content import rebuild_food_recommend_catalog
+
+        out.append(rebuild_food_recommend_catalog())
+    except Exception as exc:  # noqa: BLE001
+        out.append(f"먹거리 추천 카탈로그 갱신 실패: {exc}")
     try:
         summary = bump_asset_version()
         out.append(

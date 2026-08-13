@@ -11,4 +11,11 @@ window.SITE_CONFIG = {
   DEFAULT_LANG: "ko",
   /** Used as hreflang="x-default" target */
   X_DEFAULT_LANG: "en",
+
+  /**
+   * Reserved for a future TourAPI integration on pages/festivals.
+   * The festivals hub currently shows official VisitKorea links only —
+   * no key is required.
+   */
+  TOUR_API_KEY: "",
 };

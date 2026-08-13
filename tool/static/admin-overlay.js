@@ -47,7 +47,10 @@
     var p = location.pathname.replace(/\\/g, "/");
     var place = /\/pages\/transportation\/places\/([^/]+)\/(?:index\.html)?$/.exec(p);
     if (place) return { kind: "place", slug: place[1] };
-    var prep = /\/pages\/before-trip\/(docs|money|connect|pack|solo)\/(?:index\.html)?$/.exec(p);
+    var prep =
+      /\/pages\/before-trip\/(eri|docs|immigration|money|wowpass|connect|pack|solo|holidays|avoid)\/(?:index\.html)?$/.exec(
+        p
+      );
     if (prep) return { kind: "before-trip", slug: prep[1] };
     var prepHub = /\/pages\/before-trip\/(?:index\.html)?$/.exec(p);
     if (prepHub) return { kind: "before-trip-hub" };

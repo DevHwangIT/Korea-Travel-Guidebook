@@ -100,13 +100,143 @@
     "mealsDesc": "한식·분식 등 식사 메뉴를 고르세요.",
     "dessertsDesc": "카페·빵·빙수 등 디저트를 고르세요.",
     "foodsDesc": "한식·분식·카페·디저트 메뉴를 고르세요.",
-    "convenienceDesc": "편의점 콤보·인기 제품을 확인하세요."
+    "convenienceDesc": "편의점 콤보·인기 제품을 확인하세요.",
+    "quiz": {
+      "bannerEyebrow": "Food quiz",
+      "bannerTitle": "뭐 먹을지 모르겠다면 추천받아보세요.",
+      "bannerCta": "추천받기",
+      "title": "먹거리 추천",
+      "progress": "{current} / {total}",
+      "back": "이전",
+      "close": "닫기",
+      "restart": "다시 하기",
+      "resultEyebrow": "오늘의 추천",
+      "resultLabel": "결과",
+      "viewMore": "자세히 보기 →",
+      "defaultReason": "취향에 잘 맞는 메뉴예요. 자세히 보기로 확인해 보세요.",
+      "questions": {
+        "craving": {
+          "prompt": "지금 땡기는 건?",
+          "options": {
+            "meal": "제대로 된 식사",
+            "dessert": "달달한 디저트",
+            "quick": "빠르고 간편하게"
+          }
+        },
+        "spicy": {
+          "prompt": "매운 건 어때요?",
+          "options": {
+            "love": "매운 맛 환영!",
+            "mild": "살짝만",
+            "no": "순한 맛이 좋아요"
+          }
+        },
+        "dessertVibe": {
+          "prompt": "어떤 디저트 분위기가 좋을까요?",
+          "options": {
+            "icy": "시원한 빙수",
+            "bakery": "촉촉한 빵·베이커리",
+            "coffee": "카페에서 여유롭게"
+          }
+        },
+        "soup": {
+          "prompt": "국물 있는 메뉴가 당기나요?",
+          "options": {
+            "yes": "국물 한 그릇!",
+            "no": "고소한 비국물 메뉴"
+          }
+        },
+        "protein": {
+          "prompt": "메인으로 끌리는 건?",
+          "options": {
+            "meat": "고기 제대로",
+            "chicken": "닭요리",
+            "light": "가볍게·채식 친화"
+          }
+        },
+        "mood": {
+          "prompt": "지금 날씨·기분은?",
+          "options": {
+            "hot": "더워요 / 시원한 게 좋아요",
+            "cold": "쌀쌀해요 / 따뜻한 게 좋아요",
+            "rain": "비·축축한 기분",
+            "any": "상관없어요"
+          }
+        },
+        "quickStyle": {
+          "prompt": "빠른 한 끼, 어떤 스타일?",
+          "options": {
+            "combo": "편의점 콤보 탐험",
+            "noodles": "라면·간단 면 요리",
+            "roll": "김밥 한 줄"
+          }
+        }
+      },
+      "results": {
+        "kimbap": {
+          "name": "김밥",
+          "reason": "가볍게 한 끼 때우기 좋고, 들고 다니기도 편해요."
+        },
+        "naengmyeon": {
+          "name": "냉면",
+          "reason": "더운 날·시원한 한 그릇이 당길 때 딱 좋아요."
+        },
+        "gukbap": {
+          "name": "국밥",
+          "reason": "따뜻한 국물로 든든하게 채우고 싶을 때 추천해요."
+        },
+        "dakhanmari": {
+          "name": "닭한마리",
+          "reason": "함께 나눠 먹기 좋고, 따뜻하게 배를 채워 줍니다."
+        },
+        "tteokbokki": {
+          "name": "떡볶이",
+          "reason": "매콤달콤한 길거리 감성으로 기분 전환하기 좋아요."
+        },
+        "samgyeopsal": {
+          "name": "삼겹살",
+          "reason": "고기 제대로 즐기고 싶을 때 실패 없는 선택이에요."
+        },
+        "bibimbap": {
+          "name": "비빔밥",
+          "reason": "채소·밥·양념이 한 그릇에—부담 없고 균형 잡힌 한 끼."
+        },
+        "malatang": {
+          "name": "마라탕",
+          "reason": "매운 국물로 스트레스 풀고 싶을 때 제격이에요."
+        },
+        "sundubu": {
+          "name": "순두부찌개",
+          "reason": "부드러운 두부와 얼큰한 국물—비 오는 날에도 잘 맞아요."
+        },
+        "bread": {
+          "name": "빵·베이커리",
+          "reason": "촉촉한 빵으로 달콤한 휴식을 즐겨 보세요."
+        },
+        "bingsu": {
+          "name": "빙수",
+          "reason": "더위를 날리는 시원하고 달콤한 디저트예요."
+        },
+        "cafe": {
+          "name": "카페",
+          "reason": "커피·디저트로 잠깐 쉬어 가기 좋은 선택이에요."
+        },
+        "convenience": {
+          "name": "편의점 먹거리",
+          "reason": "빠르게 고르고 바로 먹을 수 있는 콤보·인기 제품을 둘러보세요."
+        },
+        "ramyeonEgg": {
+          "name": "라면+계란",
+          "reason": "편의점에서 바로 끓여 먹는, 여행자의 든든한 한 끼예요."
+        }
+      }
+    }
   },
   "prepHub": {
     "pageTitle": "준비·안내 | Korea Travel Guide",
     "title": "준비·안내",
     "intro": "앱·유용한 한국어·긴급 연락을 한곳에서 확인하세요.",
-    "beforeTripDesc": "서류·돈·통신·짐 체크리스트.",
+    "beforeTripDesc": "출발 전 준비·확인 사항 모음.",
     "appsDesc": "지도·번역·숙소 등 추천 앱.",
     "koreanDesc": "여행에 바로 쓰는 한마디.",
     "emergencyDesc": "경찰·구급·관광통역 연락처."
@@ -171,20 +301,20 @@
   "beforeTrip": {
     "pageTitle": "떠나기 전에 | Korea Travel Guide",
     "title": "떠나기 전에",
-    "intro": "출국 전에 서류·돈·통신·짐을 천천히 점검해 보세요. (앱은 ‘유용한 앱’ 메뉴.)",
+    "intro": "여행을 출발하기 전 준비해야 할 것들과 확인해야 할 내용을 정리한 글입니다. 기타 여행 중 팁은 ‘여행 팁’ 카테고리를 참고하세요.",
     "backHub": "← 떠나기 전에",
-    "tabDocs": "서류·입국",
-    "tabMoney": "돈·카드",
+    "tabDocs": "준비서류",
+    "tabMoney": "현금·카드",
     "tabConnect": "통신·전원",
     "tabPack": "짐·예약",
-    "docsTitle": "여권·비자·입국",
+    "docsTitle": "준비서류",
     "docs1": "출국 전 여권 잔여 기간(귀국일+6개월)과 비자·K-ETA 필요 여부를 공식 안내로 확인하세요.",
-    "docs2": "입국심사에 대비해 숙소 주소·체류 목적·귀국편을 휴대폰에 준비하세요.",
+    "docs2": "입국심사에 대비해 숙소 주소·체류 목적·귀국편을 휴대폰에 준비하세요. 전자입국신고(ERI)는 별도 탭에서 작성합니다.",
     "docs3": "여행자보험으로 진료비·분실·항공 지연에 대비하면 마음이 편합니다.",
-    "moneyTitle": "환전·결제·교통카드",
+    "moneyTitle": "현금·카드·교통카드",
     "money1": "카드가 널리 되지만 시장·일부 가게는 현금이 필요합니다. ₩5~10만 원 정도를 준비하세요.",
     "money2": "공항·시내 환전소·ATM을 비교하고, 카드 해외 수수료를 미리 확인하세요.",
-    "money3": "티머니 등 교통카드는 도착 첫날 편의점·역에서 구입·충전하세요.",
+    "money3": "티머니 등 교통카드는 도착 첫날 편의점·역에서 구입·충전하세요. Wow Pass는 별도 탭을 참고하세요.",
     "connectTitle": "유심·eSIM·콘센트",
     "connect1": "eSIM·유심으로 데이터를 확보하세요. 무료 Wi-Fi만으로는 지도·번역이 끊길 수 있습니다.",
     "connect2": "한국은 220V·플러그 C/F입니다. Type A 기기는 변환 어댑터가 필요합니다.",
@@ -202,25 +332,36 @@
         "type": "text",
         "ko": "출국 2주 전, 서류부터 점검하세요\n\n한국 입국은 생각보다 ‘준비만 잘하면’ 수월합니다. 다만 여권 잔여 기간·비자/전자여행허가·숙소 주소처럼 기본 서류를 놓치면 공항에서 시간이 크게 늘어날 수 있어요.",
         "en": "Two weeks out: start with documents\n\nEntry to Korea is usually smooth if the basics are ready — passport validity, visa/ETA, and a stay address. Missing these can cost you a long wait at the airport.",
-        "ja": "出発2週間前、まず書類チェック\n\n韓国入国は準備ができていればスムーズです。パスポート残存・ビザ/電子渡航認証・宿の住所など基本を落とすと空港で時間がかかります。"
+        "ja": "出発2週間前、まず書類チェック\n\n韓国入国は準備ができていればスムーズです。パスポート残存・ビザ/電子渡航認証・宿の住所など基本を落とすと空港で時間がかかります。",
+        "zh": "出发前两周，先检查证件\n\n如果基本材料齐全，韩国入境通常很顺利。护照有效期、签证/电子旅行许可、住宿地址等一旦遗漏，机场等候时间可能明显变长。"
       },
       {
         "type": "text",
         "ko": "여권은 귀국일 기준 6개월 이상 남아 있는지 확인하세요. 국적에 따라 비자나 K-ETA 등 전자여행허가가 필요할 수 있으니, 출국 전 공식 안내를 한 번 더 보세요. 예약 확인서 PDF는 오프라인으로 저장해 두면 안심입니다.",
         "en": "Confirm at least 6 months of passport validity beyond your return date. Depending on nationality you may need a visa or K-ETA — recheck official guidance. Save hotel/booking PDFs offline.",
-        "ja": "帰国日から6か月以上のパスポート残存を確認。国籍によりビザやK-ETAが必要です。予約確認PDFはオフライン保存を。"
+        "ja": "帰国日から6か月以上のパスポート残存を確認。国籍によりビザやK-ETAが必要です。予約確認PDFはオフライン保存を。",
+        "zh": "请确认护照在回国日期后仍至少有 6 个月有效期。按国籍可能需要签证或 K-ETA，出发前再核对官方说明，并把住宿/预订 PDF 离线保存。"
+      },
+      {
+        "type": "text",
+        "ko": "비자·K-ETA·여행 허가\n\n국적에 따라 무비자, 비자, 또는 K-ETA(전자여행허가)가 필요할 수 있습니다. 조건은 자주 바뀌니 출국 전 대사관·공식 안내를 한 번 더 확인하세요. K-ETA는 전자입국신고(e-Arrival/ERI)와 다릅니다. ERI는 별도 탭에서 작성합니다.",
+        "en": "Visa, K-ETA, and travel authorization\n\nDepending on nationality you may need visa-free entry, a visa, or K-ETA. Rules change — recheck embassy/official guidance before you fly. K-ETA is not the e-Arrival Card (ERI); file ERI in its own tab.",
+        "ja": "ビザ・K-ETA・渡航認証\n\n国籍によりノービザ、ビザ、K-ETAが必要です。条件は変わるので出発前に公式案内を再確認を。K-ETAは電子入国申告（e-Arrival/ERI）とは別です。ERIは別タブで作成します。",
+        "zh": "签证、K-ETA 与旅行许可\n\n按国籍可能免签、需签证或需 K-ETA。规则会变，出发前请再核对使馆/官方说明。K-ETA 不同于电子入境申报（e-Arrival/ERI）；ERI 请在对应分栏填写。"
       },
       {
         "type": "text",
         "ko": "입국심사에서는 숙소 주소·체류 목적·귀국편을 물을 수 있습니다. 호텔명과 주소를 한국어/영어로 띄울 수 있게 준비하세요.",
         "en": "Immigration may ask hotel address, purpose of stay, and return/onward ticket. Keep the hotel name ready in Korean/English.",
-        "ja": "入国審査で宿住所・滞在目的・帰国便を聞かれることがあります。宿名を韓国語/英語で出せるように。"
+        "ja": "入国審査で宿住所・滞在目的・帰国便を聞かれることがあります。宿名を韓国語/英語で出せるように。",
+        "zh": "入境审查时可能询问住宿地址、停留目的和回程/续程机票。请准备好酒店名称与地址（韩文/英文）。"
       },
       {
         "type": "callout",
         "ko": "여행자보험은 진료비·분실·지연에 대비하는 기본값으로 두는 편이 마음이 편합니다.",
         "en": "Treat travel insurance as a baseline for medical costs, lost items, and delays.",
-        "ja": "旅行保険は医療費・紛失・遅延への備えとして基本にしておくと安心です。"
+        "ja": "旅行保険は医療費・紛失・遅延への備えとして基本にしておくと安心です。",
+        "zh": "建议把旅行保险当作医疗费用、行李遗失与延误的基本保障。"
       }
     ],
     "moneyBody": [
@@ -232,25 +373,29 @@
         "type": "text",
         "ko": "카드는 잘 되지만, 현금도 조금은 챙기세요\n\n서울·부산 번화가의 카페·편의점·대형 식당은 카드가 기본입니다. 다만 전통시장 골목, 길거리 포장마차, 일부 작은 식당·택시는 현금만 받는 곳이 남아 있어요. ₩50,000~100,000 정도면 첫 며칠이 훨씬 편합니다.",
         "en": "Cards work widely — still carry a little cash\n\nCafés, convenience stores, and bigger restaurants take cards. Markets, stalls, and some small shops/taxis may want won. About ₩50,000–100,000 covers the first days comfortably.",
-        "ja": "カードは広く使えますが現金も少し\n\n繁華街の店はカードOKが多い一方、市場や屋台、一部の店・タクシーは現金のみ。5〜10万ウォンあると到着直後が楽です。"
+        "ja": "カードは広く使えますが現金も少し\n\n繁華街の店はカードOKが多い一方、市場や屋台、一部の店・タクシーは現金のみ。5〜10万ウォンあると到着直後が楽です。",
+        "zh": "刷卡很方便，但仍建议带一点现金\n\n首尔、釜山闹市区的咖啡店、便利店和大餐厅普遍刷卡。传统市场、路边摊和部分小店/出租车仍可能只要现金。备 ₩50,000–100,000 会让最初几天轻松很多。"
       },
       {
         "type": "text",
         "ko": "환전은 공항·시내 환전소·은행 ATM을 비교하세요. 해외 결제 수수료가 있는 카드인지 미리 확인하면 좋습니다.",
         "en": "Compare airport desks, city exchangers, and ATMs. Check foreign-transaction fees on your card before you fly.",
-        "ja": "空港・市内両替・ATMを比較。カードの海外手数料も事前確認を。"
+        "ja": "空港・市内両替・ATMを比較。カードの海外手数料も事前確認を。",
+        "zh": "兑换可比较机场、市区兑换点与银行 ATM。出发前确认信用卡是否收取境外交易手续费。"
       },
       {
         "type": "text",
-        "ko": "티머니·캐시비 같은 교통카드는 편의점·지하철역에서 구입·충전합니다. 도착 첫날 바로 사 두면 이동이 편합니다. 버스는 하차 태그도 잊지 마세요.",
-        "en": "Buy a T-money/Cashbee card on day one at a convenience store or station. Remember to tap out on buses.",
-        "ja": "T-money等は到着初日にコンビニや駅で購入。バス降車時もタッチを。"
+        "ko": "티머니·캐시비 같은 교통카드는 편의점·지하철역에서 구입·충전합니다. 도착 첫날 바로 사 두면 이동이 편합니다. 버스는 하차 태그도 잊지 마세요. 쇼핑+교통이 합쳐진 관광객용 선불카드가 필요하면 Wow Pass 탭을 보세요.",
+        "en": "Buy a T-money/Cashbee card on day one at a convenience store or station. Remember to tap out on buses. Want a tourist prepaid card that covers shopping plus transit? See the Wow Pass tab.",
+        "ja": "T-money等は到着初日にコンビニや駅で購入。バス降車時もタッチを。買い物+交通の観光客向けプリペイドが必要なら Wow Pass タブへ。",
+        "zh": "T-money、Cashbee 等交通卡可在便利店或地铁站购买并充值。抵达首日办好会更方便；公交记得下车也刷卡。若需要购物+交通一体的游客预付卡，请看 Wow Pass 分栏。"
       },
       {
         "type": "callout",
-        "ko": "잔돈(₩1,000·₩5,000)이 있으면 시장·작은 구매에서 편합니다.",
-        "en": "Small bills (₩1,000 / ₩5,000) help at markets and for change.",
-        "ja": "千円・五千ウォン札があると市場や釣銭で便利です。"
+        "ko": "잔돈(₩1,000·₩5,000)이 있으면 시장·작은 구매에서 편합니다. 교통 충전용 소액 현금도 따로 조금 챙기세요.",
+        "en": "Small bills (₩1,000 / ₩5,000) help at markets. Keep a little cash for transit top-ups too.",
+        "ja": "千円・五千ウォン札があると市場で便利。交通チャージ用の現金も少し用意を。",
+        "zh": "备一些小面额（₩1,000 / ₩5,000）方便市场找零；交通充值也建议留一点现金。"
       }
     ],
     "connectBody": [
@@ -281,6 +426,13 @@
         "ko": "착륙 직후 지도가 필요하니, eSIM 설치·활성화 순서를 미리 메모하세요.",
         "en": "You'll want maps on landing — note your eSIM install steps beforehand.",
         "ja": "着陸直後に地図が必要です。eSIMの設定手順を事前メモを。"
+      },
+      {
+        "type": "text",
+        "ko": "앱 준비는 출국 전에\n\n지도(네이버·카카오), 번역(파파고), 메시징은 데이터가 있을 때 바로 씁니다. 상세 설치·사용법은 사이트의 ‘유용한 앱’ 메뉴를 참고하세요. 출국 전 로그인·오프라인 지도 다운로드까지 해 두면 착륙 직후가 편합니다.",
+        "en": "Prep apps before you fly\n\nMaps (Naver/Kakao), translation (Papago), and messaging need data on arrival. See Useful Apps for install tips. Sign in and download offline maps before departure.",
+        "ja": "アプリは出国前に準備\n\n地図・翻訳・メッセは到着直後に必要です。「役立つアプリ」も参照し、ログインやオフライン地図を事前に。",
+        "zh": "出发前准备好 App\n\n地图（Naver/Kakao）、翻译（Papago）和通讯在落地后立刻用得上。安装说明见「实用 App」。出发前完成登录并下载离线地图更省心。"
       }
     ],
     "packBody": [
@@ -311,6 +463,13 @@
         "ko": "캐리어에 귀국 쇼핑 여유를 남겨 두세요. 올리브영·다이소·과자 선물은 부피가 큽니다.",
         "en": "Leave suitcase space for Olive Young, Daiso, and snack gifts — they add up fast.",
         "ja": "帰国のお土産用にスーツケースの空きを残して。"
+      },
+      {
+        "type": "text",
+        "ko": "예약 확인서 체크리스트\n\n숙소·공항 이동·주요 식당/액티비티 예약 메일을 PDF·스크린샷으로 저장하세요. 체크인 시간, 짐 보관, 취소 조건을 메모해 두면 첫날이 덜 바빠집니다. 앱 예약(야놀자·여기어때 등)은 ‘유용한 앱’에서 이어서 볼 수 있습니다.",
+        "en": "Booking checklist\n\nSave lodging, airport transfer, and key reservation emails as PDF/screenshots. Note check-in time, luggage storage, and cancel rules. Lodging apps are covered under Useful Apps.",
+        "ja": "予約確認のチェック\n\n宿・空港移動・主要予約メールをPDF/スクショ保存。チェックイン・荷物預かり・キャンセル条件をメモ。宿アプリは「役立つアプリ」も参照。",
+        "zh": "预订确认清单\n\n把住宿、机场交通和重要预约邮件存成 PDF/截图。记下入住时间、行李寄存与取消规则。住宿类 App 可在「实用 App」继续查看。"
       }
     ],
     "pack4": "캐리어에 귀국 쇼핑 여유를 남겨 두세요. 올리브영·다이소·과자 선물은 부피가 큽니다.",
@@ -340,6 +499,13 @@
         "ja": "知り合いと会う\n\n友人や現地の知人、言語交換相手がいれば一緒に食べるほうが楽で、店選びも広がります。渡航前に約束しておくと一人食事のストレスが減ります。"
       },
       {
+        "type": "text",
+        "ko": "도착 전에 알아두면 좋은 점\n\n혼자 여행이라면 첫 끼는 편의점·분식·체인 백반처럼 실패가 적은 곳으로 잡아 보세요. 지도 앱에 ‘혼밥’·‘1인석’을 저장해 두면 배고플 때 헤매지 않습니다. 2인 필수 고깃집은 현지 친구와 함께 가는 일정으로 미뤄도 됩니다.",
+        "en": "Before you arrive\n\nFor solo trips, plan an easy first meal (convenience store, snack bar, simple set meal). Save “honbap” / single-seat spots in your maps app. Save two-person BBQ for when you have company.",
+        "ja": "到着前に知っておくと安心\n\n一人旅なら最初の食事はコンビニ・粉食・定食など失敗しにくい店を。地図に「ホンバプ」「1人席」を保存。2人前必須の焼肉は知人と一緒の予定に。",
+        "zh": "抵达前可先了解\n\n独自旅行时，第一餐可选便利店、小吃或简单套餐，失败率更低。在地图里收藏「混饭/혼밥」「单人座」。两人起订的烤肉可留到有同伴时再去。"
+      },
+      {
         "type": "callout",
         "ko": "팁: 혼밥 맛집·바 형태로 혼자 환영하는 곳도 늘고 있습니다. 네이버·구글 지도에서 ‘혼밥’·‘1인석’으로 검색해 보세요.",
         "en": "Tip: More places welcome solo diners (counter seats, 1-person sets). Search maps for “honbap” / single seating.",
@@ -348,7 +514,220 @@
     ],
     "solo1": "왜 혼자 식당이 부담스러울까요?\n\n한국에는 ‘함께 먹는’ 문화가 강한 곳이 많습니다. 삼겹살·닭갈비처럼 최소 2인 주문이 기본인 메뉴, 큰 상차림, 직원·손님이 혼자 온 손님을 낯설게 여기는 분위기 때문에 혼자 들어가기 머뭇거려질 수 있어요.",
     "solo2": "혼자 가야 한다면\n\n김밥·분식·백반·체류형 카페·패스트캐주얼·편의점 식사처럼 1인 친화 메뉴를 고르세요. ‘혼자예요’라고 짧게 말하면 대부분 자리·세트 메뉴를 안내해 줍니다. 키오스크·모바일 주문 매장도 부담이 적습니다.",
-    "solo3": "아는 사람과 만나기\n\n한국에 친구·현지 지인·언어교환 파트너가 있다면 함께 식사하는 편이 훨씬 편하고 분위기 좋은 식당을 고르기 쉽습니다. 여행 전에 약속을 잡아 두면 ‘혼자 식당’ 스트레스를 크게 줄일 수 있습니다."
+    "solo3": "아는 사람과 만나기\n\n한국에 친구·현지 지인·언어교환 파트너가 있다면 함께 식사하는 편이 훨씬 편하고 분위기 좋은 식당을 고르기 쉽습니다. 여행 전에 약속을 잡아 두면 ‘혼자 식당’ 스트레스를 크게 줄일 수 있습니다.",
+    "immigrationBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/immigration.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "자동출입국심사(SES)란?\n\nSES(Smart Entry Service)는 여권·지문·얼굴 등 바이오 정보로 전용 게이트를 통과하는 자동 출입국 심사입니다. 사람 창구 줄보다 빠른 경우가 많아, 조건에 맞으면 공항에서 시간을 크게 줄일 수 있습니다.",
+        "en": "What is SES (automated immigration)?\n\nSES (Smart Entry Service) lets eligible travelers clear immigration at dedicated auto-gates using passport and biometrics (fingerprints/face). It is often faster than staffed counters when you qualify.",
+        "ja": "自動出入国審査（SES）とは？\n\nSES（Smart Entry Service）は、旅券と指紋・顔などの生体情報で専用ゲートを通る自動出入国審査です。条件を満たせば有人窓口より早いことが多いです。",
+        "zh": "什么是自动出入境审查（SES）？\n\nSES（Smart Entry Service）是用护照与指纹/面部等生物信息通过专用闸机的自动出入境系统。符合条件时，通常比人工窗口更快。"
+      },
+      {
+        "type": "text",
+        "ko": "누가 쓸 수 있나요? (개요)\n\n· 만 17세 이상 등록외국인(외국인등록증·거소신고증): 사전등록 없이 이용 가능한 경우가 많습니다.\n· 단기체류 외국인(만 17세 이상): 출국 심사에서 사전등록 없이 이용 가능한 경우가 있습니다.\n· 상호 자동출입국 협정이 있는 일부 국적·한국방문우대카드 가입자 등은 별도 등록 후 이용.\n· 사전등록이 필요한 경우 공항·출입국관서 등록센터에서 지문·얼굴을 등록하면, 여권에 확인 도장 또는 SES 등록 스티커가 붙습니다.\n\n대상·연령·예외는 자주 바뀌니 출국 전 법무부 출입국·외국인정책본부 또는 Hi Korea에서 확인하세요.",
+        "en": "Who can use it? (overview)\n\n· Registered foreigners (ARC/residence card) aged 17+: often usable without pre-registration.\n· Short-term visitors aged 17+: may use departure auto-gates without pre-registration in many cases.\n· Some nationalities under mutual SES agreements and Korea Priority Card holders may need enrollment.\n· When pre-registration is required, enroll biometrics at an airport/immigration center; a confirmation stamp or SES sticker is placed in the passport.\n\nRules change — verify on Korea Immigration or Hi Korea before travel.",
+        "ja": "誰が使える？（概要）\n\n・17歳以上の登録外国人（外国人登録証など）: 事前登録なしで使える場合が多い\n・短期滞在の外国人（17歳以上）: 出国審査で事前登録なし利用ができる場合あり\n・相互協定のある一部国籍・韓国訪問優待カード加入者などは別途登録後に利用\n・事前登録が必要な場合、空港・出入国事務所で指紋・顔を登録すると、旅券に確認印またはSES登録ステッカーが付きます\n\n対象は変わるので、渡航前に出入国・外国人政策本部またはHi Koreaで確認を。",
+        "zh": "谁可以使用？（概要）\n\n· 年满 17 岁的登录外国人（外国人登录证/居留证）：多数情况无需事先登记即可使用。\n· 短期停留外国人（17 岁以上）：出境审查时有时无需事先登记即可使用。\n· 与韩国有相互自动通关协议的部分国籍、持韩国访问优待卡并完成登记者等需另行注册。\n· 需要事先登记时，在机场或出入境机关登记指纹/面部后，护照会盖确认章或贴上 SES 登记贴纸。\n\n资格与年龄规则可能调整，行前请在韩国出入境官网或 Hi Korea 核对。"
+      },
+      {
+        "type": "text",
+        "ko": "공항에서 이렇게 지나갑니다\n\nSES·자동출입국 표지판이 있는 전용 게이트로 가세요. 보통 여권을 리더에 올리고 → 게이트가 열리면 들어가 → 등록된 손가락을 스캔 → (기기에 따라) 얼굴 촬영 → 통과입니다. 스티커/등록이 없거나 대상이 아니면 일반 외국인 심사대로 가세요. 직원이 안내하는 줄을 따르세요.",
+        "en": "At the airport\n\nFollow signs for SES / automated immigration gates. Typical flow: place passport on the reader → enter when the gate opens → scan your registered finger → face camera if prompted → exit. If you are not enrolled/eligible, use the regular foreigner counters and follow staff directions.",
+        "ja": "空港での流れ\n\nSES・自動出入国の案内がある専用ゲートへ。旅券をリーダーに置く → ゲートが開いたら入る → 登録した指をスキャン →（機種により）顔認証 → 退出、が一般的です。対象外なら通常の外国人審査レーンへ。職員の誘導に従ってください。",
+        "zh": "在机场如何通过\n\n请前往标有 SES/自动出入境的专用闸机。常见流程：把护照放到读取器 → 闸门打开后进入 → 扫描已登记手指 →（视设备）面部识别 → 离开。若未登记或不符资格，请走普通外国人审查通道，并听从工作人员指引。"
+      },
+      {
+        "type": "callout",
+        "ko": "공식 안내: 출입국·외국인정책본부 SES 페이지 https://www.immigration.go.kr 및 Hi Korea https://www.hikorea.go.kr 에서 대상·등록 장소를 확인하세요.",
+        "en": "Official info: check SES pages on Korea Immigration https://www.immigration.go.kr and Hi Korea https://www.hikorea.go.kr for eligibility and enrollment locations.",
+        "ja": "公式案内: 出入国・外国人政策本部 https://www.immigration.go.kr と Hi Korea https://www.hikorea.go.kr で対象・登録場所を確認を。",
+        "zh": "官方信息：请在韩国出入境 https://www.immigration.go.kr 与 Hi Korea https://www.hikorea.go.kr 核对资格与登记地点。"
+      }
+    ],
+    "tabImmigration": "입국 심사(SES)",
+    "immigrationTitle": "자동출입국심사 (SES)",
+    "immigration1": "SES(Smart Entry Service)는 여권·지문·얼굴 정보로 전용 게이트를 통과하는 자동 출입국 심사입니다. 조건에 맞으면 사람 창구보다 빠른 경우가 많습니다.",
+    "immigration2": "등록외국인·일부 국적·사전등록자 등이 이용합니다. 등록 시 여권에 확인 도장 또는 SES 스티커가 붙을 수 있습니다. 대상은 공식 안내(출입국·Hi Korea)로 확인하세요.",
+    "immigration3": "공항에서 SES·자동출입국 표지판이 있는 전용 게이트를 이용하세요. 대상이 아니면 일반 외국인 심사대로 가세요.",
+    "eriBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/eri.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "전자입국신고서(e-Arrival Card)\n\n종이에 쓰던 입국신고서를 온라인으로 미리 제출하는 제도입니다. 공식 명칭은 e-Arrival Card(전자입국신고서)이며, 여행자 사이에서는 ERI·전자입국신고로도 불립니다. 코로나 시절의 Q-CODE(건강 신고)나 K-ETA(전자여행허가)와는 별개입니다. 제출하면 종이 입국신고서를 따로 쓰지 않아도 되는 경우가 많습니다.",
+        "en": "e-Arrival Card (electronic entry declaration)\n\nThis is Korea’s online arrival card that replaces the paper form for many travelers. Official name: e-Arrival Card. Travelers may also call it ERI or “electronic entry declaration.” It is not the old COVID Q-CODE health form, and it is separate from K-ETA (travel authorization). After you submit online, you usually do not need a paper arrival card.",
+        "ja": "電子入国申告書（e-Arrival Card）\n\n紙の入国カードの代わりに、事前にオンラインで提出する制度です。公式名称は e-Arrival Card。旅行者の間では ERI・電子入国申告とも呼ばれます。コロナ期のQ-CODE（健康申告）やK-ETA（電子渡航認証）とは別です。提出すれば紙の到着カードは不要な場合が多いです。",
+        "zh": "电子入境申报（e-Arrival Card）\n\n这是韩国把纸质入境卡改为网上提前申报的制度。官方名称为 e-Arrival Card（电子入境申报），旅客也常说 ERI。它不同于疫情时期的 Q-CODE（健康申报），也不同于 K-ETA（电子旅行许可）。在线提交后，多数情况下无需再填纸质入境卡。"
+      },
+      {
+        "type": "text",
+        "ko": "누가·언제 작성하나요?\n\n한국에 입국하는 외국인이 대상입니다(외국인등록증 소지자 등 일부 면제·예외는 공식 안내 확인). 한국 표준시 기준으로 도착일 3일 전부터 제출할 수 있고, 제출 후 72시간이 지나면 효력이 사라지니 너무 일찍 쓰지 마세요. 비행기 탑승 전·착륙 전에 끝내는 편이 가장 편합니다. 재입국할 때마다 다시 제출해야 합니다.",
+        "en": "Who needs it, and when?\n\nMost foreign nationals entering Korea must submit it (some exemptions, e.g. certain residence-card holders — check the official site). You can file from 3 days before arrival (Korea Standard Time). Validity expires 72 hours after submission, so do not file too early. Finish before boarding or before landing. Submit again for each re-entry.",
+        "ja": "誰が・いつ書く？\n\n韓国に入国する外国人が対象です（外国人登録証所持者など一部免除は公式案内で確認）。韓国標準時で到着3日前から提出可能。提出から72時間で無効になるので早すぎる提出は避け、搭乗前〜到着前に済ませると安心です。再入国のたびに再提出が必要です。",
+        "zh": "谁需要填、何时填？\n\n多数入境韩国的外国人需要提交（持外国人登录证等部分豁免请以官网为准）。可按韩国标准时在抵达前 3 天起填写；提交后 72 小时失效，不要过早提交。登机前或落地前完成最稳妥。每次再入境都需重新提交。"
+      },
+      {
+        "type": "text",
+        "ko": "작성 순서 (공식 사이트)\n\n1) 공식 사이트 https://www.e-arrivalcard.go.kr 접속 (PC·스마트폰)\n2) 개인(Individual) 또는 단체(Group) 선택\n3) 이용약관 동의·이메일 입력\n4) 여권 정보 입력\n5) 입국·출국·체류지 등 여정 정보 입력\n6) 내용 확인 후 제출 → 발급번호가 이메일로 옵니다\n\n발급번호를 꼭 인쇄할 필요는 없지만, 이메일·스크린샷으로 남겨 두면 수정·확인이 쉽습니다. 유료 대행 사이트는 쓰지 마세요. 공식 포털은 무료입니다.",
+        "en": "How to file (official site)\n\n1) Go to https://www.e-arrivalcard.go.kr (PC or phone)\n2) Choose Individual or Group\n3) Accept terms and enter an email\n4) Enter passport details\n5) Enter arrival/departure and stay information\n6) Review and submit — an issue number is emailed to you\n\nYou do not have to print it, but keep the email/screenshot for edits. Avoid paid third-party sites; the official portal is free.",
+        "ja": "記入手順（公式サイト）\n\n1) https://www.e-arrivalcard.go.kr にアクセス（PC/スマホ）\n2) Individual（個人）または Group（団体）を選択\n3) 規約同意・メール入力\n4) パスポート情報\n5) 出入国・滞在先などの旅程\n6) 確認して提出 → 発行番号がメールで届きます\n\n印刷必須ではありませんが、メール/スクショを残すと修正が楽です。有料代行サイトは避け、公式は無料です。",
+        "zh": "填写步骤（官网）\n\n1) 打开 https://www.e-arrivalcard.go.kr（电脑或手机）\n2) 选择个人（Individual）或团体（Group）\n3) 同意条款并填写邮箱\n4) 填写护照信息\n5) 填写入出境与住宿等行程\n6) 核对后提交 → 签发编号会发到邮箱\n\n不必强制打印，但请保留邮件/截图以便修改。勿用收费代填网站；官方门户免费。"
+      },
+      {
+        "type": "text",
+        "ko": "미리 준비할 정보\n\n유효 여권, 수신 가능한 이메일, 입국일·항공편 번호, 체류지(호텔명·주소), 출국일·귀국편(선택). 숙소 주소는 영문/한국어로 정확히 적어 두면 심사에서도 그대로 쓸 수 있습니다.",
+        "en": "What to prepare\n\nValid passport, working email, arrival date and flight number, place of stay (hotel name/address), departure date/flight (optional). Write the stay address carefully in English/Korean — you can reuse it at immigration.",
+        "ja": "用意するもの\n\n有効なパスポート、受信できるメール、入国日・便名、滞在先（宿名・住所）、出国日・帰国便（任意）。宿住所は英語/韓国語で正確に書いておくと審査でも使えます。",
+        "zh": "请提前准备\n\n有效护照、可接收邮件的邮箱、入境日期与航班号、住宿地（酒店名/地址）、出境日期与回程航班（可选）。住宿地址请用英文/韩文写准确，入境审查时也能直接出示。"
+      },
+      {
+        "type": "callout",
+        "ko": "흔한 실수: K-ETA와 혼동하기, 너무 일찍 제출해 72시간 만료, 숙소 주소 오타, 유료 가짜 사이트. 일정·숙소가 바뀌면 입국 심사 전에 공식 사이트에서 확인·수정하세요.",
+        "en": "Common mistakes: confusing it with K-ETA, filing too early (72-hour expiry), wrong hotel address, paid fake sites. If plans change, check/edit on the official site before immigration.",
+        "ja": "よくあるミス: K-ETAとの混同、早すぎる提出（72時間で失効）、宿住所の誤記、有料の偽サイト。予定変更時は入国審査前に公式サイトで確認・修正を。",
+        "zh": "常见错误：与 K-ETA 混淆、过早提交导致 72 小时失效、住宿地址写错、付费假网站。行程有变时，请在入境审查前于官网核对/修改。"
+      }
+    ],
+    "wowpassBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/wowpass.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "Wow Pass란?\n\n외국인 여행객용 선불(prepaid) 카드입니다. 한국 내 가맹점에서 로컬 카드처럼 결제할 수 있고, 티머니 기능이 포함된 카드로 지하철·버스·택시 등 교통에도 쓰는 경우가 많습니다. 공항·주요 지하철역·호텔 등의 키오스크에서 발급·충전하고, 앱으로 잔액·이용내역을 확인하는 방식이 일반적입니다.",
+        "en": "What is Wow Pass?\n\nA prepaid travel card popular with foreign visitors. It works like a local debit card at many Korean merchants, and versions with T-money let you ride subway/bus/taxi. Issue and top up at airport/station/hotel kiosks; link the app to check balance and history.",
+        "ja": "Wow Passとは？\n\n外国人旅行者向けのプリペイドカードです。韓国の店でローカルカードのように使え、T-money機能付きなら地下鉄・バス・タクシーにも使えます。空港や主要駅・ホテルのキオスクで発行・チャージし、アプリで残高確認するのが一般的です。",
+        "zh": "什么是 Wow Pass？\n\n面向外国旅客的预付卡。可在韩国许多商户像本地卡一样刷卡消费；带 T-money 功能的版本也可用于地铁、公交、出租车。通常在机场、主要地铁站、酒店等地的自助机发售与充值，并用 App 查看余额与消费记录。"
+      },
+      {
+        "type": "text",
+        "ko": "쓰는 법·주의점\n\n카드 안에 ‘쇼핑 잔액’과 ‘교통(티머니) 잔액’이 따로인 경우가 많습니다. 외화로 충전한 금액은 상점 결제용이고, 교통 잔액은 원화 현금으로 별도 충전해야 하는 경우가 많습니다. 해외 수수료 없는 신용카드가 있다면 결제용 카드 + 티머니만으로도 충분할 수 있어요. Wow Pass는 외화를 키오스크에서 바로 환전·충전하고 싶을 때, 국제카드가 안 되는 매장이 걱정될 때 선택지로 두세요.",
+        "en": "How to use / tips\n\nMany cards keep two wallets: a shopping balance and a separate T-money transit balance. Foreign-currency top-ups usually fund shopping; transit often still needs KRW cash top-ups. If you already have a no-FX-fee credit card, a simple T-money card may be enough. Consider Wow Pass if you want kiosk FX top-ups or worry about shops that reject foreign cards.",
+        "ja": "使い方・注意\n\n「ショッピング残高」と「交通（T-money）残高」が分かれていることが多いです。外貨チャージは店での支払いに使い、交通は現金（ウォン）で別チャージが必要な場合がほとんど。海外手数料の少ないクレカがあるなら、T-money単体でも十分なことがあります。キオスクで外貨をすぐチャージしたい人向けの選択肢です。",
+        "zh": "用法与注意\n\n许多卡有两个余额：购物余额与交通（T-money）余额。外币充值多用于购物；交通余额往往仍需用韩元现金另充。若已有免外汇手续费的信用卡，单独办 T-money 也可能够用。想在自助机直接用外币换汇充值、或担心部分店铺不收国际卡时，可考虑 Wow Pass。"
+      },
+      {
+        "type": "callout",
+        "ko": "공식·매장 안내를 우선하세요. 앱 가입·잔액 확인 방법을 키오스크 옆 안내문에서도 확인할 수 있습니다. 불필요한 유료 대행은 피하세요.",
+        "en": "Follow official/kiosk instructions. App signup and balance checks are usually explained on-site. Avoid unnecessary paid agents.",
+        "ja": "公式・キオスク案内を優先を。アプリ登録や残高確認は現地案内でも確認できます。不要な有料代行は避けて。",
+        "zh": "请以官方/自助机说明为准。App 注册与余额查询通常现场有指引。避免不必要的付费代办。"
+      }
+    ],
+    "catEntry": "입국",
+    "catMoney": "돈",
+    "catLife": "생활",
+    "catDining": "식사",
+    "catEntryIntro": "서류와 전자입국신고, 공항 심사까지 — 입국 전에 확인할 항목입니다.",
+    "catMoneyIntro": "현금·카드·교통카드와 관광객용 Wow Pass를 정리했습니다.",
+    "catLifeIntro": "데이터·전원과 짐·숙소 예약 등, 도착 직후 생활에 필요한 준비입니다.",
+    "catDiningIntro": "혼자 식당에 들어가기 부담될 때 알아두면 좋은 팁입니다.",
+    "tabEri": "전자입국신고(ERI)",
+    "tabWowpass": "Wow Pass",
+    "eriTitle": "전자입국신고 (e-Arrival / ERI)",
+    "wowpassTitle": "Wow Pass",
+    "eri1": "전자입국신고서(e-Arrival Card)는 종이 입국신고서를 온라인으로 미리 제출하는 제도입니다. K-ETA·옛 Q-CODE와는 별개입니다.",
+    "eri2": "한국 표준시 기준 도착 3일 전부터 제출할 수 있고, 제출 후 72시간이 지나면 효력이 사라집니다. 공식 사이트는 무료입니다.",
+    "eri3": "공식 사이트 https://www.e-arrivalcard.go.kr 에서 여권·여정·체류지를 입력해 제출하세요. 발급번호는 이메일로 받습니다.",
+    "wowpass1": "Wow Pass는 외국인 여행객용 선불 카드로, 가맹점 결제와 티머니형 교통을 함께 쓰는 경우가 많습니다.",
+    "wowpass2": "공항·역·호텔 키오스크에서 발급·충전하고 앱으로 잔액을 확인합니다. 쇼핑 잔액과 교통 잔액이 분리된 경우가 많습니다.",
+    "wowpass3": "해외 수수료 없는 카드가 있다면 일반 카드+티머니만으로도 충분할 수 있습니다. 필요에 따라 선택하세요.",
+    "catPickLabel": "주제",
+    "catSchedule": "일정",
+    "catScheduleIntro": "공휴일과 여행이 힘든 시기를 간단히 정리했습니다. 일정 잡을 때 참고하세요.",
+    "tabHolidays": "공휴일",
+    "tabAvoid": "추천하지 않는 시기",
+    "holidaysTitle": "한국의 공휴일",
+    "avoidTitle": "여행이 힘든 시기",
+    "holidays1": "양력 고정 공휴일: 1/1 신정, 3/1 삼일절, 5/5 어린이날, 6/6 현충일, 8/15 광복절, 10/3 개천절, 10/9 한글날, 12/25 크리스마스.",
+    "holidays2": "설날·추석·부처님 오신 날은 음력이라 해마다 날짜가 달라집니다. 설날은 보통 1~2월, 추석은 9~10월, 부처님 오신 날은 4~5월 부근입니다. 출국 전 그해 달력을 확인하세요.",
+    "holidays3": "연휴에는 교통·숙소가 붐비고 일부 가게가 쉽니다. 성수기처럼 미리 예약하는 편이 안전합니다.",
+    "avoid1": "한여름(7~8월)은 더위와 습도가 높아 야외 중심 일정은 힘들 수 있습니다.",
+    "avoid2": "장마는 대략 6월 말~7월에 비가 잦습니다. 실내·유연한 일정이 편합니다.",
+    "avoid3": "한겨울(12~2월)은 특히 내륙이 춥고 바람이 셉니다. 초보·야외 위주 여행이면 다른 계절도 고려해 보세요. ‘오지 말라’는 뜻이 아니라, 준비가 더 필요하다는 안내입니다.",
+    "holidaysBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/holidays.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "공휴일을 알면 일정 짜기가 쉬워집니다\n\n한국은 양력으로 날짜가 고정된 공휴일과, 음력이라 해마다 날짜가 움직이는 연휴가 섞여 있습니다. 아래는 여행 가이드용으로 짧게 정리한 목록입니다. 정확한 그해 날짜는 출국 전 공식 달력으로 한 번 더 확인하세요.",
+        "en": "Knowing holidays makes planning easier\n\nKorea mixes fixed solar-date holidays with lunar holidays that move each year. Below is a simple traveler’s list — recheck the official calendar for the exact dates in your travel year.",
+        "ja": "祝日を知ると日程が組みやすい\n\n韓国には太陽暦で固定の祝日と、陰暦で年ごとに動く連休があります。下は旅行ガイド向けの簡潔リスト。渡航年の正確な日付は公式カレンダーで再確認を。",
+        "zh": "了解公休日，行程更好排\n\n韩国既有阳历固定日期的公休，也有按阴历每年变动的长假。下面是面向旅客的简要列表——出发前请再核对当年官方日历。"
+      },
+      {
+        "type": "text",
+        "ko": "양력 고정 공휴일\n\n· 1월 1일 — 신정(새해)\n· 3월 1일 — 삼일절(독립운동 기념)\n· 5월 5일 — 어린이날\n· 6월 6일 — 현충일(호국 영령 추모)\n· 8월 15일 — 광복절(해방 기념)\n· 10월 3일 — 개천절(개국 기념)\n· 10월 9일 — 한글날\n· 12월 25일 — 크리스마스\n\n이들 날은 해마다 같은 날짜입니다.",
+        "en": "Fixed solar-date holidays\n\n· Jan 1 — New Year’s Day\n· Mar 1 — Independence Movement Day\n· May 5 — Children’s Day\n· Jun 6 — Memorial Day\n· Aug 15 — Liberation Day\n· Oct 3 — National Foundation Day\n· Oct 9 — Hangul Day\n· Dec 25 — Christmas\n\nThese fall on the same dates every year.",
+        "ja": "太陽暦の固定祝日\n\n· 1月1日 — 元日\n· 3月1日 — 三一節\n· 5月5日 — 子供の日\n· 6月6日 — 顕忠日\n· 8月15日 — 光復節\n· 10月3日 — 開天節\n· 10月9日 — ハングルの日\n· 12月25日 — クリスマス\n\n毎年同じ日付です。",
+        "zh": "阳历固定公休\n\n· 1月1日 — 元旦\n· 3月1日 — 三一节\n· 5月5日 — 儿童节\n· 6月6日 — 显忠日\n· 8月15日 — 光复节\n· 10月3日 — 开天节\n· 10月9日 — 韩文日\n· 12月25日 — 圣诞节\n\n这些日期每年固定。"
+      },
+      {
+        "type": "text",
+        "ko": "음력 연휴 (해마다 날짜 확인)\n\n· 설날(설) — 음력 새해. 보통 1~2월. 전후 연휴가 길어질 수 있음\n· 부처님 오신 날 — 음력 4월 8일. 보통 4~5월\n· 추석 — 한가위. 보통 9~10월. 전후 연휴가 길어질 수 있음\n\n음력이라 해마다 날짜가 다릅니다. 항공·숙소·KTX를 잡기 전에 그해 달력을 확인하세요.",
+        "en": "Lunar holidays (check each year)\n\n· Seollal (Lunar New Year) — usually Jan–Feb; often a longer break around it\n· Buddha’s Birthday — 8th day of the 4th lunar month; usually Apr–May\n· Chuseok (harvest festival) — usually Sep–Oct; often a longer break around it\n\nDates move every year — confirm before booking flights, hotels, or KTX.",
+        "ja": "陰暦の連休（年ごとに確認）\n\n· ソルラル（旧正月）— だいたい1〜2月。前後が連休になりやすい\n· 仏誕日 — 陰暦4月8日。だいたい4〜5月\n· チュソク（秋夕）— だいたい9〜10月。前後が連休になりやすい\n\n陰暦のため年ごとに日付が違います。航空券・宿・KTX前にその年を確認を。",
+        "zh": "阴历长假（每年核对日期）\n\n· 春节（설날）— 阴历新年，多在 1–2 月，前后常连休\n· 佛诞日 — 阴历四月初八，多在 4–5 月\n· 中秋（추석）— 多在 9–10 月，前后常连休\n\n日期每年不同。订机票、住宿、KTX 前请核对当年日历。"
+      },
+      {
+        "type": "callout",
+        "ko": "연휴·황금연휴에는 명소·교통·인기 식당이 붐빕니다. 일부 가게·관공서는 쉽니다. 성수기처럼 미리 예약하세요.",
+        "en": "Long weekends get busy at sights, transit, and popular restaurants. Some shops and offices close. Book early, as in peak season.",
+        "ja": "連休・黄金連休は名所・交通・人気店が混みます。店や役所が休むことも。繁忙期同様、早めに予約を。",
+        "zh": "长假/黄金周时景点、交通与人气餐厅更挤，部分店铺与机关休息。建议像旺季一样提前预订。"
+      }
+    ],
+    "avoidBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/avoid.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "‘오지 말라’가 아니라, 준비가 더 필요한 시기입니다\n\n한국은 사계절이 뚜렷합니다. 아래 시기는 초보 여행자나 야외 일정이 많은 사람에게는 체감 난이도가 올라갈 수 있어요. 일정을 잡을 때 참고만 하세요.",
+        "en": "Not “don’t come” — just periods that need more prep\n\nKorea has four clear seasons. The windows below can feel harder for first-timers or outdoor-heavy trips. Use them as planning tips, not bans.",
+        "ja": "「来るな」ではなく、準備がより必要な時期\n\n韓国は四季がはっきりしています。下の時期は初めての人や屋外多めの旅だと負担が増えやすいです。禁止ではなく、日程づくりの参考に。",
+        "zh": "不是“别来”，而是更需要准备的时段\n\n韩国四季分明。以下时段对初次旅行者或户外行程较多的人可能更辛苦。仅作安排参考，并非禁止到访。"
+      },
+      {
+        "type": "text",
+        "ko": "한여름 더위·습도 (대략 7~8월)\n\n낮 기온과 습도가 높아 오래 걷기·야외 명소가 힘듭니다. 이른 아침·저녁 일정을 잡고, 실내(카페·박물관·쇼핑몰)를 섞으세요. 물·모자·자외선 차단을 챙기면 도움이 됩니다.",
+        "en": "Midsummer heat & humidity (about Jul–Aug)\n\nHigh heat and humidity make long walks and outdoor sights tiring. Plan early-morning/evening slots and mix in indoor stops (cafés, museums, malls). Water, a hat, and sunscreen help.",
+        "ja": "真夏の暑さ・湿気（だいたい7〜8月）\n\n気温と湿度が高く、長時間の徒歩や屋外観光は負担。朝夕の予定＋屋内（カフェ・博物館・モール）を混ぜ、水分・帽子・日焼け止めを。",
+        "zh": "盛夏高温高湿（约 7–8 月）\n\n气温与湿度高，长时间步行与户外景点更累。可安排早晚行程，穿插室内（咖啡店、博物馆、商场），并备水、帽子与防晒。"
+      },
+      {
+        "type": "text",
+        "ko": "장마 (대략 6월 말~7월)\n\n비가 잦고 우산을 쓰는 날이 늘어납니다. 야외만으로 꽉 채우기보다 실내·유연한 일정이 편합니다. 방수 재킷·여분 양말을 조금 챙기세요.",
+        "en": "Monsoon / jangma (roughly late Jun–Jul)\n\nRainy days increase. Prefer indoor options and a flexible plan over packing only outdoor days. A light rain jacket and spare socks help.",
+        "ja": "梅雨・ジャンマ（だいたい6月末〜7月）\n\n雨の日が増えます。屋外だけで埋めず、屋内と柔軟な予定を。薄手のレインと替え靴下があると安心。",
+        "zh": "梅雨季（约 6 月末–7 月）\n\n雨天增多。别只排户外，留室内选项与弹性更好。轻便雨衣与备用袜子会有帮助。"
+      },
+      {
+        "type": "text",
+        "ko": "한겨울 추위 (대략 12~2월, 특히 내륙)\n\n서울·내륙은 바람과 체감온도가 낮습니다. 겹쳐 입기·목도리·장갑을 준비하고, 짧은 야외+실내 휴식을 번갈아 보세요. 눈·빙판이 있는 날도 있습니다.",
+        "en": "Midwinter cold (about Dec–Feb, especially inland)\n\nSeoul and inland areas feel windy and cold. Layer up, bring scarf/gloves, and alternate short outdoor time with indoor breaks. Some days bring snow or icy sidewalks.",
+        "ja": "真冬の寒さ（だいたい12〜2月、特に内陸）\n\nソウルや内陸は風で体感温度が下がります。重ね着・マフラー・手袋を。短い屋外と屋内休憩を交互に。雪や凍結の日もあります。",
+        "zh": "隆冬寒冷（约 12–2 月，尤其内陆）\n\n首尔与内陆风大、体感更冷。请多层穿衣并带围巾/手套，户外与室内休息交替。有些天会有雪或结冰路面。"
+      },
+      {
+        "type": "callout",
+        "ko": "봄(3~5월)·가을(9~11월 초중순, 추석 연휴 제외)은 야외 여행에 무난한 편입니다. 연휴·성수기 혼잡만 피하면 초보에게도 부담이 적습니다.",
+        "en": "Spring (Mar–May) and autumn (Sep–early/mid Nov, outside Chuseok week) are usually easier for outdoor trips. Avoid peak holiday crowds if you want a calmer first visit.",
+        "ja": "春（3〜5月）と秋（9〜11月上中旬、チュソク連休を除く）は屋外旅行に無難。連休・繁忙の混雑を避ければ初めてでも負担が少なめです。",
+        "zh": "春季（3–5 月）与秋季（9–11 月上中旬，避开中秋长假）通常更适合户外。想轻松的初次旅行，可尽量避开长假人潮。"
+      }
+    ]
   },
   "emergency": {
     "pageTitle": "긴급 정보 | Korea Travel Guide",
@@ -611,7 +990,7 @@
       "category": "김밥",
       "score": "4.37",
       "placeId": "37936207",
-      "previewImage": "https://ldb-phinf.pstatic.net/20200825_263/1598344757626BOoD5_JPEG/bC8cNkffghaYgr6_jlU1MK_p.jpeg.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "원조누드치즈김밥",
       "menuItems": [
         {
@@ -622,8 +1001,7 @@
             "zh": "杂菜紫菜包饭"
           },
           "price": "₩5,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -632,8 +1010,7 @@
             "ja": "チーズマグロキンバップ（基本）",
             "zh": "芝士金枪鱼紫菜包饭（基本）"
           },
-          "price": "₩4,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩4,000"
         },
         {
           "name": {
@@ -662,18 +1039,6 @@
           },
           "price": "₩5,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
       ]
     },
     "oto": {
@@ -700,7 +1065,7 @@
       "category": "분식",
       "score": "4.38",
       "placeId": "37629568",
-      "previewImage": "https://ldb-phinf.pstatic.net/20160307_296/145731510969247aD1_JPEG/176179498250906_3.jpeg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "오토김밥 본점",
       "menuItems": [
         {
@@ -711,8 +1076,7 @@
             "zh": "自动紫菜包饭"
           },
           "price": "₩6,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -814,18 +1178,6 @@
           "price": "₩1,800"
         }
       ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
-      ],
       "hours": "영업 중 · 20:00에 영업 종료"
     },
     "horangi": {
@@ -853,7 +1205,7 @@
       "category": "김밥",
       "score": "4.43",
       "placeId": "1222951879",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260719_283/1784429242827dojfo_JPEG/1000001782.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "호랑이김밥",
       "menuItems": [
         {
@@ -864,8 +1216,7 @@
             "zh": "紫苏紫菜包饭"
           },
           "price": "₩10,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -874,8 +1225,7 @@
             "ja": "フラワーロースト焼肉キンバップ",
             "zh": "沙朗烤肉紫菜包饭"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -922,17 +1272,6 @@
           },
           "price": "₩11,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "food2900": {
@@ -959,7 +1298,7 @@
       "category": "분식",
       "score": "4.32",
       "placeId": "20627465",
-      "previewImage": "https://ldb-phinf.pstatic.net/20191010_257/1570706252490HkvQ1_JPEG/AtCSpvlgv3sWiFh7zicHdHwf.jpeg.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "푸드2900 논현시티점",
       "menuItems": [
         {
@@ -1565,22 +1904,6 @@
           },
           "price": "₩8,500"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "sua-dang": {
@@ -1608,7 +1931,7 @@
       "category": "김밥",
       "score": "4.67",
       "placeId": "1191942837",
-      "previewImage": "https://ldb-phinf.pstatic.net/20250716_242/1752644903854DktMm_JPEG/IMG_2092.jpeg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "수아당 성북점",
       "menuItems": [
         {
@@ -1629,8 +1952,7 @@
             "zh": "布尔加比（辣）"
           },
           "price": "₩5,500",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -1640,8 +1962,7 @@
             "zh": "越南椰子咖啡（冰沙）"
           },
           "price": "₩5,500",
-          "recommend": true,
-          "image": "media/menu-item-3.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -1650,8 +1971,7 @@
             "ja": "スア",
             "zh": "苏阿"
           },
-          "price": "₩3,500",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩3,500"
         },
         {
           "name": {
@@ -1660,8 +1980,7 @@
             "ja": "サクサク野菜",
             "zh": "脆脆的蔬菜"
           },
-          "price": "₩3,500",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩3,500"
         },
         {
           "name": {
@@ -1670,8 +1989,7 @@
             "ja": "ブルジンミ（辛いジンミチェ）",
             "zh": "Buljinmi（辣金米科）"
           },
-          "price": "₩3,500",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩3,500"
         },
         {
           "name": {
@@ -1680,8 +1998,7 @@
             "ja": "卵",
             "zh": "蛋"
           },
-          "price": "₩3,500",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩3,500"
         },
         {
           "name": {
@@ -1690,8 +2007,7 @@
             "ja": "チラン（チーズ＋卵）",
             "zh": "知兰（奶酪+鸡蛋）"
           },
-          "price": "₩4,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩4,000"
         },
         {
           "name": {
@@ -1700,8 +2016,7 @@
             "ja": "マグロ",
             "zh": "金枪鱼"
           },
-          "price": "₩4,500",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩4,500"
         },
         {
           "name": {
@@ -1710,8 +2025,7 @@
             "ja": "チチブル（マグロチーズ＋フンジンミ）",
             "zh": "Chichi Bul（金枪鱼奶酪+辛辣美食）"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩5,000"
         },
         {
           "name": {
@@ -1720,8 +2034,7 @@
             "ja": "生ワサビクラミ",
             "zh": "新鲜芥末奶油"
           },
-          "price": "₩4,500",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩4,500"
         },
         {
           "name": {
@@ -1730,8 +2043,7 @@
             "ja": "チーズクラミ",
             "zh": "奶酪克拉米"
           },
-          "price": "₩4,500",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩4,500"
         },
         {
           "name": {
@@ -1740,8 +2052,7 @@
             "ja": "ケイジュンチキン",
             "zh": "卡津鸡"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-13.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -1750,8 +2061,7 @@
             "ja": "サムギョプサム",
             "zh": "三吉山"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-14.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -1760,8 +2070,7 @@
             "ja": "ガリック牛肉（牛肉＋焼きニンニク＋ガリックディッピングソース）",
             "zh": "蒜蓉牛肉（牛肉+烤蒜+蒜蓉蘸酱）"
           },
-          "price": "₩6,000",
-          "image": "media/menu-item-15.jpg"
+          "price": "₩6,000"
         },
         {
           "name": {
@@ -1770,8 +2079,7 @@
             "ja": "生ワサビ牛肉",
             "zh": "生芥末牛肉"
           },
-          "price": "₩6,000",
-          "image": "media/menu-item-16.jpg"
+          "price": "₩6,000"
         },
         {
           "name": {
@@ -1780,8 +2088,7 @@
             "ja": "ベトナムバニラヴィンラテ",
             "zh": "越南香草豆拿铁"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-17.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -1844,8 +2151,7 @@
             "ja": "サムギプキムチキムバプ",
             "zh": "猪肉泡菜紫菜包饭"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-24.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -1854,8 +2160,7 @@
             "ja": "人妻キムチキムパプ",
             "zh": "豆腐泡菜紫菜包饭"
           },
-          "price": "₩3,500",
-          "image": "media/menu-item-25.jpg"
+          "price": "₩3,500"
         },
         {
           "name": {
@@ -1864,8 +2169,7 @@
             "ja": "ヤンドキンバプ（焼きニンニク＋ニンジン）",
             "zh": "马当紫菜包饭（烤大蒜+胡萝卜）"
           },
-          "price": "₩2,500",
-          "image": "media/menu-item-26.jpg"
+          "price": "₩2,500"
         },
         {
           "name": {
@@ -1874,8 +2178,7 @@
             "ja": "ゴボウキンバップ",
             "zh": "牛蒡紫菜包饭"
           },
-          "price": "₩2,500",
-          "image": "media/menu-item-27.jpg"
+          "price": "₩2,500"
         },
         {
           "name": {
@@ -1895,17 +2198,6 @@
           },
           "price": "₩3,500"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "owolui-kimbap": {
@@ -1933,7 +2225,7 @@
       "category": "김밥",
       "score": "4.55",
       "placeId": "37778826",
-      "previewImage": "https://ldb-phinf.pstatic.net/20191011_207/1570748118249jM9wn_JPEG/3xU2FJreB2-bFpsZG91gadBP.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "오월의김밥",
       "menuItems": [
         {
@@ -1944,8 +2236,7 @@
             "zh": "米贼紫菜包饭"
           },
           "price": "₩6,300",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -1955,8 +2246,7 @@
             "zh": "沙拉紫菜包饭"
           },
           "price": "₩6,300",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -1974,8 +2264,7 @@
             "ja": "マグロキンバップ",
             "zh": "金枪鱼紫菜包饭"
           },
-          "price": "₩5,800",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩5,800"
         },
         {
           "name": {
@@ -2022,17 +2311,6 @@
           },
           "price": "₩3,800"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "seoho": {
@@ -2060,7 +2338,7 @@
       "category": "김밥",
       "score": "4.37",
       "placeId": "19896363",
-      "previewImage": "https://ldb-phinf.pstatic.net/20200417_140/1587097820060GXrSb_JPEG/jUvdnjAGGF2Q41zKXYQXL_0V.jpeg.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "서호김밥",
       "menuItems": [
         {
@@ -2079,8 +2357,7 @@
             "ja": "マグロキンバップ",
             "zh": "金枪鱼紫菜包饭"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -2217,22 +2494,6 @@
           },
           "price": "₩8,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "hanipsoban": {
@@ -2260,7 +2521,7 @@
       "category": "김밥",
       "score": "4.44",
       "placeId": "34556586",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260729_73/17853000590771k3aS_JPEG/%B8%DE%C0%CE.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "한입소반",
       "menuItems": [
         {
@@ -2271,8 +2532,7 @@
             "zh": "熟成金枪鱼紫菜包饭"
           },
           "price": "₩5,500",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -2282,8 +2542,7 @@
             "zh": "西来木紫菜包饭"
           },
           "price": "₩5,500",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -2292,8 +2551,7 @@
             "ja": "ハン・インキンバップ",
             "zh": "一口紫菜包饭"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩5,000"
         },
         {
           "name": {
@@ -2302,8 +2560,7 @@
             "ja": "マグロキンバップ",
             "zh": "金枪鱼紫菜包饭"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -2312,8 +2569,7 @@
             "ja": "牛肉キンバップ",
             "zh": "牛肉紫菜包饭"
           },
-          "price": "₩7,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩7,000"
         },
         {
           "name": {
@@ -2322,8 +2578,7 @@
             "ja": "直火育成キムバプ",
             "zh": "直火猪肉紫菜包饭"
           },
-          "price": "₩6,500",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩6,500"
         },
         {
           "name": {
@@ -2332,8 +2587,7 @@
             "ja": "クリームチーズキンバップ",
             "zh": "奶油芝士紫菜包饭"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -2342,8 +2596,7 @@
             "ja": "スパイシーアンチョビキンバップ",
             "zh": "辣凤尾鱼紫菜包饭"
           },
-          "price": "₩5,500",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩5,500"
         },
         {
           "name": {
@@ -2352,8 +2605,7 @@
             "ja": "サムギョプサムキムバプ",
             "zh": "三吉韩参紫菜包饭"
           },
-          "price": "₩7,000",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩7,000"
         },
         {
           "name": {
@@ -2362,8 +2614,7 @@
             "ja": "わさびゲサルマヨキムパプ",
             "zh": "芥末蟹蛋黄酱紫菜包饭"
           },
-          "price": "₩6,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩6,000"
         },
         {
           "name": {
@@ -2372,20 +2623,8 @@
             "ja": "忠武キムバプ",
             "zh": "忠武紫菜包饭"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩8,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "sulbing": {
@@ -2413,7 +2652,7 @@
       "category": "빙수",
       "score": "4.74",
       "placeId": "1621273819",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260712_286/1783849509482P9zhh_JPEG/KakaoTalk_20260712_184246985.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "설빙 명동점",
       "menuItems": [
         {
@@ -2423,8 +2662,7 @@
             "ja": "アップルマンゴエイド",
             "zh": "苹果芒果阿德"
           },
-          "price": "₩4,800",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩4,800"
         },
         {
           "name": {
@@ -2433,8 +2671,7 @@
             "ja": "グレープフルーツ",
             "zh": "葡萄柚阿德"
           },
-          "price": "₩4,800",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩4,800"
         },
         {
           "name": {
@@ -2443,8 +2680,7 @@
             "ja": "イチゴイド",
             "zh": "草莓汽水"
           },
-          "price": "₩4,500",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩4,500"
         },
         {
           "name": {
@@ -2453,8 +2689,7 @@
             "ja": "一口煮込みパン",
             "zh": "咬一口bungeoppang"
           },
-          "price": "₩2,500",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩2,500"
         },
         {
           "name": {
@@ -2463,8 +2698,7 @@
             "ja": "生いちごクロップル",
             "zh": "新鲜草莓作物"
           },
-          "price": "₩3,600",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩3,600"
         },
         {
           "name": {
@@ -2473,8 +2707,7 @@
             "ja": "イン節ミートースト",
             "zh": "印加米吐司"
           },
-          "price": "₩4,800",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩4,800"
         },
         {
           "name": {
@@ -2483,8 +2716,7 @@
             "ja": "マコムトッポッキ",
             "zh": "辣炒年糕"
           },
-          "price": "₩3,900",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩3,900"
         },
         {
           "name": {
@@ -2493,8 +2725,7 @@
             "ja": "プレミアム生イチゴの設備",
             "zh": "优质新鲜草莓苏冰"
           },
-          "price": "₩15,500",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩15,500"
         },
         {
           "name": {
@@ -2503,8 +2734,7 @@
             "ja": "オレオチョコモンスター装備",
             "zh": "奥利奥巧克力怪兽苏宾"
           },
-          "price": "₩12,900",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩12,900"
         },
         {
           "name": {
@@ -2513,8 +2743,7 @@
             "ja": "グリーンティーチョコサルビング",
             "zh": "绿茶巧克力苏宾"
           },
-          "price": "₩11,500",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩11,500"
         },
         {
           "name": {
@@ -2523,8 +2752,7 @@
             "ja": "アップルマンゴーチーズセット",
             "zh": "苹果芒果奶酪苏宾"
           },
-          "price": "₩12,900",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩12,900"
         },
         {
           "name": {
@@ -2533,8 +2761,7 @@
             "ja": "小豆の切れ味",
             "zh": "红豆 Injeolmi 苏宾"
           },
-          "price": "₩9,900",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩9,900"
         },
         {
           "name": {
@@ -2543,33 +2770,18 @@
             "ja": "切削設備",
             "zh": "英吉奥米舒宾"
           },
-          "price": "₩8,900",
-          "image": "media/menu-item-13.jpg"
+          "price": "₩8,900"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg"
       ]
     },
     "paris-baguette": {
-      "name": "파리바게뜨 무교점",
-      "location": "서울 중구 남대문로9길 40 110호",
-      "mapsUrl": "https://map.naver.com/p/entry/place/1999413846",
-      "menu": "커피/음료",
-      "price": "빵 종류에 따라 다름",
+      "name": "파리바게뜨 김포공항점",
+      "location": "서울 강서구 하늘길 77 김포공항역",
+      "mapsUrl": "https://map.naver.com/p/entry/place/36693181",
+      "menu": "정일품전병 대",
+      "price": "₩25,000",
       "tip": "",
-      "about": "방문자 평점 4.4 (4003명) 편의: 배달, 예약, 포장, 남/녀 화장실 구분, 무선 인터넷, 간편결제, 주차",
+      "about": "김포공항 국제선 2층입니다. 방문자 평점 4.1 (484명)",
       "body": [
         {
           "type": "text",
@@ -2579,138 +2791,98 @@
         }
       ],
       "sourceType": "naver",
-      "placeUrl": "https://map.naver.com/p/entry/place/1999413846",
-      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5669797,126.9805624&hl=ko&z=16&output=embed",
+      "placeUrl": "https://map.naver.com/p/entry/place/36693181",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5661469,126.8018478&hl=ko&z=16&output=embed",
       "mapsProvider": "naver",
-      "phone": "0507-1307-0578",
-      "hours": "영업 중 · 22:00에 영업 종료",
+      "phone": "0507-1496-8202",
+      "hours": "영업 중 · 20:00에 영업 종료",
       "category": "베이커리",
-      "score": "4.37",
-      "placeId": "1999413846",
-      "previewImage": "https://ldb-phinf.pstatic.net/20250728_32/1753673633782JLqCE_JPEG/IMG_9971.jpeg",
-      "previewTitle": "파리바게뜨 무교점",
+      "score": "4.07",
+      "placeId": "36693181",
+      "previewImage": "media/cover.jpg",
+      "previewTitle": "파리바게뜨 김포공항점",
       "menuItems": [
         {
           "name": {
-            "ko": "커피/음료",
-            "en": "coffee/drink",
-            "ja": "コーヒー/飲み物",
-            "zh": "咖啡/饮料"
+            "ko": "정일품전병 대",
+            "en": "Jeong Il Poom Jeon Byeong Dae",
+            "ja": "チョン・イルミョン",
+            "zh": "Jeong Il Poom 全秉大"
           },
-          "price": "",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "price": "₩25,000"
         },
         {
           "name": {
-            "ko": "선물류",
-            "en": "gifts",
-            "ja": "ギフト",
-            "zh": "礼物"
+            "ko": "위토스 디럭스 골든",
+            "en": "Witos Deluxe Golden",
+            "ja": "ウィトスデラックスゴールデン",
+            "zh": "维托斯豪华金色"
           },
-          "price": "₩11,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "price": "₩19,000"
         },
         {
           "name": {
-            "ko": "빵류",
-            "en": "bread",
-            "ja": "パン類",
-            "zh": "面包"
+            "ko": "뉴욕치즈&브라우니",
+            "en": "New York Cheese & Brownie",
+            "ja": "ニューヨークチーズ＆ブラウニー",
+            "zh": "纽约奶酪和布朗尼"
           },
-          "price": "",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩16,000"
         },
         {
           "name": {
-            "ko": "디저트/스낵",
-            "en": "Dessert/Snack",
-            "ja": "デザート/スナック",
-            "zh": "甜点/小吃"
+            "ko": "프렌치 구움과자",
+            "en": "French baked snacks",
+            "ja": "フレンチ焼き菓子",
+            "zh": "法式烘焙点心"
           },
-          "price": "",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩13,000"
         },
         {
           "name": {
-            "ko": "샌드위치/샐러드",
-            "en": "Sandwich/Salad",
-            "ja": "サンドイッチ/サラダ",
-            "zh": "三明治/沙拉"
+            "ko": "카페아디지오 리치카페모카",
+            "en": "Cafe Adigio Rich Cafe Mocha",
+            "ja": "カフェアディジオリッチカフェモカ",
+            "zh": "Adigio Rich 摩卡咖啡厅"
           },
-          "price": "",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩2,400"
         },
         {
           "name": {
-            "ko": "케이크",
-            "en": "cake",
-            "ja": "ケーキ",
-            "zh": "蛋糕"
+            "ko": "카페아다지오 에스프레소라떼",
+            "en": "Cafe Adagio Espresso Latte",
+            "ja": "カフェアダジオエスプレソラテ",
+            "zh": "咖啡馆 Adagio 浓缩咖啡拿铁"
           },
-          "price": "",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩2,400"
         },
         {
           "name": {
-            "ko": "간편식(HMR)",
-            "en": "Convenience Meal (HMR)",
-            "ja": "簡便式（HMR）",
-            "zh": "方便餐 (HMR)"
+            "ko": "나츄나츄허니과즙(파인애플&오렌지)",
+            "en": "Nachunachu Honey Juice (Pineapple & Orange)",
+            "ja": "ナチュナチュウハニー果汁（パイナップル＆オレンジ）",
+            "zh": "Nachunachu 蜂蜜汁（菠萝和橙子）"
           },
-          "price": "",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩1,700"
         },
         {
           "name": {
-            "ko": "함박스테이크라이스",
-            "en": "Hamburger Steak Rice",
-            "ja": "ハムバクステーキライス",
-            "zh": "汉堡牛排饭"
+            "ko": "아란치아 로싸 소다",
+            "en": "Arancia Rossa Soda",
+            "ja": "アランチアローサソーダ",
+            "zh": "阿兰西亚红苏打水"
           },
-          "price": "₩6,900"
+          "price": "₩3,800"
         },
         {
           "name": {
-            "ko": "미미토종효모바게뜨",
-            "en": "Mimi Native Yeast Baguette",
-            "ja": "ミミトジョンヒョモバゲット",
-            "zh": "咪咪天然酵母法棍面包"
+            "ko": "베르가모또 소다",
+            "en": "Bergamot Soda",
+            "ja": "ベルガモットソーダ",
+            "zh": "佛手柑苏打水"
           },
-          "price": "₩4,900"
-        },
-        {
-          "name": {
-            "ko": "믹스베리 페스츄리",
-            "en": "Mixed Berry Pastry",
-            "ja": "ミックスベリーペスチューリー",
-            "zh": "混合浆果糕点"
-          },
-          "price": "₩5,900"
-        },
-        {
-          "name": {
-            "ko": "양송이스프&브레드몰KIT",
-            "en": "Button Soup & Bread Mall KIT",
-            "ja": "ヤンソンイスープ＆ブレッドモールKIT",
-            "zh": "按钮汤和面包商城套件"
-          },
-          "price": "₩5,900"
+          "price": "₩3,800"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg"
       ]
     },
     "tous-les-jours": {
@@ -2738,18 +2910,8 @@
       "category": "베이커리",
       "score": "4.43",
       "placeId": "1140346755",
-      "previewImage": "https://ldb-phinf.pstatic.net/20250812_90/1755010435510vShOp_JPEG/20250811_111246.jpg",
-      "previewTitle": "뚜레쥬르 무교점",
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg"
-      ]
+      "previewImage": "media/cover.jpg",
+      "previewTitle": "뚜레쥬르 무교점"
     },
     "mega-coffee": {
       "name": "메가커피 용산후암점",
@@ -2776,18 +2938,8 @@
       "category": "카페",
       "score": "4.56",
       "placeId": "1222355575",
-      "previewImage": "https://naverbooking-phinf.pstatic.net/20230406_259/16807491396516t2iG_JPEG/KakaoTalk_20230406_114413699.jpg",
-      "previewTitle": "메가커피 용산후암점",
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg"
-      ]
+      "previewImage": "media/cover.jpg",
+      "previewTitle": "메가커피 용산후암점"
     },
     "starbucks": {
       "name": "스타벅스 무교동점",
@@ -2814,7 +2966,7 @@
       "category": "카페",
       "score": "4.41",
       "placeId": "11684710",
-      "previewImage": "https://ldb-phinf.pstatic.net/20190828_93/1566953601239OT9MQ_PNG/xX7Wv642gXMoTI0DAv0hRymS.png",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "스타벅스 무교동점",
       "menuItems": [
         {
@@ -2824,8 +2976,7 @@
             "ja": "カフェアメリカーノ",
             "zh": "美式咖啡厅"
           },
-          "price": "₩4,700",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩4,700"
         },
         {
           "name": {
@@ -2834,8 +2985,7 @@
             "ja": "カフェラテ",
             "zh": "拿铁咖啡"
           },
-          "price": "₩5,200",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩5,200"
         },
         {
           "name": {
@@ -2844,8 +2994,7 @@
             "ja": "スターバックスドルチェラテ",
             "zh": "星巴克甜蜜拿铁"
           },
-          "price": "₩6,100",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩6,100"
         },
         {
           "name": {
@@ -2854,8 +3003,7 @@
             "ja": "キャラメルマキアート",
             "zh": "焦糖玛奇朵"
           },
-          "price": "₩6,100",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩6,100"
         },
         {
           "name": {
@@ -2864,8 +3012,7 @@
             "ja": "カプチーノ",
             "zh": "卡布奇诺"
           },
-          "price": "₩5,200",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩5,200"
         },
         {
           "name": {
@@ -2874,8 +3021,7 @@
             "ja": "カフェモカ",
             "zh": "摩卡咖啡厅"
           },
-          "price": "₩5,700",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩5,700"
         },
         {
           "name": {
@@ -2884,8 +3030,7 @@
             "ja": "ホワイトチョコレートモカ",
             "zh": "白巧克力摩卡"
           },
-          "price": "₩6,100",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩6,100"
         },
         {
           "name": {
@@ -2894,8 +3039,7 @@
             "ja": "コールドブルー",
             "zh": "冷萃咖啡"
           },
-          "price": "₩5,100",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩5,100"
         },
         {
           "name": {
@@ -2904,8 +3048,7 @@
             "ja": "グレープフルーツハニーブラックティー",
             "zh": "柚子蜂蜜红茶"
           },
-          "price": "₩5,900",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩5,900"
         },
         {
           "name": {
@@ -2914,8 +3057,7 @@
             "ja": "アイスグレープフルーツハニーブラックティー",
             "zh": "冰柚子蜂蜜红茶"
           },
-          "price": "₩5,900",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩5,900"
         },
         {
           "name": {
@@ -2924,8 +3066,7 @@
             "ja": "マンゴーバナナブレンディド",
             "zh": "芒果香蕉混合"
           },
-          "price": "₩6,600",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩6,600"
         },
         {
           "name": {
@@ -2934,8 +3075,7 @@
             "ja": "エスプレッソ プラプチーノ",
             "zh": "浓缩星冰乐"
           },
-          "price": "₩5,700",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩5,700"
         },
         {
           "name": {
@@ -2944,20 +3084,8 @@
             "ja": "Javaチッププラプチーノ",
             "zh": "Java 片星冰乐"
           },
-          "price": "₩6,500",
-          "image": "media/menu-item-13.jpg"
+          "price": "₩6,500"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "compose-coffee": {
@@ -2985,7 +3113,7 @@
       "category": "카페",
       "score": "4.6",
       "placeId": "1660822367",
-      "previewImage": "https://ldb-phinf.pstatic.net/20241115_245/1731601827653FiW4A_JPEG/1000008384.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "컴포즈커피 종로르메이에르점",
       "menuItems": [
         {
@@ -2995,20 +3123,8 @@
             "ja": "アメリカーノ",
             "zh": "美式咖啡"
           },
-          "price": "₩1,500",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩1,500"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "ediya": {
@@ -3036,7 +3152,7 @@
       "category": "카페",
       "score": "4.37",
       "placeId": "1906828106",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260707_268/1783382644710eILOy_JPEG/%BE%F3%B9%DA%BB%E7_3%C1%BE_%B3%D7%C0%CC%B9%F6%C3%A4%B3%CE.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "이디야커피 광화문점",
       "menuItems": [
         {
@@ -3046,8 +3162,7 @@
             "ja": "カフェアメリカーノ",
             "zh": "美式咖啡厅"
           },
-          "price": "₩3,200",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩3,200"
         },
         {
           "name": {
@@ -3056,8 +3171,7 @@
             "ja": "カフェラテ",
             "zh": "拿铁咖啡"
           },
-          "price": "₩4,200",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩4,200"
         },
         {
           "name": {
@@ -3066,8 +3180,7 @@
             "ja": "トフィーナッツラテ",
             "zh": "太妃糖坚果拿铁"
           },
-          "price": "₩4,200",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩4,200"
         },
         {
           "name": {
@@ -3076,23 +3189,8 @@
             "ja": "バニララテ",
             "zh": "香草拿铁"
           },
-          "price": "₩4,500",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩4,500"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg"
       ]
     },
     "twosome-place": {
@@ -3120,7 +3218,7 @@
       "category": "카페",
       "score": "4.33",
       "placeId": "1766489447",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260512_224/1778547819483J1i2q_JPEG/1778546402886.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "투썸플레이스 광화문점",
       "menuItems": [
         {
@@ -3131,8 +3229,7 @@
             "zh": "草莓巧克力鲜奶油"
           },
           "price": "₩39,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -3142,8 +3239,7 @@
             "zh": "拿铁咖啡"
           },
           "price": "₩5,200",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -3153,8 +3249,7 @@
             "zh": "美式咖啡"
           },
           "price": "₩4,700",
-          "recommend": true,
-          "image": "media/menu-item-3.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -3163,8 +3258,7 @@
             "ja": "コールドブルーラテ",
             "zh": "冷萃拿铁"
           },
-          "price": "₩5,400",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩5,400"
         },
         {
           "name": {
@@ -3173,23 +3267,8 @@
             "ja": "コールドブルー",
             "zh": "冷萃咖啡"
           },
-          "price": "₩4,900",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩4,900"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg"
       ]
     },
     "paiks-coffee": {
@@ -3217,7 +3296,7 @@
       "category": "테이크아웃커피",
       "score": "4",
       "placeId": "1234892960",
-      "previewImage": "https://ldb-phinf.pstatic.net/20221203_287/1670047335697B28a4_JPEG/unnamed.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "빽다방 종로두산위브점",
       "menuItems": [
         {
@@ -3228,8 +3307,7 @@
             "zh": "[仅限通行证订单] 100韩元美式咖啡"
           },
           "price": "₩100",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -3238,20 +3316,8 @@
             "ja": "アメリカーノ",
             "zh": "美式咖啡"
           },
-          "price": "₩1,500",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩1,500"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "yoajeong": {
@@ -3279,7 +3345,7 @@
       "category": "아이스크림",
       "score": "3",
       "placeId": "1870236455",
-      "previewImage": "https://ldb-phinf.pstatic.net/20240807_66/1723038564946F6dfP_JPEG/1000010012.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "요거트아이스크림의정석 신정네거리점",
       "menuItems": [
         {
@@ -3290,21 +3356,8 @@
             "zh": "我的酸奶冰淇淋"
           },
           "price": "₩4,500",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
       ]
     },
     "kimganaekimbam": {
@@ -3318,7 +3371,7 @@
       "mapsUrl": "https://map.naver.com/p/entry/place/32822552",
       "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5255961,126.9181913&hl=ko&z=16&output=embed",
       "mapsProvider": "naver",
-      "previewImage": "https://ldb-phinf.pstatic.net/20231017_279/1697539926156cg04m_JPEG/%B1%E8%B0%A1%B3%D7.jpg",
+      "previewImage": "media/cover.jpg",
       "body": [
         {
           "type": "text",
@@ -3342,8 +3395,7 @@
             "ja": "キムガネキムバプ",
             "zh": "金金紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-1.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3352,8 +3404,7 @@
             "ja": "マグロキンバップ",
             "zh": "金枪鱼紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-2.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3362,8 +3413,7 @@
             "ja": "滅びキムバプ",
             "zh": "凤尾鱼紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-3.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3372,8 +3422,7 @@
             "ja": "卵スパムキンバップ",
             "zh": "鸡蛋垃圾紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-4.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3382,8 +3431,7 @@
             "ja": "わさびクラミキンバップ",
             "zh": "芥末酱紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-5.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3392,8 +3440,7 @@
             "ja": "ダブルチーズキンバップ",
             "zh": "双份芝士紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-6.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3402,8 +3449,7 @@
             "ja": "牛肉キンバップ",
             "zh": "牛肉紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-7.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3412,8 +3458,7 @@
             "ja": "トンエビロール",
             "zh": "整只虾卷"
           },
-          "price": "",
-          "image": "media/menu-item-8.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3422,8 +3467,7 @@
             "ja": "とんかつロール",
             "zh": "炸猪排卷"
           },
-          "price": "",
-          "image": "media/menu-item-9.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3432,8 +3476,7 @@
             "ja": "子供キムバップ",
             "zh": "小紫菜包饭"
           },
-          "price": "",
-          "image": "media/menu-item-10.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3442,8 +3485,7 @@
             "ja": "鉄板チーズ焼き鶏",
             "zh": "铁板奶酪炒面"
           },
-          "price": "",
-          "image": "media/menu-item-11.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3452,8 +3494,7 @@
             "ja": "餅餃子",
             "zh": "年糕和饺子汤"
           },
-          "price": "",
-          "image": "media/menu-item-12.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3462,8 +3503,7 @@
             "ja": "冷そば",
             "zh": "冷荞麦面"
           },
-          "price": "",
-          "image": "media/menu-item-13.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3472,8 +3512,7 @@
             "ja": "ちょっと",
             "zh": "吉面"
           },
-          "price": "",
-          "image": "media/menu-item-14.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3482,8 +3521,7 @@
             "ja": "ラーメン",
             "zh": "拉面"
           },
-          "price": "",
-          "image": "media/menu-item-15.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3492,8 +3530,7 @@
             "ja": "鉄板焼きうどん",
             "zh": "铁板烧乌冬面"
           },
-          "price": "",
-          "image": "media/menu-item-16.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3502,8 +3539,7 @@
             "ja": "揚げうどん",
             "zh": "炒乌冬面"
           },
-          "price": "",
-          "image": "media/menu-item-17.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3512,8 +3548,7 @@
             "ja": "湯布うどん",
             "zh": "豆腐乌冬面"
           },
-          "price": "",
-          "image": "media/menu-item-18.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3522,8 +3557,7 @@
             "ja": "各種おでん",
             "zh": "什锦关东煮"
           },
-          "price": "",
-          "image": "media/menu-item-19.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3532,8 +3566,7 @@
             "ja": "ラポキ",
             "zh": "拉博基"
           },
-          "price": "",
-          "image": "media/menu-item-20.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3542,8 +3575,7 @@
             "ja": "米餅炒め",
             "zh": "炒年糕米饭"
           },
-          "price": "",
-          "image": "media/menu-item-21.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3552,8 +3584,7 @@
             "ja": "水をつけたら",
             "zh": "水珠面"
           },
-          "price": "",
-          "image": "media/menu-item-22.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3562,8 +3593,7 @@
             "ja": "ごちそう",
             "zh": "宴会面"
           },
-          "price": "",
-          "image": "media/menu-item-23.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3572,8 +3602,7 @@
             "ja": "キムチマルイグクス",
             "zh": "泡菜面条"
           },
-          "price": "",
-          "image": "media/menu-item-24.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3582,8 +3611,7 @@
             "ja": "哨戒麺",
             "zh": "草溪面"
           },
-          "price": "",
-          "image": "media/menu-item-25.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3592,8 +3620,7 @@
             "ja": "水冷麺",
             "zh": "物冷面"
           },
-          "price": "",
-          "image": "media/menu-item-26.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3602,8 +3629,7 @@
             "ja": "豆麺",
             "zh": "黄豆面"
           },
-          "price": "",
-          "image": "media/menu-item-27.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3612,8 +3638,7 @@
             "ja": "ビビン冷麺",
             "zh": "拌饭冷面"
           },
-          "price": "",
-          "image": "media/menu-item-28.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3622,8 +3647,7 @@
             "ja": "キムチ焼肉石鍋",
             "zh": "泡菜烤肉石锅饭"
           },
-          "price": "",
-          "image": "media/menu-item-29.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3632,8 +3656,7 @@
             "ja": "野菜ビビンバ",
             "zh": "蔬菜拌饭"
           },
-          "price": "",
-          "image": "media/menu-item-30.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3642,8 +3665,7 @@
             "ja": "牛肉石鍋ビビンバ",
             "zh": "牛肉石锅拌饭"
           },
-          "price": "",
-          "image": "media/menu-item-31.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3652,8 +3674,7 @@
             "ja": "鉄板タコ丼",
             "zh": "铁板章鱼盖饭"
           },
-          "price": "",
-          "image": "media/menu-item-32.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3662,8 +3683,7 @@
             "ja": "育肉丼",
             "zh": "杰玉盖饭"
           },
-          "price": "",
-          "image": "media/menu-item-33.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3672,8 +3692,7 @@
             "ja": "チキンマヨ丼",
             "zh": "鸡肉蛋黄酱盖饭"
           },
-          "price": "",
-          "image": "media/menu-item-34.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3682,8 +3701,7 @@
             "ja": "鍋排気焼肉",
             "zh": "图克拜吉烤肉"
           },
-          "price": "",
-          "image": "media/menu-item-35.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3692,8 +3710,7 @@
             "ja": "カレー丼",
             "zh": "咖喱饭碗"
           },
-          "price": "",
-          "image": "media/menu-item-36.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3702,8 +3719,7 @@
             "ja": "チキンリブ丼",
             "zh": "鸡排盖饭"
           },
-          "price": "",
-          "image": "media/menu-item-37.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3712,8 +3728,7 @@
             "ja": "背中のカツ",
             "zh": "沙朗猪排"
           },
-          "price": "",
-          "image": "media/menu-item-38.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3722,8 +3737,7 @@
             "ja": "チーズドンカス",
             "zh": "芝士猪排"
           },
-          "price": "",
-          "image": "media/menu-item-39.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3732,8 +3746,7 @@
             "ja": "こどもカツ",
             "zh": "儿童炸猪排"
           },
-          "price": "",
-          "image": "media/menu-item-40.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3742,8 +3755,7 @@
             "ja": "スパム昔のお弁当",
             "zh": "垃圾邮件旧午餐盒"
           },
-          "price": "",
-          "image": "media/menu-item-41.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3752,8 +3764,7 @@
             "ja": "茶ドル味噌チゲ",
             "zh": "牛腩酱炖菜"
           },
-          "price": "",
-          "image": "media/menu-item-42.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3762,8 +3773,7 @@
             "ja": "キムチチゲ",
             "zh": "泡菜汤"
           },
-          "price": "",
-          "image": "media/menu-item-43.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3772,8 +3782,7 @@
             "ja": "陸開場",
             "zh": "油菜酱"
           },
-          "price": "",
-          "image": "media/menu-item-44.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3782,8 +3791,7 @@
             "ja": "バッグチゲ",
             "zh": "武大吉盖"
           },
-          "price": "",
-          "image": "media/menu-item-45.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3792,8 +3800,7 @@
             "ja": "スンドゥブチゲ",
             "zh": "软豆腐炖菜"
           },
-          "price": "",
-          "image": "media/menu-item-46.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3802,8 +3809,7 @@
             "ja": "オムライス",
             "zh": "蛋包饭"
           },
-          "price": "",
-          "image": "media/menu-item-47.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3812,8 +3818,7 @@
             "ja": "マコム鉄板シーフードチャーハン",
             "zh": "辣铁板海鲜炒饭"
           },
-          "price": "",
-          "image": "media/menu-item-48.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3822,8 +3827,7 @@
             "ja": "スパムキムチチャーハン",
             "zh": "垃圾邮件泡菜炒饭"
           },
-          "price": "",
-          "image": "media/menu-item-49.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3832,8 +3836,7 @@
             "ja": "鉄板チーズキムチチャーハン",
             "zh": "铁板芝士泡菜炒饭"
           },
-          "price": "",
-          "image": "media/menu-item-50.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3842,8 +3845,7 @@
             "ja": "小餅小餅（1ea）",
             "zh": "索特克索特克（1ea）"
           },
-          "price": "",
-          "image": "media/menu-item-51.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3852,8 +3854,7 @@
             "ja": "餅つき（1ea）",
             "zh": "年糕串（1根）"
           },
-          "price": "",
-          "image": "media/menu-item-52.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3862,8 +3863,7 @@
             "ja": "軍団",
             "zh": "烤饺子"
           },
-          "price": "",
-          "image": "media/menu-item-53.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3872,8 +3872,7 @@
             "ja": "ザリガニフライ（1ea）",
             "zh": "炸大虾（1只）"
           },
-          "price": "",
-          "image": "media/menu-item-54.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3882,8 +3881,7 @@
             "ja": "イカフライ（2ea）",
             "zh": "炸鱿鱼（2条）"
           },
-          "price": "",
-          "image": "media/menu-item-55.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3892,8 +3890,7 @@
             "ja": "キムマルイフライ（4ea）",
             "zh": "炸紫菜卷（4个）"
           },
-          "price": "",
-          "image": "media/menu-item-56.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3902,8 +3899,7 @@
             "ja": "リブ餃子",
             "zh": "排骨饺子"
           },
-          "price": "",
-          "image": "media/menu-item-57.jpg"
+          "price": ""
         },
         {
           "name": {
@@ -3912,20 +3908,8 @@
             "ja": "蒸し餃子（肉/キムチ）",
             "zh": "蒸饺（肉/泡菜）"
           },
-          "price": "",
-          "image": "media/menu-item-58.jpg"
+          "price": ""
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "myeongdong-gyoja": {
@@ -3946,7 +3930,7 @@
       "placeId": "11592650",
       "category": "칼국수,만두",
       "score": "4.4",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260617_271/1781663317546kn7yr_JPEG/%BB%E7%C1%F81.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "명동교자 본점",
       "menuItems": [
         {
@@ -3957,8 +3941,7 @@
             "zh": "刀削水"
           },
           "price": "₩12,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -3968,8 +3951,7 @@
             "zh": "饺子"
           },
           "price": "₩13,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -3978,8 +3960,7 @@
             "ja": "ビビン麺",
             "zh": "拌饭面"
           },
-          "price": "₩12,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩12,000"
         },
         {
           "name": {
@@ -3988,8 +3969,7 @@
             "ja": "豆麺（4月～10月季節メニュー）",
             "zh": "Kongguksu（4月至10月的时令菜单）"
           },
-          "price": "₩13,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩13,000"
         },
         {
           "name": {
@@ -3998,25 +3978,8 @@
             "ja": "包装餃子",
             "zh": "包饺子"
           },
-          "price": "₩13,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩13,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "cheongwaok": {
@@ -4037,7 +4000,7 @@
       "placeId": "1319831936",
       "category": "순대,순댓국",
       "score": "4.56",
-      "previewImage": "https://ldb-phinf.pstatic.net/20250919_111/1758268042754mnDE9_GIF/%C3%BB%BF%CD%BF%C1._gif.gif",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "청와옥 을지로3가직영점",
       "menuItems": [
         {
@@ -4047,8 +4010,7 @@
             "ja": "大統領府スンデクッパ",
             "zh": "青果圣代汤饭"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -4057,8 +4019,7 @@
             "ja": "オルクンスンデグク",
             "zh": "辣味圣代汤"
           },
-          "price": "₩12,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩12,000"
         },
         {
           "name": {
@@ -4067,8 +4028,7 @@
             "ja": "スンドゥブクッパ",
             "zh": "软豆腐汤和米饭"
           },
-          "price": "₩12,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩12,000"
         },
         {
           "name": {
@@ -4077,8 +4037,7 @@
             "ja": "大統領府扁白正式",
             "zh": "青沃桧木套餐"
           },
-          "price": "₩16,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩16,000"
         },
         {
           "name": {
@@ -4087,8 +4046,7 @@
             "ja": "イカ炭火焼",
             "zh": "炭烤鱿鱼"
           },
-          "price": "₩10,900",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩10,900"
         },
         {
           "name": {
@@ -4097,8 +4055,7 @@
             "ja": "スンデ鉄板炒め",
             "zh": "炒圣代铁板烧"
           },
-          "price": "₩27,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩27,000"
         },
         {
           "name": {
@@ -4107,8 +4064,7 @@
             "ja": "もち米スンデ",
             "zh": "糯米圣代"
           },
-          "price": "₩23,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩23,000"
         },
         {
           "name": {
@@ -4117,8 +4073,7 @@
             "ja": "漂白水育+スンデ",
             "zh": "水煮丝柏猪肉+圣代"
           },
-          "price": "₩28,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩28,000"
         },
         {
           "name": {
@@ -4127,8 +4082,7 @@
             "ja": "六会（国内産）大",
             "zh": "玉浩（国产）大号"
           },
-          "price": "₩19,900",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩19,900"
         },
         {
           "name": {
@@ -4137,8 +4091,7 @@
             "ja": "六会（国内産）小",
             "zh": "Yukhoe（国产）小号"
           },
-          "price": "₩10,900",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩10,900"
         },
         {
           "name": {
@@ -4185,18 +4138,6 @@
           },
           "price": "₩17,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
       ]
     },
     "yeongchunok": {
@@ -4217,7 +4158,7 @@
       "placeId": "11712508",
       "category": "곰탕,설렁탕",
       "score": "4.2",
-      "previewImage": "https://ldb-phinf.pstatic.net/20150831_79/1441026335250VR6vK_GIF/11712508_0.gif",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "영춘옥",
       "menuItems": [
         {
@@ -4274,22 +4215,6 @@
           },
           "price": "₩45,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "uraeok": {
@@ -4310,7 +4235,7 @@
       "placeId": "11679381",
       "category": "냉면",
       "score": "4.37",
-      "previewImage": "https://ldb-phinf.pstatic.net/20150831_131/1441017839808DchkO_JPEG/11679381_0.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "우래옥",
       "menuItems": [
         {
@@ -4320,8 +4245,7 @@
             "ja": "平壌冷麺",
             "zh": "平壤冷面"
           },
-          "price": "₩18,000",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩18,000"
         },
         {
           "name": {
@@ -4350,18 +4274,6 @@
           },
           "price": "₩18,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
       ]
     },
     "ojangdong-hamheung": {
@@ -4382,7 +4294,7 @@
       "placeId": "19866570",
       "category": "냉면",
       "score": "4.09",
-      "previewImage": "https://ldb-phinf.pstatic.net/20150831_177/1441019989480r9tIA_JPEG/156155413839984_0.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "오장동함흥냉면",
       "menuItems": [
         {
@@ -4392,8 +4304,7 @@
             "ja": "灰冷麺",
             "zh": "回宁面"
           },
-          "price": "₩15,000",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩15,000"
         },
         {
           "name": {
@@ -4402,8 +4313,7 @@
             "ja": "水冷麺",
             "zh": "物冷面"
           },
-          "price": "₩15,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩15,000"
         },
         {
           "name": {
@@ -4412,8 +4322,7 @@
             "ja": "ビビン冷麺",
             "zh": "拌饭冷面"
           },
-          "price": "₩15,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩15,000"
         },
         {
           "name": {
@@ -4422,8 +4331,7 @@
             "ja": "暖かい",
             "zh": "温面"
           },
-          "price": "₩15,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩15,000"
         },
         {
           "name": {
@@ -4432,8 +4340,7 @@
             "ja": "育てる",
             "zh": "水煮猪肉"
           },
-          "price": "₩40,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩40,000"
         },
         {
           "name": {
@@ -4442,8 +4349,7 @@
             "ja": "会務針",
             "zh": "调味鱼"
           },
-          "price": "₩2,500,035,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩2,500,035,000"
         },
         {
           "name": {
@@ -4452,8 +4358,7 @@
             "ja": "餃子",
             "zh": "饺子"
           },
-          "price": "₩12,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩12,000"
         },
         {
           "name": {
@@ -4462,25 +4367,8 @@
             "ja": "サリー",
             "zh": "面条"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩8,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "jinmi-pyeongyang": {
@@ -4501,7 +4389,7 @@
       "placeId": "37912785",
       "category": "냉면",
       "score": "4.3",
-      "previewImage": "https://ldb-phinf.pstatic.net/20180607_51/15283397669538Mj1r_JPEG/t0rzpbFHC6QZDErtQEzlpvzZ.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "진미평양냉면",
       "menuItems": [
         {
@@ -4511,8 +4399,7 @@
             "ja": "冷麺",
             "zh": "冷面"
           },
-          "price": "₩16,000",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩16,000"
         },
         {
           "name": {
@@ -4548,8 +4435,7 @@
             "ja": "除育（国内産豚）",
             "zh": "Jeyuk（国产猪肉）"
           },
-          "price": "₩34,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩34,000"
         },
         {
           "name": {
@@ -4558,8 +4444,7 @@
             "ja": "除育班（国内産豚）",
             "zh": "Jeyukban（国产猪肉）"
           },
-          "price": "₩17,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩17,000"
         },
         {
           "name": {
@@ -4595,8 +4480,7 @@
             "ja": "皿餃子",
             "zh": "盘饺子"
           },
-          "price": "₩16,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩16,000"
         },
         {
           "name": {
@@ -4652,17 +4536,6 @@
           },
           "price": "₩50,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "seoryeong": {
@@ -4683,7 +4556,7 @@
       "placeId": "1072356558",
       "category": "냉면",
       "score": "4.4",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260730_37/1785374910473dyuOu_JPEG/%BC%AD%B7%C9_%C0%BD%BD%C4_%B4%DC%C3%BC%C4%C6_ai_01.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "서령 롯데월드몰점",
       "menuItems": [
         {
@@ -4694,8 +4567,7 @@
             "zh": "西岭鲜面"
           },
           "price": "₩17,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -4705,8 +4577,7 @@
             "zh": "西岭雪花烤肉"
           },
           "price": "₩39,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -4716,8 +4587,7 @@
             "zh": "正正猪肉一盘（200克）"
           },
           "price": "₩37,000",
-          "recommend": true,
-          "image": "media/menu-item-3.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -4726,8 +4596,7 @@
             "ja": "ビビームの正面",
             "zh": "拌饭纯面条"
           },
-          "price": "₩17,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩17,000"
         },
         {
           "name": {
@@ -4736,8 +4605,7 @@
             "ja": "バラ油の正面",
             "zh": "紫苏油纯面条"
           },
-          "price": "₩17,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩17,000"
         },
         {
           "name": {
@@ -4746,8 +4614,7 @@
             "ja": "今日の授業",
             "zh": "今天的水煮肉"
           },
-          "price": "₩40,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩40,000"
         },
         {
           "name": {
@@ -4756,8 +4623,7 @@
             "ja": "冷水盤",
             "zh": "冷水类"
           },
-          "price": "₩14,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩14,000"
         },
         {
           "name": {
@@ -4766,8 +4632,7 @@
             "ja": "餃子",
             "zh": "饺子汤"
           },
-          "price": "₩16,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩16,000"
         },
         {
           "name": {
@@ -4776,8 +4641,7 @@
             "ja": "皿餃子1皿（6個）",
             "zh": "一盘饺子（6个）"
           },
-          "price": "₩12,000",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩12,000"
         },
         {
           "name": {
@@ -4786,8 +4650,7 @@
             "ja": "航海除肉半皿（100g）",
             "zh": "正正猪肉半盘（100克）"
           },
-          "price": "₩19,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩19,000"
         },
         {
           "name": {
@@ -4796,8 +4659,7 @@
             "ja": "皿餃子半皿（3個）",
             "zh": "半盘饺子（3个）"
           },
-          "price": "₩6,000",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩6,000"
         },
         {
           "name": {
@@ -4806,8 +4668,7 @@
             "ja": "ソリョンスープ（包装）",
             "zh": "瑞灵汤（包装）"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -4816,8 +4677,7 @@
             "ja": "織機",
             "zh": "贾巴吉"
           },
-          "price": "₩2,000",
-          "image": "media/menu-item-13.jpg"
+          "price": "₩2,000"
         },
         {
           "name": {
@@ -4837,19 +4697,6 @@
           },
           "price": "₩5,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg"
       ]
     },
     "mongtan": {
@@ -4870,7 +4717,7 @@
       "placeId": "1810277002",
       "category": "육류,고기요리",
       "score": "4.46",
-      "previewImage": "https://ldb-phinf.pstatic.net/20190118_58/1547774525170WiHRr_JPEG/LQR4NdfTZrK-FNfGCrcUVhVn.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "몽탄",
       "menuItems": [
         {
@@ -4881,8 +4728,7 @@
             "zh": "乌代排骨 280g"
           },
           "price": "₩35,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -4892,8 +4738,7 @@
             "zh": "150克稻草佛兰精舍"
           },
           "price": "₩18,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -4903,8 +4748,7 @@
             "zh": "150克 蒙丹玉霍"
           },
           "price": "₩21,000",
-          "recommend": true,
-          "image": "media/menu-item-3.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -4913,8 +4757,7 @@
             "ja": "トリュフ卵蒸し",
             "zh": "松露蒸蛋"
           },
-          "price": "₩14,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩14,000"
         },
         {
           "name": {
@@ -4923,8 +4766,7 @@
             "ja": "味噌チゲ",
             "zh": "黄豆酱汤"
           },
-          "price": "₩9,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩9,000"
         },
         {
           "name": {
@@ -4933,8 +4775,7 @@
             "ja": "モンタン冷麺",
             "zh": "蒙炭冷面"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -4943,8 +4784,7 @@
             "ja": "モンタンビビン冷麺",
             "zh": "蒙炭拌饭冷面"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -4953,8 +4793,7 @@
             "ja": "玉ねぎ炊飯",
             "zh": "洋葱炒饭"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩5,000"
         },
         {
           "name": {
@@ -4963,8 +4802,7 @@
             "ja": "ご飯",
             "zh": "空气米"
           },
-          "price": "₩1,000",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩1,000"
         },
         {
           "name": {
@@ -4975,21 +4813,6 @@
           },
           "price": "₩10,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg"
       ]
     },
     "geumdwaeji": {
@@ -5010,7 +4833,7 @@
       "placeId": "37869877",
       "category": "돼지고기구이",
       "score": "4.4",
-      "previewImage": "https://ldb-phinf.pstatic.net/20220802_101/1659370765037AXLjm_JPEG/DD07CF1D-8EA2-4102-909C-B1733368C6E8.jpeg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "금돼지식당",
       "menuItems": [
         {
@@ -5021,8 +4844,7 @@
             "zh": "本参酒 (150g)"
           },
           "price": "₩19,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5031,8 +4853,7 @@
             "ja": "雪の花の茂み（150g）",
             "zh": "雪花颈肉（150g）"
           },
-          "price": "₩23,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩23,000"
         },
         {
           "name": {
@@ -5041,8 +4862,7 @@
             "ja": "背中（150g）",
             "zh": "猪颈肉（150克）"
           },
-          "price": "₩24,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩24,000"
         },
         {
           "name": {
@@ -5051,8 +4871,7 @@
             "ja": "シェル",
             "zh": "外壳"
           },
-          "price": "₩16,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩16,000"
         },
         {
           "name": {
@@ -5061,8 +4880,7 @@
             "ja": "韓牛肉会",
             "zh": "韩国牛肉生肉"
           },
-          "price": "₩36,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩36,000"
         },
         {
           "name": {
@@ -5071,8 +4889,7 @@
             "ja": "豚肉キムチチゲ",
             "zh": "全猪肉泡菜炖菜"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -5081,21 +4898,8 @@
             "ja": "バジルサム",
             "zh": "罗勒卷"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩5,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
       ]
     },
     "sancheong-sutbul": {
@@ -5116,7 +4920,7 @@
       "placeId": "1774474024",
       "category": "육류,고기요리",
       "score": "4.85",
-      "previewImage": "https://ldb-phinf.pstatic.net/20230125_242/1674631614818maU50_JPEG/%BB%EA%C3%BB_%B7%CE%B0%ED-09.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "산청숯불가든 마곡",
       "menuItems": [
         {
@@ -5127,8 +4931,7 @@
             "zh": "传统盐烧烤"
           },
           "price": "₩59,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5138,8 +4941,7 @@
             "zh": "烤辣椒酱调味"
           },
           "price": "₩19,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5148,8 +4950,7 @@
             "ja": "トンガルメギサル（限定販売）",
             "zh": "整颗galmaegisal（限量销售）"
           },
-          "price": "₩20,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩20,000"
         },
         {
           "name": {
@@ -5158,8 +4959,7 @@
             "ja": "韓牛がん小肉会",
             "zh": "韩国牛肉和牛肉生鱼片"
           },
-          "price": "₩24,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩24,000"
         },
         {
           "name": {
@@ -5168,8 +4968,7 @@
             "ja": "黒豚抗精肉",
             "zh": "黑猪肉沙龙"
           },
-          "price": "₩22,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩22,000"
         },
         {
           "name": {
@@ -5178,8 +4977,7 @@
             "ja": "黒豚ガブリサル",
             "zh": "黑猪肉加布里萨尔"
           },
-          "price": "₩20,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩20,000"
         },
         {
           "name": {
@@ -5188,8 +4986,7 @@
             "ja": "黒豆ハンウ味噌",
             "zh": "黑豆韩国牛肉大酱"
           },
-          "price": "₩9,500",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩9,500"
         },
         {
           "name": {
@@ -5198,8 +4995,7 @@
             "ja": "入れ子になった葬",
             "zh": "宰切黄豆酱苏巴包"
           },
-          "price": "₩10,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩10,000"
         },
         {
           "name": {
@@ -5208,8 +5004,7 @@
             "ja": "黒豚キムチチゲ",
             "zh": "黑猪肉泡菜炖菜"
           },
-          "price": "₩9,500",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩9,500"
         },
         {
           "name": {
@@ -5218,8 +5013,7 @@
             "ja": "山清チャーハン（2-3人分）",
             "zh": "山清炒饭（2-3人份）"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -5228,8 +5022,7 @@
             "ja": "智異山の冷冷麺（水/ビビン）",
             "zh": "智日山葛冷面（水/拌）"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -5238,25 +5031,8 @@
             "ja": "卵蒸し",
             "zh": "蒸蛋"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩5,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "jobakjip": {
@@ -5277,7 +5053,7 @@
       "placeId": "11679456",
       "category": "육류,고기요리",
       "score": "4.46",
-      "previewImage": "https://ldb-phinf.pstatic.net/20170424_95/1492998254745mzShp_JPEG/KakaoTalk_20170421_161807923.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "원조 조박집 본관",
       "menuItems": [
         {
@@ -5288,8 +5064,7 @@
             "zh": "韩国牛里脊肉（每份200克）"
           },
           "price": "₩50,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5299,8 +5074,7 @@
             "zh": "调味排骨（每份250克）"
           },
           "price": "₩20,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5309,8 +5083,7 @@
             "ja": "生カルビ（1人前250g）",
             "zh": "生排骨（每份250克）"
           },
-          "price": "₩23,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩23,000"
         },
         {
           "name": {
@@ -5319,8 +5092,7 @@
             "ja": "東チミ麺",
             "zh": "冬吃米汤"
           },
-          "price": "₩2,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩2,000"
         },
         {
           "name": {
@@ -5329,8 +5101,7 @@
             "ja": "味噌チゲ",
             "zh": "黄豆酱汤"
           },
-          "price": "₩1,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩1,000"
         },
         {
           "name": {
@@ -5339,8 +5110,7 @@
             "ja": "ジョエール(330ml)",
             "zh": "乔啤酒 (330ml)"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -5349,8 +5119,7 @@
             "ja": "パクエール（330ml）",
             "zh": "公园啤酒 (330ml)"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -5359,8 +5128,7 @@
             "ja": "造泊集幕ガーリー（700ml）",
             "zh": "乔巴吉普马格利酒 (700ml)"
           },
-          "price": "₩9,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩9,000"
         },
         {
           "name": {
@@ -5369,8 +5137,7 @@
             "ja": "テラ生ビール",
             "zh": "特拉生啤酒"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩5,000"
         },
         {
           "name": {
@@ -5379,8 +5146,7 @@
             "ja": "豚カルビ包装（2～3人前600g）",
             "zh": "排骨包装（600克2-3人份）"
           },
-          "price": "₩30,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩30,000"
         },
         {
           "name": {
@@ -5389,8 +5155,7 @@
             "ja": "総角キムチ包装(500g)",
             "zh": "清阁泡菜包装（500克）"
           },
-          "price": "₩9,500",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩9,500"
         },
         {
           "name": {
@@ -5399,8 +5164,7 @@
             "ja": "東チミ包装（1.2kg）",
             "zh": "东池米包装（1.2kg）"
           },
-          "price": "₩10,500",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩10,500"
         },
         {
           "name": {
@@ -5409,8 +5173,7 @@
             "ja": "食恵包装（450ml×2）",
             "zh": "锡克耶包装（450ml×2）"
           },
-          "price": "₩8,000",
-          "image": "media/menu-item-13.jpg"
+          "price": "₩8,000"
         },
         {
           "name": {
@@ -5439,17 +5202,6 @@
           },
           "price": "₩6,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "jinju-hoegwan": {
@@ -5470,7 +5222,7 @@
       "placeId": "11679660",
       "category": "국수",
       "score": "4.29",
-      "previewImage": "https://ldb-phinf.pstatic.net/20150831_287/1441017952681y0xed_JPEG/11679660_0.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "진주회관",
       "menuItems": [
         {
@@ -5489,8 +5241,7 @@
             "ja": "ミックスチゲ",
             "zh": "混合炖菜"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -5499,8 +5250,7 @@
             "ja": "キムチチャーハン",
             "zh": "泡菜炒饭"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -5556,22 +5306,6 @@
           },
           "price": "₩19,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "masidaegam": {
@@ -5592,7 +5326,7 @@
       "placeId": "34139212",
       "category": "곱창,막창,양",
       "score": "4.63",
-      "previewImage": "https://ldb-phinf.pstatic.net/20150901_190/1441084097600zo63P_JPEG/156075576045187_0.jpeg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "마시대감",
       "menuItems": [
         {
@@ -5603,8 +5337,7 @@
             "zh": "猪麦仓"
           },
           "price": "₩13,000",
-          "recommend": true,
-          "image": "media/menu-item-1.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5614,8 +5347,7 @@
             "zh": "索马克昌"
           },
           "price": "₩20,000",
-          "recommend": true,
-          "image": "media/menu-item-2.jpg"
+          "recommend": true
         },
         {
           "name": {
@@ -5624,20 +5356,8 @@
             "ja": "冷麺水",
             "zh": "冷面"
           },
-          "price": "₩5,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩5,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "taehyang": {
@@ -5658,7 +5378,7 @@
       "placeId": "21235557",
       "category": "중식당",
       "score": "4.19",
-      "previewImage": "https://ldb-phinf.pstatic.net/20250429_228/1745937679164ygsFl_JPEG/IMG_6752.jpeg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "태향",
       "menuItems": [
         {
@@ -5724,17 +5444,6 @@
           },
           "price": "₩14,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
       ]
     },
     "knedlo": {
@@ -5755,7 +5464,7 @@
       "placeId": "2036690983",
       "category": "베이커리",
       "score": "4.84",
-      "previewImage": "https://ldb-phinf.pstatic.net/20260625_152/1782381570179dCeXg_JPEG/IMG_6404ooo.jpg",
+      "previewImage": "media/cover.jpg",
       "previewTitle": "끄네들로 을지로본점",
       "menuItems": [
         {
@@ -5765,8 +5474,7 @@
             "ja": "限定）生マンゴ＆生クリームの煙突パン",
             "zh": "限定）新鲜芒果鲜奶油烟囱面包"
           },
-          "price": "₩11,700",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩11,700"
         },
         {
           "name": {
@@ -5775,8 +5483,7 @@
             "ja": "スイカジュース",
             "zh": "西瓜汁"
           },
-          "price": "₩7,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩7,000"
         },
         {
           "name": {
@@ -5785,8 +5492,7 @@
             "ja": "ドゥシュック）プレーンクネドル+ドバイチョコ",
             "zh": "Dujokku) 纯Kneedlo + 迪拜巧克力"
           },
-          "price": "₩13,300",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩13,300"
         },
         {
           "name": {
@@ -5795,8 +5501,7 @@
             "ja": "パープルウーベクリームラテ",
             "zh": "紫色宇部奶油拿铁"
           },
-          "price": "₩6,500",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩6,500"
         },
         {
           "name": {
@@ -5805,8 +5510,7 @@
             "ja": "クアサクサックバター餅",
             "zh": "酥脆耐嚼的黄油年糕"
           },
-          "price": "₩6,500",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩6,500"
         },
         {
           "name": {
@@ -5815,8 +5519,7 @@
             "ja": "[ベストセラー組み合わせ]塩+クアサク+シナモン",
             "zh": "【畅销组合】盐+Quasak+肉桂"
           },
-          "price": "₩30,200",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩30,200"
         },
         {
           "name": {
@@ -5825,8 +5528,7 @@
             "ja": "プレーンクネドルで",
             "zh": "带普通开关"
           },
-          "price": "₩7,800",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩7,800"
         },
         {
           "name": {
@@ -5835,8 +5537,7 @@
             "ja": "塩クネドル",
             "zh": "带盐出来"
           },
-          "price": "₩8,500",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩8,500"
         },
         {
           "name": {
@@ -5845,8 +5546,7 @@
             "ja": "シナモンクネドル",
             "zh": "肉桂膝"
           },
-          "price": "₩8,900",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩8,900"
         },
         {
           "name": {
@@ -5855,8 +5555,7 @@
             "ja": "シャキッとしたポテト",
             "zh": "脆皮薯片"
           },
-          "price": "₩8,900",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩8,900"
         },
         {
           "name": {
@@ -5865,8 +5564,7 @@
             "ja": "ソボでクネドルでピーナッツソース",
             "zh": "Soboro Kneedlo + 花生酱"
           },
-          "price": "₩9,100",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩9,100"
         },
         {
           "name": {
@@ -5875,8 +5573,7 @@
             "ja": "アーモンドクネドル",
             "zh": "配杏仁"
           },
-          "price": "₩9,100",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩9,100"
         },
         {
           "name": {
@@ -5885,8 +5582,7 @@
             "ja": "黄チーズクネドル+マコムマヨソース",
             "zh": "黄芝士Kneedlo + 辣味蛋黄酱"
           },
-          "price": "₩9,300",
-          "image": "media/menu-item-13.jpg"
+          "price": "₩9,300"
         },
         {
           "name": {
@@ -5895,8 +5591,7 @@
             "ja": "クアサク・クネドル",
             "zh": "夸萨克·尼德洛"
           },
-          "price": "₩9,300",
-          "image": "media/menu-item-14.jpg"
+          "price": "₩9,300"
         },
         {
           "name": {
@@ -5905,8 +5600,7 @@
             "ja": "チョコナッツクネドル",
             "zh": "配巧克力坚果"
           },
-          "price": "₩9,300",
-          "image": "media/menu-item-15.jpg"
+          "price": "₩9,300"
         },
         {
           "name": {
@@ -5915,8 +5609,7 @@
             "ja": "アメリカーノ",
             "zh": "美式咖啡"
           },
-          "price": "₩4,500",
-          "image": "media/menu-item-16.jpg"
+          "price": "₩4,500"
         },
         {
           "name": {
@@ -5925,8 +5618,7 @@
             "ja": "バニララテ",
             "zh": "香草拿铁"
           },
-          "price": "₩6,000",
-          "image": "media/menu-item-17.jpg"
+          "price": "₩6,000"
         },
         {
           "name": {
@@ -5935,8 +5627,7 @@
             "ja": "オミザエイド",
             "zh": "五味子"
           },
-          "price": "₩7,000",
-          "image": "media/menu-item-18.jpg"
+          "price": "₩7,000"
         },
         {
           "name": {
@@ -5974,18 +5665,6 @@
           },
           "price": "₩6,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg"
       ]
     },
     "jinokhwa": {
@@ -6000,7 +5679,7 @@
       "mapsEmbedUrl": "https://maps.google.com/maps?q=37.57035,127.0057389&hl=ko&z=16&output=embed",
       "mapsProvider": "naver",
       "sourceType": "naver",
-      "previewImage": "https://ldb-phinf.pstatic.net/20150831_186/1441006490314kASRz_JPEG/11619295_0.jpg",
+      "previewImage": "media/cover.jpg",
       "phone": "02-2275-9666",
       "hours": "영업 중 · 23:30에 라스트오더",
       "body": [],
@@ -6081,22 +5760,6 @@
           },
           "price": "₩30,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg",
-        "media/menu-board-2.jpg",
-        "media/menu-board-3.jpg",
-        "media/menu-board-4.jpg",
-        "media/menu-board-5.jpg",
-        "media/menu-board-6.jpg"
       ]
     },
     "suin-insadong": {
@@ -6111,7 +5774,7 @@
       "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5747933,126.9861953&hl=ko&z=16&output=embed",
       "mapsProvider": "naver",
       "sourceType": "naver",
-      "previewImage": "https://ldb-phinf.pstatic.net/20250921_67/1758441012590UcbaW_JPEG/%B4%DF%C7%D1%B8%B6%B8%AE_%C1%A4%BB%E7%B0%A2%C7%FC.jpg",
+      "previewImage": "media/cover.jpg",
       "phone": "070-7716-0081",
       "hours": "영업 중 · 15:00에 브레이크타임",
       "body": [],
@@ -6127,8 +5790,7 @@
             "ja": "鶏の針",
             "zh": "调味鸡"
           },
-          "price": "₩28,000",
-          "image": "media/menu-item-1.jpg"
+          "price": "₩28,000"
         },
         {
           "name": {
@@ -6137,8 +5799,7 @@
             "ja": "チキンナイフ麺",
             "zh": "鸡切面"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-2.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -6147,8 +5808,7 @@
             "ja": "サムゲタン",
             "zh": "参鸡汤"
           },
-          "price": "₩13,000",
-          "image": "media/menu-item-3.jpg"
+          "price": "₩13,000"
         },
         {
           "name": {
@@ -6157,8 +5817,7 @@
             "ja": "鶏の一匹",
             "zh": "一只鸡"
           },
-          "price": "₩28,000",
-          "image": "media/menu-item-4.jpg"
+          "price": "₩28,000"
         },
         {
           "name": {
@@ -6167,8 +5826,7 @@
             "ja": "チキン炒め",
             "zh": "鸡肉白饭汤"
           },
-          "price": "₩32,000",
-          "image": "media/menu-item-5.jpg"
+          "price": "₩32,000"
         },
         {
           "name": {
@@ -6177,8 +5835,7 @@
             "ja": "蒸し鶏",
             "zh": "吉姆达克"
           },
-          "price": "₩32,000",
-          "image": "media/menu-item-6.jpg"
+          "price": "₩32,000"
         },
         {
           "name": {
@@ -6187,8 +5844,7 @@
             "ja": "スイン昔のチキン",
             "zh": "水仁老鸡"
           },
-          "price": "₩24,000",
-          "image": "media/menu-item-7.jpg"
+          "price": "₩24,000"
         },
         {
           "name": {
@@ -6197,8 +5853,7 @@
             "ja": "鶏のロースト焼き",
             "zh": "烤鸡脖子"
           },
-          "price": "₩10,000",
-          "image": "media/menu-item-8.jpg"
+          "price": "₩10,000"
         },
         {
           "name": {
@@ -6207,8 +5862,7 @@
             "ja": "鶏の足焼き",
             "zh": "烤鸡腿"
           },
-          "price": "₩10,000",
-          "image": "media/menu-item-9.jpg"
+          "price": "₩10,000"
         },
         {
           "name": {
@@ -6217,8 +5871,7 @@
             "ja": "鶏の茂み",
             "zh": "炸鸡脖子"
           },
-          "price": "₩10,000",
-          "image": "media/menu-item-10.jpg"
+          "price": "₩10,000"
         },
         {
           "name": {
@@ -6227,8 +5880,7 @@
             "ja": "チキントッポッキ",
             "zh": "鸡肉炒年糕"
           },
-          "price": "₩15,000",
-          "image": "media/menu-item-11.jpg"
+          "price": "₩15,000"
         },
         {
           "name": {
@@ -6237,8 +5889,7 @@
             "ja": "鶏豆麺（季節限定）",
             "zh": "鸡豆面（仅限季节）"
           },
-          "price": "₩11,000",
-          "image": "media/menu-item-12.jpg"
+          "price": "₩11,000"
         },
         {
           "name": {
@@ -6267,17 +5918,397 @@
           },
           "price": "₩11,000"
         }
-      ],
-      "photos": [
-        "media/gallery-1.jpg",
-        "media/gallery-2.jpg",
-        "media/gallery-3.jpg",
-        "media/gallery-4.jpg",
-        "media/gallery-5.jpg",
-        "media/gallery-6.jpg",
-        "media/gallery-7.jpg",
-        "media/gallery-8.jpg",
-        "media/menu-board-1.jpg"
+      ]
+    },
+    "butter-and-shelter": {
+      "name": "버터앤쉘터 강남신사점",
+      "location": "서울 강남구 강남대로158길 26 지상1층 102호",
+      "menu": "두바이샌드",
+      "price": "₩4,500",
+      "tip": "",
+      "about": "방문자 평점 4.8 (966명) 편의: 포장, 예약, 무선 인터넷, 남/녀 화장실 구분",
+      "placeUrl": "https://map.naver.com/p/entry/place/2021650754",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2021650754",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5192167,127.0208392&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1442-3781",
+      "hours": "영업 중 · 21:30에 라스트오더",
+      "body": [],
+      "placeId": "2021650754",
+      "category": "카페,디저트",
+      "score": "4.85",
+      "previewTitle": "버터앤쉘터 강남신사점",
+      "menuItems": [
+        {
+          "name": {
+            "ko": "두바이샌드",
+            "en": "dubai sand",
+            "ja": "ドバイサンド",
+            "zh": "迪拜沙"
+          },
+          "price": "₩4,500",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "버터떡",
+            "en": "Butter rice cake",
+            "ja": "バター餅",
+            "zh": "黄油年糕"
+          },
+          "price": "₩2,500",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "두바이 쫀득 쿠키",
+            "en": "Dubai Chewy Cookies",
+            "ja": "ドバイの追いかけクッキー",
+            "zh": "迪拜耐嚼饼干"
+          },
+          "price": "₩4,200",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "버터샌드 오리지널",
+            "en": "Butter Sand Original",
+            "ja": "バターサンドオリジナル",
+            "zh": "黄油砂原味"
+          },
+          "price": "₩3,200",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "크림브륄레 버터샌드",
+            "en": "Creme Brulee Butter Sand",
+            "ja": "クリームブリュレバターサンド",
+            "zh": "焦糖布丁黄油沙"
+          },
+          "price": "₩3,500",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "버터 슈페너",
+            "en": "Butter Spener",
+            "ja": "バタースーペナー",
+            "zh": "黄油斯彭尔"
+          },
+          "price": "₩6,500",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "초코 버터샌드",
+            "en": "Chocolate Butter Sand",
+            "ja": "チョコバターサンド",
+            "zh": "巧克力黄油沙"
+          },
+          "price": "₩3,500"
+        },
+        {
+          "name": {
+            "ko": "쉘터 슈페너",
+            "en": "Shelter Spener",
+            "ja": "シェルターシュペナー",
+            "zh": "斯宾纳庇护所"
+          },
+          "price": "₩6,000"
+        },
+        {
+          "name": {
+            "ko": "글라사떼 스콘",
+            "en": "Glasate Scones",
+            "ja": "グラサテ・スコーン",
+            "zh": "格拉萨特烤饼"
+          },
+          "price": "₩4,700"
+        },
+        {
+          "name": {
+            "ko": "르뱅쿠키",
+            "en": "Lebank Cookie",
+            "ja": "ルバンクッキー",
+            "zh": "乐班饼干"
+          },
+          "price": "₩4,200"
+        },
+        {
+          "name": {
+            "ko": "레드벨벳 크림치즈 쿠키",
+            "en": "Red Velvet Cream Cheese Cookies",
+            "ja": "レッドベルベットクリームチーズクッキー",
+            "zh": "红色天鹅绒奶油芝士饼干"
+          },
+          "price": "₩4,700"
+        },
+        {
+          "name": {
+            "ko": "얼그레이 레몬 쿠키",
+            "en": "Earl Gray Lemon Cookies",
+            "ja": "アールグレイレモンクッキー",
+            "zh": "伯爵茶柠檬饼干"
+          },
+          "price": "₩4,700"
+        },
+        {
+          "name": {
+            "ko": "초코 스모어 쿠키",
+            "en": "Chocolate S'mores Cookies",
+            "ja": "チョコスモアクッキー",
+            "zh": "巧克力羊肚菌饼干"
+          },
+          "price": "₩4,700"
+        },
+        {
+          "name": {
+            "ko": "황치즈크림쿠키",
+            "en": "Yellow Cheese Cream Cookie",
+            "ja": "ファンチーズクリームクッキー",
+            "zh": "黄芝士奶油曲奇"
+          },
+          "price": "₩4,700"
+        },
+        {
+          "name": {
+            "ko": "버터바",
+            "en": "butter bar",
+            "ja": "バターバー",
+            "zh": "黄油吧"
+          },
+          "price": "₩4,200"
+        },
+        {
+          "name": {
+            "ko": "빅토리아 케이크",
+            "en": "victoria cake",
+            "ja": "ビクトリアケーキ",
+            "zh": "维多利亚蛋糕"
+          },
+          "price": "₩7,800"
+        },
+        {
+          "name": {
+            "ko": "마틸다 케이크",
+            "en": "matilda cake",
+            "ja": "マチルダケーキ",
+            "zh": "玛蒂尔达蛋糕"
+          },
+          "price": "₩7,800"
+        }
+      ]
+    },
+    "index-caramel": {
+      "name": "인덱스카라멜 광화문 디타워",
+      "location": "서울 종로구 종로3길 17 D타워 1층",
+      "menu": "오리지널 세트 ORIGINAL SET",
+      "price": "₩39,000",
+      "tip": "",
+      "about": "광화문역 3번, 4번 출구에서 200-300m 도보거리 입니다. 방문자 평점 4.4 (499명) 편의: 무선 인터넷, 포장, 주차",
+      "placeUrl": "https://map.naver.com/p/entry/place/1120415606",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1120415606",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5709312,126.9787904&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1305-8399",
+      "hours": "영업 중 · 20:30에 영업 종료",
+      "body": [],
+      "placeId": "1120415606",
+      "category": "카페,디저트",
+      "score": "4.41",
+      "previewTitle": "인덱스카라멜 광화문 디타워",
+      "menuItems": [
+        {
+          "name": {
+            "ko": "오리지널 세트 ORIGINAL SET",
+            "en": "ORIGINAL SET",
+            "ja": "オリジナルセット ORIGINAL SET",
+            "zh": "原版套装"
+          },
+          "price": "₩39,000",
+          "recommend": true
+        },
+        {
+          "name": {
+            "ko": "하프 세트 HALF SET 6P",
+            "en": "Half set HALF SET 6P",
+            "ja": "ハーフセット HALF SET 6P",
+            "zh": "半套 半套 6P"
+          },
+          "price": "₩22,000"
+        },
+        {
+          "name": {
+            "ko": "인덱스카라멜 INDEX CARAMEL",
+            "en": "Index Caramel INDEX CARAMEL",
+            "ja": "インデックスキャラメル INDEX CARAMEL",
+            "zh": "焦糖指数 焦糖指数"
+          },
+          "price": "₩3,500"
+        },
+        {
+          "name": {
+            "ko": "카라멜 스틱 세트 STICK SET",
+            "en": "Caramel stick set STICK SET",
+            "ja": "キャラメルスティックセット STICK SET",
+            "zh": "焦糖棒套装 STICK SET"
+          },
+          "price": "₩13,000"
+        }
+      ]
+    },
+    "hyodam-myeongdong": {
+      "name": "효담칼국수 닭한마리 명동본점",
+      "location": "서울 중구 명동3길 12 B1층",
+      "menu": "닭반마리 칼국수",
+      "price": "₩13,000",
+      "tip": "",
+      "about": "효담칼국수 닭한마리 명동본점 찾아오는길 안내\n\n*자차이용시*\n서울 중구 명동3길 12 입력하고 오시면 됩니다.\n\n*지하철 이용시*\n명동역 (정화예술대) 6번출구 도보 300m 위치 하고 있습니다.\n\n을지로입구역 2호선 (6번출구)로 나오시면 2분 거리에 위치 하고 있습니다.\n\n*주차*\n인근 공영주차장 이용하시면 됩니다.\n\n문의사항은 매장으로 연락주시면 친절하게 안내 해 드리겠습니다. 방문자 평점 4.8 (9271명) 편의: 단체 이용 가능, 무선 인터넷, 남/녀 화장실 구분, 유아의자, 간편결제",
+      "placeUrl": "https://map.naver.com/p/entry/place/1054209629",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1054209629",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5642444,126.983632&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1488-0581",
+      "hours": "브레이크타임 · 17:00에 영업 시작",
+      "body": [],
+      "placeId": "1054209629",
+      "category": "한식",
+      "score": "4.78",
+      "previewTitle": "효담칼국수 닭한마리 명동본점",
+      "menuItems": [
+        {
+          "name": {
+            "ko": "닭반마리 칼국수",
+            "en": "Half chicken kalguksu",
+            "ja": "チキンバンマリーカルグクス",
+            "zh": "半只鸡肉刀削面"
+          },
+          "price": "₩13,000"
+        },
+        {
+          "name": {
+            "ko": "닭한마리 2인",
+            "en": "2 chickens",
+            "ja": "鶏ひとり2人",
+            "zh": "2只鸡"
+          },
+          "price": "₩30,000"
+        },
+        {
+          "name": {
+            "ko": "닭한마리 3인",
+            "en": "3 chickens",
+            "ja": "鶏ひとり3人",
+            "zh": "3只鸡"
+          },
+          "price": "₩44,000"
+        },
+        {
+          "name": {
+            "ko": "닭한마리 4인",
+            "en": "4 chickens",
+            "ja": "鶏ひとり4人",
+            "zh": "4只鸡"
+          },
+          "price": "₩58,000"
+        },
+        {
+          "name": {
+            "ko": "감자전",
+            "en": "potato pancake",
+            "ja": "じゃがいも",
+            "zh": "土豆煎饼"
+          },
+          "price": "₩18,000"
+        },
+        {
+          "name": {
+            "ko": "치즈감자전",
+            "en": "Cheese Potato Pancake",
+            "ja": "チーズジャガイモ",
+            "zh": "芝士土豆煎饼"
+          },
+          "price": "₩23,000"
+        },
+        {
+          "name": {
+            "ko": "효담 만두",
+            "en": "Hyodam Dumplings",
+            "ja": "ヒョダム餃子",
+            "zh": "孝潭饺子"
+          },
+          "price": "₩10,000"
+        },
+        {
+          "name": {
+            "ko": "떡, 감자, 파, 칼국수 사리",
+            "en": "Rice cake, potato, green onion, noodle soup",
+            "ja": "餅、じゃがいも、ネギ、カルグクスサリ",
+            "zh": "年糕、土豆、葱、汤面"
+          },
+          "price": "₩3,000"
+        },
+        {
+          "name": {
+            "ko": "소주",
+            "en": "soju",
+            "ja": "焼酎",
+            "zh": "烧酒"
+          },
+          "price": "₩5,000"
+        },
+        {
+          "name": {
+            "ko": "맥주",
+            "en": "beer",
+            "ja": "ビール",
+            "zh": "啤酒"
+          },
+          "price": "₩6,000"
+        },
+        {
+          "name": {
+            "ko": "지평막걸리",
+            "en": "Jipyeong Makgeolli",
+            "ja": "地平マッコリ",
+            "zh": "地平马格利酒"
+          },
+          "price": "₩5,000"
+        },
+        {
+          "name": {
+            "ko": "느린마을막걸리",
+            "en": "Slow Village Makgeolli",
+            "ja": "遅い村マッコリ",
+            "zh": "慢村马格利酒"
+          },
+          "price": "₩6,000"
+        },
+        {
+          "name": {
+            "ko": "복분자막걸리",
+            "en": "Bokbunja Makgeolli",
+            "ja": "メタリック字幕",
+            "zh": "韩国马格利酒"
+          },
+          "price": "₩10,000"
+        },
+        {
+          "name": {
+            "ko": "음료",
+            "en": "drinkables",
+            "ja": "飲み物",
+            "zh": "饮料"
+          },
+          "price": "₩2,000"
+        }
       ]
     }
   },
@@ -6304,9 +6335,11 @@
     "about": "소개",
     "detailInfo": "자세한 가게 정보",
     "menuList": "메뉴",
-    "photoGallery": "사진",
+    "photoGallery": "사진·리뷰 더 보기",
     "placeLink": "지도 앱",
-    "viewOriginal": "지도에서 열기"
+    "viewOriginal": "지도에서 열기",
+    "photosOnMapsNote": "추가 사진과 리뷰는 지도·플레이스 페이지에서 확인할 수 있습니다.",
+    "viewOnPlaceMaps": "네이버 지도에서 보기"
   },
   "misc": {
     "transportTitle": "명소",
@@ -6316,7 +6349,7 @@
     "souvenirTitle": "기념품 가이드",
     "souvenirIntro": "외국인 여행객이 많이 사 가는 기념품을 종류별로 모았습니다.",
     "tipsTitle": "여행 팁",
-    "tipsIntro": "일상·식당·교통·쇼핑에서 바로 써먹을 수 있는 실용 팁입니다.",
+    "tipsIntro": "한국 여행 시 참고하면 좋은 팁을 모았습니다. 일상·식당·교통·쇼핑 주제를 골라 확인해 보세요.",
     "shoppingTitle": "쇼핑 가이드",
     "convenienceTitle": "한국 편의점",
     "airportTitle": "공항 → 명동",
@@ -6329,10 +6362,10 @@
     "shoppingIntro": "올리브영·다이소부터 면세·시장까지, 외국인이 자주 묻는 쇼핑 팁을 모았습니다."
   },
   "tips": {
-    "catDaily": "일상생활",
-    "catRestaurant": "식당 이용",
-    "catTransport": "교통 이용",
-    "catShopping": "쇼핑 팁",
+    "catDaily": "일상",
+    "catRestaurant": "식당",
+    "catTransport": "교통",
+    "catShopping": "쇼핑",
     "backHub": "← 여행 팁",
     "dailyCardDesc": "지도·현금·와이파이 등",
     "restaurantCardDesc": "주문·웨이팅·물·반찬",
@@ -6375,7 +6408,7 @@
     "weekendTitle": "주말·연휴 숙소",
     "weekendMistake": "주말에도 평일과 같은 가격일 거라 생각하는 것",
     "weekendBody": "금·토·일이나 연휴·성수기에는 호텔·게스트하우스 요금이 평일보다 크게 오르는 경우가 많습니다. 가능하면 평일 숙박을 섞거나, 미리 예약·가격 비교(야놀자·여기어때 등)를 하세요. 당일 예약은 더 비쌀 수 있습니다.",
-    "catPickLabel": "분류",
+    "catPickLabel": "주제",
     "dailyBody": [
       {
         "type": "text",
@@ -6468,7 +6501,28 @@
     ],
     "noTipTitle": "팁(봉사료)",
     "noTipMistake": "한국 식당에서는 보통 팁을 주지 않습니다",
-    "noTipBody": "한국의 일반 음식점·카페에서는 팁 문화가 없습니다. 계산 후 테이블에 현금을 두거나 카드에 팁을 더할 필요가 보통 없습니다."
+    "noTipBody": "한국의 일반 음식점·카페에서는 팁 문화가 없습니다. 계산 후 테이블에 현금을 두거나 카드에 팁을 더할 필요가 보통 없습니다.",
+    "catDailyIntro": "지도·현금·쓰레기·데이터·주말 숙소처럼, 한국 일상에서 자주 헷갈리는 포인트입니다.",
+    "catRestaurantIntro": "주문·팁·웨이팅·셀프 코너 — 식당에서 바로 써먹는 팁입니다.",
+    "catTransportIntro": "교통카드·출퇴근·택시·지하철 출구를 짧게 정리했습니다.",
+    "catShoppingIntro": "올리브영·다이소·면세·시장 팁을 이 안에서 바로 확인하세요. (별도 페이지 이동 없음)",
+    "tabMap": "지도 앱",
+    "tabCash": "현금·카드",
+    "tabTrash": "쓰레기통",
+    "tabWifi": "와이파이",
+    "tabWeekend": "주말 숙소",
+    "tabOrder": "주문·계산",
+    "tabNoTip": "팁",
+    "tabQueue": "웨이팅",
+    "tabWater": "물·반찬",
+    "tabCard": "교통카드",
+    "tabRush": "출퇴근",
+    "tabTaxi": "택시",
+    "tabExit": "지하철 출구",
+    "tabOlive": "올리브영",
+    "tabDaiso": "다이소",
+    "tabDuty": "면세·택스프리",
+    "tabMarket": "시장·번화가"
   },
   "korean": {
     "pageTitle": "유용한 한국어",
@@ -6948,11 +7002,29 @@
   "festivals": {
     "pageTitle": "축제 및 행사 | Korea Travel Guide",
     "title": "축제 및 행사",
-    "intro": "추후 지역별 축제·대표 행사가 추가될 예정입니다.",
-    "placeholder": "추후 지역별 축제·대표 행사가 추가될 예정입니다",
+    "intro": "지역별 축제·행사는 공식 관광 사이트에서 확인하세요.",
+    "placeholder": "추후 지역별로 정리할 예정입니다.",
     "regionsTitle": "지역별 축제",
     "regionsHint": "서울·부산·제주 등 지역 섹션을 준비 중입니다.",
-    "back": "← 축제 및 행사"
+    "back": "← 축제 및 행사",
+    "linksTitle": "공식 안내",
+    "linkVisitKoreaEyebrow": "VisitKorea",
+    "linkVisitKoreaTitle": "한국관광공사 축제·행사",
+    "linkVisitKoreaDesc": "대한민국 구석구석 축제 허브 — 추천·테마·지역별 행사.",
+    "linkNationwideEyebrow": "Festivals",
+    "linkNationwideTitle": "전국 축제 검색",
+    "linkNationwideDesc": "개최중·예정 축제를 지역·시기로 찾아볼 수 있습니다.",
+    "linkKoreanVisitEyebrow": "구석구석",
+    "linkKoreanVisitTitle": "대한민국 구석구석",
+    "linkKoreanVisitDesc": "한국관광공사 공식 국내 여행 포털 — 여행지·코스·행사 안내.",
+    "linkVisitKoreaEnEyebrow": "English",
+    "linkVisitKoreaEnTitle": "VisitKorea (English)",
+    "linkVisitKoreaEnDesc": "해외 여행객용 한국관광공사 공식 영문 사이트.",
+    "openExternal": "새 창에서 열기 →",
+    "apiLaterNote": "TourAPI(data.go.kr) 연동은 추후 예정입니다.",
+    "sourceLabel": "출처",
+    "sourceName": "한국관광공사 VisitKorea · 대한민국 구석구석",
+    "sourceNote": "일정은 주최 측 사정으로 변경될 수 있으니, 위 공식 사이트에서 최신 정보를 확인하세요."
   },
   "souvenir": {
     "catPickLabel": "분류",
@@ -8010,6 +8082,10 @@
     "market2": "명동·홍대·강남은 브랜드 매장과 길거리 음식이 많습니다. 주말 저녁은 매우 붐빕니다.",
     "oliveBody": [
       {
+        "type": "image",
+        "src": "Images/shopping/olive.jpg"
+      },
+      {
         "type": "text",
         "ko": "인기 제품은 ‘올영픽’·세일 코너를 먼저 보세요. 시트마스크·선크림·틴트는 선물용으로 많이 삽니다.",
         "en": "Start with ‘Olive Young Picks’ and sale shelves. Sheet masks, sunscreen, and tints are popular gifts.",
@@ -8030,6 +8106,10 @@
     ],
     "daisoBody": [
       {
+        "type": "image",
+        "src": "Images/shopping/daiso.jpg"
+      },
+      {
         "type": "text",
         "ko": "균일가 생활용품·문구·여행용 소품이 강점입니다. 캐리어에 넣기 쉬운 작은 아이템을 고르세요.",
         "en": "Great for fixed-price household goods, stationery, and travel bits that fit a suitcase.",
@@ -8044,6 +8124,10 @@
     ],
     "dutyBody": [
       {
+        "type": "image",
+        "src": "Images/shopping/duty.jpg"
+      },
+      {
         "type": "text",
         "ko": "시내면세점·공항 면세는 여권·항공권이 필요할 수 있습니다. 구매 한도와 수령 방식을 미리 확인하세요.",
         "en": "Downtown/airport duty-free may need passport and flight info — check pickup rules.",
@@ -8057,6 +8141,10 @@
       }
     ],
     "marketBody": [
+      {
+        "type": "image",
+        "src": "Images/shopping/market.jpg"
+      },
       {
         "type": "text",
         "ko": "광장시장·남대문·동대문은 현금이 편한 곳이 있습니다. 카드 가능 여부를 먼저 물어보세요.",

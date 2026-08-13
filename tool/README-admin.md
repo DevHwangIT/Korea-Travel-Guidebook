@@ -33,7 +33,7 @@ Admin is **localhost-only**. GitHub Pages에는 관리자가 없습니다.
 | 먹거리 | 식사(고기집·닭한마리·신규 국물류 등)·디저트(빵집 브랜드는 `bread` 하위 가게)·가게·편의점 |
 | 쇼핑 및 놀거리 | 쇼핑 상품(souvenir)·놀거리(fun)·쇼핑 팁 |
 | 명소 | 전국 지도 핀 (`city` / `nature` / `heritage` / `airport` / `info`) — 예전 “교통” 보드명 아님 |
-| 축제 및 행사 | 플레이스홀더·지역 섹션 (`/section?id=festivals`) — 추후 행사 목록 확장 |
+| 축제 및 행사 | 공식 VisitKorea 링크 안내 문구 (`/section?id=festivals`) — API·지역별 정리는 추후 |
 | 여행 팁 | 일상·식당·교통 (+ 공개 허브의 쇼핑 팁 링크) |
 | 제휴·추천 | CMS 전용 보드 없음 — 사이드바 안내 · 공개 `partner-panel` / `partner-strip` · i18n `home.partner*` |
 

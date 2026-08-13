@@ -107,7 +107,9 @@ def walk_translate(
         zh_dict = zh_node if isinstance(zh_node, dict) else {}
         for key, ko_val in ko_node.items():
             # Skip bulky shared menu/photo arrays under restaurants — already migrated
-            if key in ("menuItems", "photos", "previewImage", "mapsEmbedUrl", "placeUrl", "mapsUrl"):
+            if key in ("photos", "gallery"):
+                continue
+            if key in ("menuItems", "previewImage", "mapsEmbedUrl", "placeUrl", "mapsUrl"):
                 out[key] = copy.deepcopy(ko_val)
                 continue
             child_path = f"{path}.{key}" if path else key
@@ -200,7 +202,6 @@ def main() -> int:
             # Shared / structural fields from KO (previewTitle keeps Korean shop titles)
             for key in (
                 "menuItems",
-                "photos",
                 "placeId",
                 "placeUrl",
                 "mapsUrl",
@@ -214,6 +215,13 @@ def main() -> int:
             ):
                 if key in entry:
                     z[key] = copy.deepcopy(entry[key])
+            z.pop("photos", None)
+            z.pop("gallery", None)
+            items = z.get("menuItems")
+            if isinstance(items, list):
+                for it in items:
+                    if isinstance(it, dict):
+                        it.pop("image", None)
             # hours/category: translate static Korean status/labels when still Hangul
             for f in ("hours", "category"):
                 ko_val = str(entry.get(f) or "")

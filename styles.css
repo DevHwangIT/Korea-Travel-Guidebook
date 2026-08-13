@@ -1207,6 +1207,54 @@ a.souvenir-card:hover {
   background: #fff;
 }
 
+/* —— Before-trip: category + nested sub-tabs —— */
+.prep-tabs > .prep-cat-list {
+  background: #eef3f1;
+  border-bottom: 1px solid #d9e3de;
+}
+
+.prep-tabs > .prep-cat-list .tab-btn {
+  font-weight: 650;
+  font-size: 1rem;
+  padding: 11px 18px;
+}
+
+.prep-cat-select-wrap {
+  display: none;
+  margin: 0;
+  padding: 12px 14px 8px;
+  background: #eef3f1;
+  border-bottom: 1px solid #d9e3de;
+}
+
+.prep-cat-intro {
+  margin: 0 0 14px;
+  padding: 0 2px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #4a5c55;
+}
+
+.prep-tabs > .tab-panels {
+  padding-top: 16px;
+}
+
+.prep-tabs .nested-tabs {
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .prep-cat-select-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .prep-tabs > .prep-cat-list {
+    display: none;
+  }
+}
+
 /* —— Immersive Korea places map (full-screen app shell) —— */
 body.places-map-app {
   margin: 0;
@@ -3118,20 +3166,124 @@ a.partner-strip__slot:focus-visible {
   display: none;
 }
 
-.festivals-placeholder {
-  margin: 18px auto 28px;
-  max-width: 640px;
-  padding: 28px 18px;
-  border: 1px dashed #c5d0c9;
-  border-radius: 12px;
-  background: #f8faf9;
+.prep-cat-intro {
+  margin: 0 0 4px;
+  color: #4a5650;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
-.festivals-placeholder__msg {
-  margin: 0;
+.festivals-later {
+  margin: -4px 0 20px;
   color: #5f6b64;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.festivals-links {
+  margin: 0 0 8px;
+  text-align: left;
+}
+
+.festivals-links h2 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  color: #1f2a26;
+}
+
+.festivals-link-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 640px) {
+  .festivals-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.festivals-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 18px 16px;
+  border: 1px solid #d9e3de;
+  border-radius: 14px;
+  background:
+    linear-gradient(165deg, #f7faf8 0%, #ffffff 55%, #eef4f1 100%);
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.festivals-link-card:hover {
+  border-color: #9fb5aa;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(31, 58, 50, 0.08);
+}
+
+.festivals-link-card__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3d6b5c;
+}
+
+.festivals-link-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  color: #1f2a26;
+}
+
+.festivals-link-card p {
+  margin: 0;
+  flex: 1;
+  color: #4a5650;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.festivals-link-card__cta {
+  margin-top: 4px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1f3a32;
+}
+
+.festivals-api-note {
+  margin: 0 0 20px;
+  color: #6a756f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.festivals-attribution {
+  margin: 8px 0 24px;
+  padding: 14px 16px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.88rem;
+  color: #5f6b64;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.festivals-attribution__line {
+  margin: 0 0 6px;
+  color: #333;
+}
+
+.festivals-attribution__note,
+.festivals-attribution__links {
+  margin: 0 0 6px;
+}
+
+.festivals-attribution__links a {
+  color: #1f3a32;
 }
 
 @media (min-width: 961px) {
@@ -3612,17 +3764,30 @@ hr.section-rule {
 }
 
 .shop-menu-block,
-.shop-gallery-block {
+.shop-gallery-block,
+.shop-photos-cta {
   margin: 0 0 18px;
 }
 
 .shop-menu-block__title,
-.shop-gallery-block__title {
+.shop-gallery-block__title,
+.shop-photos-cta__title {
   margin: 0 0 12px;
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #1a2e28;
+}
+
+.shop-photos-cta__note {
+  margin: 0 0 10px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #3d554e;
+}
+
+.shop-photos-cta__link {
+  display: inline-block;
 }
 
 .shop-menu-list {
@@ -4862,6 +5027,457 @@ hr.section-rule {
   .food-life-card--desserts:hover .food-life-card__media::after,
   .food-life-card--desserts:focus-visible .food-life-card__media::after {
     animation: none !important;
+  }
+}
+
+/* —— Food recommend quiz (food-life hub) —— */
+.food-quiz {
+  --fq-accent: #c4783a;
+  --fq-ink: #1a2623;
+  --fq-muted: #5a6461;
+  width: 100%;
+  max-width: 100%;
+  margin: 28px auto 8px;
+}
+
+.food-quiz-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 84px;
+  max-height: 100px;
+  padding: 16px 22px;
+  border: 1px solid rgba(196, 120, 58, 0.28);
+  border-radius: 16px;
+  background:
+    linear-gradient(105deg, #fff8f0 0%, #ffffff 42%, #fff4ea 100%);
+  box-shadow:
+    0 1px 0 rgba(196, 120, 58, 0.06),
+    0 10px 26px rgba(120, 60, 20, 0.07);
+  color: var(--fq-ink);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.food-quiz-banner__glow {
+  position: absolute;
+  inset: auto -10% -60% 40%;
+  height: 120%;
+  background: radial-gradient(ellipse at center, rgba(255, 180, 90, 0.35) 0%, transparent 62%);
+  pointer-events: none;
+  z-index: 0;
+  animation: fq-banner-glow 3.6s ease-in-out infinite;
+}
+
+.food-quiz-banner__copy,
+.food-quiz-banner__cta {
+  position: relative;
+  z-index: 1;
+}
+
+.food-quiz-banner__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.food-quiz-banner__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fq-accent);
+}
+
+.food-quiz-banner__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+
+.food-quiz-banner__cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: var(--fq-accent);
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(196, 120, 58, 0.28);
+}
+
+.food-quiz-banner:hover,
+.food-quiz-banner:focus-visible {
+  border-color: rgba(196, 120, 58, 0.5);
+  box-shadow:
+    0 14px 30px rgba(120, 60, 20, 0.12),
+    0 0 0 1px rgba(196, 120, 58, 0.14);
+  transform: translateY(-2px);
+}
+
+.food-quiz-banner:focus-visible {
+  outline: 2px solid #1f3a32;
+  outline-offset: 3px;
+}
+
+.food-quiz-banner:active {
+  transform: translateY(0);
+}
+
+@keyframes fq-banner-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translateX(-6%);
+  }
+}
+
+body.food-quiz-lock {
+  overflow: hidden;
+}
+
+.food-quiz-dialog[hidden] {
+  display: none !important;
+}
+
+.food-quiz-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.food-quiz-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 24, 22, 0.48);
+  backdrop-filter: blur(2px);
+}
+
+.food-quiz-sheet {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 100%);
+  max-height: min(88vh, 720px);
+  overflow: auto;
+  padding: 18px 18px 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(31, 58, 50, 0.12);
+  background:
+    linear-gradient(165deg, #fffaf4 0%, #ffffff 48%, #fff7ef 100%);
+  box-shadow: 0 22px 48px rgba(18, 24, 22, 0.22);
+  text-align: left;
+  animation: fq-sheet-in 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.food-quiz-toolbar {
+  display: grid;
+  grid-template-columns: 64px 1fr 40px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.food-quiz-heading {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--fq-ink);
+}
+
+.food-quiz-back,
+.food-quiz-close {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--fq-muted);
+  cursor: pointer;
+  font: inherit;
+  padding: 6px 4px;
+}
+
+.food-quiz-back {
+  justify-self: start;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--fq-accent);
+}
+
+.food-quiz-back[hidden] {
+  visibility: hidden;
+}
+
+.food-quiz-close {
+  justify-self: end;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--fq-ink);
+}
+
+.food-quiz-close:hover,
+.food-quiz-back:hover,
+.food-quiz-close:focus-visible,
+.food-quiz-back:focus-visible {
+  background: rgba(196, 120, 58, 0.1);
+}
+
+.food-quiz-progress-wrap {
+  margin-bottom: 16px;
+}
+
+.food-quiz-progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(196, 120, 58, 0.14);
+  overflow: hidden;
+}
+
+.food-quiz-progress-bar {
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d08a4a, #c4783a);
+  transition: width 0.28s ease;
+}
+
+.food-quiz-progress-label {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+  color: var(--fq-muted);
+  text-align: right;
+}
+
+.food-quiz-prompt {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  color: var(--fq-ink);
+}
+
+.food-quiz-options {
+  display: grid;
+  gap: 10px;
+}
+
+.food-quiz-option {
+  appearance: none;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 16px;
+  border: 1px solid rgba(31, 58, 50, 0.12);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--fq-ink);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(31, 58, 50, 0.04);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.food-quiz-option:hover,
+.food-quiz-option:focus-visible {
+  border-color: rgba(196, 120, 58, 0.45);
+  background: #fffaf4;
+  box-shadow: 0 8px 18px rgba(120, 60, 20, 0.08);
+  transform: translateY(-1px);
+}
+
+.food-quiz-option:focus-visible {
+  outline: 2px solid #1f3a32;
+  outline-offset: 2px;
+}
+
+.food-quiz-option:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.food-quiz-step[data-anim="in"],
+.food-quiz-result[data-anim="in"] {
+  animation: fq-step-in 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.food-quiz-result {
+  text-align: center;
+  padding: 8px 4px 4px;
+}
+
+.food-quiz-result__eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fq-accent);
+}
+
+.food-quiz-result__name {
+  margin: 0 0 10px;
+  font-size: 1.7rem;
+  letter-spacing: -0.03em;
+  color: var(--fq-ink);
+}
+
+.food-quiz-result__reason {
+  margin: 0 auto 20px;
+  max-width: 28em;
+  line-height: 1.55;
+  color: var(--fq-muted);
+  font-size: 0.98rem;
+}
+
+.food-quiz-result__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.food-quiz-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 12px;
+  background: var(--fq-accent);
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  box-shadow: 0 8px 18px rgba(196, 120, 58, 0.28);
+}
+
+.food-quiz-cta:hover,
+.food-quiz-cta:focus-visible {
+  filter: brightness(1.04);
+}
+
+.food-quiz-restart {
+  appearance: none;
+  min-height: 44px;
+  border: 1px solid rgba(31, 58, 50, 0.14);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--fq-ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.food-quiz-restart:hover,
+.food-quiz-restart:focus-visible {
+  border-color: rgba(196, 120, 58, 0.4);
+  background: #fffaf4;
+}
+
+@keyframes fq-sheet-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fq-step-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .food-quiz {
+    max-width: 340px;
+  }
+
+  .food-quiz-banner {
+    min-height: 76px;
+    padding: 14px 14px;
+    gap: 12px;
+  }
+
+  .food-quiz-banner__title {
+    font-size: 0.95rem;
+  }
+
+  .food-quiz-banner__cta {
+    padding: 0 12px;
+    font-size: 0.86rem;
+  }
+
+  .food-quiz-dialog {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .food-quiz-sheet {
+    width: 100%;
+    max-height: 92vh;
+    border-radius: 18px 18px 0 0;
+    padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-quiz-banner,
+  .food-quiz-banner__glow,
+  .food-quiz-sheet,
+  .food-quiz-option,
+  .food-quiz-progress-bar,
+  .food-quiz-step,
+  .food-quiz-result {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .food-quiz-banner:hover,
+  .food-quiz-banner:focus-visible,
+  .food-quiz-banner:active,
+  .food-quiz-option:hover,
+  .food-quiz-option:focus-visible,
+  .food-quiz-option:active {
+    transform: none;
   }
 }
 

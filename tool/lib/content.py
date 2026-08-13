@@ -64,6 +64,27 @@ from .shop_body import (
 )
 from .translate import BatchStatus, fill_body_blocks, fill_scalar_texts
 
+
+def rebuild_food_recommend_catalog() -> str:
+    """Regenerate data/food/recommend-catalog.js for the food-life quiz."""
+    import importlib.util
+
+    script = ROOT / "tool" / "build-food-recommend-catalog.py"
+    spec = importlib.util.spec_from_file_location(
+        "build_food_recommend_catalog", script
+    )
+    if spec is None or spec.loader is None:
+        return "먹거리 추천 카탈로그 갱신 실패: 스크립트 로드 불가"
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    catalog = mod.build_catalog()
+    path = mod.write_catalog(catalog)
+    return (
+        f"먹거리 추천 카탈로그 갱신: {path.relative_to(ROOT).as_posix()} "
+        f"({len(catalog)}개)"
+    )
+
+
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 # Known dish folders that are hubs (have index) under meals / desserts
@@ -521,6 +542,7 @@ def create_dish(
     media.mkdir(parents=True, exist_ok=True)
     notes.append(f"대표 이미지 저장 위치: {rel_posix(dish_cover_path(slug, kind))}")
     notes.append(i18n_store.build_bundle())
+    notes.append(rebuild_food_recommend_catalog())
     return notes, status
 
 
@@ -609,6 +631,7 @@ def rename_dish(kind: str, old_slug: str, new_slug: str) -> list[str]:
                 notes.append(f"경고: restaurants/{old_slug} 비우지 못함")
 
     notes.append(i18n_store.build_bundle())
+    notes.append(rebuild_food_recommend_catalog())
     return notes
 
 
@@ -665,6 +688,7 @@ def delete_dish(
                 )
 
     notes.append(i18n_store.build_bundle())
+    notes.append(rebuild_food_recommend_catalog())
     return notes
 
 

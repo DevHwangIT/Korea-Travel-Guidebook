@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "note": "Sample festivals for GitHub Pages when TourAPI key is missing or CORS blocks browser fetch. Shape mirrors TourAPI searchFestival2 item fields.",
+    "source": "Korea Tourism Organization TourAPI (sample)"
+  },
+  "items": [
+    {
+      "contentid": "sample-ongoing-1",
+      "title": "서울 밤도깨비 야시장 (샘플)",
+      "addr1": "서울특별시 영등포구 여의도한강공원",
+      "eventstartdate": "20260801",
+      "eventenddate": "20260831",
+      "firstimage": ""
+    },
+    {
+      "contentid": "sample-upcoming-1",
+      "title": "부산 불꽃축제 (샘플)",
+      "addr1": "부산광역시 수영구 광안리해수욕장",
+      "eventstartdate": "20261010",
+      "eventenddate": "20261011",
+      "firstimage": ""
+    },
+    {
+      "contentid": "sample-upcoming-2",
+      "title": "제주 불꽃 축제 (샘플)",
+      "addr1": "제주특별자치도 제주시",
+      "eventstartdate": "20261115",
+      "eventenddate": "20261116",
+      "firstimage": ""
+    },
+    {
+      "contentid": "sample-ended-1",
+      "title": "진해 군항제 (샘플)",
+      "addr1": "경상남도 창원시 진해구",
+      "eventstartdate": "20260328",
+      "eventenddate": "20260406",
+      "firstimage": ""
+    },
+    {
+      "contentid": "sample-ended-2",
+      "title": "보령 머드축제 (샘플)",
+      "addr1": "충청남도 보령시",
+      "eventstartdate": "20260718",
+      "eventenddate": "20260727",
+      "firstimage": ""
+    }
+  ]
+}

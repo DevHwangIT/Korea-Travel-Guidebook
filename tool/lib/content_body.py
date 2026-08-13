@@ -21,12 +21,26 @@ class BodySlot:
 
 
 # One post per detail page under pages/before-trip/{slug}/
+# Hub IA: 입국(eri/docs/immigration) · 돈(money/wowpass) · 생활(connect/pack) · 식사(solo) · 일정(holidays/avoid)
 BEFORE_TRIP_SLOTS: list[BodySlot] = [
-    BodySlot("docsBody", "서류·입국", "before-trip", "docs", group="docs"),
-    BodySlot("moneyBody", "돈·카드", "before-trip", "money", group="money"),
+    BodySlot("eriBody", "전자입국신고(ERI)", "before-trip", "eri", group="eri"),
+    BodySlot("docsBody", "준비서류", "before-trip", "docs", group="docs"),
+    BodySlot(
+        "immigrationBody",
+        "입국 심사(SES)",
+        "before-trip",
+        "immigration",
+        group="immigration",
+    ),
+    BodySlot("moneyBody", "현금·카드", "before-trip", "money", group="money"),
+    BodySlot("wowpassBody", "Wow Pass", "before-trip", "wowpass", group="wowpass"),
     BodySlot("connectBody", "통신·전원", "before-trip", "connect", group="connect"),
     BodySlot("packBody", "짐·예약", "before-trip", "pack", group="pack"),
     BodySlot("soloBody", "혼자 식사", "before-trip", "solo", group="solo"),
+    BodySlot("holidaysBody", "공휴일", "before-trip", "holidays", group="holidays"),
+    BodySlot(
+        "avoidBody", "추천하지 않는 시기", "before-trip", "avoid", group="avoid"
+    ),
 ]
 
 SHOPPING_SLOTS: list[BodySlot] = [
@@ -394,10 +408,16 @@ def migrate_before_trip(
     owns = bundle is None
     data = bundle if bundle is not None else i18n_store.load_all()
     mapping = {
+        "eriBody": ["eri1", "eri2", "eri3"],
         "docsBody": ["docs1", "docs2", "docs3"],
+        "immigrationBody": ["immigration1", "immigration2", "immigration3"],
         "moneyBody": ["money1", "money2", "money3"],
+        "wowpassBody": ["wowpass1", "wowpass2", "wowpass3"],
         "connectBody": ["connect1", "connect2", "connect3"],
         "packBody": ["pack1", "pack2", "pack3"],
+        "soloBody": ["solo1", "solo2", "solo3"],
+        "holidaysBody": ["holidays1", "holidays2", "holidays3"],
+        "avoidBody": ["avoid1", "avoid2", "avoid3"],
     }
     for body_key, leaves in mapping.items():
         existing = get_body_at("beforeTrip", body_key, bundle=data)

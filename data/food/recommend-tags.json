@@ -1,0 +1,154 @@
+{
+  "_comment": "Optional overrides for food-recommend quiz catalog. Keys are category/product slugs. tags replace heuristic defaults when set; extraTags merge; exclude:true skips; titleKey overrides i18n key; reasonKey optional quiz reason key.",
+  "items": {
+    "kimbap": {
+      "tags": ["portable", "roll", "quickbite", "light", "mild", "nosoup", "balanced"]
+    },
+    "naengmyeon": {
+      "tags": ["soup", "noodles", "cold", "light", "mild", "nonspicy"]
+    },
+    "gukbap": {
+      "tags": ["soup", "warm", "hearty", "meat", "mild"]
+    },
+    "gomtang": {
+      "tags": ["soup", "warm", "hearty", "meat", "mild", "nonspicy"]
+    },
+    "dakhanmari": {
+      "tags": ["soup", "warm", "chicken", "hearty", "mild"]
+    },
+    "samgyetang": {
+      "tags": ["soup", "warm", "chicken", "hearty", "mild", "nonspicy"]
+    },
+    "kalguksu": {
+      "tags": ["soup", "warm", "noodles", "hearty", "mild"]
+    },
+    "kongguksu": {
+      "tags": ["soup", "cold", "noodles", "light", "mild", "nonspicy", "veggie"]
+    },
+    "sundubu-jjigae": {
+      "tags": ["soup", "warm", "spicy", "light"],
+      "reasonKey": "foodLife.quiz.results.sundubu.reason"
+    },
+    "malatang": {
+      "tags": ["soup", "warm", "spicy", "noodles", "hearty"]
+    },
+    "budae-jjigae": {
+      "tags": ["soup", "warm", "spicy", "meat", "hearty"]
+    },
+    "tteokbokki": {
+      "tags": ["spicy", "quickbite", "nosoup", "street", "mild"]
+    },
+    "samgyeopsal": {
+      "tags": ["meat", "pork", "grill", "nosoup", "hearty", "warm"]
+    },
+    "gopchang": {
+      "tags": ["meat", "grill", "nosoup", "hearty", "warm"]
+    },
+    "tangsuyuk": {
+      "tags": ["meat", "nosoup", "mild", "hearty"]
+    },
+    "bibimbap": {
+      "tags": ["light", "veggie", "mild", "nosoup", "balanced", "hearty"]
+    },
+    "jeon": {
+      "tags": ["light", "veggie", "mild", "nosoup", "nonspicy"]
+    },
+    "jajangmyeon": {
+      "tags": ["noodles", "mild", "nosoup", "nonspicy", "hearty"]
+    },
+    "dakgalbi": {
+      "tags": ["chicken", "spicy", "nosoup", "hearty", "warm"]
+    },
+    "jjimdak": {
+      "tags": ["chicken", "spicy", "nosoup", "hearty", "warm"]
+    },
+    "yangnyeom-chicken": {
+      "tags": ["chicken", "spicy", "nosoup", "hearty", "quickbite"]
+    },
+    "ganjang-gejang": {
+      "tags": ["seafood", "mild", "nosoup", "light", "nonspicy"]
+    },
+    "bingsu": {
+      "tags": ["icy", "cold", "sweet"]
+    },
+    "yogurt-ice": {
+      "tags": ["icy", "cold", "sweet"]
+    },
+    "bread": {
+      "tags": ["bakery", "sweet"]
+    },
+    "butter-bread": {
+      "tags": ["bakery", "sweet"]
+    },
+    "nangman-sandwich": {
+      "tags": ["bakery", "sweet", "hearty"]
+    },
+    "dubai-cookie": {
+      "tags": ["bakery", "sweet"]
+    },
+    "cafe": {
+      "tags": ["coffee", "sweet"]
+    },
+    "bungeoppang": {
+      "tags": ["bakery", "warm", "street", "sweet"]
+    },
+    "tanghulu": {
+      "tags": ["sweet", "street", "cold"]
+    },
+    "convenience": {
+      "tags": ["combo", "quickbite", "portable"],
+      "titleKey": "home.menuConvenience",
+      "reasonKey": "foodLife.quiz.results.convenience.reason"
+    },
+    "ramyeon-egg": {
+      "tags": ["noodles", "quickbite", "warm", "combo", "spicy"],
+      "titleKey": "convenience.c3_pageTitle",
+      "reasonKey": "foodLife.quiz.results.ramyeonEgg.reason"
+    },
+    "gongganchun": {
+      "tags": ["noodles", "spicy", "quickbite", "combo"]
+    },
+    "markjeongsik": {
+      "tags": ["noodles", "spicy", "quickbite", "combo"]
+    },
+    "carbonara": {
+      "tags": ["noodles", "quickbite", "combo", "mild"]
+    },
+    "jikgguri": {
+      "tags": ["noodles", "chicken", "quickbite", "combo"]
+    },
+    "kimbap-milk": {
+      "tags": ["roll", "portable", "quickbite", "mild", "combo"]
+    },
+    "chicken-beer": {
+      "tags": ["chicken", "quickbite", "combo"]
+    },
+    "eolbaksa": {
+      "tags": ["drink", "cold", "quickbite", "combo"]
+    },
+    "biyott": {
+      "tags": ["sweet", "cold", "quickbite"]
+    },
+    "melona": {
+      "tags": ["icy", "cold", "sweet", "quickbite"]
+    },
+    "melona-coffee": {
+      "tags": ["drink", "coffee", "icy", "sweet", "combo"]
+    },
+    "banana-americano": {
+      "tags": ["drink", "coffee", "sweet", "combo"]
+    },
+    "banana-coffee": {
+      "tags": ["drink", "coffee", "sweet", "combo"]
+    },
+    "choco-banana-latte": {
+      "tags": ["drink", "coffee", "sweet", "combo"]
+    },
+    "blue-lemonade-milkis": {
+      "tags": ["drink", "cold", "sweet", "combo"]
+    },
+    "yakgwa-coffee": {
+      "tags": ["drink", "coffee", "sweet", "combo"]
+    }
+  }
+}

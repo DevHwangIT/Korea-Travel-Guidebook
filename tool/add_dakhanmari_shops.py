@@ -124,7 +124,7 @@ def main() -> int:
             for f in content.SHOP_TEXT_FIELDS:
                 if filled.get(lang, {}).get(f):
                     entry[f] = filled[lang][f]
-            # Keep synced menuItems/photos from KO
+            # Keep synced factual fields from KO (no scraped photo galleries)
             ko = (bundle["ko"].get("restaurants") or {}).get(slug) or {}
             for key in (
                 "placeUrl",
@@ -138,12 +138,18 @@ def main() -> int:
                 "hours",
                 "placeId",
                 "menuItems",
-                "photos",
                 "category",
                 "score",
             ):
                 if key in ko:
                     entry[key] = ko[key]
+            entry.pop("photos", None)
+            entry.pop("gallery", None)
+            items = entry.get("menuItems")
+            if isinstance(items, list):
+                for it in items:
+                    if isinstance(it, dict):
+                        it.pop("image", None)
             restaurants_lang[slug] = entry
 
     i18n_store.save_all(bundle)

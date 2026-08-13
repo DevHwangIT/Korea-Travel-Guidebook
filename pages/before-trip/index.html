@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="beforeTrip.pageTitle" data-i18n-desc="beforeTrip.intro" data-seo-path="pages/before-trip/" data-seo-image="Images/menu/before-trip.png">
 <head>
-  <!-- asset-v: 20260812180537 -->
+  <!-- asset-v: 20260813170643 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>떠나기 전에 | Korea Travel Guide</title>
-  <meta name="description" content="출국 전에 서류·돈·통신·짐을 천천히 점검해 보세요.">
+  <meta name="description" content="여행을 출발하기 전 준비해야 할 것들과 확인해야 할 내용을 정리한 글입니다. 기타 여행 중 팁은 ‘여행 팁’ 카테고리를 참고하세요.">
   <link rel="canonical" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/before-trip/">
   <link rel="alternate" hreflang="ko" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/before-trip/?lang=ko">
   <link rel="alternate" hreflang="en" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/before-trip/?lang=en">
@@ -15,15 +15,15 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Korea Travel Guide">
   <meta property="og:title" content="떠나기 전에 | Korea Travel Guide">
-  <meta property="og:description" content="출국 전에 서류·돈·통신·짐을 천천히 점검해 보세요.">
+  <meta property="og:description" content="여행을 출발하기 전 준비해야 할 것들과 확인해야 할 내용을 정리한 글입니다. 기타 여행 중 팁은 ‘여행 팁’ 카테고리를 참고하세요.">
   <meta property="og:url" content="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/before-trip/">
   <meta property="og:image" content="https://devhwangit.github.io/Korea-Travel-Guidebook/Images/menu/before-trip.png">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="떠나기 전에 | Korea Travel Guide">
-  <meta name="twitter:description" content="출국 전에 서류·돈·통신·짐을 천천히 점검해 보세요.">
+  <meta name="twitter:description" content="여행을 출발하기 전 준비해야 할 것들과 확인해야 할 내용을 정리한 글입니다. 기타 여행 중 팁은 ‘여행 팁’ 카테고리를 참고하세요.">
   <meta name="twitter:image" content="https://devhwangit.github.io/Korea-Travel-Guidebook/Images/menu/before-trip.png">
-  <link rel="stylesheet" href="../../styles.css?v=20260812180537">
+  <link rel="stylesheet" href="../../styles.css?v=20260813170643">
 </head>
 <body>
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -35,59 +35,179 @@
     <h1 data-i18n="beforeTrip.title">떠나기 전에</h1>
     <p class="article-lead" data-i18n="beforeTrip.intro"></p>
 
-    <div class="city-tabs" data-tabs="prep">
-      <div class="tab-list" role="tablist" aria-label="Before trip">
-        <button type="button" class="tab-btn" role="tab" data-prep-tab="docs" data-i18n="beforeTrip.tabDocs">서류·입국</button>
-        <button type="button" class="tab-btn" role="tab" data-prep-tab="money" data-i18n="beforeTrip.tabMoney">돈·카드</button>
-        <button type="button" class="tab-btn" role="tab" data-prep-tab="connect" data-i18n="beforeTrip.tabConnect">통신·전원</button>
-        <button type="button" class="tab-btn" role="tab" data-prep-tab="pack" data-i18n="beforeTrip.tabPack">짐·예약</button>
-        <button type="button" class="tab-btn" role="tab" data-prep-tab="solo" data-i18n="beforeTrip.tabSolo">혼자 식사</button>
+    <div class="city-tabs prep-tabs" data-tabs="prepcat" data-prep-root>
+      <label class="cat-select-wrap prep-cat-select-wrap">
+        <span class="cat-select-label" data-i18n="beforeTrip.catPickLabel">주제</span>
+        <select class="cat-select" data-prepcat-select aria-label="Before trip categories">
+          <option value="entry" data-i18n="beforeTrip.catEntry">입국</option>
+          <option value="money" data-i18n="beforeTrip.catMoney">돈</option>
+          <option value="life" data-i18n="beforeTrip.catLife">생활</option>
+          <option value="dining" data-i18n="beforeTrip.catDining">식사</option>
+          <option value="schedule" data-i18n="beforeTrip.catSchedule">일정</option>
+        </select>
+      </label>
+      <div class="tab-list prep-cat-list" role="tablist" aria-label="Before trip categories">
+        <button type="button" class="tab-btn" role="tab" data-prep-category="entry" data-prepcat-tab="entry" data-i18n="beforeTrip.catEntry">입국</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-category="money" data-prepcat-tab="money" data-i18n="beforeTrip.catMoney">돈</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-category="life" data-prepcat-tab="life" data-i18n="beforeTrip.catLife">생활</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-category="dining" data-prepcat-tab="dining" data-i18n="beforeTrip.catDining">식사</button>
+        <button type="button" class="tab-btn" role="tab" data-prep-category="schedule" data-prepcat-tab="schedule" data-i18n="beforeTrip.catSchedule">일정</button>
       </div>
+
       <div class="tab-panels">
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="docs" hidden>
-          <h2 data-i18n="beforeTrip.docsTitle">여권·비자·입국</h2>
-          <div class="content-body" data-content-body data-body-path="beforeTrip.docsBody"></div>
-          <div data-content-body-fallback>
-            <p data-i18n="beforeTrip.docs1"></p>
-            <p data-i18n="beforeTrip.docs2"></p>
-            <p data-i18n="beforeTrip.docs3"></p>
+        <!-- 입국 -->
+        <div class="tab-panel" role="tabpanel" data-prep-category-panel="entry" data-prepcat-panel="entry" hidden>
+          <p class="prep-cat-intro" data-i18n="beforeTrip.catEntryIntro"></p>
+          <div class="nested-tabs" data-tabs="prep">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Entry topics">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="eri" data-i18n="beforeTrip.tabEri">전자입국신고(ERI)</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="docs" data-i18n="beforeTrip.tabDocs">준비서류</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="immigration" data-i18n="beforeTrip.tabImmigration">입국 심사(SES)</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="eri" hidden>
+                <h2 data-i18n="beforeTrip.eriTitle">전자입국신고 (e-Arrival / ERI)</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.eriBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.eri1"></p>
+                  <p data-i18n="beforeTrip.eri2"></p>
+                  <p data-i18n="beforeTrip.eri3"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="docs" hidden>
+                <h2 data-i18n="beforeTrip.docsTitle">준비서류</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.docsBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.docs1"></p>
+                  <p data-i18n="beforeTrip.docs2"></p>
+                  <p data-i18n="beforeTrip.docs3"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="immigration" hidden>
+                <h2 data-i18n="beforeTrip.immigrationTitle">자동출입국심사 (SES)</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.immigrationBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.immigration1"></p>
+                  <p data-i18n="beforeTrip.immigration2"></p>
+                  <p data-i18n="beforeTrip.immigration3"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="money" hidden>
-          <h2 data-i18n="beforeTrip.moneyTitle">환전·결제·교통카드</h2>
-          <div class="content-body" data-content-body data-body-path="beforeTrip.moneyBody"></div>
-          <div data-content-body-fallback>
-            <p data-i18n="beforeTrip.money1"></p>
-            <p data-i18n="beforeTrip.money2"></p>
-            <p data-i18n="beforeTrip.money3"></p>
+
+        <!-- 돈 -->
+        <div class="tab-panel" role="tabpanel" data-prep-category-panel="money" data-prepcat-panel="money" hidden>
+          <p class="prep-cat-intro" data-i18n="beforeTrip.catMoneyIntro"></p>
+          <div class="nested-tabs" data-tabs="prep">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Money topics">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="money" data-i18n="beforeTrip.tabMoney">현금·카드</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="wowpass" data-i18n="beforeTrip.tabWowpass">Wow Pass</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="money" hidden>
+                <h2 data-i18n="beforeTrip.moneyTitle">현금·카드·교통카드</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.moneyBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.money1"></p>
+                  <p data-i18n="beforeTrip.money2"></p>
+                  <p data-i18n="beforeTrip.money3"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="wowpass" hidden>
+                <h2 data-i18n="beforeTrip.wowpassTitle">Wow Pass</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.wowpassBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.wowpass1"></p>
+                  <p data-i18n="beforeTrip.wowpass2"></p>
+                  <p data-i18n="beforeTrip.wowpass3"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="connect" hidden>
-          <h2 data-i18n="beforeTrip.connectTitle">유심·eSIM·콘센트</h2>
-          <div class="content-body" data-content-body data-body-path="beforeTrip.connectBody"></div>
-          <div data-content-body-fallback>
-            <p data-i18n="beforeTrip.connect1"></p>
-            <p data-i18n="beforeTrip.connect2"></p>
-            <p data-i18n="beforeTrip.connect3"></p>
+
+        <!-- 생활 -->
+        <div class="tab-panel" role="tabpanel" data-prep-category-panel="life" data-prepcat-panel="life" hidden>
+          <p class="prep-cat-intro" data-i18n="beforeTrip.catLifeIntro"></p>
+          <div class="nested-tabs" data-tabs="prep">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Daily life topics">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="connect" data-i18n="beforeTrip.tabConnect">통신·전원</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="pack" data-i18n="beforeTrip.tabPack">짐·예약</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="connect" hidden>
+                <h2 data-i18n="beforeTrip.connectTitle">유심·eSIM·콘센트</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.connectBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.connect1"></p>
+                  <p data-i18n="beforeTrip.connect2"></p>
+                  <p data-i18n="beforeTrip.connect3"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="pack" hidden>
+                <h2 data-i18n="beforeTrip.packTitle">짐·숙소·날씨</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.packBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.pack1"></p>
+                  <p data-i18n="beforeTrip.pack2"></p>
+                  <p data-i18n="beforeTrip.pack3"></p>
+                  <p data-i18n="beforeTrip.pack4"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="pack" hidden>
-          <h2 data-i18n="beforeTrip.packTitle">짐·숙소·날씨</h2>
-          <div class="content-body" data-content-body data-body-path="beforeTrip.packBody"></div>
-          <div data-content-body-fallback>
-            <p data-i18n="beforeTrip.pack1"></p>
-            <p data-i18n="beforeTrip.pack2"></p>
-            <p data-i18n="beforeTrip.pack3"></p>
-            <p data-i18n="beforeTrip.pack4"></p>
+
+        <!-- 식사 -->
+        <div class="tab-panel" role="tabpanel" data-prep-category-panel="dining" data-prepcat-panel="dining" hidden>
+          <p class="prep-cat-intro" data-i18n="beforeTrip.catDiningIntro"></p>
+          <div class="nested-tabs" data-tabs="prep">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Dining topics">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="solo" data-i18n="beforeTrip.tabSolo">혼자 식사</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="solo" hidden>
+                <h2 data-i18n="beforeTrip.soloTitle">혼자 식당·혼밥</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.soloBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.solo1"></p>
+                  <p data-i18n="beforeTrip.solo2"></p>
+                  <p data-i18n="beforeTrip.solo3"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="solo" hidden>
-          <h2 data-i18n="beforeTrip.soloTitle">혼자 식당·혼밥</h2>
-          <div class="content-body" data-content-body data-body-path="beforeTrip.soloBody"></div>
-          <div data-content-body-fallback>
-            <p data-i18n="beforeTrip.solo1"></p>
-            <p data-i18n="beforeTrip.solo2"></p>
-            <p data-i18n="beforeTrip.solo3"></p>
+
+        <!-- 일정 -->
+        <div class="tab-panel" role="tabpanel" data-prep-category-panel="schedule" data-prepcat-panel="schedule" hidden>
+          <p class="prep-cat-intro" data-i18n="beforeTrip.catScheduleIntro"></p>
+          <div class="nested-tabs" data-tabs="prep">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Schedule topics">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="holidays" data-i18n="beforeTrip.tabHolidays">공휴일</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="avoid" data-i18n="beforeTrip.tabAvoid">추천하지 않는 시기</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="holidays" hidden>
+                <h2 data-i18n="beforeTrip.holidaysTitle">한국의 공휴일</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.holidaysBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.holidays1"></p>
+                  <p data-i18n="beforeTrip.holidays2"></p>
+                  <p data-i18n="beforeTrip.holidays3"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="avoid" hidden>
+                <h2 data-i18n="beforeTrip.avoidTitle">여행이 힘든 시기</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.avoidBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.avoid1"></p>
+                  <p data-i18n="beforeTrip.avoid2"></p>
+                  <p data-i18n="beforeTrip.avoid3"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -98,11 +218,11 @@
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-  <script src="../../js/site-config.js?v=20260812180537"></script>
-  <script src="../../i18n/messages.js?v=20260812180537"></script>
-  <script src="../../js/i18n.js?v=20260812180537"></script>
-  <script src="../../js/seo.js?v=20260812180537"></script>
-  <script src="../../js/region-tabs.js?v=20260812180537"></script>
-  <script src="../../js/content-body.js?v=20260812180537"></script>
+  <script src="../../js/site-config.js?v=20260813170643"></script>
+  <script src="../../i18n/messages.js?v=20260813170643"></script>
+  <script src="../../js/i18n.js?v=20260813170643"></script>
+  <script src="../../js/seo.js?v=20260813170643"></script>
+  <script src="../../js/region-tabs.js?v=20260813170643"></script>
+  <script src="../../js/content-body.js?v=20260813170643"></script>
 </body>
 </html>

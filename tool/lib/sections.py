@@ -71,7 +71,7 @@ SECTIONS: list[SectionDef] = [
     SectionDef(
         "beforeTrip",
         "떠나기 전에",
-        "서류·돈·통신·짐·혼자 식사 안내 글",
+        "입국·돈·생활·식사·일정 (카테고리별 세부 탭) 안내 글",
         "beforeTrip",
         group_by_prefix=True,
         preview_path="pages/before-trip/",
@@ -80,7 +80,7 @@ SECTIONS: list[SectionDef] = [
     SectionDef(
         "festivals",
         "축제 및 행사",
-        "플레이스홀더·지역별 축제 안내 (공개 IA 반영 · 추후 확장)",
+        "공식 VisitKorea·구석구석 링크 안내 문구 (API 연동은 추후)",
         "festivals",
         key_filter=[
             "pageTitle",
@@ -90,6 +90,24 @@ SECTIONS: list[SectionDef] = [
             "regionsTitle",
             "regionsHint",
             "back",
+            "linksTitle",
+            "linkVisitKoreaEyebrow",
+            "linkVisitKoreaTitle",
+            "linkVisitKoreaDesc",
+            "linkNationwideEyebrow",
+            "linkNationwideTitle",
+            "linkNationwideDesc",
+            "linkKoreanVisitEyebrow",
+            "linkKoreanVisitTitle",
+            "linkKoreanVisitDesc",
+            "linkVisitKoreaEnEyebrow",
+            "linkVisitKoreaEnTitle",
+            "linkVisitKoreaEnDesc",
+            "openExternal",
+            "apiLaterNote",
+            "sourceLabel",
+            "sourceName",
+            "sourceNote",
         ],
         preview_path="pages/festivals/",
         board_group="축제 및 행사",
@@ -115,11 +133,11 @@ SECTIONS: list[SectionDef] = [
     SectionDef(
         "shopping",
         "쇼핑 팁",
-        "올리브영·다이소·면세·시장 쇼핑 안내 (여행 팁과 연결)",
+        "올리브영·다이소·면세·시장 쇼핑 안내 (여행 팁 허브 #shopping 하위 탭)",
         "shopping",
         group_by_prefix=True,
-        preview_path="pages/shopping/",
-        board_group="쇼핑 및 놀거리",
+        preview_path="pages/travel-tips/index.html#shopping",
+        board_group="여행 팁",
     ),
     SectionDef(
         "souvenir",
@@ -255,11 +273,16 @@ def friendly_group_label(group: str) -> str:
         "eolbaksa": "얼박사",
         "jikgguri": "직구리",
         "melona": "메로나",
-        "docs": "서류·입국",
-        "money": "돈·카드",
+        "eri": "전자입국신고(ERI)",
+        "docs": "준비서류",
+        "immigration": "입국 심사(SES)",
+        "money": "현금·카드",
+        "wowpass": "Wow Pass",
         "connect": "통신·전원",
         "pack": "짐·예약",
         "solo": "혼자 식사",
+        "holidays": "공휴일",
+        "avoid": "추천하지 않는 시기",
         "duty": "면세·환급",
         "market": "시장·번화가",
         "kakao": "카카오맵",
@@ -354,7 +377,7 @@ def list_section_keys(section: SectionDef) -> list[str]:
     return keys
 
 
-# Travel-tips article prefix → category post (hub cards)
+# Travel-tips article prefix → category (nested hub tabs)
 _TIP_ARTICLE_GROUP: dict[str, str] = {
     "map": "daily",
     "cash": "daily",
@@ -362,12 +385,19 @@ _TIP_ARTICLE_GROUP: dict[str, str] = {
     "wifi": "daily",
     "weekend": "daily",
     "restaurant": "restaurant",
+    "order": "restaurant",
+    "notip": "restaurant",
+    "noTip": "restaurant",
     "queue": "restaurant",
     "water": "restaurant",
     "card": "transport",
     "rush": "transport",
     "taxi": "transport",
     "exit": "transport",
+    "olive": "shopping",
+    "daiso": "shopping",
+    "duty": "shopping",
+    "market": "shopping",
 }
 
 
@@ -408,29 +438,81 @@ def _group_key(leaf: str) -> str:
     )
     if m:
         return m.group(1).lower()
-    # tips: mapTitle / cashMistake / restaurantBody1 → daily|restaurant|transport
+    # tips: mapTitle / cashMistake / restaurantBody1 / noTipBody / tabMap → groups
     m = re.match(
-        r"^(map|cash|trash|wifi|weekend|restaurant|queue|water|card|rush|taxi|exit)"
+        r"^tab(Map|Cash|Trash|Wifi|Weekend|Order|NoTip|Queue|Water|Card|Rush|Taxi|Exit|"
+        r"Olive|Daiso|Duty|Market)$",
+        leaf,
+    )
+    if m:
+        tab = m.group(1)
+        tab_key = "noTip" if tab == "NoTip" else tab[0].lower() + tab[1:]
+        tab_key = {
+            "map": "map",
+            "cash": "cash",
+            "trash": "trash",
+            "wifi": "wifi",
+            "weekend": "weekend",
+            "order": "order",
+            "noTip": "noTip",
+            "queue": "queue",
+            "water": "water",
+            "card": "card",
+            "rush": "rush",
+            "taxi": "taxi",
+            "exit": "exit",
+            "olive": "olive",
+            "daiso": "daiso",
+            "duty": "duty",
+            "market": "market",
+        }.get(tab_key, tab_key)
+        return _TIP_ARTICLE_GROUP.get(tab_key, "_공통")
+    m = re.match(
+        r"^(map|cash|trash|wifi|weekend|restaurant|queue|water|card|rush|taxi|exit|noTip)"
         r"(Title|Mistake|Body\d*)$",
         leaf,
     )
     if m:
         return _TIP_ARTICLE_GROUP[m.group(1)]
-    m = re.match(r"^(daily|restaurant|transport)Body$", leaf, re.I)
+    m = re.match(r"^(daily|restaurant|transport|shopping)Body$", leaf, re.I)
     if m:
         return m.group(1).lower()
-    # beforeTrip: docs1 / docsTitle / tabDocs → docs
+    m = re.match(r"^cat(Daily|Restaurant|Transport|Shopping)(Intro)?$", leaf)
+    if m:
+        return {
+            "Daily": "daily",
+            "Restaurant": "restaurant",
+            "Transport": "transport",
+            "Shopping": "shopping",
+        }[m.group(1)]
+    # beforeTrip: tabEri / eriBody / catEntry → eri|docs|…
     tab_map = {
+        "Eri": "eri",
         "Docs": "docs",
+        "Immigration": "immigration",
         "Money": "money",
+        "Wowpass": "wowpass",
         "Connect": "connect",
         "Pack": "pack",
         "Solo": "solo",
+        "Holidays": "holidays",
+        "Avoid": "avoid",
     }
-    m = re.match(r"^tab(Docs|Money|Connect|Pack|Solo)$", leaf)
+    m = re.match(
+        r"^tab(Eri|Docs|Immigration|Money|Wowpass|Connect|Pack|Solo|Holidays|Avoid)$",
+        leaf,
+    )
     if m:
         return tab_map[m.group(1)]
-    m = re.match(r"^(docs|money|connect|pack|solo)(\d+|Title|Body.*)?$", leaf, re.I)
+    m = re.match(r"^cat(Entry|Money|Life|Dining|Schedule)(Intro)?$", leaf, re.I)
+    if m:
+        return "_공통"
+    m = re.match(
+        r"^(eri|docs|immigration|money|wowpass|connect|pack|solo|holidays|avoid)"
+        r"(\d+|Title|Body.*)?$",
+        leaf,
+        re.I,
+    )
     if m:
         return m.group(1).lower()
     # olive1 / daiso2 style prose next to freeform bodies
@@ -807,7 +889,7 @@ def dashboard_cards() -> list[DashboardCard]:
         DashboardCard(
             "/section?id=festivals",
             "축제 및 행사",
-            "플레이스홀더·지역 섹션 (추후 행사 목록 확장)",
+            "공식 VisitKorea 링크 안내 (API·지역별 정리는 추후)",
             "",
             "축제 및 행사",
         ),

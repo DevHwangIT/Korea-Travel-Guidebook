@@ -525,8 +525,12 @@ def apply_maps_and_preview(
         prev = fetch_og_preview(str(out["placeUrl"]))
         if prev.get("previewTitle"):
             out["previewTitle"] = prev["previewTitle"]
-        if prev.get("previewImage"):
-            out["previewImage"] = prev["previewImage"]
+        # Do not persist hotlinked place/review CDN images — local cover only
+        existing_prev = str(out.get("previewImage") or "").strip()
+        if existing_prev.startswith("media/"):
+            pass
+        else:
+            out["previewImage"] = "media/cover.jpg"
     return out
 
 

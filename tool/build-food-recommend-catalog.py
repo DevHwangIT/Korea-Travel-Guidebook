@@ -1,0 +1,239 @@
+# -*- coding: utf-8 -*-
+"""Scan meal/dessert hubs + convenience products → data/food/recommend-catalog.js
+
+Usage:
+  python tool/build-food-recommend-catalog.py
+
+After adding pages/foods/meals/{slug}/ or pages/foods/desserts/{slug}/,
+re-run this script (CMS create_dish also calls it). Tune tags in
+data/food/recommend-tags.json when heuristics are wrong.
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+TOOL_DIR = Path(__file__).resolve().parent
+if str(TOOL_DIR) not in sys.path:
+    sys.path.insert(0, str(TOOL_DIR))
+
+from lib.paths import DESSERTS_DIR, MEALS_DIR, ROOT  # noqa: E402
+
+CONV_DIR = ROOT / "pages" / "convenience-store"
+TAGS_PATH = ROOT / "data" / "food" / "recommend-tags.json"
+OUT_PATH = ROOT / "data" / "food" / "recommend-catalog.js"
+
+TITLE_RE = re.compile(
+    r'data-i18n-title\s*=\s*["\']([^"\']+)["\']', re.IGNORECASE
+)
+
+# (slug substring regex, tags) — applied in order; union of matches.
+MEAL_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
+    (re.compile(r"malatang|tteokbokki|dakgalbi|jjimdak|yangnyeom|budae|sundubu"), ["spicy"]),
+    (re.compile(r"gukbap|gomtang|samgyetang|kalguksu|sundubu|malatang|dakhanmari|budae|kongguksu|naengmyeon"), ["soup"]),
+    (re.compile(r"samgyeopsal|gopchang|tangsuyuk"), ["meat", "nosoup"]),
+    (re.compile(r"dak|chicken|samgyetang"), ["chicken"]),
+    (re.compile(r"kimbap|bibimbap|jeon|kongguksu|naengmyeon|ganjang"), ["light"]),
+    (re.compile(r"kimbap"), ["portable", "roll", "quickbite", "nosoup"]),
+    (re.compile(r"naengmyeon|kongguksu"), ["cold"]),
+    (re.compile(r"gukbap|gomtang|samgyetang|dakhanmari|kalguksu|sundubu|budae"), ["warm"]),
+    (re.compile(r"bibimbap|jeon"), ["veggie", "mild", "nosoup"]),
+    (re.compile(r"jajang|tangsuyuk"), ["mild", "nosoup"]),
+    (re.compile(r"kalguksu|kongguksu|naengmyeon|jajang"), ["noodles"]),
+    (re.compile(r"samgyeopsal|gopchang"), ["grill", "warm"]),
+    (re.compile(r"ganjang|gejang"), ["seafood", "nosoup"]),
+    (re.compile(r"tteokbokki"), ["street", "quickbite"]),
+]
+
+DESSERT_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
+    (re.compile(r"bingsu|yogurt|ice"), ["icy", "cold"]),
+    (re.compile(r"bread|butter|sandwich|cookie|bungeoppang"), ["bakery"]),
+    (re.compile(r"cafe"), ["coffee"]),
+    (re.compile(r"tanghulu|bungeoppang"), ["street"]),
+    (re.compile(r"bungeoppang"), ["warm"]),
+]
+
+QUICK_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
+    (re.compile(r"ramyeon|gongganchun|markjeongsik|carbonara|jikgguri"), ["noodles", "quickbite"]),
+    (re.compile(r"kimbap"), ["roll", "portable", "quickbite"]),
+    (re.compile(r"chicken"), ["chicken", "quickbite"]),
+    (re.compile(r"coffee|americano|latte|yakgwa|melona|eolbaksa|lemonade|milkis"), ["drink", "combo"]),
+    (re.compile(r"melona|biyott"), ["sweet", "cold"]),
+    (re.compile(r"gongganchun|markjeongsik|ramyeon|jikgguri"), ["combo"]),
+]
+
+
+def _load_overrides() -> dict:
+    if not TAGS_PATH.is_file():
+        return {}
+    data = json.loads(TAGS_PATH.read_text(encoding="utf-8"))
+    items = data.get("items") or {}
+    return items if isinstance(items, dict) else {}
+
+
+def _read_title_key(html_path: Path) -> str | None:
+    try:
+        text = html_path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    m = TITLE_RE.search(text)
+    return m.group(1) if m else None
+
+
+def _heuristic_tags(slug: str, rules: list[tuple[re.Pattern[str], list[str]]]) -> list[str]:
+    found: list[str] = []
+    seen: set[str] = set()
+    for pat, tags in rules:
+        if pat.search(slug):
+            for t in tags:
+                if t not in seen:
+                    seen.add(t)
+                    found.append(t)
+    return found
+
+
+def _merge_tags(base: list[str], override: dict | None) -> list[str]:
+    if not override:
+        return list(base)
+    if "tags" in override and isinstance(override["tags"], list):
+        tags = [str(t) for t in override["tags"]]
+    else:
+        tags = list(base)
+    extra = override.get("extraTags")
+    if isinstance(extra, list):
+        for t in extra:
+            ts = str(t)
+            if ts not in tags:
+                tags.append(ts)
+    return tags
+
+
+def _category_entries(
+    kind: str,
+    root: Path,
+    href_prefix: str,
+    default_title_prefix: str,
+    heuristics: list[tuple[re.Pattern[str], list[str]]],
+    base_tags: list[str],
+    overrides: dict,
+) -> list[dict]:
+    out: list[dict] = []
+    if not root.is_dir():
+        return out
+    for child in sorted(root.iterdir(), key=lambda p: p.name.lower()):
+        if not child.is_dir():
+            continue
+        index = child / "index.html"
+        if not index.is_file():
+            continue
+        slug = child.name
+        ov = overrides.get(slug) if isinstance(overrides.get(slug), dict) else None
+        if ov and ov.get("exclude"):
+            continue
+        tags = _merge_tags(base_tags + _heuristic_tags(slug, heuristics), ov)
+        title_key = None
+        if ov and ov.get("titleKey"):
+            title_key = str(ov["titleKey"])
+        else:
+            title_key = _read_title_key(index) or f"{default_title_prefix}.{slug}.title"
+        entry: dict = {
+            "id": slug,
+            "href": f"{href_prefix}/{slug}/index.html",
+            "kind": kind,
+            "tags": tags,
+            "titleKey": title_key,
+        }
+        if ov and ov.get("reasonKey"):
+            entry["reasonKey"] = str(ov["reasonKey"])
+        out.append(entry)
+    return out
+
+
+def build_catalog() -> list[dict]:
+    overrides = _load_overrides()
+    catalog: list[dict] = []
+
+    catalog.extend(
+        _category_entries(
+            "meal",
+            MEALS_DIR,
+            "../foods/meals",
+            "dishes",
+            MEAL_HEURISTICS,
+            ["hearty"],
+            overrides,
+        )
+    )
+    catalog.extend(
+        _category_entries(
+            "dessert",
+            DESSERTS_DIR,
+            "../foods/desserts",
+            "dishes",
+            DESSERT_HEURISTICS,
+            ["sweet"],
+            overrides,
+        )
+    )
+
+    # Convenience hub (always)
+    hub_ov = overrides.get("convenience") if isinstance(overrides.get("convenience"), dict) else {}
+    if not hub_ov.get("exclude"):
+        hub_tags = _merge_tags(["combo", "quickbite", "portable"], hub_ov)
+        hub: dict = {
+            "id": "convenience",
+            "href": "../convenience-store/index.html",
+            "kind": "quick",
+            "tags": hub_tags,
+            "titleKey": str(hub_ov.get("titleKey") or "home.menuConvenience"),
+        }
+        if hub_ov.get("reasonKey"):
+            hub["reasonKey"] = str(hub_ov["reasonKey"])
+        catalog.append(hub)
+
+    catalog.extend(
+        _category_entries(
+            "quick",
+            CONV_DIR,
+            "../convenience-store",
+            "convenience",
+            QUICK_HEURISTICS,
+            ["quickbite", "combo"],
+            overrides,
+        )
+    )
+    return catalog
+
+
+def write_catalog(catalog: list[dict]) -> Path:
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = (
+        "/** Auto-generated by tool/build-food-recommend-catalog.py — do not edit by hand. */\n"
+        "window.FOOD_RECOMMEND_CATALOG = "
+        + json.dumps(catalog, ensure_ascii=False, indent=2)
+        + ";\n"
+    )
+    OUT_PATH.write_text(payload, encoding="utf-8", newline="\n")
+    return OUT_PATH
+
+
+def main() -> int:
+    catalog = build_catalog()
+    path = write_catalog(catalog)
+    by_kind: dict[str, int] = {}
+    for item in catalog:
+        k = str(item.get("kind") or "?")
+        by_kind[k] = by_kind.get(k, 0) + 1
+    summary = ", ".join(f"{k}={n}" for k, n in sorted(by_kind.items()))
+    print(f"Wrote {path.relative_to(ROOT).as_posix()} ({len(catalog)} items: {summary})")
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except Exception as exc:  # noqa: BLE001
+        print(f"ERROR: {exc}", file=sys.stderr)
+        raise SystemExit(1)

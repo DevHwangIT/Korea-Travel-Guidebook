@@ -273,8 +273,9 @@ def render_shop_visual(shop_slug: str) -> str:
       1) Cover / storefront photo
       2) Shop name (h1)
       3) Detailed shop info (address, phone, hours, about/tips, optional map-app link)
-      4) Menu list + gallery (filled from i18n by content-body.js)
-      5) Location map iframe (Google Maps embed)
+      4) Menu list (text; filled from i18n by content-body.js)
+      5) Photos CTA → placeUrl (no scraped review gallery)
+      6) Location map iframe (Google Maps embed)
     """
     return f"""    <div class="shop-detail" data-shop-detail data-shop-slug="{shop_slug}">
       <img class="shop-photo" data-shop-photo src="media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.{shop_slug}.name">
@@ -315,9 +316,11 @@ def render_shop_visual(shop_slug: str) -> str:
         <h2 class="shop-menu-block__title" data-i18n="restaurantFields.menuList">메뉴</h2>
         <ul class="shop-menu-list" data-shop-menu-list></ul>
       </section>
-      <section class="shop-gallery-block" data-shop-gallery-block hidden>
-        <h2 class="shop-gallery-block__title" data-i18n="restaurantFields.photoGallery">사진</h2>
-        <div class="shop-gallery" data-shop-gallery></div>
+      <section class="shop-photos-cta shop-gallery-block" data-shop-photos-cta data-shop-gallery-block hidden>
+        <h2 class="shop-photos-cta__title" data-i18n="restaurantFields.photoGallery">사진·리뷰 더 보기</h2>
+        <p class="shop-photos-cta__note" data-i18n="restaurantFields.photosOnMapsNote">추가 사진과 리뷰는 지도·플레이스 페이지에서 확인할 수 있습니다.</p>
+        <a class="shop-place-link shop-photos-cta__link" data-shop-photos-link href="#" target="_blank" rel="noopener noreferrer"
+           data-i18n="restaurantFields.viewOnPlaceMaps">네이버 지도에서 보기</a>
       </section>
       <div class="shop-map" data-shop-map hidden>
         <div class="place-map-wrap">

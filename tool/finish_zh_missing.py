@@ -100,7 +100,6 @@ def main() -> int:
             zh["restaurants"][slug] = z
         for key in (
             "menuItems",
-            "photos",
             "placeId",
             "placeUrl",
             "mapsUrl",
@@ -117,6 +116,13 @@ def main() -> int:
         ):
             if key in entry:
                 z[key] = copy.deepcopy(entry[key])
+        z.pop("photos", None)
+        z.pop("gallery", None)
+        items = z.get("menuItems")
+        if isinstance(items, list):
+            for it in items:
+                if isinstance(it, dict):
+                    it.pop("image", None)
 
     i18n_store.save_lang("zh", zh)
     print(i18n_store.build_bundle())

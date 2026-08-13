@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="foodLife.pageTitle" data-i18n-desc="foodLife.intro" data-seo-path="pages/food-life/" data-seo-image="Images/menu/foods.png?v=20260812172500">
 <head>
-  <!-- asset-v: 20260812180537 -->
+  <!-- asset-v: 20260813170643 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>먹거리 | Korea Travel Guide</title>
   <meta name="description" content="식사·디저트·편의점 추천을 바로 고르세요.">
   <link rel="canonical" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/food-life/">
-  <link rel="alternate" hreflang="ko" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/food-life/?lang=ko">
+    <link rel="alternate" hreflang="ko" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/food-life/?lang=ko">
   <link rel="alternate" hreflang="en" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/food-life/?lang=en">
   <link rel="alternate" hreflang="ja" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/food-life/?lang=ja">
   <link rel="alternate" hreflang="zh" href="https://devhwangit.github.io/Korea-Travel-Guidebook/pages/food-life/?lang=zh">
@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="먹거리 | Korea Travel Guide">
   <meta name="twitter:description" content="식사·디저트·편의점 추천을 바로 고르세요.">
   <meta name="twitter:image" content="https://devhwangit.github.io/Korea-Travel-Guidebook/Images/menu/foods.png?v=20260812172500">
-  <link rel="stylesheet" href="../../styles.css?v=20260812180537">
+  <link rel="stylesheet" href="../../styles.css?v=20260813170643">
 </head>
 <body class="hub-body hub-body--food">
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -76,16 +76,47 @@
         </div>
       </a>
     </div>
+
+    <section class="food-quiz" data-food-quiz aria-label="Food recommendation quiz">
+      <button type="button" class="food-quiz-banner" data-food-quiz-open>
+        <span class="food-quiz-banner__glow" aria-hidden="true"></span>
+        <span class="food-quiz-banner__copy">
+          <span class="food-quiz-banner__eyebrow" data-i18n="foodLife.quiz.bannerEyebrow">Food quiz</span>
+          <span class="food-quiz-banner__title" data-food-quiz-banner-title data-i18n="foodLife.quiz.bannerTitle">뭐 먹을지 모르겠다면 추천받아보세요.</span>
+        </span>
+        <span class="food-quiz-banner__cta" data-food-quiz-banner-cta data-i18n="foodLife.quiz.bannerCta">추천받기</span>
+      </button>
+
+      <div class="food-quiz-dialog" data-food-quiz-dialog hidden role="dialog" aria-modal="true" aria-labelledby="food-quiz-heading">
+        <div class="food-quiz-backdrop" data-food-quiz-backdrop tabindex="-1"></div>
+        <div class="food-quiz-sheet">
+          <div class="food-quiz-toolbar">
+            <button type="button" class="food-quiz-back" data-food-quiz-back hidden data-i18n="foodLife.quiz.back">이전</button>
+            <h2 id="food-quiz-heading" class="food-quiz-heading" data-food-quiz-heading data-i18n="foodLife.quiz.title">먹거리 추천</h2>
+            <button type="button" class="food-quiz-close" data-food-quiz-close aria-label="Close" data-i18n-attr="aria-label:foodLife.quiz.close">×</button>
+          </div>
+          <div class="food-quiz-progress-wrap">
+            <div class="food-quiz-progress-track" aria-hidden="true">
+              <div class="food-quiz-progress-bar" data-food-quiz-bar></div>
+            </div>
+            <p class="food-quiz-progress-label" data-food-quiz-progress role="progressbar" aria-valuemin="1" aria-valuenow="1" aria-valuemax="5">1 / 5</p>
+          </div>
+          <div class="food-quiz-panel" data-food-quiz-panel></div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <hr>
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-  <script src="../../js/site-config.js?v=20260812180537"></script>
-  <script src="../../i18n/messages.js?v=20260812180537"></script>
-  <script src="../../js/i18n.js?v=20260812180537"></script>
-  <script src="../../js/seo.js?v=20260812180537"></script>
-  <script src="../../js/hub-cards.js?v=20260812180537"></script>
+  <script src="../../js/site-config.js?v=20260813170643"></script>
+  <script src="../../i18n/messages.js?v=20260813170643"></script>
+  <script src="../../js/i18n.js?v=20260813170643"></script>
+  <script src="../../js/seo.js?v=20260813170643"></script>
+  <script src="../../js/hub-cards.js?v=20260813170643"></script>
+  <script src="../../data/food/recommend-catalog.js?v=20260813170643"></script>
+  <script src="../../js/food-recommend.js?v=20260813170643"></script>
 </body>
 </html>

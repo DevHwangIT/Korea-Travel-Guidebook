@@ -537,7 +537,7 @@
       }
 
       renderShopMenuBlock(panel, r);
-      renderShopGalleryBlock(panel, r);
+      renderShopPhotosCta(panel, r);
     }
 
     // Pages without detail markup: leave legacy photo alone
@@ -581,19 +581,9 @@
       var name = menuItemName(item, lang);
       if (!name) continue;
       var price = String(item.price || "").trim();
-      var image = String(item.image || "").trim();
       var li = document.createElement("li");
       li.className = "shop-menu-item";
       if (item.recommend) li.className += " shop-menu-item--recommend";
-
-      if (image) {
-        var thumb = document.createElement("img");
-        thumb.className = "shop-menu-item__thumb";
-        thumb.src = image;
-        thumb.alt = name;
-        thumb.loading = "lazy";
-        li.appendChild(thumb);
-      }
 
       var meta = document.createElement("div");
       meta.className = "shop-menu-item__meta";
@@ -613,32 +603,46 @@
     if (!list.children.length) block.hidden = true;
   }
 
-  function renderShopGalleryBlock(panel, restaurant) {
-    var block = panel.querySelector("[data-shop-gallery-block]");
-    var gallery = panel.querySelector("[data-shop-gallery]");
-    if (!block || !gallery) return;
-    var photos = restaurant && Array.isArray(restaurant.photos)
-      ? restaurant.photos
-      : [];
-    gallery.innerHTML = "";
-    if (!photos.length) {
+  function tField(key, fallback) {
+    var root = lookupRoot(currentLang()) || lookupRoot("ko");
+    var fields = root && root.restaurantFields;
+    if (fields && fields[key]) return String(fields[key]);
+    return fallback;
+  }
+
+  function renderShopPhotosCta(panel, restaurant) {
+    var block =
+      panel.querySelector("[data-shop-photos-cta]") ||
+      panel.querySelector("[data-shop-gallery-block]");
+    if (!block) return;
+    var openUrl = restaurant
+      ? String(restaurant.placeUrl || restaurant.mapsUrl || "").trim()
+      : "";
+    block.innerHTML = "";
+    if (!openUrl) {
       block.hidden = true;
       return;
     }
     block.hidden = false;
-    for (var i = 0; i < photos.length; i++) {
-      var src = String(photos[i] || "").trim();
-      if (!src) continue;
-      var fig = document.createElement("figure");
-      fig.className = "shop-gallery__item";
-      var img = document.createElement("img");
-      img.src = src;
-      img.alt = "";
-      img.loading = "lazy";
-      fig.appendChild(img);
-      gallery.appendChild(fig);
-    }
-    if (!gallery.children.length) block.hidden = true;
+    block.classList.add("shop-photos-cta");
+    var title = document.createElement("h2");
+    title.className = "shop-photos-cta__title shop-gallery-block__title";
+    title.textContent = tField("photoGallery", "사진·리뷰 더 보기");
+    block.appendChild(title);
+    var note = document.createElement("p");
+    note.className = "shop-photos-cta__note";
+    note.textContent = tField(
+      "photosOnMapsNote",
+      "추가 사진과 리뷰는 지도·플레이스 페이지에서 확인할 수 있습니다."
+    );
+    block.appendChild(note);
+    var link = document.createElement("a");
+    link.className = "shop-place-link shop-photos-cta__link";
+    link.href = openUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = tField("viewOnPlaceMaps", "네이버 지도에서 보기");
+    block.appendChild(link);
   }
 
   function render(lang) {

@@ -35,8 +35,9 @@ Korea-Travel-Guidebook/
 │   ├── buy/            # 쇼핑 및 놀거리 통합 허브
 │   ├── fun/            # 놀거리 상세 (피시방·테마파크 등)
 │   ├── souvenir/       # 기념품 상세 (허브는 buy로 리다이렉트)
-│   ├── shopping/       # 쇼핑 팁 상세 (travel-tips에서 링크)
-│   ├── travel-tips/
+│   ├── shopping/       # 쇼핑 팁 → travel-tips#shopping/* 리다이렉트
+│   ├── travel-tips/    # 일상·식당·교통·쇼핑 (카테고리→서브탭)
+│   ├── festivals/      # 축제 — 현재 공식 링크 안내 (API 추후)
 │   ├── before-trip/
 │   ├── apps/
 │   ├── emergency/
@@ -51,6 +52,7 @@ Korea-Travel-Guidebook/
 │                       # pages/.../{slug}/media/ 에 둠 (pages/README.md)
 ├── audio/korean/       # 유용한 한국어 음성
 ├── data/
+│   ├── food/           # recommend-catalog.js (먹거리 퀴즈 카탈로그)
 │   ├── places/         # places-coords.js (명소·안내 핀 좌표)
 │   └── metro/          # (레거시) 지하철 GeoJSON — 현재 HTML에서 미사용
 ├── i18n/               # ko.json / en.json / ja.json → messages.js
@@ -80,6 +82,10 @@ Korea-Travel-Guidebook/
 
 외부 CDN(Leaflet, Google Fonts 등) URL은 건드리지 않습니다.
 
+## 축제 페이지
+
+현재 `pages/festivals/`는 **공식 관광 사이트 링크 안내**만 제공합니다. TourAPI 연동·지역별 정리는 추후입니다. `TOUR_API_KEY`는 필요하지 않습니다.
+
 ## AdSense
 
 홈·템플릿·여행팁 등은 **실제 publisher** `ca-pub-7139367317436403`로 연결됩니다.
@@ -101,16 +107,37 @@ Korea-Travel-Guidebook/
 - 반영 확인: **http://127.0.0.1:8765/viewer** (또는 해당 페이지 URL)에서 **Ctrl+F5**. `file://`로 `index.html`을 열면 예전 화면이 남을 수 있습니다
 - 자세한 안내: `tool/README-admin.md`
 
+## 먹거리 추천 퀴즈
+
+`pages/food-life/`의 추천 퀴즈는 **태그 점수 → 카탈로그 매칭**으로 결과를 고릅니다.
+
+1. `pages/foods/meals/*/`, `pages/foods/desserts/*/`, `pages/convenience-store/*/` 를 스캔
+2. `python tool/build-food-recommend-catalog.py` → `data/food/recommend-catalog.js` 생성
+3. 질문 옵션은 메뉴 id가 아니라 `tags` / `kinds`에 점수를 주고, 카탈로그 항목 중 합산이 가장 높은 것을 추천 (동점 시 무작위)
+
+**새 식사·디저트 카테고리 추가 후**
+
+1. 허브 페이지를 만듭니다 (`pages/foods/meals/{slug}/` 또는 `desserts/{slug}/`)
+2. 카탈로그 갱신 (아래 중 하나면 됨)
+   - `tool/update-version.bat` / `python tool/update-version.py` (**Update 시 자동**)
+   - CMS 저장·음식 생성/삭제 시 **자동**
+   - 또는 `python tool/build-food-recommend-catalog.py` 단독 실행
+3. 태그가 어색하면 `data/food/recommend-tags.json`의 `items.{slug}`에 `tags` / `extraTags` / `exclude` / `titleKey` / `reasonKey`를 적어 재실행
+
+결과 제목은 `dishes.{slug}.title`(또는 페이지의 `data-i18n-title`)을 쓰고, 이유가 없으면 `dishes.*.desc` → `foodLife.quiz.defaultReason` 순으로 폴백합니다.
+
 ## 주요 스크립트
 
 | 경로 | 역할 |
 |------|------|
-| `tool/update-version.bat` | 캐시 버전 bump + HTML `?v=` 일괄 적용 |
+| `tool/update-version.bat` | 먹거리 추천 카탈로그 갱신 + 캐시 버전 bump + HTML `?v=` 일괄 적용 |
 | `tool/content-admin.bat` | 로컬 콘텐츠 관리 UI (음식·가게 CRUD) |
+| `tool/build-food-recommend-catalog.py` | 먹거리 퀴즈 카탈로그 생성 |
 | `i18n/build-bundle.py` | 언어 JSON → messages.js |
 | `scripts/apply-cache-bust.py` | 버전을 HTML의 로컬 CSS/JS `?v=`에 일괄 적용 |
 | `js/cache-version.js` | 에셋 캐시 버전 (단일 소스) |
-| `js/site-config.js` | 사이트 origin · SEO 기본값 |
+| `js/site-config.js` | 사이트 origin · SEO 기본값 (`TOUR_API_KEY`는 추후용 예약) |
+| `js/festivals.js` | (미연결) 추후 TourAPI용 예약 스텁 |
 | `js/seo.js` | meta/OG/hreflang 헬퍼 |
 | `js/i18n.js` | 언어 전환 (`?lang=` 동기화) |
 | `js/content-body.js` | 게시글형 본문(문단·사진·유튜브) 렌더 |
@@ -128,7 +155,8 @@ Korea-Travel-Guidebook/
 - 쇼핑 및 놀거리 허브: `pages/buy/index.html` (`#shopping` / `#fun`)
 - 기념품·편의점 상세: `pages/souvenir/{slug}/`, `pages/convenience-store/{slug}/` + `media/`
 - 놀거리 상세: `pages/fun/{pcbang|noraebang|escape-room|jjimjilbang|lotte-world|everland}/`
-- 쇼핑 팁 상세: `pages/shopping/{olive|daiso|duty|market}/` (목록은 `travel-tips` 쇼핑 탭)
+- 쇼핑 팁: `pages/travel-tips/index.html#shopping/{olive|daiso|duty|market}` (`pages/shopping/*`는 리다이렉트)
+- 축제: `pages/festivals/` — 공식 VisitKorea·구석구석 링크 안내 (API 추후)
 - 명소 좌표: `data/places/places-coords.js` · 카피: `i18n/*/places`
 - 공용 이미지: `Images/menu/`, `Images/cover/`, `Images/transport/`, `Images/foods/hub/`, `Images/before-trip/`
 - 자세한 media 규칙: `pages/README.md`

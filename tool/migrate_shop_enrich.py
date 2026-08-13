@@ -3,8 +3,10 @@
 
 - Fix oto → Naver place id 37629568
 - Resolve search URLs to real place IDs when possible
-- Scrape name/address/phone/hours/about/menus/photos
-- Download images into pages/.../media/ (no hotlinking)
+- Scrape name/address/phone/hours/about/menus (text)
+- Download storefront cover only into pages/.../media/cover.jpg
+  (do NOT save review/gallery/menu-item/menu-board photos — copyright-safer;
+   UI links to placeUrl for more photos)
 - Sync shop HTML visuals, rebuild i18n, bump cache version
 
 Usage:
@@ -59,7 +61,6 @@ SYNC_KEYS = (
     "hours",
     "placeId",
     "menuItems",
-    "photos",
     "category",
     "score",
 )
@@ -80,17 +81,16 @@ def _download_shop_media(
     dish: str,
     slug: str,
     scraped: dict[str, Any],
-) -> tuple[list[dict[str, Any]], list[str], list[str]]:
-    """Download cover / menu item / gallery images. Returns (menuItems, photos, notes)."""
+) -> tuple[list[dict[str, Any]], list[str]]:
+    """Download storefront cover only; menu stays text. Returns (menuItems, notes)."""
     notes: list[str] = []
     media = shop_media_dir(kind, dish, slug)
     media.mkdir(parents=True, exist_ok=True)
 
-    # Cover
+    # Cover (representative storefront / place hero only)
     cover = shop_photo_path(kind, dish, slug)
     cover_url = ""
     photos_remote = list(scraped.get("photos") or [])
-    boards = list(scraped.get("menuBoardImages") or [])
     if photos_remote:
         cover_url = photos_remote[0]
     elif scraped.get("imageUrl"):
@@ -99,12 +99,13 @@ def _download_shop_media(
         notes.append(f"cover 저장: {cover.relative_to(ROOT).as_posix()}")
     elif cover_url:
         notes.append("cover 다운로드 실패 (기존 파일 유지)")
+    notes.append("갤러리/메뉴/리뷰 사진 저장 생략 (placeUrl 링크로 대체)")
 
-    # Menu item images + structured menu (name kept KO here;
-    # run tool/migrate_menu_i18n.py for {ko,en,ja,zh} name objects)
+    # Structured menu — name + price only (no scraped menu images)
+    # run tool/migrate_menu_i18n.py for {ko,en,ja,zh} name objects
     menu_items: list[dict[str, Any]] = []
     menus = list(scraped.get("menus") or [])
-    for i, m in enumerate(menus, start=1):
+    for m in menus:
         name = str(m.get("name") or "").strip()
         if not name:
             continue
@@ -114,31 +115,9 @@ def _download_shop_media(
         }
         if m.get("recommend"):
             entry["recommend"] = True
-        remote = str(m.get("image") or "").strip()
-        if remote:
-            dest = media / f"menu-item-{i}.jpg"
-            if download_image_to(dest, remote):
-                entry["image"] = f"media/menu-item-{i}.jpg"
-                notes.append(f"메뉴 이미지: menu-item-{i}.jpg")
         menu_items.append(entry)
 
-    # Gallery: remaining store photos + menu boards (local)
-    local_photos: list[str] = []
-    gal_i = 0
-    for remote in photos_remote[:8]:
-        gal_i += 1
-        dest = media / f"gallery-{gal_i}.jpg"
-        if download_image_to(dest, remote):
-            local_photos.append(f"media/gallery-{gal_i}.jpg")
-            notes.append(f"갤러리: gallery-{gal_i}.jpg")
-    for remote in boards[:6]:
-        board_n = len([p for p in local_photos if "menu-board-" in p]) + 1
-        dest = media / f"menu-board-{board_n}.jpg"
-        if download_image_to(dest, remote):
-            local_photos.append(f"media/{dest.name}")
-            notes.append(f"메뉴판: {dest.name}")
-
-    return menu_items, local_photos, notes
+    return menu_items, notes
 
 
 def enrich_one(
@@ -230,21 +209,16 @@ def enrich_one(
         updated["score"] = str(scraped["score"])
     if scraped.get("placeId"):
         updated["placeId"] = str(scraped["placeId"])
-    if scraped.get("imageUrl"):
-        updated["previewImage"] = scraped["imageUrl"]
-        updated["previewTitle"] = scraped.get("name") or updated.get("name") or ""
-
+    # Local cover only — never hotlink place/review CDN images
     found = find_shop_page(slug)
     menu_items: list[dict[str, Any]] = []
-    photos: list[str] = []
     if found:
         kind, dish, _page = found
-        menu_items, photos, media_notes = _download_shop_media(
-            kind, dish, slug, scraped
-        )
+        menu_items, media_notes = _download_shop_media(kind, dish, slug, scraped)
         notes.extend(media_notes)
+        updated["previewImage"] = "media/cover.jpg"
+        updated["previewTitle"] = scraped.get("name") or updated.get("name") or ""
     else:
-        # Keep remote URLs as last resort (Pages may hotlink-break)
         for m in scraped.get("menus") or []:
             item = {
                 "name": str(m.get("name") or "").strip(),
@@ -252,12 +226,14 @@ def enrich_one(
             }
             if m.get("recommend"):
                 item["recommend"] = True
-            if m.get("image"):
-                item["image"] = m["image"]
             if item["name"]:
                 menu_items.append(item)
-        photos = list(scraped.get("photos") or [])[:8]
-        notes.append("페이지 폴더 없음 — 원격 이미지 URL 유지")
+        notes.append("페이지 폴더 없음 — 메뉴 텍스트만 반영 (원격 사진 URL 미사용)")
+        updated.pop("previewImage", None)
+
+    # Drop any previously scraped gallery / hotlinked preview
+    updated.pop("photos", None)
+    updated.pop("gallery", None)
 
     if menu_items:
         updated["menuItems"] = menu_items
@@ -266,10 +242,8 @@ def enrich_one(
             updated["menu"] = sig["name"]
             if sig.get("price"):
                 updated["price"] = sig["price"]
-    if photos:
-        updated["photos"] = photos
 
-    status = "enriched" if (menu_items or photos or scraped.get("phone")) else "partial"
+    status = "enriched" if (menu_items or scraped.get("phone") or found) else "partial"
     return updated, notes, status
 
 
@@ -301,8 +275,13 @@ def apply_to_bundle(
             # menuItems names stay KO (Naver source); acceptable for travelers
             if updated.get("menuItems"):
                 entry["menuItems"] = updated["menuItems"]
-            if updated.get("photos"):
-                entry["photos"] = updated["photos"]
+        entry.pop("photos", None)
+        entry.pop("gallery", None)
+        items = entry.get("menuItems")
+        if isinstance(items, list):
+            for it in items:
+                if isinstance(it, dict):
+                    it.pop("image", None)
         restaurants[slug] = entry
 
 
