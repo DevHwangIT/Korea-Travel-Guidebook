@@ -90,7 +90,31 @@
     "contactEmail": "zxc1063@naver.com",
     "contactEmailMailto": "mailto:zxc1063@naver.com",
     "partnerSlotApp": "앱",
-    "partnerSlotAffiliate": "제휴"
+    "partnerSlotAffiliate": "제휴",
+    "privacyLink": "개인정보 고지",
+    "adsPolicyLink": "광고 관련 정책"
+  },
+  "privacy": {
+    "pageTitle": "개인정보·광고 고지 | Korea Travel Guide",
+    "title": "개인정보·광고 고지",
+    "intro": "korea-guidebook.cloud 정적 여행 가이드의 개인정보와 광고에 관한 안내입니다.",
+    "updatedLabel": "최종 업데이트",
+    "updatedDate": "2026-08-13",
+    "tocPrivacy": "개인정보 고지",
+    "tocAds": "광고 관련 정책",
+    "privacyTitle": "개인정보 고지",
+    "privacyLead": "이 사이트는 정적 한국 여행 가이드(korea-guidebook.cloud)입니다. 가이드를 보려면 회원 가입이나 로그인이 필요 없습니다.",
+    "privacyLi1": "방문자 계정 시스템을 운영하지 않습니다.",
+    "privacyLi2": "문의·피드백을 LINE 또는 이메일로 보내 주시면, 자발적으로 보낸 내용만 답변·오류 수정에 사용합니다.",
+    "privacyLi3": "Google AdSense 등 제3자 광고가 쿠키를 심거나 이용 정보를 수집할 수 있습니다. 자세한 내용은 Google 광고 정책을 참고하세요.",
+    "privacyContact": "개인정보 관련 문의는 메인 페이지「문의 & 피드백」과 동일합니다. LINE ID hwangsang95 / 이메일 zxc1063@naver.com",
+    "adsTitle": "광고 관련 정책",
+    "adsLi1": "사이트에 Google 광고가 표시될 수 있습니다.",
+    "adsLi2": "광고가 맞춤형인지 여부는 Google과 이용자 설정에 따릅니다.",
+    "adsLi3": "광고 설정은 Google 광고 설정에서 관리할 수 있습니다.",
+    "adsSettingsLink": "Google 광고 설정",
+    "adsHowLink": "Google 광고·데이터 정책",
+    "adsLi4": "광고에는 광고 표시가 붙으며, 특정 상품·서비스를 추천한다는 뜻은 아닙니다."
   },
   "foodLife": {
     "pageTitle": "먹거리 | Korea Travel Guide",
