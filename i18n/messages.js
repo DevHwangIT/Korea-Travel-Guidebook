@@ -332,6 +332,7 @@ window.__I18N_MESSAGES__ = {
       "tabMoney": "현금·카드",
       "tabConnect": "통신·전원",
       "tabPack": "짐·예약",
+      "tabTaxi": "택시",
       "docsTitle": "준비서류",
       "docs1": "출국 전 여권 잔여 기간(귀국일+6개월)과 비자·K-ETA 필요 여부를 공식 안내로 확인하세요.",
       "docs2": "입국심사에 대비해 숙소 주소·체류 목적·귀국편을 휴대폰에 준비하세요. 전자입국신고(ERI)는 별도 탭에서 작성합니다.",
@@ -498,6 +499,59 @@ window.__I18N_MESSAGES__ = {
         }
       ],
       "pack4": "캐리어에 귀국 쇼핑 여유를 남겨 두세요. 올리브영·다이소·과자 선물은 부피가 큽니다.",
+      "taxiTitle": "택시 요금·이용 팁",
+      "taxi1": "2026년 기준 서울 중형(일반)택시 기본요금은 1.6km까지 4,800원입니다. 이후 거리·시간 요금이 붙습니다.",
+      "taxi2": "심야(22~04시)는 시간대에 따라 20% 또는 40% 할증됩니다. 다른 도시는 요금이 다를 수 있습니다.",
+      "taxi3": "길거리·승차대에서 타거나 카카오 T로 부를 수 있습니다. 카드 결제가 흔하고 팁은 없습니다.",
+      "taxi4": "네이버·카카오맵 자동차 경로에서 대략 요금을 미리 볼 수 있습니다. 요즘 바가지 요금은 거의 없고, 마음이 놓이려면 앱 호출도 좋습니다.",
+      "taxiBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/taxi.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울 택시, 이렇게만 알아 두세요\n\n아래는 2026년 기준 서울 중형(일반)택시 요금입니다. 서울시가 고시한 현행 요금표(2023년 2월 적용 이후 유지)를 여행용으로 짧게 정리한 것이며, 부산·제주 등 다른 지역은 기본요금이 다를 수 있습니다.",
+          "en": "Seoul taxis — a quick primer\n\nFares below are for Seoul medium (regular) taxis as of 2026 — the city’s current posted schedule (in effect since Feb 2023). Other cities (Busan, Jeju, etc.) set their own base fares.",
+          "ja": "ソウルのタクシー、これだけ覚えればOK\n\n以下は2026年時点のソウル中型（一般）タクシー料金です。ソウル市の現行公示（2023年2月適用以降）を旅行向けに短くまとめたもので、釜山・済州など他地域は基本料金が異なる場合があります。",
+          "zh": "首尔出租车，记住这些就够\n\n以下为 2026 年首尔中型（普通）出租车现行资费，依据首尔市公示（自 2023 年 2 月起适用并沿用）。釜山、济州等其他地区基本费可能不同。"
+        },
+        {
+          "type": "text",
+          "ko": "기본요금·거리·시간 (주간)\n\n· 기본요금: 1.6km까지 4,800원\n· 거리요금: 131m당 100원\n· 시간요금: 30초당 100원 (시속 약 15.7km 미만일 때 거리와 함께 계산)\n\n막히면 시간요금이 더해져 예상보다 조금 나올 수 있어요.",
+          "en": "Base, distance & time (daytime)\n\n· Base: ₩4,800 up to 1.6 km\n· Distance: ₩100 per 131 m\n· Time: ₩100 per 30 sec (when under about 15.7 km/h, time is counted with distance)\n\nIn heavy traffic the meter can run a bit higher than a free-flow estimate.",
+          "ja": "基本・距離・時間（日中）\n\n· 基本料金: 1.6kmまで4,800ウォン\n· 距離: 131mあたり100ウォン\n· 時間: 30秒あたり100ウォン（時速約15.7km未満で距離と同時計算）\n\n渋滞時は時間料金が乗り、想定より少し高くなることがあります。",
+          "zh": "基本费·里程·时间（白天）\n\n· 基本费：1.6 km 内 ₩4,800\n· 里程：每 131 m ₩100\n· 时间：每 30 秒 ₩100（时速约低于 15.7 km/h 时与里程一并计算）\n\n堵车时时间费会叠加，可能略高于畅通时的预估。"
+        },
+        {
+          "type": "text",
+          "ko": "심야 할증 (22:00~04:00)\n\n· 22~23시, 02~04시: 약 20% (기본요금 5,800원)\n· 23~02시: 약 40% (기본요금 6,700원)\n\n거리·시간 요금에도 같은 비율이 적용됩니다. 서울 밖으로 나가면 시계외 할증(약 20%)이 더해질 수 있고, 심야와 겹치면 최대 약 60%까지입니다.",
+          "en": "Late-night surcharge (10 PM–4 AM)\n\n· 10–11 PM and 2–4 AM: about 20% (base ₩5,800)\n· 11 PM–2 AM: about 40% (base ₩6,700)\n\nThe same rates apply to distance/time. Leaving Seoul may add an out-of-city surcharge (~20%); stacked with late-night, up to about 60%.",
+          "ja": "深夜割増（22:00〜04:00）\n\n· 22〜23時・02〜04時: 約20%（基本5,800ウォン）\n· 23〜02時: 約40%（基本6,700ウォン）\n\n距離・時間にも同率。ソウル市外は市外割増（約20%）が付くことがあり、深夜と重なると最大約60%です。",
+          "zh": "深夜加价（22:00–04:00）\n\n· 22–23 点、02–04 点：约 20%（基本费 ₩5,800）\n· 23–02 点：约 40%（基本费 ₩6,700）\n\n里程与时间费同比例加价。出首尔市区可能另加市外约 20%；与深夜叠加时最高约 60%。"
+        },
+        {
+          "type": "text",
+          "ko": "타는 방법·결제\n\n길거리나 택시승차대에서 손을 들거나, 카카오 T 같은 앱으로 부를 수 있습니다. 앱 사용법은 ‘유용한 앱 → 카카오 T’를 참고하세요. 목적지 주소를 한국어로 보여 주면 편합니다.\n\n카드·교통카드 결제가 일반적이고, 한국에서는 팁을 주지 않습니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요. 공항에서는 미터기 택시·앱 호출·공식 공항 택시를 이용하고, 임의로 가격을 부르는 호객은 정중히 거절하면 됩니다.",
+          "en": "How to ride & pay\n\nHail on the street or at a taxi stand, or request via an app like Kakao T (see Useful Apps → Kakao T). Showing the destination in Korean helps.\n\nCards and transit cards are widely accepted; tipping is not expected. Ask for a receipt with “영수증 주세요.” At airports, use metered, app, or official airport taxis — you can politely decline anyone quoting a random cash price.",
+          "ja": "乗り方・支払い\n\n路上やタクシー乗り場で手を挙げるか、カカオTなどのアプリで呼べます（「役立つアプリ → カカオT」参照）。目的地を韓国語で見せるとスムーズです。\n\nカード・交通カード払いが多く、チップは不要。「영수증 주세요」で領収書を。空港ではメーター・アプリ・公式空港タクシーを使い、その場の口頭料金の呼び込みは丁寧に断って大丈夫です。",
+          "zh": "怎么坐、怎么付\n\n可在路边或出租车站招手，也可用 Kakao T 等 App 叫车（见「实用 App → Kakao T」）。用韩语出示目的地地址会更顺畅。\n\n普遍可用刷卡或交通卡，韩国不需要给小费。需要收据时说「영수증 주세요」。在机场请用打表车、App 或官方机场出租车；若有人随口报价揽客，礼貌拒绝即可。"
+        },
+        {
+          "type": "text",
+          "ko": "지도 앱으로 대략 요금 보기\n\n네이버지도·카카오맵에서 길찾기를 연 뒤 이동 수단을 「자동차」로 고르면, 많은 구간에서 예상 택시 요금이 함께 표시됩니다. 참고용 숫자라 실제 미터기와 조금 다를 수 있지만, 이동 전에 감을 잡기 좋습니다.",
+          "en": "Rough fare on map apps\n\nIn Naver Map or Kakao Map, open directions and choose car mode — many routes also show an estimated taxi fare. It’s a guide only (the meter may differ slightly), but helpful for a ballpark before you ride.",
+          "ja": "地図アプリでだいたいの料金\n\nNaver地図やカカオマップで経路検索し、移動手段を「自動車」にすると、多くの区間でタクシーの目安料金も出ます。参考値なのでメーターと多少違うこともありますが、乗る前の目安になります。",
+          "zh": "用地图 App 看大概车费\n\n在 Naver Map 或 Kakao Map 打开路线，把交通方式选为「汽车」，不少路段会一并显示预估出租车费。仅为参考，可能与计价器略有出入，但出发前心里有数会更踏实。"
+        },
+        {
+          "type": "callout",
+          "ko": "요즘 서울에서 바가지 요금은 거의 없습니다. 미터기로 가는 일반 택시가 기본이에요. 그래도 마음이 놓이려면 카카오 T 등으로 호출해 보시면 됩니다. 만에 하나 요금이 이상하게 느껴지면 차량 번호판·차내 택시 면허 표시를 메모해 두고, 서울은 다산콜센터 120, 여행 통역·안내는 1330으로 문의할 수 있습니다. 차안에 QR 불편신고 안내가 붙어 있는 경우도 있습니다.",
+          "en": "Overcharging is rare in Seoul these days — metered regular taxis are the norm. For extra peace of mind, you can request a ride in Kakao T or similar apps. If a fare still feels off, note the license plate and the taxi license display inside, then ask Seoul’s Dasan Call Center 120, or tourist helpline 1330. Some cabs also show an in-car QR for feedback.",
+          "ja": "最近のソウルではぼったくり料金はほとんどありません。メーターの一般タクシーが基本です。安心したいときはカカオTなどで呼ぶのも手です。万一料金がおかしいと感じたらナンバーと車内のタクシー免許表示をメモし、ソウルは多山コールセンター120、観光通訳案内は1330へ。車内にQR案内がある場合もあります。",
+          "zh": "如今在首尔，乱要价的情况很少见，按表计费的普通出租车是常态。若想更安心，可用 Kakao T 等 App 叫车。万一仍觉得费用异常，可记下车牌与车内出租车执照信息，首尔可打市政热线 120，旅游通译/咨询可打 1330；部分车内也贴有反馈用 QR。"
+        }
+      ],
       "tabSolo": "혼자 식사",
       "soloTitle": "혼자 식당·혼밥",
       "soloBody": [
@@ -653,8 +707,8 @@ window.__I18N_MESSAGES__ = {
       "catDining": "식사",
       "catEntryIntro": "서류와 전자입국신고, 공항 심사까지 — 입국 전에 확인할 항목입니다.",
       "catMoneyIntro": "현금·카드·교통카드와 관광객용 Wow Pass를 정리했습니다.",
-      "catLifeIntro": "데이터·전원과 짐·숙소 예약 등, 도착 직후 생활에 필요한 준비입니다.",
-      "catDiningIntro": "혼자 식당에 들어가기 부담될 때 알아두면 좋은 팁입니다.",
+      "catLifeIntro": "데이터·전원, 짐·숙소, 대중교통·택시처럼 도착 직후 생활에 필요한 준비입니다.",
+      "catDiningIntro": "식사 문화와 혼자 식당 — 도착 전에 알아두면 마음이 편해지는 이야기입니다.",
       "tabEri": "전자입국신고(ERI)",
       "tabWowpass": "Wow Pass",
       "eriTitle": "전자입국신고 (e-Arrival / ERI)",
@@ -751,6 +805,86 @@ window.__I18N_MESSAGES__ = {
           "en": "Spring (Mar–May) and autumn (Sep–early/mid Nov, outside Chuseok week) are usually easier for outdoor trips. Avoid peak holiday crowds if you want a calmer first visit.",
           "ja": "春（3〜5月）と秋（9〜11月上中旬、チュソク連休を除く）は屋外旅行に無難。連休・繁忙の混雑を避ければ初めてでも負担が少なめです。",
           "zh": "春季（3–5 月）与秋季（9–11 月上中旬，避开中秋长假）通常更适合户外。想轻松的初次旅行，可尽量避开长假人潮。"
+        }
+      ],
+      "tabTransit": "대중교통",
+      "transitTitle": "대중교통",
+      "transit1": "서울 시내에서는 렌터·자가용보다 지하철·버스가 더 편하고 예측 가능한 경우가 많습니다. 정체·주차 부담을 줄일 수 있어요.",
+      "transit2": "네이버·카카오맵의 대중교통 경로로 환승·출구를 확인하세요. 짐이 많거나 심야에는 택시 탭도 참고하면 됩니다.",
+      "transit3": "티머니·캐시비·기후동행카드 등 구입·충전은 ‘돈’·Wow Pass 탭을 보세요. 버스 하차 태그는 여행 팁에도 짧게 있습니다.",
+      "transit4": "지방·제주처럼 렌터가 편한 곳도 있습니다. 서울만이라도 대중교통을 기본으로 두면 첫날이 덜 바빠집니다.",
+      "tabCulture": "식사 문화",
+      "cultureTitle": "식사 문화",
+      "culture1": "밥·국은 숟가락, 반찬·고기는 젓가락이 자연스럽습니다. 젓가락을 밥에 꽂아 세우지 않는 것이 보통입니다.",
+      "culture2": "반찬은 나눠 먹고, 일행이 있으면 메뉴를 같이 고르는 편이 편합니다. 매운맛이 걱정되면 덜 맵게 요청해 보세요.",
+      "culture3": "호출벨·‘저기요’로 직원을 부르고, 물·반찬은 셀프인 가게가 많습니다. 계산은 카운터에서, 팁은 보통 없습니다.",
+      "culture4": "완벽한 예절보다 주변을 한 번 보는 것이 더 도움이 됩니다.",
+      "transitBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/transit.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울에서는 대중교통이 훨씬 편한 경우가 많습니다\n\n렌터카나 자가용으로 다니면 정체·주차·내비게이션 스트레스가 커질 수 있어요. 시내 이동은 지하철·버스가 더 빠르고 예측 가능한 경우가 많습니다. 꼭 차가 나쁜 건 아니지만, 서울 관광 일정이라면 대중교통을 기본으로 잡아 두면 마음이 편합니다.",
+          "en": "In Seoul, transit is often much easier\n\nDriving or renting a car can mean traffic, parking, and navigation stress. For getting around the city, subway and bus are often faster and more predictable. Cars aren’t “wrong” — but for a Seoul sightseeing trip, starting with public transit usually feels calmer.",
+          "ja": "ソウルでは公共交通のほうが楽なことが多いです\n\nレンタカーや自家用車だと渋滞・駐車・ナビのストレスが増えがち。市内移動は地下鉄・バスのほうが速くて読みやすいことが多いです。車が悪いわけではありませんが、ソウル観光ならまず公共交通を基本にすると安心です。",
+          "zh": "在首尔，公共交通往往更省心\n\n自驾或租车可能遇到堵车、停车和导航压力。市区出行时，地铁和公交常常更快、更可预期。并不是说开车不好——但如果是首尔观光行程，以公共交通为主通常更轻松。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철 + 버스, 이렇게 쓰면 됩니다\n\n네이버지도·카카오맵에서 대중교통 경로를 보면 환승·출구까지 안내됩니다. 지하철은 노선 색과 출구 번호를 기억하면 골목 찾기가 수월하고, 버스는 정류장 번호·도착 안내를 확인하면 됩니다. 짐이 많거나 심야·비 오는 날에는 택시 탭도 함께 참고하세요.",
+          "en": "Subway + bus — the practical combo\n\nNaver Map and Kakao Map show transit routes with transfers and exits. Remember line colors and exit numbers on the subway; for buses, check stop numbers and arrival info. With heavy bags, late at night, or in rain, also see the Taxi tab.",
+          "ja": "地下鉄＋バスの使い方\n\nNaver地図・カカオマップの公共交通ルートで乗換や出口まで案内されます。地下鉄は路線色と出口番号、バスは停留所番号・到着案内を確認。荷物が多い・深夜・雨の日はタクシーのタブも参考に。",
+          "zh": "地铁 + 公交，这样用就够\n\nNaver Map、Kakao Map 的公交路线会标换乘和出口。地铁记住线路颜色和出口编号；公交看站牌编号和到站信息。行李多、深夜或下雨时，也可参考「出租车」分栏。"
+        },
+        {
+          "type": "text",
+          "ko": "교통카드는 짧게만\n\n티머니·캐시비·기후동행카드(조건에 맞을 때) 등은 ‘돈’ 카테고리와 Wow Pass 탭에서 구입·충전을 정리해 두었습니다. 여기서는 도착 전에 “카드를 쓸 생각”만 해 두면 충분합니다. 버스는 내릴 때도 태그하는 점이 중요하니, 여행 중 팁의하차·환승도 함께 보세요.",
+          "en": "Transit cards — keep it short\n\nT-money, Cashbee, and Climate Card (when eligible) are covered under Money and Wow Pass. Before you fly, just plan to use a card. On buses you also tap when you get off — see Travel tips → Tap out / transfers while you’re on the ground.",
+          "ja": "交通カードは短く\n\nT-money・Cashbee・気候同行カード（条件による）などは「お金」と Wow Pass タブで購入・チャージをまとめています。出発前は「カードを使う」つもりで十分。バスは降車時もタッチが大切なので、旅行中ヒントの「降車・乗換」も見てください。",
+          "zh": "交通卡只提一句\n\nT-money、Cashbee、气候同行卡（符合条件时）的购买/充值见「钱」与 Wow Pass。出发前心里有「会用交通卡」就够。公交下车也要刷卡——抵达后可看旅行贴士里的「下车·换乘」。"
+        },
+        {
+          "type": "callout",
+          "ko": "지방·제주처럼 렌터가 편한 코스도 있습니다. 서울 시내만이라도 지하철·버스를 기본으로 두면, 첫날이 훨씬 덜 바빠집니다.",
+          "en": "Some regions (and Jeju) are easier by rental car. Even if you only use subway/bus inside Seoul, day one feels much lighter.",
+          "ja": "地方や済州のようにレンタカーが楽なコースもあります。ソウル市内だけでも地下鉄・バスを基本にすると初日が楽になります。",
+          "zh": "地方或济州等地租车可能更方便。哪怕只在首尔市区以地铁公交为主，第一天也会轻松很多。"
+        }
+      ],
+      "cultureBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/culture.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "수저 세트, 이렇게 쓰면 편합니다\n\n한국 식당에서는 보통 숟가락과 젓가락이 함께 나옵니다. 밥·국·찌개는 숟가락, 반찬·고기·면은 젓가락을 쓰는 편이 자연스럽습니다. 젓가락을 밥그릇에 꽂아 세우지 않는 것이 보통이고, 공용 반찬은 자기 젓가락으로 집어도 무방한 곳이 많지만 집게·공용 수저가 있으면 그걸 쓰세요.",
+          "en": "Spoon + chopsticks (sujeo)\n\nMost Korean meals come with a spoon and chopsticks. Use the spoon for rice, soup, and stews; chopsticks for banchan, meat, and noodles. Avoid standing chopsticks upright in rice. Shared banchan is often taken with your own chopsticks, but use serving tongs/spoons when provided.",
+          "ja": "スプーンと箸（スジョ）\n\n韓国の食事ではスプーンと箸がセットで出ることが多いです。ご飯・スープ・チゲはスプーン、おかず・肉・麺は箸が自然です。箸をご飯に突き立てないのが一般的。共用おかずは自分の箸で取ることが多いですが、トングや共用スプーンがあればそちらを。",
+          "zh": "勺子 + 筷子（수저）\n\n韩国餐桌上通常同时有勺子和筷子。米饭、汤、炖菜用勺；小菜、肉、面类用筷更自然。一般不要把筷子竖直插在米饭里。共用小菜多数可用自己的筷子夹，若有公筷/夹子请用公筷。"
+        },
+        {
+          "type": "text",
+          "ko": "함께 먹는 상차림\n\n반찬은 테이블에 놓고 나눠 먹는 문화가 강합니다. 메뉴도 2인분·공유 요리가 많아, 일행이 있으면 같이 고르는 편이 편합니다. 매운맛이 걱정되면 ‘덜 맵게 해주세요’라고 말해 보세요. 남기는 것에 너무 스트레스받지 않아도 됩니다 — 다만 처음엔 양을 조금 적게 주문해도 좋아요.",
+          "en": "Sharing the table\n\nBanchan is meant to be shared. Many dishes assume two people or shared plates, so ordering together is easier. If spice worries you, ask for it milder (“덜 맵게 해주세요”). Don’t stress about finishing every bite — starting with a smaller order is fine.",
+          "ja": "シェアする食卓\n\nおかずはテーブルで分け合う文化が強いです。2人前やシェア料理も多いので、同行がいれば一緒に選ぶと楽。辛さが心配なら「덜 맵게 해주세요」。食べきれなくても気にしすぎなくてOK。最初は少なめ注文でも大丈夫です。",
+          "zh": "一起吃的餐桌\n\n小菜多是共享的。不少菜按两人份或拼桌设计，有同伴时一起点更省事。怕辣可以说「덜 맵게 해주세요」。不必为吃不完太紧张——一开始少点一些也完全可以。"
+        },
+        {
+          "type": "text",
+          "ko": "직원 부르기·물·반찬·계산\n\n테이블 호출벨이 있으면 누르거나, 직원이 보이면 손을 살짝 들어 ‘저기요’ 하면 됩니다. 물·수저·반찬은 셀프인 가게가 많으니 주변을 한 번 보세요. 계산은 출구 쪽 카운터에서 하는 곳이 흔하고, 한 사람이 카드를 내는 경우가 많습니다. 일반 식당에서는 팁을 주지 않는 것이 보통입니다. 현장 디테일은 ‘여행 팁 → 식당’에도 짧게 있습니다.",
+          "en": "Calling staff, water, banchan, paying\n\nUse the call bell if there is one, or a small wave and “저기요.” Water, utensils, and banchan are often self-serve — look around once. Many places take payment at a counter near the exit; one person often pays for the group. Tipping is not expected at typical restaurants. For in-the-moment details, see Travel tips → Dining.",
+          "ja": "店員を呼ぶ・水・おかず・会計\n\n呼び出しベルがあれば押すか、手を少し挙げて「저기요」。水・箸・おかずはセルフが多いので周囲を確認を。会計は入口付近のカウンターが多く、一人がまとめて払うことも普通。一般店ではチップ不要。その場のコツは「旅行のヒント → 食事」も参照。",
+          "zh": "叫服务员、水、小菜、结账\n\n有桌铃就按，或轻轻招手说「저기요」。水、餐具、小菜常是自助——坐下后先看一眼周围。很多店在门口柜台结账，常由一人刷卡。普通餐厅一般不给小费。现场细节也可看「旅行贴士 → 餐厅」。"
+        },
+        {
+          "type": "callout",
+          "ko": "완벽한 예절보다 ‘주변을 한번 보는 것’이 더 도움이 됩니다. 헷갈리면 옆 테이블을 부드럽게 참고해도 괜찮아요.",
+          "en": "A quick look around helps more than perfect etiquette. When unsure, quietly mirror nearby tables.",
+          "ja": "完璧なマナーより、周囲を一度見ることが役立ちます。迷ったら隣のテーブルをそっと参考に。",
+          "zh": "不必追求完美礼仪，先观察周围更有用。不确定时，轻轻参考邻桌即可。"
         }
       ]
     },
@@ -6374,7 +6508,7 @@ window.__I18N_MESSAGES__ = {
       "souvenirTitle": "기념품 가이드",
       "souvenirIntro": "외국인 여행객이 많이 사 가는 기념품을 종류별로 모았습니다.",
       "tipsTitle": "여행 팁",
-      "tipsIntro": "한국 여행 시 참고하면 좋은 팁을 모았습니다. 일상·식당·교통·쇼핑 주제를 골라 확인해 보세요.",
+      "tipsIntro": "여행 중에 바로 써먹는 팁을 모았습니다. 준비·서류는 ‘떠나기 전에’를 참고하고, 여기서는 현지에서의 요령을 확인하세요.",
       "shoppingTitle": "쇼핑 가이드",
       "convenienceTitle": "한국 편의점",
       "airportTitle": "공항 → 명동",
@@ -6392,15 +6526,15 @@ window.__I18N_MESSAGES__ = {
       "catTransport": "교통",
       "catShopping": "쇼핑",
       "backHub": "← 여행 팁",
-      "dailyCardDesc": "지도·현금·와이파이 등",
+      "dailyCardDesc": "지도·쓰레기·주말 숙소·편의점·비 오는 날",
       "restaurantCardDesc": "주문·웨이팅·물·반찬",
-      "transportCardDesc": "교통카드·출퇴근·택시·출구",
+      "transportCardDesc": "하차·환승·출퇴근·출구·매너",
       "mapTitle": "지도 앱",
-      "mapMistake": "구글 지도 하나만 믿고 한국에 오는 것",
-      "mapBody": "현재 한국을 여행할 때는 구글 지도만 준비하기보다 네이버지도나 카카오맵을 함께 설치하는 편이 좋습니다. 한국 내 대중교통·도보 안내, 가게 정보는 네이버지도·카카오맵이 더 정확한 경우가 많습니다.",
-      "cardTitle": "교통카드",
-      "cardMistake": "교통카드 없이 매번 표를 사거나, 버스에서 하차 태그를 하지 않는 것",
-      "cardBody": "버스와 지하철뿐 아니라 택시와 공공자전거 등을 이용할 때도 교통카드가 유용합니다. 카드는 편의점이나 지하철역에서 구입·충전할 수 있습니다. 다만 외국인 여행객이 자주 놓치는 부분은 버스에서 내릴 때도 카드를 단말기에 찍어야 한다는 점입니다.",
+      "mapMistake": "길 찾을 때 구글 지도만 쓰는 것",
+      "mapBody": "현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+      "cardTitle": "버스 하차·환승",
+      "cardMistake": "버스에서 내릴 때 카드를 찍지 않는 것",
+      "cardBody": "버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
       "restaurantTitle": "식당 이용",
       "restaurantMistake": "해외 식당의 규칙을 그대로 적용하는 것",
       "restaurantBody1": "직원이 주문을 받으러 올 때까지 기다렸는데 테이블 옆에 호출벨이 있거나, 물과 반찬을 요청하려 했는데 셀프 코너가 따로 마련돼 있는 경우가 있습니다. 최근에는 키오스크나 태블릿으로 직접 주문하는 식당도 늘어, 한국어에 익숙하지 않은 여행객에게 또 다른 장벽이 되고 있습니다.",
@@ -6431,21 +6565,15 @@ window.__I18N_MESSAGES__ = {
       "exitMistake": "아무 출구로 나와 길을 잃는 것",
       "exitBody": "같은 역이라도 출구 번호에 따라 도착지가 크게 달라집니다. 지도 앱에서 추천 출구를 확인한 뒤 나오세요.",
       "weekendTitle": "주말·연휴 숙소",
-      "weekendMistake": "주말에도 평일과 같은 가격일 거라 생각하는 것",
-      "weekendBody": "금·토·일이나 연휴·성수기에는 호텔·게스트하우스 요금이 평일보다 크게 오르는 경우가 많습니다. 가능하면 평일 숙박을 섞거나, 미리 예약·가격 비교(야놀자·여기어때 등)를 하세요. 당일 예약은 더 비쌀 수 있습니다.",
+      "weekendMistake": "여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것",
+      "weekendBody": "금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
       "catPickLabel": "주제",
       "dailyBody": [
         {
           "type": "text",
-          "ko": "지도 앱\n\n구글 지도 하나만 믿고 한국에 오는 것\n\n현재 한국을 여행할 때는 구글 지도만 준비하기보다 네이버지도나 카카오맵을 함께 설치하는 편이 좋습니다. 한국 내 대중교통·도보 안내, 가게 정보는 네이버지도·카카오맵이 더 정확한 경우가 많습니다.",
-          "en": "Maps\n\nComing to Korea with only Google Maps\n\nWhen traveling in Korea, install Naver Map or Kakao Map in addition to Google Maps. For public transit, walking directions, and local shop info, Naver Map and Kakao Map are often more accurate.",
-          "ja": "地図アプリ\n\nGoogleマップだけを信じて韓国に来ること\n\n韓国旅行ではGoogleマップだけでなく、Naver MapやKakao Mapも一緒に入れておくと安心です。韓国国内の公共交通・徒歩案内や店舗情報は、Naver Map・Kakao Mapの方が正確なことが多いです。"
-        },
-        {
-          "type": "text",
-          "ko": "현금과 카드\n\n카드만 있으면 된다고 생각하는 것\n\n대부분 카드가 되지만 전통시장, 포장마차, 일부 작은 식당·택시는 현금만 받는 경우가 있습니다. 잔돈을 조금 들고 다니세요.",
-          "en": "Cash and cards\n\nAssuming a card works everywhere\n\nMost places take cards, but traditional markets, street stalls, and some small restaurants/taxis are cash-only. Keep small bills.",
-          "ja": "現金とカード\n\nカードだけで足りると思い込むこと\n\n多くの店はカードOKですが、市場・屋台・一部の小さな店やタクシーは現金のみです。少額紙幣を持ち歩きましょう。"
+          "ko": "지도 앱\n\n길 찾을 때 구글 지도만 쓰는 것\n\n현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+          "en": "Maps\n\nUsing only Google Maps while navigating\n\nFor transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+          "ja": "地図アプリ\n\n道探しでGoogleマップだけ使うこと\n\n現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。"
         },
         {
           "type": "text",
@@ -6455,15 +6583,21 @@ window.__I18N_MESSAGES__ = {
         },
         {
           "type": "text",
-          "ko": "와이파이·데이터\n\n카페·지하철 Wi-Fi만으로 충분하다고 생각하는 것\n\n공공 Wi-Fi는 불안정할 수 있습니다. eSIM·유심으로 데이터를 확보하면 지도·번역·결제 앱을 끊김 없이 쓸 수 있습니다.",
-          "en": "Wi-Fi and data\n\nThinking café/subway Wi-Fi is enough\n\nPublic Wi-Fi can be unstable. An eSIM/SIM keeps maps, translation, and payment apps online.",
-          "ja": "Wi-Fi・データ\n\nカフェや地下鉄Wi-Fiだけで足りると思い込むこと\n\n公共Wi-Fiは不安定なことがあります。eSIM/SIMでデータがあると地図・翻訳が安心です。"
+          "ko": "주말·연휴 숙소\n\n여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것\n\n금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
+          "en": "Weekend lodging\n\nAssuming a mid-trip weekend stay costs the same as a weekday\n\nFriday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+          "ja": "週末・連休の宿\n\n旅行中の週末宿が平日と同じ料金だと思うこと\n\n金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。"
         },
         {
           "type": "text",
-          "ko": "주말·연휴 숙소\n\n주말에도 평일과 같은 가격일 거라 생각하는 것\n\n금·토·일이나 연휴·성수기에는 호텔·게스트하우스 요금이 평일보다 크게 오르는 경우가 많습니다. 가능하면 평일 숙박을 섞거나, 미리 예약·가격 비교(야놀자·여기어때 등)를 하세요. 당일 예약은 더 비쌀 수 있습니다.",
-          "en": "Weekend lodging\n\nAssuming weekend hotel rates match weekdays\n\nFriday–Sunday and holidays often cost much more than weekdays. Mix in weekday stays when you can, and compare prices early on booking apps. Same-day bookings can be pricier.",
-          "ja": "週末・連休の宿\n\n週末も平日と同じ料金だと思い込むこと\n\n金・土・日や連休・繁忙期はホテルやゲストハウス料金が大きく上がることが多いです。可能なら平日を混ぜ、早めに比較・予約を。当日予約はさらに高いことがあります。"
+          "ko": "편의점\n\n편의점은 간식만 산다고 생각하는 것\n\nCU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+          "en": "Convenience stores\n\nThinking convenience stores are only for snacks\n\nCU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+          "ja": "コンビニ\n\nコンビニはおやつだけと思うこと\n\nCU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。"
+        },
+        {
+          "type": "text",
+          "ko": "비 오는 날\n\n우산 없이 밖으로 나갔다가 당황하는 것\n\n갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+          "en": "Rainy days\n\nHeading out without a plan when it suddenly rains\n\nIf rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+          "ja": "雨の日\n\n突然の雨に傘なしで慌てること\n\n急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。"
         }
       ],
       "restaurantBody": [
@@ -6501,35 +6635,37 @@ window.__I18N_MESSAGES__ = {
       "transportBody": [
         {
           "type": "text",
-          "ko": "교통카드\n\n교통카드 없이 매번 표를 사거나, 버스에서 하차 태그를 하지 않는 것\n\n버스와 지하철뿐 아니라 택시와 공공자전거 등을 이용할 때도 교통카드가 유용합니다. 카드는 편의점이나 지하철역에서 구입·충전할 수 있습니다. 다만 외국인 여행객이 자주 놓치는 부분은 버스에서 내릴 때도 카드를 단말기에 찍어야 한다는 점입니다.",
-          "en": "Transit card\n\nBuying a ticket every time, or not tapping out on the bus\n\nA transit card is useful not only for buses and the subway, but also for taxis and public bikes. You can buy and top up cards at convenience stores or subway stations. One thing many travelers miss: on buses, you must tap your card again when you get off.",
-          "ja": "交通カード\n\n交通カードなしで毎回切符を買う、バス降車時にタッチしない\n\nバスや地下鉄だけでなく、タクシーや公共自転車でも交通カードが便利です。カードはコンビニや地下鉄駅で購入・チャージできます。旅行者がよく見落とすのは、バスを降りるときも端末にカードをタッチする必要があるという点です。"
+          "ko": "버스 하차·환승\n\n버스에서 내릴 때 카드를 찍지 않는 것\n\n버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
+          "en": "Bus tap-out & transfers\n\nNot tapping when you get off the bus\n\nOn buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+          "ja": "バス降車・乗換\n\nバス降車時にカードをタッチしないこと\n\nバスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。"
         },
         {
           "type": "text",
           "ko": "출퇴근 혼잡\n\n출퇴근 시간에 관광지로 이동하는 것\n\n평일 07–09시, 18–20시 지하철·버스는 매우 붐빕니다. 가능하면 이 시간을 피하거나, 짐이 많으면 택시를 고려하세요.",
           "en": "Rush hour\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
-          "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。"
-        },
-        {
-          "type": "text",
-          "ko": "택시 이용\n\n주소만 말로 설명하려다 헤매는 것\n\n카카오 T·우티 등으로 호출하거나, 숙소·목적지 주소를 한국어로 보여 주면 편합니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요.",
-          "en": "Taxis\n\nOnly explaining the address out loud\n\nUse Kakao T / Uber-style apps, or show the destination in Korean. Ask for a receipt if you need one.",
-          "ja": "タクシー\n\n住所を口だけで説明して迷うこと\n\nカカオTなどで呼ぶか、目的地を韓国語で見せると楽です。領収書が必要なら「영수증 주세요」。"
+          "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
+          "zh": "通勤高峰\n\n高峰时段去景点移动\n\n工作日 7–9 点、18–20 点地铁公交很挤。尽量避开；行李多时可考虑出租车。"
         },
         {
           "type": "text",
           "ko": "지하철 출구\n\n아무 출구로 나와 길을 잃는 것\n\n같은 역이라도 출구 번호에 따라 도착지가 크게 달라집니다. 지도 앱에서 추천 출구를 확인한 뒤 나오세요.",
           "en": "Subway exits\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
-          "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。"
+          "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
+          "zh": "地铁出口\n\n随便找个出口就出站\n\n同一车站出口编号差别很大。出站前先在地图 App 确认推荐出口。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철·버스 매너\n\n출입문 앞에서 막거나 큰 소리로 통화하는 것\n\n내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+          "en": "Subway & bus etiquette\n\nBlocking the doors or taking loud phone calls\n\nLet exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+          "ja": "地下鉄・バスのマナー\n\nドア前で塞ぐ、大きな声で通話する\n\n降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。"
         }
       ],
       "noTipTitle": "팁(봉사료)",
       "noTipMistake": "한국 식당에서는 보통 팁을 주지 않습니다",
       "noTipBody": "한국의 일반 음식점·카페에서는 팁 문화가 없습니다. 계산 후 테이블에 현금을 두거나 카드에 팁을 더할 필요가 보통 없습니다.",
-      "catDailyIntro": "지도·현금·쓰레기·데이터·주말 숙소처럼, 한국 일상에서 자주 헷갈리는 포인트입니다.",
+      "catDailyIntro": "지도·쓰레기·주말 요금·편의점·비 오는 날처럼, 여행 중에 자주 맞닥뜨리는 일상 팁입니다.",
       "catRestaurantIntro": "주문·팁·웨이팅·셀프 코너 — 식당에서 바로 써먹는 팁입니다.",
-      "catTransportIntro": "교통카드·출퇴근·택시·지하철 출구를 짧게 정리했습니다.",
+      "catTransportIntro": "하차·환승, 출퇴근 혼잡, 지하철 출구, 간단한 매너 — 이동 중에 쓰는 팁입니다. 요금·카드 준비는 ‘떠나기 전에’를 보세요.",
       "catShoppingIntro": "올리브영·다이소·면세·시장 팁을 이 안에서 바로 확인하세요. (별도 페이지 이동 없음)",
       "tabMap": "지도 앱",
       "tabCash": "현금·카드",
@@ -6540,14 +6676,104 @@ window.__I18N_MESSAGES__ = {
       "tabNoTip": "팁",
       "tabQueue": "웨이팅",
       "tabWater": "물·반찬",
-      "tabCard": "교통카드",
+      "tabCard": "하차·환승",
       "tabRush": "출퇴근",
       "tabTaxi": "택시",
       "tabExit": "지하철 출구",
       "tabOlive": "올리브영",
       "tabDaiso": "다이소",
       "tabDuty": "면세·택스프리",
-      "tabMarket": "시장·번화가"
+      "tabMarket": "시장·번화가",
+      "tabConvenience": "편의점",
+      "convenienceTitle": "편의점",
+      "convenienceMistake": "편의점은 간식만 산다고 생각하는 것",
+      "convenienceBody": "CU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+      "tabRain": "비 오는 날",
+      "rainTitle": "비 오는 날",
+      "rainMistake": "우산 없이 밖으로 나갔다가 당황하는 것",
+      "rainBody": "갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+      "tabEtiquette": "지하철 매너",
+      "etiquetteTitle": "지하철·버스 매너",
+      "etiquetteMistake": "출입문 앞에서 막거나 큰 소리로 통화하는 것",
+      "etiquetteBody": "내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+      "mapCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/map.jpg"
+        }
+      ],
+      "trashCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/trash.jpg"
+        }
+      ],
+      "weekendCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/weekend.jpg"
+        }
+      ],
+      "convenienceCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/convenience.jpg"
+        }
+      ],
+      "rainCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rain.jpg"
+        }
+      ],
+      "orderCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/order.jpg"
+        }
+      ],
+      "noTipCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/notip.jpg"
+        }
+      ],
+      "queueCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/queue.jpg"
+        }
+      ],
+      "waterCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/water.jpg"
+        }
+      ],
+      "cardCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/card.jpg"
+        }
+      ],
+      "rushCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rush.jpg"
+        }
+      ],
+      "exitCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/exit.jpg"
+        }
+      ],
+      "etiquetteCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/etiquette.jpg"
+        }
+      ]
     },
     "korean": {
       "pageTitle": "유용한 한국어",
@@ -9750,6 +9976,7 @@ window.__I18N_MESSAGES__ = {
       "tabMoney": "Cash · Cards",
       "tabConnect": "Data · Power",
       "tabPack": "Pack · Bookings",
+      "tabTaxi": "Taxi",
       "docsTitle": "Travel documents",
       "docs1": "Confirm passport validity (6+ months beyond return) and whether you need a visa or K-ETA.",
       "docs2": "Keep hotel address, purpose of stay, and return ticket ready. File e-Arrival (ERI) in its own tab.",
@@ -9916,6 +10143,59 @@ window.__I18N_MESSAGES__ = {
         }
       ],
       "pack4": "Leave suitcase space for Olive Young, Daiso, and snack gifts — they add up fast.",
+      "taxiTitle": "Taxi fares & tips",
+      "taxi1": "As of 2026, Seoul medium (regular) taxis start at ₩4,800 for the first 1.6 km, then distance and time fares apply.",
+      "taxi2": "Late night (10 PM–4 AM) adds about 20% or 40% by hour. Other cities may price differently.",
+      "taxi3": "Hail on the street or call Kakao T. Cards are common; tipping is not expected.",
+      "taxi4": "Naver/Kakao Map car directions often show a rough taxi fare. Overcharging is rare today; apps are a calm optional choice.",
+      "taxiBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/taxi.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울 택시, 이렇게만 알아 두세요\n\n아래는 2026년 기준 서울 중형(일반)택시 요금입니다. 서울시가 고시한 현행 요금표(2023년 2월 적용 이후 유지)를 여행용으로 짧게 정리한 것이며, 부산·제주 등 다른 지역은 기본요금이 다를 수 있습니다.",
+          "en": "Seoul taxis — a quick primer\n\nFares below are for Seoul medium (regular) taxis as of 2026 — the city’s current posted schedule (in effect since Feb 2023). Other cities (Busan, Jeju, etc.) set their own base fares.",
+          "ja": "ソウルのタクシー、これだけ覚えればOK\n\n以下は2026年時点のソウル中型（一般）タクシー料金です。ソウル市の現行公示（2023年2月適用以降）を旅行向けに短くまとめたもので、釜山・済州など他地域は基本料金が異なる場合があります。",
+          "zh": "首尔出租车，记住这些就够\n\n以下为 2026 年首尔中型（普通）出租车现行资费，依据首尔市公示（自 2023 年 2 月起适用并沿用）。釜山、济州等其他地区基本费可能不同。"
+        },
+        {
+          "type": "text",
+          "ko": "기본요금·거리·시간 (주간)\n\n· 기본요금: 1.6km까지 4,800원\n· 거리요금: 131m당 100원\n· 시간요금: 30초당 100원 (시속 약 15.7km 미만일 때 거리와 함께 계산)\n\n막히면 시간요금이 더해져 예상보다 조금 나올 수 있어요.",
+          "en": "Base, distance & time (daytime)\n\n· Base: ₩4,800 up to 1.6 km\n· Distance: ₩100 per 131 m\n· Time: ₩100 per 30 sec (when under about 15.7 km/h, time is counted with distance)\n\nIn heavy traffic the meter can run a bit higher than a free-flow estimate.",
+          "ja": "基本・距離・時間（日中）\n\n· 基本料金: 1.6kmまで4,800ウォン\n· 距離: 131mあたり100ウォン\n· 時間: 30秒あたり100ウォン（時速約15.7km未満で距離と同時計算）\n\n渋滞時は時間料金が乗り、想定より少し高くなることがあります。",
+          "zh": "基本费·里程·时间（白天）\n\n· 基本费：1.6 km 内 ₩4,800\n· 里程：每 131 m ₩100\n· 时间：每 30 秒 ₩100（时速约低于 15.7 km/h 时与里程一并计算）\n\n堵车时时间费会叠加，可能略高于畅通时的预估。"
+        },
+        {
+          "type": "text",
+          "ko": "심야 할증 (22:00~04:00)\n\n· 22~23시, 02~04시: 약 20% (기본요금 5,800원)\n· 23~02시: 약 40% (기본요금 6,700원)\n\n거리·시간 요금에도 같은 비율이 적용됩니다. 서울 밖으로 나가면 시계외 할증(약 20%)이 더해질 수 있고, 심야와 겹치면 최대 약 60%까지입니다.",
+          "en": "Late-night surcharge (10 PM–4 AM)\n\n· 10–11 PM and 2–4 AM: about 20% (base ₩5,800)\n· 11 PM–2 AM: about 40% (base ₩6,700)\n\nThe same rates apply to distance/time. Leaving Seoul may add an out-of-city surcharge (~20%); stacked with late-night, up to about 60%.",
+          "ja": "深夜割増（22:00〜04:00）\n\n· 22〜23時・02〜04時: 約20%（基本5,800ウォン）\n· 23〜02時: 約40%（基本6,700ウォン）\n\n距離・時間にも同率。ソウル市外は市外割増（約20%）が付くことがあり、深夜と重なると最大約60%です。",
+          "zh": "深夜加价（22:00–04:00）\n\n· 22–23 点、02–04 点：约 20%（基本费 ₩5,800）\n· 23–02 点：约 40%（基本费 ₩6,700）\n\n里程与时间费同比例加价。出首尔市区可能另加市外约 20%；与深夜叠加时最高约 60%。"
+        },
+        {
+          "type": "text",
+          "ko": "타는 방법·결제\n\n길거리나 택시승차대에서 손을 들거나, 카카오 T 같은 앱으로 부를 수 있습니다. 앱 사용법은 ‘유용한 앱 → 카카오 T’를 참고하세요. 목적지 주소를 한국어로 보여 주면 편합니다.\n\n카드·교통카드 결제가 일반적이고, 한국에서는 팁을 주지 않습니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요. 공항에서는 미터기 택시·앱 호출·공식 공항 택시를 이용하고, 임의로 가격을 부르는 호객은 정중히 거절하면 됩니다.",
+          "en": "How to ride & pay\n\nHail on the street or at a taxi stand, or request via an app like Kakao T (see Useful Apps → Kakao T). Showing the destination in Korean helps.\n\nCards and transit cards are widely accepted; tipping is not expected. Ask for a receipt with “영수증 주세요.” At airports, use metered, app, or official airport taxis — you can politely decline anyone quoting a random cash price.",
+          "ja": "乗り方・支払い\n\n路上やタクシー乗り場で手を挙げるか、カカオTなどのアプリで呼べます（「役立つアプリ → カカオT」参照）。目的地を韓国語で見せるとスムーズです。\n\nカード・交通カード払いが多く、チップは不要。「영수증 주세요」で領収書を。空港ではメーター・アプリ・公式空港タクシーを使い、その場の口頭料金の呼び込みは丁寧に断って大丈夫です。",
+          "zh": "怎么坐、怎么付\n\n可在路边或出租车站招手，也可用 Kakao T 等 App 叫车（见「实用 App → Kakao T」）。用韩语出示目的地地址会更顺畅。\n\n普遍可用刷卡或交通卡，韩国不需要给小费。需要收据时说「영수증 주세요」。在机场请用打表车、App 或官方机场出租车；若有人随口报价揽客，礼貌拒绝即可。"
+        },
+        {
+          "type": "text",
+          "ko": "지도 앱으로 대략 요금 보기\n\n네이버지도·카카오맵에서 길찾기를 연 뒤 이동 수단을 「자동차」로 고르면, 많은 구간에서 예상 택시 요금이 함께 표시됩니다. 참고용 숫자라 실제 미터기와 조금 다를 수 있지만, 이동 전에 감을 잡기 좋습니다.",
+          "en": "Rough fare on map apps\n\nIn Naver Map or Kakao Map, open directions and choose car mode — many routes also show an estimated taxi fare. It’s a guide only (the meter may differ slightly), but helpful for a ballpark before you ride.",
+          "ja": "地図アプリでだいたいの料金\n\nNaver地図やカカオマップで経路検索し、移動手段を「自動車」にすると、多くの区間でタクシーの目安料金も出ます。参考値なのでメーターと多少違うこともありますが、乗る前の目安になります。",
+          "zh": "用地图 App 看大概车费\n\n在 Naver Map 或 Kakao Map 打开路线，把交通方式选为「汽车」，不少路段会一并显示预估出租车费。仅为参考，可能与计价器略有出入，但出发前心里有数会更踏实。"
+        },
+        {
+          "type": "callout",
+          "ko": "요즘 서울에서 바가지 요금은 거의 없습니다. 미터기로 가는 일반 택시가 기본이에요. 그래도 마음이 놓이려면 카카오 T 등으로 호출해 보시면 됩니다. 만에 하나 요금이 이상하게 느껴지면 차량 번호판·차내 택시 면허 표시를 메모해 두고, 서울은 다산콜센터 120, 여행 통역·안내는 1330으로 문의할 수 있습니다. 차안에 QR 불편신고 안내가 붙어 있는 경우도 있습니다.",
+          "en": "Overcharging is rare in Seoul these days — metered regular taxis are the norm. For extra peace of mind, you can request a ride in Kakao T or similar apps. If a fare still feels off, note the license plate and the taxi license display inside, then ask Seoul’s Dasan Call Center 120, or tourist helpline 1330. Some cabs also show an in-car QR for feedback.",
+          "ja": "最近のソウルではぼったくり料金はほとんどありません。メーターの一般タクシーが基本です。安心したいときはカカオTなどで呼ぶのも手です。万一料金がおかしいと感じたらナンバーと車内のタクシー免許表示をメモし、ソウルは多山コールセンター120、観光通訳案内は1330へ。車内にQR案内がある場合もあります。",
+          "zh": "如今在首尔，乱要价的情况很少见，按表计费的普通出租车是常态。若想更安心，可用 Kakao T 等 App 叫车。万一仍觉得费用异常，可记下车牌与车内出租车执照信息，首尔可打市政热线 120，旅游通译/咨询可打 1330；部分车内也贴有反馈用 QR。"
+        }
+      ],
       "tabSolo": "Solo dining",
       "soloTitle": "Dining alone in Korea",
       "soloBody": [
@@ -10071,8 +10351,8 @@ window.__I18N_MESSAGES__ = {
       "catDining": "Dining",
       "catEntryIntro": "Documents, e-Arrival (ERI), and airport immigration — what to check before you land.",
       "catMoneyIntro": "Cash, cards, transit cards, and the tourist Wow Pass.",
-      "catLifeIntro": "Data, power, packing, and lodging bookings for day-one comfort.",
-      "catDiningIntro": "Tips if eating alone in Korea feels intimidating.",
+      "catLifeIntro": "Data and power, packing and lodging, plus transit and taxis for day-one comfort.",
+      "catDiningIntro": "Dining culture and solo meals — helpful to know before you arrive.",
       "tabEri": "e-Arrival (ERI)",
       "tabWowpass": "Wow Pass",
       "eriTitle": "e-Arrival Card (ERI)",
@@ -10169,6 +10449,86 @@ window.__I18N_MESSAGES__ = {
           "en": "Spring (Mar–May) and autumn (Sep–early/mid Nov, outside Chuseok week) are usually easier for outdoor trips. Avoid peak holiday crowds if you want a calmer first visit.",
           "ja": "春（3〜5月）と秋（9〜11月上中旬、チュソク連休を除く）は屋外旅行に無難。連休・繁忙の混雑を避ければ初めてでも負担が少なめです。",
           "zh": "春季（3–5 月）与秋季（9–11 月上中旬，避开中秋长假）通常更适合户外。想轻松的初次旅行，可尽量避开长假人潮。"
+        }
+      ],
+      "tabTransit": "Public transit",
+      "transitTitle": "Public transit",
+      "transit1": "In Seoul, subway and bus are often easier and more predictable than renting or driving — less traffic and parking stress.",
+      "transit2": "Use Naver/Kakao Map transit routes for transfers and exits. With heavy bags or late at night, also see the Taxi tab.",
+      "transit3": "Buying/topping up T-money, Cashbee, or Climate Card is under Money and Wow Pass. Bus tap-out tips are in Travel tips.",
+      "transit4": "Some regions (and Jeju) suit rental cars. Even using transit just in Seoul makes day one calmer.",
+      "tabCulture": "Dining culture",
+      "cultureTitle": "Dining culture",
+      "culture1": "Spoon for rice and soup, chopsticks for banchan and meat feels natural. Avoid standing chopsticks upright in rice.",
+      "culture2": "Banchan is shared; order together when you’re in a group. Ask for milder spice if you need it.",
+      "culture3": "Use a call bell or a small “저기요.” Water/banchan are often self-serve. Pay at the counter; tipping isn’t expected.",
+      "culture4": "Looking around once helps more than perfect etiquette.",
+      "transitBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/transit.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울에서는 대중교통이 훨씬 편한 경우가 많습니다\n\n렌터카나 자가용으로 다니면 정체·주차·내비게이션 스트레스가 커질 수 있어요. 시내 이동은 지하철·버스가 더 빠르고 예측 가능한 경우가 많습니다. 꼭 차가 나쁜 건 아니지만, 서울 관광 일정이라면 대중교통을 기본으로 잡아 두면 마음이 편합니다.",
+          "en": "In Seoul, transit is often much easier\n\nDriving or renting a car can mean traffic, parking, and navigation stress. For getting around the city, subway and bus are often faster and more predictable. Cars aren’t “wrong” — but for a Seoul sightseeing trip, starting with public transit usually feels calmer.",
+          "ja": "ソウルでは公共交通のほうが楽なことが多いです\n\nレンタカーや自家用車だと渋滞・駐車・ナビのストレスが増えがち。市内移動は地下鉄・バスのほうが速くて読みやすいことが多いです。車が悪いわけではありませんが、ソウル観光ならまず公共交通を基本にすると安心です。",
+          "zh": "在首尔，公共交通往往更省心\n\n自驾或租车可能遇到堵车、停车和导航压力。市区出行时，地铁和公交常常更快、更可预期。并不是说开车不好——但如果是首尔观光行程，以公共交通为主通常更轻松。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철 + 버스, 이렇게 쓰면 됩니다\n\n네이버지도·카카오맵에서 대중교통 경로를 보면 환승·출구까지 안내됩니다. 지하철은 노선 색과 출구 번호를 기억하면 골목 찾기가 수월하고, 버스는 정류장 번호·도착 안내를 확인하면 됩니다. 짐이 많거나 심야·비 오는 날에는 택시 탭도 함께 참고하세요.",
+          "en": "Subway + bus — the practical combo\n\nNaver Map and Kakao Map show transit routes with transfers and exits. Remember line colors and exit numbers on the subway; for buses, check stop numbers and arrival info. With heavy bags, late at night, or in rain, also see the Taxi tab.",
+          "ja": "地下鉄＋バスの使い方\n\nNaver地図・カカオマップの公共交通ルートで乗換や出口まで案内されます。地下鉄は路線色と出口番号、バスは停留所番号・到着案内を確認。荷物が多い・深夜・雨の日はタクシーのタブも参考に。",
+          "zh": "地铁 + 公交，这样用就够\n\nNaver Map、Kakao Map 的公交路线会标换乘和出口。地铁记住线路颜色和出口编号；公交看站牌编号和到站信息。行李多、深夜或下雨时，也可参考「出租车」分栏。"
+        },
+        {
+          "type": "text",
+          "ko": "교통카드는 짧게만\n\n티머니·캐시비·기후동행카드(조건에 맞을 때) 등은 ‘돈’ 카테고리와 Wow Pass 탭에서 구입·충전을 정리해 두었습니다. 여기서는 도착 전에 “카드를 쓸 생각”만 해 두면 충분합니다. 버스는 내릴 때도 태그하는 점이 중요하니, 여행 중 팁의하차·환승도 함께 보세요.",
+          "en": "Transit cards — keep it short\n\nT-money, Cashbee, and Climate Card (when eligible) are covered under Money and Wow Pass. Before you fly, just plan to use a card. On buses you also tap when you get off — see Travel tips → Tap out / transfers while you’re on the ground.",
+          "ja": "交通カードは短く\n\nT-money・Cashbee・気候同行カード（条件による）などは「お金」と Wow Pass タブで購入・チャージをまとめています。出発前は「カードを使う」つもりで十分。バスは降車時もタッチが大切なので、旅行中ヒントの「降車・乗換」も見てください。",
+          "zh": "交通卡只提一句\n\nT-money、Cashbee、气候同行卡（符合条件时）的购买/充值见「钱」与 Wow Pass。出发前心里有「会用交通卡」就够。公交下车也要刷卡——抵达后可看旅行贴士里的「下车·换乘」。"
+        },
+        {
+          "type": "callout",
+          "ko": "지방·제주처럼 렌터가 편한 코스도 있습니다. 서울 시내만이라도 지하철·버스를 기본으로 두면, 첫날이 훨씬 덜 바빠집니다.",
+          "en": "Some regions (and Jeju) are easier by rental car. Even if you only use subway/bus inside Seoul, day one feels much lighter.",
+          "ja": "地方や済州のようにレンタカーが楽なコースもあります。ソウル市内だけでも地下鉄・バスを基本にすると初日が楽になります。",
+          "zh": "地方或济州等地租车可能更方便。哪怕只在首尔市区以地铁公交为主，第一天也会轻松很多。"
+        }
+      ],
+      "cultureBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/culture.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "수저 세트, 이렇게 쓰면 편합니다\n\n한국 식당에서는 보통 숟가락과 젓가락이 함께 나옵니다. 밥·국·찌개는 숟가락, 반찬·고기·면은 젓가락을 쓰는 편이 자연스럽습니다. 젓가락을 밥그릇에 꽂아 세우지 않는 것이 보통이고, 공용 반찬은 자기 젓가락으로 집어도 무방한 곳이 많지만 집게·공용 수저가 있으면 그걸 쓰세요.",
+          "en": "Spoon + chopsticks (sujeo)\n\nMost Korean meals come with a spoon and chopsticks. Use the spoon for rice, soup, and stews; chopsticks for banchan, meat, and noodles. Avoid standing chopsticks upright in rice. Shared banchan is often taken with your own chopsticks, but use serving tongs/spoons when provided.",
+          "ja": "スプーンと箸（スジョ）\n\n韓国の食事ではスプーンと箸がセットで出ることが多いです。ご飯・スープ・チゲはスプーン、おかず・肉・麺は箸が自然です。箸をご飯に突き立てないのが一般的。共用おかずは自分の箸で取ることが多いですが、トングや共用スプーンがあればそちらを。",
+          "zh": "勺子 + 筷子（수저）\n\n韩国餐桌上通常同时有勺子和筷子。米饭、汤、炖菜用勺；小菜、肉、面类用筷更自然。一般不要把筷子竖直插在米饭里。共用小菜多数可用自己的筷子夹，若有公筷/夹子请用公筷。"
+        },
+        {
+          "type": "text",
+          "ko": "함께 먹는 상차림\n\n반찬은 테이블에 놓고 나눠 먹는 문화가 강합니다. 메뉴도 2인분·공유 요리가 많아, 일행이 있으면 같이 고르는 편이 편합니다. 매운맛이 걱정되면 ‘덜 맵게 해주세요’라고 말해 보세요. 남기는 것에 너무 스트레스받지 않아도 됩니다 — 다만 처음엔 양을 조금 적게 주문해도 좋아요.",
+          "en": "Sharing the table\n\nBanchan is meant to be shared. Many dishes assume two people or shared plates, so ordering together is easier. If spice worries you, ask for it milder (“덜 맵게 해주세요”). Don’t stress about finishing every bite — starting with a smaller order is fine.",
+          "ja": "シェアする食卓\n\nおかずはテーブルで分け合う文化が強いです。2人前やシェア料理も多いので、同行がいれば一緒に選ぶと楽。辛さが心配なら「덜 맵게 해주세요」。食べきれなくても気にしすぎなくてOK。最初は少なめ注文でも大丈夫です。",
+          "zh": "一起吃的餐桌\n\n小菜多是共享的。不少菜按两人份或拼桌设计，有同伴时一起点更省事。怕辣可以说「덜 맵게 해주세요」。不必为吃不完太紧张——一开始少点一些也完全可以。"
+        },
+        {
+          "type": "text",
+          "ko": "직원 부르기·물·반찬·계산\n\n테이블 호출벨이 있으면 누르거나, 직원이 보이면 손을 살짝 들어 ‘저기요’ 하면 됩니다. 물·수저·반찬은 셀프인 가게가 많으니 주변을 한 번 보세요. 계산은 출구 쪽 카운터에서 하는 곳이 흔하고, 한 사람이 카드를 내는 경우가 많습니다. 일반 식당에서는 팁을 주지 않는 것이 보통입니다. 현장 디테일은 ‘여행 팁 → 식당’에도 짧게 있습니다.",
+          "en": "Calling staff, water, banchan, paying\n\nUse the call bell if there is one, or a small wave and “저기요.” Water, utensils, and banchan are often self-serve — look around once. Many places take payment at a counter near the exit; one person often pays for the group. Tipping is not expected at typical restaurants. For in-the-moment details, see Travel tips → Dining.",
+          "ja": "店員を呼ぶ・水・おかず・会計\n\n呼び出しベルがあれば押すか、手を少し挙げて「저기요」。水・箸・おかずはセルフが多いので周囲を確認を。会計は入口付近のカウンターが多く、一人がまとめて払うことも普通。一般店ではチップ不要。その場のコツは「旅行のヒント → 食事」も参照。",
+          "zh": "叫服务员、水、小菜、结账\n\n有桌铃就按，或轻轻招手说「저기요」。水、餐具、小菜常是自助——坐下后先看一眼周围。很多店在门口柜台结账，常由一人刷卡。普通餐厅一般不给小费。现场细节也可看「旅行贴士 → 餐厅」。"
+        },
+        {
+          "type": "callout",
+          "ko": "완벽한 예절보다 ‘주변을 한번 보는 것’이 더 도움이 됩니다. 헷갈리면 옆 테이블을 부드럽게 참고해도 괜찮아요.",
+          "en": "A quick look around helps more than perfect etiquette. When unsure, quietly mirror nearby tables.",
+          "ja": "完璧なマナーより、周囲を一度見ることが役立ちます。迷ったら隣のテーブルをそっと参考に。",
+          "zh": "不必追求完美礼仪，先观察周围更有用。不确定时，轻轻参考邻桌即可。"
         }
       ]
     },
@@ -15786,7 +16146,7 @@ window.__I18N_MESSAGES__ = {
       "souvenirTitle": "Souvenir Guide",
       "souvenirIntro": "Popular souvenirs foreign visitors actually buy, grouped by type.",
       "tipsTitle": "Travel Tips",
-      "tipsIntro": "Helpful tips for traveling in Korea. Pick Daily, Dining, Transit, or Shopping to browse.",
+      "tipsIntro": "Tips you can use while traveling. For prep and documents, see Before You Go — here it’s on-the-ground know-how.",
       "shoppingTitle": "Shopping guide",
       "convenienceTitle": "Korean convenience stores",
       "airportTitle": "Airport → Myeongdong",
@@ -15804,15 +16164,15 @@ window.__I18N_MESSAGES__ = {
       "catTransport": "Transit",
       "catShopping": "Shopping",
       "backHub": "← Travel tips",
-      "dailyCardDesc": "Maps, cash, Wi‑Fi, and more",
+      "dailyCardDesc": "Maps, trash, weekend rates, convenience stores, rainy days",
       "restaurantCardDesc": "Ordering, waiting, water & banchan",
-      "transportCardDesc": "Transit card, rush hour, taxis, exits",
+      "transportCardDesc": "Tap-out, rush hour, exits, etiquette",
       "mapTitle": "Maps",
-      "mapMistake": "Coming to Korea with only Google Maps",
-      "mapBody": "When traveling in Korea, install Naver Map or Kakao Map in addition to Google Maps. For public transit, walking directions, and local shop info, Naver Map and Kakao Map are often more accurate.",
-      "cardTitle": "Transit card",
-      "cardMistake": "Buying a ticket every time, or not tapping out on the bus",
-      "cardBody": "A transit card is useful not only for buses and the subway, but also for taxis and public bikes. You can buy and top up cards at convenience stores or subway stations. One thing many travelers miss: on buses, you must tap your card again when you get off.",
+      "mapMistake": "Using only Google Maps while navigating",
+      "mapBody": "For transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+      "cardTitle": "Bus tap-out & transfers",
+      "cardMistake": "Not tapping when you get off the bus",
+      "cardBody": "On buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
       "restaurantTitle": "Dining",
       "restaurantMistake": "Assuming restaurants work the same as abroad",
       "restaurantBody1": "You might wait for staff to take your order when there is a call bell at the table, or ask for water and side dishes when there is a self-service station. More places now use kiosks or tablets for ordering, which can be another hurdle if you do not read Korean.",
@@ -15843,39 +16203,39 @@ window.__I18N_MESSAGES__ = {
       "exitMistake": "Leaving through a random exit",
       "exitBody": "Exit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
       "weekendTitle": "Weekend lodging",
-      "weekendMistake": "Assuming weekend hotel rates match weekdays",
-      "weekendBody": "Friday–Sunday and holidays often cost much more than weekdays. Mix in weekday stays when you can, and compare prices early on booking apps. Same-day bookings can be pricier.",
+      "weekendMistake": "Assuming a mid-trip weekend stay costs the same as a weekday",
+      "weekendBody": "Friday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
       "catPickLabel": "Topic",
       "dailyBody": [
         {
           "type": "text",
-          "ko": "지도 앱\n\n구글 지도 하나만 믿고 한국에 오는 것\n\n현재 한국을 여행할 때는 구글 지도만 준비하기보다 네이버지도나 카카오맵을 함께 설치하는 편이 좋습니다. 한국 내 대중교통·도보 안내, 가게 정보는 네이버지도·카카오맵이 더 정확한 경우가 많습니다.",
-          "en": "Maps\n\nComing to Korea with only Google Maps\n\nWhen traveling in Korea, install Naver Map or Kakao Map in addition to Google Maps. For public transit, walking directions, and local shop info, Naver Map and Kakao Map are often more accurate.",
-          "ja": "地図アプリ\n\nGoogleマップだけを信じて韓国に来ること\n\n韓国旅行ではGoogleマップだけでなく、Naver MapやKakao Mapも一緒に入れておくと安心です。韓国国内の公共交通・徒歩案内や店舗情報は、Naver Map・Kakao Mapの方が正確なことが多いです。"
+          "ko": "지도 앱\n\n길 찾을 때 구글 지도만 쓰는 것\n\n현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+          "en": "Maps\n\nUsing only Google Maps while navigating\n\nFor transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+          "ja": "地図アプリ\n\n道探しでGoogleマップだけ使うこと\n\n現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。"
         },
         {
           "type": "text",
-          "ko": "현금과 카드\n\n카드만 있으면 된다고 생각하는 것\n\n대부분 카드가 되지만 전통시장, 포장마차, 일부 작은 식당·택시는 현금만 받는 경우가 있습니다. 잔돈을 조금 들고 다니세요.",
-          "en": "Cash and cards\n\nAssuming a card works everywhere\n\nMost places take cards, but traditional markets, street stalls, and some small restaurants/taxis are cash-only. Keep small bills.",
-          "ja": "現金とカード\n\nカードだけで足りると思い込むこと\n\n多くの店はカードOKですが、市場・屋台・一部の小さな店やタクシーは現金のみです。少額紙幣を持ち歩きましょう。"
-        },
-        {
-          "type": "text",
-          "ko": "쓰레기통\n\n거리에 쓰레기통이 많을 거라 기대하는 것\n\n한국 도심에는 길거리 쓰레기통이 생각보다 적습니다. 편의점·지하철역·카페를 이용하거나, 작은 쓰레기는 숙소까지 가지고 가는 편이 안전합니다.",
+          "ko": "쓰레기통\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
           "en": "Trash bins\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
           "ja": "ゴミ箱\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。"
         },
         {
           "type": "text",
-          "ko": "와이파이·데이터\n\n카페·지하철 Wi-Fi만으로 충분하다고 생각하는 것\n\n공공 Wi-Fi는 불안정할 수 있습니다. eSIM·유심으로 데이터를 확보하면 지도·번역·결제 앱을 끊김 없이 쓸 수 있습니다.",
-          "en": "Wi-Fi and data\n\nThinking café/subway Wi-Fi is enough\n\nPublic Wi-Fi can be unstable. An eSIM/SIM keeps maps, translation, and payment apps online.",
-          "ja": "Wi-Fi・データ\n\nカフェや地下鉄Wi-Fiだけで足りると思い込むこと\n\n公共Wi-Fiは不安定なことがあります。eSIM/SIMでデータがあると地図・翻訳が安心です。"
+          "ko": "주말·연휴 숙소\n\n여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것\n\n금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
+          "en": "Weekend lodging\n\nAssuming a mid-trip weekend stay costs the same as a weekday\n\nFriday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+          "ja": "週末・連休の宿\n\n旅行中の週末宿が平日と同じ料金だと思うこと\n\n金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。"
         },
         {
           "type": "text",
-          "ko": "주말·연휴 숙소\n\n주말에도 평일과 같은 가격일 거라 생각하는 것\n\n금·토·일이나 연휴·성수기에는 호텔·게스트하우스 요금이 평일보다 크게 오르는 경우가 많습니다. 가능하면 평일 숙박을 섞거나, 미리 예약·가격 비교(야놀자·여기어때 등)를 하세요. 당일 예약은 더 비쌀 수 있습니다.",
-          "en": "Weekend lodging\n\nAssuming weekend hotel rates match weekdays\n\nFriday–Sunday and holidays often cost much more than weekdays. Mix in weekday stays when you can, and compare prices early on booking apps. Same-day bookings can be pricier.",
-          "ja": "週末・連休の宿\n\n週末も平日と同じ料金だと思い込むこと\n\n金・土・日や連休・繁忙期はホテルやゲストハウス料金が大きく上がることが多いです。可能なら平日を混ぜ、早めに比較・予約を。当日予約はさらに高いことがあります。"
+          "ko": "편의점\n\n편의점은 간식만 산다고 생각하는 것\n\nCU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+          "en": "Convenience stores\n\nThinking convenience stores are only for snacks\n\nCU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+          "ja": "コンビニ\n\nコンビニはおやつだけと思うこと\n\nCU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。"
+        },
+        {
+          "type": "text",
+          "ko": "비 오는 날\n\n우산 없이 밖으로 나갔다가 당황하는 것\n\n갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+          "en": "Rainy days\n\nHeading out without a plan when it suddenly rains\n\nIf rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+          "ja": "雨の日\n\n突然の雨に傘なしで慌てること\n\n急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。"
         }
       ],
       "restaurantBody": [
@@ -15913,35 +16273,37 @@ window.__I18N_MESSAGES__ = {
       "transportBody": [
         {
           "type": "text",
-          "ko": "교통카드\n\n교통카드 없이 매번 표를 사거나, 버스에서 하차 태그를 하지 않는 것\n\n버스와 지하철뿐 아니라 택시와 공공자전거 등을 이용할 때도 교통카드가 유용합니다. 카드는 편의점이나 지하철역에서 구입·충전할 수 있습니다. 다만 외국인 여행객이 자주 놓치는 부분은 버스에서 내릴 때도 카드를 단말기에 찍어야 한다는 점입니다.",
-          "en": "Transit card\n\nBuying a ticket every time, or not tapping out on the bus\n\nA transit card is useful not only for buses and the subway, but also for taxis and public bikes. You can buy and top up cards at convenience stores or subway stations. One thing many travelers miss: on buses, you must tap your card again when you get off.",
-          "ja": "交通カード\n\n交通カードなしで毎回切符を買う、バス降車時にタッチしない\n\nバスや地下鉄だけでなく、タクシーや公共自転車でも交通カードが便利です。カードはコンビニや地下鉄駅で購入・チャージできます。旅行者がよく見落とすのは、バスを降りるときも端末にカードをタッチする必要があるという点です。"
+          "ko": "버스 하차·환승\n\n버스에서 내릴 때 카드를 찍지 않는 것\n\n버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
+          "en": "Bus tap-out & transfers\n\nNot tapping when you get off the bus\n\nOn buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+          "ja": "バス降車・乗換\n\nバス降車時にカードをタッチしないこと\n\nバスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。"
         },
         {
           "type": "text",
-          "ko": "출퇴근 혼잡\n\n출퇴근 시간에 관광지로 이동하는 것\n\n평일 07–09시, 18–20시 지하철·버스는 매우 붐빕니다. 가능하면 이 시간을 피하거나, 짐이 많으면 택시를 고려하세요.",
+          "ko": "출퇴근 혼잡\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
           "en": "Rush hour\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
-          "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。"
+          "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
+          "zh": "通勤高峰\n\n高峰时段去景点移动\n\n工作日 7–9 点、18–20 点地铁公交很挤。尽量避开；行李多时可考虑出租车。"
         },
         {
           "type": "text",
-          "ko": "택시 이용\n\n주소만 말로 설명하려다 헤매는 것\n\n카카오 T·우티 등으로 호출하거나, 숙소·목적지 주소를 한국어로 보여 주면 편합니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요.",
-          "en": "Taxis\n\nOnly explaining the address out loud\n\nUse Kakao T / Uber-style apps, or show the destination in Korean. Ask for a receipt if you need one.",
-          "ja": "タクシー\n\n住所を口だけで説明して迷うこと\n\nカカオTなどで呼ぶか、目的地を韓国語で見せると楽です。領収書が必要なら「영수증 주세요」。"
-        },
-        {
-          "type": "text",
-          "ko": "지하철 출구\n\n아무 출구로 나와 길을 잃는 것\n\n같은 역이라도 출구 번호에 따라 도착지가 크게 달라집니다. 지도 앱에서 추천 출구를 확인한 뒤 나오세요.",
+          "ko": "지하철 출구\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
           "en": "Subway exits\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
-          "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。"
+          "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
+          "zh": "地铁出口\n\n随便找个出口就出站\n\n同一车站出口编号差别很大。出站前先在地图 App 确认推荐出口。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철·버스 매너\n\n출입문 앞에서 막거나 큰 소리로 통화하는 것\n\n내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+          "en": "Subway & bus etiquette\n\nBlocking the doors or taking loud phone calls\n\nLet exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+          "ja": "地下鉄・バスのマナー\n\nドア前で塞ぐ、大きな声で通話する\n\n降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。"
         }
       ],
       "noTipTitle": "Tipping",
       "noTipMistake": "Korea generally does not tip at restaurants",
       "noTipBody": "Typical Korean restaurants and cafés have no tipping culture — service is treated as included. Default: no tip.",
-      "catDailyIntro": "Maps, cash, trash, data, and weekend lodging — common daily surprises in Korea.",
-      "catRestaurantIntro": "Ordering, tipping, waiting lines, and self-serve corners — tips you can use at the table.",
-      "catTransportIntro": "Transit cards, rush hour, taxis, and subway exits in short form.",
+      "catDailyIntro": "Maps, trash, weekend rates, convenience stores, and rainy days — everyday tips while you’re traveling.",
+      "catRestaurantIntro": "Ordering, tipping, waiting lines, and self-serve corners — tips at the table.",
+      "catTransportIntro": "Tap-out, rush hour, exits, and light etiquette for moving around. Fares and card setup are in Before You Go.",
       "catShoppingIntro": "Olive Young, Daiso, duty-free, and markets — all inline here (no extra page hops).",
       "tabMap": "Maps",
       "tabCash": "Cash · Cards",
@@ -15952,14 +16314,104 @@ window.__I18N_MESSAGES__ = {
       "tabNoTip": "Tipping",
       "tabQueue": "Waiting",
       "tabWater": "Water · Banchan",
-      "tabCard": "Transit card",
+      "tabCard": "Tap-out · Transfer",
       "tabRush": "Rush hour",
       "tabTaxi": "Taxi",
       "tabExit": "Subway exits",
       "tabOlive": "Olive Young",
       "tabDaiso": "Daiso",
       "tabDuty": "Duty-free",
-      "tabMarket": "Markets"
+      "tabMarket": "Markets",
+      "tabConvenience": "Convenience stores",
+      "convenienceTitle": "Convenience stores",
+      "convenienceMistake": "Thinking convenience stores are only for snacks",
+      "convenienceBody": "CU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+      "tabRain": "Rainy days",
+      "rainTitle": "Rainy days",
+      "rainMistake": "Heading out without a plan when it suddenly rains",
+      "rainBody": "If rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+      "tabEtiquette": "Transit etiquette",
+      "etiquetteTitle": "Subway & bus etiquette",
+      "etiquetteMistake": "Blocking the doors or taking loud phone calls",
+      "etiquetteBody": "Let exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+      "mapCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/map.jpg"
+        }
+      ],
+      "trashCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/trash.jpg"
+        }
+      ],
+      "weekendCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/weekend.jpg"
+        }
+      ],
+      "convenienceCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/convenience.jpg"
+        }
+      ],
+      "rainCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rain.jpg"
+        }
+      ],
+      "orderCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/order.jpg"
+        }
+      ],
+      "noTipCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/notip.jpg"
+        }
+      ],
+      "queueCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/queue.jpg"
+        }
+      ],
+      "waterCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/water.jpg"
+        }
+      ],
+      "cardCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/card.jpg"
+        }
+      ],
+      "rushCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rush.jpg"
+        }
+      ],
+      "exitCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/exit.jpg"
+        }
+      ],
+      "etiquetteCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/etiquette.jpg"
+        }
+      ]
     },
     "korean": {
       "pageTitle": "Useful Korean",
@@ -19195,6 +19647,7 @@ window.__I18N_MESSAGES__ = {
       "tabMoney": "現金·カード",
       "tabConnect": "通信·電源",
       "tabPack": "荷物·予約",
+      "tabTaxi": "タクシー",
       "docsTitle": "準備書類",
       "docs1": "パスポート残存（帰国日+6か月）とビザ・K-ETAの要否を公式案内で確認。",
       "docs2": "入国審査に備え、宿住所・滞在目的・帰国便をスマホに。電子入国申告(ERI)は別タブで。",
@@ -19361,6 +19814,59 @@ window.__I18N_MESSAGES__ = {
         }
       ],
       "pack4": "帰国のお土産用にスーツケースの空きを残して。",
+      "taxiTitle": "タクシー料金・使い方",
+      "taxi1": "2026年時点のソウル中型（一般）タクシー基本料金は1.6kmまで4,800ウォン。以降は距離・時間料金が加算されます。",
+      "taxi2": "深夜（22〜04時）は時間帯により約20%または40%割増。他都市は料金が異なる場合があります。",
+      "taxi3": "路上・乗り場で乗るほか、カカオTで呼べます。カード払いが多く、チップは不要です。",
+      "taxi4": "Naver/カカオマップの自動車ルートで目安料金が見られることが多いです。ぼったくりはほぼなく、安心ならアプリ呼び出しもおすすめです。",
+      "taxiBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/taxi.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울 택시, 이렇게만 알아 두세요\n\n아래는 2026년 기준 서울 중형(일반)택시 요금입니다. 서울시가 고시한 현행 요금표(2023년 2월 적용 이후 유지)를 여행용으로 짧게 정리한 것이며, 부산·제주 등 다른 지역은 기본요금이 다를 수 있습니다.",
+          "en": "Seoul taxis — a quick primer\n\nFares below are for Seoul medium (regular) taxis as of 2026 — the city’s current posted schedule (in effect since Feb 2023). Other cities (Busan, Jeju, etc.) set their own base fares.",
+          "ja": "ソウルのタクシー、これだけ覚えればOK\n\n以下は2026年時点のソウル中型（一般）タクシー料金です。ソウル市の現行公示（2023年2月適用以降）を旅行向けに短くまとめたもので、釜山・済州など他地域は基本料金が異なる場合があります。",
+          "zh": "首尔出租车，记住这些就够\n\n以下为 2026 年首尔中型（普通）出租车现行资费，依据首尔市公示（自 2023 年 2 月起适用并沿用）。釜山、济州等其他地区基本费可能不同。"
+        },
+        {
+          "type": "text",
+          "ko": "기본요금·거리·시간 (주간)\n\n· 기본요금: 1.6km까지 4,800원\n· 거리요금: 131m당 100원\n· 시간요금: 30초당 100원 (시속 약 15.7km 미만일 때 거리와 함께 계산)\n\n막히면 시간요금이 더해져 예상보다 조금 나올 수 있어요.",
+          "en": "Base, distance & time (daytime)\n\n· Base: ₩4,800 up to 1.6 km\n· Distance: ₩100 per 131 m\n· Time: ₩100 per 30 sec (when under about 15.7 km/h, time is counted with distance)\n\nIn heavy traffic the meter can run a bit higher than a free-flow estimate.",
+          "ja": "基本・距離・時間（日中）\n\n· 基本料金: 1.6kmまで4,800ウォン\n· 距離: 131mあたり100ウォン\n· 時間: 30秒あたり100ウォン（時速約15.7km未満で距離と同時計算）\n\n渋滞時は時間料金が乗り、想定より少し高くなることがあります。",
+          "zh": "基本费·里程·时间（白天）\n\n· 基本费：1.6 km 内 ₩4,800\n· 里程：每 131 m ₩100\n· 时间：每 30 秒 ₩100（时速约低于 15.7 km/h 时与里程一并计算）\n\n堵车时时间费会叠加，可能略高于畅通时的预估。"
+        },
+        {
+          "type": "text",
+          "ko": "심야 할증 (22:00~04:00)\n\n· 22~23시, 02~04시: 약 20% (기본요금 5,800원)\n· 23~02시: 약 40% (기본요금 6,700원)\n\n거리·시간 요금에도 같은 비율이 적용됩니다. 서울 밖으로 나가면 시계외 할증(약 20%)이 더해질 수 있고, 심야와 겹치면 최대 약 60%까지입니다.",
+          "en": "Late-night surcharge (10 PM–4 AM)\n\n· 10–11 PM and 2–4 AM: about 20% (base ₩5,800)\n· 11 PM–2 AM: about 40% (base ₩6,700)\n\nThe same rates apply to distance/time. Leaving Seoul may add an out-of-city surcharge (~20%); stacked with late-night, up to about 60%.",
+          "ja": "深夜割増（22:00〜04:00）\n\n· 22〜23時・02〜04時: 約20%（基本5,800ウォン）\n· 23〜02時: 約40%（基本6,700ウォン）\n\n距離・時間にも同率。ソウル市外は市外割増（約20%）が付くことがあり、深夜と重なると最大約60%です。",
+          "zh": "深夜加价（22:00–04:00）\n\n· 22–23 点、02–04 点：约 20%（基本费 ₩5,800）\n· 23–02 点：约 40%（基本费 ₩6,700）\n\n里程与时间费同比例加价。出首尔市区可能另加市外约 20%；与深夜叠加时最高约 60%。"
+        },
+        {
+          "type": "text",
+          "ko": "타는 방법·결제\n\n길거리나 택시승차대에서 손을 들거나, 카카오 T 같은 앱으로 부를 수 있습니다. 앱 사용법은 ‘유용한 앱 → 카카오 T’를 참고하세요. 목적지 주소를 한국어로 보여 주면 편합니다.\n\n카드·교통카드 결제가 일반적이고, 한국에서는 팁을 주지 않습니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요. 공항에서는 미터기 택시·앱 호출·공식 공항 택시를 이용하고, 임의로 가격을 부르는 호객은 정중히 거절하면 됩니다.",
+          "en": "How to ride & pay\n\nHail on the street or at a taxi stand, or request via an app like Kakao T (see Useful Apps → Kakao T). Showing the destination in Korean helps.\n\nCards and transit cards are widely accepted; tipping is not expected. Ask for a receipt with “영수증 주세요.” At airports, use metered, app, or official airport taxis — you can politely decline anyone quoting a random cash price.",
+          "ja": "乗り方・支払い\n\n路上やタクシー乗り場で手を挙げるか、カカオTなどのアプリで呼べます（「役立つアプリ → カカオT」参照）。目的地を韓国語で見せるとスムーズです。\n\nカード・交通カード払いが多く、チップは不要。「영수증 주세요」で領収書を。空港ではメーター・アプリ・公式空港タクシーを使い、その場の口頭料金の呼び込みは丁寧に断って大丈夫です。",
+          "zh": "怎么坐、怎么付\n\n可在路边或出租车站招手，也可用 Kakao T 等 App 叫车（见「实用 App → Kakao T」）。用韩语出示目的地地址会更顺畅。\n\n普遍可用刷卡或交通卡，韩国不需要给小费。需要收据时说「영수증 주세요」。在机场请用打表车、App 或官方机场出租车；若有人随口报价揽客，礼貌拒绝即可。"
+        },
+        {
+          "type": "text",
+          "ko": "지도 앱으로 대략 요금 보기\n\n네이버지도·카카오맵에서 길찾기를 연 뒤 이동 수단을 「자동차」로 고르면, 많은 구간에서 예상 택시 요금이 함께 표시됩니다. 참고용 숫자라 실제 미터기와 조금 다를 수 있지만, 이동 전에 감을 잡기 좋습니다.",
+          "en": "Rough fare on map apps\n\nIn Naver Map or Kakao Map, open directions and choose car mode — many routes also show an estimated taxi fare. It’s a guide only (the meter may differ slightly), but helpful for a ballpark before you ride.",
+          "ja": "地図アプリでだいたいの料金\n\nNaver地図やカカオマップで経路検索し、移動手段を「自動車」にすると、多くの区間でタクシーの目安料金も出ます。参考値なのでメーターと多少違うこともありますが、乗る前の目安になります。",
+          "zh": "用地图 App 看大概车费\n\n在 Naver Map 或 Kakao Map 打开路线，把交通方式选为「汽车」，不少路段会一并显示预估出租车费。仅为参考，可能与计价器略有出入，但出发前心里有数会更踏实。"
+        },
+        {
+          "type": "callout",
+          "ko": "요즘 서울에서 바가지 요금은 거의 없습니다. 미터기로 가는 일반 택시가 기본이에요. 그래도 마음이 놓이려면 카카오 T 등으로 호출해 보시면 됩니다. 만에 하나 요금이 이상하게 느껴지면 차량 번호판·차내 택시 면허 표시를 메모해 두고, 서울은 다산콜센터 120, 여행 통역·안내는 1330으로 문의할 수 있습니다. 차안에 QR 불편신고 안내가 붙어 있는 경우도 있습니다.",
+          "en": "Overcharging is rare in Seoul these days — metered regular taxis are the norm. For extra peace of mind, you can request a ride in Kakao T or similar apps. If a fare still feels off, note the license plate and the taxi license display inside, then ask Seoul’s Dasan Call Center 120, or tourist helpline 1330. Some cabs also show an in-car QR for feedback.",
+          "ja": "最近のソウルではぼったくり料金はほとんどありません。メーターの一般タクシーが基本です。安心したいときはカカオTなどで呼ぶのも手です。万一料金がおかしいと感じたらナンバーと車内のタクシー免許表示をメモし、ソウルは多山コールセンター120、観光通訳案内は1330へ。車内にQR案内がある場合もあります。",
+          "zh": "如今在首尔，乱要价的情况很少见，按表计费的普通出租车是常态。若想更安心，可用 Kakao T 等 App 叫车。万一仍觉得费用异常，可记下车牌与车内出租车执照信息，首尔可打市政热线 120，旅游通译/咨询可打 1330；部分车内也贴有反馈用 QR。"
+        }
+      ],
       "tabSolo": "一人で食事",
       "soloTitle": "一人での外食",
       "soloBody": [
@@ -19516,8 +20022,8 @@ window.__I18N_MESSAGES__ = {
       "catDining": "食事",
       "catEntryIntro": "書類・電子入国申告・空港審査など、入国前に確認する項目です。",
       "catMoneyIntro": "現金・カード・交通カードと観光客向け Wow Pass をまとめました。",
-      "catLifeIntro": "通信・電源、荷物・宿予約など、到着直後の生活準備です。",
-      "catDiningIntro": "一人での食事が不安なときに役立つヒントです。",
+      "catLifeIntro": "通信・電源、荷物・宿、公共交通・タクシーなど、到着直後の生活準備です。",
+      "catDiningIntro": "食事の文化と一人食事 — 到着前に知っておくと安心です。",
       "tabEri": "電子入国申告(ERI)",
       "tabWowpass": "Wow Pass",
       "eriTitle": "電子入国申告（e-Arrival / ERI）",
@@ -19614,6 +20120,86 @@ window.__I18N_MESSAGES__ = {
           "en": "Spring (Mar–May) and autumn (Sep–early/mid Nov, outside Chuseok week) are usually easier for outdoor trips. Avoid peak holiday crowds if you want a calmer first visit.",
           "ja": "春（3〜5月）と秋（9〜11月上中旬、チュソク連休を除く）は屋外旅行に無難。連休・繁忙の混雑を避ければ初めてでも負担が少なめです。",
           "zh": "春季（3–5 月）与秋季（9–11 月上中旬，避开中秋长假）通常更适合户外。想轻松的初次旅行，可尽量避开长假人潮。"
+        }
+      ],
+      "tabTransit": "公共交通",
+      "transitTitle": "公共交通",
+      "transit1": "ソウル市内ではレンタカーや自家用車より地下鉄・バスのほうが楽で読みやすいことが多いです。渋滞・駐車の負担を減らせます。",
+      "transit2": "Naver・カカオマップの公共交通ルートで乗換・出口を確認を。荷物が多い・深夜はタクシーのタブも参考に。",
+      "transit3": "T-money等の購入・チャージは「お金」と Wow Pass タブへ。バス降車タッチは旅行のヒントにも短くあります。",
+      "transit4": "地方や済州のようにレンタカーが楽な所もあります。ソウルだけでも公共交通を基本にすると初日が楽です。",
+      "tabCulture": "食事の文化",
+      "cultureTitle": "食事の文化",
+      "culture1": "ご飯・スープはスプーン、おかず・肉は箸が自然です。箸をご飯に突き立てないのが一般的です。",
+      "culture2": "おかずはシェアし、同行がいればメニューを一緒に選ぶと楽。辛さが心配なら控えめを頼んでみましょう。",
+      "culture3": "ベルや「저기요」で店員を呼び、水・おかずはセルフが多いです。会計はカウンター、チップは通常不要です。",
+      "culture4": "完璧なマナーより、周囲を一度見ることが役立ちます。",
+      "transitBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/transit.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울에서는 대중교통이 훨씬 편한 경우가 많습니다\n\n렌터카나 자가용으로 다니면 정체·주차·내비게이션 스트레스가 커질 수 있어요. 시내 이동은 지하철·버스가 더 빠르고 예측 가능한 경우가 많습니다. 꼭 차가 나쁜 건 아니지만, 서울 관광 일정이라면 대중교통을 기본으로 잡아 두면 마음이 편합니다.",
+          "en": "In Seoul, transit is often much easier\n\nDriving or renting a car can mean traffic, parking, and navigation stress. For getting around the city, subway and bus are often faster and more predictable. Cars aren’t “wrong” — but for a Seoul sightseeing trip, starting with public transit usually feels calmer.",
+          "ja": "ソウルでは公共交通のほうが楽なことが多いです\n\nレンタカーや自家用車だと渋滞・駐車・ナビのストレスが増えがち。市内移動は地下鉄・バスのほうが速くて読みやすいことが多いです。車が悪いわけではありませんが、ソウル観光ならまず公共交通を基本にすると安心です。",
+          "zh": "在首尔，公共交通往往更省心\n\n自驾或租车可能遇到堵车、停车和导航压力。市区出行时，地铁和公交常常更快、更可预期。并不是说开车不好——但如果是首尔观光行程，以公共交通为主通常更轻松。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철 + 버스, 이렇게 쓰면 됩니다\n\n네이버지도·카카오맵에서 대중교통 경로를 보면 환승·출구까지 안내됩니다. 지하철은 노선 색과 출구 번호를 기억하면 골목 찾기가 수월하고, 버스는 정류장 번호·도착 안내를 확인하면 됩니다. 짐이 많거나 심야·비 오는 날에는 택시 탭도 함께 참고하세요.",
+          "en": "Subway + bus — the practical combo\n\nNaver Map and Kakao Map show transit routes with transfers and exits. Remember line colors and exit numbers on the subway; for buses, check stop numbers and arrival info. With heavy bags, late at night, or in rain, also see the Taxi tab.",
+          "ja": "地下鉄＋バスの使い方\n\nNaver地図・カカオマップの公共交通ルートで乗換や出口まで案内されます。地下鉄は路線色と出口番号、バスは停留所番号・到着案内を確認。荷物が多い・深夜・雨の日はタクシーのタブも参考に。",
+          "zh": "地铁 + 公交，这样用就够\n\nNaver Map、Kakao Map 的公交路线会标换乘和出口。地铁记住线路颜色和出口编号；公交看站牌编号和到站信息。行李多、深夜或下雨时，也可参考「出租车」分栏。"
+        },
+        {
+          "type": "text",
+          "ko": "교통카드는 짧게만\n\n티머니·캐시비·기후동행카드(조건에 맞을 때) 등은 ‘돈’ 카테고리와 Wow Pass 탭에서 구입·충전을 정리해 두었습니다. 여기서는 도착 전에 “카드를 쓸 생각”만 해 두면 충분합니다. 버스는 내릴 때도 태그하는 점이 중요하니, 여행 중 팁의하차·환승도 함께 보세요.",
+          "en": "Transit cards — keep it short\n\nT-money, Cashbee, and Climate Card (when eligible) are covered under Money and Wow Pass. Before you fly, just plan to use a card. On buses you also tap when you get off — see Travel tips → Tap out / transfers while you’re on the ground.",
+          "ja": "交通カードは短く\n\nT-money・Cashbee・気候同行カード（条件による）などは「お金」と Wow Pass タブで購入・チャージをまとめています。出発前は「カードを使う」つもりで十分。バスは降車時もタッチが大切なので、旅行中ヒントの「降車・乗換」も見てください。",
+          "zh": "交通卡只提一句\n\nT-money、Cashbee、气候同行卡（符合条件时）的购买/充值见「钱」与 Wow Pass。出发前心里有「会用交通卡」就够。公交下车也要刷卡——抵达后可看旅行贴士里的「下车·换乘」。"
+        },
+        {
+          "type": "callout",
+          "ko": "지방·제주처럼 렌터가 편한 코스도 있습니다. 서울 시내만이라도 지하철·버스를 기본으로 두면, 첫날이 훨씬 덜 바빠집니다.",
+          "en": "Some regions (and Jeju) are easier by rental car. Even if you only use subway/bus inside Seoul, day one feels much lighter.",
+          "ja": "地方や済州のようにレンタカーが楽なコースもあります。ソウル市内だけでも地下鉄・バスを基本にすると初日が楽になります。",
+          "zh": "地方或济州等地租车可能更方便。哪怕只在首尔市区以地铁公交为主，第一天也会轻松很多。"
+        }
+      ],
+      "cultureBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/culture.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "수저 세트, 이렇게 쓰면 편합니다\n\n한국 식당에서는 보통 숟가락과 젓가락이 함께 나옵니다. 밥·국·찌개는 숟가락, 반찬·고기·면은 젓가락을 쓰는 편이 자연스럽습니다. 젓가락을 밥그릇에 꽂아 세우지 않는 것이 보통이고, 공용 반찬은 자기 젓가락으로 집어도 무방한 곳이 많지만 집게·공용 수저가 있으면 그걸 쓰세요.",
+          "en": "Spoon + chopsticks (sujeo)\n\nMost Korean meals come with a spoon and chopsticks. Use the spoon for rice, soup, and stews; chopsticks for banchan, meat, and noodles. Avoid standing chopsticks upright in rice. Shared banchan is often taken with your own chopsticks, but use serving tongs/spoons when provided.",
+          "ja": "スプーンと箸（スジョ）\n\n韓国の食事ではスプーンと箸がセットで出ることが多いです。ご飯・スープ・チゲはスプーン、おかず・肉・麺は箸が自然です。箸をご飯に突き立てないのが一般的。共用おかずは自分の箸で取ることが多いですが、トングや共用スプーンがあればそちらを。",
+          "zh": "勺子 + 筷子（수저）\n\n韩国餐桌上通常同时有勺子和筷子。米饭、汤、炖菜用勺；小菜、肉、面类用筷更自然。一般不要把筷子竖直插在米饭里。共用小菜多数可用自己的筷子夹，若有公筷/夹子请用公筷。"
+        },
+        {
+          "type": "text",
+          "ko": "함께 먹는 상차림\n\n반찬은 테이블에 놓고 나눠 먹는 문화가 강합니다. 메뉴도 2인분·공유 요리가 많아, 일행이 있으면 같이 고르는 편이 편합니다. 매운맛이 걱정되면 ‘덜 맵게 해주세요’라고 말해 보세요. 남기는 것에 너무 스트레스받지 않아도 됩니다 — 다만 처음엔 양을 조금 적게 주문해도 좋아요.",
+          "en": "Sharing the table\n\nBanchan is meant to be shared. Many dishes assume two people or shared plates, so ordering together is easier. If spice worries you, ask for it milder (“덜 맵게 해주세요”). Don’t stress about finishing every bite — starting with a smaller order is fine.",
+          "ja": "シェアする食卓\n\nおかずはテーブルで分け合う文化が強いです。2人前やシェア料理も多いので、同行がいれば一緒に選ぶと楽。辛さが心配なら「덜 맵게 해주세요」。食べきれなくても気にしすぎなくてOK。最初は少なめ注文でも大丈夫です。",
+          "zh": "一起吃的餐桌\n\n小菜多是共享的。不少菜按两人份或拼桌设计，有同伴时一起点更省事。怕辣可以说「덜 맵게 해주세요」。不必为吃不完太紧张——一开始少点一些也完全可以。"
+        },
+        {
+          "type": "text",
+          "ko": "직원 부르기·물·반찬·계산\n\n테이블 호출벨이 있으면 누르거나, 직원이 보이면 손을 살짝 들어 ‘저기요’ 하면 됩니다. 물·수저·반찬은 셀프인 가게가 많으니 주변을 한 번 보세요. 계산은 출구 쪽 카운터에서 하는 곳이 흔하고, 한 사람이 카드를 내는 경우가 많습니다. 일반 식당에서는 팁을 주지 않는 것이 보통입니다. 현장 디테일은 ‘여행 팁 → 식당’에도 짧게 있습니다.",
+          "en": "Calling staff, water, banchan, paying\n\nUse the call bell if there is one, or a small wave and “저기요.” Water, utensils, and banchan are often self-serve — look around once. Many places take payment at a counter near the exit; one person often pays for the group. Tipping is not expected at typical restaurants. For in-the-moment details, see Travel tips → Dining.",
+          "ja": "店員を呼ぶ・水・おかず・会計\n\n呼び出しベルがあれば押すか、手を少し挙げて「저기요」。水・箸・おかずはセルフが多いので周囲を確認を。会計は入口付近のカウンターが多く、一人がまとめて払うことも普通。一般店ではチップ不要。その場のコツは「旅行のヒント → 食事」も参照。",
+          "zh": "叫服务员、水、小菜、结账\n\n有桌铃就按，或轻轻招手说「저기요」。水、餐具、小菜常是自助——坐下后先看一眼周围。很多店在门口柜台结账，常由一人刷卡。普通餐厅一般不给小费。现场细节也可看「旅行贴士 → 餐厅」。"
+        },
+        {
+          "type": "callout",
+          "ko": "완벽한 예절보다 ‘주변을 한번 보는 것’이 더 도움이 됩니다. 헷갈리면 옆 테이블을 부드럽게 참고해도 괜찮아요.",
+          "en": "A quick look around helps more than perfect etiquette. When unsure, quietly mirror nearby tables.",
+          "ja": "完璧なマナーより、周囲を一度見ることが役立ちます。迷ったら隣のテーブルをそっと参考に。",
+          "zh": "不必追求完美礼仪，先观察周围更有用。不确定时，轻轻参考邻桌即可。"
         }
       ]
     },
@@ -25231,7 +25817,7 @@ window.__I18N_MESSAGES__ = {
       "souvenirTitle": "お土産ガイド",
       "souvenirIntro": "外国人旅行者がよく買うお土産を種類別にまとめました。",
       "tipsTitle": "旅行のヒント",
-      "tipsIntro": "韓国旅行で役立つヒントを集めました。日常・食事・交通・買い物から選んで確認できます。",
+      "tipsIntro": "旅行中にすぐ使えるヒントです。準備・書類は「出発前に」を、ここでは現地でのコツを確認してください。",
       "shoppingTitle": "ショッピングガイド",
       "convenienceTitle": "韓国のコンビニ",
       "airportTitle": "空港 → 明洞",
@@ -25249,15 +25835,15 @@ window.__I18N_MESSAGES__ = {
       "catTransport": "交通",
       "catShopping": "買い物",
       "backHub": "← 旅行のコツ",
-      "dailyCardDesc": "地図・現金・Wi‑Fiなど",
+      "dailyCardDesc": "地図・ゴミ・週末宿・コンビニ・雨の日",
       "restaurantCardDesc": "注文・待ち・水・おかず",
-      "transportCardDesc": "交通カード・ラッシュ・タクシー・出口",
+      "transportCardDesc": "降車・乗換・ラッシュ・出口・マナー",
       "mapTitle": "地図アプリ",
-      "mapMistake": "Googleマップだけを信じて韓国に来ること",
-      "mapBody": "韓国旅行ではGoogleマップだけでなく、Naver MapやKakao Mapも一緒に入れておくと安心です。韓国国内の公共交通・徒歩案内や店舗情報は、Naver Map・Kakao Mapの方が正確なことが多いです。",
-      "cardTitle": "交通カード",
-      "cardMistake": "交通カードなしで毎回切符を買う、バス降車時にタッチしない",
-      "cardBody": "バスや地下鉄だけでなく、タクシーや公共自転車でも交通カードが便利です。カードはコンビニや地下鉄駅で購入・チャージできます。旅行者がよく見落とすのは、バスを降りるときも端末にカードをタッチする必要があるという点です。",
+      "mapMistake": "道探しでGoogleマップだけ使うこと",
+      "mapBody": "現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。",
+      "cardTitle": "バス降車・乗換",
+      "cardMistake": "バス降車時にカードをタッチしないこと",
+      "cardBody": "バスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。",
       "restaurantTitle": "食事のマナー",
       "restaurantMistake": "海外のレストランのルールをそのまま当てはめること",
       "restaurantBody1": "店員が注文を取りに来るまで待っていたら、テーブル横に呼び出しベルがあったり、水やおかずを頼もうとしたらセルフコーナーが別にあったりします。最近はキオスクやタブレットで自分で注文する店も増え、韓国語に慣れていない旅行者には別のハードルになっています。",
@@ -25288,39 +25874,39 @@ window.__I18N_MESSAGES__ = {
       "exitMistake": "適当な出口で出て道に迷うこと",
       "exitBody": "出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
       "weekendTitle": "週末・連休の宿",
-      "weekendMistake": "週末も平日と同じ料金だと思い込むこと",
-      "weekendBody": "金・土・日や連休・繁忙期はホテルやゲストハウス料金が大きく上がることが多いです。可能なら平日を混ぜ、早めに比較・予約を。当日予約はさらに高いことがあります。",
+      "weekendMistake": "旅行中の週末宿が平日と同じ料金だと思うこと",
+      "weekendBody": "金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。",
       "catPickLabel": "テーマ",
       "dailyBody": [
         {
           "type": "text",
-          "ko": "지도 앱\n\n구글 지도 하나만 믿고 한국에 오는 것\n\n현재 한국을 여행할 때는 구글 지도만 준비하기보다 네이버지도나 카카오맵을 함께 설치하는 편이 좋습니다. 한국 내 대중교통·도보 안내, 가게 정보는 네이버지도·카카오맵이 더 정확한 경우가 많습니다.",
-          "en": "Maps\n\nComing to Korea with only Google Maps\n\nWhen traveling in Korea, install Naver Map or Kakao Map in addition to Google Maps. For public transit, walking directions, and local shop info, Naver Map and Kakao Map are often more accurate.",
-          "ja": "地図アプリ\n\nGoogleマップだけを信じて韓国に来ること\n\n韓国旅行ではGoogleマップだけでなく、Naver MapやKakao Mapも一緒に入れておくと安心です。韓国国内の公共交通・徒歩案内や店舗情報は、Naver Map・Kakao Mapの方が正確なことが多いです。"
+          "ko": "지도 앱\n\n길 찾을 때 구글 지도만 쓰는 것\n\n현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+          "en": "Maps\n\nUsing only Google Maps while navigating\n\nFor transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+          "ja": "地図アプリ\n\n道探しでGoogleマップだけ使うこと\n\n現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。"
         },
         {
           "type": "text",
-          "ko": "현금과 카드\n\n카드만 있으면 된다고 생각하는 것\n\n대부분 카드가 되지만 전통시장, 포장마차, 일부 작은 식당·택시는 현금만 받는 경우가 있습니다. 잔돈을 조금 들고 다니세요.",
-          "en": "Cash and cards\n\nAssuming a card works everywhere\n\nMost places take cards, but traditional markets, street stalls, and some small restaurants/taxis are cash-only. Keep small bills.",
-          "ja": "現金とカード\n\nカードだけで足りると思い込むこと\n\n多くの店はカードOKですが、市場・屋台・一部の小さな店やタクシーは現金のみです。少額紙幣を持ち歩きましょう。"
-        },
-        {
-          "type": "text",
-          "ko": "쓰레기통\n\n거리에 쓰레기통이 많을 거라 기대하는 것\n\n한국 도심에는 길거리 쓰레기통이 생각보다 적습니다. 편의점·지하철역·카페를 이용하거나, 작은 쓰레기는 숙소까지 가지고 가는 편이 안전합니다.",
+          "ko": "쓰레기통\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。",
           "en": "Trash bins\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
           "ja": "ゴミ箱\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。"
         },
         {
           "type": "text",
-          "ko": "와이파이·데이터\n\n카페·지하철 Wi-Fi만으로 충분하다고 생각하는 것\n\n공공 Wi-Fi는 불안정할 수 있습니다. eSIM·유심으로 데이터를 확보하면 지도·번역·결제 앱을 끊김 없이 쓸 수 있습니다.",
-          "en": "Wi-Fi and data\n\nThinking café/subway Wi-Fi is enough\n\nPublic Wi-Fi can be unstable. An eSIM/SIM keeps maps, translation, and payment apps online.",
-          "ja": "Wi-Fi・データ\n\nカフェや地下鉄Wi-Fiだけで足りると思い込むこと\n\n公共Wi-Fiは不安定なことがあります。eSIM/SIMでデータがあると地図・翻訳が安心です。"
+          "ko": "주말·연휴 숙소\n\n여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것\n\n금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
+          "en": "Weekend lodging\n\nAssuming a mid-trip weekend stay costs the same as a weekday\n\nFriday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+          "ja": "週末・連休の宿\n\n旅行中の週末宿が平日と同じ料金だと思うこと\n\n金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。"
         },
         {
           "type": "text",
-          "ko": "주말·연휴 숙소\n\n주말에도 평일과 같은 가격일 거라 생각하는 것\n\n금·토·일이나 연휴·성수기에는 호텔·게스트하우스 요금이 평일보다 크게 오르는 경우가 많습니다. 가능하면 평일 숙박을 섞거나, 미리 예약·가격 비교(야놀자·여기어때 등)를 하세요. 당일 예약은 더 비쌀 수 있습니다.",
-          "en": "Weekend lodging\n\nAssuming weekend hotel rates match weekdays\n\nFriday–Sunday and holidays often cost much more than weekdays. Mix in weekday stays when you can, and compare prices early on booking apps. Same-day bookings can be pricier.",
-          "ja": "週末・連休の宿\n\n週末も平日と同じ料金だと思い込むこと\n\n金・土・日や連休・繁忙期はホテルやゲストハウス料金が大きく上がることが多いです。可能なら平日を混ぜ、早めに比較・予約を。当日予約はさらに高いことがあります。"
+          "ko": "편의점\n\n편의점은 간식만 산다고 생각하는 것\n\nCU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+          "en": "Convenience stores\n\nThinking convenience stores are only for snacks\n\nCU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+          "ja": "コンビニ\n\nコンビニはおやつだけと思うこと\n\nCU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。"
+        },
+        {
+          "type": "text",
+          "ko": "비 오는 날\n\n우산 없이 밖으로 나갔다가 당황하는 것\n\n갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+          "en": "Rainy days\n\nHeading out without a plan when it suddenly rains\n\nIf rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+          "ja": "雨の日\n\n突然の雨に傘なしで慌てること\n\n急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。"
         }
       ],
       "restaurantBody": [
@@ -25358,35 +25944,37 @@ window.__I18N_MESSAGES__ = {
       "transportBody": [
         {
           "type": "text",
-          "ko": "교통카드\n\n교통카드 없이 매번 표를 사거나, 버스에서 하차 태그를 하지 않는 것\n\n버스와 지하철뿐 아니라 택시와 공공자전거 등을 이용할 때도 교통카드가 유용합니다. 카드는 편의점이나 지하철역에서 구입·충전할 수 있습니다. 다만 외국인 여행객이 자주 놓치는 부분은 버스에서 내릴 때도 카드를 단말기에 찍어야 한다는 점입니다.",
-          "en": "Transit card\n\nBuying a ticket every time, or not tapping out on the bus\n\nA transit card is useful not only for buses and the subway, but also for taxis and public bikes. You can buy and top up cards at convenience stores or subway stations. One thing many travelers miss: on buses, you must tap your card again when you get off.",
-          "ja": "交通カード\n\n交通カードなしで毎回切符を買う、バス降車時にタッチしない\n\nバスや地下鉄だけでなく、タクシーや公共自転車でも交通カードが便利です。カードはコンビニや地下鉄駅で購入・チャージできます。旅行者がよく見落とすのは、バスを降りるときも端末にカードをタッチする必要があるという点です。"
+          "ko": "버스 하차·환승\n\n버스에서 내릴 때 카드를 찍지 않는 것\n\n버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
+          "en": "Bus tap-out & transfers\n\nNot tapping when you get off the bus\n\nOn buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+          "ja": "バス降車・乗換\n\nバス降車時にカードをタッチしないこと\n\nバスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。"
         },
         {
           "type": "text",
-          "ko": "출퇴근 혼잡\n\n출퇴근 시간에 관광지로 이동하는 것\n\n평일 07–09시, 18–20시 지하철·버스는 매우 붐빕니다. 가능하면 이 시간을 피하거나, 짐이 많으면 택시를 고려하세요.",
+          "ko": "출퇴근 혼잡\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
           "en": "Rush hour\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
-          "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。"
+          "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
+          "zh": "通勤高峰\n\n高峰时段去景点移动\n\n工作日 7–9 点、18–20 点地铁公交很挤。尽量避开；行李多时可考虑出租车。"
         },
         {
           "type": "text",
-          "ko": "택시 이용\n\n주소만 말로 설명하려다 헤매는 것\n\n카카오 T·우티 등으로 호출하거나, 숙소·목적지 주소를 한국어로 보여 주면 편합니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요.",
-          "en": "Taxis\n\nOnly explaining the address out loud\n\nUse Kakao T / Uber-style apps, or show the destination in Korean. Ask for a receipt if you need one.",
-          "ja": "タクシー\n\n住所を口だけで説明して迷うこと\n\nカカオTなどで呼ぶか、目的地を韓国語で見せると楽です。領収書が必要なら「영수증 주세요」。"
-        },
-        {
-          "type": "text",
-          "ko": "지하철 출구\n\n아무 출구로 나와 길을 잃는 것\n\n같은 역이라도 출구 번호에 따라 도착지가 크게 달라집니다. 지도 앱에서 추천 출구를 확인한 뒤 나오세요.",
+          "ko": "지하철 출구\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
           "en": "Subway exits\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
-          "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。"
+          "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
+          "zh": "地铁出口\n\n随便找个出口就出站\n\n同一车站出口编号差别很大。出站前先在地图 App 确认推荐出口。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철·버스 매너\n\n출입문 앞에서 막거나 큰 소리로 통화하는 것\n\n내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+          "en": "Subway & bus etiquette\n\nBlocking the doors or taking loud phone calls\n\nLet exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+          "ja": "地下鉄・バスのマナー\n\nドア前で塞ぐ、大きな声で通話する\n\n降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。"
         }
       ],
       "noTipTitle": "チップ",
       "noTipMistake": "韓国の一般的な飲食店ではチップは不要です",
       "noTipBody": "韓国の一般的なレストランやカフェにチップ文化はありません。基本はチップなしです。",
-      "catDailyIntro": "地図・現金・ゴミ・データ・週末の宿など、韓国の日常で迷いやすいポイントです。",
-      "catRestaurantIntro": "注文・チップ・待ち行列・セルフコーナーなど、店ですぐ使えるヒントです。",
-      "catTransportIntro": "交通カード・ラッシュ・タクシー・地下鉄出口を短くまとめました。",
+      "catDailyIntro": "地図・ゴミ・週末料金・コンビニ・雨の日など、旅行中によく出会う日常ヒントです。",
+      "catRestaurantIntro": "注文・チップ・待ち行列・セルフ — 店でそのまま使えるヒントです。",
+      "catTransportIntro": "降車・乗換、ラッシュ、出口、簡単なマナー。料金・カード準備は「出発前に」へ。",
       "catShoppingIntro": "オリーブヤング・ダイソー・免税・市場のヒントをこの場で確認（別ページ移動なし）。",
       "tabMap": "地図アプリ",
       "tabCash": "現金·カード",
@@ -25397,14 +25985,104 @@ window.__I18N_MESSAGES__ = {
       "tabNoTip": "チップ",
       "tabQueue": "待ち行列",
       "tabWater": "水·おかず",
-      "tabCard": "交通カード",
+      "tabCard": "降車・乗換",
       "tabRush": "ラッシュ",
       "tabTaxi": "タクシー",
       "tabExit": "地下鉄出口",
       "tabOlive": "オリーブヤング",
       "tabDaiso": "ダイソー",
       "tabDuty": "免税·TAX FREE",
-      "tabMarket": "市場·繁華街"
+      "tabMarket": "市場·繁華街",
+      "tabConvenience": "コンビニ",
+      "convenienceTitle": "コンビニ",
+      "convenienceMistake": "コンビニはおやつだけと思うこと",
+      "convenienceBody": "CU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。",
+      "tabRain": "雨の日",
+      "rainTitle": "雨の日",
+      "rainMistake": "突然の雨に傘なしで慌てること",
+      "rainBody": "急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。",
+      "tabEtiquette": "電車マナー",
+      "etiquetteTitle": "地下鉄・バスのマナー",
+      "etiquetteMistake": "ドア前で塞ぐ、大きな声で通話する",
+      "etiquetteBody": "降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。",
+      "mapCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/map.jpg"
+        }
+      ],
+      "trashCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/trash.jpg"
+        }
+      ],
+      "weekendCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/weekend.jpg"
+        }
+      ],
+      "convenienceCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/convenience.jpg"
+        }
+      ],
+      "rainCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rain.jpg"
+        }
+      ],
+      "orderCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/order.jpg"
+        }
+      ],
+      "noTipCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/notip.jpg"
+        }
+      ],
+      "queueCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/queue.jpg"
+        }
+      ],
+      "waterCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/water.jpg"
+        }
+      ],
+      "cardCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/card.jpg"
+        }
+      ],
+      "rushCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rush.jpg"
+        }
+      ],
+      "exitCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/exit.jpg"
+        }
+      ],
+      "etiquetteCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/etiquette.jpg"
+        }
+      ]
     },
     "korean": {
       "pageTitle": "役立つ韓国語",
@@ -28640,6 +29318,7 @@ window.__I18N_MESSAGES__ = {
       "tabMoney": "现金·卡片",
       "tabConnect": "通讯·电源",
       "tabPack": "行李·预订",
+      "tabTaxi": "出租车",
       "docsTitle": "准备证件",
       "docs1": "出发前请确认护照剩余有效期（回国日+6个月）以及是否需要签证或 K-ETA。",
       "docs2": "请在手机准备住宿地址、停留目的与回程机票。电子入境申报（ERI）请在单独分栏填写。",
@@ -28806,6 +29485,59 @@ window.__I18N_MESSAGES__ = {
         }
       ],
       "pack4": "在行李箱中留出一些空间以便回家购物。 Olive Young、Daiso 的礼物和零食都比较大。",
+      "taxiTitle": "出租车费用与使用提示",
+      "taxi1": "截至 2026 年，首尔中型（普通）出租车基本费为 1.6 km 内 ₩4,800，之后按里程与时间计费。",
+      "taxi2": "深夜（22–04 点）按时段约加价 20% 或 40%。其他城市资费可能不同。",
+      "taxi3": "可路边招车或用 Kakao T 叫车。普遍刷卡，无需小费。",
+      "taxi4": "Naver/Kakao 地图选汽车路线常能看到预估车费。如今乱要价很少见；想更安心可用 App 叫车。",
+      "taxiBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/taxi.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울 택시, 이렇게만 알아 두세요\n\n아래는 2026년 기준 서울 중형(일반)택시 요금입니다. 서울시가 고시한 현행 요금표(2023년 2월 적용 이후 유지)를 여행용으로 짧게 정리한 것이며, 부산·제주 등 다른 지역은 기본요금이 다를 수 있습니다.",
+          "en": "Seoul taxis — a quick primer\n\nFares below are for Seoul medium (regular) taxis as of 2026 — the city’s current posted schedule (in effect since Feb 2023). Other cities (Busan, Jeju, etc.) set their own base fares.",
+          "ja": "ソウルのタクシー、これだけ覚えればOK\n\n以下は2026年時点のソウル中型（一般）タクシー料金です。ソウル市の現行公示（2023年2月適用以降）を旅行向けに短くまとめたもので、釜山・済州など他地域は基本料金が異なる場合があります。",
+          "zh": "首尔出租车，记住这些就够\n\n以下为 2026 年首尔中型（普通）出租车现行资费，依据首尔市公示（自 2023 年 2 月起适用并沿用）。釜山、济州等其他地区基本费可能不同。"
+        },
+        {
+          "type": "text",
+          "ko": "기본요금·거리·시간 (주간)\n\n· 기본요금: 1.6km까지 4,800원\n· 거리요금: 131m당 100원\n· 시간요금: 30초당 100원 (시속 약 15.7km 미만일 때 거리와 함께 계산)\n\n막히면 시간요금이 더해져 예상보다 조금 나올 수 있어요.",
+          "en": "Base, distance & time (daytime)\n\n· Base: ₩4,800 up to 1.6 km\n· Distance: ₩100 per 131 m\n· Time: ₩100 per 30 sec (when under about 15.7 km/h, time is counted with distance)\n\nIn heavy traffic the meter can run a bit higher than a free-flow estimate.",
+          "ja": "基本・距離・時間（日中）\n\n· 基本料金: 1.6kmまで4,800ウォン\n· 距離: 131mあたり100ウォン\n· 時間: 30秒あたり100ウォン（時速約15.7km未満で距離と同時計算）\n\n渋滞時は時間料金が乗り、想定より少し高くなることがあります。",
+          "zh": "基本费·里程·时间（白天）\n\n· 基本费：1.6 km 内 ₩4,800\n· 里程：每 131 m ₩100\n· 时间：每 30 秒 ₩100（时速约低于 15.7 km/h 时与里程一并计算）\n\n堵车时时间费会叠加，可能略高于畅通时的预估。"
+        },
+        {
+          "type": "text",
+          "ko": "심야 할증 (22:00~04:00)\n\n· 22~23시, 02~04시: 약 20% (기본요금 5,800원)\n· 23~02시: 약 40% (기본요금 6,700원)\n\n거리·시간 요금에도 같은 비율이 적용됩니다. 서울 밖으로 나가면 시계외 할증(약 20%)이 더해질 수 있고, 심야와 겹치면 최대 약 60%까지입니다.",
+          "en": "Late-night surcharge (10 PM–4 AM)\n\n· 10–11 PM and 2–4 AM: about 20% (base ₩5,800)\n· 11 PM–2 AM: about 40% (base ₩6,700)\n\nThe same rates apply to distance/time. Leaving Seoul may add an out-of-city surcharge (~20%); stacked with late-night, up to about 60%.",
+          "ja": "深夜割増（22:00〜04:00）\n\n· 22〜23時・02〜04時: 約20%（基本5,800ウォン）\n· 23〜02時: 約40%（基本6,700ウォン）\n\n距離・時間にも同率。ソウル市外は市外割増（約20%）が付くことがあり、深夜と重なると最大約60%です。",
+          "zh": "深夜加价（22:00–04:00）\n\n· 22–23 点、02–04 点：约 20%（基本费 ₩5,800）\n· 23–02 点：约 40%（基本费 ₩6,700）\n\n里程与时间费同比例加价。出首尔市区可能另加市外约 20%；与深夜叠加时最高约 60%。"
+        },
+        {
+          "type": "text",
+          "ko": "타는 방법·결제\n\n길거리나 택시승차대에서 손을 들거나, 카카오 T 같은 앱으로 부를 수 있습니다. 앱 사용법은 ‘유용한 앱 → 카카오 T’를 참고하세요. 목적지 주소를 한국어로 보여 주면 편합니다.\n\n카드·교통카드 결제가 일반적이고, 한국에서는 팁을 주지 않습니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요. 공항에서는 미터기 택시·앱 호출·공식 공항 택시를 이용하고, 임의로 가격을 부르는 호객은 정중히 거절하면 됩니다.",
+          "en": "How to ride & pay\n\nHail on the street or at a taxi stand, or request via an app like Kakao T (see Useful Apps → Kakao T). Showing the destination in Korean helps.\n\nCards and transit cards are widely accepted; tipping is not expected. Ask for a receipt with “영수증 주세요.” At airports, use metered, app, or official airport taxis — you can politely decline anyone quoting a random cash price.",
+          "ja": "乗り方・支払い\n\n路上やタクシー乗り場で手を挙げるか、カカオTなどのアプリで呼べます（「役立つアプリ → カカオT」参照）。目的地を韓国語で見せるとスムーズです。\n\nカード・交通カード払いが多く、チップは不要。「영수증 주세요」で領収書を。空港ではメーター・アプリ・公式空港タクシーを使い、その場の口頭料金の呼び込みは丁寧に断って大丈夫です。",
+          "zh": "怎么坐、怎么付\n\n可在路边或出租车站招手，也可用 Kakao T 等 App 叫车（见「实用 App → Kakao T」）。用韩语出示目的地地址会更顺畅。\n\n普遍可用刷卡或交通卡，韩国不需要给小费。需要收据时说「영수증 주세요」。在机场请用打表车、App 或官方机场出租车；若有人随口报价揽客，礼貌拒绝即可。"
+        },
+        {
+          "type": "text",
+          "ko": "지도 앱으로 대략 요금 보기\n\n네이버지도·카카오맵에서 길찾기를 연 뒤 이동 수단을 「자동차」로 고르면, 많은 구간에서 예상 택시 요금이 함께 표시됩니다. 참고용 숫자라 실제 미터기와 조금 다를 수 있지만, 이동 전에 감을 잡기 좋습니다.",
+          "en": "Rough fare on map apps\n\nIn Naver Map or Kakao Map, open directions and choose car mode — many routes also show an estimated taxi fare. It’s a guide only (the meter may differ slightly), but helpful for a ballpark before you ride.",
+          "ja": "地図アプリでだいたいの料金\n\nNaver地図やカカオマップで経路検索し、移動手段を「自動車」にすると、多くの区間でタクシーの目安料金も出ます。参考値なのでメーターと多少違うこともありますが、乗る前の目安になります。",
+          "zh": "用地图 App 看大概车费\n\n在 Naver Map 或 Kakao Map 打开路线，把交通方式选为「汽车」，不少路段会一并显示预估出租车费。仅为参考，可能与计价器略有出入，但出发前心里有数会更踏实。"
+        },
+        {
+          "type": "callout",
+          "ko": "요즘 서울에서 바가지 요금은 거의 없습니다. 미터기로 가는 일반 택시가 기본이에요. 그래도 마음이 놓이려면 카카오 T 등으로 호출해 보시면 됩니다. 만에 하나 요금이 이상하게 느껴지면 차량 번호판·차내 택시 면허 표시를 메모해 두고, 서울은 다산콜센터 120, 여행 통역·안내는 1330으로 문의할 수 있습니다. 차안에 QR 불편신고 안내가 붙어 있는 경우도 있습니다.",
+          "en": "Overcharging is rare in Seoul these days — metered regular taxis are the norm. For extra peace of mind, you can request a ride in Kakao T or similar apps. If a fare still feels off, note the license plate and the taxi license display inside, then ask Seoul’s Dasan Call Center 120, or tourist helpline 1330. Some cabs also show an in-car QR for feedback.",
+          "ja": "最近のソウルではぼったくり料金はほとんどありません。メーターの一般タクシーが基本です。安心したいときはカカオTなどで呼ぶのも手です。万一料金がおかしいと感じたらナンバーと車内のタクシー免許表示をメモし、ソウルは多山コールセンター120、観光通訳案内は1330へ。車内にQR案内がある場合もあります。",
+          "zh": "如今在首尔，乱要价的情况很少见，按表计费的普通出租车是常态。若想更安心，可用 Kakao T 等 App 叫车。万一仍觉得费用异常，可记下车牌与车内出租车执照信息，首尔可打市政热线 120，旅游通译/咨询可打 1330；部分车内也贴有反馈用 QR。"
+        }
+      ],
       "tabSolo": "独自用餐",
       "soloTitle": "一个人去餐厅，一个人吃饭",
       "soloBody": [
@@ -28961,8 +29693,8 @@ window.__I18N_MESSAGES__ = {
       "catDining": "用餐",
       "catEntryIntro": "证件、电子入境申报与机场审查——入境前请确认这些项目。",
       "catMoneyIntro": "整理了现金、银行卡、交通卡以及游客用 Wow Pass。",
-      "catLifeIntro": "流量、电源与行李/住宿预订等，落地后生活所需的准备。",
-      "catDiningIntro": "一个人进餐厅感到压力时，可先了解这些提示。",
+      "catLifeIntro": "流量与电源、行李与住宿，以及公共交通与出租车等落地生活准备。",
+      "catDiningIntro": "用餐文化与独自用餐 — 抵达前了解会更安心。",
       "tabEri": "电子入境申报(ERI)",
       "tabWowpass": "Wow Pass",
       "eriTitle": "电子入境申报（e-Arrival / ERI）",
@@ -29059,6 +29791,86 @@ window.__I18N_MESSAGES__ = {
           "en": "Spring (Mar–May) and autumn (Sep–early/mid Nov, outside Chuseok week) are usually easier for outdoor trips. Avoid peak holiday crowds if you want a calmer first visit.",
           "ja": "春（3〜5月）と秋（9〜11月上中旬、チュソク連休を除く）は屋外旅行に無難。連休・繁忙の混雑を避ければ初めてでも負担が少なめです。",
           "zh": "春季（3–5 月）与秋季（9–11 月上中旬，避开中秋长假）通常更适合户外。想轻松的初次旅行，可尽量避开长假人潮。"
+        }
+      ],
+      "tabTransit": "公共交通",
+      "transitTitle": "公共交通",
+      "transit1": "在首尔市区，地铁和公交往往比租车/自驾更省心、更可预期，也能少操心堵车和停车。",
+      "transit2": "用 Naver/Kakao Map 的公交路线看换乘与出口。行李多或深夜时也可参考「出租车」分栏。",
+      "transit3": "T-money、Cashbee、气候同行卡等的购买/充值见「钱」与 Wow Pass。公交下车刷卡见旅行贴士。",
+      "transit4": "地方或济州等地租车可能更方便。哪怕只在首尔以公共交通为主，第一天也会轻松很多。",
+      "tabCulture": "用餐文化",
+      "cultureTitle": "用餐文化",
+      "culture1": "米饭和汤用勺，小菜和肉用筷更自然。一般不要把筷子竖直插在米饭里。",
+      "culture2": "小菜多是共享；有同伴时一起点菜更省事。怕辣可以要求少辣一点。",
+      "culture3": "用桌铃或轻轻说「저기요」叫服务员；水/小菜常是自助。柜台结账，普通餐厅一般不给小费。",
+      "culture4": "先观察周围，比追求完美礼仪更有用。",
+      "transitBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/transit.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "서울에서는 대중교통이 훨씬 편한 경우가 많습니다\n\n렌터카나 자가용으로 다니면 정체·주차·내비게이션 스트레스가 커질 수 있어요. 시내 이동은 지하철·버스가 더 빠르고 예측 가능한 경우가 많습니다. 꼭 차가 나쁜 건 아니지만, 서울 관광 일정이라면 대중교통을 기본으로 잡아 두면 마음이 편합니다.",
+          "en": "In Seoul, transit is often much easier\n\nDriving or renting a car can mean traffic, parking, and navigation stress. For getting around the city, subway and bus are often faster and more predictable. Cars aren’t “wrong” — but for a Seoul sightseeing trip, starting with public transit usually feels calmer.",
+          "ja": "ソウルでは公共交通のほうが楽なことが多いです\n\nレンタカーや自家用車だと渋滞・駐車・ナビのストレスが増えがち。市内移動は地下鉄・バスのほうが速くて読みやすいことが多いです。車が悪いわけではありませんが、ソウル観光ならまず公共交通を基本にすると安心です。",
+          "zh": "在首尔，公共交通往往更省心\n\n自驾或租车可能遇到堵车、停车和导航压力。市区出行时，地铁和公交常常更快、更可预期。并不是说开车不好——但如果是首尔观光行程，以公共交通为主通常更轻松。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철 + 버스, 이렇게 쓰면 됩니다\n\n네이버지도·카카오맵에서 대중교통 경로를 보면 환승·출구까지 안내됩니다. 지하철은 노선 색과 출구 번호를 기억하면 골목 찾기가 수월하고, 버스는 정류장 번호·도착 안내를 확인하면 됩니다. 짐이 많거나 심야·비 오는 날에는 택시 탭도 함께 참고하세요.",
+          "en": "Subway + bus — the practical combo\n\nNaver Map and Kakao Map show transit routes with transfers and exits. Remember line colors and exit numbers on the subway; for buses, check stop numbers and arrival info. With heavy bags, late at night, or in rain, also see the Taxi tab.",
+          "ja": "地下鉄＋バスの使い方\n\nNaver地図・カカオマップの公共交通ルートで乗換や出口まで案内されます。地下鉄は路線色と出口番号、バスは停留所番号・到着案内を確認。荷物が多い・深夜・雨の日はタクシーのタブも参考に。",
+          "zh": "地铁 + 公交，这样用就够\n\nNaver Map、Kakao Map 的公交路线会标换乘和出口。地铁记住线路颜色和出口编号；公交看站牌编号和到站信息。行李多、深夜或下雨时，也可参考「出租车」分栏。"
+        },
+        {
+          "type": "text",
+          "ko": "교통카드는 짧게만\n\n티머니·캐시비·기후동행카드(조건에 맞을 때) 등은 ‘돈’ 카테고리와 Wow Pass 탭에서 구입·충전을 정리해 두었습니다. 여기서는 도착 전에 “카드를 쓸 생각”만 해 두면 충분합니다. 버스는 내릴 때도 태그하는 점이 중요하니, 여행 중 팁의하차·환승도 함께 보세요.",
+          "en": "Transit cards — keep it short\n\nT-money, Cashbee, and Climate Card (when eligible) are covered under Money and Wow Pass. Before you fly, just plan to use a card. On buses you also tap when you get off — see Travel tips → Tap out / transfers while you’re on the ground.",
+          "ja": "交通カードは短く\n\nT-money・Cashbee・気候同行カード（条件による）などは「お金」と Wow Pass タブで購入・チャージをまとめています。出発前は「カードを使う」つもりで十分。バスは降車時もタッチが大切なので、旅行中ヒントの「降車・乗換」も見てください。",
+          "zh": "交通卡只提一句\n\nT-money、Cashbee、气候同行卡（符合条件时）的购买/充值见「钱」与 Wow Pass。出发前心里有「会用交通卡」就够。公交下车也要刷卡——抵达后可看旅行贴士里的「下车·换乘」。"
+        },
+        {
+          "type": "callout",
+          "ko": "지방·제주처럼 렌터가 편한 코스도 있습니다. 서울 시내만이라도 지하철·버스를 기본으로 두면, 첫날이 훨씬 덜 바빠집니다.",
+          "en": "Some regions (and Jeju) are easier by rental car. Even if you only use subway/bus inside Seoul, day one feels much lighter.",
+          "ja": "地方や済州のようにレンタカーが楽なコースもあります。ソウル市内だけでも地下鉄・バスを基本にすると初日が楽になります。",
+          "zh": "地方或济州等地租车可能更方便。哪怕只在首尔市区以地铁公交为主，第一天也会轻松很多。"
+        }
+      ],
+      "cultureBody": [
+        {
+          "type": "image",
+          "src": "Images/before-trip/culture.jpg"
+        },
+        {
+          "type": "text",
+          "ko": "수저 세트, 이렇게 쓰면 편합니다\n\n한국 식당에서는 보통 숟가락과 젓가락이 함께 나옵니다. 밥·국·찌개는 숟가락, 반찬·고기·면은 젓가락을 쓰는 편이 자연스럽습니다. 젓가락을 밥그릇에 꽂아 세우지 않는 것이 보통이고, 공용 반찬은 자기 젓가락으로 집어도 무방한 곳이 많지만 집게·공용 수저가 있으면 그걸 쓰세요.",
+          "en": "Spoon + chopsticks (sujeo)\n\nMost Korean meals come with a spoon and chopsticks. Use the spoon for rice, soup, and stews; chopsticks for banchan, meat, and noodles. Avoid standing chopsticks upright in rice. Shared banchan is often taken with your own chopsticks, but use serving tongs/spoons when provided.",
+          "ja": "スプーンと箸（スジョ）\n\n韓国の食事ではスプーンと箸がセットで出ることが多いです。ご飯・スープ・チゲはスプーン、おかず・肉・麺は箸が自然です。箸をご飯に突き立てないのが一般的。共用おかずは自分の箸で取ることが多いですが、トングや共用スプーンがあればそちらを。",
+          "zh": "勺子 + 筷子（수저）\n\n韩国餐桌上通常同时有勺子和筷子。米饭、汤、炖菜用勺；小菜、肉、面类用筷更自然。一般不要把筷子竖直插在米饭里。共用小菜多数可用自己的筷子夹，若有公筷/夹子请用公筷。"
+        },
+        {
+          "type": "text",
+          "ko": "함께 먹는 상차림\n\n반찬은 테이블에 놓고 나눠 먹는 문화가 강합니다. 메뉴도 2인분·공유 요리가 많아, 일행이 있으면 같이 고르는 편이 편합니다. 매운맛이 걱정되면 ‘덜 맵게 해주세요’라고 말해 보세요. 남기는 것에 너무 스트레스받지 않아도 됩니다 — 다만 처음엔 양을 조금 적게 주문해도 좋아요.",
+          "en": "Sharing the table\n\nBanchan is meant to be shared. Many dishes assume two people or shared plates, so ordering together is easier. If spice worries you, ask for it milder (“덜 맵게 해주세요”). Don’t stress about finishing every bite — starting with a smaller order is fine.",
+          "ja": "シェアする食卓\n\nおかずはテーブルで分け合う文化が強いです。2人前やシェア料理も多いので、同行がいれば一緒に選ぶと楽。辛さが心配なら「덜 맵게 해주세요」。食べきれなくても気にしすぎなくてOK。最初は少なめ注文でも大丈夫です。",
+          "zh": "一起吃的餐桌\n\n小菜多是共享的。不少菜按两人份或拼桌设计，有同伴时一起点更省事。怕辣可以说「덜 맵게 해주세요」。不必为吃不完太紧张——一开始少点一些也完全可以。"
+        },
+        {
+          "type": "text",
+          "ko": "직원 부르기·물·반찬·계산\n\n테이블 호출벨이 있으면 누르거나, 직원이 보이면 손을 살짝 들어 ‘저기요’ 하면 됩니다. 물·수저·반찬은 셀프인 가게가 많으니 주변을 한 번 보세요. 계산은 출구 쪽 카운터에서 하는 곳이 흔하고, 한 사람이 카드를 내는 경우가 많습니다. 일반 식당에서는 팁을 주지 않는 것이 보통입니다. 현장 디테일은 ‘여행 팁 → 식당’에도 짧게 있습니다.",
+          "en": "Calling staff, water, banchan, paying\n\nUse the call bell if there is one, or a small wave and “저기요.” Water, utensils, and banchan are often self-serve — look around once. Many places take payment at a counter near the exit; one person often pays for the group. Tipping is not expected at typical restaurants. For in-the-moment details, see Travel tips → Dining.",
+          "ja": "店員を呼ぶ・水・おかず・会計\n\n呼び出しベルがあれば押すか、手を少し挙げて「저기요」。水・箸・おかずはセルフが多いので周囲を確認を。会計は入口付近のカウンターが多く、一人がまとめて払うことも普通。一般店ではチップ不要。その場のコツは「旅行のヒント → 食事」も参照。",
+          "zh": "叫服务员、水、小菜、结账\n\n有桌铃就按，或轻轻招手说「저기요」。水、餐具、小菜常是自助——坐下后先看一眼周围。很多店在门口柜台结账，常由一人刷卡。普通餐厅一般不给小费。现场细节也可看「旅行贴士 → 餐厅」。"
+        },
+        {
+          "type": "callout",
+          "ko": "완벽한 예절보다 ‘주변을 한번 보는 것’이 더 도움이 됩니다. 헷갈리면 옆 테이블을 부드럽게 참고해도 괜찮아요.",
+          "en": "A quick look around helps more than perfect etiquette. When unsure, quietly mirror nearby tables.",
+          "ja": "完璧なマナーより、周囲を一度見ることが役立ちます。迷ったら隣のテーブルをそっと参考に。",
+          "zh": "不必追求完美礼仪，先观察周围更有用。不确定时，轻轻参考邻桌即可。"
         }
       ]
     },
@@ -34686,7 +35498,7 @@ window.__I18N_MESSAGES__ = {
       "souvenirTitle": "纪念品指南",
       "souvenirIntro": "我们收集了外国游客经常购买的各种类型的纪念品。",
       "tipsTitle": "旅行小贴士",
-      "tipsIntro": "汇集了韩国旅行时值得参考的小贴士。可按日常、用餐、交通、购物主题查看。",
+      "tipsIntro": "旅行途中立刻用得上的贴士。准备与证件请看「出发前」；这里整理落地后的实用窍门。",
       "shoppingTitle": "导购",
       "convenienceTitle": "韩国便利店",
       "airportTitle": "机场 → 明洞",
@@ -34704,15 +35516,15 @@ window.__I18N_MESSAGES__ = {
       "catTransport": "交通",
       "catShopping": "购物",
       "backHub": "← 旅行贴士",
-      "dailyCardDesc": "现金、垃圾、Wi‑Fi、周末等日常小贴士。",
-      "restaurantCardDesc": "排队、点餐、水等餐厅小贴士。",
-      "transportCardDesc": "交通卡、高峰、出租车、出口等小贴士。",
-      "mapTitle": "地图应用程序",
-      "mapMistake": "来韩国只相信谷歌地图",
-      "mapBody": "目前，去韩国旅行时，最好安装Naver Map或Kakao Map，而不是只准备Google Map。 Naver Map 和 Kakao Map 对于韩国的公共交通、步行信息和商店信息通常更准确。",
-      "cardTitle": "交通卡",
-      "cardMistake": "每次买票无交通卡或下车不贴牌",
-      "cardBody": "交通卡不仅在乘坐公交车、地铁时有用，在乘坐出租车、公共自行车时也同样有用。可以在便利店或地铁站购买和充值卡。然而，外国游客常常忽略的是，下车时必须在终点站刷卡。",
+      "dailyCardDesc": "地图、垃圾、周末房价、便利店、雨天",
+      "restaurantCardDesc": "点餐、排队、水与小菜",
+      "transportCardDesc": "下车刷卡、高峰、出口、礼仪",
+      "mapTitle": "地图 App",
+      "mapMistake": "找路时只用谷歌地图",
+      "mapBody": "在当地查公交、步行和店铺时，Naver Map、Kakao Map 往往更准。可与谷歌并用，换乘与出口编号优先看韩国地图 App。",
+      "cardTitle": "公交下车·换乘",
+      "cardMistake": "下公交时忘记刷卡",
+      "cardBody": "公交下车通常也要刷卡，票价/换乘才会算对。购卡充值见「出发前 → 钱」。换乘按地图 App 路线即可。",
       "restaurantTitle": "餐厅使用",
       "restaurantMistake": "按海外餐厅规定执行",
       "restaurantBody1": "有时，当我等待员工接受我的订单时，桌子旁边有一个呼叫铃，或者当我试图要水和配菜时，有一个单独的自助服务角。最近，直接通过自助终端或平板电脑点餐的餐厅数量有所增加，这为不熟悉韩语的游客带来了另一个障碍。",
@@ -34743,44 +35555,39 @@ window.__I18N_MESSAGES__ = {
       "exitMistake": "走出任何出口就会迷路",
       "exitBody": "即使在同一车站，根据出口编号的不同，目的地也有很大差异。在地图应用上查看推荐出口，然后退出。",
       "weekendTitle": "周末及节假日住宿",
-      "weekendMistake": "认为周末和工作日的价格是一样的。",
-      "weekendBody": "与工作日相比，周五、周六、周日、节假日和旺季的酒店和宾馆价格通常会大幅上涨。如果可能，请混合在工作日住宿，或提前预订并比较价格（Yanolja、Yeogi Eottae 等）。当日预订可能会更贵。",
+      "weekendMistake": "旅途中临时订周末房还按平日价想",
+      "weekendBody": "周五至周日与节假日，当日或延住价格常明显高于平日。改期/延期时请在 App 再比一次。出发前预订见「出发前 → 行李·预订」。",
       "catPickLabel": "主题",
       "dailyBody": [
         {
           "type": "text",
-          "ko": "지도 앱\n\n구글 지도 하나만 믿고 한국에 오는 것\n\n현재 한국을 여행할 때는 구글 지도만 준비하기보다 네이버지도나 카카오맵을 함께 설치하는 편이 좋습니다. 한국 내 대중교통·도보 안내, 가게 정보는 네이버지도·카카오맵이 더 정확한 경우가 많습니다.",
-          "en": "Maps\n\nComing to Korea with only Google Maps\n\nWhen traveling in Korea, install Naver Map or Kakao Map in addition to Google Maps. For public transit, walking directions, and local shop info, Naver Map and Kakao Map are often more accurate.",
-          "ja": "地図アプリ\n\nGoogleマップだけを信じて韓国に来ること\n\n韓国旅行ではGoogleマップだけでなく、Naver MapやKakao Mapも一緒に入れておくと安心です。韓国国内の公共交通・徒歩案内や店舗情報は、Naver Map・Kakao Mapの方が正確なことが多いです。",
-          "zh": "地图应用程序\n\n来韩国只相信谷歌地图\n\n目前，去韩国旅行时，最好安装Naver Map或Kakao Map，而不是只准备Google Map。 Naver Map 和 Kakao Map 对于韩国的公共交通、步行信息和商店信息通常更准确。"
+          "ko": "지도 앱\n\n길 찾을 때 구글 지도만 쓰는 것\n\n현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+          "en": "Maps\n\nUsing only Google Maps while navigating\n\nFor transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+          "ja": "地図アプリ\n\n道探しでGoogleマップだけ使うこと\n\n現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。"
         },
         {
           "type": "text",
-          "ko": "현금과 카드\n\n카드만 있으면 된다고 생각하는 것\n\n대부분 카드가 되지만 전통시장, 포장마차, 일부 작은 식당·택시는 현금만 받는 경우가 있습니다. 잔돈을 조금 들고 다니세요.",
-          "en": "Cash and cards\n\nAssuming a card works everywhere\n\nMost places take cards, but traditional markets, street stalls, and some small restaurants/taxis are cash-only. Keep small bills.",
-          "ja": "現金とカード\n\nカードだけで足りると思い込むこと\n\n多くの店はカードOKですが、市場・屋台・一部の小さな店やタクシーは現金のみです。少額紙幣を持ち歩きましょう。",
-          "zh": "现金和卡\n\n认为你所需要的只是一张卡\n\n大多数都接受信用卡，但传统市场、小吃摊以及一些小餐馆和出租车可能只接受现金。随身携带一些零钱。"
-        },
-        {
-          "type": "text",
-          "ko": "쓰레기통\n\n거리에 쓰레기통이 많을 거라 기대하는 것\n\n한국 도심에는 길거리 쓰레기통이 생각보다 적습니다. 편의점·지하철역·카페를 이용하거나, 작은 쓰레기는 숙소까지 가지고 가는 편이 안전합니다.",
+          "ko": "쓰레기통\n\n预计街上会有很多垃圾桶\n\n韩国市中心的街道垃圾桶比您想象的要少。使用便利店、地铁站、咖啡馆或将小垃圾带到住宿处会更安全。",
           "en": "Trash bins\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
-          "ja": "ゴミ箱\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。",
-          "zh": "垃圾桶\n\n预计街上会有很多垃圾桶\n\n韩国市中心的街道垃圾桶比您想象的要少。使用便利店、地铁站、咖啡馆或将小垃圾带到住宿处会更安全。"
+          "ja": "ゴミ箱\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。"
         },
         {
           "type": "text",
-          "ko": "와이파이·데이터\n\n카페·지하철 Wi-Fi만으로 충분하다고 생각하는 것\n\n공공 Wi-Fi는 불안정할 수 있습니다. eSIM·유심으로 데이터를 확보하면 지도·번역·결제 앱을 끊김 없이 쓸 수 있습니다.",
-          "en": "Wi-Fi and data\n\nThinking café/subway Wi-Fi is enough\n\nPublic Wi-Fi can be unstable. An eSIM/SIM keeps maps, translation, and payment apps online.",
-          "ja": "Wi-Fi・データ\n\nカフェや地下鉄Wi-Fiだけで足りると思い込むこと\n\n公共Wi-Fiは不安定なことがあります。eSIM/SIMでデータがあると地図・翻訳が安心です。",
-          "zh": "无线网络/数据\n\n以为咖啡馆、地铁里有Wi-Fi就够了\n\n公共 Wi-Fi 可能不稳定。如果您使用 eSIM 或 SIM 卡保护数据，则可以不间断地使用地图、翻译和支付应用程序。"
+          "ko": "주말·연휴 숙소\n\n여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것\n\n금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
+          "en": "Weekend lodging\n\nAssuming a mid-trip weekend stay costs the same as a weekday\n\nFriday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+          "ja": "週末・連休の宿\n\n旅行中の週末宿が平日と同じ料金だと思うこと\n\n金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。"
         },
         {
           "type": "text",
-          "ko": "주말·연휴 숙소\n\n주말에도 평일과 같은 가격일 거라 생각하는 것\n\n금·토·일이나 연휴·성수기에는 호텔·게스트하우스 요금이 평일보다 크게 오르는 경우가 많습니다. 가능하면 평일 숙박을 섞거나, 미리 예약·가격 비교(야놀자·여기어때 등)를 하세요. 당일 예약은 더 비쌀 수 있습니다.",
-          "en": "Weekend lodging\n\nAssuming weekend hotel rates match weekdays\n\nFriday–Sunday and holidays often cost much more than weekdays. Mix in weekday stays when you can, and compare prices early on booking apps. Same-day bookings can be pricier.",
-          "ja": "週末・連休の宿\n\n週末も平日と同じ料金だと思い込むこと\n\n金・土・日や連休・繁忙期はホテルやゲストハウス料金が大きく上がることが多いです。可能なら平日を混ぜ、早めに比較・予約を。当日予約はさらに高いことがあります。",
-          "zh": "周末及节假日住宿\n\n认为周末和工作日的价格是一样的。\n\n与工作日相比，周五、周六、周日、节假日和旺季的酒店和宾馆价格通常会大幅上涨。如果可能，请混合在工作日住宿，或提前预订并比较价格（Yanolja、Yeogi Eottae 等）。当日预订可能会更贵。"
+          "ko": "편의점\n\n편의점은 간식만 산다고 생각하는 것\n\nCU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+          "en": "Convenience stores\n\nThinking convenience stores are only for snacks\n\nCU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+          "ja": "コンビニ\n\nコンビニはおやつだけと思うこと\n\nCU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。"
+        },
+        {
+          "type": "text",
+          "ko": "비 오는 날\n\n우산 없이 밖으로 나갔다가 당황하는 것\n\n갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+          "en": "Rainy days\n\nHeading out without a plan when it suddenly rains\n\nIf rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+          "ja": "雨の日\n\n突然の雨に傘なしで慌てること\n\n急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。"
         }
       ],
       "restaurantBody": [
@@ -34822,39 +35629,37 @@ window.__I18N_MESSAGES__ = {
       "transportBody": [
         {
           "type": "text",
-          "ko": "교통카드\n\n교통카드 없이 매번 표를 사거나, 버스에서 하차 태그를 하지 않는 것\n\n버스와 지하철뿐 아니라 택시와 공공자전거 등을 이용할 때도 교통카드가 유용합니다. 카드는 편의점이나 지하철역에서 구입·충전할 수 있습니다. 다만 외국인 여행객이 자주 놓치는 부분은 버스에서 내릴 때도 카드를 단말기에 찍어야 한다는 점입니다.",
-          "en": "Transit card\n\nBuying a ticket every time, or not tapping out on the bus\n\nA transit card is useful not only for buses and the subway, but also for taxis and public bikes. You can buy and top up cards at convenience stores or subway stations. One thing many travelers miss: on buses, you must tap your card again when you get off.",
-          "ja": "交通カード\n\n交通カードなしで毎回切符を買う、バス降車時にタッチしない\n\nバスや地下鉄だけでなく、タクシーや公共自転車でも交通カードが便利です。カードはコンビニや地下鉄駅で購入・チャージできます。旅行者がよく見落とすのは、バスを降りるときも端末にカードをタッチする必要があるという点です。",
-          "zh": "交通卡\n\n每次买票无交通卡或下车不贴牌\n\n交通卡不仅在乘坐公交车、地铁时有用，在乘坐出租车、公共自行车时也同样有用。可以在便利店或地铁站购买和充值卡。然而，外国游客常常忽略的是，下车时必须在终点站刷卡。"
+          "ko": "버스 하차·환승\n\n버스에서 내릴 때 카드를 찍지 않는 것\n\n버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
+          "en": "Bus tap-out & transfers\n\nNot tapping when you get off the bus\n\nOn buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+          "ja": "バス降車・乗換\n\nバス降車時にカードをタッチしないこと\n\nバスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。"
         },
         {
           "type": "text",
-          "ko": "출퇴근 혼잡\n\n출퇴근 시간에 관광지로 이동하는 것\n\n평일 07–09시, 18–20시 지하철·버스는 매우 붐빕니다. 가능하면 이 시간을 피하거나, 짐이 많으면 택시를 고려하세요.",
+          "ko": "출퇴근 혼잡\n\n高峰时段前往旅游目的地\n\n工作日 07:00 至 09:00 和 18:00 至 20:00 地铁和公交车非常拥挤。尽可能避开这个时间，或者如果您有很多行李，请考虑乘坐出租车。",
           "en": "Rush hour\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
           "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
-          "zh": "通勤拥堵\n\n高峰时段前往旅游目的地\n\n工作日 07:00 至 09:00 和 18:00 至 20:00 地铁和公交车非常拥挤。尽可能避开这个时间，或者如果您有很多行李，请考虑乘坐出租车。"
+          "zh": "通勤高峰\n\n高峰时段去景点移动\n\n工作日 7–9 点、18–20 点地铁公交很挤。尽量避开；行李多时可考虑出租车。"
         },
         {
           "type": "text",
-          "ko": "택시 이용\n\n주소만 말로 설명하려다 헤매는 것\n\n카카오 T·우티 등으로 호출하거나, 숙소·목적지 주소를 한국어로 보여 주면 편합니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요.",
-          "en": "Taxis\n\nOnly explaining the address out loud\n\nUse Kakao T / Uber-style apps, or show the destination in Korean. Ask for a receipt if you need one.",
-          "ja": "タクシー\n\n住所を口だけで説明して迷うこと\n\nカカオTなどで呼ぶか、目的地を韓国語で見せると楽です。領収書が必要なら「영수증 주세요」。",
-          "zh": "乘坐出租车\n\n试图用文字解释地址时迷路了\n\n通过Kakao T、Ooty等打电话，或者用韩语显示您的住宿和目的地地址，很方便。如果您需要收据，请说“请给我一张收据。”"
-        },
-        {
-          "type": "text",
-          "ko": "지하철 출구\n\n아무 출구로 나와 길을 잃는 것\n\n같은 역이라도 출구 번호에 따라 도착지가 크게 달라집니다. 지도 앱에서 추천 출구를 확인한 뒤 나오세요.",
+          "ko": "지하철 출구\n\n走出任何出口就会迷路\n\n即使在同一车站，根据出口编号的不同，目的地也有很大差异。在地图应用上查看推荐出口，然后退出。",
           "en": "Subway exits\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
           "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
-          "zh": "地铁出口\n\n走出任何出口就会迷路\n\n即使在同一车站，根据出口编号的不同，目的地也有很大差异。在地图应用上查看推荐出口，然后退出。"
+          "zh": "地铁出口\n\n随便找个出口就出站\n\n同一车站出口编号差别很大。出站前先在地图 App 确认推荐出口。"
+        },
+        {
+          "type": "text",
+          "ko": "지하철·버스 매너\n\n출입문 앞에서 막거나 큰 소리로 통화하는 것\n\n내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+          "en": "Subway & bus etiquette\n\nBlocking the doors or taking loud phone calls\n\nLet exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+          "ja": "地下鉄・バスのマナー\n\nドア前で塞ぐ、大きな声で通話する\n\n降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。"
         }
       ],
       "noTipTitle": "小费（服务费）",
       "noTipMistake": "韩国餐馆通常不给小费。",
       "noTipBody": "韩国的普通餐馆和咖啡馆没有小费文化。通常无需在桌子上留下现金或在付款后在您的卡上添加小费。",
-      "catDailyIntro": "地图、现金、垃圾桶、流量与周末住宿——韩国日常里常见的困惑点。",
-      "catRestaurantIntro": "点餐、小费、排队与自助区——进店就能用的提示。",
-      "catTransportIntro": "简要整理了交通卡、通勤高峰、出租车与地铁出口。",
+      "catDailyIntro": "地图、垃圾、周末房价、便利店、雨天 — 旅途中常见的日常贴士。",
+      "catRestaurantIntro": "点餐、小费、排队与自助区 — 进店就能用的贴士。",
+      "catTransportIntro": "下车刷卡、高峰、出口与简单礼仪。票价与办卡准备见「出发前」。",
       "catShoppingIntro": "Olive Young、Daiso、免税店与市场提示都在此页内查看（无需再跳转）。",
       "tabMap": "地图 App",
       "tabCash": "现金·刷卡",
@@ -34865,14 +35670,104 @@ window.__I18N_MESSAGES__ = {
       "tabNoTip": "小费",
       "tabQueue": "排队",
       "tabWater": "水·小菜",
-      "tabCard": "交通卡",
+      "tabCard": "下车·换乘",
       "tabRush": "通勤高峰",
       "tabTaxi": "出租车",
       "tabExit": "地铁出口",
       "tabOlive": "Olive Young",
       "tabDaiso": "Daiso",
       "tabDuty": "免税·退税",
-      "tabMarket": "市场·商圈"
+      "tabMarket": "市场·商圈",
+      "tabConvenience": "便利店",
+      "convenienceTitle": "便利店",
+      "convenienceMistake": "觉得便利店只能买零食",
+      "convenienceBody": "CU、GS25、7-Eleven 随处可见。可买简单餐食饮料、雨伞与洗漱用品，以及轻量的医药品/外用品（膏药、创可贴等；需咨询的药品请去药房）。部分门店有充电宝租借或充电角。组合吃法也可看站内便利店指南。",
+      "tabRain": "下雨天",
+      "rainTitle": "下雨天",
+      "rainMistake": "突然下雨却毫无准备",
+      "rainBody": "骤雨时可在便利店或大创买伞。改去咖啡店、博物馆或地下商场，短途也可打车。多利用地铁连通道少淋雨。",
+      "tabEtiquette": "地铁礼仪",
+      "etiquetteTitle": "地铁·公交礼仪",
+      "etiquetteMistake": "挡在车门前或大声通话",
+      "etiquetteBody": "先下后上；优先座留给有需要的人。通话/看视频请戴耳机并压低音量。拥挤时把背包拿到身前或放下，少碰撞。",
+      "mapCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/map.jpg"
+        }
+      ],
+      "trashCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/trash.jpg"
+        }
+      ],
+      "weekendCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/weekend.jpg"
+        }
+      ],
+      "convenienceCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/convenience.jpg"
+        }
+      ],
+      "rainCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rain.jpg"
+        }
+      ],
+      "orderCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/order.jpg"
+        }
+      ],
+      "noTipCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/notip.jpg"
+        }
+      ],
+      "queueCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/queue.jpg"
+        }
+      ],
+      "waterCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/water.jpg"
+        }
+      ],
+      "cardCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/card.jpg"
+        }
+      ],
+      "rushCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/rush.jpg"
+        }
+      ],
+      "exitCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/exit.jpg"
+        }
+      ],
+      "etiquetteCover": [
+        {
+          "type": "image",
+          "src": "Images/travel-tips/etiquette.jpg"
+        }
+      ]
     },
     "korean": {
       "pageTitle": "有用的韩语",

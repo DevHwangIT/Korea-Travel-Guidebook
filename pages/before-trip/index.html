@@ -134,6 +134,8 @@
             <div class="tab-list tab-list-sm" role="tablist" aria-label="Daily life topics">
               <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="connect" data-i18n="beforeTrip.tabConnect">통신·전원</button>
               <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="pack" data-i18n="beforeTrip.tabPack">짐·예약</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="transit" data-i18n="beforeTrip.tabTransit">대중교통</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="taxi" data-i18n="beforeTrip.tabTaxi">택시</button>
             </div>
             <div class="tab-panels">
               <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="connect" hidden>
@@ -155,6 +157,26 @@
                   <p data-i18n="beforeTrip.pack4"></p>
                 </div>
               </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="transit" hidden>
+                <h2 data-i18n="beforeTrip.transitTitle">대중교통</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.transitBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.transit1"></p>
+                  <p data-i18n="beforeTrip.transit2"></p>
+                  <p data-i18n="beforeTrip.transit3"></p>
+                  <p data-i18n="beforeTrip.transit4"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="taxi" hidden>
+                <h2 data-i18n="beforeTrip.taxiTitle">택시 요금·이용 팁</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.taxiBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.taxi1"></p>
+                  <p data-i18n="beforeTrip.taxi2"></p>
+                  <p data-i18n="beforeTrip.taxi3"></p>
+                  <p data-i18n="beforeTrip.taxi4"></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,9 +186,20 @@
           <p class="prep-cat-intro" data-i18n="beforeTrip.catDiningIntro"></p>
           <div class="nested-tabs" data-tabs="prep">
             <div class="tab-list tab-list-sm" role="tablist" aria-label="Dining topics">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="culture" data-i18n="beforeTrip.tabCulture">식사 문화</button>
               <button type="button" class="tab-btn tab-btn-sm" role="tab" data-prep-tab="solo" data-i18n="beforeTrip.tabSolo">혼자 식사</button>
             </div>
             <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="culture" hidden>
+                <h2 data-i18n="beforeTrip.cultureTitle">식사 문화</h2>
+                <div class="content-body" data-content-body data-body-path="beforeTrip.cultureBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="beforeTrip.culture1"></p>
+                  <p data-i18n="beforeTrip.culture2"></p>
+                  <p data-i18n="beforeTrip.culture3"></p>
+                  <p data-i18n="beforeTrip.culture4"></p>
+                </div>
+              </div>
               <div class="tab-panel guide-article tip-article" role="tabpanel" data-prep-panel="solo" hidden>
                 <h2 data-i18n="beforeTrip.soloTitle">혼자 식당·혼밥</h2>
                 <div class="content-body" data-content-body data-body-path="beforeTrip.soloBody"></div>
