@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Regenerate i18n/messages.js from locale JSON files.
 
-Supported: ko, en, ja, zh (keep in sync with js/i18n.js GUIDE_LANGS).
+Supported: ko, en, ja, zh, zh-Hant, vi, th, ru (keep in sync with js/i18n.js GUIDE_LANGS).
 To add a language:
   1. Add code to LANGS below and create i18n/{code}.json
   2. Add { code, label } in js/i18n.js GUIDE_LANGS
@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 # Data-driven locale list — keep in sync with js/i18n.js GUIDE_LANGS
-LANGS = ("ko", "en", "ja", "zh")
+LANGS = ("ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru")
 
 root = Path(__file__).resolve().parent
 messages = {

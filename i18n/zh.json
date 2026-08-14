@@ -13,7 +13,8 @@
     "tip": "TIP",
     "shopsHelp": "点击下方推荐店铺（名称）即可查看详情。",
     "shopsComing": "后续还会增加推荐店铺。路线是通过商店名称而不是区域选项卡给出的。",
-    "adLabel": "广告"
+    "adLabel": "广告",
+    "langMenu": "语言"
   },
   "cities": {
     "서울": "首尔",
@@ -742,7 +743,7 @@
     "catDining": "用餐",
     "catEntryIntro": "证件、电子入境申报与机场审查——入境前请确认这些项目。",
     "catMoneyIntro": "整理了现金、银行卡、交通卡以及游客用 Wow Pass。",
-    "catLifeIntro": "流量与电源、行李与住宿，以及公共交通与出租车等落地生活准备。",
+    "catLifeIntro": "流量与电源、行李与住宿、公共交通与出租车，以及基本问候用语——抵达后立刻用得上的生活准备。",
     "catDiningIntro": "用餐文化与独自用餐 — 抵达前了解会更安心。",
     "tabEri": "电子入境申报(ERI)",
     "tabWowpass": "Wow Pass",
@@ -920,6 +921,39 @@
         "en": "A quick look around helps more than perfect etiquette. When unsure, quietly mirror nearby tables.",
         "ja": "完璧なマナーより、周囲を一度見ることが役立ちます。迷ったら隣のテーブルをそっと参考に。",
         "zh": "不必追求完美礼仪，先观察周围更有用。不确定时，轻轻参考邻桌即可。"
+      }
+    ],
+    "tabKorean": "基本问候用语",
+    "koreanTitle": "基本问候与简单表达",
+    "korean1": "出发前先记住问候、道谢和几句简单表达，旅行会轻松很多。不必追求长句，从「안녕하세요」「감사합니다」「죄송합니다」这类短句开始即可。",
+    "korean2": "韩国人大多理解外国人未必会韩语。但只要礼貌、友善地询问，往往能得到更温暖的回应。",
+    "korean3": "餐厅、交通、购物里马上能用的短句，可在「实用韩语」继续查看。出发前快速浏览一遍会很有帮助。",
+    "koreanLink": "→ 查看更多实用韩语",
+    "koreanBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/korean.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "짧은 인사만 알아도 하루가 달라집니다\n\n출발 전에 인사·감사·사과처럼 짧은 표현만 익혀 두세요. 완벽한 한국어가 목표가 아닙니다. ‘안녕하세요’, ‘감사합니다’, ‘죄송합니다’, ‘이것 주세요’처럼 여행에서 바로 쓰는 한마디면 충분합니다.",
+        "en": "A few short phrases go a long way\n\nBefore departure, learn greetings, thanks, and simple asks. You do not need perfect Korean — “안녕하세요,” “감사합니다,” “죄송합니다,” and “이것 주세요” cover a lot of travel moments.",
+        "ja": "短いあいさつだけでも一日が変わります\n\n出発前に、あいさつ・お礼・謝罪などの短い表現を覚えておきましょう。完璧な韓国語が目標ではありません。「안녕하세요」「감사합니다」「죄송합니다」「이것 주세요」など、旅ですぐ使う一言で十分です。",
+        "zh": "几句短问候，也能让一天更顺\n\n出发前先学问候、道谢和简单请求即可。目标不是完美韩语——「안녕하세요」「감사합니다」「죄송합니다」「이것 주세요」这类短句，就能覆盖很多旅行场景。"
+      },
+      {
+        "type": "text",
+        "ko": "정중함은 언어보다 먼저 전달됩니다\n\n한국 사람들은 외국인이 한국어를 잘 몰라도 대부분 이해합니다. 그래도 미소와 함께 천천히, 정중하게 물어보면 도움이 더 잘 이어지는 경우가 많아요. 틀려도 괜찮습니다 — 친절한 태도가 더 중요합니다.",
+        "en": "Kindness travels further than fluency\n\nMost Koreans understand that foreigners may not know Korean. Asking slowly and politely — with a smile — still makes help easier to give and receive. Mistakes are fine; a friendly tone matters more.",
+        "ja": "丁寧さは言葉より先に伝わります\n\n韓国の人は、外国人が韓国語をあまり知らなくても大抵理解してくれます。それでも笑顔でゆっくり丁寧に尋ねると、助けがつながりやすくなります。間違えても大丈夫 — やさしい態度のほうが大切です。",
+        "zh": "礼貌往往比流利更重要\n\n多数韩国人理解外国人可能不会韩语。只要微笑、慢慢、礼貌地问，帮助通常更容易到来。说错也没关系——友善的态度更重要。"
+      },
+      {
+        "type": "callout",
+        "ko": "더 많은 여행용 한마디는 ‘유용한 한국어’에서 이어서 볼 수 있습니다. 출발 전에 일상·식당·교통 탭만 훑어도 현지에서 마음이 한결 편해집니다.",
+        "en": "Find more trip-ready phrases in Useful Korean. Even a quick skim of daily, dining, and transit tabs before you fly makes the first days calmer.",
+        "ja": "もっと旅行向けの一言は「役立つ韓国語」で続けて見られます。出発前に日常・食事・交通のタブをざっと見るだけでも、現地での気持ちが楽になります。",
+        "zh": "更多旅行短句请到「实用韩语」继续看。出发前哪怕只快速浏览日常、餐厅、交通分类，抵达后也会安心许多。"
       }
     ]
   },
@@ -9885,5 +9919,89 @@
     "hideToday": "今天不再显示此窗口",
     "confirm": "确定",
     "close": "关闭"
+  },
+  "travelUtils": {
+    "title": "旅行工具",
+    "open": "打开旅行工具",
+    "close": "关闭",
+    "back": "返回工具列表",
+    "reference": "汇率与天气仅供参考，可能与实际有所不同。",
+    "currency": "汇率",
+    "weather": "天气",
+    "timezone": "时差",
+    "units": "单位换算",
+    "amount": "金额",
+    "fromCurrency": "货币",
+    "loading": "加载中…",
+    "invalidAmount": "请输入有效金额。",
+    "fxError": "无法加载汇率，请检查网络连接。",
+    "rateDate": "基准日",
+    "region": "地区",
+    "weatherError": "无法加载天气，请检查网络连接。",
+    "humidity": "湿度",
+    "wind": "风力",
+    "koreaTime": "韩国（首尔）",
+    "yourTime": "所选城市",
+    "tzPickCity": "对比城市",
+    "tzDevice": "设备本地时间",
+    "tzSame": "与韩国无时差",
+    "tzAhead": "所选城市比韩国快 {n}",
+    "tzBehind": "所选城市比韩国慢 {n}",
+    "temp": "温度",
+    "distance": "距离",
+    "regions": {
+      "seoul": "首尔",
+      "busan": "釜山",
+      "jeju": "济州",
+      "incheon": "仁川",
+      "daegu": "大邱",
+      "gwangju": "光州",
+      "daejeon": "大田",
+      "gangneung": "江陵",
+      "gyeongju": "庆州"
+    },
+    "cities": {
+      "seoul": "首尔（韩国）",
+      "tokyo": "东京（日本）",
+      "osaka": "大阪（日本）",
+      "shanghai": "上海（中国）",
+      "taipei": "台北（台湾）",
+      "hongkong": "香港",
+      "singapore": "新加坡",
+      "bangkok": "曼谷（泰国）",
+      "hochiminh": "胡志明市（越南）",
+      "manila": "马尼拉（菲律宾）",
+      "kualalumpur": "吉隆坡（马来西亚）",
+      "jakarta": "雅加达（印度尼西亚）",
+      "delhi": "德里（印度）",
+      "dubai": "迪拜（阿联酋）",
+      "london": "伦敦（英国）",
+      "paris": "巴黎（法国）",
+      "berlin": "柏林（德国）",
+      "rome": "罗马（意大利）",
+      "madrid": "马德里（西班牙）",
+      "newyork": "纽约（美国）",
+      "losangeles": "洛杉矶（美国）",
+      "chicago": "芝加哥（美国）",
+      "toronto": "多伦多（加拿大）",
+      "vancouver": "温哥华（加拿大）",
+      "saopaulo": "圣保罗（巴西）",
+      "sydney": "悉尼（澳大利亚）",
+      "auckland": "奥克兰（新西兰）",
+      "honolulu": "火奴鲁鲁（夏威夷）"
+    },
+    "weatherCodes": {
+      "clear": "晴",
+      "mainlyClear": "大部晴朗",
+      "partlyCloudy": "局部多云",
+      "overcast": "阴",
+      "fog": "雾",
+      "drizzle": "毛毛雨",
+      "rain": "雨",
+      "snow": "雪",
+      "showers": "阵雨",
+      "thunder": "雷暴",
+      "unknown": "天气"
+    }
   }
 }

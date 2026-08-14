@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
   SITE_ORIGIN: "https://korea-guidebook.cloud",
   SITE_NAME: "Korea Travel Guide",
   DEFAULT_OG_IMAGE: "Images/cover/korea-cover.png",
-  LANGS: ["ko", "en", "ja", "zh"],
+  LANGS: ["ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru"],
   /** Fallback only; first-visit pick is in js/i18n.js (match GUIDE_LANGS, else en / ko*). */
   DEFAULT_LANG: "en",
   /** Used as hreflang="x-default" target */

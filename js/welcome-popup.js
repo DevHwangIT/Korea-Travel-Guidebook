@@ -37,6 +37,17 @@
   }
 
   function t(key, fallback) {
+    try {
+      if (window.GuideI18n && typeof window.GuideI18n.lookupWithFallback === "function") {
+        var via = window.GuideI18n.lookupWithFallback(
+          key,
+          window.GuideI18n.getLang && window.GuideI18n.getLang()
+        );
+        if (via != null && via !== "") return String(via);
+      }
+    } catch (e0) {
+      /* ignore */
+    }
     var dict = null;
     try {
       var lang = window.GuideI18n && window.GuideI18n.getLang();

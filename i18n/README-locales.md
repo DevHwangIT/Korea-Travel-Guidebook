@@ -1,44 +1,46 @@
-# Adding a locale (e.g. Chinese `zh`)
+# Adding a locale
 
 Languages are **data-driven** in `js/i18n.js` via `GUIDE_LANGS`:
 
 ```js
 var GUIDE_LANGS = [
-  { code: "ko", label: "KR" },
-  { code: "en", label: "EN" },
-  { code: "ja", label: "JP" },
-  { code: "zh", label: "中文" },
+  { code: "ko", label: "한국어" },
+  { code: "en", label: "English" },
+  { code: "ja", label: "日本語" },
+  { code: "zh", label: "简体中文" },
+  { code: "zh-Hant", label: "繁體中文" },
+  { code: "vi", label: "Tiếng Việt" },
+  { code: "th", label: "ภาษาไทย" },
+  { code: "ru", label: "Русский" },
 ];
 ```
 
 ## Steps
 
-1. Ensure `{ code: "zh", label: "中文" }` is in `GUIDE_LANGS`.
-2. Keep `i18n/zh.json` in sync (copy from KO then translate). Helper:
-
-    ```bash
-    python tool/translate_zh_locale.py
-    python tool/translate_zh_locale.py --all
-    ```
-
-   Body blocks use `ko`/`en`/`ja`/`zh` keys; `js/content-body.js` prefers the active lang.
-
-3. `i18n/build-bundle.py` LANGS includes `"zh"`. Rebuild:
+1. Add `{ code, label }` to `GUIDE_LANGS` (label in that language’s own script).
+2. Create `i18n/{code}.json` (copy `en.json` as a base for incomplete locales; for Traditional Chinese start from `zh.json`).
+3. Keep `i18n/build-bundle.py` `LANGS` and `js/site-config.js` `LANGS` in sync.
+4. Rebuild:
 
     ```bash
     python i18n/build-bundle.py
     ```
 
-4. Bump `js/cache-version.js` (or run `tool/update-version.py`) so browsers pick up `messages.js`.
-   Also keep `js/site-config.js` `LANGS` and SEO hreflang in sync.
+5. Bump `js/cache-version.js` (or run `tool/update-version.py`) so browsers pick up `messages.js`.
+
+## Fallback
+
+Runtime lookup uses **selected → en → ko** (`zh-Hant` also tries `zh` before `en`).
+Incomplete locales can ship chrome-only translations and fall back for the rest.
 
 ## UI switcher
 
-`.lang-switch` navs are **rebuilt at runtime** from `GUIDE_LANGS`. You do not need to hardcode KR/EN/JP buttons on every page. Pages may keep empty `<nav class="lang-switch" aria-label="Language"></nav>` or legacy three buttons — both are replaced on load.
+`.lang-switch` navs are **rebuilt at runtime** as a dropdown from `GUIDE_LANGS`.
+Pages may keep empty `<nav class="lang-switch" aria-label="Language"></nav>`.
 
-`window.GuideI18n.languages` / `.supported` expose the same config for other scripts (map, buy hub).
+`window.GuideI18n.languages` / `.supported` / `.fallbackLangs` expose the same config.
 
 ## Notes
 
-- Keep existing KO/EN/JA working while adding a fourth locale.
-- Freeform `*Body` arrays currently store `ko`/`en`/`ja` per block; extend blocks with `zh` when Chinese editorial content is ready (`js/content-body.js` already prefers the active lang key).
+- Freeform `*Body` arrays store per-lang keys (`ko`/`en`/`ja`/`zh`…); `js/content-body.js` follows the same fallback chain.
+- Editorial CMS (`tool/lib/i18n_store.py`) still focuses on `ko`/`en`/`ja`/`zh`; other locales are runtime/bundle locales.

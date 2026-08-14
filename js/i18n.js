@@ -1,27 +1,34 @@
 /**
  * Language switcher — loads local i18n messages and applies to [data-i18n] nodes.
  *
- * Languages are data-driven (GUIDE_LANGS): ko / en / ja / zh (中文).
+ * Languages are data-driven (GUIDE_LANGS). Labels use each language’s own script.
+ * Fallback chain for missing keys: selected → en → ko
+ *   (zh-Hant also tries zh before en).
+ *
  * To add another locale later:
  *   1. Add { code, label } to GUIDE_LANGS below
  *   2. Create i18n/{code}.json and add code to i18n/build-bundle.py LANGS
  *   3. Re-run build-bundle — .lang-switch is rendered from GUIDE_LANGS site-wide
  *
- * SEO: ?lang=ko|en|ja|zh is read on load and kept in sync when the user switches
+ * SEO: ?lang= is read on load and kept in sync when the user switches
  * language (for hreflang / shareable locale links). Primary storage remains localStorage.
  *
  * First-visit language (no saved preference / no ?lang=):
- *   Match navigator.languages against GUIDE_LANGS (ko/en/ja/zh).
+ *   Match navigator.languages against GUIDE_LANGS (incl. zh-Hant / vi / th / ru).
  *   If no match → en (international default), except Korean language/region (ko* / *-KR) → ko.
  *   Saved korea-guide-lang always wins; never override an existing user choice on later loads.
  */
 (function () {
   /** @type {{ code: string, label: string }[]} */
   var GUIDE_LANGS = [
-    { code: "ko", label: "KR" },
-    { code: "en", label: "EN" },
-    { code: "ja", label: "JP" },
-    { code: "zh", label: "中文" },
+    { code: "ko", label: "한국어" },
+    { code: "en", label: "English" },
+    { code: "ja", label: "日本語" },
+    { code: "zh", label: "简体中文" },
+    { code: "zh-Hant", label: "繁體中文" },
+    { code: "vi", label: "Tiếng Việt" },
+    { code: "th", label: "ภาษาไทย" },
+    { code: "ru", label: "Русский" },
   ];
 
   var SUPPORTED = GUIDE_LANGS.map(function (l) {
@@ -31,6 +38,17 @@
   var STORAGE_KEY = "korea-guide-lang";
   var cache = {};
   var welcomeScriptQueued = false;
+  var travelUtilsScriptQueued = false;
+
+  var LANG_ALIASES = {
+    "zh-hans": "zh",
+    "zh-cn": "zh",
+    "zh-sg": "zh",
+    "zh-hant": "zh-Hant",
+    "zh-tw": "zh-Hant",
+    "zh-hk": "zh-Hant",
+    "zh-mo": "zh-Hant",
+  };
 
   function scriptDir() {
     var scripts = document.getElementsByTagName("script");
@@ -47,11 +65,32 @@
     return scriptDir().replace(/\/js\/?$/, "/i18n/");
   }
 
+  function normalizeLangCode(raw) {
+    if (!raw) return null;
+    var q = String(raw).trim();
+    if (!q) return null;
+    if (SUPPORTED.indexOf(q) !== -1) return q;
+    var lower = q.toLowerCase();
+    if (LANG_ALIASES[lower]) return LANG_ALIASES[lower];
+    if (SUPPORTED.indexOf(lower) !== -1) return lower;
+    // Prefer full tag match for zh-Hant before stripping
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      var code = SUPPORTED[i];
+      if (lower === code.toLowerCase()) return code;
+    }
+    var base = lower.split("-")[0];
+    if (base === "zh") {
+      if (/zh-(tw|hk|mo|hant)/.test(lower)) return "zh-Hant";
+      return "zh";
+    }
+    if (SUPPORTED.indexOf(base) !== -1) return base;
+    return null;
+  }
+
   function langFromQuery() {
     try {
       var q = new URLSearchParams(window.location.search).get("lang");
-      if (q) q = String(q).toLowerCase().split("-")[0];
-      if (SUPPORTED.indexOf(q) !== -1) return q;
+      return normalizeLangCode(q);
     } catch (e) {
       /* ignore */
     }
@@ -89,15 +128,7 @@
   }
 
   function matchSupportedLocale(tag) {
-    if (!tag) return null;
-    var base = tag.split("-")[0];
-    for (var i = 0; i < SUPPORTED.length; i++) {
-      var code = SUPPORTED[i];
-      if (tag === code || tag.indexOf(code + "-") === 0 || base === code) {
-        return code;
-      }
-    }
-    return null;
+    return normalizeLangCode(tag);
   }
 
   /**
@@ -140,7 +171,8 @@
     } catch (e2) {
       saved = null;
     }
-    if (SUPPORTED.indexOf(saved) !== -1) return saved;
+    var normalizedSaved = normalizeLangCode(saved);
+    if (normalizedSaved) return normalizedSaved;
     var detected = detectBrowserLang();
     persistLang(detected);
     return detected;
@@ -164,6 +196,24 @@
     (document.body || document.documentElement).appendChild(s);
   }
 
+  /** Sitewide floating travel utils (FX / weather / TZ / units) — same inject path. */
+  function ensureTravelUtilsScript() {
+    if (travelUtilsScriptQueued) return;
+    if (document.querySelector('script[data-guide-travel-utils="1"]')) {
+      travelUtilsScriptQueued = true;
+      return;
+    }
+    travelUtilsScriptQueued = true;
+    var s = document.createElement("script");
+    s.src =
+      scriptDir() +
+      "travel-utils.js?v=" +
+      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+    s.async = true;
+    s.setAttribute("data-guide-travel-utils", "1");
+    (document.body || document.documentElement).appendChild(s);
+  }
+
   function lookup(obj, path) {
     return path.split(".").reduce(function (acc, key) {
       if (acc && Object.prototype.hasOwnProperty.call(acc, key)) return acc[key];
@@ -171,23 +221,93 @@
     }, obj);
   }
 
+  /** Fallback chain: selected → (zh for zh-Hant) → en → ko */
+  function fallbackLangs(lang) {
+    var chain = [lang];
+    if (lang === "zh-Hant") chain.push("zh");
+    if (lang !== "en") chain.push("en");
+    if (lang !== "ko") chain.push("ko");
+    var out = [];
+    var seen = {};
+    for (var i = 0; i < chain.length; i++) {
+      var c = chain[i];
+      if (!c || seen[c]) continue;
+      seen[c] = true;
+      out.push(c);
+    }
+    return out;
+  }
+
+  function dictFor(lang) {
+    if (cache[lang]) return cache[lang];
+    if (window.__I18N_MESSAGES__ && window.__I18N_MESSAGES__[lang]) {
+      cache[lang] = window.__I18N_MESSAGES__[lang];
+      return cache[lang];
+    }
+    return null;
+  }
+
+  function lookupWithFallback(path, lang) {
+    var chain = fallbackLangs(lang);
+    for (var i = 0; i < chain.length; i++) {
+      var dict = dictFor(chain[i]);
+      if (!dict) continue;
+      var val = lookup(dict, path);
+      if (val != null && val !== "") return val;
+    }
+    return undefined;
+  }
+
+  function labelFor(code) {
+    for (var i = 0; i < GUIDE_LANGS.length; i++) {
+      if (GUIDE_LANGS[i].code === code) return GUIDE_LANGS[i].label;
+    }
+    return code;
+  }
+
+  function closeLangMenus(exceptNav) {
+    document.querySelectorAll("nav.lang-switch, .lang-switch").forEach(function (nav) {
+      if (exceptNav && nav === exceptNav) return;
+      nav.classList.remove("is-open");
+      var toggle = nav.querySelector(".lang-switch__toggle");
+      var menu = nav.querySelector(".lang-switch__menu");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+      if (menu) menu.hidden = true;
+    });
+  }
+
   /** Rebuild every .lang-switch from GUIDE_LANGS so pages need not hardcode buttons. */
   function renderLangSwitchers(lang) {
     document.querySelectorAll("nav.lang-switch, .lang-switch").forEach(function (nav) {
       if (nav.getAttribute("data-lang-static") === "1") return;
-      var html = GUIDE_LANGS.map(function (l) {
+      var heading =
+        lookupWithFallback("common.langMenu", lang) || "Language";
+      var currentLabel = labelFor(lang);
+      var options = GUIDE_LANGS.map(function (l) {
         var on = l.code === lang;
         return (
-          '<button type="button" data-set-lang="' +
+          '<button type="button" role="option" data-set-lang="' +
           l.code +
           '"' +
-          (on ? ' class="is-active" aria-pressed="true"' : ' aria-pressed="false"') +
+          (on ? ' class="is-active" aria-selected="true"' : ' aria-selected="false"') +
           ">" +
           l.label +
           "</button>"
         );
       }).join("");
-      nav.innerHTML = html;
+      nav.innerHTML =
+        '<button type="button" class="lang-switch__toggle" aria-expanded="false" aria-haspopup="listbox">' +
+        '<span class="lang-switch__current">' +
+        currentLabel +
+        "</span>" +
+        '<span class="lang-switch__caret" aria-hidden="true">▾</span>' +
+        "</button>" +
+        '<div class="lang-switch__menu" role="listbox" hidden>' +
+        '<p class="lang-switch__heading">' +
+        heading +
+        "</p>" +
+        options +
+        "</div>";
       if (!nav.getAttribute("aria-label")) {
         nav.setAttribute("aria-label", "Language");
       }
@@ -195,11 +315,13 @@
   }
 
   function apply(dict, lang) {
+    // Keep active dict in cache for fallback lookups across langs
+    cache[lang] = dict;
     renderLangSwitchers(lang);
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
-      var val = lookup(dict, key);
+      var val = lookupWithFallback(key, lang);
       if (val == null || val === "") {
         if (el.closest(".tip") && key.indexOf(".tip") !== -1) {
           el.closest(".tip").hidden = true;
@@ -225,13 +347,13 @@
         if (parts.length < 2) return;
         var attr = parts[0].trim();
         var key = parts.slice(1).join(":").trim();
-        var val = lookup(dict, key);
+        var val = lookupWithFallback(key, lang);
         if (val != null) el.setAttribute(attr, String(val));
       });
     });
 
     var titleKey = document.documentElement.getAttribute("data-i18n-title") || "";
-    var pageTitle = titleKey ? lookup(dict, titleKey) : null;
+    var pageTitle = titleKey ? lookupWithFallback(titleKey, lang) : null;
     if (pageTitle) {
       document.title =
         String(pageTitle).indexOf("Korea Travel Guide") !== -1
@@ -239,12 +361,12 @@
           : String(pageTitle) + " | Korea Travel Guide";
     }
 
-    document.documentElement.lang = lang;
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
 
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
       var on = btn.getAttribute("data-set-lang") === lang;
       btn.classList.toggle("is-active", on);
-      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      btn.setAttribute("aria-selected", on ? "true" : "false");
     });
   }
 
@@ -269,7 +391,7 @@
       return Promise.resolve(done(cache[lang]));
     }
 
-    var url = i18nDir() + lang + ".json";
+    var url = i18nDir() + encodeURIComponent(lang) + ".json";
     return fetch(url)
       .then(function (res) {
         if (!res.ok) throw new Error("HTTP " + res.status);
@@ -281,17 +403,25 @@
       })
       .catch(function (err) {
         console.warn("[i18n] Failed to load", url, err);
+        // Soft-fail: still apply via fallback chain if en/ko already cached/bundled
+        var fallback = dictFor("en") || dictFor("ko");
+        if (fallback) {
+          cache[lang] = fallback;
+          return done(fallback);
+        }
         var banner = document.querySelector("[data-i18n-fallback]");
         if (banner) banner.hidden = false;
       });
   }
 
   function setLang(lang) {
-    if (SUPPORTED.indexOf(lang) === -1) return;
-    persistLang(lang);
-    syncLangQuery(lang);
-    load(lang, { silent: true }).then(function () {
-      notifyLang(lang);
+    var normalized = normalizeLangCode(lang);
+    if (!normalized || SUPPORTED.indexOf(normalized) === -1) return;
+    persistLang(normalized);
+    syncLangQuery(normalized);
+    closeLangMenus();
+    load(normalized, { silent: true }).then(function () {
+      notifyLang(normalized);
     });
   }
 
@@ -302,22 +432,57 @@
     detectBrowserLang: detectBrowserLang,
     languages: GUIDE_LANGS.slice(),
     supported: SUPPORTED.slice(),
+    fallbackLangs: fallbackLangs,
+    lookupWithFallback: lookupWithFallback,
   };
 
   document.addEventListener("click", function (e) {
+    var toggle = e.target.closest(".lang-switch__toggle");
+    if (toggle) {
+      e.preventDefault();
+      var nav = toggle.closest(".lang-switch");
+      if (!nav) return;
+      var open = !nav.classList.contains("is-open");
+      closeLangMenus();
+      if (open) {
+        nav.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+        var menu = nav.querySelector(".lang-switch__menu");
+        if (menu) menu.hidden = false;
+      }
+      return;
+    }
+
     var btn = e.target.closest("[data-set-lang]");
-    if (!btn) return;
-    e.preventDefault();
-    setLang(btn.getAttribute("data-set-lang"));
+    if (btn) {
+      e.preventDefault();
+      setLang(btn.getAttribute("data-set-lang"));
+      return;
+    }
+
+    if (!e.target.closest(".lang-switch")) {
+      closeLangMenus();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeLangMenus();
   });
 
   function init() {
     var lang = getLang();
     // Persist discoverable ?lang= for SEO / share links (no-op on file://)
     syncLangQuery(lang);
+    // Prime all bundled dicts for fallback lookups
+    if (window.__I18N_MESSAGES__) {
+      Object.keys(window.__I18N_MESSAGES__).forEach(function (code) {
+        cache[code] = window.__I18N_MESSAGES__[code];
+      });
+    }
     renderLangSwitchers(lang);
     load(lang).then(function () {
       ensureWelcomePopupScript();
+      ensureTravelUtilsScript();
     });
   }
 

@@ -89,8 +89,38 @@
     return cur;
   }
 
+  function langFallbackOrder(lang) {
+    var chain = [lang];
+    if (lang === "zh-Hant") chain.push("zh");
+    if (lang !== "en") chain.push("en");
+    if (lang !== "ko") chain.push("ko");
+    if (window.GuideI18n && typeof window.GuideI18n.fallbackLangs === "function") {
+      try {
+        chain = window.GuideI18n.fallbackLangs(lang) || chain;
+      } catch (e) {
+        /* keep local chain */
+      }
+    }
+    var out = [];
+    var seen = {};
+    for (var i = 0; i < chain.length; i++) {
+      var c = chain[i];
+      if (!c || seen[c]) continue;
+      seen[c] = true;
+      out.push(c);
+    }
+    // Also try body keys stored without region tags
+    ["ja", "zh"].forEach(function (extra) {
+      if (!seen[extra]) {
+        seen[extra] = true;
+        out.push(extra);
+      }
+    });
+    return out;
+  }
+
   function tipLabel(lang) {
-    var order = [lang, "ko", "en", "ja"];
+    var order = langFallbackOrder(lang);
     for (var i = 0; i < order.length; i++) {
       var root = lookupRoot(order[i]);
       if (root && root.common && root.common.tip) return String(root.common.tip);
@@ -99,7 +129,7 @@
   }
 
   function getBody(path, lang) {
-    var order = [lang, "ko", "en", "ja"];
+    var order = langFallbackOrder(lang);
     for (var i = 0; i < order.length; i++) {
       var root = lookupRoot(order[i]);
       var raw = lookupPath(root, path);
@@ -115,8 +145,12 @@
 
   function textFor(block, lang) {
     if (!block) return "";
-    var t = block[lang] || block.ko || block.en || block.ja || "";
-    return String(t);
+    var order = langFallbackOrder(lang);
+    for (var i = 0; i < order.length; i++) {
+      var key = order[i];
+      if (block[key] != null && block[key] !== "") return String(block[key]);
+    }
+    return String(block.ko || block.en || block.ja || block.zh || "");
   }
 
   function looksLikeHtml(s) {

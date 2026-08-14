@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Load / save ko.json · en.json · ja.json · zh.json and rebuild messages.js."""
+"""Load / save locale JSON files and rebuild messages.js."""
 from __future__ import annotations
 
 import json
@@ -11,7 +11,9 @@ from typing import Any
 
 from .paths import I18N_DIR, ROOT
 
+# Editorial primary locales. Runtime also ships zh-Hant / vi / th / ru via build-bundle.
 LANGS = ("ko", "en", "ja", "zh")
+BUNDLE_LANGS = ("ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru")
 
 
 def load_lang(lang: str) -> dict[str, Any]:

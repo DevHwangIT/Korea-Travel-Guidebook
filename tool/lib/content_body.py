@@ -21,7 +21,7 @@ class BodySlot:
 
 
 # One post per detail page under pages/before-trip/{slug}/
-# Hub IA: 입국(eri/docs/immigration) · 돈(money/wowpass) · 생활(connect/pack) · 식사(solo) · 일정(holidays/avoid)
+# Hub IA: 입국(eri/docs/immigration) · 돈(money/wowpass) · 생활(connect/pack/korean) · 식사(solo) · 일정(holidays/avoid)
 BEFORE_TRIP_SLOTS: list[BodySlot] = [
     BodySlot("eriBody", "전자입국신고(ERI)", "before-trip", "eri", group="eri"),
     BodySlot("docsBody", "준비서류", "before-trip", "docs", group="docs"),
@@ -36,6 +36,9 @@ BEFORE_TRIP_SLOTS: list[BodySlot] = [
     BodySlot("wowpassBody", "Wow Pass", "before-trip", "wowpass", group="wowpass"),
     BodySlot("connectBody", "통신·전원", "before-trip", "connect", group="connect"),
     BodySlot("packBody", "짐·예약", "before-trip", "pack", group="pack"),
+    BodySlot(
+        "koreanBody", "기본 인사·표현", "before-trip", "korean", group="korean"
+    ),
     BodySlot("soloBody", "혼자 식사", "before-trip", "solo", group="solo"),
     BodySlot("holidaysBody", "공휴일", "before-trip", "holidays", group="holidays"),
     BodySlot(

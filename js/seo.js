@@ -101,6 +101,10 @@
       var existing = document.querySelector('meta[name="description"]');
       return existing ? existing.getAttribute("content") || "" : "";
     }
+    if (window.GuideI18n && typeof window.GuideI18n.lookupWithFallback === "function") {
+      var via = window.GuideI18n.lookupWithFallback(key, lang);
+      if (via != null && via !== "") return String(via);
+    }
     var dict = null;
     if (window.__I18N_MESSAGES__ && window.__I18N_MESSAGES__[lang]) {
       dict = window.__I18N_MESSAGES__[lang];

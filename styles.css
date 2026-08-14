@@ -100,47 +100,111 @@ a:hover {
   top: 16px;
   right: 16px;
   z-index: 80;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.lang-switch__toggle {
   display: inline-flex;
+  align-items: center;
   gap: 6px;
   margin: 0;
-  padding: 6px;
+  padding: 8px 12px;
   border: 1px solid #d8e3dc;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 6px 20px rgba(20, 40, 30, 0.12);
   backdrop-filter: blur(6px);
-}
-
-.lang-switch button {
-  border: none;
-  background: transparent;
-  color: #445;
-  min-width: 44px;
-  padding: 8px 12px;
-  border-radius: 999px;
+  color: #1f3a32;
   cursor: pointer;
   font-size: 0.85rem;
   font-weight: 700;
+  line-height: 1.2;
+  max-width: min(220px, calc(100vw - 28px));
 }
 
-.lang-switch button:hover {
+.lang-switch__current {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lang-switch__caret {
+  flex: 0 0 auto;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.lang-switch.is-open .lang-switch__toggle {
+  border-color: #1f3a32;
+}
+
+.lang-switch__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 168px;
+  max-width: min(260px, calc(100vw - 20px));
+  max-height: min(70vh, 420px);
+  overflow: auto;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #d8e3dc;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 12px 28px rgba(20, 40, 30, 0.16);
+  backdrop-filter: blur(8px);
+}
+
+.lang-switch__heading {
+  margin: 0 0 4px;
+  padding: 4px 10px 6px;
+  color: #667;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.lang-switch button,
+.lang-switch__menu button {
+  border: none;
+  background: transparent;
+  color: #445;
+  min-width: 0;
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.lang-switch__menu button:hover {
   background: #eef3f0;
 }
 
-.lang-switch button.is-active {
+.lang-switch__menu button.is-active {
   background: #1f3a32;
   color: #fff;
 }
 
-.i18n-fallback {
-  margin: 16px auto;
-  max-width: 900px;
-  padding: 12px 14px;
-  background: #fff4e5;
-  border: 1px solid #f0d2a0;
-  color: #6a4b12;
-  text-align: left;
-  font-size: 0.9rem;
+.prep-related {
+  margin-top: 1.25rem;
+}
+
+.prep-related a {
+  font-weight: 600;
+  color: #1f3a32;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .site-brand {
@@ -1383,29 +1447,41 @@ html:has(body.places-map-app) {
 }
 
 .places-map-lang.lang-switch {
-  position: static;
+  position: relative;
   top: auto;
   right: auto;
   flex: 0 0 auto;
   margin-left: auto;
-  padding: 4px;
+  z-index: 50;
+}
+
+.places-map-lang .lang-switch__toggle {
   border-color: rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.08);
   box-shadow: none;
   backdrop-filter: none;
+  color: #e8efeb;
 }
 
-.places-map-lang.lang-switch button {
+.places-map-lang .lang-switch__menu {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(12, 22, 32, 0.96);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.places-map-lang .lang-switch__heading {
+  color: #9fb5ab;
+}
+
+.places-map-lang .lang-switch__menu button {
   color: #c9d5d0;
-  min-width: 38px;
-  padding: 6px 10px;
 }
 
-.places-map-lang.lang-switch button:hover {
+.places-map-lang .lang-switch__menu button:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.places-map-lang.lang-switch button.is-active {
+.places-map-lang .lang-switch__menu button.is-active {
   background: #f0c14b;
   color: #1a2418;
 }
@@ -3501,9 +3577,13 @@ a.partner-strip__slot:focus-visible {
     max-width: calc(100vw - 20px);
   }
 
-  .lang-switch button {
-    min-width: 40px;
+  .lang-switch__toggle {
     padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .lang-switch__menu {
+    min-width: 152px;
   }
 
   .site-header {
