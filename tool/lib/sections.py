@@ -574,14 +574,16 @@ def save_entry_texts(
     *,
     force_translate: bool = False,
 ) -> tuple[list[str], BatchStatus]:
-    """updates: { key: {ko,en,ja,zh} } — EN/JA/ZH filled from KO when blank/unchanged."""
+    """updates: { key: {ko,en,ja,zh,...} } — all TARGET_LANGS filled from KO when blank."""
+    from .translate import TARGET_LANGS
+
     notes: list[str] = []
     status = BatchStatus()
     bundle = i18n_store.load_all()
     for key, texts in updates.items():
         ko = (texts.get("ko") or "").strip()
         form: dict[str, str] = {}
-        for lang in ("en", "ja", "zh"):
+        for lang in TARGET_LANGS:
             val = (texts.get(lang) or "").strip()
             form[lang] = "" if val == ko else val
         old = {
@@ -602,19 +604,20 @@ def save_entry_texts(
                 force=force_translate,
                 status=status,
             )
-            for lang in ("en", "ja", "zh"):
+            for lang in TARGET_LANGS:
                 if form[lang] and not force_translate:
                     filled[lang] = form[lang]
-        for lang, val in (
-            ("ko", ko),
-            ("en", filled.get("en") or ko),
-            ("ja", filled.get("ja") or ko),
-            ("zh", filled.get("zh") or ko),
-        ):
+        bundle["ko"].setdefault(section.root_key, {})
+        if not isinstance(bundle["ko"][section.root_key], dict):
+            raise ValueError(f"{section.root_key}가 객체가 아닙니다 (ko)")
+        bundle["ko"][section.root_key][key] = ko
+        for lang in TARGET_LANGS:
             root = bundle[lang].setdefault(section.root_key, {})
             if not isinstance(root, dict):
                 raise ValueError(f"{section.root_key}가 객체가 아닙니다 ({lang})")
-            root[key] = val
+            root[key] = filled.get(lang) or (
+                filled.get("en") if lang in ("zh-Hant", "vi", "th", "ru") else ko
+            ) or ko
     i18n_store.save_all(bundle)
     notes.append(f"{section.title}: {len(updates)}개 항목 저장")
     notes.append(i18n_store.build_bundle())
@@ -628,13 +631,15 @@ def add_string_key(
     *,
     force_translate: bool = False,
 ) -> tuple[list[str], BatchStatus]:
+    from .translate import TARGET_LANGS
+
     key = key.strip()
     if not key or not re.match(r"^[A-Za-z0-9_-]+$", key):
         raise ValueError("키는 영문·숫자·_- 만 가능합니다.")
     status = BatchStatus()
     ko = (texts.get("ko") or "").strip()
     form: dict[str, str] = {}
-    for lang in ("en", "ja", "zh"):
+    for lang in TARGET_LANGS:
         val = (texts.get(lang) or "").strip()
         form[lang] = "" if val == ko else val
     if all(form.values()) and not force_translate:
@@ -642,20 +647,21 @@ def add_string_key(
         status.reused += 1
     else:
         filled = fill_lang_targets(ko, force=True, status=status)
-        for lang in ("en", "ja", "zh"):
+        for lang in TARGET_LANGS:
             if form[lang]:
                 filled[lang] = form[lang]
     bundle = i18n_store.load_all()
-    for lang, val in (
-        ("ko", ko),
-        ("en", filled.get("en") or ko),
-        ("ja", filled.get("ja") or ko),
-        ("zh", filled.get("zh") or ko),
-    ):
+    root_ko = bundle["ko"].setdefault(section.root_key, {})
+    if key in root_ko:
+        raise ValueError(f"이미 있는 키: {section.root_key}.{key} (ko)")
+    root_ko[key] = ko
+    for lang in TARGET_LANGS:
         root = bundle[lang].setdefault(section.root_key, {})
         if key in root:
             raise ValueError(f"이미 있는 키: {section.root_key}.{key} ({lang})")
-        root[key] = val
+        root[key] = filled.get(lang) or (
+            filled.get("en") if lang in ("zh-Hant", "vi", "th", "ru") else ko
+        ) or ko
     i18n_store.save_all(bundle)
     return [
         f"항목 추가: {friendly_key_label(key)}",

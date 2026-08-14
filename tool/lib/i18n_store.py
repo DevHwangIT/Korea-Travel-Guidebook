@@ -11,9 +11,22 @@ from typing import Any
 
 from .paths import I18N_DIR, ROOT
 
-# Editorial primary locales. Runtime also ships zh-Hant / vi / th / ru via build-bundle.
-LANGS = ("ko", "en", "ja", "zh")
+# Keep in sync with js/i18n.js GUIDE_LANGS and i18n/build-bundle.py LANGS.
 BUNDLE_LANGS = ("ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru")
+# All locales are first-class for load/save/scaffold (same pipeline as public site).
+LANGS = BUNDLE_LANGS
+
+# Display labels for admin / docs
+LANG_LABELS = {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "简体中文",
+    "zh-Hant": "繁體中文",
+    "vi": "Tiếng Việt",
+    "th": "ภาษาไทย",
+    "ru": "Русский",
+}
 
 
 def load_lang(lang: str) -> dict[str, Any]:
@@ -36,7 +49,8 @@ def save_lang(lang: str, data: dict[str, Any]) -> None:
 
 def save_all(bundle: dict[str, dict[str, Any]]) -> None:
     for lang in LANGS:
-        save_lang(lang, bundle[lang])
+        if lang in bundle:
+            save_lang(lang, bundle[lang])
 
 
 def build_bundle() -> str:

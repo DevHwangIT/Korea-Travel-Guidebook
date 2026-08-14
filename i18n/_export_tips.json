@@ -1,0 +1,255 @@
+{
+  "catDaily": "Daily",
+  "catRestaurant": "Dining",
+  "catTransport": "Transit",
+  "catShopping": "Shopping",
+  "backHub": "← Travel tips",
+  "dailyCardDesc": "Maps, trash, weekend rates, convenience stores, rainy days",
+  "restaurantCardDesc": "Ordering, waiting, water & banchan",
+  "transportCardDesc": "Tap-out, rush hour, exits, etiquette",
+  "mapTitle": "Maps",
+  "mapMistake": "Using only Google Maps while navigating",
+  "mapBody": "For transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+  "cardTitle": "Bus tap-out & transfers",
+  "cardMistake": "Not tapping when you get off the bus",
+  "cardBody": "On buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+  "restaurantTitle": "Dining",
+  "restaurantMistake": "Assuming restaurants work the same as abroad",
+  "restaurantBody1": "You might wait for staff to take your order when there is a call bell at the table, or ask for water and side dishes when there is a self-service station. More places now use kiosks or tablets for ordering, which can be another hurdle if you do not read Korean.",
+  "restaurantBody2": "Tipping is not common at typical Korean restaurants — you usually do not leave cash or add tip on a card.",
+  "restaurantBody3": "Abroad, staff often bring the bill to your table. In many Korean restaurants, you finish eating and then pay at the counter near the entrance.",
+  "cashTitle": "Cash and cards",
+  "cashMistake": "Assuming a card works everywhere",
+  "cashBody": "Most places take cards, but traditional markets, street stalls, and some small restaurants/taxis are cash-only. Keep small bills.",
+  "trashTitle": "Trash bins",
+  "trashMistake": "Expecting many street trash cans",
+  "trashBody": "Public bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
+  "wifiTitle": "Wi-Fi and data",
+  "wifiMistake": "Thinking café/subway Wi-Fi is enough",
+  "wifiBody": "Public Wi-Fi can be unstable. An eSIM/SIM keeps maps, translation, and payment apps online.",
+  "queueTitle": "Waiting lines",
+  "queueMistake": "Sitting down without checking the queue",
+  "queueBody": "Popular restaurants often use waiting apps or number tickets at the door. If staff say “one moment,” check the line first.",
+  "waterTitle": "Water and side dishes",
+  "waterMistake": "Waiting for staff to bring everything",
+  "waterBody": "Many places have a self-serve station for water, utensils, and banchan. Look around once you sit.",
+  "rushTitle": "Rush hour",
+  "rushMistake": "Sightseeing during commute peaks",
+  "rushBody": "Weekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
+  "taxiTitle": "Taxis",
+  "taxiMistake": "Only explaining the address out loud",
+  "taxiBody": "Use Kakao T / Uber-style apps, or show the destination in Korean. Ask for a receipt if you need one.",
+  "exitTitle": "Subway exits",
+  "exitMistake": "Leaving through a random exit",
+  "exitBody": "Exit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
+  "weekendTitle": "Weekend lodging",
+  "weekendMistake": "Assuming a mid-trip weekend stay costs the same as a weekday",
+  "weekendBody": "Friday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+  "catPickLabel": "Topic",
+  "dailyBody": [
+    {
+      "type": "text",
+      "ko": "지도 앱\n\n길 찾을 때 구글 지도만 쓰는 것\n\n현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+      "en": "Maps\n\nUsing only Google Maps while navigating\n\nFor transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+      "ja": "地図アプリ\n\n道探しでGoogleマップだけ使うこと\n\n現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。"
+    },
+    {
+      "type": "text",
+      "ko": "쓰레기통\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
+      "en": "Trash bins\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
+      "ja": "ゴミ箱\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。"
+    },
+    {
+      "type": "text",
+      "ko": "주말·연휴 숙소\n\n여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것\n\n금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
+      "en": "Weekend lodging\n\nAssuming a mid-trip weekend stay costs the same as a weekday\n\nFriday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+      "ja": "週末・連休の宿\n\n旅行中の週末宿が平日と同じ料金だと思うこと\n\n金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。"
+    },
+    {
+      "type": "text",
+      "ko": "편의점\n\n편의점은 간식만 산다고 생각하는 것\n\nCU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+      "en": "Convenience stores\n\nThinking convenience stores are only for snacks\n\nCU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+      "ja": "コンビニ\n\nコンビニはおやつだけと思うこと\n\nCU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。"
+    },
+    {
+      "type": "text",
+      "ko": "비 오는 날\n\n우산 없이 밖으로 나갔다가 당황하는 것\n\n갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+      "en": "Rainy days\n\nHeading out without a plan when it suddenly rains\n\nIf rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+      "ja": "雨の日\n\n突然の雨に傘なしで慌てること\n\n急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。"
+    }
+  ],
+  "restaurantBody": [
+    {
+      "type": "text",
+      "ko": "식당 이용\n\n해외 식당의 규칙을 그대로 적용하는 것\n\n직원이 주문을 받으러 올 때까지 기다렸는데 테이블 옆에 호출벨이 있거나, 물과 반찬을 요청하려 했는데 셀프 코너가 따로 마련돼 있는 경우가 있습니다. 최근에는 키오스크나 태블릿으로 직접 주문하는 식당도 늘어, 한국어에 익숙하지 않은 여행객에게 또 다른 장벽이 되고 있습니다.\n\n반대로 일부 외국인은 한국에서도 팁을 줘야 한다고 생각해 계산 후 현금을 테이블에 두거나, 카드 결제 금액에 팁을 추가할 방법을 찾습니다. 한국의 일반 음식점에서는 팁 문화가 일반적이지 않습니다.\n\n해외에서는 직원이 테이블로 계산서를 가져오는 식당이 많지만, 한국의 일반 음식점에서는 식사를 마친 뒤 출입구 근처 계산대로 직접 이동해 결제하는 경우가 흔합니다.",
+      "en": "Dining\n\nAssuming restaurants work the same as abroad\n\nYou might wait for staff to take your order when there is a call bell at the table, or ask for water and side dishes when there is a self-service station. More places now use kiosks or tablets for ordering, which can be another hurdle if you do not read Korean.\n\nSome visitors also think they should leave a tip in Korea, leaving cash on the table or looking for a way to add tip on a card payment. Tipping is not common at typical Korean restaurants.\n\nAbroad, staff often bring the bill to your table. In many Korean restaurants, you finish eating and then pay at the counter near the entrance.",
+      "ja": "食事のマナー\n\n海外のレストランのルールをそのまま当てはめること\n\n店員が注文を取りに来るまで待っていたら、テーブル横に呼び出しベルがあったり、水やおかずを頼もうとしたらセルフコーナーが別にあったりします。最近はキオスクやタブレットで自分で注文する店も増え、韓国語に慣れていない旅行者には別のハードルになっています。\n\nまた、韓国でもチップが必要だと思い、会計後に現金をテーブルに置いたり、カード支払いにチップを足す方法を探す人もいます。一般的な韓国の飲食店ではチップ文化は一般的ではありません。\n\n海外では店員がテーブルに伝票を持ってくる店が多いですが、韓国の一般的な飲食店では食事後に入口付近の会計カウンターへ自分で行って支払うことがよくあります。"
+    },
+    {
+      "type": "text",
+      "ko": "팁(봉사료)\n\n한국 식당에서는 보통 팁을 주지 않습니다\n\n한국의 일반 음식점·카페에서는 팁 문화가 없습니다. 메뉴 가격에 서비스가 포함된 형태로 보는 경우가 많고, 계산 후 테이블에 현금을 남겨 두거나 카드 결제에 팁을 더하려고 하면 직원이 당황할 수 있습니다. 고급 호텔 레스토랑처럼 예외가 있어도 ‘기본값은 팁 없음’으로 기억하세요.",
+      "en": "Tipping\n\nKorea generally does not tip at restaurants\n\nAt typical Korean restaurants and cafés there is no tipping culture. Service is treated as included in the menu price. Leaving cash on the table or trying to add a tip on a card can confuse staff. A few hotel restaurants may be exceptions, but the default is: no tip.",
+      "ja": "チップ\n\n韓国の一般的な飲食店ではチップは不要です\n\n韓国の一般的なレストランやカフェにチップ文化はありません。価格にサービスが含まれていると考え、会計後に現金を置いたりカードにチップを足そうとすると店員が戸惑うことがあります。基本は「チップなし」です。"
+    },
+    {
+      "type": "callout",
+      "ko": "정리: 한국 식당에서는 팁을 주지 않는 것이 보통입니다. 계산은 카운터에서, 금액은 영수증 그대로 내면 됩니다.",
+      "en": "Bottom line: tipping is not expected at Korean restaurants. Pay at the counter for the receipt total.",
+      "ja": "要点: 韓国の飲食店ではチップ不要が普通。レシート金額をカウンターで支払えばOK。"
+    },
+    {
+      "type": "text",
+      "ko": "웨이팅·번호표\n\n줄 없이 바로 자리에 앉으려는 것\n\n인기 식당은 입구에서 웨이팅 앱·번호표를 쓰는 곳이 많습니다. 직원이 ‘잠시만요’라고 하면 줄을 확인하세요.",
+      "en": "Waiting lines\n\nSitting down without checking the queue\n\nPopular restaurants often use waiting apps or number tickets at the door. If staff say “one moment,” check the line first.",
+      "ja": "待ち行列\n\n列を確認せず席に座ろうとすること\n\n人気店は入口で整理券や待ちアプリを使うことが多いです。店員に言われたら列を確認しましょう。"
+    },
+    {
+      "type": "text",
+      "ko": "물·반찬\n\n물과 반찬을 전부 직원이 가져다 줄 거라 생각하는 것\n\n셀프 코너에서 물·수저·반찬을 가져오는 식당이 많습니다. 주변을 한 번 둘러보세요.",
+      "en": "Water and side dishes\n\nWaiting for staff to bring everything\n\nMany places have a self-serve station for water, utensils, and banchan. Look around once you sit.",
+      "ja": "水・おかず\n\n全部店員が運んでくれると思い込むこと\n\nセルフコーナーで水・箸・おかずを取る店が多いです。座ったら周囲を見てみましょう。"
+    }
+  ],
+  "transportBody": [
+    {
+      "type": "text",
+      "ko": "버스 하차·환승\n\n버스에서 내릴 때 카드를 찍지 않는 것\n\n버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
+      "en": "Bus tap-out & transfers\n\nNot tapping when you get off the bus\n\nOn buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+      "ja": "バス降車・乗換\n\nバス降車時にカードをタッチしないこと\n\nバスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。"
+    },
+    {
+      "type": "text",
+      "ko": "출퇴근 혼잡\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
+      "en": "Rush hour\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
+      "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
+      "zh": "通勤高峰\n\n高峰时段去景点移动\n\n工作日 7–9 点、18–20 点地铁公交很挤。尽量避开；行李多时可考虑出租车。"
+    },
+    {
+      "type": "text",
+      "ko": "지하철 출구\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
+      "en": "Subway exits\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
+      "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
+      "zh": "地铁出口\n\n随便找个出口就出站\n\n同一车站出口编号差别很大。出站前先在地图 App 确认推荐出口。"
+    },
+    {
+      "type": "text",
+      "ko": "지하철·버스 매너\n\n출입문 앞에서 막거나 큰 소리로 통화하는 것\n\n내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+      "en": "Subway & bus etiquette\n\nBlocking the doors or taking loud phone calls\n\nLet exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+      "ja": "地下鉄・バスのマナー\n\nドア前で塞ぐ、大きな声で通話する\n\n降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。"
+    }
+  ],
+  "noTipTitle": "Tipping",
+  "noTipMistake": "Korea generally does not tip at restaurants",
+  "noTipBody": "Typical Korean restaurants and cafés have no tipping culture — service is treated as included. Default: no tip.",
+  "catDailyIntro": "Maps, trash, weekend rates, convenience stores, and rainy days — everyday tips while you’re traveling.",
+  "catRestaurantIntro": "Ordering, tipping, waiting lines, and self-serve corners — tips at the table.",
+  "catTransportIntro": "Tap-out, rush hour, exits, and light etiquette for moving around. Fares and card setup are in Before You Go.",
+  "catShoppingIntro": "Olive Young, Daiso, duty-free, and markets — all inline here (no extra page hops).",
+  "tabMap": "Maps",
+  "tabCash": "Cash · Cards",
+  "tabTrash": "Trash bins",
+  "tabWifi": "Wi-Fi",
+  "tabWeekend": "Weekend stays",
+  "tabOrder": "Order · Pay",
+  "tabNoTip": "Tipping",
+  "tabQueue": "Waiting",
+  "tabWater": "Water · Banchan",
+  "tabCard": "Tap-out · Transfer",
+  "tabRush": "Rush hour",
+  "tabTaxi": "Taxi",
+  "tabExit": "Subway exits",
+  "tabOlive": "Olive Young",
+  "tabDaiso": "Daiso",
+  "tabDuty": "Duty-free",
+  "tabMarket": "Markets",
+  "tabConvenience": "Convenience stores",
+  "convenienceTitle": "Convenience stores",
+  "convenienceMistake": "Thinking convenience stores are only for snacks",
+  "convenienceBody": "CU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+  "tabRain": "Rainy days",
+  "rainTitle": "Rainy days",
+  "rainMistake": "Heading out without a plan when it suddenly rains",
+  "rainBody": "If rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+  "tabEtiquette": "Transit etiquette",
+  "etiquetteTitle": "Subway & bus etiquette",
+  "etiquetteMistake": "Blocking the doors or taking loud phone calls",
+  "etiquetteBody": "Let exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+  "mapCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/map.jpg"
+    }
+  ],
+  "trashCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/trash.jpg"
+    }
+  ],
+  "weekendCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/weekend.jpg"
+    }
+  ],
+  "convenienceCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/convenience.jpg"
+    }
+  ],
+  "rainCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/rain.jpg"
+    }
+  ],
+  "orderCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/order.jpg"
+    }
+  ],
+  "noTipCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/notip.jpg"
+    }
+  ],
+  "queueCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/queue.jpg"
+    }
+  ],
+  "waterCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/water.jpg"
+    }
+  ],
+  "cardCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/card.jpg"
+    }
+  ],
+  "rushCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/rush.jpg"
+    }
+  ],
+  "exitCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/exit.jpg"
+    }
+  ],
+  "etiquetteCover": [
+    {
+      "type": "image",
+      "src": "Images/travel-tips/etiquette.jpg"
+    }
+  ]
+}

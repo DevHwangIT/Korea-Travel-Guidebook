@@ -235,7 +235,7 @@ def _empty_shop_texts() -> dict[str, dict[str, str]]:
 def normalize_dish_texts(
     texts: dict[str, dict[str, str]],
 ) -> tuple[dict[str, dict[str, str]], list[str]]:
-    """Require KO title; fill blank EN/JA/ZH from KO as last resort."""
+    """Require KO title; fill blank non-KO langs from EN (secondary) or KO."""
     notes: list[str] = []
     out = _empty_dish_texts()
     for lang in i18n_store.LANGS:
@@ -248,10 +248,15 @@ def normalize_dish_texts(
         out["ko"]["desc"] = out["ko"]["title"]
     if not out["ko"]["about"]:
         out["ko"]["about"] = out["ko"]["desc"]
-    for lang in ("en", "ja", "zh"):
+    for lang in i18n_store.LANGS:
+        if lang == "ko":
+            continue
         for f in DISH_TEXT_FIELDS:
             if not out[lang][f]:
-                out[lang][f] = out["ko"][f]
+                if lang in ("zh-Hant", "vi", "th", "ru") and out["en"][f]:
+                    out[lang][f] = out["en"][f]
+                else:
+                    out[lang][f] = out["ko"][f]
     return out, notes
 
 
@@ -272,10 +277,15 @@ def normalize_shop_texts(
         out["ko"]["menu"] = out["ko"]["name"]
     if not out["ko"]["about"]:
         out["ko"]["about"] = out["ko"]["name"]
-    for lang in ("en", "ja", "zh"):
+    for lang in i18n_store.LANGS:
+        if lang == "ko":
+            continue
         for f in SHOP_TEXT_FIELDS:
             if not out[lang][f]:
-                out[lang][f] = out["ko"][f]
+                if lang in ("zh-Hant", "vi", "th", "ru") and out["en"][f]:
+                    out[lang][f] = out["en"][f]
+                else:
+                    out[lang][f] = out["ko"][f]
     return out, notes
 
 
@@ -525,7 +535,7 @@ def create_dish(
             raise ValueError(f"i18n dishes.{slug} 키가 이미 있습니다 ({lang}).")
         dishes[slug] = dict(normalized[lang])
     i18n_store.save_all(bundle)
-    notes.append("i18n ko/en/ja/zh에 dishes 항목 추가")
+    notes.append("i18n 전체 언어(ko/en/ja/zh/zh-Hant/vi/th/ru)에 dishes 항목 추가")
 
     page.parent.mkdir(parents=True, exist_ok=True)
     default_emoji = emoji or ("🍽️" if kind == "meals" else "🍰")

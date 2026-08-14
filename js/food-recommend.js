@@ -111,24 +111,15 @@
 
   function t(key, fallback) {
     try {
-      var lang =
-        (window.GuideI18n &&
-          window.GuideI18n.getLang &&
-          window.GuideI18n.getLang()) ||
-        "ko";
-      var pack =
-        (window.__I18N_MESSAGES__ && window.__I18N_MESSAGES__[lang]) || null;
-      if (pack) {
-        var cur = pack;
-        var parts = key.split(".");
-        for (var i = 0; i < parts.length; i++) {
-          if (!cur || typeof cur !== "object" || !(parts[i] in cur)) {
-            cur = undefined;
-            break;
-          }
-          cur = cur[parts[i]];
-        }
-        if (typeof cur === "string" && cur) return cur;
+      if (window.GuideI18n && typeof window.GuideI18n.t === "function") {
+        return window.GuideI18n.t(key, fallback || key);
+      }
+      if (window.GuideI18n && typeof window.GuideI18n.lookupWithFallback === "function") {
+        var via = window.GuideI18n.lookupWithFallback(
+          key,
+          window.GuideI18n.getLang && window.GuideI18n.getLang()
+        );
+        if (via != null && via !== "") return String(via);
       }
     } catch (e) {
       /* ignore */

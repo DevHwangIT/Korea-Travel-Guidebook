@@ -280,9 +280,11 @@
   function renderLangSwitchers(lang) {
     document.querySelectorAll("nav.lang-switch, .lang-switch").forEach(function (nav) {
       if (nav.getAttribute("data-lang-static") === "1") return;
-      var heading =
+      var prefix =
         lookupWithFallback("common.langMenu", lang) || "Language";
       var currentLabel = labelFor(lang);
+      /** Closed toggle: "Language : English", "언어 : 한국어", "言語 : 日本語", … */
+      var toggleText = prefix + " : " + currentLabel;
       var options = GUIDE_LANGS.map(function (l) {
         var on = l.code === lang;
         return (
@@ -296,30 +298,29 @@
         );
       }).join("");
       nav.innerHTML =
-        '<button type="button" class="lang-switch__toggle" aria-expanded="false" aria-haspopup="listbox">' +
+        '<button type="button" class="lang-switch__toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="' +
+        toggleText +
+        '">' +
         '<span class="lang-switch__current">' +
-        currentLabel +
+        toggleText +
         "</span>" +
         '<span class="lang-switch__caret" aria-hidden="true">▾</span>' +
         "</button>" +
         '<div class="lang-switch__menu" role="listbox" hidden>' +
         '<p class="lang-switch__heading">' +
-        heading +
+        prefix +
         "</p>" +
         options +
         "</div>";
       if (!nav.getAttribute("aria-label")) {
-        nav.setAttribute("aria-label", "Language");
+        nav.setAttribute("aria-label", prefix);
       }
     });
   }
 
-  function apply(dict, lang) {
-    // Keep active dict in cache for fallback lookups across langs
-    cache[lang] = dict;
-    renderLangSwitchers(lang);
-
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+  function applyInRoot(root, lang) {
+    if (!root || !root.querySelectorAll) return;
+    root.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
       var val = lookupWithFallback(key, lang);
       if (val == null || val === "") {
@@ -340,7 +341,7 @@
       }
     });
 
-    document.querySelectorAll("[data-i18n-attr]").forEach(function (el) {
+    root.querySelectorAll("[data-i18n-attr]").forEach(function (el) {
       var specs = el.getAttribute("data-i18n-attr").split(",");
       specs.forEach(function (spec) {
         var parts = spec.split(":");
@@ -351,6 +352,13 @@
         if (val != null) el.setAttribute(attr, String(val));
       });
     });
+  }
+
+  function apply(dict, lang) {
+    // Keep active dict in cache for fallback lookups across langs
+    cache[lang] = dict;
+    renderLangSwitchers(lang);
+    applyInRoot(document, lang);
 
     var titleKey = document.documentElement.getAttribute("data-i18n-title") || "";
     var pageTitle = titleKey ? lookupWithFallback(titleKey, lang) : null;
@@ -368,6 +376,24 @@
       btn.classList.toggle("is-active", on);
       btn.setAttribute("aria-selected", on ? "true" : "false");
     });
+  }
+
+  /** Re-apply current language to document or a late-injected subtree. */
+  function reapply(root) {
+    var lang = getLang();
+    var dict = dictFor(lang) || dictFor("en") || dictFor("ko") || {};
+    cache[lang] = dict;
+    if (!root || root === document || root === document.documentElement) {
+      apply(dict, lang);
+      return;
+    }
+    applyInRoot(root, lang);
+  }
+
+  function t(path, fallback) {
+    var val = lookupWithFallback(path, getLang());
+    if (val != null && val !== "") return String(val);
+    return fallback != null ? fallback : path;
   }
 
   function notifyLang(lang) {
@@ -429,6 +455,9 @@
     setLang: setLang,
     getLang: getLang,
     load: load,
+    apply: reapply,
+    reapply: reapply,
+    t: t,
     detectBrowserLang: detectBrowserLang,
     languages: GUIDE_LANGS.slice(),
     supported: SUPPORTED.slice(),

@@ -1,0 +1,140 @@
+{
+  "pageTitle": "Food & convenience | Korea Travel Guide",
+  "title": "Food & convenience",
+  "intro": "Jump straight to meals, desserts, or convenience-store picks.",
+  "back": "← Food & convenience",
+  "mealsDesc": "Choose Korean meals and street-food favorites.",
+  "dessertsDesc": "Cafés, bread, bingsu, and sweet treats.",
+  "foodsDesc": "Choose Korean meals, snacks, cafés, and desserts.",
+  "convenienceDesc": "Browse popular convenience-store combos and products.",
+  "quiz": {
+    "bannerEyebrow": "Food quiz",
+    "bannerTitle": "Not sure what to eat? Get a recommendation.",
+    "bannerCta": "Take the quiz",
+    "title": "Food recommendation",
+    "progress": "{current} / {total}",
+    "back": "Back",
+    "close": "Close",
+    "restart": "Try again",
+    "resultEyebrow": "Today’s pick",
+    "resultLabel": "Result",
+    "viewMore": "See details →",
+    "defaultReason": "A solid match for your answers — tap through for details.",
+    "questions": {
+      "craving": {
+        "prompt": "What are you craving?",
+        "options": {
+          "meal": "A proper meal",
+          "dessert": "Something sweet",
+          "quick": "Quick & easy"
+        }
+      },
+      "spicy": {
+        "prompt": "How about spicy?",
+        "options": {
+          "love": "Bring the heat!",
+          "mild": "Just a little",
+          "no": "Keep it mild"
+        }
+      },
+      "dessertVibe": {
+        "prompt": "What dessert vibe fits?",
+        "options": {
+          "icy": "Icy bingsu",
+          "bakery": "Soft bakery bread",
+          "coffee": "Café break"
+        }
+      },
+      "soup": {
+        "prompt": "Want something with broth?",
+        "options": {
+          "yes": "Yes — a warm bowl",
+          "no": "No broth, please"
+        }
+      },
+      "protein": {
+        "prompt": "What should lead the plate?",
+        "options": {
+          "meat": "Serious meat",
+          "chicken": "Chicken dishes",
+          "light": "Light / veggie-friendly"
+        }
+      },
+      "mood": {
+        "prompt": "Weather or mood right now?",
+        "options": {
+          "hot": "Hot — I want cool food",
+          "cold": "Chilly — I want warmth",
+          "rain": "Rainy / damp vibes",
+          "any": "Anything’s fine"
+        }
+      },
+      "quickStyle": {
+        "prompt": "Quick bite — which style?",
+        "options": {
+          "combo": "Convenience-store combos",
+          "noodles": "Ramen / simple noodles",
+          "roll": "A roll of kimbap"
+        }
+      }
+    },
+    "results": {
+      "kimbap": {
+        "name": "Kimbap",
+        "reason": "Easy, portable, and perfect for a light meal on the go."
+      },
+      "naengmyeon": {
+        "name": "Naengmyeon",
+        "reason": "A cool bowl that hits the spot on warm days."
+      },
+      "gukbap": {
+        "name": "Gukbap",
+        "reason": "Warm broth and rice when you need something hearty."
+      },
+      "dakhanmari": {
+        "name": "Dakhanmari",
+        "reason": "Great for sharing — a comforting chicken meal."
+      },
+      "tteokbokki": {
+        "name": "Tteokbokki",
+        "reason": "Sweet-spicy street-food energy for a fun mood boost."
+      },
+      "samgyeopsal": {
+        "name": "Samgyeopsal",
+        "reason": "A can’t-miss pick when you want a proper meat feast."
+      },
+      "bibimbap": {
+        "name": "Bibimbap",
+        "reason": "Veggies, rice, and sauce in one balanced, easy bowl."
+      },
+      "malatang": {
+        "name": "Malatang",
+        "reason": "Spicy broth when you want bold, customizable heat."
+      },
+      "sundubu": {
+        "name": "Sundubu jjigae",
+        "reason": "Soft tofu and a savory stew — cozy even on rainy days."
+      },
+      "bread": {
+        "name": "Bread & bakery",
+        "reason": "Soft loaves and sweet bakery treats for a gentle break."
+      },
+      "bingsu": {
+        "name": "Bingsu",
+        "reason": "A cool, sweet dessert that melts the heat away."
+      },
+      "cafe": {
+        "name": "Café",
+        "reason": "Coffee and dessert for a short, refreshing pause."
+      },
+      "convenience": {
+        "name": "Convenience-store food",
+        "reason": "Browse combos and hits you can grab and eat fast."
+      },
+      "ramyeonEgg": {
+        "name": "Ramen + egg",
+        "reason": "A traveler classic — quick noodles you can cook in-store."
+      }
+    }
+  }
+}

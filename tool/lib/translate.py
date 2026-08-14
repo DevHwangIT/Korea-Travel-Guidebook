@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-"""KO → EN/JA/ZH auto-translate for admin save (pluggable providers)."""
+"""KO → all GUIDE_LANGS auto-translate for admin save (pluggable providers).
+
+Primary targets (en/ja/zh) are translated from Korean.
+Secondary targets (zh-Hant/vi/th/ru) try the same engines; if unsupported or
+failed, they copy English (preferred) then Korean so locale JSON keys always exist.
+"""
 from __future__ import annotations
 
 import hashlib
@@ -18,8 +23,10 @@ _CACHE: dict[tuple[str, str, str], str] = {}
 _HTML_RE = re.compile(r"<[a-zA-Z][^>]*>")
 _TAG_RE = re.compile(r"<[^>]+>")
 
-# Targets filled from Korean source text
-TARGET_LANGS = ("en", "ja", "zh")
+# Keep in sync with i18n_store.LANGS / js/i18n.js GUIDE_LANGS (minus ko).
+PRIMARY_TARGET_LANGS = ("en", "ja", "zh")
+SECONDARY_TARGET_LANGS = ("zh-Hant", "vi", "th", "ru")
+TARGET_LANGS = PRIMARY_TARGET_LANGS + SECONDARY_TARGET_LANGS
 ALL_TEXT_LANGS = ("ko",) + TARGET_LANGS
 
 
@@ -43,8 +50,8 @@ class BatchStatus:
             lines.append(f"변경 없어 기존 번역 유지: {self.reused}건")
         if self.copied:
             lines.append(
-                f"번역 대신 한국어 복사: {self.copied}건 "
-                "(API 키 없거나 엔진 실패)"
+                f"번역 대신 EN/KO 복사: {self.copied}건 "
+                "(API 키 없거나 엔진 미지원/실패)"
             )
         for err in self.errors[:5]:
             lines.append(f"번역 경고: {err}")
@@ -53,11 +60,11 @@ class BatchStatus:
     def flash_status(self) -> str:
         """Short Korean status for toast."""
         if self.translated > 0 and self.copied == 0:
-            return "번역했어요 (영어·일본어·중국어)"
+            return "번역했어요 (전체 언어)"
         if self.copied > 0 and self.translated == 0:
-            return "번역 실패 — 한국어만 저장됨"
+            return "번역 실패 — 한국어·영문 복사로 저장"
         if self.translated > 0 and self.copied > 0:
-            return "일부만 번역했어요 (영어·일본어·중국어)"
+            return "일부만 번역했어요 (나머지는 EN 복사)"
         # reused-only: no new translation work — keep toast as plain save
         return ""
 
@@ -95,11 +102,11 @@ def provider_hint() -> str:
     p = detect_provider()
     if p == "copy":
         return (
-            "API 키 없음 — EN/JA/ZH(중국어)에 한국어를 복사합니다. "
+            "API 키 없음 — EN/JA/ZH/繁中/VI/TH/RU에 한국어 또는 영문을 복사합니다. "
             "품질을 높이려면 DEEPL_API_KEY / GOOGLE_TRANSLATE_API_KEY / "
             "OPENAI_API_KEY 중 하나를 설정하거나 pip install deep-translator"
         )
-    return f"활성 번역: {p} (영어·일본어·중국어)"
+    return f"활성 번역: {p} (en/ja/zh + zh-Hant/vi/th/ru)"
 
 
 def _http_json(
@@ -116,13 +123,32 @@ def _http_json(
     return json.loads(raw) if raw else {}
 
 
-_DEEPL_TARGETS = {"en": "EN-US", "ja": "JA", "zh": "ZH-HANS"}
+# DeepL: VI/TH not supported on all plans — missing keys fall back to EN copy.
+_DEEPL_TARGETS = {
+    "en": "EN-US",
+    "ja": "JA",
+    "zh": "ZH-HANS",
+    "zh-Hant": "ZH-HANT",
+    "ru": "RU",
+}
 _OPENAI_LANG_NAMES = {
     "en": "English",
     "ja": "Japanese",
     "zh": "Simplified Chinese",
+    "zh-Hant": "Traditional Chinese (Taiwan)",
+    "vi": "Vietnamese",
+    "th": "Thai",
+    "ru": "Russian",
 }
-_GOOGLE_TARGETS = {"en": "en", "ja": "ja", "zh": "zh-CN"}
+_GOOGLE_TARGETS = {
+    "en": "en",
+    "ja": "ja",
+    "zh": "zh-CN",
+    "zh-Hant": "zh-TW",
+    "vi": "vi",
+    "th": "th",
+    "ru": "ru",
+}
 
 
 def _translate_deepl(text: str, target: str) -> str:
@@ -234,12 +260,12 @@ _PROVIDERS: dict[str, Callable[[str, str], str]] = {
 
 
 def translate_text(text: str, target: str, *, status: BatchStatus | None = None) -> str:
-    """Translate KO text to en/ja/zh. On failure returns original KO (caller may copy)."""
+    """Translate KO text to a TARGET_LANG. On failure returns original KO (caller may copy EN)."""
     text = text or ""
     if not _plain_for_empty_check(text):
         return ""
     if target not in TARGET_LANGS:
-        raise ValueError("target must be en, ja, or zh")
+        raise ValueError(f"target must be one of {TARGET_LANGS}")
 
     provider = detect_provider()
     if status is not None and not status.provider:
@@ -247,6 +273,13 @@ def translate_text(text: str, target: str, *, status: BatchStatus | None = None)
 
     if provider == "copy":
         if status is not None:
+            status.copied += 1
+        return text
+
+    # DeepL may not support vi/th — skip engine and let caller copy EN.
+    if provider == "deepl" and target not in _DEEPL_TARGETS:
+        if status is not None:
+            status.errors.append(f"deepl/{target}: unsupported — will copy EN")
             status.copied += 1
         return text
 
@@ -278,7 +311,11 @@ def fill_lang_targets(
     force: bool = False,
     status: BatchStatus | None = None,
 ) -> dict[str, str]:
-    """Return {en, ja, zh} for a Korean string, reusing prior translations when KO unchanged."""
+    """Return all TARGET_LANGS for a Korean string.
+
+    Secondary langs (zh-Hant/vi/th/ru) prefer a real translation; if the engine
+    copied Korean (or failed), fall back to English so public locales stay usable.
+    """
     ko = (ko or "").strip()
     prev = old or {}
     old_ko = (prev.get("ko") or "").strip()
@@ -289,9 +326,20 @@ def fill_lang_targets(
         if status is not None:
             status.reused += 1
         return existing
-    return {
-        lang: translate_text(ko, lang, status=status) for lang in TARGET_LANGS
-    }
+
+    out: dict[str, str] = {}
+    for lang in PRIMARY_TARGET_LANGS:
+        out[lang] = translate_text(ko, lang, status=status)
+
+    en = (out.get("en") or "").strip() or ko
+    for lang in SECONDARY_TARGET_LANGS:
+        raw = translate_text(ko, lang, status=status)
+        # If engine fell back to KO (copy/unsupported), prefer EN for secondary locales.
+        if not raw or raw.strip() == ko:
+            out[lang] = en
+        else:
+            out[lang] = raw
+    return out
 
 
 def fill_lang_pair(
@@ -322,7 +370,7 @@ def fill_scalar_texts(
     force: bool = False,
     status: BatchStatus | None = None,
 ) -> dict[str, dict[str, str]]:
-    """Fill EN/JA/ZH scalar fields from KO. Keeps non-empty form overrides unless force."""
+    """Fill all TARGET_LANGS scalar fields from KO. Keeps non-empty form overrides unless force."""
     st = status if status is not None else BatchStatus()
     old = old_texts or {}
     out: dict[str, dict[str, str]] = {
@@ -362,7 +410,7 @@ def fill_body_blocks(
     force: bool = False,
     status: BatchStatus | None = None,
 ) -> list[dict[str, Any]]:
-    """Fill en/ja/zh on text blocks from ko; image/youtube unchanged."""
+    """Fill all TARGET_LANGS on text blocks from ko; image/youtube unchanged."""
     st = status or BatchStatus()
     old_list = list(old_blocks or [])
     old_text = [b for b in old_list if str(b.get("type") or "") == "text"]

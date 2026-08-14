@@ -79,8 +79,10 @@ def walk(obj, stats: dict) -> object:
 
 
 def main() -> int:
+    from lib import i18n_store  # noqa: WPS433
+
     total = 0
-    for lang in ("ko", "en", "ja", "zh"):
+    for lang in i18n_store.LANGS:
         path = I18N_DIR / f"{lang}.json"
         data = json.loads(path.read_text(encoding="utf-8"))
         stats = {"changed": 0}

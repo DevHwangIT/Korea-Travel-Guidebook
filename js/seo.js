@@ -14,7 +14,9 @@
   var ORIGIN = String(cfg.SITE_ORIGIN || "").replace(/\/$/, "");
   var SITE_NAME = cfg.SITE_NAME || "Korea Travel Guide";
   var DEFAULT_OG = cfg.DEFAULT_OG_IMAGE || "Images/cover/korea-cover.png";
-  var LANGS = Array.isArray(cfg.LANGS) ? cfg.LANGS : ["ko", "en", "ja"];
+  var LANGS = Array.isArray(cfg.LANGS)
+    ? cfg.LANGS
+    : ["ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru"];
   var X_DEFAULT = cfg.X_DEFAULT_LANG || "en";
 
   function ensureMeta(attr, key, content) {

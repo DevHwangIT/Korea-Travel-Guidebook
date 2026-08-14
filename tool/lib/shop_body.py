@@ -82,24 +82,31 @@ def normalize_body_block(
 ) -> dict[str, Any] | None:
     """Normalize one block dict. Returns None if invalid / empty skippable.
 
-    When fill_missing_langs is False, empty en/ja stay empty so auto-translate
+    When fill_missing_langs is False, empty non-KO langs stay empty so auto-translate
     can detect missing translations (admin KO-only save path).
+    Text blocks keep keys for every GUIDE_LANGS code (ko + targets).
     """
     if not isinstance(raw, dict):
         return None
     btype = str(raw.get("type") or "").strip().lower()
     if btype == "text":
-        ko = str(raw.get("ko") or "").strip()
-        en = str(raw.get("en") or "").strip()
-        ja = str(raw.get("ja") or "").strip()
-        if not ko and not en and not ja:
+        from .translate import ALL_TEXT_LANGS, TARGET_LANGS
+
+        texts = {lang: str(raw.get(lang) or "").strip() for lang in ALL_TEXT_LANGS}
+        if not any(texts.values()):
             return None
         if fill_missing_langs:
-            if not en:
-                en = ko
-            if not ja:
-                ja = ko
-        return {"type": "text", "ko": ko, "en": en, "ja": ja}
+            ko = texts.get("ko") or ""
+            en = texts.get("en") or ko
+            if not texts["en"]:
+                texts["en"] = ko
+            for lang in TARGET_LANGS:
+                if lang == "en":
+                    continue
+                if not texts[lang]:
+                    # Secondary locales prefer EN over KO when filling blanks
+                    texts[lang] = en if lang in ("zh-Hant", "vi", "th", "ru") else ko
+        return {"type": "text", **texts}
     if btype == "image":
         src = str(raw.get("src") or "").strip().replace("\\", "/")
         if not src:
@@ -184,7 +191,7 @@ def body_from_form(
                         image_slug=section_slug,
                     )
                     notes.extend(up_notes)
-                # Leave en/ja empty when absent so save-path auto-translate can fill them.
+                # Leave non-KO empty when absent so save-path auto-translate can fill them.
                 return normalize_body(raw_blocks, fill_missing_langs=False), notes
         except json.JSONDecodeError:
             notes.append(f"{prefix}_json 파싱 실패 — 개별 필드로 처리합니다.")

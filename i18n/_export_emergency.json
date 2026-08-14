@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Emergency | Korea Travel Guide",
+  "title": "Emergency Information",
+  "contactsTitle": "Emergency Numbers",
+  "item": "Item",
+  "number": "Number",
+  "police": "Police",
+  "fire": "Fire / Ambulance",
+  "tourist": "Korea Travel Hotline (1330)",
+  "desc": "For life-threatening emergencies call 112 (police) or 119 (fire/ambulance). Use 1330 for tourist help, 1345 for immigration (weekdays), 1339 for non-emergency medical guidance, and 1588-5644 (BBB) for volunteer phone interpretation.",
+  "backHub": "← Emergency",
+  "guideTitle": "Know this",
+  "guideCardDesc": "Basics for emergencies",
+  "policeCardDesc": "Crime, loss, safety",
+  "fireCardDesc": "Fire, rescue, ambulance",
+  "touristCardDesc": "Multilingual tourist help",
+  "policeNumber": "112",
+  "fireNumber": "119",
+  "touristNumber": "1330",
+  "policeBody": [
+    {
+      "type": "text",
+      "ko": "경찰(112)은 범죄·폭력·분실 신고, 위험 상황에서 도움을 요청할 때 사용합니다. 영어 응대가 가능한 경우가 있으니 침착하게 위치와 상황을 말하세요.",
+      "en": "Call 112 (police) for crime, violence, lost items, or danger. English support is often available — stay calm and share your location and situation.",
+      "ja": "警察(112)は犯罪・暴力・紛失届、危険時の通報に使います。英語対応できる場合もあるので、落ち着いて場所と状況を伝えてください。"
+    }
+  ],
+  "fireBody": [
+    {
+      "type": "text",
+      "ko": "화재·구급(119)은 화재, 구조, 응급 의료가 필요할 때 연락합니다. 주소·랜드마크·증상을 간단히 전달하면 도움이 됩니다.",
+      "en": "Call 119 for fire, rescue, or medical emergencies. Share your address, a nearby landmark, and symptoms briefly.",
+      "ja": "火災・救急(119)は火事・救助・救急医療が必要なときに連絡します。住所・目印・症状を簡潔に伝えると助かります。"
+    }
+  ],
+  "touristBody": [
+    {
+      "type": "text",
+      "ko": "관광통역안내(1330)는 여행 중 언어 도움이 필요할 때 이용합니다. 길 안내, 분실, 병원 연결 등 관광 관련 통역을 받을 수 있습니다.",
+      "en": "Call 1330 for tourist interpretation help — directions, lost items, hospitals, and other travel assistance in multiple languages.",
+      "ja": "観光通訳案内(1330)は旅行中の言語サポートに使います。道案内・紛失・病院案内など観光関連の通訳が受けられます。"
+    }
+  ],
+  "guideBody": [
+    {
+      "type": "text",
+      "ko": "생명이 위험한 응급은 112(경찰) 또는 119(화재·구급)로 바로 연락하세요. 여행 통역·안내는 1330, 비자·체류는 1345(평일), 비응급 의료 상담은 1339, 전화 통역 봉사는 1588-5644(BBB)를 이용할 수 있습니다. 가능하면 현재 위치(역·건물 이름)를 함께 알려 주세요.",
+      "en": "For life-threatening emergencies call 112 (police) or 119 (fire/ambulance). Use 1330 for tourist help, 1345 for immigration (weekdays), 1339 for non-emergency medical guidance, and 1588-5644 (BBB) for volunteer phone interpretation. If you can, share your location (station or building name).",
+      "ja": "命に関わる緊急時は112（警察）または119（火災・救急）へ。観光通訳は1330、ビザ・滞在は1345（平日）、非緊急の医療相談は1339、電話通訳ボランティアは1588-5644（BBB）が利用できます。 可能なら現在地（駅・建物名）も伝えましょう。"
+    }
+  ],
+  "immigration": "Immigration / sojourn (Hi Korea)",
+  "medical": "Medical / disease info (KDCA)",
+  "bbb": "BBB phone interpretation",
+  "moreTitle": "Extra notes for visitors",
+  "embassyNote": "For a lost passport or consular emergencies, contact your own embassy or consulate first. Numbers differ by nationality — save the official contact before you fly.",
+  "passportNote": "If you lose your passport, file a report with police (112) and ask your embassy about an emergency travel document. Call 1330 if you need tourist interpretation help."
+}

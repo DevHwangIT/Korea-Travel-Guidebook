@@ -1,0 +1,634 @@
+{
+  "pageTitle": "Before you go | Korea Travel Guide",
+  "title": "Before you go",
+  "intro": "A guide to what to prepare and double-check before you leave for your trip. For tips during travel, see the Travel Tips category.",
+  "backHub": "← Before you go",
+  "tabDocs": "Documents",
+  "tabMoney": "Cash · Cards",
+  "tabConnect": "Data · Telecom",
+  "tabPower": "Power · Plugs",
+  "tabPack": "Pack · Bookings",
+  "tabTaxi": "Taxi",
+  "docsTitle": "Travel documents",
+  "docs1": "Confirm passport validity (6+ months beyond return) and whether you need a visa or K-ETA.",
+  "docs2": "Keep hotel address, purpose of stay, and return ticket ready. File e-Arrival (ERI) in its own tab.",
+  "docs3": "Travel insurance helps with medical costs, lost items, and delays.",
+  "moneyTitle": "Cash, cards, transit",
+  "money1": "Cards are common, but markets and some shops need cash — carry about ₩50,000–100,000.",
+  "money2": "Compare airport/city exchange and ATMs; check foreign-transaction fees.",
+  "money3": "Buy a T-money-style transit card on day one. See the Wow Pass tab for the tourist prepaid option.",
+  "connectTitle": "SIM, eSIM, data",
+  "connect1": "Get an eSIM or SIM for data — free Wi-Fi alone is unreliable for maps.",
+  "connect2": "Install and sign into maps (Naver/Kakao), translation (Papago), and messaging before you fly.",
+  "connect3": "Note your eSIM install and activation steps so maps work on landing.",
+  "powerTitle": "Power and plugs",
+  "power1": "Korea uses 220V and Type C/F plugs (round pins). Hotels use the same.",
+  "power2": "Type A (flat-pin) devices need a travel adapter. Most chargers are 100–240V, so an adapter alone is enough.",
+  "power3": "A power bank and multi-port charger make all-day apps easier.",
+  "packTitle": "Packing, lodging, weather",
+  "pack1": "Seoul involves lots of walking — pack seasonal clothes and comfortable shoes.",
+  "pack2": "Book early for peak seasons; note check-in and luggage storage.",
+  "pack3": "Bring familiar meds, toiletries, and spare masks.",
+  "docsBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/docs.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "출국 2주 전, 서류부터 점검하세요\n\n한국 입국은 생각보다 ‘준비만 잘하면’ 수월합니다. 다만 여권 잔여 기간·비자/전자여행허가·숙소 주소처럼 기본 서류를 놓치면 공항에서 시간이 크게 늘어날 수 있어요.",
+      "en": "Two weeks out: start with documents\n\nEntry to Korea is usually smooth if the basics are ready — passport validity, visa/ETA, and a stay address. Missing these can cost you a long wait at the airport.",
+      "ja": "出発2週間前、まず書類チェック\n\n韓国入国は準備ができていればスムーズです。パスポート残存・ビザ/電子渡航認証・宿の住所など基本を落とすと空港で時間がかかります。",
+      "zh": "出发前两周，先检查证件\n\n如果基本材料齐全，韩国入境通常很顺利。护照有效期、签证/电子旅行许可、住宿地址等一旦遗漏，机场等候时间可能明显变长。"
+    },
+    {
+      "type": "text",
+      "ko": "여권은 귀국일 기준 6개월 이상 남아 있는지 확인하세요. 국적에 따라 비자나 K-ETA 등 전자여행허가가 필요할 수 있으니, 출국 전 공식 안내를 한 번 더 보세요. 예약 확인서 PDF는 오프라인으로 저장해 두면 안심입니다.",
+      "en": "Confirm at least 6 months of passport validity beyond your return date. Depending on nationality you may need a visa or K-ETA — recheck official guidance. Save hotel/booking PDFs offline.",
+      "ja": "帰国日から6か月以上のパスポート残存を確認。国籍によりビザやK-ETAが必要です。予約確認PDFはオフライン保存を。",
+      "zh": "请确认护照在回国日期后仍至少有 6 个月有效期。按国籍可能需要签证或 K-ETA，出发前再核对官方说明，并把住宿/预订 PDF 离线保存。"
+    },
+    {
+      "type": "text",
+      "ko": "비자·K-ETA·여행 허가\n\n국적에 따라 무비자, 비자, 또는 K-ETA(전자여행허가)가 필요할 수 있습니다. 조건은 자주 바뀌니 출국 전 대사관·공식 안내를 한 번 더 확인하세요. K-ETA는 전자입국신고(e-Arrival/ERI)와 다릅니다. ERI는 별도 탭에서 작성합니다.",
+      "en": "Visa, K-ETA, and travel authorization\n\nDepending on nationality you may need visa-free entry, a visa, or K-ETA. Rules change — recheck embassy/official guidance before you fly. K-ETA is not the e-Arrival Card (ERI); file ERI in its own tab.",
+      "ja": "ビザ・K-ETA・渡航認証\n\n国籍によりノービザ、ビザ、K-ETAが必要です。条件は変わるので出発前に公式案内を再確認を。K-ETAは電子入国申告（e-Arrival/ERI）とは別です。ERIは別タブで作成します。",
+      "zh": "签证、K-ETA 与旅行许可\n\n按国籍可能免签、需签证或需 K-ETA。规则会变，出发前请再核对使馆/官方说明。K-ETA 不同于电子入境申报（e-Arrival/ERI）；ERI 请在对应分栏填写。"
+    },
+    {
+      "type": "text",
+      "ko": "입국심사에서는 숙소 주소·체류 목적·귀국편을 물을 수 있습니다. 호텔명과 주소를 한국어/영어로 띄울 수 있게 준비하세요.",
+      "en": "Immigration may ask hotel address, purpose of stay, and return/onward ticket. Keep the hotel name ready in Korean/English.",
+      "ja": "入国審査で宿住所・滞在目的・帰国便を聞かれることがあります。宿名を韓国語/英語で出せるように。",
+      "zh": "入境审查时可能询问住宿地址、停留目的和回程/续程机票。请准备好酒店名称与地址（韩文/英文）。"
+    },
+    {
+      "type": "callout",
+      "ko": "여행자보험은 진료비·분실·지연에 대비하는 기본값으로 두는 편이 마음이 편합니다.",
+      "en": "Treat travel insurance as a baseline for medical costs, lost items, and delays.",
+      "ja": "旅行保険は医療費・紛失・遅延への備えとして基本にしておくと安心です。",
+      "zh": "建议把旅行保险当作医疗费用、行李遗失与延误的基本保障。"
+    }
+  ],
+  "moneyBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/money.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "카드는 잘 되지만, 현금도 조금은 챙기세요\n\n서울·부산 번화가의 카페·편의점·대형 식당은 카드가 기본입니다. 다만 전통시장 골목, 길거리 포장마차, 일부 작은 식당·택시는 현금만 받는 곳이 남아 있어요. ₩50,000~100,000 정도면 첫 며칠이 훨씬 편합니다.",
+      "en": "Cards work widely — still carry a little cash\n\nCafés, convenience stores, and bigger restaurants take cards. Markets, stalls, and some small shops/taxis may want won. About ₩50,000–100,000 covers the first days comfortably.",
+      "ja": "カードは広く使えますが現金も少し\n\n繁華街の店はカードOKが多い一方、市場や屋台、一部の店・タクシーは現金のみ。5〜10万ウォンあると到着直後が楽です。",
+      "zh": "刷卡很方便，但仍建议带一点现金\n\n首尔、釜山闹市区的咖啡店、便利店和大餐厅普遍刷卡。传统市场、路边摊和部分小店/出租车仍可能只要现金。备 ₩50,000–100,000 会让最初几天轻松很多。"
+    },
+    {
+      "type": "text",
+      "ko": "환전은 공항·시내 환전소·은행 ATM을 비교하세요. 해외 결제 수수료가 있는 카드인지 미리 확인하면 좋습니다.",
+      "en": "Compare airport desks, city exchangers, and ATMs. Check foreign-transaction fees on your card before you fly.",
+      "ja": "空港・市内両替・ATMを比較。カードの海外手数料も事前確認を。",
+      "zh": "兑换可比较机场、市区兑换点与银行 ATM。出发前确认信用卡是否收取境外交易手续费。"
+    },
+    {
+      "type": "text",
+      "ko": "티머니·캐시비 같은 교통카드는 편의점·지하철역에서 구입·충전합니다. 도착 첫날 바로 사 두면 이동이 편합니다. 버스는 하차 태그도 잊지 마세요. 쇼핑+교통이 합쳐진 관광객용 선불카드가 필요하면 Wow Pass 탭을 보세요.",
+      "en": "Buy a T-money/Cashbee card on day one at a convenience store or station. Remember to tap out on buses. Want a tourist prepaid card that covers shopping plus transit? See the Wow Pass tab.",
+      "ja": "T-money等は到着初日にコンビニや駅で購入。バス降車時もタッチを。買い物+交通の観光客向けプリペイドが必要なら Wow Pass タブへ。",
+      "zh": "T-money、Cashbee 等交通卡可在便利店或地铁站购买并充值。抵达首日办好会更方便；公交记得下车也刷卡。若需要购物+交通一体的游客预付卡，请看 Wow Pass 分栏。"
+    },
+    {
+      "type": "callout",
+      "ko": "잔돈(₩1,000·₩5,000)이 있으면 시장·작은 구매에서 편합니다. 교통 충전용 소액 현금도 따로 조금 챙기세요.",
+      "en": "Small bills (₩1,000 / ₩5,000) help at markets. Keep a little cash for transit top-ups too.",
+      "ja": "千円・五千ウォン札があると市場で便利。交通チャージ用の現金も少し用意を。",
+      "zh": "备一些小面额（₩1,000 / ₩5,000）方便市场找零；交通充值也建议留一点现金。"
+    }
+  ],
+  "connectBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/connect.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "지도·번역은 데이터가 생명입니다\n\n카페·지하철 무료 Wi-Fi만으로 버티면 역 밖·골목에서 갑자기 끊길 수 있습니다. eSIM이나 공항 유심을 정해 두면 네이버지도·카카오맵·파파고를 끊김 없이 씁니다.",
+      "en": "Maps and translation need data\n\nCafé/subway Wi-Fi alone fails outdoors. An eSIM or airport SIM keeps Naver Map, Kakao Map, and Papago online.",
+      "ja": "地図・翻訳はデータ必須\n\n無料Wi-Fiだけだと路地で途切れがち。eSIMや空港SIMで地図アプリを安定利用。",
+      "zh": "地图和翻译离不开流量\n\n仅靠咖啡店、地铁免费 Wi-Fi，出站或走巷子时容易断线。提前备好 eSIM 或机场 SIM，就能稳定使用 Naver Map、Kakao Map、Papago。"
+    },
+    {
+      "type": "text",
+      "ko": "eSIM은 출국 전 온라인 구매 후 QR로 설치하는 방식이 흔합니다. 기기가 eSIM 지원·잠금 해제인지 미리 확인하세요.",
+      "en": "eSIMs are often bought online and installed via QR. Confirm your phone is unlocked and eSIM-capable if needed.",
+      "ja": "eSIMは出国前にオンライン購入→QR設定が一般的。SIMロック解除とeSIM対応を確認。",
+      "zh": "eSIM 常见做法是出发前在线购买，用二维码安装。请先确认手机已解锁且支持 eSIM。"
+    },
+    {
+      "type": "callout",
+      "ko": "착륙 직후 지도가 필요하니, eSIM 설치·활성화 순서를 미리 메모하세요.",
+      "en": "You'll want maps on landing — note your eSIM install steps beforehand.",
+      "ja": "着陸直後に地図が必要です。eSIMの設定手順を事前メモを。",
+      "zh": "落地后马上要用地图——请提前记下 eSIM 安装与激活步骤。"
+    },
+    {
+      "type": "text",
+      "ko": "앱 준비는 출국 전에\n\n지도(네이버·카카오), 번역(파파고), 메시징은 데이터가 있을 때 바로 씁니다. 상세 설치·사용법은 사이트의 ‘유용한 앱’ 메뉴를 참고하세요. 출국 전 로그인·오프라인 지도 다운로드까지 해 두면 착륙 직후가 편합니다.",
+      "en": "Prep apps before you fly\n\nMaps (Naver/Kakao), translation (Papago), and messaging need data on arrival. See Useful Apps for install tips. Sign in and download offline maps before departure.",
+      "ja": "アプリは出国前に準備\n\n地図・翻訳・メッセは到着直後に必要です。「役立つアプリ」も参照し、ログインやオフライン地図を事前に。",
+      "zh": "出发前准备好 App\n\n地图（Naver/Kakao）、翻译（Papago）和通讯在落地后立刻用得上。安装说明见「实用 App」。出发前完成登录并下载离线地图更省心。"
+    }
+  ],
+  "powerBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/power.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "한국 플러그는 Type C/F, 전압은 220V\n\n한국 콘센트는 둥근 두 핀(Type C) 또는 접지형(Type F)입니다. 호텔·숙소도 같습니다. 미국·일본처럼 Type A(납작 핀)만 쓰는 기기는 변환 어댑터가 필요합니다.",
+      "en": "Korea uses Type C/F plugs at 220V\n\nOutlets take round two-pin Type C or grounded Type F plugs. Hotels use the same. If your gear is Type A only (flat pins, US/Japan), bring a travel adapter.",
+      "ja": "韓国のプラグはType C/F、電圧は220V\n\nコンセントは丸ピンのType C、または接地付きType F。宿も同じです。Type A（平ピン）だけの機器は変換アダプターが必要です。",
+      "zh": "韩国插头为 Type C/F，电压 220V\n\n插座是圆形双脚 Type C，或带接地的 Type F。酒店也一样。若设备只有 Type A（扁平脚，美/日常见），请带转换适配器。"
+    },
+    {
+      "type": "text",
+      "ko": "대부분의 스마트폰·노트북 충전기는 100–240V를 지원합니다. 어댑터만 있으면 되고, 전압 변환기(transformer)는 보통 필요 없습니다. 충전기 라벨의 입력 전압을 한 번 확인하세요.",
+      "en": "Most phone/laptop chargers accept 100–240V — an adapter is enough; a voltage transformer usually is not. Check the input label on your charger.",
+      "ja": "スマホ・ノートの充電器は多くが100–240V対応。アダプターだけで足り、変圧器は通常不要。入力電圧の表記を確認を。",
+      "zh": "多数手机/笔记本充电器支持 100–240V，一般只需适配器，不必带变压器。请核对充电器标签上的输入电压。"
+    },
+    {
+      "type": "text",
+      "ko": "보조배터리와 멀티 충전기를 챙기면 하루 종일 지도·번역 앱을 쓰기 수월합니다. 기내 반입 규정도 출국 전에 확인하세요.",
+      "en": "A power bank and multi-port charger make all-day maps and translation easier. Check airline rules for power banks before you fly.",
+      "ja": "モバイルバッテリーとマルチ充電器があると地図・翻訳を一日中使いやすい。機内持込ルールも事前確認を。",
+      "zh": "带上充电宝和多口充电器，整天用地图、翻译会更轻松。出发前也请确认航司对充电宝的登机规定。"
+    },
+    {
+      "type": "callout",
+      "ko": "어댑터는 다이소·편의점·공항에서도 살 수 있지만, 도착 직후·연휴에는 품절일 수 있어 미리 챙기는 편이 안전합니다.",
+      "en": "Adapters are sold at Daiso, convenience stores, and airports — but stock can run out on arrival or holidays, so packing one is safer.",
+      "ja": "アダプターはダイソー・コンビニ・空港でも買えますが、到着直後や連休は品切れもあるため持参が安心です。",
+      "zh": "适配器在 Daiso、便利店和机场也能买到，但落地高峰或假期可能缺货，出发前备好更稳妥。"
+    }
+  ],
+  "packBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/pack.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "서울은 ‘걷는 도시’입니다\n\n지하철 환승·골목·궁궐 관람까지 하루 만보가 기본에 가깝습니다. 계절에 맞는 옷과 편한 신발을 우선하세요. 여름은 습하고 겨울은 바람과 추위가 있습니다.",
+      "en": "Seoul is a walking city\n\nTransfers, alleys, and palaces mean long days on foot. Pack seasonally and prioritize comfortable shoes. Summers are humid; winters are cold and windy.",
+      "ja": "ソウルは歩く街\n\n乗換や路地、宮殿見学で歩数が増えます。季節服と歩きやすい靴を優先。夏は湿気、冬は寒さと風。"
+    },
+    {
+      "type": "text",
+      "ko": "성수기·연휴에는 숙소를 미리 예약하세요. 체크인 시간·짐 보관·언어 지원을 메모해 두면 첫날이 덜 불안합니다.",
+      "en": "Book early for peak seasons and holidays. Note check-in time, luggage storage, and language support.",
+      "ja": "繁忙期・連休は早めに宿予約。チェックイン時間や荷物預かり、言語対応をメモ。"
+    },
+    {
+      "type": "text",
+      "ko": "상비약·위생용품·여분 마스크를 조금 챙기면 편리합니다. 편의점에서도 살 수 있지만 익숙한 약이 편합니다.",
+      "en": "Bring trusted basic meds, toiletries, and spare masks. Convenience stores sell many items, but familiar medicine is easier.",
+      "ja": "常備薬・衛生用品・予備マスクがあると便利。慣れた薬が安心です。"
+    },
+    {
+      "type": "callout",
+      "ko": "캐리어에 귀국 쇼핑 여유를 남겨 두세요. 올리브영·다이소·과자 선물은 부피가 큽니다.",
+      "en": "Leave suitcase space for Olive Young, Daiso, and snack gifts — they add up fast.",
+      "ja": "帰国のお土産用にスーツケースの空きを残して。"
+    },
+    {
+      "type": "text",
+      "ko": "예약 확인서 체크리스트\n\n숙소·공항 이동·주요 식당/액티비티 예약 메일을 PDF·스크린샷으로 저장하세요. 체크인 시간, 짐 보관, 취소 조건을 메모해 두면 첫날이 덜 바빠집니다. 앱 예약(야놀자·여기어때 등)은 ‘유용한 앱’에서 이어서 볼 수 있습니다.",
+      "en": "Booking checklist\n\nSave lodging, airport transfer, and key reservation emails as PDF/screenshots. Note check-in time, luggage storage, and cancel rules. Lodging apps are covered under Useful Apps.",
+      "ja": "予約確認のチェック\n\n宿・空港移動・主要予約メールをPDF/スクショ保存。チェックイン・荷物預かり・キャンセル条件をメモ。宿アプリは「役立つアプリ」も参照。",
+      "zh": "预订确认清单\n\n把住宿、机场交通和重要预约邮件存成 PDF/截图。记下入住时间、行李寄存与取消规则。住宿类 App 可在「实用 App」继续查看。"
+    }
+  ],
+  "pack4": "Leave suitcase space for Olive Young, Daiso, and snack gifts — they add up fast.",
+  "taxiTitle": "Taxi fares & tips",
+  "taxi1": "As of 2026, Seoul medium (regular) taxis start at ₩4,800 for the first 1.6 km, then distance and time fares apply.",
+  "taxi2": "Late night (10 PM–4 AM) adds about 20% or 40% by hour. Other cities may price differently.",
+  "taxi3": "Hail on the street or call Kakao T. Cards are common; tipping is not expected.",
+  "taxi4": "Naver/Kakao Map car directions often show a rough taxi fare. Overcharging is rare today; apps are a calm optional choice.",
+  "taxiBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/taxi.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "서울 택시, 이렇게만 알아 두세요\n\n아래는 2026년 기준 서울 중형(일반)택시 요금입니다. 서울시가 고시한 현행 요금표(2023년 2월 적용 이후 유지)를 여행용으로 짧게 정리한 것이며, 부산·제주 등 다른 지역은 기본요금이 다를 수 있습니다.",
+      "en": "Seoul taxis — a quick primer\n\nFares below are for Seoul medium (regular) taxis as of 2026 — the city’s current posted schedule (in effect since Feb 2023). Other cities (Busan, Jeju, etc.) set their own base fares.",
+      "ja": "ソウルのタクシー、これだけ覚えればOK\n\n以下は2026年時点のソウル中型（一般）タクシー料金です。ソウル市の現行公示（2023年2月適用以降）を旅行向けに短くまとめたもので、釜山・済州など他地域は基本料金が異なる場合があります。",
+      "zh": "首尔出租车，记住这些就够\n\n以下为 2026 年首尔中型（普通）出租车现行资费，依据首尔市公示（自 2023 年 2 月起适用并沿用）。釜山、济州等其他地区基本费可能不同。"
+    },
+    {
+      "type": "text",
+      "ko": "기본요금·거리·시간 (주간)\n\n· 기본요금: 1.6km까지 4,800원\n· 거리요금: 131m당 100원\n· 시간요금: 30초당 100원 (시속 약 15.7km 미만일 때 거리와 함께 계산)\n\n막히면 시간요금이 더해져 예상보다 조금 나올 수 있어요.",
+      "en": "Base, distance & time (daytime)\n\n· Base: ₩4,800 up to 1.6 km\n· Distance: ₩100 per 131 m\n· Time: ₩100 per 30 sec (when under about 15.7 km/h, time is counted with distance)\n\nIn heavy traffic the meter can run a bit higher than a free-flow estimate.",
+      "ja": "基本・距離・時間（日中）\n\n· 基本料金: 1.6kmまで4,800ウォン\n· 距離: 131mあたり100ウォン\n· 時間: 30秒あたり100ウォン（時速約15.7km未満で距離と同時計算）\n\n渋滞時は時間料金が乗り、想定より少し高くなることがあります。",
+      "zh": "基本费·里程·时间（白天）\n\n· 基本费：1.6 km 内 ₩4,800\n· 里程：每 131 m ₩100\n· 时间：每 30 秒 ₩100（时速约低于 15.7 km/h 时与里程一并计算）\n\n堵车时时间费会叠加，可能略高于畅通时的预估。"
+    },
+    {
+      "type": "text",
+      "ko": "심야 할증 (22:00~04:00)\n\n· 22~23시, 02~04시: 약 20% (기본요금 5,800원)\n· 23~02시: 약 40% (기본요금 6,700원)\n\n거리·시간 요금에도 같은 비율이 적용됩니다. 서울 밖으로 나가면 시계외 할증(약 20%)이 더해질 수 있고, 심야와 겹치면 최대 약 60%까지입니다.",
+      "en": "Late-night surcharge (10 PM–4 AM)\n\n· 10–11 PM and 2–4 AM: about 20% (base ₩5,800)\n· 11 PM–2 AM: about 40% (base ₩6,700)\n\nThe same rates apply to distance/time. Leaving Seoul may add an out-of-city surcharge (~20%); stacked with late-night, up to about 60%.",
+      "ja": "深夜割増（22:00〜04:00）\n\n· 22〜23時・02〜04時: 約20%（基本5,800ウォン）\n· 23〜02時: 約40%（基本6,700ウォン）\n\n距離・時間にも同率。ソウル市外は市外割増（約20%）が付くことがあり、深夜と重なると最大約60%です。",
+      "zh": "深夜加价（22:00–04:00）\n\n· 22–23 点、02–04 点：约 20%（基本费 ₩5,800）\n· 23–02 点：约 40%（基本费 ₩6,700）\n\n里程与时间费同比例加价。出首尔市区可能另加市外约 20%；与深夜叠加时最高约 60%。"
+    },
+    {
+      "type": "text",
+      "ko": "타는 방법·결제\n\n길거리나 택시승차대에서 손을 들거나, 카카오 T 같은 앱으로 부를 수 있습니다. 앱 사용법은 ‘유용한 앱 → 카카오 T’를 참고하세요. 목적지 주소를 한국어로 보여 주면 편합니다.\n\n카드·교통카드 결제가 일반적이고, 한국에서는 팁을 주지 않습니다. 영수증이 필요하면 ‘영수증 주세요’라고 하세요. 공항에서는 미터기 택시·앱 호출·공식 공항 택시를 이용하고, 임의로 가격을 부르는 호객은 정중히 거절하면 됩니다.",
+      "en": "How to ride & pay\n\nHail on the street or at a taxi stand, or request via an app like Kakao T (see Useful Apps → Kakao T). Showing the destination in Korean helps.\n\nCards and transit cards are widely accepted; tipping is not expected. Ask for a receipt with “영수증 주세요.” At airports, use metered, app, or official airport taxis — you can politely decline anyone quoting a random cash price.",
+      "ja": "乗り方・支払い\n\n路上やタクシー乗り場で手を挙げるか、カカオTなどのアプリで呼べます（「役立つアプリ → カカオT」参照）。目的地を韓国語で見せるとスムーズです。\n\nカード・交通カード払いが多く、チップは不要。「영수증 주세요」で領収書を。空港ではメーター・アプリ・公式空港タクシーを使い、その場の口頭料金の呼び込みは丁寧に断って大丈夫です。",
+      "zh": "怎么坐、怎么付\n\n可在路边或出租车站招手，也可用 Kakao T 等 App 叫车（见「实用 App → Kakao T」）。用韩语出示目的地地址会更顺畅。\n\n普遍可用刷卡或交通卡，韩国不需要给小费。需要收据时说「영수증 주세요」。在机场请用打表车、App 或官方机场出租车；若有人随口报价揽客，礼貌拒绝即可。"
+    },
+    {
+      "type": "text",
+      "ko": "지도 앱으로 대략 요금 보기\n\n네이버지도·카카오맵에서 길찾기를 연 뒤 이동 수단을 「자동차」로 고르면, 많은 구간에서 예상 택시 요금이 함께 표시됩니다. 참고용 숫자라 실제 미터기와 조금 다를 수 있지만, 이동 전에 감을 잡기 좋습니다.",
+      "en": "Rough fare on map apps\n\nIn Naver Map or Kakao Map, open directions and choose car mode — many routes also show an estimated taxi fare. It’s a guide only (the meter may differ slightly), but helpful for a ballpark before you ride.",
+      "ja": "地図アプリでだいたいの料金\n\nNaver地図やカカオマップで経路検索し、移動手段を「自動車」にすると、多くの区間でタクシーの目安料金も出ます。参考値なのでメーターと多少違うこともありますが、乗る前の目安になります。",
+      "zh": "用地图 App 看大概车费\n\n在 Naver Map 或 Kakao Map 打开路线，把交通方式选为「汽车」，不少路段会一并显示预估出租车费。仅为参考，可能与计价器略有出入，但出发前心里有数会更踏实。"
+    },
+    {
+      "type": "callout",
+      "ko": "요즘 서울에서 바가지 요금은 거의 없습니다. 미터기로 가는 일반 택시가 기본이에요. 그래도 마음이 놓이려면 카카오 T 등으로 호출해 보시면 됩니다. 만에 하나 요금이 이상하게 느껴지면 차량 번호판·차내 택시 면허 표시를 메모해 두고, 서울은 다산콜센터 120, 여행 통역·안내는 1330으로 문의할 수 있습니다. 차안에 QR 불편신고 안내가 붙어 있는 경우도 있습니다.",
+      "en": "Overcharging is rare in Seoul these days — metered regular taxis are the norm. For extra peace of mind, you can request a ride in Kakao T or similar apps. If a fare still feels off, note the license plate and the taxi license display inside, then ask Seoul’s Dasan Call Center 120, or tourist helpline 1330. Some cabs also show an in-car QR for feedback.",
+      "ja": "最近のソウルではぼったくり料金はほとんどありません。メーターの一般タクシーが基本です。安心したいときはカカオTなどで呼ぶのも手です。万一料金がおかしいと感じたらナンバーと車内のタクシー免許表示をメモし、ソウルは多山コールセンター120、観光通訳案内は1330へ。車内にQR案内がある場合もあります。",
+      "zh": "如今在首尔，乱要价的情况很少见，按表计费的普通出租车是常态。若想更安心，可用 Kakao T 等 App 叫车。万一仍觉得费用异常，可记下车牌与车内出租车执照信息，首尔可打市政热线 120，旅游通译/咨询可打 1330；部分车内也贴有反馈用 QR。"
+    }
+  ],
+  "tabSolo": "Solo dining",
+  "soloTitle": "Dining alone in Korea",
+  "soloBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/solo-dining.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "왜 혼자 식당이 부담스러울까요?\n\n한국에는 ‘함께 먹는’ 문화가 강한 곳이 많습니다. 삼겹살·닭갈비처럼 최소 2인 주문이 기본인 메뉴, 큰 상차림, 직원·손님이 혼자 온 손님을 낯설게 여기는 분위기 때문에 혼자 들어가기 머뭇거려질 수 있어요.",
+      "en": "Why solo dining can feel hard\n\nKorea’s food culture often assumes sharing. Two-person minimums (samgyeopsal, dakgalbi), big table spreads, and social norms can make walking in alone feel awkward.",
+      "ja": "一人での食事が負担になりやすい理由\n\n韓国は「一緒に食べる」文化が強い店が多いです。サムギョプサルやタッカルビなど2人前スタート、大きな膳、一人客への視線などで入りにくいことがあります。"
+    },
+    {
+      "type": "text",
+      "ko": "혼자 가야 한다면\n\n김밥·분식·백반·체류형 카페·패스트캐주얼·편의점 식사처럼 1인 친화 메뉴를 고르세요. ‘혼자예요’라고 짧게 말하면 대부분 자리·세트 메뉴를 안내해 줍니다. 키오스크·모바일 주문 매장도 부담이 적습니다.",
+      "en": "If you must go alone\n\nChoose 1-person-friendly spots: kimbap, snack bars, simple set meals, stay-cafés, fast-casual, convenience-store food. A short “just one” usually gets you seated. Kiosks/mobile order help too.",
+      "ja": "一人で行くなら\n\nキンパ・粉食・定食・滞在型カフェ・ファストカジュアル・コンビニ食など1人向けを選びましょう。「一人です」と短く言えば席やセットを案内してくれることが多いです。"
+    },
+    {
+      "type": "text",
+      "ko": "아는 사람과 만나기\n\n한국에 친구·현지 지인·언어교환 파트너가 있다면 함께 식사하는 편이 훨씬 편하고 분위기 좋은 식당을 고르기 쉽습니다. 여행 전에 약속을 잡아 두면 ‘혼자 식당’ 스트레스를 크게 줄일 수 있습니다.",
+      "en": "Meet a friend if you can\n\nDining with a local friend, classmate, or language-exchange partner is easier and opens more restaurants. Book a meetup before your trip to skip solo-dining stress.",
+      "ja": "知り合いと会う\n\n友人や現地の知人、言語交換相手がいれば一緒に食べるほうが楽で、店選びも広がります。渡航前に約束しておくと一人食事のストレスが減ります。"
+    },
+    {
+      "type": "text",
+      "ko": "도착 전에 알아두면 좋은 점\n\n혼자 여행이라면 첫 끼는 편의점·분식·체인 백반처럼 실패가 적은 곳으로 잡아 보세요. 지도 앱에 ‘혼밥’·‘1인석’을 저장해 두면 배고플 때 헤매지 않습니다. 2인 필수 고깃집은 현지 친구와 함께 가는 일정으로 미뤄도 됩니다.",
+      "en": "Before you arrive\n\nFor solo trips, plan an easy first meal (convenience store, snack bar, simple set meal). Save “honbap” / single-seat spots in your maps app. Save two-person BBQ for when you have company.",
+      "ja": "到着前に知っておくと安心\n\n一人旅なら最初の食事はコンビニ・粉食・定食など失敗しにくい店を。地図に「ホンバプ」「1人席」を保存。2人前必須の焼肉は知人と一緒の予定に。",
+      "zh": "抵达前可先了解\n\n独自旅行时，第一餐可选便利店、小吃或简单套餐，失败率更低。在地图里收藏「混饭/혼밥」「单人座」。两人起订的烤肉可留到有同伴时再去。"
+    },
+    {
+      "type": "callout",
+      "ko": "팁: 혼밥 맛집·바 형태로 혼자 환영하는 곳도 늘고 있습니다. 네이버·구글 지도에서 ‘혼밥’·‘1인석’으로 검색해 보세요.",
+      "en": "Tip: More places welcome solo diners (counter seats, 1-person sets). Search maps for “honbap” / single seating.",
+      "ja": "ヒント: 一人歓迎のカウンター席や1人セットも増えています。地図で「ホンバプ」「1人席」を検索を。"
+    }
+  ],
+  "solo1": "Why solo dining can feel hard\n\nKorea’s food culture often assumes sharing. Two-person minimums (samgyeopsal, dakgalbi), big table spreads, and social norms can make walking in alone feel awkward.",
+  "solo2": "If you must go alone\n\nChoose 1-person-friendly spots: kimbap, snack bars, simple set meals, stay-cafés, fast-casual, convenience-store food. A short “just one” usually gets you seated. Kiosks/mobile order help too.",
+  "solo3": "Meet a friend if you can\n\nDining with a local friend, classmate, or language-exchange partner is easier and opens more restaurants. Book a meetup before your trip to skip solo-dining stress.",
+  "immigrationBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/immigration.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "자동출입국심사(SES)란?\n\nSES(Smart Entry Service)는 여권·지문·얼굴 등 바이오 정보로 전용 게이트를 통과하는 자동 출입국 심사입니다. 사람 창구 줄보다 빠른 경우가 많아, 조건에 맞으면 공항에서 시간을 크게 줄일 수 있습니다.",
+      "en": "What is SES (automated immigration)?\n\nSES (Smart Entry Service) lets eligible travelers clear immigration at dedicated auto-gates using passport and biometrics (fingerprints/face). It is often faster than staffed counters when you qualify.",
+      "ja": "自動出入国審査（SES）とは？\n\nSES（Smart Entry Service）は、旅券と指紋・顔などの生体情報で専用ゲートを通る自動出入国審査です。条件を満たせば有人窓口より早いことが多いです。",
+      "zh": "什么是自动出入境审查（SES）？\n\nSES（Smart Entry Service）是用护照与指纹/面部等生物信息通过专用闸机的自动出入境系统。符合条件时，通常比人工窗口更快。"
+    },
+    {
+      "type": "text",
+      "ko": "누가 쓸 수 있나요? (개요)\n\n· 만 17세 이상 등록외국인(외국인등록증·거소신고증): 사전등록 없이 이용 가능한 경우가 많습니다.\n· 단기체류 외국인(만 17세 이상): 출국 심사에서 사전등록 없이 이용 가능한 경우가 있습니다.\n· 상호 자동출입국 협정이 있는 일부 국적·한국방문우대카드 가입자 등은 별도 등록 후 이용.\n· 사전등록이 필요한 경우 공항·출입국관서 등록센터에서 지문·얼굴을 등록하면, 여권에 확인 도장 또는 SES 등록 스티커가 붙습니다.\n\n대상·연령·예외는 자주 바뀌니 출국 전 법무부 출입국·외국인정책본부 또는 Hi Korea에서 확인하세요.",
+      "en": "Who can use it? (overview)\n\n· Registered foreigners (ARC/residence card) aged 17+: often usable without pre-registration.\n· Short-term visitors aged 17+: may use departure auto-gates without pre-registration in many cases.\n· Some nationalities under mutual SES agreements and Korea Priority Card holders may need enrollment.\n· When pre-registration is required, enroll biometrics at an airport/immigration center; a confirmation stamp or SES sticker is placed in the passport.\n\nRules change — verify on Korea Immigration or Hi Korea before travel.",
+      "ja": "誰が使える？（概要）\n\n・17歳以上の登録外国人（外国人登録証など）: 事前登録なしで使える場合が多い\n・短期滞在の外国人（17歳以上）: 出国審査で事前登録なし利用ができる場合あり\n・相互協定のある一部国籍・韓国訪問優待カード加入者などは別途登録後に利用\n・事前登録が必要な場合、空港・出入国事務所で指紋・顔を登録すると、旅券に確認印またはSES登録ステッカーが付きます\n\n対象は変わるので、渡航前に出入国・外国人政策本部またはHi Koreaで確認を。",
+      "zh": "谁可以使用？（概要）\n\n· 年满 17 岁的登录外国人（外国人登录证/居留证）：多数情况无需事先登记即可使用。\n· 短期停留外国人（17 岁以上）：出境审查时有时无需事先登记即可使用。\n· 与韩国有相互自动通关协议的部分国籍、持韩国访问优待卡并完成登记者等需另行注册。\n· 需要事先登记时，在机场或出入境机关登记指纹/面部后，护照会盖确认章或贴上 SES 登记贴纸。\n\n资格与年龄规则可能调整，行前请在韩国出入境官网或 Hi Korea 核对。"
+    },
+    {
+      "type": "text",
+      "ko": "공항에서 이렇게 지나갑니다\n\nSES·자동출입국 표지판이 있는 전용 게이트로 가세요. 보통 여권을 리더에 올리고 → 게이트가 열리면 들어가 → 등록된 손가락을 스캔 → (기기에 따라) 얼굴 촬영 → 통과입니다. 스티커/등록이 없거나 대상이 아니면 일반 외국인 심사대로 가세요. 직원이 안내하는 줄을 따르세요.",
+      "en": "At the airport\n\nFollow signs for SES / automated immigration gates. Typical flow: place passport on the reader → enter when the gate opens → scan your registered finger → face camera if prompted → exit. If you are not enrolled/eligible, use the regular foreigner counters and follow staff directions.",
+      "ja": "空港での流れ\n\nSES・自動出入国の案内がある専用ゲートへ。旅券をリーダーに置く → ゲートが開いたら入る → 登録した指をスキャン →（機種により）顔認証 → 退出、が一般的です。対象外なら通常の外国人審査レーンへ。職員の誘導に従ってください。",
+      "zh": "在机场如何通过\n\n请前往标有 SES/自动出入境的专用闸机。常见流程：把护照放到读取器 → 闸门打开后进入 → 扫描已登记手指 →（视设备）面部识别 → 离开。若未登记或不符资格，请走普通外国人审查通道，并听从工作人员指引。"
+    },
+    {
+      "type": "callout",
+      "ko": "공식 안내: 출입국·외국인정책본부 SES 페이지 https://www.immigration.go.kr 및 Hi Korea https://www.hikorea.go.kr 에서 대상·등록 장소를 확인하세요.",
+      "en": "Official info: check SES pages on Korea Immigration https://www.immigration.go.kr and Hi Korea https://www.hikorea.go.kr for eligibility and enrollment locations.",
+      "ja": "公式案内: 出入国・外国人政策本部 https://www.immigration.go.kr と Hi Korea https://www.hikorea.go.kr で対象・登録場所を確認を。",
+      "zh": "官方信息：请在韩国出入境 https://www.immigration.go.kr 与 Hi Korea https://www.hikorea.go.kr 核对资格与登记地点。"
+    }
+  ],
+  "tabImmigration": "Immigration (SES)",
+  "immigrationTitle": "Automated immigration (SES)",
+  "immigration1": "SES (Smart Entry Service) is automated immigration via dedicated gates using your passport and biometrics. When eligible, it is often faster than staffed counters.",
+  "immigration2": "Used by registered foreigners, some nationalities, and pre-enrolled travelers. Enrollment may add a stamp or SES sticker to your passport. Confirm eligibility on official Immigration / Hi Korea pages.",
+  "immigration3": "At the airport, follow SES / automated immigration signs. If you are not eligible, use the regular foreigner counters.",
+  "eriBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/eri.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "전자입국신고서(e-Arrival Card)\n\n종이에 쓰던 입국신고서를 온라인으로 미리 제출하는 제도입니다. 공식 명칭은 e-Arrival Card(전자입국신고서)이며, 여행자 사이에서는 ERI·전자입국신고로도 불립니다. 코로나 시절의 Q-CODE(건강 신고)나 K-ETA(전자여행허가)와는 별개입니다. 제출하면 종이 입국신고서를 따로 쓰지 않아도 되는 경우가 많습니다.",
+      "en": "e-Arrival Card (electronic entry declaration)\n\nThis is Korea’s online arrival card that replaces the paper form for many travelers. Official name: e-Arrival Card. Travelers may also call it ERI or “electronic entry declaration.” It is not the old COVID Q-CODE health form, and it is separate from K-ETA (travel authorization). After you submit online, you usually do not need a paper arrival card.",
+      "ja": "電子入国申告書（e-Arrival Card）\n\n紙の入国カードの代わりに、事前にオンラインで提出する制度です。公式名称は e-Arrival Card。旅行者の間では ERI・電子入国申告とも呼ばれます。コロナ期のQ-CODE（健康申告）やK-ETA（電子渡航認証）とは別です。提出すれば紙の到着カードは不要な場合が多いです。",
+      "zh": "电子入境申报（e-Arrival Card）\n\n这是韩国把纸质入境卡改为网上提前申报的制度。官方名称为 e-Arrival Card（电子入境申报），旅客也常说 ERI。它不同于疫情时期的 Q-CODE（健康申报），也不同于 K-ETA（电子旅行许可）。在线提交后，多数情况下无需再填纸质入境卡。"
+    },
+    {
+      "type": "text",
+      "ko": "누가·언제 작성하나요?\n\n한국에 입국하는 외국인이 대상입니다(외국인등록증 소지자 등 일부 면제·예외는 공식 안내 확인). 한국 표준시 기준으로 도착일 3일 전부터 제출할 수 있고, 제출 후 72시간이 지나면 효력이 사라지니 너무 일찍 쓰지 마세요. 비행기 탑승 전·착륙 전에 끝내는 편이 가장 편합니다. 재입국할 때마다 다시 제출해야 합니다.",
+      "en": "Who needs it, and when?\n\nMost foreign nationals entering Korea must submit it (some exemptions, e.g. certain residence-card holders — check the official site). You can file from 3 days before arrival (Korea Standard Time). Validity expires 72 hours after submission, so do not file too early. Finish before boarding or before landing. Submit again for each re-entry.",
+      "ja": "誰が・いつ書く？\n\n韓国に入国する外国人が対象です（外国人登録証所持者など一部免除は公式案内で確認）。韓国標準時で到着3日前から提出可能。提出から72時間で無効になるので早すぎる提出は避け、搭乗前〜到着前に済ませると安心です。再入国のたびに再提出が必要です。",
+      "zh": "谁需要填、何时填？\n\n多数入境韩国的外国人需要提交（持外国人登录证等部分豁免请以官网为准）。可按韩国标准时在抵达前 3 天起填写；提交后 72 小时失效，不要过早提交。登机前或落地前完成最稳妥。每次再入境都需重新提交。"
+    },
+    {
+      "type": "text",
+      "ko": "작성 순서 (공식 사이트)\n\n1) 공식 사이트 https://www.e-arrivalcard.go.kr 접속 (PC·스마트폰)\n2) 개인(Individual) 또는 단체(Group) 선택\n3) 이용약관 동의·이메일 입력\n4) 여권 정보 입력\n5) 입국·출국·체류지 등 여정 정보 입력\n6) 내용 확인 후 제출 → 발급번호가 이메일로 옵니다\n\n발급번호를 꼭 인쇄할 필요는 없지만, 이메일·스크린샷으로 남겨 두면 수정·확인이 쉽습니다. 유료 대행 사이트는 쓰지 마세요. 공식 포털은 무료입니다.",
+      "en": "How to file (official site)\n\n1) Go to https://www.e-arrivalcard.go.kr (PC or phone)\n2) Choose Individual or Group\n3) Accept terms and enter an email\n4) Enter passport details\n5) Enter arrival/departure and stay information\n6) Review and submit — an issue number is emailed to you\n\nYou do not have to print it, but keep the email/screenshot for edits. Avoid paid third-party sites; the official portal is free.",
+      "ja": "記入手順（公式サイト）\n\n1) https://www.e-arrivalcard.go.kr にアクセス（PC/スマホ）\n2) Individual（個人）または Group（団体）を選択\n3) 規約同意・メール入力\n4) パスポート情報\n5) 出入国・滞在先などの旅程\n6) 確認して提出 → 発行番号がメールで届きます\n\n印刷必須ではありませんが、メール/スクショを残すと修正が楽です。有料代行サイトは避け、公式は無料です。",
+      "zh": "填写步骤（官网）\n\n1) 打开 https://www.e-arrivalcard.go.kr（电脑或手机）\n2) 选择个人（Individual）或团体（Group）\n3) 同意条款并填写邮箱\n4) 填写护照信息\n5) 填写入出境与住宿等行程\n6) 核对后提交 → 签发编号会发到邮箱\n\n不必强制打印，但请保留邮件/截图以便修改。勿用收费代填网站；官方门户免费。"
+    },
+    {
+      "type": "text",
+      "ko": "미리 준비할 정보\n\n유효 여권, 수신 가능한 이메일, 입국일·항공편 번호, 체류지(호텔명·주소), 출국일·귀국편(선택). 숙소 주소는 영문/한국어로 정확히 적어 두면 심사에서도 그대로 쓸 수 있습니다.",
+      "en": "What to prepare\n\nValid passport, working email, arrival date and flight number, place of stay (hotel name/address), departure date/flight (optional). Write the stay address carefully in English/Korean — you can reuse it at immigration.",
+      "ja": "用意するもの\n\n有効なパスポート、受信できるメール、入国日・便名、滞在先（宿名・住所）、出国日・帰国便（任意）。宿住所は英語/韓国語で正確に書いておくと審査でも使えます。",
+      "zh": "请提前准备\n\n有效护照、可接收邮件的邮箱、入境日期与航班号、住宿地（酒店名/地址）、出境日期与回程航班（可选）。住宿地址请用英文/韩文写准确，入境审查时也能直接出示。"
+    },
+    {
+      "type": "callout",
+      "ko": "흔한 실수: K-ETA와 혼동하기, 너무 일찍 제출해 72시간 만료, 숙소 주소 오타, 유료 가짜 사이트. 일정·숙소가 바뀌면 입국 심사 전에 공식 사이트에서 확인·수정하세요.",
+      "en": "Common mistakes: confusing it with K-ETA, filing too early (72-hour expiry), wrong hotel address, paid fake sites. If plans change, check/edit on the official site before immigration.",
+      "ja": "よくあるミス: K-ETAとの混同、早すぎる提出（72時間で失効）、宿住所の誤記、有料の偽サイト。予定変更時は入国審査前に公式サイトで確認・修正を。",
+      "zh": "常见错误：与 K-ETA 混淆、过早提交导致 72 小时失效、住宿地址写错、付费假网站。行程有变时，请在入境审查前于官网核对/修改。"
+    }
+  ],
+  "wowpassBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/wowpass.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "Wow Pass란?\n\n외국인 여행객용 선불(prepaid) 카드입니다. 한국 내 가맹점에서 로컬 카드처럼 결제할 수 있고, 티머니 기능이 포함된 카드로 지하철·버스·택시 등 교통에도 쓰는 경우가 많습니다. 공항·주요 지하철역·호텔 등의 키오스크에서 발급·충전하고, 앱으로 잔액·이용내역을 확인하는 방식이 일반적입니다.",
+      "en": "What is Wow Pass?\n\nA prepaid travel card popular with foreign visitors. It works like a local debit card at many Korean merchants, and versions with T-money let you ride subway/bus/taxi. Issue and top up at airport/station/hotel kiosks; link the app to check balance and history.",
+      "ja": "Wow Passとは？\n\n外国人旅行者向けのプリペイドカードです。韓国の店でローカルカードのように使え、T-money機能付きなら地下鉄・バス・タクシーにも使えます。空港や主要駅・ホテルのキオスクで発行・チャージし、アプリで残高確認するのが一般的です。",
+      "zh": "什么是 Wow Pass？\n\n面向外国旅客的预付卡。可在韩国许多商户像本地卡一样刷卡消费；带 T-money 功能的版本也可用于地铁、公交、出租车。通常在机场、主要地铁站、酒店等地的自助机发售与充值，并用 App 查看余额与消费记录。"
+    },
+    {
+      "type": "text",
+      "ko": "쓰는 법·주의점\n\n카드 안에 ‘쇼핑 잔액’과 ‘교통(티머니) 잔액’이 따로인 경우가 많습니다. 외화로 충전한 금액은 상점 결제용이고, 교통 잔액은 원화 현금으로 별도 충전해야 하는 경우가 많습니다. 해외 수수료 없는 신용카드가 있다면 결제용 카드 + 티머니만으로도 충분할 수 있어요. Wow Pass는 외화를 키오스크에서 바로 환전·충전하고 싶을 때, 국제카드가 안 되는 매장이 걱정될 때 선택지로 두세요.",
+      "en": "How to use / tips\n\nMany cards keep two wallets: a shopping balance and a separate T-money transit balance. Foreign-currency top-ups usually fund shopping; transit often still needs KRW cash top-ups. If you already have a no-FX-fee credit card, a simple T-money card may be enough. Consider Wow Pass if you want kiosk FX top-ups or worry about shops that reject foreign cards.",
+      "ja": "使い方・注意\n\n「ショッピング残高」と「交通（T-money）残高」が分かれていることが多いです。外貨チャージは店での支払いに使い、交通は現金（ウォン）で別チャージが必要な場合がほとんど。海外手数料の少ないクレカがあるなら、T-money単体でも十分なことがあります。キオスクで外貨をすぐチャージしたい人向けの選択肢です。",
+      "zh": "用法与注意\n\n许多卡有两个余额：购物余额与交通（T-money）余额。外币充值多用于购物；交通余额往往仍需用韩元现金另充。若已有免外汇手续费的信用卡，单独办 T-money 也可能够用。想在自助机直接用外币换汇充值、或担心部分店铺不收国际卡时，可考虑 Wow Pass。"
+    },
+    {
+      "type": "callout",
+      "ko": "공식·매장 안내를 우선하세요. 앱 가입·잔액 확인 방법을 키오스크 옆 안내문에서도 확인할 수 있습니다. 불필요한 유료 대행은 피하세요.",
+      "en": "Follow official/kiosk instructions. App signup and balance checks are usually explained on-site. Avoid unnecessary paid agents.",
+      "ja": "公式・キオスク案内を優先を。アプリ登録や残高確認は現地案内でも確認できます。不要な有料代行は避けて。",
+      "zh": "请以官方/自助机说明为准。App 注册与余额查询通常现场有指引。避免不必要的付费代办。"
+    }
+  ],
+  "catEntry": "Entry",
+  "catMoney": "Money",
+  "catLife": "Daily life",
+  "catDining": "Dining",
+  "catEntryIntro": "Documents, e-Arrival (ERI), and airport immigration — what to check before you land.",
+  "catMoneyIntro": "Cash, cards, transit cards, and the tourist Wow Pass.",
+  "catLifeIntro": "Data and power, packing and lodging, transit and taxis, plus a few basic greetings for day-one comfort.",
+  "catDiningIntro": "Dining culture and solo meals — helpful to know before you arrive.",
+  "tabEri": "e-Arrival (ERI)",
+  "tabWowpass": "Wow Pass",
+  "eriTitle": "e-Arrival Card (ERI)",
+  "wowpassTitle": "Wow Pass",
+  "eri1": "The e-Arrival Card is Korea’s online arrival declaration (often called ERI). It is separate from K-ETA and the old COVID Q-CODE.",
+  "eri2": "File from 3 days before arrival (KST). Validity expires 72 hours after submission. The official portal is free.",
+  "eri3": "Submit at https://www.e-arrivalcard.go.kr with passport and stay details. An issue number is emailed to you.",
+  "wowpass1": "Wow Pass is a tourist prepaid card often used for shopping and T-money-style transit.",
+  "wowpass2": "Issue and top up at airport/station/hotel kiosks; check balances in the app. Shopping and transit wallets are often separate.",
+  "wowpass3": "If you already have a no-FX-fee card, a simple T-money card may be enough — choose based on your needs.",
+  "catPickLabel": "Topic",
+  "catSchedule": "Schedule",
+  "catScheduleIntro": "Public holidays and tougher travel periods — handy when picking dates.",
+  "tabHolidays": "Public holidays",
+  "tabAvoid": "Tougher periods",
+  "holidaysTitle": "Korean public holidays",
+  "avoidTitle": "Tougher times to visit",
+  "holidays1": "Fixed solar dates: New Year (1/1), Independence Movement Day (3/1), Children’s Day (5/5), Memorial Day (6/6), Liberation Day (8/15), National Foundation Day (10/3), Hangul Day (10/9), Christmas (12/25).",
+  "holidays2": "Seollal, Chuseok, and Buddha’s Birthday follow the lunar calendar and move each year — typically Seollal in Jan–Feb, Chuseok in Sep–Oct, Buddha’s Birthday in Apr–May. Check that year’s calendar before you fly.",
+  "holidays3": "During long weekends, transport and lodging get busy and some shops close. Book early, as in peak season.",
+  "avoid1": "Midsummer (Jul–Aug) is hot and humid — outdoor-heavy trips can be tough for first-timers.",
+  "avoid2": "The jangma monsoon is roughly late June–July with frequent rain. Indoor plans and flexible schedules help.",
+  "avoid3": "Midwinter (Dec–Feb) is cold and windy, especially inland. Not a “don’t come” — just expect more prep if you’re new or plan lots outdoors.",
+  "holidaysBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/holidays.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "공휴일을 알면 일정 짜기가 쉬워집니다\n\n한국은 양력으로 날짜가 고정된 공휴일과, 음력이라 해마다 날짜가 움직이는 연휴가 섞여 있습니다. 아래는 여행 가이드용으로 짧게 정리한 목록입니다. 정확한 그해 날짜는 출국 전 공식 달력으로 한 번 더 확인하세요.",
+      "en": "Knowing holidays makes planning easier\n\nKorea mixes fixed solar-date holidays with lunar holidays that move each year. Below is a simple traveler’s list — recheck the official calendar for the exact dates in your travel year.",
+      "ja": "祝日を知ると日程が組みやすい\n\n韓国には太陽暦で固定の祝日と、陰暦で年ごとに動く連休があります。下は旅行ガイド向けの簡潔リスト。渡航年の正確な日付は公式カレンダーで再確認を。",
+      "zh": "了解公休日，行程更好排\n\n韩国既有阳历固定日期的公休，也有按阴历每年变动的长假。下面是面向旅客的简要列表——出发前请再核对当年官方日历。"
+    },
+    {
+      "type": "text",
+      "ko": "양력 고정 공휴일\n\n· 1월 1일 — 신정(새해)\n· 3월 1일 — 삼일절(독립운동 기념)\n· 5월 5일 — 어린이날\n· 6월 6일 — 현충일(호국 영령 추모)\n· 8월 15일 — 광복절(해방 기념)\n· 10월 3일 — 개천절(개국 기념)\n· 10월 9일 — 한글날\n· 12월 25일 — 크리스마스\n\n이들 날은 해마다 같은 날짜입니다.",
+      "en": "Fixed solar-date holidays\n\n· Jan 1 — New Year’s Day\n· Mar 1 — Independence Movement Day\n· May 5 — Children’s Day\n· Jun 6 — Memorial Day\n· Aug 15 — Liberation Day\n· Oct 3 — National Foundation Day\n· Oct 9 — Hangul Day\n· Dec 25 — Christmas\n\nThese fall on the same dates every year.",
+      "ja": "太陽暦の固定祝日\n\n· 1月1日 — 元日\n· 3月1日 — 三一節\n· 5月5日 — 子供の日\n· 6月6日 — 顕忠日\n· 8月15日 — 光復節\n· 10月3日 — 開天節\n· 10月9日 — ハングルの日\n· 12月25日 — クリスマス\n\n毎年同じ日付です。",
+      "zh": "阳历固定公休\n\n· 1月1日 — 元旦\n· 3月1日 — 三一节\n· 5月5日 — 儿童节\n· 6月6日 — 显忠日\n· 8月15日 — 光复节\n· 10月3日 — 开天节\n· 10月9日 — 韩文日\n· 12月25日 — 圣诞节\n\n这些日期每年固定。"
+    },
+    {
+      "type": "text",
+      "ko": "음력 연휴 (해마다 날짜 확인)\n\n· 설날(설) — 음력 새해. 보통 1~2월. 전후 연휴가 길어질 수 있음\n· 부처님 오신 날 — 음력 4월 8일. 보통 4~5월\n· 추석 — 한가위. 보통 9~10월. 전후 연휴가 길어질 수 있음\n\n음력이라 해마다 날짜가 다릅니다. 항공·숙소·KTX를 잡기 전에 그해 달력을 확인하세요.",
+      "en": "Lunar holidays (check each year)\n\n· Seollal (Lunar New Year) — usually Jan–Feb; often a longer break around it\n· Buddha’s Birthday — 8th day of the 4th lunar month; usually Apr–May\n· Chuseok (harvest festival) — usually Sep–Oct; often a longer break around it\n\nDates move every year — confirm before booking flights, hotels, or KTX.",
+      "ja": "陰暦の連休（年ごとに確認）\n\n· ソルラル（旧正月）— だいたい1〜2月。前後が連休になりやすい\n· 仏誕日 — 陰暦4月8日。だいたい4〜5月\n· チュソク（秋夕）— だいたい9〜10月。前後が連休になりやすい\n\n陰暦のため年ごとに日付が違います。航空券・宿・KTX前にその年を確認を。",
+      "zh": "阴历长假（每年核对日期）\n\n· 春节（설날）— 阴历新年，多在 1–2 月，前后常连休\n· 佛诞日 — 阴历四月初八，多在 4–5 月\n· 中秋（추석）— 多在 9–10 月，前后常连休\n\n日期每年不同。订机票、住宿、KTX 前请核对当年日历。"
+    },
+    {
+      "type": "callout",
+      "ko": "연휴·황금연휴에는 명소·교통·인기 식당이 붐빕니다. 일부 가게·관공서는 쉽니다. 성수기처럼 미리 예약하세요.",
+      "en": "Long weekends get busy at sights, transit, and popular restaurants. Some shops and offices close. Book early, as in peak season.",
+      "ja": "連休・黄金連休は名所・交通・人気店が混みます。店や役所が休むことも。繁忙期同様、早めに予約を。",
+      "zh": "长假/黄金周时景点、交通与人气餐厅更挤，部分店铺与机关休息。建议像旺季一样提前预订。"
+    }
+  ],
+  "avoidBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/avoid.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "‘오지 말라’가 아니라, 준비가 더 필요한 시기입니다\n\n한국은 사계절이 뚜렷합니다. 아래 시기는 초보 여행자나 야외 일정이 많은 사람에게는 체감 난이도가 올라갈 수 있어요. 일정을 잡을 때 참고만 하세요.",
+      "en": "Not “don’t come” — just periods that need more prep\n\nKorea has four clear seasons. The windows below can feel harder for first-timers or outdoor-heavy trips. Use them as planning tips, not bans.",
+      "ja": "「来るな」ではなく、準備がより必要な時期\n\n韓国は四季がはっきりしています。下の時期は初めての人や屋外多めの旅だと負担が増えやすいです。禁止ではなく、日程づくりの参考に。",
+      "zh": "不是“别来”，而是更需要准备的时段\n\n韩国四季分明。以下时段对初次旅行者或户外行程较多的人可能更辛苦。仅作安排参考，并非禁止到访。"
+    },
+    {
+      "type": "text",
+      "ko": "한여름 더위·습도 (대략 7~8월)\n\n낮 기온과 습도가 높아 오래 걷기·야외 명소가 힘듭니다. 이른 아침·저녁 일정을 잡고, 실내(카페·박물관·쇼핑몰)를 섞으세요. 물·모자·자외선 차단을 챙기면 도움이 됩니다.",
+      "en": "Midsummer heat & humidity (about Jul–Aug)\n\nHigh heat and humidity make long walks and outdoor sights tiring. Plan early-morning/evening slots and mix in indoor stops (cafés, museums, malls). Water, a hat, and sunscreen help.",
+      "ja": "真夏の暑さ・湿気（だいたい7〜8月）\n\n気温と湿度が高く、長時間の徒歩や屋外観光は負担。朝夕の予定＋屋内（カフェ・博物館・モール）を混ぜ、水分・帽子・日焼け止めを。",
+      "zh": "盛夏高温高湿（约 7–8 月）\n\n气温与湿度高，长时间步行与户外景点更累。可安排早晚行程，穿插室内（咖啡店、博物馆、商场），并备水、帽子与防晒。"
+    },
+    {
+      "type": "text",
+      "ko": "장마 (대략 6월 말~7월)\n\n비가 잦고 우산을 쓰는 날이 늘어납니다. 야외만으로 꽉 채우기보다 실내·유연한 일정이 편합니다. 방수 재킷·여분 양말을 조금 챙기세요.",
+      "en": "Monsoon / jangma (roughly late Jun–Jul)\n\nRainy days increase. Prefer indoor options and a flexible plan over packing only outdoor days. A light rain jacket and spare socks help.",
+      "ja": "梅雨・ジャンマ（だいたい6月末〜7月）\n\n雨の日が増えます。屋外だけで埋めず、屋内と柔軟な予定を。薄手のレインと替え靴下があると安心。",
+      "zh": "梅雨季（约 6 月末–7 月）\n\n雨天增多。别只排户外，留室内选项与弹性更好。轻便雨衣与备用袜子会有帮助。"
+    },
+    {
+      "type": "text",
+      "ko": "한겨울 추위 (대략 12~2월, 특히 내륙)\n\n서울·내륙은 바람과 체감온도가 낮습니다. 겹쳐 입기·목도리·장갑을 준비하고, 짧은 야외+실내 휴식을 번갈아 보세요. 눈·빙판이 있는 날도 있습니다.",
+      "en": "Midwinter cold (about Dec–Feb, especially inland)\n\nSeoul and inland areas feel windy and cold. Layer up, bring scarf/gloves, and alternate short outdoor time with indoor breaks. Some days bring snow or icy sidewalks.",
+      "ja": "真冬の寒さ（だいたい12〜2月、特に内陸）\n\nソウルや内陸は風で体感温度が下がります。重ね着・マフラー・手袋を。短い屋外と屋内休憩を交互に。雪や凍結の日もあります。",
+      "zh": "隆冬寒冷（约 12–2 月，尤其内陆）\n\n首尔与内陆风大、体感更冷。请多层穿衣并带围巾/手套，户外与室内休息交替。有些天会有雪或结冰路面。"
+    },
+    {
+      "type": "callout",
+      "ko": "봄(3~5월)·가을(9~11월 초중순, 추석 연휴 제외)은 야외 여행에 무난한 편입니다. 연휴·성수기 혼잡만 피하면 초보에게도 부담이 적습니다.",
+      "en": "Spring (Mar–May) and autumn (Sep–early/mid Nov, outside Chuseok week) are usually easier for outdoor trips. Avoid peak holiday crowds if you want a calmer first visit.",
+      "ja": "春（3〜5月）と秋（9〜11月上中旬、チュソク連休を除く）は屋外旅行に無難。連休・繁忙の混雑を避ければ初めてでも負担が少なめです。",
+      "zh": "春季（3–5 月）与秋季（9–11 月上中旬，避开中秋长假）通常更适合户外。想轻松的初次旅行，可尽量避开长假人潮。"
+    }
+  ],
+  "tabTransit": "Public transit",
+  "transitTitle": "Public transit",
+  "transit1": "In Seoul, subway and bus are often easier and more predictable than renting or driving — less traffic and parking stress.",
+  "transit2": "Use Naver/Kakao Map transit routes for transfers and exits. With heavy bags or late at night, also see the Taxi tab.",
+  "transit3": "Buying/topping up T-money, Cashbee, or Climate Card is under Money and Wow Pass. Bus tap-out tips are in Travel tips.",
+  "transit4": "Some regions (and Jeju) suit rental cars. Even using transit just in Seoul makes day one calmer.",
+  "tabCulture": "Dining culture",
+  "cultureTitle": "Dining culture",
+  "culture1": "Spoon for rice and soup, chopsticks for banchan and meat feels natural. Avoid standing chopsticks upright in rice.",
+  "culture2": "Banchan is shared; order together when you’re in a group. Ask for milder spice if you need it.",
+  "culture3": "Use a call bell or a small “저기요.” Water/banchan are often self-serve. Pay at the counter; tipping isn’t expected.",
+  "culture4": "Looking around once helps more than perfect etiquette.",
+  "transitBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/transit.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "서울에서는 대중교통이 훨씬 편한 경우가 많습니다\n\n렌터카나 자가용으로 다니면 정체·주차·내비게이션 스트레스가 커질 수 있어요. 시내 이동은 지하철·버스가 더 빠르고 예측 가능한 경우가 많습니다. 꼭 차가 나쁜 건 아니지만, 서울 관광 일정이라면 대중교통을 기본으로 잡아 두면 마음이 편합니다.",
+      "en": "In Seoul, transit is often much easier\n\nDriving or renting a car can mean traffic, parking, and navigation stress. For getting around the city, subway and bus are often faster and more predictable. Cars aren’t “wrong” — but for a Seoul sightseeing trip, starting with public transit usually feels calmer.",
+      "ja": "ソウルでは公共交通のほうが楽なことが多いです\n\nレンタカーや自家用車だと渋滞・駐車・ナビのストレスが増えがち。市内移動は地下鉄・バスのほうが速くて読みやすいことが多いです。車が悪いわけではありませんが、ソウル観光ならまず公共交通を基本にすると安心です。",
+      "zh": "在首尔，公共交通往往更省心\n\n自驾或租车可能遇到堵车、停车和导航压力。市区出行时，地铁和公交常常更快、更可预期。并不是说开车不好——但如果是首尔观光行程，以公共交通为主通常更轻松。"
+    },
+    {
+      "type": "text",
+      "ko": "지하철 + 버스, 이렇게 쓰면 됩니다\n\n네이버지도·카카오맵에서 대중교통 경로를 보면 환승·출구까지 안내됩니다. 지하철은 노선 색과 출구 번호를 기억하면 골목 찾기가 수월하고, 버스는 정류장 번호·도착 안내를 확인하면 됩니다. 짐이 많거나 심야·비 오는 날에는 택시 탭도 함께 참고하세요.",
+      "en": "Subway + bus — the practical combo\n\nNaver Map and Kakao Map show transit routes with transfers and exits. Remember line colors and exit numbers on the subway; for buses, check stop numbers and arrival info. With heavy bags, late at night, or in rain, also see the Taxi tab.",
+      "ja": "地下鉄＋バスの使い方\n\nNaver地図・カカオマップの公共交通ルートで乗換や出口まで案内されます。地下鉄は路線色と出口番号、バスは停留所番号・到着案内を確認。荷物が多い・深夜・雨の日はタクシーのタブも参考に。",
+      "zh": "地铁 + 公交，这样用就够\n\nNaver Map、Kakao Map 的公交路线会标换乘和出口。地铁记住线路颜色和出口编号；公交看站牌编号和到站信息。行李多、深夜或下雨时，也可参考「出租车」分栏。"
+    },
+    {
+      "type": "text",
+      "ko": "교통카드는 짧게만\n\n티머니·캐시비·기후동행카드(조건에 맞을 때) 등은 ‘돈’ 카테고리와 Wow Pass 탭에서 구입·충전을 정리해 두었습니다. 여기서는 도착 전에 “카드를 쓸 생각”만 해 두면 충분합니다. 버스는 내릴 때도 태그하는 점이 중요하니, 여행 중 팁의하차·환승도 함께 보세요.",
+      "en": "Transit cards — keep it short\n\nT-money, Cashbee, and Climate Card (when eligible) are covered under Money and Wow Pass. Before you fly, just plan to use a card. On buses you also tap when you get off — see Travel tips → Tap out / transfers while you’re on the ground.",
+      "ja": "交通カードは短く\n\nT-money・Cashbee・気候同行カード（条件による）などは「お金」と Wow Pass タブで購入・チャージをまとめています。出発前は「カードを使う」つもりで十分。バスは降車時もタッチが大切なので、旅行中ヒントの「降車・乗換」も見てください。",
+      "zh": "交通卡只提一句\n\nT-money、Cashbee、气候同行卡（符合条件时）的购买/充值见「钱」与 Wow Pass。出发前心里有「会用交通卡」就够。公交下车也要刷卡——抵达后可看旅行贴士里的「下车·换乘」。"
+    },
+    {
+      "type": "callout",
+      "ko": "지방·제주처럼 렌터가 편한 코스도 있습니다. 서울 시내만이라도 지하철·버스를 기본으로 두면, 첫날이 훨씬 덜 바빠집니다.",
+      "en": "Some regions (and Jeju) are easier by rental car. Even if you only use subway/bus inside Seoul, day one feels much lighter.",
+      "ja": "地方や済州のようにレンタカーが楽なコースもあります。ソウル市内だけでも地下鉄・バスを基本にすると初日が楽になります。",
+      "zh": "地方或济州等地租车可能更方便。哪怕只在首尔市区以地铁公交为主，第一天也会轻松很多。"
+    }
+  ],
+  "cultureBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/culture.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "수저 세트, 이렇게 쓰면 편합니다\n\n한국 식당에서는 보통 숟가락과 젓가락이 함께 나옵니다. 밥·국·찌개는 숟가락, 반찬·고기·면은 젓가락을 쓰는 편이 자연스럽습니다. 젓가락을 밥그릇에 꽂아 세우지 않는 것이 보통이고, 공용 반찬은 자기 젓가락으로 집어도 무방한 곳이 많지만 집게·공용 수저가 있으면 그걸 쓰세요.",
+      "en": "Spoon + chopsticks (sujeo)\n\nMost Korean meals come with a spoon and chopsticks. Use the spoon for rice, soup, and stews; chopsticks for banchan, meat, and noodles. Avoid standing chopsticks upright in rice. Shared banchan is often taken with your own chopsticks, but use serving tongs/spoons when provided.",
+      "ja": "スプーンと箸（スジョ）\n\n韓国の食事ではスプーンと箸がセットで出ることが多いです。ご飯・スープ・チゲはスプーン、おかず・肉・麺は箸が自然です。箸をご飯に突き立てないのが一般的。共用おかずは自分の箸で取ることが多いですが、トングや共用スプーンがあればそちらを。",
+      "zh": "勺子 + 筷子（수저）\n\n韩国餐桌上通常同时有勺子和筷子。米饭、汤、炖菜用勺；小菜、肉、面类用筷更自然。一般不要把筷子竖直插在米饭里。共用小菜多数可用自己的筷子夹，若有公筷/夹子请用公筷。"
+    },
+    {
+      "type": "text",
+      "ko": "함께 먹는 상차림\n\n반찬은 테이블에 놓고 나눠 먹는 문화가 강합니다. 메뉴도 2인분·공유 요리가 많아, 일행이 있으면 같이 고르는 편이 편합니다. 매운맛이 걱정되면 ‘덜 맵게 해주세요’라고 말해 보세요. 남기는 것에 너무 스트레스받지 않아도 됩니다 — 다만 처음엔 양을 조금 적게 주문해도 좋아요.",
+      "en": "Sharing the table\n\nBanchan is meant to be shared. Many dishes assume two people or shared plates, so ordering together is easier. If spice worries you, ask for it milder (“덜 맵게 해주세요”). Don’t stress about finishing every bite — starting with a smaller order is fine.",
+      "ja": "シェアする食卓\n\nおかずはテーブルで分け合う文化が強いです。2人前やシェア料理も多いので、同行がいれば一緒に選ぶと楽。辛さが心配なら「덜 맵게 해주세요」。食べきれなくても気にしすぎなくてOK。最初は少なめ注文でも大丈夫です。",
+      "zh": "一起吃的餐桌\n\n小菜多是共享的。不少菜按两人份或拼桌设计，有同伴时一起点更省事。怕辣可以说「덜 맵게 해주세요」。不必为吃不完太紧张——一开始少点一些也完全可以。"
+    },
+    {
+      "type": "text",
+      "ko": "직원 부르기·물·반찬·계산\n\n테이블 호출벨이 있으면 누르거나, 직원이 보이면 손을 살짝 들어 ‘저기요’ 하면 됩니다. 물·수저·반찬은 셀프인 가게가 많으니 주변을 한 번 보세요. 계산은 출구 쪽 카운터에서 하는 곳이 흔하고, 한 사람이 카드를 내는 경우가 많습니다. 일반 식당에서는 팁을 주지 않는 것이 보통입니다. 현장 디테일은 ‘여행 팁 → 식당’에도 짧게 있습니다.",
+      "en": "Calling staff, water, banchan, paying\n\nUse the call bell if there is one, or a small wave and “저기요.” Water, utensils, and banchan are often self-serve — look around once. Many places take payment at a counter near the exit; one person often pays for the group. Tipping is not expected at typical restaurants. For in-the-moment details, see Travel tips → Dining.",
+      "ja": "店員を呼ぶ・水・おかず・会計\n\n呼び出しベルがあれば押すか、手を少し挙げて「저기요」。水・箸・おかずはセルフが多いので周囲を確認を。会計は入口付近のカウンターが多く、一人がまとめて払うことも普通。一般店ではチップ不要。その場のコツは「旅行のヒント → 食事」も参照。",
+      "zh": "叫服务员、水、小菜、结账\n\n有桌铃就按，或轻轻招手说「저기요」。水、餐具、小菜常是自助——坐下后先看一眼周围。很多店在门口柜台结账，常由一人刷卡。普通餐厅一般不给小费。现场细节也可看「旅行贴士 → 餐厅」。"
+    },
+    {
+      "type": "callout",
+      "ko": "완벽한 예절보다 ‘주변을 한번 보는 것’이 더 도움이 됩니다. 헷갈리면 옆 테이블을 부드럽게 참고해도 괜찮아요.",
+      "en": "A quick look around helps more than perfect etiquette. When unsure, quietly mirror nearby tables.",
+      "ja": "完璧なマナーより、周囲を一度見ることが役立ちます。迷ったら隣のテーブルをそっと参考に。",
+      "zh": "不必追求完美礼仪，先观察周围更有用。不确定时，轻轻参考邻桌即可。"
+    }
+  ],
+  "tabKorean": "Basic greetings",
+  "koreanTitle": "Basic greetings & phrases",
+  "korean1": "Before you fly, learn a few greetings, thanks, and simple lines. Start with short phrases like “안녕하세요,” “감사합니다,” and “죄송합니다” — not long sentences.",
+  "korean2": "Koreans understand that visitors may not speak Korean. Still, asking politely and kindly often brings a warmer response.",
+  "korean3": "For ready-to-use lines in restaurants, transit, and shopping, see Useful Korean. A quick look before departure helps a lot.",
+  "koreanLink": "→ More in Useful Korean",
+  "koreanBody": [
+    {
+      "type": "image",
+      "src": "Images/before-trip/korean.jpg"
+    },
+    {
+      "type": "text",
+      "ko": "짧은 인사만 알아도 하루가 달라집니다\n\n출발 전에 인사·감사·사과처럼 짧은 표현만 익혀 두세요. 완벽한 한국어가 목표가 아닙니다. ‘안녕하세요’, ‘감사합니다’, ‘죄송합니다’, ‘이것 주세요’처럼 여행에서 바로 쓰는 한마디면 충분합니다.",
+      "en": "A few short phrases go a long way\n\nBefore departure, learn greetings, thanks, and simple asks. You do not need perfect Korean — “안녕하세요,” “감사합니다,” “죄송합니다,” and “이것 주세요” cover a lot of travel moments.",
+      "ja": "短いあいさつだけでも一日が変わります\n\n出発前に、あいさつ・お礼・謝罪などの短い表現を覚えておきましょう。完璧な韓国語が目標ではありません。「안녕하세요」「감사합니다」「죄송합니다」「이것 주세요」など、旅ですぐ使う一言で十分です。",
+      "zh": "几句短问候，也能让一天更顺\n\n出发前先学问候、道谢和简单请求即可。目标不是完美韩语——「안녕하세요」「감사합니다」「죄송합니다」「이것 주세요」这类短句，就能覆盖很多旅行场景。"
+    },
+    {
+      "type": "text",
+      "ko": "정중함은 언어보다 먼저 전달됩니다\n\n한국 사람들은 외국인이 한국어를 잘 몰라도 대부분 이해합니다. 그래도 미소와 함께 천천히, 정중하게 물어보면 도움이 더 잘 이어지는 경우가 많아요. 틀려도 괜찮습니다 — 친절한 태도가 더 중요합니다.",
+      "en": "Kindness travels further than fluency\n\nMost Koreans understand that foreigners may not know Korean. Asking slowly and politely — with a smile — still makes help easier to give and receive. Mistakes are fine; a friendly tone matters more.",
+      "ja": "丁寧さは言葉より先に伝わります\n\n韓国の人は、外国人が韓国語をあまり知らなくても大抵理解してくれます。それでも笑顔でゆっくり丁寧に尋ねると、助けがつながりやすくなります。間違えても大丈夫 — やさしい態度のほうが大切です。",
+      "zh": "礼貌往往比流利更重要\n\n多数韩国人理解外国人可能不会韩语。只要微笑、慢慢、礼貌地问，帮助通常更容易到来。说错也没关系——友善的态度更重要。"
+    },
+    {
+      "type": "callout",
+      "ko": "더 많은 여행용 한마디는 ‘유용한 한국어’에서 이어서 볼 수 있습니다. 출발 전에 일상·식당·교통 탭만 훑어도 현지에서 마음이 한결 편해집니다.",
+      "en": "Find more trip-ready phrases in Useful Korean. Even a quick skim of daily, dining, and transit tabs before you fly makes the first days calmer.",
+      "ja": "もっと旅行向けの一言は「役立つ韓国語」で続けて見られます。出発前に日常・食事・交通のタブをざっと見るだけでも、現地での気持ちが楽になります。",
+      "zh": "更多旅行短句请到「实用韩语」继续看。出发前哪怕只快速浏览日常、餐厅、交通分类，抵达后也会安心许多。"
+    }
+  ]
+}

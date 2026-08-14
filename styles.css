@@ -101,6 +101,8 @@ a:hover {
   right: 16px;
   z-index: 80;
   display: block;
+  width: max-content;
+  max-width: calc(100vw - 20px);
   margin: 0;
   padding: 0;
   border: none;
@@ -108,10 +110,17 @@ a:hover {
   box-shadow: none;
 }
 
+/* Hide legacy flat KR/EN/JP markup until i18n.js rebuilds the compact control */
+.lang-switch > button[data-set-lang] {
+  display: none !important;
+}
+
 .lang-switch__toggle {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  width: auto;
+  max-width: min(280px, calc(100vw - 28px));
   margin: 0;
   padding: 8px 12px;
   border: 1px solid #d8e3dc;
@@ -124,7 +133,6 @@ a:hover {
   font-size: 0.85rem;
   font-weight: 700;
   line-height: 1.2;
-  max-width: min(220px, calc(100vw - 28px));
 }
 
 .lang-switch__current {
@@ -147,7 +155,7 @@ a:hover {
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  display: flex;
+  display: none; /* must beat [hidden]; only open via .is-open */
   flex-direction: column;
   gap: 2px;
   min-width: 168px;
@@ -163,6 +171,14 @@ a:hover {
   backdrop-filter: blur(8px);
 }
 
+.lang-switch.is-open .lang-switch__menu {
+  display: flex;
+}
+
+.lang-switch__menu[hidden] {
+  display: none !important;
+}
+
 .lang-switch__heading {
   margin: 0 0 4px;
   padding: 4px 10px 6px;
@@ -172,7 +188,6 @@ a:hover {
   letter-spacing: 0.02em;
 }
 
-.lang-switch button,
 .lang-switch__menu button {
   border: none;
   background: transparent;

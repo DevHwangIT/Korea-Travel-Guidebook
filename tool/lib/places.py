@@ -28,15 +28,42 @@ PLACE_TEXT_FIELDS = ("name", "desc", "how", "address", "regionLabel")
 COORDS_PATH = ROOT / "data" / "places" / "places-coords.js"
 
 REGION_LABELS = {
-    "seoul": {"ko": "서울", "en": "Seoul", "ja": "ソウル"},
-    "gyeonggi": {"ko": "경기", "en": "Gyeonggi", "ja": "京畿"},
-    "incheon": {"ko": "인천", "en": "Incheon", "ja": "仁川"},
-    "gangwon": {"ko": "강원", "en": "Gangwon", "ja": "江原"},
-    "busan": {"ko": "부산", "en": "Busan", "ja": "釜山"},
-    "gyeongju": {"ko": "경주", "en": "Gyeongju", "ja": "慶州"},
-    "gyeongsang": {"ko": "경상", "en": "Gyeongsang", "ja": "慶尚"},
-    "jeolla": {"ko": "전라", "en": "Jeolla", "ja": "全羅"},
-    "jeju": {"ko": "제주", "en": "Jeju", "ja": "済州"},
+    "seoul": {
+        "ko": "서울", "en": "Seoul", "ja": "ソウル", "zh": "首尔",
+        "zh-Hant": "首爾", "vi": "Seoul", "th": "โซล", "ru": "Сеул",
+    },
+    "gyeonggi": {
+        "ko": "경기", "en": "Gyeonggi", "ja": "京畿", "zh": "京畿",
+        "zh-Hant": "京畿", "vi": "Gyeonggi", "th": "คยองกี", "ru": "Кёнги",
+    },
+    "incheon": {
+        "ko": "인천", "en": "Incheon", "ja": "仁川", "zh": "仁川",
+        "zh-Hant": "仁川", "vi": "Incheon", "th": "อินชอน", "ru": "Инчхон",
+    },
+    "gangwon": {
+        "ko": "강원", "en": "Gangwon", "ja": "江原", "zh": "江原",
+        "zh-Hant": "江原", "vi": "Gangwon", "th": "คังวอน", "ru": "Канвон",
+    },
+    "busan": {
+        "ko": "부산", "en": "Busan", "ja": "釜山", "zh": "釜山",
+        "zh-Hant": "釜山", "vi": "Busan", "th": "ปูซาน", "ru": "Пусан",
+    },
+    "gyeongju": {
+        "ko": "경주", "en": "Gyeongju", "ja": "慶州", "zh": "庆州",
+        "zh-Hant": "慶州", "vi": "Gyeongju", "th": "คยองจู", "ru": "Кёнджу",
+    },
+    "gyeongsang": {
+        "ko": "경상", "en": "Gyeongsang", "ja": "慶尚", "zh": "庆尚",
+        "zh-Hant": "慶尚", "vi": "Gyeongsang", "th": "คยองซัง", "ru": "Кёнсан",
+    },
+    "jeolla": {
+        "ko": "전라", "en": "Jeolla", "ja": "全羅", "zh": "全罗",
+        "zh-Hant": "全羅", "vi": "Jeolla", "th": "ชอลลา", "ru": "Чолла",
+    },
+    "jeju": {
+        "ko": "제주", "en": "Jeju", "ja": "済州", "zh": "济州",
+        "zh-Hant": "濟州", "vi": "Jeju", "th": "เชจู", "ru": "Чеджу",
+    },
 }
 
 PLACE_TYPES = (
@@ -254,11 +281,16 @@ def _normalize_place_texts(
         out[lang] = {f: str(row.get(f) or "").strip() for f in PLACE_TEXT_FIELDS}
     if not out["ko"]["name"]:
         raise ValueError("한국어 명소 이름은 필수입니다.")
-    for lang in ("en", "ja"):
+    for lang in i18n_store.LANGS:
+        if lang == "ko":
+            continue
         for f in PLACE_TEXT_FIELDS:
             if not out[lang][f] and out["ko"][f]:
-                out[lang][f] = out["ko"][f]
-                notes.append(f"{lang}.{f}: 한국어로 임시 채움")
+                if lang in ("zh-Hant", "vi", "th", "ru") and out.get("en", {}).get(f):
+                    out[lang][f] = out["en"][f]
+                else:
+                    out[lang][f] = out["ko"][f]
+                notes.append(f"{lang}.{f}: 임시 채움")
     return out, notes
 
 
@@ -458,10 +490,23 @@ def migrate_legacy_places(*, force: bool = False) -> list[str]:
     """Import transport.place_*_* blurbs into places.{slug} + pages."""
     notes: list[str] = []
     bundle = i18n_store.load_all()
+    how_defaults = {
+        "ko": "가는 방법",
+        "en": "How to get there",
+        "ja": "行き方",
+        "zh": "怎么去",
+        "zh-Hant": "怎麼去",
+        "vi": "Cách đi",
+        "th": "วิธีไป",
+        "ru": "Как добраться",
+    }
     how_label = {
-        "ko": str((bundle["ko"].get("transport") or {}).get("howLabel") or "가는 방법"),
-        "en": str((bundle["en"].get("transport") or {}).get("howLabel") or "How to get there"),
-        "ja": str((bundle["ja"].get("transport") or {}).get("howLabel") or "行き方"),
+        lang: str(
+            (bundle[lang].get("transport") or {}).get("howLabel")
+            or how_defaults.get(lang)
+            or how_defaults["en"]
+        )
+        for lang in i18n_store.LANGS
     }
 
     for slug, region, address_ko in SEED_PLACES:

@@ -335,7 +335,7 @@ def render_force_translate_check() -> str:
         "<span>번역 다시 하기</span>"
         "</label>"
         '<p class="hint" style="margin:.35rem 0 0">'
-        "이미 있는 영어·일본어·중국어를 한국어 기준으로 다시 만듭니다."
+        "이미 있는 번역(en/ja/zh/zh-Hant/vi/th/ru)을 한국어 기준으로 다시 만듭니다."
         "</p>"
     )
 
@@ -408,7 +408,7 @@ def layout(
           <code>home.partnerTitle</code> / <code>home.partnerHint</code> 는 문의 섹션·홈 i18n에서 수정</span>
       </div>
       <div class="sidebar-foot">이 컴퓨터에서만 열림 · 저장 후 Ctrl+F5 또는 뷰어 다시 열기<br>
-        언어: 한국어 입력 → 저장 시 영어·일본어·중국어(中文) 자동 번역</div>
+        언어: 한국어 입력 → 저장 시 영어·일본어·중국어(간체/번체)·베트남어·태국어·러시아어 자동 번역(또는 EN 복사)</div>
     </aside>
     <div class="main-wrap">
       <div class="topbar">
@@ -491,8 +491,17 @@ def public_href(rel_path: str) -> str:
     return "/preview/" + rel
 
 
-LANG_TAB_LABELS = {"ko": "한국어", "en": "영어", "ja": "일본어"}  # legacy; prefer KO-only forms
-LANG_FULL_LABELS = {"ko": "한국어", "en": "영어", "ja": "일본어"}
+LANG_TAB_LABELS = {
+    "ko": "한국어",
+    "en": "영어",
+    "ja": "일본어",
+    "zh": "중국어(간체)",
+    "zh-Hant": "중국어(번체)",
+    "vi": "베트남어",
+    "th": "태국어",
+    "ru": "러시아어",
+}  # legacy; prefer KO-only forms
+LANG_FULL_LABELS = dict(LANG_TAB_LABELS)
 
 
 def render_editor_actions(
@@ -572,8 +581,11 @@ def empty_state(title: str, lead: str, cta_href: str, cta_label: str) -> str:
 
 
 def dish_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
+    """KO-primary; optional expert overrides for any GUIDE_LANGS code."""
+    from lib.i18n_store import LANGS
+
     texts: dict[str, dict[str, str]] = {}
-    for lang in ("ko", "en", "ja"):
+    for lang in LANGS:
         texts[lang] = {
             "title": form.get(f"title_{lang}", "").strip(),
             "desc": form.get(f"desc_{lang}", "").strip(),
@@ -583,8 +595,10 @@ def dish_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
 
 
 def shop_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
+    from lib.i18n_store import LANGS
+
     texts: dict[str, dict[str, str]] = {}
-    for lang in ("ko", "en", "ja"):
+    for lang in LANGS:
         texts[lang] = {
             "name": form.get(f"name_{lang}", "").strip(),
             "location": form.get(f"location_{lang}", "").strip(),
@@ -600,32 +614,16 @@ def shop_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
 
 
 def place_texts_from_form(form: dict[str, str]) -> dict[str, dict[str, str]]:
-    """KO-primary place fields; EN/JA/ZH filled on save."""
-    ko = {
-        "name": form.get("name_ko", ""),
-        "desc": form.get("desc_ko", ""),
-        "how": form.get("how_ko", ""),
-        "address": form.get("address_ko", ""),
-        "regionLabel": form.get("regionLabel_ko", ""),
-    }
-    # Optional body_ko → single text block handled by API layer
-    return {
-        "ko": ko,
-        "en": {
-            "name": form.get("name_en", ""),
-            "desc": form.get("desc_en", ""),
-            "how": form.get("how_en", ""),
-            "address": form.get("address_en", ""),
-            "regionLabel": form.get("regionLabel_en", ""),
-        },
-        "ja": {
-            "name": form.get("name_ja", ""),
-            "desc": form.get("desc_ja", ""),
-            "how": form.get("how_ja", ""),
-            "address": form.get("address_ja", ""),
-            "regionLabel": form.get("regionLabel_ja", ""),
-        },
-    }
+    """KO-primary place fields; other GUIDE_LANGS filled on save (optional overrides)."""
+    from lib.i18n_store import LANGS
+
+    fields = ("name", "desc", "how", "address", "regionLabel")
+    texts: dict[str, dict[str, str]] = {}
+    for lang in LANGS:
+        texts[lang] = {
+            f: form.get(f"{f}_{lang}", "") for f in fields
+        }
+    return texts
 
 
 def body_blocks_from_place_form(form: dict[str, str], files) -> tuple[list | None, list[str]]:
@@ -645,7 +643,7 @@ def body_blocks_from_place_form(form: dict[str, str], files) -> tuple[list | Non
         if has_json or has_count:
             return [], body_notes
         return None, body_notes
-    return [{"type": "text", "ko": ko, "en": "", "ja": ""}], body_notes
+    return [{"type": "text", "ko": ko}], body_notes
 
 
 ADMIN_BOOTSTRAP = """
@@ -673,7 +671,9 @@ ADMIN_BOOTSTRAP = """
 """
 
 def render_dish_primary_fields(texts: dict[str, dict[str, str]] | None = None) -> str:
-    texts = texts or {lang: {"title": "", "desc": "", "about": ""} for lang in ("ko", "en", "ja")}
+    from lib.i18n_store import LANGS
+
+    texts = texts or {lang: {"title": "", "desc": "", "about": ""} for lang in LANGS}
     ko = texts.get("ko") or {}
     return (
         '<div class="field field--hero">'
@@ -695,7 +695,7 @@ def render_dish_primary_fields(texts: dict[str, dict[str, str]] | None = None) -
 
 
 def render_dish_lang_fields(texts: dict[str, dict[str, str]] | None = None) -> str:
-    """Korean-only primary fields. EN/JA/ZH are filled on save via auto-translate."""
+    """Korean-only primary fields. Other GUIDE_LANGS filled on save via auto-translate."""
     return render_dish_primary_fields(texts)
 
 
@@ -707,6 +707,8 @@ def render_shop_primary_fields(
     phone: str = "",
     hours: str = "",
 ) -> str:
+    from lib.i18n_store import LANGS
+
     texts = texts or {
         lang: {
             "name": "",
@@ -716,7 +718,7 @@ def render_shop_primary_fields(
             "tip": "",
             "about": "",
         }
-        for lang in ("ko", "en", "ja")
+        for lang in LANGS
     }
     ko = texts.get("ko") or {}
     st = (source_type or "custom").strip().lower()
@@ -724,7 +726,7 @@ def render_shop_primary_fields(
         st = "custom"
     tip_hiddens = "".join(
         f'<input type="hidden" name="tip_{lang}" value="{h((texts.get(lang) or {}).get("tip", ""))}">'
-        for lang in ("ko", "en", "ja")
+        for lang in LANGS
     )
 
     def _opt(value: str, label: str) -> str:
@@ -817,7 +819,7 @@ def render_shop_lang_fields(
     phone: str = "",
     hours: str = "",
 ) -> str:
-    """Korean-only primary fields. EN/JA/ZH are filled on save via auto-translate."""
+    """Korean-only primary fields. Other GUIDE_LANGS filled on save via auto-translate."""
     return render_shop_primary_fields(
         texts,
         place_url=place_url,
@@ -874,7 +876,7 @@ def render_body_editor(
     return f"""
     <fieldset class="fieldset highlight body-post-editor" data-body-editor data-body-prefix="{h(prefix)}" data-body-ko-only="1">
       <legend>{h(legend)}</legend>
-      <p class="muted body-post-lead">한국어로 쓰세요. 저장하면 영어·일본어·중국어로 자동 번역됩니다.{extra}</p>
+      <p class="muted body-post-lead">한국어로 쓰세요. 저장하면 영어·일본어·중국어(간체/번체)·베트남어·태국어·러시아어로 자동 번역됩니다.{extra}</p>
       <input type="hidden" name="{h(prefix)}_count" value="{len(blocks)}" data-body-count>
       <input type="hidden" name="{h(prefix)}_json" value="" data-body-json>
       <script type="application/json" data-body-seed>{seed_json}</script>

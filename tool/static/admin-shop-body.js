@@ -402,7 +402,9 @@
   }
 
   function editorLangs(editor) {
-    return isKoOnly(editor) ? ["ko"] : ["ko", "en", "ja"];
+    return isKoOnly(editor)
+      ? ["ko"]
+      : ["ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru"];
   }
 
   function bindLangTabs(root) {

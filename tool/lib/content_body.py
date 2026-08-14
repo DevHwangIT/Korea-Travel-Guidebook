@@ -342,16 +342,24 @@ def slots_for_section(section_id: str, group: str = "") -> list[BodySlot]:
     return []
 
 
-def _text_block(ko: str, en: str, ja: str) -> dict[str, Any] | None:
-    ko, en, ja = ko.strip(), en.strip(), ja.strip()
-    if not ko and not en and not ja:
+def _text_block_from_langs(vals: dict[str, str]) -> dict[str, Any] | None:
+    """Build a text body block with keys for every GUIDE_LANGS code."""
+    cleaned = {lang: (vals.get(lang) or "").strip() for lang in i18n_store.LANGS}
+    if not any(cleaned.values()):
         return None
-    return {
-        "type": "text",
-        "ko": ko or en or ja,
-        "en": en or ko or ja,
-        "ja": ja or ko or en,
-    }
+    fallback = (
+        cleaned.get("ko")
+        or cleaned.get("en")
+        or next((v for v in cleaned.values() if v), "")
+    )
+    out: dict[str, Any] = {"type": "text"}
+    for lang in i18n_store.LANGS:
+        # Secondary locales prefer EN when their own scalar is empty.
+        if not cleaned[lang] and lang in ("zh-Hant", "vi", "th", "ru") and cleaned.get("en"):
+            out[lang] = cleaned["en"]
+        else:
+            out[lang] = cleaned[lang] or fallback
+    return out
 
 
 def _lang_vals(
@@ -384,7 +392,7 @@ def _append_titled(
             return f"{t}\n\n{b}"
         return t or b
 
-    block = _text_block(join("ko"), join("en"), join("ja"))
+    block = _text_block_from_langs({lang: join(lang) for lang in i18n_store.LANGS})
     if block:
         blocks.append(block)
 
@@ -396,7 +404,7 @@ def _append_plain(
     leaf: str,
 ) -> None:
     vals = _lang_vals(data, root_key, leaf)
-    block = _text_block(vals["ko"], vals["en"], vals["ja"])
+    block = _text_block_from_langs(vals)
     if block:
         blocks.append(block)
 
@@ -518,7 +526,9 @@ def _migrate_convenience_item(
                 return f"{title}\n\n{body}"
             return title or body
 
-        block = _text_block(steps_text("ko"), steps_text("en"), steps_text("ja"))
+        block = _text_block_from_langs(
+            {lang: steps_text(lang) for lang in i18n_store.LANGS}
+        )
         if block:
             blocks.append(block)
         _append_titled(
@@ -580,7 +590,9 @@ def migrate_souvenir(
                     return f"{t}\n\n{b}"
                 return t or b
 
-            block = _text_block(tip_text("ko"), tip_text("en"), tip_text("ja"))
+            block = _text_block_from_langs(
+                {lang: tip_text(lang) for lang in i18n_store.LANGS}
+            )
             if block:
                 blocks.append(block)
         write_body_at("souvenir", body_key, blocks, bundle=data, persist=False)
@@ -621,7 +633,7 @@ def _append_tip_article(
             parts.append(body)
         return "\n\n".join(parts)
 
-    block = _text_block(join("ko"), join("en"), join("ja"))
+    block = _text_block_from_langs({lang: join(lang) for lang in i18n_store.LANGS})
     if block:
         blocks.append(block)
 

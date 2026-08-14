@@ -175,7 +175,12 @@
 
   document.addEventListener("guide:langchange", function () {
     var dialog = document.getElementById(DIALOG_ID);
-    if (dialog && !dialog.hidden) applyI18n(dialog);
+    if (!dialog) return;
+    if (window.GuideI18n && typeof window.GuideI18n.apply === "function") {
+      window.GuideI18n.apply(dialog);
+    } else if (!dialog.hidden) {
+      applyI18n(dialog);
+    }
   });
 
   if (document.readyState === "loading") {
