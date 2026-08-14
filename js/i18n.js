@@ -9,6 +9,11 @@
  *
  * SEO: ?lang=ko|en|ja|zh is read on load and kept in sync when the user switches
  * language (for hreflang / shareable locale links). Primary storage remains localStorage.
+ *
+ * First-visit language (no saved preference / no ?lang=):
+ *   Match navigator.languages against GUIDE_LANGS (ko/en/ja/zh).
+ *   If no match → en (international default), except Korean language/region (ko* / *-KR) → ko.
+ *   Saved korea-guide-lang always wins; never override an existing user choice on later loads.
  */
 (function () {
   /** @type {{ code: string, label: string }[]} */
@@ -22,8 +27,10 @@
   var SUPPORTED = GUIDE_LANGS.map(function (l) {
     return l.code;
   });
+  /** Distinct from welcome popup key (korea-guide-welcome-hide-date). */
   var STORAGE_KEY = "korea-guide-lang";
   var cache = {};
+  var welcomeScriptQueued = false;
 
   function scriptDir() {
     var scripts = document.getElementsByTagName("script");
@@ -62,14 +69,69 @@
     }
   }
 
+  function browserLocaleCandidates() {
+    var list = [];
+    try {
+      if (navigator.languages && navigator.languages.length) {
+        for (var i = 0; i < navigator.languages.length; i++) {
+          var item = String(navigator.languages[i] || "").toLowerCase();
+          if (item) list.push(item);
+        }
+      }
+    } catch (e) {
+      /* ignore */
+    }
+    var primary = String(
+      navigator.language || navigator.userLanguage || ""
+    ).toLowerCase();
+    if (primary) list.push(primary);
+    return list;
+  }
+
+  function matchSupportedLocale(tag) {
+    if (!tag) return null;
+    var base = tag.split("-")[0];
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      var code = SUPPORTED[i];
+      if (tag === code || tag.indexOf(code + "-") === 0 || base === code) {
+        return code;
+      }
+    }
+    return null;
+  }
+
+  /**
+   * Pick GUIDE_LANGS from browser locale.
+   * Unsupported → en; Korean language or Korea region → ko (documented default policy).
+   */
+  function detectBrowserLang() {
+    var candidates = browserLocaleCandidates();
+    var i;
+    for (i = 0; i < candidates.length; i++) {
+      var hit = matchSupportedLocale(candidates[i]);
+      if (hit) return hit;
+    }
+    for (i = 0; i < candidates.length; i++) {
+      var tag = candidates[i];
+      if (tag === "ko" || tag.indexOf("ko-") === 0 || /-kr$/.test(tag)) {
+        return "ko";
+      }
+    }
+    return "en";
+  }
+
+  function persistLang(lang) {
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch (e) {
+      /* ignore */
+    }
+  }
+
   function getLang() {
     var fromQuery = langFromQuery();
     if (fromQuery) {
-      try {
-        localStorage.setItem(STORAGE_KEY, fromQuery);
-      } catch (e) {
-        /* ignore */
-      }
+      persistLang(fromQuery);
       return fromQuery;
     }
     var saved = null;
@@ -79,13 +141,27 @@
       saved = null;
     }
     if (SUPPORTED.indexOf(saved) !== -1) return saved;
-    var nav = (navigator.language || "ko").toLowerCase();
-    for (var i = 0; i < SUPPORTED.length; i++) {
-      var code = SUPPORTED[i];
-      if (nav === code || nav.indexOf(code + "-") === 0) return code;
+    var detected = detectBrowserLang();
+    persistLang(detected);
+    return detected;
+  }
+
+  /** Sitewide welcome modal — loaded once after i18n so every page gets it. */
+  function ensureWelcomePopupScript() {
+    if (welcomeScriptQueued) return;
+    if (document.querySelector('script[data-guide-welcome="1"]')) {
+      welcomeScriptQueued = true;
+      return;
     }
-    if (nav.indexOf("zh") === 0 && SUPPORTED.indexOf("zh") !== -1) return "zh";
-    return SUPPORTED[0] || "ko";
+    welcomeScriptQueued = true;
+    var s = document.createElement("script");
+    s.src =
+      scriptDir() +
+      "welcome-popup.js?v=" +
+      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+    s.async = true;
+    s.setAttribute("data-guide-welcome", "1");
+    (document.body || document.documentElement).appendChild(s);
   }
 
   function lookup(obj, path) {
@@ -212,11 +288,7 @@
 
   function setLang(lang) {
     if (SUPPORTED.indexOf(lang) === -1) return;
-    try {
-      localStorage.setItem(STORAGE_KEY, lang);
-    } catch (e) {
-      /* ignore */
-    }
+    persistLang(lang);
     syncLangQuery(lang);
     load(lang, { silent: true }).then(function () {
       notifyLang(lang);
@@ -227,6 +299,7 @@
     setLang: setLang,
     getLang: getLang,
     load: load,
+    detectBrowserLang: detectBrowserLang,
     languages: GUIDE_LANGS.slice(),
     supported: SUPPORTED.slice(),
   };
@@ -243,7 +316,9 @@
     // Persist discoverable ?lang= for SEO / share links (no-op on file://)
     syncLangQuery(lang);
     renderLangSwitchers(lang);
-    load(lang);
+    load(lang).then(function () {
+      ensureWelcomePopupScript();
+    });
   }
 
   if (document.readyState === "loading") {

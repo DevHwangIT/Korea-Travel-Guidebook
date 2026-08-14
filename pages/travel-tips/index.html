@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="misc.tipsTitle" data-i18n-desc="misc.tipsIntro" data-seo-path="pages/travel-tips/" data-seo-image="Images/menu/travel-tips.png">
 <head>
-  <!-- asset-v: 20260813213006 -->
+  <!-- asset-v: 20260814121647 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-7139367317436403">
@@ -26,276 +26,17 @@
   <meta name="twitter:title" content="여행 팁 | Korea Travel Guide">
   <meta name="twitter:description" content="여행 중에 바로 써먹는 팁을 모았습니다. 일상·식당·교통·쇼핑 주제를 골라 확인해 보세요.">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/menu/travel-tips.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css?v=20260813213006">
+  <link rel="stylesheet" href="../../styles.css?v=20260814121647">
 </head>
-<body class="tips-page">
+<body>
   <nav class="lang-switch" aria-label="Language"></nav>
   <header class="site-header">
     <a href="../../index.html" class="site-brand" data-i18n="common.brand">Korea Travel Guide</a>
   </header>
-  <main class="page tip-map" data-tip-map>
+  <main class="page">
     <p class="back-link"><a href="../../index.html" data-i18n="common.backMain">← Main Guide</a></p>
-
-    <header class="tip-map__masthead">
-      <h1 data-i18n="misc.tipsTitle">여행 팁</h1>
-      <p class="article-lead tip-map__lead" data-i18n="misc.tipsIntro"></p>
-    </header>
-
-    <!-- Booklet: left = parents (+ children under active) | right = tip content -->
-    <div class="tip-map__booklet">
-      <aside class="tip-map__atlas" aria-label="Tip topic index">
-        <div class="tip-map__topics" role="navigation" aria-label="Tip topic index">
-          <div class="tip-map__topic" data-tip-topic="daily">
-            <button type="button" class="tip-map__node" data-tip-cat="daily" aria-expanded="false" aria-controls="tip-children-daily tip-region-daily">
-              <span class="tip-map__node-label" data-i18n="tips.catDaily">일상</span>
-            </button>
-            <ul id="tip-children-daily" class="tip-map__children" data-tip-children="daily" hidden>
-              <li><button type="button" class="tip-map__child" data-tip-go="daily/map"><span data-i18n="tips.tabMap">지도 앱</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="daily/trash"><span data-i18n="tips.tabTrash">쓰레기통</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="daily/weekend"><span data-i18n="tips.tabWeekend">주말 숙소</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="daily/convenience"><span data-i18n="tips.tabConvenience">편의점</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="daily/rain"><span data-i18n="tips.tabRain">비 오는 날</span></button></li>
-            </ul>
-          </div>
-
-          <div class="tip-map__topic" data-tip-topic="restaurant">
-            <button type="button" class="tip-map__node" data-tip-cat="restaurant" aria-expanded="false" aria-controls="tip-children-restaurant tip-region-restaurant">
-              <span class="tip-map__node-label" data-i18n="tips.catRestaurant">식당</span>
-            </button>
-            <ul id="tip-children-restaurant" class="tip-map__children" data-tip-children="restaurant" hidden>
-              <li><button type="button" class="tip-map__child" data-tip-go="restaurant/order"><span data-i18n="tips.tabOrder">주문·계산</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="restaurant/notip"><span data-i18n="tips.tabNoTip">팁</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="restaurant/queue"><span data-i18n="tips.tabQueue">웨이팅</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="restaurant/water"><span data-i18n="tips.tabWater">물·반찬</span></button></li>
-            </ul>
-          </div>
-
-          <div class="tip-map__topic" data-tip-topic="transport">
-            <button type="button" class="tip-map__node" data-tip-cat="transport" aria-expanded="false" aria-controls="tip-children-transport tip-region-transport">
-              <span class="tip-map__node-label" data-i18n="tips.catTransport">교통</span>
-            </button>
-            <ul id="tip-children-transport" class="tip-map__children" data-tip-children="transport" hidden>
-              <li><button type="button" class="tip-map__child" data-tip-go="transport/card"><span data-i18n="tips.tabCard">하차·환승</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="transport/rush"><span data-i18n="tips.tabRush">출퇴근</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="transport/exit"><span data-i18n="tips.tabExit">지하철 출구</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="transport/etiquette"><span data-i18n="tips.tabEtiquette">지하철 매너</span></button></li>
-            </ul>
-          </div>
-
-          <div class="tip-map__topic" data-tip-topic="shopping">
-            <button type="button" class="tip-map__node" data-tip-cat="shopping" aria-expanded="false" aria-controls="tip-children-shopping tip-region-shopping">
-              <span class="tip-map__node-label" data-i18n="tips.catShopping">쇼핑</span>
-            </button>
-            <ul id="tip-children-shopping" class="tip-map__children" data-tip-children="shopping" hidden>
-              <li><button type="button" class="tip-map__child" data-tip-go="shopping/olive"><span data-i18n="tips.tabOlive">올리브영</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="shopping/daiso"><span data-i18n="tips.tabDaiso">다이소</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="shopping/duty"><span data-i18n="tips.tabDuty">면세·택스프리</span></button></li>
-              <li><button type="button" class="tip-map__child" data-tip-go="shopping/market"><span data-i18n="tips.tabMarket">시장·번화가</span></button></li>
-            </ul>
-          </div>
-        </div>
-      </aside>
-
-      <div class="tip-map__spine" aria-hidden="true"></div>
-
-      <div class="tip-map__page" data-tip-page>
-        <div class="tip-map__regions">
-      <!-- 일상 -->
-      <section class="tip-map__region" id="tip-region-daily" data-tip-region="daily" hidden>
-        <header class="tip-map__region-head">
-          <h2 data-i18n="tips.catDaily">일상</h2>
-          <p class="tip-map__region-intro" data-i18n="tips.catDailyIntro"></p>
-        </header>
-        <div class="tip-map__subs">
-          <article class="tip-map__sub" data-tip-sub="map" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.mapTitle">지도 앱</h2>
-              <p class="tip-mistake" data-i18n="tips.mapMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.mapCover"></div>
-              <p data-i18n="tips.mapBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="trash" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.trashTitle">쓰레기통</h2>
-              <p class="tip-mistake" data-i18n="tips.trashMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.trashCover"></div>
-              <p data-i18n="tips.trashBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="weekend" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.weekendTitle">주말·연휴 숙소</h2>
-              <p class="tip-mistake" data-i18n="tips.weekendMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.weekendCover"></div>
-              <p data-i18n="tips.weekendBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="convenience" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.convenienceTitle">편의점</h2>
-              <p class="tip-mistake" data-i18n="tips.convenienceMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.convenienceCover"></div>
-              <p data-i18n="tips.convenienceBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="rain" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.rainTitle">비 오는 날</h2>
-              <p class="tip-mistake" data-i18n="tips.rainMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.rainCover"></div>
-              <p data-i18n="tips.rainBody"></p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 식당 -->
-      <section class="tip-map__region" id="tip-region-restaurant" data-tip-region="restaurant" hidden>
-        <header class="tip-map__region-head">
-          <h2 data-i18n="tips.catRestaurant">식당</h2>
-          <p class="tip-map__region-intro" data-i18n="tips.catRestaurantIntro"></p>
-        </header>
-        <div class="tip-map__subs">
-          <article class="tip-map__sub" data-tip-sub="order" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.restaurantTitle">식당 이용</h2>
-              <p class="tip-mistake" data-i18n="tips.restaurantMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.orderCover"></div>
-              <p data-i18n="tips.restaurantBody1"></p>
-              <p data-i18n="tips.restaurantBody2"></p>
-              <p data-i18n="tips.restaurantBody3"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="notip" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.noTipTitle">팁(봉사료)</h2>
-              <p class="tip-mistake" data-i18n="tips.noTipMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.noTipCover"></div>
-              <p data-i18n="tips.noTipBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="queue" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.queueTitle">웨이팅·번호표</h2>
-              <p class="tip-mistake" data-i18n="tips.queueMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.queueCover"></div>
-              <p data-i18n="tips.queueBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="water" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.waterTitle">물·반찬</h2>
-              <p class="tip-mistake" data-i18n="tips.waterMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.waterCover"></div>
-              <p data-i18n="tips.waterBody"></p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 교통 -->
-      <section class="tip-map__region" id="tip-region-transport" data-tip-region="transport" hidden>
-        <header class="tip-map__region-head">
-          <h2 data-i18n="tips.catTransport">교통</h2>
-          <p class="tip-map__region-intro" data-i18n="tips.catTransportIntro"></p>
-        </header>
-        <div class="tip-map__subs">
-          <article class="tip-map__sub" data-tip-sub="card" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.cardTitle">버스 하차·환승</h2>
-              <p class="tip-mistake" data-i18n="tips.cardMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.cardCover"></div>
-              <p data-i18n="tips.cardBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="rush" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.rushTitle">출퇴근 혼잡</h2>
-              <p class="tip-mistake" data-i18n="tips.rushMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.rushCover"></div>
-              <p data-i18n="tips.rushBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="exit" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.exitTitle">지하철 출구</h2>
-              <p class="tip-mistake" data-i18n="tips.exitMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.exitCover"></div>
-              <p data-i18n="tips.exitBody"></p>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="etiquette" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="tips.etiquetteTitle">지하철·버스 매너</h2>
-              <p class="tip-mistake" data-i18n="tips.etiquetteMistake"></p>
-              <div class="content-body" data-content-body data-body-path="tips.etiquetteCover"></div>
-              <p data-i18n="tips.etiquetteBody"></p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 쇼핑 -->
-      <section class="tip-map__region" id="tip-region-shopping" data-tip-region="shopping" hidden>
-        <header class="tip-map__region-head">
-          <h2 data-i18n="tips.catShopping">쇼핑</h2>
-          <p class="tip-map__region-intro" data-i18n="tips.catShoppingIntro"></p>
-        </header>
-        <div class="tip-map__subs">
-          <article class="tip-map__sub" data-tip-sub="olive" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="shopping.oliveTitle">올리브영 팁</h2>
-              <p class="tip-mistake" data-i18n="shopping.oliveLead"></p>
-              <div class="content-body" data-content-body data-body-path="shopping.oliveBody"></div>
-              <div data-content-body-fallback>
-                <p data-i18n="shopping.olive1"></p>
-                <p data-i18n="shopping.olive2"></p>
-                <p data-i18n="shopping.olive3"></p>
-              </div>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="daiso" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="shopping.daisoTitle">다이소 팁</h2>
-              <p class="tip-mistake" data-i18n="shopping.daisoLead"></p>
-              <div class="content-body" data-content-body data-body-path="shopping.daisoBody"></div>
-              <div data-content-body-fallback>
-                <p data-i18n="shopping.daiso1"></p>
-                <p data-i18n="shopping.daiso2"></p>
-              </div>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="duty" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="shopping.dutyTitle">면세·택스프리</h2>
-              <p class="tip-mistake" data-i18n="shopping.dutyLead"></p>
-              <div class="content-body" data-content-body data-body-path="shopping.dutyBody"></div>
-              <div data-content-body-fallback>
-                <p data-i18n="shopping.duty1"></p>
-                <p data-i18n="shopping.duty2"></p>
-              </div>
-            </div>
-          </article>
-          <article class="tip-map__sub" data-tip-sub="market" hidden>
-            <div class="tip-map__sub-inner guide-article tip-article">
-              <h2 data-i18n="shopping.marketTitle">시장·번화가</h2>
-              <p class="tip-mistake" data-i18n="shopping.marketLead"></p>
-              <div class="content-body" data-content-body data-body-path="shopping.marketBody"></div>
-              <div data-content-body-fallback>
-                <p data-i18n="shopping.market1"></p>
-                <p data-i18n="shopping.market2"></p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-        </div>
-      </div>
-    </div>
+    <h1 data-i18n="misc.tipsTitle">여행 팁</h1>
+    <p class="article-lead" data-i18n="misc.tipsIntro"></p>
 
     <!-- Optional partner / affiliate strip. Paste real links into .partner-strip__slot later. -->
     <section class="partner-strip affiliate-slot" aria-labelledby="partner-heading">
@@ -315,6 +56,204 @@
         </div>
       </div>
     </section>
+
+    <div class="city-tabs prep-tabs tip-tabs" data-tabs="tipCat" data-hash-tabs data-tip-root>
+      <label class="cat-select-wrap prep-cat-select-wrap">
+        <span class="cat-select-label" data-i18n="tips.catPickLabel">주제</span>
+        <select class="cat-select" data-tipCat-select aria-label="Tip categories">
+          <option value="daily" data-i18n="tips.catDaily">일상</option>
+          <option value="restaurant" data-i18n="tips.catRestaurant">식당</option>
+          <option value="transport" data-i18n="tips.catTransport">교통</option>
+          <option value="shopping" data-i18n="tips.catShopping">쇼핑</option>
+        </select>
+      </label>
+      <div class="tab-list prep-cat-list" role="tablist" aria-label="Tip categories">
+        <button type="button" class="tab-btn" role="tab" data-tipCat-tab="daily" data-i18n="tips.catDaily">일상</button>
+        <button type="button" class="tab-btn" role="tab" data-tipCat-tab="restaurant" data-i18n="tips.catRestaurant">식당</button>
+        <button type="button" class="tab-btn" role="tab" data-tipCat-tab="transport" data-i18n="tips.catTransport">교통</button>
+        <button type="button" class="tab-btn" role="tab" data-tipCat-tab="shopping" data-i18n="tips.catShopping">쇼핑</button>
+      </div>
+
+      <div class="tab-panels">
+        <!-- 일상 -->
+        <div class="tab-panel" role="tabpanel" data-tipCat-panel="daily" hidden>
+          <p class="prep-cat-intro" data-i18n="tips.catDailyIntro"></p>
+          <div class="nested-tabs" data-tabs="tip">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Daily tips">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="map" data-i18n="tips.tabMap">지도 앱</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="trash" data-i18n="tips.tabTrash">쓰레기통</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="weekend" data-i18n="tips.tabWeekend">주말 숙소</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="convenience" data-i18n="tips.tabConvenience">편의점</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="rain" data-i18n="tips.tabRain">비 오는 날</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="map" hidden>
+                <h2 data-i18n="tips.mapTitle">지도 앱</h2>
+                <p class="tip-mistake" data-i18n="tips.mapMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.mapCover"></div>
+                <p data-i18n="tips.mapBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="trash" hidden>
+                <h2 data-i18n="tips.trashTitle">쓰레기통</h2>
+                <p class="tip-mistake" data-i18n="tips.trashMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.trashCover"></div>
+                <p data-i18n="tips.trashBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="weekend" hidden>
+                <h2 data-i18n="tips.weekendTitle">주말·연휴 숙소</h2>
+                <p class="tip-mistake" data-i18n="tips.weekendMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.weekendCover"></div>
+                <p data-i18n="tips.weekendBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="convenience" hidden>
+                <h2 data-i18n="tips.convenienceTitle">편의점</h2>
+                <p class="tip-mistake" data-i18n="tips.convenienceMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.convenienceCover"></div>
+                <p data-i18n="tips.convenienceBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="rain" hidden>
+                <h2 data-i18n="tips.rainTitle">비 오는 날</h2>
+                <p class="tip-mistake" data-i18n="tips.rainMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.rainCover"></div>
+                <p data-i18n="tips.rainBody"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 식당 -->
+        <div class="tab-panel" role="tabpanel" data-tipCat-panel="restaurant" hidden>
+          <p class="prep-cat-intro" data-i18n="tips.catRestaurantIntro"></p>
+          <div class="nested-tabs" data-tabs="tip">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Restaurant tips">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="order" data-i18n="tips.tabOrder">주문·계산</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="notip" data-i18n="tips.tabNoTip">팁</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="queue" data-i18n="tips.tabQueue">웨이팅</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="water" data-i18n="tips.tabWater">물·반찬</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="order" hidden>
+                <h2 data-i18n="tips.restaurantTitle">식당 이용</h2>
+                <p class="tip-mistake" data-i18n="tips.restaurantMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.orderCover"></div>
+                <p data-i18n="tips.restaurantBody1"></p>
+                <p data-i18n="tips.restaurantBody2"></p>
+                <p data-i18n="tips.restaurantBody3"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="notip" hidden>
+                <h2 data-i18n="tips.noTipTitle">팁(봉사료)</h2>
+                <p class="tip-mistake" data-i18n="tips.noTipMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.noTipCover"></div>
+                <p data-i18n="tips.noTipBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="queue" hidden>
+                <h2 data-i18n="tips.queueTitle">웨이팅·번호표</h2>
+                <p class="tip-mistake" data-i18n="tips.queueMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.queueCover"></div>
+                <p data-i18n="tips.queueBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="water" hidden>
+                <h2 data-i18n="tips.waterTitle">물·반찬</h2>
+                <p class="tip-mistake" data-i18n="tips.waterMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.waterCover"></div>
+                <p data-i18n="tips.waterBody"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 교통 -->
+        <div class="tab-panel" role="tabpanel" data-tipCat-panel="transport" hidden>
+          <p class="prep-cat-intro" data-i18n="tips.catTransportIntro"></p>
+          <div class="nested-tabs" data-tabs="tip">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Transport tips">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="card" data-i18n="tips.tabCard">하차·환승</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="rush" data-i18n="tips.tabRush">출퇴근</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="exit" data-i18n="tips.tabExit">지하철 출구</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="etiquette" data-i18n="tips.tabEtiquette">지하철 매너</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="card" hidden>
+                <h2 data-i18n="tips.cardTitle">버스 하차·환승</h2>
+                <p class="tip-mistake" data-i18n="tips.cardMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.cardCover"></div>
+                <p data-i18n="tips.cardBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="rush" hidden>
+                <h2 data-i18n="tips.rushTitle">출퇴근 혼잡</h2>
+                <p class="tip-mistake" data-i18n="tips.rushMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.rushCover"></div>
+                <p data-i18n="tips.rushBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="exit" hidden>
+                <h2 data-i18n="tips.exitTitle">지하철 출구</h2>
+                <p class="tip-mistake" data-i18n="tips.exitMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.exitCover"></div>
+                <p data-i18n="tips.exitBody"></p>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="etiquette" hidden>
+                <h2 data-i18n="tips.etiquetteTitle">지하철·버스 매너</h2>
+                <p class="tip-mistake" data-i18n="tips.etiquetteMistake"></p>
+                <div class="content-body" data-content-body data-body-path="tips.etiquetteCover"></div>
+                <p data-i18n="tips.etiquetteBody"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 쇼핑 (인라인 — 별도 페이지 이동 없음) -->
+        <div class="tab-panel" role="tabpanel" data-tipCat-panel="shopping" hidden>
+          <p class="prep-cat-intro" data-i18n="tips.catShoppingIntro"></p>
+          <div class="nested-tabs" data-tabs="tip">
+            <div class="tab-list tab-list-sm" role="tablist" aria-label="Shopping tips">
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="olive" data-i18n="tips.tabOlive">올리브영</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="daiso" data-i18n="tips.tabDaiso">다이소</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="duty" data-i18n="tips.tabDuty">면세·택스프리</button>
+              <button type="button" class="tab-btn tab-btn-sm" role="tab" data-tip-tab="market" data-i18n="tips.tabMarket">시장·번화가</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="olive" hidden>
+                <h2 data-i18n="shopping.oliveTitle">올리브영 팁</h2>
+                <p class="tip-mistake" data-i18n="shopping.oliveLead"></p>
+                <div class="content-body" data-content-body data-body-path="shopping.oliveBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="shopping.olive1"></p>
+                  <p data-i18n="shopping.olive2"></p>
+                  <p data-i18n="shopping.olive3"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="daiso" hidden>
+                <h2 data-i18n="shopping.daisoTitle">다이소 팁</h2>
+                <p class="tip-mistake" data-i18n="shopping.daisoLead"></p>
+                <div class="content-body" data-content-body data-body-path="shopping.daisoBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="shopping.daiso1"></p>
+                  <p data-i18n="shopping.daiso2"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="duty" hidden>
+                <h2 data-i18n="shopping.dutyTitle">면세·택스프리</h2>
+                <p class="tip-mistake" data-i18n="shopping.dutyLead"></p>
+                <div class="content-body" data-content-body data-body-path="shopping.dutyBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="shopping.duty1"></p>
+                  <p data-i18n="shopping.duty2"></p>
+                </div>
+              </div>
+              <div class="tab-panel guide-article tip-article" role="tabpanel" data-tip-panel="market" hidden>
+                <h2 data-i18n="shopping.marketTitle">시장·번화가</h2>
+                <p class="tip-mistake" data-i18n="shopping.marketLead"></p>
+                <div class="content-body" data-content-body data-body-path="shopping.marketBody"></div>
+                <div data-content-body-fallback>
+                  <p data-i18n="shopping.market1"></p>
+                  <p data-i18n="shopping.market2"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -335,12 +274,12 @@
     </div>
   </aside>
   <script>window.ADSENSE_CLIENT = "ca-pub-7139367317436403";</script>
-  <script src="../../js/site-config.js?v=20260813213006"></script>
-  <script src="../../i18n/messages.js?v=20260813213006"></script>
-  <script src="../../js/i18n.js?v=20260813213006"></script>
-  <script src="../../js/seo.js?v=20260813213006"></script>
-  <script src="../../js/tips-topic-map.js?v=20260813213006"></script>
-  <script src="../../js/content-body.js?v=20260813213006"></script>
-  <script src="../../js/ads.js?v=20260813213006"></script>
+  <script src="../../js/site-config.js?v=20260814121647"></script>
+  <script src="../../i18n/messages.js?v=20260814121647"></script>
+  <script src="../../js/i18n.js?v=20260814121647"></script>
+  <script src="../../js/seo.js?v=20260814121647"></script>
+  <script src="../../js/region-tabs.js?v=20260814121647"></script>
+  <script src="../../js/content-body.js?v=20260814121647"></script>
+  <script src="../../js/ads.js?v=20260814121647"></script>
 </body>
 </html>

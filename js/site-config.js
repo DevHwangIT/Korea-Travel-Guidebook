@@ -8,14 +8,11 @@ window.SITE_CONFIG = {
   SITE_NAME: "Korea Travel Guide",
   DEFAULT_OG_IMAGE: "Images/cover/korea-cover.png",
   LANGS: ["ko", "en", "ja", "zh"],
-  DEFAULT_LANG: "ko",
+  /** Fallback only; first-visit pick is in js/i18n.js (match GUIDE_LANGS, else en / ko*). */
+  DEFAULT_LANG: "en",
   /** Used as hreflang="x-default" target */
   X_DEFAULT_LANG: "en",
 
-  /**
-   * Reserved for a future TourAPI integration on pages/festivals.
-   * The festivals hub currently shows official VisitKorea links only —
-   * no key is required.
-   */
+  /** Festivals hub uses VisitKorea links only (no TourAPI client key). */
   TOUR_API_KEY: "",
 };

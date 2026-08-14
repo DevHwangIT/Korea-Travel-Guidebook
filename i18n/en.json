@@ -329,7 +329,8 @@
     "backHub": "← Before you go",
     "tabDocs": "Documents",
     "tabMoney": "Cash · Cards",
-    "tabConnect": "Data · Power",
+    "tabConnect": "Data · Telecom",
+    "tabPower": "Power · Plugs",
     "tabPack": "Pack · Bookings",
     "tabTaxi": "Taxi",
     "docsTitle": "Travel documents",
@@ -340,10 +341,14 @@
     "money1": "Cards are common, but markets and some shops need cash — carry about ₩50,000–100,000.",
     "money2": "Compare airport/city exchange and ATMs; check foreign-transaction fees.",
     "money3": "Buy a T-money-style transit card on day one. See the Wow Pass tab for the tourist prepaid option.",
-    "connectTitle": "SIM, eSIM, plugs",
+    "connectTitle": "SIM, eSIM, data",
     "connect1": "Get an eSIM or SIM for data — free Wi-Fi alone is unreliable for maps.",
-    "connect2": "Korea uses 220V and Type C/F plugs; bring an adapter for Type A.",
-    "connect3": "A power bank and multi-charger make all-day apps easier.",
+    "connect2": "Install and sign into maps (Naver/Kakao), translation (Papago), and messaging before you fly.",
+    "connect3": "Note your eSIM install and activation steps so maps work on landing.",
+    "powerTitle": "Power and plugs",
+    "power1": "Korea uses 220V and Type C/F plugs (round pins). Hotels use the same.",
+    "power2": "Type A (flat-pin) devices need a travel adapter. Most chargers are 100–240V, so an adapter alone is enough.",
+    "power3": "A power bank and multi-port charger make all-day apps easier.",
     "packTitle": "Packing, lodging, weather",
     "pack1": "Seoul involves lots of walking — pack seasonal clothes and comfortable shoes.",
     "pack2": "Book early for peak seasons; note check-in and luggage storage.",
@@ -432,25 +437,22 @@
         "type": "text",
         "ko": "지도·번역은 데이터가 생명입니다\n\n카페·지하철 무료 Wi-Fi만으로 버티면 역 밖·골목에서 갑자기 끊길 수 있습니다. eSIM이나 공항 유심을 정해 두면 네이버지도·카카오맵·파파고를 끊김 없이 씁니다.",
         "en": "Maps and translation need data\n\nCafé/subway Wi-Fi alone fails outdoors. An eSIM or airport SIM keeps Naver Map, Kakao Map, and Papago online.",
-        "ja": "地図・翻訳はデータ必須\n\n無料Wi-Fiだけだと路地で途切れがち。eSIMや空港SIMで地図アプリを安定利用。"
+        "ja": "地図・翻訳はデータ必須\n\n無料Wi-Fiだけだと路地で途切れがち。eSIMや空港SIMで地図アプリを安定利用。",
+        "zh": "地图和翻译离不开流量\n\n仅靠咖啡店、地铁免费 Wi-Fi，出站或走巷子时容易断线。提前备好 eSIM 或机场 SIM，就能稳定使用 Naver Map、Kakao Map、Papago。"
       },
       {
         "type": "text",
         "ko": "eSIM은 출국 전 온라인 구매 후 QR로 설치하는 방식이 흔합니다. 기기가 eSIM 지원·잠금 해제인지 미리 확인하세요.",
         "en": "eSIMs are often bought online and installed via QR. Confirm your phone is unlocked and eSIM-capable if needed.",
-        "ja": "eSIMは出国前にオンライン購入→QR設定が一般的。SIMロック解除とeSIM対応を確認。"
-      },
-      {
-        "type": "text",
-        "ko": "한국 전원은 220V, 플러그 타입 C/F입니다. Type A만 쓰는 기기는 변환 어댑터가 필요합니다. 보조배터리도 챙기세요.",
-        "en": "Korea is 220V with Type C/F plugs. Bring an adapter for Type A plugs, plus a power bank.",
-        "ja": "韓国は220V、プラグC/F。Type A機器は変換アダプターとモバイルバッテリーを。"
+        "ja": "eSIMは出国前にオンライン購入→QR設定が一般的。SIMロック解除とeSIM対応を確認。",
+        "zh": "eSIM 常见做法是出发前在线购买，用二维码安装。请先确认手机已解锁且支持 eSIM。"
       },
       {
         "type": "callout",
         "ko": "착륙 직후 지도가 필요하니, eSIM 설치·활성화 순서를 미리 메모하세요.",
         "en": "You'll want maps on landing — note your eSIM install steps beforehand.",
-        "ja": "着陸直後に地図が必要です。eSIMの設定手順を事前メモを。"
+        "ja": "着陸直後に地図が必要です。eSIMの設定手順を事前メモを。",
+        "zh": "落地后马上要用地图——请提前记下 eSIM 安装与激活步骤。"
       },
       {
         "type": "text",
@@ -458,6 +460,40 @@
         "en": "Prep apps before you fly\n\nMaps (Naver/Kakao), translation (Papago), and messaging need data on arrival. See Useful Apps for install tips. Sign in and download offline maps before departure.",
         "ja": "アプリは出国前に準備\n\n地図・翻訳・メッセは到着直後に必要です。「役立つアプリ」も参照し、ログインやオフライン地図を事前に。",
         "zh": "出发前准备好 App\n\n地图（Naver/Kakao）、翻译（Papago）和通讯在落地后立刻用得上。安装说明见「实用 App」。出发前完成登录并下载离线地图更省心。"
+      }
+    ],
+    "powerBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/power.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "한국 플러그는 Type C/F, 전압은 220V\n\n한국 콘센트는 둥근 두 핀(Type C) 또는 접지형(Type F)입니다. 호텔·숙소도 같습니다. 미국·일본처럼 Type A(납작 핀)만 쓰는 기기는 변환 어댑터가 필요합니다.",
+        "en": "Korea uses Type C/F plugs at 220V\n\nOutlets take round two-pin Type C or grounded Type F plugs. Hotels use the same. If your gear is Type A only (flat pins, US/Japan), bring a travel adapter.",
+        "ja": "韓国のプラグはType C/F、電圧は220V\n\nコンセントは丸ピンのType C、または接地付きType F。宿も同じです。Type A（平ピン）だけの機器は変換アダプターが必要です。",
+        "zh": "韩国插头为 Type C/F，电压 220V\n\n插座是圆形双脚 Type C，或带接地的 Type F。酒店也一样。若设备只有 Type A（扁平脚，美/日常见），请带转换适配器。"
+      },
+      {
+        "type": "text",
+        "ko": "대부분의 스마트폰·노트북 충전기는 100–240V를 지원합니다. 어댑터만 있으면 되고, 전압 변환기(transformer)는 보통 필요 없습니다. 충전기 라벨의 입력 전압을 한 번 확인하세요.",
+        "en": "Most phone/laptop chargers accept 100–240V — an adapter is enough; a voltage transformer usually is not. Check the input label on your charger.",
+        "ja": "スマホ・ノートの充電器は多くが100–240V対応。アダプターだけで足り、変圧器は通常不要。入力電圧の表記を確認を。",
+        "zh": "多数手机/笔记本充电器支持 100–240V，一般只需适配器，不必带变压器。请核对充电器标签上的输入电压。"
+      },
+      {
+        "type": "text",
+        "ko": "보조배터리와 멀티 충전기를 챙기면 하루 종일 지도·번역 앱을 쓰기 수월합니다. 기내 반입 규정도 출국 전에 확인하세요.",
+        "en": "A power bank and multi-port charger make all-day maps and translation easier. Check airline rules for power banks before you fly.",
+        "ja": "モバイルバッテリーとマルチ充電器があると地図・翻訳を一日中使いやすい。機内持込ルールも事前確認を。",
+        "zh": "带上充电宝和多口充电器，整天用地图、翻译会更轻松。出发前也请确认航司对充电宝的登机规定。"
+      },
+      {
+        "type": "callout",
+        "ko": "어댑터는 다이소·편의점·공항에서도 살 수 있지만, 도착 직후·연휴에는 품절일 수 있어 미리 챙기는 편이 안전합니다.",
+        "en": "Adapters are sold at Daiso, convenience stores, and airports — but stock can run out on arrival or holidays, so packing one is safer.",
+        "ja": "アダプターはダイソー・コンビニ・空港でも買えますが、到着直後や連休は品切れもあるため持参が安心です。",
+        "zh": "适配器在 Daiso、便利店和机场也能买到，但落地高峰或假期可能缺货，出发前备好更稳妥。"
       }
     ],
     "packBody": [
@@ -7280,9 +7316,6 @@
     "pageTitle": "Festivals & Events | Korea Travel Guide",
     "title": "Festivals & Events",
     "intro": "Check regional festivals and events on official tourism sites.",
-    "placeholder": "We plan to organize listings by region later.",
-    "regionsTitle": "By region",
-    "regionsHint": "Seoul, Busan, Jeju and more — coming soon.",
     "back": "← Festivals & Events",
     "linksTitle": "Official links",
     "linkVisitKoreaEyebrow": "VisitKorea",
@@ -7298,7 +7331,6 @@
     "linkVisitKoreaEnTitle": "VisitKorea (English)",
     "linkVisitKoreaEnDesc": "Official Korea Tourism Organization site for international travelers.",
     "openExternal": "Open in new tab →",
-    "apiLaterNote": "TourAPI (data.go.kr) integration is planned for later.",
     "sourceLabel": "Source",
     "sourceName": "Korea Tourism Organization VisitKorea",
     "sourceNote": "Schedules can change — always confirm on the official sites linked above."
@@ -9667,5 +9699,12 @@
     "photoboothPrice": "Price vibe\n\nOften ₩4,000–₩6,000 per set (4 poses). Extra prints/merch vary.",
     "photoboothTip": "Tips\n\nKeep bags tidy, respect session time, and pack prints flat as souvenirs.",
     "choiceFunDesc": "PC cafés, karaoke, theme parks, jjimjilbang."
+  },
+  "welcome": {
+    "title": "Welcome",
+    "body": "We made this site so visitors to Korea can travel a little more easily and usefully. It's free to use—feedback for improvements is always welcome. Whether you're planning a trip or already here, we hope you have a wonderful time.",
+    "hideToday": "Don't show this again today",
+    "confirm": "OK",
+    "close": "Close"
   }
 }
