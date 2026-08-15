@@ -29,6 +29,10 @@
   var activeRegion = "all";
   var drawerOpen = false;
   var detailOpen = false;
+  var userLocMarker = null;
+  var userAccCircle = null;
+  var locateBusy = false;
+  var locateToastTimer = null;
   var TYPE_FILTER_KEY = "korea-guide-places-type-filters";
   var DEFAULT_TYPES = {
     city: true,
@@ -549,11 +553,18 @@
   function setMetroHint(kind, detail) {
     var hint = el("[data-places-hint]");
     if (!hint) return;
+    if (locateToastTimer) {
+      clearTimeout(locateToastTimer);
+      locateToastTimer = null;
+    }
     hint.classList.remove(
       "is-metro-toast",
       "is-metro-loading",
       "is-metro-ready",
-      "is-metro-error"
+      "is-metro-error",
+      "is-locate-toast",
+      "is-locate-loading",
+      "is-locate-error"
     );
     if (kind === "error") {
       hint.textContent =
@@ -1622,6 +1633,233 @@
     fly(KOREA_CENTER, KOREA_ZOOM, 1.1);
   }
 
+  function clearLocateToastClasses(hint) {
+    if (!hint) return;
+    hint.classList.remove(
+      "is-locate-toast",
+      "is-locate-loading",
+      "is-locate-error"
+    );
+  }
+
+  function restoreHintAfterLocate() {
+    var hint = el("[data-places-hint]");
+    if (!hint) return;
+    clearLocateToastClasses(hint);
+    if (activeMetro.metro) {
+      if (metroLoadState === "loading") {
+        setMetroHint("loading");
+        return;
+      }
+      if (metroLoadState === "error") {
+        setMetroHint("error");
+        return;
+      }
+      if (metroLoadState === "ready") {
+        setMetroHint("ready");
+        return;
+      }
+    }
+    hint.classList.remove(
+      "is-metro-toast",
+      "is-metro-loading",
+      "is-metro-ready",
+      "is-metro-error"
+    );
+    hint.textContent = t(
+      "transport.mapHelp",
+      "핀을 눌러 명소를 확대·살펴보세요. 지역 칩으로 카메라가 이동합니다."
+    );
+    hint.hidden = false;
+  }
+
+  function showLocateToast(kind, message) {
+    var hint = el("[data-places-hint]");
+    if (!hint) return;
+    if (locateToastTimer) {
+      clearTimeout(locateToastTimer);
+      locateToastTimer = null;
+    }
+    hint.classList.remove(
+      "is-metro-toast",
+      "is-metro-loading",
+      "is-metro-ready",
+      "is-metro-error"
+    );
+    clearLocateToastClasses(hint);
+    if (!kind) {
+      restoreHintAfterLocate();
+      return;
+    }
+    hint.textContent = message || "";
+    hint.classList.add("is-locate-toast");
+    if (kind === "loading") hint.classList.add("is-locate-loading");
+    if (kind === "error") hint.classList.add("is-locate-error");
+    hint.hidden = false;
+    if (kind === "error" || kind === "done") {
+      locateToastTimer = setTimeout(function () {
+        locateToastTimer = null;
+        restoreHintAfterLocate();
+      }, kind === "error" ? 4200 : 1600);
+    }
+  }
+
+  function clearUserLocation() {
+    if (!map) return;
+    if (userLocMarker) {
+      try {
+        map.removeLayer(userLocMarker);
+      } catch (e) {}
+      userLocMarker = null;
+    }
+    if (userAccCircle) {
+      try {
+        map.removeLayer(userAccCircle);
+      } catch (e) {}
+      userAccCircle = null;
+    }
+  }
+
+  function userLocationIcon() {
+    return L.divIcon({
+      className: "places-map-user-loc",
+      html:
+        '<span class="places-map-user-loc__wrap" aria-hidden="true">' +
+        '<span class="places-map-user-loc__pulse"></span>' +
+        '<span class="places-map-user-loc__dot"></span>' +
+        "</span>",
+      iconSize: [22, 22],
+      iconAnchor: [11, 11],
+    });
+  }
+
+  function showUserLocation(lat, lng, accuracy) {
+    if (!map) return;
+    clearUserLocation();
+    var latlng = L.latLng(lat, lng);
+    userLocMarker = L.marker(latlng, {
+      icon: userLocationIcon(),
+      interactive: false,
+      keyboard: false,
+      zIndexOffset: 1200,
+    }).addTo(map);
+
+    var acc = typeof accuracy === "number" && isFinite(accuracy) ? accuracy : 0;
+    if (acc > 0) {
+      userAccCircle = L.circle(latlng, {
+        radius: Math.max(acc, 12),
+        color: "#2b7fff",
+        weight: 1.5,
+        opacity: 0.5,
+        fillColor: "#2b7fff",
+        fillOpacity: 0.12,
+        interactive: false,
+      }).addTo(map);
+      try {
+        map.fitBounds(userAccCircle.getBounds().pad(0.4), {
+          maxZoom: 16,
+          animate: !reduceMotion,
+          duration: reduceMotion ? 0 : 0.9,
+        });
+      } catch (e) {
+        fly(latlng, 15, 0.9);
+      }
+    } else {
+      fly(latlng, 15, 0.9);
+    }
+  }
+
+  function setLocateBusy(busy) {
+    locateBusy = !!busy;
+    var btn = el("[data-places-locate]");
+    if (btn) {
+      btn.classList.toggle("is-busy", locateBusy);
+      btn.setAttribute("aria-busy", locateBusy ? "true" : "false");
+    }
+  }
+
+  function locateUser() {
+    if (!map || locateBusy) return;
+
+    if (!navigator.geolocation) {
+      showLocateToast(
+        "error",
+        t(
+          "transport.locateUnsupported",
+          "이 기기는 위치 기능을 지원하지 않습니다."
+        )
+      );
+      return;
+    }
+
+    if (typeof window.isSecureContext === "boolean" && !window.isSecureContext) {
+      showLocateToast(
+        "error",
+        t(
+          "transport.locateInsecure",
+          "위치는 HTTPS 또는 localhost에서만 사용할 수 있습니다."
+        )
+      );
+      return;
+    }
+
+    setLocateBusy(true);
+    showLocateToast(
+      "loading",
+      t("transport.locateLocating", "위치 찾는 중…")
+    );
+
+    navigator.geolocation.getCurrentPosition(
+      function (pos) {
+        setLocateBusy(false);
+        if (!pos || !pos.coords) {
+          showLocateToast(
+            "error",
+            t("transport.locateUnavailable", "현재 위치를 확인할 수 없습니다.")
+          );
+          return;
+        }
+        showUserLocation(
+          pos.coords.latitude,
+          pos.coords.longitude,
+          pos.coords.accuracy
+        );
+        if (locateToastTimer) {
+          clearTimeout(locateToastTimer);
+          locateToastTimer = null;
+        }
+        restoreHintAfterLocate();
+      },
+      function (err) {
+        setLocateBusy(false);
+        var code = err && err.code;
+        var msg;
+        if (code === 1) {
+          msg = t(
+            "transport.locateDenied",
+            "위치 권한이 거부되었습니다. 브라우저 설정에서 허용해 주세요."
+          );
+        } else if (code === 3) {
+          msg = t(
+            "transport.locateTimeout",
+            "위치 확인 시간이 초과되었습니다. 다시 시도해 주세요."
+          );
+        } else {
+          msg = t(
+            "transport.locateUnavailable",
+            "현재 위치를 확인할 수 없습니다."
+          );
+        }
+        showLocateToast("error", msg);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 15000,
+        maximumAge: 30000,
+      }
+    );
+  }
+
   function setDrawer(open) {
     drawerOpen = !!open;
     var drawer = el("[data-places-drawer]");
@@ -1997,6 +2235,13 @@
     if (reset) {
       reset.addEventListener("click", function () {
         resetView();
+      });
+    }
+
+    var locateBtn = el("[data-places-locate]");
+    if (locateBtn) {
+      locateBtn.addEventListener("click", function () {
+        locateUser();
       });
     }
 
