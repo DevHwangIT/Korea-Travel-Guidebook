@@ -293,7 +293,9 @@
     "shoppingIntro": "Duyệt đồ mua theo danh mục.",
     "funTitle": "Vui chơi",
     "funIntro": "Vui kiểu Hàn dễ thử với du khách.",
-    "funTapHint": "Chạm thẻ để xem cách dùng và mẹo thực tế."
+    "funTapHint": "Chạm thẻ để xem cách dùng và mẹo thực tế.",
+    "choiceShoppingImg": "Images/menu/buy-choice-shopping-v2.jpg",
+    "choiceFunImg": "Images/menu/buy-choice-fun-v2.jpg"
   },
   "foodsHub": {
     "pageTitle": "Ẩm thực & tráng miệng | Korea Travel Guide",
@@ -964,6 +966,17 @@
         "zh-Hant": "農曆新年假期（查看每年的日期）\n\n·農曆新年（Lunar New Year）－農曆新年。一般是一月到二月。戰後假期可能會更長\n· 佛誕——農曆4月8日。通常為四月至五月\n· 中秋節－中秋節。通常是九月至十月。戰後假期可能會更長\n\n因為是農曆，所以每年的日期都不一樣。在預訂航班、住宿或 KTX 之前，請先查看當年的日曆。"
       },
       {
+        "type": "text",
+        "ko": "대체공휴일 (주말과 겹칠 때)\n\n공휴일이 토요일·일요일 같은 주말과 겹치면, 그다음 월요일이나 가까운 평일이 대체공휴일로 지정되는 경우가 많습니다. 쉬는 날이 하루 더 생기는 셈이라 교통·숙소·명소가 더 붐빌 수 있어요. 정확한 적용 여부는 해마다 다르니, 출국 전 그해 공식 달력에서 대체공휴일도 함께 확인하세요.",
+        "en": "Substitute holidays (when a holiday falls on a weekend)\n\nIf a public holiday lands on Saturday or Sunday, Korea often designates a substitute holiday (대체공휴일)—commonly the following Monday or the next weekday. That extra day off can make transit, hotels, and sights busier. Rules vary by year, so recheck the official calendar for substitute holidays before you travel.",
+        "ja": "代替公休日（週末と重なるとき）\n\n祝日が土曜・日曜と重なると、翌月曜や近い平日が代替公休日になることが多いです。休みが1日増える分、交通・宿・名所が混みやすくなります。適用は年ごとに違うので、渡航前に公式カレンダーで代替公休日も確認を。",
+        "zh": "替代公休日（与周末重叠时）\n\n若公休日恰逢周六或周日，韩国常会指定替代公休日（대체공휴일）——多为次日周一或下一个工作日。多一天休息时，交通、住宿和景点可能更挤。每年规定可能不同，出发前请再查当年官方日历上的替代公休日。",
+        "zh-Hant": "替代公休日（與週末重疊時）\n\n若公休日恰逢週六或週日，韓國常會指定替代公休日（대체공휴일）——多為下一個週一或下一個工作日。多一天休息時，交通、住宿和景點可能更擠。每年規定可能不同，出發前請再查當年官方日曆上的替代公休日。",
+        "vi": "Ngày nghỉ bù (khi lễ trùng cuối tuần)\n\nNếu ngày lễ rơi vào Thứ Bảy hoặc Chủ Nhật, Hàn Quốc thường chỉ định ngày nghỉ bù (대체공휴일)—thường là Thứ Hai kế tiếp hoặc ngày làm việc gần nhất. Thêm một ngày nghỉ có thể khiến giao thông, khách sạn và điểm tham quan đông hơn. Quy định khác nhau theo năm, hãy kiểm tra lịch chính thức trước khi đi.",
+        "th": "วันหยุดชดเชย (เมื่อวันหยุดตรงสุดสัปดาห์)\n\nหากวันหยุดนักขัตฤกษ์ตรงกับวันเสาร์หรืออาทิตย์ เกาหลีมักกำหนดวันหยุดชดเชย (대체공휴일)—มักเป็นวันจันทร์ถัดไปหรือวันทำการถัดไป วันหยุดเพิ่มหนึ่งวันอาจทำให้การเดินทาง ที่พัก และสถานที่ท่องเที่ยวแน่นขึ้น ข้อกำหนดต่างกันตามปี โปรดตรวจปฏิทินทางการก่อนเดินทาง",
+        "ru": "Замещающий выходной (если праздник выпадает на выходные)\n\nЕсли государственный праздник приходится на субботу или воскресенье, в Корее часто назначают замещающий выходной (대체공휴일) — обычно следующий понедельник или ближайший будний день. Лишний день отдыха может усилить загруженность транспорта, отелей и достопримечательностей. Правила меняются по годам — сверьте официальный календарь перед поездкой."
+      },
+      {
         "type": "callout",
         "ko": "연휴·황금연휴에는 명소·교통·인기 식당이 붐빕니다. 일부 가게·관공서는 쉽니다. 성수기처럼 미리 예약하세요.",
         "en": "Long weekends get busy at sights, transit, and popular restaurants. Some shops and offices close. Book early, as in peak season.",
@@ -1177,7 +1190,8 @@
         "zh": "更多旅行短句请到「实用韩语」继续看。出发前哪怕只快速浏览日常、餐厅、交通分类，抵达后也会安心许多。",
         "vi": "Xem thêm câu sẵn dùng trong Tiếng Hàn hữu ích. Chỉ cần đọc nhanh các tab hàng ngày, ăn uống và di chuyển trước khi bay cũng khiến những ngày đầu dễ chịu hơn."
       }
-    ]
+    ],
+    "holidays4": "Khi ngày lễ trùng cuối tuần (Thứ Bảy/Chủ Nhật), Hàn Quốc thường có ngày nghỉ bù (대체공휴일)—thường là Thứ Hai kế tiếp hoặc ngày làm việc gần nhất. Có thể thêm một ngày nghỉ, nên hãy kiểm tra lịch năm đó có ngày nghỉ bù không."
   },
   "emergency": {
     "pageTitle": "Khẩn cấp | Korea Travel Guide",

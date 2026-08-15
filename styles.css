@@ -1470,7 +1470,30 @@ a.souvenir-card:hover {
   .tip-tabs .tab-list-sm {
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 8px;
+    padding-right: 20px;
+    scrollbar-width: thin;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(100% - 2.5rem),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(100% - 2.5rem),
+      transparent 100%
+    );
+  }
+
+  .tip-tabs .tab-list-sm .tab-btn {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
   }
 }
 
@@ -8303,6 +8326,11 @@ body.prep-page .site-brand {
       linear-gradient(180deg, rgba(34, 34, 34, 0.04) 0%, transparent 16px),
       var(--prep-paper);
     box-shadow: none;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* allow child chip row to own horizontal scroll (clip hid overflow affordance) */
+    overflow-x: visible;
   }
 
   .prep-map__topics {
@@ -8310,6 +8338,9 @@ body.prep-page .site-brand {
     flex-wrap: wrap;
     gap: 8px;
     padding: 0 2px 4px;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   /* Flatten topic wrappers so parents sit in one row, children on the next */
@@ -8336,6 +8367,7 @@ body.prep-page .site-brand {
     color: #ffffff;
   }
 
+  /* Subcategory chips: swipe/scroll row so all tabs stay reachable on mobile */
   .prep-map__children {
     order: 1;
     flex: 1 1 100%;
@@ -8343,26 +8375,52 @@ body.prep-page .site-brand {
     flex-wrap: nowrap;
     gap: 6px;
     margin: 2px 0 0;
-    padding: 8px 2px 2px;
+    padding: 8px 20px 10px 2px;
     border-left: 0;
     border-top: 1px solid var(--prep-line);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     overflow-x: auto;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 8px;
     scrollbar-width: thin;
+    /* right-edge fade = swipe affordance when chips overflow */
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(100% - 2.5rem),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(100% - 2.5rem),
+      transparent 100%
+    );
   }
 
   .prep-map__children li {
     flex: 0 0 auto;
+    scroll-snap-align: start;
   }
 
   .prep-map__child {
+    width: auto;
+    max-width: none;
+    display: inline-block;
     padding: 8px 12px;
     border: 1px solid var(--prep-line);
     border-radius: 10px;
     background: #ffffff;
     white-space: nowrap;
     font-size: 0.86rem;
+    scroll-snap-align: start;
   }
 
   .prep-map__child.is-active {
@@ -8376,6 +8434,7 @@ body.prep-page .site-brand {
     padding: 16px max(14px, env(safe-area-inset-right, 0px)) 18px max(14px, env(safe-area-inset-left, 0px));
     background: #ffffff;
     box-sizing: border-box;
+    width: 100%;
     max-width: 100%;
     min-width: 0;
     overflow-x: clip;
@@ -8385,17 +8444,29 @@ body.prep-page .site-brand {
     display: none;
   }
 
+  .prep-map__regions,
+  .prep-map__region,
+  .prep-map__subs,
+  .prep-map__sub {
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
   .prep-map__sub-inner {
     padding-left: 0;
     padding-right: 0;
     max-width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    overflow-wrap: anywhere;
   }
 
   .prep-map__region-head {
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .prep-map .tip-article,
@@ -8403,12 +8474,24 @@ body.prep-page .site-brand {
   .prep-map .content-body,
   .prep-map .content-body__section,
   .prep-map .content-body__text,
+  .prep-map .content-body__callout,
+  .prep-map .content-body__image,
+  .prep-map .tip-mistake,
   .prep-map .tip-article p,
-  .prep-map .content-body p {
+  .prep-map .content-body p,
+  .prep-map .content-body a {
     max-width: 100%;
     min-width: 0;
-    overflow-wrap: break-word;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  .prep-map .content-body__image img,
+  .prep-map .menu-photo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .prep-map__sub.is-open,
@@ -8812,12 +8895,19 @@ body.tips-page .site-brand {
     border-right: 0;
     border-bottom: 1px solid var(--tips-line);
     padding: 12px;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: visible;
   }
 
   .tip-map__topics {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .tip-map__topic {
@@ -8847,26 +8937,51 @@ body.tips-page .site-brand {
     flex-wrap: nowrap;
     gap: 6px;
     margin: 0;
-    padding: 8px 0 0;
+    padding: 8px 20px 10px 0;
     border-left: 0;
     border-top: 1px solid var(--tips-line);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     overflow-x: auto;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 8px;
     scrollbar-width: thin;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(100% - 2.5rem),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(100% - 2.5rem),
+      transparent 100%
+    );
   }
 
   .tip-map__children li {
     flex: 0 0 auto;
+    scroll-snap-align: start;
   }
 
   .tip-map__child {
+    width: auto;
+    max-width: none;
+    display: inline-block;
     border: 1px solid var(--tips-line);
     background: #fff;
     white-space: nowrap;
     border-radius: 10px;
     min-height: 40px;
     padding: 8px 12px;
+    scroll-snap-align: start;
   }
 
   .tip-map__child.is-active {
@@ -8879,6 +8994,7 @@ body.tips-page .site-brand {
     min-height: 12rem;
     padding: 16px max(14px, env(safe-area-inset-right, 0px)) 18px max(14px, env(safe-area-inset-left, 0px));
     box-sizing: border-box;
+    width: 100%;
     max-width: 100%;
     min-width: 0;
     overflow-x: clip;
