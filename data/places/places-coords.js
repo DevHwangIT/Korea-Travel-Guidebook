@@ -3,7 +3,7 @@
  * Approximate center points for known landmarks / districts — not GPS survey data.
  * Used by js/places-map.js (immersive Korea peninsula map).
  *
- * type: "city" | "nature" | "heritage" | "airport" | "info" | "locker" | "port"
+ * type: "city" | "nature" | "heritage" | "airport" | "info" | "locker" | "port" | "bus-terminal"
  *   city     — urban nightlife / shopping / modern landmarks
  *   nature   — mountains, beaches, parks, scenic outdoors
  *   heritage — palaces, temples, historic / cultural villages
@@ -11,6 +11,7 @@
  *   info     — embassies / visitor help centers (muted secondary badge)
  *   locker   — luggage storage / coin lockers (station & airport)
  *   port     — major harbors / passenger ferry terminals
+ *   bus-terminal — major express / intercity bus terminals
  *
  * image: local real photograph under Images/places/{slug}.jpg (Wikimedia Commons / free licenses).
  *        Type fallbacks in Images/places/_types/ are last-resort only.
@@ -85,4 +86,16 @@ window.PLACES_COORDS = [
   { slug: "port-mokpo", lat: 34.7917, lng: 126.3889, region: "jeolla", type: "port", note: "Mokpo Port", image: "Images/places/port-mokpo.jpg" },
   { slug: "port-yeosu", lat: 34.738, lng: 127.745, region: "jeolla", type: "port", note: "Yeosu Port / Expo waterfront", image: "Images/places/port-yeosu.jpg" },
   { slug: "port-pohang", lat: 36.0515, lng: 129.384, region: "gyeongsang", type: "port", note: "Pohang Port / Yeongil Bay", image: "Images/places/port-pohang.jpg" },
+  { slug: "bus-terminal-seoul-express", lat: 37.5046, lng: 127.0045, region: "seoul", type: "bus-terminal", note: "Seoul Express Bus Terminal / Central City", image: "Images/places/bus-terminal-seoul-express.jpg" },
+  { slug: "bus-terminal-east-seoul", lat: 37.5347, lng: 127.0942, region: "seoul", type: "bus-terminal", note: "East Seoul Bus Terminal", image: "Images/places/bus-terminal-east-seoul.jpg" },
+  { slug: "bus-terminal-nambu", lat: 37.485, lng: 127.0162, region: "seoul", type: "bus-terminal", note: "Seoul Nambu Bus Terminal", image: "Images/places/bus-terminal-nambu.jpg" },
+  { slug: "bus-terminal-busan", lat: 35.2234, lng: 129.0786, region: "busan", type: "bus-terminal", note: "Busan Central Bus Terminal (Nopo)", image: "Images/places/bus-terminal-busan.jpg" },
+  { slug: "bus-terminal-daegu", lat: 35.8795, lng: 128.6284, region: "", type: "bus-terminal", note: "Dongdaegu Complex Transfer Center", image: "Images/places/bus-terminal-daegu.jpg" },
+  { slug: "bus-terminal-daejeon", lat: 36.3515, lng: 127.4375, region: "", type: "bus-terminal", note: "Daejeon Complex Terminal", image: "Images/places/bus-terminal-daejeon.jpg" },
+  { slug: "bus-terminal-gwangju", lat: 35.1603, lng: 126.882, region: "jeolla", type: "bus-terminal", note: "Gwangju Bus Terminal (U-Square)", image: "Images/places/bus-terminal-gwangju.jpg" },
+  { slug: "bus-terminal-incheon", lat: 37.4567, lng: 126.7078, region: "incheon", type: "bus-terminal", note: "Incheon Bus Terminal", image: "Images/places/bus-terminal-incheon.jpg" },
+  { slug: "bus-terminal-suwon", lat: 37.2505, lng: 127.02, region: "gyeonggi", type: "bus-terminal", note: "Suwon Bus Terminal", image: "Images/places/bus-terminal-suwon.jpg" },
+  { slug: "bus-terminal-jeonju", lat: 35.8415, lng: 127.124, region: "jeolla", type: "bus-terminal", note: "Jeonju Express Bus Terminal", image: "Images/places/bus-terminal-jeonju.jpg" },
+  { slug: "bus-terminal-ulsan", lat: 35.5525, lng: 129.339, region: "gyeongsang", type: "bus-terminal", note: "Ulsan Express Bus Terminal", image: "Images/places/bus-terminal-ulsan.jpg" },
+  { slug: "bus-terminal-gwangmyeong", lat: 37.4164, lng: 126.8849, region: "gyeonggi", type: "bus-terminal", note: "Near KTX Gwangmyeong — southern Gyeonggi coach access", image: "Images/places/bus-terminal-gwangmyeong.jpg" },
 ];

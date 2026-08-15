@@ -31,27 +31,27 @@ TITLE_RE = re.compile(
 
 # (slug substring regex, tags) — applied in order; union of matches.
 MEAL_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
-    (re.compile(r"malatang|tteokbokki|dakgalbi|jjimdak|yangnyeom|budae|sundubu"), ["spicy"]),
-    (re.compile(r"gukbap|gomtang|samgyetang|kalguksu|sundubu|malatang|dakhanmari|budae|kongguksu|naengmyeon"), ["soup"]),
-    (re.compile(r"samgyeopsal|gopchang|tangsuyuk"), ["meat", "nosoup"]),
+    (re.compile(r"malatang|tteokbokki|dakgalbi|jjimdak|yangnyeom|budae|sundubu|gamjatang|dakbokkeum|jeyuk|jjolmyeon"), ["spicy"]),
+    (re.compile(r"gukbap|gomtang|samgyetang|kalguksu|sundubu|malatang|dakhanmari|budae|kongguksu|naengmyeon|gamjatang|dakbokkeum"), ["soup"]),
+    (re.compile(r"samgyeopsal|gopchang|tangsuyuk|bulgogi|bossam|tteokgalbi|jeyuk"), ["meat", "nosoup"]),
     (re.compile(r"dak|chicken|samgyetang"), ["chicken"]),
-    (re.compile(r"kimbap|bibimbap|jeon|kongguksu|naengmyeon|ganjang"), ["light"]),
+    (re.compile(r"kimbap|bibimbap|jeon|kongguksu|naengmyeon|ganjang|makguksu"), ["light"]),
     (re.compile(r"kimbap"), ["portable", "roll", "quickbite", "nosoup"]),
-    (re.compile(r"naengmyeon|kongguksu"), ["cold"]),
-    (re.compile(r"gukbap|gomtang|samgyetang|dakhanmari|kalguksu|sundubu|budae"), ["warm"]),
+    (re.compile(r"naengmyeon|kongguksu|makguksu|jjolmyeon"), ["cold"]),
+    (re.compile(r"gukbap|gomtang|samgyetang|dakhanmari|kalguksu|sundubu|budae|gamjatang|dakbokkeum"), ["warm"]),
     (re.compile(r"bibimbap|jeon"), ["veggie", "mild", "nosoup"]),
-    (re.compile(r"jajang|tangsuyuk"), ["mild", "nosoup"]),
-    (re.compile(r"kalguksu|kongguksu|naengmyeon|jajang"), ["noodles"]),
-    (re.compile(r"samgyeopsal|gopchang"), ["grill", "warm"]),
+    (re.compile(r"jajang|tangsuyuk|bulgogi|bossam|tteokgalbi"), ["mild", "nosoup"]),
+    (re.compile(r"kalguksu|kongguksu|naengmyeon|jajang|makguksu|jjolmyeon"), ["noodles"]),
+    (re.compile(r"samgyeopsal|gopchang|bulgogi|tteokgalbi"), ["grill", "warm"]),
     (re.compile(r"ganjang|gejang"), ["seafood", "nosoup"]),
     (re.compile(r"tteokbokki"), ["street", "quickbite"]),
 ]
 
 DESSERT_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
     (re.compile(r"bingsu|yogurt|ice"), ["icy", "cold"]),
-    (re.compile(r"bread|butter|sandwich|cookie|bungeoppang"), ["bakery"]),
+    (re.compile(r"bread|butter|sandwich|cookie|bungeoppang|yakgwa"), ["bakery"]),
     (re.compile(r"cafe"), ["coffee"]),
-    (re.compile(r"tanghulu|bungeoppang"), ["street"]),
+    (re.compile(r"tanghulu|bungeoppang|dalgona"), ["street"]),
     (re.compile(r"bungeoppang"), ["warm"]),
 ]
 
@@ -94,9 +94,19 @@ def _heuristic_tags(slug: str, rules: list[tuple[re.Pattern[str], list[str]]]) -
     return found
 
 
+def _dedupe_tags(tags: list[str]) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for t in tags:
+        if t not in seen:
+            seen.add(t)
+            out.append(t)
+    return out
+
+
 def _merge_tags(base: list[str], override: dict | None) -> list[str]:
     if not override:
-        return list(base)
+        return _dedupe_tags(list(base))
     if "tags" in override and isinstance(override["tags"], list):
         tags = [str(t) for t in override["tags"]]
     else:
@@ -107,7 +117,7 @@ def _merge_tags(base: list[str], override: dict | None) -> list[str]:
             ts = str(t)
             if ts not in tags:
                 tags.append(ts)
-    return tags
+    return _dedupe_tags(tags)
 
 
 def _category_entries(

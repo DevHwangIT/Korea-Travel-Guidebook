@@ -12,8 +12,13 @@
     "5": "#996CAC",
     "6": "#CD7C2F",
     "7": "#747F00",
+    "8": "#E35D4D",
     "9": "#B7A45C",
     arex: "#0090D2",
+    gyeongui: "#77C4A3",
+    "suin-bundang": "#F5A200",
+    shinbundang: "#D31145",
+    sillim: "#6789CA",
   };
 
   var map = null;

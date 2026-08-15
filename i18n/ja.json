@@ -14,7 +14,14 @@
     "shopsHelp": "下のおすすめ店（店名）をタップして詳細を見てください。",
     "shopsComing": "おすすめ店は今後追加予定です。地域タブではなく店名で案内します。",
     "adLabel": "広告",
-    "langMenu": "言語"
+    "langMenu": "言語",
+    "listSearch": "検索",
+    "listSearchPlaceholder": "名前で検索",
+    "listPrev": "前へ",
+    "listNext": "次へ",
+    "listNoResults": "結果なし",
+    "listPagerLabel": "ページ",
+    "listPage": "ページ"
   },
   "cities": {
     "서울": "ソウル",
@@ -1401,6 +1408,56 @@
       "title": "お湯",
       "desc": "サクサクの炒めと甘酸っぱいソースが出会った中華料理",
       "about": "湯肉は豚肉を揚げた後、甘酸っぱいソースをかけたり、撮って食べる韓国式中華料理です。おにぎり・おにぎりの好みが分かれて、ジャジャンミョン・チャンポンと一緒に中食堂でよくさせます。"
+    },
+    "gamjatang": {
+      "title": "カムジャタン（감자탕）",
+      "desc": "豚背骨とじゃがいも入りのピリ辛煮込み",
+      "about": "カムジャタンは豚の背骨とじゃがいもをエゴマ・野菜と一緒に辛く煮込んだ韓国料理です。骨から肉を外してご飯・キムチと一緒に。二日酔いにも人気です。"
+    },
+    "dakbokkeumtang": {
+      "title": "タッポックムタン（닭볶음탕）",
+      "desc": "甘辛く煮込んだ鶏肉の煮物",
+      "about": "タッポックムタン（タットリタン）は鶏肉とじゃがいも・にんじん・玉ねぎをコチュジャンベースで炒め煮した韓国料理。ご飯にかけて食べやすい一品です。"
+    },
+    "makguksu": {
+      "title": "マッククス（막국수）",
+      "desc": "江原道名物の冷たいそば麺",
+      "about": "マッククスはそば麺を冷たい出汁やタレで食べる江原道の名物麺。キムチ・きゅうり・ごまをのせてさっぱりと。"
+    },
+    "jjolmyeon": {
+      "title": "チョルミョン（쫄면）",
+      "desc": "もちもち麺の甘辛混ぜ麺",
+      "about": "チョルミョンは弾力のある麺にコチュジャンタレと野菜を混ぜて食べる韓国麺。冷たいムルチョルミョンもあり、粉食店で定番です。"
+    },
+    "bossam": {
+      "title": "ポッサム（보쌈）",
+      "desc": "茹で豚を野菜で包む料理",
+      "about": "ポッサムは柔らかく茹でた豚肉を白菜やレタスで包んで食べる韓国料理。エビの塩辛やポッサムキムチと一緒に。チョッパルとセットも人気です。"
+    },
+    "jeyuk-bokkeum": {
+      "title": "チェユクポックム（제육볶음）",
+      "desc": "コチュジャン味の豚肉炒め",
+      "about": "チェユクポックムは豚肉をコチュジャン・唐辛子粉で炒めた韓国料理。ご飯やサンチュ包みに合い、定食屋の定番です。"
+    },
+    "bulgogi": {
+      "title": "プルコギ（불고기）",
+      "desc": "甘辛だれの牛肉焼き・炒め",
+      "about": "プルコギは薄切り牛肉を醤油・梨・砂糖だれに漬けて焼く（または炒める）代表的な韓国料理。石焼き・鍋スタイルもあり、外国人にも人気です。"
+    },
+    "tteokgalbi": {
+      "title": "トッカルビ（떡갈비）",
+      "desc": "挽きカルビを餅状にして焼く肉料理",
+      "about": "トッカルビはカルビ肉を挽いて味付けし、餅のように平たく成形して焼く韓国料理。潭陽・松汀などが有名で、甘じょっぱい味が特徴です。"
+    },
+    "dalgona": {
+      "title": "ダルゴナ（달고나）",
+      "desc": "砂糖を溶かしたポン菓子",
+      "about": "ダルゴナ（ポプギ）は砂糖を溶かしソーダを加えて固めた韓国の懐かしい屋台菓子。型をきれいに抜く遊びがあり、最近はカフェやダルゴナコーヒーでも人気です。"
+    },
+    "yakgwa": {
+      "title": "薬菓／ヤククァ（약과）",
+      "desc": "小麦粉・蜂蜜・ごま油の伝統菓子",
+      "about": "薬菓は小麦粉生地を揚げて蜂蜜・水飴に漬けた韓国の伝統菓子（ハンクァ）。祝日や手土産に人気で、仁寺洞・百貨店・空港でも手に入ります。"
     }
   },
   "restaurants": {
@@ -7331,7 +7388,7 @@
     "officialMapCta": "公式サイバーステーションを開く",
     "interactiveMapTitle": "地図で号線を見る",
     "interactiveMapHelp": "下で路線を選ぶと地図上でその路線が強調されます。（実ルート基準・模式図とは形が異なる場合があります）",
-    "mapSource": "衛星タイル: Esri · 座標: ガイドブック登録スポット",
+    "mapSource": "衛星タイル: Esri · スポット: ガイドブック · 地下鉄路線: OSM (data/metro) · 主要駅: ガイドブック",
     "lineAll": "すべて",
     "arexChip": "AREX",
     "linePickHint": "号線ボタンを押すと地図で強調され、下に簡単な説明が表示されます。",
@@ -7564,7 +7621,47 @@
     "filterAll": "すべて",
     "filterHelp": "表示する種類を選んでください",
     "lockerBadge": "荷物預かり・時間・空きはアプリ/現地で確認",
-    "portBadge": "港・旅客・クルーズの拠点"
+    "portBadge": "港・旅客・クルーズの拠点",
+    "legendMetro": "地下鉄",
+    "legendMetroLines": "路線",
+    "legendMetroStations": "駅",
+    "filterGroupPlaces": "名所",
+    "filterGroupTransit": "交通",
+    "filterGroupConvenience": "便利",
+    "filterToggle": "フィルター",
+    "legendMetroLinePick": "路線を選択",
+    "line1": "1号線",
+    "line2": "2号線",
+    "line3": "3号線",
+    "line4": "4号線",
+    "line5": "5号線",
+    "line6": "6号線",
+    "line7": "7号線",
+    "line8": "8号線",
+    "line9": "9号線",
+    "lineArex": "空港鉄道",
+    "lineGyeongui": "京義・中央線",
+    "lineSuinBundang": "水仁・盆唐線",
+    "lineShinbundang": "新盆唐線",
+    "lineSillim": "新林線",
+    "legendBusTerminal": "バスターミナル",
+    "busTerminalBadge": "バスターミナル · 高速・市外拠点",
+    "metroRegionSeoul": "ソウル・首都圏",
+    "metroRegionBusan": "釜山",
+    "metroRegionDaegu": "大邱",
+    "metroRegionGwangju": "光州",
+    "metroRegionDaejeon": "大田",
+    "lineBusan1": "釜山1号線",
+    "lineBusan2": "釜山2号線",
+    "lineBusan3": "釜山3号線",
+    "lineBusan4": "釜山4号線",
+    "lineBusanGimhae": "釜山金海軽電鉄",
+    "lineDaegu1": "大邱1号線",
+    "lineDaegu2": "大邱2号線",
+    "lineDaegu3": "大邱3号線",
+    "lineGwangju1": "光州1号線",
+    "lineDaejeon1": "大田1号線",
+    "filterGroupToggle": "この分類すべて"
   },
   "apps": {
     "groupMaps": "地図",
@@ -10849,6 +10946,294 @@
         }
       ],
       "image": "Images/places/port-pohang.jpg"
+    },
+    "bus-terminal-seoul-express": {
+      "name": "ソウル高速バスターミナル",
+      "desc": "江南セントラルシティの高速バス拠点。",
+      "how": "地下鉄3・7・9号線高速ターミナル駅。",
+      "address": "서울 서초구 신반포로 194",
+      "regionLabel": "ソウル",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-seoul-express.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "강남 센트럴시티·고속터미널. 전국 고속버스의 대표 출발·도착지입니다.\n\n가는 방법: 지하철 3·7·9호선 고속터미널역. 센트럴시티·경부·영동선 건물 확인.",
+          "en": "Gangnam hub (Central City) for nationwide express coaches.\n\nHow to get there: Subway Lines 3/7/9 Express Bus Terminal Station. Check Gyeongbu/Yeongdong/Central City halls.",
+          "ja": "江南セントラルシティの高速バス拠点。\n\n地下鉄3・7・9号線高速ターミナル駅。",
+          "zh": "江南Central City全国高速巴士枢纽。\n\n地铁3/7/9号线高速巴士客运站。",
+          "zh-Hant": "江南Central City全國高速巴士樞紐。\n\n地鐵3/7/9號線高速巴士客運站。",
+          "vi": "Trung tâm xe khách toàn quốc tại Gangnam Central City.\n\nTàu điện ngầm 3/7/9 ga Express Bus Terminal.",
+          "th": "ศูนย์รถบัสทางด่วนที่ Central City แขวงคังนัม\n\nรถไฟใต้ดินสาย 3/7/9 สถานี Express Bus Terminal",
+          "ru": "Главный хаб междугородних автобусов в Central City (Каннам).\n\nМетро 3/7/9, станция Express Bus Terminal."
+        }
+      ]
+    },
+    "bus-terminal-east-seoul": {
+      "name": "東ソウル総合ターミナル",
+      "desc": "江辺駅とつながる東部ソウルのバス拠点。",
+      "how": "地下鉄2号線江辺駅。",
+      "address": "서울 광진구 강변역로 50",
+      "regionLabel": "ソウル",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8F%99%EC%84%9C%EC%9A%B8%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%8F%99%EC%84%9C%EC%9A%B8%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-east-seoul.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "건대·잠실 쪽 동부 서울의 고속·시외버스 거점입니다.\n\n가는 방법: 지하철 2호선 강변역과 연결. 터미널 건물 안내판을 확인하세요.",
+          "en": "Express/intercity buses on Seoul’s east side near Gangbyeon.\n\nHow to get there: Connected to Line 2 Gangbyeon Station. Follow terminal signs.",
+          "ja": "江辺駅とつながる東部ソウルのバス拠点。\n\n地下鉄2号線江辺駅。",
+          "zh": "首尔东部高速/市外巴士枢纽。\n\n地铁2号线江边站。",
+          "zh-Hant": "首爾東部高速/市外巴士樞紐。\n\n地鐵2號線江邊站。",
+          "vi": "Bến xe phía đông Seoul gần Gangbyeon.\n\nTuyến 2 ga Gangbyeon.",
+          "th": "ศูนย์รถบัสฝั่งตะวันออกใกล้คังบยอน\n\nสาย 2 สถานี Gangbyeon",
+          "ru": "Автовокзал на востоке Сеула у Канбён.\n\nЛиния 2, станция Gangbyeon."
+        }
+      ]
+    },
+    "bus-terminal-nambu": {
+      "name": "ソウル南部ターミナル",
+      "desc": "瑞草の市外・高速バスターミナル。",
+      "how": "地下鉄3号線南部ターミナル駅前。",
+      "address": "서울 서초구 효령로 208",
+      "regionLabel": "ソウル",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%EB%82%A8%EB%B6%80%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%EB%82%A8%EB%B6%80%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-nambu.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서초 남부 시외·고속버스 터미널. 경기·충청·전라 방면이 많습니다.\n\n가는 방법: 지하철 3호선 남부터미널역 바로 앞.",
+          "en": "Southern Seoul intercity/express terminal toward Gyeonggi, Chungcheong, Jeolla.\n\nHow to get there: Exit Line 3 Nambu Bus Terminal Station.",
+          "ja": "瑞草の市外・高速バスターミナル。\n\n地下鉄3号線南部ターミナル駅前。",
+          "zh": "瑞草市外与高速巴士站。\n\n地铁3号线南部客运站。",
+          "zh-Hant": "瑞草市外與高速巴士站。\n\n地鐵3號線南部客運站。",
+          "vi": "Bến xe liên tỉnh/phía nam Seoul.\n\nTuyến 3 ga Nambu Bus Terminal.",
+          "th": "สถานีรถบัสชานเมือง/ทางด่วนฝั่งใต้\n\nสาย 3 สถานี Nambu Bus Terminal",
+          "ru": "Междугородний/экспресс-вокзал в Сочхо.\n\nЛиния 3, станция Nambu Bus Terminal."
+        }
+      ]
+    },
+    "bus-terminal-busan": {
+      "name": "釜山総合バスターミナル",
+      "desc": "老圃の高速・市外バス拠点。",
+      "how": "釜山1号線老圃駅。",
+      "address": "부산 금정구 중앙대로 2238",
+      "regionLabel": "釜山",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-busan.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "노포 종합터미널. 부산의 고속·시외버스 중심 거점입니다.\n\n가는 방법: 부산 1호선 노포역·터미널 연결. 시내에서 지하철이 편합니다.",
+          "en": "Nopo hub for Busan’s express and intercity coaches.\n\nHow to get there: Busan Metro Line 1 Nopo Station links to the terminal.",
+          "ja": "老圃の高速・市外バス拠点。\n\n釜山1号線老圃駅。",
+          "zh": "老圃高速与市外巴士中心。\n\n釜山地铁1号线老圃站。",
+          "zh-Hant": "老圃高速與市外巴士中心。\n\n釜山地鐵1號線老圃站。",
+          "vi": "Trung tâm xe khách tại Nopo, Busan.\n\nTuyến 1 Busan ga Nopo.",
+          "th": "ศูนย์รถบัสที่โนโพ ปูซาน\n\nสาย 1 ปูซาน สถานี Nopo",
+          "ru": "Главный автобусный хаб в Нопо.\n\nЛиния 1 Пусана, станция Nopo."
+        }
+      ]
+    },
+    "bus-terminal-daegu": {
+      "name": "東大邱複合乗り換えセンター",
+      "desc": "東大邱駅直結のバス拠点。",
+      "how": "KTX・地下鉄東大邱駅。",
+      "address": "대구 동구 동대구로 550",
+      "regionLabel": "大邱",
+      "region": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8F%99%EB%8C%80%EA%B5%AC%EB%B3%B5%ED%95%A9%ED%99%98%EC%8A%B9%EC%84%BC%ED%84%B0",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%8F%99%EB%8C%80%EA%B5%AC%EB%B3%B5%ED%95%A9%ED%99%98%EC%8A%B9%EC%84%BC%ED%84%B0&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-daegu.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "동대구역과 연결된 대구 고속·시외버스 환승 거점입니다.\n\n가는 방법: KTX·대구지하철 동대구역. 환승센터 내 버스층 안내를 확인하세요.",
+          "en": "Bus hub linked to Dongdaegu Station (KTX + Daegu Metro).\n\nHow to get there: Dongdaegu Station — follow signs to the bus transfer floors.",
+          "ja": "東大邱駅直結のバス拠点。\n\nKTX・地下鉄東大邱駅。",
+          "zh": "连接东大邱站的巴士枢纽。\n\nKTX/地铁东大邱站。",
+          "zh-Hant": "連接東大邱站的巴士樞紐。\n\nKTX/地鐵東大邱站。",
+          "vi": "Bến xe liền kề ga Dongdaegu.\n\nKTX/metro ga Dongdaegu.",
+          "th": "ศูนย์รถบัสติดสถานีดงแดกู\n\nKTX/รถไฟใต้ดิน สถานี Dongdaegu",
+          "ru": "Автобусный хаб у станции Тондэгу.\n\nKTX/метро, станция Dongdaegu."
+        }
+      ]
+    },
+    "bus-terminal-daejeon": {
+      "name": "大田複合ターミナル",
+      "desc": "大田の高速・市外複合ターミナル。",
+      "how": "大田1号線複合ターミナル駅。",
+      "address": "대전 동구 동서대로 1689",
+      "regionLabel": "大田",
+      "region": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8C%80%EC%A0%84%EB%B3%B5%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%8C%80%EC%A0%84%EB%B3%B5%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-daejeon.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "대전 고속·시외가 모인 복합터미널. 중부권 환승 거점입니다.\n\n가는 방법: 대전 1호선 복합터미널역. 고속·시외 구역을 안내판으로 확인.",
+          "en": "Combined express/intercity terminal for the central Korea hub.\n\nHow to get there: Daejeon Metro Line 1 Complex Terminal Station.",
+          "ja": "大田の高速・市外複合ターミナル。\n\n大田1号線複合ターミナル駅。",
+          "zh": "大田高速与市外综合站。\n\n大田地铁1号线综合客运站。",
+          "zh-Hant": "大田高速與市外綜合站。\n\n大田地鐵1號線綜合客運站。",
+          "vi": "Bến xe cao tốc/liên tỉnh Daejeon.\n\nTuyến 1 Daejeon ga Complex Terminal.",
+          "th": "สถานีรถบัสทางด่วน/ชานเมืองแทจอน\n\nสาย 1 แทจอน สถานี Complex Terminal",
+          "ru": "Экспресс и междугородние рейсы Тэджона.\n\nЛиния 1, станция Complex Terminal."
+        }
+      ]
+    },
+    "bus-terminal-gwangju": {
+      "name": "光州総合バスターミナル（ユースクエア）",
+      "desc": "ユースクエア内の高速・市外バス。",
+      "how": "光州市内バス・タクシー。",
+      "address": "광주 서구 무진대로 282",
+      "regionLabel": "光州",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B4%91%EC%A3%BC%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%9C%A0%EC%8A%A4%ED%80%98%EC%96%B4",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B4%91%EC%A3%BC%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%9C%A0%EC%8A%A4%ED%80%98%EC%96%B4&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-gwangju.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "유스퀘어 복합시설의 고속·시외버스 터미널입니다.\n\n가는 방법: 광주 1호선 금남로5가·시청 방면 버스·택시, 또는 시내버스 직행.",
+          "en": "Express/intercity buses inside the U-Square complex.\n\nHow to get there: City bus/taxi from Gwangju Metro Line 1 (Geumnamno 5-ga / City Hall area).",
+          "ja": "ユースクエア内の高速・市外バス。\n\n光州市内バス・タクシー。",
+          "zh": "U-Square内高速与市外巴士。\n\n市内公交/出租。",
+          "zh-Hant": "U-Square內高速與市外巴士。\n\n市內公車/計程車。",
+          "vi": "Xe khách trong khu phức hợp U-Square.\n\nBus/taxi nội thành.",
+          "th": "รถบัสในคอมเพล็กซ์ U-Square\n\nรถเมล์/แท็กซี่ในเมือง",
+          "ru": "Автобусы в комплексе U-Square.\n\nГородской автобус/такси."
+        }
+      ]
+    },
+    "bus-terminal-incheon": {
+      "name": "仁川総合ターミナル",
+      "desc": "仁川市内の高速・市外バスターミナル。",
+      "how": "仁川1号線仁川ターミナル駅。",
+      "address": "인천 미추홀구 연남로 35",
+      "regionLabel": "仁川",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-incheon.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인천 시내의 고속·시외버스 터미널. 구월동 일대와 가깝습니다.\n\n가는 방법: 인천 1호선 인천터미널역 연결.",
+          "en": "Incheon city express/intercity terminal near Guwol.\n\nHow to get there: Incheon Metro Line 1 Incheon Terminal Station.",
+          "ja": "仁川市内の高速・市外バスターミナル。\n\n仁川1号線仁川ターミナル駅。",
+          "zh": "仁川市区高速与市外巴士站。\n\n仁川地铁1号线仁川客运站。",
+          "zh-Hant": "仁川市區高速與市外巴士站。\n\n仁川地鐵1號線仁川客運站。",
+          "vi": "Bến xe cao tốc/liên tỉnh nội thành Incheon.\n\nTuyến 1 Incheon ga Incheon Terminal.",
+          "th": "สถานีรถบัสในเมืองอินชอน\n\nสาย 1 อินชอน สถานี Incheon Terminal",
+          "ru": "Городской экспресс/междугородний вокзал.\n\nЛиния 1 Инчхона, станция Incheon Terminal."
+        }
+      ]
+    },
+    "bus-terminal-suwon": {
+      "name": "水原バスターミナル",
+      "desc": "京畿南部のバス乗り換え拠点。",
+      "how": "水原駅からバス・タクシー。",
+      "address": "경기 수원시 권선구 경수대로 270",
+      "regionLabel": "京畿",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%88%98%EC%9B%90%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%88%98%EC%9B%90%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-suwon.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "수원 고속·시외버스터미널. 경기 남부 환승에 자주 쓰입니다.\n\n가는 방법: 수원역에서 버스·택시, 또는 터미널 정류장 시내버스.",
+          "en": "Suwon express/intercity terminal — southern Gyeonggi transfer hub.\n\nHow to get there: Bus/taxi from Suwon Station, or local buses to the terminal.",
+          "ja": "京畿南部のバス乗り換え拠点。\n\n水原駅からバス・タクシー。",
+          "zh": "京畿南部巴士换乘枢纽。\n\n水原站公交/出租。",
+          "zh-Hant": "京畿南部巴士轉乘樞紐。\n\n水原站公車/計程車。",
+          "vi": "Trung chuyển phía nam Gyeonggi.\n\nBus/taxi từ ga Suwon.",
+          "th": "จุดเปลี่ยนรถบัสทางใต้คยองกี\n\nรถเมล์/แท็กซี่จากสถานีซูวอน",
+          "ru": "Пересадочный хаб южного Кёнги.\n\nАвтобус/такси от станции Сувон."
+        }
+      ]
+    },
+    "bus-terminal-jeonju": {
+      "name": "全州高速バスターミナル",
+      "desc": "全州韓屋村観光のバス玄関。",
+      "how": "韓屋村までバス・タクシー。",
+      "address": "전북 전주시 덕진구 번영로 기린대로 전주고속버스터미널",
+      "regionLabel": "全羅",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EC%A3%BC%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EC%A3%BC%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-jeonju.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "전주 고속버스 터미널. 한옥마을 관광의 시외 출발점으로 자주 쓰입니다.\n\n가는 방법: 전주시외·고속 터미널 일대. 한옥마을까지 버스·택시.",
+          "en": "Jeonju express coaches — common gateway for Hanok Village trips.\n\nHow to get there: Local bus/taxi to Jeonju Hanok Village from the terminal area.",
+          "ja": "全州韓屋村観光のバス玄関。\n\n韓屋村までバス・タクシー。",
+          "zh": "前往全州韩屋村的常见门户。\n\n客运站到韩屋村公交/出租。",
+          "zh-Hant": "前往全州韓屋村的常見門戶。\n\n客運站到韓屋村公車/計程車。",
+          "vi": "Cửa ngõ xe khách tới làng Hanok Jeonju.\n\nBus/taxi tới làng Hanok.",
+          "th": "ประตูสู่หมู่บ้านฮันอกชอนจู\n\nรถเมล์/แท็กซี่ไปหมู่บ้านฮันอก",
+          "ru": "Частые рейсы к деревне ханок Чонджу.\n\nАвтобус/такси до деревни ханок."
+        }
+      ]
+    },
+    "bus-terminal-ulsan": {
+      "name": "蔚山高速バスターミナル",
+      "desc": "蔚山の高速バス拠点。",
+      "how": "市内バス・タクシー。",
+      "address": "울산 남구 삼산로 257",
+      "regionLabel": "慶尚",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9A%B8%EC%82%B0%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9A%B8%EC%82%B0%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-ulsan.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "울산 고속버스 터미널. 시외버스터미널과 인접한 교통 거점입니다.\n\n가는 방법: 시내버스·택시. 울산역(KTX)과는 거리가 있어 환승 시간을 보세요.",
+          "en": "Ulsan express bus hub (near the intercity terminal).\n\nHow to get there: City bus/taxi. Allow time if transferring from Ulsan KTX Station.",
+          "ja": "蔚山の高速バス拠点。\n\n市内バス・タクシー。",
+          "zh": "蔚山高速巴士枢纽。\n\n市内公交/出租。",
+          "zh-Hant": "蔚山高速巴士樞紐。\n\n市內公車/計程車。",
+          "vi": "Trung tâm xe khách cao tốc Ulsan.\n\nBus/taxi nội thành.",
+          "th": "ศูนย์รถบัสทางด่วนอุลซาน\n\nรถเมล์/แท็กซี่ในเมือง",
+          "ru": "Главный экспресс-хаб Ульсана.\n\nГородской автобус/такси."
+        }
+      ]
+    },
+    "bus-terminal-gwangmyeong": {
+      "name": "光明総合ターミナル",
+      "desc": "光明・KTX光明付近のバス拠点。",
+      "how": "光明駅からバス・タクシー。",
+      "address": "경기 광명시 광명종합터미널",
+      "regionLabel": "京畿",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B4%91%EB%AA%85%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B4%91%EB%AA%85%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=ja&z=15&output=embed",
+      "image": "Images/places/bus-terminal-gwangmyeong.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "광명·KTX광명 인근 버스 거점. 수도권 남서부 이동에 유용합니다.\n\n가는 방법: 1호선·KTX 광명 일대에서 버스·택시로 이동.",
+          "en": "Coach access near Gwangmyeong / KTX Gwangmyeong in SW Gyeonggi.\n\nHow to get there: Bus/taxi from Gwangmyeong Station (Line 1 / KTX area).",
+          "ja": "光明・KTX光明付近のバス拠点。\n\n光明駅からバス・タクシー。",
+          "zh": "光明/KTX光明附近巴士节点。\n\n光明站公交/出租。",
+          "zh-Hant": "光明/KTX光明附近巴士節點。\n\n光明站公車/計程車。",
+          "vi": "Bến xe gần Gwangmyeong/KTX.\n\nBus/taxi từ ga Gwangmyeong.",
+          "th": "จุดรถบัสใกล้ควังมยอง/KTX\n\nรถเมล์/แท็กซี่จากสถานีควังมยอง",
+          "ru": "Узел у Кванмён / KTX Кванмён.\n\nАвтобус/такси от станции Кванмён."
+        }
+      ]
     }
   },
   "fun": {

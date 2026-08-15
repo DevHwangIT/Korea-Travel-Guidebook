@@ -15,6 +15,18 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.bibimbap.title"
   },
   {
+    "id": "bossam",
+    "href": "../foods/meals/bossam/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "meat",
+      "nosoup",
+      "mild"
+    ],
+    "titleKey": "dishes.bossam.title"
+  },
+  {
     "id": "budae-jjigae",
     "href": "../foods/meals/budae-jjigae/index.html",
     "kind": "meal",
@@ -26,6 +38,33 @@ window.FOOD_RECOMMEND_CATALOG = [
       "hearty"
     ],
     "titleKey": "dishes.budae-jjigae.title"
+  },
+  {
+    "id": "bulgogi",
+    "href": "../foods/meals/bulgogi/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "meat",
+      "nosoup",
+      "mild",
+      "grill",
+      "warm"
+    ],
+    "titleKey": "dishes.bulgogi.title"
+  },
+  {
+    "id": "dakbokkeumtang",
+    "href": "../foods/meals/dakbokkeumtang/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "spicy",
+      "soup",
+      "chicken",
+      "warm"
+    ],
+    "titleKey": "dishes.dakbokkeumtang.title"
   },
   {
     "id": "dakgalbi",
@@ -52,6 +91,18 @@ window.FOOD_RECOMMEND_CATALOG = [
       "mild"
     ],
     "titleKey": "dishes.dakhanmari.title"
+  },
+  {
+    "id": "gamjatang",
+    "href": "../foods/meals/gamjatang/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "spicy",
+      "soup",
+      "warm"
+    ],
+    "titleKey": "dishes.gamjatang.title"
   },
   {
     "id": "ganjang-gejang",
@@ -133,6 +184,18 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.jeon.title"
   },
   {
+    "id": "jeyuk-bokkeum",
+    "href": "../foods/meals/jeyuk-bokkeum/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "spicy",
+      "meat",
+      "nosoup"
+    ],
+    "titleKey": "dishes.jeyuk-bokkeum.title"
+  },
+  {
     "id": "jjimdak",
     "href": "../foods/meals/jjimdak/index.html",
     "kind": "meal",
@@ -144,6 +207,18 @@ window.FOOD_RECOMMEND_CATALOG = [
       "warm"
     ],
     "titleKey": "dishes.jjimdak.title"
+  },
+  {
+    "id": "jjolmyeon",
+    "href": "../foods/meals/jjolmyeon/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "spicy",
+      "cold",
+      "noodles"
+    ],
+    "titleKey": "dishes.jjolmyeon.title"
   },
   {
     "id": "kalguksu",
@@ -187,6 +262,18 @@ window.FOOD_RECOMMEND_CATALOG = [
       "veggie"
     ],
     "titleKey": "dishes.kongguksu.title"
+  },
+  {
+    "id": "makguksu",
+    "href": "../foods/meals/makguksu/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "light",
+      "cold",
+      "noodles"
+    ],
+    "titleKey": "dishes.makguksu.title"
   },
   {
     "id": "malatang",
@@ -282,6 +369,20 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.tteokbokki.title"
   },
   {
+    "id": "tteokgalbi",
+    "href": "../foods/meals/tteokgalbi/index.html",
+    "kind": "meal",
+    "tags": [
+      "hearty",
+      "meat",
+      "nosoup",
+      "mild",
+      "grill",
+      "warm"
+    ],
+    "titleKey": "dishes.tteokgalbi.title"
+  },
+  {
     "id": "yangnyeom-chicken",
     "href": "../foods/meals/yangnyeom-chicken/index.html",
     "kind": "meal",
@@ -348,6 +449,16 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.cafe.title"
   },
   {
+    "id": "dalgona",
+    "href": "../foods/desserts/dalgona/index.html",
+    "kind": "dessert",
+    "tags": [
+      "sweet",
+      "street"
+    ],
+    "titleKey": "dishes.dalgona.title"
+  },
+  {
     "id": "dubai-cookie",
     "href": "../foods/desserts/dubai-cookie/index.html",
     "kind": "dessert",
@@ -378,6 +489,16 @@ window.FOOD_RECOMMEND_CATALOG = [
       "cold"
     ],
     "titleKey": "dishes.tanghulu.title"
+  },
+  {
+    "id": "yakgwa",
+    "href": "../foods/desserts/yakgwa/index.html",
+    "kind": "dessert",
+    "tags": [
+      "sweet",
+      "bakery"
+    ],
+    "titleKey": "dishes.yakgwa.title"
   },
   {
     "id": "yogurt-ice",

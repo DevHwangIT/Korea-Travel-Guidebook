@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="dessertsIndex.pageTitle">
 <head>
-  <!-- asset-v: 20260815095728 -->
+  <!-- asset-v: 20260815135823 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>desserts</title>
-  <link rel="stylesheet" href="../../../styles.css?v=20260815095728">
+  <link rel="stylesheet" href="../../../styles.css?v=20260815135823">
 </head>
 <body class="cat-enter cat-enter--desserts">
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -25,7 +25,7 @@
       <p data-i18n="dessertsIndex.intro"></p>
     </section>
 
-    <div class="card-grid">
+    <div class="card-grid" data-list-pager data-page-size="8" data-item="article.card">
       <article class="card">
         <a href="./bingsu/index.html">
           <img src="./bingsu/media/cover.jpg?v=20260812172500" width="100%" alt="" data-i18n-attr="alt:dishes.bingsu.title">
@@ -82,7 +82,23 @@
         <p data-i18n="dishes.bungeoppang.desc"></p>
         <p><a href="./bungeoppang/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
-    </div>
+          <article class="card">
+        <a href="./dalgona/index.html">
+          <img src="./dalgona/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:dishes.dalgona.title">
+        </a>
+        <h2>🍬 <span data-i18n="dishes.dalgona.title"></span></h2>
+        <p data-i18n="dishes.dalgona.desc"></p>
+        <p><a href="./dalgona/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+      <article class="card">
+        <a href="./yakgwa/index.html">
+          <img src="./yakgwa/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:dishes.yakgwa.title">
+        </a>
+        <h2>🍯 <span data-i18n="dishes.yakgwa.title"></span></h2>
+        <p data-i18n="dishes.yakgwa.desc"></p>
+        <p><a href="./yakgwa/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+</div>
   </main>
 
   <footer class="site-footer">
@@ -91,7 +107,8 @@
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
-  <script src="../../../i18n/messages.js?v=20260815095728"></script>
-  <script src="../../../js/i18n.js?v=20260815095728"></script>
+  <script src="../../../i18n/messages.js?v=20260815135823"></script>
+  <script src="../../../js/i18n.js?v=20260815135823"></script>
+  <script src="../../../js/list-pager.js?v=20260815135823"></script>
 </body>
 </html>

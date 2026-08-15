@@ -1,0 +1,2266 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-15T04:30:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 5811114444,
+      "lat": 37.4782105,
+      "lon": 126.9330119,
+      "tags": {
+        "light_rail": "yes",
+        "name": "서원",
+        "name:en": "Seowon",
+        "name:ja": "ソウォン(書院)",
+        "name:ko": "서원",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5900362272,
+      "lat": 37.5133577,
+      "lon": 126.9264784,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:district": "영등포구",
+        "addr:housenumber": "300",
+        "addr:postcode": "07319",
+        "addr:street": "여의대방로",
+        "addr:subdistrict": "신길동",
+        "name": "대방",
+        "name:en": "Daebang",
+        "name:ja": "テバン(大方)",
+        "name:ko": "대방",
+        "name:ko-Latn": "Daebang",
+        "name:zh": "大方",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "한국철도공사",
+        "operator:en": "Korea Railroad Corporation",
+        "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
+        "operator:wikipedia": "en:Korail",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "102",
+        "station": "subway",
+        "subway": "yes",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q137162",
+        "wikipedia": "ko:대방역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6033314471,
+      "lat": 37.4875949,
+      "lon": 126.9133919,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:district": "동작구",
+        "addr:housenumber": "2",
+        "addr:postcode": "07067",
+        "addr:street": "대림로",
+        "addr:subdistrict": "신대방동",
+        "name": "신대방",
+        "name:en": "Sindaebang",
+        "name:ja": "シンデバン(新大方)",
+        "name:ko": "신대방",
+        "name:zh": "新大方",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "서울교통공사",
+        "operator:en": "Seoul Metro",
+        "operator:ko": "서울교통공사",
+        "operator:type": "public",
+        "operator:wikidata": "Q28699048",
+        "platforms": "2",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "231",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q487835",
+        "wikipedia": "ko:신대방역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6033314481,
+      "lat": 37.4842316,
+      "lon": 126.9296803,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:district": "관악구",
+        "addr:housenumber": "지하1614",
+        "addr:postcode": "08777",
+        "addr:street": "남부순환로",
+        "addr:subdistrict": "신림동",
+        "name": "신림",
+        "name:en": "Sillim",
+        "name:ja": "新林",
+        "name:ja-Hira": "シンリム",
+        "name:ko": "신림",
+        "name:ko-Hani": "新林",
+        "name:zh": "新林",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "서울교통공사",
+        "operator:en": "Seoul Metro",
+        "operator:ko": "서울교통공사",
+        "operator:type": "public",
+        "operator:wikidata": "Q28699048",
+        "platforms": "1",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "230",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q487848",
+        "wikipedia": "ko:신림역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6048953576,
+      "lat": 37.4999284,
+      "lon": 126.9203764,
+      "tags": {
+        "name": "보라매",
+        "name:en": "Boramae",
+        "name:ja": "ボラメ",
+        "name:ko": "보라매",
+        "name:zh": "波拉美",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "서울교통공사",
+        "operator:en": "Seoul Metro",
+        "operator:ko": "서울교통공사",
+        "operator:type": "public",
+        "operator:wikidata": "Q28699048",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q68988",
+        "wikipedia": "ko:보라매역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6048953577,
+      "lat": 37.499706,
+      "lon": 126.9282246,
+      "tags": {
+        "name": "신대방삼거리",
+        "name:en": "Sindaebangsamgeori",
+        "name:ja": "新大方サムゴリ",
+        "name:ko": "신대방삼거리",
+        "name:zh": "新大方丁字路口",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "서울교통공사",
+        "operator:en": "Seoul Metro",
+        "operator:ko": "서울교통공사",
+        "operator:type": "public",
+        "operator:wikidata": "Q28699048",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q68981",
+        "wikipedia": "ko:신대방삼거리역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534566,
+      "lat": 37.4687357,
+      "lon": 126.945328,
+      "tags": {
+        "light_rail": "yes",
+        "name": "관악산",
+        "name:en": "Gwanaksan",
+        "name:ja": "クァナクサン(冠岳山)",
+        "name:ko": "관악산",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail",
+        "wikidata": "Q85980636"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534568,
+      "lat": 37.4720025,
+      "lon": 126.9337059,
+      "tags": {
+        "light_rail": "yes",
+        "name": "서울대벤처타운",
+        "name:en": "Seoul Nat'l Univ. Venture Town",
+        "name:ja": "ソウル大ベンチャータウン",
+        "name:ko": "서울대벤처타운",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534570,
+      "lat": 37.4846585,
+      "lon": 126.9296105,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:district": "관악구",
+        "addr:housenumber": "지하1614",
+        "addr:postcode": "08777",
+        "addr:street": "남부순환로",
+        "addr:subdistrict": "신림동",
+        "light_rail": "yes",
+        "name": "신림",
+        "name:en": "Sillim",
+        "name:ja": "新林",
+        "name:ja-Hira": "シンリム",
+        "name:ko": "신림",
+        "name:zh": "新林",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "S408",
+        "start_date": "2022-05-28",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q487848",
+        "wikipedia": "ko:신림역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534571,
+      "lat": 37.4896958,
+      "lon": 126.9278008,
+      "tags": {
+        "light_rail": "yes",
+        "name": "당곡",
+        "name:en": "Danggok",
+        "name:ja": "タンゴク(堂谷)",
+        "name:ko": "당곡",
+        "name:zh": "堂谷",
+        "name:zh-Hans": "堂谷",
+        "name:zh-Hant": "堂谷",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534572,
+      "lat": 37.4929641,
+      "lon": 126.9242732,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:country": "KR",
+        "addr:district": "동작구",
+        "addr:subdistrict": "신대방동",
+        "light_rail": "yes",
+        "name": "보라매병원",
+        "name:en": "Boramae Medical Center",
+        "name:ja": "ボラメ病院",
+        "name:ko": "보라매병원",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534573,
+      "lat": 37.4952932,
+      "lon": 126.9181903,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:country": "KR",
+        "addr:district": "동작구",
+        "addr:subdistrict": "신대방동",
+        "light_rail": "yes",
+        "name": "보라매공원",
+        "name:en": "Boramae Park",
+        "name:ja": "ボラメゴンウォン(ボラメ公園)",
+        "name:ko": "보라매공원",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534574,
+      "lat": 37.5002811,
+      "lon": 126.9204736,
+      "tags": {
+        "light_rail": "yes",
+        "name": "보라매",
+        "name:en": "Boramae",
+        "name:ja": "ボラメ",
+        "name:ko": "보라매",
+        "name:zh": "波拉美",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail",
+        "wikidata": "Q68988",
+        "wikipedia": "ko:보라매역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534575,
+      "lat": 37.5059628,
+      "lon": 126.9227236,
+      "tags": {
+        "light_rail": "yes",
+        "name": "서울지방병무청",
+        "name:en": "Seoul Regional Office of Military Manpower",
+        "name:ja": "ソウルジバンビョンムチョン(ソウル地方兵務庁)",
+        "name:ko": "서울지방병무청",
+        "name:zh": "首尔地方兵务厅",
+        "name:zh-Hans": "首尔地方兵务厅",
+        "name:zh-Hant": "首爾地方兵務廳",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534576,
+      "lat": 37.5125806,
+      "lon": 126.9251737,
+      "tags": {
+        "addr:city": "서울특별시",
+        "addr:district": "영등포구",
+        "addr:housenumber": "300",
+        "addr:postcode": "07319",
+        "addr:street": "여의대방로",
+        "addr:subdistrict": "신길동",
+        "light_rail": "yes",
+        "name": "대방",
+        "name:en": "Daebang",
+        "name:ja": "テバン(大方)",
+        "name:ko": "대방",
+        "name:ko-Latn": "Daebang",
+        "name:zh": "大方",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "S402",
+        "start_date": "2022-05-28",
+        "station": "light_rail",
+        "wheelchair": "no",
+        "wikidata": "Q137162",
+        "wikipedia": "ko:대방역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534578,
+      "lat": 37.517362,
+      "lon": 126.928282,
+      "tags": {
+        "name": "샛강",
+        "name:en": "Saetgang",
+        "name:ja": "セッカン",
+        "name:ko": "샛강",
+        "name:zh": "赛江",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "서울시메트로9호선",
+        "operator:en": "Seoul Metro Line 9 Corporation",
+        "operator:ko": "서울시메트로9호선",
+        "operator:wikidata": "Q13311220",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q60000",
+        "wikipedia": "ko:샛강역"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8401534582,
+      "lat": 37.5173674,
+      "lon": 126.9294177,
+      "tags": {
+        "light_rail": "yes",
+        "name": "샛강",
+        "name:en": "Saetgang",
+        "name:ja": "セッカン",
+        "name:ko": "샛강",
+        "name:zh": "赛江",
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport": "station",
+        "railway": "station",
+        "start_date": "2022-05-28",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q60000",
+        "wikipedia": "ko:샛강역"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 14191876,
+      "members": [
+        {
+          "type": "node",
+          "ref": 9776585974,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776585985,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776586004,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776586013,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776586016,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776589241,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776589242,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776589246,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776620259,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776620262,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776620271,
+          "role": "stop"
+        },
+        {
+          "type": "way",
+          "ref": 957436186,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "colour": "#6789CA",
+        "from": "관악산",
+        "name": "서울 경전철 신림선: 관악산 → 샛강",
+        "name:en": "Seoul LRT Sillim Line: Gwanaksan → Saetgang",
+        "name:ko": "서울 경전철 신림선: 관악산 → 샛강",
+        "network": "수도권 전철",
+        "operator": "로템SRS",
+        "public_transport:version": "2",
+        "ref": "Silim",
+        "route": "light_rail",
+        "to": "샛강",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 14191877,
+      "members": [
+        {
+          "type": "node",
+          "ref": 9776620272,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776620263,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776620260,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776589245,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 8859323116,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776589240,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776586015,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776586014,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776586005,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776585986,
+          "role": "stop"
+        },
+        {
+          "type": "node",
+          "ref": 9776585975,
+          "role": "stop"
+        },
+        {
+          "type": "way",
+          "ref": 957436187,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "colour": "#6789CA",
+        "from": "샛강",
+        "name": "서울 경전철 신림선: 샛강 → 관악산",
+        "name:en": "Seoul LRT Sillim Line: Saetgang → Gwanaksan",
+        "name:ko": "서울 경전철 신림선: 샛강 → 관악산",
+        "network": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "로템SRS",
+        "public_transport:version": "2",
+        "ref": "Silim",
+        "route": "light_rail",
+        "to": "관악산",
+        "type": "route"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8859323046,
+      "lat": 37.4821486,
+      "lon": 126.9298974
+    },
+    {
+      "type": "node",
+      "id": 8859333032,
+      "lat": 37.4813882,
+      "lon": 126.9298394
+    },
+    {
+      "type": "node",
+      "id": 9776586007,
+      "lat": 37.4808941,
+      "lon": 126.9300418
+    },
+    {
+      "type": "node",
+      "id": 9776586008,
+      "lat": 37.4812542,
+      "lon": 126.9300283
+    },
+    {
+      "type": "node",
+      "id": 8859323047,
+      "lat": 37.4837909,
+      "lon": 126.9297244
+    },
+    {
+      "type": "node",
+      "id": 8859323048,
+      "lat": 37.4851731,
+      "lon": 126.9296426
+    },
+    {
+      "type": "node",
+      "id": 8859323049,
+      "lat": 37.4870544,
+      "lon": 126.9290437
+    },
+    {
+      "type": "node",
+      "id": 8859323050,
+      "lat": 37.4887249,
+      "lon": 126.9283116
+    },
+    {
+      "type": "node",
+      "id": 8859333027,
+      "lat": 37.4886247,
+      "lon": 126.9282912
+    },
+    {
+      "type": "node",
+      "id": 8859333029,
+      "lat": 37.4862089,
+      "lon": 126.9292601
+    },
+    {
+      "type": "node",
+      "id": 8859333030,
+      "lat": 37.4851658,
+      "lon": 126.929511
+    },
+    {
+      "type": "node",
+      "id": 8859333031,
+      "lat": 37.4834988,
+      "lon": 126.9296966
+    },
+    {
+      "type": "node",
+      "id": 9776586012,
+      "lat": 37.4858569,
+      "lon": 126.9294898
+    },
+    {
+      "type": "node",
+      "id": 9776586013,
+      "lat": 37.4848518,
+      "lon": 126.9296508
+    },
+    {
+      "type": "node",
+      "id": 9776586014,
+      "lat": 37.4848427,
+      "lon": 126.9295604
+    },
+    {
+      "type": "node",
+      "id": 9776586015,
+      "lat": 37.489725,
+      "lon": 126.9277642
+    },
+    {
+      "type": "node",
+      "id": 9776586016,
+      "lat": 37.4897299,
+      "lon": 126.927818
+    },
+    {
+      "type": "node",
+      "id": 14005698779,
+      "lat": 37.4861237,
+      "lon": 126.9293904
+    },
+    {
+      "type": "node",
+      "id": 5733236365,
+      "lat": 37.4933504,
+      "lon": 126.9212406
+    },
+    {
+      "type": "node",
+      "id": 8555618635,
+      "lat": 37.4930386,
+      "lon": 126.9234424
+    },
+    {
+      "type": "node",
+      "id": 8859323056,
+      "lat": 37.493474,
+      "lon": 126.9211254
+    },
+    {
+      "type": "node",
+      "id": 8859323057,
+      "lat": 37.4936762,
+      "lon": 126.9194867
+    },
+    {
+      "type": "node",
+      "id": 8859323058,
+      "lat": 37.4938846,
+      "lon": 126.9189792
+    },
+    {
+      "type": "node",
+      "id": 8859323059,
+      "lat": 37.4940957,
+      "lon": 126.9187861
+    },
+    {
+      "type": "node",
+      "id": 8859323060,
+      "lat": 37.4948671,
+      "lon": 126.9184494
+    },
+    {
+      "type": "node",
+      "id": 8859323115,
+      "lat": 37.4958777,
+      "lon": 126.9178745
+    },
+    {
+      "type": "node",
+      "id": 8859323116,
+      "lat": 37.4952476,
+      "lon": 126.918121
+    },
+    {
+      "type": "node",
+      "id": 8859333017,
+      "lat": 37.4942316,
+      "lon": 126.9185944
+    },
+    {
+      "type": "node",
+      "id": 8859333018,
+      "lat": 37.493879,
+      "lon": 126.9187844
+    },
+    {
+      "type": "node",
+      "id": 8859333019,
+      "lat": 37.4936104,
+      "lon": 126.9193277
+    },
+    {
+      "type": "node",
+      "id": 8859333020,
+      "lat": 37.4934984,
+      "lon": 126.920193
+    },
+    {
+      "type": "node",
+      "id": 9776589221,
+      "lat": 37.4959265,
+      "lon": 126.918039
+    },
+    {
+      "type": "node",
+      "id": 9776589242,
+      "lat": 37.4953052,
+      "lon": 126.9182796
+    },
+    {
+      "type": "node",
+      "id": 9776655341,
+      "lat": 37.493436,
+      "lon": 126.9206344
+    },
+    {
+      "type": "node",
+      "id": 10598720888,
+      "lat": 37.4930947,
+      "lon": 126.9230463
+    },
+    {
+      "type": "node",
+      "id": 10598720895,
+      "lat": 37.4933821,
+      "lon": 126.921016
+    },
+    {
+      "type": "node",
+      "id": 10598720896,
+      "lat": 37.4934158,
+      "lon": 126.9207775
+    },
+    {
+      "type": "node",
+      "id": 10598720897,
+      "lat": 37.4937096,
+      "lon": 126.9190816
+    },
+    {
+      "type": "node",
+      "id": 10598720900,
+      "lat": 37.4964303,
+      "lon": 126.9178577
+    },
+    {
+      "type": "node",
+      "id": 570954351,
+      "lat": 37.4925846,
+      "lon": 126.9266823
+    },
+    {
+      "type": "node",
+      "id": 8859323051,
+      "lat": 37.4903793,
+      "lon": 126.9275038
+    },
+    {
+      "type": "node",
+      "id": 8859323052,
+      "lat": 37.4918207,
+      "lon": 126.9270323
+    },
+    {
+      "type": "node",
+      "id": 8859323054,
+      "lat": 37.492744,
+      "lon": 126.9263673
+    },
+    {
+      "type": "node",
+      "id": 8859323055,
+      "lat": 37.492824,
+      "lon": 126.925915
+    },
+    {
+      "type": "node",
+      "id": 8859333021,
+      "lat": 37.4926845,
+      "lon": 126.9258801
+    },
+    {
+      "type": "node",
+      "id": 8859333023,
+      "lat": 37.4924435,
+      "lon": 126.9264842
+    },
+    {
+      "type": "node",
+      "id": 8859333024,
+      "lat": 37.4921696,
+      "lon": 126.9268177
+    },
+    {
+      "type": "node",
+      "id": 8859333026,
+      "lat": 37.4904223,
+      "lon": 126.9274437
+    },
+    {
+      "type": "node",
+      "id": 9776589218,
+      "lat": 37.4925908,
+      "lon": 126.9262339
+    },
+    {
+      "type": "node",
+      "id": 9776589240,
+      "lat": 37.4929164,
+      "lon": 126.9242838
+    },
+    {
+      "type": "node",
+      "id": 9776589241,
+      "lat": 37.4930402,
+      "lon": 126.9243222
+    },
+    {
+      "type": "node",
+      "id": 10598720883,
+      "lat": 37.4922437,
+      "lon": 126.9269245
+    },
+    {
+      "type": "node",
+      "id": 8859323061,
+      "lat": 37.4966536,
+      "lon": 126.9178147
+    },
+    {
+      "type": "node",
+      "id": 8859323064,
+      "lat": 37.497034,
+      "lon": 126.9179117
+    },
+    {
+      "type": "node",
+      "id": 8859323065,
+      "lat": 37.4971784,
+      "lon": 126.9180211
+    },
+    {
+      "type": "node",
+      "id": 8859323066,
+      "lat": 37.4973374,
+      "lon": 126.9184216
+    },
+    {
+      "type": "node",
+      "id": 8859323067,
+      "lat": 37.4975107,
+      "lon": 126.9191682
+    },
+    {
+      "type": "node",
+      "id": 8859323068,
+      "lat": 37.4976455,
+      "lon": 126.9196354
+    },
+    {
+      "type": "node",
+      "id": 8859323069,
+      "lat": 37.497837,
+      "lon": 126.9199318
+    },
+    {
+      "type": "node",
+      "id": 8859323070,
+      "lat": 37.4983043,
+      "lon": 126.9202876
+    },
+    {
+      "type": "node",
+      "id": 8859323071,
+      "lat": 37.4993838,
+      "lon": 126.9203698
+    },
+    {
+      "type": "node",
+      "id": 8859323072,
+      "lat": 37.4998949,
+      "lon": 126.9203957
+    },
+    {
+      "type": "node",
+      "id": 8859323073,
+      "lat": 37.5001424,
+      "lon": 126.9204683
+    },
+    {
+      "type": "node",
+      "id": 8859323074,
+      "lat": 37.5009033,
+      "lon": 126.9207659
+    },
+    {
+      "type": "node",
+      "id": 8859323075,
+      "lat": 37.5029563,
+      "lon": 126.9216157
+    },
+    {
+      "type": "node",
+      "id": 8859323104,
+      "lat": 37.5003006,
+      "lon": 126.9203966
+    },
+    {
+      "type": "node",
+      "id": 8859323105,
+      "lat": 37.4994141,
+      "lon": 126.9202645
+    },
+    {
+      "type": "node",
+      "id": 8859323106,
+      "lat": 37.4984666,
+      "lon": 126.9202032
+    },
+    {
+      "type": "node",
+      "id": 8859323107,
+      "lat": 37.4980496,
+      "lon": 126.9199736
+    },
+    {
+      "type": "node",
+      "id": 8859323108,
+      "lat": 37.4976973,
+      "lon": 126.9194836
+    },
+    {
+      "type": "node",
+      "id": 8859323109,
+      "lat": 37.4975475,
+      "lon": 126.9190651
+    },
+    {
+      "type": "node",
+      "id": 8859323110,
+      "lat": 37.497408,
+      "lon": 126.9183613
+    },
+    {
+      "type": "node",
+      "id": 8859323111,
+      "lat": 37.4972469,
+      "lon": 126.917869
+    },
+    {
+      "type": "node",
+      "id": 8859323112,
+      "lat": 37.4970053,
+      "lon": 126.9176617
+    },
+    {
+      "type": "node",
+      "id": 9776589222,
+      "lat": 37.4973441,
+      "lon": 126.918099
+    },
+    {
+      "type": "node",
+      "id": 9776589243,
+      "lat": 37.4999099,
+      "lon": 126.9202954
+    },
+    {
+      "type": "node",
+      "id": 9776589244,
+      "lat": 37.5002844,
+      "lon": 126.9205262
+    },
+    {
+      "type": "node",
+      "id": 9776589245,
+      "lat": 37.5003803,
+      "lon": 126.9204283
+    },
+    {
+      "type": "node",
+      "id": 9776589246,
+      "lat": 37.5003601,
+      "lon": 126.9205555
+    },
+    {
+      "type": "node",
+      "id": 10091509832,
+      "lat": 37.4979099,
+      "lon": 126.9198177
+    },
+    {
+      "type": "node",
+      "id": 10598720898,
+      "lat": 37.4967195,
+      "lon": 126.9176514
+    },
+    {
+      "type": "node",
+      "id": 10598720899,
+      "lat": 37.4964795,
+      "lon": 126.917677
+    },
+    {
+      "type": "node",
+      "id": 10598720901,
+      "lat": 37.4968891,
+      "lon": 126.9178471
+    },
+    {
+      "type": "node",
+      "id": 10598720902,
+      "lat": 37.4971086,
+      "lon": 126.9177332
+    },
+    {
+      "type": "node",
+      "id": 10598720904,
+      "lat": 37.4981779,
+      "lon": 126.920217
+    },
+    {
+      "type": "node",
+      "id": 10598725605,
+      "lat": 37.4982297,
+      "lon": 126.9201107
+    },
+    {
+      "type": "node",
+      "id": 8859323028,
+      "lat": 37.4712956,
+      "lon": 126.9351518
+    },
+    {
+      "type": "node",
+      "id": 8859323029,
+      "lat": 37.4718675,
+      "lon": 126.933929
+    },
+    {
+      "type": "node",
+      "id": 8859323030,
+      "lat": 37.4722331,
+      "lon": 126.9335994
+    },
+    {
+      "type": "node",
+      "id": 8859323031,
+      "lat": 37.4724751,
+      "lon": 126.9334854
+    },
+    {
+      "type": "node",
+      "id": 8859323032,
+      "lat": 37.4730945,
+      "lon": 126.9334266
+    },
+    {
+      "type": "node",
+      "id": 8859323034,
+      "lat": 37.4738036,
+      "lon": 126.9341938
+    },
+    {
+      "type": "node",
+      "id": 8859323035,
+      "lat": 37.4743819,
+      "lon": 126.9352679
+    },
+    {
+      "type": "node",
+      "id": 8859333040,
+      "lat": 37.4753102,
+      "lon": 126.9365295
+    },
+    {
+      "type": "node",
+      "id": 8859333041,
+      "lat": 37.4744787,
+      "lon": 126.9352391
+    },
+    {
+      "type": "node",
+      "id": 8859333042,
+      "lat": 37.4741599,
+      "lon": 126.9346302
+    },
+    {
+      "type": "node",
+      "id": 8859333043,
+      "lat": 37.4736532,
+      "lon": 126.9337895
+    },
+    {
+      "type": "node",
+      "id": 8859333044,
+      "lat": 37.4734003,
+      "lon": 126.9335015
+    },
+    {
+      "type": "node",
+      "id": 8859333045,
+      "lat": 37.4726918,
+      "lon": 126.9333272
+    },
+    {
+      "type": "node",
+      "id": 8859333046,
+      "lat": 37.4721689,
+      "lon": 126.9335362
+    },
+    {
+      "type": "node",
+      "id": 8859333047,
+      "lat": 37.4717485,
+      "lon": 126.9339791
+    },
+    {
+      "type": "node",
+      "id": 8859333048,
+      "lat": 37.4712424,
+      "lon": 126.9351443
+    },
+    {
+      "type": "node",
+      "id": 9776585979,
+      "lat": 37.4725597,
+      "lon": 126.9333551
+    },
+    {
+      "type": "node",
+      "id": 9776585980,
+      "lat": 37.472746,
+      "lon": 126.933421
+    },
+    {
+      "type": "node",
+      "id": 9776585981,
+      "lat": 37.4715066,
+      "lon": 126.9345783
+    },
+    {
+      "type": "node",
+      "id": 9776585982,
+      "lat": 37.4714828,
+      "lon": 126.9345074
+    },
+    {
+      "type": "node",
+      "id": 9776585983,
+      "lat": 37.4719356,
+      "lon": 126.9337084
+    },
+    {
+      "type": "node",
+      "id": 9776585984,
+      "lat": 37.4723187,
+      "lon": 126.9334475
+    },
+    {
+      "type": "node",
+      "id": 9776585985,
+      "lat": 37.4720479,
+      "lon": 126.9337423
+    },
+    {
+      "type": "node",
+      "id": 9776585986,
+      "lat": 37.4720468,
+      "lon": 126.9336031
+    },
+    {
+      "type": "node",
+      "id": 9776585987,
+      "lat": 37.4738628,
+      "lon": 126.9341344
+    },
+    {
+      "type": "node",
+      "id": 9776585989,
+      "lat": 37.4736376,
+      "lon": 126.9339056
+    },
+    {
+      "type": "node",
+      "id": 9776585991,
+      "lat": 37.473022,
+      "lon": 126.9333173
+    },
+    {
+      "type": "node",
+      "id": 10598720868,
+      "lat": 37.4716341,
+      "lon": 126.9342277
+    },
+    {
+      "type": "node",
+      "id": 10598720869,
+      "lat": 37.4718402,
+      "lon": 126.9338473
+    },
+    {
+      "type": "node",
+      "id": 10598720870,
+      "lat": 37.4734206,
+      "lon": 126.9336243
+    },
+    {
+      "type": "node",
+      "id": 10598720871,
+      "lat": 37.4731842,
+      "lon": 126.93337
+    },
+    {
+      "type": "node",
+      "id": 10598720872,
+      "lat": 37.4728908,
+      "lon": 126.9334127
+    },
+    {
+      "type": "node",
+      "id": 10598720873,
+      "lat": 37.4727888,
+      "lon": 126.9333137
+    },
+    {
+      "type": "node",
+      "id": 10598720874,
+      "lat": 37.4735464,
+      "lon": 126.9336451
+    },
+    {
+      "type": "node",
+      "id": 10598720876,
+      "lat": 37.4749127,
+      "lon": 126.9361062
+    },
+    {
+      "type": "node",
+      "id": 10598720878,
+      "lat": 37.4751613,
+      "lon": 126.9364898
+    },
+    {
+      "type": "node",
+      "id": 8859323023,
+      "lat": 37.4707835,
+      "lon": 126.9431411
+    },
+    {
+      "type": "node",
+      "id": 8859323024,
+      "lat": 37.4710074,
+      "lon": 126.9420079
+    },
+    {
+      "type": "node",
+      "id": 8859323025,
+      "lat": 37.4708783,
+      "lon": 126.9404956
+    },
+    {
+      "type": "node",
+      "id": 8859323026,
+      "lat": 37.4707546,
+      "lon": 126.9395604
+    },
+    {
+      "type": "node",
+      "id": 8859323027,
+      "lat": 37.4710128,
+      "lon": 126.937149
+    },
+    {
+      "type": "node",
+      "id": 8859323037,
+      "lat": 37.4756957,
+      "lon": 126.9370604
+    },
+    {
+      "type": "node",
+      "id": 8859323038,
+      "lat": 37.4760696,
+      "lon": 126.9371021
+    },
+    {
+      "type": "node",
+      "id": 8859323039,
+      "lat": 37.4767733,
+      "lon": 126.9368523
+    },
+    {
+      "type": "node",
+      "id": 8859333038,
+      "lat": 37.4767024,
+      "lon": 126.9367413
+    },
+    {
+      "type": "node",
+      "id": 8859333039,
+      "lat": 37.4760535,
+      "lon": 126.9369643
+    },
+    {
+      "type": "node",
+      "id": 8859333049,
+      "lat": 37.4709342,
+      "lon": 126.9371237
+    },
+    {
+      "type": "node",
+      "id": 8859333050,
+      "lat": 37.4706698,
+      "lon": 126.9395552
+    },
+    {
+      "type": "node",
+      "id": 8859333051,
+      "lat": 37.4707882,
+      "lon": 126.9410124
+    },
+    {
+      "type": "node",
+      "id": 8859333052,
+      "lat": 37.4708937,
+      "lon": 126.9420055
+    },
+    {
+      "type": "node",
+      "id": 8859333053,
+      "lat": 37.4706494,
+      "lon": 126.9431123
+    },
+    {
+      "type": "node",
+      "id": 9776585976,
+      "lat": 37.4709244,
+      "lon": 126.9428099
+    },
+    {
+      "type": "node",
+      "id": 9776585977,
+      "lat": 37.4708071,
+      "lon": 126.942802
+    },
+    {
+      "type": "node",
+      "id": 9776585994,
+      "lat": 37.4764473,
+      "lon": 126.9370088
+    },
+    {
+      "type": "node",
+      "id": 9776585995,
+      "lat": 37.4764578,
+      "lon": 126.9368556
+    },
+    {
+      "type": "node",
+      "id": 10598720866,
+      "lat": 37.4710031,
+      "lon": 126.9425008
+    },
+    {
+      "type": "node",
+      "id": 10598720867,
+      "lat": 37.470687,
+      "lon": 126.9390885
+    },
+    {
+      "type": "node",
+      "id": 10598720875,
+      "lat": 37.4753184,
+      "lon": 126.9366854
+    },
+    {
+      "type": "node",
+      "id": 10598720877,
+      "lat": 37.4755404,
+      "lon": 126.9367629
+    },
+    {
+      "type": "node",
+      "id": 10598720879,
+      "lat": 37.4754535,
+      "lon": 126.9368723
+    },
+    {
+      "type": "node",
+      "id": 10598720880,
+      "lat": 37.475815,
+      "lon": 126.9369312
+    },
+    {
+      "type": "node",
+      "id": 8859323021,
+      "lat": 37.469815,
+      "lon": 126.9442678
+    },
+    {
+      "type": "node",
+      "id": 8859333054,
+      "lat": 37.4695871,
+      "lon": 126.9443853
+    },
+    {
+      "type": "node",
+      "id": 9776585972,
+      "lat": 37.4693599,
+      "lon": 126.9447434
+    },
+    {
+      "type": "node",
+      "id": 9776585974,
+      "lat": 37.4688191,
+      "lon": 126.9453084
+    },
+    {
+      "type": "node",
+      "id": 9776585975,
+      "lat": 37.46877,
+      "lon": 126.9452234
+    },
+    {
+      "type": "node",
+      "id": 9776655694,
+      "lat": 37.4694082,
+      "lon": 126.9446929
+    },
+    {
+      "type": "node",
+      "id": 9776655695,
+      "lat": 37.469193,
+      "lon": 126.9447895
+    },
+    {
+      "type": "node",
+      "id": 8859323022,
+      "lat": 37.4704753,
+      "lon": 126.94357
+    },
+    {
+      "type": "node",
+      "id": 10598720865,
+      "lat": 37.470341,
+      "lon": 126.9435551
+    },
+    {
+      "type": "node",
+      "id": 8859323040,
+      "lat": 37.4771399,
+      "lon": 126.9363753
+    },
+    {
+      "type": "node",
+      "id": 8859323041,
+      "lat": 37.4776615,
+      "lon": 126.9347741
+    },
+    {
+      "type": "node",
+      "id": 8859323042,
+      "lat": 37.4779459,
+      "lon": 126.9338237
+    },
+    {
+      "type": "node",
+      "id": 8859323043,
+      "lat": 37.4783541,
+      "lon": 126.9328654
+    },
+    {
+      "type": "node",
+      "id": 8859323044,
+      "lat": 37.4795698,
+      "lon": 126.9313309
+    },
+    {
+      "type": "node",
+      "id": 8859323045,
+      "lat": 37.4806795,
+      "lon": 126.9302999
+    },
+    {
+      "type": "node",
+      "id": 8859333033,
+      "lat": 37.4804934,
+      "lon": 126.9302429
+    },
+    {
+      "type": "node",
+      "id": 8859333034,
+      "lat": 37.4790327,
+      "lon": 126.9317985
+    },
+    {
+      "type": "node",
+      "id": 8859333035,
+      "lat": 37.4783416,
+      "lon": 126.9327326
+    },
+    {
+      "type": "node",
+      "id": 8859333036,
+      "lat": 37.4778876,
+      "lon": 126.9337669
+    },
+    {
+      "type": "node",
+      "id": 8859333037,
+      "lat": 37.4772108,
+      "lon": 126.9358767
+    },
+    {
+      "type": "node",
+      "id": 9776585996,
+      "lat": 37.4769607,
+      "lon": 126.9363977
+    },
+    {
+      "type": "node",
+      "id": 9776585997,
+      "lat": 37.4769973,
+      "lon": 126.9366395
+    },
+    {
+      "type": "node",
+      "id": 9776586000,
+      "lat": 37.4773033,
+      "lon": 126.9358967
+    },
+    {
+      "type": "node",
+      "id": 9776586001,
+      "lat": 37.4780424,
+      "lon": 126.9332543
+    },
+    {
+      "type": "node",
+      "id": 9776586003,
+      "lat": 37.478108,
+      "lon": 126.933298
+    },
+    {
+      "type": "node",
+      "id": 9776586004,
+      "lat": 37.4781973,
+      "lon": 126.9331002
+    },
+    {
+      "type": "node",
+      "id": 9776586005,
+      "lat": 37.4781827,
+      "lon": 126.9329546
+    },
+    {
+      "type": "node",
+      "id": 9776586006,
+      "lat": 37.4780415,
+      "lon": 126.9334815
+    },
+    {
+      "type": "node",
+      "id": 9776586009,
+      "lat": 37.4802611,
+      "lon": 126.9306083
+    },
+    {
+      "type": "node",
+      "id": 9776586010,
+      "lat": 37.4801038,
+      "lon": 126.9306042
+    },
+    {
+      "type": "node",
+      "id": 10598720881,
+      "lat": 37.47746,
+      "lon": 126.9350934
+    },
+    {
+      "type": "node",
+      "id": 10598720882,
+      "lat": 37.4786069,
+      "lon": 126.9323467
+    },
+    {
+      "type": "node",
+      "id": 2541477146,
+      "lat": 37.5060352,
+      "lon": 126.9228198
+    },
+    {
+      "type": "node",
+      "id": 8859323076,
+      "lat": 37.5045769,
+      "lon": 126.9222165
+    },
+    {
+      "type": "node",
+      "id": 8859323077,
+      "lat": 37.5058604,
+      "lon": 126.9227486
+    },
+    {
+      "type": "node",
+      "id": 8859323078,
+      "lat": 37.5072936,
+      "lon": 126.9233323
+    },
+    {
+      "type": "node",
+      "id": 8859323102,
+      "lat": 37.5082864,
+      "lon": 126.9235498
+    },
+    {
+      "type": "node",
+      "id": 8859323103,
+      "lat": 37.505884,
+      "lon": 126.9226151
+    },
+    {
+      "type": "node",
+      "id": 9776620259,
+      "lat": 37.5059414,
+      "lon": 126.9227816
+    },
+    {
+      "type": "node",
+      "id": 9776620260,
+      "lat": 37.5059702,
+      "lon": 126.9226486
+    },
+    {
+      "type": "node",
+      "id": 11178013530,
+      "lat": 37.5063497,
+      "lon": 126.9227962
+    },
+    {
+      "type": "node",
+      "id": 11178013533,
+      "lat": 37.5054316,
+      "lon": 126.9225767
+    },
+    {
+      "type": "node",
+      "id": 8859323079,
+      "lat": 37.5110601,
+      "lon": 126.9248951
+    },
+    {
+      "type": "node",
+      "id": 8859323080,
+      "lat": 37.5126673,
+      "lon": 126.9252472
+    },
+    {
+      "type": "node",
+      "id": 8859323081,
+      "lat": 37.5128859,
+      "lon": 126.9253391
+    },
+    {
+      "type": "node",
+      "id": 8859323082,
+      "lat": 37.5135407,
+      "lon": 126.9258297
+    },
+    {
+      "type": "node",
+      "id": 8859323083,
+      "lat": 37.5136937,
+      "lon": 126.9260469
+    },
+    {
+      "type": "node",
+      "id": 8859323084,
+      "lat": 37.5141222,
+      "lon": 126.926737
+    },
+    {
+      "type": "node",
+      "id": 8859323085,
+      "lat": 37.5143731,
+      "lon": 126.9271732
+    },
+    {
+      "type": "node",
+      "id": 8859323086,
+      "lat": 37.5131742,
+      "lon": 126.9254763
+    },
+    {
+      "type": "node",
+      "id": 8859323087,
+      "lat": 37.5150995,
+      "lon": 126.9281829
+    },
+    {
+      "type": "node",
+      "id": 8859323089,
+      "lat": 37.5159201,
+      "lon": 126.9284048
+    },
+    {
+      "type": "node",
+      "id": 8859323093,
+      "lat": 37.515865,
+      "lon": 126.9282928
+    },
+    {
+      "type": "node",
+      "id": 8859323094,
+      "lat": 37.5153908,
+      "lon": 126.9281721
+    },
+    {
+      "type": "node",
+      "id": 8859323095,
+      "lat": 37.5148201,
+      "lon": 126.9278302
+    },
+    {
+      "type": "node",
+      "id": 8859323096,
+      "lat": 37.5143851,
+      "lon": 126.9270498
+    },
+    {
+      "type": "node",
+      "id": 8859323097,
+      "lat": 37.5138961,
+      "lon": 126.926223
+    },
+    {
+      "type": "node",
+      "id": 8859323098,
+      "lat": 37.5135473,
+      "lon": 126.9256982
+    },
+    {
+      "type": "node",
+      "id": 8859323099,
+      "lat": 37.5132108,
+      "lon": 126.9253446
+    },
+    {
+      "type": "node",
+      "id": 8859323100,
+      "lat": 37.5123454,
+      "lon": 126.9250153
+    },
+    {
+      "type": "node",
+      "id": 8859323101,
+      "lat": 37.5110017,
+      "lon": 126.9247393
+    },
+    {
+      "type": "node",
+      "id": 9289708438,
+      "lat": 37.5127551,
+      "lon": 126.9251528
+    },
+    {
+      "type": "node",
+      "id": 9776620261,
+      "lat": 37.5126107,
+      "lon": 126.9250966
+    },
+    {
+      "type": "node",
+      "id": 9776620262,
+      "lat": 37.5124971,
+      "lon": 126.9252099
+    },
+    {
+      "type": "node",
+      "id": 9776620263,
+      "lat": 37.5125156,
+      "lon": 126.9250675
+    },
+    {
+      "type": "node",
+      "id": 9776620264,
+      "lat": 37.5137374,
+      "lon": 126.9259529
+    },
+    {
+      "type": "node",
+      "id": 9776620266,
+      "lat": 37.5156175,
+      "lon": 126.9282319
+    },
+    {
+      "type": "node",
+      "id": 9776620267,
+      "lat": 37.5151687,
+      "lon": 126.9281026
+    },
+    {
+      "type": "node",
+      "id": 10598725609,
+      "lat": 37.5156562,
+      "lon": 126.9283488
+    },
+    {
+      "type": "node",
+      "id": 10598725611,
+      "lat": 37.5147342,
+      "lon": 126.9278622
+    },
+    {
+      "type": "node",
+      "id": 10727071184,
+      "lat": 37.5136334,
+      "lon": 126.9258136
+    },
+    {
+      "type": "node",
+      "id": 11230659581,
+      "lat": 37.5153321,
+      "lon": 126.9282803
+    },
+    {
+      "type": "node",
+      "id": 11230659582,
+      "lat": 37.5148997,
+      "lon": 126.9280659
+    },
+    {
+      "type": "node",
+      "id": 11230659583,
+      "lat": 37.5150247,
+      "lon": 126.9279894
+    },
+    {
+      "type": "node",
+      "id": 8859323090,
+      "lat": 37.5165022,
+      "lon": 126.9287654
+    },
+    {
+      "type": "node",
+      "id": 9776620265,
+      "lat": 37.5161763,
+      "lon": 126.9283939
+    },
+    {
+      "type": "node",
+      "id": 9776620271,
+      "lat": 37.5172687,
+      "lon": 126.9294459
+    },
+    {
+      "type": "node",
+      "id": 9776620272,
+      "lat": 37.5173398,
+      "lon": 126.9293465
+    },
+    {
+      "type": "node",
+      "id": 10598725606,
+      "lat": 37.5165882,
+      "lon": 126.9286979
+    },
+    {
+      "type": "node",
+      "id": 10598725607,
+      "lat": 37.5161556,
+      "lon": 126.9285262
+    },
+    {
+      "type": "node",
+      "id": 10598725608,
+      "lat": 37.5164032,
+      "lon": 126.9285356
+    },
+    {
+      "type": "way",
+      "id": 957436186,
+      "nodes": [
+        9776585974,
+        9776585972,
+        9776655694,
+        8859323021,
+        8859323022,
+        8859323023,
+        9776585976,
+        10598720866,
+        8859323024,
+        8859323025,
+        8859323026,
+        8859323027,
+        8859323028,
+        9776585981,
+        8859323029,
+        9776585985,
+        8859323030,
+        8859323031,
+        9776585980,
+        10598720872,
+        8859323032,
+        10598720870,
+        9776585989,
+        8859323034,
+        8859323035,
+        10598720876,
+        10598720878,
+        10598720875,
+        10598720879,
+        8859323037,
+        8859323038,
+        9776585994,
+        8859323039,
+        9776585997,
+        8859323040,
+        9776586000,
+        8859323041,
+        8859323042,
+        9776586006,
+        9776586003,
+        9776586004,
+        8859323043,
+        8859323044,
+        9776586009,
+        8859323045,
+        9776586008,
+        8859323046,
+        8859323047,
+        9776586013,
+        8859323048,
+        9776586012,
+        14005698779,
+        8859323049,
+        8859323050,
+        9776586016,
+        8859323051,
+        8859323052,
+        10598720883,
+        570954351,
+        8859323054,
+        8859323055,
+        9776589241,
+        8859323056,
+        8859323057,
+        8859323058,
+        8859323059,
+        8859323060,
+        9776589242,
+        9776589221,
+        10598720900,
+        8859323061,
+        10598720901,
+        8859323064,
+        8859323065,
+        8859323066,
+        8859323067,
+        8859323068,
+        8859323069,
+        10598720904,
+        8859323070,
+        8859323071,
+        8859323072,
+        8859323073,
+        9776589244,
+        9776589246,
+        8859323074,
+        8859323075,
+        8859323076,
+        11178013533,
+        8859323077,
+        9776620259,
+        2541477146,
+        8859323078,
+        8859323079,
+        9776620262,
+        8859323080,
+        8859323081,
+        8859323086,
+        8859323082,
+        8859323083,
+        8859323084,
+        8859323085,
+        10598725611,
+        11230659582,
+        8859323087,
+        11230659581,
+        10598725609,
+        8859323089,
+        10598725607,
+        8859323090,
+        9776620271
+      ]
+    },
+    {
+      "type": "way",
+      "id": 957436187,
+      "nodes": [
+        9776620272,
+        10598725606,
+        10598725608,
+        9776620265,
+        8859323093,
+        9776620266,
+        8859323094,
+        9776620267,
+        11230659583,
+        8859323095,
+        8859323096,
+        8859323097,
+        9776620264,
+        10727071184,
+        8859323098,
+        8859323099,
+        9289708438,
+        9776620261,
+        9776620263,
+        8859323100,
+        8859323101,
+        8859323102,
+        11178013530,
+        9776620260,
+        8859323103,
+        9776589245,
+        8859323104,
+        9776589243,
+        8859323105,
+        8859323106,
+        10598725605,
+        8859323107,
+        10091509832,
+        8859323108,
+        8859323109,
+        8859323110,
+        9776589222,
+        8859323111,
+        10598720902,
+        8859323112,
+        10598720898,
+        10598720899,
+        8859323115,
+        8859323116,
+        8859333017,
+        8859333018,
+        10598720897,
+        8859333019,
+        8859333020,
+        9776655341,
+        10598720896,
+        10598720895,
+        5733236365,
+        10598720888,
+        8555618635,
+        9776589240,
+        8859333021,
+        9776589218,
+        8859333023,
+        8859333024,
+        8859333026,
+        9776586015,
+        8859333027,
+        8859333029,
+        8859333030,
+        9776586014,
+        8859333031,
+        8859333032,
+        9776586007,
+        8859333033,
+        9776586010,
+        8859333034,
+        10598720882,
+        8859333035,
+        9776586005,
+        9776586001,
+        8859333036,
+        10598720881,
+        8859333037,
+        9776585996,
+        8859333038,
+        9776585995,
+        8859333039,
+        10598720880,
+        10598720877,
+        8859333040,
+        8859333041,
+        8859333042,
+        9776585987,
+        8859333043,
+        10598720874,
+        8859333044,
+        10598720871,
+        9776585991,
+        10598720873,
+        8859333045,
+        9776585979,
+        9776585984,
+        8859333046,
+        9776585986,
+        9776585983,
+        10598720869,
+        8859333047,
+        10598720868,
+        9776585982,
+        8859333048,
+        8859333049,
+        10598720867,
+        8859333050,
+        8859333051,
+        8859333052,
+        9776585977,
+        8859333053,
+        10598720865,
+        8859333054,
+        9776655695,
+        9776585975
+      ]
+    }
+  ]
+}

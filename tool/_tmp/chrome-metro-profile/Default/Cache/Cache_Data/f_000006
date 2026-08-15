@@ -1,0 +1,1558 @@
+/**
+ * Immersive Korea peninsula places map (Leaflet + Esri satellite).
+ * Full-viewport "Earth-like" screen: markers from PLACES_COORDS, copy from i18n.
+ * "자세히 보기" expands the panel in place (no navigation to place HTML).
+ */
+(function () {
+  var KOREA_CENTER = [36.4, 127.8];
+  var KOREA_ZOOM = 7;
+  var FOCUS_ZOOM = 14;
+  var KOREA_BOUNDS = L.latLngBounds([33.0, 124.5], [39.0, 132.0]);
+
+  var REGION_VIEWS = {
+    all: { center: KOREA_CENTER, zoom: KOREA_ZOOM },
+    seoul: { center: [37.55, 126.99], zoom: 11 },
+    gyeonggi: { center: [37.55, 127.2], zoom: 9 },
+    incheon: { center: [37.45, 126.7], zoom: 10 },
+    gangwon: { center: [37.85, 128.2], zoom: 8 },
+    busan: { center: [35.15, 129.08], zoom: 11 },
+    gyeongju: { center: [35.84, 129.22], zoom: 11 },
+    jeolla: { center: [35.82, 127.15], zoom: 10 },
+    jeju: { center: [33.38, 126.55], zoom: 9 },
+    gyeongsang: { center: [35.5, 128.7], zoom: 8 },
+  };
+
+  var map = null;
+  var markersBySlug = {};
+  var placeMeta = {};
+  var activeSlug = null;
+  var activeRegion = "all";
+  var drawerOpen = false;
+  var detailOpen = false;
+  var TYPE_FILTER_KEY = "korea-guide-places-type-filters";
+  var DEFAULT_TYPES = {
+    city: true,
+    nature: true,
+    heritage: true,
+    airport: true,
+    info: true,
+    locker: true,
+    port: true,
+  };
+  var activeTypes = Object.assign({}, DEFAULT_TYPES);
+  // Metro overlay: off by default so the peninsula map stays uncluttered.
+  var DEFAULT_METRO = {
+    metro: false,
+    metroLines: true,
+    metroStations: true,
+  };
+  var activeMetro = Object.assign({}, DEFAULT_METRO);
+  var METRO_LINE_IDS = ["1", "2", "3", "4", "5", "6", "7", "9", "arex"];
+  var METRO_COLORS = {
+    "1": "#0052A4",
+    "2": "#00A84D",
+    "3": "#EF7C1C",
+    "4": "#00A5E3",
+    "5": "#996CAC",
+    "6": "#CD7C2F",
+    "7": "#747F00",
+    "9": "#B7A45C",
+    arex: "#0090D2",
+  };
+  var metroLineLayer = null;
+  var metroStationLayer = null;
+  var metroStationGeo = null;
+  var metroLoadState = "idle"; // idle | loading | ready | error
+  var metroCanvasRenderer = null;
+  var metroStationRenderer = null;
+  var metroZoomBound = false;
+  var metroAutoFocused = false;
+  var FILTER_OPEN_KEY = "korea-guide-places-filter-open";
+  var reduceMotion =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function t(key, fallback) {
+    try {
+      if (window.GuideI18n && typeof window.GuideI18n.t === "function") {
+        return window.GuideI18n.t(key, fallback || key);
+      }
+      if (window.GuideI18n && typeof window.GuideI18n.lookupWithFallback === "function") {
+        var via = window.GuideI18n.lookupWithFallback(
+          key,
+          window.GuideI18n.getLang && window.GuideI18n.getLang()
+        );
+        if (via != null && via !== "") return String(via);
+      }
+    } catch (e) {}
+    return fallback || key;
+  }
+
+  function placeField(slug, field) {
+    return t("places." + slug + "." + field, "");
+  }
+
+  function placeHasBody(slug) {
+    try {
+      var lang =
+        (window.GuideI18n && window.GuideI18n.getLang && window.GuideI18n.getLang()) ||
+        "ko";
+      if (window.GuideContentBody && typeof window.GuideContentBody.getBody === "function") {
+        var blocks = window.GuideContentBody.getBody("places." + slug + ".body", lang);
+        return !!(blocks && blocks.length);
+      }
+      var pack =
+        (window.__I18N_MESSAGES__ && window.__I18N_MESSAGES__[lang]) ||
+        (window.__I18N_MESSAGES__ && window.__I18N_MESSAGES__.ko) ||
+        null;
+      var body = pack && pack.places && pack.places[slug] && pack.places[slug].body;
+      return Array.isArray(body) && body.length > 0;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function el(sel) {
+    return document.querySelector(sel);
+  }
+
+  function fly(latlng, zoom, duration) {
+    if (!map) return;
+    if (reduceMotion) {
+      map.setView(latlng, zoom);
+      return;
+    }
+    map.flyTo(latlng, zoom, {
+      duration: duration != null ? duration : 1.35,
+      easeLinearity: 0.2,
+    });
+  }
+
+  function setMarkerActive(slug) {
+    Object.keys(markersBySlug).forEach(function (s) {
+      var m = markersBySlug[s];
+      var iconEl = m.getElement && m.getElement();
+      if (iconEl) {
+        iconEl.classList.toggle("is-active", s === slug);
+      }
+    });
+  }
+
+  function applyRegionFilter(region) {
+    activeRegion = region || "all";
+    applyVisibilityFilters();
+
+    document.querySelectorAll("[data-places-region]").forEach(function (btn) {
+      var on = btn.getAttribute("data-places-region") === activeRegion;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  function loadTypeFilters() {
+    try {
+      var raw = window.localStorage && localStorage.getItem(TYPE_FILTER_KEY);
+      if (!raw) return;
+      var parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return;
+      Object.keys(DEFAULT_TYPES).forEach(function (k) {
+        if (typeof parsed[k] === "boolean") activeTypes[k] = parsed[k];
+      });
+      Object.keys(DEFAULT_METRO).forEach(function (k) {
+        if (typeof parsed[k] === "boolean") activeMetro[k] = parsed[k];
+      });
+    } catch (e) {}
+  }
+
+  function saveTypeFilters() {
+    try {
+      if (window.localStorage) {
+        var payload = Object.assign({}, activeTypes, activeMetro);
+        localStorage.setItem(TYPE_FILTER_KEY, JSON.stringify(payload));
+      }
+    } catch (e) {}
+  }
+
+  function syncTypeFilterUi() {
+    document.querySelectorAll("[data-places-type-filter]").forEach(function (input) {
+      var type = input.getAttribute("data-places-type-filter");
+      if (!type) return;
+      input.checked = !!activeTypes[type];
+    });
+    syncMetroFilterUi();
+  }
+
+  function syncMetroFilterUi() {
+    document.querySelectorAll("[data-places-metro-filter]").forEach(function (input) {
+      var key = input.getAttribute("data-places-metro-filter");
+      if (!key || !DEFAULT_METRO.hasOwnProperty(key)) return;
+      input.checked = !!activeMetro[key];
+    });
+    document.querySelectorAll("[data-places-metro-sub]").forEach(function (el) {
+      el.hidden = !activeMetro.metro;
+    });
+  }
+
+  function metroDataBase() {
+    // Prefer script URL so nested pages and odd hosts still resolve to .../data/metro/.
+    try {
+      var scripts = document.getElementsByTagName("script");
+      for (var i = scripts.length - 1; i >= 0; i--) {
+        var src = scripts[i].src || "";
+        if (src.indexOf("places-map.js") !== -1) {
+          return src.replace(/\/js\/[^/?#]*.*$/, "/data/metro/");
+        }
+      }
+    } catch (e1) {}
+    try {
+      var origin =
+        (window.SITE_CONFIG && window.SITE_CONFIG.SITE_ORIGIN) ||
+        window.location.origin;
+      if (origin && /^https?:/i.test(String(origin))) {
+        return String(origin).replace(/\/$/, "") + "/data/metro/";
+      }
+    } catch (eOrigin) {}
+    try {
+      return new URL("../../data/metro/", window.location.href).href;
+    } catch (e2) {
+      return "../../data/metro/";
+    }
+  }
+
+  function setMetroHint(kind) {
+    var hint = el("[data-places-hint]");
+    if (!hint) return;
+    if (kind === "error") {
+      hint.textContent = t(
+        "transport.metroLoadError",
+        "지하철 데이터를 불러오지 못했습니다. 새로고침 후 다시 시도하세요."
+      );
+      hint.hidden = false;
+      return;
+    }
+    if (kind === "loading") {
+      hint.textContent = t("transport.metroLoading", "지하철 노선·역 불러오는 중…");
+      hint.hidden = false;
+      return;
+    }
+    if (kind === "ready") {
+      hint.textContent = t(
+        "transport.metroReady",
+        "서울·수도권 지하철 노선·역이 표시됩니다. 지도를 확대해 보세요."
+      );
+      hint.hidden = false;
+      return;
+    }
+  }
+
+  function focusMetroIfNeeded() {
+    if (!map || !activeMetro.metro || metroAutoFocused) return;
+    // Peninsula zoom makes the Seoul network a speck on Esri satellite —
+    // jump to Seoul once so lines/stations are actually visible.
+    if (map.getZoom() < 10) {
+      metroAutoFocused = true;
+      focusRegion("seoul");
+    } else {
+      metroAutoFocused = true;
+    }
+  }
+
+  function ensureMetroStationPane() {
+    if (!map || map.getPane("metroStations")) return;
+    map.createPane("metroStations");
+    // Above line canvas (overlay 400), below sightseeing DivIcon markers (600).
+    map.getPane("metroStations").style.zIndex = 550;
+    map.getPane("metroStations").style.pointerEvents = "auto";
+  }
+
+  function stationPrimaryColor(props) {
+    var raw = String((props && props.lines) || "").split(",")[0].trim();
+    return METRO_COLORS[raw] || "#1a1a1a";
+  }
+
+  function stationIsMajor(props) {
+    props = props || {};
+    if (props.major === true || props.source === "curated") return true;
+    var lines = String(props.lines || "")
+      .split(",")
+      .map(function (s) {
+        return s.trim();
+      })
+      .filter(Boolean);
+    return lines.length > 1;
+  }
+
+  function stationDivIcon(props, zoom) {
+    var color = stationPrimaryColor(props);
+    var major = stationIsMajor(props);
+    var z = zoom != null ? zoom : (map && map.getZoom()) || 11;
+    var size = z >= 13 ? (major ? 16 : 12) : z >= 11 ? (major ? 14 : 10) : major ? 12 : 8;
+    var border = major ? 3 : 2;
+    return L.divIcon({
+      className: "places-metro-station" + (major ? " is-major" : ""),
+      html:
+        '<span class="places-metro-station__dot" style="width:' +
+        size +
+        "px;height:" +
+        size +
+        "px;border-width:" +
+        border +
+        "px;border-color:" +
+        color +
+        '"></span>',
+      iconSize: [size + 2, size + 2],
+      iconAnchor: [(size + 2) / 2, (size + 2) / 2],
+    });
+  }
+
+  function stationVisibleAtZoom(props, zoom, index) {
+    if (zoom >= 13) return true;
+    if (stationIsMajor(props)) return true;
+    if (zoom >= 11) return index % 2 === 0;
+    if (zoom >= 9) return index % 4 === 0;
+    // Peninsula / far zoom: keep network readable via lines + majors only.
+    return false;
+  }
+
+  function simplifyCoords(coords, minDistDeg) {
+    if (!coords || coords.length < 3) return coords;
+    var out = [coords[0]];
+    var last = coords[0];
+    var minD = minDistDeg != null ? minDistDeg : 0.0012;
+    for (var i = 1; i < coords.length - 1; i++) {
+      var c = coords[i];
+      var dx = c[0] - last[0];
+      var dy = c[1] - last[1];
+      if (dx * dx + dy * dy >= minD * minD) {
+        out.push(c);
+        last = c;
+      }
+    }
+    out.push(coords[coords.length - 1]);
+    return out.length >= 2 ? out : coords;
+  }
+
+  function simplifyGeo(geo, minDistDeg) {
+    if (!geo || !geo.features) return geo;
+    return {
+      type: "FeatureCollection",
+      features: geo.features
+        .map(function (f) {
+          if (!f || !f.geometry) return null;
+          var g = f.geometry;
+          if (g.type === "LineString") {
+            return {
+              type: "Feature",
+              properties: f.properties || {},
+              geometry: {
+                type: "LineString",
+                coordinates: simplifyCoords(g.coordinates, minDistDeg),
+              },
+            };
+          }
+          if (g.type === "MultiLineString") {
+            return {
+              type: "Feature",
+              properties: f.properties || {},
+              geometry: {
+                type: "MultiLineString",
+                coordinates: g.coordinates.map(function (line) {
+                  return simplifyCoords(line, minDistDeg);
+                }),
+              },
+            };
+          }
+          return f;
+        })
+        .filter(Boolean),
+    };
+  }
+
+  function stationLabel(props) {
+    props = props || {};
+    var lang =
+      (window.GuideI18n && window.GuideI18n.getLang && window.GuideI18n.getLang()) ||
+      "ko";
+    if (lang === "ko") return props.name || props.name_en || "";
+    return props.name_en || props.name || "";
+  }
+
+  function metroLineWeightForZoom(zoom) {
+    // Heavy enough to read on Esri World Imagery.
+    if (zoom >= 13) return 6;
+    if (zoom >= 11) return 5;
+    if (zoom >= 9) return 4.25;
+    return 3.5;
+  }
+
+  function metroLineCasingWeight(zoom) {
+    return metroLineWeightForZoom(zoom) + 3;
+  }
+
+  function applyMetroLineZoomStyle() {
+    if (!metroLineLayer || !map) return;
+    var z = map.getZoom();
+    var w = metroLineWeightForZoom(z);
+    var cw = metroLineCasingWeight(z);
+    metroLineLayer.eachLayer(function (layer) {
+      var role = layer && layer.options && layer.options.metroRole;
+      var style =
+        role === "casing"
+          ? { weight: cw, opacity: 0.92, color: "#ffffff" }
+          : { weight: w, opacity: 1 };
+      if (layer.setStyle) {
+        layer.setStyle(style);
+      } else if (layer.eachLayer) {
+        layer.eachLayer(function (sub) {
+          if (!sub.setStyle) return;
+          var subRole = sub.options && sub.options.metroRole;
+          sub.setStyle(
+            subRole === "casing"
+              ? { weight: cw, opacity: 0.92, color: "#ffffff" }
+              : { weight: w, opacity: 1 }
+          );
+        });
+      }
+    });
+  }
+
+  function buildStationMarkers(geo) {
+    ensureMetroStationPane();
+    var zoom = (map && map.getZoom()) || 11;
+    if (!metroStationRenderer) {
+      metroStationRenderer = L.canvas({ padding: 0.5, pane: "metroStations" });
+    }
+    // Named/major: DivIcon (white + colored ring) for clarity on satellite.
+    // Dense derived points: canvas CircleMarkers (same look, cheaper on mobile).
+    return L.geoJSON(geo, {
+      pointToLayer: function (feature, latlng) {
+        var props = feature.properties || {};
+        var major = stationIsMajor(props);
+        var label = stationLabel(props);
+        var color = stationPrimaryColor(props);
+        var marker;
+
+        if (major || label) {
+          marker = L.marker(latlng, {
+            pane: "metroStations",
+            icon: stationDivIcon(props, zoom),
+            keyboard: false,
+            interactive: true,
+            riseOnHover: true,
+            title: label || "",
+          });
+        } else {
+          var r =
+            zoom >= 13 ? 4 : zoom >= 11 ? 3.2 : zoom >= 9 ? 2.6 : 2.2;
+          marker = L.circleMarker(latlng, {
+            pane: "metroStations",
+            renderer: metroStationRenderer,
+            radius: r,
+            color: color,
+            weight: 2,
+            fillColor: "#ffffff",
+            fillOpacity: 1,
+            opacity: 1,
+            interactive: false,
+          });
+        }
+
+        marker.feature = feature;
+        if (label) {
+          marker.bindTooltip(label, {
+            direction: "top",
+            offset: [0, -8],
+            opacity: 0.96,
+            className: "places-metro-tooltip",
+          });
+          marker.on("click", function (ev) {
+            if (ev && ev.originalEvent) {
+              L.DomEvent.stopPropagation(ev.originalEvent);
+            }
+            marker.openTooltip();
+          });
+        }
+        return marker;
+      },
+    });
+  }
+
+  function filterStationsForZoom(geo, zoom) {
+    if (!geo || !geo.features) return geo;
+    return {
+      type: "FeatureCollection",
+      features: geo.features.filter(function (f, i) {
+        return stationVisibleAtZoom(f.properties || {}, zoom, i);
+      }),
+    };
+  }
+
+  function rebuildMetroStationLayer() {
+    if (!metroStationLayer || !metroStationGeo) return false;
+    var zoom = (map && map.getZoom()) || 11;
+    metroStationLayer.clearLayers();
+    var filtered = filterStationsForZoom(metroStationGeo, zoom);
+    if (!filtered.features.length) return false;
+    buildStationMarkers(filtered).addTo(metroStationLayer);
+    return true;
+  }
+
+  function stationLayerHasMarkers() {
+    return !!(
+      metroStationLayer &&
+      metroStationLayer.getLayers().some(function (layer) {
+        return layer.getLayers ? layer.getLayers().length > 0 : true;
+      })
+    );
+  }
+
+  function bindMetroZoomHandlers() {
+    if (!map || metroZoomBound) return;
+    metroZoomBound = true;
+    map.on("zoomend", function () {
+      if (!activeMetro.metro) return;
+      applyMetroLineZoomStyle();
+      if (activeMetro.metroStations && metroStationGeo) {
+        rebuildMetroStationLayer();
+      }
+    });
+  }
+
+  function loadMetroStations(base) {
+    return fetch(base + "stations.geojson", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error(String(res.status));
+        return res.json();
+      })
+      .then(function (geo) {
+        if (!geo || !geo.features || !geo.features.length) return false;
+        metroStationGeo = geo;
+        if (!metroStationLayer) metroStationLayer = L.layerGroup();
+        rebuildMetroStationLayer();
+        return stationLayerHasMarkers();
+      })
+      .catch(function () {
+        return false;
+      });
+  }
+
+  function ensureMetroLayers() {
+    if (!map || typeof L === "undefined") return Promise.resolve(false);
+    if (metroLoadState === "ready") {
+      // Lines may have loaded while stations 404'd earlier — retry once if empty.
+      if (activeMetro.metroStations && !stationLayerHasMarkers()) {
+        return loadMetroStations(metroDataBase()).then(function () {
+          return true;
+        });
+      }
+      return Promise.resolve(true);
+    }
+    if (metroLoadState === "loading") {
+      return new Promise(function (resolve) {
+        var tries = 0;
+        var timer = setInterval(function () {
+          tries += 1;
+          if (metroLoadState === "ready") {
+            clearInterval(timer);
+            resolve(true);
+          } else if (metroLoadState === "error" || tries > 80) {
+            clearInterval(timer);
+            resolve(false);
+          }
+        }, 100);
+      });
+    }
+
+    metroLoadState = "loading";
+    setMetroHint("loading");
+    ensureMetroStationPane();
+    bindMetroZoomHandlers();
+    if (!metroCanvasRenderer) {
+      metroCanvasRenderer = L.canvas({ padding: 0.5 });
+    }
+    if (!metroStationRenderer) {
+      metroStationRenderer = L.canvas({ padding: 0.5, pane: "metroStations" });
+    }
+    if (!metroLineLayer) {
+      metroLineLayer = L.layerGroup();
+    } else {
+      metroLineLayer.clearLayers();
+    }
+    if (!metroStationLayer) {
+      metroStationLayer = L.layerGroup();
+    } else {
+      metroStationLayer.clearLayers();
+    }
+
+    var base = metroDataBase();
+    var z0 = map.getZoom();
+    // Mild simplify — keep shape readable on satellite.
+    var lineSimplify = z0 < 10 ? 0.0016 : 0.0009;
+    var lineJobs = METRO_LINE_IDS.map(function (lineId) {
+      return fetch(base + "line-" + lineId + ".geojson", { cache: "no-store" })
+        .then(function (res) {
+          if (!res.ok) throw new Error(String(res.status));
+          return res.json();
+        })
+        .then(function (geo) {
+          var simplified = simplifyGeo(geo, lineSimplify);
+          var color = METRO_COLORS[lineId] || "#888";
+          // White casing understroke so colored lines pop on Esri imagery.
+          L.geoJSON(simplified, {
+            renderer: metroCanvasRenderer,
+            metroRole: "casing",
+            style: {
+              color: "#ffffff",
+              weight: metroLineCasingWeight(z0),
+              opacity: 0.92,
+              lineCap: "round",
+              lineJoin: "round",
+            },
+            interactive: false,
+          }).addTo(metroLineLayer);
+          L.geoJSON(simplified, {
+            renderer: metroCanvasRenderer,
+            metroRole: "stroke",
+            style: {
+              color: color,
+              weight: metroLineWeightForZoom(z0),
+              opacity: 1,
+              lineCap: "round",
+              lineJoin: "round",
+            },
+            interactive: false,
+          }).addTo(metroLineLayer);
+        })
+        .catch(function () {
+          return null;
+        });
+    });
+
+    var stationJob = loadMetroStations(base);
+
+    return Promise.all(lineJobs.concat([stationJob])).then(function () {
+      var hasLines = metroLineLayer && metroLineLayer.getLayers().length > 0;
+      var hasStations = !!metroStationGeo || stationLayerHasMarkers();
+      if (!hasLines && !hasStations) {
+        metroLoadState = "error";
+        setMetroHint("error");
+        return false;
+      }
+      metroLoadState = "ready";
+      applyMetroLineZoomStyle();
+      setMetroHint("ready");
+      return true;
+    }).catch(function () {
+      metroLoadState = "error";
+      setMetroHint("error");
+      return false;
+    });
+  }
+
+  function isFilterPanelOpen() {
+    var legend = el("[data-places-legend]");
+    return !!(legend && !legend.classList.contains("is-collapsed"));
+  }
+
+  function setFilterPanelOpen(open, persist) {
+    var legend = el("[data-places-legend]");
+    var toggle = el("[data-places-filter-toggle]");
+    if (!legend) return;
+    legend.classList.toggle("is-collapsed", !open);
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    if (persist !== false) {
+      try {
+        if (window.localStorage) {
+          localStorage.setItem(FILTER_OPEN_KEY, open ? "1" : "0");
+        }
+      } catch (e) {}
+    }
+  }
+
+  function initFilterPanel() {
+    var legend = el("[data-places-legend]");
+    var toggle = el("[data-places-filter-toggle]");
+    if (!legend || !toggle) return;
+
+    var open = false;
+    try {
+      var raw = window.localStorage && localStorage.getItem(FILTER_OPEN_KEY);
+      if (raw === "1") open = true;
+      else if (raw === "0") open = false;
+      else open = false; // collapsed by default (esp. mobile map coverage)
+    } catch (e) {
+      open = false;
+    }
+    setFilterPanelOpen(open, false);
+
+    toggle.addEventListener("click", function () {
+      setFilterPanelOpen(!isFilterPanelOpen(), true);
+    });
+  }
+
+  function applyMetroVisibility() {
+    if (!map) return;
+    var show = !!activeMetro.metro;
+
+    if (!show) {
+      if (metroLineLayer && map.hasLayer(metroLineLayer)) map.removeLayer(metroLineLayer);
+      if (metroStationLayer && map.hasLayer(metroStationLayer)) {
+        map.removeLayer(metroStationLayer);
+      }
+      metroAutoFocused = false;
+      return;
+    }
+
+    ensureMetroLayers().then(function (ok) {
+      if (!ok || !activeMetro.metro) {
+        if (!ok) setMetroHint("error");
+        return;
+      }
+      // Re-read flags after async load (user may have toggled during fetch).
+      var linesOn = !!activeMetro.metro && !!activeMetro.metroLines;
+      var stationsOn = !!activeMetro.metro && !!activeMetro.metroStations;
+
+      if (linesOn) {
+        if (!map.hasLayer(metroLineLayer)) metroLineLayer.addTo(map);
+        try {
+          metroLineLayer.bringToFront();
+        } catch (e1) {}
+      } else if (metroLineLayer && map.hasLayer(metroLineLayer)) {
+        map.removeLayer(metroLineLayer);
+      }
+      if (stationsOn) {
+        if (!stationLayerHasMarkers() && metroStationGeo) {
+          rebuildMetroStationLayer();
+        }
+        if (!map.hasLayer(metroStationLayer)) metroStationLayer.addTo(map);
+        try {
+          metroStationLayer.bringToFront();
+        } catch (e2) {}
+      } else if (metroStationLayer && map.hasLayer(metroStationLayer)) {
+        map.removeLayer(metroStationLayer);
+      }
+
+      try {
+        map.invalidateSize(false);
+      } catch (e3) {}
+    });
+  }
+
+  function applyVisibilityFilters() {
+    Object.keys(markersBySlug).forEach(function (slug) {
+      var meta = placeMeta[slug] || {};
+      var typeOk = !!activeTypes[normalizeType(meta.type)];
+      var regionOk = activeRegion === "all" || meta.region === activeRegion;
+      var m = markersBySlug[slug];
+      var iconEl = m.getElement && m.getElement();
+
+      if (!typeOk) {
+        if (iconEl) {
+          iconEl.classList.add("is-type-hidden");
+          iconEl.classList.remove("is-dimmed");
+        }
+        if (m.setOpacity) m.setOpacity(0);
+        if (m._icon) m._icon.style.display = "none";
+        if (m._shadow) m._shadow.style.display = "none";
+        return;
+      }
+
+      if (m._icon) m._icon.style.display = "";
+      if (m._shadow) m._shadow.style.display = "";
+      if (iconEl) {
+        iconEl.classList.remove("is-type-hidden");
+        iconEl.classList.toggle("is-dimmed", !regionOk);
+      }
+      if (m.setOpacity) m.setOpacity(regionOk ? 1 : 0.35);
+    });
+
+    document.querySelectorAll("[data-places-drawer-item]").forEach(function (item) {
+      var r = item.getAttribute("data-region") || "";
+      var type = normalizeType(item.getAttribute("data-type"));
+      var regionOk = activeRegion === "all" || r === activeRegion;
+      var typeOk = !!activeTypes[type];
+      item.hidden = !(regionOk && typeOk);
+    });
+
+    if (activeSlug) {
+      var am = placeMeta[activeSlug] || {};
+      if (!activeTypes[normalizeType(am.type)]) setPanel(null);
+    }
+
+    applyMetroVisibility();
+  }
+
+  function clearDetailEmbed() {
+    var iframe = el("[data-places-panel-embed]");
+    if (iframe) iframe.setAttribute("src", "about:blank");
+    var wrap = el("[data-places-panel-map-wrap]");
+    if (wrap) wrap.hidden = true;
+  }
+
+  function clearDetailBodyMount() {
+    var mount = el("[data-places-panel-body-mount]");
+    if (!mount) return;
+    mount.innerHTML = "";
+    mount.setAttribute("data-body-path", "");
+    mount.hidden = true;
+  }
+
+  function fillDetailContent(slug) {
+    var addressWrap = el("[data-places-panel-address-wrap]");
+    var addressLink = el("[data-places-panel-address]");
+    var howBlock = el("[data-places-panel-how-block]");
+    var howFull = el("[data-places-panel-how-full]");
+    var mapWrap = el("[data-places-panel-map-wrap]");
+    var iframe = el("[data-places-panel-embed]");
+    var mount = el("[data-places-panel-body-mount]");
+
+    var address = placeField(slug, "address");
+    var mapsUrl = placeField(slug, "mapsUrl");
+    var embedUrl = placeField(slug, "mapsEmbedUrl");
+    var howText = placeField(slug, "how");
+    var hasBody = placeHasBody(slug);
+
+    if (addressWrap && addressLink) {
+      if (address) {
+        addressWrap.hidden = false;
+        addressLink.textContent = address;
+        if (mapsUrl) {
+          addressLink.href = mapsUrl;
+          addressLink.removeAttribute("aria-disabled");
+        } else {
+          addressLink.href = "#";
+          addressLink.setAttribute("aria-disabled", "true");
+        }
+      } else {
+        addressWrap.hidden = true;
+        addressLink.textContent = "";
+        addressLink.href = "#";
+      }
+    }
+
+    if (howBlock && howFull) {
+      if (howText) {
+        howBlock.hidden = false;
+        howFull.textContent = howText;
+      } else {
+        howBlock.hidden = true;
+        howFull.textContent = "";
+      }
+    }
+
+    // Rich intro blocks from i18n (may overlap desc/how; still useful when expanded).
+    if (mount) {
+      if (hasBody) {
+        mount.setAttribute("data-body-path", "places." + slug + ".body");
+        mount.hidden = false;
+        if (window.GuideContentBody && typeof window.GuideContentBody.render === "function") {
+          window.GuideContentBody.render(
+            (window.GuideI18n && window.GuideI18n.getLang && window.GuideI18n.getLang()) || "ko"
+          );
+        }
+      } else {
+        clearDetailBodyMount();
+      }
+    }
+
+    if (mapWrap && iframe) {
+      if (embedUrl) {
+        mapWrap.hidden = false;
+        if (iframe.getAttribute("src") !== embedUrl) {
+          iframe.setAttribute("src", embedUrl);
+        }
+      } else {
+        clearDetailEmbed();
+      }
+    }
+  }
+
+  function setDetailMode(open) {
+    detailOpen = !!open && !!activeSlug;
+    var panel = el("[data-places-panel]");
+    var detail = el("[data-places-panel-detail]");
+    var howSummary = el("[data-places-panel-how]");
+    var expandBtn = el("[data-places-panel-expand]");
+    var collapseBtn = el("[data-places-panel-collapse]");
+
+    if (panel) panel.classList.toggle("is-detail", detailOpen);
+    if (detail) detail.hidden = !detailOpen;
+    if (howSummary) {
+      // Summary how line stays in compact mode only
+      var howText = activeSlug ? placeField(activeSlug, "how") : "";
+      howSummary.hidden = detailOpen || !howText;
+    }
+    if (expandBtn) expandBtn.hidden = detailOpen || !activeSlug;
+    if (collapseBtn) collapseBtn.hidden = !detailOpen;
+
+    if (detailOpen && activeSlug) {
+      fillDetailContent(activeSlug);
+    } else {
+      clearDetailEmbed();
+      clearDetailBodyMount();
+    }
+
+    if (map) {
+      setTimeout(function () {
+        try {
+          map.invalidateSize();
+        } catch (e) {}
+      }, 280);
+    }
+  }
+
+  function syncHash(slug) {
+    try {
+      if (!window.history || !window.history.replaceState) return;
+      var url = new URL(window.location.href);
+      if (slug) {
+        url.hash = "place=" + encodeURIComponent(slug);
+      } else {
+        url.hash = "";
+      }
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    } catch (e) {}
+  }
+
+  function setPanel(slug, opts) {
+    opts = opts || {};
+    var panel = el("[data-places-panel]");
+    var empty = el("[data-places-panel-empty]");
+    var body = el("[data-places-panel-body]");
+    var hint = el("[data-places-hint]");
+    if (!panel || !body) return;
+
+    var prevSlug = activeSlug;
+    activeSlug = slug || null;
+    panel.classList.toggle("is-open", !!slug);
+    panel.setAttribute("aria-hidden", slug ? "false" : "true");
+    if (empty) empty.hidden = !!slug;
+    body.hidden = !slug;
+    if (hint) hint.hidden = !!slug;
+
+    setMarkerActive(slug);
+
+    document.querySelectorAll("[data-places-drawer-item]").forEach(function (item) {
+      item.classList.toggle(
+        "is-active",
+        item.getAttribute("data-slug") === slug
+      );
+    });
+
+    if (!slug) {
+      setDetailMode(false);
+      syncHash(null);
+      var infoBadgeClear = el("[data-places-panel-info]");
+      var lockerBadgeClear = el("[data-places-panel-locker]");
+      var portBadgeClear = el("[data-places-panel-port]");
+      var panelBodyClear = el("[data-places-panel-body]");
+      var coverWrapClear = el("[data-places-panel-cover-wrap]");
+      var coverImgClear = el("[data-places-panel-cover]");
+      if (infoBadgeClear) infoBadgeClear.hidden = true;
+      if (lockerBadgeClear) lockerBadgeClear.hidden = true;
+      if (portBadgeClear) portBadgeClear.hidden = true;
+      if (panelBodyClear) {
+        panelBodyClear.classList.remove("is-info-place", "is-locker-place", "is-port-place");
+      }
+      if (coverWrapClear) coverWrapClear.hidden = true;
+      if (coverImgClear) {
+        coverImgClear.removeAttribute("src");
+        coverImgClear.alt = "";
+      }
+      return;
+    }
+
+    var title = el("[data-places-panel-title]");
+    var region = el("[data-places-panel-region]");
+    var desc = el("[data-places-panel-desc]");
+    var how = el("[data-places-panel-how]");
+    var expandBtn = el("[data-places-panel-expand]");
+
+    var meta = placeMeta[slug] || {};
+    var kind = normalizeType(meta.type);
+    var isInfo = kind === "info";
+    var isLocker = kind === "locker";
+    var isPort = kind === "port";
+    var infoBadge = el("[data-places-panel-info]");
+    var lockerBadge = el("[data-places-panel-locker]");
+    var portBadge = el("[data-places-panel-port]");
+    var panelBody = el("[data-places-panel-body]");
+    if (panelBody) {
+      panelBody.classList.toggle("is-info-place", isInfo);
+      panelBody.classList.toggle("is-locker-place", isLocker);
+      panelBody.classList.toggle("is-port-place", isPort);
+    }
+    if (infoBadge) infoBadge.hidden = !isInfo;
+    if (lockerBadge) lockerBadge.hidden = !isLocker;
+    if (portBadge) portBadge.hidden = !isPort;
+
+    setPanelCover(slug, meta);
+
+    if (title) title.textContent = placeField(slug, "name") || slug;
+    if (region) region.textContent = placeField(slug, "regionLabel") || "";
+    if (desc) desc.textContent = placeField(slug, "desc") || "";
+    if (how) {
+      var howText = placeField(slug, "how");
+      how.textContent = howText
+        ? t("transport.howLabel", "가는 방법") + ": " + howText
+        : "";
+      how.hidden = !howText;
+    }
+    if (expandBtn) {
+      expandBtn.textContent = t("transport.mapOpenDetail", "자세히 보기");
+      expandBtn.hidden = false;
+    }
+
+    // Keep detail open when refreshing same place (e.g. language change)
+    var keepDetail = opts.keepDetail || (detailOpen && prevSlug === slug);
+    setDetailMode(!!keepDetail);
+    if (opts.syncHash !== false) syncHash(slug);
+  }
+
+  function focusPlace(slug, opts) {
+    var marker = markersBySlug[slug];
+    if (!marker || !map) return;
+    opts = opts || {};
+    var meta = placeMeta[slug];
+    if (meta && meta.region && activeRegion !== "all" && activeRegion !== meta.region) {
+      applyRegionFilter(meta.region);
+    }
+    setPanel(slug, {
+      keepDetail: !!opts.detail,
+      syncHash: opts.syncHash,
+    });
+    if (opts.detail) setDetailMode(true);
+    var latlng = marker.getLatLng();
+    var zoom = opts.zoom != null ? opts.zoom : FOCUS_ZOOM;
+    fly(latlng, zoom, opts.duration != null ? opts.duration : 1.55);
+  }
+
+  function focusRegion(region) {
+    var key = region || "all";
+    applyRegionFilter(key);
+    setPanel(null);
+    var view = REGION_VIEWS[key] || REGION_VIEWS.all;
+    fly(view.center, view.zoom, 1.2);
+  }
+
+  function resetView() {
+    applyRegionFilter("all");
+    setPanel(null);
+    fly(KOREA_CENTER, KOREA_ZOOM, 1.1);
+  }
+
+  function setDrawer(open) {
+    drawerOpen = !!open;
+    var drawer = el("[data-places-drawer]");
+    var toggle = el("[data-places-list-toggle]");
+    if (drawer) {
+      drawer.hidden = !drawerOpen;
+      drawer.setAttribute("aria-hidden", drawerOpen ? "false" : "true");
+      drawer.classList.toggle("is-open", drawerOpen);
+    }
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", drawerOpen ? "true" : "false");
+      toggle.classList.toggle("is-active", drawerOpen);
+    }
+    document.body.classList.toggle("places-map-drawer-open", drawerOpen);
+  }
+
+  var PLACE_TYPES = {
+    city: true,
+    nature: true,
+    heritage: true,
+    airport: true,
+    info: true,
+    locker: true,
+    port: true,
+  };
+
+  function normalizeType(type) {
+    var key = (type || "").toLowerCase();
+    return PLACE_TYPES[key] ? key : "city";
+  }
+
+  function assetUrl(rel) {
+    if (!rel) return "";
+    if (/^https?:\/\//i.test(rel) || rel.charAt(0) === "/") return rel;
+    try {
+      return new URL("../../" + rel.replace(/^\.\.\//, ""), window.location.href).href;
+    } catch (e) {
+      return "../../" + rel;
+    }
+  }
+
+  function placeImageCandidates(slug, meta) {
+    meta = meta || {};
+    var kind = normalizeType(meta.type);
+    var list = [];
+    var fromI18n = placeField(slug, "image");
+    if (fromI18n) list.push(fromI18n);
+    if (meta.image) list.push(meta.image);
+    list.push("Images/places/" + slug + ".jpg");
+    list.push("Images/places/" + slug + ".png");
+    list.push("Images/places/" + slug + ".webp");
+    list.push("Images/places/_types/" + kind + ".jpg");
+    list.push("Images/places/_types/" + kind + ".png");
+    // de-dupe
+    var seen = {};
+    return list.filter(function (p) {
+      if (!p || seen[p]) return false;
+      seen[p] = true;
+      return true;
+    });
+  }
+
+  function bindImageFallback(img, candidates, startIdx) {
+    var i = startIdx || 0;
+    function tryNext() {
+      if (i >= candidates.length) {
+        img.onerror = null;
+        img.removeAttribute("src");
+        var wrap = img.closest("[data-places-panel-cover-wrap], .places-map-drawer__thumb-wrap");
+        if (wrap) wrap.hidden = true;
+        return;
+      }
+      var url = assetUrl(candidates[i]);
+      i += 1;
+      img.onerror = tryNext;
+      img.src = url;
+    }
+    tryNext();
+  }
+
+  function setPanelCover(slug, meta) {
+    var wrap = el("[data-places-panel-cover-wrap]");
+    var img = el("[data-places-panel-cover]");
+    if (!wrap || !img) return;
+    var candidates = placeImageCandidates(slug, meta);
+    if (!candidates.length) {
+      wrap.hidden = true;
+      img.removeAttribute("src");
+      return;
+    }
+    wrap.hidden = false;
+    img.alt = placeField(slug, "name") || slug;
+    bindImageFallback(img, candidates, 0);
+  }
+
+  function markerIcon(type, active) {
+    var kind = normalizeType(type);
+    var inner;
+    if (kind === "airport") {
+      inner =
+        '<span class="places-map-marker__plane" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false">' +
+        '<path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>' +
+        "</svg></span>" +
+        '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
+    } else if (kind === "info") {
+      inner =
+        '<span class="places-map-marker__info" aria-hidden="true">i</span>';
+    } else if (kind === "locker") {
+      inner =
+        '<span class="places-map-marker__locker" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="14" height="14" focusable="false">' +
+        '<path fill="currentColor" d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm1 4v12h4V6H7zm6 0v12h4V6h-4zm-4 2h2v2H9V8zm6 0h2v2h-2V8z"/>' +
+        "</svg></span>" +
+        '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
+    } else if (kind === "port") {
+      inner =
+        '<span class="places-map-marker__port" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="14" height="14" focusable="false">' +
+        '<path fill="currentColor" d="M3 18c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1v2c-1.5 0-1.5 1-3 1s-1.5-1-3-1-1.5 1-3 1-1.5-1-3-1-1.5 1-3 1v-2zm9-15 1 7h5l-4 3 1.5 5L12 15l-3.5 3L10 13 6 10h5l1-7z"/>' +
+        "</svg></span>" +
+        '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
+    } else {
+      inner =
+        '<span class="places-map-marker__pin" aria-hidden="true"></span>' +
+        '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
+    }
+    var size =
+      kind === "info"
+        ? [22, 22]
+        : kind === "airport" || kind === "locker" || kind === "port"
+          ? [32, 32]
+          : [28, 36];
+    var anchor =
+      kind === "info"
+        ? [11, 11]
+        : kind === "airport" || kind === "locker" || kind === "port"
+          ? [16, 16]
+          : [14, 34];
+    var popup =
+      kind === "info"
+        ? [0, -10]
+        : kind === "airport" || kind === "locker" || kind === "port"
+          ? [0, -14]
+          : [0, -30];
+    return L.divIcon({
+      className:
+        "places-map-marker places-map-marker--" +
+        kind +
+        (active ? " is-active" : ""),
+      html: inner,
+      iconSize: size,
+      iconAnchor: anchor,
+      popupAnchor: popup,
+    });
+  }
+
+  function buildDrawerList() {
+    var list = el("[data-places-drawer-list]");
+    if (!list) return;
+    list.innerHTML = "";
+    var coords = window.PLACES_COORDS || [];
+    coords.forEach(function (item) {
+      if (!item || !item.slug) return;
+      var li = document.createElement("li");
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "places-map-drawer__item";
+      btn.setAttribute("data-places-drawer-item", "");
+      btn.setAttribute("data-slug", item.slug);
+      btn.setAttribute("data-region", item.region || "");
+      btn.setAttribute("data-type", normalizeType(item.type));
+
+      var thumbWrap = document.createElement("span");
+      thumbWrap.className = "places-map-drawer__thumb-wrap";
+      var thumb = document.createElement("img");
+      thumb.className = "places-map-drawer__thumb";
+      thumb.alt = "";
+      thumb.loading = "lazy";
+      thumb.decoding = "async";
+      thumbWrap.appendChild(thumb);
+      bindImageFallback(thumb, placeImageCandidates(item.slug, item), 0);
+
+      var swatch = document.createElement("span");
+      swatch.className =
+        "places-map-drawer__swatch places-map-drawer__swatch--" +
+        normalizeType(item.type);
+      swatch.setAttribute("aria-hidden", "true");
+      var name = document.createElement("span");
+      name.className = "places-map-drawer__name";
+      name.textContent = placeField(item.slug, "name") || item.slug;
+      var region = document.createElement("span");
+      region.className = "places-map-drawer__region";
+      region.textContent = placeField(item.slug, "regionLabel") || item.region || "";
+      btn.appendChild(thumbWrap);
+      btn.appendChild(swatch);
+      btn.appendChild(name);
+      btn.appendChild(region);
+      btn.addEventListener("click", function () {
+        setDrawer(false);
+        focusPlace(item.slug);
+      });
+      li.appendChild(btn);
+      list.appendChild(li);
+    });
+  }
+
+  function refreshDrawerLabels() {
+    document.querySelectorAll("[data-places-drawer-item]").forEach(function (btn) {
+      var slug = btn.getAttribute("data-slug");
+      if (!slug) return;
+      var name = btn.querySelector(".places-map-drawer__name");
+      var region = btn.querySelector(".places-map-drawer__region");
+      if (name) name.textContent = placeField(slug, "name") || slug;
+      if (region) region.textContent = placeField(slug, "regionLabel") || "";
+    });
+  }
+
+  function parseHashSlug() {
+    try {
+      var hash = (window.location.hash || "").replace(/^#/, "");
+      if (!hash) return null;
+      if (hash.indexOf("place=") === 0) {
+        return decodeURIComponent(hash.slice(6)) || null;
+      }
+      // bare slug e.g. #myeongdong
+      if (/^[a-z0-9-]+$/i.test(hash) && markersBySlug[hash]) return hash;
+    } catch (e) {}
+    return null;
+  }
+
+  function initMap() {
+    var host = el("#places-korea-map");
+    if (!host || typeof L === "undefined") return;
+    if (map) return;
+
+    map = L.map(host, {
+      center: KOREA_CENTER,
+      zoom: KOREA_ZOOM,
+      minZoom: 6,
+      maxZoom: 18,
+      maxBounds: KOREA_BOUNDS.pad(0.15),
+      maxBoundsViscosity: 0.75,
+      zoomControl: false,
+      attributionControl: false,
+      scrollWheelZoom: true,
+    });
+
+    L.control
+      .zoom({
+        position: "topright",
+      })
+      .addTo(map);
+
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution:
+          "Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics",
+        maxZoom: 18,
+      }
+    ).addTo(map);
+
+    L.tileLayer(
+      "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+      {
+        opacity: 0.85,
+        maxZoom: 18,
+        attribution: "",
+      }
+    ).addTo(map);
+
+    var coords = window.PLACES_COORDS || [];
+    coords.forEach(function (item) {
+      if (!item || !item.slug || item.lat == null || item.lng == null) return;
+      var slug = item.slug;
+      placeMeta[slug] = {
+        region: item.region || "",
+        type: normalizeType(item.type),
+        lat: item.lat,
+        lng: item.lng,
+        image: item.image || "",
+      };
+      var marker = L.marker([item.lat, item.lng], {
+        icon: markerIcon(item.type, false),
+        title: placeField(slug, "name") || slug,
+        keyboard: true,
+        riseOnHover: true,
+      });
+      marker.addTo(map);
+      marker.on("click", function () {
+        focusPlace(slug);
+      });
+      markersBySlug[slug] = marker;
+    });
+
+    setTimeout(function () {
+      try {
+        map.invalidateSize();
+      } catch (e) {}
+    }, 80);
+
+    window.addEventListener("resize", function () {
+      if (map) map.invalidateSize();
+    });
+  }
+
+  function bindUi() {
+    var reset = el("[data-places-map-reset]");
+    if (reset) {
+      reset.addEventListener("click", function () {
+        resetView();
+      });
+    }
+
+    var close = el("[data-places-panel-close]");
+    if (close) {
+      close.addEventListener("click", function () {
+        setPanel(null);
+      });
+    }
+
+    var expandBtn = el("[data-places-panel-expand]");
+    if (expandBtn) {
+      expandBtn.addEventListener("click", function () {
+        if (!activeSlug) return;
+        setDetailMode(true);
+      });
+    }
+
+    var collapseBtn = el("[data-places-panel-collapse]");
+    if (collapseBtn) {
+      collapseBtn.addEventListener("click", function () {
+        setDetailMode(false);
+      });
+    }
+
+    document.querySelectorAll("[data-places-region]").forEach(function (btn) {
+      btn.setAttribute("aria-pressed", btn.classList.contains("is-active") ? "true" : "false");
+      btn.addEventListener("click", function () {
+        focusRegion(btn.getAttribute("data-places-region") || "all");
+      });
+    });
+
+    document.querySelectorAll("[data-places-type-filter]").forEach(function (input) {
+      input.addEventListener("change", function () {
+        var type = input.getAttribute("data-places-type-filter");
+        if (!type || !DEFAULT_TYPES.hasOwnProperty(type)) return;
+        activeTypes[type] = !!input.checked;
+        // Keep at least one type visible
+        var anyOn = Object.keys(activeTypes).some(function (k) {
+          return activeTypes[k];
+        });
+        if (!anyOn) {
+          activeTypes[type] = true;
+          input.checked = true;
+        }
+        saveTypeFilters();
+        applyVisibilityFilters();
+      });
+    });
+
+    document.querySelectorAll("[data-places-metro-filter]").forEach(function (input) {
+      input.addEventListener("change", function () {
+        var key = input.getAttribute("data-places-metro-filter");
+        if (!key || !DEFAULT_METRO.hasOwnProperty(key)) return;
+        var turningMetroOn = key === "metro" && !!input.checked && !activeMetro.metro;
+        activeMetro[key] = !!input.checked;
+        if (key === "metro" && activeMetro.metro) {
+          // Master on: keep at least one of lines/stations
+          if (!activeMetro.metroLines && !activeMetro.metroStations) {
+            activeMetro.metroLines = true;
+            activeMetro.metroStations = true;
+          }
+          // Failed previous fetch should retry when user toggles again.
+          if (metroLoadState === "error") metroLoadState = "idle";
+        }
+        if (key === "metroLines" || key === "metroStations") {
+          if (activeMetro.metro && !activeMetro.metroLines && !activeMetro.metroStations) {
+            activeMetro[key] = true;
+            input.checked = true;
+          }
+        }
+        syncMetroFilterUi();
+        saveTypeFilters();
+        applyMetroVisibility();
+        if (turningMetroOn) focusMetroIfNeeded();
+      });
+    });
+
+    var typeAll = el("[data-places-type-all]");
+    if (typeAll) {
+      typeAll.addEventListener("click", function () {
+        Object.keys(DEFAULT_TYPES).forEach(function (k) {
+          activeTypes[k] = true;
+        });
+        syncTypeFilterUi();
+        saveTypeFilters();
+        applyVisibilityFilters();
+      });
+    }
+
+    var listToggle = el("[data-places-list-toggle]");
+    if (listToggle) {
+      listToggle.addEventListener("click", function () {
+        setDrawer(!drawerOpen);
+      });
+    }
+
+    var drawerClose = el("[data-places-drawer-close]");
+    if (drawerClose) {
+      drawerClose.addEventListener("click", function () {
+        setDrawer(false);
+      });
+    }
+
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape") {
+        if (isFilterPanelOpen()) {
+          setFilterPanelOpen(false, true);
+          return;
+        }
+        if (drawerOpen) {
+          setDrawer(false);
+          return;
+        }
+        if (detailOpen) {
+          setDetailMode(false);
+          return;
+        }
+        if (activeSlug) setPanel(null);
+      }
+    });
+
+    document.addEventListener("guide:langchange", function () {
+      if (activeSlug) setPanel(activeSlug, { keepDetail: detailOpen, syncHash: false });
+      refreshDrawerLabels();
+      Object.keys(markersBySlug).forEach(function (slug) {
+        var m = markersBySlug[slug];
+        if (m && m.options) {
+          m.options.title = placeField(slug, "name") || slug;
+        }
+      });
+      if (metroStationLayer) {
+        metroStationLayer.eachLayer(function (layer) {
+          if (!layer.eachLayer) return;
+          layer.eachLayer(function (marker) {
+            var props =
+              (marker.feature && marker.feature.properties) ||
+              (marker.options && marker.options.feature && marker.options.feature.properties) ||
+              null;
+            if (!props) return;
+            var label = stationLabel(props);
+            if (marker.setIcon && typeof marker.setIcon === "function" && marker.getElement) {
+              marker.setIcon(stationDivIcon(props, map && map.getZoom()));
+            }
+            if (marker.setTooltipContent && label) {
+              marker.setTooltipContent(label);
+            } else {
+              var tip = marker.getTooltip && marker.getTooltip();
+              if (tip && label) tip.setContent(label);
+            }
+            if (label && marker.options) marker.options.title = label;
+          });
+        });
+      }
+    });
+
+    window.addEventListener("hashchange", function () {
+      var slug = parseHashSlug();
+      if (slug && markersBySlug[slug]) {
+        focusPlace(slug, { syncHash: false });
+      } else if (!slug && activeSlug) {
+        setPanel(null);
+      }
+    });
+  }
+
+  function boot() {
+    loadTypeFilters();
+    initFilterPanel();
+    initMap();
+    buildDrawerList();
+    bindUi();
+    syncTypeFilterUi();
+    applyRegionFilter("all");
+    setPanel(null);
+    setDrawer(false);
+
+    var hashSlug = parseHashSlug();
+    if (hashSlug && markersBySlug[hashSlug]) {
+      focusPlace(hashSlug, { syncHash: false });
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+
+  window.PlacesMap = {
+    focus: focusPlace,
+    reset: resetView,
+    region: focusRegion,
+    expandDetail: function () {
+      if (activeSlug) setDetailMode(true);
+    },
+    collapseDetail: function () {
+      setDetailMode(false);
+    },
+  };
+})();

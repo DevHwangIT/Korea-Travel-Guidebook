@@ -311,6 +311,9 @@
       ["nature", "자연·공원"],
       ["heritage", "유적·문화"],
       ["airport", "공항"],
+      ["bus-terminal", "버스터미널"],
+      ["port", "항구"],
+      ["locker", "물품보관"],
       ["info", "안내·대사관"],
     ]
       .map(function (pair) {

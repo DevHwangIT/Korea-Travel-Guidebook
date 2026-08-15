@@ -1,0 +1,419 @@
+{
+  "freshCollapsed": {
+    "collapsed": true,
+    "checks": [
+      {
+        "key": "metro",
+        "checked": false,
+        "visible": false
+      },
+      {
+        "key": "metroLines",
+        "checked": true,
+        "visible": false
+      },
+      {
+        "key": "metroStations",
+        "checked": true,
+        "visible": false
+      }
+    ],
+    "subs": [
+      {
+        "hiddenAttr": true,
+        "display": "none"
+      },
+      {
+        "hiddenAttr": true,
+        "display": "none"
+      }
+    ],
+    "hint": {
+      "text": "핀을 눌러 명소를 확대·살펴보세요. 지역 칩으로 카메라가 이동합니다.",
+      "hidden": false
+    },
+    "stationDots": 0,
+    "metroPaneKids": 0,
+    "lineOpaque": null,
+    "stationOpaque": null,
+    "ls": null,
+    "filterOpen": null,
+    "resources": [
+      {
+        "name": "metro-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "stations-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "places-map.js?v=20260815114500",
+        "dur": 7
+      }
+    ],
+    "href": "http://127.0.0.1:3409/pages/transportation/index.html?lang=ko"
+  },
+  "afterOpenFilter": {
+    "collapsed": false,
+    "checks": [
+      {
+        "key": "metro",
+        "checked": false,
+        "visible": true
+      },
+      {
+        "key": "metroLines",
+        "checked": true,
+        "visible": false
+      },
+      {
+        "key": "metroStations",
+        "checked": true,
+        "visible": false
+      }
+    ],
+    "subs": [
+      {
+        "hiddenAttr": true,
+        "display": "none"
+      },
+      {
+        "hiddenAttr": true,
+        "display": "none"
+      }
+    ],
+    "hint": {
+      "text": "핀을 눌러 명소를 확대·살펴보세요. 지역 칩으로 카메라가 이동합니다.",
+      "hidden": false
+    },
+    "stationDots": 0,
+    "metroPaneKids": 0,
+    "lineOpaque": null,
+    "stationOpaque": null,
+    "ls": null,
+    "filterOpen": "1",
+    "resources": [
+      {
+        "name": "metro-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "stations-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "places-map.js?v=20260815114500",
+        "dur": 7
+      }
+    ],
+    "href": "http://127.0.0.1:3409/pages/transportation/index.html?lang=ko"
+  },
+  "nestedHiddenWhileMetroOff": [
+    {
+      "hiddenAttr": true,
+      "display": "none"
+    },
+    {
+      "hiddenAttr": true,
+      "display": "none"
+    }
+  ],
+  "afterCheckMetro": {
+    "collapsed": false,
+    "checks": [
+      {
+        "key": "metro",
+        "checked": true,
+        "visible": true
+      },
+      {
+        "key": "metroLines",
+        "checked": true,
+        "visible": true
+      },
+      {
+        "key": "metroStations",
+        "checked": true,
+        "visible": true
+      }
+    ],
+    "subs": [
+      {
+        "hiddenAttr": false,
+        "display": "flex"
+      },
+      {
+        "hiddenAttr": false,
+        "display": "flex"
+      }
+    ],
+    "hint": {
+      "text": "지하철 표시 중 — 9개 노선 · 91개 역",
+      "hidden": false
+    },
+    "stationDots": 91,
+    "metroPaneKids": 91,
+    "lineOpaque": {
+      "opaque": 0,
+      "w": 2768,
+      "h": 1436
+    },
+    "stationOpaque": null,
+    "ls": "{\"city\":true,\"nature\":true,\"heritage\":true,\"airport\":true,\"info\":true,\"locker\":true,\"port\":true,\"metro\":true,\"metroLines\":true,\"metroStations\":true}",
+    "filterOpen": "1",
+    "resources": [
+      {
+        "name": "metro-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "stations-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "places-map.js?v=20260815114500",
+        "dur": 7
+      },
+      {
+        "name": "line-1.geojson",
+        "dur": 7
+      },
+      {
+        "name": "line-2.geojson",
+        "dur": 6
+      },
+      {
+        "name": "line-3.geojson",
+        "dur": 8
+      },
+      {
+        "name": "line-4.geojson",
+        "dur": 6
+      },
+      {
+        "name": "line-5.geojson",
+        "dur": 13
+      },
+      {
+        "name": "line-6.geojson",
+        "dur": 13
+      },
+      {
+        "name": "line-7.geojson",
+        "dur": 15
+      },
+      {
+        "name": "line-9.geojson",
+        "dur": 14
+      },
+      {
+        "name": "line-arex.geojson",
+        "dur": 12
+      },
+      {
+        "name": "stations.geojson",
+        "dur": 15
+      }
+    ],
+    "href": "http://127.0.0.1:3409/pages/transportation/index.html?lang=ko"
+  },
+  "bootMetroAlreadyOn": {
+    "collapsed": false,
+    "checks": [
+      {
+        "key": "metro",
+        "checked": true,
+        "visible": true
+      },
+      {
+        "key": "metroLines",
+        "checked": true,
+        "visible": true
+      },
+      {
+        "key": "metroStations",
+        "checked": true,
+        "visible": true
+      }
+    ],
+    "subs": [
+      {
+        "hiddenAttr": false,
+        "display": "flex"
+      },
+      {
+        "hiddenAttr": false,
+        "display": "flex"
+      }
+    ],
+    "hint": {
+      "text": "지하철 표시 중 — 9개 노선 · 91개 역",
+      "hidden": false
+    },
+    "stationDots": 91,
+    "metroPaneKids": 91,
+    "lineOpaque": {
+      "opaque": 0,
+      "w": 2768,
+      "h": 1436
+    },
+    "stationOpaque": null,
+    "ls": "{\"city\":true,\"nature\":true,\"heritage\":true,\"airport\":true,\"info\":true,\"locker\":true,\"port\":true,\"metro\":true,\"metroLines\":true,\"metroStations\":true}",
+    "filterOpen": "1",
+    "resources": [
+      {
+        "name": "metro-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "stations-data.js?v=20260815114500",
+        "dur": 5
+      },
+      {
+        "name": "places-map.js?v=20260815114500",
+        "dur": 4
+      },
+      {
+        "name": "line-1.geojson",
+        "dur": 12
+      },
+      {
+        "name": "line-2.geojson",
+        "dur": 11
+      },
+      {
+        "name": "line-3.geojson",
+        "dur": 15
+      },
+      {
+        "name": "line-5.geojson",
+        "dur": 12
+      },
+      {
+        "name": "line-4.geojson",
+        "dur": 14
+      },
+      {
+        "name": "line-6.geojson",
+        "dur": 13
+      },
+      {
+        "name": "line-7.geojson",
+        "dur": 16
+      },
+      {
+        "name": "line-9.geojson",
+        "dur": 16
+      },
+      {
+        "name": "line-arex.geojson",
+        "dur": 17
+      },
+      {
+        "name": "stations.geojson",
+        "dur": 20
+      }
+    ],
+    "href": "http://127.0.0.1:3409/pages/transportation/index.html?lang=ko"
+  },
+  "poisonedBothOffHealed": {
+    "collapsed": false,
+    "checks": [
+      {
+        "key": "metro",
+        "checked": true,
+        "visible": true
+      },
+      {
+        "key": "metroLines",
+        "checked": true,
+        "visible": true
+      },
+      {
+        "key": "metroStations",
+        "checked": true,
+        "visible": true
+      }
+    ],
+    "subs": [
+      {
+        "hiddenAttr": false,
+        "display": "flex"
+      },
+      {
+        "hiddenAttr": false,
+        "display": "flex"
+      }
+    ],
+    "hint": {
+      "text": "지하철 표시 중 — 9개 노선 · 91개 역",
+      "hidden": false
+    },
+    "stationDots": 91,
+    "metroPaneKids": 91,
+    "lineOpaque": {
+      "opaque": 0,
+      "w": 2768,
+      "h": 1436
+    },
+    "stationOpaque": null,
+    "ls": "{\"city\":true,\"nature\":true,\"heritage\":true,\"airport\":true,\"info\":true,\"locker\":true,\"port\":true,\"metro\":true,\"metroLines\":true,\"metroStations\":true}",
+    "filterOpen": "1",
+    "resources": [
+      {
+        "name": "metro-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "stations-data.js?v=20260815114500",
+        "dur": 0
+      },
+      {
+        "name": "places-map.js?v=20260815114500",
+        "dur": 11
+      },
+      {
+        "name": "line-1.geojson",
+        "dur": 38
+      },
+      {
+        "name": "line-2.geojson",
+        "dur": 42
+      },
+      {
+        "name": "line-3.geojson",
+        "dur": 39
+      },
+      {
+        "name": "line-4.geojson",
+        "dur": 46
+      },
+      {
+        "name": "line-6.geojson",
+        "dur": 58
+      },
+      {
+        "name": "line-5.geojson",
+        "dur": 58
+      },
+      {
+        "name": "line-7.geojson",
+        "dur": 58
+      },
+      {
+        "name": "line-9.geojson",
+        "dur": 58
+      },
+      {
+        "name": "line-arex.geojson",
+        "dur": 59
+      },
+      {
+        "name": "stations.geojson",
+        "dur": 60
+      }
+    ],
+    "href": "http://127.0.0.1:3409/pages/transportation/index.html?lang=ko"
+  }
+}

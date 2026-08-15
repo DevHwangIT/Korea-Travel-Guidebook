@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="misc.transportTitle" data-i18n-desc="misc.transportIntro" data-seo-path="pages/transportation/" data-seo-image="Images/menu/transportation.png">
 <head>
-  <!-- asset-v: 20260815095728 -->
+  <!-- asset-v: 20260815135823 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>명소 | Korea Travel Guide</title>
@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="명소 | Korea Travel Guide">
   <meta name="twitter:description" content="한반도 지도에서 핀을 눌러 명소를 살펴보세요.">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/menu/transportation.png">
-  <link rel="stylesheet" href="../../styles.css?v=20260815095728">
+  <link rel="stylesheet" href="../../styles.css?v=20260815135823">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body class="places-map-app">
@@ -68,63 +68,344 @@
         핀을 눌러 명소를 살펴보세요
       </p>
 
-      <aside class="places-map-legend" data-places-legend aria-label="Place type filters">
+      <aside class="places-map-legend is-collapsed" data-places-legend aria-label="Place type filters">
+        <button
+          type="button"
+          class="places-map-legend__toggle"
+          data-places-filter-toggle
+          aria-expanded="false"
+          aria-controls="places-filter-body"
+          data-i18n="transport.filterToggle"
+        >필터</button>
+        <div class="places-map-legend__body" id="places-filter-body" data-places-legend-body>
         <div class="places-map-legend__head">
           <p class="places-map-legend__title" data-i18n="transport.filterTitle">유형 필터</p>
           <button type="button" class="places-map-legend__all" data-places-type-all data-i18n="transport.filterAll">전체</button>
         </div>
         <p class="places-map-legend__help" data-i18n="transport.filterHelp">표시할 유형을 선택하세요</p>
-        <ul class="places-map-legend__list" role="group" aria-label="Place types">
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="city" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--city" aria-hidden="true"></span>
-              <span data-i18n="transport.legendCity">도시</span>
+
+        <section class="places-map-legend__group is-open" data-places-filter-accordion="places" aria-labelledby="places-filter-group-places">
+          <div class="places-map-legend__group-head">
+            <button type="button" class="places-map-legend__group-toggle" data-places-accordion-toggle aria-expanded="true" aria-controls="places-filter-panel-places" id="places-filter-group-places">
+              <span class="places-map-legend__group-chevron" aria-hidden="true"></span>
+              <span class="places-map-legend__group-title" data-i18n="transport.filterGroupPlaces">명소</span>
+            </button>
+            <label class="places-map-legend__group-all" title="이 분류 전체">
+              <input type="checkbox" class="places-map-legend__check" data-places-group-filter="places" checked aria-label="명소 전체">
             </label>
-          </li>
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="nature" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--nature" aria-hidden="true"></span>
-              <span data-i18n="transport.legendNature">자연</span>
+          </div>
+          <ul class="places-map-legend__list" id="places-filter-panel-places" role="group" aria-label="Sightseeing">
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="city" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--city" aria-hidden="true"></span>
+                <span data-i18n="transport.legendCity">도시</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="nature" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--nature" aria-hidden="true"></span>
+                <span data-i18n="transport.legendNature">자연</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="heritage" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--heritage" aria-hidden="true"></span>
+                <span data-i18n="transport.legendHeritage">문화재</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="places-map-legend__group" data-places-filter-accordion="transit" aria-labelledby="places-filter-group-transit">
+          <div class="places-map-legend__group-head">
+            <button type="button" class="places-map-legend__group-toggle" data-places-accordion-toggle aria-expanded="false" aria-controls="places-filter-panel-transit" id="places-filter-group-transit">
+              <span class="places-map-legend__group-chevron" aria-hidden="true"></span>
+              <span class="places-map-legend__group-title" data-i18n="transport.filterGroupTransit">교통</span>
+            </button>
+            <label class="places-map-legend__group-all" title="이 분류 전체">
+              <input type="checkbox" class="places-map-legend__check" data-places-group-filter="transit" checked aria-label="교통 전체">
             </label>
-          </li>
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="heritage" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--heritage" aria-hidden="true"></span>
-              <span data-i18n="transport.legendHeritage">문화재</span>
+          </div>
+          <ul class="places-map-legend__list" id="places-filter-panel-transit" role="group" aria-label="Transit" hidden>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-metro-filter="metro">
+                <span class="places-map-legend__swatch places-map-legend__swatch--metro" aria-hidden="true"></span>
+                <span data-i18n="transport.legendMetro">지하철</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item places-map-legend__item--sub" data-places-metro-sub hidden>
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-metro-filter="metroLines" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--metro-line" aria-hidden="true"></span>
+                <span data-i18n="transport.legendMetroLines">노선</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item places-map-legend__item--sub" data-places-metro-sub hidden>
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-metro-filter="metroStations" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--metro-station" aria-hidden="true"></span>
+                <span data-i18n="transport.legendMetroStations">역</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item places-map-legend__item--sub places-map-legend__item--lines" data-places-metro-sub hidden>
+              <div class="places-map-legend__line-filters" role="group" aria-label="Metro lines">
+                <p class="places-map-legend__line-filters-title" data-i18n="transport.legendMetroLinePick">호선 선택</p>
+
+                <details class="places-map-legend__metro-region" open>
+                  <summary class="places-map-legend__metro-region-sum" data-i18n="transport.metroRegionSeoul">서울·수도권</summary>
+                  <ul class="places-map-legend__line-list">
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="1" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#0052A4" aria-hidden="true"></span>
+                        <span data-i18n="transport.line1">1호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="2" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#00A84D" aria-hidden="true"></span>
+                        <span data-i18n="transport.line2">2호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="3" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#EF7C1C" aria-hidden="true"></span>
+                        <span data-i18n="transport.line3">3호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="4" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#00A5E3" aria-hidden="true"></span>
+                        <span data-i18n="transport.line4">4호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="5" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#996CAC" aria-hidden="true"></span>
+                        <span data-i18n="transport.line5">5호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="6" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#CD7C2F" aria-hidden="true"></span>
+                        <span data-i18n="transport.line6">6호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="7" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#747F00" aria-hidden="true"></span>
+                        <span data-i18n="transport.line7">7호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="8" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#E35D4D" aria-hidden="true"></span>
+                        <span data-i18n="transport.line8">8호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="9" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#B7A45C" aria-hidden="true"></span>
+                        <span data-i18n="transport.line9">9호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="arex" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#0090D2" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineArex">공항철도</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="gyeongui" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#77C4A3" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineGyeongui">경의중앙선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="suin-bundang" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#F5A200" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineSuinBundang">수인분당선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="shinbundang" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#D31145" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineShinbundang">신분당선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="sillim" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#6789CA" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineSillim">신림선</span>
+                      </label>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="places-map-legend__metro-region">
+                  <summary class="places-map-legend__metro-region-sum" data-i18n="transport.metroRegionBusan">부산</summary>
+                  <ul class="places-map-legend__line-list">
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="busan-1" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#F06A00" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineBusan1">부산1호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="busan-2" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#3CB44A" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineBusan2">부산2호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="busan-3" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#BB8C00" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineBusan3">부산3호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="busan-4" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#2178C4" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineBusan4">부산4호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="busan-gimhae" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#8FC31F" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineBusanGimhae">부산김해경전철</span>
+                      </label>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="places-map-legend__metro-region">
+                  <summary class="places-map-legend__metro-region-sum" data-i18n="transport.metroRegionDaegu">대구</summary>
+                  <ul class="places-map-legend__line-list">
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="daegu-1" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#D93F0C" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineDaegu1">대구1호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="daegu-2" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#00AA80" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineDaegu2">대구2호선</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="daegu-3" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#FFB100" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineDaegu3">대구3호선</span>
+                      </label>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="places-map-legend__metro-region">
+                  <summary class="places-map-legend__metro-region-sum" data-i18n="transport.metroRegionGwangju">광주</summary>
+                  <ul class="places-map-legend__line-list">
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="gwangju-1" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#009088" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineGwangju1">광주1호선</span>
+                      </label>
+                    </li>
+                  </ul>
+                </details>
+
+                <details class="places-map-legend__metro-region">
+                  <summary class="places-map-legend__metro-region-sum" data-i18n="transport.metroRegionDaejeon">대전</summary>
+                  <ul class="places-map-legend__line-list">
+                    <li>
+                      <label class="places-map-legend__label places-map-legend__label--line">
+                        <input type="checkbox" class="places-map-legend__check" data-places-metro-line="daejeon-1" checked>
+                        <span class="places-map-legend__swatch places-map-legend__swatch--line" style="--metro-line:#007448" aria-hidden="true"></span>
+                        <span data-i18n="transport.lineDaejeon1">대전1호선</span>
+                      </label>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="airport" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--airport" aria-hidden="true"></span>
+                <span data-i18n="transport.legendAirport">공항</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="bus-terminal" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--bus-terminal" aria-hidden="true"></span>
+                <span data-i18n="transport.legendBusTerminal">버스터미널</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="port" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--port" aria-hidden="true"></span>
+                <span data-i18n="transport.legendPort">항구</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="places-map-legend__group" data-places-filter-accordion="convenience" aria-labelledby="places-filter-group-convenience">
+          <div class="places-map-legend__group-head">
+            <button type="button" class="places-map-legend__group-toggle" data-places-accordion-toggle aria-expanded="false" aria-controls="places-filter-panel-convenience" id="places-filter-group-convenience">
+              <span class="places-map-legend__group-chevron" aria-hidden="true"></span>
+              <span class="places-map-legend__group-title" data-i18n="transport.filterGroupConvenience">편의</span>
+            </button>
+            <label class="places-map-legend__group-all" title="이 분류 전체">
+              <input type="checkbox" class="places-map-legend__check" data-places-group-filter="convenience" checked aria-label="편의 전체">
             </label>
-          </li>
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="airport" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--airport" aria-hidden="true"></span>
-              <span data-i18n="transport.legendAirport">공항</span>
-            </label>
-          </li>
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="port" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--port" aria-hidden="true"></span>
-              <span data-i18n="transport.legendPort">항구</span>
-            </label>
-          </li>
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="locker" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--locker" aria-hidden="true"></span>
-              <span data-i18n="transport.legendLocker">물품보관함</span>
-            </label>
-          </li>
-          <li class="places-map-legend__item">
-            <label class="places-map-legend__label">
-              <input type="checkbox" class="places-map-legend__check" data-places-type-filter="info" checked>
-              <span class="places-map-legend__swatch places-map-legend__swatch--info" aria-hidden="true"></span>
-              <span data-i18n="transport.legendInfo">안내·대사관</span>
-            </label>
-          </li>
-        </ul>
+          </div>
+          <ul class="places-map-legend__list" id="places-filter-panel-convenience" role="group" aria-label="Convenience" hidden>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="locker" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--locker" aria-hidden="true"></span>
+                <span data-i18n="transport.legendLocker">물품보관함</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="info" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--info" aria-hidden="true"></span>
+                <span data-i18n="transport.legendInfo">안내·대사관</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        </div>
       </aside>
 
       <aside class="places-map-panel" data-places-panel aria-hidden="true">
@@ -144,6 +425,7 @@
           <p class="places-map-panel__info-badge" data-places-panel-info hidden data-i18n="transport.infoBadge">외국인 유용 정보 (명소 아님)</p>
           <p class="places-map-panel__info-badge places-map-panel__info-badge--locker" data-places-panel-locker hidden data-i18n="transport.lockerBadge">물품보관 · 시간·빈칸은 앱/현장에서 확인</p>
           <p class="places-map-panel__info-badge places-map-panel__info-badge--port" data-places-panel-port hidden data-i18n="transport.portBadge">항구 · 여객·크루즈 거점</p>
+          <p class="places-map-panel__info-badge places-map-panel__info-badge--bus-terminal" data-places-panel-bus-terminal hidden data-i18n="transport.busTerminalBadge">버스터미널 · 고속·시외 거점</p>
           <p class="places-map-panel__desc" data-places-panel-desc></p>
           <p class="places-map-panel__how" data-places-panel-how></p>
 
@@ -213,12 +495,14 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="../../data/places/places-coords.js?v=20260815095728"></script>
-  <script src="../../js/site-config.js?v=20260815095728"></script>
-  <script src="../../i18n/messages.js?v=20260815095728"></script>
-  <script src="../../js/i18n.js?v=20260815095728"></script>
-  <script src="../../js/seo.js?v=20260815095728"></script>
-  <script src="../../js/content-body.js?v=20260815095728"></script>
-  <script src="../../js/places-map.js?v=20260815095728"></script>
+  <script src="../../data/places/places-coords.js?v=20260815135823"></script>
+  <script src="../../data/metro/metro-data.js?v=20260815135823"></script>
+  <script src="../../data/metro/stations-data.js?v=20260815135823"></script>
+  <script src="../../js/site-config.js?v=20260815135823"></script>
+  <script src="../../i18n/messages.js?v=20260815135823"></script>
+  <script src="../../js/i18n.js?v=20260815135823"></script>
+  <script src="../../js/seo.js?v=20260815135823"></script>
+  <script src="../../js/content-body.js?v=20260815135823"></script>
+  <script src="../../js/places-map.js?v=20260815135823"></script>
 </body>
 </html>

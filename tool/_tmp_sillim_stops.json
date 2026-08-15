@@ -1,0 +1,57 @@
+{
+  "서원": {
+    "lat": 37.4782105,
+    "lon": 126.9330119,
+    "name_en": "Seowon"
+  },
+  "대방": {
+    "lat": 37.5125806,
+    "lon": 126.9251737,
+    "name_en": "Daebang"
+  },
+  "신림": {
+    "lat": 37.4846585,
+    "lon": 126.9296105,
+    "name_en": "Sillim"
+  },
+  "보라매": {
+    "lat": 37.5002811,
+    "lon": 126.9204736,
+    "name_en": "Boramae"
+  },
+  "관악산": {
+    "lat": 37.4687357,
+    "lon": 126.945328,
+    "name_en": "Gwanaksan"
+  },
+  "서울대벤처타운": {
+    "lat": 37.4720025,
+    "lon": 126.9337059,
+    "name_en": "Seoul Nat'l Univ. Venture Town"
+  },
+  "당곡": {
+    "lat": 37.4896958,
+    "lon": 126.9278008,
+    "name_en": "Danggok"
+  },
+  "보라매병원": {
+    "lat": 37.4929641,
+    "lon": 126.9242732,
+    "name_en": "Boramae Medical Center"
+  },
+  "보라매공원": {
+    "lat": 37.4952932,
+    "lon": 126.9181903,
+    "name_en": "Boramae Park"
+  },
+  "서울지방병무청": {
+    "lat": 37.5059628,
+    "lon": 126.9227236,
+    "name_en": "Seoul Regional Office of Military Manpower"
+  },
+  "샛강": {
+    "lat": 37.5173674,
+    "lon": 126.9294177,
+    "name_en": "Saetgang"
+  }
+}
