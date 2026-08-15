@@ -10,6 +10,8 @@
   var FX_CACHE_MS = 30 * 60 * 1000; // 30 min
   var WEATHER_CACHE_KEY = "korea-guide-weather-cache";
   var WEATHER_CACHE_MS = 15 * 60 * 1000; // 15 min
+  var AIR_CACHE_KEY = "korea-guide-air-cache";
+  var AIR_CACHE_MS = 15 * 60 * 1000; // 15 min (same as weather)
 
   var CURRENCIES = [
     "USD",
@@ -328,6 +330,58 @@
         writeCache(WEATHER_CACHE_KEY, cacheAll);
         return data;
       });
+  }
+
+  /* —— Air quality: Open-Meteo Air Quality (same lat/lon as weather) —— */
+  function fetchAirQuality(region) {
+    var cacheAll = readCache(AIR_CACHE_KEY, AIR_CACHE_MS) || {};
+    if (cacheAll[region.id]) return Promise.resolve(cacheAll[region.id]);
+
+    var url =
+      "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=" +
+      encodeURIComponent(region.lat) +
+      "&longitude=" +
+      encodeURIComponent(region.lon) +
+      "&current=pm10,pm2_5" +
+      "&timezone=Asia%2FSeoul";
+
+    return fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (json) {
+        var cur = json.current || {};
+        var data = {
+          pm10: cur.pm10,
+          pm25: cur.pm2_5,
+          time: cur.time || "",
+        };
+        cacheAll[region.id] = data;
+        writeCache(AIR_CACHE_KEY, cacheAll);
+        return data;
+      });
+  }
+
+  /** Korea MoE-style breakpoints (µg/m³). */
+  function pm10Grade(ug) {
+    if (ug == null || !isFinite(ug)) return "unknown";
+    if (ug <= 30) return "good";
+    if (ug <= 80) return "moderate";
+    if (ug <= 150) return "bad";
+    return "veryBad";
+  }
+
+  function pm25Grade(ug) {
+    if (ug == null || !isFinite(ug)) return "unknown";
+    if (ug <= 15) return "good";
+    if (ug <= 35) return "moderate";
+    if (ug <= 75) return "bad";
+    return "veryBad";
+  }
+
+  function aqGradeLabel(grade) {
+    return t("travelUtils.aqGrades." + grade, grade);
   }
 
   function weatherLabel(code) {
@@ -760,11 +814,18 @@
       '<p class="travel-utils__muted" data-i18n="travelUtils.loading">Loading…</p>';
     applyI18n(out);
 
-    fetchWeather(region)
-      .then(function (data) {
+    Promise.all([
+      fetchWeather(region),
+      fetchAirQuality(region).catch(function () {
+        return null;
+      }),
+    ])
+      .then(function (results) {
+        var data = results[0];
+        var aq = results[1];
         var tempC = data.temp;
         var tempF = tempC * 1.8 + 32;
-        out.innerHTML =
+        var html =
           '<p class="travel-utils__wx-main"><strong>' +
           regionLabel(region.id) +
           "</strong></p>" +
@@ -785,6 +846,57 @@
           ": " +
           formatNumber(data.wind, 0) +
           " km/h</p>";
+
+        html += '<div class="travel-utils__aq">';
+        html +=
+          '<p class="travel-utils__aq-title">' +
+          t("travelUtils.aqTitle", "Air quality") +
+          "</p>";
+
+        if (aq && (isFinite(aq.pm10) || isFinite(aq.pm25))) {
+          if (isFinite(aq.pm10)) {
+            html +=
+              '<p class="travel-utils__aq-row" data-aq-grade="' +
+              pm10Grade(aq.pm10) +
+              '">' +
+              '<span class="travel-utils__aq-label">' +
+              t("travelUtils.pm10", "Fine dust (PM10)") +
+              "</span>" +
+              '<span class="travel-utils__aq-value">' +
+              formatNumber(aq.pm10, 0) +
+              " µg/m³ · " +
+              aqGradeLabel(pm10Grade(aq.pm10)) +
+              "</span></p>";
+          }
+          if (isFinite(aq.pm25)) {
+            html +=
+              '<p class="travel-utils__aq-row" data-aq-grade="' +
+              pm25Grade(aq.pm25) +
+              '">' +
+              '<span class="travel-utils__aq-label">' +
+              t("travelUtils.pm25", "Ultrafine dust (PM2.5)") +
+              "</span>" +
+              '<span class="travel-utils__aq-value">' +
+              formatNumber(aq.pm25, 0) +
+              " µg/m³ · " +
+              aqGradeLabel(pm25Grade(aq.pm25)) +
+              "</span></p>";
+          }
+          html +=
+            '<p class="travel-utils__aq-note">' +
+            t(
+              "travelUtils.aqNote",
+              "Air quality is for reference only and may differ from actual values."
+            ) +
+            "</p>";
+        } else {
+          html +=
+            '<p class="travel-utils__meta">' +
+            t("travelUtils.aqError", "Could not load air quality.") +
+            "</p>";
+        }
+        html += "</div>";
+        out.innerHTML = html;
       })
       .catch(function () {
         out.innerHTML =

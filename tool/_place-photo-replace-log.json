@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "dongdaemun",
+    "ok": true,
+    "title": "File:Dongdaemun Design Plaza grass.jpg",
+    "bytes": 280063
+  },
+  {
+    "slug": "everland",
+    "ok": true,
+    "title": "File:T Express Everland Resort.jpg",
+    "bytes": 383246
+  },
+  {
+    "slug": "noryangjin-cupbap",
+    "ok": true,
+    "title": "File:Noryangjin fish market.JPG",
+    "bytes": 215011
+  },
+  {
+    "slug": "imjingak",
+    "ok": true,
+    "title": "File:Imjingak Park & the Freedom Bridge.jpg",
+    "bytes": 285619
+  },
+  {
+    "slug": "embassy-japan-seoul",
+    "ok": false,
+    "error": "no search hit"
+  },
+  {
+    "slug": "locker-busan-station",
+    "ok": true,
+    "title": "File:Korea-Busan Station, exterior to north-07.jpg",
+    "bytes": 225604
+  },
+  {
+    "slug": "locker-seoul-station",
+    "ok": true,
+    "title": "File:Seoul Station Building 1925 side 20240219 02.jpg",
+    "bytes": 340149
+  },
+  {
+    "slug": "locker-yongsan-station",
+    "ok": true,
+    "title": "File:Yongsan Station at night.jpg",
+    "bytes": 412125
+  },
+  {
+    "slug": "locker-express-bus-terminal",
+    "ok": true,
+    "title": "File:Seoul Express Bus Terminal.jpg",
+    "bytes": 544511
+  },
+  {
+    "slug": "locker-hongdae-station",
+    "ok": false,
+    "error": "getaddrinfo ENOTFOUND upload.wikimedia.org"
+  },
+  {
+    "slug": "locker-icn-t1",
+    "ok": true,
+    "title": "File:AREX-Incheon International Airport Cargo Terminal Stn-Exterior-1.jpg",
+    "bytes": 402396
+  },
+  {
+    "slug": "locker-icn-t2",
+    "ok": true,
+    "title": "File:AREX-Incheon International Airport Cargo Terminal Stn-Exterior-2.jpg",
+    "bytes": 398690
+  },
+  {
+    "slug": "airport-icn",
+    "ok": true,
+    "title": "File:AREX-Incheon International Airport Cargo Terminal Stn-Exterior-1.jpg",
+    "bytes": 402396
+  },
+  {
+    "slug": "tongyeong",
+    "ok": true,
+    "title": "File:Tongyeong Cable Car.jpg",
+    "bytes": 153101
+  },
+  {
+    "slug": "locker-haeundae-station",
+    "ok": true,
+    "title": "File:Haeundae Beach Busan (45698772572).jpg",
+    "bytes": 221425
+  },
+  {
+    "slug": "locker-dongdaemun-station",
+    "ok": true,
+    "title": "File:Heunginjimun Park, Seoul.jpg",
+    "bytes": 329216
+  }
+]

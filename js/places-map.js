@@ -29,6 +29,17 @@
   var activeRegion = "all";
   var drawerOpen = false;
   var detailOpen = false;
+  var TYPE_FILTER_KEY = "korea-guide-places-type-filters";
+  var DEFAULT_TYPES = {
+    city: true,
+    nature: true,
+    heritage: true,
+    airport: true,
+    info: true,
+    locker: true,
+    port: true,
+  };
+  var activeTypes = Object.assign({}, DEFAULT_TYPES);
   var reduceMotion =
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -101,30 +112,83 @@
 
   function applyRegionFilter(region) {
     activeRegion = region || "all";
-    Object.keys(markersBySlug).forEach(function (slug) {
-      var meta = placeMeta[slug] || {};
-      var match = activeRegion === "all" || meta.region === activeRegion;
-      var m = markersBySlug[slug];
-      var iconEl = m.getElement && m.getElement();
-      if (iconEl) {
-        iconEl.classList.toggle("is-dimmed", !match);
-      }
-      if (m.setOpacity) {
-        m.setOpacity(match ? 1 : 0.35);
-      }
-    });
+    applyVisibilityFilters();
 
     document.querySelectorAll("[data-places-region]").forEach(function (btn) {
       var on = btn.getAttribute("data-places-region") === activeRegion;
       btn.classList.toggle("is-active", on);
       btn.setAttribute("aria-pressed", on ? "true" : "false");
     });
+  }
+
+  function loadTypeFilters() {
+    try {
+      var raw = window.localStorage && localStorage.getItem(TYPE_FILTER_KEY);
+      if (!raw) return;
+      var parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return;
+      Object.keys(DEFAULT_TYPES).forEach(function (k) {
+        if (typeof parsed[k] === "boolean") activeTypes[k] = parsed[k];
+      });
+    } catch (e) {}
+  }
+
+  function saveTypeFilters() {
+    try {
+      if (window.localStorage) {
+        localStorage.setItem(TYPE_FILTER_KEY, JSON.stringify(activeTypes));
+      }
+    } catch (e) {}
+  }
+
+  function syncTypeFilterUi() {
+    document.querySelectorAll("[data-places-type-filter]").forEach(function (input) {
+      var type = input.getAttribute("data-places-type-filter");
+      if (!type) return;
+      input.checked = !!activeTypes[type];
+    });
+  }
+
+  function applyVisibilityFilters() {
+    Object.keys(markersBySlug).forEach(function (slug) {
+      var meta = placeMeta[slug] || {};
+      var typeOk = !!activeTypes[normalizeType(meta.type)];
+      var regionOk = activeRegion === "all" || meta.region === activeRegion;
+      var m = markersBySlug[slug];
+      var iconEl = m.getElement && m.getElement();
+
+      if (!typeOk) {
+        if (iconEl) {
+          iconEl.classList.add("is-type-hidden");
+          iconEl.classList.remove("is-dimmed");
+        }
+        if (m.setOpacity) m.setOpacity(0);
+        if (m._icon) m._icon.style.display = "none";
+        if (m._shadow) m._shadow.style.display = "none";
+        return;
+      }
+
+      if (m._icon) m._icon.style.display = "";
+      if (m._shadow) m._shadow.style.display = "";
+      if (iconEl) {
+        iconEl.classList.remove("is-type-hidden");
+        iconEl.classList.toggle("is-dimmed", !regionOk);
+      }
+      if (m.setOpacity) m.setOpacity(regionOk ? 1 : 0.35);
+    });
 
     document.querySelectorAll("[data-places-drawer-item]").forEach(function (item) {
       var r = item.getAttribute("data-region") || "";
-      var match = activeRegion === "all" || r === activeRegion;
-      item.hidden = !match;
+      var type = normalizeType(item.getAttribute("data-type"));
+      var regionOk = activeRegion === "all" || r === activeRegion;
+      var typeOk = !!activeTypes[type];
+      item.hidden = !(regionOk && typeOk);
     });
+
+    if (activeSlug) {
+      var am = placeMeta[activeSlug] || {};
+      if (!activeTypes[normalizeType(am.type)]) setPanel(null);
+    }
   }
 
   function clearDetailEmbed() {
@@ -288,9 +352,22 @@
       setDetailMode(false);
       syncHash(null);
       var infoBadgeClear = el("[data-places-panel-info]");
+      var lockerBadgeClear = el("[data-places-panel-locker]");
+      var portBadgeClear = el("[data-places-panel-port]");
       var panelBodyClear = el("[data-places-panel-body]");
+      var coverWrapClear = el("[data-places-panel-cover-wrap]");
+      var coverImgClear = el("[data-places-panel-cover]");
       if (infoBadgeClear) infoBadgeClear.hidden = true;
-      if (panelBodyClear) panelBodyClear.classList.remove("is-info-place");
+      if (lockerBadgeClear) lockerBadgeClear.hidden = true;
+      if (portBadgeClear) portBadgeClear.hidden = true;
+      if (panelBodyClear) {
+        panelBodyClear.classList.remove("is-info-place", "is-locker-place", "is-port-place");
+      }
+      if (coverWrapClear) coverWrapClear.hidden = true;
+      if (coverImgClear) {
+        coverImgClear.removeAttribute("src");
+        coverImgClear.alt = "";
+      }
       return;
     }
 
@@ -301,11 +378,24 @@
     var expandBtn = el("[data-places-panel-expand]");
 
     var meta = placeMeta[slug] || {};
-    var isInfo = normalizeType(meta.type) === "info";
+    var kind = normalizeType(meta.type);
+    var isInfo = kind === "info";
+    var isLocker = kind === "locker";
+    var isPort = kind === "port";
     var infoBadge = el("[data-places-panel-info]");
+    var lockerBadge = el("[data-places-panel-locker]");
+    var portBadge = el("[data-places-panel-port]");
     var panelBody = el("[data-places-panel-body]");
-    if (panelBody) panelBody.classList.toggle("is-info-place", isInfo);
+    if (panelBody) {
+      panelBody.classList.toggle("is-info-place", isInfo);
+      panelBody.classList.toggle("is-locker-place", isLocker);
+      panelBody.classList.toggle("is-port-place", isPort);
+    }
     if (infoBadge) infoBadge.hidden = !isInfo;
+    if (lockerBadge) lockerBadge.hidden = !isLocker;
+    if (portBadge) portBadge.hidden = !isPort;
+
+    setPanelCover(slug, meta);
 
     if (title) title.textContent = placeField(slug, "name") || slug;
     if (region) region.textContent = placeField(slug, "regionLabel") || "";
@@ -382,11 +472,77 @@
     heritage: true,
     airport: true,
     info: true,
+    locker: true,
+    port: true,
   };
 
   function normalizeType(type) {
     var key = (type || "").toLowerCase();
     return PLACE_TYPES[key] ? key : "city";
+  }
+
+  function assetUrl(rel) {
+    if (!rel) return "";
+    if (/^https?:\/\//i.test(rel) || rel.charAt(0) === "/") return rel;
+    try {
+      return new URL("../../" + rel.replace(/^\.\.\//, ""), window.location.href).href;
+    } catch (e) {
+      return "../../" + rel;
+    }
+  }
+
+  function placeImageCandidates(slug, meta) {
+    meta = meta || {};
+    var kind = normalizeType(meta.type);
+    var list = [];
+    var fromI18n = placeField(slug, "image");
+    if (fromI18n) list.push(fromI18n);
+    if (meta.image) list.push(meta.image);
+    list.push("Images/places/" + slug + ".jpg");
+    list.push("Images/places/" + slug + ".png");
+    list.push("Images/places/" + slug + ".webp");
+    list.push("Images/places/_types/" + kind + ".jpg");
+    list.push("Images/places/_types/" + kind + ".png");
+    // de-dupe
+    var seen = {};
+    return list.filter(function (p) {
+      if (!p || seen[p]) return false;
+      seen[p] = true;
+      return true;
+    });
+  }
+
+  function bindImageFallback(img, candidates, startIdx) {
+    var i = startIdx || 0;
+    function tryNext() {
+      if (i >= candidates.length) {
+        img.onerror = null;
+        img.removeAttribute("src");
+        var wrap = img.closest("[data-places-panel-cover-wrap], .places-map-drawer__thumb-wrap");
+        if (wrap) wrap.hidden = true;
+        return;
+      }
+      var url = assetUrl(candidates[i]);
+      i += 1;
+      img.onerror = tryNext;
+      img.src = url;
+    }
+    tryNext();
+  }
+
+  function setPanelCover(slug, meta) {
+    var wrap = el("[data-places-panel-cover-wrap]");
+    var img = el("[data-places-panel-cover]");
+    if (!wrap || !img) return;
+    var candidates = placeImageCandidates(slug, meta);
+    if (!candidates.length) {
+      wrap.hidden = true;
+      img.removeAttribute("src");
+      return;
+    }
+    wrap.hidden = false;
+    img.alt = placeField(slug, "name") || slug;
+    bindImageFallback(img, candidates, 0);
   }
 
   function markerIcon(type, active) {
@@ -402,16 +558,43 @@
     } else if (kind === "info") {
       inner =
         '<span class="places-map-marker__info" aria-hidden="true">i</span>';
+    } else if (kind === "locker") {
+      inner =
+        '<span class="places-map-marker__locker" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="14" height="14" focusable="false">' +
+        '<path fill="currentColor" d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm1 4v12h4V6H7zm6 0v12h4V6h-4zm-4 2h2v2H9V8zm6 0h2v2h-2V8z"/>' +
+        "</svg></span>" +
+        '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
+    } else if (kind === "port") {
+      inner =
+        '<span class="places-map-marker__port" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="14" height="14" focusable="false">' +
+        '<path fill="currentColor" d="M3 18c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1v2c-1.5 0-1.5 1-3 1s-1.5-1-3-1-1.5 1-3 1-1.5-1-3-1-1.5 1-3 1v-2zm9-15 1 7h5l-4 3 1.5 5L12 15l-3.5 3L10 13 6 10h5l1-7z"/>' +
+        "</svg></span>" +
+        '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
     } else {
       inner =
         '<span class="places-map-marker__pin" aria-hidden="true"></span>' +
         '<span class="places-map-marker__pulse" aria-hidden="true"></span>';
     }
-    var size = kind === "info" ? [22, 22] : kind === "airport" ? [32, 32] : [28, 36];
+    var size =
+      kind === "info"
+        ? [22, 22]
+        : kind === "airport" || kind === "locker" || kind === "port"
+          ? [32, 32]
+          : [28, 36];
     var anchor =
-      kind === "info" ? [11, 11] : kind === "airport" ? [16, 16] : [14, 34];
+      kind === "info"
+        ? [11, 11]
+        : kind === "airport" || kind === "locker" || kind === "port"
+          ? [16, 16]
+          : [14, 34];
     var popup =
-      kind === "info" ? [0, -10] : kind === "airport" ? [0, -14] : [0, -30];
+      kind === "info"
+        ? [0, -10]
+        : kind === "airport" || kind === "locker" || kind === "port"
+          ? [0, -14]
+          : [0, -30];
     return L.divIcon({
       className:
         "places-map-marker places-map-marker--" +
@@ -439,6 +622,17 @@
       btn.setAttribute("data-slug", item.slug);
       btn.setAttribute("data-region", item.region || "");
       btn.setAttribute("data-type", normalizeType(item.type));
+
+      var thumbWrap = document.createElement("span");
+      thumbWrap.className = "places-map-drawer__thumb-wrap";
+      var thumb = document.createElement("img");
+      thumb.className = "places-map-drawer__thumb";
+      thumb.alt = "";
+      thumb.loading = "lazy";
+      thumb.decoding = "async";
+      thumbWrap.appendChild(thumb);
+      bindImageFallback(thumb, placeImageCandidates(item.slug, item), 0);
+
       var swatch = document.createElement("span");
       swatch.className =
         "places-map-drawer__swatch places-map-drawer__swatch--" +
@@ -450,6 +644,7 @@
       var region = document.createElement("span");
       region.className = "places-map-drawer__region";
       region.textContent = placeField(item.slug, "regionLabel") || item.region || "";
+      btn.appendChild(thumbWrap);
       btn.appendChild(swatch);
       btn.appendChild(name);
       btn.appendChild(region);
@@ -536,6 +731,7 @@
         type: normalizeType(item.type),
         lat: item.lat,
         lng: item.lng,
+        image: item.image || "",
       };
       var marker = L.marker([item.lat, item.lng], {
         icon: markerIcon(item.type, false),
@@ -598,6 +794,36 @@
       });
     });
 
+    document.querySelectorAll("[data-places-type-filter]").forEach(function (input) {
+      input.addEventListener("change", function () {
+        var type = input.getAttribute("data-places-type-filter");
+        if (!type || !DEFAULT_TYPES.hasOwnProperty(type)) return;
+        activeTypes[type] = !!input.checked;
+        // Keep at least one type visible
+        var anyOn = Object.keys(activeTypes).some(function (k) {
+          return activeTypes[k];
+        });
+        if (!anyOn) {
+          activeTypes[type] = true;
+          input.checked = true;
+        }
+        saveTypeFilters();
+        applyVisibilityFilters();
+      });
+    });
+
+    var typeAll = el("[data-places-type-all]");
+    if (typeAll) {
+      typeAll.addEventListener("click", function () {
+        Object.keys(DEFAULT_TYPES).forEach(function (k) {
+          activeTypes[k] = true;
+        });
+        syncTypeFilterUi();
+        saveTypeFilters();
+        applyVisibilityFilters();
+      });
+    }
+
     var listToggle = el("[data-places-list-toggle]");
     if (listToggle) {
       listToggle.addEventListener("click", function () {
@@ -648,9 +874,11 @@
   }
 
   function boot() {
+    loadTypeFilters();
     initMap();
     buildDrawerList();
     bindUi();
+    syncTypeFilterUi();
     applyRegionFilter("all");
     setPanel(null);
     setDrawer(false);

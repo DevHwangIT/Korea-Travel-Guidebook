@@ -72,6 +72,8 @@ PLACE_TYPES = (
     ("heritage", "유적·문화"),
     ("airport", "공항"),
     ("info", "안내·대사관"),
+    ("locker", "물품보관함"),
+    ("port", "항구"),
 )
 PLACE_TYPE_IDS = {t for t, _ in PLACE_TYPES}
 

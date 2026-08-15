@@ -1602,22 +1602,54 @@ html:has(body.places-map-app) {
   z-index: 15;
   margin: 0;
   padding: 10px 12px;
-  max-width: min(46vw, 180px);
+  max-width: min(52vw, 210px);
+  max-height: min(58vh, 420px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: 12px;
-  background: rgba(8, 18, 28, 0.78);
+  background: rgba(8, 18, 28, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #e8efeb;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
-  pointer-events: none;
+  pointer-events: auto;
+}
+
+.places-map-legend__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
 .places-map-legend__title {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(232, 239, 235, 0.72);
+}
+
+.places-map-legend__all {
+  border: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e8efeb;
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.places-map-legend__all:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.places-map-legend__help {
+  margin: 0 0 8px;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: rgba(232, 239, 235, 0.55);
 }
 
 .places-map-legend__list {
@@ -1626,7 +1658,7 @@ html:has(body.places-map-app) {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .places-map-legend__item {
@@ -1635,6 +1667,30 @@ html:has(body.places-map-app) {
   gap: 8px;
   font-size: 0.8rem;
   line-height: 1.2;
+}
+
+.places-map-legend__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 4px 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.places-map-legend__label:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.places-map-legend__check {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #7ec8a3;
 }
 
 .places-map-legend__swatch {
@@ -1682,6 +1738,16 @@ html:has(body.places-map-app) {
   border-bottom: 6px solid #fff;
   transform: rotate(45deg);
   margin-top: -1px;
+}
+
+.places-map-legend__swatch--port {
+  border-radius: 50%;
+  background: #46aac8;
+}
+
+.places-map-legend__swatch--locker {
+  border-radius: 2px;
+  background: #b48c5a;
 }
 
 .places-map-legend__swatch--info {
@@ -2005,10 +2071,12 @@ html:has(body.places-map-app) {
 
 .places-map-drawer__item {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 44px 10px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  row-gap: 2px;
+  align-items: start;
   margin: 0 0 6px;
   padding: 12px 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2030,15 +2098,17 @@ html:has(body.places-map-app) {
 }
 
 .places-map-drawer__name {
-  flex: 1 1 auto;
+  grid-row: 1;
+  grid-column: 3;
   min-width: 0;
   font-weight: 700;
   font-size: 0.95rem;
 }
 
 .places-map-drawer__region {
-  flex: 0 0 auto;
-  margin-left: auto;
+  grid-row: 2;
+  grid-column: 3;
+  margin-left: 0;
   font-size: 0.75rem;
   color: #9fb5ab;
 }
@@ -2176,6 +2246,32 @@ html:has(body.places-map-app) {
   letter-spacing: 0.02em;
 }
 
+.places-map-panel__info-badge--locker {
+  background: rgba(180, 140, 90, 0.16);
+  color: #7a5a30;
+}
+
+.places-map-panel__info-badge--port {
+  background: rgba(70, 170, 200, 0.16);
+  color: #2a6a7a;
+}
+
+.places-map-panel__cover-wrap {
+  margin: 0 0 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #d7e0db;
+  aspect-ratio: 16 / 10;
+  max-height: 160px;
+}
+
+.places-map-panel__cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .places-map-panel__body.is-info-place .places-map-panel__title {
   font-size: 1.15rem;
 }
@@ -2184,6 +2280,49 @@ html:has(body.places-map-app) {
 .places-map-marker--airport.is-hover .places-map-marker__plane {
   transform: scale(1.18);
   box-shadow: 0 4px 16px rgba(30, 70, 180, 0.65);
+}
+
+.places-map-marker__locker,
+.places-map-marker__port {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  margin: 2px auto 0;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.places-map-marker__locker {
+  background: linear-gradient(145deg, #c9a06a 0%, #9a6f3e 100%);
+  border-radius: 8px;
+}
+
+.places-map-marker__port {
+  background: linear-gradient(145deg, #5ec2db 0%, #2f7f9a 100%);
+}
+
+.places-map-marker--locker .places-map-marker__pulse {
+  background: rgba(180, 140, 90, 0.4);
+  top: 12px;
+}
+
+.places-map-marker--port .places-map-marker__pulse {
+  background: rgba(70, 170, 200, 0.4);
+  top: 12px;
+}
+
+.places-map-marker--locker.is-active .places-map-marker__locker,
+.places-map-marker--locker.is-hover .places-map-marker__locker,
+.places-map-marker--port.is-active .places-map-marker__port,
+.places-map-marker--port.is-hover .places-map-marker__port {
+  transform: scale(1.18);
 }
 
 .places-map-marker.is-active .places-map-marker__pin,
@@ -2246,9 +2385,43 @@ html:has(body.places-map-app) {
   background: #4a7cff;
 }
 
+.places-map-drawer__swatch--port {
+  border-radius: 50%;
+  background: #46aac8;
+}
+
+.places-map-drawer__swatch--locker {
+  border-radius: 2px;
+  background: #b48c5a;
+}
+
 .places-map-drawer__swatch--info {
   border-radius: 50%;
   background: #8a96a3;
+}
+
+.places-map-drawer__thumb-wrap {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #d7e0db;
+  grid-row: 1 / span 2;
+  grid-column: 1;
+}
+
+.places-map-drawer__thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.places-map-drawer__swatch {
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: 6px;
 }
 
 @keyframes places-map-pulse {
@@ -2309,7 +2482,7 @@ html:has(body.places-map-app) {
     left: max(20px, env(safe-area-inset-left));
     top: 64px;
     bottom: auto;
-    max-width: 200px;
+    max-width: 220px;
   }
 }
 
@@ -2319,11 +2492,16 @@ html:has(body.places-map-app) {
     top: 54px;
     bottom: auto;
     padding: 8px 10px;
-    max-width: min(42vw, 156px);
+    max-width: min(56vw, 190px);
+    max-height: min(48vh, 360px);
   }
 
   .places-map-legend__title {
-    margin-bottom: 6px;
+    margin-bottom: 0;
+  }
+
+  .places-map-legend__help {
+    display: none;
   }
 
   .places-map-panel {

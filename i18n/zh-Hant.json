@@ -7579,7 +7579,14 @@
     "line4Desc": "途經明洞、首爾站、惠化。非常適合購物和前往南山。",
     "line4Stops": "主要站點：首爾站·明洞·忠武路·惠化·水遊·舍堂",
     "line5Name": "5號線",
-    "line5Color": "紫色的"
+    "line5Color": "紫色的",
+    "legendLocker": "行李寄物",
+    "legendPort": "港口",
+    "filterTitle": "類型篩選",
+    "filterAll": "全部",
+    "filterHelp": "選擇要顯示的類型",
+    "lockerBadge": "行李寄物 · 時間與空位請以App/現場為準",
+    "portBadge": "港口 · 客運與郵輪據點"
   },
   "apps": {
     "groupMaps": "地圖",
@@ -7754,7 +7761,11 @@
         "zh-Hant": "在一個應用程式中提供計程車、代客泊車、腳踏車和停車等交通服務。在許多情況下，也支援外國卡支付。"
       }
     ],
-    "backHub": "← 有用的應用程式"
+    "backHub": "← 有用的應用程式",
+    "totaLockerName": "又他置物櫃 (T Locker)",
+    "totaLockerDesc": "查找首爾地鐵置物櫃位置與空位，並在App內預約付款。適合逛街或退房當天。",
+    "ddareungiName": "首爾公共自行車（따릉이）",
+    "ddareungiDesc": "首爾公共自行車。用App查看站點與通票，再掃QR租車。（可能需要App/卡片準備）"
   },
   "souvenir": {
     "catPickLabel": "分類",
@@ -10442,6 +10453,414 @@
           "zh-Hant": "蔚山海岸公園，以奇石、吊橋、日出聞名。是一個不同於工業城市形象的東海風景區。\n\n如何前往：搭乘蔚山市巴士或計程車到一山洞大王巖公園下車。"
         }
       ]
+    },
+    "locker-seoul-station": {
+      "name": "首爾站行李寄物櫃",
+      "desc": "KTX、AREX與地鐵交會的首爾站一帶寄物櫃，適合放大件行李。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "依大廳 Locker 指示前往；可用又他置物櫃App查看空位。",
+      "address": "서울 중구 한강대로 405 서울역",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20405%20%EC%84%9C%EC%9A%B8%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20405%20%EC%84%9C%EC%9A%B8%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "KTX·AREX·지하철이 모이는 서울역 일대 물품보관함. 캐리어 보관에 자주 쓰입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n서울역 대합실·출구 안내판의 ‘물품보관함/Locker’ 표시를 따르세요. 또타라커 앱으로 빈칸을 확인할 수 있습니다.",
+          "en": "Luggage lockers around Seoul Station (KTX, AREX, subway hub) — popular for large bags. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Locker signs in the concourse. Check empty units in the Tota Locker app when available.",
+          "ja": "KTX・AREX・地下鉄が集まるソウル駅周辺のロッカー。キャリー保管に便利。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nコンコースのLocker案内に従う。空きはもうたロッカーアプリで確認できる場合あり。",
+          "zh": "KTX、AREX与地铁交汇的首尔站一带行李柜，适合放大件行李。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按大厅 Locker 指示前往；可用又他储物柜App查看空位。",
+          "zh-Hant": "KTX、AREX與地鐵交會的首爾站一帶寄物櫃，適合放大件行李。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n依大廳 Locker 指示前往；可用又他置物櫃App查看空位。",
+          "vi": "Tủ gửi đồ quanh Ga Seoul (KTX/AREX/tàu điện) — hữu ích cho vali lớn. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo bảng Locker trong sảnh. Kiểm tra chỗ trống trên app Tota Locker nếu có.",
+          "th": "ล็อกเกอร์แถวสถานีโซล (KTX/AREX/รถไฟใต้ดิน) เหมาะกับกระเป๋าใหญ่ เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Locker ในโถงสถานี และเช็คช่องว่างในแอป Tota Locker",
+          "ru": "Камеры хранения у станции Сеул (KTX/AREX/метро) — удобно для чемоданов. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Locker. Свободные ячейки смотрите в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-seoul-station.jpg"
+    },
+    "locker-yongsan-station": {
+      "name": "龍山站行李寄物櫃",
+      "desc": "龍山站與I·Park Mall一帶寄物櫃，適合KTX與觀光之間暫存。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "在站內指示或又他置物櫃App確認位置。",
+      "address": "서울 용산구 한강대로 23길 55 용산역",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%2023%EA%B8%B8%2055%20%EC%9A%A9%EC%82%B0%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%2023%EA%B8%B8%2055%20%EC%9A%A9%EC%82%B0%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "용산역·아이파크몰 일대 보관함. KTX·관광 동선 사이에 짐을 맡기기 좋습니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n용산역 내 안내판 또는 또타라커 앱에서 위치를 확인하세요.",
+          "en": "Lockers near Yongsan Station / I'Park Mall — handy between KTX and sightseeing. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nCheck station signs or the Tota Locker app for exact spots.",
+          "ja": "龍山駅・アイパークモール周辺。KTXと観光の合間の荷物預けに。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\n駅内案内かもうたロッカーアプリで場所を確認。",
+          "zh": "龙山站与I·Park Mall一带寄存柜，适合KTX与观光之间暂存。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在站内指示或又他储物柜App确认位置。",
+          "zh-Hant": "龍山站與I·Park Mall一帶寄物櫃，適合KTX與觀光之間暫存。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在站內指示或又他置物櫃App確認位置。",
+          "vi": "Tủ gần Ga Yongsan / I'Park Mall — tiện giữa KTX và tham quan. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nXem biển chỉ dẫn trong ga hoặc app Tota Locker.",
+          "th": "ล็อกเกอร์แถวสถานีโยงซาน/ไอพาร์คมอลล์ ระหว่าง KTX กับเที่ยว เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nดูป้ายในสถานีหรือแอป Tota Locker",
+          "ru": "Камеры у станции Йонсан / I'Park Mall — удобно между KTX и прогулками. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСмотрите указатели на станции или приложение Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-yongsan-station.jpg"
+    },
+    "locker-busan-station": {
+      "name": "釜山站行李寄物櫃",
+      "desc": "釜山站一帶寄物櫃，KTX下車後逛市區前可暫存行李。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "按站內 Locker 指示；高峰時段可能很快滿櫃。",
+      "address": "부산 동구 중앙대로 206 부산역",
+      "regionLabel": "釜山",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산역 대합실·주변 물품보관함. KTX 하차 후 시내 관광 전에 캐리어를 맡기기 좋습니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n부산역 안내판의 물품보관함/Locker를 따르세요. 성수기는 일찍 찰 수 있습니다.",
+          "en": "Lockers at/near Busan Station — stash bags after KTX before exploring the city. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Locker signs inside Busan Station. Peak hours fill up fast.",
+          "ja": "釜山駅周辺ロッカー。KTX下車後の市内観光前にキャリー預けに便利。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\n駅内のLocker案内に従う。繁忙時は早く埋まることも。",
+          "zh": "釜山站一带行李柜，KTX下车后逛市区前可暂存行李。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按站内 Locker 指示；高峰时段可能很快满柜。",
+          "zh-Hant": "釜山站一帶寄物櫃，KTX下車後逛市區前可暫存行李。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按站內 Locker 指示；高峰時段可能很快滿櫃。",
+          "vi": "Tủ tại/gần Ga Busan — gửi vali sau KTX trước khi đi phố. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển Locker trong ga. Giờ cao điểm mau hết chỗ.",
+          "th": "ล็อกเกอร์ที่สถานีปูซาน — ฝากกระเป๋าหลัง KTX ก่อนเที่ยวเมือง เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Locker ในสถานี ช่วงพีกเต็มเร็ว",
+          "ru": "Камеры у станции Пусан — оставьте чемодан после KTX перед прогулкой. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Locker. В пик места заканчиваются быстро."
+        }
+      ],
+      "image": "Images/places/locker-busan-station.jpg"
+    },
+    "locker-myeongdong-station": {
+      "name": "明洞站又他置物櫃",
+      "desc": "明洞商圈附近地鐵置物櫃（又他），適合逛街或退房當天。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "在又他置物櫃App搜尋明洞站預約付款。",
+      "address": "서울 중구 명동역",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%AA%85%EB%8F%99%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%AA%85%EB%8F%99%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "명동 쇼핑가 인근 지하철 물품보관함(또타라커). 쇼핑·체크아웃 당일 짐 보관에 유용합니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 명동역을 검색해 예약·결제하세요.",
+          "en": "Subway lockers (Tota Locker) near Myeongdong shopping — useful on shopping or checkout days. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Myeongdong Station in the Tota Locker app to reserve and pay.",
+          "ja": "明洞ショッピング街近くの地下鉄ロッカー。買い物・チェックアウト日に便利。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで明洞駅を検索して予約・支払い。",
+          "zh": "明洞商圈附近地铁储物柜（又他），适合逛街或退房当天。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索明洞站预约付款。",
+          "zh-Hant": "明洞商圈附近地鐵置物櫃（又他），適合逛街或退房當天。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋明洞站預約付款。",
+          "vi": "Tủ tàu điện gần Myeongdong — tiện ngày shopping/checkout. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Myeongdong trên app Tota Locker để đặt và thanh toán.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินใกล้เมียงดง เหมาะวันช้อป/เช็คเอาต์ เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีเมียงดงในแอป Tota Locker เพื่อจองและจ่าย",
+          "ru": "Камеры метро у Мёндона — удобно в день шопинга или выезда. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию Мёндон в приложении Tota Locker для брони и оплаты."
+        }
+      ],
+      "image": "Images/places/locker-myeongdong-station.jpg"
+    },
+    "locker-hongdae-station": {
+      "name": "弘大入口站又他置物櫃",
+      "desc": "逛弘大、合井前暫存背包的地鐵置物櫃。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "在又他置物櫃App搜尋弘大入口站。",
+      "address": "서울 마포구 홍대입구역",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "홍대·합정 일대 관광·클럽 전에 가방을 맡기기 좋은 지하철 보관함입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 홍대입구역을 검색하세요.",
+          "en": "Subway lockers handy before exploring Hongdae / Hapjeong nightlife and cafés. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Hongik University Station in the Tota Locker app.",
+          "ja": "弘大・合井エリア観光前に荷物を預けやすい地下鉄ロッカー。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで弘大入口駅を検索。",
+          "zh": "逛弘大、合井前暂存背包的地铁储物柜。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索弘大入口站。",
+          "zh-Hant": "逛弘大、合井前暫存背包的地鐵置物櫃。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋弘大入口站。",
+          "vi": "Tủ tàu điện tiện trước khi đi Hongdae/Hapjeong. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Hongik Univ. trên app Tota Locker.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินก่อนเที่ยวฮงแด/ฮัปจอง เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีฮงแดในแอป Tota Locker",
+          "ru": "Камеры метро перед прогулкой по Хондэ/Хапчон. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию Хондэ в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-hongdae-station.jpg"
+    },
+    "locker-gangnam-station": {
+      "name": "江南站又他置物櫃",
+      "desc": "江南站一帶地鐵置物櫃，適合購物或辦事間隙短存。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "在又他置物櫃App搜尋江南站查看空位。",
+      "address": "서울 강남구 강남역",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "강남역 일대 지하철 물품보관함. 쇼핑·미팅 전 짧은 짐 보관에 적합합니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 강남역을 검색해 빈칸을 확인하세요.",
+          "en": "Subway lockers around Gangnam Station for short stops between shopping and meetings. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Gangnam Station in the Tota Locker app for availability.",
+          "ja": "江南駅周辺の地下鉄ロッカー。買い物や用事の合間の短時間預けに。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで江南駅の空きを確認。",
+          "zh": "江南站一带地铁储物柜，适合购物或办事间隙短存。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索江南站查看空位。",
+          "zh-Hant": "江南站一帶地鐵置物櫃，適合購物或辦事間隙短存。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋江南站查看空位。",
+          "vi": "Tủ tàu điện quanh Ga Gangnam cho gửi ngắn giữa shopping/họp. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Gangnam trên app Tota Locker để xem chỗ trống.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินแถวคังนัม สำหรับฝากสั้น ๆ เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีคังนัมในแอป Tota Locker",
+          "ru": "Камеры метро у Каннама для короткого хранения между делами. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию Каннам в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-gangnam-station.jpg"
+    },
+    "locker-express-bus-terminal": {
+      "name": "高速巴士客運站寄物",
+      "desc": "首爾高速巴士站與Central City一帶寄物，適合長途巴士前後。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "按客運站/地鐵指示；空位請現場或App確認。",
+      "address": "서울 서초구 신반포로 194 고속터미널",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%8B%A0%EB%B0%98%ED%8F%AC%EB%A1%9C%20194%20%EA%B3%A0%EC%86%8D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%8B%A0%EB%B0%98%ED%8F%AC%EB%A1%9C%20194%20%EA%B3%A0%EC%86%8D%ED%84%B0%EB%AF%B8%EB%84%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서울 고속터미널·센트럴시티 일대 보관함. 지방행 버스 전후 짐 보관에 유용합니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n터미널·지하철 고속터미널역 안내판을 확인하세요. 빈칸은 앱·현장에서 확인.",
+          "en": "Lockers at Seoul Express Bus Terminal / Central City — useful before or after intercity buses. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow terminal / subway signs. Confirm empty units on-site or in apps.",
+          "ja": "高速ターミナル・セントラルシティ周辺。地方行きバス前後の荷物預けに。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nターミナル・地下鉄案内を確認。空きは現地かアプリで。",
+          "zh": "首尔高速巴士站与Central City一带寄存，适合长途巴士前后。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按客运站/地铁指示；空位请现场或App确认。",
+          "zh-Hant": "首爾高速巴士站與Central City一帶寄物，適合長途巴士前後。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按客運站/地鐵指示；空位請現場或App確認。",
+          "vi": "Tủ tại bến xe Express Bus / Central City — tiện trước/sau xe liên tỉnh. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển bến/tàu điện. Xác nhận chỗ trống tại chỗ hoặc app.",
+          "th": "ล็อกเกอร์ที่สถานีรถบัสด่วนโซล ก่อน/หลังรถต่างจังหวัด เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้ายสถานี/รถไฟใต้ดิน เช็คช่องว่างที่หน้างานหรือแอป",
+          "ru": "Камеры у автовокзала / Central City — до или после междугородних автобусов. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСмотрите указатели вокзала/метро. Свободные места — на месте или в приложении."
+        }
+      ],
+      "image": "Images/places/locker-express-bus-terminal.jpg"
+    },
+    "locker-icn-t1": {
+      "name": "仁川機場T1行李寄物",
+      "desc": "仁川機場一號航廈行李寄物，適合進城一日遊或轉機前。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "按 Luggage Storage 指示；位置與費用以機場資訊為準。",
+      "address": "인천 중구 공항로 272 인천국제공항 제1여객터미널",
+      "regionLabel": "仁川",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C1%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C1%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인천공항 제1터미널 수하물 보관 서비스. 출국·환승·시내 관광 전 짐을 맡길 때 참고하세요. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n터미널 안내판 ‘Luggage Storage / 수하물 보관’을 따르세요. 위치·요금은 공항 안내·앱으로 확인.",
+          "en": "Luggage storage at Incheon Airport T1 — useful before city day trips or long layovers. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Luggage Storage signs. Confirm location and fees via airport info.",
+          "ja": "仁川空港第1ターミナルの荷物預かり。市内観光や乗り継ぎ前に。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nLuggage Storage案内に従う。場所・料金は空港案内で確認。",
+          "zh": "仁川机场一号航站楼行李寄存，适合进城一日游或转机前。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按 Luggage Storage 指示；位置与费用以机场信息为准。",
+          "zh-Hant": "仁川機場一號航廈行李寄物，適合進城一日遊或轉機前。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按 Luggage Storage 指示；位置與費用以機場資訊為準。",
+          "vi": "Gửi hành lý tại ICN T1 — tiện trước khi vào phố hoặc chờ nối chuyến. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển Luggage Storage. Xác nhận vị trí/phí qua thông tin sân bay.",
+          "th": "ฝากกระเป๋าที่ ICN T1 ก่อนเที่ยวเมืองหรือรอต่อเครื่อง เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Luggage Storage ยืนยันตำแหน่ง/ราคาจากข้อมูลสนามบิน",
+          "ru": "Камера хранения в ICN T1 — перед поездкой в город или пересадкой. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Luggage Storage. Уточняйте место и тарифы у аэропорта."
+        }
+      ],
+      "image": "Images/places/locker-icn-t1.jpg"
+    },
+    "locker-icn-t2": {
+      "name": "仁川機場T2行李寄物",
+      "desc": "仁川機場二號航廈行李寄物；請先確認自己的航廈。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "按T2內 Luggage Storage 指示。",
+      "address": "인천 중구 공항로 272 인천국제공항 제2여객터미널",
+      "regionLabel": "仁川",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인천공항 제2터미널 수하물 보관. T1과 위치가 다르니 탑승 터미널을 먼저 확인하세요. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\nT2 안내판의 수하물 보관/Luggage Storage를 확인하세요.",
+          "en": "Luggage storage at Incheon Airport T2 — confirm your terminal first (T1 vs T2). Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Luggage Storage signs inside Terminal 2.",
+          "ja": "仁川空港第2ターミナルの荷物預かり。T1と場所が違うのでターミナル確認を。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nT2内のLuggage Storage案内を確認。",
+          "zh": "仁川机场二号航站楼行李寄存；请先确认自己的航站楼。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按T2内 Luggage Storage 指示。",
+          "zh-Hant": "仁川機場二號航廈行李寄物；請先確認自己的航廈。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按T2內 Luggage Storage 指示。",
+          "vi": "Gửi hành lý tại ICN T2 — kiểm tra đúng nhà ga trước. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển Luggage Storage trong T2.",
+          "th": "ฝากกระเป๋าที่ ICN T2 — ตรวจเทอร์มินัลให้ถูกก่อน เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Luggage Storage ใน T2",
+          "ru": "Камера хранения в ICN T2 — сначала проверьте терминал. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Luggage Storage в T2."
+        }
+      ],
+      "image": "Images/places/locker-icn-t2.jpg"
+    },
+    "locker-dongdaemun-station": {
+      "name": "東大門歷史文化公園站又他置物櫃",
+      "desc": "逛DDP與東大門商圈前暫存的地鐵置物櫃。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "在又他置物櫃App搜尋東大門歷史文化公園站。",
+      "address": "서울 중구 동대문역사문화공원역",
+      "regionLabel": "首爾",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EB%8C%80%EB%AC%B8%EC%97%AD%EC%82%AC%EB%AC%B8%ED%99%94%EA%B3%B5%EC%9B%90%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EB%8C%80%EB%AC%B8%EC%97%AD%EC%82%AC%EB%AC%B8%ED%99%94%EA%B3%B5%EC%9B%90%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "DDP·동대문 쇼핑 전 가방을 맡기기 좋은 지하철 보관함입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 동대문역사문화공원역을 검색하세요.",
+          "en": "Subway lockers near DDP / Dongdaemun shopping districts. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Dongdaemun History & Culture Park Station in the Tota Locker app.",
+          "ja": "DDP・東大門ショッピング前に荷物を預けやすい地下鉄ロッカー。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで東大門歴史文化公園駅を検索。",
+          "zh": "逛DDP与东大门商圈前暂存的地铁储物柜。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索东大门历史文化公园站。",
+          "zh-Hant": "逛DDP與東大門商圈前暫存的地鐵置物櫃。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋東大門歷史文化公園站。",
+          "vi": "Tủ tàu điện gần DDP / Dongdaemun. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Dongdaemun H&C Park trên app Tota Locker.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินใกล้ DDP/ดงแดemun เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีดงแดemunในแอป Tota Locker",
+          "ru": "Камеры метро у DDP / Тондэмуна. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-dongdaemun-station.jpg"
+    },
+    "locker-haeundae-station": {
+      "name": "海雲台站行李寄物",
+      "desc": "去海雲台海灘前可暫存行李的車站寄物。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。",
+      "how": "查看車站/旅遊諮詢附近寄物指示；旺季可能滿櫃。",
+      "address": "부산 해운대구 해운대역",
+      "regionLabel": "釜山",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%ED%95%B4%EC%9A%B4%EB%8C%80%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%ED%95%B4%EC%9A%B4%EB%8C%80%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "해운대 해변·관광 전 짐을 맡기기 좋은 역 인근 보관함입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n해운대역·관광안내 근처 보관함 안내를 확인하세요. 성수기는 만석일 수 있습니다.",
+          "en": "Station-area lockers before Haeundae Beach sightseeing. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nCheck locker signs near the station/tourist info. Peak season fills quickly.",
+          "ja": "海雲台ビーチ観光前に荷物を預けやすい駅周辺ロッカー。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\n駅・観光案内付近のロッカー案内を確認。繁忙期は満杯になりやすい。",
+          "zh": "去海云台海滩前可暂存行李的车站寄存。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n查看车站/旅游咨询附近寄存指示；旺季可能满柜。",
+          "zh-Hant": "去海雲台海灘前可暫存行李的車站寄物。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n查看車站/旅遊諮詢附近寄物指示；旺季可能滿櫃。",
+          "vi": "Tủ gần ga trước khi ra biển Haeundae. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nXem biển tủ gần ga/quầy thông tin. Mùa cao điểm mau hết chỗ.",
+          "th": "ล็อกเกอร์แถวสถานีก่อนเที่ยวหาดแฮอุนแด เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nดูป้ายล็อกเกอร์ใกล้สถานี ช่วงพีกเต็มเร็ว",
+          "ru": "Камеры у станции перед пляжем Хэундэ. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСмотрите указатели у станции. В сезон места заканчиваются быстро."
+        }
+      ],
+      "image": "Images/places/locker-haeundae-station.jpg"
+    },
+    "port-busan": {
+      "name": "釜山港",
+      "desc": "釜山代表性港口，有國際客運碼頭、郵輪與港灣景觀。",
+      "how": "從釜山站乘公車/計程車至國際客運碼頭；班次以官方為準。",
+      "address": "부산 동구 충장대로 206 부산항국제여객터미널",
+      "regionLabel": "釜山",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%B6%A9%EC%9E%A5%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%B6%A9%EC%9E%A5%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산의 대표 항구. 국제여객터미널·크루즈·항만 경관을 볼 수 있는 여행 거점입니다.\n\n부산역에서 버스·택시로 국제여객터미널 방면. 배편·출국 심사는 공식 안내를 확인하세요.",
+          "en": "Busan's main port — international passenger terminal, cruises, and waterfront views.\n\nFrom Busan Station by bus/taxi to the international passenger terminal. Confirm sailings officially.",
+          "ja": "釜山の代表港。国際旅客ターミナルやクルーズ、港湾景観の拠点。\n\n釜山駅からバス・タクシーで国際旅客ターミナルへ。運航は公式確認を。",
+          "zh": "釜山代表性港口，有国际客运码头、邮轮与港湾景观。\n\n从釜山站乘公交/出租车至国际客运码头；班次以官方为准。",
+          "zh-Hant": "釜山代表性港口，有國際客運碼頭、郵輪與港灣景觀。\n\n從釜山站乘公車/計程車至國際客運碼頭；班次以官方為準。",
+          "vi": "Cảng chính của Busan — nhà ga hành khách quốc tế, du thuyền, cảnh cảng.\n\nTừ Ga Busan đi xe buýt/taxi đến nhà ga hành khách quốc tế.",
+          "th": "ท่าเรือหลักของปูซาน — ท่าผู้โดยสารระหว่างประเทศ/เรือสำราญ\n\nจากสถานีปูซานไปท่าผู้โดยสารด้วยบัส/แท็กซี่",
+          "ru": "Главный порт Пусана — пассажирский терминал, круизы, набережная.\n\nОт станции Пусан на автобусе/такси к международному терминалу."
+        }
+      ],
+      "image": "Images/places/port-busan.jpg"
+    },
+    "port-incheon": {
+      "name": "仁川港",
+      "desc": "首都圈門戶港口，靠近月尾島與中華街旅遊區。",
+      "how": "從仁川市區或機場乘公車/計程車；碼頭以船公司資訊為準。",
+      "address": "인천 중구 월미로 115 인천항국제여객터미널",
+      "regionLabel": "仁川",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EC%9B%94%EB%AF%B8%EB%A1%9C%20115%20%EC%9D%B8%EC%B2%9C%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EC%9B%94%EB%AF%B8%EB%A1%9C%20115%20%EC%9D%B8%EC%B2%9C%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "수도권 관문 항구. 국제여객·크루즈와 월미도·차이나타운 관광권과 가깝습니다.\n\n인천 시내·공항에서 버스·택시. 여객터미널 위치는 배편 회사 안내를 확인하세요.",
+          "en": "Capital-region gateway port — passenger ferries/cruises near Wolmido and Chinatown.\n\nBus/taxi from Incheon city or the airport. Confirm the passenger terminal with your ferry operator.",
+          "ja": "首都圏の玄関港。国際旅客・クルーズと月尾島・中華街観光が近い。\n\n市内・空港からバス・タクシー。ターミナルは運航会社案内で確認。",
+          "zh": "首都圈门户港口，靠近月尾岛与中华街旅游区。\n\n从仁川市区或机场乘公交/出租车；码头以船公司信息为准。",
+          "zh-Hant": "首都圈門戶港口，靠近月尾島與中華街旅遊區。\n\n從仁川市區或機場乘公車/計程車；碼頭以船公司資訊為準。",
+          "vi": "Cảng cửa ngõ thủ đô — gần Wolmido và phố người Hoa.\n\nXe buýt/taxi từ nội thành hoặc sân bay Incheon.",
+          "th": "ท่าเรือประตูเมืองหลวง ใกล้ Wolmido และไชน่าทาวน์\n\nบัส/แท็กซี่จากเมืองหรือสนามบินอินชอน",
+          "ru": "Порт-ворота столичного региона — рядом Вольмидо и Чайна-таун.\n\nАвтобус/такси из города или аэропорта Инчхона."
+        }
+      ],
+      "image": "Images/places/port-incheon.jpg"
+    },
+    "port-jeju": {
+      "name": "濟州港",
+      "desc": "濟州本島客運港，連接木浦、莞島等陸地航線。",
+      "how": "從濟州市區或機場乘公車/計程車；出航前確認天氣與班次。",
+      "address": "제주 제주시 임항로 제주항",
+      "regionLabel": "濟州",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9E%84%ED%95%AD%EB%A1%9C%20%EC%A0%9C%EC%A3%BC%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9E%84%ED%95%AD%EB%A1%9C%20%EC%A0%9C%EC%A3%BC%ED%95%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "제주 본섬 여객항. 목포·완도 등 육지 배편과 연결되는 관문입니다.\n\n제주시내·공항에서 버스·택시. 기상·결항이 잦을 수 있으니 출발전 확인하세요.",
+          "en": "Main passenger harbor on Jeju Island — ferries from Mokpo, Wando, and other mainland ports.\n\nBus/taxi from Jeju city or the airport. Check weather delays before sailing.",
+          "ja": "済州本島の旅客港。木浦・莞島など本土航路の玄関。\n\n市内・空港からバス・タクシー。欠航があり得るので出発前確認を。",
+          "zh": "济州本岛客运港，连接木浦、莞岛等陆地航线。\n\n从济州市区或机场乘公交/出租车；出航前确认天气与班次。",
+          "zh-Hant": "濟州本島客運港，連接木浦、莞島等陸地航線。\n\n從濟州市區或機場乘公車/計程車；出航前確認天氣與班次。",
+          "vi": "Cảng hành khách chính đảo Jeju — phà từ Mokpo, Wando…\n\nXe buýt/taxi từ thành phố/sân bay Jeju. Kiểm tra hủy chuyến vì thời tiết.",
+          "th": "ท่าเรือผู้โดยสารหลักของเชจู — เรือจากโมกโพ/วันโด ฯลฯ\n\nบัส/แท็กซี่จากเมืองหรือสนามบินเชจู ตรวจดีเลย์อากาศก่อน",
+          "ru": "Главный пассажирский порт Чеджу — паромы с материка.\n\nАвтобус/такси из города или аэропорта. Проверяйте отмены из‑за погоды."
+        }
+      ],
+      "image": "Images/places/port-jeju.jpg"
+    },
+    "port-mokpo": {
+      "name": "木浦港",
+      "desc": "西南海代表性客運港，有濟州航線與港灣夜景、儒達山。",
+      "how": "從木浦站或客運站乘計程車/公車；班次以船公司為準。",
+      "address": "전남 목포시 해안로 목포항",
+      "regionLabel": "全羅",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%82%A8%20%EB%AA%A9%ED%8F%AC%EC%8B%9C%20%ED%95%B4%EC%95%88%EB%A1%9C%20%EB%AA%A9%ED%8F%AC%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EB%AA%A9%ED%8F%AC%EC%8B%9C%20%ED%95%B4%EC%95%88%EB%A1%9C%20%EB%AA%A9%ED%8F%AC%ED%95%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서남해 대표 여객항. 제주행 배편과 항구 야경·유달산 관광권과 가깝습니다.\n\n목포역·시외버스터미널에서 택시·시내버스. 배편 시간표는 여객선사 안내를 확인하세요.",
+          "en": "Major southwest passenger port — ferries to Jeju and access to harbor views / Yudalsan.\n\nTaxi/city bus from Mokpo Station or the bus terminal. Confirm ferry schedules with operators.",
+          "ja": "西南海の代表旅客港。済州航路と港の夜景・儒達山観光が近い。\n\n木浦駅・バスターミナルからタクシー・市内バス。時刻は運航会社で確認。",
+          "zh": "西南海代表性客运港，有济州航线与港湾夜景、儒达山。\n\n从木浦站或客运站乘出租车/公交；班次以船公司为准。",
+          "zh-Hant": "西南海代表性客運港，有濟州航線與港灣夜景、儒達山。\n\n從木浦站或客運站乘計程車/公車；班次以船公司為準。",
+          "vi": "Cảng hành khách tây-nam — phà Jeju, cảnh cảng/Yudalsan.\n\nTaxi/xe buýt từ ga/bến xe Mokpo.",
+          "th": "ท่าเรือผู้โดยสารตะวันตกเฉียงใต้ — เรือเชจูและวิวท่าเรือ\n\nแท็กซี่/บัสจากสถานีโมกโพ",
+          "ru": "Крупный юго‑западный порт — паромы на Чеджу и виды гавани.\n\nТакси/автобус от станции или автовокзала Мокпхо."
+        }
+      ],
+      "image": "Images/places/port-mokpo.jpg"
+    },
+    "port-yeosu": {
+      "name": "麗水港",
+      "desc": "連接麗水世博與海濱的港口，近島嶼渡輪與夜景。",
+      "how": "從麗水世博站或市區乘公車/計程車；渡輪請現場確認。",
+      "address": "전남 여수시 여수항",
+      "regionLabel": "全羅",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%82%A8%20%EC%97%AC%EC%88%98%EC%8B%9C%20%EC%97%AC%EC%88%98%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EC%97%AC%EC%88%98%EC%8B%9C%20%EC%97%AC%EC%88%98%ED%95%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "여수 엑스포·낭만포차 일대와 이어지는 항구. 섬 배편·야경 명소와 가깝습니다.\n\n여수엑스포역·시내에서 버스·택시. 배편·케이블카는 현장·앱으로 확인하세요.",
+          "en": "Harbor linked to Yeosu Expo and the waterfront — island ferries and night views nearby.\n\nBus/taxi from Yeosu Expo Station or downtown. Confirm ferries and cable cars on-site.",
+          "ja": "麗水エキスポや臨海エリアにつながる港。島航路・夜景スポットが近い。\n\n麗水エキスポ駅・市内からバス・タクシー。航路は現地・アプリで確認。",
+          "zh": "连接丽水世博与海滨的港口，近岛屿渡轮与夜景。\n\n从丽水世博站或市区乘公交/出租车；渡轮请现场确认。",
+          "zh-Hant": "連接麗水世博與海濱的港口，近島嶼渡輪與夜景。\n\n從麗水世博站或市區乘公車/計程車；渡輪請現場確認。",
+          "vi": "Cảng gắn với Yeosu Expo/ven biển — phà đảo và đêm gần đó.\n\nXe buýt/taxi từ ga Yeosu Expo hoặc trung tâm.",
+          "th": "ท่าเรือเชื่อม Yeosu Expo และชายฝั่ง — เรือเกาะและวิวยามค่ำ\n\nบัส/แท็กซี่จากสถานี Yeosu Expo หรือตัวเมือง",
+          "ru": "Порт у Yeosu Expo и набережной — паромы на острова и ночные виды.\n\nАвтобус/такси от станции Yeosu Expo или центра."
+        }
+      ],
+      "image": "Images/places/port-yeosu.jpg"
+    },
+    "port-pohang": {
+      "name": "浦項港",
+      "desc": "東海岸工業與客運港，是迎日台、虎尾岬行程的據點。",
+      "how": "從浦項站或客運站乘計程車/公車；班次以船公司為準。",
+      "address": "경북 포항시 북구 포항항",
+      "regionLabel": "慶尚",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%B6%81%20%ED%8F%AC%ED%95%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%ED%8F%AC%ED%95%AD%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%B6%81%20%ED%8F%AC%ED%95%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%ED%8F%AC%ED%95%AD%ED%95%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "동해안 산업·여객이 함께하는 항구. 영일대·호미곶 여행권의 거점입니다.\n\n포항역·시외버스터미널에서 택시·버스. 배편은 여객선 안내를 확인하세요.",
+          "en": "East-coast industrial and passenger port — a base for Yeongildae and Homigot trips.\n\nTaxi/bus from Pohang Station or the bus terminal. Confirm ferry info with operators.",
+          "ja": "東海岸の産業・旅客港。迎日台・虎尾岬観光の拠点。\n\n浦項駅・バスターミナルからタクシー・バス。航路は運航案内で確認。",
+          "zh": "东海岸工业与客运港，是迎日台、虎尾岬行程的据点。\n\n从浦项站或客运站乘出租车/公交；班次以船公司为准。",
+          "zh-Hant": "東海岸工業與客運港，是迎日台、虎尾岬行程的據點。\n\n從浦項站或客運站乘計程車/公車；班次以船公司為準。",
+          "vi": "Cảng công nghiệp/hành khách bờ đông — gần Yeongildae, Homigot.\n\nTaxi/xe buýt từ ga/bến xe Pohang.",
+          "th": "ท่าเรือฝั่งตะวันออก — ฐานเที่ยว Yeongildae/Homigot\n\nแท็กซี่/บัสจากสถานีโพฮัง",
+          "ru": "Восточный порт — база для Ёнильдэ и Хомигот.\n\nТакси/автобус от станции или автовокзала Пхохана."
+        }
+      ],
+      "image": "Images/places/port-pohang.jpg"
     }
   },
   "fun": {
@@ -10936,7 +11355,7 @@
     "open": "打開旅行工具",
     "close": "關閉",
     "back": "返回工具列表",
-    "reference": "匯率與天氣僅供參考，可能與實際有所不同。",
+    "reference": "匯率、天氣與空氣品質僅供參考，可能與實際有所不同。",
     "currency": "匯率",
     "weather": "天氣",
     "timezone": "時差",
@@ -10951,6 +11370,18 @@
     "weatherError": "無法加載天氣，請檢查網路連接。",
     "humidity": "溼度",
     "wind": "風力",
+    "aqTitle": "空氣品質",
+    "pm10": "可吸入懸浮粒子 (PM10)",
+    "pm25": "細懸浮粒子 (PM2.5)",
+    "aqNote": "空氣品質僅供參考，可能與實際有所不同。",
+    "aqError": "無法載入空氣品質。",
+    "aqGrades": {
+      "good": "良好",
+      "moderate": "普通",
+      "bad": "不佳",
+      "veryBad": "非常不佳",
+      "unknown": "—"
+    },
     "koreaTime": "韓國（首爾）",
     "yourTime": "所選城市",
     "tzPickCity": "對比城市",

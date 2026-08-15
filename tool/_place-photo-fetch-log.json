@@ -1,0 +1,538 @@
+﻿[
+    {
+        "slug":  "myeongdong",
+        "ok":  true,
+        "title":  "File:Myeongdong night market seoul 3.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Myeongdong_night_market_seoul_3.jpg/1280px-Myeongdong_night_market_seoul_3.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "gyeongbok",
+        "ok":  true,
+        "title":  "File:Geunjeongjeon Seoul.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Geunjeongjeon_Seoul.jpg/1280px-Geunjeongjeon_Seoul.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "gangnam",
+        "ok":  true,
+        "title":  "File:Gangnam-station-entrance-12-20181121-143234.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Gangnam-station-entrance-12-20181121-143234.jpg/1280px-Gangnam-station-entrance-12-20181121-143234.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "hongdae",
+        "ok":  true,
+        "title":  "File:Hongik University Seoul.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Hongik_University_Seoul.jpg/1280px-Hongik_University_Seoul.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "itaewon",
+        "ok":  true,
+        "title":  "File:Itaewon, Seoul Halloween Crowd Crush on October 29th, 2022 (2).jpg",
+        "license":  "CC BY 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Itaewon%2C_Seoul_Halloween_Crowd_Crush_on_October_29th%2C_2022_%282%29.jpg/1280px-Itaewon%2C_Seoul_Halloween_Crowd_Crush_on_October_29th%2C_2022_%282%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "suwon",
+        "ok":  true,
+        "title":  "File:Hwaseong Fortress, Suwon, Gyeonggi-do, Republic of Korea (2).jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hwaseong_Fortress%2C_Suwon%2C_Gyeonggi-do%2C_Republic_of_Korea_%282%29.jpg/1280px-Hwaseong_Fortress%2C_Suwon%2C_Gyeonggi-do%2C_Republic_of_Korea_%282%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "goyang",
+        "ok":  true,
+        "title":  "File:高陽市公園 2017-06-29 01.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/%E9%AB%98%E9%99%BD%E5%B8%82%E5%85%AC%E5%9C%92_2017-06-29_01.jpg/1280px-%E9%AB%98%E9%99%BD%E5%B8%82%E5%85%AC%E5%9C%92_2017-06-29_01.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "gapyeong",
+        "ok":  true,
+        "title":  "File:남이섬 (4).JPG",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/%EB%82%A8%EC%9D%B4%EC%84%AC_%284%29.JPG/1280px-%EB%82%A8%EC%9D%B4%EC%84%AC_%284%29.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "haeundae",
+        "ok":  true,
+        "title":  "File:Haeundae Beach Busan (45698772572).jpg",
+        "license":  "CC BY-SA 2.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Haeundae_Beach_Busan_%2845698772572%29.jpg/1280px-Haeundae_Beach_Busan_%2845698772572%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "nampo",
+        "ok":  true,
+        "title":  "File:Jagalchi Market 20200523 018.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Jagalchi_Market_20200523_018.jpg/1280px-Jagalchi_Market_20200523_018.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "seomyeon",
+        "ok":  true,
+        "title":  "File:Seomyeon, Busan.jpg",
+        "license":  "CC BY 2.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/4/4b/Seomyeon%2C_Busan.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "namsan",
+        "ok":  true,
+        "title":  "File:N-Seoul-Tower and Namsan Park (26876783888).jpg",
+        "license":  "CC BY-SA 2.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/N-Seoul-Tower_and_Namsan_Park_%2826876783888%29.jpg/1280px-N-Seoul-Tower_and_Namsan_Park_%2826876783888%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "bukchon",
+        "ok":  true,
+        "title":  "File:Bukchon-ro 11-gil street with hanok houses and wooden gate in Bukchon Hanok Village Seoul.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bukchon-ro_11-gil_street_with_hanok_houses_and_wooden_gate_in_Bukchon_Hanok_Village_Seoul.jpg/1280px-Bukchon-ro_11-gil_street_with_hanok_houses_and_wooden_gate_in_Bukchon_Hanok_Village_Seoul.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "insadong",
+        "ok":  true,
+        "title":  "File:Insa-dong 인사동 October 1 2020 4.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Insa-dong_%EC%9D%B8%EC%82%AC%EB%8F%99_October_1_2020_4.jpg/1280px-Insa-dong_%EC%9D%B8%EC%82%AC%EB%8F%99_October_1_2020_4.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "dongdaemun",
+        "ok":  true,
+        "title":  "File:DongDaemun Design Plaza (동대문디자인플라자 (DDP)), Seoul, South Korea (Unsplash aNSniQXO424).jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/DongDaemun_Design_Plaza_%28%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90_%28DDP%29%29%2C_Seoul%2C_South_Korea_%28Unsplash_aNSniQXO424%29.jpg/1280px-DongDaemun_Design_Plaza_%28%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90_%28DDP%29%29%2C_Seoul%2C_South_Korea_%28Unsplash_aNSniQXO424%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "lotte-tower",
+        "ok":  true,
+        "title":  "File:Lotte world tower (censored).jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Lotte_world_tower_%28censored%29.jpg/1280px-Lotte_world_tower_%28censored%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "songdo",
+        "ok":  true,
+        "title":  "File:Central Park Patio View of Lake, Songdo IBD.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Central_Park_Patio_View_of_Lake%2C_Songdo_IBD.jpg/1280px-Central_Park_Patio_View_of_Lake%2C_Songdo_IBD.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "seoraksan",
+        "ok":  true,
+        "title":  "File:Seoraksan National Park 05.jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Seoraksan_National_Park_05.jpg/1280px-Seoraksan_National_Park_05.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "bulguksa",
+        "ok":  true,
+        "title":  "File:Birojeon, Bulguksa 03.jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Birojeon%2C_Bulguksa_03.jpg/1280px-Birojeon%2C_Bulguksa_03.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "donggung",
+        "ok":  true,
+        "title":  "File:Donggung Palace and Wolji Pond on February 13rd, 2017.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Donggung_Palace_and_Wolji_Pond_on_February_13rd%2C_2017.jpg/1280px-Donggung_Palace_and_Wolji_Pond_on_February_13rd%2C_2017.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "jeonju",
+        "ok":  true,
+        "title":  "File:Jeonju Hanok Village 20230408 012.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jeonju_Hanok_Village_20230408_012.jpg/1280px-Jeonju_Hanok_Village_20230408_012.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "seongsan",
+        "ok":  true,
+        "title":  "File:Seongsan Ilchulbong 02.jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Seongsan_Ilchulbong_02.jpg/1280px-Seongsan_Ilchulbong_02.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "jungmun",
+        "ok":  true,
+        "title":  "File:Jungmun-dong, Seogwipo-si, Jeju-do, South Korea - panoramio - song songroov (8).jpg",
+        "license":  "CC BY 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Jungmun-dong%2C_Seogwipo-si%2C_Jeju-do%2C_South_Korea_-_panoramio_-_song_songroov_%288%29.jpg/1280px-Jungmun-dong%2C_Seogwipo-si%2C_Jeju-do%2C_South_Korea_-_panoramio_-_song_songroov_%288%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "gamcheon",
+        "ok":  true,
+        "title":  "File:Gamcheon Culture Village March 30 2024 5.jpg",
+        "license":  "CC BY 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gamcheon_Culture_Village_March_30_2024_5.jpg/1280px-Gamcheon_Culture_Village_March_30_2024_5.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "haedong",
+        "ok":  true,
+        "title":  "File:Haedong Yonggungsa Temple 20200522 034.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Haedong_Yonggungsa_Temple_20200522_034.jpg/1280px-Haedong_Yonggungsa_Temple_20200522_034.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "imjingak",
+        "ok":  true,
+        "title":  "File:20240602 075300 DMZ Imjingak 04.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/20240602_075300_DMZ_Imjingak_04.jpg/1280px-20240602_075300_DMZ_Imjingak_04.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "everland",
+        "ok":  true,
+        "title":  "File:Everland 8.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Everland_8.jpg/1280px-Everland_8.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "airport-icn",
+        "ok":  true,
+        "title":  "File:Few people in arrival hall at Incheon International Airport Terminal 1 during the coronavirus outbreak 20200306 114257.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Few_people_in_arrival_hall_at_Incheon_International_Airport_Terminal_1_during_the_coronavirus_outbreak_20200306_114257.jpg/1280px-Few_people_in_arrival_hall_at_Incheon_International_Airport_Terminal_1_during_the_coronavirus_outbreak_20200306_114257.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "airport-gmp",
+        "ok":  true,
+        "title":  "File:Gimpo International Airport (cropped).jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/4/4c/Gimpo_International_Airport_%28cropped%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "airport-pus",
+        "ok":  true,
+        "title":  "File:Gimhae International Airport Departure Hall.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gimhae_International_Airport_Departure_Hall.jpg/1280px-Gimhae_International_Airport_Departure_Hall.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "airport-cju",
+        "ok":  true,
+        "title":  "File:Jeju International Airport.JPG",
+        "license":  "CC BY 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Jeju_International_Airport.JPG/1280px-Jeju_International_Airport.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "airport-tae",
+        "ok":  true,
+        "title":  "File:F-4D ROKAF w Sidewinders 1979.jpeg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/F-4D_ROKAF_w_Sidewinders_1979.jpeg/1280px-F-4D_ROKAF_w_Sidewinders_1979.jpeg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "airport-cjj",
+        "ok":  true,
+        "title":  "File:Cjj photo.JPG",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Cjj_photo.JPG/1280px-Cjj_photo.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "seoul-global-center",
+        "ok":  true,
+        "title":  "File:Seoul Metropolitan Library and Seoul City Hall during Seoul Spring Festa in May 2025.jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Seoul_Metropolitan_Library_and_Seoul_City_Hall_during_Seoul_Spring_Festa_in_May_2025.jpg/1280px-Seoul_Metropolitan_Library_and_Seoul_City_Hall_during_Seoul_Spring_Festa_in_May_2025.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "tourist-info-myeongdong",
+        "ok":  true,
+        "title":  "File:SK 南韓 Korea tour 明洞 Myeong-dong July-2013 shops.JPG",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/SK_%E5%8D%97%E9%9F%93_Korea_tour_%E6%98%8E%E6%B4%9E_Myeong-dong_July-2013_shops.JPG/1280px-SK_%E5%8D%97%E9%9F%93_Korea_tour_%E6%98%8E%E6%B4%9E_Myeong-dong_July-2013_shops.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "embassy-us-seoul",
+        "ok":  true,
+        "title":  "File:Seoul - Embassy Mission Residence - 1975 - DPLA - b63661ceeaca45f1a938fbef316f40b9.jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Seoul_-_Embassy_Mission_Residence_-_1975_-_DPLA_-_b63661ceeaca45f1a938fbef316f40b9.jpg/1280px-Seoul_-_Embassy_Mission_Residence_-_1975_-_DPLA_-_b63661ceeaca45f1a938fbef316f40b9.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "embassy-japan-seoul",
+        "ok":  true,
+        "title":  "File:Japanese legation to Korea, c.1900.jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Japanese_legation_to_Korea%2C_c.1900.jpg/1280px-Japanese_legation_to_Korea%2C_c.1900.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "embassy-china-seoul",
+        "ok":  true,
+        "title":  "File:Wongwt 首爾中國大使館 (17127154572).jpg",
+        "license":  "CC BY-SA 2.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Wongwt_%E9%A6%96%E7%88%BE%E4%B8%AD%E5%9C%8B%E5%A4%A7%E4%BD%BF%E9%A4%A8_%2817127154572%29.jpg/1280px-Wongwt_%E9%A6%96%E7%88%BE%E4%B8%AD%E5%9C%8B%E5%A4%A7%E4%BD%BF%E9%A4%A8_%2817127154572%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "noryangjin-cupbap",
+        "ok":  true,
+        "title":  "File:Noryangjin fish market.JPG",
+        "license":  "CC BY-SA 1.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/6/65/Noryangjin_fish_market.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "hangang-yeouido",
+        "ok":  true,
+        "title":  "File:Yeouido Hangang Park seen from Dangsan Railway Bridge.jpg",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Yeouido_Hangang_Park_seen_from_Dangsan_Railway_Bridge.jpg/1280px-Yeouido_Hangang_Park_seen_from_Dangsan_Railway_Bridge.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "hangang-banpo",
+        "ok":  true,
+        "title":  "File:Banpo Bridge img119.jpg",
+        "license":  "CC BY 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Banpo_Bridge_img119.jpg/1280px-Banpo_Bridge_img119.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "hallasan",
+        "ok":  true,
+        "title":  "File:Hallasan Mountain Hike.jpg",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Hallasan_Mountain_Hike.jpg/1280px-Hallasan_Mountain_Hike.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "cheonjeyeon",
+        "ok":  true,
+        "title":  "File:Jeju Cheonjeion Waterfall 3.jpg",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Jeju_Cheonjeion_Waterfall_3.jpg/1280px-Jeju_Cheonjeion_Waterfall_3.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "biff-square",
+        "ok":  true,
+        "title":  "File:BIFF Square.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/BIFF_Square.jpg/1280px-BIFF_Square.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "hwangnidan",
+        "ok":  true,
+        "title":  "File:Hwangnidan-gil 01.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Hwangnidan-gil_01.jpg/1280px-Hwangnidan-gil_01.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "hahoe",
+        "ok":  true,
+        "title":  "File:Korea-Andong-Hahoe Folk Village-19.jpg",
+        "license":  "CC BY-SA 2.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Korea-Andong-Hahoe_Folk_Village-19.jpg/1280px-Korea-Andong-Hahoe_Folk_Village-19.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "boseong",
+        "ok":  true,
+        "title":  "File:Korea-Boseong-Green.tea-05.jpg",
+        "license":  "CC BY-SA 2.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Korea-Boseong-Green.tea-05.jpg/1280px-Korea-Boseong-Green.tea-05.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "suncheon-bay",
+        "ok":  true,
+        "title":  "File:Panorama of International Garden Exposition Suncheon Bay Korea 2013.jpg",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/4/43/Panorama_of_International_Garden_Exposition_Suncheon_Bay_Korea_2013.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "tongyeong",
+        "ok":  true,
+        "title":  "File:Mobile Diving and Salvage Unit 1 conducts dive training with the Republic of Korea Navy\u0027s Sea Salvage and Rescue Unit during SALVEX Korea 2025 (8971754).jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mobile_Diving_and_Salvage_Unit_1_conducts_dive_training_with_the_Republic_of_Korea_Navy%27s_Sea_Salvage_and_Rescue_Unit_during_SALVEX_Korea_2025_%288971754%29.jpg/1280px-Mobile_Diving_and_Salvage_Unit_1_conducts_dive_training_with_the_Republic_of_Korea_Navy%27s_Sea_Salvage_and_Rescue_Unit_during_SALVEX_Korea_2025_%288971754%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "ulsan-daewangam",
+        "ok":  true,
+        "title":  "File:KU-Dwa2.jpg",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/KU-Dwa2.jpg/1280px-KU-Dwa2.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-seoul-station",
+        "ok":  true,
+        "title":  "File:Seoul Station Building 1925 side 20240219 02.jpg",
+        "license":  "CC BY 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Seoul_Station_Building_1925_side_20240219_02.jpg/1280px-Seoul_Station_Building_1925_side_20240219_02.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-yongsan-station",
+        "ok":  true,
+        "title":  "File:Yongsan Station at night.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Yongsan_Station_at_night.jpg/1280px-Yongsan_Station_at_night.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-busan-station",
+        "ok":  true,
+        "title":  "File:Busan-subway-134-Nopo-dong-station-building.jpg",
+        "license":  "CC BY 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Busan-subway-134-Nopo-dong-station-building.jpg/1280px-Busan-subway-134-Nopo-dong-station-building.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-myeongdong-station",
+        "ok":  true,
+        "title":  "File:Myeongdong Station 001.jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/7/78/Myeongdong_Station_001.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "locker-hongdae-station",
+        "ok":  true,
+        "title":  "File:AREX Hongik University Station platform.jpg",
+        "license":  "CC0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/AREX_Hongik_University_Station_platform.jpg/1280px-AREX_Hongik_University_Station_platform.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-gangnam-station",
+        "ok":  true,
+        "title":  "File:Burning Sun protest5.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Burning_Sun_protest5.jpg/1280px-Burning_Sun_protest5.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-express-bus-terminal",
+        "ok":  true,
+        "title":  "File:Express Bus Terminal Station 20230408 003.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Express_Bus_Terminal_Station_20230408_003.jpg/1280px-Express_Bus_Terminal_Station_20230408_003.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-icn-t1",
+        "ok":  true,
+        "title":  "File:Few people at check-in counters at Incheon International Airport Terminal 1 during the coronavirus outbreak 20200306 120650.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Few_people_at_check-in_counters_at_Incheon_International_Airport_Terminal_1_during_the_coronavirus_outbreak_20200306_120650.jpg/1280px-Few_people_at_check-in_counters_at_Incheon_International_Airport_Terminal_1_during_the_coronavirus_outbreak_20200306_120650.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-icn-t2",
+        "ok":  true,
+        "title":  "File:AREX-Incheon International Airport Cargo Terminal Stn-Exit 2-3.jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/AREX-Incheon_International_Airport_Cargo_Terminal_Stn-Exit_2-3.jpg/1280px-AREX-Incheon_International_Airport_Cargo_Terminal_Stn-Exit_2-3.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "locker-dongdaemun-station",
+        "ok":  true,
+        "title":  "File:Dongdaemun History \u0026 Culture Park Station on Seoul Subway Line 5.JPG",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/4/45/Dongdaemun_History_%26_Culture_Park_Station_on_Seoul_Subway_Line_5.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "locker-haeundae-station",
+        "ok":  true,
+        "title":  "File:Haeundae station Busan metro line2 sign 20180110 210510 4750.jpg",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/8/87/Haeundae_station_Busan_metro_line2_sign_20180110_210510_4750.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail_unscaled",
+        "error":  null
+    },
+    {
+        "slug":  "port-busan",
+        "ok":  true,
+        "title":  "File:Korea busan pusan harbour cargo container terminal.JPG",
+        "license":  "CC BY-SA 3.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Korea_busan_pusan_harbour_cargo_container_terminal.JPG/1280px-Korea_busan_pusan_harbour_cargo_container_terminal.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "port-incheon",
+        "ok":  true,
+        "title":  "File:South-Korea, Gyodong Island, Dongsan-ri (2), harbor scene.jpg",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/South-Korea%2C_Gyodong_Island%2C_Dongsan-ri_%282%29%2C_harbor_scene.jpg/1280px-South-Korea%2C_Gyodong_Island%2C_Dongsan-ri_%282%29%2C_harbor_scene.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "port-jeju",
+        "ok":  true,
+        "title":  "File:Jeju Costral Ferry Terminal.JPG",
+        "license":  "CC BY-SA 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Jeju_Costral_Ferry_Terminal.JPG/1280px-Jeju_Costral_Ferry_Terminal.JPG?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "port-mokpo",
+        "ok":  true,
+        "title":  "File:Welcoming ceremony 140308-N-TB410-062.jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Welcoming_ceremony_140308-N-TB410-062.jpg/1280px-Welcoming_ceremony_140308-N-TB410-062.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "port-yeosu",
+        "ok":  true,
+        "title":  "File:Geobukseon-daegyo 2020JUN.jpg",
+        "license":  "CC BY 4.0",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Geobukseon-daegyo_2020JUN.jpg/1280px-Geobukseon-daegyo_2020JUN.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    },
+    {
+        "slug":  "port-pohang",
+        "ok":  true,
+        "title":  "File:CJLOTS 2026 Kicks Off at Pohang Port (9783196).jpg",
+        "license":  "Public domain",
+        "url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/CJLOTS_2026_Kicks_Off_at_Pohang_Port_%289783196%29.jpg/1280px-CJLOTS_2026_Kicks_Off_at_Pohang_Port_%289783196%29.jpg?utm_source=commons.wikimedia.org\u0026utm_campaign=imageinfo\u0026utm_content=thumbnail",
+        "error":  null
+    }
+]
