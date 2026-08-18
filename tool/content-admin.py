@@ -706,6 +706,7 @@ def render_shop_primary_fields(
     source_type: str = "custom",
     phone: str = "",
     hours: str = "",
+    region: dict | None = None,
 ) -> str:
     from lib.i18n_store import LANGS
 
@@ -783,6 +784,15 @@ def render_shop_primary_fields(
         '<div class="field"><label>주소 · 위치</label>'
         f'<input type="text" name="location_ko" value="{h(ko.get("location", ""))}" '
         'placeholder="예: 서울 중구 …" data-shop-field="address"></div>'
+        f'<div class="field"><label>지역 · 시/도 (자동)</label>'
+        f'<input type="text" name="region_city" value="{h((region or {}).get("city", ""))}" '
+        'readonly placeholder="주소에서 자동 추출" title="저장 시 주소에서 다시 추출됩니다"></div>'
+        f'<div class="field"><label>지역 · 구/군 (자동)</label>'
+        f'<input type="text" name="region_district" value="{h((region or {}).get("district", ""))}" '
+        'readonly placeholder="주소에서 자동 추출" title="저장 시 주소에서 다시 추출됩니다"></div>'
+        f'<div class="field"><label>지역 · 동 (자동, 선택)</label>'
+        f'<input type="text" name="region_dong" value="{h((region or {}).get("dong", ""))}" '
+        'readonly placeholder="있으면 표시" title="저장 시 주소에서 다시 추출됩니다"></div>'
         f'<div class="field"><label>전화</label>'
         f'<input type="text" name="phone" value="{h(phone)}" '
         'placeholder="예: 02-123-4567" data-shop-field="phone"></div>'
@@ -818,6 +828,7 @@ def render_shop_lang_fields(
     source_type: str = "custom",
     phone: str = "",
     hours: str = "",
+    region: dict | None = None,
 ) -> str:
     """Korean-only primary fields. Other GUIDE_LANGS filled on save via auto-translate."""
     return render_shop_primary_fields(
@@ -826,6 +837,7 @@ def render_shop_lang_fields(
         source_type=source_type,
         phone=phone,
         hours=hours,
+        region=region,
     )
 
 
@@ -2345,6 +2357,7 @@ class AdminHandler(BaseHTTPRequestHandler):
             source_type=str(s.get("sourceType") or "custom"),
             phone=str(s.get("phone") or ""),
             hours=str(s.get("hours") or ""),
+            region=s.get("region") if isinstance(s.get("region"), dict) else {},
         )
         current_parent = (
             f"{s['kind']}|{s['dish_slug']}"

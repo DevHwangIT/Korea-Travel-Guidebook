@@ -1,0 +1,25 @@
+{
+  "festivals": {
+    "pageTitle": "Festivals & Events | Korea Travel Guide",
+    "title": "Festivals & Events",
+    "intro": "Check regional festivals and events on official tourism sites.",
+    "back": "← Festivals & Events",
+    "linksTitle": "Official links",
+    "linkVisitKoreaEyebrow": "VisitKorea",
+    "linkVisitKoreaTitle": "KTO festivals & events",
+    "linkVisitKoreaDesc": "Korea’s official festival hub — featured, themed, and regional events.",
+    "linkNationwideEyebrow": "Festivals",
+    "linkNationwideTitle": "Nationwide festival search",
+    "linkNationwideDesc": "Browse ongoing and upcoming festivals by region and season.",
+    "linkKoreanVisitEyebrow": "VisitKorea KR",
+    "linkKoreanVisitTitle": "VisitKorea (Korean)",
+    "linkKoreanVisitDesc": "Official domestic travel portal from Korea Tourism Organization.",
+    "linkVisitKoreaEnEyebrow": "English",
+    "linkVisitKoreaEnTitle": "VisitKorea (English)",
+    "linkVisitKoreaEnDesc": "Official Korea Tourism Organization site for international travelers.",
+    "openExternal": "Open in new tab →",
+    "sourceLabel": "Source",
+    "sourceName": "Korea Tourism Organization VisitKorea",
+    "sourceNote": "Schedules can change — always confirm on the official sites linked above."
+  }
+}

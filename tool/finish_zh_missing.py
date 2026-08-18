@@ -110,6 +110,7 @@ def main() -> int:
             "hours",
             "category",
             "score",
+            "region",
             "previewImage",
             "previewTitle",
             "body",

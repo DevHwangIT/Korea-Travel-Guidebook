@@ -1,0 +1,25 @@
+{
+  "festivals": {
+    "pageTitle": "节日与活动 | Korea Travel Guide",
+    "title": "节日与活动",
+    "intro": "各地区节日与活动请在官方旅游网站确认。",
+    "back": "← 节日与活动",
+    "linksTitle": "官方链接",
+    "linkVisitKoreaEyebrow": "VisitKorea",
+    "linkVisitKoreaTitle": "韩国观光公社 节日·活动",
+    "linkVisitKoreaDesc": "韩国观光公社节日枢纽 — 推荐、主题与地区活动。",
+    "linkNationwideEyebrow": "Festivals",
+    "linkNationwideTitle": "全国节日检索",
+    "linkNationwideDesc": "可按地区与时间查找进行中、即将举办的节日。",
+    "linkKoreanVisitEyebrow": "VisitKorea",
+    "linkKoreanVisitTitle": "韩国观光公社官网（韩文）",
+    "linkKoreanVisitDesc": "韩国观光公社官方国内旅游门户 — 目的地、路线与活动。",
+    "linkVisitKoreaEnEyebrow": "English",
+    "linkVisitKoreaEnTitle": "VisitKorea (English)",
+    "linkVisitKoreaEnDesc": "面向海外旅客的韩国观光公社官方英文网站。",
+    "openExternal": "在新窗口打开 →",
+    "sourceLabel": "来源",
+    "sourceName": "韩国观光公社 VisitKorea",
+    "sourceNote": "日程可能因主办方原因变更，请以上方官方网站最新信息为准。"
+  }
+}

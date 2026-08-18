@@ -80,6 +80,19 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.dakgalbi.title"
   },
   {
+    "id": "dakgangjeong",
+    "href": "../foods/meals/dakgangjeong/index.html",
+    "kind": "meal",
+    "tags": [
+      "chicken",
+      "spicy",
+      "nosoup",
+      "hearty",
+      "quickbite"
+    ],
+    "titleKey": "dishes.dakgangjeong.title"
+  },
+  {
     "id": "dakhanmari",
     "href": "../foods/meals/dakhanmari/index.html",
     "kind": "meal",
@@ -91,6 +104,32 @@ window.FOOD_RECOMMEND_CATALOG = [
       "mild"
     ],
     "titleKey": "dishes.dakhanmari.title"
+  },
+  {
+    "id": "doenjang-jjigae",
+    "href": "../foods/meals/doenjang-jjigae/index.html",
+    "kind": "meal",
+    "tags": [
+      "soup",
+      "warm",
+      "mild",
+      "hearty",
+      "nonspicy"
+    ],
+    "titleKey": "dishes.doenjang-jjigae.title"
+  },
+  {
+    "id": "galbijjim",
+    "href": "../foods/meals/galbijjim/index.html",
+    "kind": "meal",
+    "tags": [
+      "meat",
+      "nosoup",
+      "hearty",
+      "mild",
+      "warm"
+    ],
+    "titleKey": "dishes.galbijjim.title"
   },
   {
     "id": "gamjatang",
@@ -118,20 +157,6 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.ganjang-gejang.title"
   },
   {
-    "id": "gomtang",
-    "href": "../foods/meals/gomtang/index.html",
-    "kind": "meal",
-    "tags": [
-      "soup",
-      "warm",
-      "hearty",
-      "meat",
-      "mild",
-      "nonspicy"
-    ],
-    "titleKey": "dishes.gomtang.title"
-  },
-  {
     "id": "gopchang",
     "href": "../foods/meals/gopchang/index.html",
     "kind": "meal",
@@ -153,22 +178,10 @@ window.FOOD_RECOMMEND_CATALOG = [
       "warm",
       "hearty",
       "meat",
-      "mild"
+      "mild",
+      "nonspicy"
     ],
     "titleKey": "dishes.gukbap.title"
-  },
-  {
-    "id": "jajangmyeon",
-    "href": "../foods/meals/jajangmyeon/index.html",
-    "kind": "meal",
-    "tags": [
-      "noodles",
-      "mild",
-      "nosoup",
-      "nonspicy",
-      "hearty"
-    ],
-    "titleKey": "dishes.jajangmyeon.title"
   },
   {
     "id": "jeon",
@@ -221,6 +234,19 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.jjolmyeon.title"
   },
   {
+    "id": "jokbal",
+    "href": "../foods/meals/jokbal/index.html",
+    "kind": "meal",
+    "tags": [
+      "meat",
+      "nosoup",
+      "hearty",
+      "mild",
+      "warm"
+    ],
+    "titleKey": "dishes.jokbal.title"
+  },
+  {
     "id": "kalguksu",
     "href": "../foods/meals/kalguksu/index.html",
     "kind": "meal",
@@ -264,6 +290,20 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.kongguksu.title"
   },
   {
+    "id": "korean-chinese",
+    "href": "../foods/meals/korean-chinese/index.html",
+    "kind": "meal",
+    "tags": [
+      "noodles",
+      "meat",
+      "mild",
+      "nosoup",
+      "nonspicy",
+      "hearty"
+    ],
+    "titleKey": "dishes.korean-chinese.title"
+  },
+  {
     "id": "makguksu",
     "href": "../foods/meals/makguksu/index.html",
     "kind": "meal",
@@ -289,6 +329,18 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.malatang.title"
   },
   {
+    "id": "milmyeon",
+    "href": "../foods/meals/milmyeon/index.html",
+    "kind": "meal",
+    "tags": [
+      "cold",
+      "noodles",
+      "light",
+      "nosoup"
+    ],
+    "titleKey": "dishes.milmyeon.title"
+  },
+  {
     "id": "naengmyeon",
     "href": "../foods/meals/naengmyeon/index.html",
     "kind": "meal",
@@ -301,6 +353,19 @@ window.FOOD_RECOMMEND_CATALOG = [
       "nonspicy"
     ],
     "titleKey": "dishes.naengmyeon.title"
+  },
+  {
+    "id": "nakgopsae",
+    "href": "../foods/meals/nakgopsae/index.html",
+    "kind": "meal",
+    "tags": [
+      "spicy",
+      "seafood",
+      "meat",
+      "nosoup",
+      "hearty"
+    ],
+    "titleKey": "dishes.nakgopsae.title"
   },
   {
     "id": "samgyeopsal",
@@ -344,18 +409,6 @@ window.FOOD_RECOMMEND_CATALOG = [
     "reasonKey": "foodLife.quiz.results.sundubu.reason"
   },
   {
-    "id": "tangsuyuk",
-    "href": "../foods/meals/tangsuyuk/index.html",
-    "kind": "meal",
-    "tags": [
-      "meat",
-      "nosoup",
-      "mild",
-      "hearty"
-    ],
-    "titleKey": "dishes.tangsuyuk.title"
-  },
-  {
     "id": "tteokbokki",
     "href": "../foods/meals/tteokbokki/index.html",
     "kind": "meal",
@@ -396,6 +449,19 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.yangnyeom-chicken.title"
   },
   {
+    "id": "yukhoe",
+    "href": "../foods/meals/yukhoe/index.html",
+    "kind": "meal",
+    "tags": [
+      "meat",
+      "cold",
+      "nosoup",
+      "light",
+      "mild"
+    ],
+    "titleKey": "dishes.yukhoe.title"
+  },
+  {
     "id": "bingsu",
     "href": "../foods/desserts/bingsu/index.html",
     "kind": "dessert",
@@ -429,16 +495,6 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.bungeoppang.title"
   },
   {
-    "id": "butter-bread",
-    "href": "../foods/desserts/butter-bread/index.html",
-    "kind": "dessert",
-    "tags": [
-      "bakery",
-      "sweet"
-    ],
-    "titleKey": "dishes.butter-bread.title"
-  },
-  {
     "id": "cafe",
     "href": "../foods/desserts/cafe/index.html",
     "kind": "dessert",
@@ -469,17 +525,6 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.dubai-cookie.title"
   },
   {
-    "id": "nangman-sandwich",
-    "href": "../foods/desserts/nangman-sandwich/index.html",
-    "kind": "dessert",
-    "tags": [
-      "bakery",
-      "sweet",
-      "hearty"
-    ],
-    "titleKey": "dishes.nangman-sandwich.title"
-  },
-  {
     "id": "tanghulu",
     "href": "../foods/desserts/tanghulu/index.html",
     "kind": "dessert",
@@ -491,14 +536,17 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "dishes.tanghulu.title"
   },
   {
-    "id": "yakgwa",
-    "href": "../foods/desserts/yakgwa/index.html",
+    "id": "toast",
+    "href": "../foods/desserts/toast/index.html",
     "kind": "dessert",
     "tags": [
-      "sweet",
-      "bakery"
+      "portable",
+      "quickbite",
+      "mild",
+      "nosoup",
+      "light"
     ],
-    "titleKey": "dishes.yakgwa.title"
+    "titleKey": "dishes.toast.title"
   },
   {
     "id": "yogurt-ice",
@@ -548,6 +596,17 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "convenience.c1_pageTitle"
   },
   {
+    "id": "banana-milk",
+    "href": "../convenience-store/banana-milk/index.html",
+    "kind": "quick",
+    "tags": [
+      "drink",
+      "sweet",
+      "cold"
+    ],
+    "titleKey": "convenience.banana-milk_pageTitle"
+  },
+  {
     "id": "biyott",
     "href": "../convenience-store/biyott/index.html",
     "kind": "quick",
@@ -569,6 +628,17 @@ window.FOOD_RECOMMEND_CATALOG = [
       "combo"
     ],
     "titleKey": "convenience.blue-lemonade-milkis_pageTitle"
+  },
+  {
+    "id": "buldak-bokkeum-myeon",
+    "href": "../convenience-store/buldak-bokkeum-myeon/index.html",
+    "kind": "quick",
+    "tags": [
+      "noodles",
+      "spicy",
+      "quickbite"
+    ],
+    "titleKey": "convenience.buldak-bokkeum-myeon_pageTitle"
   },
   {
     "id": "carbonara",
@@ -706,6 +776,18 @@ window.FOOD_RECOMMEND_CATALOG = [
     "reasonKey": "foodLife.quiz.results.ramyeonEgg.reason"
   },
   {
+    "id": "store-kimbap",
+    "href": "../convenience-store/store-kimbap/index.html",
+    "kind": "quick",
+    "tags": [
+      "roll",
+      "portable",
+      "quickbite",
+      "mild"
+    ],
+    "titleKey": "convenience.store-kimbap_pageTitle"
+  },
+  {
     "id": "yakgwa-coffee",
     "href": "../convenience-store/yakgwa-coffee/index.html",
     "kind": "quick",
@@ -716,5 +798,16 @@ window.FOOD_RECOMMEND_CATALOG = [
       "combo"
     ],
     "titleKey": "convenience.c4_pageTitle"
+  },
+  {
+    "id": "yonsei-cream-bread",
+    "href": "../convenience-store/yonsei-cream-bread/index.html",
+    "kind": "quick",
+    "tags": [
+      "sweet",
+      "bakery",
+      "quickbite"
+    ],
+    "titleKey": "convenience.yonsei-cream-bread_pageTitle"
   }
 ];

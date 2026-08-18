@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Load / save locale JSON files and rebuild messages.js."""
+"""Load / save locale JSON files and rebuild messages.js.
+
+Source layout (see i18n/locale_routing.py + README-locales.md):
+  i18n/common/{lang}.json
+  i18n/pages/<group>/{lang}.json
+  i18n/{lang}.json          — assembled mirror (also residual fallback)
+
+load_* merges sources; save_* routes top-level keys into the correct source
+files, then refreshes the assembled mirror. Callers still invoke build_bundle()
+to regenerate messages.js.
+"""
 from __future__ import annotations
 
 import json
@@ -29,9 +39,22 @@ LANG_LABELS = {
 }
 
 
+def _routing():
+    """Lazy-import i18n/locale_routing.py without requiring package install."""
+    import importlib.util
+
+    path = I18N_DIR / "locale_routing.py"
+    spec = importlib.util.spec_from_file_location("i18n_locale_routing", path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Cannot load {path}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def load_lang(lang: str) -> dict[str, Any]:
-    path = I18N_DIR / f"{lang}.json"
-    return json.loads(path.read_text(encoding="utf-8"))
+    """Return full merged locale dict (common + pages + residual fallback)."""
+    return _routing().load_merged_lang(lang)
 
 
 def load_all() -> dict[str, dict[str, Any]]:
@@ -39,12 +62,10 @@ def load_all() -> dict[str, dict[str, Any]]:
 
 
 def save_lang(lang: str, data: dict[str, Any]) -> None:
-    path = I18N_DIR / f"{lang}.json"
-    path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
+    """Route top-level keys into source files and refresh assembled mirror."""
+    routing = _routing()
+    routing.write_sources_for_lang(lang, data)
+    routing.write_assembled_lang(lang, data)
 
 
 def save_all(bundle: dict[str, dict[str, Any]]) -> None:

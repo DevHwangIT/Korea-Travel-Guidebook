@@ -47,6 +47,8 @@ BEFORE_TRIP_SLOTS: list[BodySlot] = [
 ]
 
 SHOPPING_SLOTS: list[BodySlot] = [
+    BodySlot("convenienceBody", "편의점", "shopping", "convenience", group="convenience"),
+    BodySlot("promoBody", "2+1·행사", "shopping", "promo", group="promo"),
     BodySlot("oliveBody", "뷰티·올리브영", "shopping", "olive", group="olive"),
     BodySlot("daisoBody", "다이소·생활", "shopping", "daiso", group="daiso"),
     BodySlot("dutyBody", "면세·환급", "shopping", "duty", group="duty"),
@@ -90,6 +92,7 @@ APPS_SLOTS: list[BodySlot] = [
     BodySlot("baeminBody", "배달의민족", "apps", "baemin", group="baemin"),
     BodySlot("yogiyoBody", "요기요", "apps", "yogiyo", group="yogiyo"),
     BodySlot("tmoneyBody", "티머니 GO", "apps", "tmoney", group="tmoney"),
+    BodySlot("korailTalkBody", "코레일톡", "apps", "korailTalk", group="korailTalk"),
 ]
 
 # One post per contact under pages/emergency/{slug}/

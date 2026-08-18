@@ -1497,6 +1497,22 @@ a.souvenir-card:hover {
   }
 }
 
+.travel-course-tabs > .prep-cat-list {
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
+
+.travel-course-empty {
+  margin: 8px 0 0;
+  padding: 28px 12px;
+  text-align: center;
+  color: #6b7a74;
+  font-size: 0.98rem;
+  background: #f8faf9;
+  border: 1px dashed #d5ddd9;
+  border-radius: 10px;
+}
+
 /* ?��?Immersive Korea places map (full-screen app shell) ?��?*/
 body.places-map-app {
   margin: 0;
@@ -7955,6 +7971,36 @@ body.prep-page .site-brand {
   background: rgba(34, 34, 34, 0.14);
 }
 
+/* Outline groups: prep block then tips block (not top tabs) */
+.prep-map__outline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.prep-map__group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.prep-map__group-title {
+  margin: 0 0 8px;
+  padding: 2px 10px 8px;
+  border-bottom: 1px solid var(--prep-line);
+  font-family: var(--prep-font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  color: var(--prep-mute);
+}
+
+.prep-map__group.is-active .prep-map__group-title {
+  color: var(--prep-ink);
+  border-bottom-color: rgba(34, 34, 34, 0.28);
+}
+
 .prep-map__topics {
   display: flex;
   flex-direction: column;
@@ -8192,6 +8238,15 @@ body.prep-page .site-brand {
   color: var(--prep-accent-deep);
 }
 
+.prep-map .tip-article h3,
+.prep-map .guide-article h3 {
+  margin: 1.35rem 0 8px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--prep-accent-deep);
+}
+
 .prep-map .tip-mistake {
   display: block;
   width: fit-content;
@@ -8295,7 +8350,7 @@ body.prep-page .site-brand {
   }
 }
 
-/* Narrow: parents row + children row, then content */
+/* Narrow: keep vertical outline (accordion), then content — no chip tab bar */
 @media (max-width: 820px) {
   .prep-map {
     max-width: 42rem;
@@ -8329,35 +8384,44 @@ body.prep-page .site-brand {
     min-width: 0;
     max-width: 100%;
     box-sizing: border-box;
-    /* allow child chip row to own horizontal scroll (clip hid overflow affordance) */
     overflow-x: visible;
+  }
+
+  .prep-map__outline {
+    gap: 20px;
+  }
+
+  .prep-map__group-title {
+    font-size: 0.78rem;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   .prep-map__topics {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 0 2px 4px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 0;
     min-width: 0;
     max-width: 100%;
     box-sizing: border-box;
   }
 
-  /* Flatten topic wrappers so parents sit in one row, children on the next */
   .prep-map__topic {
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .prep-map__node {
-    order: 0;
-    flex: 0 0 auto;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 40px;
-    min-width: 4.75rem;
-    padding: 9px 14px;
-    border: 1px solid var(--prep-line);
-    border-radius: 10px;
-    background: #ffffff;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
     color: var(--prep-ink);
   }
 
@@ -8367,64 +8431,40 @@ body.prep-page .site-brand {
     color: #ffffff;
   }
 
-  /* Subcategory chips: swipe/scroll row so all tabs stay reachable on mobile */
   .prep-map__children {
-    order: 1;
-    flex: 1 1 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    gap: 6px;
-    margin: 2px 0 0;
-    padding: 8px 20px 10px 2px;
-    border-left: 0;
-    border-top: 1px solid var(--prep-line);
-    width: 100%;
+    gap: 2px;
+    margin: 2px 0 8px;
+    padding: 4px 0 2px 10px;
+    border-left: 2px solid var(--prep-accent);
+    border-top: 0;
+    width: auto;
     max-width: 100%;
     min-width: 0;
-    box-sizing: border-box;
-    overflow-x: auto;
-    overflow-y: hidden;
-    overscroll-behavior-x: contain;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
-    scroll-snap-type: x proximity;
-    scroll-padding-inline: 8px;
-    scrollbar-width: thin;
-    /* right-edge fade = swipe affordance when chips overflow */
-    -webkit-mask-image: linear-gradient(
-      to right,
-      #000 0%,
-      #000 calc(100% - 2.5rem),
-      transparent 100%
-    );
-    mask-image: linear-gradient(
-      to right,
-      #000 0%,
-      #000 calc(100% - 2.5rem),
-      transparent 100%
-    );
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+    scroll-snap-type: none;
   }
 
   .prep-map__children li {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
+    flex: none;
   }
 
   .prep-map__child {
-    width: auto;
-    max-width: none;
-    display: inline-block;
-    padding: 8px 12px;
-    border: 1px solid var(--prep-line);
-    border-radius: 10px;
-    background: #ffffff;
-    white-space: nowrap;
-    font-size: 0.86rem;
-    scroll-snap-align: start;
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    white-space: normal;
+    font-size: 0.9rem;
   }
 
   .prep-map__child.is-active {
-    border-color: var(--prep-accent);
+    border-color: transparent;
     background: var(--prep-soft);
     color: var(--prep-accent-deep);
   }
@@ -9223,3 +9263,5 @@ body.welcome-popup-lock {
     font-size: 0.94rem;
   }
 }
+
+/* Legacy prep-tips top-tab / card UI removed — outline groups live under .prep-map__group */}

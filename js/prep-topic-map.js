@@ -1,17 +1,34 @@
 /**
- * Before-trip — booklet topic index (parents + children | content page).
- * Same interaction model as travel tips; hash: #category[/sub].
- * Empty hash → first category + first sub.
+ * Prep & travel-tips hub — hierarchical outline (groups → numbered cats → items).
+ * Hash: #category[/sub]. Empty → first prep category. #tips → first tip category.
  */
 (function () {
   var root = document.querySelector("[data-prep-map]");
   if (!root) return;
+
+  var TIP_CATS = {
+    daily: true,
+    restaurant: true,
+    transport: true,
+    shopping: true,
+    convenience: true,
+  };
+  var FIRST_TIP_CAT = "daily";
+
+  /** Legacy hashes → 05. 편의점 (use / shop / promo) */
+  var HASH_ALIASES = {
+    "daily/convenience": { cat: "convenience", sub: "use" },
+    "shopping/convenience": { cat: "convenience", sub: "shop" },
+    "shopping/promo": { cat: "convenience", sub: "promo" },
+    "convenience/guide": { cat: "convenience", sub: "use" },
+  };
 
   var nodes = Array.prototype.slice.call(root.querySelectorAll("[data-prep-cat]"));
   var topics = Array.prototype.slice.call(root.querySelectorAll("[data-prep-topic]"));
   var childLists = Array.prototype.slice.call(root.querySelectorAll("[data-prep-children]"));
   var childBtns = Array.prototype.slice.call(root.querySelectorAll("[data-prep-go]"));
   var regions = Array.prototype.slice.call(root.querySelectorAll("[data-prep-region]"));
+  var groups = Array.prototype.slice.call(root.querySelectorAll("[data-prep-group]"));
   var pagePane = root.querySelector("[data-prep-page]");
   var reduceMotionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
   var narrowMq = window.matchMedia("(max-width: 820px)");
@@ -36,10 +53,18 @@
     if (!raw) return null;
     var parts = raw.split("/").filter(Boolean);
     if (!parts.length) return null;
-    return {
+    var state = {
       cat: decodeURIComponent(parts[0]).toLowerCase(),
       sub: parts[1] ? decodeURIComponent(parts[1]).toLowerCase() : "",
     };
+    var aliasKey = state.sub ? state.cat + "/" + state.sub : "";
+    if (aliasKey && HASH_ALIASES[aliasKey]) {
+      return {
+        cat: HASH_ALIASES[aliasKey].cat,
+        sub: HASH_ALIASES[aliasKey].sub,
+      };
+    }
+    return state;
   }
 
   function writeHash(cat, sub) {
@@ -72,6 +97,16 @@
   function firstSubId(region) {
     var first = region.querySelector("[data-prep-sub]");
     return first ? first.getAttribute("data-prep-sub") : "";
+  }
+
+  function syncGroups(cat) {
+    var isTip = !!(cat && TIP_CATS[cat]);
+    groups.forEach(function (group) {
+      var id = group.getAttribute("data-prep-group");
+      var on = (id === "tips" && isTip) || (id === "prep" && !!cat && !isTip);
+      group.classList.toggle("is-active", on);
+    });
+    root.setAttribute("data-active-group", isTip ? "tips" : "prep");
   }
 
   function setSubOpen(region, subId) {
@@ -111,7 +146,6 @@
     if (typeof node.scrollIntoView !== "function") return;
     node.scrollIntoView({
       behavior: reduceMotion() ? "auto" : "smooth",
-      inline: "center",
       block: "nearest",
     });
   }
@@ -162,6 +196,7 @@
     });
 
     syncChildNav(found ? cat : "", activeSub);
+    syncGroups(found ? cat : "");
     if (found && !opts.skipTurn) pulsePageTurn(cat, activeSub);
 
     if (!found && !opts.skipHash) writeHash("", "");
@@ -188,6 +223,18 @@
 
   function applyFromHash() {
     var state = parseHash();
+
+    // #tips → first tip category (keeps deep links from old hub / redirects)
+    if (state && state.cat === "tips") {
+      var tipRegion = root.querySelector('[data-prep-region="' + FIRST_TIP_CAT + '"]');
+      setCategory(FIRST_TIP_CAT, tipRegion ? firstSubId(tipRegion) : "", {
+        skipHash: false,
+        skipScroll: true,
+        skipTurn: true,
+      });
+      return;
+    }
+
     if (!state || !state.cat) {
       var fallbackCat = firstCategoryId();
       var region = fallbackCat
@@ -200,6 +247,7 @@
       });
       return;
     }
+
     var region = root.querySelector('[data-prep-region="' + state.cat + '"]');
     if (!region) {
       var fallback = firstCategoryId();
@@ -213,6 +261,7 @@
       });
       return;
     }
+
     var sub = state.sub;
     if (sub && !region.querySelector('[data-prep-sub="' + sub + '"]')) {
       sub = firstSubId(region);

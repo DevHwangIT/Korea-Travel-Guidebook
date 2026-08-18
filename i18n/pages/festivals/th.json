@@ -1,0 +1,25 @@
+{
+  "festivals": {
+    "pageTitle": "เทศกาลและกิจกรรม | Korea Travel Guide",
+    "title": "เทศกาลและกิจกรรม",
+    "intro": "ดูเทศกาลและกิจกรรมตามภูมิภาคบนเว็บท่องเที่ยวทางการ",
+    "back": "← เทศกาลและกิจกรรม",
+    "linksTitle": "ลิงก์ทางการ",
+    "linkVisitKoreaEyebrow": "เยือนเกาหลี",
+    "linkVisitKoreaTitle": "เทศกาลและกิจกรรม KTO",
+    "linkVisitKoreaDesc": "ศูนย์รวมเทศกาลทางการของเกาหลี — เด่น ตามธีม และตามภูมิภาค",
+    "linkNationwideEyebrow": "เทศกาล",
+    "linkNationwideTitle": "ค้นหาเทศกาลทั่วประเทศ",
+    "linkNationwideDesc": "ดูเทศกาลที่กำลังจัดและกำลังจะมา ตามภูมิภาคและฤดูกาล",
+    "linkKoreanVisitEyebrow": "เยือนเกาหลี KR",
+    "linkKoreanVisitTitle": "VisitKorea (เกาหลี)",
+    "linkKoreanVisitDesc": "พอร์ทัลท่องเที่ยวในประเทศทางการขององค์การท่องเที่ยวเกาหลี",
+    "linkVisitKoreaEnEyebrow": "ภาษาอังกฤษ",
+    "linkVisitKoreaEnTitle": "VisitKorea (อังกฤษ)",
+    "linkVisitKoreaEnDesc": "เว็บทางการ KTO สำหรับนักท่องเที่ยวต่างชาติ",
+    "openExternal": "เปิดแท็บใหม่ →",
+    "sourceLabel": "แหล่งข้อมูล",
+    "sourceName": "VisitKorea — องค์การท่องเที่ยวเกาหลี",
+    "sourceNote": "ตารางอาจเปลี่ยน — ยืนยันบนเว็บทางการด้านบนเสมอ"
+  }
+}

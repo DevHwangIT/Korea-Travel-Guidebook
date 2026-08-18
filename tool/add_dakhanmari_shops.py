@@ -140,6 +140,7 @@ def main() -> int:
                 "menuItems",
                 "category",
                 "score",
+                "region",
             ):
                 if key in ko:
                     entry[key] = ko[key]

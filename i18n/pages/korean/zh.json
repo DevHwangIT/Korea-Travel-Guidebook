@@ -1,0 +1,138 @@
+{
+  "korean": {
+    "pageTitle": "有用的韩语",
+    "intro": "我们只收集了旅行中实际经常使用的短语。 ▶ 听发音。脏话标签仅供参考，以便您听到时能明白其含义，而不是重复。",
+    "catPickLabel": "分类",
+    "catDaily": "日常生活",
+    "catRestaurant": "餐厅使用",
+    "catShopping": "购物",
+    "catTransport": "交通",
+    "catEmergency": "紧急/帮助",
+    "p": {
+      "hello": {
+        "ko": "你好",
+        "rom": "Annyeonghaseyo",
+        "en": "Hello",
+        "ja": "こんにちは"
+      },
+      "thanks": {
+        "ko": "谢谢",
+        "rom": "Gamsahamnida",
+        "en": "Thank you",
+        "ja": "ありがとうございます"
+      },
+      "sorry": {
+        "ko": "对不起",
+        "rom": "Joesonghamnida",
+        "en": "I'm sorry",
+        "ja": "すみません"
+      },
+      "restroom": {
+        "ko": "厕所在哪里？",
+        "rom": "Hwajangsil eodiyeyo?",
+        "en": "Where is the restroom?",
+        "ja": "トイレはどこですか？"
+      },
+      "help": {
+        "ko": "帮助",
+        "rom": "Dowajuseyo",
+        "en": "Please help me",
+        "ja": "助けてください"
+      },
+      "this-please": {
+        "ko": "请给我这个",
+        "rom": "Igeo juseyo",
+        "en": "Please give me this",
+        "ja": "これをください"
+      },
+      "delicious": {
+        "ko": "很好吃",
+        "rom": "Masisseoyo",
+        "en": "It's delicious",
+        "ja": "おいしいです"
+      },
+      "water": {
+        "ko": "请给我一杯水",
+        "rom": "Mul juseyo",
+        "en": "Water, please",
+        "ja": "水をください"
+      },
+      "bill": {
+        "ko": "计算",
+        "rom": "Gyesaniyo",
+        "en": "Check, please",
+        "ja": "お会計お願いします"
+      },
+      "english-menu": {
+        "ko": "有英文菜单吗？",
+        "rom": "Yeong-eo menyu isseoyo?",
+        "en": "Do you have an English menu?",
+        "ja": "英語のメニューはありますか？"
+      },
+      "how-much": {
+        "ko": "这是多少钱？",
+        "rom": "Eolmayeyo?",
+        "en": "How much is it?",
+        "ja": "いくらですか？"
+      },
+      "card-ok": {
+        "ko": "你有卡吗？",
+        "rom": "Kadeu dwaeyo?",
+        "en": "Can I pay by card?",
+        "ja": "カードは使えますか？"
+      },
+      "takeout": {
+        "ko": "请把它包起来",
+        "rom": "Pojanghae juseyo",
+        "en": "Please wrap it to go",
+        "ja": "持ち帰らせてください"
+      },
+      "receipt": {
+        "ko": "请给我一张收据",
+        "rom": "Yeongsujeung juseyo",
+        "en": "Receipt, please",
+        "ja": "領収書をください"
+      },
+      "this-bus": {
+        "ko": "这趟巴士去明洞吗？",
+        "rom": "I beoseu Myeongdong gayo?",
+        "en": "Does this bus go to Myeongdong?",
+        "ja": "このバスは明洞に行きますか？"
+      },
+      "transfer": {
+        "ko": "这是一个转移。",
+        "rom": "Hwanseung-iyo",
+        "en": "Transfer (please)",
+        "ja": "乗り換えです"
+      },
+      "get-off": {
+        "ko": "请让我在这里下车",
+        "rom": "Yeogiseo naeryeo juseyo",
+        "en": "Please let me off here",
+        "ja": "ここで降ろしてください"
+      },
+      "police": {
+        "ko": "警察局在哪里？",
+        "rom": "Gyeongchalseo eodiyeyo?",
+        "en": "Where is the police station?",
+        "ja": "警察署はどこですか？"
+      },
+      "hospital": {
+        "ko": "医院在哪里？",
+        "rom": "Byeongwon eodiyeyo?",
+        "en": "Where is the hospital?",
+        "ja": "病院はどこですか？"
+      },
+      "lost": {
+        "ko": "我迷路了",
+        "rom": "Gireul ireosseoyo",
+        "en": "I'm lost",
+        "ja": "道に迷いました"
+      }
+    },
+    "catSwear": "（禁止）脏话",
+    "swearBadge": "禁止",
+    "swearWarningTitle": "切勿使用它",
+    "swearWarningBody": "以下是一些在韩国听起来非常粗鲁或具有攻击性的词语。不再重复，只是作为你在街上、广播、游戏聊天中听到时理解含义的参考。"
+  }
+}

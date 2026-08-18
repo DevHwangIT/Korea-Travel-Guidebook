@@ -1,0 +1,25 @@
+{
+  "festivals": {
+    "pageTitle": "Фестивали и события | Korea Travel Guide",
+    "title": "Фестивали и события",
+    "intro": "Смотрите региональные фестивали и события на официальных туристических сайтах.",
+    "back": "← Фестивали и события",
+    "linksTitle": "Официальные ссылки",
+    "linkVisitKoreaEyebrow": "Посетите Корею",
+    "linkVisitKoreaTitle": "Фестивали и события KTO",
+    "linkVisitKoreaDesc": "Официальный хаб фестивалей Кореи — избранные, тематические и региональные.",
+    "linkNationwideEyebrow": "Фестивали",
+    "linkNationwideTitle": "Поиск фестивалей по стране",
+    "linkNationwideDesc": "Текущие и предстоящие фестивали по регионам и сезонам.",
+    "linkKoreanVisitEyebrow": "ПосетитеКорею КР",
+    "linkKoreanVisitTitle": "VisitKorea (корейский)",
+    "linkKoreanVisitDesc": "Официальный внутренний туристический портал Korea Tourism Organization.",
+    "linkVisitKoreaEnEyebrow": "Английский",
+    "linkVisitKoreaEnTitle": "VisitKorea (английский)",
+    "linkVisitKoreaEnDesc": "Официальный сайт KTO для иностранных путешественников.",
+    "openExternal": "Открыть в новой вкладке →",
+    "sourceLabel": "Источник",
+    "sourceName": "VisitKorea — Korea Tourism Organization",
+    "sourceNote": "Расписание может меняться — всегда сверяйте на официальных сайтах выше."
+  }
+}

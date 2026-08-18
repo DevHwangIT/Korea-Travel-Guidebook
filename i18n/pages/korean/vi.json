@@ -1,0 +1,138 @@
+{
+  "korean": {
+    "pageTitle": "Tiếng Hàn hữu ích",
+    "intro": "Những cụm từ ngắn mọi người thường sử dụng khi đi du lịch. Nhấn vào ► để có âm thanh. Tab chửi thề chỉ dùng để ghi nhận — đừng lặp lại chúng.",
+    "catDaily": "Cuộc sống hàng ngày",
+    "catRestaurant": "Ăn uống",
+    "catShopping": "Mua sắm",
+    "catTransport": "Quá cảnh",
+    "catEmergency": "Trợ giúp / Khẩn cấp",
+    "p": {
+      "hello": {
+        "ko": "안녕하세요",
+        "rom": "Annyeonghaseyo",
+        "en": "Xin chào",
+        "ja": "こんにちは"
+      },
+      "thanks": {
+        "ko": "감사합니다",
+        "rom": "Gamsahamnida",
+        "en": "Cảm ơn",
+        "ja": "ありがとうございます"
+      },
+      "sorry": {
+        "ko": "죄송합니다",
+        "rom": "Joesonghamnida",
+        "en": "Tôi xin lỗi",
+        "ja": "すみません"
+      },
+      "restroom": {
+        "ko": "화장실 어디예요?",
+        "rom": "Hwajangsil eodiyeyo?",
+        "en": "Phòng vệ sinh ở đâu?",
+        "ja": "トイレはどこですか？"
+      },
+      "help": {
+        "ko": "도와주세요",
+        "rom": "Dowajuseyo",
+        "en": "Xin hãy giúp tôi",
+        "ja": "助けてください"
+      },
+      "this-please": {
+        "ko": "이거 주세요",
+        "rom": "Igeo juseyo",
+        "en": "Xin vui lòng cho tôi cái này",
+        "ja": "これをください"
+      },
+      "delicious": {
+        "ko": "맛있어요",
+        "rom": "Masisseoyo",
+        "en": "Nó ngon",
+        "ja": "おいしいです"
+      },
+      "water": {
+        "ko": "물 주세요",
+        "rom": "Mul juseyo",
+        "en": "Vui lòng cho tôi nước",
+        "ja": "水をください"
+      },
+      "bill": {
+        "ko": "계산이요",
+        "rom": "Gyesaniyo",
+        "en": "Vui lòng kiểm tra",
+        "ja": "お会計お願いします"
+      },
+      "english-menu": {
+        "ko": "bạn có muốn làm điều đó không?",
+        "rom": "Yeong-eo menyu isseoyo?",
+        "en": "Bạn có thực đơn tiếng Anh không?",
+        "ja": "英語のメニューはありますか？"
+      },
+      "how-much": {
+        "ko": "bạn có biết không?",
+        "rom": "Eolmayeyo?",
+        "en": "Nó là bao nhiêu?",
+        "ja": "いくらですか？"
+      },
+      "card-ok": {
+        "ko": "bạn có biết không?",
+        "rom": "Kadeu dwaeyo?",
+        "en": "Tôi có thể thanh toán bằng thẻ không?",
+        "ja": "カードは使えますか？"
+      },
+      "takeout": {
+        "ko": "포장해 주세요",
+        "rom": "Pojanghae juseyo",
+        "en": "Hãy bọc nó lại để đi",
+        "ja": "持ち帰らせてください"
+      },
+      "receipt": {
+        "ko": "영수증 주세요",
+        "rom": "Yeongsujeung juseyo",
+        "en": "Vui lòng nhận biên nhận",
+        "ja": "領収書をください"
+      },
+      "this-bus": {
+        "ko": "Bạn có đang làm gì không?",
+        "rom": "Tôi beoseu Myeongdong gayo?",
+        "en": "Xe buýt này có đi đến Myeongdong không?",
+        "ja": "このバスは明洞に行きますか？"
+      },
+      "transfer": {
+        "ko": "환승이요",
+        "rom": "Hwangseung-iyo",
+        "en": "Chuyển khoản (vui lòng)",
+        "ja": "乗り換えです"
+      },
+      "get-off": {
+        "ko": "여기서 내려 주세요",
+        "rom": "Yeogiseo naeryeo juseyo",
+        "en": "Làm ơn cho tôi xuống đây",
+        "ja": "ここで降ろしてください"
+      },
+      "police": {
+        "ko": "Bạn có đang làm gì không?",
+        "rom": "Kyungchalseo eodiyeyo?",
+        "en": "Đồn cảnh sát ở đâu?",
+        "ja": "警察署はどこですか？"
+      },
+      "hospital": {
+        "ko": "Bạn có đang làm gì không?",
+        "rom": "Byeongwon eodiyeyo?",
+        "en": "Bệnh viện ở đâu?",
+        "ja": "病院はどこですか？"
+      },
+      "lost": {
+        "ko": "길을 잃었어요",
+        "rom": "Gireul ireosseoyo",
+        "en": "tôi bị lạc",
+        "ja": "道に迷いました"
+      }
+    },
+    "catSwear": "(Cấm) Chửi thề",
+    "swearBadge": "Đừng nói",
+    "swearWarningTitle": "Không sử dụng những thứ này",
+    "swearWarningBody": "Những từ này nghe có vẻ rất thô lỗ hoặc hung hăng trong tiếng Hàn. Đừng lặp lại chúng - danh sách này chỉ để bạn có thể nhận ra chúng nếu bạn nghe thấy chúng trên đường phố, trên phương tiện truyền thông hoặc trực tuyến.",
+    "catPickLabel": "Loại"
+  }
+}

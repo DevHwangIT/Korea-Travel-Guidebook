@@ -1,0 +1,25 @@
+{
+  "festivals": {
+    "pageTitle": "祭り・イベント | Korea Travel Guide",
+    "title": "祭り・イベント",
+    "intro": "地域別の祭り・イベントは公式の観光サイトで確認してください。",
+    "back": "← 祭り・イベント",
+    "linksTitle": "公式案内",
+    "linkVisitKoreaEyebrow": "VisitKorea",
+    "linkVisitKoreaTitle": "韓国観光公社 祭り・イベント",
+    "linkVisitKoreaDesc": "韓国観光公社の祭りハブ — おすすめ・テーマ・地域別イベント。",
+    "linkNationwideEyebrow": "Festivals",
+    "linkNationwideTitle": "全国祭り検索",
+    "linkNationwideDesc": "開催中・予定の祭りを地域・時期で探せます。",
+    "linkKoreanVisitEyebrow": "VisitKorea",
+    "linkKoreanVisitTitle": "大韓民国のすみずみ",
+    "linkKoreanVisitDesc": "韓国観光公社公式の国内旅行ポータル — 観光地・コース・イベント。",
+    "linkVisitKoreaEnEyebrow": "English",
+    "linkVisitKoreaEnTitle": "VisitKorea (English)",
+    "linkVisitKoreaEnDesc": "海外旅行者向け韓国観光公社公式サイト。",
+    "openExternal": "新しいタブで開く →",
+    "sourceLabel": "出典",
+    "sourceName": "韓国観光公社 VisitKorea",
+    "sourceNote": "日程は主催側の都合で変わることがあるため、上記の公式サイトで最新情報を確認してください。"
+  }
+}

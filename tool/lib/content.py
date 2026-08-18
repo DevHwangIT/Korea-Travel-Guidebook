@@ -54,6 +54,7 @@ from .shop_maps import (
     normalize_source_type,
     validate_place_for_source,
 )
+from .region_parse import region_object
 from .shop_body import (
     get_shop_body,
     migrate_shop_body_from_legacy,
@@ -115,9 +116,13 @@ MEAL_DISH_SLUGS_FALLBACK = {
     "kalguksu",
     "gukbap",
     "gomtang",
+    "doenjang-jjigae",
+    "dakgangjeong",
+    "galbijjim",
     "kongguksu",
     "gopchang",
     "tangsuyuk",
+    "korean-chinese",
 }
 
 # Top-level dessert hubs only (brand shops like paris-baguette / sulbing live under bread / bingsu).
@@ -405,6 +410,7 @@ def get_shop(slug: str) -> dict[str, Any]:
     source_type = ""
     preview_title = ""
     preview_image = ""
+    region: dict[str, Any] = {}
     for lang in i18n_store.LANGS:
         r = (bundle[lang].get("restaurants") or {}).get(slug) or {}
         for f in SHOP_TEXT_FIELDS:
@@ -423,6 +429,7 @@ def get_shop(slug: str) -> dict[str, Any]:
             preview_image = str(r.get("previewImage") or "")
             phone = str(r.get("phone") or "")
             hours = str(r.get("hours") or "")
+            region = r.get("region") if isinstance(r.get("region"), dict) else {}
     found = find_shop_page(slug)
     kind = found[0] if found else ""
     dish_slug = found[1] if found else ""
@@ -441,6 +448,7 @@ def get_shop(slug: str) -> dict[str, Any]:
         "location": texts["ko"]["location"],
         "phone": phone,
         "hours": hours,
+        "region": region,
         "placeUrl": place_url,
         "mapsUrl": maps_url,
         "mapsEmbedUrl": maps_embed,
@@ -794,6 +802,12 @@ def save_shop_fields(
                 entry[key] = map_fields[key]
         entry["phone"] = phone_val
         entry["hours"] = hours_val
+        if ko_loc:
+            reg = region_object(ko_loc)
+            if reg:
+                entry["region"] = reg
+            else:
+                entry.pop("region", None)
         restaurants[slug] = entry
 
     if body is not None:
@@ -941,6 +955,11 @@ def create_shop(
         entry["body"] = body_blocks
         if body_blocks:
             entry["tip"] = ""
+        ko_loc = normalized["ko"]["location"]
+        if ko_loc:
+            reg = region_object(ko_loc)
+            if reg:
+                entry["region"] = reg
         restaurants[shop_slug] = entry
     i18n_store.save_all(bundle)
     notes.append("i18n restaurants 추가 (KO/EN/JA)")

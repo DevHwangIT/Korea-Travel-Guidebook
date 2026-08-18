@@ -1,0 +1,138 @@
+{
+  "korean": {
+    "pageTitle": "Useful Korean",
+    "intro": "Short phrases people actually use while traveling. Tap ▶ for audio. The swear tab is for recognition only — do not repeat them.",
+    "catDaily": "Daily life",
+    "catRestaurant": "Dining",
+    "catShopping": "Shopping",
+    "catTransport": "Transit",
+    "catEmergency": "Help / Emergency",
+    "p": {
+      "hello": {
+        "ko": "안녕하세요",
+        "rom": "Annyeonghaseyo",
+        "en": "Hello",
+        "ja": "こんにちは"
+      },
+      "thanks": {
+        "ko": "감사합니다",
+        "rom": "Gamsahamnida",
+        "en": "Thank you",
+        "ja": "ありがとうございます"
+      },
+      "sorry": {
+        "ko": "죄송합니다",
+        "rom": "Joesonghamnida",
+        "en": "I'm sorry",
+        "ja": "すみません"
+      },
+      "restroom": {
+        "ko": "화장실 어디예요?",
+        "rom": "Hwajangsil eodiyeyo?",
+        "en": "Where is the restroom?",
+        "ja": "トイレはどこですか？"
+      },
+      "help": {
+        "ko": "도와주세요",
+        "rom": "Dowajuseyo",
+        "en": "Please help me",
+        "ja": "助けてください"
+      },
+      "this-please": {
+        "ko": "이거 주세요",
+        "rom": "Igeo juseyo",
+        "en": "Please give me this",
+        "ja": "これをください"
+      },
+      "delicious": {
+        "ko": "맛있어요",
+        "rom": "Masisseoyo",
+        "en": "It's delicious",
+        "ja": "おいしいです"
+      },
+      "water": {
+        "ko": "물 주세요",
+        "rom": "Mul juseyo",
+        "en": "Water, please",
+        "ja": "水をください"
+      },
+      "bill": {
+        "ko": "계산이요",
+        "rom": "Gyesaniyo",
+        "en": "Check, please",
+        "ja": "お会計お願いします"
+      },
+      "english-menu": {
+        "ko": "영어 메뉴 있어요?",
+        "rom": "Yeong-eo menyu isseoyo?",
+        "en": "Do you have an English menu?",
+        "ja": "英語のメニューはありますか？"
+      },
+      "how-much": {
+        "ko": "얼마예요?",
+        "rom": "Eolmayeyo?",
+        "en": "How much is it?",
+        "ja": "いくらですか？"
+      },
+      "card-ok": {
+        "ko": "카드 돼요?",
+        "rom": "Kadeu dwaeyo?",
+        "en": "Can I pay by card?",
+        "ja": "カードは使えますか？"
+      },
+      "takeout": {
+        "ko": "포장해 주세요",
+        "rom": "Pojanghae juseyo",
+        "en": "Please wrap it to go",
+        "ja": "持ち帰らせてください"
+      },
+      "receipt": {
+        "ko": "영수증 주세요",
+        "rom": "Yeongsujeung juseyo",
+        "en": "Receipt, please",
+        "ja": "領収書をください"
+      },
+      "this-bus": {
+        "ko": "이 버스 명동 가요?",
+        "rom": "I beoseu Myeongdong gayo?",
+        "en": "Does this bus go to Myeongdong?",
+        "ja": "このバスは明洞に行きますか？"
+      },
+      "transfer": {
+        "ko": "환승이요",
+        "rom": "Hwanseung-iyo",
+        "en": "Transfer (please)",
+        "ja": "乗り換えです"
+      },
+      "get-off": {
+        "ko": "여기서 내려 주세요",
+        "rom": "Yeogiseo naeryeo juseyo",
+        "en": "Please let me off here",
+        "ja": "ここで降ろしてください"
+      },
+      "police": {
+        "ko": "경찰서 어디예요?",
+        "rom": "Gyeongchalseo eodiyeyo?",
+        "en": "Where is the police station?",
+        "ja": "警察署はどこですか？"
+      },
+      "hospital": {
+        "ko": "병원 어디예요?",
+        "rom": "Byeongwon eodiyeyo?",
+        "en": "Where is the hospital?",
+        "ja": "病院はどこですか？"
+      },
+      "lost": {
+        "ko": "길을 잃었어요",
+        "rom": "Gireul ireosseoyo",
+        "en": "I'm lost",
+        "ja": "道に迷いました"
+      }
+    },
+    "catSwear": "(Forbidden) Swear words",
+    "swearBadge": "Do not say",
+    "swearWarningTitle": "Do not use these",
+    "swearWarningBody": "These words sound very rude or aggressive in Korean. Do not repeat them — this list is only so you can recognize them if you hear them on the street, in media, or online.",
+    "catPickLabel": "Category"
+  }
+}

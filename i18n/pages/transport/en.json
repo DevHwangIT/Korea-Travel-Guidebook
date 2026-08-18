@@ -1,0 +1,2095 @@
+{
+  "transport": {
+    "mapTitle": "Korea sights map",
+    "mapAlt": "Full-screen interactive map of places in Korea",
+    "mapCaption": "Tap a pin to see the place intro here",
+    "tabSubway": "Subway map",
+    "tabRoutes": "Popular sights",
+    "tabsHelp": "Tap a tab to view details.",
+    "subwayIntro": "Each Seoul Metro line has its own color. Station names and transfer signs appear in Korean, English, Japanese, and Chinese. A T-money card is the easiest way to ride buses and the subway.",
+    "officialMapTitle": "Official map (Seoul Metro)",
+    "officialMapDesc": "For the most accurate official diagram, open Seoul Metro Cyber Station. Embedding it here is blocked by the site’s policy.",
+    "officialMapCta": "Open Cyber Station",
+    "interactiveMapTitle": "Highlight lines on the map",
+    "interactiveMapHelp": "Choose a line below to highlight it on the map. (Based on real routes — may look different from schematic maps.)",
+    "mapSource": "Satellite tiles: Esri · Places: guidebook · Subway lines: OSM (data/metro) · Key stations: guidebook",
+    "lineAll": "All",
+    "arexChip": "AREX",
+    "linePickHint": "Choose a line to highlight it on the map and show a short description below.",
+    "diagramSummary": "Schematic map (pinch / zoom)",
+    "subwayTipTitle": "Tips",
+    "subwayTip1": "Buy and top up T-money at convenience stores or subway stations.",
+    "subwayTip2": "Rush hours (weekdays 7–9 a.m., 6–8 p.m.) are very crowded.",
+    "subwayTip3": "Use Kakao Map or Naver Map for live directions.",
+    "lineLabel": "Line",
+    "line1Name": "Line 1",
+    "line1Color": "Dark blue",
+    "line1Desc": "A north–south line through Seoul Station, Jongno, and Dongdaemun. It also connects toward Incheon and Suwon.",
+    "line1Stops": "Key stops: Seoul Station · City Hall · Jonggak · Jongno 3-ga · Dongdaemun",
+    "line2Name": "Line 2",
+    "line2Color": "Green",
+    "line2Desc": "A loop line around Seoul. One of the most useful lines for travelers.",
+    "line2Stops": "Key stops: Hongik Univ. · City Hall · Dongdaemun History & Culture Park · Jamsil · Gangnam · Sadang",
+    "line3Name": "Line 3",
+    "line3Color": "Orange",
+    "line3Desc": "Connects palaces, Apgujeong, and Express Bus Terminal. Handy for Gyeongbokgung and Anguk.",
+    "line3Stops": "Key stops: Gyeongbokgung · Anguk · Jongno 3-ga · Apgujeong · Express Bus Terminal · Gyodae",
+    "line4Name": "Line 4",
+    "line4Color": "Light blue",
+    "line4Desc": "Runs through Myeongdong, Seoul Station, and Hyehwa. Great for shopping and Namsan access.",
+    "line4Stops": "Key stops: Seoul Station · Myeongdong · Chungmuro · Hyehwa · Suyu · Sadang",
+    "line5Name": "Line 5",
+    "line5Color": "Purple",
+    "line5Desc": "Crosses Yeouido, Gwanghwamun, and Dongdaemun, linking south and north of the Han River.",
+    "line5Stops": "Key stops: Yeouido · Gwanghwamun · Jongno 3-ga · Dongdaemun History & Culture Park · Wangsimni",
+    "line6Name": "Line 6",
+    "line6Color": "Brown",
+    "line6Desc": "Serves Itaewon, Hannam, and Gongdeok—popular areas with many international visitors.",
+    "line6Stops": "Key stops: Gongdeok · Samgakji · Itaewon · Hangangjin · Yaksu · Dongmyo",
+    "line7Name": "Line 7",
+    "line7Color": "Olive",
+    "line7Desc": "Links Express Bus Terminal, Konkuk Univ., and Nowon. Useful around Gangnam and Konkuk.",
+    "line7Stops": "Key stops: Express Bus Terminal · Nonhyeon · Gangnam-gu Office · Konkuk Univ. · Nowon",
+    "line9Name": "Line 9",
+    "line9Color": "Gold",
+    "line9Desc": "Runs from Gimpo Airport through Yeouido and Sinnonhyeon, with express trains.",
+    "line9Stops": "Key stops: Gimpo Airport · Yeouido · Noryangjin · Sinnonhyeon · Bongeunsa · Sports Complex",
+    "arexName": "AREX (Airport Railroad)",
+    "arexColor": "Blue",
+    "arexDesc": "Connects Incheon Airport and Seoul Station. Express (~43 min) and all-stop (~60 min) trains are available.",
+    "arexStops": "Key stops: Incheon Airport T1/T2 · Hongik Univ. · Gongdeok · Seoul Station",
+    "routeIntro": "Step-by-step routes to popular places. Times vary with transfers and walking — double-check in Kakao Map or Naver Map before you go.",
+    "placeAirportMyeongdong": "Airport → Myeongdong",
+    "placeAirportHongdae": "Airport → Hongdae",
+    "placeAirportGangnam": "Airport → Gangnam",
+    "placeSeoulGyeongbok": "Seoul Station → Gyeongbokgung",
+    "placeMyeongdongHongdae": "Myeongdong → Hongdae",
+    "placeMyeongdongGangnam": "Myeongdong → Gangnam",
+    "placeHongdaeItaewon": "Hongdae → Itaewon",
+    "howTitle": "How to get there",
+    "timeLabel": "Est. time",
+    "costLabel": "Fare note",
+    "route_amd_time": "About 70–95 min (with luggage/transfers)",
+    "route_amd_cost": "AREX all-stop + subway ~₩5,000 (Express costs more)",
+    "route_amd_s1": "From Incheon Airport T1/T2, follow signs for AREX to the underground platforms. Use elevators if you have a large suitcase.",
+    "route_amd_s2": "Buy/ride the All-Stop train (not Express unless you specifically want Seoul Station only). Express is pricier and skips most stops.",
+    "route_amd_s3": "Ride to Seoul Station (about 50–60 min). Watch the display for the next stops and get off at Seoul Station.",
+    "route_ahd_time": "About 55–75 min",
+    "route_ahd_cost": "AREX all-stop ~₩4,000",
+    "route_ahd_s1": "At Incheon Airport, find the AREX All-Stop platform (both terminals connect to AREX).",
+    "route_ahd_s2": "Ride to Hongik Univ. Station — no transfer, one of the easiest first-day routes.",
+    "route_ahd_s3": "Move toward the doors when Hongik Univ. appears on the display; stops are short.",
+    "route_agn_time": "About 80–110 min",
+    "route_agn_cost": "AREX + subway ~₩5,000–6,000",
+    "route_agn_s1": "Take AREX All-Stop from the airport. Express only goes to Seoul Station, so All-Stop is usually better for Gangnam.",
+    "route_agn_s2": "Recommended: get off at Hongik Univ. → transfer to Line 2 toward Gangnam (check the board for direction).",
+    "route_agn_s3": "Line 2 is a loop — confirm you’re on the correct direction so Gangnam is upcoming.",
+    "route_sgb_time": "About 15–25 min",
+    "route_sgb_cost": "Subway base fare",
+    "route_sgb_s1": "Enter Seoul Station subway area (transfers from KTX/AREX can be a long walk).",
+    "route_sgb_s2": "Use your map app to Gyeongbokgung Station (Line 3). It will suggest the simplest transfer from Line 1/4.",
+    "route_sgb_s3": "Exit 5 is convenient for the palace / Gwanghwamun side — a few minutes on foot.",
+    "route_mhd_time": "About 25–40 min",
+    "route_mhd_cost": "Subway base fare",
+    "route_mhd_s1": "Board at Myeongdong (Line 4). Avoid rush hour if you have big shopping bags.",
+    "route_mhd_s2": "Example: Myeongdong → (Line 4) → Dongdaemun History & Culture Park → (Line 2) → Hongik Univ.",
+    "route_mhd_s3": "Another option transfers via City Hall to Line 2. Use the map app for the faster option that day.",
+    "route_mgn_time": "About 25–40 min",
+    "route_mgn_cost": "Subway base fare",
+    "route_mgn_s1": "From Myeongdong (Line 4), ride one stop to Chungmuro.",
+    "route_mgn_s2": "Transfer to Line 3 (orange signs).",
+    "route_mgn_s3": "Ride to Gyodae, transfer to Line 2, then one stop to Gangnam.",
+    "route_hit_time": "About 25–40 min",
+    "route_hit_cost": "Subway base fare",
+    "route_hit_s1": "From Hongik Univ., head toward Gongdeuk (AREX/Line 2 options — check the app).",
+    "route_hit_s2": "Transfer at Gongdeuk to Line 6 (brown).",
+    "route_hit_s3": "Get off at Itaewon. Exits 1–4 are usually closest to the main street.",
+    "tipLabel": "Good to know",
+    "route_amd_s4": "Transfer to subway Line 4 (blue). Follow transfer signs; toward Sadang/Namtaeryeong is the Myeongdong direction.",
+    "route_amd_s5": "Get off at Myeongdong. Exits 6–8 are often best for the shopping street; confirm the recommended exit in your map app.",
+    "route_amd_tip": "Airport buses are an option with very heavy luggage. Keep big bags near the doors/luggage space on AREX.",
+    "route_ahd_s4": "Exits 9 and 1 are often closest to the main nightlife streets — check your hotel’s exit number.",
+    "route_ahd_s5": "Late at night the area is crowded and alleys are confusing; walking or a short taxi to your stay is fine.",
+    "route_ahd_tip": "Hongik Univ. is a big transfer hub (AREX / Line 2 / Gyeongui–Jungang). Wrong exits can add 10+ minutes.",
+    "route_agn_s4": "Get off at Gangnam. Exits 11–12 are famous for the main strip, but your hotel may need another exit.",
+    "route_agn_s5": "Alternatives: AREX to Seoul Station then bus, or an airport bus with a seat if you have lots of luggage.",
+    "route_agn_tip": "Line 2 around Gangnam is very crowded at rush hour. Keep suitcases by the doors, not in the aisle.",
+    "route_sgb_s4": "Check closed days (often Mondays) and ticket options before you go.",
+    "route_sgb_s5": "Bring a hat/umbrella for heat or rain while walking the grounds.",
+    "route_sgb_tip": "Hanbok rental is popular nearby. A small bag makes entry easier.",
+    "route_mhd_s4": "At Hongik Univ., pick the exit for Hongdae streets / Yeonnam-dong as needed.",
+    "route_mhd_s5": "Evenings are packed — meet friends by exit number.",
+    "route_mhd_tip": "It may feel walkable on a map, but the subway is usually faster and easier.",
+    "route_mgn_s4": "Exit using the map app’s recommendation for your exact destination.",
+    "route_mgn_s5": "Buses work too when traveling light, but subway is clearer for first-timers.",
+    "route_mgn_tip": "Chungmuro and Gyodae transfers are relatively short.",
+    "route_hit_s4": "Hills and alleys can be tiring with luggage — consider a short taxi at night.",
+    "route_hit_s5": "Weekends are crowded; keep valuables in front.",
+    "route_hit_tip": "Some routes transfer at Hapjeong — follow whichever the map says is faster live.",
+    "tabPlaces": "Popular sights",
+    "placesIntro": "Discover places on the map. A list is available for accessibility.",
+    "regionSeoul": "Seoul",
+    "regionGyeonggi": "Gyeonggi",
+    "regionBusan": "Busan",
+    "regionAll": "All",
+    "howLabel": "How to get there",
+    "place_myeongdong_name": "Myeongdong",
+    "place_myeongdong_desc": "Seoul’s classic shopping and street-food district with duty-free stores.",
+    "place_myeongdong_how": "Line 4 Myeongdong Station. Exits 1 and 6–8 are closest to the main street.",
+    "place_gyeongbok_name": "Gyeongbokgung",
+    "place_gyeongbok_desc": "Joseon’s main palace — pair with hanbok rental and the palace museum.",
+    "place_gyeongbok_how": "Line 3 Gyeongbokgung Station exit 5. Also walkable from Gwanghwamun/Anguk.",
+    "place_gangnam_name": "Gangnam",
+    "place_gangnam_desc": "Shopping, cafés, nightlife — often includes Gangnam Station, Sinnonhyeon, Garosu-gil, Apgujeong.",
+    "place_gangnam_how": "Line 2 / Shinbundang Gangnam Station; exits 11–12 for the busy side.",
+    "place_hongdae_name": "Hongdae",
+    "place_hongdae_desc": "Youth culture, busking, cafés, clubs — especially lively at night.",
+    "place_hongdae_how": "Line 2 / AREX / Gyeongui–Jungang Hongik Univ. Station; exits 9 and 1.",
+    "place_itaewon_name": "Itaewon",
+    "place_itaewon_desc": "International food and bars; connects toward Haebangchon and Gyeongnidan.",
+    "place_itaewon_how": "Line 6 Itaewon Station exits 1–4.",
+    "place_suwon_name": "Suwon Hwaseong",
+    "place_suwon_desc": "UNESCO fortress walls and Hwaseong Haenggung palace.",
+    "place_suwon_how": "Line 1 Suwon Station then bus/taxi, or check Suin–Bundang walking routes.",
+    "place_goyang_name": "Ilsan Lake Park",
+    "place_goyang_desc": "Large park for cycling, picnics, and evening lights.",
+    "place_goyang_how": "Line 3 Madu / Jeongbalsan area — check lake-park exits on the map.",
+    "place_gapyeong_name": "Gapyeong · Nami Island",
+    "place_gapyeong_desc": "Nami Island and nearby day-trip spots in northeast Gyeonggi.",
+    "place_gapyeong_how": "Gyeongchun Line Gapyeong / Nami Island (Gyeonggang) Station; ITX also runs.",
+    "place_haeundae_name": "Haeundae",
+    "place_haeundae_desc": "Busan’s famous beach with Dongbaek Island and Marine City nearby.",
+    "place_haeundae_how": "Busan Metro Line 2 Haeundae Station; short walk or bus to the sand.",
+    "place_nampo_name": "Nampo · Jagalchi",
+    "place_nampo_desc": "Jagalchi fish market, Gukje Market, and BIFF Square eats.",
+    "place_nampo_how": "Line 1 Jagalchi / Nampo Stations.",
+    "place_seomyeon_name": "Seomyeon",
+    "place_seomyeon_desc": "Busan’s central shopping and transfer hub.",
+    "place_seomyeon_how": "Lines 1 & 2 Seomyeon Station.",
+    "backPlaces": "← Hotspots",
+    "linePickLabel": "Line",
+    "regionPickLabel": "Region",
+    "mapHelp": "Tap a pin to zoom in. Use region chips to fly the camera.",
+    "mapReset": "Show all of Korea",
+    "myLocation": "My location",
+    "locateLocating": "Finding your location…",
+    "locateDenied": "Location permission denied. Allow it in browser settings.",
+    "locateUnavailable": "Unable to determine your location.",
+    "locateTimeout": "Location request timed out. Please try again.",
+    "locateInsecure": "Location works only on HTTPS or localhost.",
+    "locateUnsupported": "Geolocation is not supported on this device.",
+    "mapOpenDetail": "More details",
+    "mapCollapseDetail": "Show less",
+    "mapClose": "Close",
+    "legendTitle": "Place type",
+    "legendCity": "City",
+    "legendNature": "Nature",
+    "legendHeritage": "Heritage",
+    "placesListTitle": "Place list",
+    "listTitle": "Place list",
+    "listToggle": "List",
+    "listHelp": "Pick a place from the list to fly the map there.",
+    "regionIncheon": "Incheon",
+    "regionGangwon": "Gangwon",
+    "regionGyeongju": "Gyeongju",
+    "regionJeolla": "Jeolla",
+    "regionJeju": "Jeju",
+    "place_namsan_name": "N Seoul Tower",
+    "place_namsan_desc": "Seoul’s classic skyline view — N Seoul Tower, cable car, and Namsan trails.",
+    "place_namsan_how": "Line 3/4 Chungmuro or Line 4 Myeongdong, then Namsan bus or cable car; walking paths exist too.",
+    "place_bukchon_name": "Bukchon Hanok Village",
+    "place_bukchon_desc": "Hanok alley photo spots between the palaces — links to Gyeongbokgung and Insadong.",
+    "place_bukchon_how": "Line 3 Anguk Station exit 2. It is a residential area — keep quiet and stay on public paths.",
+    "place_insadong_name": "Insadong",
+    "place_insadong_desc": "Traditional crafts, souvenirs, and tea houses — a top cultural shopping street for visitors.",
+    "place_insadong_how": "Line 3 Anguk Station exit 6, or Lines 1/3/5 Jongno 3-ga Station.",
+    "place_dongdaemun_name": "Dongdaemun · DDP",
+    "place_dongdaemun_desc": "Dongdaemun Design Plaza plus shopping and night markets — architecture and fashion hub.",
+    "place_dongdaemun_how": "Lines 2/4/5 Dongdaemun History & Culture Park Station; exits 1–2 toward DDP.",
+    "place_lotte-tower_name": "Lotte World Tower",
+    "place_lotte-tower_desc": "Seoul Sky observatory, Lotte World Mall, and Seokchon Lake — views and shopping in one spot.",
+    "place_lotte-tower_how": "Lines 2 & 8 Jamsil Station; follow linked passages into the tower and mall.",
+    "place_songdo_name": "Songdo Central Park",
+    "place_songdo_desc": "Incheon’s canal-side skyline park — popular for walks, boats, and evening views.",
+    "place_songdo_how": "Incheon Metro Line 1 Central Park Station. From Seoul, transfer via AREX/subway.",
+    "place_seoraksan_name": "Seoraksan",
+    "place_seoraksan_desc": "Gangwon’s iconic national park — cable car, Ulsanbawi, and autumn colors on classic trips.",
+    "place_seoraksan_how": "Bus or taxi from Sokcho/Yangyang. From Seoul, express bus or rental car is common.",
+    "place_bulguksa_name": "Bulguksa",
+    "place_bulguksa_desc": "UNESCO temple and the heart of Gyeongju trips — often paired with Seokguram Grotto.",
+    "place_bulguksa_how": "City bus or taxi from Gyeongju Station/terminal; continue to Seokguram by shuttle/taxi.",
+    "place_donggung_name": "Donggung & Wolji",
+    "place_donggung_desc": "Gyeongju’s night-photo classic — palace ruins reflected in the illuminated pond.",
+    "place_donggung_how": "Central Gyeongju; bus/taxi from the station or terminal. Near Hwangnidan-gil.",
+    "place_jeonju_name": "Jeonju Hanok Village",
+    "place_jeonju_desc": "Hanok streets, bibimbap, and hanbok — a classic overnight or day trip for visitors.",
+    "place_jeonju_how": "Taxi/bus from Jeonju Station or express bus terminal; KTX links Seoul and Busan.",
+    "place_seongsan_name": "Seongsan Ilchulbong",
+    "place_seongsan_desc": "UNESCO volcanic tuff cone — Jeju’s east-coast sunrise and hiking icon.",
+    "place_seongsan_how": "Bus, rental car, or taxi from Jeju Airport / Jeju City; often paired with Udo Island.",
+    "place_jungmun_name": "Jungmun · Seogwipo",
+    "place_jungmun_desc": "Jeju’s southern resort belt — Jungmun complex, waterfalls, and coastal walks.",
+    "place_jungmun_how": "A rental car is easiest; buses and taxis also run from the airport and Jeju City.",
+    "place_gamcheon_name": "Gamcheon Culture Village",
+    "place_gamcheon_desc": "Colorful hillside village — one of Busan’s most visited photo spots for foreigners.",
+    "place_gamcheon_how": "Line 1 Toseong Station then village bus/taxi. Wear comfortable shoes for steep alleys.",
+    "place_haedong_name": "Haedong Yonggungsa",
+    "place_haedong_desc": "Cliffside seaside temple — a classic east-Busan stop with Haeundae/Gijang.",
+    "place_haedong_how": "Bus or taxi from Haeundae or Gijang. Allow extra time for stairs and crowds.",
+    "place_imjingak_name": "Imjingak · DMZ",
+    "place_imjingak_desc": "Gateway area for DMZ/Panmunjom tourism — tours, memorials, and viewpoints.",
+    "place_imjingak_how": "Gyeongui–Jungang Line Munsan Station then bus/taxi. Panmunjom tours need advance booking and passport.",
+    "place_everland_name": "Everland",
+    "place_everland_desc": "Korea’s flagship theme park — a popular day trip for families and international visitors.",
+    "place_everland_how": "From Bundang Line Jukjeon/Giheung etc. use Everline, shuttle, or bus — check live transfers.",
+    "legendAirport": "Airport",
+    "legendInfo": "Info / embassy",
+    "infoBadge": "Useful visitor info (not a sightseeing pin)",
+    "regionGyeongsang": "Gyeongsang",
+    "legendLocker": "Lockers",
+    "legendPort": "Ports",
+    "filterTitle": "Type filters",
+    "filterAll": "All",
+    "filterHelp": "Choose which types to show",
+    "lockerBadge": "Luggage storage — confirm hours/availability in app or on-site",
+    "portBadge": "Port / harbor — passenger & cruise gateway",
+    "legendMetro": "Subway",
+    "legendMetroLines": "Lines",
+    "legendMetroStations": "Stations",
+    "filterGroupPlaces": "Sightseeing",
+    "filterGroupTransit": "Transit",
+    "filterGroupConvenience": "Convenience",
+    "filterToggle": "Filters",
+    "legendMetroLinePick": "Select lines",
+    "line1": "Line 1",
+    "line2": "Line 2",
+    "line3": "Line 3",
+    "line4": "Line 4",
+    "line5": "Line 5",
+    "line6": "Line 6",
+    "line7": "Line 7",
+    "line8": "Line 8",
+    "line9": "Line 9",
+    "lineArex": "AREX",
+    "lineGyeongui": "Gyeongui–Jungang",
+    "lineSuinBundang": "Suin–Bundang",
+    "lineShinbundang": "Shinbundang",
+    "lineSillim": "Sillim",
+    "legendBusTerminal": "Bus terminal",
+    "busTerminalBadge": "Bus terminal · express / intercity hub",
+    "metroRegionSeoul": "Seoul / capital area",
+    "metroRegionBusan": "Busan",
+    "metroRegionDaegu": "Daegu",
+    "metroRegionGwangju": "Gwangju",
+    "metroRegionDaejeon": "Daejeon",
+    "lineBusan1": "Busan Line 1",
+    "lineBusan2": "Busan Line 2",
+    "lineBusan3": "Busan Line 3",
+    "lineBusan4": "Busan Line 4",
+    "lineBusanGimhae": "Busan–Gimhae LRT",
+    "lineDaegu1": "Daegu Line 1",
+    "lineDaegu2": "Daegu Line 2",
+    "lineDaegu3": "Daegu Line 3",
+    "lineGwangju1": "Gwangju Line 1",
+    "lineDaejeon1": "Daejeon Line 1",
+    "filterGroupToggle": "All in group"
+  },
+  "places": {
+    "myeongdong": {
+      "name": "Myeongdong",
+      "desc": "Seoul’s classic shopping and street-food district with duty-free stores.",
+      "how": "Line 4 Myeongdong Station. Exits 1 and 6–8 are closest to the main street.",
+      "address": "Myeongdong, Jung-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%AA%85%EB%8F%99",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%AA%85%EB%8F%99&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "쇼핑·길거리 음식·면세점이 밀집한 서울의 대표 관광·쇼핑 거리입니다.\n\n가는 방법: 지하철 4호선 명동역. 쇼핑가는 1·6–8번 출구가 가깝습니다.",
+          "en": "Seoul’s classic shopping and street-food district with duty-free stores.\n\nHow to get there: Line 4 Myeongdong Station. Exits 1 and 6–8 are closest to the main street.",
+          "ja": "ショッピングと屋台、免税店が集まるソウルの定番エリア。\n\n行き方: 4号線明洞駅。1・6–8番出口が近いです。",
+          "vi": "Đây là con phố du lịch và mua sắm tiêu biểu của Seoul, với vô số cửa hàng mua sắm, ẩm thực đường phố và cửa hàng miễn thuế.\n\nĐến đó bằng cách nào: Ga Myeongdong trên Tuyến tàu điện ngầm số 4. Khu vực mua sắm nằm gần lối ra 1, 6–8.",
+          "th": "เป็นถนนท่องเที่ยวและช็อปปิ้งที่เป็นตัวแทนของโซล เต็มไปด้วยแหล่งช้อปปิ้ง อาหารข้างทาง และร้านค้าปลอดภาษี\n\nวิธีการเดินทาง: สถานี Myeongdong บนรถไฟใต้ดินสาย 4 ย่านช็อปปิ้งอยู่ใกล้กับทางออก 1, 6–8",
+          "ru": "Это представительная туристическая и торговая улица Сеула, наполненная магазинами, магазинами уличной еды и беспошлинной торговли.\n\nКак добраться: станция Мёндон на линии метро 4. Торговый район находится рядом с выходами 1, 6–8.",
+          "zh-Hant": "它是首爾代表性的旅遊和購物街，充滿了購物、街頭小吃和免稅店。\n\n如何前往：地鐵4號線明洞站。購物區靠近1、6-8號出口。"
+        }
+      ]
+    },
+    "gyeongbok": {
+      "name": "Gyeongbokgung",
+      "desc": "Joseon’s main palace — pair with hanbok rental and the palace museum.",
+      "how": "Line 3 Gyeongbokgung Station exit 5. Also walkable from Gwanghwamun/Anguk.",
+      "address": "Gyeongbokgung",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%82%AC%EC%A7%81%EB%A1%9C%20161%20%EA%B2%BD%EB%B3%B5%EA%B6%81",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%82%AC%EC%A7%81%EB%A1%9C%20161%20%EA%B2%BD%EB%B3%B5%EA%B6%81&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "조선의 법궁. 한복 대여·근정전·국립고궁박물관과 함께 방문하기 좋습니다.\n\n가는 방법: 3호선 경복궁역 5번 출구. 광화문·안국역에서도 도보 가능.",
+          "en": "Joseon’s main palace — pair with hanbok rental and the palace museum.\n\nHow to get there: Line 3 Gyeongbokgung Station exit 5. Also walkable from Gwanghwamun/Anguk.",
+          "ja": "朝鮮の法宮。韓服レンタルや博物館と合わせて。\n\n行き方: 3号線景福宮駅5番出口。光化門・安国からも徒歩可。",
+          "vi": "Cung điện hoàng gia của Joseon. Đây là một nơi tốt để tham quan cùng với dịch vụ cho thuê Hanbok, Hội trường Geunjeongjeon và Bảo tàng Cung điện Quốc gia.\n\nĐến đó bằng cách nào: Ga Kyungbokgung, Tuyến 3, Lối ra 5. Có thể đi bộ từ Ga Gwanghwamun và Anguk.",
+          "th": "พระราชวังของโชซอน เป็นสถานที่ที่ดีในการเยี่ยมชมควบคู่ไปกับการเช่าชุดฮันบก กึนจองจอน และพิพิธภัณฑ์พระราชวังแห่งชาติ\n\nวิธีการเดินทาง: สถานี Gyeongbokgung สาย ​​3 ทางออก 5 เดินจากสถานี Gwanghwamun และ Anguk ได้",
+          "ru": "Королевский дворец Чосон. Это хорошее место для посещения вместе с прокатом ханбок, залом Кынчонджон и Национальным дворцовым музеем.\n\nКак добраться: станция Кёнбоккун, линия 3, выход 5. Можно дойти пешком от станций Кванхвамун и Ангук.",
+          "zh-Hant": "朝鮮的王宮。是與韓服租賃、勤政殿、國立故宮博物院一起遊覽的好地方。\n\n前往方式：3號線景福宮站5號出口。從光化門站和安國站步行即可到達。"
+        }
+      ]
+    },
+    "gangnam": {
+      "name": "Gangnam",
+      "desc": "Shopping, cafés, nightlife — often includes Gangnam Station, Sinnonhyeon, Garosu-gil, Apgujeong.",
+      "how": "Line 2 / Shinbundang Gangnam Station; exits 11–12 for the busy side.",
+      "address": "Gangnam",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "쇼핑·카페·나이트라이프. 강남역·신논현·가로수길·압구정 일대를 포함해 부르는 경우가 많습니다.\n\n가는 방법: 2호선·신분당 강남역. 번화가는 11·12번 출구 방면.",
+          "en": "Shopping, cafés, nightlife — often includes Gangnam Station, Sinnonhyeon, Garosu-gil, Apgujeong.\n\nHow to get there: Line 2 / Shinbundang Gangnam Station; exits 11–12 for the busy side.",
+          "ja": "ショッピング・カフェ・ナイトライフ。駅周辺や狎鴎亭も含めて呼ばれます。\n\n行き方: 2号線・新盆唐江南駅。11・12番出口方面がにぎやか。",
+          "vi": "Mua sắm, quán cà phê, cuộc sống về đêm. Nó thường được gọi bao gồm các khu vực Ga Gangnam, Shinnonhyeon, Garosu-gil và Apgujeong.\n\nĐến đó bằng cách nào: Tuyến số 2, Ga Shinbundang Gangnam. Khu vực trung tâm thành phố hướng tới lối ra 11 và 12.",
+          "th": "ช้อปปิ้ง ร้านกาแฟ สถานบันเทิงยามค่ำคืน มักเรียกกันว่าสถานีคังนัม, ชินนอนฮยอน, กาโรซูกิล และอัพกูจอง\n\nวิธีการเดินทาง: สาย 2 สถานี Shinbundang Gangnam บริเวณตัวเมืองอยู่ตรงทางออก 11 และ 12",
+          "ru": "Шопинг, кафе, ночная жизнь. Его часто называют, включая станцию ​​Каннам, районы Синнонхён, Гаросу-гиль и Апкуджон.\n\nКак добраться: линия 2, станция Shinbundang Gangnam. Центр города находится к выходам 11 и 12.",
+          "zh-Hant": "購物、咖啡館、夜生活。通常稱為江南站、新論峴、林蔭樹路、狎鷗亭一帶。\n\n如何前往：2號線新盆唐江南站。市中心區位於11號和12號出口方向。"
+        }
+      ]
+    },
+    "hongdae": {
+      "name": "Hongdae",
+      "desc": "Youth culture, busking, cafés, clubs — especially lively at night.",
+      "how": "Line 2 / AREX / Gyeongui–Jungang Hongik Univ. Station; exits 9 and 1.",
+      "address": "Hongdae",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "젊음·버스킹·카페·클럽. 저녁~밤 분위기가 특히 유명합니다.\n\n가는 방법: 2호선·공항철도·경의중앙 홍대입구역. 9·1번 출구가 번화가와 가깝습니다.",
+          "en": "Youth culture, busking, cafés, clubs — especially lively at night.\n\nHow to get there: Line 2 / AREX / Gyeongui–Jungang Hongik Univ. Station; exits 9 and 1.",
+          "ja": "若者文化・バスキング・カフェ・クラブ。夜が特に有名。\n\n行き方: 2号線・空港鉄道・京義中央弘大入口駅。9・1番出口。",
+          "vi": "Tuổi trẻ, hát rong, quán cà phê, câu lạc bộ. Không khí buổi tối và ban đêm đặc biệt nổi tiếng.\n\nĐến đó bằng cách nào: Tuyến số 2, Đường sắt Sân bay, Ga Đại học Trung tâm Hongik của tỉnh Kyungui. Lối ra 9 và 1 nằm gần khu vực trung tâm thành phố.",
+          "th": "เยาวชน การแสดงดนตรีสด คาเฟ่ คลับ บรรยากาศยามเย็นและยามค่ำคืนมีชื่อเสียงเป็นพิเศษ\n\nวิธีการเดินทาง: สาย 2 ทางรถไฟสนามบิน สถานี Gyeongui Central Hongik University ทางออก 9 และ 1 อยู่ใกล้ย่านใจกลางเมือง",
+          "ru": "Молодежь, уличная уличная музыка, кафе, клуб. Особенно славится вечерняя и ночная атмосфера.\n\nКак добраться: линия 2, железная дорога аэропорта, станция Gyeongui Central Hongik University. Выходы 9 и 1 находятся недалеко от центра города.",
+          "zh-Hant": "青年、街頭表演、咖啡館、俱樂部。傍晚和夜間的氣氛尤其著名。\n\n如何前往：機場鐵路2號線京義中央弘益大學站。 9號和1號出口靠近市中心。"
+        }
+      ]
+    },
+    "itaewon": {
+      "name": "Itaewon",
+      "desc": "International food and bars; connects toward Haebangchon and Gyeongnidan.",
+      "how": "Line 6 Itaewon Station exits 1–4.",
+      "address": "Itaewon",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%EC%9D%B4%ED%83%9C%EC%9B%90%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%EC%9D%B4%ED%83%9C%EC%9B%90%EC%97%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "세계 음식·바가 모인 거리. 해방촌·경리단길과도 이어집니다.\n\n가는 방법: 6호선 이태원역 1–4번 출구.",
+          "en": "International food and bars; connects toward Haebangchon and Gyeongnidan.\n\nHow to get there: Line 6 Itaewon Station exits 1–4.",
+          "ja": "多国籍フードとバー。解放村・京里达にもつながります。\n\n行き方: 6号線梨泰院駅1–4番出口。",
+          "vi": "Một con phố tràn ngập đồ ăn và quán bar từ khắp nơi trên thế giới. Nó cũng kết nối với Haebangchon và Kyungnidan-gil.\n\nĐến đó bằng cách nào: Ga Itaewon, Tuyến 6, lối ra 1–4.",
+          "th": "ถนนที่เต็มไปด้วยอาหารและบาร์จากทั่วโลก นอกจากนี้ยังเชื่อมต่อกับ Haebangchon และ Gyeongnidan-gil\n\nวิธีการเดินทาง: สถานีอิแทวอน สาย 6 ทางออก 1–4",
+          "ru": "Улица, наполненная едой и барами со всего мира. Он также соединяется с Хэбанчхоном и Кённидан-гилем.\n\nКак добраться: станция Itaewon, линия 6, выходы 1–4.",
+          "zh-Hant": "一條充滿世界各地美食和酒吧的街道。它也連接到解放村和經理團路。\n\n如何前往：地鐵6號線梨泰院站1-4號出口。"
+        }
+      ]
+    },
+    "suwon": {
+      "name": "Suwon Hwaseong",
+      "desc": "UNESCO fortress walls and Hwaseong Haenggung palace.",
+      "how": "Line 1 Suwon Station then bus/taxi, or check Suin–Bundang walking routes.",
+      "address": "Suwon Hwaseong",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%ED%8C%94%EB%8B%AC%EA%B5%AC%20%EC%A0%95%EC%A1%B0%EB%A1%9C%20825%20%EC%88%98%EC%9B%90%ED%99%94%EC%84%B1",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%ED%8C%94%EB%8B%AC%EA%B5%AC%20%EC%A0%95%EC%A1%B0%EB%A1%9C%20825%20%EC%88%98%EC%9B%90%ED%99%94%EC%84%B1&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "유네스코 세계유산 수원화성. 성곽 산책과 행궁이 볼거리입니다.\n\n가는 방법: 1호선 수원역 후 버스·택시, 또는 수인분당·도보 코스를 지도 앱으로 확인.",
+          "en": "UNESCO fortress walls and Hwaseong Haenggung palace.\n\nHow to get there: Line 1 Suwon Station then bus/taxi, or check Suin–Bundang walking routes.",
+          "ja": "ユネスコ世界遺産の城郭。行宮と散歩がおすすめ。\n\n行き方: 1号線水原駅からバス・タクシー等。地図で確認を。",
+          "vi": "Pháo đài Suwon Hwaseong, Di sản Thế giới được UNESCO công nhận. Con đường đi bộ trong pháo đài và cung điện tạm thời là những điểm nổi bật.\n\nĐến đó bằng cách nào: Sau Ga Suwon trên Tuyến 1, bắt xe buýt/taxi hoặc kiểm tra lộ trình Suin Bundang/đi bộ trên ứng dụng bản đồ.",
+          "th": "ป้อมซูวอนฮวาซอง มรดกโลกขององค์การยูเนสโก ทางเดินป้อมปราการและพระราชวังชั่วคราวเป็นไฮไลท์\n\nวิธีการเดินทาง: หลังจากสถานี Suwon บนสาย 1 ให้ขึ้นรถบัส/แท็กซี่ หรือตรวจสอบเส้นทาง Suin Bundang/เส้นทางเดิน บนแอปแผนที่",
+          "ru": "Крепость Сувон Хвасон, объект Всемирного наследия ЮНЕСКО. Изюминкой являются прогулка по крепости и временный дворец.\n\nКак добраться: после станции Сувон на линии 1 сядьте на автобус/такси или проверьте Суин Бунданг/пешеходный маршрут в приложении карты.",
+          "zh-Hant": "水原華城，聯合國教科文組織世界遺產。要塞步道和行宮是亮點。\n\n前往方式：搭乘1號線水原站後，搭乘巴士/計程車，或在地圖應用程式上查看盆唐水仁/步行路線。"
+        }
+      ]
+    },
+    "goyang": {
+      "name": "Ilsan Lake Park",
+      "desc": "Large park for cycling, picnics, and evening lights.",
+      "how": "Line 3 Madu / Jeongbalsan area — check lake-park exits on the map.",
+      "address": "Ilsan Lake Park",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90%EB%A1%9C%20%EC%9D%BC%EC%82%B0%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90%EB%A1%9C%20%EC%9D%BC%EC%82%B0%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "넓은 공원·자전거·야경. 가족·피크닉 코스로 인기입니다.\n\n가는 방법: 3호선 마두·정발산역 인근. 호수공원 출구를 지도에서 확인하세요.",
+          "en": "Large park for cycling, picnics, and evening lights.\n\nHow to get there: Line 3 Madu / Jeongbalsan area — check lake-park exits on the map.",
+          "ja": "広い公園でサイクリングや夜景が人気。\n\n行き方: 3号線馬頭・鼎鉢山周辺。出口は地図で確認。",
+          "vi": "Công viên rộng lớn, xe đạp và cảnh đêm. Nó phổ biến như một khóa học gia đình và dã ngoại.\n\nĐến đó bằng cách nào: Gần Ga Madu·Jeongbalsan trên Tuyến 3. Kiểm tra lối ra công viên hồ trên bản đồ.",
+          "th": "สวนสาธารณะขนาดใหญ่ จักรยาน และวิวกลางคืน เป็นที่นิยมทั้งแบบครอบครัวและแบบปิกนิก\n\nวิธีการเดินทาง: ใกล้สถานี Madu·Jeongbalsan สาย 3 ตรวจสอบทางออก Lake Park บนแผนที่",
+          "ru": "Большой парк, велосипеды и ночной вид. Это популярное место для семейного отдыха и пикника.\n\nКак добраться: возле станции Madu·Jeongbalsan на линии 3. Проверьте выход из парка у озера на карте.",
+          "zh-Hant": "公園很大，有腳踏車，還有夜景。作為家庭和野餐路線很受歡迎。\n\n如何前往：3号线马杜·正钵山站附近。查看地圖上的湖濱公園出口。"
+        }
+      ]
+    },
+    "gapyeong": {
+      "name": "Gapyeong · Nami Island",
+      "desc": "Nami Island and nearby day-trip spots in northeast Gyeonggi.",
+      "how": "Gyeongchun Line Gapyeong / Nami Island (Gyeonggang) Station; ITX also runs.",
+      "address": "Gapyeong · Nami Island",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EA%B8%B0%20%EA%B0%80%ED%8F%89%EA%B5%B0%20%EA%B0%80%ED%8F%89%EC%9D%8D%20%EB%82%A8%EC%9D%B4%EC%84%AC",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%EA%B0%80%ED%8F%89%EA%B5%B0%20%EA%B0%80%ED%8F%89%EC%9D%8D%20%EB%82%A8%EC%9D%B4%EC%84%AC&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "남이섬·자른·쁘띠프랑스 등 경기 동북부 당일 여행 명소.\n\n가는 방법: 경춘선 가평·남이섬(경강)역. ITX·청춘 열차도 이용합니다.",
+          "en": "Nami Island and nearby day-trip spots in northeast Gyeonggi.\n\nHow to get there: Gyeongchun Line Gapyeong / Nami Island (Gyeonggang) Station; ITX also runs.",
+          "ja": "南怡島など京畿東北部の日帰りスポット。\n\n行き方: 京春線加平・南怡島（京江）駅。ITXも利用可。",
+          "vi": "Các điểm tham quan cho chuyến đi trong ngày ở phía đông bắc tỉnh Kyunggi, bao gồm Đảo Nami, Jarne và Petite France.\n\nĐến đó bằng cách nào: Ga Gapyeong/Đảo Nami (Gyeonggang) trên Tuyến Cảnh Xuân. Tàu ITX và Cheongchun cũng được sử dụng.",
+          "th": "สถานที่ท่องเที่ยวแบบไปเช้าเย็นกลับในจังหวัดคยองกีทางตะวันออกเฉียงเหนือ รวมถึงเกาะนามิ จาร์น และหมู่บ้านฝรั่งเศส\n\nวิธีการเดินทาง: สถานี Gapyeong/Nami Island (Gyeonggang) บนสาย Gyeongchun ใช้รถไฟ ITX และ Cheongchun เช่นกัน",
+          "ru": "Однодневные поездки по достопримечательностям северо-восточной провинции Кёнгидо, включая остров Нами, Ярне и Маленькую Францию.\n\nКак добраться: станция Гапхён/Остров Нами (Кёнган) на линии Кёнчхун. Также используются поезда ITX и Cheongchun.",
+          "zh-Hant": "京畿道東北部一日遊景點，包括南怡島、雅恩島、小法蘭西島等。\n\n如何前往：京春線加平/南怡島（京江）站。也使用 ITX 和 Cheongchun 列車。"
+        }
+      ]
+    },
+    "haeundae": {
+      "name": "Haeundae",
+      "desc": "Busan’s famous beach with Dongbaek Island and Marine City nearby.",
+      "how": "Busan Metro Line 2 Haeundae Station; short walk or bus to the sand.",
+      "address": "Haeundae",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%ED%95%B4%EC%9A%B4%EB%8C%80%ED%95%B4%EB%B3%80%EB%A1%9C%20%ED%95%B4%EC%9A%B4%EB%8C%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%ED%95%B4%EC%9A%B4%EB%8C%80%ED%95%B4%EB%B3%80%EB%A1%9C%20%ED%95%B4%EC%9A%B4%EB%8C%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산의 대표 해변. 동백섬·달맞이·마린시티와 함께 즐깁니다.\n\n가는 방법: 부산도시철도 2호선 해운대역. 해변은 도보 또는 짧은 버스.",
+          "en": "Busan’s famous beach with Dongbaek Island and Marine City nearby.\n\nHow to get there: Busan Metro Line 2 Haeundae Station; short walk or bus to the sand.",
+          "ja": "釜山を代表するビーチ。冬柏島やマリンシティも。\n\n行き方: 釜山都市鉄道2号線海雲台駅。",
+          "vi": "Bãi biển đại diện của Busan. Tận hưởng Đảo Dongbaek, Dalmaji và Thành phố biển.\n\nĐến đó bằng cách nào: Ga Haeundae trên Tuyến tàu điện ngầm Busan số 2. Bãi biển cách đó một quãng đi bộ ngắn hoặc đi xe buýt ngắn.",
+          "th": "ชายหาดตัวแทนของปูซาน เพลิดเพลินไปกับเกาะทงแบก, ทัลมาจิ และเมืองทางทะเล\n\nวิธีการเดินทาง: สถานี Haeundae บนรถไฟใต้ดินปูซานสาย 2 สามารถเดินไปยังชายหาดหรือนั่งรถบัสเป็นระยะทางสั้นๆ",
+          "ru": "Представительный пляж Пусана. Наслаждайтесь островом Донбэк, Далмаджи и Морским городом.\n\nКак добраться: станция Хэундэ на линии метро Пусана 2. Пляж находится в нескольких минутах ходьбы или в нескольких минутах езды на автобусе.",
+          "zh-Hant": "釜山代表性的海灘。享受冬柏島、迎月地和海洋城。\n\n前往方式：搭乘釜山地鐵 2 號線的海雲台站。步行或搭乘巴士不遠即可到達海灘。"
+        }
+      ]
+    },
+    "nampo": {
+      "name": "Nampo · Jagalchi",
+      "desc": "Jagalchi fish market, Gukje Market, and BIFF Square eats.",
+      "how": "Line 1 Jagalchi / Nampo Stations.",
+      "address": "Nampo · Jagalchi",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EC%A4%91%EA%B5%AC%20%EC%9E%90%EA%B0%88%EC%B9%98%ED%95%B4%EC%95%88%EB%A1%9C%2052%20%EC%9E%90%EA%B0%88%EC%B9%98%EC%8B%9C%EC%9E%A5",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EC%A4%91%EA%B5%AC%20%EC%9E%90%EA%B0%88%EC%B9%98%ED%95%B4%EC%95%88%EB%A1%9C%2052%20%EC%9E%90%EA%B0%88%EC%B9%98%EC%8B%9C%EC%9E%A5&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "자갈치시장·국제시장·비프광장. 해산물과 부산 먹거리가 풍부합니다.\n\n가는 방법: 1호선 자갈치·남포역.",
+          "en": "Jagalchi fish market, Gukje Market, and BIFF Square eats.\n\nHow to get there: Line 1 Jagalchi / Nampo Stations.",
+          "ja": "札嘎致市場・国際市場・BIFF広場の食べ歩き。\n\n行き方: 1号線札嘎致・南浦駅。",
+          "vi": "Chợ Jagalchi, chợ Gukje, Quảng trường thịt bò. Hải sản và đồ ăn Busan rất phong phú.\n\nĐến đó bằng cách nào: Ga Jagalchi·Nampo, Tuyến 1.",
+          "th": "ตลาดจากัลชี, ตลาดกุกเจ, บีฟสแควร์ อาหารทะเลและอาหารปูซานมีอยู่มากมาย\n\nวิธีการเดินทาง: สถานี Jagalchi·Nampo สาย 1",
+          "ru": "Рынок Джагальчи, Рынок Гукче, Beef Plaza. Морепродукты и пусанская еда в изобилии.\n\nКак добраться: станция Jagalchi·Nampo, линия 1.",
+          "zh-Hant": "札嘎其市場、國際市場、牛肉廣場。海鮮和釜山美食很豐富。\n\n如何前往：地鐵1號線札嘎其·南浦站。"
+        }
+      ]
+    },
+    "seomyeon": {
+      "name": "Seomyeon",
+      "desc": "Busan’s central shopping and transfer hub.",
+      "how": "Lines 1 & 2 Seomyeon Station.",
+      "address": "Seomyeon",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EB%B6%80%EC%82%B0%EC%A7%84%EA%B5%AC%20%EC%84%9C%EB%A9%B4",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EB%B6%80%EC%82%B0%EC%A7%84%EA%B5%AC%20%EC%84%9C%EB%A9%B4&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산의 중심 번화가. 쇼핑·음식·교통 환승의 허브입니다.\n\n가는 방법: 1·2호선 서면역.",
+          "en": "Busan’s central shopping and transfer hub.\n\nHow to get there: Lines 1 & 2 Seomyeon Station.",
+          "ja": "釜山の中心繁華街・乗換ハブ。\n\n行き方: 1・2号線西面駅。",
+          "vi": "Khu vực trung tâm thành phố Busan. Đây là trung tâm mua sắm, thực phẩm và vận chuyển.\n\nĐến đó bằng cách nào: Ga Seomyeon trên Tuyến 1 và 2.",
+          "th": "บริเวณใจกลางเมืองปูซาน เป็นศูนย์กลางสำหรับการช้อปปิ้ง อาหาร และการคมนาคม\n\nวิธีการเดินทาง: สถานี Seomyeon สาย 1 และ 2",
+          "ru": "Центральный деловой район Пусана. Это центр покупок, еды и транспорта.\n\nКак добраться: станция Сомён (линии 1 и 2).",
+          "zh-Hant": "釜山市中心區。它是購物、美食和交通的中心。\n\n到達方式：1號線、2號線西面站。"
+        }
+      ]
+    },
+    "namsan": {
+      "name": "N Seoul Tower",
+      "desc": "Seoul’s classic skyline view — N Seoul Tower, cable car, and Namsan trails.",
+      "how": "Line 3/4 Chungmuro or Line 4 Myeongdong, then Namsan bus or cable car; walking paths exist too.",
+      "address": "N Seoul Tower, Namsan, Yongsan-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%EB%82%A8%EC%82%B0%EA%B3%B5%EC%9B%90%EA%B8%B8%20105%20%EB%82%A8%EC%82%B0%EC%84%9C%EC%9A%B8%ED%83%80%EC%9B%8C",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%EB%82%A8%EC%82%B0%EA%B3%B5%EC%9B%90%EA%B8%B8%20105%20%EB%82%A8%EC%82%B0%EC%84%9C%EC%9A%B8%ED%83%80%EC%9B%8C&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서울 야경의 상징. N서울타워·남산 케이블카·산책로가 외국인 필수 코스입니다.\n\n가는 방법: 3·4호선 충무로역 또는 4호선 명동역 후 순환버스·케이블카. 도보 코스도 있습니다.",
+          "en": "Seoul’s classic skyline view — N Seoul Tower, cable car, and Namsan trails.\n\nHow to get there: Line 3/4 Chungmuro or Line 4 Myeongdong, then Namsan bus or cable car; walking paths exist too.",
+          "ja": "ソウルの夜景の定番。Nソウルタワー・ケーブルカー・散策路が人気です。\n\n行き方: 3・4号線忠武路駅、または4号線明洞駅から循環バス・ケーブルカー。徒歩コースもあります。",
+          "vi": "Một biểu tượng của cảnh đêm Seoul. Tháp N Seoul, Cáp treo Namsan và đường mòn đi bộ là những tuyến đường không thể bỏ qua đối với người nước ngoài.\n\nĐến đó bằng cách nào: Ga Chungmuro ​​​​trên Tuyến 3 và 4 hoặc Ga Myeongdong trên Tuyến 4, sau đó đi xe buýt vòng hoặc cáp treo. Ngoài ra còn có các khóa học đi bộ.",
+          "th": "สัญลักษณ์ของทิวทัศน์ยามค่ำคืนของกรุงโซล เอ็นโซลทาวเวอร์ เคเบิลคาร์นัมซาน และเส้นทางเดินเป็นเส้นทางที่จำเป็นสำหรับชาวต่างชาติ\n\nวิธีการเดินทาง: สถานี Chungmuro ​​​​สาย 3 และ 4 หรือสถานี Myeongdong สาย ​​4 จากนั้นต่อรถบัสวนหรือเคเบิลคาร์ มีคอร์สเดินด้วย",
+          "ru": "Символ ночного вида Сеула. Сеульская телебашня, канатная дорога Намсан и пешеходные тропы — важные маршруты для иностранцев.\n\nКак добраться: станция Chungmuro ​​на линиях 3 и 4 или станция Myeongdong на линии 4, затем сесть на кольцевой автобус или канатную дорогу. Также есть курсы ходьбы.",
+          "zh-Hant": "首爾夜景的象徵。 N首爾塔、南山纜車、步道是外國人必看的路線。\n\n如何前往：3、4號忠武路站或4號線明洞站，然後搭乘循環巴士或纜車。還有步行課程。"
+        }
+      ]
+    },
+    "bukchon": {
+      "name": "Bukchon Hanok Village",
+      "desc": "Hanok alley photo spots between the palaces — links to Gyeongbokgung and Insadong.",
+      "how": "Line 3 Anguk Station exit 2. It is a residential area — keep quiet and stay on public paths.",
+      "address": "Bukchon Hanok Village, Gye-dong, Jongno-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EA%B3%84%EB%8F%99%EA%B8%B8%20%EB%B6%81%EC%B4%8C%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EA%B3%84%EB%8F%99%EA%B8%B8%20%EB%B6%81%EC%B4%8C%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "한옥 골목과 서울 전망 사진 명소. 경복궁·창덕궁·인사동과 이어집니다.\n\n가는 방법: 3호선 안국역 2번 출구. 골목은 주거지이니 큰 소리·무단 출입을 피하세요.",
+          "en": "Hanok alley photo spots between the palaces — links to Gyeongbokgung and Insadong.\n\nHow to get there: Line 3 Anguk Station exit 2. It is a residential area — keep quiet and stay on public paths.",
+          "ja": "韓屋路地の写真スポット。景福宮・昌徳宮・仁寺洞と隣接します。\n\n行き方: 3号線安国駅2番出口。住宅街なので静かに、私有地への無断進入は避けてください。",
+          "vi": "Hẻm Hanok và điểm chụp ảnh ngắm cảnh Seoul. Nó kết nối với Cung điện Kyungbokgung, Cung điện Changdeokgung và Insa-dong.\n\nĐến đó bằng cách nào: Ga Anguk, Line 3, Exit 2. Ngõ này là khu dân cư nên tránh tiếng ồn lớn và xâm nhập trái phép.",
+          "th": "ตรอกฮันอกและจุดถ่ายรูปวิวโซล เชื่อมต่อกับพระราชวังเคียงบกกุง พระราชวังชังด็อกกุง และอินซาดง\n\nวิธีการเดินทาง: สถานีอังกุก สาย 3 ทางออก 2 ซอยนี้เป็นย่านที่อยู่อาศัย ดังนั้นควรหลีกเลี่ยงเสียงดังและการเข้าโดยไม่ได้รับอนุญาต",
+          "ru": "Аллея Ханок и вид на Сеул для фото. Он соединяется с дворцами Кёнбоккун, Чхандоккун и Инсадон.\n\nКак добраться: станция Anguk, линия 3, выход 2. Переулок является жилым районом, поэтому избегайте громкого шума и несанкционированного входа.",
+          "zh-Hant": "韓屋巷弄和首爾景觀拍照點。連接景福宮、昌德宮、仁寺洞。\n\n如何到達：3號線安國站2號出口。胡同是住宅區，因此請避免大聲喧嘩和未經授權的進入。"
+        }
+      ]
+    },
+    "insadong": {
+      "name": "Insadong",
+      "desc": "Traditional crafts, souvenirs, and tea houses — a top cultural shopping street for visitors.",
+      "how": "Line 3 Anguk Station exit 6, or Lines 1/3/5 Jongno 3-ga Station.",
+      "address": "Insadong-gil, Jongno-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%9D%B8%EC%82%AC%EB%8F%99%EA%B8%B8%20%EC%9D%B8%EC%82%AC%EB%8F%99",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%9D%B8%EC%82%AC%EB%8F%99%EA%B8%B8%20%EC%9D%B8%EC%82%AC%EB%8F%99&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "전통 공예·기념품·찻집 거리. 외국인이 가장 많이 찾는 문화 쇼핑 골목입니다.\n\n가는 방법: 3호선 안국역 6번 출구, 또는 1·3·5호선 종로3가역.",
+          "en": "Traditional crafts, souvenirs, and tea houses — a top cultural shopping street for visitors.\n\nHow to get there: Line 3 Anguk Station exit 6, or Lines 1/3/5 Jongno 3-ga Station.",
+          "ja": "伝統工芸・お土産・茶屋の通り。外国人に人気の文化ショッピングエリアです。\n\n行き方: 3号線安国駅6番出口、または1・3・5号線鍾路3街駅。",
+          "vi": "Con phố bán hàng thủ công truyền thống, đồ lưu niệm và quán trà. Đây là con hẻm mua sắm văn hóa được người nước ngoài ghé thăm nhiều nhất.\n\nĐến đó bằng cách nào: Ga Anguk, Tuyến 3, Lối ra 6 hoặc Ga Jongno 3-ga, Tuyến 1, 3 và 5.",
+          "th": "ถนนที่เต็มไปด้วยงานฝีมือแบบดั้งเดิม ของที่ระลึก และโรงน้ำชา นี่คือตรอกช็อปปิ้งเชิงวัฒนธรรมที่ชาวต่างชาติเข้าชมมากที่สุด\n\nวิธีการเดินทาง: สถานี Anguk สาย 3 ทางออก 6 หรือสถานี Jongno 3-ga สาย 1, 3 และ 5",
+          "ru": "Улица традиционных ремесел, сувениров и чайных домиков. Это культурный торговый центр, наиболее посещаемый иностранцами.\n\nКак добраться: станция Anguk, линия 3, выход 6 или станция Jongno 3-ga, линии 1, 3 и 5.",
+          "zh-Hant": "傳統工藝品、紀念品和茶館一條街。這裡是外國人最常光顧的文化購物街。\n\n如何前往：3號線安國站6號出口，或1、3、5號線鐘路3街站。"
+        }
+      ]
+    },
+    "dongdaemun": {
+      "name": "Dongdaemun · DDP",
+      "desc": "Dongdaemun Design Plaza plus shopping and night markets — architecture and fashion hub.",
+      "how": "Lines 2/4/5 Dongdaemun History & Culture Park Station; exits 1–2 toward DDP.",
+      "address": "Dongdaemun Design Plaza, 281 Eulji-ro, Jung-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EC%9D%84%EC%A7%80%EB%A1%9C%20281%20%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EC%9D%84%EC%A7%80%EB%A1%9C%20281%20%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "동대문디자인플라자(DDP)와 쇼핑·야시장. 건축 사진과 패션 쇼핑의 대표 거점입니다.\n\n가는 방법: 2·4·5호선 동대문역사문화공원역. DDP는 1·2번 출구 방면.",
+          "en": "Dongdaemun Design Plaza plus shopping and night markets — architecture and fashion hub.\n\nHow to get there: Lines 2/4/5 Dongdaemun History & Culture Park Station; exits 1–2 toward DDP.",
+          "ja": "東大門デザインプラザ(DDP)とショッピング・夜市。建築写真とファッションの拠点です。\n\n行き方: 2・4・5号線東大門歴史文化公園駅。DDPは1・2番出口方面。",
+          "vi": "Dongdaemun Design Plaza (DDP) và chợ đêm/mua sắm. Đây là cơ sở đại diện cho nhiếp ảnh kiến ​​trúc và mua sắm thời trang.\n\nĐến đó bằng cách nào: Ga Công viên Văn hóa và Lịch sử Dongdaemun trên Tuyến 2, 4 và 5. DDP hướng về lối ra 1 và 2.",
+          "th": "ทงแดมุนดีไซน์พลาซ่า (DDP) และแหล่งช้อปปิ้ง/ตลาดกลางคืน เป็นฐานตัวแทนสำหรับการถ่ายภาพสถาปัตยกรรมและการช้อปปิ้งแฟชั่น\n\nวิธีการเดินทาง: สถานี Dongdaemun History and Culture Park สาย 2, 4 และ 5 DDP อยู่ที่ทางออก 1 และ 2",
+          "ru": "Dongdaemun Design Plaza (DDP) и торговый/ночной рынок. Это репрезентативная база для архитектурной фотографии и модного шопинга.\n\nКак добраться: станция Dongdaemun History and Culture Park на линиях 2, 4 и 5. DDP находится в направлении выходов 1 и 2.",
+          "zh-Hant": "東大門設計廣場 (DDP) 和購物/夜市。是具有代表性的建築攝影、時尚購物基地。\n\n如何前往：2、4、5號線東大門歷史文化公園站。 DDP往1、2號出口方向。"
+        }
+      ]
+    },
+    "lotte-tower": {
+      "name": "Lotte World Tower",
+      "desc": "Seoul Sky observatory, Lotte World Mall, and Seokchon Lake — views and shopping in one spot.",
+      "how": "Lines 2 & 8 Jamsil Station; follow linked passages into the tower and mall.",
+      "address": "Lotte World Tower, 300 Olympic-ro, Songpa-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%AC%EB%A6%BC%ED%94%BD%EB%A1%9C%20300%20%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%ED%83%80%EC%9B%8C",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%AC%EB%A6%BC%ED%94%BD%EB%A1%9C%20300%20%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%ED%83%80%EC%9B%8C&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서울스카이 전망대·롯데월드몰·석촌호수. 초고층 전망과 쇼핑을 한곳에서.\n\n가는 방법: 2·8호선 잠실역. 타워·몰은 지하·지상 연결 통로를 이용하세요.",
+          "en": "Seoul Sky observatory, Lotte World Mall, and Seokchon Lake — views and shopping in one spot.\n\nHow to get there: Lines 2 & 8 Jamsil Station; follow linked passages into the tower and mall.",
+          "ja": "ソウルスカイ展望台・ロッテワールドモール・石村湖。展望とショッピングが一度に楽しめます。\n\n行き方: 2・8号線蚕室駅。タワー・モールは地下・地上の連絡通路を利用。",
+          "vi": "Đài quan sát bầu trời Seoul, Trung tâm thương mại Lotte World, Hồ Seokchon. Tầm nhìn cao tầng và mua sắm tất cả ở một nơi.\n\nĐến đó bằng cách nào: Ga Jamsil trên Tuyến 2 và 8. Đối với các tòa tháp và trung tâm thương mại, hãy sử dụng lối đi dưới lòng đất và trên mặt đất.",
+          "th": "หอดูดาวโซลสกาย, ห้างสรรพสินค้าลอตเต้เวิลด์, ทะเลสาบซอกชน วิวตึกสูงและการช้อปปิ้งครบจบในที่เดียว\n\nวิธีการเดินทาง: สถานีจัมซิล สาย 2 และ 8 สำหรับอาคารและห้างสรรพสินค้า ให้ใช้ทางเดินใต้ดินและทางพื้นดิน",
+          "ru": "Сеульская небесная обсерватория, торговый центр Lotte World, озеро Сокчхон. Виды с высотных зданий и шопинг — все в одном месте.\n\nКак добраться: станция Jamsil на линиях 2 и 8. Для башен и торговых центров используйте подземные и наземные переходы.",
+          "zh-Hant": "首爾天空展望台、樂天世界購物中心、石村湖。高層景觀和購物盡在一處。\n\n如何前往：2號線和8號線蠶室站。對於塔樓和購物中心，請使用地下和地面通道。"
+        }
+      ]
+    },
+    "songdo": {
+      "name": "Songdo Central Park",
+      "desc": "Incheon’s canal-side skyline park — popular for walks, boats, and evening views.",
+      "how": "Incheon Metro Line 1 Central Park Station. From Seoul, transfer via AREX/subway.",
+      "address": "Songdo Central Park, Yeonsu-gu, Incheon",
+      "regionLabel": "Incheon",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%97%B0%EC%88%98%EA%B5%AC%20%EC%BB%A8%EB%B2%A4%EC%8B%9C%EC%95%84%EB%8C%80%EB%A1%9C%20%EC%86%A1%EB%8F%84%EC%84%BC%ED%8A%B8%EB%9F%B4%ED%8C%8C%ED%81%AC",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%97%B0%EC%88%98%EA%B5%AC%20%EC%BB%A8%EB%B2%A4%EC%8B%9C%EC%95%84%EB%8C%80%EB%A1%9C%20%EC%86%A1%EB%8F%84%EC%84%BC%ED%8A%B8%EB%9F%B4%ED%8C%8C%ED%81%AC&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인공 운하와 현대 스카이라인이 유명한 인천 송도. 야경·보트·산책 코스로 인기입니다.\n\n가는 방법: 인천 1호선 센트럴파크역. 서울에서는 공항철도·지하철 환승 후 이동.",
+          "en": "Incheon’s canal-side skyline park — popular for walks, boats, and evening views.\n\nHow to get there: Incheon Metro Line 1 Central Park Station. From Seoul, transfer via AREX/subway.",
+          "ja": "運河と近代的スカイラインで有名な仁川・松島。夜景や散策が人気です。\n\n行き方: 仁川1号線セントラルパーク駅。ソウルからは空港鉄道・地下鉄乗換でアクセス。",
+          "vi": "Songdo, Seoul, nổi tiếng với kênh đào nhân tạo và đường chân trời hiện đại. Nó nổi tiếng như một địa điểm ngắm cảnh ban đêm, chèo thuyền và đi bộ.\n\nĐến đó bằng cách nào: Ga Công viên Trung tâm Tuyến 1 của Seoul. Tại Seoul, di chuyển ra sân bay bằng đường sắt và tàu điện ngầm.",
+          "th": "ซองโด อินชอน มีชื่อเสียงในด้านคลองเทียมและเส้นขอบฟ้าอันทันสมัย เป็นที่นิยมสำหรับการชมทิวทัศน์ยามค่ำคืน พายเรือ และเดิน\n\nวิธีการเดินทาง: สายอินชอน 1 สถานี Central Park ในกรุงโซล เปลี่ยนไปขึ้นรถไฟสนามบินและรถไฟใต้ดิน",
+          "ru": "Сонгдо, Инчхон, известен своими искусственными каналами и современным горизонтом. Он популярен как ночной вид, катание на лодках и пешеходные маршруты.\n\nКак добраться: станция Central Park линии 1 Incheon. В Сеуле трансфер в аэропорт, ж/д и метро.",
+          "zh-Hant": "仁川松島以其人工運河和現代天際線而聞名。作為夜景路線、划船路線、散步路線而頗受歡迎。\n\n如何前往：仁川1號線中央公園站。在首爾轉乘機場鐵路和地鐵。"
+        }
+      ]
+    },
+    "seoraksan": {
+      "name": "Seoraksan",
+      "desc": "Gangwon’s iconic national park — cable car, Ulsanbawi, and autumn colors on classic trips.",
+      "how": "Bus or taxi from Sokcho/Yangyang. From Seoul, express bus or rental car is common.",
+      "address": "Seoraksan National Park, Sokcho, Gangwon",
+      "regionLabel": "Gangwon",
+      "region": "gangwon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B0%95%EC%9B%90%20%EC%86%8D%EC%B4%88%EC%8B%9C%20%EC%84%A4%EC%95%85%EC%82%B0%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B0%95%EC%9B%90%20%EC%86%8D%EC%B4%88%EC%8B%9C%20%EC%84%A4%EC%95%85%EC%82%B0%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "강원 대표 국립공원. 단풍·케이블카·울산바위 등 외국인 당일치기·1박 코스의 클래식입니다.\n\n가는 방법: 속초·양양에서 버스·택시. 서울에서는 고속버스 또는 렌터카가 일반적입니다.",
+          "en": "Gangwon’s iconic national park — cable car, Ulsanbawi, and autumn colors on classic trips.\n\nHow to get there: Bus or taxi from Sokcho/Yangyang. From Seoul, express bus or rental car is common.",
+          "ja": "江原を代表する国立公園。紅葉・ケーブルカー・蔚山岩など定番コースです。\n\n行き方: 束草・襄陽からバス・タクシー。ソウルからは高速バスやレンタカーが一般的です。",
+          "vi": "Công viên quốc gia đại diện của Gangwon. Đây là chuyến đi trong ngày/khóa học qua đêm cổ điển dành cho người nước ngoài, bao gồm lá mùa thu, cáp treo và Núi đá Ulsan.\n\nCách đến đó: Xe buýt hoặc taxi từ Sokcho hoặc Yangyang. Xe buýt tốc hành hoặc xe cho thuê rất phổ biến ở Seoul.",
+          "th": "อุทยานแห่งชาติที่เป็นตัวแทนของคังวอน เป็นเส้นทางท่องเที่ยวแบบไปเช้าเย็นกลับแบบคลาสสิกสำหรับชาวต่างชาติ รวมถึงใบไม้เปลี่ยนสี กระเช้าลอยฟ้า และอุลซานร็อค\n\nวิธีการเดินทาง: รถบัสหรือแท็กซี่จาก Sokcho หรือ Yangyang รถบัสด่วนหรือรถเช่าเป็นเรื่องปกติในกรุงโซล",
+          "ru": "Представительный национальный парк Канвона. Это классический однодневный/ночевой курс для иностранцев, включающий осеннюю листву, канатную дорогу и скалу Ульсан.\n\nКак добраться: Автобус или такси из Сокчо или Янъяна. В Сеуле распространены автобусы-экспрессы или арендованные автомобили.",
+          "zh-Hant": "江原道代表性的國立公園。红叶、缆车、蔚山岩等，是适合外国人的经典一日游/过夜路线。\n\n如何前往：从束草或襄阳乘坐巴士或出租车。特快巴士或租車在首爾很常見。"
+        }
+      ]
+    },
+    "bulguksa": {
+      "name": "Bulguksa",
+      "desc": "UNESCO temple and the heart of Gyeongju trips — often paired with Seokguram Grotto.",
+      "how": "City bus or taxi from Gyeongju Station/terminal; continue to Seokguram by shuttle/taxi.",
+      "address": "Bulguksa Temple, 385 Bulguk-ro, Gyeongju",
+      "regionLabel": "Gyeongju",
+      "region": "gyeongju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%A3%BC%EC%8B%9C%20%EB%B6%88%EA%B5%AD%EB%A1%9C%20385%20%EB%B6%88%EA%B5%AD%EC%82%AC",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%A3%BC%EC%8B%9C%20%EB%B6%88%EA%B5%AD%EB%A1%9C%20385%20%EB%B6%88%EA%B5%AD%EC%82%AC&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "유네스코 세계유산 사찰. 경주 여행의 핵심이며 석굴암과도 함께 방문합니다.\n\n가는 방법: 경주역·터미널에서 시내버스·택시. 석굴암은 셔틀·택시로 이어서 이동.",
+          "en": "UNESCO temple and the heart of Gyeongju trips — often paired with Seokguram Grotto.\n\nHow to get there: City bus or taxi from Gyeongju Station/terminal; continue to Seokguram by shuttle/taxi.",
+          "ja": "ユネスコ世界遺産の寺院。慶州観光の核心で、石窟庵と合わせて訪れます。\n\n行き方: 慶州駅・ターミナルから市内バス・タクシー。石窟庵へはシャトル・タクシーで接続。",
+          "vi": "Ngôi đền di sản thế giới được UNESCO công nhận. Đây là cốt lõi của bất kỳ chuyến đi nào đến Kyungju và cũng được ghé thăm cùng với Động Seokguram.\n\nĐến đó bằng cách nào: Đi xe buýt thành phố hoặc taxi từ Ga/Nhà ga Kyungju. Tiếp tục đến Động Seokguram bằng xe đưa đón hoặc taxi.",
+          "th": "วัดมรดกโลกของยูเนสโก ที่นี่เป็นหัวใจหลักของการเดินทางไปคยองจูและยังมีการเยี่ยมชมพร้อมกับถ้ำซอกกุรัมอีกด้วย\n\nวิธีการเดินทาง: ขึ้นรถบัสประจำเมืองหรือแท็กซี่จากสถานี/เทอร์มินัล Gyeongju เดินทางต่อไปยังถ้ำซอกกุรัมด้วยรถรับส่งหรือแท็กซี่",
+          "ru": "Храм всемирного наследия ЮНЕСКО. Это основа любой поездки в Кёнджу, и его также посещают вместе с гротом Соккурам.\n\nКак добраться: сядьте на городской автобус или такси от станции/терминала Кёнджу. Продолжайте путь до грота Соккурам на автобусе или такси.",
+          "zh-Hant": "聯合國教科文組織世界遺產寺廟。它是慶州之旅的核心，與石窟庵一起參觀。\n\n如何前往：從慶州站/航站樓搭乘城市巴士或計程車。繼續搭乘接駁車或計程車前往石窟庵。"
+        }
+      ]
+    },
+    "donggung": {
+      "name": "Donggung & Wolji",
+      "desc": "Gyeongju’s night-photo classic — palace ruins reflected in the illuminated pond.",
+      "how": "Central Gyeongju; bus/taxi from the station or terminal. Near Hwangnidan-gil.",
+      "address": "Donggung Palace and Wolji Pond, Gyeongju",
+      "regionLabel": "Gyeongju",
+      "region": "gyeongju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%A3%BC%EC%8B%9C%20%EC%9B%90%ED%99%94%EB%A1%9C%20%EB%8F%99%EA%B6%81%EA%B3%BC%EC%9B%94%EC%A7%80",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%A3%BC%EC%8B%9C%20%EC%9B%90%ED%99%94%EB%A1%9C%20%EB%8F%99%EA%B6%81%EA%B3%BC%EC%9B%94%EC%A7%80&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "경주 야경 명소. 조명 반사 연못 사진으로 외국인 일정의 단골 코스입니다.\n\n가는 방법: 경주 시내 중심. 터미널·역에서 버스·택시로 이동. 황리단길과도 가깝습니다.",
+          "en": "Gyeongju’s night-photo classic — palace ruins reflected in the illuminated pond.\n\nHow to get there: Central Gyeongju; bus/taxi from the station or terminal. Near Hwangnidan-gil.",
+          "ja": "慶州の夜景スポット。ライトアップされた池の反射写真が定番です。\n\n行き方: 慶州市内中心。駅・ターミナルからバス・タクシー。黄里團路も近いです。",
+          "vi": "Điểm ngắm cảnh về đêm ở Kyungju. Đây là khóa học thường xuyên trong hành trình của người nước ngoài để chụp ảnh ao phản chiếu ánh sáng.\n\nĐến đó bằng cách nào: Trung tâm thành phố Kyungju. Di chuyển từ nhà ga/nhà ga bằng xe buýt/taxi. Nó cũng gần với Hwangridan-gil.",
+          "th": "จุดชมวิวยามค่ำคืนคยองจู นี่เป็นเส้นทางปกติในแผนการเดินทางของชาวต่างชาติเพื่อถ่ายรูปแสงสะท้อนในสระน้ำ\n\nวิธีการเดินทาง: ใจกลางเมืองคย็องจู การเดินทางจากสถานี/สถานีโดยรถบัส/แท็กซี่ นอกจากนี้ยังใกล้กับฮวังกรีดัน-กิล",
+          "ru": "Ночная смотровая площадка Кёнджу. Это регулярный курс по маршрутам иностранцев благодаря светоотражающим фотографиям прудов.\n\nКак добраться: центр города Кёнджу. Поездка от терминала/станции на автобусе/такси. Это также недалеко от Хвангридан-гиля.",
+          "zh-Hant": "慶州夜景景點。這是外國人行程中的常規路線，因為它的倒影池塘照片。\n\n如何到達：慶州市中心。從航站/車站搭乘巴士/計程車出發。離黃裡團路也很近。"
+        }
+      ]
+    },
+    "jeonju": {
+      "name": "Jeonju Hanok Village",
+      "desc": "Hanok streets, bibimbap, and hanbok — a classic overnight or day trip for visitors.",
+      "how": "Taxi/bus from Jeonju Station or express bus terminal; KTX links Seoul and Busan.",
+      "address": "Jeonju Hanok Village, Wansan-gu, Jeonju",
+      "regionLabel": "Jeolla",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%B6%81%20%EC%A0%84%EC%A3%BC%EC%8B%9C%20%EC%99%84%EC%82%B0%EA%B5%AC%20%EA%B8%B0%EB%A6%B0%EB%8C%80%EB%A1%9C%20%EC%A0%84%EC%A3%BC%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%B6%81%20%EC%A0%84%EC%A3%BC%EC%8B%9C%20%EC%99%84%EC%82%B0%EA%B5%AC%20%EA%B8%B0%EB%A6%B0%EB%8C%80%EB%A1%9C%20%EC%A0%84%EC%A3%BC%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "한옥·비빔밥·한복 체험의 대표 도시. 외국인 당일치기·1박 일정의 단골입니다.\n\n가는 방법: 전주역·고속터미널 후 택시·버스. KTX로 서울·부산과 연결됩니다.",
+          "en": "Hanok streets, bibimbap, and hanbok — a classic overnight or day trip for visitors.\n\nHow to get there: Taxi/bus from Jeonju Station or express bus terminal; KTX links Seoul and Busan.",
+          "ja": "韓屋・ビビンバ・韓服体験の代表地。日帰り・1泊の定番コースです。\n\n行き方: 全州駅・高速ターミナルからタクシー・バス。KTXでソウル・釜山と接続。",
+          "vi": "Một thành phố tiêu biểu để trải nghiệm Hanok, Bibimbap và Hanbok. Đây là điểm dừng chân thường xuyên của người nước ngoài trong các chuyến đi trong ngày hoặc qua đêm.\n\nĐến đó bằng cách nào: Đi taxi hoặc xe buýt sau Ga Jeonju/Bến xe buýt tốc hành. Nó được kết nối với Seoul và Busan bằng KTX.",
+          "th": "เมืองตัวแทนสำหรับการสัมผัสประสบการณ์ฮันอก บิบิมบับ และฮันบก เป็นจุดจอดประจำสำหรับชาวต่างชาติทั้งแบบไปเช้าเย็นกลับหรือแบบค้างคืน\n\nวิธีการเดินทาง: นั่งแท็กซี่หรือรถบัสหลังจากสถานีจอนจู/สถานีขนส่งด่วน เชื่อมต่อกับโซลและปูซานโดย KTX",
+          "ru": "Представительный город для знакомства с Ханоком, Пибимпабом и Ханбоком. Это регулярная остановка для иностранцев во время однодневных или ночных поездок.\n\nКак добраться: возьмите такси или автобус после станции Чонджу/автовокзала экспресс-автобуса. Он связан с Сеулом и Пусаном по KTX.",
+          "zh-Hant": "體驗韓屋、拌飯、韓服的代表城市。這是外國人一日遊或過夜旅行的常規停靠站。\n\n如何前往：在全州站/高速巴士總站後搭乘計程車或巴士。透過 KTX 連接首爾和釜山。"
+        }
+      ]
+    },
+    "seongsan": {
+      "name": "Seongsan Ilchulbong",
+      "desc": "UNESCO volcanic tuff cone — Jeju’s east-coast sunrise and hiking icon.",
+      "how": "Bus, rental car, or taxi from Jeju Airport / Jeju City; often paired with Udo Island.",
+      "address": "Seongsan Ilchulbong, Seongsan-eup, Seogwipo, Jeju",
+      "regionLabel": "Jeju",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C%20%EC%84%B1%EC%82%B0%EC%9D%8D%20%EC%9D%BC%EC%B6%9C%EB%A1%9C%20%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C%20%EC%84%B1%EC%82%B0%EC%9D%8D%20%EC%9D%BC%EC%B6%9C%EB%A1%9C%20%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "유네스코 세계자연유산 화산 분화구. 제주 동쪽 일출·산책의 상징입니다.\n\n가는 방법: 제주국제공항·제주시에서 버스·렌터카·택시. 우도와 연계 일정이 많습니다.",
+          "en": "UNESCO volcanic tuff cone — Jeju’s east-coast sunrise and hiking icon.\n\nHow to get there: Bus, rental car, or taxi from Jeju Airport / Jeju City; often paired with Udo Island.",
+          "ja": "ユネスコ世界自然遺産の火山丘。済州東海岸の日の出・散策の象徴です。\n\n行き方: 済州空港・済州市からバス・レンタカー・タクシー。牛島とのセット行程が多いです。",
+          "vi": "Miệng núi lửa di sản thiên nhiên thế giới được UNESCO công nhận. Nó là biểu tượng của mặt trời mọc và đi bộ ở phía đông của Jeju.\n\nĐến đó bằng cách nào: Xe buýt, xe thuê hoặc taxi từ Sân bay Quốc tế Jeju hoặc Thành phố Jeju. Có rất nhiều lịch trình liên quan đến Udo.",
+          "th": "ปล่องภูเขาไฟมรดกโลกทางธรรมชาติของ UNESCO เป็นสัญลักษณ์ของพระอาทิตย์ขึ้นและการเดินทางตะวันออกของเชจู\n\nวิธีการเดินทาง: รถบัส รถเช่า หรือแท็กซี่จากสนามบินนานาชาติเชจูหรือเมืองเชจู มีตารางเวลามากมายที่เชื่อมโยงกับอูโด",
+          "ru": "Вулканический кратер, внесенный в список Всемирного природного наследия ЮНЕСКО. Это символ восхода солнца и прогулок на востоке Чеджу.\n\nКак добраться: автобус, арендованный автомобиль или такси из международного аэропорта Чеджу или города Чеджу. С Удо связано множество расписаний.",
+          "zh-Hant": "聯合國教科文組織世界自然遺產火山口。它是濟州東部日出和行走的象徵。\n\n前往方式：從濟州國際機場或濟州市出發搭乘巴士、租車或計程車。有很多與Udo相關的時間表。"
+        }
+      ]
+    },
+    "jungmun": {
+      "name": "Jungmun · Seogwipo",
+      "desc": "Jeju’s southern resort belt — Jungmun complex, waterfalls, and coastal walks.",
+      "how": "A rental car is easiest; buses and taxis also run from the airport and Jeju City.",
+      "address": "Jungmun Tourist Complex, Seogwipo, Jeju",
+      "regionLabel": "Jeju",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C%20%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%A1%9C%20%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C%20%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%A1%9C%20%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "중문 관광단지·천지연·올레 등 제주 남부 대표 리조트·관광 벨트입니다.\n\n가는 방법: 렌터카가 가장 편합니다. 공항·제주시에서 버스·택시로도 이동 가능.",
+          "en": "Jeju’s southern resort belt — Jungmun complex, waterfalls, and coastal walks.\n\nHow to get there: A rental car is easiest; buses and taxis also run from the airport and Jeju City.",
+          "ja": "中文観光団地や滝・オルレなど、済州南部の代表リゾート・観光エリアです。\n\n行き方: レンタカーが最も便利。空港・済州市からバス・タクシーでもアクセス可能。",
+          "vi": "Đây là vành đai du lịch và nghỉ dưỡng tiêu biểu ở miền nam Jeju, bao gồm Khu liên hợp du lịch Jungmun, Cheonjiyeon và Olle.\n\nĐến đó bằng cách nào: Thuê xe là dễ nhất. Bạn cũng có thể di chuyển bằng xe buýt hoặc taxi từ sân bay hoặc thành phố Jeju.",
+          "th": "เป็นรีสอร์ทและแหล่งท่องเที่ยวตัวแทนในเชจูตอนใต้ รวมถึงศูนย์การท่องเที่ยวจุงมุน ชอนจียอน และโอลเล\n\nวิธีการเดินทาง: การเช่ารถจะสะดวกที่สุด คุณสามารถเดินทางโดยรถบัสหรือแท็กซี่จากสนามบินหรือเมืองเชจูได้",
+          "ru": "Это репрезентативный курортный и туристический пояс на юге Чеджу, включающий туристический комплекс Чунмун, Чхонджиён и Олле.\n\nКак добраться: проще всего арендовать машину. Вы также можете добраться на автобусе или такси из аэропорта или города Чеджу.",
+          "zh-Hant": "中文旅遊區、天地淵、偶來等是濟州南部代表性的度假旅遊帶。\n\n如何到達：租車是最方便的。您也可以從機場或濟州市搭乘巴士或計程車前往。"
+        }
+      ]
+    },
+    "gamcheon": {
+      "name": "Gamcheon Culture Village",
+      "desc": "Colorful hillside village — one of Busan’s most visited photo spots for foreigners.",
+      "how": "Line 1 Toseong Station then village bus/taxi. Wear comfortable shoes for steep alleys.",
+      "address": "Gamcheon Culture Village, Saha-gu, Busan",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EC%82%AC%ED%95%98%EA%B5%AC%20%EA%B0%90%EC%B2%9C%EB%AC%B8%ED%99%94%EB%A7%88%EC%9D%84%EA%B8%B8%20%EA%B0%90%EC%B2%9C%EB%AC%B8%ED%99%94%EB%A7%88%EC%9D%84",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EC%82%AC%ED%95%98%EA%B5%AC%20%EA%B0%90%EC%B2%9C%EB%AC%B8%ED%99%94%EB%A7%88%EC%9D%84%EA%B8%B8%20%EA%B0%90%EC%B2%9C%EB%AC%B8%ED%99%94%EB%A7%88%EC%9D%84&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "알록달록 언덕 마을. 부산에서 외국인이 가장 많이 찾는 포토 스팟 중 하나입니다.\n\n가는 방법: 1호선 토성역 후 마을버스·택시. 가파른 골목이 많으니 편한 신발을 신으세요.",
+          "en": "Colorful hillside village — one of Busan’s most visited photo spots for foreigners.\n\nHow to get there: Line 1 Toseong Station then village bus/taxi. Wear comfortable shoes for steep alleys.",
+          "ja": "色とりどりの坂のまち。釜山で外国人に人気のフォトスポットです。\n\n行き方: 1号線土城駅からマウルバス・タクシー。急な路地が多いので歩きやすい靴を。",
+          "vi": "Một thị trấn đồi đầy màu sắc. Đây là một trong những địa điểm chụp ảnh được người nước ngoài ghé thăm nhiều nhất ở Busan.\n\nĐến đó bằng cách nào: Sau Ga Toseong trên Tuyến 1, đi xe buýt hoặc taxi trong làng. Có nhiều ngõ dốc nên hãy mang giày thoải mái.",
+          "th": "เมืองแห่งขุนเขาหลากสีสัน ที่นี่เป็นหนึ่งในจุดถ่ายรูปที่ชาวต่างชาติมาเยี่ยมชมมากที่สุดในปูซาน\n\nวิธีการเดินทาง: หลังจากสถานี Toseong สาย ​​1 ให้นั่งรถบัสหรือแท็กซี่ของหมู่บ้าน มีตรอกซอกซอยสูงชันหลายซอยควรสวมรองเท้าที่สบาย",
+          "ru": "Колоритный городок на холме. Это одно из самых посещаемых иностранцами мест для фотографий в Пусане.\n\nКак добраться: после станции Тосон линии 1 сесть на деревенский автобус или такси. Здесь много крутых переулков, поэтому надевайте удобную обувь.",
+          "zh-Hant": "一座色彩繽紛的山城。這裡是釜山外國人最常去的拍照景點之一。\n\n如何前往：搭乘1號線土城站後，搭乘鄉村巴士或計程車。有很多陡峭的小巷，所以要穿舒適的鞋子。"
+        }
+      ]
+    },
+    "haedong": {
+      "name": "Haedong Yonggungsa",
+      "desc": "Cliffside seaside temple — a classic east-Busan stop with Haeundae/Gijang.",
+      "how": "Bus or taxi from Haeundae or Gijang. Allow extra time for stairs and crowds.",
+      "address": "Haedong Yonggungsa, Gijang-eup, Busan",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EA%B8%B0%EC%9E%A5%EA%B5%B0%20%EA%B8%B0%EC%9E%A5%EC%9D%8D%20%EC%9A%A9%EA%B6%81%EA%B8%B8%20%ED%95%B4%EB%8F%99%EC%9A%A9%EA%B6%81%EC%82%AC",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EA%B8%B0%EC%9E%A5%EA%B5%B0%20%EA%B8%B0%EC%9E%A5%EC%9D%8D%20%EC%9A%A9%EA%B6%81%EA%B8%B8%20%ED%95%B4%EB%8F%99%EC%9A%A9%EA%B6%81%EC%82%AC&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "바다 위 절벽 사찰. 해운대·기장과 함께 도는 부산 동부 대표 명소입니다.\n\n가는 방법: 해운대·기장에서 버스·택시. 주차·계단이 붐빌 수 있으니 여유를 두고 방문하세요.",
+          "en": "Cliffside seaside temple — a classic east-Busan stop with Haeundae/Gijang.\n\nHow to get there: Bus or taxi from Haeundae or Gijang. Allow extra time for stairs and crowds.",
+          "ja": "海辺の断崖寺院。海雲台・機張と合わせて巡る釜山東の定番です。\n\n行き方: 海雲台・機張からバス・タクシー。階段と混雑を見込んで余裕を持って。",
+          "vi": "Một ngôi đền vách đá trên biển. Cùng với Haeundae và Gijang, đây là điểm thu hút tiêu biểu ở phía đông Busan.\n\nĐến đó bằng cách nào: Xe buýt hoặc taxi từ Haeundae hoặc Gijang. Bãi đậu xe và cầu thang có thể đông đúc, vì vậy vui lòng dành thêm thời gian.",
+          "th": "วัดหน้าผาเหนือทะเล นอกจากแฮอุนแดและกีจังแล้ว ที่นี่ยังเป็นสถานที่ท่องเที่ยวที่เป็นตัวแทนของปูซานตะวันออกอีกด้วย\n\nวิธีการเดินทาง: รถบัสหรือแท็กซี่จาก Haeundae หรือ Gijang ที่จอดรถและบันไดอาจมีคนหนาแน่น ดังนั้นโปรดเผื่อเวลาไว้เป็นพิเศษ",
+          "ru": "Скальный храм над морем. Наряду с Хэундэ и Киджаном, это представительная достопримечательность восточного Пусана.\n\nКак добраться: Автобус или такси из Хэундэ или Киджана. Парковка и лестница могут быть переполнены, поэтому оставляйте немного времени при посещении.",
+          "zh-Hant": "一座矗立在海上的懸崖寺廟。與海雲台、機張一樣，是釜山東部的代表性景點。\n\n前往方式：從海雲台或機張出發搭乘巴士或計程車。停車場和樓梯可能會很擁擠，因此請預留額外時間。"
+        }
+      ]
+    },
+    "imjingak": {
+      "name": "Imjingak · DMZ",
+      "desc": "Gateway area for DMZ/Panmunjom tourism — tours, memorials, and viewpoints.",
+      "how": "Gyeongui–Jungang Line Munsan Station then bus/taxi. Panmunjom tours need advance booking and passport.",
+      "address": "Imjingak, Munsan-eup, Paju, Gyeonggi",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EA%B8%B0%20%ED%8C%8C%EC%A3%BC%EC%8B%9C%20%EB%AC%B8%EC%82%B0%EC%9D%8D%20%EC%9E%84%EC%A7%84%EA%B0%81%EB%A1%9C%20%EC%9E%84%EC%A7%84%EA%B0%81",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%ED%8C%8C%EC%A3%BC%EC%8B%9C%20%EB%AC%B8%EC%82%B0%EC%9D%8D%20%EC%9E%84%EC%A7%84%EA%B0%81%EB%A1%9C%20%EC%9E%84%EC%A7%84%EA%B0%81&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "판문점 관광의 관문 역할을 하는 임진각 일대. DMZ 투어 출발·전망 포인트로 유명합니다.\n\n가는 방법: 경의중앙선 문산역 후 버스·택시. 판문점 투어는 사전 예약·여권 확인이 필요합니다.",
+          "en": "Gateway area for DMZ/Panmunjom tourism — tours, memorials, and viewpoints.\n\nHow to get there: Gyeongui–Jungang Line Munsan Station then bus/taxi. Panmunjom tours need advance booking and passport.",
+          "ja": "板門店観光の拠点となる臨津閣一帯。DMZツアー出発・展望ポイントとして有名です。\n\n行き方: 京義中央線汶山駅からバス・タクシー。板門店ツアーは事前予約とパスポート確認が必要です。",
+          "vi": "Khu vực Imjingak đóng vai trò là cửa ngõ du lịch Bàn Môn Điếm. Nó nổi tiếng là điểm xuất phát và điểm quan sát cho các chuyến tham quan DMZ.\n\nĐến đó bằng cách nào: Xe buýt hoặc taxi sau Ga Munsan trên Tuyến Kyungui-Jungang. Các chuyến tham quan Panmunjom yêu cầu đặt chỗ trước và xác minh hộ chiếu.",
+          "th": "พื้นที่อิมจินกักเป็นประตูสู่การท่องเที่ยวปันมุนจอม มีชื่อเสียงในฐานะจุดเริ่มต้นและจุดชมวิวสำหรับทัวร์ DMZ\n\nวิธีการเดินทาง: รถบัสหรือแท็กซี่หลังจากสถานี Munsan บนสาย Gyeongui-Jungang ทัวร์พันมุนจอมต้องจองล่วงหน้าและตรวจหนังสือเดินทาง",
+          "ru": "Район Имджингак служит воротами для туризма в Пханмунджоме. Он известен как отправная точка и наблюдательный пункт для туров по демилитаризованной зоне.\n\nКак добраться: автобус или такси после станции Мунсан на линии Кёнги-Чунган. Туры в Пханмунджом требуют предварительного бронирования и проверки паспорта.",
+          "zh-Hant": "臨津閣地區是板門店旅遊的門戶。它作為 DMZ 旅遊的起點和觀察點而聞名。\n\n如何前往：京義中央線文山站後搭乘巴士或計程車。板門店旅遊需要提前預訂並驗證護照。"
+        }
+      ]
+    },
+    "everland": {
+      "name": "Everland",
+      "desc": "Korea’s flagship theme park — a popular day trip for families and international visitors.",
+      "how": "From Bundang Line Jukjeon/Giheung etc. use Everline, shuttle, or bus — check live transfers.",
+      "address": "Everland, Pogok-eup, Yongin, Gyeonggi",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EA%B8%B0%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%B2%98%EC%9D%B8%EA%B5%AC%20%ED%8F%AC%EA%B3%A1%EC%9D%8D%20%EC%97%90%EB%B2%84%EB%9E%9C%EB%93%9C%EB%A1%9C%20%EC%97%90%EB%B2%84%EB%9E%9C%EB%93%9C",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%B2%98%EC%9D%B8%EA%B5%AC%20%ED%8F%AC%EA%B3%A1%EC%9D%8D%20%EC%97%90%EB%B2%84%EB%9E%9C%EB%93%9C%EB%A1%9C%20%EC%97%90%EB%B2%84%EB%9E%9C%EB%93%9C&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "한국 대표 테마파크. 외국인·가족 여행객에게 인기 있는 당일치기 명소입니다.\n\n가는 방법: 분당선 죽전·기흥 등에서 에버라인·셔틀·버스. 지도 앱으로 최신 환승을 확인하세요.",
+          "en": "Korea’s flagship theme park — a popular day trip for families and international visitors.\n\nHow to get there: From Bundang Line Jukjeon/Giheung etc. use Everline, shuttle, or bus — check live transfers.",
+          "ja": "韓国を代表するテーマパーク。外国人・家族連れの日帰り定番です。\n\n行き方: 盆唐線竹田・器興などからエバーライン・シャトル・バス。最新乗換は地図アプリで確認。",
+          "vi": "Công viên giải trí tiêu biểu của Hàn Quốc. Đây là điểm đến cho chuyến đi trong ngày phổ biến của người nước ngoài và gia đình.\n\nCách đến đó: Tuyến Bundang, Everline, xe đưa đón hoặc xe buýt từ Jukjeon hoặc Giheung. Kiểm tra các giao dịch chuyển tiền mới nhất bằng ứng dụng Maps.",
+          "th": "สวนสนุกตัวแทนของเกาหลี เป็นสถานที่ท่องเที่ยวแบบไปเช้าเย็นกลับยอดนิยมสำหรับชาวต่างชาติและครอบครัว\n\nวิธีการเดินทาง: สาย Bundang, Everline, รถรับส่ง หรือรถบัสจาก Jukjeon หรือ Giheung ตรวจสอบการถ่ายโอนล่าสุดด้วยแอป Maps",
+          "ru": "Представительный тематический парк Кореи. Это популярное место однодневных поездок для иностранцев и семей.\n\nКак добраться: линии Bundang Line, Everline, шаттл или автобус из Джукчона или Кихына. Проверьте последние трансферы с помощью приложения «Карты».",
+          "zh-Hant": "韓國代表性的主題樂園。這是外國人和家庭的熱門一日遊目的地。\n\n如何前往：盆唐線、Everline、接駁車或從竹田或器興出發的巴士。使用地圖應用程式查看最新的接送服務。"
+        }
+      ]
+    },
+    "airport-icn": {
+      "name": "Incheon Intl (ICN)",
+      "desc": "Korea's main international hub for Seoul and the capital region. Linked by AREX and airport buses.",
+      "how": "AREX All-stop/Express, airport bus, or taxi. Check T1 vs T2.",
+      "address": "272 Gonghang-ro, Jung-gu, Incheon",
+      "regionLabel": "Incheon",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Incheon%20International%20Airport",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Incheon%20International%20Airport&hl=en&z=13&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서울·수도권 입국이 가장 많은 허브 공항입니다. AREX·공항버스로 시내와 연결됩니다.\n\n가는 방법: AREX 일반/직통, 공항버스, 택시. 터미널 1·2 확인.",
+          "en": "Korea's main international hub for Seoul and the capital region. Linked by AREX and airport buses.\n\nHow to get there: AREX All-stop/Express, airport bus, or taxi. Check T1 vs T2.",
+          "ja": "ソウル・首都圏到着で最も利用されるハブ空港。AREXや空港バスで市内とつながります。\n\n行き方: AREX普通/直通、空港バス、タクシー。第1・第2ターミナルを確認。",
+          "vi": "Đây là sân bay trung tâm có số lượng khách đến Seoul và khu vực đô thị lớn nhất. Nó được kết nối với thành phố bằng AREX và xe buýt sân bay.\n\nĐến đó bằng cách nào: AREX thường xuyên/trực tiếp, xe buýt sân bay, taxi. Kiểm tra thiết bị đầu cuối 1·2.",
+          "th": "เป็นสนามบินศูนย์กลางที่มีจำนวนผู้โดยสารขาเข้าสู่กรุงโซลและปริมณฑลมากที่สุด เชื่อมต่อกับเมืองโดย AREX และรถบัสสนามบิน\n\nวิธีการเดินทาง: AREX ปกติ/สายตรง, รถบัสสนามบิน, แท็กซี่ ตรวจสอบเทอร์มินัล 1·2",
+          "ru": "Это узловой аэропорт с наибольшим количеством прибытий в Сеул и мегаполис. Он связан с городом автобусами AREX и аэропортами.\n\nКак добраться: AREX обычный/прямой, автобус до аэропорта, такси. Проверьте клемму 1·2.",
+          "zh-Hant": "它是飛往首爾和首都圈的航班最多的樞紐機場。透過 AREX 和機場巴士與城市相連。\n\n前往方式：AREX 常規/直達、機場巴士、計程車。檢查端子 1·2。"
+        }
+      ]
+    },
+    "airport-gmp": {
+      "name": "Gimpo Intl (GMP)",
+      "desc": "Mainly domestic and short-haul international flights — closer to western Seoul.",
+      "how": "Subway Lines 5 & 9 Gimpo Airport Station, airport bus, or taxi.",
+      "address": "112 Haneul-gil, Gangseo-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gimpo%20International%20Airport",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Gimpo%20International%20Airport&hl=en&z=13&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "국내선·일부 근거리 국제선 중심. 서울 서부와 가깝습니다.\n\n가는 방법: 지하철 5·9호선 김포공항역, 공항버스, 택시.",
+          "en": "Mainly domestic and short-haul international flights — closer to western Seoul.\n\nHow to get there: Subway Lines 5 & 9 Gimpo Airport Station, airport bus, or taxi.",
+          "ja": "国内線と一部近距離国際線が中心。ソウル西部に近い空港です。\n\n行き方: 地下鉄5・9号線金浦空港駅、空港バス、タクシー。",
+          "vi": "Tập trung vào các chuyến bay nội địa và một số chuyến bay quốc tế cự ly ngắn. Nó gần phía tây Seoul.\n\nĐến đó bằng cách nào: Ga sân bay Gimpo trên tuyến tàu điện ngầm số 5 và 9, xe buýt sân bay, taxi.",
+          "th": "เน้นเที่ยวบินภายในประเทศและเที่ยวบินระหว่างประเทศระยะสั้นบางเที่ยวบิน มันอยู่ใกล้กับกรุงโซลตะวันตก\n\nวิธีการเดินทาง: สถานี Gimpo Airport บนรถไฟใต้ดินสาย 5 และ 9, รถบัสสนามบิน, แท็กซี่",
+          "ru": "Ориентирован на внутренние рейсы и некоторые международные рейсы на короткие расстояния. Это недалеко от западного Сеула.\n\nКак добраться: станция Gimpo Airport, линии метро 5 и 9, автобус до аэропорта, такси.",
+          "zh-Hant": "以國內航班及部分短程國際航班為主。它靠近首爾西部。\n\n如何前往：地鐵5號線、9號線金浦機場站、機場巴士、計程車。"
+        }
+      ]
+    },
+    "airport-pus": {
+      "name": "Gimhae Intl (PUS)",
+      "desc": "Gateway airport for Busan and Gyeongnam — relatively close to the city.",
+      "how": "Busan–Gimhae Light Rail, limousine bus, or taxi.",
+      "address": "108 Gonghangjinip-ro, Gangseo-gu, Busan",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gimhae%20International%20Airport",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Gimhae%20International%20Airport&hl=en&z=13&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산·경남 관문 공항. 시내와 비교적 가깝습니다.\n\n가는 방법: 부산김해경전철, 공항리무진, 택시.",
+          "en": "Gateway airport for Busan and Gyeongnam — relatively close to the city.\n\nHow to get there: Busan–Gimhae Light Rail, limousine bus, or taxi.",
+          "ja": "釜山・慶南の玄関空港。市内まで比較的近いです。\n\n行き方: 釜山金海軽電鉄、空港リムジン、タクシー。",
+          "vi": "Sân bay cửa ngõ Busan-Gyeongnam. Nó tương đối gần trung tâm thành phố.\n\nĐến đó bằng cách nào: Đường sắt nhẹ Busan-Gimhae, xe limousine sân bay, taxi.",
+          "th": "สนามบินเกตเวย์ปูซาน-คยองนัม มันค่อนข้างใกล้กับตัวเมือง\n\nวิธีการเดินทาง: รถไฟฟ้ารางเบาปูซาน-กิมแฮ รถลีมูซีนสนามบิน แท็กซี่",
+          "ru": "Аэропорт Пусан-Кённамк. Это относительно близко к центру города.\n\nКак добраться: легкорельсовый транспорт Пусан-Кимхэ, лимузин аэропорта, такси.",
+          "zh-Hant": "釜山-慶南門戶機場。距離市中心比較近。\n\n前往方式：釜山-金海輕軌、機場豪華轎車、計程車。"
+        }
+      ]
+    },
+    "airport-cju": {
+      "name": "Jeju Intl (CJU)",
+      "desc": "Main gateway to Jeju Island — rentals, buses, and taxis cover the island.",
+      "how": "Limousine/city bus, rental car, or taxi. Peak season queues can be long.",
+      "address": "2 Gonghang-ro, Jeju-si, Jeju",
+      "regionLabel": "Jeju",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jeju%20International%20Airport",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Jeju%20International%20Airport&hl=en&z=13&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "제주도 본섬 관문. 렌터카·버스·택시로 섬 전역과 연결됩니다.\n\n가는 방법: 리무진·시내버스, 렌터카, 택시. 성수기는 대기 길 수 있음.",
+          "en": "Main gateway to Jeju Island — rentals, buses, and taxis cover the island.\n\nHow to get there: Limousine/city bus, rental car, or taxi. Peak season queues can be long.",
+          "ja": "済州島の玄関。レンタカーやバス・タクシーで島内へ。\n\n行き方: リムジン・市内バス、レンタカー、タクシー。繁忙期は待ちが長いことも。",
+          "vi": "Cửa ngõ vào đảo chính đảo Jeju. Nó được kết nối với toàn bộ hòn đảo bằng ô tô cho thuê, xe buýt và taxi.\n\nĐến đó bằng cách nào: Xe limousine, xe buýt thành phố, xe thuê, taxi. Sự chờ đợi có thể kéo dài trong mùa cao điểm.",
+          "th": "ประตูสู่เกาะหลักของเกาะเชจู เชื่อมต่อกับทั้งเกาะด้วยรถเช่า รถบัส และแท็กซี่\n\nวิธีการเดินทาง: รถลีมูซีน รถบัสประจำเมือง รถเช่า แท็กซี่ การรออาจใช้เวลานานในช่วงฤดูท่องเที่ยว",
+          "ru": "Ворота на главный остров Чеджу. Он связан со всем островом арендованным автомобилем, автобусом и такси.\n\nКак добраться: Лимузин, городской автобус, арендованный автомобиль, такси. В пик сезона ожидание может быть долгим.",
+          "zh-Hant": "濟州島主島的門戶。透過租車、巴士和計程車與整個島嶼連結。\n\n如何前往： 豪華轎車、城市巴士、租車、計程車。旺季期間等待時間可能會很長。"
+        }
+      ]
+    },
+    "airport-tae": {
+      "name": "Daegu Intl (TAE)",
+      "desc": "Airport for the Daegu / northern Gyeongbuk area — domestic and some international flights.",
+      "how": "Airport bus, taxi, or city bus.",
+      "address": "221 Gonghang-ro, Dong-gu, Daegu",
+      "regionLabel": "Daegu",
+      "region": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Daegu%20International%20Airport",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Daegu%20International%20Airport&hl=en&z=13&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "대구·경북 권역 공항. 국내선과 일부 국제선이 운항합니다.\n\n가는 방법: 공항버스, 택시, 시내버스.",
+          "en": "Airport for the Daegu / northern Gyeongbuk area — domestic and some international flights.\n\nHow to get there: Airport bus, taxi, or city bus.",
+          "ja": "大邱・慶北エリアの空港。国内線と一部国際線。\n\n行き方: 空港バス、タクシー、市内バス。",
+          "vi": "Sân bay khu vực Daegu-Gyeongbuk. Các chuyến bay nội địa và một số chuyến bay quốc tế hoạt động.\n\nĐến đó bằng cách nào: Xe buýt sân bay, taxi, xe buýt thành phố.",
+          "th": "สนามบินแทกู-คย็องบุก มีเที่ยวบินภายในประเทศและเที่ยวบินระหว่างประเทศบางเที่ยวบิน\n\nวิธีการเดินทาง: รถบัสสนามบิน แท็กซี่ รถบัสประจำเมือง",
+          "ru": "Аэропорт Тэгу-Кёнбукк. Выполняются внутренние рейсы и некоторые международные рейсы.\n\nКак добраться: Автобус из аэропорта, такси, городской автобус.",
+          "zh-Hant": "大邱-慶北地區機場。營運國內航班和部分國際航班。\n\n如何抵達：機場巴士、計程車、城市巴士。"
+        }
+      ]
+    },
+    "airport-cjj": {
+      "name": "Cheongju Intl (CJJ)",
+      "desc": "Gateway for Chungcheong — useful for Sejong, Daejeon, and Cheongju.",
+      "how": "Airport limousine, taxi, or rental car.",
+      "address": "980 Ochang-daero, Naesu-eup, Cheongju",
+      "regionLabel": "Chungcheong",
+      "region": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cheongju%20International%20Airport",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Cheongju%20International%20Airport&hl=en&z=13&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "충청권 관문. 세종·대전·청주 접근에 쓰입니다.\n\n가는 방법: 공항리무진, 택시, 렌터카.",
+          "en": "Gateway for Chungcheong — useful for Sejong, Daejeon, and Cheongju.\n\nHow to get there: Airport limousine, taxi, or rental car.",
+          "ja": "忠清圏の玄関。世宗・大田・清州アクセスに。\n\n行き方: 空港リムジン、タクシー、レンタカー。",
+          "vi": "Cửa ngõ vào vùng Chungcheong. Nó được sử dụng để truy cập Sejong, Daejeon và Cheongju.\n\nĐến đó bằng cách nào: Xe limousine sân bay, taxi hoặc xe thuê.",
+          "th": "ประตูสู่ภูมิภาคชุงชอง ใช้เพื่อเข้าถึงเซจง แทจอน และชองจู\n\nวิธีการเดินทาง: รถลีมูซีนสนามบิน แท็กซี่ หรือรถเช่า",
+          "ru": "Ворота в регион Чхунчхон. Он используется для доступа к Седжону, Тэджону и Чхонджу.\n\nКак добраться: лимузин из аэропорта, такси или арендованный автомобиль.",
+          "zh-Hant": "忠清地區的門戶。用於前往世宗、大田、清州。\n\n如何前往：機場豪華轎車、計程車或租車。"
+        }
+      ]
+    },
+    "seoul-global-center": {
+      "name": "Seoul Global Center",
+      "desc": "Visitor/expat help near City Hall for living and admin questions. (Useful-info pin, not a sightseeing spot.)",
+      "how": "City Hall / Euljiro 1-ga area — check official hours before visiting.",
+      "address": "Sejong-daero, Jung-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Seoul%20Global%20Center",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Seoul%20Global%20Center&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "외국인 생활·행정 상담을 돕는 시청 인근 안내 거점입니다. (명소가 아닌 유용 정보 핀)\n\n가는 방법: 시청·을지로입구 일대. 공식 안내로 방문 예약·시간을 확인하세요.",
+          "en": "Visitor/expat help near City Hall for living and admin questions. (Useful-info pin, not a sightseeing spot.)\n\nHow to get there: City Hall / Euljiro 1-ga area — check official hours before visiting.",
+          "ja": "市庁近くで外国人の生活・行政相談を助ける拠点です。（観光名所ではなく情報ピン）\n\n行き方: 市庁・乙支路入口一帯。公式の時間を確認してから訪問を。",
+          "vi": "Đây là cơ sở thông tin gần Tòa thị chính, cung cấp lời khuyên về cuộc sống và hành chính cho người nước ngoài. (Pin thông tin hữu ích, không phải là điểm thu hút)\n\nĐến đó bằng cách nào: Khu vực lối vào Tòa thị chính/Euljiro. Vui lòng kiểm tra việc đặt chỗ và thời gian tham quan của bạn thông qua thông tin chính thức.",
+          "th": "นี่คือฐานข้อมูลใกล้ศาลาว่าการที่ให้คำปรึกษาด้านชีวิตและการบริหารสำหรับชาวต่างชาติ (พินข้อมูลที่เป็นประโยชน์ ไม่ใช่สถานที่ท่องเที่ยว)\n\nวิธีการเดินทาง: ศาลากลาง/บริเวณทางเข้าอึลจิโร โปรดตรวจสอบการจองและเวลาเข้าชมของคุณผ่านข้อมูลอย่างเป็นทางการ",
+          "ru": "Это информационная база возле мэрии, где дают советы по жизни и управлению для иностранцев. (Полезный информационный значок, а не аттракцион)\n\nКак добраться: мэрия/входная зона Ыльджиро. Пожалуйста, проверьте бронирование и время посещения через официальную информацию.",
+          "zh-Hant": "這是位於市政廳附近的資訊基地，為外國人提供生活和行政方面的建議。 （有用的資訊圖釘，不是景點）\n\n如何前往：市政廳/乙支路入口處。請透過官方資訊查詢您的參觀預約和時間。"
+        }
+      ]
+    },
+    "tourist-info-myeongdong": {
+      "name": "Myeongdong Tourist Info",
+      "desc": "Maps, transit tips, and area guidance for visitors. (Useful-info pin.)",
+      "how": "Near Myeongdong shopping streets — ask staff for multilingual leaflets.",
+      "address": "Myeongdong, Jung-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Myeongdong%20Tourist%20Info",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Myeongdong%20Tourist%20Info&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "지도·교통·주변 안내를 받을 수 있는 관광 정보 거점입니다. (유용 정보 핀)\n\n가는 방법: 명동 번화가 인근. 직원·안내판에서 다국어 자료를 받아 보세요.",
+          "en": "Maps, transit tips, and area guidance for visitors. (Useful-info pin.)\n\nHow to get there: Near Myeongdong shopping streets — ask staff for multilingual leaflets.",
+          "ja": "地図・交通・周辺案内がもらえる観光情報拠点です。（情報ピン）\n\n行き方: 明洞の繁華街近く。多言語パンフレットを受け取ってみてください。",
+          "vi": "Đây là cơ sở thông tin du lịch nơi bạn có thể nhận bản đồ, phương tiện đi lại và thông tin xung quanh. (Pin thông tin hữu ích)\n\nĐến đó bằng cách nào: Gần trung tâm thành phố Myeongdong. Nhận tài liệu đa ngôn ngữ từ nhân viên và bảng thông tin.",
+          "th": "นี่คือฐานข้อมูลการท่องเที่ยวที่คุณสามารถรับแผนที่ การเดินทาง และข้อมูลโดยรอบ (พินข้อมูลที่เป็นประโยชน์)\n\nวิธีการเดินทาง: ใกล้ตัวเมืองเมียงดง รับสื่อหลายภาษาจากเจ้าหน้าที่และกระดานข้อมูล",
+          "ru": "Это туристическая информационная база, где вы можете получить карты, информацию о транспорте и окружающую информацию. (Полезная информация)\n\nКак добраться: недалеко от центра Мёндона. Получите многоязычные материалы от сотрудников и информационных стендов.",
+          "zh-Hant": "這是一個旅遊資訊基地，您可以在這裡獲取地圖、交通和周邊資訊。 （有用資訊別針）\n\n如何前往：靠近明洞市中心。從工作人員和資訊板上獲取多語言材料。"
+        }
+      ]
+    },
+    "embassy-us-seoul": {
+      "name": "U.S. Embassy Seoul",
+      "desc": "Consular/passport support for U.S. citizens — appointments usually required. (Useful-info pin.)",
+      "how": "Gwanghwamun / City Hall side. Follow official access rules; security is strict.",
+      "address": "Sejong-daero, Jongno-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=U.S.%20Embassy%20Seoul",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=U.S.%20Embassy%20Seoul&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "미국 시민 영사·여권 관련 문의 거점. 방문은 보통 예약이 필요합니다. (유용 정보 핀)\n\n가는 방법: 광화문·시청 방면. 출입 통제가 있으니 공식 사이트 안내를 따르세요.",
+          "en": "Consular/passport support for U.S. citizens — appointments usually required. (Useful-info pin.)\n\nHow to get there: Gwanghwamun / City Hall side. Follow official access rules; security is strict.",
+          "ja": "米国市民の領事・パスポート関連の拠点。訪問は予約が必要な場合が多いです。（情報ピン）\n\n行き方: 光化門・市庁方面。出入管理が厳しいので公式案内に従ってください。",
+          "vi": "Cơ sở giải đáp các thắc mắc liên quan đến lãnh sự quán và hộ chiếu cho công dân Hoa Kỳ. Các chuyến thăm thường yêu cầu đặt chỗ trước. (Pin thông tin hữu ích)\n\nĐến đó bằng cách nào: Hướng tới Gwanghwamun và Tòa thị chính. Có quyền truy cập hạn chế, vì vậy hãy làm theo hướng dẫn của trang web chính thức.",
+          "th": "ฐานสำหรับการสอบถามเกี่ยวกับสถานกงสุลและหนังสือเดินทางสำหรับพลเมืองสหรัฐฯ การเข้าชมมักต้องมีการจองล่วงหน้า (พินข้อมูลที่เป็นประโยชน์)\n\nวิธีการเดินทาง: ไปทางกวางฮวามุนและศาลากลาง มีการจำกัดการเข้าถึง ดังนั้นโปรดปฏิบัติตามคำแนะนำของเว็บไซต์อย่างเป็นทางการ",
+          "ru": "База запросов по консульствам и паспортам для граждан США. Посещения обычно требуют предварительного бронирования. (Полезная информация)\n\nКак добраться: в сторону Кванхвамуна и мэрии. Доступ ограничен, поэтому следуйте инструкциям официального сайта.",
+          "zh-Hant": "有關美國公民領事館和護照的查詢基地。參觀通常需要預約。 （有用資訊別針）\n\n如何到達：往光化門和市政廳方向。訪問受到限制，因此請遵循官方網站說明。"
+        }
+      ]
+    },
+    "embassy-japan-seoul": {
+      "name": "Embassy of Japan in Seoul",
+      "desc": "Consular help for Japanese nationals. (Useful-info pin.)",
+      "how": "Jongno area — check official hours and appointment rules.",
+      "address": "Jongno-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Embassy%20of%20Japan%20in%20Seoul",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Embassy%20of%20Japan%20in%20Seoul&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "일본 국민 영사·여권 관련 문의 거점. (유용 정보 핀)\n\n가는 방법: 종로 일대. 방문·업무 시간은 공식 안내를 확인하세요.",
+          "en": "Consular help for Japanese nationals. (Useful-info pin.)\n\nHow to get there: Jongno area — check official hours and appointment rules.",
+          "ja": "日本国民向けの領事・パスポート関連拠点です。（情報ピン）\n\n行き方: 鐘路一帯。訪問・業務時間は公式案内を確認してください。",
+          "vi": "Cơ sở giải đáp các thắc mắc liên quan đến lãnh sự quán và hộ chiếu cho công dân Nhật Bản. (Pin thông tin hữu ích)\n\nĐến đó bằng cách nào: Khu vực Jongno. Vui lòng kiểm tra thông tin chính thức để biết giờ tham quan và giờ làm việc.",
+          "th": "ฐานสอบถามเกี่ยวกับสถานกงสุลและหนังสือเดินทางสำหรับพลเมืองญี่ปุ่น (พินข้อมูลที่เป็นประโยชน์)\n\nวิธีการเดินทาง: พื้นที่จงโน โปรดตรวจสอบข้อมูลอย่างเป็นทางการสำหรับการเยี่ยมชมและเวลาทำการ",
+          "ru": "База запросов по консульствам и паспортам для граждан Японии. (Полезная информация)\n\nКак добраться: район Чонно. Пожалуйста, проверьте официальную информацию о времени посещения и времени работы.",
+          "zh-Hant": "日本人的領事館、護照等相關諮詢據點。 （有用資訊別針）\n\n如何到達：鐘路地區。參觀及營業時間請以官方資訊為準。"
+        }
+      ]
+    },
+    "embassy-china-seoul": {
+      "name": "Embassy of China in Seoul",
+      "desc": "Consular help for Chinese nationals. (Useful-info pin.)",
+      "how": "Near Myeongdong / City Hall — follow official access guidance.",
+      "address": "Jung-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Embassy%20of%20China%20in%20Seoul",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=Embassy%20of%20China%20in%20Seoul&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "중국 국민 영사·여권 관련 문의 거점. (유용 정보 핀)\n\n가는 방법: 명동·시청 인근. 출입·예약은 공식 안내를 따르세요.",
+          "en": "Consular help for Chinese nationals. (Useful-info pin.)\n\nHow to get there: Near Myeongdong / City Hall — follow official access guidance.",
+          "ja": "中国国民向けの領事・パスポート関連拠点です。（情報ピン）\n\n行き方: 明洞・市庁近く。出入・予約は公式案内に従ってください。",
+          "vi": "Cơ sở giải đáp các thắc mắc liên quan đến lãnh sự quán và hộ chiếu cho công dân Trung Quốc. (Pin thông tin hữu ích)\n\nĐến đó bằng cách nào: Gần Myeongdong và Tòa thị chính. Vui lòng làm theo hướng dẫn chính thức để vào và đặt chỗ.",
+          "th": "ฐานสอบถามเกี่ยวกับสถานกงสุลและหนังสือเดินทางสำหรับพลเมืองจีน (พินข้อมูลที่เป็นประโยชน์)\n\nวิธีการเดินทาง: ใกล้เมียงดงและศาลากลาง โปรดปฏิบัติตามคำแนะนำอย่างเป็นทางการในการเข้าและจอง",
+          "ru": "База запросов по консульствам и паспортам для граждан Китая. (Полезная информация)\n\nКак добраться: Рядом с Мёндоном и мэрией. Пожалуйста, следуйте официальным инструкциям по входу и бронированию.",
+          "zh-Hant": "中國公民領事館、護照查詢基地。 （有用資訊別針）\n\n如何前往：靠近明洞和市政廳。請按照官方說明進行入場和預訂。"
+        }
+      ]
+    },
+    "noryangjin-cupbap": {
+      "name": "Noryangjin Cupbap Street",
+      "desc": "Cup-rice and snack alley near Noryangjin Fish Market — famous for cheap meals and lively night-market vibes.",
+      "how": "Lines 1 & 9 Noryangjin Station; follow signs to the fish market / cupbap alley.",
+      "address": "서울 동작구 노량진동 컵밥거리",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EB%85%B8%EB%9F%89%EC%A7%84%EB%8F%99%20%EC%BB%B5%EB%B0%A5%EA%B1%B0%EB%A6%AC",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EB%85%B8%EB%9F%89%EC%A7%84%EB%8F%99%20%EC%BB%B5%EB%B0%A5%EA%B1%B0%EB%A6%AC&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "노량진 수산시장 인근의 컵밥·분식 골목. 저렴한 한 끼와 활기 찬 야시장 분위기로 유명한 서울 먹거리 명소입니다.\n\n가는 방법: 1·9호선 노량진역. 수산시장·컵밥거리는 안내판을 따라 도보.",
+          "en": "Cup-rice and snack alley near Noryangjin Fish Market — famous for cheap meals and lively night-market vibes.\n\nHow to get there: Lines 1 & 9 Noryangjin Station; follow signs to the fish market / cupbap alley.",
+          "ja": "鷺梁津水産市場近くのカップご飯・粉食路地。安い一食と活気ある夜市の雰囲気で有名です。\n\n行き方: 1・9号線鷺梁津駅。案内板に沿って水産市場・カップ밥通りへ。",
+          "vi": "Hẻm cơm cốc và đồ ăn vặt gần chợ cá Noryangjin. Đây là địa điểm ăn uống nổi tiếng ở Seoul, nổi tiếng với những bữa ăn rẻ và không khí chợ đêm sôi động.\n\nĐến đó bằng cách nào: Ga Noryangjin trên Tuyến 1 và 9. Đi bộ dọc theo các biển thông tin để đến Chợ Cá và Phố Cupbap.",
+          "th": "ซอยข้าวถ้วยและขนมใกล้ตลาดปลานอร์ยางจิน เป็นจุดขายอาหารที่มีชื่อเสียงในกรุงโซล ขึ้นชื่อเรื่องอาหารราคาถูกและบรรยากาศตลาดกลางคืนที่มีชีวิตชีวา\n\nวิธีการเดินทาง: สถานี Noryangjin สาย 1 และ 9 เดินไปตามป้ายบอกข้อมูลไปยังตลาดปลาและถนน Cupbap",
+          "ru": "Чашка риса и переулок с закусками возле рыбного рынка Норянчжин. Это известный ресторан в Сеуле, известный своей дешевой едой и оживленной атмосферой ночного рынка.\n\nКак добраться: станция Норянчжин линии 1 и 9. Идите по информационным указателям до Рыбного рынка и улицы Капбап.",
+          "zh-Hant": "鷺梁津水產市場附近的杯飯小吃巷。它是首爾著名的美食勝地，以便宜的餐點和熱鬧的夜市氛圍而聞名。\n\n如何前往：1號線、9號線鷺梁津站。沿著資訊牌步行至魚市場和茶包街。"
+        }
+      ]
+    },
+    "hangang-yeouido": {
+      "name": "Yeouido Hangang Park",
+      "desc": "Hangang picnic classic — bikes, sunsets, convenience-store picnics on rental mats.",
+      "how": "Walk from Yeouinaru (5/9) or Yeouido Station toward the park.",
+      "address": "서울 영등포구 여의동로 여의도한강공원",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EC%97%AC%EC%9D%98%EB%8F%99%EB%A1%9C%20%EC%97%AC%EC%9D%98%EB%8F%84%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EC%97%AC%EC%9D%98%EB%8F%99%EB%A1%9C%20%EC%97%AC%EC%9D%98%EB%8F%84%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "피크닉·자전거·노을 명소로 유명한 한강공원. 편의점·대여 돗자리로 가볍게 피크닉하기 좋습니다.\n\n가는 방법: 5·9호선 여의나루역 또는 여의도역에서 공원 방향 도보.",
+          "en": "Hangang picnic classic — bikes, sunsets, convenience-store picnics on rental mats.\n\nHow to get there: Walk from Yeouinaru (5/9) or Yeouido Station toward the park.",
+          "ja": "ピクニック・自転車・夕日で人気の漢江公園。コンビニとレンタルレジャーシートで気軽に。\n\n行き方: 5・9号線汝矣ナル駅または汝矣島駅から公園へ徒歩。",
+          "vi": "Công viên Hangang nổi tiếng với những buổi dã ngoại, xe đạp và cảnh hoàng hôn. Các cửa hàng tiện lợi và dịch vụ cho thuê thảm là nơi lý tưởng cho một chuyến dã ngoại nhẹ nhàng.\n\nĐến đó bằng cách nào: Từ Ga Yeouinaru hoặc Ga Yeouido trên Tuyến 5 và 9, đi bộ về phía công viên.",
+          "th": "สวนสาธารณะฮันกังมีชื่อเสียงในเรื่องการปิกนิก ปั่นจักรยาน และชมพระอาทิตย์ตก ร้านสะดวกซื้อและเสื่อให้เช่าเหมาะสำหรับการปิกนิกเบาๆ\n\nวิธีการเดินทาง: จากสถานี Yeouinaru หรือสถานี Yeouido บนสาย 5 และ 9 เดินไปทางสวนสาธารณะ",
+          "ru": "Парк Ханган славится пикниками, велосипедами и закатами. Круглосуточные магазины и прокат ковриков отлично подходят для легкого пикника.\n\nКак добраться: от станции Yeouinaru или Yeouido линий 5 и 9 идите в сторону парка.",
+          "zh-Hant": "漢江公園以野餐、自行車和日落而聞名。便利商店和租賃墊子非常適合輕鬆野餐。\n\n前往方式：從地鐵5號線、9號線汝矣島站或汝矣島站步行前往公園。"
+        }
+      ]
+    },
+    "hangang-banpo": {
+      "name": "Banpo Hangang Park",
+      "desc": "Home of the Moonlight Rainbow Fountain and Some Sevit — popular for evening shows and picnics.",
+      "how": "Express Bus Terminal (3/7/9) or Sinbanpo toward the river.",
+      "address": "서울 서초구 신반포로11길 반포한강공원",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%8B%A0%EB%B0%98%ED%8F%AC%EB%A1%9C11%EA%B8%B8%20%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%8B%A0%EB%B0%98%ED%8F%AC%EB%A1%9C11%EA%B8%B8%20%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "달빛무지개분수·세빛섬이 있는 한강 명소. 저녁 분수 쇼와 피크닉으로 유명합니다.\n\n가는 방법: 3·7·9호선 고속터미널역 또는 신반포역에서 한강 방향.",
+          "en": "Home of the Moonlight Rainbow Fountain and Some Sevit — popular for evening shows and picnics.\n\nHow to get there: Express Bus Terminal (3/7/9) or Sinbanpo toward the river.",
+          "ja": "月光彩虹噴水とセビット島がある漢江スポット。夜の噴水ショーとピクニックで有名。\n\n行き方: 3・7・9号線高速ターミナル駅または新盤浦駅から漢江方面。",
+          "vi": "Một địa điểm nổi tiếng trên sông Hàn, nơi có Đài phun nước cầu vồng ánh trăng và đảo Sebitseom. Nó nổi tiếng với các chương trình biểu diễn đài phun nước buổi tối và các buổi dã ngoại.\n\nĐến đó bằng cách nào: Từ Trạm xe buýt tốc hành trên Tuyến 3, 7 hoặc 9 hoặc Ga Sinbanpo về phía Sông Hàn.",
+          "th": "สถานที่ที่มีชื่อเสียงบนแม่น้ำฮันซึ่งเป็นที่ตั้งของน้ำพุสายรุ้งแสงจันทร์และเกาะเซบิตซอม มีชื่อเสียงจากการแสดงน้ำพุยามเย็นและการปิกนิก\n\nวิธีการเดินทาง: จากสถานี Express Bus Terminal สาย 3, 7 หรือ 9 หรือสถานี Sinbanpo ไปทางแม่น้ำ Han",
+          "ru": "Знаменитое место на реке Хан, где расположены фонтан «Лунная радуга» и остров Себитсом. Он славится вечерними шоу фонтанов и пикниками.\n\nКак добраться: от конечной станции экспресс-автобусов линий 3, 7 или 9 или станции Синбанпо в направлении реки Хан.",
+          "zh-Hant": "漢江上的著名景點，月光彩虹噴泉和三光島都位於其中。它以其夜間噴泉表演和野餐而聞名。\n\n前往方式：從3號線、7號線、9號線高速巴士總站站或新盤浦站前往漢江方向。"
+        }
+      ]
+    },
+    "hallasan": {
+      "name": "Hallasan",
+      "desc": "Jeju’s central national park and Korea’s highest peak — iconic hikes toward Baengnokdam crater.",
+      "how": "Bus/taxi to trailheads (Seongpanak, Gwaneumsa). Check official reservations, weather, and entry hours.",
+      "address": "제주 제주시 한라산국립공원",
+      "regionLabel": "Jeju",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%ED%95%9C%EB%9D%BC%EC%82%B0%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%ED%95%9C%EB%9D%BC%EC%82%B0%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "제주 중앙의 국립공원·한국 최고봉. 성판악·관음사 등 코스로 백록담까지 등반하는 세계적 자연 명소입니다.\n\n가는 방법: 성판악·관음사 등 탐방로 입구까지 버스·택시. 예약·날씨·입산 시간을 공식 안내로 확인.",
+          "en": "Jeju’s central national park and Korea’s highest peak — iconic hikes toward Baengnokdam crater.\n\nHow to get there: Bus/taxi to trailheads (Seongpanak, Gwaneumsa). Check official reservations, weather, and entry hours.",
+          "ja": "済州中央の国立公園で韓国最高峰。白鹿潭へ向かう登山で世界的に有名。\n\n行き方: 城板岳・観音寺など登山口までバス/タクシー。公式の予約・天候・入山時間を確認。",
+          "vi": "Công viên quốc gia ở trung tâm Jeju và đỉnh núi cao nhất Hàn Quốc. Đây là điểm tham quan tự nhiên đẳng cấp thế giới, nơi bạn có thể leo lên Baekrokdam thông qua các chặng đường như Seongpanak và Đền Gwaneumsa.\n\nĐến đó bằng cách nào: Xe buýt hoặc taxi đến lối vào đường mòn, bao gồm Đền Seongpanak và Gwaneumsa. Kiểm tra đặt chỗ, thời tiết và thời gian vào cửa thông qua thông tin chính thức.",
+          "th": "อุทยานแห่งชาติในเชจูตอนกลางและยอดเขาที่สูงที่สุดในเกาหลี เป็นแหล่งท่องเที่ยวทางธรรมชาติระดับโลกที่คุณสามารถปีนขึ้นไปถึง Baekrokdam ผ่านเส้นทางต่างๆ เช่น Seongpanak และ Gwaneumsa Temple\n\nวิธีการเดินทาง: รถประจำทางหรือแท็กซี่ไปยังทางเข้าเส้นทาง รวมทั้งซองพนักและวัดกวานึมซา ตรวจสอบการจอง สภาพอากาศ และเวลาเข้าผ่านข้อมูลอย่างเป็นทางการ",
+          "ru": "Национальный парк в центре Чеджу и самая высокая вершина Кореи. Это природная достопримечательность мирового класса, где вы можете подняться на Пэкрокдам по таким маршрутам, как Сонпанак и храм Кванумса.\n\nКак добраться: Автобус или такси до входа в тропу, включая Сонпанак и храм Кванумса. Проверьте бронирование, погоду и время входа через официальную информацию.",
+          "zh-Hant": "濟州島中部的國家公園，也是韓國的最高峰。這是一個世界級的自然景點，您可以透過城板岳和觀音寺等路線登上白鹿潭。\n\n如何前往：搭乘巴士或計程車前往步道入口，包括城板岳和觀音寺。透過官方資訊查看預訂、天氣和入場時間。"
+        }
+      ]
+    },
+    "cheonjeyeon": {
+      "name": "Cheonjeyeon Falls",
+      "desc": "Seogwipo’s famous falls — evening lights and walks near Jungmun / Olle trails.",
+      "how": "Bus/taxi in Seogwipo; also reachable from the Jungmun tourist belt.",
+      "address": "제주 서귀포시 천지동 천지연폭포",
+      "regionLabel": "Jeju",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C%20%EC%B2%9C%EC%A7%80%EB%8F%99%20%EC%B2%9C%EC%A7%80%EC%97%B0%ED%8F%AD%ED%8F%AC",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%84%9C%EA%B7%80%ED%8F%AC%EC%8B%9C%20%EC%B2%9C%EC%A7%80%EB%8F%99%20%EC%B2%9C%EC%A7%80%EC%97%B0%ED%8F%AD%ED%8F%AC&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서귀포의 대표 폭포. 저녁 조명과 산책로로 유명하며 중문·올레길과도 가깝습니다.\n\n가는 방법: 서귀포시내 버스·택시. 중문관광단지에서도 접근 가능.",
+          "en": "Seogwipo’s famous falls — evening lights and walks near Jungmun / Olle trails.\n\nHow to get there: Bus/taxi in Seogwipo; also reachable from the Jungmun tourist belt.",
+          "ja": "西帰浦の代表的な滝。夜のライトアップと遊歩道で有名。中文・オルレとも近い。\n\n行き方: 西帰浦市内バス/タクシー。中文観光団地からもアクセス可。",
+          "vi": "Thác nước tiêu biểu của Seogwipo. Nó nổi tiếng với những con đường đi bộ và ánh sáng buổi tối, đồng thời cũng gần với Đường mòn Jungmun và Olle.\n\nĐến đó bằng cách nào: Xe buýt hoặc taxi trong thành phố Seogwipo. Cũng có thể truy cập từ Khu phức hợp du lịch Jungmun.",
+          "th": "น้ำตกที่เป็นตัวแทนของซอกวีโพ มีชื่อเสียงในด้านแสงไฟยามเย็นและเส้นทางเดิน และยังใกล้กับเส้นทาง Jungmun และ Olle Trail\n\nวิธีการเดินทาง: รถบัสหรือแท็กซี่ภายในเมืองซอกวีโพ สามารถเข้าถึงได้จากจุงมุนทัวริสต์คอมเพล็กซ์",
+          "ru": "Представительный водопад Согвипхо. Он славится своим вечерним освещением и пешеходными тропами, а также находится недалеко от Чунмуна и тропы Олле.\n\nКак добраться: Автобус или такси в пределах города Согвипхо. Также можно добраться из туристического комплекса Чунмун.",
+          "zh-Hant": "西歸浦的代表性瀑布。它以其夜间灯光和步行道而闻名，也靠近中文和偶来步道。\n\n如何前往：西归浦市内乘坐巴士或出租车。也可從中文旅遊區抵達。"
+        }
+      ]
+    },
+    "biff-square": {
+      "name": "BIFF Square",
+      "desc": "Icon of the Busan International Film Festival — handprints, street food, Nampo shopping.",
+      "how": "Walk from Jagalchi or Nampo Station (Line 1).",
+      "address": "부산 중구 비프광장로 BIFF광장",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EC%A4%91%EA%B5%AC%20%EB%B9%84%ED%94%84%EA%B4%91%EC%9E%A5%EB%A1%9C%20BIFF%EA%B4%91%EC%9E%A5",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EC%A4%91%EA%B5%AC%20%EB%B9%84%ED%94%84%EA%B4%91%EC%9E%A5%EB%A1%9C%20BIFF%EA%B4%91%EC%9E%A5&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산국제영화제 상징 거리. 손바닥 프린트·길거리 음식·남포동 쇼핑과 이어집니다.\n\n가는 방법: 1호선 자갈치·남포역에서 도보.",
+          "en": "Icon of the Busan International Film Festival — handprints, street food, Nampo shopping.\n\nHow to get there: Walk from Jagalchi or Nampo Station (Line 1).",
+          "ja": "釜山国際映画祭の象徴ストリート。手形・屋台・南浦洞ショッピングとつながります。\n\n行き方: 1号線チャガルチ・南浦駅から徒歩。",
+          "vi": "Con đường biểu tượng của Liên hoan phim quốc tế Busan. Nó tiếp tục với dấu tay, thức ăn đường phố và mua sắm ở Nampo-dong.\n\nĐến đó bằng cách nào: Đi bộ từ Ga Jagalchi/Nampo trên Tuyến 1.",
+          "th": "ถนนสัญลักษณ์ของเทศกาลภาพยนตร์นานาชาติปูซาน ต่อด้วยภาพพิมพ์ฝ่ามือ อาหารข้างทาง และชอปปิ้งในย่านนัมโพดง\n\nวิธีการเดินทาง: เดินจากสถานี Jagalchi/Nampo บนสาย 1",
+          "ru": "Символическая улица Пусанского международного кинофестиваля. Это продолжается с отпечатками ладоней, уличной едой и покупками в Нампо-донге.\n\nКак добраться: пешком от станции Jagalchi/Nampo по линии 1.",
+          "zh-Hant": "釜山國際電影節的標誌性街道。接下來是南浦洞的掌紋、街頭小吃和購物。\n\n前往方式：從地鐵1號線札嘎其/南浦站步行即可到達。"
+        }
+      ]
+    },
+    "hwangnidan": {
+      "name": "Hwangnidan-gil",
+      "desc": "Gyeongju’s café/hanok food street near Daereungwon and Cheomseongdae.",
+      "how": "City bus/taxi around Daereungwon / Hwangnam-dong.",
+      "address": "경북 경주시 황남동 황리단길",
+      "regionLabel": "Gyeongju",
+      "region": "gyeongju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%A3%BC%EC%8B%9C%20%ED%99%A9%EB%82%A8%EB%8F%99%20%ED%99%A9%EB%A6%AC%EB%8B%A8%EA%B8%B8",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%A3%BC%EC%8B%9C%20%ED%99%A9%EB%82%A8%EB%8F%99%20%ED%99%A9%EB%A6%AC%EB%8B%A8%EA%B8%B8&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "경주 황남동 카페·한옥·맛집 거리. 대릉원·첨성대와도 가까워 낮·저녁 모두 인기입니다.\n\n가는 방법: 경주 시내 버스·택시. 대릉원·황남동 일대.",
+          "en": "Gyeongju’s café/hanok food street near Daereungwon and Cheomseongdae.\n\nHow to get there: City bus/taxi around Daereungwon / Hwangnam-dong.",
+          "ja": "慶州・皇南洞のカフェと韓屋グルメ通り。大陵苑・瞻星台にも近い人気エリア。\n\n行き方: 慶州市内バス/タクシー。大陵苑・皇南洞一帯。",
+          "vi": "Phố quán cà phê, hanoks và nhà hàng ở Hwangnam-dong, Kyungju. Nó cũng gần với Daereungwon và Cheomseongdae nên rất nổi tiếng cả ban ngày lẫn buổi tối.\n\nĐến đó bằng cách nào: Xe buýt/taxi thành phố Kyungju. Khu vực Daereungwon và Hwangnam-dong.",
+          "th": "ถนนแห่งร้านกาแฟ ฮันอก และร้านอาหารในฮวังนัมดง คยองจู นอกจากนี้ยังใกล้กับแดรึงวอนและชอมซองแดด้วย จึงเป็นที่นิยมทั้งตอนกลางวันและตอนเย็น\n\nวิธีการเดินทาง: รถบัส/แท็กซี่เมืองคย็องจู ย่านแทรึงวอนและฮวังนัมดง",
+          "ru": "Улица кафе, ханок и ресторанов в Хваннамдоне, Кёнджу. Он также находится недалеко от Тэрынвона и Чхомсондэ, поэтому популярен как днем, так и вечером.\n\nКак добраться: городской автобус/такси Кёнджу. Район Тэрынвон и Хваннамдон.",
+          "zh-Hant": "慶州皇南洞的咖啡館、韓屋和餐廳街。距離大陵苑和瞻星台也很近，白天和晚上都很受歡迎。\n\n如何前往：慶州市公車/計程車。大陵苑和皇南洞地區。"
+        }
+      ]
+    },
+    "hahoe": {
+      "name": "Andong Hahoe Village",
+      "desc": "UNESCO World Heritage folk village — Nakdong River bend, Hahoe masks, historic houses.",
+      "how": "Bus/taxi from Andong intercity terminal to Hahoe.",
+      "address": "경북 안동시 풍천면 하회종가길 하회마을",
+      "regionLabel": "Gyeongsang",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%B6%81%20%EC%95%88%EB%8F%99%EC%8B%9C%20%ED%92%8D%EC%B2%9C%EB%A9%B4%20%ED%95%98%ED%9A%8C%EC%A2%85%EA%B0%80%EA%B8%B8%20%ED%95%98%ED%9A%8C%EB%A7%88%EC%9D%84",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%B6%81%20%EC%95%88%EB%8F%99%EC%8B%9C%20%ED%92%8D%EC%B2%9C%EB%A9%B4%20%ED%95%98%ED%9A%8C%EC%A2%85%EA%B0%80%EA%B8%B8%20%ED%95%98%ED%9A%8C%EB%A7%88%EC%9D%84&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "유네스코 세계유산 전통 마을. 낙동강 굽이·하회탈·고택으로 외국인에게도 잘 알려진 명소입니다.\n\n가는 방법: 안동시외버스터미널에서 하회마을 버스·택시.",
+          "en": "UNESCO World Heritage folk village — Nakdong River bend, Hahoe masks, historic houses.\n\nHow to get there: Bus/taxi from Andong intercity terminal to Hahoe.",
+          "ja": "ユネスコ世界遺産の伝統村。洛東江の湾曲、河回仮面、古民家で国際的に有名。\n\n行き方: 安東市外バスターミナルから河回村へバス/タクシー。",
+          "vi": "Một ngôi làng truyền thống được UNESCO công nhận là Di sản Thế giới. Đây là một điểm thu hút nổi tiếng đối với người nước ngoài vì khúc quanh của sông Nakdong, mặt nạ Hahoe và những ngôi nhà cổ.\n\nĐến đó bằng cách nào: Đi xe buýt hoặc taxi từ Bến xe buýt liên tỉnh Andong đến Làng Hahoe.",
+          "th": "หมู่บ้านดั้งเดิมที่เป็นมรดกโลกโดย UNESCO เป็นสถานที่ท่องเที่ยวที่มีชื่อเสียงในหมู่ชาวต่างชาติในเรื่องโค้งของแม่น้ำนักดง หน้ากากฮาฮเว และบ้านเรือนเก่าแก่\n\nวิธีการเดินทาง: ขึ้นรถบัสหรือแท็กซี่จากสถานีขนส่งระหว่างเมือง Andong ไปยังหมู่บ้าน Hahoe",
+          "ru": "Традиционная деревня, внесенная в список Всемирного наследия ЮНЕСКО. Это известная достопримечательность среди иностранцев благодаря излучине реки Накдонг, маске Хахве и старым домам.\n\nКак добраться: сядьте на автобус или такси от междугороднего автовокзала Андонга до деревни Хахве.",
+          "zh-Hant": "聯合國教科文組織世界遺產民俗村－洛東江彎、河回面具、歷史悠久的房子。\n\n前往方式：從安東城際客運站搭乘巴士/計程車前往河回。"
+        }
+      ]
+    },
+    "boseong": {
+      "name": "Boseong Green Tea Fields",
+      "desc": "Famous rolling tea plantations (e.g. Daehan Dawon) for walks, photos, and tea tastings.",
+      "how": "Bus toward Boseong/Deungnyang, then local transfer to the tea fields.",
+      "address": "전남 보성군 보성읍 녹차로 대한다원",
+      "regionLabel": "Jeolla",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%82%A8%20%EB%B3%B4%EC%84%B1%EA%B5%B0%20%EB%B3%B4%EC%84%B1%EC%9D%8D%20%EB%85%B9%EC%B0%A8%EB%A1%9C%20%EB%8C%80%ED%95%9C%EB%8B%A4%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EB%B3%B4%EC%84%B1%EA%B5%B0%20%EB%B3%B4%EC%84%B1%EC%9D%8D%20%EB%85%B9%EC%B0%A8%EB%A1%9C%20%EB%8C%80%ED%95%9C%EB%8B%A4%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "푸른 다원 능선으로 유명한 보성. 대한다원 등에서 산책·사진·녹차 체험이 인기입니다.\n\n가는 방법: 보성·득량 방면 버스 후 다원 입구까지 이동.",
+          "en": "Famous rolling tea plantations (e.g. Daehan Dawon) for walks, photos, and tea tastings.\n\nHow to get there: Bus toward Boseong/Deungnyang, then local transfer to the tea fields.",
+          "ja": "青い茶畑の斜面で有名な宝城。大韓茶園などで散策・写真・お茶体験が人気。\n\n行き方: 宝城・得粮方面バス後、茶園入口へ移動。",
+          "vi": "Boseong nổi tiếng với những rặng vườn trà xanh. Trải nghiệm đi bộ, chụp ảnh và uống trà xanh rất phổ biến ở những nơi như Vườn trà Daehan.\n\nĐến đó bằng cách nào: Đi xe buýt đến Boseong hoặc Deukryang và đi đến lối vào vườn trà.",
+          "th": "โบซองมีชื่อเสียงในเรื่องสันเขาสวนชาเขียว กิจกรรมเดินเล่น ถ่ายรูป และจิบชาเขียวเป็นที่นิยมในสถานที่เช่น Daehan Tea Garden\n\nวิธีการเดินทาง: ขึ้นรถบัสที่มุ่งหน้าไปยัง Boseong หรือ Deukryang และไปที่ทางเข้าสวนชา",
+          "ru": "Посон славится своими садами зеленого чая. Прогулки, фотографии и чаепитие с зеленым чаем популярны в таких местах, как Чайный сад Тэхан.\n\nКак добраться: сядьте на автобус, следующий в Посон или Дыкрянг, и пройдите ко входу в чайный сад.",
+          "zh-Hant": "寶城以其綠茶園山脊而聞名。散步、攝影和綠茶體驗在大韓茶園等地方很受歡迎。\n\n如何前往：搭乘開往寶城或德良的巴士，到茶園入口處。"
+        }
+      ]
+    },
+    "suncheon-bay": {
+      "name": "Suncheon Bay Wetland",
+      "desc": "Reed fields and eco-park famous worldwide — often paired with Suncheon Bay National Garden.",
+      "how": "Bus from Suncheon Station/terminal to the wetland / national garden.",
+      "address": "전남 순천시 순천만길 순천만습지",
+      "regionLabel": "Jeolla",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%82%A8%20%EC%88%9C%EC%B2%9C%EC%8B%9C%20%EC%88%9C%EC%B2%9C%EB%A7%8C%EA%B8%B8%20%EC%88%9C%EC%B2%9C%EB%A7%8C%EC%8A%B5%EC%A7%80",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EC%88%9C%EC%B2%9C%EC%8B%9C%20%EC%88%9C%EC%B2%9C%EB%A7%8C%EA%B8%B8%20%EC%88%9C%EC%B2%9C%EB%A7%8C%EC%8A%B5%EC%A7%80&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "갈대밭·생태 공원으로 유명한 순천만. 세계박람회·국가정원과도 함께 찾는 전남 대표 자연 명소입니다.\n\n가는 방법: 순천역·터미널에서 순천만·국가정원 버스.",
+          "en": "Reed fields and eco-park famous worldwide — often paired with Suncheon Bay National Garden.\n\nHow to get there: Bus from Suncheon Station/terminal to the wetland / national garden.",
+          "ja": "ヨシ原と生態公園で有名な順天湾。国家庭園と合わせて訪れる全南の代表自然スポット。\n\n行き方: 順天駅・ターミナルから順天湾・国家庭園バス。",
+          "vi": "Vịnh Suncheon nổi tiếng với những cánh đồng lau sậy và công viên sinh thái. Đây là điểm thu hút tự nhiên tiêu biểu ở Jeollanam-do, cùng với Triển lãm Thế giới và Vườn Quốc gia.\n\nĐến đó bằng cách nào: Đi xe buýt Suncheon Bay/National Garden từ Ga/Nhà ga Suncheon.",
+          "th": "อ่าวซุนชอนมีชื่อเสียงในด้านทุ่งต้นอ้อและสวนนิเวศน์ เป็นแหล่งท่องเที่ยวทางธรรมชาติที่เป็นตัวแทนของจอลลานัมโด พร้อมด้วยงาน World Expo และสวนแห่งชาติ\n\nวิธีการเดินทาง: ขึ้นรถบัส Suncheon Bay/National Garden จากสถานี Suncheon/อาคารผู้โดยสาร",
+          "ru": "Залив Сунчхон славится своими тростниковыми полями и экологическим парком. Это представительная природная достопримечательность Чолла-Намдо, наряду со Всемирной выставкой и Национальным садом.\n\nКак добраться: сядьте на автобус Сунчхон Бэй/Национальный сад от станции/терминала Сунчхон.",
+          "zh-Hant": "順天灣以其蘆葦田和生態公園而聞名。與世博會、國立庭園齊名，是全羅南道具有代表性的自然景點。\n\n如何前往：從順天站/航廈搭乘順天灣/國家花園巴士。"
+        }
+      ]
+    },
+    "tongyeong": {
+      "name": "Tongyeong",
+      "desc": "Scenic southern port — Dongpirang mural village, cable car, and seafood.",
+      "how": "City bus/taxi from Tongyeong bus terminal; express coaches from Seoul/Busan.",
+      "address": "경남 통영시 중앙동 통영항",
+      "regionLabel": "Gyeongsang",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%82%A8%20%ED%86%B5%EC%98%81%EC%8B%9C%20%EC%A4%91%EC%95%99%EB%8F%99%20%ED%86%B5%EC%98%81%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%82%A8%20%ED%86%B5%EC%98%81%EC%8B%9C%20%EC%A4%91%EC%95%99%EB%8F%99%20%ED%86%B5%EC%98%81%ED%95%AD&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "한려해상 미항. 동피랑 벽화마을·케이블카·해산물이 유명한 남해안 관광 도시입니다.\n\n가는 방법: 통영종합버스터미널에서 시내 버스·택시. 서울·부산에서 고속/시외버스.",
+          "en": "Scenic southern port — Dongpirang mural village, cable car, and seafood.\n\nHow to get there: City bus/taxi from Tongyeong bus terminal; express coaches from Seoul/Busan.",
+          "ja": "閑麗海上の美港。東皮郎壁画村・ケーブルカー・海鮮で有名な南海岸の観光都市。\n\n行き方: 統営総合バスターミナルから市内バス/タクシー。ソウル・釜山から高速/市外バス。",
+          "vi": "Cảng biển Hallyeo. Đây là thành phố du lịch ven biển phía Nam nổi tiếng với Làng tranh tường Dongpirang, cáp treo và hải sản.\n\nĐến đó bằng cách nào: Đi xe buýt thành phố hoặc taxi từ Bến xe buýt Tongyeong. Xe buýt tốc hành/liên tỉnh từ Seoul và Busan.",
+          "th": "ท่าเรือทางทะเล Hallyeo เป็นเมืองท่องเที่ยวชายฝั่งทางใต้ที่มีชื่อเสียงเรื่องหมู่บ้านจิตรกรรมฝาผนัง Dongpirang รถกระเช้า และอาหารทะเล\n\nวิธีการเดินทาง: ขึ้นรถบัสประจำเมืองหรือแท็กซี่จากสถานีขนส่งทงยอง รถด่วน/รถบัสระหว่างเมืองจากโซลและปูซาน",
+          "ru": "Морской порт Халлео. Это туристический город на южном побережье, известный деревней фресок Донгпиранг, канатными дорогами и морепродуктами.\n\nКак добраться: сядьте на городской автобус или такси от автовокзала Тхонъён. Экспресс/междугородние автобусы из Сеула и Пусана.",
+          "zh-Hant": "閒麗海港。是南部沿海旅遊城市，以東皮郎壁畫村、纜車、海鮮聞名。\n\n如何前往：從統營巴士客運站搭乘城市巴士或計程車。從首爾和釜山出發的快速/城際巴士。"
+        }
+      ]
+    },
+    "ulsan-daewangam": {
+      "name": "Ulsan Daewangam Park",
+      "desc": "Coastal park known for rock cliffs, a suspension bridge, and sunrise views on the East Sea.",
+      "how": "City bus/taxi to Daewangam Park (Ilsan-dong), Ulsan.",
+      "address": "울산 동구 등대2길 대왕암공원",
+      "regionLabel": "Gyeongsang",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9A%B8%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EB%93%B1%EB%8C%802%EA%B8%B8%20%EB%8C%80%EC%99%95%EC%95%94%EA%B3%B5%EC%9B%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9A%B8%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EB%93%B1%EB%8C%802%EA%B8%B8%20%EB%8C%80%EC%99%95%EC%95%94%EA%B3%B5%EC%9B%90&hl=ko&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "기암·출렁다리·일출로 유명한 울산 해안 공원. 공업도시 이미지와 다른 동해 절경 명소입니다.\n\n가는 방법: 울산 시내버스·택시로 일산동 대왕암공원.",
+          "en": "Coastal park known for rock cliffs, a suspension bridge, and sunrise views on the East Sea.\n\nHow to get there: City bus/taxi to Daewangam Park (Ilsan-dong), Ulsan.",
+          "ja": "奇岩・吊り橋・日の出で有名な蔚山の海岸公園。東海岸の絶景スポットです。\n\n行き方: 蔚山市内バス/タクシーで日山洞・大王岩公園へ。",
+          "vi": "Công viên ven biển Ulsan nổi tiếng với những tảng đá có hình dạng kỳ lạ, những cây cầu treo và cảnh bình minh. Đó là một danh lam thắng cảnh trên Biển Đông, khác hẳn với hình ảnh một thành phố công nghiệp.\n\nĐến đó bằng cách nào: Công viên Daewangam ở Ilsan-dong bằng xe buýt hoặc taxi thành phố Ulsan.",
+          "th": "อุทยานชายฝั่งอุลซาน มีชื่อเสียงจากหินรูปทรงแปลกตา สะพานแขวน และพระอาทิตย์ขึ้น เป็นจุดชมวิวทะเลตะวันออกที่แตกต่างจากภาพลักษณ์ของเมืองอุตสาหกรรม\n\nวิธีการเดินทาง: สวน Daewangam ใน Ilsan-dong โดยรถบัสหรือแท็กซี่ในเมือง Ulsan",
+          "ru": "Прибрежный парк Ульсана, известный своими скалами причудливой формы, подвесными мостами и восходом солнца. Это живописное место на берегу Восточного моря, которое отличается от образа промышленного города.\n\nКак добраться: парк Дэвангам в Ильсандоне на городском автобусе Ульсана или такси.",
+          "zh-Hant": "蔚山海岸公園，以奇石、吊橋、日出聞名。是一個不同於工業城市形象的東海風景區。\n\n如何前往：搭乘蔚山市巴士或計程車到一山洞大王岩公園下車。"
+        }
+      ]
+    },
+    "locker-seoul-station": {
+      "name": "Seoul Station lockers",
+      "desc": "Luggage lockers around Seoul Station (KTX, AREX, subway hub) — popular for large bags. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Follow Locker signs in the concourse. Check empty units in the Tota Locker app when available.",
+      "address": "서울 중구 한강대로 405 서울역",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20405%20%EC%84%9C%EC%9A%B8%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%20405%20%EC%84%9C%EC%9A%B8%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "KTX·AREX·지하철이 모이는 서울역 일대 물품보관함. 캐리어 보관에 자주 쓰입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n서울역 대합실·출구 안내판의 ‘물품보관함/Locker’ 표시를 따르세요. 또타라커 앱으로 빈칸을 확인할 수 있습니다.",
+          "en": "Luggage lockers around Seoul Station (KTX, AREX, subway hub) — popular for large bags. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Locker signs in the concourse. Check empty units in the Tota Locker app when available.",
+          "ja": "KTX・AREX・地下鉄が集まるソウル駅周辺のロッカー。キャリー保管に便利。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nコンコースのLocker案内に従う。空きはもうたロッカーアプリで確認できる場合あり。",
+          "zh": "KTX、AREX与地铁交汇的首尔站一带行李柜，适合放大件行李。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按大厅 Locker 指示前往；可用又他储物柜App查看空位。",
+          "zh-Hant": "KTX、AREX與地鐵交會的首爾站一帶寄物櫃，適合放大件行李。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n依大廳 Locker 指示前往；可用又他置物櫃App查看空位。",
+          "vi": "Tủ gửi đồ quanh Ga Seoul (KTX/AREX/tàu điện) — hữu ích cho vali lớn. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo bảng Locker trong sảnh. Kiểm tra chỗ trống trên app Tota Locker nếu có.",
+          "th": "ล็อกเกอร์แถวสถานีโซล (KTX/AREX/รถไฟใต้ดิน) เหมาะกับกระเป๋าใหญ่ เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Locker ในโถงสถานี และเช็คช่องว่างในแอป Tota Locker",
+          "ru": "Камеры хранения у станции Сеул (KTX/AREX/метро) — удобно для чемоданов. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Locker. Свободные ячейки смотрите в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-seoul-station.jpg"
+    },
+    "locker-yongsan-station": {
+      "name": "Yongsan Station lockers",
+      "desc": "Lockers near Yongsan Station / I'Park Mall — handy between KTX and sightseeing. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Check station signs or the Tota Locker app for exact spots.",
+      "address": "서울 용산구 한강대로 23길 55 용산역",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%2023%EA%B8%B8%2055%20%EC%9A%A9%EC%82%B0%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C%2023%EA%B8%B8%2055%20%EC%9A%A9%EC%82%B0%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "용산역·아이파크몰 일대 보관함. KTX·관광 동선 사이에 짐을 맡기기 좋습니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n용산역 내 안내판 또는 또타라커 앱에서 위치를 확인하세요.",
+          "en": "Lockers near Yongsan Station / I'Park Mall — handy between KTX and sightseeing. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nCheck station signs or the Tota Locker app for exact spots.",
+          "ja": "龍山駅・アイパークモール周辺。KTXと観光の合間の荷物預けに。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\n駅内案内かもうたロッカーアプリで場所を確認。",
+          "zh": "龙山站与I·Park Mall一带寄存柜，适合KTX与观光之间暂存。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在站内指示或又他储物柜App确认位置。",
+          "zh-Hant": "龍山站與I·Park Mall一帶寄物櫃，適合KTX與觀光之間暫存。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在站內指示或又他置物櫃App確認位置。",
+          "vi": "Tủ gần Ga Yongsan / I'Park Mall — tiện giữa KTX và tham quan. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nXem biển chỉ dẫn trong ga hoặc app Tota Locker.",
+          "th": "ล็อกเกอร์แถวสถานีโยงซาน/ไอพาร์คมอลล์ ระหว่าง KTX กับเที่ยว เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nดูป้ายในสถานีหรือแอป Tota Locker",
+          "ru": "Камеры у станции Йонсан / I'Park Mall — удобно между KTX и прогулками. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСмотрите указатели на станции или приложение Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-yongsan-station.jpg"
+    },
+    "locker-busan-station": {
+      "name": "Busan Station lockers",
+      "desc": "Lockers at/near Busan Station — stash bags after KTX before exploring the city. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Follow Locker signs inside Busan Station. Peak hours fill up fast.",
+      "address": "부산 동구 중앙대로 206 부산역",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산역 대합실·주변 물품보관함. KTX 하차 후 시내 관광 전에 캐리어를 맡기기 좋습니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n부산역 안내판의 물품보관함/Locker를 따르세요. 성수기는 일찍 찰 수 있습니다.",
+          "en": "Lockers at/near Busan Station — stash bags after KTX before exploring the city. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Locker signs inside Busan Station. Peak hours fill up fast.",
+          "ja": "釜山駅周辺ロッカー。KTX下車後の市内観光前にキャリー預けに便利。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\n駅内のLocker案内に従う。繁忙時は早く埋まることも。",
+          "zh": "釜山站一带行李柜，KTX下车后逛市区前可暂存行李。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按站内 Locker 指示；高峰时段可能很快满柜。",
+          "zh-Hant": "釜山站一帶寄物櫃，KTX下車後逛市區前可暫存行李。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按站內 Locker 指示；高峰時段可能很快滿櫃。",
+          "vi": "Tủ tại/gần Ga Busan — gửi vali sau KTX trước khi đi phố. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển Locker trong ga. Giờ cao điểm mau hết chỗ.",
+          "th": "ล็อกเกอร์ที่สถานีปูซาน — ฝากกระเป๋าหลัง KTX ก่อนเที่ยวเมือง เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Locker ในสถานี ช่วงพีกเต็มเร็ว",
+          "ru": "Камеры у станции Пусан — оставьте чемодан после KTX перед прогулкой. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Locker. В пик места заканчиваются быстро."
+        }
+      ],
+      "image": "Images/places/locker-busan-station.jpg"
+    },
+    "locker-myeongdong-station": {
+      "name": "Myeongdong Station Tota Locker",
+      "desc": "Subway lockers (Tota Locker) near Myeongdong shopping — useful on shopping or checkout days. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Search Myeongdong Station in the Tota Locker app to reserve and pay.",
+      "address": "서울 중구 명동역",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%AA%85%EB%8F%99%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%AA%85%EB%8F%99%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "명동 쇼핑가 인근 지하철 물품보관함(또타라커). 쇼핑·체크아웃 당일 짐 보관에 유용합니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 명동역을 검색해 예약·결제하세요.",
+          "en": "Subway lockers (Tota Locker) near Myeongdong shopping — useful on shopping or checkout days. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Myeongdong Station in the Tota Locker app to reserve and pay.",
+          "ja": "明洞ショッピング街近くの地下鉄ロッカー。買い物・チェックアウト日に便利。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで明洞駅を検索して予約・支払い。",
+          "zh": "明洞商圈附近地铁储物柜（又他），适合逛街或退房当天。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索明洞站预约付款。",
+          "zh-Hant": "明洞商圈附近地鐵置物櫃（又他），適合逛街或退房當天。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋明洞站預約付款。",
+          "vi": "Tủ tàu điện gần Myeongdong — tiện ngày shopping/checkout. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Myeongdong trên app Tota Locker để đặt và thanh toán.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินใกล้เมียงดง เหมาะวันช้อป/เช็คเอาต์ เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีเมียงดงในแอป Tota Locker เพื่อจองและจ่าย",
+          "ru": "Камеры метро у Мёндона — удобно в день шопинга или выезда. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию Мёндон в приложении Tota Locker для брони и оплаты."
+        }
+      ],
+      "image": "Images/places/locker-myeongdong-station.jpg"
+    },
+    "locker-hongdae-station": {
+      "name": "Hongik Univ. Station Tota Locker",
+      "desc": "Subway lockers handy before exploring Hongdae / Hapjeong nightlife and cafés. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Search Hongik University Station in the Tota Locker app.",
+      "address": "서울 마포구 홍대입구역",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%99%8D%EB%8C%80%EC%9E%85%EA%B5%AC%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "홍대·합정 일대 관광·클럽 전에 가방을 맡기기 좋은 지하철 보관함입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 홍대입구역을 검색하세요.",
+          "en": "Subway lockers handy before exploring Hongdae / Hapjeong nightlife and cafés. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Hongik University Station in the Tota Locker app.",
+          "ja": "弘大・合井エリア観光前に荷物を預けやすい地下鉄ロッカー。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで弘大入口駅を検索。",
+          "zh": "逛弘大、合井前暂存背包的地铁储物柜。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索弘大入口站。",
+          "zh-Hant": "逛弘大、合井前暫存背包的地鐵置物櫃。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋弘大入口站。",
+          "vi": "Tủ tàu điện tiện trước khi đi Hongdae/Hapjeong. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Hongik Univ. trên app Tota Locker.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินก่อนเที่ยวฮงแด/ฮัปจอง เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีฮงแดในแอป Tota Locker",
+          "ru": "Камеры метро перед прогулкой по Хондэ/Хапчон. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию Хондэ в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-hongdae-station.jpg"
+    },
+    "locker-gangnam-station": {
+      "name": "Gangnam Station Tota Locker",
+      "desc": "Subway lockers around Gangnam Station for short stops between shopping and meetings. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Search Gangnam Station in the Tota Locker app for availability.",
+      "address": "서울 강남구 강남역",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "강남역 일대 지하철 물품보관함. 쇼핑·미팅 전 짧은 짐 보관에 적합합니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 강남역을 검색해 빈칸을 확인하세요.",
+          "en": "Subway lockers around Gangnam Station for short stops between shopping and meetings. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Gangnam Station in the Tota Locker app for availability.",
+          "ja": "江南駅周辺の地下鉄ロッカー。買い物や用事の合間の短時間預けに。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで江南駅の空きを確認。",
+          "zh": "江南站一带地铁储物柜，适合购物或办事间隙短存。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索江南站查看空位。",
+          "zh-Hant": "江南站一帶地鐵置物櫃，適合購物或辦事間隙短存。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋江南站查看空位。",
+          "vi": "Tủ tàu điện quanh Ga Gangnam cho gửi ngắn giữa shopping/họp. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Gangnam trên app Tota Locker để xem chỗ trống.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินแถวคังนัม สำหรับฝากสั้น ๆ เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีคังนัมในแอป Tota Locker",
+          "ru": "Камеры метро у Каннама для короткого хранения между делами. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию Каннам в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-gangnam-station.jpg"
+    },
+    "locker-express-bus-terminal": {
+      "name": "Express Bus Terminal lockers",
+      "desc": "Lockers at Seoul Express Bus Terminal / Central City — useful before or after intercity buses. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Follow terminal / subway signs. Confirm empty units on-site or in apps.",
+      "address": "서울 서초구 신반포로 194 고속터미널",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%8B%A0%EB%B0%98%ED%8F%AC%EB%A1%9C%20194%20%EA%B3%A0%EC%86%8D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EC%8B%A0%EB%B0%98%ED%8F%AC%EB%A1%9C%20194%20%EA%B3%A0%EC%86%8D%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서울 고속터미널·센트럴시티 일대 보관함. 지방행 버스 전후 짐 보관에 유용합니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n터미널·지하철 고속터미널역 안내판을 확인하세요. 빈칸은 앱·현장에서 확인.",
+          "en": "Lockers at Seoul Express Bus Terminal / Central City — useful before or after intercity buses. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow terminal / subway signs. Confirm empty units on-site or in apps.",
+          "ja": "高速ターミナル・セントラルシティ周辺。地方行きバス前後の荷物預けに。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nターミナル・地下鉄案内を確認。空きは現地かアプリで。",
+          "zh": "首尔高速巴士站与Central City一带寄存，适合长途巴士前后。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按客运站/地铁指示；空位请现场或App确认。",
+          "zh-Hant": "首爾高速巴士站與Central City一帶寄物，適合長途巴士前後。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按客運站/地鐵指示；空位請現場或App確認。",
+          "vi": "Tủ tại bến xe Express Bus / Central City — tiện trước/sau xe liên tỉnh. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển bến/tàu điện. Xác nhận chỗ trống tại chỗ hoặc app.",
+          "th": "ล็อกเกอร์ที่สถานีรถบัสด่วนโซล ก่อน/หลังรถต่างจังหวัด เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้ายสถานี/รถไฟใต้ดิน เช็คช่องว่างที่หน้างานหรือแอป",
+          "ru": "Камеры у автовокзала / Central City — до или после междугородних автобусов. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСмотрите указатели вокзала/метро. Свободные места — на месте или в приложении."
+        }
+      ],
+      "image": "Images/places/locker-express-bus-terminal.jpg"
+    },
+    "locker-icn-t1": {
+      "name": "ICN Terminal 1 luggage storage",
+      "desc": "Luggage storage at Incheon Airport T1 — useful before city day trips or long layovers. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Follow Luggage Storage signs. Confirm location and fees via airport info.",
+      "address": "인천 중구 공항로 272 인천국제공항 제1여객터미널",
+      "regionLabel": "Incheon",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C1%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C1%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인천공항 제1터미널 수하물 보관 서비스. 출국·환승·시내 관광 전 짐을 맡길 때 참고하세요. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n터미널 안내판 ‘Luggage Storage / 수하물 보관’을 따르세요. 위치·요금은 공항 안내·앱으로 확인.",
+          "en": "Luggage storage at Incheon Airport T1 — useful before city day trips or long layovers. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Luggage Storage signs. Confirm location and fees via airport info.",
+          "ja": "仁川空港第1ターミナルの荷物預かり。市内観光や乗り継ぎ前に。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nLuggage Storage案内に従う。場所・料金は空港案内で確認。",
+          "zh": "仁川机场一号航站楼行李寄存，适合进城一日游或转机前。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按 Luggage Storage 指示；位置与费用以机场信息为准。",
+          "zh-Hant": "仁川機場一號航廈行李寄物，適合進城一日遊或轉機前。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按 Luggage Storage 指示；位置與費用以機場資訊為準。",
+          "vi": "Gửi hành lý tại ICN T1 — tiện trước khi vào phố hoặc chờ nối chuyến. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển Luggage Storage. Xác nhận vị trí/phí qua thông tin sân bay.",
+          "th": "ฝากกระเป๋าที่ ICN T1 ก่อนเที่ยวเมืองหรือรอต่อเครื่อง เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Luggage Storage ยืนยันตำแหน่ง/ราคาจากข้อมูลสนามบิน",
+          "ru": "Камера хранения в ICN T1 — перед поездкой в город или пересадкой. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Luggage Storage. Уточняйте место и тарифы у аэропорта."
+        }
+      ],
+      "image": "Images/places/locker-icn-t1.jpg"
+    },
+    "locker-icn-t2": {
+      "name": "ICN Terminal 2 luggage storage",
+      "desc": "Luggage storage at Incheon Airport T2 — confirm your terminal first (T1 vs T2). Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Follow Luggage Storage signs inside Terminal 2.",
+      "address": "인천 중구 공항로 272 인천국제공항 제2여객터미널",
+      "regionLabel": "Incheon",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%95%AD%EB%A1%9C%20272%20%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인천공항 제2터미널 수하물 보관. T1과 위치가 다르니 탑승 터미널을 먼저 확인하세요. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\nT2 안내판의 수하물 보관/Luggage Storage를 확인하세요.",
+          "en": "Luggage storage at Incheon Airport T2 — confirm your terminal first (T1 vs T2). Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nFollow Luggage Storage signs inside Terminal 2.",
+          "ja": "仁川空港第2ターミナルの荷物預かり。T1と場所が違うのでターミナル確認を。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nT2内のLuggage Storage案内を確認。",
+          "zh": "仁川机场二号航站楼行李寄存；请先确认自己的航站楼。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n按T2内 Luggage Storage 指示。",
+          "zh-Hant": "仁川機場二號航廈行李寄物；請先確認自己的航廈。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n按T2內 Luggage Storage 指示。",
+          "vi": "Gửi hành lý tại ICN T2 — kiểm tra đúng nhà ga trước. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTheo biển Luggage Storage trong T2.",
+          "th": "ฝากกระเป๋าที่ ICN T2 — ตรวจเทอร์มินัลให้ถูกก่อน เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nตามป้าย Luggage Storage ใน T2",
+          "ru": "Камера хранения в ICN T2 — сначала проверьте терминал. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСледуйте указателям Luggage Storage в T2."
+        }
+      ],
+      "image": "Images/places/locker-icn-t2.jpg"
+    },
+    "locker-dongdaemun-station": {
+      "name": "Dongdaemun H&C Park Station Tota Locker",
+      "desc": "Subway lockers near DDP / Dongdaemun shopping districts. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Search Dongdaemun History & Culture Park Station in the Tota Locker app.",
+      "address": "서울 중구 동대문역사문화공원역",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EB%8C%80%EB%AC%B8%EC%97%AD%EC%82%AC%EB%AC%B8%ED%99%94%EA%B3%B5%EC%9B%90%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EB%8C%80%EB%AC%B8%EC%97%AD%EC%82%AC%EB%AC%B8%ED%99%94%EA%B3%B5%EC%9B%90%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "DDP·동대문 쇼핑 전 가방을 맡기기 좋은 지하철 보관함입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n또타라커 앱에서 동대문역사문화공원역을 검색하세요.",
+          "en": "Subway lockers near DDP / Dongdaemun shopping districts. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nSearch Dongdaemun History & Culture Park Station in the Tota Locker app.",
+          "ja": "DDP・東大門ショッピング前に荷物を預けやすい地下鉄ロッカー。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\nもうたロッカーアプリで東大門歴史文化公園駅を検索。",
+          "zh": "逛DDP与东大门商圈前暂存的地铁储物柜。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n在又他储物柜App搜索东大门历史文化公园站。",
+          "zh-Hant": "逛DDP與東大門商圈前暫存的地鐵置物櫃。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n在又他置物櫃App搜尋東大門歷史文化公園站。",
+          "vi": "Tủ tàu điện gần DDP / Dongdaemun. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nTìm ga Dongdaemun H&C Park trên app Tota Locker.",
+          "th": "ล็อกเกอร์รถไฟใต้ดินใกล้ DDP/ดงแดemun เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nค้นหาสถานีดงแดemunในแอป Tota Locker",
+          "ru": "Камеры метро у DDP / Тондэмуна. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nНайдите станцию в приложении Tota Locker."
+        }
+      ],
+      "image": "Images/places/locker-dongdaemun-station.jpg"
+    },
+    "locker-haeundae-station": {
+      "name": "Haeundae Station lockers",
+      "desc": "Station-area lockers before Haeundae Beach sightseeing. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.",
+      "how": "Check locker signs near the station/tourist info. Peak season fills quickly.",
+      "address": "부산 해운대구 해운대역",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%ED%95%B4%EC%9A%B4%EB%8C%80%EC%97%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%ED%95%B4%EC%9A%B4%EB%8C%80%EA%B5%AC%20%ED%95%B4%EC%9A%B4%EB%8C%80%EC%97%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "해운대 해변·관광 전 짐을 맡기기 좋은 역 인근 보관함입니다. 운영 시간·빈칸·요금은 변동될 수 있으니 또타라커 앱 또는 현장 안내로 확인하세요.\n\n해운대역·관광안내 근처 보관함 안내를 확인하세요. 성수기는 만석일 수 있습니다.",
+          "en": "Station-area lockers before Haeundae Beach sightseeing. Hours, availability, and fees change — confirm in the Tota Locker app or on-site.\n\nCheck locker signs near the station/tourist info. Peak season fills quickly.",
+          "ja": "海雲台ビーチ観光前に荷物を預けやすい駅周辺ロッカー。 営業時間・空き・料金は変わるので、もうたロッカーアプリか現地案内で確認を。\n\n駅・観光案内付近のロッカー案内を確認。繁忙期は満杯になりやすい。",
+          "zh": "去海云台海滩前可暂存行李的车站寄存。 营业时间、空位与费用可能变动，请用又他储物柜App或现场确认。\n\n查看车站/旅游咨询附近寄存指示；旺季可能满柜。",
+          "zh-Hant": "去海雲台海灘前可暫存行李的車站寄物。 營業時間、空位與費用可能變動，請用又他置物櫃App或現場確認。\n\n查看車站/旅遊諮詢附近寄物指示；旺季可能滿櫃。",
+          "vi": "Tủ gần ga trước khi ra biển Haeundae. Giờ mở cửa, chỗ trống và phí có thể đổi — xác nhận trên app Tota Locker hoặc tại chỗ.\n\nXem biển tủ gần ga/quầy thông tin. Mùa cao điểm mau hết chỗ.",
+          "th": "ล็อกเกอร์แถวสถานีก่อนเที่ยวหาดแฮอุนแด เวลา/ช่องว่าง/ค่าบริการเปลี่ยนได้ — ยืนยันในแอป Tota Locker หรือที่หน้างาน\n\nดูป้ายล็อกเกอร์ใกล้สถานี ช่วงพีกเต็มเร็ว",
+          "ru": "Камеры у станции перед пляжем Хэундэ. Часы, свободные ячейки и тарифы меняются — уточняйте в приложении Tota Locker или на месте.\n\nСмотрите указатели у станции. В сезон места заканчиваются быстро."
+        }
+      ],
+      "image": "Images/places/locker-haeundae-station.jpg"
+    },
+    "port-busan": {
+      "name": "Busan Port",
+      "desc": "Busan's main port — international passenger terminal, cruises, and waterfront views.",
+      "how": "From Busan Station by bus/taxi to the international passenger terminal. Confirm sailings officially.",
+      "address": "부산 동구 충장대로 206 부산항국제여객터미널",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%B6%A9%EC%9E%A5%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%20%EB%8F%99%EA%B5%AC%20%EC%B6%A9%EC%9E%A5%EB%8C%80%EB%A1%9C%20206%20%EB%B6%80%EC%82%B0%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "부산의 대표 항구. 국제여객터미널·크루즈·항만 경관을 볼 수 있는 여행 거점입니다.\n\n부산역에서 버스·택시로 국제여객터미널 방면. 배편·출국 심사는 공식 안내를 확인하세요.",
+          "en": "Busan's main port — international passenger terminal, cruises, and waterfront views.\n\nFrom Busan Station by bus/taxi to the international passenger terminal. Confirm sailings officially.",
+          "ja": "釜山の代表港。国際旅客ターミナルやクルーズ、港湾景観の拠点。\n\n釜山駅からバス・タクシーで国際旅客ターミナルへ。運航は公式確認を。",
+          "zh": "釜山代表性港口，有国际客运码头、邮轮与港湾景观。\n\n从釜山站乘公交/出租车至国际客运码头；班次以官方为准。",
+          "zh-Hant": "釜山代表性港口，有國際客運碼頭、郵輪與港灣景觀。\n\n從釜山站乘公車/計程車至國際客運碼頭；班次以官方為準。",
+          "vi": "Cảng chính của Busan — nhà ga hành khách quốc tế, du thuyền, cảnh cảng.\n\nTừ Ga Busan đi xe buýt/taxi đến nhà ga hành khách quốc tế.",
+          "th": "ท่าเรือหลักของปูซาน — ท่าผู้โดยสารระหว่างประเทศ/เรือสำราญ\n\nจากสถานีปูซานไปท่าผู้โดยสารด้วยบัส/แท็กซี่",
+          "ru": "Главный порт Пусана — пассажирский терминал, круизы, набережная.\n\nОт станции Пусан на автобусе/такси к международному терминалу."
+        }
+      ],
+      "image": "Images/places/port-busan.jpg"
+    },
+    "port-incheon": {
+      "name": "Incheon Port",
+      "desc": "Capital-region gateway port — passenger ferries/cruises near Wolmido and Chinatown.",
+      "how": "Bus/taxi from Incheon city or the airport. Confirm the passenger terminal with your ferry operator.",
+      "address": "인천 중구 월미로 115 인천항국제여객터미널",
+      "regionLabel": "Incheon",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EC%9B%94%EB%AF%B8%EB%A1%9C%20115%20%EC%9D%B8%EC%B2%9C%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%20%EC%A4%91%EA%B5%AC%20%EC%9B%94%EB%AF%B8%EB%A1%9C%20115%20%EC%9D%B8%EC%B2%9C%ED%95%AD%EA%B5%AD%EC%A0%9C%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "수도권 관문 항구. 국제여객·크루즈와 월미도·차이나타운 관광권과 가깝습니다.\n\n인천 시내·공항에서 버스·택시. 여객터미널 위치는 배편 회사 안내를 확인하세요.",
+          "en": "Capital-region gateway port — passenger ferries/cruises near Wolmido and Chinatown.\n\nBus/taxi from Incheon city or the airport. Confirm the passenger terminal with your ferry operator.",
+          "ja": "首都圏の玄関港。国際旅客・クルーズと月尾島・中華街観光が近い。\n\n市内・空港からバス・タクシー。ターミナルは運航会社案内で確認。",
+          "zh": "首都圈门户港口，靠近月尾岛与中华街旅游区。\n\n从仁川市区或机场乘公交/出租车；码头以船公司信息为准。",
+          "zh-Hant": "首都圈門戶港口，靠近月尾島與中華街旅遊區。\n\n從仁川市區或機場乘公車/計程車；碼頭以船公司資訊為準。",
+          "vi": "Cảng cửa ngõ thủ đô — gần Wolmido và phố người Hoa.\n\nXe buýt/taxi từ nội thành hoặc sân bay Incheon.",
+          "th": "ท่าเรือประตูเมืองหลวง ใกล้ Wolmido และไชน่าทาวน์\n\nบัส/แท็กซี่จากเมืองหรือสนามบินอินชอน",
+          "ru": "Порт-ворота столичного региона — рядом Вольмидо и Чайна-таун.\n\nАвтобус/такси из города или аэропорта Инчхона."
+        }
+      ],
+      "image": "Images/places/port-incheon.jpg"
+    },
+    "port-jeju": {
+      "name": "Jeju Port",
+      "desc": "Main passenger harbor on Jeju Island — ferries from Mokpo, Wando, and other mainland ports.",
+      "how": "Bus/taxi from Jeju city or the airport. Check weather delays before sailing.",
+      "address": "제주 제주시 임항로 제주항",
+      "regionLabel": "Jeju",
+      "region": "jeju",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9E%84%ED%95%AD%EB%A1%9C%20%EC%A0%9C%EC%A3%BC%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%9E%84%ED%95%AD%EB%A1%9C%20%EC%A0%9C%EC%A3%BC%ED%95%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "제주 본섬 여객항. 목포·완도 등 육지 배편과 연결되는 관문입니다.\n\n제주시내·공항에서 버스·택시. 기상·결항이 잦을 수 있으니 출발전 확인하세요.",
+          "en": "Main passenger harbor on Jeju Island — ferries from Mokpo, Wando, and other mainland ports.\n\nBus/taxi from Jeju city or the airport. Check weather delays before sailing.",
+          "ja": "済州本島の旅客港。木浦・莞島など本土航路の玄関。\n\n市内・空港からバス・タクシー。欠航があり得るので出発前確認を。",
+          "zh": "济州本岛客运港，连接木浦、莞岛等陆地航线。\n\n从济州市区或机场乘公交/出租车；出航前确认天气与班次。",
+          "zh-Hant": "濟州本島客運港，連接木浦、莞島等陸地航線。\n\n從濟州市區或機場乘公車/計程車；出航前確認天氣與班次。",
+          "vi": "Cảng hành khách chính đảo Jeju — phà từ Mokpo, Wando…\n\nXe buýt/taxi từ thành phố/sân bay Jeju. Kiểm tra hủy chuyến vì thời tiết.",
+          "th": "ท่าเรือผู้โดยสารหลักของเชจู — เรือจากโมกโพ/วันโด ฯลฯ\n\nบัส/แท็กซี่จากเมืองหรือสนามบินเชจู ตรวจดีเลย์อากาศก่อน",
+          "ru": "Главный пассажирский порт Чеджу — паромы с материка.\n\nАвтобус/такси из города или аэропорта. Проверяйте отмены из‑за погоды."
+        }
+      ],
+      "image": "Images/places/port-jeju.jpg"
+    },
+    "port-mokpo": {
+      "name": "Mokpo Port",
+      "desc": "Major southwest passenger port — ferries to Jeju and access to harbor views / Yudalsan.",
+      "how": "Taxi/city bus from Mokpo Station or the bus terminal. Confirm ferry schedules with operators.",
+      "address": "전남 목포시 해안로 목포항",
+      "regionLabel": "Jeolla",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%82%A8%20%EB%AA%A9%ED%8F%AC%EC%8B%9C%20%ED%95%B4%EC%95%88%EB%A1%9C%20%EB%AA%A9%ED%8F%AC%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EB%AA%A9%ED%8F%AC%EC%8B%9C%20%ED%95%B4%EC%95%88%EB%A1%9C%20%EB%AA%A9%ED%8F%AC%ED%95%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서남해 대표 여객항. 제주행 배편과 항구 야경·유달산 관광권과 가깝습니다.\n\n목포역·시외버스터미널에서 택시·시내버스. 배편 시간표는 여객선사 안내를 확인하세요.",
+          "en": "Major southwest passenger port — ferries to Jeju and access to harbor views / Yudalsan.\n\nTaxi/city bus from Mokpo Station or the bus terminal. Confirm ferry schedules with operators.",
+          "ja": "西南海の代表旅客港。済州航路と港の夜景・儒達山観光が近い。\n\n木浦駅・バスターミナルからタクシー・市内バス。時刻は運航会社で確認。",
+          "zh": "西南海代表性客运港，有济州航线与港湾夜景、儒达山。\n\n从木浦站或客运站乘出租车/公交；班次以船公司为准。",
+          "zh-Hant": "西南海代表性客運港，有濟州航線與港灣夜景、儒達山。\n\n從木浦站或客運站乘計程車/公車；班次以船公司為準。",
+          "vi": "Cảng hành khách tây-nam — phà Jeju, cảnh cảng/Yudalsan.\n\nTaxi/xe buýt từ ga/bến xe Mokpo.",
+          "th": "ท่าเรือผู้โดยสารตะวันตกเฉียงใต้ — เรือเชจูและวิวท่าเรือ\n\nแท็กซี่/บัสจากสถานีโมกโพ",
+          "ru": "Крупный юго‑западный порт — паромы на Чеджу и виды гавани.\n\nТакси/автобус от станции или автовокзала Мокпхо."
+        }
+      ],
+      "image": "Images/places/port-mokpo.jpg"
+    },
+    "port-yeosu": {
+      "name": "Yeosu Port",
+      "desc": "Harbor linked to Yeosu Expo and the waterfront — island ferries and night views nearby.",
+      "how": "Bus/taxi from Yeosu Expo Station or downtown. Confirm ferries and cable cars on-site.",
+      "address": "전남 여수시 여수항",
+      "regionLabel": "Jeolla",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EB%82%A8%20%EC%97%AC%EC%88%98%EC%8B%9C%20%EC%97%AC%EC%88%98%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EB%82%A8%20%EC%97%AC%EC%88%98%EC%8B%9C%20%EC%97%AC%EC%88%98%ED%95%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "여수 엑스포·낭만포차 일대와 이어지는 항구. 섬 배편·야경 명소와 가깝습니다.\n\n여수엑스포역·시내에서 버스·택시. 배편·케이블카는 현장·앱으로 확인하세요.",
+          "en": "Harbor linked to Yeosu Expo and the waterfront — island ferries and night views nearby.\n\nBus/taxi from Yeosu Expo Station or downtown. Confirm ferries and cable cars on-site.",
+          "ja": "麗水エキスポや臨海エリアにつながる港。島航路・夜景スポットが近い。\n\n麗水エキスポ駅・市内からバス・タクシー。航路は現地・アプリで確認。",
+          "zh": "连接丽水世博与海滨的港口，近岛屿渡轮与夜景。\n\n从丽水世博站或市区乘公交/出租车；渡轮请现场确认。",
+          "zh-Hant": "連接麗水世博與海濱的港口，近島嶼渡輪與夜景。\n\n從麗水世博站或市區乘公車/計程車；渡輪請現場確認。",
+          "vi": "Cảng gắn với Yeosu Expo/ven biển — phà đảo và đêm gần đó.\n\nXe buýt/taxi từ ga Yeosu Expo hoặc trung tâm.",
+          "th": "ท่าเรือเชื่อม Yeosu Expo และชายฝั่ง — เรือเกาะและวิวยามค่ำ\n\nบัส/แท็กซี่จากสถานี Yeosu Expo หรือตัวเมือง",
+          "ru": "Порт у Yeosu Expo и набережной — паромы на острова и ночные виды.\n\nАвтобус/такси от станции Yeosu Expo или центра."
+        }
+      ],
+      "image": "Images/places/port-yeosu.jpg"
+    },
+    "port-pohang": {
+      "name": "Pohang Port",
+      "desc": "East-coast industrial and passenger port — a base for Yeongildae and Homigot trips.",
+      "how": "Taxi/bus from Pohang Station or the bus terminal. Confirm ferry info with operators.",
+      "address": "경북 포항시 북구 포항항",
+      "regionLabel": "Gyeongsang",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B2%BD%EB%B6%81%20%ED%8F%AC%ED%95%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%ED%8F%AC%ED%95%AD%ED%95%AD",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B2%BD%EB%B6%81%20%ED%8F%AC%ED%95%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%ED%8F%AC%ED%95%AD%ED%95%AD&hl=en&z=15&output=embed",
+      "body": [
+        {
+          "type": "text",
+          "ko": "동해안 산업·여객이 함께하는 항구. 영일대·호미곶 여행권의 거점입니다.\n\n포항역·시외버스터미널에서 택시·버스. 배편은 여객선 안내를 확인하세요.",
+          "en": "East-coast industrial and passenger port — a base for Yeongildae and Homigot trips.\n\nTaxi/bus from Pohang Station or the bus terminal. Confirm ferry info with operators.",
+          "ja": "東海岸の産業・旅客港。迎日台・虎尾岬観光の拠点。\n\n浦項駅・バスターミナルからタクシー・バス。航路は運航案内で確認。",
+          "zh": "东海岸工业与客运港，是迎日台、虎尾岬行程的据点。\n\n从浦项站或客运站乘出租车/公交；班次以船公司为准。",
+          "zh-Hant": "東海岸工業與客運港，是迎日台、虎尾岬行程的據點。\n\n從浦項站或客運站乘計程車/公車；班次以船公司為準。",
+          "vi": "Cảng công nghiệp/hành khách bờ đông — gần Yeongildae, Homigot.\n\nTaxi/xe buýt từ ga/bến xe Pohang.",
+          "th": "ท่าเรือฝั่งตะวันออก — ฐานเที่ยว Yeongildae/Homigot\n\nแท็กซี่/บัสจากสถานีโพฮัง",
+          "ru": "Восточный порт — база для Ёнильдэ и Хомигот.\n\nТакси/автобус от станции или автовокзала Пхохана."
+        }
+      ],
+      "image": "Images/places/port-pohang.jpg"
+    },
+    "bus-terminal-seoul-express": {
+      "name": "Seoul Express Bus Terminal",
+      "desc": "Gangnam hub (Central City) for nationwide express coaches.",
+      "how": "Subway Lines 3/7/9 Express Bus Terminal Station. Check Gyeongbu/Yeongdong/Central City halls.",
+      "address": "194 Sinbanpo-ro, Seocho-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-seoul-express.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "강남 센트럴시티·고속터미널. 전국 고속버스의 대표 출발·도착지입니다.\n\n가는 방법: 지하철 3·7·9호선 고속터미널역. 센트럴시티·경부·영동선 건물 확인.",
+          "en": "Gangnam hub (Central City) for nationwide express coaches.\n\nHow to get there: Subway Lines 3/7/9 Express Bus Terminal Station. Check Gyeongbu/Yeongdong/Central City halls.",
+          "ja": "江南セントラルシティの高速バス拠点。\n\n地下鉄3・7・9号線高速ターミナル駅。",
+          "zh": "江南Central City全国高速巴士枢纽。\n\n地铁3/7/9号线高速巴士客运站。",
+          "zh-Hant": "江南Central City全國高速巴士樞紐。\n\n地鐵3/7/9號線高速巴士客運站。",
+          "vi": "Trung tâm xe khách toàn quốc tại Gangnam Central City.\n\nTàu điện ngầm 3/7/9 ga Express Bus Terminal.",
+          "th": "ศูนย์รถบัสทางด่วนที่ Central City แขวงคังนัม\n\nรถไฟใต้ดินสาย 3/7/9 สถานี Express Bus Terminal",
+          "ru": "Главный хаб междугородних автобусов в Central City (Каннам).\n\nМетро 3/7/9, станция Express Bus Terminal."
+        }
+      ]
+    },
+    "bus-terminal-east-seoul": {
+      "name": "East Seoul Bus Terminal",
+      "desc": "Express/intercity buses on Seoul’s east side near Gangbyeon.",
+      "how": "Connected to Line 2 Gangbyeon Station. Follow terminal signs.",
+      "address": "50 Gangbyeonnyeok-ro, Gwangjin-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8F%99%EC%84%9C%EC%9A%B8%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%8F%99%EC%84%9C%EC%9A%B8%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-east-seoul.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "건대·잠실 쪽 동부 서울의 고속·시외버스 거점입니다.\n\n가는 방법: 지하철 2호선 강변역과 연결. 터미널 건물 안내판을 확인하세요.",
+          "en": "Express/intercity buses on Seoul’s east side near Gangbyeon.\n\nHow to get there: Connected to Line 2 Gangbyeon Station. Follow terminal signs.",
+          "ja": "江辺駅とつながる東部ソウルのバス拠点。\n\n地下鉄2号線江辺駅。",
+          "zh": "首尔东部高速/市外巴士枢纽。\n\n地铁2号线江边站。",
+          "zh-Hant": "首爾東部高速/市外巴士樞紐。\n\n地鐵2號線江邊站。",
+          "vi": "Bến xe phía đông Seoul gần Gangbyeon.\n\nTuyến 2 ga Gangbyeon.",
+          "th": "ศูนย์รถบัสฝั่งตะวันออกใกล้คังบยอน\n\nสาย 2 สถานี Gangbyeon",
+          "ru": "Автовокзал на востоке Сеула у Канбён.\n\nЛиния 2, станция Gangbyeon."
+        }
+      ]
+    },
+    "bus-terminal-nambu": {
+      "name": "Seoul Nambu Bus Terminal",
+      "desc": "Southern Seoul intercity/express terminal toward Gyeonggi, Chungcheong, Jeolla.",
+      "how": "Exit Line 3 Nambu Bus Terminal Station.",
+      "address": "208 Hyoryeong-ro, Seocho-gu, Seoul",
+      "regionLabel": "Seoul",
+      "region": "seoul",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%EB%82%A8%EB%B6%80%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%EB%82%A8%EB%B6%80%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-nambu.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "서초 남부 시외·고속버스 터미널. 경기·충청·전라 방면이 많습니다.\n\n가는 방법: 지하철 3호선 남부터미널역 바로 앞.",
+          "en": "Southern Seoul intercity/express terminal toward Gyeonggi, Chungcheong, Jeolla.\n\nHow to get there: Exit Line 3 Nambu Bus Terminal Station.",
+          "ja": "瑞草の市外・高速バスターミナル。\n\n地下鉄3号線南部ターミナル駅前。",
+          "zh": "瑞草市外与高速巴士站。\n\n地铁3号线南部客运站。",
+          "zh-Hant": "瑞草市外與高速巴士站。\n\n地鐵3號線南部客運站。",
+          "vi": "Bến xe liên tỉnh/phía nam Seoul.\n\nTuyến 3 ga Nambu Bus Terminal.",
+          "th": "สถานีรถบัสชานเมือง/ทางด่วนฝั่งใต้\n\nสาย 3 สถานี Nambu Bus Terminal",
+          "ru": "Междугородний/экспресс-вокзал в Сочхо.\n\nЛиния 3, станция Nambu Bus Terminal."
+        }
+      ]
+    },
+    "bus-terminal-busan": {
+      "name": "Busan Central Bus Terminal",
+      "desc": "Nopo hub for Busan’s express and intercity coaches.",
+      "how": "Busan Metro Line 1 Nopo Station links to the terminal.",
+      "address": "2238 Jungang-daero, Geumjeong-gu, Busan",
+      "regionLabel": "Busan",
+      "region": "busan",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%B6%80%EC%82%B0%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%B6%80%EC%82%B0%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-busan.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "노포 종합터미널. 부산의 고속·시외버스 중심 거점입니다.\n\n가는 방법: 부산 1호선 노포역·터미널 연결. 시내에서 지하철이 편합니다.",
+          "en": "Nopo hub for Busan’s express and intercity coaches.\n\nHow to get there: Busan Metro Line 1 Nopo Station links to the terminal.",
+          "ja": "老圃の高速・市外バス拠点。\n\n釜山1号線老圃駅。",
+          "zh": "老圃高速与市外巴士中心。\n\n釜山地铁1号线老圃站。",
+          "zh-Hant": "老圃高速與市外巴士中心。\n\n釜山地鐵1號線老圃站。",
+          "vi": "Trung tâm xe khách tại Nopo, Busan.\n\nTuyến 1 Busan ga Nopo.",
+          "th": "ศูนย์รถบัสที่โนโพ ปูซาน\n\nสาย 1 ปูซาน สถานี Nopo",
+          "ru": "Главный автобусный хаб в Нопо.\n\nЛиния 1 Пусана, станция Nopo."
+        }
+      ]
+    },
+    "bus-terminal-daegu": {
+      "name": "Dongdaegu Transfer Center",
+      "desc": "Bus hub linked to Dongdaegu Station (KTX + Daegu Metro).",
+      "how": "Dongdaegu Station — follow signs to the bus transfer floors.",
+      "address": "550 Dongdaegu-ro, Dong-gu, Daegu",
+      "regionLabel": "Daegu",
+      "region": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8F%99%EB%8C%80%EA%B5%AC%EB%B3%B5%ED%95%A9%ED%99%98%EC%8A%B9%EC%84%BC%ED%84%B0",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%8F%99%EB%8C%80%EA%B5%AC%EB%B3%B5%ED%95%A9%ED%99%98%EC%8A%B9%EC%84%BC%ED%84%B0&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-daegu.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "동대구역과 연결된 대구 고속·시외버스 환승 거점입니다.\n\n가는 방법: KTX·대구지하철 동대구역. 환승센터 내 버스층 안내를 확인하세요.",
+          "en": "Bus hub linked to Dongdaegu Station (KTX + Daegu Metro).\n\nHow to get there: Dongdaegu Station — follow signs to the bus transfer floors.",
+          "ja": "東大邱駅直結のバス拠点。\n\nKTX・地下鉄東大邱駅。",
+          "zh": "连接东大邱站的巴士枢纽。\n\nKTX/地铁东大邱站。",
+          "zh-Hant": "連接東大邱站的巴士樞紐。\n\nKTX/地鐵東大邱站。",
+          "vi": "Bến xe liền kề ga Dongdaegu.\n\nKTX/metro ga Dongdaegu.",
+          "th": "ศูนย์รถบัสติดสถานีดงแดกู\n\nKTX/รถไฟใต้ดิน สถานี Dongdaegu",
+          "ru": "Автобусный хаб у станции Тондэгу.\n\nKTX/метро, станция Dongdaegu."
+        }
+      ]
+    },
+    "bus-terminal-daejeon": {
+      "name": "Daejeon Complex Terminal",
+      "desc": "Combined express/intercity terminal for the central Korea hub.",
+      "how": "Daejeon Metro Line 1 Complex Terminal Station.",
+      "address": "1689 Dongseo-daero, Dong-gu, Daejeon",
+      "regionLabel": "Daejeon",
+      "region": "",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8C%80%EC%A0%84%EB%B3%B5%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EB%8C%80%EC%A0%84%EB%B3%B5%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-daejeon.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "대전 고속·시외가 모인 복합터미널. 중부권 환승 거점입니다.\n\n가는 방법: 대전 1호선 복합터미널역. 고속·시외 구역을 안내판으로 확인.",
+          "en": "Combined express/intercity terminal for the central Korea hub.\n\nHow to get there: Daejeon Metro Line 1 Complex Terminal Station.",
+          "ja": "大田の高速・市外複合ターミナル。\n\n大田1号線複合ターミナル駅。",
+          "zh": "大田高速与市外综合站。\n\n大田地铁1号线综合客运站。",
+          "zh-Hant": "大田高速與市外綜合站。\n\n大田地鐵1號線綜合客運站。",
+          "vi": "Bến xe cao tốc/liên tỉnh Daejeon.\n\nTuyến 1 Daejeon ga Complex Terminal.",
+          "th": "สถานีรถบัสทางด่วน/ชานเมืองแทจอน\n\nสาย 1 แทจอน สถานี Complex Terminal",
+          "ru": "Экспресс и междугородние рейсы Тэджона.\n\nЛиния 1, станция Complex Terminal."
+        }
+      ]
+    },
+    "bus-terminal-gwangju": {
+      "name": "Gwangju Bus Terminal (U-Square)",
+      "desc": "Express/intercity buses inside the U-Square complex.",
+      "how": "City bus/taxi from Gwangju Metro Line 1 (Geumnamno 5-ga / City Hall area).",
+      "address": "282 Mujin-daero, Seo-gu, Gwangju",
+      "regionLabel": "Gwangju",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B4%91%EC%A3%BC%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%9C%A0%EC%8A%A4%ED%80%98%EC%96%B4",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B4%91%EC%A3%BC%EC%A2%85%ED%95%A9%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%9C%A0%EC%8A%A4%ED%80%98%EC%96%B4&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-gwangju.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "유스퀘어 복합시설의 고속·시외버스 터미널입니다.\n\n가는 방법: 광주 1호선 금남로5가·시청 방면 버스·택시, 또는 시내버스 직행.",
+          "en": "Express/intercity buses inside the U-Square complex.\n\nHow to get there: City bus/taxi from Gwangju Metro Line 1 (Geumnamno 5-ga / City Hall area).",
+          "ja": "ユースクエア内の高速・市外バス。\n\n光州市内バス・タクシー。",
+          "zh": "U-Square内高速与市外巴士。\n\n市内公交/出租。",
+          "zh-Hant": "U-Square內高速與市外巴士。\n\n市內公車/計程車。",
+          "vi": "Xe khách trong khu phức hợp U-Square.\n\nBus/taxi nội thành.",
+          "th": "รถบัสในคอมเพล็กซ์ U-Square\n\nรถเมล์/แท็กซี่ในเมือง",
+          "ru": "Автобусы в комплексе U-Square.\n\nГородской автобус/такси."
+        }
+      ]
+    },
+    "bus-terminal-incheon": {
+      "name": "Incheon Bus Terminal",
+      "desc": "Incheon city express/intercity terminal near Guwol.",
+      "how": "Incheon Metro Line 1 Incheon Terminal Station.",
+      "address": "35 Yeonnam-ro, Michuhol-gu, Incheon",
+      "regionLabel": "Incheon",
+      "region": "incheon",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%B8%EC%B2%9C%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9D%B8%EC%B2%9C%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-incheon.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "인천 시내의 고속·시외버스 터미널. 구월동 일대와 가깝습니다.\n\n가는 방법: 인천 1호선 인천터미널역 연결.",
+          "en": "Incheon city express/intercity terminal near Guwol.\n\nHow to get there: Incheon Metro Line 1 Incheon Terminal Station.",
+          "ja": "仁川市内の高速・市外バスターミナル。\n\n仁川1号線仁川ターミナル駅。",
+          "zh": "仁川市区高速与市外巴士站。\n\n仁川地铁1号线仁川客运站。",
+          "zh-Hant": "仁川市區高速與市外巴士站。\n\n仁川地鐵1號線仁川客運站。",
+          "vi": "Bến xe cao tốc/liên tỉnh nội thành Incheon.\n\nTuyến 1 Incheon ga Incheon Terminal.",
+          "th": "สถานีรถบัสในเมืองอินชอน\n\nสาย 1 อินชอน สถานี Incheon Terminal",
+          "ru": "Городской экспресс/междугородний вокзал.\n\nЛиния 1 Инчхона, станция Incheon Terminal."
+        }
+      ]
+    },
+    "bus-terminal-suwon": {
+      "name": "Suwon Bus Terminal",
+      "desc": "Suwon express/intercity terminal — southern Gyeonggi transfer hub.",
+      "how": "Bus/taxi from Suwon Station, or local buses to the terminal.",
+      "address": "270 Gyeongsu-daero, Gwonseon-gu, Suwon",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%88%98%EC%9B%90%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%88%98%EC%9B%90%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-suwon.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "수원 고속·시외버스터미널. 경기 남부 환승에 자주 쓰입니다.\n\n가는 방법: 수원역에서 버스·택시, 또는 터미널 정류장 시내버스.",
+          "en": "Suwon express/intercity terminal — southern Gyeonggi transfer hub.\n\nHow to get there: Bus/taxi from Suwon Station, or local buses to the terminal.",
+          "ja": "京畿南部のバス乗り換え拠点。\n\n水原駅からバス・タクシー。",
+          "zh": "京畿南部巴士换乘枢纽。\n\n水原站公交/出租。",
+          "zh-Hant": "京畿南部巴士轉乘樞紐。\n\n水原站公車/計程車。",
+          "vi": "Trung chuyển phía nam Gyeonggi.\n\nBus/taxi từ ga Suwon.",
+          "th": "จุดเปลี่ยนรถบัสทางใต้คยองกี\n\nรถเมล์/แท็กซี่จากสถานีซูวอน",
+          "ru": "Пересадочный хаб южного Кёнги.\n\nАвтобус/такси от станции Сувон."
+        }
+      ]
+    },
+    "bus-terminal-jeonju": {
+      "name": "Jeonju Express Bus Terminal",
+      "desc": "Jeonju express coaches — common gateway for Hanok Village trips.",
+      "how": "Local bus/taxi to Jeonju Hanok Village from the terminal area.",
+      "address": "Jeonju Express Bus Terminal, Deokjin-gu, Jeonju",
+      "regionLabel": "Jeolla",
+      "region": "jeolla",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A0%84%EC%A3%BC%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%A0%84%EC%A3%BC%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-jeonju.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "전주 고속버스 터미널. 한옥마을 관광의 시외 출발점으로 자주 쓰입니다.\n\n가는 방법: 전주시외·고속 터미널 일대. 한옥마을까지 버스·택시.",
+          "en": "Jeonju express coaches — common gateway for Hanok Village trips.\n\nHow to get there: Local bus/taxi to Jeonju Hanok Village from the terminal area.",
+          "ja": "全州韓屋村観光のバス玄関。\n\n韓屋村までバス・タクシー。",
+          "zh": "前往全州韩屋村的常见门户。\n\n客运站到韩屋村公交/出租。",
+          "zh-Hant": "前往全州韓屋村的常見門戶。\n\n客運站到韓屋村公車/計程車。",
+          "vi": "Cửa ngõ xe khách tới làng Hanok Jeonju.\n\nBus/taxi tới làng Hanok.",
+          "th": "ประตูสู่หมู่บ้านฮันอกชอนจู\n\nรถเมล์/แท็กซี่ไปหมู่บ้านฮันอก",
+          "ru": "Частые рейсы к деревне ханок Чонджу.\n\nАвтобус/такси до деревни ханок."
+        }
+      ]
+    },
+    "bus-terminal-ulsan": {
+      "name": "Ulsan Express Bus Terminal",
+      "desc": "Ulsan express bus hub (near the intercity terminal).",
+      "how": "City bus/taxi. Allow time if transferring from Ulsan KTX Station.",
+      "address": "257 Samsan-ro, Nam-gu, Ulsan",
+      "regionLabel": "Gyeongsang",
+      "region": "gyeongsang",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9A%B8%EC%82%B0%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EC%9A%B8%EC%82%B0%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-ulsan.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "울산 고속버스 터미널. 시외버스터미널과 인접한 교통 거점입니다.\n\n가는 방법: 시내버스·택시. 울산역(KTX)과는 거리가 있어 환승 시간을 보세요.",
+          "en": "Ulsan express bus hub (near the intercity terminal).\n\nHow to get there: City bus/taxi. Allow time if transferring from Ulsan KTX Station.",
+          "ja": "蔚山の高速バス拠点。\n\n市内バス・タクシー。",
+          "zh": "蔚山高速巴士枢纽。\n\n市内公交/出租。",
+          "zh-Hant": "蔚山高速巴士樞紐。\n\n市內公車/計程車。",
+          "vi": "Trung tâm xe khách cao tốc Ulsan.\n\nBus/taxi nội thành.",
+          "th": "ศูนย์รถบัสทางด่วนอุลซาน\n\nรถเมล์/แท็กซี่ในเมือง",
+          "ru": "Главный экспресс-хаб Ульсана.\n\nГородской автобус/такси."
+        }
+      ]
+    },
+    "bus-terminal-gwangmyeong": {
+      "name": "Gwangmyeong Bus Terminal",
+      "desc": "Coach access near Gwangmyeong / KTX Gwangmyeong in SW Gyeonggi.",
+      "how": "Bus/taxi from Gwangmyeong Station (Line 1 / KTX area).",
+      "address": "Gwangmyeong Bus Terminal, Gyeonggi",
+      "regionLabel": "Gyeonggi",
+      "region": "gyeonggi",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B4%91%EB%AA%85%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=%EA%B4%91%EB%AA%85%EC%A2%85%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90&hl=en&z=15&output=embed",
+      "image": "Images/places/bus-terminal-gwangmyeong.jpg",
+      "body": [
+        {
+          "type": "text",
+          "ko": "광명·KTX광명 인근 버스 거점. 수도권 남서부 이동에 유용합니다.\n\n가는 방법: 1호선·KTX 광명 일대에서 버스·택시로 이동.",
+          "en": "Coach access near Gwangmyeong / KTX Gwangmyeong in SW Gyeonggi.\n\nHow to get there: Bus/taxi from Gwangmyeong Station (Line 1 / KTX area).",
+          "ja": "光明・KTX光明付近のバス拠点。\n\n光明駅からバス・タクシー。",
+          "zh": "光明/KTX光明附近巴士节点。\n\n光明站公交/出租。",
+          "zh-Hant": "光明/KTX光明附近巴士節點。\n\n光明站公車/計程車。",
+          "vi": "Bến xe gần Gwangmyeong/KTX.\n\nBus/taxi từ ga Gwangmyeong.",
+          "th": "จุดรถบัสใกล้ควังมยอง/KTX\n\nรถเมล์/แท็กซี่จากสถานีควังมยอง",
+          "ru": "Узел у Кванмён / KTX Кванмён.\n\nАвтобус/такси от станции Кванмён."
+        }
+      ]
+    }
+  }
+}

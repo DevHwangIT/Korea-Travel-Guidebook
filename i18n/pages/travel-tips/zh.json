@@ -1,0 +1,314 @@
+{
+  "tips": {
+    "catDaily": "日常",
+    "catRestaurant": "用餐",
+    "catTransport": "交通",
+    "catShopping": "购物",
+    "backHub": "← 旅行贴士",
+    "dailyCardDesc": "地图、垃圾、周末住宿、雨天",
+    "restaurantCardDesc": "点餐、排队、水与小菜",
+    "transportCardDesc": "下车刷卡、高峰、出口、礼仪",
+    "mapTitle": "地图 App",
+    "mapMistake": "找路时只用谷歌地图",
+    "mapBody": "在当地查公交、步行和店铺时，Naver Map、Kakao Map 往往更准。可与谷歌并用，换乘与出口编号优先看韩国地图 App。",
+    "cardTitle": "公交下车·换乘",
+    "cardMistake": "下公交时忘记刷卡",
+    "cardBody": "公交下车通常也要刷卡，票价/换乘才会算对。购卡充值见「出发前 → 钱」。换乘按地图 App 路线即可。",
+    "restaurantTitle": "餐厅使用",
+    "restaurantMistake": "按海外餐厅规定执行",
+    "restaurantBody1": "有时，当我等待员工接受我的订单时，桌子旁边有一个呼叫铃，或者当我试图要水和配菜时，有一个单独的自助服务角。最近，直接通过自助终端或平板电脑点餐的餐厅数量有所增加，这为不熟悉韩语的游客带来了另一个障碍。",
+    "restaurantBody2": "韩国的普通餐馆和咖啡馆没有小费文化。通常无需在桌子上留下现金或在付款后在您的卡上添加小费。",
+    "restaurantBody3": "在国外，很多餐厅都是员工把账单带到餐桌上的，但在韩国餐厅，吃完饭后直接到门口附近的收银台付款的情况很常见。",
+    "cashTitle": "现金和卡",
+    "cashMistake": "认为你所需要的只是一张卡",
+    "cashBody": "大多数都接受信用卡，但传统市场、小吃摊以及一些小餐馆和出租车可能只接受现金。随身携带一些零钱。",
+    "trashTitle": "灰烬",
+    "trashMistake": "预计街上会有很多垃圾桶",
+    "trashBody": "韩国市中心的街道垃圾桶比您想象的要少。使用便利店、地铁站、咖啡馆或将小垃圾带到住宿处会更安全。",
+    "wifiTitle": "无线网络/数据",
+    "wifiMistake": "以为咖啡馆、地铁里有Wi-Fi就够了",
+    "wifiBody": "公共 Wi-Fi 可能不稳定。如果您使用 eSIM 或 SIM 卡保护数据，则可以不间断地使用地图、翻译和支付应用程序。",
+    "queueTitle": "等候及号码牌",
+    "queueMistake": "尝试在不排队的情况下立即获得座位",
+    "queueBody": "许多受欢迎的餐厅在入口处使用等候应用程序和号码牌。当工作人员说“请稍等”时，请检查线路。",
+    "waterTitle": "水、配菜",
+    "waterMistake": "以为工作人员会把所有的水和配菜都带来。",
+    "waterBody": "许多餐厅都从自助服务角提供水、餐具和配菜。看看周围。",
+    "rushTitle": "通勤拥堵",
+    "rushMistake": "高峰时段前往旅游目的地",
+    "rushBody": "工作日 07:00 至 09:00 和 18:00 至 20:00 地铁和公交车非常拥挤。尽可能避开这个时间，或者如果您有很多行李，请考虑乘坐出租车。",
+    "taxiTitle": "乘坐出租车",
+    "taxiMistake": "试图用文字解释地址时迷路了",
+    "taxiBody": "通过Kakao T、Ooty等打电话或用韩语显示您的住宿和目的地地址很方便。如果您需要收据，请说“请给我一张收据。”",
+    "exitTitle": "地铁出口",
+    "exitMistake": "走出任何出口就会迷路",
+    "exitBody": "即使在同一车站，根据出口编号的不同，目的地也有很大差异。在地图应用上查看推荐出口，然后退出。",
+    "weekendTitle": "周末及节假日住宿",
+    "weekendMistake": "旅途中临时订周末房还按平日价想",
+    "weekendBody": "周五至周日与节假日，当日或延住价格常明显高于平日。改期/延期时请在 App 再比一次。出发前预订见「出发前 → 行李·预订」。",
+    "catPickLabel": "主题",
+    "dailyBody": [
+      {
+        "type": "text",
+        "ko": "지도 앱\n\n길 찾을 때 구글 지도만 쓰는 것\n\n현지에서 대중교통·도보·가게 찾기는 네이버지도·카카오맵이 더 정확한 경우가 많습니다. 구글 지도와 함께 두고, 환승·출구 번호는 한국 지도 앱을 우선해 보세요.",
+        "en": "Maps\n\nUsing only Google Maps while navigating\n\nFor transit, walking, and shops on the ground, Naver Map and Kakao Map are often more accurate. Keep Google Maps if you like, but prefer Korean map apps for transfers and exit numbers.",
+        "ja": "地図アプリ\n\n道探しでGoogleマップだけ使うこと\n\n現地での公共交通・徒歩・店舗探しは Naver Map・Kakao Map の方が正確なことが多いです。Googleと併用しつつ、乗換・出口番号は韓国の地図アプリを優先を。",
+        "vi": "ứng dụng bản đồ\n\nChỉ sử dụng Google Maps khi tìm chỉ đường\n\nNaver Map và Kakao Map thường chính xác hơn trong việc tìm kiếm các phương tiện giao thông công cộng, đi bộ và cửa hàng tại địa phương. Giữ nó với Google Maps và ưu tiên cho ứng dụng Maps Hàn Quốc để lấy số chuyển và thoát.",
+        "th": "แอพแผนที่\n\nใช้ Google Maps ในการค้นหาเส้นทางเท่านั้น\n\nNaver Map และ Kakao Map มักจะแม่นยำกว่าในการค้นหาการขนส่งสาธารณะ การเดิน และร้านค้าในท้องถิ่น เก็บไว้กับ Google Maps และให้ความสำคัญกับแอป Korean Maps สำหรับการโอนและหมายเลขออก",
+        "ru": "приложение карты\n\nИспользуйте Google Maps только для поиска маршрутов.\n\nКарты Naver и Kakao Map зачастую более точны в поиске местного общественного транспорта, прогулок и магазинов. Сохраните его с Google Maps и отдайте приоритет приложению Korean Maps для номеров пересадок и выходов.",
+        "zh-Hant": "地圖應用程式\n\n僅在尋找路線時使用 Google 地圖\n\nNaver 地圖和 Kakao 地圖在尋找當地公共交通工具、步行和商店方面通常更準確。與Google地圖保持一致，並優先使用韓國地圖應用程式來取得換乘和出口號碼。"
+      },
+      {
+        "type": "text",
+        "ko": "쓰레기통\n\n거리에 쓰레기통이 많을 거라 기대하는 것\n\n한국 도심에는 길거리 쓰레기통이 생각보다 적습니다. 편의점·지하철역·카페를 이용하거나, 작은 쓰레기는 숙소까지 가지고 가는 편이 안전합니다.",
+        "en": "Trash bins\n\nExpecting many street trash cans\n\nPublic bins are fewer than many visitors expect. Use convenience stores, stations, or cafés — or take small trash back to your hotel.",
+        "ja": "ゴミ箱\n\n道にゴミ箱が多いと思い込むこと\n\n街中のゴミ箱は意外と少ないです。コンビニ・駅・カフェを使うか、小さなゴミは宿まで持ち帰りましょう。",
+        "vi": "thùng rác\n\nMong đợi rất nhiều thùng rác trên đường phố\n\nCó ít thùng rác đường phố ở trung tâm thành phố Hàn Quốc hơn bạn nghĩ. Sẽ an toàn hơn khi sử dụng các cửa hàng tiện lợi, ga tàu điện ngầm, quán cà phê hoặc mang theo rác nhỏ đến nơi ở.",
+        "th": "ถังขยะ\n\nคาดว่าจะมีถังขยะมากมายบนท้องถนน\n\nถังขยะริมถนนในตัวเมืองเกาหลีมีน้อยกว่าที่คุณคิด การใช้ร้านสะดวกซื้อ สถานีรถไฟใต้ดิน ร้านกาแฟ หรือนำขยะขนาดเล็กติดตัวไปที่ที่พักจะปลอดภัยกว่า",
+        "ru": "мусорное ведро\n\nОжидаю много мусорных баков на улицах\n\nВ центре Кореи меньше уличных мусорных баков, чем вы думаете. Безопаснее пользоваться магазинами, станциями метро, ​​кафе или брать с собой мелкий мусор.",
+        "zh-Hant": "垃圾桶\n\n預計街上會有很多垃圾桶\n\n韓國市中心的街道垃圾桶比您想像的要少。使用便利商店、地鐵站、咖啡館或將小垃圾帶到住宿處會更安全。"
+      },
+      {
+        "type": "text",
+        "ko": "주말·연휴 숙소\n\n여행 중에 주말 숙소를 당일로 잡으면 평일과 같을 거라 생각하는 것\n\n금·토·일이나 연휴에는 당일·연박 요금이 평일보다 크게 오르는 경우가 많습니다. 일정을 연장하거나 옮길 때는 앱에서 날짜별로 한 번 더 비교해 보세요. 출발 전 예약 요령은 ‘떠나기 전에 → 짐·예약’을 참고하세요.",
+        "en": "Weekend lodging\n\nAssuming a mid-trip weekend stay costs the same as a weekday\n\nFriday–Sunday and holidays often jump in price for same-day or extended stays. When you change plans, compare dates again in booking apps. For packing/booking before departure, see Before You Go → Packing.",
+        "ja": "週末・連休の宿\n\n旅行中の週末宿が平日と同じ料金だと思うこと\n\n金〜日や連休は当日・延泊料金が大きく上がることが多いです。予定を延ばす・変えるときはアプリで日付を再比較を。出発前の予約は「出発前に → 荷物・予約」へ。",
+        "vi": "Chỗ ở cuối tuần và ngày lễ\n\nNghĩ rằng nếu bạn đặt chỗ nghỉ cuối tuần trong cùng một ngày khi đi du lịch thì sẽ giống như một ngày trong tuần.\n\nVào các ngày thứ sáu, thứ bảy, chủ nhật và ngày lễ, giá phòng cùng ngày, đêm liên tiếp thường tăng đáng kể so với ngày thường. Khi kéo dài hoặc di chuyển lịch trình của bạn, hãy so sánh từng ngày trong ứng dụng một lần nữa. Để biết mẹo đặt chỗ trước khi khởi hành, vui lòng tham khảo ‘Trước khi bạn khởi hành → Hành lý/đặt chỗ’.",
+        "th": "ที่พักวันหยุดสุดสัปดาห์และวันหยุดนักขัตฤกษ์\n\nคิดว่าถ้าจองที่พักวันหยุดสุดสัปดาห์วันเดียวกันระหว่างเดินทางก็จะเหมือนกับวันธรรมดาเลย\n\nในวันศุกร์ วันเสาร์ วันอาทิตย์ และวันหยุดนักขัตฤกษ์ ราคาวันเดียวกันและคืนต่อเนื่องมักจะเพิ่มขึ้นอย่างมากเมื่อเทียบกับวันธรรมดา เมื่อขยายหรือย้ายกำหนดการ ให้เปรียบเทียบแต่ละวันที่ในแอปอีกครั้ง สำหรับเคล็ดลับการจองก่อนออกเดินทาง โปรดดูที่ 'ก่อนออกเดินทาง → สัมภาระ/การจอง'",
+        "ru": "Размещение на выходные и праздники\n\nДумая, что если вы забронируете жилье на выходные в тот же день во время путешествия, оно будет таким же, как и будний день.\n\nПо пятницам, субботам, воскресеньям и праздничным дням тарифы на проезд в тот же день и ночь подряд часто значительно повышаются по сравнению с будними днями. При продлении или переносе расписания сравните каждую дату в приложении еще раз. Советы по бронированию перед вылетом см. в разделе «Перед отъездом → Багаж/бронирование».",
+        "zh-Hant": "週末及假日住宿\n\n認為如果您在旅行時預訂當天的周末住宿，則與工作日相同。\n\n在週五、週六、週日和假日，當日和連夜房價通常比工作日大幅上漲。延長或移動日程安排時，請再次比較應用程式中的每個日期。出發前預訂須知請參閱「出發前→行李/預訂」。"
+      },
+      {
+        "type": "text",
+        "ko": "편의점\n\n편의점은 간식만 산다고 생각하는 것\n\nCU·GS25·세븐일레븐 등이 골목마다 있습니다. 간단한 식사·음료, 우산·세면도구 같은 생활용품, 가벼운 의약외품(파스·밴드·해열 외용 등, 약국 상담이 필요한 약은 약국으로)을 살 수 있어요. 일부 매장에는 보조배터리 대여·충전 코너가 있는 경우도 있습니다. 메뉴 조합은 사이트의 편의점 가이드도 참고하세요.",
+        "en": "Convenience stores\n\nThinking convenience stores are only for snacks\n\nCU, GS25, and 7-Eleven are everywhere. Grab simple meals and drinks, umbrellas and toiletries, and light quasi-drug items (patches, bandages, etc. — for stronger medicine, ask a pharmacy). Some stores have power-bank rental or charging corners. For combo ideas, see the site’s convenience-store guide.",
+        "ja": "コンビニ\n\nコンビニはおやつだけと思うこと\n\nCU・GS25・セブンイレブンなどが至る所にあります。簡単な食事・飲み物、傘・洗面用品、軽い医薬部外品（シップ・絆創膏など。強い薬は薬局へ）が買えます。店舗によってはモバイルバッテリー貸出・充電コーナーがあることも。組み合わせはサイトのコンビニガイドも参照を。",
+        "vi": "cửa hàng tiện lợi\n\nMọi người nghĩ rằng cửa hàng tiện lợi chỉ mua đồ ăn nhẹ.\n\nCU, GS25, 7-Eleven… có mặt ở mọi ngõ ngách. Bạn có thể mua các bữa ăn và đồ uống đơn giản, các nhu yếu phẩm hàng ngày như ô và đồ vệ sinh cá nhân cũng như các mặt hàng nhẹ không phải thuốc (các loại thuốc cần tư vấn của nhà thuốc như miếng dán, băng dán và thuốc hạ sốt tại chỗ có thể mua tại hiệu thuốc). Một số cửa hàng có thể có góc cho thuê/sạc pin phụ. Vui lòng tham khảo hướng dẫn của cửa hàng tiện lợi trên trang web để biết cách kết hợp thực đơn.",
+        "th": "ร้านสะดวกซื้อ\n\nคนคิดว่าร้านสะดวกซื้อซื้อแต่ขนมเท่านั้น\n\nCU, GS25, 7-Eleven ฯลฯ ตั้งอยู่ทุกซอย คุณสามารถซื้ออาหารและเครื่องดื่มง่ายๆ ของใช้ประจำวัน เช่น ร่มและอุปกรณ์อาบน้ำ และสิ่งของที่ไม่ต้องใช้ยาที่มีน้ำหนักเบา (สามารถซื้อยาที่ต้องได้รับคำปรึกษาจากร้านขายยา เช่น แผ่นแปะ วงดนตรี และยาลดไข้เฉพาะที่ได้ที่ร้านขายยา) ร้านค้าบางแห่งอาจมีมุมให้เช่า/ชาร์จแบตเตอรี่เสริม โปรดดูคู่มือร้านสะดวกซื้อบนเว็บไซต์เพื่อดูการรวมเมนู",
+        "ru": "круглосуточный магазин\n\nЛюди думают, что в магазинах покупают только закуски.\n\nCU, GS25, 7-Eleven и т. д. расположены в каждом переулке. Вы можете купить простую еду и напитки, предметы первой необходимости, такие как зонтики и туалетные принадлежности, а также легкие нелекарственные товары (лекарства, требующие консультации в аптеке, такие как пластыри, бинты и жаропонижающие средства местного действия, можно приобрести в аптеке). В некоторых магазинах может быть пункт проката/зарядки вспомогательных аккумуляторов. Пожалуйста, также обратитесь к руководству магазина на сайте для комбинаций меню.",
+        "zh-Hant": "便利商店\n\n人們認為便利商店只買零食。\n\nCU、GS25、7-11等都分佈在每個巷子裡。可以購買簡單的餐食和飲料，雨傘、盥洗用品等生活用品，以及輕便的非藥品（需要藥局諮詢的藥品，如貼片、創可貼、外用退燒藥等，可在藥局購買）。有些商店可能設有輔助電池的租賃/充電角落。另請參閱網站上的便利商店指南以了解菜單組合。"
+      },
+      {
+        "type": "text",
+        "ko": "비 오는 날\n\n우산 없이 밖으로 나갔다가 당황하는 것\n\n갑자기 비가 오면 편의점·다이소에서 우산을 살 수 있습니다. 실내 카페·박물관·지하 쇼핑몰로 동선을 바꾸거나, 짧은 구간은 택시를 쓰는 것도 방법입니다. 지하철역 연결 통로를 활용하면 비를 덜 맞습니다.",
+        "en": "Rainy days\n\nHeading out without a plan when it suddenly rains\n\nIf rain starts, buy an umbrella at a convenience store or Daiso. Shift to cafés, museums, or underground malls — or take a short taxi hop. Station connecting passages help you stay dry.",
+        "ja": "雨の日\n\n突然の雨に傘なしで慌てること\n\n急な雨ならコンビニやダイソーで傘を買えます。カフェ・博物館・地下モールに動線を変えるか、短い区間はタクシーも手。地下鉄の連絡通路を使うと濡れにくいです。",
+        "vi": "ngày mưa\n\nXấu hổ khi ra ngoài mà không mang ô\n\nNếu trời mưa bất chợt, bạn có thể mua ô ở cửa hàng tiện lợi hoặc Daiso. Một lựa chọn khác là thay đổi tuyến đường của bạn đến quán cà phê trong nhà, bảo tàng hoặc trung tâm mua sắm dưới lòng đất hoặc sử dụng taxi cho những đoạn đường ngắn. Nếu sử dụng lối đi nối ga tàu điện ngầm, bạn sẽ ít gặp mưa hơn.",
+        "th": "วันที่ฝนตก\n\nรู้สึกเขินอายเมื่อออกไปข้างนอกโดยไม่มีร่ม\n\nหากจู่ๆ ฝนตก คุณสามารถซื้อร่มได้ที่ร้านสะดวกซื้อหรือไดโซะ อีกทางเลือกหนึ่งคือเปลี่ยนเส้นทางของคุณไปร้านกาแฟในร่ม พิพิธภัณฑ์ หรือห้างสรรพสินค้าใต้ดิน หรือใช้แท็กซี่เป็นช่วงสั้นๆ หากใช้ทางเชื่อมระหว่างสถานีรถไฟใต้ดินก็จะโดนฝนน้อยลง",
+        "ru": "дождливый день\n\nСмущаться, когда выходишь на улицу без зонтика\n\nЕсли вдруг пойдет дождь, вы можете купить зонтик в магазине или Daiso. Другой вариант — сменить маршрут на крытое кафе, музей или подземный торговый центр или воспользоваться такси на коротких участках. Если вы воспользуетесь переходом, соединяющим станцию ​​метро, ​​вы будете меньше подвержены воздействию дождя.",
+        "zh-Hant": "下雨天\n\n出門沒傘很尷尬\n\n如果突然下雨，可以在便利商店或大創購買雨傘。另一個選擇是更改路線前往室內咖啡館、博物館或地下購物中心，或短途搭乘計程車。如果使用連接地鐵站的通道，就可以減少淋雨的機會。"
+      }
+    ],
+    "restaurantBody": [
+      {
+        "type": "text",
+        "ko": "식당 이용\n\n해외 식당의 규칙을 그대로 적용하는 것\n\n직원이 주문을 받으러 올 때까지 기다렸는데 테이블 옆에 호출벨이 있거나, 물과 반찬을 요청하려 했는데 셀프 코너가 따로 마련돼 있는 경우가 있습니다. 최근에는 키오스크나 태블릿으로 직접 주문하는 식당도 늘어, 한국어에 익숙하지 않은 여행객에게 또 다른 장벽이 되고 있습니다.\n\n반대로 일부 외국인은 한국에서도 팁을 줘야 한다고 생각해 계산 후 현금을 테이블에 두거나, 카드 결제 금액에 팁을 추가할 방법을 찾습니다. 한국의 일반 음식점에서는 팁 문화가 일반적이지 않습니다.\n\n해외에서는 직원이 테이블로 계산서를 가져오는 식당이 많지만, 한국의 일반 음식점에서는 식사를 마친 뒤 출입구 근처 계산대로 직접 이동해 결제하는 경우가 흔합니다.",
+        "en": "Dining\n\nAssuming restaurants work the same as abroad\n\nYou might wait for staff to take your order when there is a call bell at the table, or ask for water and side dishes when there is a self-service station. More places now use kiosks or tablets for ordering, which can be another hurdle if you do not read Korean.\n\nSome visitors also think they should leave a tip in Korea, leaving cash on the table or looking for a way to add tip on a card payment. Tipping is not common at typical Korean restaurants.\n\nAbroad, staff often bring the bill to your table. In many Korean restaurants, you finish eating and then pay at the counter near the entrance.",
+        "ja": "食事のマナー\n\n海外のレストランのルールをそのまま当てはめること\n\n店員が注文を取りに来るまで待っていたら、テーブル横に呼び出しベルがあったり、水やおかずを頼もうとしたらセルフコーナーが別にあったりします。最近はキオスクやタブレットで自分で注文する店も増え、韓国語に慣れていない旅行者には別のハードルになっています。\n\nまた、韓国でもチップが必要だと思い、会計後に現金をテーブルに置いたり、カード支払いにチップを足す方法を探す人もいます。一般的な韓国の飲食店ではチップ文化は一般的ではありません。\n\n海外では店員がテーブルに伝票を持ってくる店が多いですが、韓国の一般的な飲食店では食事後に入口付近の会計カウンターへ自分で行って支払うことがよくあります。",
+        "vi": "sử dụng nhà hàng\n\nÁp dụng các quy tắc của nhà hàng ở nước ngoài như hiện tại\n\nCó những lúc mình đợi nhân viên nhận order mà cạnh bàn có chuông gọi, hoặc lúc mình định gọi nước và đồ ăn kèm thì có góc tự phục vụ riêng. Gần đây, số lượng nhà hàng đặt hàng trực tiếp từ ki-ốt hoặc máy tính bảng ngày càng tăng, tạo ra một rào cản khác cho những du khách không quen với tiếng Hàn.\n\nNgược lại, một số người nước ngoài cho rằng việc boa cũng cần thiết ở Hàn Quốc nên để lại tiền mặt trên bàn sau khi thanh toán hoặc tìm cách cộng thêm tiền boa vào số tiền thanh toán bằng thẻ. Văn hóa tip không phổ biến ở các nhà hàng thông thường ở Hàn Quốc.\n\nỞ nước ngoài, có nhiều nhà hàng mà nhân viên mang hóa đơn đến bàn, nhưng ở các nhà hàng Hàn Quốc, bạn thường đến thẳng quầy thu ngân gần lối vào và thanh toán sau khi dùng bữa xong.",
+        "th": "การใช้ร้านอาหาร\n\nนำกฎเกณฑ์ของร้านอาหารต่างประเทศมาใช้ตามที่เป็นอยู่\n\nมีหลายครั้งที่ผมรอพนักงานรับออเดอร์แล้วมีเสียงกริ่งอยู่ข้างโต๊ะ หรือเมื่อผมพยายามขอน้ำและเครื่องเคียงก็มีมุมบริการตนเองแยกต่างหาก ล่าสุดจำนวนร้านอาหารที่สั่งอาหารโดยตรงจากคีออสหรือแท็บเล็ตได้เพิ่มขึ้น ทำให้เกิดอุปสรรคสำหรับนักเดินทางที่ไม่คุ้นเคยกับภาษาเกาหลี\n\nในทางกลับกัน ชาวต่างชาติบางคนเชื่อว่าการให้ทิปเป็นสิ่งจำเป็นในเกาหลีเช่นกัน ดังนั้นพวกเขาจึงทิ้งเงินสดไว้บนโต๊ะหลังจากชำระเงินหรือหาวิธีเพิ่มทิปในจำนวนเงินที่ชำระด้วยบัตร วัฒนธรรมการให้ทิปไม่ได้พบเห็นได้ทั่วไปในร้านอาหารทั่วไปในเกาหลี\n\nในต่างประเทศมีร้านอาหารหลายแห่งที่พนักงานนำบิลมาวางที่โต๊ะ แต่ในร้านอาหารเกาหลี เป็นเรื่องปกติที่จะไปที่เครื่องบันทึกเงินสดใกล้ทางเข้าโดยตรงและจ่ายเงินหลังจากทานอาหารเสร็จ",
+        "ru": "Использование ресторана\n\nПрименение правил зарубежных ресторанов в их нынешнем виде\n\nБывают случаи, когда я ждал, пока сотрудник примет мой заказ, а рядом со столом звенел звонок, или когда я пытался запросить воду и гарниры, был отдельный уголок самообслуживания. В последнее время увеличилось количество ресторанов, которые делают заказы напрямую из киосков или планшетов, что создает еще один барьер для путешественников, не знающих корейский язык.\n\nИ наоборот, некоторые иностранцы считают, что чаевые необходимы и в Корее, поэтому они оставляют наличные на столе после оплаты или находят способы добавить чаевые к сумме платежа по карте. Культура чаевых не распространена в обычных ресторанах Кореи.\n\nЗа рубежом есть много ресторанов, где сотрудники приносят счет на стол, но в корейских ресторанах принято идти прямо к кассе возле входа и платить после еды.",
+        "zh-Hant": "餐廳使用\n\n依海外餐廳規定執行\n\n有時，當我等待員工接受我的訂單時，桌子旁邊有一個呼叫鈴，或者當我試圖要水和配菜時，有一個單獨的自助服務角落。最近，直接透過自助終端或平板電腦點餐的餐廳數量增加，這為不熟悉韓語的遊客帶來了另一個障礙。\n\n相反，一些外國人認為在韓國也需要給小費，因此他們付款後將現金留在桌子上，或者想方設法在卡支付金額中添加小費。在韓國的普通餐廳裡，給小費的文化並不常見。\n\n在國外，許多餐廳都是員工把帳單帶到餐桌上的，但在韓國餐廳，吃完飯後直接到門口附近的收銀台付款的情況很常見。"
+      },
+      {
+        "type": "text",
+        "ko": "팁(봉사료)\n\n한국 식당에서는 보통 팁을 주지 않습니다\n\n한국의 일반 음식점·카페에서는 팁 문화가 없습니다. 메뉴 가격에 서비스가 포함된 형태로 보는 경우가 많고, 계산 후 테이블에 현금을 남겨 두거나 카드 결제에 팁을 더하려고 하면 직원이 당황할 수 있습니다. 고급 호텔 레스토랑처럼 예외가 있어도 ‘기본값은 팁 없음’으로 기억하세요.",
+        "en": "Tipping\n\nKorea generally does not tip at restaurants\n\nAt typical Korean restaurants and cafés there is no tipping culture. Service is treated as included in the menu price. Leaving cash on the table or trying to add a tip on a card can confuse staff. A few hotel restaurants may be exceptions, but the default is: no tip.",
+        "ja": "チップ\n\n韓国の一般的な飲食店ではチップは不要です\n\n韓国の一般的なレストランやカフェにチップ文化はありません。価格にサービスが含まれていると考え、会計後に現金を置いたりカードにチップを足そうとすると店員が戸惑うことがあります。基本は「チップなし」です。",
+        "vi": "Tiền tip (phí dịch vụ)\n\nTiền boa thường không được đưa ra ở các nhà hàng Hàn Quốc.\n\nKhông có văn hóa tip trong các nhà hàng và quán cà phê thông thường ở Hàn Quốc. Dịch vụ thường được bao gồm trong giá thực đơn và nhân viên có thể bối rối nếu bạn để lại tiền mặt trên bàn sau khi thanh toán hoặc cố gắng thêm tiền boa vào thanh toán bằng thẻ. Ngay cả khi có những trường hợp ngoại lệ, chẳng hạn như trong các nhà hàng khách sạn sang trọng, hãy nhớ rằng mặc định là không có tiền boa.",
+        "th": "ทิป (ค่าบริการ)\n\nร้านอาหารเกาหลีมักจะไม่มีทิปให้\n\nไม่มีวัฒนธรรมการให้ทิปในร้านอาหารและร้านกาแฟทั่วไปในเกาหลี ราคาเมนูมักรวมบริการไว้แล้ว และพนักงานอาจสับสนหากคุณทิ้งเงินสดไว้บนโต๊ะหลังจากชำระเงินแล้ว หรือพยายามเพิ่มทิปในการชำระด้วยบัตร แม้ว่าจะมีข้อยกเว้น เช่น ในร้านอาหารของโรงแรมหรู โปรดจำไว้ว่าค่าเริ่มต้นคือไม่มีทิป",
+        "ru": "Чаевые (плата за обслуживание)\n\nВ корейских ресторанах чаевые обычно не дают.\n\nВ обычных ресторанах и кафе в Корее нет культуры чаевых. Обслуживание часто включено в стоимость меню, и персонал может запутаться, если после оплаты вы оставите на столе наличные или попытаетесь добавить чаевые к оплате картой. Даже если есть исключения, например, в ресторанах роскошных отелей, помните, что по умолчанию чаевые отсутствуют.",
+        "zh-Hant": "小費（服務費）\n\n韓國餐廳通常不給小費。\n\n韓國的普通餐廳和咖啡館沒有給小費的文化。服務通常包含在菜單價格中，如果您付款後將現金留在桌子上或嘗試在卡付款中添加小費，工作人員可能會感到困惑。即使有例外情況，例如在豪華酒店的餐廳，請記住默認情況下是不給小費的。"
+      },
+      {
+        "type": "callout",
+        "ko": "정리: 한국 식당에서는 팁을 주지 않는 것이 보통입니다. 계산은 카운터에서, 금액은 영수증 그대로 내면 됩니다.",
+        "en": "Bottom line: tipping is not expected at Korean restaurants. Pay at the counter for the receipt total.",
+        "ja": "要点: 韓国の飲食店ではチップ不要が普通。レシート金額をカウンターで支払えばOK。"
+      },
+      {
+        "type": "text",
+        "ko": "웨이팅·번호표\n\n줄 없이 바로 자리에 앉으려는 것\n\n인기 식당은 입구에서 웨이팅 앱·번호표를 쓰는 곳이 많습니다. 직원이 ‘잠시만요’라고 하면 줄을 확인하세요.",
+        "en": "Waiting lines\n\nSitting down without checking the queue\n\nPopular restaurants often use waiting apps or number tickets at the door. If staff say “one moment,” check the line first.",
+        "ja": "待ち行列\n\n列を確認せず席に座ろうとすること\n\n人気店は入口で整理券や待ちアプリを使うことが多いです。店員に言われたら列を確認しましょう。",
+        "vi": "Chờ đợi và vé số\n\nCố gắng có được chỗ ngồi ngay lập tức mà không cần xếp hàng\n\nNhiều nhà hàng nổi tiếng sử dụng ứng dụng chờ và vé số ở lối vào. Khi nhân viên nói 'Chờ một phút', hãy kiểm tra đường dây.",
+        "th": "รอและตั๋วหมายเลข\n\nพยายามหาที่นั่งทันทีโดยไม่มีเส้น\n\nร้านอาหารยอดนิยมหลายแห่งใช้แอปรอและตั๋วหมายเลขที่ทางเข้า เมื่อพนักงานพูดว่า \"รอสักครู่\" ให้ตรวจสอบสาย",
+        "ru": "Ожидание и номер билета\n\nПытаюсь занять место сразу, без очереди.\n\nМногие популярные рестораны используют приложения для ожидания и нумеруют билеты на входе. Когда сотрудник скажет: «Подождите минутку», проверьте линию.",
+        "zh-Hant": "等候及號碼牌\n\n嘗試在不排隊的情況下立即獲得座位\n\n許多受歡迎的餐廳在入口處使用等候應用程式和號碼牌。當工作人員說“請稍等”時，請檢查線路。"
+      },
+      {
+        "type": "text",
+        "ko": "물·반찬\n\n물과 반찬을 전부 직원이 가져다 줄 거라 생각하는 것\n\n셀프 코너에서 물·수저·반찬을 가져오는 식당이 많습니다. 주변을 한 번 둘러보세요.",
+        "en": "Water and side dishes\n\nWaiting for staff to bring everything\n\nMany places have a self-serve station for water, utensils, and banchan. Look around once you sit.",
+        "ja": "水・おかず\n\n全部店員が運んでくれると思い込むこと\n\nセルフコーナーで水・箸・おかずを取る店が多いです。座ったら周囲を見てみましょう。",
+        "vi": "Nước, món ăn kèm\n\nNghĩ rằng nhân viên sẽ mang hết nước và món ăn kèm lên.\n\nCó nhiều nhà hàng mang nước, dao kéo, đồ ăn kèm từ góc tự phục vụ. Hãy nhìn xung quanh.",
+        "th": "น้ำเครื่องเคียง\n\nโดยคิดว่าพนักงานจะนำน้ำและเครื่องเคียงมาให้หมด\n\nมีร้านอาหารหลายร้านที่นำน้ำ ช้อนส้อม และเครื่องเคียงจากมุมบริการตนเอง ลองมองไปรอบ ๆ",
+        "ru": "Вода, гарниры\n\nДумая, что персонал принесет всю воду и гарниры.\n\nВо многих ресторанах воду, столовые приборы и гарниры приносят из уголка самообслуживания. Посмотрите вокруг.",
+        "zh-Hant": "水、配菜\n\n以為工作人員會把所有的水和配菜都帶來。\n\n許多餐廳都從自助服務角落提供水、餐具和配菜。看看周圍。"
+      }
+    ],
+    "transportBody": [
+      {
+        "type": "text",
+        "ko": "버스 하차·환승\n\n버스에서 내릴 때 카드를 찍지 않는 것\n\n버스는 내릴 때도 단말기에 태그해야 요금·환승이 맞게 잡히는 경우가 많습니다. 교통카드 구입·충전은 ‘떠나기 전에 → 돈’을 보세요. 환승 안내는 지도 앱 경로를 따르면 됩니다.",
+        "en": "Bus tap-out & transfers\n\nNot tapping when you get off the bus\n\nOn buses you usually need to tap again when you exit for the fare/transfer to calculate correctly. Buy and top up cards under Before You Go → Money. Follow map-app routes for transfers.",
+        "ja": "バス降車・乗換\n\nバス降車時にカードをタッチしないこと\n\nバスは降りるときもタッチしないと運賃・乗換が正しく計算されないことが多いです。カード購入・チャージは「出発前に → お金」。乗換は地図アプリの経路に従えばOK。",
+        "vi": "Xuống/chuyển từ xe buýt\n\nKhông quẹt thẻ khi xuống xe\n\nKhi xuống xe, bạn thường phải tag trạm cuối để lấy đúng giá vé và chuyển tuyến. Để mua và nạp thẻ giao thông, hãy xem phần 'Trước khi bạn rời đi → Tiền'. Để biết thông tin chuyển khoản, chỉ cần làm theo lộ trình ứng dụng bản đồ.",
+        "th": "การลงรถ/การต่อรถ\n\nไม่รูดบัตรเมื่อลงรถ\n\nเมื่อลงจากรถบัส คุณมักจะต้องแท็กอาคารผู้โดยสารเพื่อรับค่าโดยสารและการโอนที่ถูกต้อง สำหรับการซื้อและเติมเงินบัตรโดยสาร โปรดดูที่ 'ก่อนออกเดินทาง → เงิน' สำหรับข้อมูลการโอน เพียงทำตามเส้นทางแอพแผนที่",
+        "ru": "Выход/высадка из автобуса\n\nНе проводить карту при выходе из автобуса\n\nВыходя из автобуса, вам часто приходится отмечать терминал, чтобы получить правильный тариф и трансфер. О покупке и пополнении транспортных карт см. «Перед отъездом → Деньги». Для получения информации о трансфере просто следуйте маршруту приложения карты.",
+        "zh-Hant": "下車/換乘巴士\n\n下車時不刷卡\n\n下車時，您通常必須在終點站貼上標籤才能獲得正確的票價和轉乘服務。如需交通卡的購買和儲值，請參閱「出發前→貨幣」。有關換乘信息，只需遵循地圖應用程式路線即可。"
+      },
+      {
+        "type": "text",
+        "ko": "출퇴근 혼잡\n\n출퇴근 시간에 관광지로 이동하는 것\n\n평일 07–09시, 18–20시 지하철·버스는 매우 붐빕니다. 가능하면 이 시간을 피하거나, 짐이 많으면 택시를 고려하세요.",
+        "en": "Rush hour\n\nSightseeing during commute peaks\n\nWeekdays 7–9 a.m. and 6–8 p.m. are packed. Avoid those times if you can, or take a taxi with heavy bags.",
+        "ja": "通勤ラッシュ\n\nラッシュ時間に観光地へ移動すること\n\n平日7–9時・18–20時はとても混みます。可能なら避け、荷物が多いときはタクシーも検討を。",
+        "zh": "通勤高峰\n\n高峰时段去景点移动\n\n工作日 7–9 点、18–20 点地铁公交很挤。尽量避开；行李多时可考虑出租车。",
+        "vi": "ùn tắc đi lại\n\nDi chuyển đến các địa điểm du lịch vào giờ cao điểm\n\nTàu điện ngầm và xe buýt rất đông đúc vào các ngày trong tuần từ 07:00 đến 09:00 và 18:00 đến 20:00. Hãy tránh thời gian này nếu có thể, hoặc cân nhắc đi taxi nếu bạn có nhiều hành lý.",
+        "th": "ความแออัดในการเดินทาง\n\nการเดินทางไปยังสถานที่ท่องเที่ยวในช่วงเวลาเร่งด่วน\n\nรถไฟใต้ดินและรถโดยสารจะหนาแน่นมากในวันธรรมดาระหว่างเวลา 07:00 น. - 09:00 น. และ 18:00 น. - 20:00 น. หลีกเลี่ยงเวลานี้ถ้าเป็นไปได้ หรือลองนั่งแท็กซี่ถ้าคุณมีสัมภาระเยอะ",
+        "ru": "пробки на работе\n\nПоездка в туристические места в час пик\n\nМетро и автобусы очень переполнены в будние дни с 07:00 до 09:00 и с 18:00 до 20:00. По возможности избегайте этого времени или подумайте о том, чтобы взять такси, если у вас много багажа.",
+        "zh-Hant": "通勤擁堵\n\n尖峰時段前往旅遊目的地\n\n工作日 07:00 至 09:00 和 18:00 至 20:00 地鐵和公車非常擁擠。盡可能避開這個時間，或者如果您有很多行李，請考慮搭乘計程車。"
+      },
+      {
+        "type": "text",
+        "ko": "지하철 출구\n\n아무 출구로 나와 길을 잃는 것\n\n같은 역이라도 출구 번호에 따라 도착지가 크게 달라집니다. 지도 앱에서 추천 출구를 확인한 뒤 나오세요.",
+        "en": "Subway exits\n\nLeaving through a random exit\n\nExit numbers matter a lot. Check the recommended exit in your map app before you leave the station.",
+        "ja": "地下鉄の出口\n\n適当な出口で出て道に迷うこと\n\n出口番号で到着地が大きく変わります。地図アプリで推奨出口を確認してから出ましょう。",
+        "zh": "地铁出口\n\n随便找个出口就出站\n\n同一车站出口编号差别很大。出站前先在地图 App 确认推荐出口。",
+        "vi": "lối ra tàu điện ngầm\n\nĐi ra bất kỳ lối ra nào và bị lạc\n\nNgay cả ở cùng một ga, điểm đến cũng khác nhau rất nhiều tùy thuộc vào số lối ra. Kiểm tra lối ra được đề xuất trên ứng dụng bản đồ rồi thoát ra.",
+        "th": "ทางออกรถไฟใต้ดิน\n\nออกไปทางออกใดก็ได้แล้วหลงทาง\n\nแม้จะอยู่ที่สถานีเดียวกัน จุดหมายปลายทางก็แตกต่างกันไปขึ้นอยู่กับหมายเลขทางออก ตรวจสอบทางออกที่แนะนำบนแอพแผนที่แล้วออก",
+        "ru": "выход из метро\n\nВыйдите из любого выхода и заблудитесь\n\nДаже на одной и той же станции пункт назначения сильно различается в зависимости от номера выхода. Проверьте рекомендуемый выход в приложении карты, а затем выйдите.",
+        "zh-Hant": "地鐵出口\n\n走出任何出口就會迷路\n\n即使在同一車站，根據出口編號的不同，目的地也有很大差異。在地圖應用程式上查看建議出口，然後退出。"
+      },
+      {
+        "type": "text",
+        "ko": "지하철·버스 매너\n\n출입문 앞에서 막거나 큰 소리로 통화하는 것\n\n내릴 사람이 먼저 나온 뒤 타고, 배려석은 필요한 분께 양보하는 분위기가 있습니다. 통화·영상은 이어폰을 쓰고 목소리를 낮추면 편합니다. 배낭은 앞에서 안거나 내려 두면 혼잡할 때 덜 부딪힙니다.",
+        "en": "Subway & bus etiquette\n\nBlocking the doors or taking loud phone calls\n\nLet exiting riders leave first, and offer priority seats when someone needs them. Use earphones and keep voices low for calls/videos. Wear your backpack in front or set it down in crowds.",
+        "ja": "地下鉄・バスのマナー\n\nドア前で塞ぐ、大きな声で通話する\n\n降りる人が先。優先席は必要な人へ。通話・動画はイヤホンで声を控えめに。混雑時はリュックを前に抱えるか下ろすとぶつかりにくいです。",
+        "vi": "Nghi thức đi tàu điện ngầm và xe buýt\n\nChặn cửa hoặc nói chuyện lớn tiếng trên điện thoại\n\nCó một bầu không khí nơi mọi người xuống xe trước rồi lên xe, và những ghế ưu tiên được dành cho những người có nhu cầu. Đối với các cuộc gọi và video, việc đeo tai nghe và hạ giọng sẽ dễ dàng hơn. Nếu bạn mang ba lô hoặc đặt nó xuống trước mặt, nó sẽ ít có khả năng va vào bạn khi đông người.",
+        "th": "มารยาทในการใช้รถไฟใต้ดินและรถบัส\n\nขวางประตูหรือคุยโทรศัพท์เสียงดัง\n\nมีบรรยากาศที่ผู้คนลงจากรถก่อนแล้วจึงขึ้นรถ และมอบที่นั่งพิเศษให้กับผู้ที่ต้องการ สำหรับการโทรและวิดีโอ การสวมหูฟังและลดเสียงจะง่ายกว่า หากคุณสะพายเป้หรือวางมันไว้ข้างหน้า โอกาสที่จะชนคุณน้อยลงเมื่อมีผู้คนพลุกพล่าน",
+        "ru": "Этикет в метро и автобусе\n\nБлокировать дверь или громко разговаривать по телефону\n\nСоздается атмосфера, когда люди сначала выходят, а потом садятся, а приоритетные места отдаются тем, кто в них нуждается. Для звонков и видео проще надеть наушники и понизить голос. Если вы несете свой рюкзак или кладете его перед собой, вероятность того, что он наткнется на вас, когда там много людей, будет меньше.",
+        "zh-Hant": "捷運、公車禮儀\n\n堵門或大聲打電話\n\n形成了先下後上的氛圍，優先座位給需要的人。對於通話和視頻，戴上耳機並降低聲音更容易。如果你背著背包或把它放在你面前，那麼在擁擠的時候它就不太可能撞到你。"
+      }
+    ],
+    "noTipTitle": "小费（服务费）",
+    "noTipMistake": "韩国餐馆通常不给小费。",
+    "noTipBody": "韩国的普通餐馆和咖啡馆没有小费文化。通常无需在桌子上留下现金或在付款后在您的卡上添加小费。",
+    "catDailyIntro": "地图、垃圾、周末房价、雨天等旅行中常见的日常提示。",
+    "catRestaurantIntro": "点餐、小费、排队与自助区 — 进店就能用的贴士。",
+    "catTransportIntro": "下车刷卡、高峰、出口与简单礼仪。票价与办卡准备见「出发前」。",
+    "catShoppingIntro": "在这里查看 Olive Young、大创、免税店和市场提示。（无单独页面跳转）",
+    "tabMap": "地图 App",
+    "tabCash": "现金·刷卡",
+    "tabTrash": "垃圾桶",
+    "tabWifi": "Wi-Fi",
+    "tabWeekend": "周末住宿",
+    "tabOrder": "点餐·结账",
+    "tabNoTip": "小费",
+    "tabQueue": "排队",
+    "tabWater": "水·小菜",
+    "tabCard": "下车·换乘",
+    "tabRush": "通勤高峰",
+    "tabTaxi": "出租车",
+    "tabExit": "地铁出口",
+    "tabOlive": "Olive Young",
+    "tabDaiso": "Daiso",
+    "tabDuty": "免税·退税",
+    "tabMarket": "市场·商圈",
+    "tabConvenience": "便利店",
+    "convenienceTitle": "便利店",
+    "convenienceMistake": "觉得便利店只能买零食",
+    "convenienceBody": "CU、GS25、7-Eleven 随处可见。可买简单餐食饮料、雨伞与洗漱用品，以及轻量的医药品/外用品（膏药、创可贴等；需咨询的药品请去药房）。部分门店有充电宝租借或充电角。组合吃法也可看站内便利店指南。",
+    "tabRain": "下雨天",
+    "rainTitle": "下雨天",
+    "rainMistake": "突然下雨却毫无准备",
+    "rainBody": "骤雨时可在便利店或大创买伞。改去咖啡店、博物馆或地下商场，短途也可打车。多利用地铁连通道少淋雨。",
+    "tabEtiquette": "地铁礼仪",
+    "etiquetteTitle": "地铁·公交礼仪",
+    "etiquetteMistake": "挡在车门前或大声通话",
+    "etiquetteBody": "先下后上；优先座留给有需要的人。通话/看视频请戴耳机并压低音量。拥挤时把背包拿到身前或放下，少碰撞。",
+    "mapCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/map.jpg"
+      }
+    ],
+    "trashCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/trash.jpg"
+      }
+    ],
+    "weekendCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/weekend.jpg"
+      }
+    ],
+    "convenienceCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/convenience.jpg"
+      }
+    ],
+    "rainCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/rain.jpg"
+      }
+    ],
+    "orderCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/order.jpg"
+      }
+    ],
+    "noTipCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/notip.jpg"
+      }
+    ],
+    "queueCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/queue.jpg"
+      }
+    ],
+    "waterCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/water.jpg"
+      }
+    ],
+    "cardCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/card.jpg"
+      }
+    ],
+    "rushCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/rush.jpg"
+      }
+    ],
+    "exitCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/exit.jpg"
+      }
+    ],
+    "etiquetteCover": [
+      {
+        "type": "image",
+        "src": "Images/travel-tips/etiquette.jpg"
+      }
+    ],
+    "tabConvenienceShop": "购物",
+    "tabPromo": "2+1·活动",
+    "catConvenience": "便利店",
+    "catConvenienceIntro": "将便利店使用方法、购物与2+1活动提示分为三项整理。",
+    "tabConvenienceUse": "使用"
+  }
+}

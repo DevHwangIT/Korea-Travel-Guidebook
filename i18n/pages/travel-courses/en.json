@@ -1,0 +1,20 @@
+{
+  "travelCourses": {
+    "pageTitle": "Travel course recommendations | Korea Travel Guide",
+    "title": "Travel course recommendations",
+    "intro": "We are preparing travel courses by region and trip length.",
+    "catPickLabel": "Schedule",
+    "catDay": "Day trip",
+    "cat1n2d": "1 night 2 days",
+    "cat2n3d": "2 nights 3 days",
+    "cat3n4d": "3 nights 4 days",
+    "empty": "No recommended courses yet",
+    "regionPickLabel": "Region",
+    "regionSeoul": "Seoul",
+    "regionGyeonggi": "Gyeonggi",
+    "regionIncheon": "Incheon",
+    "regionGyeongju": "Gyeongju",
+    "regionBusan": "Busan",
+    "regionJeju": "Jeju Island"
+  }
+}

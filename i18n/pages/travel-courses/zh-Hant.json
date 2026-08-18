@@ -1,0 +1,20 @@
+{
+  "travelCourses": {
+    "pageTitle": "旅遊路線推薦 | Korea Travel Guide",
+    "title": "旅遊路線推薦",
+    "intro": "我們正在依地區與行程長度準備旅遊路線。",
+    "catPickLabel": "行程",
+    "catDay": "當日",
+    "cat1n2d": "1晚2天",
+    "cat2n3d": "2晚3天",
+    "cat3n4d": "3晚4天",
+    "empty": "暫無推薦路線",
+    "regionPickLabel": "地區",
+    "regionSeoul": "首爾",
+    "regionGyeonggi": "京畿",
+    "regionIncheon": "仁川",
+    "regionGyeongju": "慶州",
+    "regionBusan": "釜山",
+    "regionJeju": "濟州島"
+  }
+}

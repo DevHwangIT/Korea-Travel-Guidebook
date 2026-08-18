@@ -45,6 +45,7 @@ SYNC_KEYS = (
     "previewImage",
     "phone",
     "hours",
+    "region",
 )
 
 

@@ -38,6 +38,7 @@ from lib.place_scrape import (  # noqa: E402
     scrape_naver_place,
 )
 from lib.scaffold import sync_all_shop_page_visuals, sync_shop_page_visual  # noqa: E402
+from lib.region_parse import apply_region_from_location  # noqa: E402
 from lib.shop_maps import (  # noqa: E402
     apply_maps_and_preview,
     google_embed_from_coords,
@@ -63,6 +64,7 @@ SYNC_KEYS = (
     "menuItems",
     "category",
     "score",
+    "region",
 )
 
 
@@ -195,14 +197,34 @@ def enrich_one(
         updated["name"] = scraped["name"]
     if scraped.get("address"):
         updated["location"] = scraped["address"]
+    # Managed region taxonomy (city/district/dong) from location address
+    if str(updated.get("location") or "").strip():
+        if apply_region_from_location(updated):
+            notes.append(
+                "region: "
+                f"{updated['region'].get('city', '')}/"
+                f"{updated['region'].get('district', '')}/"
+                f"{updated['region'].get('dong', '')}"
+            )
+        else:
+            updated.pop("region", None)
+            notes.append("region: parse failed")
     if scraped.get("phone"):
         updated["phone"] = scraped["phone"]
     if scraped.get("hours"):
         updated["hours"] = scraped["hours"]
     if scraped.get("about"):
         old_about = str(entry.get("about") or "").strip()
-        if not old_about or scraped.get("score") or len(scraped["about"]) >= len(old_about):
-            updated["about"] = scraped["about"]
+        new_about = str(scraped["about"]).strip()
+        # Prefer longer merchant/editorial text; never overwrite a good intro
+        # with empty or amenity/rating-only scrapes (those are stripped upstream).
+        if not old_about or (
+            new_about
+            and "방문자 평점" not in new_about
+            and not new_about.startswith("편의:")
+            and len(new_about) >= len(old_about)
+        ):
+            updated["about"] = new_about
     if scraped.get("category"):
         updated["category"] = scraped["category"]
     if scraped.get("score"):

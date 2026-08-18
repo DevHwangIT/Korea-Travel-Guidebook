@@ -406,27 +406,39 @@ def _hours_from_list_item(item: dict[str, Any]) -> str:
 
 
 def _about_from_base(base: dict[str, Any]) -> str:
-    parts: list[str] = []
-    road = str(base.get("road") or "").strip()
-    if road:
-        parts.append(road)
-    score = base.get("visitorReviewsScore")
-    total = base.get("visitorReviewsTotal")
-    if score is not None:
-        try:
-            score_s = f"{float(score):.2g}"
-        except (TypeError, ValueError):
-            score_s = str(score)
-        review_bit = f"방문자 평점 {score_s}"
-        if total:
-            review_bit += f" ({total}명)"
-        parts.append(review_bit)
-    conv = base.get("conveniences")
-    if isinstance(conv, list) and conv:
-        labels = [str(x).strip() for x in conv if str(x).strip()]
-        if labels:
-            parts.append("편의: " + ", ".join(labels[:8]))
-    return " ".join(parts)[:400]
+    """Shop intro text for guidebooks — never dump ratings / amenity lists.
+
+    Prefer a short editorial blurb from Naver when present; otherwise empty
+    so CMS / batch scripts can write a real intro. ``road`` is often the
+    merchant 'how to find us' tip (not roadAddress).
+    """
+    for key in ("description", "microReview", "blogReview", "road"):
+        val = base.get(key)
+        if isinstance(val, str) and val.strip():
+            text = val.strip()
+            # Reject obvious scrap junk / amenity dumps
+            if "방문자 평점" in text or "편의:" in text:
+                text = re.sub(
+                    r"방문자\s*평점\s*[\d.]+\s*(?:\([\d,.]+\s*명?\))?",
+                    " ",
+                    text,
+                )
+                text = re.sub(r"편의\s*[:：]\s*.*$", " ", text)
+                text = re.sub(r"\s{2,}", " ", text).strip(" \t,·•")
+            if not text or len(text) < 8:
+                continue
+            # Skip if it's basically the same as the address
+            addr = str(base.get("roadAddress") or base.get("address") or "").strip()
+            if addr and text.replace(" ", "") == addr.replace(" ", ""):
+                continue
+            return text[:400]
+        if isinstance(val, list):
+            bits = [str(x).strip() for x in val if str(x).strip()]
+            if bits:
+                joined = " ".join(bits[:3])
+                if "방문자 평점" not in joined and "편의:" not in joined:
+                    return joined[:400]
+    return ""
 
 
 def scrape_naver_place(

@@ -1,0 +1,20 @@
+{
+  "travelCourses": {
+    "pageTitle": "여행 코스 추천 | Korea Travel Guide",
+    "title": "여행 코스 추천",
+    "intro": "지역과 일정 길이에 맞는 여행 코스를 준비하고 있습니다.",
+    "catPickLabel": "일정",
+    "catDay": "당일",
+    "cat1n2d": "1박2일",
+    "cat2n3d": "2박3일",
+    "cat3n4d": "3박4일",
+    "empty": "추천 코스가 없습니다",
+    "regionPickLabel": "지역",
+    "regionSeoul": "서울",
+    "regionGyeonggi": "경기",
+    "regionIncheon": "인천",
+    "regionGyeongju": "경주",
+    "regionBusan": "부산",
+    "regionJeju": "제주도"
+  }
+}

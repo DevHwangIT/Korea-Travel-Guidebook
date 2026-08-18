@@ -1,0 +1,25 @@
+{
+  "festivals": {
+    "pageTitle": "축제 및 행사 | Korea Travel Guide",
+    "title": "축제 및 행사",
+    "intro": "지역별 축제·행사는 공식 관광 사이트에서 확인하세요.",
+    "back": "← 축제 및 행사",
+    "linksTitle": "공식 안내",
+    "linkVisitKoreaEyebrow": "VisitKorea",
+    "linkVisitKoreaTitle": "한국관광공사 축제·행사",
+    "linkVisitKoreaDesc": "대한민국 구석구석 축제 허브 — 추천·테마·지역별 행사.",
+    "linkNationwideEyebrow": "Festivals",
+    "linkNationwideTitle": "전국 축제 검색",
+    "linkNationwideDesc": "개최중·예정 축제를 지역·시기로 찾아볼 수 있습니다.",
+    "linkKoreanVisitEyebrow": "구석구석",
+    "linkKoreanVisitTitle": "대한민국 구석구석",
+    "linkKoreanVisitDesc": "한국관광공사 공식 국내 여행 포털 — 여행지·코스·행사 안내.",
+    "linkVisitKoreaEnEyebrow": "English",
+    "linkVisitKoreaEnTitle": "VisitKorea (English)",
+    "linkVisitKoreaEnDesc": "해외 여행객용 한국관광공사 공식 영문 사이트.",
+    "openExternal": "새 창에서 열기 →",
+    "sourceLabel": "출처",
+    "sourceName": "한국관광공사 VisitKorea · 대한민국 구석구석",
+    "sourceNote": "일정은 주최 측 사정으로 변경될 수 있으니, 위 공식 사이트에서 최신 정보를 확인하세요."
+  }
+}

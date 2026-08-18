@@ -1,0 +1,20 @@
+{
+  "travelCourses": {
+    "pageTitle": "Рекомендации туристических маршрутов | Korea Travel Guide",
+    "title": "Рекомендации туристических маршрутов",
+    "intro": "Мы готовим маршруты по регионам и длительности поездки.",
+    "catPickLabel": "Расписание",
+    "catDay": "Однодневный",
+    "cat1n2d": "1 ночь 2 дня",
+    "cat2n3d": "2 ночи 3 дня",
+    "cat3n4d": "3 ночи 4 дня",
+    "empty": "Рекомендуемых маршрутов пока нет",
+    "regionPickLabel": "Регион",
+    "regionSeoul": "Сеул",
+    "regionGyeonggi": "Кёнги",
+    "regionIncheon": "Инчхон",
+    "regionGyeongju": "Кёнджу",
+    "regionBusan": "Пусан",
+    "regionJeju": "Чеджу"
+  }
+}

@@ -201,6 +201,7 @@ def _localize_scalars(bundle: dict, shops: list[dict]) -> BatchStatus:
                 "menuItems",
                 "category",
                 "score",
+                "region",
             ):
                 if key in ko:
                     entry[key] = ko[key]

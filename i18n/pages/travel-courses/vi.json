@@ -1,0 +1,20 @@
+{
+  "travelCourses": {
+    "pageTitle": "Gợi ý lộ trình du lịch | Korea Travel Guide",
+    "title": "Gợi ý lộ trình du lịch",
+    "intro": "Chúng tôi đang chuẩn bị lộ trình theo khu vực và độ dài chuyến đi.",
+    "catPickLabel": "Lịch trình",
+    "catDay": "Trong ngày",
+    "cat1n2d": "1 đêm 2 ngày",
+    "cat2n3d": "2 đêm 3 ngày",
+    "cat3n4d": "3 đêm 4 ngày",
+    "empty": "Chưa có lộ trình đề xuất",
+    "regionPickLabel": "Khu vực",
+    "regionSeoul": "Seoul",
+    "regionGyeonggi": "Gyeonggi",
+    "regionIncheon": "Incheon",
+    "regionGyeongju": "Gyeongju",
+    "regionBusan": "Busan",
+    "regionJeju": "Jeju"
+  }
+}

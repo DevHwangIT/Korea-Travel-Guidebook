@@ -1,24 +1,42 @@
 # -*- coding: utf-8 -*-
-"""Regenerate i18n/messages.js from locale JSON files.
+"""Regenerate i18n/messages.js from locale JSON sources.
+
+Merge order (per language):
+  1. i18n/{lang}.json          — residual / assembled fallback (if present)
+  2. i18n/common/{lang}.json   — shared keys
+  3. i18n/pages/**/{lang}.json — page-group locales
+
+Also writes the merged result back to i18n/{lang}.json as the canonical
+assembled mirror (CMS / tooling can keep reading that path).
+
+Runtime contract: window.__I18N_MESSAGES__ in messages.js (unchanged).
 
 Supported: ko, en, ja, zh, zh-Hant, vi, th, ru (keep in sync with js/i18n.js GUIDE_LANGS).
-To add a language:
-  1. Add code to LANGS below and create i18n/{code}.json
-  2. Add { code, label } in js/i18n.js GUIDE_LANGS
-  3. See i18n/README-locales.md
+See i18n/README-locales.md and i18n/locale_routing.py.
 """
+from __future__ import annotations
+
 import json
+import sys
 from pathlib import Path
 
-# Data-driven locale list — keep in sync with js/i18n.js GUIDE_LANGS
-LANGS = ("ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru")
+ROOT = Path(__file__).resolve().parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-root = Path(__file__).resolve().parent
-messages = {
-    lang: json.loads((root / f"{lang}.json").read_text(encoding="utf-8"))
-    for lang in LANGS
-}
-(root / "messages.js").write_text(
+from locale_routing import (  # noqa: E402
+    LANGS,
+    load_merged_lang,
+    write_assembled_lang,
+)
+
+messages = {}
+for lang in LANGS:
+    merged = load_merged_lang(lang)
+    write_assembled_lang(lang, merged)
+    messages[lang] = merged
+
+(ROOT / "messages.js").write_text(
     "window.__I18N_MESSAGES__ = "
     + json.dumps(messages, ensure_ascii=False, indent=2)
     + ";\n",

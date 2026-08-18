@@ -11,7 +11,6 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 COORDS = ROOT / "data" / "places" / "places-coords.js"
-I18N = ROOT / "i18n"
 IMG = ROOT / "Images" / "places"
 
 TERMINALS = [
@@ -495,6 +494,10 @@ def patch_coords() -> int:
 
 
 def patch_i18n() -> None:
+    """Patch places/transport via i18n_store (routes to pages/ + assembled mirror)."""
+    sys.path.insert(0, str(ROOT / "tool"))
+    from lib import i18n_store  # noqa: WPS433
+
     transport_keys = {
         "legendBusTerminal": {
             "ko": "버스터미널",
@@ -588,21 +591,17 @@ def patch_i18n() -> None:
         },
     }
 
-    for lang in ("ko", "en", "ja", "zh", "zh-Hant", "vi", "th", "ru"):
-        path = I18N / f"{lang}.json"
-        data = json.loads(path.read_text(encoding="utf-8"))
+    bundle = i18n_store.load_all()
+    for lang in i18n_store.LANGS:
+        data = bundle[lang]
         tr = data.setdefault("transport", {})
         for key, locales in transport_keys.items():
             tr[key] = locales.get(lang) or locales["en"]
         places = data.setdefault("places", {})
         for t in TERMINALS:
             places[t["slug"]] = entry_for_lang(lang, t)
-        path.write_text(
-            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-            newline="\n",
-        )
         print(f"i18n {lang}: +{len(TERMINALS)} terminals")
+    i18n_store.save_all(bundle)
 
 
 def download_images() -> None:
@@ -641,9 +640,8 @@ def main() -> int:
     print(f"coords added: {n}")
     patch_i18n()
     download_images()
-    # rebuild messages.js
     sys.path.insert(0, str(ROOT / "tool"))
-    from lib import i18n_store
+    from lib import i18n_store  # noqa: WPS433
 
     print(i18n_store.build_bundle())
     return 0

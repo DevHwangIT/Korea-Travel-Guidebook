@@ -29,21 +29,37 @@ TITLE_RE = re.compile(
     r'data-i18n-title\s*=\s*["\']([^"\']+)["\']', re.IGNORECASE
 )
 
+REDIRECT_MARKERS = (
+    'http-equiv="refresh"',
+    "http-equiv='refresh'",
+    "location.replace(",
+)
+
+
+def _is_redirect_page(html_path: Path) -> bool:
+    try:
+        head = html_path.read_text(encoding="utf-8", errors="ignore")[:4000].lower()
+    except OSError:
+        return False
+    return any(m.lower() in head for m in REDIRECT_MARKERS)
+
 # (slug substring regex, tags) — applied in order; union of matches.
 MEAL_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
-    (re.compile(r"malatang|tteokbokki|dakgalbi|jjimdak|yangnyeom|budae|sundubu|gamjatang|dakbokkeum|jeyuk|jjolmyeon"), ["spicy"]),
+    (re.compile(r"malatang|tteokbokki|dakgalbi|jjimdak|yangnyeom|budae|sundubu|gamjatang|dakbokkeum|jeyuk|jjolmyeon|nakgopsae"), ["spicy"]),
     (re.compile(r"gukbap|gomtang|samgyetang|kalguksu|sundubu|malatang|dakhanmari|budae|kongguksu|naengmyeon|gamjatang|dakbokkeum"), ["soup"]),
-    (re.compile(r"samgyeopsal|gopchang|tangsuyuk|bulgogi|bossam|tteokgalbi|jeyuk"), ["meat", "nosoup"]),
-    (re.compile(r"dak|chicken|samgyetang"), ["chicken"]),
+    (re.compile(r"samgyeopsal|gopchang|tangsuyuk|korean-chinese|bulgogi|bossam|tteokgalbi|jeyuk|galbijjim|jokbal"), ["meat", "nosoup"]),
+    (re.compile(r"dak|chicken|samgyetang|dakgangjeong"), ["chicken"]),
+    (re.compile(r"dakgangjeong|yangnyeom-chicken"), ["spicy", "nosoup", "quickbite"]),
+    (re.compile(r"doenjang"), ["soup", "warm", "mild"]),
     (re.compile(r"kimbap|bibimbap|jeon|kongguksu|naengmyeon|ganjang|makguksu"), ["light"]),
     (re.compile(r"kimbap"), ["portable", "roll", "quickbite", "nosoup"]),
-    (re.compile(r"naengmyeon|kongguksu|makguksu|jjolmyeon"), ["cold"]),
+    (re.compile(r"naengmyeon|kongguksu|makguksu|jjolmyeon|milmyeon"), ["cold"]),
     (re.compile(r"gukbap|gomtang|samgyetang|dakhanmari|kalguksu|sundubu|budae|gamjatang|dakbokkeum"), ["warm"]),
     (re.compile(r"bibimbap|jeon"), ["veggie", "mild", "nosoup"]),
-    (re.compile(r"jajang|tangsuyuk|bulgogi|bossam|tteokgalbi"), ["mild", "nosoup"]),
-    (re.compile(r"kalguksu|kongguksu|naengmyeon|jajang|makguksu|jjolmyeon"), ["noodles"]),
+    (re.compile(r"jajang|tangsuyuk|korean-chinese|bulgogi|bossam|tteokgalbi|galbijjim"), ["mild", "nosoup"]),
+    (re.compile(r"kalguksu|kongguksu|naengmyeon|jajang|korean-chinese|makguksu|jjolmyeon|milmyeon"), ["noodles"]),
     (re.compile(r"samgyeopsal|gopchang|bulgogi|tteokgalbi"), ["grill", "warm"]),
-    (re.compile(r"ganjang|gejang"), ["seafood", "nosoup"]),
+    (re.compile(r"ganjang|gejang|nakgopsae"), ["seafood", "nosoup"]),
     (re.compile(r"tteokbokki"), ["street", "quickbite"]),
 ]
 
@@ -141,6 +157,9 @@ def _category_entries(
         slug = child.name
         ov = overrides.get(slug) if isinstance(overrides.get(slug), dict) else None
         if ov and ov.get("exclude"):
+            continue
+        # Skip obsolete redirect stubs (e.g. gomtang → gukbap) even without tags exclude.
+        if _is_redirect_page(index):
             continue
         tags = _merge_tags(base_tags + _heuristic_tags(slug, heuristics), ov)
         title_key = None
