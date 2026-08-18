@@ -19,6 +19,37 @@
     if (select && select.value !== name) {
       select.value = name;
     }
+    if (kind === "courseRegion") {
+      var regionPanel = root.querySelector(
+        '[data-courseRegion-panel="' + name + '"]'
+      );
+      if (regionPanel) {
+        var nestedRoot = regionPanel.querySelector("[data-tabs]");
+        if (nestedRoot) {
+          var nestedKind = (nestedRoot.getAttribute("data-tabs") || "")
+            .split(",")[0]
+            .trim();
+          if (nestedKind) {
+            var nestedVisible = nestedRoot.querySelector(
+              "[data-" + nestedKind + "-panel]:not([hidden])"
+            );
+            if (!nestedVisible) {
+              var nestedSelect = nestedRoot.querySelector(
+                "[data-" + nestedKind + "-select]"
+              );
+              var nestedFirst = nestedSelect
+                ? nestedSelect.value ||
+                  (nestedSelect.options[0] && nestedSelect.options[0].value)
+                : nestedRoot.querySelector("[data-" + nestedKind + "-tab]") &&
+                  nestedRoot
+                    .querySelector("[data-" + nestedKind + "-tab]")
+                    .getAttribute("data-" + nestedKind + "-tab");
+              if (nestedFirst) activate(nestedRoot, nestedFirst, nestedKind);
+            }
+          }
+        }
+      }
+    }
   }
 
   function bind(root, kind, onChange) {

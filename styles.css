@@ -1502,6 +1502,103 @@ a.souvenir-card:hover {
   row-gap: 6px;
 }
 
+.travel-course-ia-label {
+  margin: 0;
+  padding: 14px 16px 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #5a6b64;
+  background: #eef3f1;
+  border-bottom: 1px solid #d9e3de;
+}
+
+@media (min-width: 641px) {
+  .travel-course-tabs > .travel-course-ia-label {
+    display: block;
+  }
+
+  .travel-course-tabs > .prep-cat-select-wrap .cat-select-label {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .travel-course-tabs > .travel-course-ia-label {
+    display: none;
+  }
+}
+
+/* Duration sub-nav: chip tabs on desktop, select on mobile (mirrors region row) */
+.travel-course-tabs .nested-tabs > .travel-course-duration-select {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .travel-course-tabs .nested-tabs > .travel-course-duration-select {
+    display: flex;
+  }
+
+  .travel-course-tabs .nested-tabs > .tab-list-sm {
+    display: none;
+  }
+}
+
+/* Travel courses: duration row fills card width (not article max-width column) */
+.travel-course-tabs > .tab-panels {
+  padding: 0;
+}
+
+.travel-course-tabs > .tab-panels > .tab-panel.guide-article,
+.travel-course-tabs > .tab-panels > .tab-panel.tip-article {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.travel-course-tabs .nested-tabs {
+  width: 100%;
+  margin-top: 0;
+}
+
+.travel-course-tabs .nested-tabs > .tab-list-sm,
+.travel-course-tabs .nested-tabs > .travel-course-duration-select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.travel-course-tabs .nested-tabs > .tab-panels {
+  width: 100%;
+}
+
+.travel-course-tabs .nested-tabs > .tab-panels > .tab-panel.guide-article,
+.travel-course-tabs .nested-tabs > .tab-panels > .tab-panel.tip-article {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 641px) {
+  .travel-course-tabs .nested-tabs > .tab-list-sm {
+    flex-wrap: nowrap;
+  }
+
+  .travel-course-tabs .nested-tabs > .tab-list-sm .tab-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .travel-course-tabs .nested-tabs > .travel-course-duration-select .cat-select {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
 .travel-course-empty {
   margin: 8px 0 0;
   padding: 28px 12px;
