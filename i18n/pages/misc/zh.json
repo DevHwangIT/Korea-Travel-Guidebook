@@ -4,7 +4,7 @@
     "title": "个人信息与广告告知",
     "intro": "korea-guidebook.cloud 静态旅行指南的个人信息与广告说明。",
     "updatedLabel": "最近更新",
-    "updatedDate": "2026-08-13",
+    "updatedDate": "2026-08-19",
     "tocPrivacy": "个人信息告知",
     "tocAds": "广告相关政策",
     "privacyTitle": "个人信息告知",
@@ -19,7 +19,8 @@
     "adsLi3": "您可在 Google 广告设置中管理广告选项。",
     "adsSettingsLink": "Google 广告设置",
     "adsHowLink": "Google 广告与数据政策",
-    "adsLi4": "广告带有广告标识，并不代表推荐任何特定商品或服务。"
+    "adsLi4": "广告带有广告标识，并不代表推荐任何特定商品或服务。",
+    "privacyLi4": "我们使用 Google Analytics 4 了解网站使用情况（每日访客、浏览量、国家/地区、设备等）。Google 可能通过 Cookie 等处理匿名化的使用数据。"
   },
   "welcome": {
     "title": "欢迎",

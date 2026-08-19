@@ -4,7 +4,7 @@
     "title": "개인정보·광고 고지",
     "intro": "korea-guidebook.cloud 정적 여행 가이드의 개인정보와 광고에 관한 안내입니다.",
     "updatedLabel": "최종 업데이트",
-    "updatedDate": "2026-08-13",
+    "updatedDate": "2026-08-19",
     "tocPrivacy": "개인정보 고지",
     "tocAds": "광고 관련 정책",
     "privacyTitle": "개인정보 고지",
@@ -19,7 +19,8 @@
     "adsLi3": "광고 설정은 Google 광고 설정에서 관리할 수 있습니다.",
     "adsSettingsLink": "Google 광고 설정",
     "adsHowLink": "Google 광고·데이터 정책",
-    "adsLi4": "광고에는 광고 표시가 붙으며, 특정 상품·서비스를 추천한다는 뜻은 아닙니다."
+    "adsLi4": "광고에는 광고 표시가 붙으며, 특정 상품·서비스를 추천한다는 뜻은 아닙니다.",
+    "privacyLi4": "사이트 이용 현황(일일 방문자, 페이지뷰, 국가·기기 등)을 보기 위해 Google Analytics 4를 사용합니다. Google이 쿠키 등으로 익명화된 이용 정보를 처리할 수 있습니다."
   },
   "welcome": {
     "title": "환영합니다",

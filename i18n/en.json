@@ -109,7 +109,7 @@
     "title": "Privacy & advertising notice",
     "intro": "Privacy and advertising notes for this static travel guide at korea-guidebook.cloud.",
     "updatedLabel": "Last updated",
-    "updatedDate": "2026-08-13",
+    "updatedDate": "2026-08-19",
     "tocPrivacy": "Privacy notice",
     "tocAds": "Advertising policy",
     "privacyTitle": "Privacy notice",
@@ -124,7 +124,8 @@
     "adsLi3": "You can manage ad settings in Google Ads Settings.",
     "adsSettingsLink": "Google Ads Settings",
     "adsHowLink": "Google ads & data policy",
-    "adsLi4": "Ads are labeled and are not an endorsement of any product or service."
+    "adsLi4": "Ads are labeled and are not an endorsement of any product or service.",
+    "privacyLi4": "We use Google Analytics 4 to see how the site is used (daily visitors, page views, country, device, and similar). Google may process anonymized usage data, including via cookies."
   },
   "foodLife": {
     "pageTitle": "Food & convenience | Korea Travel Guide",

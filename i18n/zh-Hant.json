@@ -109,7 +109,7 @@
     "title": "個人資訊與廣告告知",
     "intro": "korea-guidebook.cloud 靜態旅行指南的個人資訊與廣告說明。",
     "updatedLabel": "最近更新",
-    "updatedDate": "2026-08-13",
+    "updatedDate": "2026-08-19",
     "tocPrivacy": "個人資訊告知",
     "tocAds": "廣告相關政策",
     "privacyTitle": "個人資訊告知",
@@ -124,7 +124,8 @@
     "adsLi3": "您可在 Google 廣告設置中管理廣告選項。",
     "adsSettingsLink": "Google 廣告設置",
     "adsHowLink": "Google 廣告與數據政策",
-    "adsLi4": "廣告帶有廣告標識，並不代表推薦任何特定商品或服務。"
+    "adsLi4": "廣告帶有廣告標識，並不代表推薦任何特定商品或服務。",
+    "privacyLi4": "我們使用 Google Analytics 4 了解網站使用情形（每日訪客、瀏覽量、國家/地區、裝置等）。Google 可能透過 Cookie 等處理匿名化的使用資料。"
   },
   "foodLife": {
     "pageTitle": "食品|韓國旅遊指南",

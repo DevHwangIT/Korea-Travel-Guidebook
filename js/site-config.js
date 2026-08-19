@@ -15,4 +15,11 @@ window.SITE_CONFIG = {
 
   /** Festivals hub uses VisitKorea links only (no TourAPI client key). */
   TOUR_API_KEY: "",
+
+  /**
+   * Google Analytics 4 measurement ID (G-XXXXXXXX).
+   * Create a GA4 property → Data stream → Web → paste the ID here, then deploy.
+   * Empty = tracking off. Localhost is skipped unless window.GA4_DEBUG = true.
+   */
+  GA4_MEASUREMENT_ID: "G-38FDJLLF29",
 };

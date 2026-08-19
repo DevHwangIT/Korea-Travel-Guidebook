@@ -109,7 +109,7 @@
     "title": "Thông báo quyền riêng tư & quảng cáo",
     "intro": "Ghi chú về quyền riêng tư và quảng cáo cho cẩm nang tĩnh tại korea-guidebook.cloud.",
     "updatedLabel": "Cập nhật lần cuối",
-    "updatedDate": "2026-08-13",
+    "updatedDate": "2026-08-19",
     "tocPrivacy": "Thông báo quyền riêng tư",
     "tocAds": "Chính sách quảng cáo",
     "privacyTitle": "Thông báo quyền riêng tư",
@@ -124,7 +124,8 @@
     "adsLi3": "Bạn có thể quản lý cài đặt quảng cáo trong Google Ads Settings.",
     "adsSettingsLink": "Cài đặt quảng cáo Google",
     "adsHowLink": "Chính sách quảng cáo & dữ liệu Google",
-    "adsLi4": "Quảng cáo được gắn nhãn và không đồng nghĩa với việc chúng tôi chứng nhận sản phẩm hay dịch vụ."
+    "adsLi4": "Quảng cáo được gắn nhãn và không đồng nghĩa với việc chúng tôi chứng nhận sản phẩm hay dịch vụ.",
+    "privacyLi4": "Chúng tôi dùng Google Analytics 4 để xem mức sử dụng trang (khách mỗi ngày, lượt xem, quốc gia, thiết bị…). Google có thể xử lý dữ liệu sử dụng ẩn danh, kể cả qua cookie."
   },
   "foodLife": {
     "pageTitle": "Ẩm thực & tiện lợi | Korea Travel Guide",

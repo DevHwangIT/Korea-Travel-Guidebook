@@ -4,7 +4,7 @@
     "title": "プライバシー・広告に関する告知",
     "intro": "korea-guidebook.cloud の静的な旅行ガイド向けの、個人情報と広告に関する案内です。",
     "updatedLabel": "最終更新",
-    "updatedDate": "2026-08-13",
+    "updatedDate": "2026-08-19",
     "tocPrivacy": "プライバシー告知",
     "tocAds": "広告に関する方針",
     "privacyTitle": "プライバシー告知",
@@ -19,7 +19,8 @@
     "adsLi3": "広告設定は Google 広告設定で管理できます。",
     "adsSettingsLink": "Google 広告設定",
     "adsHowLink": "Google の広告・データ方針",
-    "adsLi4": "広告には広告表示が付き、特定の商品・サービスを推奨するものではありません。"
+    "adsLi4": "広告には広告表示が付き、特定の商品・サービスを推奨するものではありません。",
+    "privacyLi4": "日間の訪問者数、ページビュー、国・端末などの利用状況を把握するため Google Analytics 4 を使用します。Google が Cookie 等により匿名化された利用情報を処理する場合があります。"
   },
   "welcome": {
     "title": "ようこそ",
