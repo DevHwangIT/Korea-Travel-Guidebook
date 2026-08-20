@@ -1,0 +1,668 @@
+[
+  {
+    "slug": "biseulsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "bukhansan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "byeonsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "cheongoksan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "cheonmasan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "cheonseongsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "chiaksan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "chukryeongsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "daeamsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "daedunsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "deogyusan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "deoksungsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "dobongsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "doraksan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "dutasan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "gajisan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "gamaksan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "gayasan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "geomdansan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "geumjeongsan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "hallasan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "seoraksan",
+    "ok": true,
+    "kept": true,
+    "error": null
+  },
+  {
+    "slug": "baegamsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "baegunsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "bangjangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "bangtaesan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "cheonggyesan",
+    "ok": true,
+    "kept": false,
+    "title": "File:Cheonggyesan Clear Forest Park 01.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Cheonggyesan_Clear_Forest_Park_01.jpg/1280px-Cheonggyesan_Clear_Forest_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "commons",
+    "error": null
+  },
+  {
+    "slug": "cheongwansan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "daeyasan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "deokhangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "duryunsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gangcheonsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "garisan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gariwangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "geumosan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "geumsan",
+    "ok": true,
+    "kept": false,
+    "title": "금산_귀암사.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%EA%B8%88%EC%82%B0_%EA%B7%80%EC%95%94%EC%82%AC.jpg/1280px-%EA%B8%88%EC%82%B0_%EA%B7%80%EC%95%94%EC%82%AC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "en",
+    "error": null
+  },
+  {
+    "slug": "geumsusan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gitdaebong",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gongjaksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "goryeosan",
+    "ok": false,
+    "kept": false,
+    "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  },
+  {
+    "slug": "gubongsan",
+    "ok": true,
+    "kept": false,
+    "title": "File:Daejeon Gubongsan.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Daejeon_Gubongsan.JPG/1280px-Daejeon_Gubongsan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "commons",
+    "error": null
+  },
+  {
+    "slug": "gubyeongsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gwanaksan",
+    "ok": true,
+    "kept": false,
+    "title": "Gwanaksan_Seoul_KR.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gwanaksan_Seoul_KR.jpg/1280px-Gwanaksan_Seoul_KR.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "gwangdeoksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gyebangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "gyeryongsan",
+    "ok": true,
+    "kept": false,
+    "title": "Mount_Gyeryong_from_Jang-gun_peak.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mount_Gyeryong_from_Jang-gun_peak.jpg/1280px-Mount_Gyeryong_from_Jang-gun_peak.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "hambaeksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "huiyangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "hwaaksan",
+    "ok": true,
+    "kept": false,
+    "title": "File:Broadcast Transmitter Station and ROKAF Radar Site in Hwaaksan.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Broadcast_Transmitter_Station_and_ROKAF_Radar_Site_in_Hwaaksan.jpg/1280px-Broadcast_Transmitter_Station_and_ROKAF_Radar_Site_in_Hwaaksan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "commons",
+    "error": null
+  },
+  {
+    "slug": "hwangaksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "hwangmaesan",
+    "ok": true,
+    "kept": false,
+    "title": "Hwangmaesan_Mountain_in_autumn.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Hwangmaesan_Mountain_in_autumn.jpg/1280px-Hwangmaesan_Mountain_in_autumn.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "hwangseoksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "hwawangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "jaeyaksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "jangansan",
+    "ok": true,
+    "kept": false,
+    "title": "장안산.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/%EC%9E%A5%EC%95%88%EC%82%B0.jpg/1280px-%EC%9E%A5%EC%95%88%EC%82%B0.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "jeoksangsan",
+    "ok": true,
+    "kept": false,
+    "title": "MJ-JS-JSG14.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/MJ-JS-JSG14.jpg/1280px-MJ-JS-JSG14.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "jeombongsan",
+    "ok": false,
+    "kept": false,
+    "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+    "slug": "jirisan",
+    "ok": true,
+    "kept": false,
+    "title": "Korea-Mountain-Jirisan-15.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Korea-Mountain-Jirisan-15.jpg/1280px-Korea-Mountain-Jirisan-15.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "jogyesan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "joryeongsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "juheulsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "juwangsan",
+    "ok": true,
+    "kept": false,
+    "title": "주왕산_(_2_).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/%EC%A3%BC%EC%99%95%EC%82%B0_%28_2_%29.jpg/1280px-%EC%A3%BC%EC%99%95%EC%82%B0_%28_2_%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "maisan",
+    "ok": true,
+    "kept": false,
+    "title": "Maisan.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Maisan.jpg/1280px-Maisan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "manisan",
+    "ok": false,
+    "kept": false,
+    "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+    "slug": "minjujisan",
+    "ok": true,
+    "kept": false,
+    "title": "Minjujisan_Muju.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Minjujisan_Muju.jpg/1280px-Minjujisan_Muju.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "en",
+    "error": null
+  },
+  {
+    "slug": "mireuksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "moaksan",
+    "ok": true,
+    "kept": false,
+    "title": "모악산.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%EB%AA%A8%EC%95%85%EC%82%B0.jpg/1280px-%EB%AA%A8%EC%95%85%EC%82%B0.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "mudeungsan",
+    "ok": true,
+    "kept": false,
+    "title": "Gwangju_Mudeungsan.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Gwangju_Mudeungsan.jpg/1280px-Gwangju_Mudeungsan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "muhaksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "myeongjisan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "myeongseongsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "naejangsan",
+    "ok": true,
+    "kept": false,
+    "title": "내장산_남창계곡.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/%EB%82%B4%EC%9E%A5%EC%82%B0_%EB%82%A8%EC%B0%BD%EA%B3%84%EA%B3%A1.jpg/1280px-%EB%82%B4%EC%9E%A5%EC%82%B0_%EB%82%A8%EC%B0%BD%EA%B3%84%EA%B3%A1.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "naeyeonsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "namdeogyusan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "obongsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "odaesan",
+    "ok": false,
+    "kept": false,
+    "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+    "slug": "palbongsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "palgongsan",
+    "ok": true,
+    "kept": false,
+    "title": "팔공산_관봉_경치(경산시_방향).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/%ED%8C%94%EA%B3%B5%EC%82%B0_%EA%B4%80%EB%B4%89_%EA%B2%BD%EC%B9%98%28%EA%B2%BD%EC%82%B0%EC%8B%9C_%EB%B0%A9%ED%96%A5%29.jpg/1280px-%ED%8C%94%EA%B3%B5%EC%82%B0_%EA%B4%80%EB%B4%89_%EA%B2%BD%EC%B9%98%28%EA%B2%BD%EC%82%B0%EC%8B%9C_%EB%B0%A9%ED%96%A5%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "paryeongsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "samaksan",
+    "ok": true,
+    "kept": false,
+    "title": "삼악산_정상_3.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%EC%82%BC%EC%95%85%EC%82%B0_%EC%A0%95%EC%83%81_3.jpg/1280px-%EC%82%BC%EC%95%85%EC%82%B0_%EC%A0%95%EC%83%81_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "en",
+    "error": null
+  },
+  {
+    "slug": "seodaesan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "seonginbong",
+    "ok": true,
+    "kept": false,
+    "title": "Ulleung_island_from_above.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Ulleung_island_from_above.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "seonunsan",
+    "ok": true,
+    "kept": false,
+    "title": "선운산.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/%EC%84%A0%EC%9A%B4%EC%82%B0.jpg/1280px-%EC%84%A0%EC%9A%B4%EC%82%B0.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "sinbulsan",
+    "ok": true,
+    "kept": false,
+    "title": "신불산_배내고개_정상_2.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/ko/thumb/7/74/%EC%8B%A0%EB%B6%88%EC%82%B0_%EB%B0%B0%EB%82%B4%EA%B3%A0%EA%B0%9C_%EC%A0%95%EC%83%81_2.jpg/1280px-%EC%8B%A0%EB%B6%88%EC%82%B0_%EB%B0%B0%EB%82%B4%EA%B3%A0%EA%B0%9C_%EC%A0%95%EC%83%81_2.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "sobaeksan",
+    "ok": true,
+    "kept": false,
+    "title": "Sobaeksan.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sobaeksan.jpg/1280px-Sobaeksan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "songnisan",
+    "ok": true,
+    "kept": false,
+    "title": "Songnisan_as_seen_from_Cheonwangbong_(cropped).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Songnisan_as_seen_from_Cheonwangbong_%28cropped%29.jpg/1280px-Songnisan_as_seen_from_Cheonwangbong_%28cropped%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "soyosan",
+    "ok": true,
+    "kept": false,
+    "title": "Soyosan.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Soyosan.jpg/1280px-Soyosan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "suraksan",
+    "ok": true,
+    "kept": false,
+    "title": "Suraksan.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Suraksan.JPG/1280px-Suraksan.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "taebaeksan",
+    "ok": true,
+    "kept": false,
+    "title": "Taebaeksan_2016_12_30_winter.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Taebaeksan_2016_12_30_winter.jpg/1280px-Taebaeksan_2016_12_30_winter.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "unaksan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "unjangsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "unmunsan",
+    "ok": false,
+    "kept": false,
+    "error": "No image candidate"
+  },
+  {
+    "slug": "wolchulsan",
+    "ok": true,
+    "kept": false,
+    "title": "Wolchulsan_mountain_peak.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Wolchulsan_mountain_peak.jpg/1280px-Wolchulsan_mountain_peak.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "woraksan",
+    "ok": true,
+    "kept": false,
+    "title": "Mount_Worak_Korea_242.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mount_Worak_Korea_242.jpg/1280px-Mount_Worak_Korea_242.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  },
+  {
+    "slug": "yongmunsan",
+    "ok": true,
+    "kept": false,
+    "title": "File:Korean shorthair at Yongmun.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Korean_shorthair_at_Yongmun.jpg/1280px-Korean_shorthair_at_Yongmun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "commons",
+    "error": null
+  },
+  {
+    "slug": "yumyeongsan",
+    "ok": true,
+    "kept": false,
+    "title": "Peak_of_Yumyeong_Mountain.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Peak_of_Yumyeong_Mountain.JPG/1280px-Peak_of_Yumyeong_Mountain.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "ko",
+    "error": null
+  }
+]

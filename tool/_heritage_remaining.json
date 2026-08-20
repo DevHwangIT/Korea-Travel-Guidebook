@@ -1,0 +1,1042 @@
+{
+  "fallback": [
+    {
+      "slug": "seokchondot-gobungun",
+      "note": "Seokchon-dong Tumuli"
+    },
+    {
+      "slug": "hotreut-yureut",
+      "note": "Hongneung & Yureung"
+    },
+    {
+      "slug": "yathwajin-oegukinseongyosamyowon",
+      "note": "Yanghwajin Foreign Missionary Cemetery"
+    },
+    {
+      "slug": "seoulseotgwakgil",
+      "note": "Seoul City Wall Trail"
+    },
+    {
+      "slug": "yotin-hoalmisulgwan-jeontotjeotwon",
+      "note": "Ho-Am Art Museum Traditional Garden"
+    },
+    {
+      "slug": "sejotdaewatreut",
+      "note": "Royal Tomb of King Sejong"
+    },
+    {
+      "slug": "gwatreut",
+      "note": "Gwangneung"
+    },
+    {
+      "slug": "paju-salreut",
+      "note": "Paju Samneung"
+    },
+    {
+      "slug": "paju-jatreut",
+      "note": "Paju Jangneung"
+    },
+    {
+      "slug": "gathwayeoksayujeokjigu",
+      "note": "Ganghwa Historic Sites"
+    },
+    {
+      "slug": "gathwa-gwatseotbo",
+      "note": "Gwangseongbo Fort"
+    },
+    {
+      "slug": "gathwa-deokjinjin",
+      "note": "Deokjinjin Fort"
+    },
+    {
+      "slug": "gathwa-goryeogutji",
+      "note": "Ganghwa Goryeo Palace Site"
+    },
+    {
+      "slug": "gathwa-seotgothoeseotdat",
+      "note": "Ganghwa Anglican Cathedral"
+    },
+    {
+      "slug": "incheon-gaehatjat-munhwajigu",
+      "note": "Incheon Open Port Culture District"
+    },
+    {
+      "slug": "incheon-jutgucheot-gu-ilbonuseonjusikhoesa-geonm",
+      "note": "Former Nippon Yusen Building (Incheon)"
+    },
+    {
+      "slug": "incheon-naerigyohoe",
+      "note": "Naeri Church"
+    },
+    {
+      "slug": "incheonhyatgyo",
+      "note": "Incheon Hyanggyo"
+    },
+    {
+      "slug": "munhaksanseot",
+      "note": "Munhaksanseong Fortress"
+    },
+    {
+      "slug": "gyeyatsanseot",
+      "note": "Gyeyangsanseong Fortress"
+    },
+    {
+      "slug": "sotwoldot-dothwamaeul",
+      "note": "Songwol-dong Fairy Tale Village"
+    },
+    {
+      "slug": "bokcheondotgobungun",
+      "note": "Bokcheon-dong Tumuli"
+    },
+    {
+      "slug": "ilsisudoginyeolgwan",
+      "note": "Provisional Capital Memorial Hall"
+    },
+    {
+      "slug": "yuenginyeolgotwon",
+      "note": "UN Memorial Cemetery"
+    },
+    {
+      "slug": "oryundae-hanguksungyojabakmulgwan",
+      "note": "Oryundae Korean Martyrs Museum"
+    },
+    {
+      "slug": "gijat-jukseotri-waeseot",
+      "note": "Jukseong-ri Japanese Fortress"
+    },
+    {
+      "slug": "molundae",
+      "note": "Morundae"
+    },
+    {
+      "slug": "busanhat-je1budu-geundaeyusan",
+      "note": "Busan Port Pier 1 Modern Heritage"
+    },
+    {
+      "slug": "dalseotgotwon",
+      "note": "Dalseong Park"
+    },
+    {
+      "slug": "daegueumseot-yujeok",
+      "note": "Daegu Eupseong Remains"
+    },
+    {
+      "slug": "gyesanseotdat",
+      "note": "Gyesan Cathedral"
+    },
+    {
+      "slug": "isathwa-gotaek",
+      "note": "Yi Sang-hwa Historic House"
+    },
+    {
+      "slug": "seosatdon-gotaek",
+      "note": "Seo Sang-don Historic House"
+    },
+    {
+      "slug": "gukchaebosatundotginyeolgwan",
+      "note": "National Debt Redemption Movement Memorial"
+    },
+    {
+      "slug": "yuksinsa",
+      "note": "Yukshinsa Shrine"
+    },
+    {
+      "slug": "hanhwondat-gotaek",
+      "note": "Hanhwondang Historic House"
+    },
+    {
+      "slug": "nalpyeotmunssibonrisegeoji",
+      "note": "Nampyeong Mun Clan Village"
+    },
+    {
+      "slug": "daereutwon",
+      "note": "Daereungwon Tumuli Park"
+    },
+    {
+      "slug": "woljeotgyo",
+      "note": "Woljeonggyo Bridge"
+    },
+    {
+      "slug": "poseokjeot",
+      "note": "Poseokjeong"
+    },
+    {
+      "slug": "gyeotju-gyochonmaeul",
+      "note": "Gyeongju Gyochon Village"
+    },
+    {
+      "slug": "choebujadaek",
+      "note": "Choi Buja House"
+    },
+    {
+      "slug": "nalsan-bulgyoyujeok",
+      "note": "Namsan Buddhist Relics (Gyeongju)"
+    },
+    {
+      "slug": "gyeril",
+      "note": "Gyerim Forest"
+    },
+    {
+      "slug": "gyeotju-eumseot",
+      "note": "Gyeongju Eupseong"
+    },
+    {
+      "slug": "wolyeotgyo",
+      "note": "Woryeonggyo Bridge"
+    },
+    {
+      "slug": "andotminsokchon",
+      "note": "Andong Folk Village"
+    },
+    {
+      "slug": "ilcheotgak",
+      "note": "Imcheonggak"
+    },
+    {
+      "slug": "jebiwon-seokbul",
+      "note": "Jebiwon Stone Buddha"
+    },
+    {
+      "slug": "bothwatsa",
+      "note": "Bonghwangsa Temple"
+    },
+    {
+      "slug": "yeanhyatgyo",
+      "note": "Yean Hyanggyo"
+    },
+    {
+      "slug": "jeondotseotdat",
+      "note": "Jeondong Cathedral"
+    },
+    {
+      "slug": "omokdae",
+      "note": "Omokdae"
+    },
+    {
+      "slug": "imokdae",
+      "note": "Imokdae"
+    },
+    {
+      "slug": "jogyeotdan",
+      "note": "Jogyeongdan"
+    },
+    {
+      "slug": "nalgosanseot",
+      "note": "Namgosanseong Fortress"
+    },
+    {
+      "slug": "hanbyeokdat",
+      "note": "Hanbyeokdang"
+    },
+    {
+      "slug": "jeonju-gaeksa",
+      "note": "Jeonju Gaeksa"
+    },
+    {
+      "slug": "gotju-chutcheotgalyeot",
+      "note": "Chungcheong Gamyeong Site"
+    },
+    {
+      "slug": "gotju-jemincheon-yeoksamunhwageori",
+      "note": "Jemincheon Historic Street"
+    },
+    {
+      "slug": "sotsanri-gobungun",
+      "note": "Songsan-ri Tumuli"
+    },
+    {
+      "slug": "gwanbukriyujeok",
+      "note": "Gwanbuk-ri Historic Site"
+    },
+    {
+      "slug": "gutnalji",
+      "note": "Gungnamji Pond"
+    },
+    {
+      "slug": "neutsanri-gobungun",
+      "note": "Neungsan-ri Tumuli"
+    },
+    {
+      "slug": "muryatsa",
+      "note": "Muryangsa Temple"
+    },
+    {
+      "slug": "seotheutsanseot",
+      "note": "Seongheungsanseong Fortress"
+    },
+    {
+      "slug": "ojukheon",
+      "note": "Ojukheon"
+    },
+    {
+      "slug": "seongyojat",
+      "note": "Seongyojang"
+    },
+    {
+      "slug": "gyeotpodae",
+      "note": "Gyeongpodae Pavilion"
+    },
+    {
+      "slug": "goseot-watgokmaeul",
+      "note": "Wanggok Village"
+    },
+    {
+      "slug": "gatreutdaedohobu-gwana",
+      "note": "Gangneung Daedohobu Office"
+    },
+    {
+      "slug": "jukseoru",
+      "note": "Jukseoru Pavilion"
+    },
+    {
+      "slug": "hotcheon-sutasa",
+      "note": "Sutasa Temple"
+    },
+    {
+      "slug": "chutju-tangeuldae",
+      "note": "Tangeumdae"
+    },
+    {
+      "slug": "chutju-tampyeotri-chilcheutseoktam",
+      "note": "Tappyeong-ri Seven-story Pagoda"
+    },
+    {
+      "slug": "danyat-ondalgwangwatji",
+      "note": "Ondal Tourist Site"
+    },
+    {
+      "slug": "danyat-jeokseot",
+      "note": "Danyang Jeokseong"
+    },
+    {
+      "slug": "goesan-hwayatgugok",
+      "note": "Hwayanggu Valley"
+    },
+    {
+      "slug": "yeotdot-yeotguksa",
+      "note": "Yeongguksa Temple"
+    },
+    {
+      "slug": "jincheon-notdari",
+      "note": "Nongdari Bridge"
+    },
+    {
+      "slug": "donalseowon",
+      "note": "Donamseowon"
+    },
+    {
+      "slug": "iksan-mireuksaji",
+      "note": "Mireuksaji Temple Site"
+    },
+    {
+      "slug": "iksan-watgutriyujeok",
+      "note": "Wanggung-ri Historic Site"
+    },
+    {
+      "slug": "muju-jeoksatsanseot",
+      "note": "Jeoksangsanseong Fortress"
+    },
+    {
+      "slug": "nalwon-gwathanruwon",
+      "note": "Gwanghalluwon Garden"
+    },
+    {
+      "slug": "nalwon-manboksaji",
+      "note": "Manboksa Temple Site"
+    },
+    {
+      "slug": "ilsil-saseondae",
+      "note": "Sasandae"
+    },
+    {
+      "slug": "jeoteum-museotseowon",
+      "note": "Museongseowon"
+    },
+    {
+      "slug": "gurye-unjoru",
+      "note": "Unjoru House"
+    },
+    {
+      "slug": "dalyat-sikyeotjeot",
+      "note": "Sigyeongjeong Pavilion"
+    },
+    {
+      "slug": "dalyat-myeotokheon",
+      "note": "Myeongokheon Garden"
+    },
+    {
+      "slug": "jatseot-pilalseowon",
+      "note": "Pilamseowon"
+    },
+    {
+      "slug": "gatjin-dasanchodat",
+      "note": "Dasanchodang"
+    },
+    {
+      "slug": "yeosu-jinnalgwan",
+      "note": "Jinnamgwan"
+    },
+    {
+      "slug": "yeosu-heutguksa",
+      "note": "Heungguksa Temple"
+    },
+    {
+      "slug": "yeosu-chutminsa",
+      "note": "Chungminsa Shrine"
+    },
+    {
+      "slug": "mokpo-geundaeyeoksamunhwagotgan",
+      "note": "Mokpo Modern History Culture Space"
+    },
+    {
+      "slug": "gukrimasiamunhwajeondat",
+      "note": "Asia Culture Center"
+    },
+    {
+      "slug": "pochutsa",
+      "note": "Pochungsa Shrine"
+    },
+    {
+      "slug": "wolbotseowon",
+      "note": "Wolbongseowon"
+    },
+    {
+      "slug": "hwanbyeokdat",
+      "note": "Hwanbyeokdang"
+    },
+    {
+      "slug": "chwigajeot",
+      "note": "Chwigajeong"
+    },
+    {
+      "slug": "gwatju-5-18-minjuhwaundot-gwanryeon-sajeok",
+      "note": "May 18 Democratization Movement Sites"
+    },
+    {
+      "slug": "nalhae-geulsan-borial",
+      "note": "Boriam Hermitage (Geumsan)"
+    },
+    {
+      "slug": "totyeot-sebyeotgwan",
+      "note": "Sebyeonggwan"
+    },
+    {
+      "slug": "hamcheon-hwatmaesanseot",
+      "note": "Hwangmaesanseong Fortress"
+    },
+    {
+      "slug": "halyat-nalgyeseowon",
+      "note": "Namgyeseowon"
+    },
+    {
+      "slug": "sancheot-mokmyeonsibaeyuji",
+      "note": "Cotton Cultivation Historic Site"
+    },
+    {
+      "slug": "goseot-sothakdotgobungun",
+      "note": "Songhak-dong Tumuli"
+    },
+    {
+      "slug": "chatnyeot-gyodot-sothyeondot-gobungun",
+      "note": "Gyodong & Songhyeon-dong Tumuli"
+    },
+    {
+      "slug": "cheonjeonri-gakseok",
+      "note": "Cheonjeon-ri Petroglyphs"
+    },
+    {
+      "slug": "eonyateumseot",
+      "note": "Eonyang Eupseong"
+    },
+    {
+      "slug": "seoknalsa",
+      "note": "Seongnamsa Temple"
+    },
+    {
+      "slug": "daegokbakmulgwan",
+      "note": "Daegok Museum"
+    },
+    {
+      "slug": "cheoyotal",
+      "note": "Cheoyongam Rock"
+    },
+    {
+      "slug": "jejumok-gwana",
+      "note": "Jeju Mokgwana"
+    },
+    {
+      "slug": "salseothyeol",
+      "note": "Samseonghyeol"
+    },
+    {
+      "slug": "hatpaduri-hatmotyujeokji",
+      "note": "Hangpaduri Anti-Mongol Historic Site"
+    },
+    {
+      "slug": "daejeotseotji",
+      "note": "Daejeongseong Fortress Site"
+    },
+    {
+      "slug": "jeju-4-3-gwanryeon-yujeok",
+      "note": "Jeju April 3 Historic Sites"
+    },
+    {
+      "slug": "jeju-dolmunhwagotwon",
+      "note": "Jeju Stone Culture Park"
+    },
+    {
+      "slug": "batsatam",
+      "note": "Bangsatap Stone Towers"
+    },
+    {
+      "slug": "gyejoksanseot",
+      "note": "Gyejoksanseong Fortress"
+    },
+    {
+      "slug": "ualsajeokgotwon",
+      "note": "Uam Historic Park"
+    },
+    {
+      "slug": "dotchundat",
+      "note": "Dongchundang"
+    },
+    {
+      "slug": "hoedeokhyatgyo",
+      "note": "Hoedeok Hyanggyo"
+    },
+    {
+      "slug": "nalganjeotsa",
+      "note": "Namganjeongsa"
+    },
+    {
+      "slug": "daejeongeunhyeondaesajeonsigwan",
+      "note": "Daejeon Modern History Exhibition Hall"
+    },
+    {
+      "slug": "sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon",
+      "note": "King Sejong Yeongneung Heritage Area"
+    },
+    {
+      "slug": "giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo"
+    },
+    {
+      "slug": "dokrakjeot",
+      "note": "Dongnakjeong Pavilion"
+    },
+    {
+      "slug": "yeongihyatgyo",
+      "note": "Yeongi Hyanggyo"
+    },
+    {
+      "slug": "bogyeotsa",
+      "note": "Bogyeongsa Temple"
+    },
+    {
+      "slug": "oeosa",
+      "note": "Oeosa Temple"
+    },
+    {
+      "slug": "seonbichon",
+      "note": "Seonbichon Village"
+    },
+    {
+      "slug": "museolmaeul",
+      "note": "Museom Village"
+    },
+    {
+      "slug": "yeotju-geundaeyeoksamunhwageori",
+      "note": "Yeongju Modern History Culture Street"
+    },
+    {
+      "slug": "totyeot-chutryeolsa",
+      "note": "Tongyeong Chungnyeolsa"
+    },
+    {
+      "slug": "totyeotseotji",
+      "note": "Tongyeong Fortress Site"
+    },
+    {
+      "slug": "chakryatmyo",
+      "note": "Changnyangmyo Shrine"
+    },
+    {
+      "slug": "totyeot-saldosuguntotjeyeot",
+      "note": "Tongyeong Naval Command Site"
+    },
+    {
+      "slug": "myeonatjeot",
+      "note": "Myeonangjeong Pavilion"
+    },
+    {
+      "slug": "sotgatjeot",
+      "note": "Songgangjeong Pavilion"
+    },
+    {
+      "slug": "okjeongobungun",
+      "note": "Okjeon Tumuli"
+    },
+    {
+      "slug": "hamcheon-salgahyatgyo",
+      "note": "Samga Hyanggyo"
+    },
+    {
+      "slug": "andot-andotminsokchon",
+      "note": "Andong Folk Village"
+    },
+    {
+      "slug": "andothyatgyo",
+      "note": "Andong Hyanggyo"
+    },
+    {
+      "slug": "andot-jebiwon-seokbul",
+      "note": "Jebiwon Stone Buddha"
+    },
+    {
+      "slug": "andot-bothwatsa",
+      "note": "Bonghwangsa Temple"
+    },
+    {
+      "slug": "andot-yeanhyatgyo",
+      "note": "Yean Hyanggyo"
+    },
+    {
+      "slug": "jeonjuhyatgyo",
+      "note": "Jeonju Hyanggyo"
+    },
+    {
+      "slug": "gotjuhyatgyo",
+      "note": "Gongju Hyanggyo"
+    },
+    {
+      "slug": "gatreuthyatgyo",
+      "note": "Gangneung Hyanggyo"
+    },
+    {
+      "slug": "chutbuk-chutju-tangeuldae",
+      "note": "Tangeumdae"
+    },
+    {
+      "slug": "chutbuk-chutju-tampyeotri-chilcheutseoktam",
+      "note": "Tappyeong-ri Seven-story Pagoda"
+    },
+    {
+      "slug": "chutbuk-danyat-ondalgwangwatji",
+      "note": "Ondal Tourist Site"
+    },
+    {
+      "slug": "chutbuk-danyat-jeokseot",
+      "note": "Danyang Jeokseong"
+    },
+    {
+      "slug": "chutbuk-cheotputmunhwajaedanji",
+      "note": "Cheongpung Cultural Heritage Complex"
+    },
+    {
+      "slug": "chutbuk-goesan-hwayatgugok",
+      "note": "Hwayanggu Valley"
+    },
+    {
+      "slug": "chutbuk-yeotdot-yeotguksa",
+      "note": "Yeongguksa Temple"
+    },
+    {
+      "slug": "chutbuk-jincheon-notdari",
+      "note": "Nongdari Bridge"
+    },
+    {
+      "slug": "gochateumseot",
+      "note": "Gochang Eupseong"
+    },
+    {
+      "slug": "jeonnal-gurye-unjoru",
+      "note": "Unjoru House"
+    },
+    {
+      "slug": "jeonnal-dalyat-soswaewon",
+      "note": "Soswaewon Garden"
+    },
+    {
+      "slug": "jeonnal-dalyat-sikyeotjeot",
+      "note": "Sigyeongjeong Pavilion"
+    },
+    {
+      "slug": "jeonnal-dalyat-myeotokheon",
+      "note": "Myeongokheon Garden"
+    },
+    {
+      "slug": "jeonnal-jatseot-pilalseowon",
+      "note": "Pilamseowon"
+    },
+    {
+      "slug": "jeonnal-gatjin-dasanchodat",
+      "note": "Dasanchodang"
+    },
+    {
+      "slug": "jeonnal-yeosu-jinnalgwan",
+      "note": "Jinnamgwan"
+    },
+    {
+      "slug": "jeonnal-yeosu-heutguksa",
+      "note": "Heungguksa Temple"
+    },
+    {
+      "slug": "jeonnal-yeosu-chutminsa",
+      "note": "Chungminsa Shrine"
+    },
+    {
+      "slug": "jeonnal-mokpo-geundaeyeoksamunhwagotgan",
+      "note": "Mokpo Modern History Culture Space"
+    },
+    {
+      "slug": "gwatju-gukrimasiamunhwajeondat",
+      "note": "Asia Culture Center"
+    },
+    {
+      "slug": "gwatjuhyatgyo",
+      "note": "Gwangju Hyanggyo"
+    },
+    {
+      "slug": "gwatju-pochutsa",
+      "note": "Pochungsa Shrine"
+    },
+    {
+      "slug": "gwatju-wolbotseowon",
+      "note": "Wolbongseowon"
+    },
+    {
+      "slug": "gwatju-hwanbyeokdat",
+      "note": "Hwanbyeokdang"
+    },
+    {
+      "slug": "gwatju-chwigajeot",
+      "note": "Chwigajeong"
+    },
+    {
+      "slug": "gwatju-gwatju-5-18-minjuhwaundot-gwanryeon-sajeok",
+      "note": "May 18 Democratization Movement Sites"
+    },
+    {
+      "slug": "ulsan-bangudae-algakhwa",
+      "note": "Bangudae Petroglyphs"
+    },
+    {
+      "slug": "ulsan-cheonjeonri-gakseok",
+      "note": "Cheonjeon-ri Petroglyphs"
+    },
+    {
+      "slug": "ulsan-eonyateumseot",
+      "note": "Eonyang Eupseong"
+    },
+    {
+      "slug": "ulsan-seoknalsa",
+      "note": "Seongnamsa Temple"
+    },
+    {
+      "slug": "ulsan-daegokbakmulgwan",
+      "note": "Daegok Museum"
+    },
+    {
+      "slug": "ulsan-cheoyotal",
+      "note": "Cheoyongam Rock"
+    },
+    {
+      "slug": "ulsanhyatgyo",
+      "note": "Ulsan Hyanggyo"
+    },
+    {
+      "slug": "daejeon-gyejoksanseot",
+      "note": "Gyejoksanseong Fortress"
+    },
+    {
+      "slug": "daejeon-ualsajeokgotwon",
+      "note": "Uam Historic Park"
+    },
+    {
+      "slug": "daejeon-dotchundat",
+      "note": "Dongchundang"
+    },
+    {
+      "slug": "daejeon-hoedeokhyatgyo",
+      "note": "Hoedeok Hyanggyo"
+    },
+    {
+      "slug": "daejeon-nalganjeotsa",
+      "note": "Namganjeongsa"
+    },
+    {
+      "slug": "daejeon-daejeongeunhyeondaesajeonsigwan",
+      "note": "Daejeon Modern History Exhibition Hall"
+    },
+    {
+      "slug": "sejot-bialsa",
+      "note": "Biamsa Temple"
+    },
+    {
+      "slug": "sejot-sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon",
+      "note": "King Sejong Yeongneung Heritage Area"
+    },
+    {
+      "slug": "sejot-giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo"
+    },
+    {
+      "slug": "sejot-dokrakjeot",
+      "note": "Dongnakjeong Pavilion"
+    },
+    {
+      "slug": "sejot-yeongihyatgyo",
+      "note": "Yeongi Hyanggyo"
+    },
+    {
+      "slug": "pohat-bogyeotsa",
+      "note": "Bogyeongsa Temple"
+    },
+    {
+      "slug": "jatgieumseot",
+      "note": "Janggi Eupseong"
+    },
+    {
+      "slug": "jatgihyatgyo",
+      "note": "Janggi Hyanggyo"
+    },
+    {
+      "slug": "pohat-oeosa",
+      "note": "Oeosa Temple"
+    },
+    {
+      "slug": "heuthaehyatgyo",
+      "note": "Heunghae Hyanggyo"
+    },
+    {
+      "slug": "yeotju-seonbichon",
+      "note": "Seonbichon Village"
+    },
+    {
+      "slug": "yeotju-museolmaeul",
+      "note": "Museom Village"
+    },
+    {
+      "slug": "yeotju-yeotju-geundaeyeoksamunhwageori",
+      "note": "Yeongju Modern History Culture Street"
+    },
+    {
+      "slug": "suncheonhyatgyo",
+      "note": "Suncheon Hyanggyo"
+    },
+    {
+      "slug": "dalyat-myeonatjeot",
+      "note": "Myeonangjeong Pavilion"
+    },
+    {
+      "slug": "dalyat-sotgatjeot",
+      "note": "Songgangjeong Pavilion"
+    }
+  ],
+  "notable": [
+    {
+      "slug": "yotin-hoalmisulgwan-jeontotjeotwon",
+      "note": "Ho-Am Art Museum Traditional Garden"
+    },
+    {
+      "slug": "sejotdaewatreut",
+      "note": "Royal Tomb of King Sejong"
+    },
+    {
+      "slug": "gathwa-goryeogutji",
+      "note": "Ganghwa Goryeo Palace Site"
+    },
+    {
+      "slug": "munhaksanseot",
+      "note": "Munhaksanseong Fortress"
+    },
+    {
+      "slug": "gyeyatsanseot",
+      "note": "Gyeyangsanseong Fortress"
+    },
+    {
+      "slug": "oryundae-hanguksungyojabakmulgwan",
+      "note": "Oryundae Korean Martyrs Museum"
+    },
+    {
+      "slug": "gijat-jukseotri-waeseot",
+      "note": "Jukseong-ri Japanese Fortress"
+    },
+    {
+      "slug": "yuksinsa",
+      "note": "Yukshinsa Shrine"
+    },
+    {
+      "slug": "andotminsokchon",
+      "note": "Andong Folk Village"
+    },
+    {
+      "slug": "bothwatsa",
+      "note": "Bonghwangsa Temple"
+    },
+    {
+      "slug": "nalgosanseot",
+      "note": "Namgosanseong Fortress"
+    },
+    {
+      "slug": "muryatsa",
+      "note": "Muryangsa Temple"
+    },
+    {
+      "slug": "seotheutsanseot",
+      "note": "Seongheungsanseong Fortress"
+    },
+    {
+      "slug": "hotcheon-sutasa",
+      "note": "Sutasa Temple"
+    },
+    {
+      "slug": "yeotdot-yeotguksa",
+      "note": "Yeongguksa Temple"
+    },
+    {
+      "slug": "donalseowon",
+      "note": "Donamseowon"
+    },
+    {
+      "slug": "iksan-mireuksaji",
+      "note": "Mireuksaji Temple Site"
+    },
+    {
+      "slug": "muju-jeoksatsanseot",
+      "note": "Jeoksangsanseong Fortress"
+    },
+    {
+      "slug": "nalwon-manboksaji",
+      "note": "Manboksa Temple Site"
+    },
+    {
+      "slug": "jeoteum-museotseowon",
+      "note": "Museongseowon"
+    },
+    {
+      "slug": "jatseot-pilalseowon",
+      "note": "Pilamseowon"
+    },
+    {
+      "slug": "yeosu-heutguksa",
+      "note": "Heungguksa Temple"
+    },
+    {
+      "slug": "yeosu-chutminsa",
+      "note": "Chungminsa Shrine"
+    },
+    {
+      "slug": "pochutsa",
+      "note": "Pochungsa Shrine"
+    },
+    {
+      "slug": "wolbotseowon",
+      "note": "Wolbongseowon"
+    },
+    {
+      "slug": "hamcheon-hwatmaesanseot",
+      "note": "Hwangmaesanseong Fortress"
+    },
+    {
+      "slug": "halyat-nalgyeseowon",
+      "note": "Namgyeseowon"
+    },
+    {
+      "slug": "seoknalsa",
+      "note": "Seongnamsa Temple"
+    },
+    {
+      "slug": "daegokbakmulgwan",
+      "note": "Daegok Museum"
+    },
+    {
+      "slug": "daejeotseotji",
+      "note": "Daejeongseong Fortress Site"
+    },
+    {
+      "slug": "gyejoksanseot",
+      "note": "Gyejoksanseong Fortress"
+    },
+    {
+      "slug": "giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo"
+    },
+    {
+      "slug": "bogyeotsa",
+      "note": "Bogyeongsa Temple"
+    },
+    {
+      "slug": "oeosa",
+      "note": "Oeosa Temple"
+    },
+    {
+      "slug": "totyeotseotji",
+      "note": "Tongyeong Fortress Site"
+    },
+    {
+      "slug": "chakryatmyo",
+      "note": "Changnyangmyo Shrine"
+    },
+    {
+      "slug": "andot-andotminsokchon",
+      "note": "Andong Folk Village"
+    },
+    {
+      "slug": "andot-bothwatsa",
+      "note": "Bonghwangsa Temple"
+    },
+    {
+      "slug": "chutbuk-yeotdot-yeotguksa",
+      "note": "Yeongguksa Temple"
+    },
+    {
+      "slug": "jeonnal-jatseot-pilalseowon",
+      "note": "Pilamseowon"
+    },
+    {
+      "slug": "jeonnal-yeosu-heutguksa",
+      "note": "Heungguksa Temple"
+    },
+    {
+      "slug": "jeonnal-yeosu-chutminsa",
+      "note": "Chungminsa Shrine"
+    },
+    {
+      "slug": "gwatju-pochutsa",
+      "note": "Pochungsa Shrine"
+    },
+    {
+      "slug": "gwatju-wolbotseowon",
+      "note": "Wolbongseowon"
+    },
+    {
+      "slug": "ulsan-seoknalsa",
+      "note": "Seongnamsa Temple"
+    },
+    {
+      "slug": "ulsan-daegokbakmulgwan",
+      "note": "Daegok Museum"
+    },
+    {
+      "slug": "daejeon-gyejoksanseot",
+      "note": "Gyejoksanseong Fortress"
+    },
+    {
+      "slug": "sejot-bialsa",
+      "note": "Biamsa Temple"
+    },
+    {
+      "slug": "sejot-giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo"
+    },
+    {
+      "slug": "pohat-bogyeotsa",
+      "note": "Bogyeongsa Temple"
+    },
+    {
+      "slug": "pohat-oeosa",
+      "note": "Oeosa Temple"
+    }
+  ]
+}

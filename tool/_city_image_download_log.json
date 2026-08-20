@@ -1,0 +1,161 @@
+{
+  "replaced": [
+    "seongsu-dong",
+    "byeolmadang-library",
+    "cheongdam",
+    "lotte-world",
+    "namsan-cable-car",
+    "busan-x-the-sky",
+    "haeundae-blueline-park",
+    "shinsegae-centum-city",
+    "busan-cinema-center",
+    "wolmido",
+    "incheon-chinatown",
+    "dongseong-ro",
+    "eworld"
+  ],
+  "still_fallback": [
+    "coex",
+    "apgujeong",
+    "lotte-world-adventure-busan",
+    "the-bay-101",
+    "inspire-resort",
+    "paradise-city",
+    "hyundai-premium-outlet-songdo",
+    "83-tower",
+    "daegu-shinsegae",
+    "aquaplanet-yeosu",
+    "yeosu-nangman-pocha",
+    "arte-museum-jeju",
+    "981-park",
+    "nohyeong-supermarket"
+  ],
+  "missed": [
+    "coex",
+    "apgujeong",
+    "lotte-world-adventure-busan",
+    "the-bay-101",
+    "inspire-resort",
+    "paradise-city",
+    "hyundai-premium-outlet-songdo",
+    "83-tower",
+    "daegu-shinsegae",
+    "aquaplanet-yeosu",
+    "yeosu-nangman-pocha",
+    "arte-museum-jeju",
+    "981-park",
+    "nohyeong-supermarket"
+  ],
+  "replaced_count": 13,
+  "still_fallback_count": 14,
+  "miss_count": 14,
+  "details": {
+    "seongsu-dong": {
+      "status": "ok",
+      "file": "Snowy shopping street in Seongsu-dong.jpg",
+      "bytes": 420641
+    },
+    "coex": {
+      "status": "miss"
+    },
+    "byeolmadang-library": {
+      "status": "ok",
+      "file": "Starfield Library COEX 20240218.jpg",
+      "bytes": 686988
+    },
+    "apgujeong": {
+      "status": "miss"
+    },
+    "cheongdam": {
+      "status": "ok",
+      "file": "Cheongdam-dong.jpg",
+      "bytes": 238609
+    },
+    "lotte-world": {
+      "status": "ok",
+      "file": "Lotte World.jpg",
+      "bytes": 466399
+    },
+    "namsan-cable-car": {
+      "status": "ok",
+      "file": "Korea-Seoul-Namsan Cable Car-01.jpg",
+      "bytes": 366894
+    },
+    "busan-x-the-sky": {
+      "status": "ok",
+      "file": "Construction site of Busan Lotte Tower.jpg",
+      "bytes": 295946
+    },
+    "haeundae-blueline-park": {
+      "status": "ok",
+      "file": "Sky Capsule train at Haeundae Blueline Park, Busan.jpg",
+      "bytes": 305472
+    },
+    "lotte-world-adventure-busan": {
+      "status": "miss"
+    },
+    "shinsegae-centum-city": {
+      "status": "ok",
+      "file": "Shinsegae in Busan- Guinness World Record.jpg",
+      "bytes": 88338
+    },
+    "the-bay-101": {
+      "status": "miss"
+    },
+    "busan-cinema-center": {
+      "status": "ok",
+      "file": "Busan Cinema Center.jpg",
+      "bytes": 282936
+    },
+    "wolmido": {
+      "status": "ok",
+      "file": "Ondol Incheon Wolmido Park 1.JPG",
+      "bytes": 220919
+    },
+    "inspire-resort": {
+      "status": "miss"
+    },
+    "paradise-city": {
+      "status": "miss"
+    },
+    "incheon-chinatown": {
+      "status": "ok",
+      "file": "Incheon Chinatown South Korea 2013 02.jpg",
+      "bytes": 212064
+    },
+    "hyundai-premium-outlet-songdo": {
+      "status": "miss"
+    },
+    "dongseong-ro": {
+      "status": "ok",
+      "file": "Dongseongno.jpg",
+      "bytes": 231921
+    },
+    "83-tower": {
+      "status": "miss"
+    },
+    "eworld": {
+      "status": "ok",
+      "file": "E WORLD in Daegu on April 5th 2013.jpg",
+      "bytes": 271453
+    },
+    "daegu-shinsegae": {
+      "status": "miss"
+    },
+    "aquaplanet-yeosu": {
+      "status": "miss"
+    },
+    "yeosu-nangman-pocha": {
+      "status": "miss"
+    },
+    "arte-museum-jeju": {
+      "status": "miss"
+    },
+    "981-park": {
+      "status": "miss"
+    },
+    "nohyeong-supermarket": {
+      "status": "miss"
+    }
+  }
+}

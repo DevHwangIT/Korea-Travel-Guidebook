@@ -66,6 +66,40 @@ from .shop_body import (
 from .translate import BatchStatus, fill_body_blocks, fill_scalar_texts
 
 
+def _write_text_retry(path: Path, text: str, attempts: int = 8) -> None:
+    """Write UTF-8 text with retries / atomic replace (Windows IDE locks)."""
+    import os
+    import tempfile
+    import time
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    last_exc: Exception | None = None
+    for attempt in range(attempts):
+        tmp_name = None
+        try:
+            fd, tmp_name = tempfile.mkstemp(
+                prefix=f".{path.stem}-",
+                suffix=".tmp",
+                dir=str(path.parent),
+            )
+            with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
+                f.write(text)
+            os.replace(tmp_name, path)
+            return
+        except OSError as exc:
+            last_exc = exc
+            time.sleep(0.4 * (attempt + 1))
+        finally:
+            if tmp_name:
+                try:
+                    os.unlink(tmp_name)
+                except OSError:
+                    pass
+    assert last_exc is not None
+    raise last_exc
+
+
+
 def rebuild_food_recommend_catalog() -> str:
     """Regenerate data/food/recommend-catalog.js for the food-life quiz.
 
@@ -123,6 +157,7 @@ MEAL_DISH_SLUGS_FALLBACK = {
     "gopchang",
     "tangsuyuk",
     "korean-chinese",
+    "baekban",
 }
 
 # Top-level dessert hubs only (brand shops like paris-baguette / sulbing live under bread / bingsu).
@@ -133,7 +168,7 @@ DESSERT_DISH_SLUGS_FALLBACK = {
     "cafe",
     "dubai-cookie",
     "tanghulu",
-    "yogurt-ice",
+    "ice-cream",
     "bungeoppang",
     "nangman-sandwich",
 }
@@ -978,11 +1013,7 @@ def create_shop(
         )
 
     page.parent.mkdir(parents=True, exist_ok=True)
-    page.write_text(
-        render_shop_page(kind, dish_slug, shop_slug),
-        encoding="utf-8",
-        newline="\n",
-    )
+    _write_text_retry(page, render_shop_page(kind, dish_slug, shop_slug))
     notes.append(f"페이지 생성: {page.relative_to(ROOT).as_posix()}")
 
     index = parent / "index.html"
@@ -990,7 +1021,7 @@ def create_shop(
     html = insert_before_card_grid_close(
         html, shop_card_html(kind, dish_slug, shop_slug)
     )
-    index.write_text(html, encoding="utf-8", newline="\n")
+    _write_text_retry(index, html)
     notes.append("음식 Places 카드 추가")
 
     photo = shop_photo_path(kind, dish_slug, shop_slug)
@@ -1003,7 +1034,10 @@ def create_shop(
         "사진이 없으면 링크 미리보기 이미지를 쓰거나 직접 업로드하세요."
     )
 
-    notes.append(i18n_store.build_bundle())
+    try:
+        notes.append(i18n_store.build_bundle())
+    except Exception as exc:  # noqa: BLE001
+        notes.append(f"WARN build_bundle: {exc}")
     return notes, status
 
 

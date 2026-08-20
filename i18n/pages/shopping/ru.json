@@ -10,12 +10,12 @@
     "souvenirDesc": "Хорошие подарки и рекомендованные вещи домой.",
     "catFun": "Развлечения",
     "choicePrompt": "Что ищете?",
-    "choiceShopping": "Шопинг",
-    "choiceShoppingDesc": "Товары на каждый день, снеки, мода и бьюти.",
+    "choiceShopping": "Шопинг и сувениры",
+    "choiceShoppingDesc": "Товары, Daiso, БАДы, снеки, выпечка, еда, мода и бьюти.",
     "choiceFun": "Развлечения",
     "choiceFunDesc": "PC-кафе, монетное караоке, квесты, чимчильбан, манга-кафе и другое.",
     "backChoice": "← Назад к выбору",
-    "shoppingTitle": "Шопинг",
+    "shoppingTitle": "Шопинг и сувениры",
     "shoppingIntro": "Смотрите покупки по категориям.",
     "funTitle": "Развлечения",
     "funIntro": "Корейские развлечения, которые легко попробовать гостям.",
@@ -26,8 +26,8 @@
   "souvenir": {
     "catDaily": "Товары повседневного спроса",
     "catFood": "Еда",
-    "catFashion": "Мода",
-    "catBeauty": "Красота · Товары",
+    "catFashion": "Одежда и мода",
+    "catBeauty": "Красота",
     "maskTitle": "Маски KF94 (Jaksim, Bluedot…)",
     "maskDesc": "Jaksim KF94, Bluedot, Aer — противопылевые маски, продаются в аптеках, магазинах товаров повседневного спроса, Olive Young.",
     "stationeryTitle": "Монами, канцелярские товары с культовыми и персонажами",
@@ -585,7 +585,1125 @@
         "ru": "Совет по покупке\n\nВнимательно проверьте дорогие подержанные фотокарточки на предмет их подлинности."
       }
     ],
-    "catPickLabel": "Категория"
+    "catPickLabel": "Категория",
+    "catSnack": "Снеки",
+    "catBakery": "Выпечка",
+    "peperoTitle": "Pepero",
+    "peperoDesc": "Lotte Pepero — almond, nude, chocolate stick snacks, a classic gift.",
+    "peperoBody1": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
+    "peperoBody2": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
+    "peperoTip": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+    "peperoBody": [
+      {
+        "type": "text",
+        "ko": "빼빼로는 롯데의 막대 비스킷에 초코·크림을 입히거나(누드는 속에 채운) 과자입니다. 아몬드·누드·오리지널·시즌 한정 맛이 마트·편의점·다이소에 많습니다.",
+        "en": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
+        "ja": "ペペロはロッテのスティック菓子。チョコ・クリームコーティング、ヌードは中にクリーム。アーモンド・ヌード・季節限定がマートやコンビニにあります。",
+        "zh": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
+        "zh-Hant": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
+        "vi": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
+        "th": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
+        "ru": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso."
+      },
+      {
+        "type": "text",
+        "ko": "11월 11일 ‘빼빼로 데이’ 전후로 선물 세트가 늘어납니다. 여름에는 초콜릿이 녹을 수 있어 출국 직전·시원한 보관이 좋습니다.",
+        "en": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
+        "ja": "11月11日のペペロデー前後はギフトセットが増えます。夏は溶けやすいので出発直前や涼しい保管を。",
+        "zh": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
+        "zh-Hant": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
+        "vi": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
+        "th": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
+        "ru": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n멀티팩·선물박스가 나눠 주기 쉽습니다. 공항·관광지보다 이마트·홈플러스 묶음이 대체로 저렴합니다.",
+        "en": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+        "ja": "買い方\n\nマルチパックが配りやすいです。空港より大型マートがお得なことが多いです。",
+        "zh": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+        "zh-Hant": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+        "vi": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+        "th": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+        "ru": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices."
+      }
+    ],
+    "marketOBrowniesTitle": "Market O Brownies",
+    "marketOBrowniesDesc": "Orion Market O brownies — soft chocolate brownie snacks.",
+    "marketOBrowniesBody1": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
+    "marketOBrowniesBody2": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
+    "marketOBrowniesTip": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+    "marketOBrowniesBody": [
+      {
+        "type": "text",
+        "ko": "마켓O(Market O) 브라우니는 오리온의 촉촉한 초코 브라우니 라인입니다. 편의점·마트 과자 코너에서 쉽게 찾을 수 있습니다.",
+        "en": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
+        "ja": "Market Oブラウニーはオリオンのしっとりチョコブラウニー。コンビニ・マートで見つけやすいです。",
+        "zh": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
+        "zh-Hant": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
+        "vi": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
+        "th": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
+        "ru": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles."
+      },
+      {
+        "type": "text",
+        "ko": "한 봉에 여러 조각이 들어 있어 나눠 먹기 좋고, 선물용 묶음도 나옵니다. 유통기한을 확인하고 직사광선을 피하세요.",
+        "en": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
+        "ja": "複数枚入りでシェアしやすく、ギフトセットもあります。賞味期限と高温を避けて。",
+        "zh": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
+        "zh-Hant": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
+        "vi": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
+        "th": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
+        "ru": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n‘마켓O’ 표기를 확인하세요. 시즌 한정 맛이 있으면 함께 비교해 보세요.",
+        "en": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+        "ja": "買い方\n\nMarket O表示を確認し、季節限定があれば比較を。",
+        "zh": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+        "zh-Hant": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+        "vi": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+        "th": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+        "ru": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available."
+      }
+    ],
+    "chocoHeimCouqueTitle": "Choco Heim & Couque D’asse",
+    "chocoHeimCouqueDesc": "Crown Choco Heim и Couque D’asse — классическое печенье с шоколадным/белым кремом.",
+    "chocoHeimCouqueBody1": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
+    "chocoHeimCouqueBody2": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
+    "chocoHeimCouqueTip": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+    "chocoHeimCouqueBody": [
+      {
+        "type": "text",
+        "ko": "쵸코하임과 쿠크다스(Couque D’asse)는 크라운의 대표 샌드 비스킷입니다. 바삭한 쿠키 사이에 초코 또는 화이트 크림이 들어 있으며, 식사 샌드위치와는 무관합니다.",
+        "en": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
+        "ja": "チョコヘイムとククダスはクラウンの代表サンドビスケット。チョコまたはホワイトクリーム入り。食事サンドとは別物です。",
+        "zh": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
+        "zh-Hant": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
+        "vi": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
+        "th": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
+        "ru": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches."
+      },
+      {
+        "type": "text",
+        "ko": "마트·편의점·기념품 코너에 상자·묶음이 많습니다. 화이트·초코 맛을 함께 사면 선물 구성이 풍성해집니다.",
+        "en": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
+        "ja": "マートやお土産コーナーに箱・マルチがあります。ホワイトとチョコをセットにすると良いです。",
+        "zh": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
+        "zh-Hant": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
+        "vi": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
+        "th": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
+        "ru": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n깨지기 쉬우니 캐리어 중앙에 넣고, 대형 상자보다 휴대용 팩을 고르면 안전합니다.",
+        "en": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+        "ja": "買い方\n\n割れやすいので荷物の中央に。大きすぎる箱より携帯パックが安心です。",
+        "zh": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+        "zh-Hant": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+        "vi": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+        "th": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+        "ru": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes."
+      }
+    ],
+    "ohYesChocoPieTitle": "Oh Yes и Choco Pie",
+    "ohYesChocoPieDesc": "Haitai Oh Yes (квадратный) и Orion Choco Pie (круглый, зефир) — шоколадные пайки.",
+    "ohYesChocoPieBody1": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
+    "ohYesChocoPieBody2": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
+    "ohYesChocoPieTip": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+    "ohYesChocoPieBody": [
+      {
+        "type": "text",
+        "ko": "오예스(해태)는 사각 소프트 케이크에 크림을 넣고 초코로 코팅한 파이입니다. 초코파이(오리온)는 원형 케이크 사이에 마시멜로를 넣고 초코로 입힌 제품으로, 둘은 모양·속이 다릅니다.",
+        "en": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
+        "ja": "オイエス（ヘテ）は四角いソフトケーキにクリーム＋チョココーティング。チョコパイ（オリオン）は丸型でマシュマロ入り。形と中身が違います。",
+        "zh": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
+        "zh-Hant": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
+        "vi": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
+        "th": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
+        "ru": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling."
+      },
+      {
+        "type": "text",
+        "ko": "편의점 낱개부터 마트 박스까지 있습니다. 여름철 초콜릿 코팅이 녹을 수 있으니 시원하게 보관하세요.",
+        "en": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
+        "ja": "コンビニの個包装からマートの箱まであります。夏は溶けやすいので涼しい保管を。",
+        "zh": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
+        "zh-Hant": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
+        "vi": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
+        "th": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
+        "ru": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n박스 세트가 선물용으로 보기 좋습니다. 사각(오예스)과 원형(초코파이) 브랜드를 구분해 고르세요.",
+        "en": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+        "ja": "買い方\n\nギフトは箱セットがおすすめ。四角オイエスと丸チョコパイを区別して。",
+        "zh": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+        "zh-Hant": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+        "vi": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+        "th": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+        "ru": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie."
+      }
+    ],
+    "butterWaffleTitle": "Масляные вафли",
+    "butterWaffleDesc": "Crown Butter Waffle — хрустящее масляное печенье с вафельным рисунком к кофе.",
+    "butterWaffleBody1": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
+    "butterWaffleBody2": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
+    "butterWaffleTip": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+    "butterWaffleBody": [
+      {
+        "type": "text",
+        "ko": "버터와플은 크라운제과의 스테디셀러로, 얇은 와플 격자 모양에 버터 향이 진한 바삭한 비스킷입니다. 개별 포장 박스로 마트·편의점에 많습니다.",
+        "en": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
+        "ja": "バターワッフルはクラウンの定番。薄いワッフル格子の香ばしいバタービスケットで、個包装ボックスがマート・コンビニに多いです。",
+        "zh": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
+        "zh-Hant": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
+        "vi": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
+        "th": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
+        "ru": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores."
+      },
+      {
+        "type": "text",
+        "ko": "커피·차와 잘 어울리고, 부피가 크지 않아 캐리어에 넣기 좋습니다. 개봉 후에는 바삭함이 떨어지니 빨리 드세요.",
+        "en": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
+        "ja": "コーヒーやお茶に合い、荷物にも入れやすいです。開封後は早めに。",
+        "zh": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
+        "zh-Hant": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
+        "vi": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
+        "th": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
+        "ru": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n‘크라운 버터와플’ 표기를 확인하세요. 묶음 행사가 잦습니다.",
+        "en": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+        "ja": "買い方\n\n「クラウン バターワッフル」表示を。まとめ売りが多いです。",
+        "zh": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+        "zh-Hant": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+        "vi": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+        "th": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+        "ru": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common."
+      }
+    ],
+    "hotteokBungeoTitle": "Рыбный пирожок с хоттоком",
+    "hotteokBungeoDesc": "Orion — рыбный кекс с начинкой в стиле хотток (чёрный сахар, корица, орехи).",
+    "hotteokBungeoBody1": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
+    "hotteokBungeoBody2": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+    "hotteokBungeoTip": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
+    "hotteokBungeoBody": [
+      {
+        "type": "text",
+        "ko": "오리온 ‘참붕어빵’ 라인의 변형으로, 길거리 붕어빵·호떡을 모티브로 한 상온 케이크 과자입니다. 쫀득한 빵(케이크) 속에 흑당·시나몬·아몬드·땅콩 등 호떡소가 들어 있습니다. 길거리 즉석 붕어빵과는 다릅니다.",
+        "en": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
+        "ja": "オリオン「チャムたい焼き」系。屋台のたい焼き・ホットクがモチーフの常温ケーキ菓子。黒糖・シナモン・アーモンド・ピーナッツ風フィリング。屋台の焼きたてとは別物です。",
+        "zh": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
+        "zh-Hant": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
+        "vi": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
+        "th": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
+        "ru": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry."
+      },
+      {
+        "type": "text",
+        "ko": "편의점·마트에서 상자·멀티로 팔립니다. 전자레인지에 잠깐 데우면 속이 더 부드럽게 느껴진다는 안내도 있습니다.",
+        "en": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+        "ja": "コンビニ・マートの箱・マルチで。短時間レンジで中が柔らかくなる案内もあります。",
+        "zh": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+        "zh-Hant": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+        "vi": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+        "th": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+        "ru": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n패키지 ‘오리온’·‘호떡품은 참붕어빵’ 표기를 확인하세요. 오리지널 참붕어빵과 나란히 진열되는 경우가 많습니다.",
+        "en": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
+        "ja": "買い方\n\nオリオン「ホットク入りチャムたい焼き」表示を。オリジナルと並ぶことが多いです。",
+        "zh": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
+        "zh-Hant": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
+        "vi": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
+        "th": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
+        "ru": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang."
+      }
+    ],
+    "sableTitle": "Сабле",
+    "sableDesc": "Haitai Sablé — хрустящее масляное печенье в французском стиле, давний хит.",
+    "sableBody1": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
+    "sableBody2": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
+    "sableTip": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+    "sableBody": [
+      {
+        "type": "text",
+        "ko": "사브레는 해태제과의 대표 쿠키로, 바삭한 식감과 은은한 단맛·버터 풍미가 특징입니다. 마트·편의점 과자 코너에서 상자·묶음으로 쉽게 찾을 수 있습니다.",
+        "en": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
+        "ja": "サブレはヘテの代表クッキー。サクサク食感と控えめな甘さ・バター風味。マート・コンビニ菓子コーナーで箱・まとめ売りがあります。",
+        "zh": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
+        "zh-Hant": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
+        "vi": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
+        "th": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
+        "ru": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles."
+      },
+      {
+        "type": "text",
+        "ko": "커피·차와 잘 맞고, 너무 달지 않아 어른 선물로도 무난합니다. 깨지기 쉬우니 완충이 있는 포장을 고르세요.",
+        "en": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
+        "ja": "コーヒーやお茶に合い、甘さ控えめで大人の土産にも。割れやすいので緩衝があるものを。",
+        "zh": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
+        "zh-Hant": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
+        "vi": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
+        "th": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
+        "ru": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n‘해태 사브레’ 표기를 확인하세요. 대형마트 묶음이 편의점보다 저렴한 경우가 많습니다.",
+        "en": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+        "ja": "買い方\n\nヘテ サブレ表示を。大型マートまとめがコンビニより安いことが多いです。",
+        "zh": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+        "zh-Hant": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+        "vi": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+        "th": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+        "ru": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices."
+      }
+    ],
+    "barleyCookieTitle": "Ячменное печенье",
+    "barleyCookieDesc": "Ячменные сухари/печенье — ореховый вкус, слабая сладость, простой сувенир.",
+    "barleyCookieBody1": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
+    "barleyCookieBody2": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+    "barleyCookieTip": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
+    "barleyCookieBody": [
+      {
+        "type": "text",
+        "ko": "보리과자는 보리의 고소한 향이 나는 건빵·비스킷·쿠키를 가리킵니다. 청우 발효보리건빵처럼 마트 건빵·국산 코너에 나오거나, 전통 과자·선물 세트에도 섞여 있습니다.",
+        "en": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
+        "ja": "ボリクッキーは麦の香ばしい乾パン・ビスケット類。マートの乾パンコーナーや伝統菓子ギフトに混ざることもあります。",
+        "zh": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
+        "zh-Hant": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
+        "vi": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
+        "th": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
+        "ru": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments."
+      },
+      {
+        "type": "text",
+        "ko": "단맛이 세지 않아 차·커피와 잘 어울립니다. 선물용 지퍼팩·상자가 있으면 포장이 편합니다.",
+        "en": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+        "ja": "甘さ控えめでお茶に合います。ギフトパックがあると便利です。",
+        "zh": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+        "zh-Hant": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+        "vi": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+        "th": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+        "ru": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n대형마트·백화점 식품관·인사동에서 ‘보리’·건빵으로 찾아보세요. 제품명이 브랜드마다 다릅니다.",
+        "en": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
+        "ja": "買い方\n\n大型マート・百貨店・仁寺洞で「보리」・乾パンを。ブランドで名前が違います。",
+        "zh": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
+        "zh-Hant": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
+        "vi": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
+        "th": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
+        "ru": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand."
+      }
+    ],
+    "bichobiTitle": "Бичоби",
+    "bichobiDesc": "Orion Bichobi — цельнозерновое печенье с шоколадной начинкой с фундуком.",
+    "bichobiBody1": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
+    "bichobiBody2": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+    "bichobiTip": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
+    "bichobiBody": [
+      {
+        "type": "text",
+        "ko": "비쵸비는 오리온의 샌드 비스킷입니다. 메이플 시럽을 바른 통밀 비스킷 사이에 헤이즐넛을 넣은 통초콜릿이 들어 있습니다. ‘비초코’(다른 브랜드)와는 다른 제품입니다.",
+        "en": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
+        "ja": "ビチョビはオリオンのサンドビスケット。メイプルの全粒粉ビスケットにヘーゼルナッツ入りチョコを挟みます。ヘテの「ビチョコ」とは別商品です。",
+        "zh": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
+        "zh-Hant": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
+        "vi": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
+        "th": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
+        "ru": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”"
+      },
+      {
+        "type": "text",
+        "ko": "마트·편의점·기념품 코너에서 잘 보이며, 딸기 등 변형·에디션도 나옵니다. 외국인 선물로도 수요가 많습니다. 여름에는 초코가 녹지 않게 주의하세요.",
+        "en": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+        "ja": "マート・コンビニ・土産コーナーで見つけやすく、いちごなど派生もあります。夏は溶けに注意。",
+        "zh": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+        "zh-Hant": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+        "vi": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+        "th": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+        "ru": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n패키지에 ‘비쵸비’·오리온 표기를 확인하세요. 품절이 잦을 수 있어 보이면 미리 챙기세요.",
+        "en": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
+        "ja": "買い方\n\nパッケージの「ビチョビ」・オリオン表示を確認。品切れしやすいので見かけたら早めに。",
+        "zh": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
+        "zh-Hant": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
+        "vi": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
+        "th": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
+        "ru": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it."
+      }
+    ],
+    "chaltteokPieTitle": "Чхальток-пай",
+    "chaltteokPieDesc": "Lotte Chaltteok Pie — тягучий рисовый пирог с шоколадным кремом в шоколадной глазури.",
+    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+    "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+    "chaltteokPieBody": [
+      {
+        "type": "text",
+        "ko": "찰떡파이는 롯데웰푸드(명가)의 상온 과자로, 쫄깃한 찰떡 안에 초코크림을 넣고 겉을 초콜릿으로 감싼 제품입니다. SPC 빚은 매장의 냉장 ‘찰떡담은파이’와는 다른, 편의점·마트 과자 코너 상품입니다.",
+        "en": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "ja": "チャルトクパイはロッテウェルフード（名家）の常温菓子。もちもち餅にチョコクリームを入れ、外側をチョコでコーティング。SPCビジュン店の冷蔵デザート「찰떡담은파이」とは別物で、コンビニ・マート菓子コーナーの定番です。",
+        "zh": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "zh-Hant": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "vi": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "th": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "ru": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\""
+      },
+      {
+        "type": "text",
+        "ko": "편의점·이마트·홈플러스 등에서 낱개·멀티팩으로 쉽게 구합니다. 상온 보관이 가능해 기념품으로 가져가기 좋고, 일본 관광객 사이에서도 인기가 있습니다.",
+        "en": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "ja": "コンビニ・大型マートで単品・マルチパックが手に入りやすいです。常温保存できお土産向き。日本人旅行者にも人気です。",
+        "zh": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "zh-Hant": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "vi": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "th": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "ru": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n포장에 ‘찰떡파이’·롯데(명가) 표기를 확인하세요. 공항·관광지보다 대형마트 묶음이 대체로 저렴합니다.",
+        "en": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "ja": "買い方\n\nパッケージの「チャルトクパイ」・ロッテ（名家）表示を確認。空港より大型マートのまとめ買いがお得なことが多いです。",
+        "zh": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "zh-Hant": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "vi": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "th": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "ru": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices."
+      }
+    ],
+    "kkobukChipTitle": "Черепашьи чипсы",
+    "kkobukChipDesc": "Orion Kkobuk — хрустящий кукурузный снек из четырёх слоёв, как панцирь черепахи.",
+    "kkobukChipBody1": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
+    "kkobukChipBody2": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
+    "kkobukChipTip": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+    "kkobukChipBody": [
+      {
+        "type": "text",
+        "ko": "꼬북칩은 오리온의 네 겹 바삭 스낵입니다. 감자칩이 아니라 옥수수 스낵에 가깝고, 콘소메·초코 등 맛이 있습니다.",
+        "en": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
+        "ja": "コブクチップはオリオンの4層スナック。ポテトチップスではなくコーン系で、コンソメ・チョコなど味があります。",
+        "zh": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
+        "zh-Hant": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
+        "vi": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
+        "th": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
+        "ru": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors."
+      },
+      {
+        "type": "text",
+        "ko": "부피가 커서 캐리어에 넣기 전에 압축·지퍼백을 권합니다. 편의점보다 마트 묶음이 저렴한 경우가 많습니다.",
+        "en": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
+        "ja": "かさばるのでジップ袋推奨。コンビニよりマートまとめがお得なことが多いです。",
+        "zh": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
+        "zh-Hant": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
+        "vi": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
+        "th": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
+        "ru": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n초코 맛은 녹기 쉬우니 여름에는 콘소메 등 짭짤한 맛을 권합니다.",
+        "en": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+        "ja": "買い方\n\n夏はチョコ味より塩味が安心です。",
+        "zh": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+        "zh-Hant": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+        "vi": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+        "th": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+        "ru": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better."
+      }
+    ],
+    "bbangBujangTitle": "Серия Bbang Bujang",
+    "bbangBujangDesc": "Nongshim Bbang Bujang — снеки в форме хлеба: солёный хлеб, шоколадный, сладко-солёные завитки и др.",
+    "bbangBujangBody1": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
+    "bbangBujangBody2": "Pick one flavor or mix a gift set. Names can change by season.",
+    "bbangBujangTip": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+    "bbangBujangBody": [
+      {
+        "type": "text",
+        "ko": "빵부장은 농심의 베이커리 스낵 브랜드입니다. 크루아상·소금빵·초코빵 맛에 이어 솔티꽈배기 등, 빵집 메뉴를 바삭한 스낵으로 옮긴 라인업이 편의점·마트에 함께 진열되는 경우가 많습니다.",
+        "en": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
+        "ja": "パン部長は農心のベイカリースナック。クロワッサン・塩パン・チョコパン風、ソルティねじりなど。コンビニ・マートで並んで売られることが多いです。",
+        "zh": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
+        "zh-Hant": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
+        "vi": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
+        "th": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
+        "ru": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together."
+      },
+      {
+        "type": "text",
+        "ko": "한 가지만 골라도 되고, 여러 맛을 모아 선물 세트로 구성해도 좋습니다. 제품명이 시즌마다 바뀔 수 있습니다.",
+        "en": "Pick one flavor or mix a gift set. Names can change by season.",
+        "ja": "1味でも、詰め合わせでも土産になります。季節で名前が変わることも。",
+        "zh": "Pick one flavor or mix a gift set. Names can change by season.",
+        "zh-Hant": "Pick one flavor or mix a gift set. Names can change by season.",
+        "vi": "Pick one flavor or mix a gift set. Names can change by season.",
+        "th": "Pick one flavor or mix a gift set. Names can change by season.",
+        "ru": "Pick one flavor or mix a gift set. Names can change by season."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n‘농심 빵부장’ 로고·제품명을 확인하고, 알레르기(밀·유제품) 표시를 보세요.",
+        "en": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+        "ja": "買い方\n\n農心パン部長のロゴとアレルギー表示（小麦・乳）を確認。",
+        "zh": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+        "zh-Hant": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+        "vi": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+        "th": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+        "ru": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy)."
+      }
+    ],
+    "nangmanSandwichTitle": "Incheon Annyeong Sand (аэропорт Инчхон)",
+    "nangmanSandwichDesc": "Лимитированный cookie-sand Paris Baguette в аэропорту — сувенир с чочхон-карамелью, перилой и макадамией.",
+    "nangmanSandwichBody1": "Incheon Annyeong Sand — версия аэропорта Инчхон в линейке региональных cookie-sand Paris Baguette. Масляное печенье с карамелью из чочхона (зерновой сироп), целыми семенами периллы и макадамией — десертный сувенир, а не сытный сэндвич с яйцом и ветчиной.",
+    "nangmanSandwichBody2": "На печенье выдавлены «аннён» (привет/прощай) и логотип с корейским орнаментом — популярный подарок перед вылетом или на пересадке. Продаётся в Paris Baguette в аэропорту (в т.ч. Air Lab T1); точки и наличие зависят от терминала и сезона.",
+    "nangmanSandwichTip": "Совет\n\nОставьте время до досмотра. Подарочные коробки обычно хранятся при комнатной температуре. Ищите Paris Baguette / Incheon Annyeong Sand на карте или в навигации аэропорта.",
+    "nangmanSandwichBody": [
+      {
+        "type": "text",
+        "ko": "인천안녕샌드는 파리바게뜨 지역 한정 ‘샌드’ 시리즈의 인천공항 버전입니다. 버터 쿠키 사이에 조청 캐러멜·통들깨·마카다미아를 넣은 디저트 과자로, 계란·햄 샌드위치와는 다릅니다.",
+        "en": "Incheon Annyeong Sand is Paris Baguette's Incheon Airport edition of its regional \"sand\" cookie series. Butter cookies filled with jocheong (grain-syrup) caramel, whole perilla seeds, and macadamia — a dessert souvenir, not a savory egg-and-ham sandwich.",
+        "ja": "仁川アンニョンサンドは、パリバゲットの地域限定「サンド」シリーズの仁川空港版です。バタークッキーにチョンジョウ（麦芽水飴）キャラメル・炒りエゴマ・マカダミアを挟んだデザート菓子で、卵・ハムの食事サンドとは別物です。",
+        "zh": "仁川「你好」夹心饼干是巴黎贝甜地区限定「夹心饼干」系列的仁川机场版。黄油饼干夹着用传统麦芽糖浆做成的焦糖、整粒苏子和夏威夷果，是甜点伴手礼，不是火腿鸡蛋三明治。",
+        "zh-Hant": "仁川「你好」夾心餅乾是巴黎貝甜地區限定「夾心餅乾」系列的仁川機場版。奶油餅乾夾著用傳統麥芽糖漿做成的焦糖、整粒紫蘇籽和夏威夷果，是甜點伴手禮，不是火腿雞蛋三明治。",
+        "vi": "Incheon Annyeong Sand là phiên bản sân bay Incheon trong dòng bánh cookie “sand” giới hạn theo vùng của Paris Baguette. Bánh quy bơ kẹp caramel jocheong (siro ngũ cốc), hạt tía tô nguyên và macadamia — món quà tráng miệng, không phải bánh mì trứng–giăm bông.",
+        "th": "อินช็อนอันยองแซนด์ คือรุ่นสนามบินอินช็อนของซีรีส์คุกกี้แซนด์จำกัดพื้นที่จากปารีสบาแก็ต คุกกี้เนยสอดไส้คาราเมลโจชอง (ไซรัปธัญพืช) งาขี้ม้อนทั้งเมล็ด และมาคาดาเมีย — ของฝากของหวาน ไม่ใช่แซนด์วิชไข่แฮม",
+        "ru": "Incheon Annyeong Sand — версия аэропорта Инчхон в линейке региональных cookie-sand Paris Baguette. Масляное печенье с карамелью из чочхона (зерновой сироп), целыми семенами периллы и макадамией — десертный сувенир, а не сытный сэндвич с яйцом и ветчиной."
+      },
+      {
+        "type": "text",
+        "ko": "쿠키 겉면에는 ‘안녕’ 메시지와 한국 전통 문양 로고가 새겨져 있어 출국·환승 기념·선물로 많이 삽니다. 제1터미널 에어랩 등 공항 내 파리바게뜨에서 판매하며, 매장·재고는 터미널·시기에 따라 다를 수 있습니다.",
+        "en": "Cookies are stamped with \"annyeong\" (hello/goodbye) and a Korean-motif logo — popular as a departure or transfer gift. Sold at Paris Baguette shops in the airport (including the T1 Air Lab); locations and stock vary by terminal and time.",
+        "ja": "クッキー表面には「안녕（こんにちは／さようなら）」のメッセージと韓国伝統文様のロゴが刻まれ、出国・乗り継ぎの土産に人気です。第1ターミナルのエアラボなど空港内パリバゲットで販売。店舗・在庫はターミナルや時期で変わることがあります。",
+        "zh": "饼干表面印有「你好」字样与韩国传统纹样标志，很适合作出入境或转机伴手礼。在机场内巴黎贝甜门店销售（含T1 Air Lab等），具体门店与库存会因航站楼和时期而异。",
+        "zh-Hant": "餅乾表面印有「你好」字樣與韓國傳統紋樣標誌，很適合作出入境或轉機伴手禮。在機場內巴黎貝甜門市販售（含T1 Air Lab等），具體門市與庫存會因航廈和時期而異。",
+        "vi": "Mặt bánh in chữ “annyeong” (xin chào/tạm biệt) và họa tiết truyền thống Hàn Quốc — quà lưu niệm trước khi bay hoặc khi quá cảnh. Bán tại Paris Baguette trong sân bay (gồm Air Lab T1); cửa hàng và hàng tồn kho có thể khác theo nhà ga và thời điểm.",
+        "th": "ผิวคุกกี้ปั๊มข้อความ「อันยอง」และโลโก้ลายเกาหลี — ของฝากยอดนิยมก่อนออกเดินทางหรือระหว่างแวะต่อ ขายที่ปารีสบาแก็ตในสนามบิน (รวม Air Lab ที่ T1) ร้านและสต็อกอาจต่างตามอาคารผู้โดยสารและช่วงเวลา",
+        "ru": "На печенье выдавлены «аннён» (привет/прощай) и логотип с корейским орнаментом — популярный подарок перед вылетом или на пересадке. Продаётся в Paris Baguette в аэропорту (в т.ч. Air Lab T1); точки и наличие зависят от терминала и сезона."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n보안검색·탑승 전 여유를 두고 사세요. 선물용 박스 과자라 보통 상온 보관입니다. 지도·공항 안내에서 ‘파리바게뜨’·‘인천안녕샌드’로 검색해 보세요.",
+        "en": "Buying tip\n\nAllow time before security. Gift boxes are typically shelf-stable at room temperature. Search maps or airport guides for Paris Baguette / Incheon Annyeong Sand.",
+        "ja": "買い方\n\n保安検査・搭乗前に余裕を。ギフトボックスの菓子で、通常は常温保存です。地図・空港案内で「パリバゲット」「仁川アンニョンサンド」を検索を。",
+        "zh": "购买提示\n\n安检登机前请预留时间。礼盒点心一般可常温保存。可在地图或机场导览中搜索「巴黎贝甜」「仁川你好夹心饼干」。",
+        "zh-Hant": "購買提示\n\n安檢登機前請預留時間。禮盒點心一般可常溫保存。可在地圖或機場導覽中搜尋「巴黎貝甜」「仁川你好夾心餅乾」。",
+        "vi": "Mẹo mua\n\nChừa thời gian trước an ninh/boarding. Hộp quà thường bảo quản ở nhiệt độ phòng. Tìm trên bản đồ/hướng dẫn sân bay: Paris Baguette / Incheon Annyeong Sand.",
+        "th": "เคล็ดลับการซื้อ\n\nเผื่อเวลาก่อนตรวจค้น/ขึ้นเครื่อง กล่องของฝากมักเก็บอุณหภูมิห้องได้ ค้นแผนที่หรือป้ายสนามบินว่า Paris Baguette / Incheon Annyeong Sand",
+        "ru": "Совет\n\nОставьте время до досмотра. Подарочные коробки обычно хранятся при комнатной температуре. Ищите Paris Baguette / Incheon Annyeong Sand на карте или в навигации аэропорта."
+      }
+    ],
+    "catDaiso": "Daiso",
+    "catHealth": "Здоровье и БАДы",
+    "drRejuAllTitle": "Dr.Reju-All Advanced PDRN Cream",
+    "drRejuAllDesc": "Dr.Reju-All Advanced PDRN Rejuvenating Cream — popular travel skincare gift.",
+    "drRejuAllBody1": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
+    "drRejuAllBody2": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml). Try a tester if available.",
+    "drRejuAllTip": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+    "drRejuAllBody": [
+      {
+        "type": "text",
+        "ko": "닥터 리쥬올(Dr.Reju-All) Advanced PDRN Rejuvenating Cream은 PDRN 성분을 내세운 리쥬브네이팅 크림입니다. 올리브영·드럭스토어·백화점 화장품 코너에서 찾는 여행객이 많습니다.",
+        "en": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
+        "ja": "ドクターリジュオールのPDRNリジュベネーティングクリーム。オリーブヤングやドラッグストアで探す旅行者が多いです。",
+        "zh": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
+        "zh-Hant": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
+        "vi": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
+        "th": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
+        "ru": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors."
+      },
+      {
+        "type": "text",
+        "ko": "용량·성분표(영문)와 유통기한을 확인하고, 액체·크림류는 기내 수하물 제한(100ml)을 고려하세요.",
+        "en": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml).",
+        "ja": "容量・成分表示・期限を確認。機内液体制限(100ml)に注意。",
+        "zh": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml).",
+        "zh-Hant": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml).",
+        "vi": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml).",
+        "th": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml).",
+        "ru": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml)."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n공식·대형 매장에서 구매하고, 귀국 시 세관·액체 규정을 미리 확인하세요.",
+        "en": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+        "ja": "買い方\n\n公式・大型店で購入し、帰国時の液体・税関ルールを確認を。",
+        "zh": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+        "zh-Hant": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+        "vi": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+        "th": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+        "ru": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules."
+      }
+    ],
+    "mommycareSeaGrapeTitle": "Mommy Care Sea Grape Skin Pack",
+    "mommycareSeaGrapeDesc": "Mommy Care sea-grape skin pack at Daiso — budget sheet/skincare.",
+    "mommycareSeaGrapeBody1": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
+    "mommycareSeaGrapeBody2": "Check ingredients and skin-type labels; patch-test if sensitive. Look in Daiso beauty/mask aisles.",
+    "mommycareSeaGrapeTip": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+    "mommycareSeaGrapeBody": [
+      {
+        "type": "text",
+        "ko": "마미케어 바다포도 스킨팩은 다이소에서 자주 보이는 가성비 스킨케어입니다. 바다포도(씨그레이프) 콘셉트로 여행 중·기념품으로 여러 장 담기 좋습니다.",
+        "en": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
+        "ja": "ダイソーでよく見かけるマミケア海ぶどうスキンパック。旅の補給・お土産に複数買いしやすいです。",
+        "zh": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
+        "zh-Hant": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
+        "vi": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
+        "th": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
+        "ru": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts."
+      },
+      {
+        "type": "text",
+        "ko": "성분·피부 타입 표기를 확인하고, 민감 피부는 패치 테스트를 권합니다.",
+        "en": "Check ingredients and skin-type labels; patch-test if sensitive.",
+        "ja": "成分と肌質表示を確認。敏感肌はパッチテストを。",
+        "zh": "Check ingredients and skin-type labels; patch-test if sensitive.",
+        "zh-Hant": "Check ingredients and skin-type labels; patch-test if sensitive.",
+        "vi": "Check ingredients and skin-type labels; patch-test if sensitive.",
+        "th": "Check ingredients and skin-type labels; patch-test if sensitive.",
+        "ru": "Check ingredients and skin-type labels; patch-test if sensitive."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n관광지 다이소보다 주택가·대형점이 재고가 넉넉한 경우가 많습니다.",
+        "en": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+        "ja": "買い方\n\n観光地より住宅街・大型店のほうが在庫が多いことがあります。",
+        "zh": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+        "zh-Hant": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+        "vi": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+        "th": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+        "ru": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots."
+      }
+    ],
+    "sagolHancupTitle": "Sagol Han-cup Tea Bags",
+    "sagolHancupDesc": "Daiso Sagol Han-cup tea bags — easy bone-broth-style cup.",
+    "sagolHancupBody1": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
+    "sagolHancupBody2": "Check sodium and allergen labels. Hotel kettles work fine.",
+    "sagolHancupTip": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+    "sagolHancupBody": [
+      {
+        "type": "text",
+        "ko": "사골한컵 티백은 뜨거운 물에 우려 사골 맛을 내는 간편 티백입니다. 다이소·생활용품 코너에서 찾는 여행용·캠핑용 아이템으로 인기입니다.",
+        "en": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
+        "ja": "熱湯でサゴル風の一杯が作れるティーバッグ。ダイソーの旅・キャンプ向けとして人気です。",
+        "zh": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
+        "zh-Hant": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
+        "vi": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
+        "th": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
+        "ru": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n액체 국물이 아니라 티백 형태라 항공 반입이 비교적 수월합니다.",
+        "en": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+        "ja": "買い方\n\n液体スープよりティーバッグのほうが機内持ち込みしやすいです。",
+        "zh": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+        "zh-Hant": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+        "vi": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+        "th": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+        "ru": "Buying tip\n\nTea-bag format is easier for flights than liquid soup."
+      }
+    ],
+    "bananaLatteProteinTitle": "Banana Latte Protein Shake",
+    "bananaLatteProteinDesc": "Daiso banana-latte protein shake — easy protein drink.",
+    "bananaLatteProteinBody1": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
+    "bananaLatteProteinBody2": "Check dairy/allergen labels. Drink chilled RTD soon after opening.",
+    "bananaLatteProteinTip": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+    "bananaLatteProteinBody": [
+      {
+        "type": "text",
+        "ko": "바나나라떼 맛 단백질 쉐이크는 다이소에서 고르는 간편 단백질 음료·파우더류입니다. 여행 중 아침·운동 후 간식으로 찾는 경우가 많습니다.",
+        "en": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
+        "ja": "バナナラテ風プロテインは旅の朝・運動後の補給に。ダイソーで手軽に買えます。",
+        "zh": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
+        "zh-Hant": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
+        "vi": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
+        "th": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
+        "ru": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n파우더형은 액체 제한에 유리하고, RTD 음료는 개봉 전 유통기한을 보세요.",
+        "en": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+        "ja": "買い方\n\n粉末は液体制限に有利。RTDは期限を確認。",
+        "zh": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+        "zh-Hant": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+        "vi": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+        "th": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+        "ru": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles."
+      }
+    ],
+    "berryAppleGranolaTitle": "Berry Apple Granola Cup",
+    "berryAppleGranolaDesc": "Daiso Berry Apple granola cup — berry-apple cereal cup.",
+    "berryAppleGranolaBody1": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
+    "berryAppleGranolaBody2": "Check nut/gluten allergens. Cup format is hotel-friendly.",
+    "berryAppleGranolaTip": "Buying tip\n\nCheck the date and keep dry after opening.",
+    "berryAppleGranolaBody": [
+      {
+        "type": "text",
+        "ko": "배리에플 그래놀라 컵은 베리·애플 토핑 느낌의 컵 그래놀라입니다. 다이소에서 아침·간식으로 사서 우유·요거트와 함께 먹습니다.",
+        "en": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
+        "ja": "ベリー・アップル風のカップグラノーラ。牛乳やヨーグルトと一緒に朝食・おやつに。",
+        "zh": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
+        "zh-Hant": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
+        "vi": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
+        "th": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
+        "ru": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n유통기한과 개봉 후 보관(습기)을 확인하세요.",
+        "en": "Buying tip\n\nCheck the date and keep dry after opening.",
+        "ja": "買い方\n\n賞味期限と開封後の湿気に注意。",
+        "zh": "Buying tip\n\nCheck the date and keep dry after opening.",
+        "zh-Hant": "Buying tip\n\nCheck the date and keep dry after opening.",
+        "vi": "Buying tip\n\nCheck the date and keep dry after opening.",
+        "th": "Buying tip\n\nCheck the date and keep dry after opening.",
+        "ru": "Buying tip\n\nCheck the date and keep dry after opening."
+      }
+    ],
+    "allTheBetterCacaoTitle": "All the Better Low-Sugar Cacao",
+    "allTheBetterCacaoDesc": "Daiso All the Better low-sugar cacao — less-sweet cacao treat.",
+    "allTheBetterCacaoBody1": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
+    "allTheBetterCacaoBody2": "Low-sugar still may have calories/caffeine — read the label. Small packs travel well.",
+    "allTheBetterCacaoTip": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+    "allTheBetterCacaoBody": [
+      {
+        "type": "text",
+        "ko": "올더배러 저당카카오는 당을 줄인 카카오 제품으로, 다이소에서 고르는 ‘덜 단’ 간식·핫초코용으로 인기입니다.",
+        "en": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
+        "ja": "オールザベター低糖カカオは甘さ控えめのカカオ。おやつやホットチョコ用に。",
+        "zh": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
+        "zh-Hant": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
+        "vi": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
+        "th": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
+        "ru": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n‘저당·무설탕’ 표기와 실제 당류(g)를 함께 보세요.",
+        "en": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+        "ja": "買い方\n\n『低糖・無糖』表示と実際の糖質量を照合を。",
+        "zh": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+        "zh-Hant": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+        "vi": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+        "th": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+        "ru": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams."
+      }
+    ],
+    "lactoFitTitle": "Lacto-Fit",
+    "lactoFitDesc": "Chong Kun Dang Lacto-Fit — popular Korean probiotic supplement.",
+    "lactoFitBody1": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
+    "lactoFitBody2": "Read functional-food labels and dosing. Check your country’s import rules. Kids vs adult lines differ.",
+    "lactoFitTip": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+    "lactoFitBody": [
+      {
+        "type": "text",
+        "ko": "락토핏(Lacto-Fit)은 종근당건강의 인기 유산균 제품입니다. 약국·올리브영·대형마트 건강식품 코너에서 스틱형으로 많이 팝니다.",
+        "en": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
+        "ja": "ラクトフィットは韓国で人気の乳酸菌。薬局・オリーブヤング・マートのスティックタイプが定番です。",
+        "zh": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
+        "zh-Hant": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
+        "vi": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
+        "th": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
+        "ru": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts."
+      },
+      {
+        "type": "text",
+        "ko": "건강기능식품 표시·섭취 방법을 읽고, 귀국 시 자국 반입 규정을 확인하세요.",
+        "en": "Read functional-food labels and dosing. Check your country’s import rules.",
+        "ja": "機能性表示と摂取方法を確認。帰国時の持ち込みルールも。",
+        "zh": "Read functional-food labels and dosing. Check your country’s import rules.",
+        "zh-Hant": "Read functional-food labels and dosing. Check your country’s import rules.",
+        "vi": "Read functional-food labels and dosing. Check your country’s import rules.",
+        "th": "Read functional-food labels and dosing. Check your country’s import rules.",
+        "ru": "Read functional-food labels and dosing. Check your country’s import rules."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n행사·묶음이 잦으니 올리브영·마트 가격을 비교하세요.",
+        "en": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+        "ja": "買い方\n\nセールやセットが多いので価格比較を。",
+        "zh": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+        "zh-Hant": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+        "vi": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+        "th": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+        "ru": "Buying tip\n\nCompare Olive Young and mart bundle deals."
+      }
+    ],
+    "koreaEundanVitCTitle": "Korea Eundan Vitamin C 1000",
+    "koreaEundanVitCDesc": "Korea Eundan Vitamin C 1000 — portable vitamin C tablets.",
+    "koreaEundanVitCBody1": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
+    "koreaEundanVitCBody2": "Check 1000mg per tablet and daily limits; take after meals if your stomach is sensitive.",
+    "koreaEundanVitCTip": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+    "koreaEundanVitCBody": [
+      {
+        "type": "text",
+        "ko": "고려은단 비타민C 1000은 한국에서 흔히 사는 비타민C 보충제입니다. 약국·편의점·올리브영·마트에서 병·휴대 케이스로 판매됩니다.",
+        "en": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
+        "ja": "高麗銀丹のビタミンC 1000は薬局・コンビニ・オリーブヤングなどで買える定番サプリです。",
+        "zh": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
+        "zh-Hant": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
+        "vi": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
+        "th": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
+        "ru": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n여행용 미니 팩·케이스 제품이 캐리어에 넣기 좋습니다.",
+        "en": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+        "ja": "買い方\n\n旅用ミニパックが荷物に入れやすいです。",
+        "zh": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+        "zh-Hant": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+        "vi": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+        "th": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+        "ru": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase."
+      }
+    ],
+    "yangbanKimBugakTitle": "Yangban Gim Bugak Series",
+    "yangbanKimBugakDesc": "Yangban gim bugak — crispy fried seaweed snack series.",
+    "yangbanKimBugakBody1": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
+    "yangbanKimBugakBody2": "Oily/salty — eat soon after opening and keep dry.",
+    "yangbanKimBugakTip": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+    "yangbanKimBugakBody": [
+      {
+        "type": "text",
+        "ko": "양반김 김부각 시리즈는 김을 튀겨 만든 바삭한 부각 스낵입니다. 마트·기념품 코너·공항에서 선물용으로 잘 나갑니다.",
+        "en": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
+        "ja": "海苔を揚げたブガクスナック。マートや空港のお土産に人気です。",
+        "zh": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
+        "zh-Hant": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
+        "vi": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
+        "th": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
+        "ru": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n깨지기 쉬우니 캐리어 중앙에 넣고, 개별 포장 멀티팩을 고르면 나눠 주기 쉽습니다.",
+        "en": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+        "ja": "買い方\n\n割れやすいので荷物の中央へ。個包装マルチが配りやすいです。",
+        "zh": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+        "zh-Hant": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+        "vi": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+        "th": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+        "ru": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share."
+      }
+    ],
+    "jjawangRamenTitle": "Nongshim Jjawang Ramen",
+    "jjawangRamenDesc": "Nongshim Jjawang — rich jjajang (black bean) ramen.",
+    "jjawangRamenBody1": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
+    "jjawangRamenBody2": "Many versions drain water then mix sauce. Double-bag liquid packets in luggage.",
+    "jjawangRamenTip": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+    "jjawangRamenBody": [
+      {
+        "type": "text",
+        "ko": "농심 짜왕은 진한 짜장 소스가 특징인 라면입니다. 짜파게티와 함께 마트·편의점 멀티팩으로 기념품처럼 사 가는 경우가 많습니다.",
+        "en": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
+        "ja": "濃厚なジャジャンソースが特徴。チャパゲティと一緒にマルチパックでお土産にする人も多いです。",
+        "zh": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
+        "zh-Hant": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
+        "vi": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
+        "th": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
+        "ru": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n이마트·홈플러스 라면 특가가 편의점보다 저렴한 경우가 많습니다.",
+        "en": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+        "ja": "買い方\n\n大型マートのラーメン特価がお得なことが多いです。",
+        "zh": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+        "zh-Hant": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+        "vi": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+        "th": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+        "ru": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices."
+      }
+    ],
+    "osullocJejuGreenTeaTitle": "Osulloc Jeju Pure Green Tea & Sweets",
+    "osullocJejuGreenTeaDesc": "Osulloc Jeju pure green tea bags and green-tea sweets.",
+    "osullocJejuGreenTeaBody1": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
+    "osullocJejuGreenTeaBody2": "Tea bags travel light; protect cookies from crushing/heat. Official stores have clearer gift sets.",
+    "osullocJejuGreenTeaTip": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+    "osullocJejuGreenTeaBody": [
+      {
+        "type": "text",
+        "ko": "오설록(O’Sulloc)의 제주순수녹차 티백과 녹차 과자·쿠키는 제주·서울 티하우스·백화점·공항에서 사는 대표 차 기념품입니다.",
+        "en": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
+        "ja": "済州純粋緑茶ティーバッグと緑茶クッキーはティーハウス・百貨店・空港の定番お土産です。",
+        "zh": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
+        "zh-Hant": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
+        "vi": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
+        "th": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
+        "ru": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n제주 오설록 티뮤지엄·명동·백화점 세트를 비교해 보세요.",
+        "en": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+        "ja": "買い方\n\n済州ティーミュージアム・明洞・百貨店セットを比較を。",
+        "zh": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+        "zh-Hant": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+        "vi": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+        "th": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+        "ru": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets."
+      }
+    ],
+    "koreanTraditionalAccessoriesTitle": "Korean Traditional Accessories",
+    "koreanTraditionalAccessoriesDesc": "Norigae, binyeo, and hanbok-style accessory souvenirs.",
+    "koreanTraditionalAccessoriesBody1": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
+    "koreanTraditionalAccessoriesBody2": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand and ask about gift wrap.",
+    "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
+    "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
+    "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",
+    "koreanTraditionalAccessoriesBody": [
+      {
+        "type": "text",
+        "ko": "한국전통 악세서리는 노리개, 비녀, 한복 브로치·키링, 전통 문양 귀걸이·팔찌처럼 가져가기 쉬운 문화 기념품입니다. 인사동·통인시장·민속촌·백화점 전통 코너에서 고를 수 있습니다.",
+        "en": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
+        "ja": "ノリゲ、かんざし、韓服ブローチ・キーホルダーなど持ち帰りやすい文化土産。仁寺洞・通仁市場・民俗村・百貨店の伝統コーナーで選べます。",
+        "zh": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
+        "zh-Hant": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
+        "vi": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
+        "th": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
+        "ru": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners."
+      },
+      {
+        "type": "text",
+        "ko": "한국민속촌 공식 스토어에서도 전통 소품·기념품을 둘러볼 수 있습니다. 금속·천 소재와 마감을 손으로 확인하세요.",
+        "en": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand.",
+        "ja": "韓国民俗村公式ストアでも伝統小物を探せます。金具・生地の仕上がりを確認を。",
+        "zh": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand.",
+        "zh-Hant": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand.",
+        "vi": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand.",
+        "th": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand.",
+        "ru": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n한국민속촌 스토어(https://www.koreanfolk.co.kr/store)에서 전통 소품을 확인할 수 있습니다. 방문·주문 전 안내를 보세요.",
+        "en": "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering.",
+        "ja": "買い方\n\n韓国民俗村ストア(https://www.koreanfolk.co.kr/store)で伝統小物を確認できます。事前に案内を見てください。",
+        "zh": "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering.",
+        "zh-Hant": "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering.",
+        "vi": "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering.",
+        "th": "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering.",
+        "ru": "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering."
+      }
+    ],
+    "saeukkangTitle": "Сэуккан",
+    "saeukkangDesc": "Nongshim Сэуккан — хрустящий креветочный снек, корейская классика.",
+    "saeukkangBody1": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
+    "saeukkangBody2": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
+    "saeukkangTip": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+    "saeukkangBody": [
+      {
+        "type": "text",
+        "ko": "새우깡은 농심의 대표 스낵으로, 생새우 풍미의 바삭한 과자입니다. 오리지널·매운맛·쌀·블랙 등 변형이 마트·편의점에 많습니다.",
+        "en": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
+        "ja": "セウカンは農心の代表エビ風味スナック。オリジナル・辛口・米・ブラックなどがマートやコンビニにあります。",
+        "zh": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
+        "zh-Hant": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
+        "vi": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
+        "th": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
+        "ru": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles."
+      },
+      {
+        "type": "text",
+        "ko": "부피가 커서 캐리어에 넣기 전에 지퍼백·압축을 권합니다. 선물용으로는 멀티팩·묶음이 나눠 주기 쉽습니다.",
+        "en": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
+        "ja": "かさばるのでジップ袋が便利。マルチパックが配りやすいです。",
+        "zh": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
+        "zh-Hant": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
+        "vi": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
+        "th": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
+        "ru": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n공항·관광지보다 이마트·홈플러스 묶음이 대체로 저렴합니다. ‘농심 새우깡’ 표기를 확인하세요.",
+        "en": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+        "ja": "買い方\n\n空港より大型マートがお得。農心セウカン表示を確認。",
+        "zh": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+        "zh-Hant": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+        "vi": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+        "th": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+        "ru": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label."
+      }
+    ],
+    "honeyButterChipsTitle": "Чипсы Honey Butter",
+    "honeyButterChipsDesc": "Haitai Honey Butter Chips — сладко-солёные чипсы, популярный сувенир.",
+    "honeyButterChipsBody1": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+    "honeyButterChipsBody2": "Пакеты объёмные и могут порваться — кладите в середину багажа. Сравнивайте сезонные вкусы.",
+    "honeyButterChipsTip": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов.",
+    "honeyButterChipsBody": [
+      {
+        "type": "text",
+        "ko": "허니버터칩은 해태와 일본 칼비(Calbee) 협업의 감자칩으로, 꿀·버터 시즈닝의 단짠 맛이 특징입니다. 2010년대 열풍 이후에도 마트·편의점 정석 선물입니다.",
+        "en": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+        "ja": "ハニーバターチップはヘテ×カルビーのポテチ。蜂蜜・バターの甘じょっぱい味。今も定番土産です。",
+        "zh": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+        "zh-Hant": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+        "vi": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+        "th": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+        "ru": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom."
+      },
+      {
+        "type": "text",
+        "ko": "부피가 크고 봉지가 쉽게 터질 수 있어 캐리어 중앙·이중 포장을 권합니다. 시즌·한정 맛도 함께 비교해 보세요.",
+        "en": "Bags are bulky and can burst — pack in the middle of luggage. Compare seasonal flavors too.",
+        "ja": "かさばり破れやすいので荷物の中央に。季節限定もチェック。",
+        "zh": "包装鼓且易破，放在行李箱中间。也可看看限定口味。",
+        "zh-Hant": "包裝鼓且易破，放在行李箱中間。也可看看限定口味。",
+        "vi": "Túi cồng kềnh, dễ bục — để giữa vali. So cả vị theo mùa.",
+        "th": "ถุงใหญ่แตกง่าย วางกลางกระเป๋า เทียบรสถูกฤดูกาลด้วย",
+        "ru": "Пакеты объёмные и могут порваться — кладите в середину багажа. Сравнивайте сезонные вкусы."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n‘허니버터칩’·해태 표기를 확인하세요. 유사 꿀버터 칩이 많으니 브랜드를 구분하세요.",
+        "en": "Buying tip\n\nCheck the Haitai Honey Butter Chip label — many lookalike honey-butter chips exist.",
+        "ja": "買い方\n\nヘテ・ハニーバターチップ表示を確認。類似品が多いです。",
+        "zh": "购买提示\n\n认准海太蜂蜜黄油薯片，仿品很多。",
+        "zh-Hant": "購買提示\n\n認準海太蜂蜜奶油洋芋片，仿品很多。",
+        "vi": "Mẹo mua\n\nNhìn nhãn Haitai Honey Butter Chip — hàng na ná rất nhiều.",
+        "th": "เคล็ดลับ\n\nดูฉลาก Haitai Honey Butter Chip ของเลียนแบบมีเยอะ",
+        "ru": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов."
+      }
+    ],
+    "cheongKwanJangTitle": "Cheong Kwan Jang",
+    "cheongKwanJangDesc": "KGC Cheong Kwan Jang — флагманские стики красного женьшеня и подарочные наборы.",
+    "cheongKwanJangBody1": "Cheong Kwan Jang — бренд красного женьшеня KGC: стики Everytime, экстракты и подарочные наборы в универмагах, duty-free и аэропортах.",
+    "cheongKwanJangBody2": "Покупайте в официальных/крупных магазинах. Жидкие стики — ограничение ручной клади; сдавайте багаж или берите порошок/таблетки.",
+    "cheongKwanJangTip": "Совет\n\nСравните официальные, универмаг и аэропортные наборы; проверяйте срок и пломбы.",
+    "cheongKwanJangBody": [
+      {
+        "type": "text",
+        "ko": "정관장(Cheong Kwan Jang)은 한국인삼공사(KGC)의 홍삼 브랜드로, 에브리타임 스틱·농축액·선물세트가 백화점 식품관·면세·공항에서 잘 팔립니다. 여행 선물·건강 기념품으로 자주 고릅니다.",
+        "en": "Cheong Kwan Jang is KGC’s red-ginseng brand — Everytime sticks, extracts, and gift sets sell well in department food halls, duty-free, and airports. A common health souvenir.",
+        "ja": "正官庄は韓国人参公社の紅参ブランド。エブリタイムスティック・濃縮液・ギフトが百貨店・免税・空港で人気です。",
+        "zh": "正官庄是韩国人参公社的红参品牌。Everytime条、浓缩液和礼盒在百货食品区、免税和机场很常见。",
+        "zh-Hant": "正官莊是韓國人參公社的紅參品牌。Everytime條、濃縮液和禮盒在百貨食品區、免稅和機場很常見。",
+        "vi": "Cheong Kwan Jang là thương hiệu hồng sâm của KGC — stick Everytime, cao và set quà dễ mua ở siêu thị cao cấp, duty-free, sân bay.",
+        "th": "ชองกวานจังคือแบรนด์โสมแดงของ KGC — สติก Everytime สารสกัด และชุดของขวัญหาซื้อได้ตามห้าง ดิวตี้ฟรี สนามบิน",
+        "ru": "Cheong Kwan Jang — бренд красного женьшеня KGC: стики Everytime, экстракты и подарочные наборы в универмагах, duty-free и аэропортах."
+      },
+      {
+        "type": "text",
+        "ko": "위조 방지를 위해 공식·대형 매장 구매를 권합니다. 액체 스틱은 기내 액체 제한에 걸리니 위탁 수하물이나 분말·정제형을 고려하세요.",
+        "en": "Buy from official/large retailers to avoid counterfeits. Liquid sticks count as cabin liquids — use checked bags or powder/tablet formats.",
+        "ja": "偽造防止のため公式・大型店で。液体スティックは機内制限対象なので預け入れか粉末・錠剤を。",
+        "zh": "为防假货请在官方或大型店购买。液体条受机上液体限制，可托运或选粉剂/片剂。",
+        "zh-Hant": "為防假貨請在官方或大型店購買。液體條受機上液體限制，可託運或選粉劑/片劑。",
+        "vi": "Mua ở cửa hàng chính thức/lớn để tránh hàng giả. Stick lỏng tính vào hạn chế chất lỏng — gửi ký gửi hoặc chọn bột/viên.",
+        "th": "ซื้อจากร้านทางการ/ห้างใหญ่กันของปลอม สติกเหลวติดข้อจำกัดของเหลวบนเครื่อง — ใส่กระเป๋าโหลดหรือเลือกแบบผง/เม็ด",
+        "ru": "Покупайте в официальных/крупных магазинах. Жидкие стики — ограничение ручной клади; сдавайте багаж или берите порошок/таблетки."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n정관장 공식·백화점·공항 면세 구성을 비교하고, 유통기한·정품 스티커를 확인하세요.",
+        "en": "Buying tip\n\nCompare official, department-store, and airport sets; check expiry and authenticity seals.",
+        "ja": "買い方\n\n公式・百貨店・空港セットを比較し、期限・正規シールを確認。",
+        "zh": "购买提示\n\n比较官方、百货与机场套装，核对保质期与正品标识。",
+        "zh-Hant": "購買提示\n\n比較官方、百貨與機場套裝，核對保質期與正品標識。",
+        "vi": "Mẹo mua\n\nSo set chính hãng, department store và sân bay; kiểm tra HSD và tem chính hãng.",
+        "th": "เคล็ดลับ\n\nเทียบชุดทางการ ห้าง และสนามบิน ตรวจวันหมดอายุและซีลของแท้",
+        "ru": "Совет\n\nСравните официальные, универмаг и аэропортные наборы; проверяйте срок и пломбы."
+      }
+    ],
+    "yakgwaHangwaSetTitle": "Набор якгва и хангва",
+    "yakgwaHangwaSetDesc": "Подарочные наборы якгва и хангва — Инсадон, универмаги, аэропорты.",
+    "yakgwaHangwaSetBody1": "Якгва — жареное тесто в сиропе, классическая хангва. В наборах часто югва, ганджон, дасик. Легко купить в Инсадоне, универмагах и аэропортах.",
+    "yakgwaHangwaSetBody2": "Ломкие — берите с амортизацией/индивидуальной упаковкой. Летом размягчаются — храните в прохладе, покупайте ближе к вылету.",
+    "yakgwaHangwaSetTip": "Совет\n\nЗапечатанные наборы со сроком годности лучше рыночного развеса для подарков и таможни.",
+    "yakgwaHangwaSetBody": [
+      {
+        "type": "text",
+        "ko": "약과는 밀가루·꿀·참기름 반죽을 튀겨 조청에 재운 전통 한과이고, 한과 세트는 유과·강정·다식 등과 함께 선물 박스로 많이 나갑니다. 명절·답례 선물로 인사동·백화점·공항에서 구하기 쉽습니다.",
+        "en": "Yakgwa is deep-fried wheat dough soaked in syrup — a classic hangwa. Gift boxes often mix yakgwa with yugwa, gangjeong, and dasik. Easy to find in Insadong, department stores, and airports.",
+        "ja": "薬菓は小麦粉・蜂蜜・ごま油の生地を揚げて飴に漬けた伝統菓子。韓菓セットは油菓・姜精・茶食などと一緒のギフトが多いです。",
+        "zh": "药果是油炸面团再浸糖浆的传统韩果；礼盒常搭配油果、姜精、茶食。仁寺洞、百货、机场易购。",
+        "zh-Hant": "藥果是油炸麵團再浸糖漿的傳統韓菓；禮盒常搭配油果、薑精、茶食。仁寺洞、百貨、機場易購。",
+        "vi": "Yakgwa là bánh chiên ngâm mật — hangwa cổ điển. Hộp quà thường kèm yugwa, gangjeong, dasik. Dễ mua ở Insadong, department store, sân bay.",
+        "th": "ยักฮวาคือขนมทอดชุบน้ำเชื่อมแบบดั้งเดิม ชุดฮังวามักรวมยูควา แกงจอง ดาซิก หาได้ที่อินซาดง ห้าง สนามบิน",
+        "ru": "Якгва — жареное тесто в сиропе, классическая хангва. В наборах часто югва, ганджон, дасик. Легко купить в Инсадоне, универмагах и аэропортах."
+      },
+      {
+        "type": "text",
+        "ko": "깨지기 쉬우니 완충 포장·개별 포장 제품을 고르세요. 여름에는 녹거나 변형될 수 있어 시원한 보관·출국 직전 구매가 안전합니다.",
+        "en": "They crush easily — pick padded or individually wrapped boxes. In summer they can soften; keep cool and buy near departure.",
+        "ja": "割れやすいので緩衝・個包装を。夏は溶けやすいので涼しい保管・出発直前購入を。",
+        "zh": "易碎，选缓冲或独立包装。夏天易软化，宜阴凉存放、临出发购买。",
+        "zh-Hant": "易碎，選緩衝或獨立包裝。夏天易軟化，宜陰涼存放、臨出發購買。",
+        "vi": "Dễ vỡ — chọn hộp đệm/gói riêng. Mùa hè dễ mềm — giữ mát, mua sát giờ bay.",
+        "th": "แตกง่าย เลือกกล่องกันกระแทก/ห่อเดี่ยว ฤดูร้อนละลายง่าย เก็บเย็น ซื้อใกล้ขึ้นเครื่อง",
+        "ru": "Ломкие — берите с амортизацией/индивидуальной упаковкой. Летом размягчаются — храните в прохладе, покупайте ближе к вылету."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n시장 벌크보다 밀봉·유통기한이 있는 선물세트가 검역·선물용으로 무난합니다.",
+        "en": "Buying tip\n\nSealed gift sets with expiry dates beat open market bulk for gifts and customs.",
+        "ja": "買い方\n\n市場の量り売りより期限付き密封ギフトが安心。",
+        "zh": "购买提示\n\n有密封与保质期的礼盒比散装更适合送礼和通关。",
+        "zh-Hant": "購買提示\n\n有密封與保質期的禮盒比散裝更適合送禮和通關。",
+        "vi": "Mẹo mua\n\nHộp quà niêm phong có HSD an toàn hơn hàng rời ở chợ.",
+        "th": "เคล็ดลับ\n\nชุดของขวัญซีลมีวันหมดอายุดีกว่าซื้อยกกองในตลาด",
+        "ru": "Совет\n\nЗапечатанные наборы со сроком годности лучше рыночного развеса для подарков и таможни."
+      }
+    ],
+    "buldakBokkeumMyeonTitle": "Пульдак поккым мён",
+    "buldakBokkeumMyeonDesc": "Samyang Buldak — культовая острая рамён, популярный мультипак-сувенир.",
+    "buldakBokkeumMyeonBody1": "Samyang Buldak — острая жареная лапша (оригинал, карбонара, сыр). Часто берут 5-паки в маркетах, магазинах и Daiso.",
+    "buldakBokkeumMyeonBody2": "Слейте воду и смешайте с соусом. Пакетики — в zip. Если остро — начните с карбонары или сыра.",
+    "buldakBokkeumMyeonTip": "Совет\n\nГипермаркеты часто дешевле магазинов у дома. Ищите этикетку Samyang Buldak.",
+    "buldakBokkeumMyeonBody": [
+      {
+        "type": "text",
+        "ko": "삼양 불닭볶음면은 오리지널·카르보나라·치즈 등 맛 변형이 많은 매운 볶음 라면입니다. 마트·편의점·다이소에서 봉지 멀티팩(5개입)으로 기념품처럼 사 가는 외국인이 많습니다.",
+        "en": "Samyang Buldak is a spicy stir-fry ramen with many flavors (original, carbonara, cheese). Visitors often buy 5-pack bags at marts, convenience stores, and Daiso as edible souvenirs.",
+        "ja": "三養ブルダックはオリジナル・カルボ・チーズなど味が多い辛炒め麺。マート・コンビニ・ダイソーの5個パックが土産人気です。",
+        "zh": "三养火鸡面有原味、奶油、芝士等多种口味。游客常在超市、便利店、Daiso买五连包当伴手礼。",
+        "zh-Hant": "三養火雞麵有原味、奶油、起司等多種口味。遊客常在超市、便利店、Daiso買五連包當伴手禮。",
+        "vi": "Samyang Buldak có nhiều vị (gốc, carbonara, phô mai). Du khách hay mua túi 5 gói ở siêu thị, cửa hàng tiện lợi, Daiso làm quà.",
+        "th": "ซัมยังบูลดัคมีหลายรส (ดั้งเดิม คาร์โบนารา ชีส) นักท่องเที่ยวมักซื้อแพ็ก 5 ที่ห้าง ร้านสะดวกซื้อ ไดโซ",
+        "ru": "Samyang Buldak — острая жареная лапша (оригинал, карбонара, сыр). Часто берут 5-паки в маркетах, магазинах и Daiso."
+      },
+      {
+        "type": "text",
+        "ko": "조리 시 물을 버리고 소스를 비비는 타입입니다. 액상 소스는 압력으로 터질 수 있어 지퍼백에 한 번 더 넣으세요. 매운맛에 약하면 카르보·치즈부터 추천합니다.",
+        "en": "Drain then mix the sauce. Double-bag liquid packets. If spice-sensitive, start with carbonara or cheese.",
+        "ja": "湯切りしてソースを絡めます。液状ソースはジップ袋に。辛さに弱ければカルボ・チーズから。",
+        "zh": "沥水后拌酱。液态酱包再套拉链袋。怕辣可先试奶油或芝士味。",
+        "zh-Hant": "瀝水後拌醬。液態醬包再套拉鍊袋。怕辣可先試奶油或起司味。",
+        "vi": "Chắt nước rồi trộn sốt. Bọc thêm túi zip cho gói sốt. Nếu sợ cay, bắt đầu với carbonara hoặc phô mai.",
+        "th": "เทน้ำทิ้งแล้วคลุกซอส ใส่ถุงซิปซ้ำ ถ้าเผ็ดไม่ไหวเริ่มคาร์โบนาราหรือชีส",
+        "ru": "Слейте воду и смешайте с соусом. Пакетики — в zip. Если остро — начните с карбонары или сыра."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n이마트·홈플러스 라면 특가가 편의점보다 저렴한 경우가 많습니다. ‘삼양 불닭’ 표기를 확인하세요.",
+        "en": "Buying tip\n\nHypermarket ramen deals often beat convenience stores. Look for the Samyang Buldak label.",
+        "ja": "買い方\n\n大型マート特価がお得なことが多い。三養ブルダック表示を確認。",
+        "zh": "购买提示\n\n大型超市特价往往比便利店便宜。认准三养火鸡面包装。",
+        "zh-Hant": "購買提示\n\n大型超市特價往往比便利店便宜。認準三養火雞麵包裝。",
+        "vi": "Mẹo mua\n\nSiêu thị thường rẻ hơn cửa hàng tiện lợi. Nhìn nhãn Samyang Buldak.",
+        "th": "เคล็ดลับ\n\nห้างใหญ่มักถูกกว่าร้านสะดวกซื้อ ดูฉลากซัมยังบูลดัค",
+        "ru": "Совет\n\nГипермаркеты часто дешевле магазинов у дома. Ищите этикетку Samyang Buldak."
+      }
+    ]
   },
   "shopping": {
     "intro": "От Olive Young и Daiso до магазинов беспошлинной торговли и рынков — советы по шопингу, о которых посетители спрашивают больше всего.",
@@ -824,6 +1942,38 @@
         "vi": "Các mặt hàng sự kiện khác nhau ở mỗi cửa hàng tiện lợi. Thật khó để bỏ lỡ khi bạn nhìn thấy ‘góc sự kiện’ phía trước máy tính tiền, nhãn dán màu vàng trên quầy trưng bày và ứng dụng (điểm/phiếu giảm giá) cùng nhau.",
         "th": "รายการกิจกรรมแตกต่างกันไปที่ร้านสะดวกซื้อแต่ละแห่ง พลาดไม่ได้เมื่อเห็น 'มุมกิจกรรม' หน้าเครื่องคิดเงิน สติกเกอร์สีเหลืองบนขาตั้งจอแสดงผล และแอป (คะแนน/คูปอง) อยู่ด้วยกัน",
         "ru": "Товары для мероприятия различаются в каждом магазине. Трудно не заметить это, когда вы видите «уголок мероприятий» перед кассой, желтую наклейку на стенде и приложение (баллы/купон) вместе."
+      }
+    ],
+    "specialtyTitle": "Региональные деликатесы",
+    "specialtyLead": "В каждом регионе и городе есть знаменитые блюда",
+    "specialty1": "В Корее у каждого региона и города есть узнаваемые блюда. Используйте список ниже при поездке — попробуйте на месте или ищите деликатесы и сувениры.",
+    "specialty2": "В аэропортах, на вокзалах, рынках и в туристических магазинах часто есть уголки региональных деликатесов. Проверяйте срок годности и правила провоза.",
+    "specialtyBody": [
+      {
+        "type": "image",
+        "src": "Images/shopping/regional-specialty-map.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "한국은 권역·도시마다 대표 먹거리가 뚜렷합니다. 아래 목록을 참고해 해당 지역을 방문할 때 현지에서 맛보거나, 특산품·기념품으로 찾아보세요.\n\n지역별 대표 먹거리\n\n해당 지역을 방문할 때 아래 음식을 참고해 보세요.\n\n· 경인권(인천) — 간장게장\n· 경상권(부산) — 돼지국밥\n· 경인권(인천) — 짜장면\n· 경상권(대구) — 치킨\n· 경인권(수원) — 왕갈비\n· 경상권(안동) — 안동찜닭\n· 경인권(의정부) — 부대찌개\n· 전라권(전주) — 전주비빔밥\n· 강원권(춘천) — 닭갈비\n· 전라권(담양) — 떡갈비\n· 강원권(횡성) — 한우(Korean BBQ)\n· 전라권(광주) — 육전\n· 강원권(강릉) — 초당순두부\n· 제주권(제주) — 흑돼지(Korean BBQ)\n· 충청권(대전) — 칼국수\n\n현지 식당에서 직접 맛보는 것도 좋고, 간편식·소스·기념품 형태로 사는 것도 여행 기념품으로 인기가 많습니다.",
+        "en": "Korea has clear regional food icons. Use the list below when you visit each area — eat locally or look for specialty products and souvenirs.\n\nRegional signature dishes\n\nWhen you visit these areas, keep these foods in mind:\n\n· Gyeongin (Incheon) — ganjang gejang (soy-marinated crab)\n· Gyeongsang (Busan) — dwaeji gukbap (pork soup rice)\n· Gyeongin (Incheon) — jajangmyeon (black bean noodles)\n· Gyeongsang (Daegu) — fried chicken\n· Gyeongin (Suwon) — wang galbi (king ribs)\n· Gyeongsang (Andong) — Andong jjimdak (braised chicken)\n· Gyeongin (Uijeongbu) — budae jjigae (army stew)\n· Jeolla (Jeonju) — Jeonju bibimbap\n· Gangwon (Chuncheon) — dakgalbi (spicy stir-fried chicken)\n· Jeolla (Damyang) — tteokgalbi (grilled rib patty)\n· Gangwon (Hoengseong) — Hanwoo Korean BBQ\n· Jeolla (Gwangju) — yukjeon (beef pancake)\n· Gangwon (Gangneung) — Chodang sundubu (soft tofu)\n· Jeju (Jeju) — black pork Korean BBQ\n· Chungcheong (Daejeon) — kalguksu (knife-cut noodles)\n\nTry them at local restaurants, or pick up ready-to-eat items, sauces, and souvenirs — both are popular with travelers.",
+        "ja": "韓国は地域・都市ごとに代表料理がはっきりしています。下の一覧を参考に、訪問時に現地で味わうか、特産品・お土産として探してみてください。\n\n地域別 代表グルメ\n\n該当地域を訪れる際は、以下を参考にしてください。\n\n· 京仁圏（仁川） — カンジャンケジャン（醤油ガニ）\n· 慶尚圏（釜山） — トェジクッパ（豚スープ飯）\n· 京仁圏（仁川） — チャジャンミョン\n· 慶尚圏（大邱） — チキン\n· 京仁圏（水原） — ワンカルビ\n· 慶尚圏（安東） — 安東チムダク\n· 京仁圏（議政府） — プデチゲ\n· 全羅圏（全州） — 全州ビビンバ\n· 江原圏（春川） — タッカルビ\n· 全羅圏（潭陽） — トックカルビ\n· 江原圏（横城） — 韓牛 Korean BBQ\n· 全羅圏（光州） — ユクジョン（牛肉チヂミ）\n· 江原圏（江陵） — 草堂スンドゥブ\n· 済州圏（済州） — 黒豚 Korean BBQ\n· 忠清圏（大田） — カルグクス\n\n現地の店で食べるのも、レトルト・ソース・お土産として買うのも旅行者に人気です。",
+        "zh": "韩国各圈、各城市都有鲜明的代表美食。参考下列清单，到访当地时可现场品尝，或寻找特产与纪念品。\n\n各地区代表美食\n\n到访下列地区时，可参考这些名物：\n\n· 京仁圈（仁川） — 酱油蟹\n· 庆尚圈（釜山） — 猪肉汤饭\n· 京仁圈（仁川） — 炸酱面\n· 庆尚圈（大邱） — 炸鸡\n· 京仁圈（水原） — 王排骨\n· 庆尚圈（安东） — 安东炖鸡\n· 京仁圈（议政府） — 部队锅\n· 全罗圈（全州） — 全州拌饭\n· 江原圈（春川） — 辣炒鸡排\n· 全罗圈（潭阳） — 年糕排骨\n· 江原圈（横城） — 韩牛 Korean BBQ\n· 全罗圈（光州） — 肉饼\n· 江原圈（江陵） — 草堂嫩豆腐\n· 济州圈（济州） — 黑猪 Korean BBQ\n· 忠清圈（大田） — 刀切面\n\n在当地餐厅品尝，或购买即食、酱料、纪念品形式，都是旅行者很喜欢的选择。",
+        "zh-Hant": "韓國各圈、各城市都有鮮明的代表美食。參考下列清單，造訪當地時可現場品嚐，或尋找特產與紀念品。\n\n各地區代表美食\n\n造訪下列地區時，可參考這些名物：\n\n· 京仁圈（仁川） — 醬油蟹\n· 慶尚圈（釜山） — 豬肉湯飯\n· 京仁圈（仁川） — 炸醬麵\n· 慶尚圈（大邱） — 炸雞\n· 京仁圈（水原） — 王排骨\n· 慶尚圈（安東） — 安東燉雞\n· 京仁圈（議政府） — 部隊鍋\n· 全羅圈（全州） — 全州拌飯\n· 江原圈（春川） — 辣炒雞排\n· 全羅圈（潭陽） — 年糕排骨\n· 江原圈（橫城） — 韓牛 Korean BBQ\n· 全羅圈（光州） — 肉餅\n· 江原圈（江陵） — 草堂嫩豆腐\n· 濟州圈（濟州） — 黑豬 Korean BBQ\n· 忠清圈（大田） — 刀切麵\n\n在當地餐廳品嚐，或購買即食、醬料、紀念品形式，都是旅行者很喜歡的選擇。",
+        "vi": "Hàn Quốc có các món đại diện rõ ràng theo vùng. Tham khảo danh sách dưới đây khi đến từng khu vực — thưởng thức tại chỗ hoặc mua đặc sản, quà lưu niệm.\n\nMón ăn đặc trưng theo vùng\n\nKhi đến các khu vực sau, hãy tham khảo:\n\n· Gyeongin (Incheon) — cua ngâm tương (ganjang gejang)\n· Gyeongsang (Busan) — cháo thịt heo (dwaeji gukbap)\n· Gyeongin (Incheon) — mì tương đen (jajangmyeon)\n· Gyeongsang (Daegu) — gà rán\n· Gyeongin (Suwon) — sườn vua (wang galbi)\n· Gyeongsang (Andong) — gà hầm Andong\n· Gyeongin (Uijeongbu) — lẩu quân đội (budae jjigae)\n· Jeolla (Jeonju) — bibimbap Jeonju\n· Gangwon (Chuncheon) — dakgalbi\n· Jeolla (Damyang) — tteokgalbi\n· Gangwon (Hoengseong) — thịt bò Hanwoo Korean BBQ\n· Jeolla (Gwangju) — bánh thịt bò chiên (yukjeon)\n· Gangwon (Gangneung) — đậu phụ mềm Chodang\n· Jeju (Jeju) — thịt heo đen Korean BBQ\n· Chungcheong (Daejeon) — kalguksu\n\nĂn tại nhà hàng địa phương hoặc mua dạng ăn liền, nước sốt, quà lưu niệm — đều được du khách yêu thích.",
+        "th": "เกาหลีมีอาหารประจำภูมิภาคที่ชัดเจน ใช้รายการด้านล่างเป็นแนวทางเมื่อไปแต่ละพื้นที่ — ชิมที่ร้านท้องถิ่นหรือซื้อของฝาก\n\nอาหารขึ้นชื่อตามภูมิภาค\n\nเมื่อไปพื้นที่เหล่านี้ ให้อ้างอิงรายการด้านล่าง:\n\n· Gyeongin (Incheon) — ปูหมักซีอิ๊ว (ganjang gejang)\n· Gyeongsang (Busan) — ซุปข้าวหมู (dwaeji gukbap)\n· Gyeongin (Incheon) — jajangmyeon (บะหมี่ถั่วดำ)\n· Gyeongsang (Daegu) — ไก่ทอด\n· Gyeongin (Suwon) — wang galbi (ซี่โครง)\n· Gyeongsang (Andong) — ไก่ตุม Andong\n· Gyeongin (Uijeongbu) — budae jjigae (สตูว์ทหาร)\n· Jeolla (Jeonju) — bibimbap Jeonju\n· Gangwon (Chuncheon) — dakgalbi\n· Jeolla (Damyang) — tteokgalbi\n· Gangwon (Hoengseong) — เนื้อ Hanwoo Korean BBQ\n· Jeolla (Gwangju) — yukjeon (แพนเค้กเนื้อ)\n· Gangwon (Gangneung) — เต้าหู้นุ่ม Chodang\n· Jeju (Jeju) — หมูดำ Korean BBQ\n· Chungcheong (Daejeon) — kalguksu\n\nชิมที่ร้านท้องถิ่นหรือซื้อแบบพร้อมทาน ซอส และของที่ระลึก — นักท่องเที่ยวนิยมทั้งสองแบบ",
+        "ru": "В Корее у каждого региона и города есть узнаваемые блюда. Используйте список ниже при поездке — попробуйте на месте или ищите деликатесы и сувениры.\n\nРегиональные блюда\n\nПосещая эти места, ориентируйтесь на список:\n\n· Кёнин (Инчхон) — ganjang gejang (краб в соевом соусе)\n· Кёнsan (Пusan) — dwaeji gukbap (суп с рисом и свининой)\n· Кёнин (Инчхон) — jajangmyeon (лапша с чёрной фасолью)\n· Кёнsan (Тэгу) — жареная курица\n· Кёнин (Сувон) — van galbi (королевские рёбрышки)\n· Кёнsan (Андон) — тушёная курица Андон\n· Кёнин (Ыйджонбу) — budae jjigae (армейское рагу)\n· Чolla (Чонju) — bibimbap Чонju\n· Канwon (Чхунчхон) — takgalbi\n· Чolla (Тamyang) — tteokgalbi\n· Канwon (Hvanseong) — говядина hanwoo Korean BBQ\n· Чolla (Kvanju) — yukchon (блинчики с говядиной)\n· Канwon (Kvanneung) — мягкий тофу Chodang\n· Чеджу (Чеджу) — чёрная свинина Korean BBQ\n· Чунчхon (Тэджон) — kalguksu\n\nПопробуйте в местных ресторанах или купите готовые продукты, соусы и сувениры — оба варианта популярны у путешественников."
+      },
+      {
+        "type": "text",
+        "ko": "공항·기차역·전통시장·관광지 매장에도 ‘지역 특산품’ 코너가 있습니다. 식품은 유통기한·보관 방법·기내 반입 규정을 확인한 뒤 쇼핑하세요.",
+        "en": "Airports, train stations, markets, and tourist shops often have regional specialty corners. Check expiry, storage, and carry-on rules for food.",
+        "ja": "空港・駅・市場・観光地店舗にも「地域特産」コーナーがあります。食品は賞味期限・保存方法・機内持ち込みを確認してから買い物を。",
+        "zh": "机场、火车站、传统市场与景区商店也常有“地区特产”专区。购买食品前请确认保质期、保存方式与登机规定。",
+        "zh-Hant": "機場、火車站、傳統市場與景區商店也常有「地區特產」專區。購買食品前請確認保存期限、保存方式與登機規定。",
+        "vi": "Sân bay, ga tàu, chợ và cửa hàng du lịch thường có góc đặc sản vùng. Kiểm tra hạn dùng, bảo quản và quy định mang lên máy bay.",
+        "th": "สนามบิน สถานีรถไฟ ตลาด และร้านท่องเที่ยวมักมีมุมของฝากประจำภูมิภาค ตรวจวันหมดอายุและกฎนำขึ้นเครื่องก่อนซื้อ",
+        "ru": "В аэропортах, на вокзалах, рынках и в туристических магазинах часто есть уголки региональных деликатесов. Проверяйте срок годности и правила провоза."
       }
     ]
   }

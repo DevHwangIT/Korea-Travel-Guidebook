@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "odaesan",
+    "ok": false,
+    "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+    "slug": "bangtaesan",
+    "ok": false,
+    "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+    "slug": "duryunsan",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "slug": "goryeosan",
+    "ok": false,
+    "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  }
+]

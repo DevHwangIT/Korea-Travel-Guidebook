@@ -1,0 +1,3198 @@
+{
+  "total": 361,
+  "need": 349,
+  "have": 12,
+  "need_list": [
+    {
+      "slug": "chatdeokgut",
+      "note": "Changdeokgung Palace",
+      "region": "seoul",
+      "image": "Images/places/chatdeokgut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chatgyeotgut",
+      "note": "Changgyeonggung Palace",
+      "region": "seoul",
+      "image": "Images/places/chatgyeotgut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "deoksugut",
+      "note": "Deoksugung Palace",
+      "region": "seoul",
+      "image": "Images/places/deoksugut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeothuigut",
+      "note": "Gyeonghuigung Palace",
+      "region": "seoul",
+      "image": "Images/places/gyeothuigut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jotmyo",
+      "note": "Jongmyo Shrine",
+      "region": "seoul",
+      "image": "Images/places/jotmyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalsangolhanokmaeul",
+      "note": "Namsangol Hanok Village",
+      "region": "seoul",
+      "image": "Images/places/nalsangolhanokmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hanyatdoseot",
+      "note": "Hanyangdoseong City Wall",
+      "region": "seoul",
+      "image": "Images/places/hanyatdoseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sutryemun",
+      "note": "Sungnyemun (Namdaemun)",
+      "region": "seoul",
+      "image": "Images/places/sutryemun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "heutinjimun",
+      "note": "Heunginjimun (Dongdaemun Gate)",
+      "region": "seoul",
+      "image": "Images/places/heutinjimun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwathwamun",
+      "note": "Gwanghwamun",
+      "region": "seoul",
+      "image": "Images/places/gwathwamun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "unhyeongut",
+      "note": "Unhyeongung",
+      "region": "seoul",
+      "image": "Images/places/unhyeongut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seodaemunhyeotmusoyeoksagwan",
+      "note": "Seodaemun Prison History Hall",
+      "region": "seoul",
+      "image": "Images/places/seodaemunhyeotmusoyeoksagwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dokrimmun",
+      "note": "Independence Gate",
+      "region": "seoul",
+      "image": "Images/places/dokrimmun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "tamgolgotwon",
+      "note": "Tapgol Park",
+      "region": "seoul",
+      "image": "Images/places/tamgolgotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "alsadot-seonsayujeokji",
+      "note": "Amsa-dong Prehistoric Site",
+      "region": "seoul",
+      "image": "Images/places/alsadot-seonsayujeokji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "motchontoseot",
+      "note": "Mongchontoseong",
+      "region": "seoul",
+      "image": "Images/places/motchontoseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "putnamtoseot",
+      "note": "Pungnaptoseong",
+      "region": "seoul",
+      "image": "Images/places/putnamtoseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seokchondot-gobungun",
+      "note": "Seokchon-dong Tumuli",
+      "region": "seoul",
+      "image": "Images/places/seokchondot-gobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seonreut-jeotreut",
+      "note": "Seolleung & Jeongneung Royal Tombs",
+      "region": "seoul",
+      "image": "Images/places/seonreut-jeotreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeotreut",
+      "note": "Jeongneung Royal Tomb",
+      "region": "seoul",
+      "image": "Images/places/jeotreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hotreut-yureut",
+      "note": "Hongneung & Yureung",
+      "region": "seoul",
+      "image": "Images/places/hotreut-yureut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seotgyungwan",
+      "note": "Sungkyunkwan",
+      "region": "seoul",
+      "image": "Images/places/seotgyungwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yathwajin-oegukinseongyosamyowon",
+      "note": "Yanghwajin Foreign Missionary Cemetery",
+      "region": "seoul",
+      "image": "Images/places/yathwajin-oegukinseongyosamyowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jingwansa",
+      "note": "Jingwansa Temple",
+      "region": "seoul",
+      "image": "Images/places/jingwansa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "boteunsa",
+      "note": "Bongeunsa Temple",
+      "region": "seoul",
+      "image": "Images/places/boteunsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gilsatsa",
+      "note": "Gilsangsa Temple",
+      "region": "seoul",
+      "image": "Images/places/gilsatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bosingak",
+      "note": "Bosingak Bell Pavilion",
+      "region": "seoul",
+      "image": "Images/places/bosingak.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seoulseotgwakgil",
+      "note": "Seoul City Wall Trail",
+      "region": "seoul",
+      "image": "Images/places/seoulseotgwakgil.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hwaseothaetgut",
+      "note": "Hwaseong Haenggung",
+      "region": "gyeonggi",
+      "image": "Images/places/hwaseothaetgut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalhansanseot",
+      "note": "Namhansanseong Fortress",
+      "region": "gyeonggi",
+      "image": "Images/places/nalhansanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatmyeotdotgul",
+      "note": "Gwangmyeong Cave",
+      "region": "gyeonggi",
+      "image": "Images/places/gwatmyeotdotgul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hangukminsokchon",
+      "note": "Korean Folk Village",
+      "region": "gyeonggi",
+      "image": "Images/places/hangukminsokchon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yotin-hoalmisulgwan-jeontotjeotwon",
+      "note": "Ho-Am Art Museum Traditional Garden",
+      "region": "gyeonggi",
+      "image": "Images/places/yotin-hoalmisulgwan-jeontotjeotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "silhakbakmulgwan",
+      "note": "Silhak Museum",
+      "region": "gyeonggi",
+      "image": "Images/places/silhakbakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejotdaewatreut",
+      "note": "Royal Tomb of King Sejong",
+      "region": "gyeonggi",
+      "image": "Images/places/sejotdaewatreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sinreuksa",
+      "note": "Silleuksa Temple",
+      "region": "gyeonggi",
+      "image": "Images/places/sinreuksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yotjusa",
+      "note": "Yongjusa Temple",
+      "region": "gyeonggi",
+      "image": "Images/places/yotjusa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yutgeonreut",
+      "note": "Yungneung & Geolleung",
+      "region": "gyeonggi",
+      "image": "Images/places/yutgeonreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalyatju-hotyureut",
+      "note": "Hongyureung Royal Tombs",
+      "region": "gyeonggi",
+      "image": "Images/places/nalyatju-hotyureut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatreut",
+      "note": "Gwangneung",
+      "region": "gyeonggi",
+      "image": "Images/places/gwatreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "achasanseot",
+      "note": "Achasanseong Fortress",
+      "region": "gyeonggi",
+      "image": "Images/places/achasanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "haetjusanseot",
+      "note": "Haengjusanseong Fortress",
+      "region": "gyeonggi",
+      "image": "Images/places/haetjusanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "paju-salreut",
+      "note": "Paju Samneung",
+      "region": "gyeonggi",
+      "image": "Images/places/paju-salreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "paju-jatreut",
+      "note": "Paju Jangneung",
+      "region": "gyeonggi",
+      "image": "Images/places/paju-jatreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwayeoksayujeokjigu",
+      "note": "Ganghwa Historic Sites",
+      "region": "gyeonggi",
+      "image": "Images/places/gathwayeoksayujeokjigu.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-jeondeutsa",
+      "note": "Jeondeungsa Temple",
+      "region": "incheon",
+      "image": "Images/places/gathwa-jeondeutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-goindol",
+      "note": "Ganghwa Dolmens",
+      "region": "incheon",
+      "image": "Images/places/gathwa-goindol.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-chojijin",
+      "note": "Chojijin Fort",
+      "region": "incheon",
+      "image": "Images/places/gathwa-chojijin.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-gwatseotbo",
+      "note": "Gwangseongbo Fort",
+      "region": "incheon",
+      "image": "Images/places/gathwa-gwatseotbo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-deokjinjin",
+      "note": "Deokjinjin Fort",
+      "region": "incheon",
+      "image": "Images/places/gathwa-deokjinjin.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-goryeogutji",
+      "note": "Ganghwa Goryeo Palace Site",
+      "region": "incheon",
+      "image": "Images/places/gathwa-goryeogutji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-oegyujatgak",
+      "note": "Oegyujanggak",
+      "region": "incheon",
+      "image": "Images/places/gathwa-oegyujatgak.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gathwa-seotgothoeseotdat",
+      "note": "Ganghwa Anglican Cathedral",
+      "region": "incheon",
+      "image": "Images/places/gathwa-seotgothoeseotdat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "incheon-gaehatjat-munhwajigu",
+      "note": "Incheon Open Port Culture District",
+      "region": "incheon",
+      "image": "Images/places/incheon-gaehatjat-munhwajigu.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "incheon-jutgucheot-gu-ilbonuseonjusikhoesa-geonm",
+      "note": "Former Nippon Yusen Building (Incheon)",
+      "region": "incheon",
+      "image": "Images/places/incheon-jutgucheot-gu-ilbonuseonjusikhoesa-geonm.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "incheon-naerigyohoe",
+      "note": "Naeri Church",
+      "region": "incheon",
+      "image": "Images/places/incheon-naerigyohoe.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "incheonhyatgyo",
+      "note": "Incheon Hyanggyo",
+      "region": "incheon",
+      "image": "Images/places/incheonhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "munhaksanseot",
+      "note": "Munhaksanseong Fortress",
+      "region": "incheon",
+      "image": "Images/places/munhaksanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeyatsanseot",
+      "note": "Gyeyangsanseong Fortress",
+      "region": "incheon",
+      "image": "Images/places/gyeyatsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sotwoldot-dothwamaeul",
+      "note": "Songwol-dong Fairy Tale Village",
+      "region": "incheon",
+      "image": "Images/places/sotwoldot-dothwamaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "beoleosa",
+      "note": "Beomeosa Temple",
+      "region": "busan",
+      "image": "Images/places/beoleosa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutryeolsa",
+      "note": "Chungnyeolsa Shrine",
+      "region": "busan",
+      "image": "Images/places/chutryeolsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dotraeeumseot",
+      "note": "Dongnae Eupseong",
+      "region": "busan",
+      "image": "Images/places/dotraeeumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bokcheondotgobungun",
+      "note": "Bokcheon-dong Tumuli",
+      "region": "busan",
+      "image": "Images/places/bokcheondotgobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "busangeundaeyeoksagwan",
+      "note": "Busan Modern History Museum",
+      "region": "busan",
+      "image": "Images/places/busangeundaeyeoksagwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ilsisudoginyeolgwan",
+      "note": "Provisional Capital Memorial Hall",
+      "region": "busan",
+      "image": "Images/places/ilsisudoginyeolgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "busanjinseot",
+      "note": "Busanjinseong Fortress",
+      "region": "busan",
+      "image": "Images/places/busanjinseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "geuljeotsanseot",
+      "note": "Geumjeongsanseong Fortress",
+      "region": "busan",
+      "image": "Images/places/geuljeotsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yuenginyeolgotwon",
+      "note": "UN Memorial Cemetery",
+      "region": "busan",
+      "image": "Images/places/yuenginyeolgotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "oryundae-hanguksungyojabakmulgwan",
+      "note": "Oryundae Korean Martyrs Museum",
+      "region": "busan",
+      "image": "Images/places/oryundae-hanguksungyojabakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gijat-jukseotri-waeseot",
+      "note": "Jukseong-ri Japanese Fortress",
+      "region": "busan",
+      "image": "Images/places/gijat-jukseotri-waeseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "molundae",
+      "note": "Morundae",
+      "region": "busan",
+      "image": "Images/places/molundae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "busanhat-je1budu-geundaeyusan",
+      "note": "Busan Port Pier 1 Modern Heritage",
+      "region": "busan",
+      "image": "Images/places/busanhat-je1budu-geundaeyusan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dothwasa",
+      "note": "Donghwasa Temple",
+      "region": "",
+      "image": "Images/places/dothwasa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gapbawi",
+      "note": "Gatbawi",
+      "region": "",
+      "image": "Images/places/gapbawi.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dalseotgotwon",
+      "note": "Dalseong Park",
+      "region": "",
+      "image": "Images/places/dalseotgotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daegueumseot-yujeok",
+      "note": "Daegu Eupseong Remains",
+      "region": "",
+      "image": "Images/places/daegueumseot-yujeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyesanseotdat",
+      "note": "Gyesan Cathedral",
+      "region": "",
+      "image": "Images/places/gyesanseotdat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "isathwa-gotaek",
+      "note": "Yi Sang-hwa Historic House",
+      "region": "",
+      "image": "Images/places/isathwa-gotaek.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seosatdon-gotaek",
+      "note": "Seo Sang-don Historic House",
+      "region": "",
+      "image": "Images/places/seosatdon-gotaek.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yakryeotsi-hanuiyakbakmulgwan",
+      "note": "Yangnyeongsi Oriental Medicine Museum",
+      "region": "",
+      "image": "Images/places/yakryeotsi-hanuiyakbakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gukchaebosatundotginyeolgwan",
+      "note": "National Debt Redemption Movement Memorial",
+      "region": "",
+      "image": "Images/places/gukchaebosatundotginyeolgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yuksinsa",
+      "note": "Yukshinsa Shrine",
+      "region": "",
+      "image": "Images/places/yuksinsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "pagyesa",
+      "note": "Pagyesa Temple",
+      "region": "",
+      "image": "Images/places/pagyesa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hanhwondat-gotaek",
+      "note": "Hanhwondang Historic House",
+      "region": "",
+      "image": "Images/places/hanhwondat-gotaek.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalpyeotmunssibonrisegeoji",
+      "note": "Nampyeong Mun Clan Village",
+      "region": "",
+      "image": "Images/places/nalpyeotmunssibonrisegeoji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seokgulal",
+      "note": "Seokguram Grotto",
+      "region": "gyeongju",
+      "image": "Images/places/seokgulal.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "cheolseotdae",
+      "note": "Cheomseongdae",
+      "region": "gyeongju",
+      "image": "Images/places/cheolseotdae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daereutwon",
+      "note": "Daereungwon Tumuli Park",
+      "region": "gyeongju",
+      "image": "Images/places/daereutwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "woljeotgyo",
+      "note": "Woljeonggyo Bridge",
+      "region": "gyeongju",
+      "image": "Images/places/woljeotgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hwatryotsaji",
+      "note": "Hwangnyongsa Temple Site",
+      "region": "gyeongju",
+      "image": "Images/places/hwatryotsaji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bunhwatsa",
+      "note": "Bunhwangsa Temple",
+      "region": "gyeongju",
+      "image": "Images/places/bunhwatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "poseokjeot",
+      "note": "Poseokjeong",
+      "region": "gyeongju",
+      "image": "Images/places/poseokjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeotju-gyochonmaeul",
+      "note": "Gyeongju Gyochon Village",
+      "region": "gyeongju",
+      "image": "Images/places/gyeotju-gyochonmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "choebujadaek",
+      "note": "Choi Buja House",
+      "region": "gyeongju",
+      "image": "Images/places/choebujadaek.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gukrimgyeotjubakmulgwan",
+      "note": "Gyeongju National Museum",
+      "region": "gyeongju",
+      "image": "Images/places/gukrimgyeotjubakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "muyeolwatreut",
+      "note": "Tomb of King Muyeol",
+      "region": "gyeongju",
+      "image": "Images/places/muyeolwatreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gilyusinmyo",
+      "note": "Tomb of Kim Yu-sin",
+      "region": "gyeongju",
+      "image": "Images/places/gilyusinmyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "munmudaewatreut",
+      "note": "Underwater Tomb of King Munmu",
+      "region": "gyeongju",
+      "image": "Images/places/munmudaewatreut.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "galeunsaji",
+      "note": "Gameunsa Temple Site",
+      "region": "gyeongju",
+      "image": "Images/places/galeunsaji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "golgulsa",
+      "note": "Golgulsa Temple",
+      "region": "gyeongju",
+      "image": "Images/places/golgulsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalsan-bulgyoyujeok",
+      "note": "Namsan Buddhist Relics (Gyeongju)",
+      "region": "gyeongju",
+      "image": "Images/places/nalsan-bulgyoyujeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeril",
+      "note": "Gyerim Forest",
+      "region": "gyeongju",
+      "image": "Images/places/gyeril.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeotju-eumseot",
+      "note": "Gyeongju Eupseong",
+      "region": "gyeongju",
+      "image": "Images/places/gyeotju-eumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dosanseowon",
+      "note": "Dosan Seowon",
+      "region": "gyeongsang",
+      "image": "Images/places/dosanseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "byeotsanseowon",
+      "note": "Byeongsan Seowon",
+      "region": "gyeongsang",
+      "image": "Images/places/byeotsanseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "botjeotsa",
+      "note": "Bongjeongsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/botjeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "wolyeotgyo",
+      "note": "Woryeonggyo Bridge",
+      "region": "gyeongsang",
+      "image": "Images/places/wolyeotgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andotminsokchon",
+      "note": "Andong Folk Village",
+      "region": "gyeongsang",
+      "image": "Images/places/andotminsokchon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ilcheotgak",
+      "note": "Imcheonggak",
+      "region": "gyeongsang",
+      "image": "Images/places/ilcheotgak.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jebiwon-seokbul",
+      "note": "Jebiwon Stone Buddha",
+      "region": "gyeongsang",
+      "image": "Images/places/jebiwon-seokbul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bothwatsa",
+      "note": "Bonghwangsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/bothwatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeanhyatgyo",
+      "note": "Yean Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/yeanhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeotgijeon",
+      "note": "Gyeonggijeon Shrine",
+      "region": "jeolla",
+      "image": "Images/places/gyeotgijeon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeondotseotdat",
+      "note": "Jeondong Cathedral",
+      "region": "jeolla",
+      "image": "Images/places/jeondotseotdat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "putnalmun",
+      "note": "Pungnammun Gate",
+      "region": "jeolla",
+      "image": "Images/places/putnalmun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "omokdae",
+      "note": "Omokdae",
+      "region": "jeolla",
+      "image": "Images/places/omokdae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "imokdae",
+      "note": "Imokdae",
+      "region": "jeolla",
+      "image": "Images/places/imokdae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jogyeotdan",
+      "note": "Jogyeongdan",
+      "region": "jeolla",
+      "image": "Images/places/jogyeotdan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalgosanseot",
+      "note": "Namgosanseong Fortress",
+      "region": "jeolla",
+      "image": "Images/places/nalgosanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hanbyeokdat",
+      "note": "Hanbyeokdang",
+      "region": "jeolla",
+      "image": "Images/places/hanbyeokdat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonju-gaeksa",
+      "note": "Jeonju Gaeksa",
+      "region": "jeolla",
+      "image": "Images/places/jeonju-gaeksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gotsanseot",
+      "note": "Gongsanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/gotsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "muryeotwatreutgwa-watreutwon",
+      "note": "Royal Tomb of King Muryeong",
+      "region": "chungcheong",
+      "image": "Images/places/muryeotwatreutgwa-watreutwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gukrimgotjubakmulgwan",
+      "note": "Gongju National Museum",
+      "region": "chungcheong",
+      "image": "Images/places/gukrimgotjubakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gotju-magoksa",
+      "note": "Magoksa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/gotju-magoksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gotju-chutcheotgalyeot",
+      "note": "Chungcheong Gamyeong Site",
+      "region": "chungcheong",
+      "image": "Images/places/gotju-chutcheotgalyeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gotju-jemincheon-yeoksamunhwageori",
+      "note": "Jemincheon Historic Street",
+      "region": "chungcheong",
+      "image": "Images/places/gotju-jemincheon-yeoksamunhwageori.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sotsanri-gobungun",
+      "note": "Songsan-ri Tumuli",
+      "region": "chungcheong",
+      "image": "Images/places/sotsanri-gobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "busosanseot",
+      "note": "Busosanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/busosanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwanbukriyujeok",
+      "note": "Gwanbuk-ri Historic Site",
+      "region": "chungcheong",
+      "image": "Images/places/gwanbukriyujeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeotrilsaji",
+      "note": "Jeongnimsaji Temple Site",
+      "region": "chungcheong",
+      "image": "Images/places/jeotrilsaji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gutnalji",
+      "note": "Gungnamji Pond",
+      "region": "chungcheong",
+      "image": "Images/places/gutnalji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "neutsanri-gobungun",
+      "note": "Neungsan-ri Tumuli",
+      "region": "chungcheong",
+      "image": "Images/places/neutsanri-gobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "baekjemunhwadanji",
+      "note": "Baekje Cultural Land",
+      "region": "chungcheong",
+      "image": "Images/places/baekjemunhwadanji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gukrimbuyeobakmulgwan",
+      "note": "Buyeo National Museum",
+      "region": "chungcheong",
+      "image": "Images/places/gukrimbuyeobakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "buyeo-naseot",
+      "note": "Buyeo Naseong Wall",
+      "region": "chungcheong",
+      "image": "Images/places/buyeo-naseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "muryatsa",
+      "note": "Muryangsa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/muryatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seotheutsanseot",
+      "note": "Seongheungsanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/seotheutsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ojukheon",
+      "note": "Ojukheon",
+      "region": "gangwon",
+      "image": "Images/places/ojukheon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seongyojat",
+      "note": "Seongyojang",
+      "region": "gangwon",
+      "image": "Images/places/seongyojat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyeotpodae",
+      "note": "Gyeongpodae Pavilion",
+      "region": "gangwon",
+      "image": "Images/places/gyeotpodae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "naksansa",
+      "note": "Naksansa Temple",
+      "region": "gangwon",
+      "image": "Images/places/naksansa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "woljeotsa",
+      "note": "Woljeongsa Temple",
+      "region": "gangwon",
+      "image": "Images/places/woljeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "satwonsa",
+      "note": "Sangwonsa Temple",
+      "region": "gangwon",
+      "image": "Images/places/satwonsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sinheutsa",
+      "note": "Sinheungsa Temple",
+      "region": "gangwon",
+      "image": "Images/places/sinheutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "goseot-watgokmaeul",
+      "note": "Wanggok Village",
+      "region": "gangwon",
+      "image": "Images/places/goseot-watgokmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gatreutdaedohobu-gwana",
+      "note": "Gangneung Daedohobu Office",
+      "region": "gangwon",
+      "image": "Images/places/gatreutdaedohobu-gwana.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jukseoru",
+      "note": "Jukseoru Pavilion",
+      "region": "gangwon",
+      "image": "Images/places/jukseoru.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "cheotpyeotsa",
+      "note": "Cheongpyeongsa Temple",
+      "region": "gangwon",
+      "image": "Images/places/cheotpyeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hotcheon-sutasa",
+      "note": "Sutasa Temple",
+      "region": "gangwon",
+      "image": "Images/places/hotcheon-sutasa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "beomjusa",
+      "note": "Beopjusa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/beomjusa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "cheotnaldae",
+      "note": "Cheongnamdae",
+      "region": "chungcheong",
+      "image": "Images/places/cheotnaldae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "satdatsanseot",
+      "note": "Sangdangsanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/satdatsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutju-tangeuldae",
+      "note": "Tangeumdae",
+      "region": "chungcheong",
+      "image": "Images/places/chutju-tangeuldae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutju-tampyeotri-chilcheutseoktam",
+      "note": "Tappyeong-ri Seven-story Pagoda",
+      "region": "chungcheong",
+      "image": "Images/places/chutju-tampyeotri-chilcheutseoktam.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "danyat-ondalgwangwatji",
+      "note": "Ondal Tourist Site",
+      "region": "chungcheong",
+      "image": "Images/places/danyat-ondalgwangwatji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "danyat-jeokseot",
+      "note": "Danyang Jeokseong",
+      "region": "chungcheong",
+      "image": "Images/places/danyat-jeokseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "cheotputmunhwajaedanji",
+      "note": "Cheongpung Cultural Heritage Complex",
+      "region": "chungcheong",
+      "image": "Images/places/cheotputmunhwajaedanji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "boeun-salnyeonsanseot",
+      "note": "Samnyeonsanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/boeun-salnyeonsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "goesan-hwayatgugok",
+      "note": "Hwayanggu Valley",
+      "region": "chungcheong",
+      "image": "Images/places/goesan-hwayatgugok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotdot-yeotguksa",
+      "note": "Yeongguksa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/yeotdot-yeotguksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jincheon-notdari",
+      "note": "Nongdari Bridge",
+      "region": "chungcheong",
+      "image": "Images/places/jincheon-notdari.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "haemieumseot",
+      "note": "Haemi Eupseong",
+      "region": "chungcheong",
+      "image": "Images/places/haemieumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hyeonchutsa",
+      "note": "Hyeonchungsa Shrine",
+      "region": "chungcheong",
+      "image": "Images/places/hyeonchutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "oealminsokmaeul",
+      "note": "Oeam Folk Village",
+      "region": "chungcheong",
+      "image": "Images/places/oealminsokmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dokrimginyeolgwan",
+      "note": "Independence Hall of Korea",
+      "region": "chungcheong",
+      "image": "Images/places/dokrimginyeolgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "donalseowon",
+      "note": "Donamseowon",
+      "region": "chungcheong",
+      "image": "Images/places/donalseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nonsan-gwanchoksa",
+      "note": "Gwanchoksa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/nonsan-gwanchoksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seosan-gaesilsa",
+      "note": "Gaesimsa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/seosan-gaesilsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "iksan-mireuksaji",
+      "note": "Mireuksaji Temple Site",
+      "region": "jeolla",
+      "image": "Images/places/iksan-mireuksaji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "iksan-watgutriyujeok",
+      "note": "Wanggung-ri Historic Site",
+      "region": "jeolla",
+      "image": "Images/places/iksan-watgutriyujeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gochat-goindolyujeok",
+      "note": "Gochang Dolmen Sites",
+      "region": "jeolla",
+      "image": "Images/places/gochat-goindolyujeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "muju-jeoksatsanseot",
+      "note": "Jeoksangsanseong Fortress",
+      "region": "jeolla",
+      "image": "Images/places/muju-jeoksatsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalwon-gwathanruwon",
+      "note": "Gwanghalluwon Garden",
+      "region": "jeolla",
+      "image": "Images/places/nalwon-gwathanruwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalwon-manboksaji",
+      "note": "Manboksa Temple Site",
+      "region": "jeolla",
+      "image": "Images/places/nalwon-manboksaji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sunchat-gatcheonsa",
+      "note": "Gangcheonsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/sunchat-gatcheonsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gilje-geulsansa",
+      "note": "Geumsansa Temple",
+      "region": "jeolla",
+      "image": "Images/places/gilje-geulsansa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "buan-naesosa",
+      "note": "Naesosa Temple",
+      "region": "jeolla",
+      "image": "Images/places/buan-naesosa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ilsil-saseondae",
+      "note": "Sasandae",
+      "region": "jeolla",
+      "image": "Images/places/ilsil-saseondae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeoteum-museotseowon",
+      "note": "Museongseowon",
+      "region": "jeolla",
+      "image": "Images/places/jeoteum-museotseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "suncheon-nakaneumseot",
+      "note": "Naganeupseong Fortress Village",
+      "region": "jeolla",
+      "image": "Images/places/suncheon-nakaneumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "suncheon-seonalsa",
+      "note": "Seonamsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/suncheon-seonalsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gurye-hwaeolsa",
+      "note": "Hwaeomsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/gurye-hwaeolsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gurye-unjoru",
+      "note": "Unjoru House",
+      "region": "jeolla",
+      "image": "Images/places/gurye-unjoru.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dalyat-soswaewon",
+      "note": "Soswaewon Garden",
+      "region": "jeolla",
+      "image": "Images/places/dalyat-soswaewon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dalyat-sikyeotjeot",
+      "note": "Sigyeongjeong Pavilion",
+      "region": "jeolla",
+      "image": "Images/places/dalyat-sikyeotjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dalyat-myeotokheon",
+      "note": "Myeongokheon Garden",
+      "region": "jeolla",
+      "image": "Images/places/dalyat-myeotokheon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "haenal-daeheutsa",
+      "note": "Daeheungsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/haenal-daeheutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jatseot-pilalseowon",
+      "note": "Pilamseowon",
+      "region": "jeolla",
+      "image": "Images/places/jatseot-pilalseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "boseot-daewonsa",
+      "note": "Daewonsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/boseot-daewonsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gatjin-muwisa",
+      "note": "Muwisa Temple",
+      "region": "jeolla",
+      "image": "Images/places/gatjin-muwisa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gatjin-dasanchodat",
+      "note": "Dasanchodang",
+      "region": "jeolla",
+      "image": "Images/places/gatjin-dasanchodat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotal-dogamsa",
+      "note": "Dogapsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/yeotal-dogamsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeosu-jinnalgwan",
+      "note": "Jinnamgwan",
+      "region": "jeolla",
+      "image": "Images/places/yeosu-jinnalgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeosu-heutguksa",
+      "note": "Heungguksa Temple",
+      "region": "jeolla",
+      "image": "Images/places/yeosu-heutguksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeosu-chutminsa",
+      "note": "Chungminsa Shrine",
+      "region": "jeolla",
+      "image": "Images/places/yeosu-chutminsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "mokpo-geundaeyeoksamunhwagotgan",
+      "note": "Mokpo Modern History Culture Space",
+      "region": "jeolla",
+      "image": "Images/places/mokpo-geundaeyeoksamunhwagotgan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gukrimasiamunhwajeondat",
+      "note": "Asia Culture Center",
+      "region": "jeolla",
+      "image": "Images/places/gukrimasiamunhwajeondat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "pochutsa",
+      "note": "Pochungsa Shrine",
+      "region": "jeolla",
+      "image": "Images/places/pochutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutjatsa",
+      "note": "Chungjangsa Shrine",
+      "region": "jeolla",
+      "image": "Images/places/chutjatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "mudeutsan-jeutsilsa",
+      "note": "Jeungsimsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/mudeutsan-jeutsilsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "wolbotseowon",
+      "note": "Wolbongseowon",
+      "region": "jeolla",
+      "image": "Images/places/wolbotseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hwanbyeokdat",
+      "note": "Hwanbyeokdang",
+      "region": "jeolla",
+      "image": "Images/places/hwanbyeokdat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chwigajeot",
+      "note": "Chwigajeong",
+      "region": "jeolla",
+      "image": "Images/places/chwigajeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-5-18-minjuhwaundot-gwanryeon-sajeok",
+      "note": "May 18 Democratization Movement Sites",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-5-18-minjuhwaundot-gwanryeon-sajeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "haeinsa",
+      "note": "Haeinsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/haeinsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "totdosa",
+      "note": "Tongdosa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/totdosa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ssatgyesa",
+      "note": "Ssanggyesa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/ssatgyesa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jinjuseot",
+      "note": "Jinju Fortress",
+      "region": "gyeongsang",
+      "image": "Images/places/jinjuseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chokseokru",
+      "note": "Chokseongnu Pavilion",
+      "region": "gyeongsang",
+      "image": "Images/places/chokseokru.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalhae-geulsan-borial",
+      "note": "Boriam Hermitage (Geumsan)",
+      "region": "gyeongsang",
+      "image": "Images/places/nalhae-geulsan-borial.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "totyeot-sebyeotgwan",
+      "note": "Sebyeonggwan",
+      "region": "gyeongsang",
+      "image": "Images/places/totyeot-sebyeotgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hamcheon-hwatmaesanseot",
+      "note": "Hwangmaesanseong Fortress",
+      "region": "gyeongsang",
+      "image": "Images/places/hamcheon-hwatmaesanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "halyat-nalgyeseowon",
+      "note": "Namgyeseowon",
+      "region": "gyeongsang",
+      "image": "Images/places/halyat-nalgyeseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sancheot-mokmyeonsibaeyuji",
+      "note": "Cotton Cultivation Historic Site",
+      "region": "gyeongsang",
+      "image": "Images/places/sancheot-mokmyeonsibaeyuji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "goseot-sothakdotgobungun",
+      "note": "Songhak-dong Tumuli",
+      "region": "gyeongsang",
+      "image": "Images/places/goseot-sothakdotgobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chatnyeot-gyodot-sothyeondot-gobungun",
+      "note": "Gyodong & Songhyeon-dong Tumuli",
+      "region": "gyeongsang",
+      "image": "Images/places/chatnyeot-gyodot-sothyeondot-gobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bangudae-algakhwa",
+      "note": "Bangudae Petroglyphs",
+      "region": "gyeongsang",
+      "image": "Images/places/bangudae-algakhwa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "cheonjeonri-gakseok",
+      "note": "Cheonjeon-ri Petroglyphs",
+      "region": "gyeongsang",
+      "image": "Images/places/cheonjeonri-gakseok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsanwaeseot",
+      "note": "Ulsan Japanese Fortress",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsanwaeseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "eonyateumseot",
+      "note": "Eonyang Eupseong",
+      "region": "gyeongsang",
+      "image": "Images/places/eonyateumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seoknalsa",
+      "note": "Seongnamsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/seoknalsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daegokbakmulgwan",
+      "note": "Daegok Museum",
+      "region": "gyeongsang",
+      "image": "Images/places/daegokbakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "cheoyotal",
+      "note": "Cheoyongam Rock",
+      "region": "gyeongsang",
+      "image": "Images/places/cheoyotal.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jejumok-gwana",
+      "note": "Jeju Mokgwana",
+      "region": "jeju",
+      "image": "Images/places/jejumok-gwana.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwandeokjeot",
+      "note": "Gwandeokjeong Pavilion",
+      "region": "jeju",
+      "image": "Images/places/gwandeokjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "salseothyeol",
+      "note": "Samseonghyeol",
+      "region": "jeju",
+      "image": "Images/places/salseothyeol.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hatpaduri-hatmotyujeokji",
+      "note": "Hangpaduri Anti-Mongol Historic Site",
+      "region": "jeju",
+      "image": "Images/places/hatpaduri-hatmotyujeokji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seoteumminsokmaeul",
+      "note": "Seongeup Folk Village",
+      "region": "jeju",
+      "image": "Images/places/seoteumminsokmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeotseotji",
+      "note": "Daejeongseong Fortress Site",
+      "region": "jeju",
+      "image": "Images/places/daejeotseotji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeju-4-3-gwanryeon-yujeok",
+      "note": "Jeju April 3 Historic Sites",
+      "region": "jeju",
+      "image": "Images/places/jeju-4-3-gwanryeon-yujeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeju-dolmunhwagotwon",
+      "note": "Jeju Stone Culture Park",
+      "region": "jeju",
+      "image": "Images/places/jeju-dolmunhwagotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "batsatam",
+      "note": "Bangsatap Stone Towers",
+      "region": "jeju",
+      "image": "Images/places/batsatam.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "altteureubihaetjat",
+      "note": "Altreu Airfield",
+      "region": "jeju",
+      "image": "Images/places/altteureubihaetjat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gyejoksanseot",
+      "note": "Gyejoksanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/gyejoksanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ualsajeokgotwon",
+      "note": "Uam Historic Park",
+      "region": "chungcheong",
+      "image": "Images/places/ualsajeokgotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dotchundat",
+      "note": "Dongchundang",
+      "region": "chungcheong",
+      "image": "Images/places/dotchundat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hoedeokhyatgyo",
+      "note": "Hoedeok Hyanggyo",
+      "region": "chungcheong",
+      "image": "Images/places/hoedeokhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "nalganjeotsa",
+      "note": "Namganjeongsa",
+      "region": "chungcheong",
+      "image": "Images/places/nalganjeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeongeunhyeondaesajeonsigwan",
+      "note": "Daejeon Modern History Exhibition Hall",
+      "region": "chungcheong",
+      "image": "Images/places/daejeongeunhyeondaesajeonsigwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bialsa",
+      "note": "Biamsa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/bialsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon",
+      "note": "King Sejong Yeongneung Heritage Area",
+      "region": "chungcheong",
+      "image": "Images/places/sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo",
+      "region": "chungcheong",
+      "image": "Images/places/giljotseo-jatgun-myo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dokrakjeot",
+      "note": "Dongnakjeong Pavilion",
+      "region": "chungcheong",
+      "image": "Images/places/dokrakjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeongihyatgyo",
+      "note": "Yeongi Hyanggyo",
+      "region": "chungcheong",
+      "image": "Images/places/yeongihyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "bogyeotsa",
+      "note": "Bogyeongsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/bogyeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "oeosa",
+      "note": "Oeosa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/oeosa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "buseoksa",
+      "note": "Buseoksa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/buseoksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sosuseowon",
+      "note": "Sosu Seowon",
+      "region": "gyeongsang",
+      "image": "Images/places/sosuseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "seonbichon",
+      "note": "Seonbichon Village",
+      "region": "gyeongsang",
+      "image": "Images/places/seonbichon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "museolmaeul",
+      "note": "Museom Village",
+      "region": "gyeongsang",
+      "image": "Images/places/museolmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotju-geundaeyeoksamunhwageori",
+      "note": "Yeongju Modern History Culture Street",
+      "region": "gyeongsang",
+      "image": "Images/places/yeotju-geundaeyeoksamunhwageori.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "totyeot-chutryeolsa",
+      "note": "Tongyeong Chungnyeolsa",
+      "region": "gyeongsang",
+      "image": "Images/places/totyeot-chutryeolsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "totyeotseotji",
+      "note": "Tongyeong Fortress Site",
+      "region": "gyeongsang",
+      "image": "Images/places/totyeotseotji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chakryatmyo",
+      "note": "Changnyangmyo Shrine",
+      "region": "gyeongsang",
+      "image": "Images/places/chakryatmyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "totyeot-saldosuguntotjeyeot",
+      "note": "Tongyeong Naval Command Site",
+      "region": "gyeongsang",
+      "image": "Images/places/totyeot-saldosuguntotjeyeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sotgwatsa",
+      "note": "Songgwangsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/sotgwatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "myeonatjeot",
+      "note": "Myeonangjeong Pavilion",
+      "region": "jeolla",
+      "image": "Images/places/myeonatjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sotgatjeot",
+      "note": "Songgangjeong Pavilion",
+      "region": "jeolla",
+      "image": "Images/places/sotgatjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "okjeongobungun",
+      "note": "Okjeon Tumuli",
+      "region": "gyeongsang",
+      "image": "Images/places/okjeongobungun.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "hamcheon-salgahyatgyo",
+      "note": "Samga Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/hamcheon-salgahyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daegugeundaeyeoksagwan",
+      "note": "Daegu Modern History Museum",
+      "region": "",
+      "image": "Images/places/daegugeundaeyeoksagwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-dosanseowon",
+      "note": "Dosan Seowon",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-dosanseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-byeotsanseowon",
+      "note": "Byeongsan Seowon",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-byeotsanseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-botjeotsa",
+      "note": "Bongjeongsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-botjeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-wolyeotgyo",
+      "note": "Woryeonggyo Bridge",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-wolyeotgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-andotminsokchon",
+      "note": "Andong Folk Village",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-andotminsokchon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-ilcheotgak",
+      "note": "Imcheonggak",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-ilcheotgak.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andothyatgyo",
+      "note": "Andong Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/andothyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-jebiwon-seokbul",
+      "note": "Jebiwon Stone Buddha",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-jebiwon-seokbul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-bothwatsa",
+      "note": "Bonghwangsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-bothwatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "andot-yeanhyatgyo",
+      "note": "Yean Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/andot-yeanhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonjuhyatgyo",
+      "note": "Jeonju Hyanggyo",
+      "region": "jeolla",
+      "image": "Images/places/jeonjuhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gotjuhyatgyo",
+      "note": "Gongju Hyanggyo",
+      "region": "chungcheong",
+      "image": "Images/places/gotjuhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gatreuthyatgyo",
+      "note": "Gangneung Hyanggyo",
+      "region": "gangwon",
+      "image": "Images/places/gatreuthyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-beomjusa",
+      "note": "Beopjusa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-beomjusa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-cheotnaldae",
+      "note": "Cheongnamdae",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-cheotnaldae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-satdatsanseot",
+      "note": "Sangdangsanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-satdatsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-chutju-tangeuldae",
+      "note": "Tangeumdae",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-chutju-tangeuldae.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-chutju-tampyeotri-chilcheutseoktam",
+      "note": "Tappyeong-ri Seven-story Pagoda",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-chutju-tampyeotri-chilcheutseoktam.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-danyat-ondalgwangwatji",
+      "note": "Ondal Tourist Site",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-danyat-ondalgwangwatji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-danyat-jeokseot",
+      "note": "Danyang Jeokseong",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-danyat-jeokseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-cheotputmunhwajaedanji",
+      "note": "Cheongpung Cultural Heritage Complex",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-cheotputmunhwajaedanji.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-boeun-salnyeonsanseot",
+      "note": "Samnyeonsanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-boeun-salnyeonsanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-goesan-hwayatgugok",
+      "note": "Hwayanggu Valley",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-goesan-hwayatgugok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-yeotdot-yeotguksa",
+      "note": "Yeongguksa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-yeotdot-yeotguksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "chutbuk-jincheon-notdari",
+      "note": "Nongdari Bridge",
+      "region": "chungcheong",
+      "image": "Images/places/chutbuk-jincheon-notdari.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gochateumseot",
+      "note": "Gochang Eupseong",
+      "region": "jeolla",
+      "image": "Images/places/gochateumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-suncheon-nakaneumseot",
+      "note": "Naganeupseong Fortress Village",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-suncheon-nakaneumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-suncheon-seonalsa",
+      "note": "Seonamsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-suncheon-seonalsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-gurye-hwaeolsa",
+      "note": "Hwaeomsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-gurye-hwaeolsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-gurye-unjoru",
+      "note": "Unjoru House",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-gurye-unjoru.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-dalyat-soswaewon",
+      "note": "Soswaewon Garden",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-dalyat-soswaewon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-dalyat-sikyeotjeot",
+      "note": "Sigyeongjeong Pavilion",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-dalyat-sikyeotjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-dalyat-myeotokheon",
+      "note": "Myeongokheon Garden",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-dalyat-myeotokheon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-haenal-daeheutsa",
+      "note": "Daeheungsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-haenal-daeheutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-jatseot-pilalseowon",
+      "note": "Pilamseowon",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-jatseot-pilalseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-boseot-daewonsa",
+      "note": "Daewonsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-boseot-daewonsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-gatjin-muwisa",
+      "note": "Muwisa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-gatjin-muwisa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-gatjin-dasanchodat",
+      "note": "Dasanchodang",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-gatjin-dasanchodat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-yeotal-dogamsa",
+      "note": "Dogapsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-yeotal-dogamsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-yeosu-jinnalgwan",
+      "note": "Jinnamgwan",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-yeosu-jinnalgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-yeosu-heutguksa",
+      "note": "Heungguksa Temple",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-yeosu-heutguksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-yeosu-chutminsa",
+      "note": "Chungminsa Shrine",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-yeosu-chutminsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jeonnal-mokpo-geundaeyeoksamunhwagotgan",
+      "note": "Mokpo Modern History Culture Space",
+      "region": "jeolla",
+      "image": "Images/places/jeonnal-mokpo-geundaeyeoksamunhwagotgan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-gukrimasiamunhwajeondat",
+      "note": "Asia Culture Center",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-gukrimasiamunhwajeondat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatjuhyatgyo",
+      "note": "Gwangju Hyanggyo",
+      "region": "jeolla",
+      "image": "Images/places/gwatjuhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-pochutsa",
+      "note": "Pochungsa Shrine",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-pochutsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-chutjatsa",
+      "note": "Chungjangsa Shrine",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-chutjatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-mudeutsan-jeutsilsa",
+      "note": "Jeungsimsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-mudeutsan-jeutsilsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-wolbotseowon",
+      "note": "Wolbongseowon",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-wolbotseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-hwanbyeokdat",
+      "note": "Hwanbyeokdang",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-hwanbyeokdat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-chwigajeot",
+      "note": "Chwigajeong",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-chwigajeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "gwatju-gwatju-5-18-minjuhwaundot-gwanryeon-sajeok",
+      "note": "May 18 Democratization Movement Sites",
+      "region": "jeolla",
+      "image": "Images/places/gwatju-gwatju-5-18-minjuhwaundot-gwanryeon-sajeok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-bangudae-algakhwa",
+      "note": "Bangudae Petroglyphs",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-bangudae-algakhwa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-cheonjeonri-gakseok",
+      "note": "Cheonjeon-ri Petroglyphs",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-cheonjeonri-gakseok.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-ulsanwaeseot",
+      "note": "Ulsan Japanese Fortress",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-ulsanwaeseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-eonyateumseot",
+      "note": "Eonyang Eupseong",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-eonyateumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-seoknalsa",
+      "note": "Seongnamsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-seoknalsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-daegokbakmulgwan",
+      "note": "Daegok Museum",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-daegokbakmulgwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsan-cheoyotal",
+      "note": "Cheoyongam Rock",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsan-cheoyotal.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "ulsanhyatgyo",
+      "note": "Ulsan Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/ulsanhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeon-gyejoksanseot",
+      "note": "Gyejoksanseong Fortress",
+      "region": "chungcheong",
+      "image": "Images/places/daejeon-gyejoksanseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeon-ualsajeokgotwon",
+      "note": "Uam Historic Park",
+      "region": "chungcheong",
+      "image": "Images/places/daejeon-ualsajeokgotwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeon-dotchundat",
+      "note": "Dongchundang",
+      "region": "chungcheong",
+      "image": "Images/places/daejeon-dotchundat.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeon-hoedeokhyatgyo",
+      "note": "Hoedeok Hyanggyo",
+      "region": "chungcheong",
+      "image": "Images/places/daejeon-hoedeokhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeon-nalganjeotsa",
+      "note": "Namganjeongsa",
+      "region": "chungcheong",
+      "image": "Images/places/daejeon-nalganjeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "daejeon-daejeongeunhyeondaesajeonsigwan",
+      "note": "Daejeon Modern History Exhibition Hall",
+      "region": "chungcheong",
+      "image": "Images/places/daejeon-daejeongeunhyeondaesajeonsigwan.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejot-bialsa",
+      "note": "Biamsa Temple",
+      "region": "chungcheong",
+      "image": "Images/places/sejot-bialsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejot-sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon",
+      "note": "King Sejong Yeongneung Heritage Area",
+      "region": "chungcheong",
+      "image": "Images/places/sejot-sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejot-giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo",
+      "region": "chungcheong",
+      "image": "Images/places/sejot-giljotseo-jatgun-myo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejot-dokrakjeot",
+      "note": "Dongnakjeong Pavilion",
+      "region": "chungcheong",
+      "image": "Images/places/sejot-dokrakjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "sejot-yeongihyatgyo",
+      "note": "Yeongi Hyanggyo",
+      "region": "chungcheong",
+      "image": "Images/places/sejot-yeongihyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "pohat-bogyeotsa",
+      "note": "Bogyeongsa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/pohat-bogyeotsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jatgieumseot",
+      "note": "Janggi Eupseong",
+      "region": "gyeongsang",
+      "image": "Images/places/jatgieumseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "jatgihyatgyo",
+      "note": "Janggi Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/jatgihyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "pohat-oeosa",
+      "note": "Oeosa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/pohat-oeosa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "heuthaehyatgyo",
+      "note": "Heunghae Hyanggyo",
+      "region": "gyeongsang",
+      "image": "Images/places/heuthaehyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotju-buseoksa",
+      "note": "Buseoksa Temple",
+      "region": "gyeongsang",
+      "image": "Images/places/yeotju-buseoksa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotju-sosuseowon",
+      "note": "Sosu Seowon",
+      "region": "gyeongsang",
+      "image": "Images/places/yeotju-sosuseowon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotju-seonbichon",
+      "note": "Seonbichon Village",
+      "region": "gyeongsang",
+      "image": "Images/places/yeotju-seonbichon.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotju-museolmaeul",
+      "note": "Museom Village",
+      "region": "gyeongsang",
+      "image": "Images/places/yeotju-museolmaeul.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "yeotju-yeotju-geundaeyeoksamunhwageori",
+      "note": "Yeongju Modern History Culture Street",
+      "region": "gyeongsang",
+      "image": "Images/places/yeotju-yeotju-geundaeyeoksamunhwageori.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "suncheon-sotgwatsa",
+      "note": "Songgwangsa Temple",
+      "region": "jeolla",
+      "image": "Images/places/suncheon-sotgwatsa.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "suncheonwaeseot",
+      "note": "Suncheon Japanese Fortress",
+      "region": "jeolla",
+      "image": "Images/places/suncheonwaeseot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "suncheonhyatgyo",
+      "note": "Suncheon Hyanggyo",
+      "region": "jeolla",
+      "image": "Images/places/suncheonhyatgyo.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dalyat-myeonatjeot",
+      "note": "Myeonangjeong Pavilion",
+      "region": "jeolla",
+      "image": "Images/places/dalyat-myeonatjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    },
+    {
+      "slug": "dalyat-sotgatjeot",
+      "note": "Songgangjeong Pavilion",
+      "region": "jeolla",
+      "image": "Images/places/dalyat-sotgatjeot.jpg",
+      "is_fallback": true,
+      "exists": true,
+      "size": 55601
+    }
+  ],
+  "have_list": [
+    {
+      "slug": "gyeongbok",
+      "note": "Gyeongbokgung Palace"
+    },
+    {
+      "slug": "suwon",
+      "note": "Suwon Hwaseong Fortress"
+    },
+    {
+      "slug": "bukchon",
+      "note": "Bukchon Hanok Village"
+    },
+    {
+      "slug": "insadong",
+      "note": "Insadong"
+    },
+    {
+      "slug": "bulguksa",
+      "note": "Bulguksa Temple"
+    },
+    {
+      "slug": "donggung",
+      "note": "Donggung Palace and Wolji Pond"
+    },
+    {
+      "slug": "jeonju",
+      "note": "Jeonju Hanok Village"
+    },
+    {
+      "slug": "gamcheon",
+      "note": "Gamcheon Culture Village"
+    },
+    {
+      "slug": "haedong",
+      "note": "Haedong Yonggungsa Temple"
+    },
+    {
+      "slug": "imjingak",
+      "note": "Imjingak (DMZ tourist area)"
+    },
+    {
+      "slug": "hwangnidan",
+      "note": "Hwangnidan-gil"
+    },
+    {
+      "slug": "hahoe",
+      "note": "Andong Hahoe Village"
+    }
+  ]
+}

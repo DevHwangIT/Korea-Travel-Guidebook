@@ -1,0 +1,56 @@
+# Nature image batch report (2026-08-20)
+# type: nature only; Wikimedia Commons real photos; no commit
+
+## Replaced (were nature.jpg fallback MD5 → unique real photo)
+seoul-forest
+bukseoul-kkumui-forest
+cheonggyecheon
+naksan-park
+seoul-botanic-park
+olympic-park
+taejongdae
+oryukdo
+igidae-coastal-trail
+eulsukdo
+dadaepo-nature
+sorae-wetland
+incheon-grand-park
+muui-do
+yeongjong-do
+ganghwa-do
+baengnyeong-do
+suseong-mot
+duryu-park
+odongdo
+dolsando
+geumodo
+geomundo
+baekdo
+yeosu-jangdo
+udo
+jusangjeolli
+bijarim
+gotjawal
+seopjikoji
+sangumburi
+jeongbang-falls
+soesoggak
+yongmeori-coast
+manjanggul
+
+## Already had real photo (pre-existing, kept)
+goyang, gapyeong, seongsan, jungmun, hangang-yeouido, hangang-banpo,
+cheonjeyeon, boseong, suncheon-bay, ulsan-daewangam
+
+## Still fallback (no suitable Commons photo found)
+dalseong-wetland
+yeojaman
+saryeoni-forest
+
+## Failed
+(none — remaining are still on type fallback, not broken downloads)
+
+## Notes
+- Skipped 남산공원 (namsan is type city, not nature)
+- Skipped mountains/beaches migrated away from nature
+- Scripts: tool/download_nature_images.py (+ pass2..pass6)

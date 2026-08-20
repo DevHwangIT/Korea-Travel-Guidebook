@@ -90,7 +90,7 @@
     var backChoice = root.querySelector("[data-buy-back-choice]");
 
     if (view === "shopping") {
-      if (title) title.textContent = t("buyHub.shoppingTitle", "쇼핑");
+      if (title) title.textContent = t("buyHub.shoppingTitle", "쇼핑&기념품");
       if (intro) intro.textContent = t("buyHub.shoppingIntro", "카테고리별로 살 거리를 모아 두었습니다.");
     } else if (view === "fun") {
       if (title) title.textContent = t("buyHub.funTitle", "놀거리");

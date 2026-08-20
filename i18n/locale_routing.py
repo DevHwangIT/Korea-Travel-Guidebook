@@ -100,16 +100,35 @@ def _read_json(path: Path) -> dict[str, Any] | None:
 
 
 def write_json(path: Path, data: dict[str, Any]) -> None:
+    """Write JSON with retries; use atomic replace to avoid Windows file locks."""
+    import os
+    import tempfile
+
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     last_exc: Exception | None = None
-    for attempt in range(6):
+    for attempt in range(8):
+        tmp_name = None
         try:
-            path.write_text(payload, encoding="utf-8", newline="\n")
+            fd, tmp_name = tempfile.mkstemp(
+                prefix=f".{path.stem}-",
+                suffix=".json.tmp",
+                dir=str(path.parent),
+            )
+            with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
+                f.write(payload)
+            os.replace(tmp_name, path)
+            tmp_name = None
             return
         except OSError as exc:
             last_exc = exc
-            time.sleep(0.35 * (attempt + 1))
+            time.sleep(0.4 * (attempt + 1))
+        finally:
+            if tmp_name and os.path.exists(tmp_name):
+                try:
+                    os.unlink(tmp_name)
+                except OSError:
+                    pass
     assert last_exc is not None
     raise last_exc
 

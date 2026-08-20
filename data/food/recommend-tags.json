@@ -197,13 +197,6 @@
         "sweet"
       ]
     },
-    "yogurt-ice": {
-      "tags": [
-        "icy",
-        "cold",
-        "sweet"
-      ]
-    },
     "bread": {
       "tags": [
         "bakery",
@@ -498,6 +491,61 @@
         "noodles",
         "spicy",
         "quickbite"
+      ]
+    },
+    "jogae-gui": {
+      "tags": [
+        "seafood",
+        "grill",
+        "warm",
+        "nosoup",
+        "hearty"
+      ]
+    },
+    "korean-pasta": {
+      "tags": [
+        "noodles",
+        "mild",
+        "nosoup",
+        "warm"
+      ]
+    },
+    "tteok": {
+      "tags": [
+        "sweet",
+        "bakery",
+        "mild",
+        "portable"
+      ]
+    },
+    "hotteok": {
+      "tags": [
+        "sweet",
+        "street",
+        "warm",
+        "quickbite"
+      ]
+    },
+    "eomuk-kkochi": {
+      "tags": [
+        "street",
+        "warm",
+        "quickbite",
+        "portable"
+      ]
+    },
+    "ice-cup-ade": {
+      "tags": [
+        "drink",
+        "cold",
+        "sweet"
+      ]
+    },
+    "ice-cream": {
+      "tags": [
+        "icy",
+        "cold",
+        "sweet"
       ]
     }
   }

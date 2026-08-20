@@ -1,0 +1,22 @@
+{
+  "영일대해수욕장": {
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ea/%EC%98%81%EC%9D%BC%EB%8C%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageimage": "영일대해수욕장.jpg",
+    "resolved": "영일대해수욕장"
+  },
+  "구룡포해수욕장": {
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Guryongpo_Beach%2C_Pohang_on_April_14th%2C_2019.jpg/1280px-Guryongpo_Beach%2C_Pohang_on_April_14th%2C_2019.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "pageimage": "Guryongpo_Beach,_Pohang_on_April_14th,_2019.jpg",
+    "resolved": "구룡포해수욕장"
+  },
+  "학동흑진주몽돌해변": {
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/GJ-HDBeach.jpg/1280px-GJ-HDBeach.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "pageimage": "GJ-HDBeach.jpg",
+    "resolved": "학동흑진주몽돌해변"
+  },
+  "대천해수욕장": {
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Korea-Boryeong-Daecheon_Beach-01.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "pageimage": "Korea-Boryeong-Daecheon_Beach-01.jpg",
+    "resolved": "대천해수욕장"
+  }
+}

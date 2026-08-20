@@ -48,6 +48,8 @@ MEAL_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
     (re.compile(r"malatang|tteokbokki|dakgalbi|jjimdak|yangnyeom|budae|sundubu|gamjatang|dakbokkeum|jeyuk|jjolmyeon|nakgopsae"), ["spicy"]),
     (re.compile(r"gukbap|gomtang|samgyetang|kalguksu|sundubu|malatang|dakhanmari|budae|kongguksu|naengmyeon|gamjatang|dakbokkeum"), ["soup"]),
     (re.compile(r"samgyeopsal|gopchang|tangsuyuk|korean-chinese|bulgogi|bossam|tteokgalbi|jeyuk|galbijjim|jokbal"), ["meat", "nosoup"]),
+    (re.compile(r"jogae-gui"), ["seafood", "grill", "warm", "nosoup"]),
+    (re.compile(r"korean-pasta"), ["noodles", "mild", "nosoup", "warm"]),
     (re.compile(r"dak|chicken|samgyetang|dakgangjeong"), ["chicken"]),
     (re.compile(r"dakgangjeong|yangnyeom-chicken"), ["spicy", "nosoup", "quickbite"]),
     (re.compile(r"doenjang"), ["soup", "warm", "mild"]),
@@ -67,8 +69,9 @@ DESSERT_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
     (re.compile(r"bingsu|yogurt|ice"), ["icy", "cold"]),
     (re.compile(r"bread|butter|sandwich|cookie|bungeoppang|yakgwa"), ["bakery"]),
     (re.compile(r"cafe"), ["coffee"]),
-    (re.compile(r"tanghulu|bungeoppang|dalgona"), ["street"]),
-    (re.compile(r"bungeoppang"), ["warm"]),
+    (re.compile(r"tanghulu|bungeoppang|dalgona|hotteok|eomuk"), ["street"]),
+    (re.compile(r"bungeoppang|hotteok|eomuk"), ["warm"]),
+    (re.compile(r"tteok|sipwon"), ["bakery", "sweet"]),
 ]
 
 QUICK_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
@@ -76,7 +79,7 @@ QUICK_HEURISTICS: list[tuple[re.Pattern[str], list[str]]] = [
     (re.compile(r"kimbap"), ["roll", "portable", "quickbite"]),
     (re.compile(r"chicken"), ["chicken", "quickbite"]),
     (re.compile(r"coffee|americano|latte|yakgwa|melona|eolbaksa|lemonade|milkis"), ["drink", "combo"]),
-    (re.compile(r"melona|biyott"), ["sweet", "cold"]),
+    (re.compile(r"melona|biyott|ice-cup|ade"), ["sweet", "cold"]),
     (re.compile(r"gongganchun|markjeongsik|ramyeon|jikgguri"), ["combo"]),
 ]
 

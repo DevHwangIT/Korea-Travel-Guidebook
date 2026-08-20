@@ -1,0 +1,133 @@
+{
+  "summary": {
+    "total_heritage": 361,
+    "already_had_real_at_start": 12,
+    "needed_photos": 349,
+    "real_now": 170,
+    "replaced_with_real": 158,
+    "fallback_remaining": 191
+  },
+  "notable_remaining": [
+    {
+      "slug": "yotin-hoalmisulgwan-jeontotjeotwon",
+      "note": "Ho-Am Art Museum Traditional Garden"
+    },
+    {
+      "slug": "sejotdaewatreut",
+      "note": "Royal Tomb of King Sejong"
+    },
+    {
+      "slug": "gathwa-goryeogutji",
+      "note": "Ganghwa Goryeo Palace Site"
+    },
+    {
+      "slug": "munhaksanseot",
+      "note": "Munhaksanseong Fortress"
+    },
+    {
+      "slug": "gyeyatsanseot",
+      "note": "Gyeyangsanseong Fortress"
+    },
+    {
+      "slug": "oryundae-hanguksungyojabakmulgwan",
+      "note": "Oryundae Korean Martyrs Museum"
+    },
+    {
+      "slug": "daegueumseot-yujeok",
+      "note": "Daegu Eupseong Remains"
+    },
+    {
+      "slug": "yuksinsa",
+      "note": "Yukshinsa Shrine"
+    },
+    {
+      "slug": "gyeotju-eumseot",
+      "note": "Gyeongju Eupseong"
+    },
+    {
+      "slug": "andotminsokchon",
+      "note": "Andong Folk Village"
+    },
+    {
+      "slug": "bothwatsa",
+      "note": "Bonghwangsa Temple"
+    },
+    {
+      "slug": "nalgosanseot",
+      "note": "Namgosanseong Fortress"
+    },
+    {
+      "slug": "seotheutsanseot",
+      "note": "Seongheungsanseong Fortress"
+    },
+    {
+      "slug": "muju-jeoksatsanseot",
+      "note": "Jeoksangsanseong Fortress"
+    },
+    {
+      "slug": "nalwon-manboksaji",
+      "note": "Manboksa Temple Site"
+    },
+    {
+      "slug": "jeoteum-museotseowon",
+      "note": "Museongseowon"
+    },
+    {
+      "slug": "jatseot-pilalseowon",
+      "note": "Pilamseowon"
+    },
+    {
+      "slug": "yeosu-heutguksa",
+      "note": "Heungguksa Temple"
+    },
+    {
+      "slug": "yeosu-chutminsa",
+      "note": "Chungminsa Shrine"
+    },
+    {
+      "slug": "wolbotseowon",
+      "note": "Wolbongseowon"
+    },
+    {
+      "slug": "hamcheon-hwatmaesanseot",
+      "note": "Hwangmaesanseong Fortress"
+    },
+    {
+      "slug": "eonyateumseot",
+      "note": "Eonyang Eupseong"
+    },
+    {
+      "slug": "seoknalsa",
+      "note": "Seongnamsa Temple"
+    },
+    {
+      "slug": "daegokbakmulgwan",
+      "note": "Daegok Museum"
+    },
+    {
+      "slug": "daejeotseotji",
+      "note": "Daejeongseong Fortress Site"
+    },
+    {
+      "slug": "gyejoksanseot",
+      "note": "Gyejoksanseong Fortress"
+    },
+    {
+      "slug": "giljotseo-jatgun-myo",
+      "note": "Tomb of General Kim Jong-seo"
+    },
+    {
+      "slug": "totyeotseotji",
+      "note": "Tongyeong Fortress Site"
+    },
+    {
+      "slug": "chakryatmyo",
+      "note": "Changnyangmyo Shrine"
+    },
+    {
+      "slug": "andot-andotminsokchon",
+      "note": "Andong Folk Village"
+    }
+  ],
+  "all_remaining_count": 191
+}

@@ -109,7 +109,7 @@
           "reason": "Овощи, рис и соус в одной сбалансированной и удобной миске."
         },
         "malatang": {
-          "name": "Малатанг",
+          "name": "Корейский малатан",
           "reason": "Пряный бульон, если вам хочется яркого и индивидуального остроты."
         },
         "sundubu": {
@@ -276,7 +276,7 @@
       "about": "В Корее есть все: от недорогих кофеен с едой на вынос до сетей кафе с десертами и легкими закусками. Вы найдете их возле туристических мест и станций метро — они удобны для отдыха во время путешествия."
     },
     "malatang": {
-      "title": "Малатанг",
+      "title": "Корейский малатан",
       "desc": "Приготовьте свой собственный острый горячий суп в горшочке",
       "about": "Малатанг — острый суп в виде тушеного мяса, популярный среди местной молодежи и путешественников. Выберите ингредиенты (овощи, лапша, мясо, тофу), выберите уровень специй и бульон, затем варите на медленном огне и ешьте."
     },
@@ -304,11 +304,6 @@
       "title": "Танхулу",
       "desc": "Фруктовые шашлычки с хрустящей сахарной оболочкой",
       "about": "Танхулу – это цукаты на палочке (клубника, мускат и т. д.) с хрустящей сахарной глазурью. В Корее он тоже стал модным уличным десертом — довольно сладкий, поэтому обычно достаточно одной-двух шпажек."
-    },
-    "yogurt-ice": {
-      "title": "Йогуртовое мороженое",
-      "desc": "Магазины десертов из пикантного мягкого йогурта",
-      "about": "Йогуртовое мороженое (мягкое) популярно благодаря своему пикантному и легкому вкусу. Добавьте фрукты, хлопья или начинки — их легко найти в сетевых магазинах десертов рядом с туристическими районами."
     },
     "bungeoppang": {
       "title": "Бунгеоппанг",
@@ -434,6 +429,66 @@
       "title": "тост",
       "desc": "Уличный тост, яичная капля и тост в стиле Исаака",
       "about": "Корейский тост (уличный тост) — это хлебный сэндвич, запеченный на железной тарелке со сладким соусом, яйцами, капустой, ветчиной и сыром. Такие сети, как Egg Drop и Isaac Toast, популярны среди туристов в качестве завтраков и закусок."
+    },
+    "jogae-gui": {
+      "title": "Моллюски на гриле",
+      "desc": "Наслаждайтесь курсом приготовления моллюсков на гриле на пляже",
+      "about": "Моллюски на гриле — это корейское блюдо в стиле пляжа/поча, которое готовят путем жарки гребешков, моллюсков, моллюсков и т. д. на углях или железной пластине. Есть много мест, где его готовят на гриле с маслом, сыром и чесноком, и он популярен в качестве ужина для друзей и семейных посиделок или во время путешествий."
+    },
+    "korean-pasta": {
+      "title": "Корейская паста",
+      "desc": "В Корее любят пасту со сливками, розой, морепродуктами и т. д.",
+      "about": "Паста в корейском стиле — это блюдо из лапши, адаптированное к корейскому вкусу, такое как сливки, роза, морепродукты джамппонг и булдак, а не итальянская версия. Его легко найти в семейных ресторанах и простых итальянских ресторанах, а также есть рестораны, где его подают с рисом и кимчи."
+    },
+    "tteok": {
+      "title": "Домик из рисовых лепешек",
+      "desc": "Традиционный магазин рисовых лепешек, включая инчжольми, гарэтток и клейкие рисовые лепешки.",
+      "about": "Tteok House — это магазин, в котором продаются традиционные корейские рисовые лепешки, такие как инчжольми, гарэтток, сонпён и пэксолги. Их покупают не только для праздников и родовых обрядов, но и в качестве закуски и подарков, а в наши дни в магазинах рисовых пирожных типа кафе можно найти даже мороженое и рисовые лепешки с маслом."
+    },
+    "hotteok": {
+      "title": "Хотток",
+      "desc": "Уличная зимняя закуска с начинкой из черного кунжута, сахара и орехов.",
+      "about": "Хотток — это уличная закуска, которую готовят путем раскатывания теста, наполнения его семенами черного кунжута, сахара и орехов и приготовления на железной тарелке. Зимой здесь особенно тепло, и его легко найти на Мёндоне, на рынках и в продуктовых ларьках."
+    },
+    "eomuk-kkochi": {
+      "title": "Шашлычки из рыбного пирога",
+      "desc": "Суповые рыбные котлеты из ларьков, уличные закуски",
+      "about": "Шашлык из рыбных котлет — это уличная еда, которую готовят из рыбных котлет, нанизанных на шампуры и пропитанных теплым супом. Здесь есть разнообразная еда: от продуктовых киосков, рынков и магазинов до горячих баров, и ее приятно есть во время прогулки в холодный день."
+    },
+    "baekban": {
+      "title": "витилиго",
+      "desc": "Корейский комплексный обед с множеством гарниров, как домашняя еда.",
+      "about": "Пэкбан — это блюдо в корейском стиле, включающее рис, суп и несколько гарниров. Его часто называют сытным и экономичным обедом во время путешествий."
+    },
+    "guksu": {
+      "title": "лапша",
+      "desc": "Легкие блюда из лапши, такие как банкетная и гречневая лапша.",
+      "about": "Лапша — корейское блюдо из лапши, которое подают с прозрачным бульоном или смешанной лапшой. Помимо калгуксу и нэнмёна, мы собрали местные фирменные рестораны, где подают лапшу."
+    },
+    "dolsotbap": {
+      "title": "каменный горшок для риса",
+      "desc": "Рис и обожженный рис, приготовленные в каменном горшке",
+      "about": "Долсотбап — корейское блюдо, которое готовится в раскаленной каменной кастрюле и имеет пикантную текстуру и поджаренный рис."
+    },
+    "jangeo-gui": {
+      "title": "Жареный угорь",
+      "desc": "Угорь на гриле с приправами и солью",
+      "about": "Жареный угорь — это блюдо здорового питания, приготовленное путем приготовления на гриле пресноводного или морского угря с приправами или солью. Наслаждайтесь им щедро с рисом и ссамом."
+    },
+    "dakbal": {
+      "title": "куриные ножки",
+      "desc": "Острые куриные ножки",
+      "about": "Куриные ножки популярны в качестве гарнира или вечерней закуски, если их обжарить или приготовить на гриле с острой приправой. Есть много мест, куда можно пойти с соджу."
+    },
+    "jjuggumi": {
+      "title": "Осьминог",
+      "desc": "Острый жареный осьминог в стиле бульгоги",
+      "about": "Дзюккуми — это блюдо из острых, обжаренных маленьких осьминогов, которое едят с рисом и овощами. Особые улицы, такие как Чунгмуро, известны."
+    },
+    "ice-cream": {
+      "title": "Йогуртовое мороженое",
+      "desc": "Магазины десертов из пикантного мягкого йогурта",
+      "about": "Йогуртовое мороженое (мягкое) популярно благодаря своему пикантному и легкому вкусу. Добавьте фрукты, хлопья или начинки — их легко найти в сетевых магазинах десертов рядом с туристическими районами."
     }
   },
   "restaurants": {
@@ -2971,7 +3026,7 @@
       "previewTitle": "요거트아이스크림의정석 신정네거리점",
       "previewImage": "media/cover.jpg",
       "phone": "070-4012-7413",
-      "hours": "закрывается в 23:00",
+      "hours": "23:00에 영업 종료",
       "placeId": "1870236455",
       "menuItems": [
         {
@@ -16951,6 +17006,5541 @@
         "district": "종로",
         "dong": ""
       }
+    },
+    "sunchunga": {
+      "name": "Сунчхон-стрит",
+      "location": "순천가",
+      "menu": "순천가",
+      "price": "₩10,000",
+      "tip": "",
+      "about": "Сунчхонга — знаменитый ресторан, где подают тушеное кимчи из свинины. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/38009499",
+      "mapsUrl": "https://map.naver.com/p/entry/place/38009499",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5710855,126.9891908&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-765-0398",
+      "hours": "10:00에 영업 시작",
+      "body": [],
+      "previewTitle": "순천가",
+      "placeId": "38009499",
+      "menuItems": [
+        {
+          "name": "돼지고기김치찌개",
+          "price": "₩10,000"
+        },
+        {
+          "name": "스팸김치찌개",
+          "price": "₩10,000"
+        },
+        {
+          "name": "간장제육",
+          "price": "₩10,000"
+        },
+        {
+          "name": "매운제육",
+          "price": "₩10,000"
+        },
+        {
+          "name": "갈치조림",
+          "price": "₩12,000"
+        },
+        {
+          "name": "고등어조림",
+          "price": "₩12,000"
+        },
+        {
+          "name": "생삼겹살",
+          "price": "₩17,000"
+        },
+        {
+          "name": "돼지갈비",
+          "price": "₩17,000"
+        },
+        {
+          "name": "훈제오리",
+          "price": "₩17,000"
+        }
+      ],
+      "category": "찌개,전골",
+      "score": "4.54",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "yetnaljip": {
+      "name": "старый дом",
+      "location": "옛날집",
+      "menu": "옛날집",
+      "price": "₩42,000",
+      "tip": "",
+      "about": "Old House — корейский ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/18432817",
+      "mapsUrl": "https://map.naver.com/p/entry/place/18432817",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5227307,127.0426183&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-549-7888",
+      "hours": "11:30에 영업 시작",
+      "body": [],
+      "previewTitle": "옛날집",
+      "placeId": "18432817",
+      "menuItems": [
+        {
+          "name": "옛날집디럭스",
+          "price": "₩42,000"
+        },
+        {
+          "name": "옛날집특정식",
+          "price": "₩32,000"
+        },
+        {
+          "name": "해물차돌된장찌개",
+          "price": "₩16,000"
+        },
+        {
+          "name": "생불고기전골(미국산)",
+          "price": "₩55,000"
+        },
+        {
+          "name": "한방돼지갈비찜",
+          "price": "₩55,000"
+        },
+        {
+          "name": "가자미식해",
+          "price": "₩20,000"
+        },
+        {
+          "name": "된장수육(국내산,칠레산)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "생선전",
+          "price": "₩28,000"
+        },
+        {
+          "name": "굴전(11월~3월)",
+          "price": "₩28,000"
+        },
+        {
+          "name": "생선전 굴전 반반",
+          "price": "₩40,000"
+        },
+        {
+          "name": "돼지두루치기",
+          "price": "₩23,000"
+        },
+        {
+          "name": "낙지볶음",
+          "price": "₩27,000"
+        },
+        {
+          "name": "홍어삼합",
+          "price": "₩39,000"
+        },
+        {
+          "name": "홍어회",
+          "price": "₩25,000"
+        },
+        {
+          "name": "명란젓",
+          "price": "₩14,000"
+        },
+        {
+          "name": "녹두빈대떡",
+          "price": "₩20,000"
+        },
+        {
+          "name": "김치전",
+          "price": "₩17,000"
+        },
+        {
+          "name": "파전",
+          "price": "₩20,000"
+        },
+        {
+          "name": "간장게장",
+          "price": "₩41,000"
+        },
+        {
+          "name": "토종닭백숙",
+          "price": "₩70,000"
+        },
+        {
+          "name": "씨레기닭볶음탕(국내산토종닭)",
+          "price": "₩70,000"
+        },
+        {
+          "name": "씨레기소갈비찜(미국산)",
+          "price": "₩90,000"
+        },
+        {
+          "name": "모듬생선구이",
+          "price": "₩72,000"
+        },
+        {
+          "name": "굴비구이안주",
+          "price": "₩45,000"
+        },
+        {
+          "name": "고추장찌개",
+          "price": "₩28,000"
+        },
+        {
+          "name": "명란계란탕/명란두부탕",
+          "price": "₩30,000"
+        },
+        {
+          "name": "두부김치",
+          "price": "₩33,000"
+        },
+        {
+          "name": "매운닭발편육",
+          "price": "₩17,000"
+        },
+        {
+          "name": "가자미구이갈비찜정식",
+          "price": "₩37,000"
+        },
+        {
+          "name": "굴비정식",
+          "price": "₩35,000"
+        },
+        {
+          "name": "된장수육백반",
+          "price": "₩33,000"
+        },
+        {
+          "name": "고갈비정식",
+          "price": "₩32,000"
+        },
+        {
+          "name": "명란젓정식",
+          "price": "₩18,000"
+        },
+        {
+          "name": "산적비빔밥",
+          "price": "₩12,000"
+        },
+        {
+          "name": "젓갈백반",
+          "price": "₩17,000"
+        },
+        {
+          "name": "누룽지백반",
+          "price": "₩14,000"
+        },
+        {
+          "name": "미역국정식",
+          "price": "₩15,000"
+        },
+        {
+          "name": "꽁치김치찌개",
+          "price": "₩14,000"
+        },
+        {
+          "name": "돼지김치찌개",
+          "price": "₩14,000"
+        },
+        {
+          "name": "토종닭죽",
+          "price": "₩14,000"
+        },
+        {
+          "name": "떡만둣국",
+          "price": "₩14,000"
+        },
+        {
+          "name": "접시만두",
+          "price": "₩8,000"
+        },
+        {
+          "name": "떡갈비",
+          "price": "₩14,000"
+        },
+        {
+          "name": "곱창김치찌개",
+          "price": "₩16,000"
+        },
+        {
+          "name": "VIP 저녁코스",
+          "price": "₩110,000"
+        }
+      ],
+      "category": "한정식",
+      "score": "4.18",
+      "region": {
+        "city": "서울",
+        "district": "강남",
+        "dong": ""
+      }
+    },
+    "daon": {
+      "name": "Даон",
+      "location": "다온",
+      "menu": "다온",
+      "price": "₩9,000",
+      "tip": "",
+      "about": "Он расположен напротив средней школы науки и технологий Индеок на станции Вольге на линии 1.",
+      "placeUrl": "https://map.naver.com/p/entry/place/127943990",
+      "mapsUrl": "https://map.naver.com/p/entry/place/127943990",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.6321141,127.057236&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-900-6364",
+      "hours": "05:30에 영업 시작",
+      "body": [],
+      "previewTitle": "다온",
+      "placeId": "127943990",
+      "menuItems": [
+        {
+          "name": "다온 정식",
+          "price": "₩9,000",
+          "recommend": true
+        }
+      ],
+      "category": "한식",
+      "score": "4.3",
+      "region": {
+        "city": "서울",
+        "district": "노원",
+        "dong": ""
+      }
+    },
+    "yangji-sikdang": {
+      "name": "Ресторан Янцзи",
+      "location": "양지식당",
+      "menu": "양지식당",
+      "price": "₩9,000",
+      "tip": "",
+      "about": "Ресторан Yangji — популярный ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/34582011",
+      "mapsUrl": "https://map.naver.com/p/entry/place/34582011",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5739033,127.0069119&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1478-8307",
+      "hours": "10:00에 영업 시작",
+      "body": [],
+      "previewTitle": "양지식당",
+      "placeId": "34582011",
+      "menuItems": [
+        {
+          "name": "평일",
+          "price": "₩9,000"
+        },
+        {
+          "name": "금요일",
+          "price": "₩10,000"
+        },
+        {
+          "name": "백반",
+          "price": "₩8,000"
+        }
+      ],
+      "category": "백반,가정식",
+      "score": "4.48",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "hansangcharim-bapsang-sinseol": {
+      "name": "Стол Хансансалим Синсоль-дон",
+      "location": "한상차림밥상 신설동",
+      "menu": "한상차림밥상 신설동",
+      "price": "₩15,000",
+      "tip": "",
+      "about": "한상차림밥상 신설동",
+      "placeUrl": "https://map.naver.com/p/entry/place/1727721533",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1727721533",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5778721,127.025956&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1337-4141",
+      "hours": "10:45에 영업 시작",
+      "body": [],
+      "previewTitle": "한상차림밥상 신설동",
+      "placeId": "1727721533",
+      "menuItems": [
+        {
+          "name": "한상보쌈정식",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "한방갈비정식",
+          "price": "₩17,000"
+        },
+        {
+          "name": "1인보쌈정식",
+          "price": "₩15,000"
+        },
+        {
+          "name": "반상차림",
+          "price": "₩10,000"
+        },
+        {
+          "name": "돌솥밥변경",
+          "price": "₩2,000"
+        },
+        {
+          "name": "김치전",
+          "price": "₩15,000"
+        },
+        {
+          "name": "부추전",
+          "price": "₩15,000"
+        },
+        {
+          "name": "(사이드) 보쌈추가",
+          "price": "₩20,000"
+        },
+        {
+          "name": "갈비추가",
+          "price": "₩20,000"
+        },
+        {
+          "name": "(주류) 소주 / 맥주",
+          "price": "₩5,000"
+        },
+        {
+          "name": "(주류) 장수30",
+          "price": "₩4,000"
+        },
+        {
+          "name": "(주류) 월매",
+          "price": "₩5,000"
+        },
+        {
+          "name": "(주류) 달밤장수",
+          "price": "₩6,000"
+        },
+        {
+          "name": "(주류) 달빛유자",
+          "price": "₩7,000"
+        },
+        {
+          "name": "(주류) 장홍삼",
+          "price": "₩7,000"
+        },
+        {
+          "name": "(주류) 티젠콤부차주",
+          "price": "₩7,000"
+        },
+        {
+          "name": "(주류) 음료",
+          "price": "₩2,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.34",
+      "region": {
+        "city": "서울",
+        "district": "동대문",
+        "dong": ""
+      }
+    },
+    "cheongdamgol": {
+      "name": "Чхонгдамголь",
+      "location": "청담골",
+      "menu": "청담골",
+      "price": "₩11,000",
+      "tip": "",
+      "about": "За зданием Cheongdam (ранее Cheongdam Wedding Plaza) на перекрестке Хакдон.",
+      "placeUrl": "https://map.naver.com/p/entry/place/11477316",
+      "mapsUrl": "https://map.naver.com/p/entry/place/11477316",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5228366,127.043437&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-543-1252",
+      "hours": "10:30에 영업 시작",
+      "body": [],
+      "previewTitle": "청담골",
+      "placeId": "11477316",
+      "menuItems": [
+        {
+          "name": "가정식 백반",
+          "price": "₩11,000"
+        },
+        {
+          "name": "누룽지 정식",
+          "price": "₩12,000"
+        },
+        {
+          "name": "고등어구이 추가",
+          "price": "₩5,000"
+        },
+        {
+          "name": "제육볶음 추가",
+          "price": "₩4,000"
+        },
+        {
+          "name": "닭도리탕 (소) 추가",
+          "price": "₩28,000"
+        },
+        {
+          "name": "고등어조림(소) 추가",
+          "price": "₩28,000"
+        },
+        {
+          "name": "갈비찜(소) 추가",
+          "price": "₩45,000"
+        },
+        {
+          "name": "제주오겹살",
+          "price": "₩20,000"
+        },
+        {
+          "name": "항정살",
+          "price": "₩24,000"
+        },
+        {
+          "name": "한우차돌박이",
+          "price": "₩45,000"
+        },
+        {
+          "name": "닭도리탕-대 추가",
+          "price": "₩40,000"
+        },
+        {
+          "name": "고등어조림-대 추가",
+          "price": "₩40,000"
+        },
+        {
+          "name": "갈비찜-대 추가",
+          "price": "₩60,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.29",
+      "region": {
+        "city": "서울",
+        "district": "강남",
+        "dong": ""
+      }
+    },
+    "haeundae-bada-kimbap": {
+      "name": "Морской Кимбап Хэундэ",
+      "location": "해운대 바다김밥",
+      "menu": "해운대 바다김밥",
+      "price": "₩6,900",
+      "tip": "",
+      "about": "Haeundae Sea Gimbap - знаменитый ресторан кимбап с морепродуктами из икры минтая (5 рядов) в Пусане. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/2045599810",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2045599810",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1625049,129.1632056&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1430-7919",
+      "hours": "매주 목요일 휴무",
+      "body": [],
+      "previewTitle": "해운대바다김밥",
+      "placeId": "2045599810",
+      "menuItems": [
+        {
+          "name": "부산 명란 씨푸드 김밥(5줄)",
+          "price": "₩6,900",
+          "recommend": true
+        },
+        {
+          "name": "치미추리 루꼴라 불고기 김밥(5줄)",
+          "price": "₩6,900"
+        },
+        {
+          "name": "(8월 스페셜)스모키묵은지참치(5줄)",
+          "price": "₩6,500"
+        },
+        {
+          "name": "매운 부산어묵 김밥(5줄)",
+          "price": "₩5,500"
+        },
+        {
+          "name": "매콤 청양멸치 김밥(5줄)",
+          "price": "₩5,500"
+        },
+        {
+          "name": "해운대 병아리김밥(5줄)",
+          "price": "₩3,900"
+        },
+        {
+          "name": "부산 여행 세트(25줄+된장국2개)",
+          "price": "₩29,000"
+        },
+        {
+          "name": "시그니처 모듬세트(25줄)",
+          "price": "₩27,000"
+        },
+        {
+          "name": "스페셜 39cm 대왕김밥",
+          "price": "₩19,000"
+        }
+      ],
+      "category": "김밥",
+      "score": "4.87",
+      "region": {
+        "city": "부산",
+        "district": "해운대",
+        "dong": ""
+      }
+    },
+    "hawaii-kimbap": {
+      "name": "Гавайский кимбап",
+      "location": "하와이김밥",
+      "menu": "하와이김밥",
+      "price": "₩2,500",
+      "tip": "",
+      "about": "Hawaii Kimbap — знаменитый ресторан кимбапа. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1322387677",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1322387677",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1681453,129.1427762&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "051-747-0025",
+      "hours": "07:00에 영업 시작",
+      "body": [],
+      "previewTitle": "하와이김밥",
+      "placeId": "1322387677",
+      "menuItems": [
+        {
+          "name": "하와이김밥",
+          "price": "₩2,500"
+        }
+      ],
+      "category": "김밥",
+      "score": "5",
+      "region": {
+        "city": "부산",
+        "district": "해운대",
+        "dong": "상가동"
+      }
+    },
+    "gawon-kimbap": {
+      "name": "Гавон Гимбап",
+      "location": "가원김밥",
+      "menu": "가원김밥",
+      "price": "₩6,000",
+      "tip": "",
+      "about": "Gawon Gimbap — знаменитый ресторан кимбапа из водорослей. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1343785420",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1343785420",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1616441,129.1423237&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "",
+      "hours": "매주 목요일 휴무",
+      "body": [],
+      "previewTitle": "가원김밥",
+      "placeId": "1343785420",
+      "menuItems": [
+        {
+          "name": "다시마 김밥",
+          "price": "₩6,000",
+          "recommend": true
+        },
+        {
+          "name": "참치 김밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "치즈 김밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "땡초 김밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "가원김밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "다시마땡초김밥",
+          "price": "₩6,500"
+        },
+        {
+          "name": "다시마치즈김밥",
+          "price": "₩6,500"
+        },
+        {
+          "name": "참치치즈김밥",
+          "price": "₩5,500"
+        },
+        {
+          "name": "참치땡초김밥",
+          "price": "₩5,500"
+        }
+      ],
+      "category": "한식",
+      "score": "4.25",
+      "region": {
+        "city": "부산",
+        "district": "해운대",
+        "dong": ""
+      }
+    },
+    "kimmyeonjang": {
+      "name": "Шеф Ким",
+      "location": "김면장",
+      "menu": "김면장",
+      "price": "₩8,000",
+      "tip": "",
+      "about": "Myeonjang Kim — знаменитый ресторан с жареным рисом и яйцами. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/37127396",
+      "mapsUrl": "https://map.naver.com/p/entry/place/37127396",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1403189,129.1073333&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1330-2225",
+      "hours": "09:00에 영업 시작",
+      "body": [],
+      "previewTitle": "김면장",
+      "placeId": "37127396",
+      "menuItems": [
+        {
+          "name": "계란볶음밥",
+          "price": "₩8,000"
+        },
+        {
+          "name": "목살스테이크덮밥",
+          "price": "₩11,000"
+        },
+        {
+          "name": "소고기덮밥",
+          "price": "₩12,000"
+        },
+        {
+          "name": "아보카도덮밥",
+          "price": "₩11,000"
+        },
+        {
+          "name": "새우볶음밥",
+          "price": "₩8,900"
+        },
+        {
+          "name": "돼지고기김치볶음밥",
+          "price": "₩9,000"
+        },
+        {
+          "name": "김면장김밥",
+          "price": "₩4,200"
+        },
+        {
+          "name": "야채김밥",
+          "price": "₩4,500"
+        },
+        {
+          "name": "땡초김밥",
+          "price": "₩4,800"
+        },
+        {
+          "name": "참치김밥",
+          "price": "₩5,500"
+        },
+        {
+          "name": "매운불고기김밥",
+          "price": "₩5,800"
+        },
+        {
+          "name": "소불고기김밥",
+          "price": "₩6,400"
+        },
+        {
+          "name": "등심탕수육김밥",
+          "price": "₩6,400"
+        },
+        {
+          "name": "아보카도김밥",
+          "price": "₩6,400"
+        },
+        {
+          "name": "새우김밥",
+          "price": "₩5,200"
+        },
+        {
+          "name": "잔치국수",
+          "price": "₩6,500"
+        },
+        {
+          "name": "야채볶음밥",
+          "price": "₩7,500"
+        },
+        {
+          "name": "감자칼국수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "김치칼국수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "감자수제비",
+          "price": "₩5,000"
+        },
+        {
+          "name": "해물수제비",
+          "price": "₩5,000"
+        },
+        {
+          "name": "김치수제비",
+          "price": "₩5,000"
+        },
+        {
+          "name": "비빔국수",
+          "price": "₩7,500"
+        },
+        {
+          "name": "뚝배기비빔밥",
+          "price": "₩9,000"
+        },
+        {
+          "name": "김치국밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "크림치즈김밥(땡초)",
+          "price": "₩6,400"
+        },
+        {
+          "name": "소고기육전김밥",
+          "price": "₩6,400"
+        },
+        {
+          "name": "매콤어묵국수",
+          "price": "₩6,500"
+        },
+        {
+          "name": "냉국수",
+          "price": "₩7,500"
+        },
+        {
+          "name": "과일소스샐러드비빔국수",
+          "price": "₩7,000"
+        },
+        {
+          "name": "떡국",
+          "price": "₩7,500"
+        },
+        {
+          "name": "라면",
+          "price": "₩4,800"
+        }
+      ],
+      "category": "종합분식",
+      "score": "4.63",
+      "region": {
+        "city": "부산",
+        "district": "수영",
+        "dong": ""
+      }
+    },
+    "badasoon-kimbap": {
+      "name": "Морской кимбап",
+      "location": "바다손김밥",
+      "menu": "바다손김밥",
+      "price": "₩6,000",
+      "tip": "",
+      "about": "바다손김밥",
+      "placeUrl": "https://map.naver.com/p/entry/place/2044570566",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2044570566",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1552852,129.1213025&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1430-5771",
+      "hours": "09:00에 영업 시작",
+      "body": [],
+      "previewTitle": "바다손김밥",
+      "placeId": "2044570566",
+      "menuItems": [
+        {
+          "name": "바다손김밥",
+          "price": "₩6,000"
+        }
+      ],
+      "category": "김밥",
+      "score": "4.55",
+      "region": {
+        "city": "부산",
+        "district": "수영",
+        "dong": ""
+      }
+    },
+    "satto-bunsik": {
+      "name": "Сато закуска",
+      "location": "사또분식",
+      "menu": "사또분식",
+      "price": "₩6,500",
+      "tip": "",
+      "about": "Сато Бунсик — ресторан холодной лапши. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/16366541",
+      "mapsUrl": "https://map.naver.com/p/entry/place/16366541",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.0906575,129.041183&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "051-415-3764",
+      "hours": "15:00에 영업 시작",
+      "body": [],
+      "previewTitle": "사또분식",
+      "placeId": "16366541",
+      "menuItems": [
+        {
+          "name": "냉국수",
+          "price": "₩6,500"
+        },
+        {
+          "name": "비빔김밥",
+          "price": "₩6,500"
+        },
+        {
+          "name": "당면",
+          "price": "₩7,000"
+        },
+        {
+          "name": "쫄우동",
+          "price": "₩7,000"
+        },
+        {
+          "name": "쫄면",
+          "price": "₩7,000"
+        },
+        {
+          "name": "비빔국수",
+          "price": "₩7,000"
+        },
+        {
+          "name": "국수",
+          "price": "₩6,000"
+        },
+        {
+          "name": "비빔우동",
+          "price": "₩7,000"
+        },
+        {
+          "name": "우동",
+          "price": "₩6,500"
+        },
+        {
+          "name": "김밥",
+          "price": "₩4,000"
+        }
+      ],
+      "category": "종합분식",
+      "score": "4.59",
+      "region": {
+        "city": "부산",
+        "district": "영도",
+        "dong": ""
+      }
+    },
+    "deuruni-guksu-cheorwon": {
+      "name": "Главный филиал Druni Noodles Cheorwon",
+      "location": "드르니 국수 철원 본점",
+      "menu": "드르니 국수 철원 본점",
+      "price": "₩12,000",
+      "tip": "",
+      "about": "Он расположен перед кассой вдоль колонной дороги Чхорвон Хантан.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1063302543",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1063302543",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=38.1553216,127.2878582&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "033-452-2223",
+      "hours": "10:00에 영업 시작",
+      "body": [],
+      "previewTitle": "드르니국수 철원 본점",
+      "placeId": "1063302543",
+      "menuItems": [
+        {
+          "name": "명란들기름국수",
+          "price": "₩12,000",
+          "recommend": true
+        },
+        {
+          "name": "고추냉이 비빔국수",
+          "price": "₩12,000",
+          "recommend": true
+        },
+        {
+          "name": "오대쌀 비빔밥",
+          "price": "₩12,000",
+          "recommend": true
+        },
+        {
+          "name": "현무암 만두",
+          "price": "₩7,000",
+          "recommend": true
+        },
+        {
+          "name": "잔치국수",
+          "price": "₩11,000"
+        },
+        {
+          "name": "드르니 갈비탕",
+          "price": "₩15,000"
+        },
+        {
+          "name": "오대쌀밥 육개장",
+          "price": "₩12,000"
+        },
+        {
+          "name": "드르니 미나리국밥(수비드 돼지국밥)",
+          "price": "₩12,000"
+        },
+        {
+          "name": "고추냉이 비빔국수 정식",
+          "price": "₩16,000"
+        },
+        {
+          "name": "코다리 비빔 국수",
+          "price": "₩12,000"
+        },
+        {
+          "name": "코다리 비빔국수 정식",
+          "price": "₩16,000"
+        },
+        {
+          "name": "냉모밀",
+          "price": "₩12,000"
+        },
+        {
+          "name": "냉모밀 정식",
+          "price": "₩16,000"
+        },
+        {
+          "name": "대왕돈까스",
+          "price": "₩12,000"
+        },
+        {
+          "name": "드르니 수육",
+          "price": "₩23,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.16",
+      "region": {
+        "city": "강원",
+        "district": "철원",
+        "dong": ""
+      }
+    },
+    "hoisik": {
+      "name": "хойсик",
+      "location": "호이식",
+      "menu": "호이식",
+      "price": "₩12,000",
+      "tip": "",
+      "about": "호이식",
+      "placeUrl": "https://map.naver.com/p/entry/place/2037489098",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2037489098",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5777909,126.9863069&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-764-4609",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "호이식 종로 안국",
+      "placeId": "2037489098",
+      "menuItems": [
+        {
+          "name": "닭구이 칼국수",
+          "price": "₩12,000",
+          "recommend": true
+        },
+        {
+          "name": "삼계칼국수",
+          "price": "₩15,000"
+        },
+        {
+          "name": "이북식 닭개장",
+          "price": "₩13,000"
+        },
+        {
+          "name": "초계국수 물/비빔",
+          "price": "₩12,000"
+        },
+        {
+          "name": "닭한마리",
+          "price": "₩31,000"
+        },
+        {
+          "name": "닭볶음탕",
+          "price": "₩37,000"
+        },
+        {
+          "name": "고기 만두",
+          "price": "₩9,000"
+        },
+        {
+          "name": "녹두전",
+          "price": "₩15,000"
+        },
+        {
+          "name": "직화 오징어 볶음",
+          "price": "₩17,000"
+        },
+        {
+          "name": "미나리 해물파전",
+          "price": "₩18,000"
+        }
+      ],
+      "category": "칼국수,만두",
+      "score": "4.86",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "oneul-neungi-kalguksu": {
+      "name": "Сегодня Нынги Калгуксу.",
+      "location": "오늘은능이칼국수",
+      "menu": "오늘은능이칼국수",
+      "price": "₩9,000",
+      "tip": "",
+      "about": "Сегодня «Нунги Калгуксу» — известный ресторан «Нунги Калгуксу». Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1063351178",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1063351178",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.860022,127.1517342&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1493-1347",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "오늘은능이칼국수",
+      "placeId": "1063351178",
+      "menuItems": [
+        {
+          "name": "능이칼국수",
+          "price": "₩9,000",
+          "recommend": true
+        },
+        {
+          "name": "능이삼계탕",
+          "price": "₩16,000",
+          "recommend": true
+        },
+        {
+          "name": "능이닭백숙",
+          "price": "₩70,000",
+          "recommend": true
+        },
+        {
+          "name": "능이오리백숙",
+          "price": "₩75,000",
+          "recommend": true
+        },
+        {
+          "name": "능이수제비",
+          "price": "₩9,000"
+        },
+        {
+          "name": "김치말이국수(여름메뉴)",
+          "price": "₩9,000"
+        },
+        {
+          "name": "왕만두국(고기/김치)",
+          "price": "₩9,000"
+        },
+        {
+          "name": "능이만두 5개",
+          "price": "₩9,000"
+        },
+        {
+          "name": "찐고기/김치만두 5개",
+          "price": "₩9,000"
+        }
+      ],
+      "category": "칼국수,만두",
+      "score": "4.83",
+      "region": {
+        "city": "전북",
+        "district": "덕진",
+        "dong": ""
+      }
+    },
+    "seolidong": {
+      "name": "Соль Дон",
+      "location": "설이동",
+      "menu": "설이동",
+      "price": "₩13,000",
+      "tip": "",
+      "about": "설이동",
+      "placeUrl": "https://map.naver.com/p/entry/place/2010283062",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2010283062",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.571741,126.9797289&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1457-2004",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "설이동",
+      "placeId": "2010283062",
+      "menuItems": [
+        {
+          "name": "온칼국수",
+          "price": "₩13,000",
+          "recommend": true
+        },
+        {
+          "name": "냉칼국수",
+          "price": "₩13,000"
+        },
+        {
+          "name": "비빔칼국수",
+          "price": "₩13,000"
+        },
+        {
+          "name": "손만두",
+          "price": "₩8,000"
+        },
+        {
+          "name": "맛보기 오징어전",
+          "price": "₩9,000"
+        },
+        {
+          "name": "식혜",
+          "price": "₩1,000"
+        },
+        {
+          "name": "막걸리한잔",
+          "price": "₩1,000"
+        },
+        {
+          "name": "공깃밥",
+          "price": "₩1,000"
+        },
+        {
+          "name": "칼국수 사리추가",
+          "price": "₩3,000"
+        },
+        {
+          "name": "왕만두순대전골(2~3인분)",
+          "price": "₩29,000"
+        },
+        {
+          "name": "왕만두순대전골(3~4인분)",
+          "price": "₩39,000"
+        },
+        {
+          "name": "오징어우엉전",
+          "price": "₩22,000"
+        },
+        {
+          "name": "골뱅이 비칼무침",
+          "price": "₩24,000"
+        },
+        {
+          "name": "들기름두부와청어알",
+          "price": "₩29,000"
+        },
+        {
+          "name": "설이동세트",
+          "price": "₩79,000"
+        }
+      ],
+      "category": "칼국수,만두",
+      "score": "4.81",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "hongkal": {
+      "name": "красный нож",
+      "location": "홍칼",
+      "menu": "홍칼",
+      "price": "₩13,000",
+      "tip": "",
+      "about": "Автобусная остановка находится рядом с трансферным центром Донгван Юкгеори.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1714965426",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1714965426",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=33.3069676,126.3376302&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1381-4672",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "홍칼",
+      "placeId": "1714965426",
+      "menuItems": [
+        {
+          "name": "만두전골",
+          "price": "₩13,000",
+          "recommend": true
+        },
+        {
+          "name": "김치전골",
+          "price": "₩13,000"
+        },
+        {
+          "name": "칼국수",
+          "price": "₩10,000"
+        },
+        {
+          "name": "만두국",
+          "price": "₩10,000"
+        },
+        {
+          "name": "만두",
+          "price": "₩10,000"
+        }
+      ],
+      "category": "칼국수,만두",
+      "score": "4.8",
+      "region": {
+        "city": "제주",
+        "district": "서귀포",
+        "dong": ""
+      }
+    },
+    "jojo-kalguksu-seongsu": {
+      "name": "Филиал Джоджо Калгуксу в Сонсу",
+      "location": "조조칼국수 성수점",
+      "menu": "조조칼국수 성수점",
+      "price": "₩10,000",
+      "tip": "",
+      "about": "Когда вы выйдете из выхода 2 станции Seongsu, слева от вас будет переулок.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1057264169",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1057264169",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5451733,127.0567604&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1472-4334",
+      "hours": "10:00에 영업 시작",
+      "body": [],
+      "previewTitle": "조조칼국수 성수점",
+      "placeId": "1057264169",
+      "menuItems": [
+        {
+          "name": "동죽칼국수",
+          "price": "₩10,000",
+          "recommend": true
+        },
+        {
+          "name": "낙지해물파전",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "물총조개탕",
+          "price": "₩12,000",
+          "recommend": true
+        },
+        {
+          "name": "호랑이막걸리",
+          "price": "₩5,000"
+        },
+        {
+          "name": "지평생막걸리",
+          "price": "₩5,000"
+        },
+        {
+          "name": "밤막걸리",
+          "price": "₩5,000"
+        },
+        {
+          "name": "느린마을",
+          "price": "₩6,000"
+        }
+      ],
+      "category": "칼국수,만두",
+      "score": "3.71",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "donmatkkul": {
+      "name": "Деньги имеют приятный вкус",
+      "location": "돈맛꿀",
+      "menu": "돈맛꿀",
+      "price": "₩29,000",
+      "tip": "",
+      "about": "Он расположен прямо в переулке между Korean Fried Chicken и кафе на вынос Cafe Junie.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1998430133",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1998430133",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.571074,126.9895649&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-6105-8989",
+      "hours": "10:30에 영업 시작",
+      "body": [],
+      "previewTitle": "돈맛꿀",
+      "placeId": "1998430133",
+      "menuItems": [
+        {
+          "name": "잡내없이 살살녹는 수육",
+          "price": "₩29,000",
+          "recommend": true
+        },
+        {
+          "name": "가마솥에서 탄생한 돼지국밥",
+          "price": "₩8,000",
+          "recommend": true
+        },
+        {
+          "name": "이미 소문나버린 수육백반",
+          "price": "₩11,000",
+          "recommend": true
+        },
+        {
+          "name": "푸짐하고 다양한 모둠수육",
+          "price": "₩39,000",
+          "recommend": true
+        },
+        {
+          "name": "겨울철에만 맛보는 생굴",
+          "price": "₩12,000"
+        },
+        {
+          "name": "대선 소주(부산)",
+          "price": "₩5,000"
+        },
+        {
+          "name": "여울",
+          "price": "₩25,000"
+        },
+        {
+          "name": "일품진로",
+          "price": "₩25,000"
+        }
+      ],
+      "category": "국밥",
+      "score": "4.5",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "neungdong-minari-seongsu": {
+      "name": "Филиал Нындон Минари Сонсу",
+      "location": "능동미나리 성수지점",
+      "menu": "능동미나리 성수지점",
+      "price": "₩26,000",
+      "tip": "",
+      "about": "Филиал Neungdong Minari Seongsu — корейский ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1594044291",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1594044291",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5427551,127.0539622&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-2088-2435",
+      "hours": "23:30에 라스트오더",
+      "body": [],
+      "previewTitle": "능동미나리 성수지점",
+      "placeId": "1594044291",
+      "menuItems": [
+        {
+          "name": "[프리미엄] 차돌 모둠곰탕",
+          "price": "₩26,000",
+          "recommend": true
+        },
+        {
+          "name": "능동 미나리 곰탕",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "능동 육회 비빔밥",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "미나리 (특) 곰탕",
+          "price": "₩20,000"
+        },
+        {
+          "name": "능동 곰탕",
+          "price": "₩14,000"
+        },
+        {
+          "name": "능동 육전 (한접시)",
+          "price": "₩28,000"
+        },
+        {
+          "name": "능동 육전 (반접시)",
+          "price": "₩15,000"
+        },
+        {
+          "name": "능동 육회",
+          "price": "₩27,000"
+        },
+        {
+          "name": "능동 접시 수육",
+          "price": "₩29,000"
+        },
+        {
+          "name": "미나리 수육 전골 (소)",
+          "price": "₩48,000"
+        },
+        {
+          "name": "미나리 수육 전골 (중)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "미나리 곱창 전골 (중)",
+          "price": "₩58,000"
+        },
+        {
+          "name": "미나리 곱창 전골 (대)",
+          "price": "₩86,000"
+        },
+        {
+          "name": "미나리 꼬리찜 (소)",
+          "price": "₩56,000"
+        },
+        {
+          "name": "미나리 꼬리찜 (대)",
+          "price": "₩78,000"
+        },
+        {
+          "name": "미나리 숙회",
+          "price": "₩9,000"
+        },
+        {
+          "name": "칼국수면 추가",
+          "price": "₩2,000"
+        },
+        {
+          "name": "소면 추가",
+          "price": "₩2,000"
+        },
+        {
+          "name": "전골 야채 추가",
+          "price": "₩2,000"
+        },
+        {
+          "name": "곱창+야채 추가",
+          "price": "₩18,000"
+        },
+        {
+          "name": "육회 야채 추가",
+          "price": "₩3,000"
+        },
+        {
+          "name": "공기밥",
+          "price": "₩1,000"
+        },
+        {
+          "name": "능동 더덕 막걸리",
+          "price": "₩6,000"
+        },
+        {
+          "name": "소주",
+          "price": "₩5,500"
+        },
+        {
+          "name": "맥주",
+          "price": "₩6,000"
+        },
+        {
+          "name": "별빛청하",
+          "price": "₩6,000"
+        },
+        {
+          "name": "하이볼",
+          "price": "₩8,000"
+        },
+        {
+          "name": "프리미엄 소주",
+          "price": "₩30,000"
+        },
+        {
+          "name": "과실주",
+          "price": "₩30,000"
+        },
+        {
+          "name": "음료",
+          "price": "₩2,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.33",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "sandermi-miseong-dongseongno": {
+      "name": "Сандеуми Мисон Свинина Кукбап Филиал Тонсонгро",
+      "location": "산더미 미성돼지국밥 동성로점",
+      "menu": "산더미 미성돼지국밥 동성로점",
+      "price": "₩13,000",
+      "tip": "",
+      "about": "Филиал Sandeumi Miseong Pork Gukbap Dongseongro — это ресторан, где подают суп, приготовленный на прямом огне. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1168203966",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1168203966",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.8664604,128.5948226&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1395-5654",
+      "hours": "22:00에 라스트오더",
+      "body": [],
+      "previewTitle": "산더미 미성돼지국밥 동성로점",
+      "placeId": "1168203966",
+      "menuItems": [
+        {
+          "name": "직화 항정 국밥",
+          "price": "₩13,000",
+          "recommend": true
+        },
+        {
+          "name": "산더미 특 돼지국밥",
+          "price": "₩10,000",
+          "recommend": true
+        },
+        {
+          "name": "미성 수육 (중) + 조개칼국수",
+          "price": "₩38,000",
+          "recommend": true
+        },
+        {
+          "name": "돼지찌개",
+          "price": "₩30,000",
+          "recommend": true
+        },
+        {
+          "name": "얼큰 애호박 국밥",
+          "price": "₩11,000"
+        },
+        {
+          "name": "순대 국밥",
+          "price": "₩11,000"
+        },
+        {
+          "name": "내장 국밥",
+          "price": "₩11,000"
+        },
+        {
+          "name": "열무 김치말이 국수",
+          "price": "₩9,000"
+        },
+        {
+          "name": "미성 수육 (대) + 조개칼국수",
+          "price": "₩48,000"
+        },
+        {
+          "name": "순대 곱창 전골",
+          "price": "₩30,000"
+        },
+        {
+          "name": "산더미 냉채 수육",
+          "price": "₩15,000"
+        },
+        {
+          "name": "수육백반",
+          "price": "₩14,000"
+        },
+        {
+          "name": "맛보기 수육",
+          "price": "₩10,000"
+        },
+        {
+          "name": "맛보기 순대",
+          "price": "₩9,000"
+        },
+        {
+          "name": "소주",
+          "price": "₩5,000"
+        },
+        {
+          "name": "맥주",
+          "price": "₩5,000"
+        }
+      ],
+      "category": "국밥",
+      "score": "4.82",
+      "region": {
+        "city": "대구",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "haeundae-wonjo-halmae-gukbap": {
+      "name": "Оригинальная бабушка Хэундэ Кукбап",
+      "location": "해운대원조할매국밥",
+      "menu": "해운대원조할매국밥",
+      "price": "₩8,000",
+      "tip": "",
+      "about": "Haeundae Wonjo Halmae Gukbap — знаменитый ресторан говяжьих супов. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1883663647",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1883663647",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1620097,129.1633372&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1425-2866",
+      "hours": "07:00에 영업 시작",
+      "body": [],
+      "previewTitle": "해운대원조할매국밥",
+      "placeId": "1883663647",
+      "menuItems": [
+        {
+          "name": "소고기국밥",
+          "price": "₩8,000"
+        },
+        {
+          "name": "소고기따로국밥",
+          "price": "₩8,500"
+        },
+        {
+          "name": "소고기국수",
+          "price": "₩8,000"
+        },
+        {
+          "name": "선지국밥",
+          "price": "₩8,000"
+        },
+        {
+          "name": "선지따로국밥",
+          "price": "₩8,500"
+        },
+        {
+          "name": "선지국수",
+          "price": "₩8,000"
+        },
+        {
+          "name": "선지곱배기",
+          "price": "₩9,000"
+        },
+        {
+          "name": "소고기국밥/국수곱배기",
+          "price": "₩9,000"
+        },
+        {
+          "name": "소고기따로곱배기",
+          "price": "₩9,500"
+        },
+        {
+          "name": "선지따로곱배기",
+          "price": "₩9,500"
+        },
+        {
+          "name": "국수사리",
+          "price": "₩1,000"
+        }
+      ],
+      "category": "국밥",
+      "score": "4.56",
+      "region": {
+        "city": "부산",
+        "district": "해운대",
+        "dong": ""
+      }
+    },
+    "dwaeji-gongtang-hau-seongsu": {
+      "name": "Суп из свинины «Хау», главный филиал Сонсу",
+      "location": "돼지공탕 하우 성수본점",
+      "menu": "돼지공탕 하우 성수본점",
+      "price": "₩13,000",
+      "tip": "",
+      "about": "돼지공탕 하우 성수본점",
+      "placeUrl": "https://map.naver.com/p/entry/place/1559602117",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1559602117",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.548435,127.0556892&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1469-1453",
+      "hours": "11:30에 영업 시작",
+      "body": [],
+      "previewTitle": "돼지공탕 하우 성수본점",
+      "placeId": "1559602117",
+      "menuItems": [
+        {
+          "name": "하우 곰탕(보통)",
+          "price": "₩13,000",
+          "recommend": true
+        },
+        {
+          "name": "하우 냉면",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "하우 얼큰 곰탕(보통)",
+          "price": "₩14,000",
+          "recommend": true
+        },
+        {
+          "name": "냉제육 한접시",
+          "price": "₩29,000",
+          "recommend": true
+        },
+        {
+          "name": "냉제육 반접시",
+          "price": "₩16,000",
+          "recommend": true
+        },
+        {
+          "name": "청어알 무말랭이",
+          "price": "₩5,000",
+          "recommend": true
+        },
+        {
+          "name": "하우 곰탕(특)",
+          "price": "₩16,000",
+          "recommend": true
+        },
+        {
+          "name": "하우 얼큰 곰탕(특)",
+          "price": "₩16,000",
+          "recommend": true
+        },
+        {
+          "name": "하우 미역국",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "병맥주",
+          "price": "₩5,000"
+        },
+        {
+          "name": "소주",
+          "price": "₩5,000"
+        }
+      ],
+      "category": "국밥",
+      "score": "4.78",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "gabojeong": {
+      "name": "Временная коррекция",
+      "location": "가보정",
+      "menu": "가보정",
+      "price": "₩130,000",
+      "tip": "",
+      "about": "가보정",
+      "placeUrl": "https://map.naver.com/p/entry/place/11567981",
+      "mapsUrl": "https://map.naver.com/p/entry/place/11567981",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.2742604,127.0286819&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "1600-3883",
+      "hours": "11:30에 영업 시작",
+      "body": [],
+      "previewTitle": "가보정",
+      "placeId": "11567981",
+      "menuItems": [
+        {
+          "name": "한우 생갈비",
+          "price": "₩130,000",
+          "recommend": true
+        },
+        {
+          "name": "한우 양념갈비",
+          "price": "₩79,000",
+          "recommend": true
+        },
+        {
+          "name": "한우 채끝등심",
+          "price": "₩69,000"
+        },
+        {
+          "name": "한우육회",
+          "price": "₩39,000"
+        },
+        {
+          "name": "미국산 생갈비",
+          "price": "₩79,000"
+        },
+        {
+          "name": "미국산 양념갈비",
+          "price": "₩71,000"
+        },
+        {
+          "name": "한우 양념갈비 정식 (점심특선)",
+          "price": "₩45,000"
+        },
+        {
+          "name": "미국산 생갈비 정식 (점심특선)",
+          "price": "₩47,000"
+        },
+        {
+          "name": "미국산 양념갈비 정식 (점심특선)",
+          "price": "₩43,000"
+        },
+        {
+          "name": "(포장)미국산 양념갈비살1kg",
+          "price": "₩90,000"
+        },
+        {
+          "name": "(포장)국내산한우 양념갈비살1kg",
+          "price": "₩130,000"
+        },
+        {
+          "name": "한우갈비탕",
+          "price": "₩28,000"
+        },
+        {
+          "name": "물냉면",
+          "price": "₩12,000"
+        },
+        {
+          "name": "물냉면 (식사)",
+          "price": "₩15,000"
+        },
+        {
+          "name": "비빔냉면",
+          "price": "₩12,000"
+        },
+        {
+          "name": "비빔냉면 (식사)",
+          "price": "₩15,000"
+        },
+        {
+          "name": "된장찌개",
+          "price": "₩5,000"
+        }
+      ],
+      "category": "육류,고기요리",
+      "score": "4.34",
+      "region": {
+        "city": "경기",
+        "district": "팔달",
+        "dong": ""
+      }
+    },
+    "pulddeumneun-dwaeji": {
+      "name": "Выпас свиней",
+      "location": "풀뜯는돼지",
+      "menu": "풀뜯는돼지",
+      "price": "₩17,000",
+      "tip": "",
+      "about": "Grazing Pig — знаменитый ресторан свиной грудинки с водяной петрушкой. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1630360144",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1630360144",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5607968,126.9247263&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1343-1690",
+      "hours": "12:00에 영업 시작",
+      "body": [],
+      "previewTitle": "풀뜯는돼지",
+      "placeId": "1630360144",
+      "menuItems": [
+        {
+          "name": "미나리삼겹살",
+          "price": "₩17,000",
+          "recommend": true
+        },
+        {
+          "name": "미나리추가",
+          "price": "₩3,000",
+          "recommend": true
+        },
+        {
+          "name": "미나리비빔밥+된장찌개",
+          "price": "₩9,000"
+        },
+        {
+          "name": "생삼겹살(150g)",
+          "price": "₩14,000"
+        },
+        {
+          "name": "미나리전",
+          "price": "₩9,000"
+        },
+        {
+          "name": "미나리라면",
+          "price": "₩4,000"
+        }
+      ],
+      "category": "육류,고기요리",
+      "score": "4.81",
+      "region": {
+        "city": "서울",
+        "district": "마포",
+        "dong": ""
+      }
+    },
+    "baekje-jeongyukjeom": {
+      "name": "Мясной магазин Пэкче",
+      "location": "백제정육점",
+      "menu": "백제정육점",
+      "price": "₩42,000",
+      "tip": "",
+      "about": "백제정육점",
+      "placeUrl": "https://map.naver.com/p/entry/place/11728126",
+      "mapsUrl": "https://map.naver.com/p/entry/place/11728126",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5726483,127.0038893&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-762-7491",
+      "hours": "10:00에 영업 시작",
+      "body": [],
+      "previewTitle": "백제정육점",
+      "placeId": "11728126",
+      "menuItems": [
+        {
+          "name": "육회(500g)",
+          "price": "₩42,000",
+          "recommend": true
+        },
+        {
+          "name": "차돌박이(500g)",
+          "price": "₩50,000",
+          "recommend": true
+        },
+        {
+          "name": "차돌반+육회반",
+          "price": "₩53,000"
+        },
+        {
+          "name": "등심반+육회반",
+          "price": "₩57,000"
+        },
+        {
+          "name": "등심(500g)",
+          "price": "₩58,000"
+        },
+        {
+          "name": "모듬(차돌+등심)",
+          "price": "₩53,000"
+        },
+        {
+          "name": "특수부위(500g)",
+          "price": "₩70,000"
+        },
+        {
+          "name": "육사시미(400g)",
+          "price": "₩48,000"
+        },
+        {
+          "name": "육회비빔밥",
+          "price": "₩13,000"
+        },
+        {
+          "name": "특 육회비빔밥",
+          "price": "₩16,000"
+        },
+        {
+          "name": "간천엽",
+          "price": "₩10,000"
+        }
+      ],
+      "category": "육류,고기요리",
+      "score": "4.41",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "dutum": {
+      "name": "толстый",
+      "location": "두툼",
+      "menu": "두툼",
+      "price": "₩18,000",
+      "tip": "",
+      "about": "두툼",
+      "placeUrl": "https://map.naver.com/p/entry/place/37036424",
+      "mapsUrl": "https://map.naver.com/p/entry/place/37036424",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5583365,126.9662595&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-392-8592",
+      "hours": "23:30에 라스트오더",
+      "body": [],
+      "previewTitle": "두툼",
+      "placeId": "37036424",
+      "menuItems": [
+        {
+          "name": "두툼 삼겹살",
+          "price": "₩18,000"
+        },
+        {
+          "name": "두툼 목살",
+          "price": "₩18,000"
+        },
+        {
+          "name": "껍데기항정",
+          "price": "₩18,000"
+        },
+        {
+          "name": "껍데기",
+          "price": "₩11,000"
+        },
+        {
+          "name": "볶음밥",
+          "price": "₩10,000"
+        },
+        {
+          "name": "된장찌개",
+          "price": "₩6,000"
+        },
+        {
+          "name": "고추장찌개",
+          "price": "₩6,000"
+        },
+        {
+          "name": "팔도비벼국수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "물냉면",
+          "price": "₩5,000"
+        },
+        {
+          "name": "비빔냉면",
+          "price": "₩5,000"
+        }
+      ],
+      "category": "돼지고기구이",
+      "score": "4.54",
+      "region": {
+        "city": "서울",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "gukbo-garden": {
+      "name": "Национальный сад сокровищ",
+      "location": "국보가든",
+      "menu": "국보가든",
+      "price": "",
+      "tip": "",
+      "about": "Kukbo Garden Samsung Main Branch — мясной ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/2082878069",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2082878069",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5138611,127.0532607&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-3445-0405",
+      "hours": "22:00에 라스트오더",
+      "body": [],
+      "previewTitle": "국보가든 삼성본점",
+      "placeId": "2082878069",
+      "menuItems": [
+        {
+          "name": "생일/청첩장 모임 이벤트🎉",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "콜키지프리 / 육회 리뷰 이벤트⭐",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "요아정 아이스크림/각종 디저트🎁",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "국보 미나리 왕갈비탕 일품 한상",
+          "price": "₩22,000",
+          "recommend": true
+        },
+        {
+          "name": "국보 설화 양념갈비 점심 정식",
+          "price": "₩29,000",
+          "recommend": true
+        },
+        {
+          "name": "국포 박포 양념갈비 점심 정식",
+          "price": "₩31,000",
+          "recommend": true
+        },
+        {
+          "name": "국보 설화 생갈비 점심 정식",
+          "price": "₩29,000",
+          "recommend": true
+        },
+        {
+          "name": "국보 박포 생갈비 점심 정식",
+          "price": "₩31,000",
+          "recommend": true
+        },
+        {
+          "name": "국보 소 양념갈비 점심 정식",
+          "price": "₩45,000",
+          "recommend": true
+        },
+        {
+          "name": "국보 한우 양념갈비 점심 정식",
+          "price": "₩76,000",
+          "recommend": true
+        },
+        {
+          "name": "한우 특상 생갈비 점심 정식",
+          "price": "₩79,000",
+          "recommend": true
+        },
+        {
+          "name": "한돈 삼겹 김치 전골 점심 한상",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "국보 설화 양념갈비",
+          "price": "₩29,000"
+        },
+        {
+          "name": "국보 박포 양념갈비",
+          "price": "₩31,000"
+        },
+        {
+          "name": "국보 설화 생갈비",
+          "price": "₩29,000"
+        },
+        {
+          "name": "국포 박포 생갈비",
+          "price": "₩31,000"
+        },
+        {
+          "name": "국보 한우 양념갈비",
+          "price": "₩76,000"
+        },
+        {
+          "name": "한우 특상 생갈비 (한정판매)",
+          "price": "₩79,000"
+        },
+        {
+          "name": "국보 소 양념갈비",
+          "price": "₩45,000"
+        },
+        {
+          "name": "한우 꽃등심",
+          "price": "₩65,000"
+        },
+        {
+          "name": "한우 안창살 (한정판매)",
+          "price": "₩74,000"
+        },
+        {
+          "name": "1++ 한우 전골",
+          "price": "₩38,000"
+        },
+        {
+          "name": "한돈 삼겹 김치 전골",
+          "price": "₩29,000"
+        },
+        {
+          "name": "한돈 삼겹 애호박 고추장 전골",
+          "price": "₩29,000"
+        },
+        {
+          "name": "한우 육회",
+          "price": "₩34,000"
+        },
+        {
+          "name": "한우 육사시미",
+          "price": "₩39,000"
+        },
+        {
+          "name": "살얼음 1++ 한우 물육회",
+          "price": "₩24,000"
+        },
+        {
+          "name": "미나리 한우 육회비빔밥",
+          "price": "₩16,000"
+        },
+        {
+          "name": "꽃게 해물 된장찌개",
+          "price": "₩12,000"
+        },
+        {
+          "name": "한우 순두부찌개",
+          "price": "₩13,000"
+        },
+        {
+          "name": "국보 물/비빔냉면",
+          "price": "₩13,000"
+        },
+        {
+          "name": "살얼음 김치말이 국수",
+          "price": "₩11,000"
+        },
+        {
+          "name": "1++ 한우 채끝 짜파구리",
+          "price": "₩34,000"
+        }
+      ],
+      "category": "육류,고기요리",
+      "score": "4.85",
+      "region": {
+        "city": "서울",
+        "district": "강남",
+        "dong": ""
+      }
+    },
+    "ilpyeon-deungsim-hongdae": {
+      "name": "Главный филиал Ильпён Филе Хондэ",
+      "location": "일편등심 홍대본점",
+      "menu": "일편등심 홍대본점",
+      "price": "₩279,000",
+      "tip": "",
+      "about": "Пожалуйста, воспользуйтесь выходом 8 со станции Университета Хонгик.",
+      "placeUrl": "https://map.naver.com/p/entry/place/34565224",
+      "mapsUrl": "https://map.naver.com/p/entry/place/34565224",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5563082,126.9243939&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1403-1092",
+      "hours": "23:00에 라스트오더",
+      "body": [],
+      "previewTitle": "일편등심 홍대본점",
+      "placeId": "34565224",
+      "menuItems": [
+        {
+          "name": "한우케이크(한정판매)/전화예약해주세요",
+          "price": "₩279,000",
+          "recommend": true
+        },
+        {
+          "name": "1++ 명품SET",
+          "price": "₩212,000",
+          "recommend": true
+        },
+        {
+          "name": "1++ 추천SET",
+          "price": "₩172,000",
+          "recommend": true
+        },
+        {
+          "name": "1++ 일편SET",
+          "price": "₩152,000",
+          "recommend": true
+        },
+        {
+          "name": "상위 1% : 새우살 (당일한정판매)",
+          "price": "₩44,300",
+          "recommend": true
+        },
+        {
+          "name": "상위 1% 살치살 (당일한정판매)",
+          "price": "₩44,300",
+          "recommend": true
+        },
+        {
+          "name": "1++ 일편등심",
+          "price": "₩41,600",
+          "recommend": true
+        },
+        {
+          "name": "1++안창살(한정수량판매)",
+          "price": "₩51,600"
+        },
+        {
+          "name": "1++토시살(한정수량판매)",
+          "price": "₩44,300"
+        },
+        {
+          "name": "1++ 안심",
+          "price": "₩41,600"
+        },
+        {
+          "name": "1++ 갈비살",
+          "price": "₩38,800"
+        },
+        {
+          "name": "1++ 부채살",
+          "price": "₩37,800"
+        },
+        {
+          "name": "1++ 업진살",
+          "price": "₩37,500"
+        },
+        {
+          "name": "제비추리",
+          "price": "₩35,500"
+        },
+        {
+          "name": "한우 특상우설 /특제 청장소스",
+          "price": "₩39,600"
+        },
+        {
+          "name": "초특선 양념업진살",
+          "price": "₩38,800"
+        },
+        {
+          "name": "한우1++ 육회",
+          "price": "₩24,000"
+        },
+        {
+          "name": "한우1++ 된장밥 (2인분)",
+          "price": "₩15,000"
+        },
+        {
+          "name": "한우1++된장찌개",
+          "price": "₩9,000"
+        },
+        {
+          "name": "육회 냉면",
+          "price": "₩8,000"
+        },
+        {
+          "name": "육회비빔밥",
+          "price": "₩10,000"
+        },
+        {
+          "name": "숯불 가리비 관자",
+          "price": "₩15,000"
+        },
+        {
+          "name": "고급 구이야채 추가",
+          "price": "₩15,000"
+        }
+      ],
+      "category": "육류,고기요리",
+      "score": "4.7",
+      "region": {
+        "city": "서울",
+        "district": "마포",
+        "dong": ""
+      }
+    },
+    "kimchiok-magok": {
+      "name": "Главный филиал Кимчи Ок Магок",
+      "location": "김치옥 마곡본점",
+      "menu": "김치옥 마곡본점",
+      "price": "₩1,500,018,000",
+      "tip": "",
+      "about": "5 минут ходьбы от выхода 9 со станции Балсан 10 минут ходьбы от выхода 3 станции Магок",
+      "placeUrl": "https://map.naver.com/p/entry/place/2072413332",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2072413332",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5605072,126.8337838&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "김치옥 마곡본점",
+      "placeId": "2072413332",
+      "menuItems": [
+        {
+          "name": "김치옥 점심 한상",
+          "price": "₩1,500,018,000"
+        },
+        {
+          "name": "[구이메뉴] 모둠한판(500g)",
+          "price": "₩45,000"
+        },
+        {
+          "name": "[구이메뉴] 모둠대판(850g)",
+          "price": "₩76,000"
+        },
+        {
+          "name": "[구이메뉴] 숙성삼겹살(150g)",
+          "price": "₩16,000"
+        },
+        {
+          "name": "[구이메뉴] 특목살(150g)",
+          "price": "₩16,000"
+        },
+        {
+          "name": "[구이메뉴] 가브리살(150g)",
+          "price": "₩18,000"
+        },
+        {
+          "name": "[구이메뉴] 껍데기(100g)",
+          "price": "₩5,000"
+        },
+        {
+          "name": "김치찜세트 2~4인 선택",
+          "price": "₩3,800,058,000"
+        },
+        {
+          "name": "김치찌개세트 2~4인 선택",
+          "price": "₩2,600,046,000"
+        },
+        {
+          "name": "남도묵은지김치찜 (단품)",
+          "price": "₩2,900,049,000"
+        },
+        {
+          "name": "남도 숙성지 김치찌개 (단품)",
+          "price": "₩1,100,044,000"
+        },
+        {
+          "name": "남도 숙성지 청국장찌개 (단품)",
+          "price": "₩1,100,044,000"
+        },
+        {
+          "name": "김치옥 부대찌개 (2인~4인 선택)",
+          "price": "₩2,400,048,000"
+        },
+        {
+          "name": "뚝배기김치찌개 (고기주문시)",
+          "price": "₩8,000"
+        },
+        {
+          "name": "뚝배기청국장찌개 (고기주문시)",
+          "price": "₩8,000"
+        },
+        {
+          "name": "제육볶음",
+          "price": "₩12,000"
+        },
+        {
+          "name": "김치말이국수(밀면)",
+          "price": "₩9,000"
+        },
+        {
+          "name": "계란말이",
+          "price": "₩7,000"
+        },
+        {
+          "name": "치즈폭탄계란말이",
+          "price": "₩9,000"
+        },
+        {
+          "name": "치즈폭탄계란찜",
+          "price": "₩6,000"
+        },
+        {
+          "name": "불꽃짜게티",
+          "price": "₩7,000"
+        },
+        {
+          "name": "갈치속젓볶음밥 (고기주문시)",
+          "price": "₩8,000"
+        },
+        {
+          "name": "셀프볶음밥 (고기주문시)",
+          "price": "₩3,000"
+        },
+        {
+          "name": "비빔대접",
+          "price": "₩3,000"
+        },
+        {
+          "name": "구이용 미나리 (고기주문시)",
+          "price": "₩5,000"
+        },
+        {
+          "name": "김치찜 김치추가(100g)",
+          "price": "₩5,900"
+        },
+        {
+          "name": "김치찜 고기추가 (100g)",
+          "price": "₩5,900"
+        },
+        {
+          "name": "공기밥",
+          "price": "₩1,000"
+        }
+      ],
+      "category": "육류,고기요리",
+      "score": "4.91",
+      "region": {
+        "city": "서울",
+        "district": "강서",
+        "dong": ""
+      }
+    },
+    "yeonnam-jokbal-1987-hongdae": {
+      "name": "Ённам Чокбал, 1987 г., филиал Хондэ",
+      "location": "연남족발1987 홍대점",
+      "menu": "연남족발1987 홍대점",
+      "price": "₩49,000",
+      "tip": "",
+      "about": "연남족발1987 홍대점",
+      "placeUrl": "https://map.naver.com/p/entry/place/2082456799",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2082456799",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5561871,126.9264419&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1384-1988",
+      "hours": "23:00에 라스트오더",
+      "body": [],
+      "previewTitle": "연남족발1987 홍대점",
+      "placeId": "2082456799",
+      "menuItems": [
+        {
+          "name": "튀김족발한상",
+          "price": "₩49,000",
+          "recommend": true
+        },
+        {
+          "name": "어리굴젓&백김치",
+          "price": "₩15,000"
+        },
+        {
+          "name": "튀김 반반 한상A(튀김족발+족발)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "튀김 반반 한상B(튀김족발+불족발)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "반반 족발 한상A(족발+불족발)",
+          "price": "₩58,000"
+        },
+        {
+          "name": "반반 족발 한상B(족발+보쌈)",
+          "price": "₩58,000"
+        },
+        {
+          "name": "족발 한상",
+          "price": "₩42,000"
+        },
+        {
+          "name": "슈프림 불족발 한상",
+          "price": "₩45,000"
+        },
+        {
+          "name": "마늘족발한상",
+          "price": "₩47,000"
+        },
+        {
+          "name": "냉채족발한상",
+          "price": "₩47,000"
+        },
+        {
+          "name": "단품 족발",
+          "price": "₩38,000"
+        },
+        {
+          "name": "슈프림 불족발 단품",
+          "price": "₩41,000"
+        },
+        {
+          "name": "마늘족발단품",
+          "price": "₩43,000"
+        },
+        {
+          "name": "냉채족발단품",
+          "price": "₩43,000"
+        },
+        {
+          "name": "튀김족발 단품",
+          "price": "₩45,000"
+        },
+        {
+          "name": "보쌈추가",
+          "price": "₩21,000"
+        },
+        {
+          "name": "슈프림불족발추가",
+          "price": "₩23,000"
+        },
+        {
+          "name": "여수꼬막&감자채전",
+          "price": "₩22,000"
+        },
+        {
+          "name": "생굴김치",
+          "price": "₩15,000"
+        },
+        {
+          "name": "냉채막국수(물/비빔)",
+          "price": "₩9,000"
+        },
+        {
+          "name": "날치알 주먹밥",
+          "price": "₩5,500"
+        },
+        {
+          "name": "청포도막걸리",
+          "price": "₩16,000"
+        },
+        {
+          "name": "딸기막걸리",
+          "price": "₩16,000"
+        },
+        {
+          "name": "살얼음식혜(논알콜)",
+          "price": "₩12,000"
+        }
+      ],
+      "category": "족발,보쌈",
+      "score": "4.87",
+      "region": {
+        "city": "서울",
+        "district": "마포",
+        "dong": ""
+      }
+    },
+    "michin-makchang": {
+      "name": "Главный филиал Сумасшедшего Макчанга",
+      "location": "미친막창 본점",
+      "menu": "미친막창 본점",
+      "price": "",
+      "tip": "",
+      "about": "Главный филиал Crazy Makchang — ресторан гопчанг. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1252664246",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1252664246",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.0993789,129.0268942&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1306-8795",
+      "hours": "01:50에 영업 종료",
+      "body": [],
+      "previewTitle": "미친막창 본점",
+      "placeId": "1252664246",
+      "menuItems": [
+        {
+          "name": "💙추억의 팥빙수(무료 제공)💙",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "🧡파채라면(무료 제공)🧡",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "소금막창",
+          "price": "₩10,500",
+          "recommend": true
+        },
+        {
+          "name": "양념막창",
+          "price": "₩10,500",
+          "recommend": true
+        },
+        {
+          "name": "👑(A)소금막창+양념막창👑",
+          "price": "₩42,000",
+          "recommend": true
+        },
+        {
+          "name": "(B)소금막창+껍데기",
+          "price": "₩39,000",
+          "recommend": true
+        },
+        {
+          "name": "👑(C)소금막창+삼겹살👑",
+          "price": "₩45,000",
+          "recommend": true
+        },
+        {
+          "name": "돼지껍데기",
+          "price": "₩9,000",
+          "recommend": true
+        },
+        {
+          "name": "삼겹살",
+          "price": "₩12,000",
+          "recommend": true
+        },
+        {
+          "name": "미친볶음밥",
+          "price": "₩5,000",
+          "recommend": true
+        },
+        {
+          "name": "꽃게된장찌개",
+          "price": "₩4,000",
+          "recommend": true
+        },
+        {
+          "name": "왕계란찜",
+          "price": "₩4,000",
+          "recommend": true
+        },
+        {
+          "name": "열무 비빔국수",
+          "price": "₩6,000",
+          "recommend": true
+        }
+      ],
+      "category": "곱창,막창,양",
+      "score": "4.92",
+      "region": {
+        "city": "부산",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "pro-ganjang-gejang-paradise": {
+      "name": "Про соевый соус Краб Инчхон Парадайз Сити Филиал",
+      "location": "프로간장게장 인천파라다이스시티점",
+      "menu": "프로간장게장 인천파라다이스시티점",
+      "price": "₩122,000",
+      "tip": "",
+      "about": "프로간장게장 인천파라다이스시티점",
+      "placeUrl": "https://map.naver.com/p/entry/place/1897524936",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1897524936",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.437211,126.4557686&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "032-729-5151",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "region": {
+        "city": "인천",
+        "district": "영종",
+        "dong": ""
+      },
+      "previewTitle": "프로간장게장 인천파라다이스시티점",
+      "placeId": "1897524936",
+      "menuItems": [
+        {
+          "name": "간장게장 암게大 2마리",
+          "price": "₩122,000"
+        },
+        {
+          "name": "양념게장 암게大 2마리",
+          "price": "₩128,000"
+        },
+        {
+          "name": "간장게장 암게中 2마리",
+          "price": "₩100,000"
+        },
+        {
+          "name": "양념게장 암게中 2마리",
+          "price": "₩104,000"
+        },
+        {
+          "name": "꽃게탕",
+          "price": "₩100,000"
+        },
+        {
+          "name": "꽃게찜",
+          "price": "₩85,000"
+        },
+        {
+          "name": "꽃게범벅",
+          "price": "₩94,000"
+        },
+        {
+          "name": "볶음밥",
+          "price": "₩3,000"
+        },
+        {
+          "name": "소프트쉘크랩(게튀김)",
+          "price": "₩59,000"
+        },
+        {
+          "name": "반반계장 암게 대",
+          "price": "₩126,000"
+        },
+        {
+          "name": "반반게장 암게 중",
+          "price": "₩103,000"
+        }
+      ],
+      "category": "게요리",
+      "score": "4.24"
+    },
+    "masan-halmae-ganjang-gejang": {
+      "name": "Краб Масан Халмае в соевом соусе",
+      "location": "마산할매간장게장",
+      "menu": "마산할매간장게장",
+      "price": "₩43,000",
+      "tip": "",
+      "about": "마산할매간장게장",
+      "placeUrl": "https://map.naver.com/p/entry/place/1741697928",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1741697928",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5154736,127.018933&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1362-2774",
+      "hours": "24시간 영업",
+      "body": [],
+      "previewTitle": "원조마산할매아구찜",
+      "placeId": "1741697928",
+      "menuItems": [
+        {
+          "name": "간장게장 1마리",
+          "price": "₩43,000",
+          "recommend": true
+        },
+        {
+          "name": "아구찜",
+          "price": "₩5,500,079,000",
+          "recommend": true
+        },
+        {
+          "name": "게알백반",
+          "price": "₩30,000"
+        },
+        {
+          "name": "산낙지볶음",
+          "price": "₩55,000"
+        },
+        {
+          "name": "산꽃게범벅",
+          "price": "₩75,000,105,000"
+        }
+      ],
+      "category": "아귀찜,해물찜",
+      "score": "4.39",
+      "region": {
+        "city": "서울",
+        "district": "서초",
+        "dong": ""
+      }
+    },
+    "jinbok-sikdang": {
+      "name": "Ресторан Джинбок",
+      "location": "진복식당",
+      "menu": "진복식당",
+      "price": "₩15,000",
+      "tip": "",
+      "about": "3 минуты ходьбы от Джиннамгвана",
+      "placeUrl": "https://map.naver.com/p/entry/place/16862966",
+      "mapsUrl": "https://map.naver.com/p/entry/place/16862966",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=34.7402944,127.7364971&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "061-664-7555",
+      "hours": "08:00에 영업 시작",
+      "body": [],
+      "previewTitle": "진복식당",
+      "placeId": "16862966",
+      "menuItems": [
+        {
+          "name": "게장정식",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "새우장정식",
+          "price": "₩13,000",
+          "recommend": true
+        },
+        {
+          "name": "서대회정식",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "갈치조림",
+          "price": "₩18,000",
+          "recommend": true
+        },
+        {
+          "name": "꽃게탕",
+          "price": "₩15,000",
+          "recommend": true
+        },
+        {
+          "name": "보리밥정식",
+          "price": "₩12,000"
+        },
+        {
+          "name": "소주.맥주.막걸리",
+          "price": "₩4,000"
+        },
+        {
+          "name": "공기밥",
+          "price": "₩1,000"
+        },
+        {
+          "name": "음료수",
+          "price": "₩2,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.42",
+      "region": {
+        "city": "전남",
+        "district": "여수",
+        "dong": ""
+      }
+    },
+    "ilmi-ganjang-gejang": {
+      "name": "Японский и американский соевый соус, крабовый соус",
+      "location": "일미간장게장",
+      "menu": "일미간장게장",
+      "price": "₩75,000",
+      "tip": "",
+      "about": "Ilmi Soy Sauce Crab — известный крабовый ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/13182359",
+      "mapsUrl": "https://map.naver.com/p/entry/place/13182359",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.570859,127.071378&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-2242-4338",
+      "hours": "24시간 영업 · 연중무휴",
+      "body": [],
+      "previewTitle": "일미간장게장",
+      "placeId": "13182359",
+      "menuItems": [
+        {
+          "name": "간장게장 중(750g)",
+          "price": "₩75,000",
+          "recommend": true
+        },
+        {
+          "name": "간장게장 대(1kg)",
+          "price": "₩95,000",
+          "recommend": true
+        },
+        {
+          "name": "간장게장 특대(1.25kg)",
+          "price": "₩120,000"
+        },
+        {
+          "name": "양념게장(중7.5 / 대9.5)",
+          "price": "₩75,000"
+        },
+        {
+          "name": "꽃게찜(중6.5 대7.5)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "꽃게탕(중6.5 대7.5)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "조림게장(중7.5 대9.5)",
+          "price": "₩75,000"
+        },
+        {
+          "name": "아구찜(중5.5 대6.5)",
+          "price": "₩55,000"
+        },
+        {
+          "name": "해물탕(중6.5 대7.5)",
+          "price": "₩65,000"
+        },
+        {
+          "name": "철판낙지(중4.5 대5.5)",
+          "price": "₩45,000"
+        },
+        {
+          "name": "낙지전골",
+          "price": "₩55,000"
+        },
+        {
+          "name": "산낙지",
+          "price": "₩40,000"
+        },
+        {
+          "name": "잡고기 매운탕 大",
+          "price": "₩55,000"
+        },
+        {
+          "name": "잡고기 매운탕 中",
+          "price": "₩40,000"
+        },
+        {
+          "name": "빠가사리매운탕 大",
+          "price": "₩50,000"
+        },
+        {
+          "name": "빠가사리매운탕 中",
+          "price": "₩40,000"
+        },
+        {
+          "name": "메기 매운탕 大",
+          "price": "₩50,000"
+        },
+        {
+          "name": "한방간장보리굴비 대",
+          "price": "₩90,000"
+        },
+        {
+          "name": "한방간장 보리굴비 중",
+          "price": "₩70,000"
+        },
+        {
+          "name": "계장1마리+굴비2마리",
+          "price": "₩75,000"
+        }
+      ],
+      "category": "게요리",
+      "score": "4.23",
+      "region": {
+        "city": "서울",
+        "district": "동대문",
+        "dong": ""
+      }
+    },
+    "yeonjune-dolsotbap": {
+      "name": "Рис в каменном горшке Ёнджу",
+      "location": "연주네돌솥밥",
+      "menu": "연주네돌솥밥",
+      "price": "₩12,000",
+      "tip": "",
+      "about": "Dolsotbap в Ёнджу — знаменитый ресторан, где подают рис в каменных горшках. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/2059442551",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2059442551",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5197977,126.908614&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1377-8996",
+      "hours": "09:00에 영업 시작",
+      "body": [],
+      "previewTitle": "연주네 돌솥밥",
+      "placeId": "2059442551",
+      "menuItems": [
+        {
+          "name": "곱창순두부",
+          "price": "₩12,000"
+        },
+        {
+          "name": "해물순두부",
+          "price": "₩12,000"
+        },
+        {
+          "name": "차돌박이순두부",
+          "price": "₩12,000"
+        },
+        {
+          "name": "만두순두부",
+          "price": "₩11,000"
+        },
+        {
+          "name": "오분자기순두부",
+          "price": "₩12,000"
+        }
+      ],
+      "category": "한식",
+      "score": "5",
+      "region": {
+        "city": "서울",
+        "district": "영등포",
+        "dong": ""
+      }
+    },
+    "bokgil-gyeongju": {
+      "name": "Главный филиал Бокгиль Кёнджу",
+      "location": "복길 경주본점",
+      "menu": "복길 경주본점",
+      "price": "₩47,000",
+      "tip": "",
+      "about": "복길 경주본점",
+      "placeUrl": "https://map.naver.com/p/entry/place/1071926628",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1071926628",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.8331478,129.2099711&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1440-3556",
+      "hours": "10:30에 영업 시작",
+      "body": [],
+      "previewTitle": "복길 경주본점",
+      "placeId": "1071926628",
+      "menuItems": [
+        {
+          "name": "실속 2인 세트",
+          "price": "₩47,000"
+        },
+        {
+          "name": "전복솥밥",
+          "price": "₩17,000"
+        },
+        {
+          "name": "전복죽",
+          "price": "₩17,000"
+        },
+        {
+          "name": "한우불고기솥밥",
+          "price": "₩17,000"
+        },
+        {
+          "name": "고등어구이",
+          "price": "₩15,000"
+        },
+        {
+          "name": "전복구이(6마리)",
+          "price": "₩24,000"
+        },
+        {
+          "name": "2인 스페셜 세트",
+          "price": "₩59,000"
+        },
+        {
+          "name": "3인 스페셜 세트",
+          "price": "₩82,000"
+        },
+        {
+          "name": "4인 스페셜 세트",
+          "price": "₩105,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.85",
+      "region": {
+        "city": "경북",
+        "district": "경주",
+        "dong": ""
+      }
+    },
+    "solsot-myeongdong": {
+      "name": "Филиал Солсот в Мёндоне",
+      "location": "솔솥 명동점",
+      "menu": "솔솥 명동점",
+      "price": "₩17,900",
+      "tip": "",
+      "about": "Возьмите выход 8 со станции Мёндон, поверните налево в переулке, где вы увидите CU, и идите прямо.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1842122521",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1842122521",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5630854,126.98527&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-3789-4262",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "솔솥 명동점",
+      "placeId": "1842122521",
+      "menuItems": [
+        {
+          "name": "[NEW] 랍스터 새우 솥밥",
+          "price": "₩17,900",
+          "recommend": true
+        },
+        {
+          "name": "스테이크솥밥",
+          "price": "₩17,900",
+          "recommend": true
+        },
+        {
+          "name": "도미관자솥밥",
+          "price": "₩17,900",
+          "recommend": true
+        },
+        {
+          "name": "민물장어솥밥",
+          "price": "₩25,900",
+          "recommend": true
+        },
+        {
+          "name": "연어솥밥",
+          "price": "₩17,900"
+        },
+        {
+          "name": "전복솥밥",
+          "price": "₩17,900"
+        },
+        {
+          "name": "갈치순살솥밥",
+          "price": "₩17,900"
+        },
+        {
+          "name": "치즈닭갈비솥밥",
+          "price": "₩14,900"
+        },
+        {
+          "name": "꼬막솥밥",
+          "price": "₩14,900"
+        },
+        {
+          "name": "치즈돈가스",
+          "price": "₩9,900"
+        },
+        {
+          "name": "새우튀김",
+          "price": "₩7,900"
+        },
+        {
+          "name": "유린기",
+          "price": "₩8,500"
+        }
+      ],
+      "category": "한식",
+      "score": "4.79",
+      "region": {
+        "city": "서울",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "sinsajeon": {
+      "name": "Новый словарь",
+      "location": "신사전",
+      "menu": "신사전",
+      "price": "",
+      "tip": "",
+      "about": "Синсаджон — знаменитый сотовый ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1346291809",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1346291809",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5186363,127.0226195&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1337-9993",
+      "hours": "01:30에 영업 종료",
+      "body": [],
+      "previewTitle": "신사전",
+      "placeId": "1346291809",
+      "menuItems": [
+        {
+          "name": "벌집꿀",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "모듬전(소)",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "모듬전(중)",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "치즈감자전",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "수육과갓김치",
+          "price": "",
+          "recommend": true
+        },
+        {
+          "name": "새우듬뿍미나리전",
+          "price": ""
+        },
+        {
+          "name": "해물부추전",
+          "price": ""
+        },
+        {
+          "name": "육전",
+          "price": ""
+        },
+        {
+          "name": "굴전(계절메뉴)",
+          "price": ""
+        },
+        {
+          "name": "어리굴젓(계절메누)",
+          "price": ""
+        },
+        {
+          "name": "감자전",
+          "price": ""
+        },
+        {
+          "name": "살얼음골뱅이무침",
+          "price": ""
+        },
+        {
+          "name": "두부김치",
+          "price": ""
+        },
+        {
+          "name": "외할머니김치찌개",
+          "price": ""
+        },
+        {
+          "name": "맑은닭전골",
+          "price": ""
+        },
+        {
+          "name": "미국아저씨 아이스크림",
+          "price": ""
+        },
+        {
+          "name": "직접 담근 국내산 겉절이",
+          "price": ""
+        },
+        {
+          "name": "직접 담근 국내산 갓김치",
+          "price": ""
+        }
+      ],
+      "category": "전,빈대떡",
+      "score": "4.35",
+      "region": {
+        "city": "서울",
+        "district": "강남",
+        "dong": ""
+      }
+    },
+    "gyeongbuk-sikdang": {
+      "name": "Ресторан Кёнбук",
+      "location": "경북식당",
+      "menu": "경북식당",
+      "price": "₩20,000",
+      "tip": "",
+      "about": "경북식당",
+      "placeUrl": "https://map.naver.com/p/entry/place/16769712",
+      "mapsUrl": "https://map.naver.com/p/entry/place/16769712",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1607175,129.060682&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1412-5085",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "region": {
+        "city": "부산",
+        "district": "부산진",
+        "dong": ""
+      },
+      "previewTitle": "경북식당",
+      "placeId": "16769712",
+      "menuItems": [
+        {
+          "name": "쑥굴전",
+          "price": "₩20,000"
+        },
+        {
+          "name": "굴전",
+          "price": "₩15,000"
+        },
+        {
+          "name": "쑥굴탕",
+          "price": "₩15,000"
+        },
+        {
+          "name": "쑥굴튀김",
+          "price": "₩15,000"
+        },
+        {
+          "name": "굴탕",
+          "price": "₩15,000"
+        },
+        {
+          "name": "육전",
+          "price": "₩10,000"
+        },
+        {
+          "name": "삼겹살",
+          "price": "₩21,000"
+        },
+        {
+          "name": "아구찜 소",
+          "price": "₩30,000"
+        },
+        {
+          "name": "소등심",
+          "price": "₩30,000"
+        },
+        {
+          "name": "육회 소",
+          "price": "₩15,000"
+        },
+        {
+          "name": "돼지수육 소",
+          "price": "₩15,000"
+        },
+        {
+          "name": "돼지두루치기 소",
+          "price": "₩13,000"
+        },
+        {
+          "name": "돼지두부김치",
+          "price": "₩12,000"
+        },
+        {
+          "name": "소곱창전골",
+          "price": "₩20,000"
+        },
+        {
+          "name": "오리훈제",
+          "price": "₩12,000"
+        },
+        {
+          "name": "닭도리탕 소",
+          "price": "₩15,000"
+        },
+        {
+          "name": "아구탕",
+          "price": "₩30,000"
+        },
+        {
+          "name": "알탕",
+          "price": "₩15,000"
+        },
+        {
+          "name": "조기매운탕",
+          "price": "₩12,000"
+        },
+        {
+          "name": "명태탕",
+          "price": "₩12,000"
+        },
+        {
+          "name": "오뎅탕",
+          "price": "₩12,000"
+        },
+        {
+          "name": "홍합탕",
+          "price": "₩10,000"
+        },
+        {
+          "name": "김치전",
+          "price": "₩8,000"
+        },
+        {
+          "name": "야채전",
+          "price": "₩8,000"
+        },
+        {
+          "name": "돼지김치찌개",
+          "price": "₩12,000"
+        },
+        {
+          "name": "참치김치찌개",
+          "price": "₩12,000"
+        },
+        {
+          "name": "고갈비",
+          "price": "₩12,000"
+        },
+        {
+          "name": "조기구이",
+          "price": "₩7,000"
+        },
+        {
+          "name": "가오리무침",
+          "price": "₩12,000"
+        },
+        {
+          "name": "뼈없는닭발",
+          "price": "₩12,000"
+        },
+        {
+          "name": "돼지껍데기",
+          "price": "₩12,000"
+        },
+        {
+          "name": "야채계란말이",
+          "price": "₩8,000"
+        },
+        {
+          "name": "오징어무침",
+          "price": "₩12,000"
+        },
+        {
+          "name": "닭똥집",
+          "price": "₩12,000"
+        },
+        {
+          "name": "선지국밥",
+          "price": "₩7,000"
+        },
+        {
+          "name": "소고기국밥/돼지국밥",
+          "price": "₩7,000"
+        },
+        {
+          "name": "비빔밥",
+          "price": "₩6,000"
+        },
+        {
+          "name": "콩국수",
+          "price": "₩6,000"
+        },
+        {
+          "name": "칼국수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "소주",
+          "price": "₩4,000"
+        },
+        {
+          "name": "맥주",
+          "price": "₩4,000"
+        },
+        {
+          "name": "막걸리",
+          "price": "₩4,000"
+        },
+        {
+          "name": "곱도리탕",
+          "price": "₩30,000"
+        },
+        {
+          "name": "두부찌개 대",
+          "price": "₩22,000"
+        },
+        {
+          "name": "두부찌개 중",
+          "price": "₩17,000"
+        },
+        {
+          "name": "두부찌개 소",
+          "price": "₩12,000"
+        },
+        {
+          "name": "낙지전골",
+          "price": "₩20,000"
+        },
+        {
+          "name": "돼지순두부찌개 1인",
+          "price": "₩7,000"
+        },
+        {
+          "name": "돼지순두부찌개 안주",
+          "price": "₩12,000"
+        },
+        {
+          "name": "소고기순두부찌개 1인",
+          "price": "₩8,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.47"
+    },
+    "kyochon-yongmun": {
+      "name": "Курица Кёчон Филиал Ёнмун",
+      "location": "교촌치킨 용문점",
+      "menu": "교촌치킨 용문점",
+      "price": "₩23,000",
+      "tip": "",
+      "about": "Kyochon Chicken Yongmun Branch — это медовый комбинированный ресторан. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/11802450",
+      "mapsUrl": "https://map.naver.com/p/entry/place/11802450",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5377959,126.960009&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-702-2858",
+      "hours": "24:00에 영업 종료",
+      "body": [],
+      "previewTitle": "교촌치킨 용문점",
+      "placeId": "11802450",
+      "menuItems": [
+        {
+          "name": "허니콤보",
+          "price": "₩23,000",
+          "recommend": true
+        }
+      ],
+      "category": "치킨,닭강정",
+      "score": "4.41",
+      "region": {
+        "city": "서울",
+        "district": "용산",
+        "dong": ""
+      }
+    },
+    "bhc-dongdaemun": {
+      "name": "Филиал BHC Chicken Dongdaemun",
+      "location": "BHC치킨 동대문점",
+      "menu": "BHC치킨 동대문점",
+      "price": "₩21,900",
+      "tip": "",
+      "about": "BHC Chicken Dongdaemun Branch — ресторан карри. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/782851237",
+      "mapsUrl": "https://map.naver.com/p/entry/place/782851237",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5657335,127.0064814&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-2278-0053",
+      "hours": "24:00에 영업 종료",
+      "body": [],
+      "previewTitle": "BHC치킨 동대문점",
+      "placeId": "782851237",
+      "menuItems": [
+        {
+          "name": "커링클",
+          "price": "₩21,900"
+        },
+        {
+          "name": "크리스피번(바나나)",
+          "price": "₩5,500"
+        },
+        {
+          "name": "크리스피번(밀크)",
+          "price": "₩5,500"
+        },
+        {
+          "name": "크리스피번(뿌링클)",
+          "price": "₩5,500"
+        },
+        {
+          "name": "콰삭감자",
+          "price": "₩6,900"
+        },
+        {
+          "name": "가래떡 떡볶이",
+          "price": "₩6,900"
+        },
+        {
+          "name": "콰삭킹",
+          "price": "₩21,000"
+        },
+        {
+          "name": "쏘이갈릭킹 허니",
+          "price": "₩21,900"
+        },
+        {
+          "name": "쏘이갈릭킹 오리지널",
+          "price": "₩21,900"
+        },
+        {
+          "name": "스윗칠리킹",
+          "price": "₩21,900"
+        },
+        {
+          "name": "뿌링클",
+          "price": "₩21,000"
+        }
+      ],
+      "category": "치킨,닭강정",
+      "score": "4.32",
+      "region": {
+        "city": "서울",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "haebangchon-dak": {
+      "name": "Курица Хэбанчон Ёнсан Хэбанчон Главный филиал",
+      "location": "해방촌닭 용산 해방촌 본점",
+      "menu": "해방촌닭 용산 해방촌 본점",
+      "price": "₩23,000",
+      "tip": "",
+      "about": "해방촌닭 용산 해방촌 본점",
+      "placeUrl": "https://map.naver.com/p/entry/place/1112420992",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1112420992",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5452174,126.9849316&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1399-2037",
+      "hours": "21:30에 라스트오더",
+      "body": [],
+      "previewTitle": "해방촌닭 용산 해방촌 본점",
+      "placeId": "1112420992",
+      "menuItems": [
+        {
+          "name": "한방통닭",
+          "price": "₩23,000",
+          "recommend": true
+        },
+        {
+          "name": "마늘한방통닭",
+          "price": "₩26,000",
+          "recommend": true
+        },
+        {
+          "name": "닭죽한방통닭",
+          "price": "₩28,000",
+          "recommend": true
+        },
+        {
+          "name": "양념한방통닭",
+          "price": "₩26,000"
+        },
+        {
+          "name": "중화한방통닭",
+          "price": "₩28,000"
+        },
+        {
+          "name": "마라한방통닭",
+          "price": "₩26,000"
+        },
+        {
+          "name": "해방촌닭죽",
+          "price": "₩10,000"
+        },
+        {
+          "name": "들기름막국수",
+          "price": "₩10,000"
+        },
+        {
+          "name": "실비골뱅이막국수",
+          "price": "₩15,000"
+        },
+        {
+          "name": "치킨보울",
+          "price": "₩15,000"
+        }
+      ],
+      "category": "치킨,닭강정",
+      "score": "4.88",
+      "region": {
+        "city": "서울",
+        "district": "용산",
+        "dong": ""
+      }
+    },
+    "wonhalmeoni-bossam-myeongdong": {
+      "name": "Филиал Вонманни Боссам Чокбал Мёндон",
+      "location": "원할머니보쌈족발 명동점",
+      "menu": "원할머니보쌈족발 명동점",
+      "price": "₩41,000",
+      "tip": "",
+      "about": "На метро: 3 минуты ходьбы от выхода 5 станции Euljiro 1-ga.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1865398925",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1865398925",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5648154,126.9845506&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-318-5352",
+      "hours": "23:30에 영업 종료",
+      "body": [],
+      "previewTitle": "원할머니보쌈족발 명동점",
+      "placeId": "1865398925",
+      "menuItems": [
+        {
+          "name": "반반 실비&보쌈김치 보쌈 (소)",
+          "price": "₩41,000"
+        },
+        {
+          "name": "1인 실비김치 보쌈",
+          "price": "₩24,000"
+        },
+        {
+          "name": "어리굴젓 굴보쌈 [남해 굴로 담근]",
+          "price": "₩50,000"
+        },
+        {
+          "name": "50주년 보족세트(2인)",
+          "price": "₩46,000"
+        },
+        {
+          "name": "50주년 불족세트(2인)",
+          "price": "₩49,000"
+        },
+        {
+          "name": "모둠보쌈(소)",
+          "price": "₩39,000"
+        },
+        {
+          "name": "부드러운족발(중)",
+          "price": "₩43,000"
+        },
+        {
+          "name": "1인보쌈",
+          "price": "₩22,000"
+        },
+        {
+          "name": "1인보쌈 주먹밥 세트",
+          "price": "₩25,500"
+        },
+        {
+          "name": "의성마늘떡보쌈(소)",
+          "price": "₩42,000"
+        },
+        {
+          "name": "맛보쌈(소)",
+          "price": "₩38,000"
+        },
+        {
+          "name": "솜씨보쌈(소)",
+          "price": "₩37,000"
+        },
+        {
+          "name": "커플원쌈",
+          "price": "₩49,000"
+        },
+        {
+          "name": "매운火보쌈",
+          "price": "₩38,000"
+        },
+        {
+          "name": "매운火족발",
+          "price": "₩50,000"
+        },
+        {
+          "name": "새싹쟁반무침면(소)",
+          "price": "₩15,000"
+        },
+        {
+          "name": "장조림주먹밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "부꾸미",
+          "price": "₩7,000"
+        }
+      ],
+      "category": "족발,보쌈",
+      "score": "4.32",
+      "region": {
+        "city": "서울",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "cheongnyeon-gamjatang-gwanggyo": {
+      "name": "Молодежный филиал Камджатан Сундаэгук в парке озера Квангё",
+      "location": "청년감자탕순대국 광교호수공원점",
+      "menu": "청년감자탕순대국 광교호수공원점",
+      "price": "₩11,000",
+      "tip": "",
+      "about": "청년감자탕순대국 광교호수공원점",
+      "placeUrl": "https://map.naver.com/p/entry/place/2011117582",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2011117582",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.2876362,127.0618211&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1358-9383",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "청년감자탕순대국 광교호수공원점",
+      "placeId": "2011117582",
+      "menuItems": [
+        {
+          "name": "뼈해장국",
+          "price": "₩11,000"
+        },
+        {
+          "name": "얼큰뼈해장국",
+          "price": "₩12,000"
+        },
+        {
+          "name": "묵은지뼈해장국",
+          "price": "₩12,000"
+        },
+        {
+          "name": "얼큰 묵은지 뼈해장국",
+          "price": "₩13,000"
+        },
+        {
+          "name": "순살해장국",
+          "price": "₩12,000"
+        },
+        {
+          "name": "얼큰 순살 해장국",
+          "price": "₩13,000"
+        },
+        {
+          "name": "순살묵은지해장국",
+          "price": "₩13,000"
+        },
+        {
+          "name": "얼큰 순살 묵은지 해장국",
+          "price": "₩14,000"
+        },
+        {
+          "name": "순대국",
+          "price": "₩10,000"
+        },
+        {
+          "name": "얼큰 순대국",
+          "price": "₩11,000"
+        },
+        {
+          "name": "특순대국",
+          "price": "₩11,000"
+        },
+        {
+          "name": "갈비탕",
+          "price": "₩15,000"
+        },
+        {
+          "name": "파김치뼈해장국",
+          "price": "₩13,000"
+        },
+        {
+          "name": "순살파김치해장국",
+          "price": "₩14,000"
+        },
+        {
+          "name": "청년감자탕(소)",
+          "price": "₩30,000"
+        },
+        {
+          "name": "청년감자탕(중)",
+          "price": "₩38,000"
+        },
+        {
+          "name": "청년감자탕(대)",
+          "price": "₩46,000"
+        },
+        {
+          "name": "청년감자탕(특대)",
+          "price": "₩54,000"
+        },
+        {
+          "name": "묵은지감자탕(소)",
+          "price": "₩33,000"
+        },
+        {
+          "name": "묵은지감자탕(중)",
+          "price": "₩41,000"
+        },
+        {
+          "name": "묵은지감자탕(대)",
+          "price": "₩49,000"
+        },
+        {
+          "name": "묵은지감자탕(특대)",
+          "price": "₩57,000"
+        },
+        {
+          "name": "파김치감자탕(소)",
+          "price": "₩34,000"
+        },
+        {
+          "name": "파김치감자탕(중)",
+          "price": "₩42,000"
+        },
+        {
+          "name": "파김치감자탕(대)",
+          "price": "₩50,000"
+        },
+        {
+          "name": "파김치감자탕(특대)",
+          "price": "₩58,000"
+        },
+        {
+          "name": "족발편육",
+          "price": "₩14,000"
+        },
+        {
+          "name": "찰순대",
+          "price": "₩6,000"
+        },
+        {
+          "name": "날치알주먹밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "셀프청년치즈볶음밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "셀프깍두기볶음밥",
+          "price": "₩2,000"
+        }
+      ],
+      "category": "감자탕",
+      "score": "4.8",
+      "region": {
+        "city": "경기",
+        "district": "영통",
+        "dong": "근린생활시설동"
+      }
+    },
+    "daeyeop": {
+      "name": "лист",
+      "location": "대엽",
+      "menu": "대엽",
+      "price": "₩13,000",
+      "tip": "",
+      "about": "대엽",
+      "placeUrl": "https://map.naver.com/p/entry/place/2028626899",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2028626899",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5426059,127.0487575&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1399-1366",
+      "hours": "11:30에 영업 시작",
+      "body": [],
+      "previewTitle": "대엽라이브누들바",
+      "placeId": "2028626899",
+      "menuItems": [
+        {
+          "name": "평양냉면",
+          "price": "₩13,000",
+          "recommend": true
+        },
+        {
+          "name": "뽀얀 순대국밥",
+          "price": "₩11,000",
+          "recommend": true
+        },
+        {
+          "name": "(맑은/뽀얀)수육백반",
+          "price": "₩14,000",
+          "recommend": true
+        },
+        {
+          "name": "비빔냉면",
+          "price": "₩13,000"
+        },
+        {
+          "name": "들기름냉면",
+          "price": "₩14,000"
+        },
+        {
+          "name": "쌀국수",
+          "price": "₩13,000"
+        },
+        {
+          "name": "접시LA갈비",
+          "price": "₩32,000"
+        },
+        {
+          "name": "돼지소겨자무침",
+          "price": "₩29,000"
+        },
+        {
+          "name": "이북식만두 2pc",
+          "price": "₩3,000"
+        },
+        {
+          "name": "만두지짐이 2pc",
+          "price": "₩4,000"
+        },
+        {
+          "name": "소고기수육",
+          "price": "₩22,000"
+        },
+        {
+          "name": "돼지고기제육",
+          "price": "₩15,000"
+        },
+        {
+          "name": "토종순대",
+          "price": "₩4,500"
+        },
+        {
+          "name": "짜배기",
+          "price": "₩2,000"
+        }
+      ],
+      "category": "한식",
+      "score": "4.07",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "ilpyeon-jangeo-hongdae": {
+      "name": "Главный филиал Ильпён Угорь Хондэ",
+      "location": "일편장어 홍대본점",
+      "menu": "일편장어 홍대본점",
+      "price": "₩45,000",
+      "tip": "",
+      "about": "Идите прямо примерно 400 метров от выхода 9 со станции Университета Хонгик. Вход находится на втором этаже между Harmony Mart и Space House, напротив сауны.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1697854620",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1697854620",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5534403,126.9205912&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1384-6716",
+      "hours": "22:00에 라스트오더",
+      "body": [],
+      "previewTitle": "일편장어 홍대본점",
+      "placeId": "1697854620",
+      "menuItems": [
+        {
+          "name": "민물장어 소금구이(1마리)",
+          "price": "₩45,000",
+          "recommend": true
+        },
+        {
+          "name": "C세트",
+          "price": "₩265,000"
+        },
+        {
+          "name": "B세트",
+          "price": "₩170,000"
+        },
+        {
+          "name": "A세트",
+          "price": "₩106,000"
+        },
+        {
+          "name": "일편 물 메밀국수",
+          "price": "₩8,000"
+        },
+        {
+          "name": "폭탄날치알밥",
+          "price": "₩8,000"
+        },
+        {
+          "name": "폭탄치즈계란찜",
+          "price": "₩8,000"
+        }
+      ],
+      "category": "장어,먹장어요리",
+      "score": "4.58",
+      "region": {
+        "city": "서울",
+        "district": "마포",
+        "dong": ""
+      }
+    },
+    "halmeoni-recipe": {
+      "name": "Рецепт бабушки",
+      "location": "할머니의 레시피",
+      "menu": "할머니의 레시피",
+      "price": "₩25,000",
+      "tip": "",
+      "about": "할머니의 레시피",
+      "placeUrl": "https://map.naver.com/p/entry/place/37366169",
+      "mapsUrl": "https://map.naver.com/p/entry/place/37366169",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5461687,127.0430745&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1429-5101",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "previewTitle": "할머니의 레시피",
+      "placeId": "37366169",
+      "menuItems": [
+        {
+          "name": "저녁 생일상차림",
+          "price": "₩25,000"
+        },
+        {
+          "name": "쌈밥정식",
+          "price": "₩15,000"
+        },
+        {
+          "name": "비빔밥불고기정식",
+          "price": "₩15,000"
+        },
+        {
+          "name": "한우떡갈비정식",
+          "price": "₩17,000"
+        },
+        {
+          "name": "생선구이정식",
+          "price": "₩12,000"
+        },
+        {
+          "name": "숨뼈국",
+          "price": "₩12,000"
+        },
+        {
+          "name": "간장돌게장",
+          "price": "₩16,000"
+        },
+        {
+          "name": "강경젓갈쌈밥",
+          "price": "₩13,000"
+        },
+        {
+          "name": "강경젓갈비빔밥",
+          "price": "₩13,000"
+        },
+        {
+          "name": "버섯부추비빔밥",
+          "price": "₩11,000"
+        },
+        {
+          "name": "한우떡갈비",
+          "price": "₩34,000"
+        },
+        {
+          "name": "직화바싹불고기",
+          "price": "₩23,000"
+        },
+        {
+          "name": "제육볶음",
+          "price": "₩21,000"
+        },
+        {
+          "name": "골뱅이소면",
+          "price": "₩21,000"
+        }
+      ],
+      "category": "백반,가정식",
+      "score": "4.35",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "paldang-dakbal": {
+      "name": "Куриные ножки Палданг",
+      "location": "팔당닭발",
+      "menu": "팔당닭발",
+      "price": "",
+      "tip": "",
+      "about": "Примерно 8 минут пешком от выхода 10 станции Хакдонг Примерно 3 минуты пешком от выхода 3 офисной станции Каннамгу",
+      "placeUrl": "https://map.naver.com/p/entry/place/32602513",
+      "mapsUrl": "https://map.naver.com/p/entry/place/32602513",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5165886,127.0379377&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1398-0893",
+      "hours": "05:00에 라스트오더",
+      "body": [],
+      "previewTitle": "팔당닭발 강남본점",
+      "placeId": "32602513",
+      "menuItems": [
+        {
+          "name": "❄️파워냉방 ON❄️",
+          "price": ""
+        },
+        {
+          "name": "🍺시원한 생맥주",
+          "price": "₩6,000"
+        },
+        {
+          "name": "매운 오징어 볶음",
+          "price": "₩26,000"
+        },
+        {
+          "name": "오징어볶음A세트",
+          "price": "₩54,000"
+        },
+        {
+          "name": "오징어볶음B세트",
+          "price": "₩42,000"
+        },
+        {
+          "name": "국물뼈있는닭발",
+          "price": "₩22,000"
+        },
+        {
+          "name": "매운오징어볶음+계란말이+주먹밥",
+          "price": "₩45,000"
+        },
+        {
+          "name": "국물뼈있는닭발A세트",
+          "price": "₩50,000"
+        },
+        {
+          "name": "국물뼈있는닭발B세트",
+          "price": "₩38,000"
+        },
+        {
+          "name": "국물뼈없는닭발",
+          "price": "₩22,000"
+        },
+        {
+          "name": "국물뼈없는닭발A세트",
+          "price": "₩50,000"
+        },
+        {
+          "name": "국물뼈없는닭발B세트",
+          "price": "₩38,000"
+        },
+        {
+          "name": "직화매운뼈없는닭발",
+          "price": "₩23,000"
+        },
+        {
+          "name": "직화매운뼈없는닭발A세트",
+          "price": "₩51,000"
+        },
+        {
+          "name": "직화매운뼈없는닭발B세트",
+          "price": "₩39,000"
+        },
+        {
+          "name": "매운뼈없는닭발",
+          "price": "₩22,000"
+        },
+        {
+          "name": "매운뼈없는닭발A세트",
+          "price": "₩50,000"
+        },
+        {
+          "name": "매운뼈없는닭발B세트",
+          "price": "₩38,000"
+        },
+        {
+          "name": "윙봉세트",
+          "price": "₩25,000"
+        },
+        {
+          "name": "계란말이",
+          "price": "₩18,000"
+        },
+        {
+          "name": "팔당수제모둠전",
+          "price": "₩40,000"
+        },
+        {
+          "name": "동그랑땡+동태전",
+          "price": "₩20,000"
+        },
+        {
+          "name": "감자전",
+          "price": "₩15,000"
+        },
+        {
+          "name": "칼국수",
+          "price": "₩9,000"
+        },
+        {
+          "name": "오돌뼈",
+          "price": "₩22,000"
+        },
+        {
+          "name": "스팸도시락",
+          "price": "₩7,000"
+        },
+        {
+          "name": "마요네즈주먹밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "날치알주먹밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "주먹밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "김치볶음주먹밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "멸치주먹밥",
+          "price": "₩5,000"
+        },
+        {
+          "name": "번데기탕",
+          "price": "₩16,000"
+        },
+        {
+          "name": "치즈순살불닭",
+          "price": "₩28,000"
+        },
+        {
+          "name": "오뎅탕",
+          "price": "₩20,000"
+        },
+        {
+          "name": "모둠튀김",
+          "price": "₩26,000"
+        },
+        {
+          "name": "똥집튀김",
+          "price": "₩18,000"
+        },
+        {
+          "name": "오징어튀김",
+          "price": "₩20,000"
+        },
+        {
+          "name": "똥집볶음",
+          "price": "₩20,000"
+        },
+        {
+          "name": "후라이드치킨",
+          "price": "₩20,000"
+        },
+        {
+          "name": "순살치킨",
+          "price": "₩16,000"
+        },
+        {
+          "name": "새우튀김",
+          "price": "₩18,000"
+        },
+        {
+          "name": "스팸꾸이",
+          "price": "₩16,000"
+        },
+        {
+          "name": "누룽지",
+          "price": "₩7,000"
+        },
+        {
+          "name": "국물떡볶이",
+          "price": "₩20,000"
+        },
+        {
+          "name": "묵사발",
+          "price": "₩15,000"
+        },
+        {
+          "name": "눈꽃우유팥빙수",
+          "price": "₩16,000"
+        },
+        {
+          "name": "계란찜",
+          "price": "₩7,000"
+        },
+        {
+          "name": "설탕연유토마토",
+          "price": "₩10,000"
+        },
+        {
+          "name": "치즈퐁듀",
+          "price": "₩7,000"
+        },
+        {
+          "name": "김말이",
+          "price": "₩3,000"
+        },
+        {
+          "name": "군만두",
+          "price": "₩3,000"
+        }
+      ],
+      "category": "닭발",
+      "score": "4.74",
+      "region": {
+        "city": "서울",
+        "district": "강남",
+        "dong": ""
+      }
+    },
+    "chungmuro-jjuggumi-bulgogi": {
+      "name": "Чунгмуро Джукуми Булгоги",
+      "location": "충무로 쭈꾸미 불고기",
+      "menu": "충무로 쭈꾸미 불고기",
+      "price": "₩18,000",
+      "tip": "",
+      "about": "충무로 쭈꾸미 불고기",
+      "placeUrl": "https://map.naver.com/p/entry/place/11816541",
+      "mapsUrl": "https://map.naver.com/p/entry/place/11816541",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5617667,126.992225&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-2279-0803",
+      "hours": "12:00에 영업 시작",
+      "body": [],
+      "previewTitle": "충무로쭈꾸미불고기 충무로본점",
+      "placeId": "11816541",
+      "menuItems": [
+        {
+          "name": "쭈꾸미(1인분)",
+          "price": "₩18,000"
+        },
+        {
+          "name": "쭈꾸미(2인분)",
+          "price": "₩28,000"
+        },
+        {
+          "name": "모듬(쭈꾸미,키조개)",
+          "price": "₩30,000"
+        },
+        {
+          "name": "가이바시(키조개)",
+          "price": "₩20,000"
+        },
+        {
+          "name": "쭈꾸미야채볶음밥",
+          "price": "₩8,000"
+        },
+        {
+          "name": "점심특선 쭈꾸미야채볶음밥+된장찌개",
+          "price": "₩6,000"
+        }
+      ],
+      "category": "주꾸미요리",
+      "score": "4.22",
+      "region": {
+        "city": "서울",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "bukmanjang": {
+      "name": "Северный Манджанг",
+      "location": "북만장",
+      "menu": "북만장",
+      "price": "₩7,000",
+      "tip": "",
+      "about": "Выйдите из выхода 1 со станции Yeongdeungpo Market на линии 5 и пройдите 50 метров вниз!",
+      "placeUrl": "https://map.naver.com/p/entry/place/36997196",
+      "mapsUrl": "https://map.naver.com/p/entry/place/36997196",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5247434,126.9051291&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1484-0574",
+      "hours": "24시간 영업",
+      "body": [],
+      "previewTitle": "북만장",
+      "placeId": "36997196",
+      "menuItems": [
+        {
+          "name": "유니짜장",
+          "price": "₩7,000"
+        },
+        {
+          "name": "차돌짬뽕",
+          "price": "₩13,000"
+        },
+        {
+          "name": "차돌짬뽕밥",
+          "price": "₩13,000"
+        },
+        {
+          "name": "짜장면",
+          "price": "₩6,000"
+        },
+        {
+          "name": "짬뽕",
+          "price": "₩8,000"
+        },
+        {
+          "name": "맛짜장",
+          "price": "₩8,500"
+        },
+        {
+          "name": "탕수육(소)",
+          "price": "₩19,000"
+        },
+        {
+          "name": "볶음밥",
+          "price": "₩8,000"
+        },
+        {
+          "name": "잡채밥",
+          "price": "₩9,000"
+        }
+      ],
+      "category": "중식당",
+      "score": "4.38",
+      "region": {
+        "city": "서울",
+        "district": "영등포",
+        "dong": ""
+      }
+    },
+    "jojo-banjeom": {
+      "name": "Джоджо Банджом",
+      "location": "조조반점",
+      "menu": "조조반점",
+      "price": "₩20,000",
+      "tip": "",
+      "about": "조조반점",
+      "placeUrl": "https://map.naver.com/p/entry/place/1174702497",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1174702497",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.8896344,127.0559526&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1388-1986",
+      "hours": "22:30에 영업 종료",
+      "body": [],
+      "previewTitle": "조조반점",
+      "placeId": "1174702497",
+      "menuItems": [
+        {
+          "name": "탕수육",
+          "price": "₩20,000"
+        },
+        {
+          "name": "차돌짬뽕",
+          "price": "₩12,000"
+        },
+        {
+          "name": "삼선짬뽕",
+          "price": "₩12,000"
+        },
+        {
+          "name": "짜장면",
+          "price": "₩6,000"
+        }
+      ],
+      "category": "중식당",
+      "score": "4.63",
+      "region": {
+        "city": "경기",
+        "district": "동두천",
+        "dong": ""
+      }
+    },
+    "dotori-garden": {
+      "name": "Желудевый сад",
+      "location": "도토리가든",
+      "menu": "도토리가든",
+      "price": "₩9,000",
+      "tip": "",
+      "about": "Идите прямо от выхода 3 станции Ангук, она находится в первом переулке.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1198045151",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1198045151",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5780996,126.9862903&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "070-7789-1105",
+      "hours": "23:00에 영업 종료",
+      "body": [],
+      "previewTitle": "도토리가든 안국점",
+      "placeId": "1198045151",
+      "menuItems": [
+        {
+          "name": "클래식모히또",
+          "price": "₩9,000",
+          "recommend": true
+        },
+        {
+          "name": "파인애플모히또",
+          "price": "₩9,000",
+          "recommend": true
+        },
+        {
+          "name": "그레이프모히또",
+          "price": "₩9,000",
+          "recommend": true
+        },
+        {
+          "name": "오가닉 아사이 요거트",
+          "price": "₩21,500",
+          "recommend": true
+        },
+        {
+          "name": "리얼허니",
+          "price": "₩14,500",
+          "recommend": true
+        },
+        {
+          "name": "리얼스트로베리",
+          "price": "₩18,500",
+          "recommend": true
+        },
+        {
+          "name": "도토리 브레드 플레인",
+          "price": "₩5,500",
+          "recommend": true
+        },
+        {
+          "name": "도토리 마들렌 6종",
+          "price": "₩25,800",
+          "recommend": true
+        },
+        {
+          "name": "소금버터치아바타",
+          "price": "₩4,800",
+          "recommend": true
+        },
+        {
+          "name": "리얼블루베리",
+          "price": "₩17,500"
+        },
+        {
+          "name": "카카오더블더블",
+          "price": "₩19,000"
+        },
+        {
+          "name": "올어바웃그레인",
+          "price": "₩17,500"
+        },
+        {
+          "name": "애플시나몬",
+          "price": "₩17,500"
+        },
+        {
+          "name": "홍시 라이브 그릭요거트",
+          "price": "₩18,500"
+        },
+        {
+          "name": "두바이 쫀득 쿠키 그릭요거트볼",
+          "price": "₩28,500"
+        },
+        {
+          "name": "도토리 브레드 초코",
+          "price": "₩5,500"
+        },
+        {
+          "name": "도토리 브레드 밤",
+          "price": "₩6,500"
+        },
+        {
+          "name": "도토리 브레드 말차&팥",
+          "price": "₩6,500"
+        },
+        {
+          "name": "도토리 브레드 딸기",
+          "price": "₩6,500"
+        },
+        {
+          "name": "도토리 브레드 옥수수",
+          "price": "₩6,500"
+        },
+        {
+          "name": "얼그레이 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "초코 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "말차 피스타치오 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "레몬 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "망고코코넛 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "아몬드 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "밤 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "자색고구마 마들렌",
+          "price": "₩4,300"
+        },
+        {
+          "name": "무화과치아바타",
+          "price": "₩5,000"
+        },
+        {
+          "name": "명란치아바타",
+          "price": "₩5,000"
+        },
+        {
+          "name": "그릭버터치아바타",
+          "price": "₩5,000"
+        },
+        {
+          "name": "갈릭치아바타",
+          "price": "₩5,500"
+        },
+        {
+          "name": "바질치아바타",
+          "price": "₩6,000"
+        },
+        {
+          "name": "어니언바질크림치아바타",
+          "price": "₩7,500"
+        },
+        {
+          "name": "에그마요치아바타",
+          "price": "₩7,500"
+        },
+        {
+          "name": "초코치아바타",
+          "price": "₩8,000"
+        },
+        {
+          "name": "누룽지밤앙버터치아바타",
+          "price": "₩9,000"
+        },
+        {
+          "name": "애플브릭치즈치아바타",
+          "price": "₩9,000"
+        },
+        {
+          "name": "바닐라 까눌레",
+          "price": "₩3,800"
+        },
+        {
+          "name": "바닐라 가나슈 까눌레",
+          "price": "₩4,500"
+        },
+        {
+          "name": "얼그레이 잼 까눌레",
+          "price": "₩4,500"
+        },
+        {
+          "name": "말차커스터드 까눌레",
+          "price": "₩4,500"
+        },
+        {
+          "name": "유자 까눌레",
+          "price": "₩4,500"
+        },
+        {
+          "name": "헤이즐넛 가나슈 까눌레",
+          "price": "₩4,500"
+        },
+        {
+          "name": "곶감 크림치즈 까눌레",
+          "price": "₩4,500"
+        },
+        {
+          "name": "토리쿠키 3종",
+          "price": "₩3,500"
+        },
+        {
+          "name": "퍼지 브라우니 쿠키",
+          "price": "₩3,500"
+        },
+        {
+          "name": "베리파운드",
+          "price": "₩6,500"
+        },
+        {
+          "name": "크로크무슈",
+          "price": "₩4,800"
+        },
+        {
+          "name": "생식빵",
+          "price": "₩7,000"
+        },
+        {
+          "name": "비건 오트밀 쿠키",
+          "price": "₩4,000"
+        },
+        {
+          "name": "비건 흑임자 쿠키",
+          "price": "₩4,500"
+        },
+        {
+          "name": "비건 건과일 오트밀 쿠키",
+          "price": "₩4,500"
+        },
+        {
+          "name": "밸런스드 클래식",
+          "price": "₩11,500"
+        },
+        {
+          "name": "카카오 더블더블",
+          "price": "₩12,500"
+        },
+        {
+          "name": "올어바웃 그레인",
+          "price": "₩12,500"
+        },
+        {
+          "name": "시나몬 바나나 크런치",
+          "price": "₩12,500"
+        },
+        {
+          "name": "프렌치토스트브런치",
+          "price": "₩14,500"
+        },
+        {
+          "name": "시오브런치",
+          "price": "₩15,500"
+        },
+        {
+          "name": "프레첼브런치",
+          "price": "₩16,000"
+        },
+        {
+          "name": "어니언 포테이토 스프",
+          "price": "₩9,500"
+        },
+        {
+          "name": "머쉬룸 포테이토 스프",
+          "price": "₩10,500"
+        },
+        {
+          "name": "스윗 펌킨 스프",
+          "price": "₩10,500"
+        },
+        {
+          "name": "플레인 요거트(병) 250",
+          "price": "₩5,000"
+        },
+        {
+          "name": "플레인 요거트(병) 500",
+          "price": "₩8,000"
+        },
+        {
+          "name": "그릭 요거트",
+          "price": "₩12,000"
+        },
+        {
+          "name": "아메리카노",
+          "price": "₩5,500"
+        },
+        {
+          "name": "디카페인 아메리카노",
+          "price": "₩6,000"
+        },
+        {
+          "name": "라떼",
+          "price": "₩6,000"
+        },
+        {
+          "name": "디카페인 라떼",
+          "price": "₩6,500"
+        },
+        {
+          "name": "바닐라라떼",
+          "price": "₩6,500"
+        },
+        {
+          "name": "디카페인 바닐라라떼",
+          "price": "₩7,000"
+        },
+        {
+          "name": "벌집 오곡라떼(ONLY ICE)",
+          "price": "₩9,500"
+        },
+        {
+          "name": "벌집 흑임자라떼(ONLY ICE)",
+          "price": "₩9,500"
+        },
+        {
+          "name": "애플망고 요거트 드링크",
+          "price": "₩8,500"
+        },
+        {
+          "name": "복숭아 요거트 드링크",
+          "price": "₩8,500"
+        },
+        {
+          "name": "딸기 요거트 드링크",
+          "price": "₩8,500"
+        },
+        {
+          "name": "피넛오트밀",
+          "price": "₩8,500"
+        },
+        {
+          "name": "바나나월넛",
+          "price": "₩8,500"
+        },
+        {
+          "name": "알릭스",
+          "price": "₩8,000"
+        },
+        {
+          "name": "랑데부",
+          "price": "₩8,000"
+        },
+        {
+          "name": "비잔틴",
+          "price": "₩8,000"
+        },
+        {
+          "name": "쥬쉬데졸레",
+          "price": "₩8,000"
+        }
+      ],
+      "category": "카페,디저트",
+      "score": "4.79",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "beton-seongsu": {
+      "name": "Бетонг Сонсу",
+      "location": "베통 성수",
+      "menu": "베통 성수",
+      "price": "₩3,900",
+      "tip": "",
+      "about": "베통 성수",
+      "placeUrl": "https://map.naver.com/p/entry/place/365858525",
+      "mapsUrl": "https://map.naver.com/p/entry/place/365858525",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5429356,127.0552214&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-499-1112",
+      "hours": "09:00에 영업 시작",
+      "body": [],
+      "previewTitle": "베통 성수",
+      "placeId": "365858525",
+      "menuItems": [
+        {
+          "name": "소금빵",
+          "price": "₩3,900"
+        }
+      ],
+      "category": "카페,디저트",
+      "score": "4.49",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "paul-bassett-gwanghwamun": {
+      "name": "Пол Бассетт Филиал в Кванхвамуне",
+      "location": "폴바셋 광화문점",
+      "menu": "폴바셋 광화문점",
+      "price": "₩5,300",
+      "tip": "",
+      "about": "Paul & Mildo (филиал Пола Бассетта в Кванхвамуне) — известный ресторан лунго. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/35118371",
+      "mapsUrl": "https://map.naver.com/p/entry/place/35118371",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5747211,126.9789138&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "02-3701-9170",
+      "hours": "07:00에 영업 시작",
+      "body": [],
+      "previewTitle": "폴&밀도 (폴 바셋 광화문점)",
+      "placeId": "35118371",
+      "menuItems": [
+        {
+          "name": "룽고",
+          "price": "₩5,300",
+          "recommend": true
+        },
+        {
+          "name": "리치식빵",
+          "price": "₩8,400",
+          "recommend": true
+        },
+        {
+          "name": "초코퍼지 토핑 아이스크림",
+          "price": "₩6,700",
+          "recommend": true
+        },
+        {
+          "name": "허니러스크",
+          "price": "₩4,200",
+          "recommend": true
+        },
+        {
+          "name": "카페라떼",
+          "price": "₩5,900"
+        },
+        {
+          "name": "아이스크림 카페라떼",
+          "price": "₩7,500"
+        },
+        {
+          "name": "초코허니러스크",
+          "price": "₩4,900"
+        },
+        {
+          "name": "담백식빵",
+          "price": "₩7,800"
+        },
+        {
+          "name": "벌집꿀 토핑 아이스크림",
+          "price": "₩6,900"
+        },
+        {
+          "name": "카라멜 토핑 아이스크림",
+          "price": "₩6,700"
+        },
+        {
+          "name": "커피 토핑 아이스크림",
+          "price": "₩6,700"
+        },
+        {
+          "name": "큐브 커스터드",
+          "price": "₩4,200"
+        },
+        {
+          "name": "밀크 아이스크림 (컵)",
+          "price": "₩4,300"
+        }
+      ],
+      "category": "카페",
+      "score": "4.55",
+      "region": {
+        "city": "서울",
+        "district": "종로",
+        "dong": ""
+      }
+    },
+    "miruku-coffee-gwangalli": {
+      "name": "Кофе Мируку Пусанский филиал в Квангане",
+      "location": "미루꾸커피 부산광안점",
+      "menu": "미루꾸커피 부산광안점",
+      "price": "₩6,500",
+      "tip": "",
+      "about": "미루꾸커피 부산광안점",
+      "placeUrl": "https://map.naver.com/p/entry/place/1870954006",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1870954006",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.1568533,129.122256&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1354-5845",
+      "hours": "10:30에 영업 시작",
+      "body": [],
+      "region": {
+        "city": "부산",
+        "district": "수영",
+        "dong": ""
+      },
+      "previewTitle": "미루꾸커피 부산광안점",
+      "placeId": "1870954006",
+      "menuItems": [
+        {
+          "name": "미루꾸 시그니처 5종",
+          "price": "₩6,500"
+        }
+      ],
+      "category": "카페,디저트",
+      "score": "4.91"
+    },
+    "1983-hwanggeum-danpatppang": {
+      "name": "1983Золотой красный бобовый хлеб",
+      "location": "1983황금단팥빵",
+      "menu": "1983황금단팥빵",
+      "price": "₩24,000",
+      "tip": "",
+      "about": "1983황금단팥빵",
+      "placeUrl": "https://map.naver.com/p/entry/place/2042615942",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2042615942",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.159806,129.1587258&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1336-9594",
+      "hours": "08:00에 영업 시작",
+      "body": [],
+      "previewTitle": "1983황금단팥빵",
+      "placeId": "2042615942",
+      "menuItems": [
+        {
+          "name": "황금 단팥빵 8개입",
+          "price": "₩24,000"
+        },
+        {
+          "name": "황금 단팥빵 4개입",
+          "price": "₩12,000"
+        }
+      ],
+      "category": "베이커리",
+      "score": "4.44",
+      "region": {
+        "city": "부산",
+        "district": "해운대",
+        "dong": ""
+      }
+    },
+    "hanjeongseon": {
+      "name": "предельная линия",
+      "location": "한정선",
+      "menu": "한정선",
+      "price": "₩6,000",
+      "tip": "",
+      "about": "한정선",
+      "placeUrl": "https://map.naver.com/p/entry/place/1353954221",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1353954221",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.542865,127.0541964&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "",
+      "hours": "10:30에 영업 시작",
+      "body": [],
+      "previewTitle": "한정선",
+      "placeId": "1353954221",
+      "menuItems": [
+        {
+          "name": "[한정수량] 복숭아 요거트 찹쌀떡",
+          "price": "₩6,000",
+          "recommend": true
+        },
+        {
+          "name": "[한정수량] 블루베리 요거트 찹쌀떡",
+          "price": "₩6,000",
+          "recommend": true
+        },
+        {
+          "name": "[한정수량] 샤인머스캣 요거트 찹쌀떡",
+          "price": "₩6,000",
+          "recommend": true
+        },
+        {
+          "name": "[한정수량] 무화과 찹쌀떡",
+          "price": "₩5,500",
+          "recommend": true
+        },
+        {
+          "name": "[한정수량] 두바이st 찹쌀떡",
+          "price": "₩6,500",
+          "recommend": true
+        },
+        {
+          "name": "[한정수량] 초코딸기 찹쌀떡",
+          "price": "₩5,500",
+          "recommend": true
+        },
+        {
+          "name": "골드키위 찹쌀떡",
+          "price": "₩4,500"
+        },
+        {
+          "name": "쑥생딸기 찹쌀떡",
+          "price": "₩4,500"
+        },
+        {
+          "name": "홍시 찹쌀떡",
+          "price": "₩4,200"
+        },
+        {
+          "name": "앙버터 찹쌀떡 (고메버터)",
+          "price": "₩3,500"
+        },
+        {
+          "name": "통귤 찹쌀떡",
+          "price": "₩4,000"
+        },
+        {
+          "name": "허니골드 파인애플 찹쌀떡",
+          "price": "₩4,000"
+        },
+        {
+          "name": "6구 선물세트",
+          "price": "₩33,000"
+        },
+        {
+          "name": "9구 선물세트",
+          "price": "₩46,000"
+        }
+      ],
+      "category": "카페,디저트",
+      "score": "3.92",
+      "region": {
+        "city": "서울",
+        "district": "성동",
+        "dong": ""
+      }
+    },
+    "namdaemun-bingsu": {
+      "name": "Намдэмун бритый лед",
+      "location": "남대문빙수",
+      "menu": "남대문빙수",
+      "price": "₩5,000",
+      "tip": "",
+      "about": "Намдэмун Бингсу — знаменитый ресторан со льдом из красной фасоли. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/1796089660",
+      "mapsUrl": "https://map.naver.com/p/entry/place/1796089660",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5594029,126.9770126&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "",
+      "hours": "",
+      "body": [],
+      "previewTitle": "남대문빙수",
+      "placeId": "1796089660",
+      "menuItems": [
+        {
+          "name": "팥빙수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "인절미빙수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "녹차빙수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "오레오빙수",
+          "price": "₩5,000"
+        },
+        {
+          "name": "망고빙수",
+          "price": "₩5,000"
+        }
+      ],
+      "category": "빙수",
+      "score": "4.25",
+      "region": {
+        "city": "서울",
+        "district": "중구",
+        "dong": ""
+      }
+    },
+    "benson-creamery-seoul": {
+      "name": "Маслобойня Бенсон Сеул",
+      "location": "벤슨 크리머리 서울",
+      "menu": "벤슨 크리머리 서울",
+      "price": "₩5,300",
+      "tip": "",
+      "about": "Benson Creamery Seoul — известный ресторан мороженого. Его приятно перекусить во время путешествия.",
+      "placeUrl": "https://map.naver.com/p/entry/place/2092510977",
+      "mapsUrl": "https://map.naver.com/p/entry/place/2092510977",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=37.5261543,127.0398421&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewImage": "media/cover.jpg",
+      "phone": "0507-1345-0603",
+      "hours": "11:00에 영업 시작",
+      "body": [],
+      "region": {
+        "city": "서울",
+        "district": "강남",
+        "dong": ""
+      },
+      "previewTitle": "벤슨 크리머리 서울",
+      "placeId": "2092510977",
+      "menuItems": [
+        {
+          "name": "싱글(SINGLE)",
+          "price": "₩5,300"
+        },
+        {
+          "name": "더블(DOUBLE)",
+          "price": "₩6,300"
+        },
+        {
+          "name": "파인트(PINT)",
+          "price": "₩15,300"
+        },
+        {
+          "name": "파인트스플릿(PINT)",
+          "price": "₩15,300"
+        },
+        {
+          "name": "쿼터(QUARTER)",
+          "price": "₩27,300"
+        },
+        {
+          "name": "파티닷! 케이크",
+          "price": "₩43,000"
+        },
+        {
+          "name": "마이리틀레몬팝",
+          "price": "₩43,000"
+        },
+        {
+          "name": "초콜릿기프트박스 화이트",
+          "price": "₩39,000"
+        },
+        {
+          "name": "초콜릿기프트박스 블랙",
+          "price": "₩39,000"
+        },
+        {
+          "name": "피스타치오 베리 가든",
+          "price": "₩39,000"
+        },
+        {
+          "name": "아사이베리 썬데",
+          "price": "₩6,300"
+        },
+        {
+          "name": "솔티드 카라멜 썬데",
+          "price": "₩6,300"
+        },
+        {
+          "name": "핫퍼지 썬데",
+          "price": "₩6,300"
+        },
+        {
+          "name": "저지밀크&말돈솔트 아포가토",
+          "price": "₩6,500"
+        },
+        {
+          "name": "마이 스쿱 아메리카노",
+          "price": "₩7,000"
+        },
+        {
+          "name": "마이 스쿱 라떼",
+          "price": "₩7,500"
+        },
+        {
+          "name": "저지밀크&말돈솔트 쉐이크",
+          "price": "₩7,500"
+        },
+        {
+          "name": "퓨어메이플 바닐라빈 쉐이크",
+          "price": "₩7,500"
+        },
+        {
+          "name": "다크초콜릿 브라우니 쉐이크",
+          "price": "₩7,500"
+        },
+        {
+          "name": "피넛초콜릿 쿠키샌드",
+          "price": "₩7,300"
+        },
+        {
+          "name": "해피버스데이 쿠키샌드",
+          "price": "₩7,300"
+        },
+        {
+          "name": "피스타치오 말차 쿠키샌드",
+          "price": "₩7,300"
+        },
+        {
+          "name": "진저브레드 바닐라빈 쿠키샌드",
+          "price": "₩7,300"
+        },
+        {
+          "name": "애플 크럼블",
+          "price": "₩14,000"
+        },
+        {
+          "name": "치즈케이크",
+          "price": "₩14,000"
+        },
+        {
+          "name": "퐁당 쇼콜라",
+          "price": "₩12,000"
+        }
+      ],
+      "category": "아이스크림",
+      "score": "4.82"
+    },
+    "sodami-kimbap": {
+      "placeUrl": "https://map.naver.com/p/entry/place/37980760",
+      "mapsUrl": "https://map.naver.com/p/entry/place/37980760",
+      "mapsEmbedUrl": "https://maps.google.com/maps?q=35.2324947,129.0851555&hl=ko&z=16&output=embed",
+      "mapsProvider": "naver",
+      "sourceType": "naver",
+      "previewTitle": "소다미김밥",
+      "previewImage": "media/cover.jpg",
+      "phone": "051-518-7518",
+      "hours": "10:30에 영업 시작",
+      "placeId": "37980760",
+      "menuItems": [
+        {
+          "name": "소다미김밥",
+          "price": "₩3,500"
+        },
+        {
+          "name": "불고기김밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "치즈김밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "야채김밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "참치김밥",
+          "price": "₩4,000"
+        },
+        {
+          "name": "모둠이김밥",
+          "price": "₩4,500"
+        },
+        {
+          "name": "라면",
+          "price": "₩3,500"
+        },
+        {
+          "name": "떡볶이",
+          "price": "₩3,000"
+        }
+      ],
+      "category": "종합분식",
+      "score": "4.67",
+      "region": {
+        "city": "부산",
+        "district": "금정",
+        "dong": ""
+      },
+      "location": "부산 금정구 금강로 271-4",
+      "menu": "소다미김밥",
+      "price": "₩3,500",
+      "about": "Sodami Gimbap — это обычный закусочный ресторан. Его приятно перекусить во время путешествия."
     }
   }
 }

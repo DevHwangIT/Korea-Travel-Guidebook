@@ -36,10 +36,25 @@ for lang in LANGS:
     write_assembled_lang(lang, merged)
     messages[lang] = merged
 
-(ROOT / "messages.js").write_text(
+import os
+import tempfile
+
+payload = (
     "window.__I18N_MESSAGES__ = "
     + json.dumps(messages, ensure_ascii=False, indent=2)
-    + ";\n",
-    encoding="utf-8",
+    + ";\n"
 )
+target = ROOT / "messages.js"
+# Atomic replace avoids Windows EINVAL when messages.js is open in the IDE.
+fd, tmp_name = tempfile.mkstemp(prefix="messages-", suffix=".js", dir=str(ROOT))
+try:
+    with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
+        f.write(payload)
+    os.replace(tmp_name, target)
+finally:
+    if os.path.exists(tmp_name):
+        try:
+            os.unlink(tmp_name)
+        except OSError:
+            pass
 print("updated messages.js (" + ", ".join(LANGS) + ")")

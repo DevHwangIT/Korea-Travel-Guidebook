@@ -158,8 +158,9 @@
 
     function filtered() {
       var q = state.query;
-      if (!q) return items.slice();
       return items.filter(function (el) {
+        if (el.getAttribute("data-filter-hide") === "1") return false;
+        if (!q) return true;
         return itemTitle(el).indexOf(q) !== -1;
       });
     }
@@ -262,6 +263,11 @@
     });
 
     document.addEventListener("guide:langchange", function () {
+      render();
+    });
+
+    document.addEventListener("guide:filterchange", function () {
+      state.page = 1;
       render();
     });
 

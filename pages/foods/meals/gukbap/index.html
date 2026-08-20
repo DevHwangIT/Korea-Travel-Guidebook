@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="dishes.gukbap.title">
 <head>
-  <!-- asset-v: 20260819160601 -->
+  <!-- asset-v: 20260821002336 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gukbap | Korea Travel Guide</title>
-  <link rel="stylesheet" href="../../../../styles.css?v=20260819160601">
+  <link rel="stylesheet" href="../../../../styles.css?v=20260821002336">
 </head>
 <body>
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -29,9 +29,20 @@
     </section>
 
     <h2 data-i18n="common.places">Places</h2>
-    <p class="tabs-help" data-i18n="common.shopsHelp"></p>
+        <div class="region-filter" data-dish-region-filter data-region-active="all">
+      <div class="tab-list tab-list-sm" role="tablist" aria-label="Region">
+        <button type="button" class="tab-btn tab-btn-sm is-active" role="tab" data-region-tab="all" aria-selected="true" data-i18n="common.regionTabAll">전체</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="sudo" aria-selected="false" data-i18n="common.regionTabSudo">수도권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="gangwon" aria-selected="false" data-i18n="common.regionTabGangwon">강원권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="chungcheong" aria-selected="false" data-i18n="common.regionTabChungcheong">충청권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="jeolla" aria-selected="false" data-i18n="common.regionTabJeolla">전라권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="gyeongsang" aria-selected="false" data-i18n="common.regionTabGyeongsang">경상권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="jeju" aria-selected="false" data-i18n="common.regionTabJeju">제주권</button>
+      </div>
+    </div>
+<p class="tabs-help" data-i18n="common.shopsHelp"></p>
     <div class="card-grid">
-      <article class="card">
+      <article class="card" data-region-group="sudo">
         <a href="./cheongwaok/index.html">
           <img src="./cheongwaok/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.cheongwaok.name">
         </a>
@@ -39,7 +50,7 @@
         <p data-i18n="restaurants.cheongwaok.menu"></p>
         <p><a href="./cheongwaok/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
-          <article class="card">
+          <article class="card" data-region-group="sudo">
         <a href="./yeongchunok/index.html">
           <img src="./yeongchunok/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.yeongchunok.name">
         </a>
@@ -47,7 +58,7 @@
         <p data-i18n="restaurants.yeongchunok.menu"></p>
         <p><a href="./yeongchunok/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
-      <article class="card">
+      <article class="card" data-region-group="sudo">
         <a href="./okdongsik/index.html">
           <img src="./okdongsik/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.okdongsik.name">
         </a>
@@ -55,7 +66,7 @@
         <p data-i18n="restaurants.okdongsik.menu"></p>
         <p><a href="./okdongsik/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
-      <article class="card">
+      <article class="card" data-region-group="sudo">
         <a href="./daeseongjip/index.html">
           <img src="./daeseongjip/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.daeseongjip.name">
         </a>
@@ -63,13 +74,53 @@
         <p data-i18n="restaurants.daeseongjip.menu"></p>
         <p><a href="./daeseongjip/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
-      <article class="card">
+      <article class="card" data-region-group="gyeongsang">
         <a href="./suyeong-bonga-dwaeji-gukbap/index.html">
           <img src="./suyeong-bonga-dwaeji-gukbap/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.suyeong-bonga-dwaeji-gukbap.name">
         </a>
         <h2><span data-i18n="restaurants.suyeong-bonga-dwaeji-gukbap.name"></span></h2>
         <p data-i18n="restaurants.suyeong-bonga-dwaeji-gukbap.menu"></p>
         <p><a href="./suyeong-bonga-dwaeji-gukbap/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+      <article class="card" data-region-group="sudo">
+        <a href="./donmatkkul/index.html">
+          <img src="./donmatkkul/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.donmatkkul.name">
+        </a>
+        <h2><span data-i18n="restaurants.donmatkkul.name"></span></h2>
+        <p data-i18n="restaurants.donmatkkul.menu"></p>
+        <p><a href="./donmatkkul/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+      <article class="card" data-region-group="sudo">
+        <a href="./neungdong-minari-seongsu/index.html">
+          <img src="./neungdong-minari-seongsu/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.neungdong-minari-seongsu.name">
+        </a>
+        <h2><span data-i18n="restaurants.neungdong-minari-seongsu.name"></span></h2>
+        <p data-i18n="restaurants.neungdong-minari-seongsu.menu"></p>
+        <p><a href="./neungdong-minari-seongsu/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+      <article class="card" data-region-group="gyeongsang">
+        <a href="./sandermi-miseong-dongseongno/index.html">
+          <img src="./sandermi-miseong-dongseongno/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.sandermi-miseong-dongseongno.name">
+        </a>
+        <h2><span data-i18n="restaurants.sandermi-miseong-dongseongno.name"></span></h2>
+        <p data-i18n="restaurants.sandermi-miseong-dongseongno.menu"></p>
+        <p><a href="./sandermi-miseong-dongseongno/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+      <article class="card" data-region-group="gyeongsang">
+        <a href="./haeundae-wonjo-halmae-gukbap/index.html">
+          <img src="./haeundae-wonjo-halmae-gukbap/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.haeundae-wonjo-halmae-gukbap.name">
+        </a>
+        <h2><span data-i18n="restaurants.haeundae-wonjo-halmae-gukbap.name"></span></h2>
+        <p data-i18n="restaurants.haeundae-wonjo-halmae-gukbap.menu"></p>
+        <p><a href="./haeundae-wonjo-halmae-gukbap/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+      <article class="card" data-region-group="sudo">
+        <a href="./dwaeji-gongtang-hau-seongsu/index.html">
+          <img src="./dwaeji-gongtang-hau-seongsu/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.dwaeji-gongtang-hau-seongsu.name">
+        </a>
+        <h2><span data-i18n="restaurants.dwaeji-gongtang-hau-seongsu.name"></span></h2>
+        <p data-i18n="restaurants.dwaeji-gongtang-hau-seongsu.menu"></p>
+        <p><a href="./dwaeji-gongtang-hau-seongsu/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
 </div>
 
@@ -81,8 +132,9 @@
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
-  <script src="../../../../i18n/messages.js?v=20260819160601"></script>
-  <script src="../../../../js/i18n.js?v=20260819160601"></script>
-  <script src="../../../../js/analytics.js?v=20260819160601"></script>
+  <script src="../../../../i18n/messages.js?v=20260821002336"></script>
+  <script src="../../../../js/i18n.js?v=20260821002336"></script>
+  <script src="../../../../js/dish-region-filter.js?v=20260821002336"></script>
+  <script src="../../../../js/analytics.js?v=20260821002336"></script>
 </body>
 </html>

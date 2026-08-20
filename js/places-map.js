@@ -38,6 +38,10 @@
     city: true,
     nature: true,
     heritage: true,
+    mountain: true,
+    beach: true,
+    lake: true,
+    market: true,
     airport: true,
     info: true,
     locker: true,
@@ -120,7 +124,7 @@
   var FILTER_OPEN_KEY = "korea-guide-places-filter-open";
   var FILTER_ACCORDION_KEY = "korea-guide-places-filter-accordion";
   var FILTER_GROUPS = {
-    places: { types: ["city", "nature", "heritage"], metro: false },
+    places: { types: ["city", "nature", "heritage", "mountain", "beach", "lake", "market"], metro: false },
     transit: {
       types: ["airport", "bus-terminal", "port"],
       metro: true,
@@ -1527,6 +1531,7 @@
       var lockerBadgeClear = el("[data-places-panel-locker]");
       var portBadgeClear = el("[data-places-panel-port]");
       var busBadgeClear = el("[data-places-panel-bus-terminal]");
+      var marketBadgeClear = el("[data-places-panel-market]");
       var panelBodyClear = el("[data-places-panel-body]");
       var coverWrapClear = el("[data-places-panel-cover-wrap]");
       var coverImgClear = el("[data-places-panel-cover]");
@@ -1534,12 +1539,14 @@
       if (lockerBadgeClear) lockerBadgeClear.hidden = true;
       if (portBadgeClear) portBadgeClear.hidden = true;
       if (busBadgeClear) busBadgeClear.hidden = true;
+      if (marketBadgeClear) marketBadgeClear.hidden = true;
       if (panelBodyClear) {
         panelBodyClear.classList.remove(
           "is-info-place",
           "is-locker-place",
           "is-port-place",
-          "is-bus-terminal-place"
+          "is-bus-terminal-place",
+          "is-market-place"
         );
       }
       if (coverWrapClear) coverWrapClear.hidden = true;
@@ -1562,21 +1569,25 @@
     var isLocker = kind === "locker";
     var isPort = kind === "port";
     var isBusTerminal = kind === "bus-terminal";
+    var isMarket = kind === "market";
     var infoBadge = el("[data-places-panel-info]");
     var lockerBadge = el("[data-places-panel-locker]");
     var portBadge = el("[data-places-panel-port]");
     var busBadge = el("[data-places-panel-bus-terminal]");
+    var marketBadge = el("[data-places-panel-market]");
     var panelBody = el("[data-places-panel-body]");
     if (panelBody) {
       panelBody.classList.toggle("is-info-place", isInfo);
       panelBody.classList.toggle("is-locker-place", isLocker);
       panelBody.classList.toggle("is-port-place", isPort);
       panelBody.classList.toggle("is-bus-terminal-place", isBusTerminal);
+      panelBody.classList.toggle("is-market-place", isMarket);
     }
     if (infoBadge) infoBadge.hidden = !isInfo;
     if (lockerBadge) lockerBadge.hidden = !isLocker;
     if (portBadge) portBadge.hidden = !isPort;
     if (busBadge) busBadge.hidden = !isBusTerminal;
+    if (marketBadge) marketBadge.hidden = !isMarket;
 
     setPanelCover(slug, meta);
 
@@ -1880,6 +1891,10 @@
     city: true,
     nature: true,
     heritage: true,
+    mountain: true,
+    beach: true,
+    lake: true,
+    market: true,
     airport: true,
     info: true,
     locker: true,
@@ -1967,10 +1982,25 @@
       '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
       '<path fill="currentColor" d="M3 21h18v-1.5H3V21zm2-3h3.5V9H5v9zm5 0h4V5h-4v13zm5.5 0H19v-7h-3.5v7z"/>' +
       "</svg>",
-    // Twin mountain peaks
+    // Outdoor / park: tree canopy (not mountain peaks)
     nature:
       '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
+      '<path fill="currentColor" d="M12 2.5L7 10h2.2V20h5.6V10H17L12 2.5zM5.2 11.2L2 17h4.2l.7-2.2-1.7-3.6zm13.6 0l-1.7 3.6.7 2.2H22l-3.2-5.8z"/>' +
+      "</svg>",
+    // Mountain peaks (former outdoor twin-peak glyph)
+    mountain:
+      '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
       '<path fill="currentColor" d="M2 19L8.5 7.5 11.8 13l2.7-4.8L22 19H2z"/>' +
+      "</svg>",
+    // Beach / waves
+    beach:
+      '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
+      '<path fill="currentColor" d="M12 3a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V13h2.5A3.5 3.5 0 0 1 20 16.5V19H4v-2.5A3.5 3.5 0 0 1 7.5 13H10V10.5C8.8 9.8 8 8.5 8 7a4 4 0 0 1 4-4zm-6.5 17c.9-.6 1.9-1 3-1s2.1.4 3 1c.9-.6 1.9-1 3-1s2.1.4 3 1c.9-.6 1.9-1 3-1v2c-1.1 0-2.1.4-3 1-.9-.6-1.9-1-3-1s-2.1.4-3 1c-.9-.6-1.9-1-3-1s-2.1.4-3 1c-.9-.6-1.9-1-3-1v-2c1.1 0 2.1.4 3 1z"/>' +
+      "</svg>",
+    // Lake / inland water
+    lake:
+      '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
+      '<path fill="currentColor" d="M3 14c1.5-3 4-5 9-5s7.5 2 9 5c-1.2 2.8-4.2 4.5-9 4.5S4.2 16.8 3 14zm2.2-.2c.9 1.6 3.2 2.7 6.8 2.7s5.9-1.1 6.8-2.7C17.8 12.3 15.4 11 12 11s-5.8 1.3-6.8 2.8zM8.5 9.2c.4-1.2 1.6-2.2 3.5-2.2s3.1 1 3.5 2.2H8.5z"/>' +
       "</svg>",
     // Pagoda: roof tiers + base pillar
     heritage:
@@ -1987,6 +2017,11 @@
       '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
       '<path fill="currentColor" d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.9-6.68c.08-.26.06-.54-.06-.78s-.32-.42-.57-.5L20 10.5V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.5l-.31.11c-.25.08-.45.26-.57.5s-.14.52-.06.78L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z"/>' +
       "</svg>",
+    // Market stall / awning storefront
+    market:
+      '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
+      '<path fill="currentColor" d="M2 11h20l-2-7H4L2 11zm1 2v7h5v-7H3zm7 0v7h6v-7h-6zm8 0v7h5v-7h-5z"/>' +
+      "</svg>",
     // Bus / coach front
     "bus-terminal":
       '<svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">' +
@@ -1998,6 +2033,10 @@
     city: true,
     nature: true,
     heritage: true,
+    mountain: true,
+    beach: true,
+    lake: true,
+    market: true,
     airport: true,
     locker: true,
     port: true,
@@ -2015,6 +2054,10 @@
           : kind === "city" ||
               kind === "nature" ||
               kind === "heritage" ||
+              kind === "mountain" ||
+              kind === "beach" ||
+              kind === "lake" ||
+              kind === "market" ||
               kind === "locker" ||
               kind === "port"
             ? kind
@@ -2037,9 +2080,11 @@
         '<span class="places-map-marker__pin" aria-hidden="true"></span>' + pulse;
     }
     var isBadge = !!BADGE_MARKER_KINDS[kind];
+    // Badge markers: tip sits on latlng (bottom-center). Center-anchor made
+    // markers look shifted vs real map features when zoomed in.
     var size = kind === "info" ? [22, 22] : isBadge ? [34, 34] : [28, 36];
-    var anchor = kind === "info" ? [11, 11] : isBadge ? [17, 17] : [14, 34];
-    var popup = kind === "info" ? [0, -10] : isBadge ? [0, -15] : [0, -30];
+    var anchor = kind === "info" ? [11, 11] : isBadge ? [17, 34] : [14, 34];
+    var popup = kind === "info" ? [0, -10] : isBadge ? [0, -34] : [0, -30];
     // Always DivIcon for place markers (never L.icon / image pins).
     return L.divIcon({
       className:

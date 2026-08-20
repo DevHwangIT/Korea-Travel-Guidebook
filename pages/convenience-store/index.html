@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="misc.convenienceTitle" data-i18n-desc="convenience.intro" data-seo-path="pages/convenience-store/" data-seo-image="Images/menu/convenience-store.png">
 <head>
-  <!-- asset-v: 20260819160601 -->
+  <!-- asset-v: 20260821002336 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>한국 편의점 | Korea Travel Guide</title>
@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="한국 편의점 | Korea Travel Guide">
   <meta name="twitter:description" content="한국 편의점 인기 제품과 추천 콤보를 모았습니다.">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/menu/convenience-store.png">
-  <link rel="stylesheet" href="../../styles.css?v=20260819160601">
+  <link rel="stylesheet" href="../../styles.css?v=20260821002336">
 </head>
 <body class="cat-enter cat-enter--convenience">
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -38,10 +38,18 @@
     <p data-i18n="convenience.intro"></p>
     </div>
 
-    <div data-list-pager data-page-size="8" data-item="a.combo-card" class="list-pager-scope">
-    <h2 class="section-heading" data-i18n="convenience.productTitle">인기 제품</h2>
+    <div data-list-pager data-convenience-brand-filter data-brand-active="common" data-brand-item="a.combo-card" data-page-size="8" data-item="a.combo-card" class="list-pager-scope">
+        <div class="brand-filter">
+      <p class="tabs-help" data-i18n="convenience.brandTabsHelp"></p>
+      <div class="tab-list tab-list-sm" role="tablist" aria-label="Store brand">
+        <button type="button" class="tab-btn tab-btn-sm is-active" role="tab" data-brand-tab="common" aria-selected="true" data-i18n="convenience.brandTabCommon">공통</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-brand-tab="cu" aria-selected="false" data-i18n="convenience.brandTabCu">CU</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-brand-tab="gs" aria-selected="false" data-i18n="convenience.brandTabGs">GS25</button>
+      </div>
+    </div>
+<h2 class="section-heading" data-i18n="convenience.productTitle">인기 제품</h2>
     <div class="combo-grid">
-      <a class="combo-card" href="./biyott/index.html">
+      <a class="combo-card" data-brand="common" href="./biyott/index.html">
         <img src="./biyott/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.biyottTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.biyottTitle"></h3>
@@ -49,7 +57,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./store-kimbap/index.html">
+      <a class="combo-card" data-brand="common" href="./store-kimbap/index.html">
         <img src="./store-kimbap/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.store-kimbapTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.store-kimbapTitle"></h3>
@@ -57,7 +65,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./banana-milk/index.html">
+      <a class="combo-card" data-brand="common" href="./banana-milk/index.html">
         <img src="./banana-milk/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.banana-milkTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.banana-milkTitle"></h3>
@@ -65,7 +73,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./yonsei-cream-bread/index.html">
+      <a class="combo-card" data-brand="cu" href="./yonsei-cream-bread/index.html">
         <img src="./yonsei-cream-bread/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.yonsei-cream-breadTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.yonsei-cream-breadTitle"></h3>
@@ -73,11 +81,19 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./buldak-bokkeum-myeon/index.html">
+      <a class="combo-card" data-brand="common" href="./buldak-bokkeum-myeon/index.html">
         <img src="./buldak-bokkeum-myeon/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.buldak-bokkeum-myeonTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.buldak-bokkeum-myeonTitle"></h3>
           <p data-i18n="convenience.buldak-bokkeum-myeonDesc"></p>
+          <span class="combo-more" data-i18n="convenience.readMore"></span>
+        </div>
+      </a>
+      <a class="combo-card" data-brand="common" href="./ice-cup-ade/index.html">
+        <img src="./ice-cup-ade/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.ice-cup-adeTitle">
+        <div class="combo-body">
+          <h3 data-i18n="convenience.ice-cup-adeTitle"></h3>
+          <p data-i18n="convenience.ice-cup-adeDesc"></p>
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
@@ -86,7 +102,7 @@
     <h2 class="section-heading" data-i18n="convenience.comboTitle">유행 꿀조합</h2>
     <p class="tabs-help" data-i18n="convenience.tapHint"></p>
     <div class="combo-grid">
-      <a class="combo-card" href="./gongganchun/index.html">
+      <a class="combo-card" data-brand="common" href="./gongganchun/index.html">
         <img src="./gongganchun/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.c1Title">
         <div class="combo-body">
           <h3 data-i18n="convenience.c1Title"></h3>
@@ -94,7 +110,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./markjeongsik/index.html">
+      <a class="combo-card" data-brand="common" href="./markjeongsik/index.html">
         <img src="./markjeongsik/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.c2Title">
         <div class="combo-body">
           <h3 data-i18n="convenience.c2Title"></h3>
@@ -102,7 +118,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./carbonara/index.html">
+      <a class="combo-card" data-brand="common" href="./carbonara/index.html">
         <img src="./carbonara/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.c3Title">
         <div class="combo-body">
           <h3 data-i18n="convenience.c3Title"></h3>
@@ -110,7 +126,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./eolbaksa/index.html">
+      <a class="combo-card" data-brand="common" href="./eolbaksa/index.html">
         <img src="./eolbaksa/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.c4Title">
         <div class="combo-body">
           <h3 data-i18n="convenience.c4Title"></h3>
@@ -118,7 +134,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./jikgguri/index.html">
+      <a class="combo-card" data-brand="common" href="./jikgguri/index.html">
         <img src="./jikgguri/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.c5Title">
         <div class="combo-body">
           <h3 data-i18n="convenience.c5Title"></h3>
@@ -126,7 +142,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./melona/index.html">
+      <a class="combo-card" data-brand="common" href="./melona/index.html">
         <img src="./melona/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.c6Title">
         <div class="combo-body">
           <h3 data-i18n="convenience.c6Title"></h3>
@@ -134,7 +150,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./blue-lemonade-milkis/index.html">
+      <a class="combo-card" data-brand="common" href="./blue-lemonade-milkis/index.html">
         <img src="./blue-lemonade-milkis/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.blue-lemonade-milkisTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.blue-lemonade-milkisTitle"></h3>
@@ -142,7 +158,7 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./choco-banana-latte/index.html">
+      <a class="combo-card" data-brand="common" href="./choco-banana-latte/index.html">
         <img src="./choco-banana-latte/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.choco-banana-latteTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.choco-banana-latteTitle"></h3>
@@ -150,11 +166,43 @@
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
-      <a class="combo-card" href="./banana-americano/index.html">
+      <a class="combo-card" data-brand="common" href="./banana-americano/index.html">
         <img src="./banana-americano/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.banana-americanoTitle">
         <div class="combo-body">
           <h3 data-i18n="convenience.banana-americanoTitle"></h3>
           <p data-i18n="convenience.banana-americanoDesc"></p>
+          <span class="combo-more" data-i18n="convenience.readMore"></span>
+        </div>
+      </a>
+      <a class="combo-card" data-brand="common" href="./chalddeok-ice/index.html">
+        <img src="./chalddeok-ice/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.chalddeok-iceTitle">
+        <div class="combo-body">
+          <h3 data-i18n="convenience.chalddeok-iceTitle"></h3>
+          <p data-i18n="convenience.chalddeok-iceDesc"></p>
+          <span class="combo-more" data-i18n="convenience.readMore"></span>
+        </div>
+      </a>
+      <a class="combo-card" data-brand="common" href="./haitai-bonbon/index.html">
+        <img src="./haitai-bonbon/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.haitai-bonbonTitle">
+        <div class="combo-body">
+          <h3 data-i18n="convenience.haitai-bonbonTitle"></h3>
+          <p data-i18n="convenience.haitai-bonbonDesc"></p>
+          <span class="combo-more" data-i18n="convenience.readMore"></span>
+        </div>
+      </a>
+      <a class="combo-card" data-brand="common" href="./binggrae-excellent/index.html">
+        <img src="./binggrae-excellent/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.binggrae-excellentTitle">
+        <div class="combo-body">
+          <h3 data-i18n="convenience.binggrae-excellentTitle"></h3>
+          <p data-i18n="convenience.binggrae-excellentDesc"></p>
+          <span class="combo-more" data-i18n="convenience.readMore"></span>
+        </div>
+      </a>
+      <a class="combo-card" data-brand="common" href="./binggrae-together/index.html">
+        <img src="./binggrae-together/media/cover.jpg" alt="" data-i18n-attr="alt:convenience.binggrae-togetherTitle">
+        <div class="combo-body">
+          <h3 data-i18n="convenience.binggrae-togetherTitle"></h3>
+          <p data-i18n="convenience.binggrae-togetherDesc"></p>
           <span class="combo-more" data-i18n="convenience.readMore"></span>
         </div>
       </a>
@@ -166,12 +214,13 @@
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
     <p class="footer-note" data-i18n="common.footer"></p>
   </footer>
-  <script src="../../js/site-config.js?v=20260819160601"></script>
-  <script src="../../i18n/messages.js?v=20260819160601"></script>
-  <script src="../../js/i18n.js?v=20260819160601"></script>
-  <script src="../../js/analytics.js?v=20260819160601"></script>
-  <script src="../../js/seo.js?v=20260819160601"></script>
-  <script src="../../js/content-body.js?v=20260819160601"></script>
-  <script src="../../js/list-pager.js?v=20260819160601"></script>
+  <script src="../../js/site-config.js?v=20260821002336"></script>
+  <script src="../../i18n/messages.js?v=20260821002336"></script>
+  <script src="../../js/i18n.js?v=20260821002336"></script>
+  <script src="../../js/analytics.js?v=20260821002336"></script>
+  <script src="../../js/seo.js?v=20260821002336"></script>
+  <script src="../../js/content-body.js?v=20260821002336"></script>
+  <script src="../../js/list-pager.js?v=20260821002336"></script>
+  <script src="../../js/convenience-brand-filter.js?v=20260821002336"></script>
 </body>
 </html>

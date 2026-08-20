@@ -1,0 +1,100 @@
+{
+  "ok": [
+    "coex",
+    "busan-x-the-sky",
+    "lotte-world-adventure-busan",
+    "aquaplanet-yeosu",
+    "981-park"
+  ],
+  "miss": [
+    "seouldal",
+    "apgujeong",
+    "cheongdam",
+    "the-bay-101",
+    "wolmido",
+    "inspire-resort",
+    "paradise-city",
+    "hyundai-premium-outlet-songdo",
+    "83-tower",
+    "daegu-shinsegae",
+    "yeosu-nangman-pocha",
+    "arte-museum-jeju",
+    "nohyeong-supermarket"
+  ],
+  "still_fallback": [
+    "seouldal",
+    "apgujeong",
+    "cheongdam",
+    "the-bay-101",
+    "wolmido",
+    "inspire-resort",
+    "paradise-city",
+    "hyundai-premium-outlet-songdo",
+    "83-tower",
+    "daegu-shinsegae",
+    "yeosu-nangman-pocha",
+    "arte-museum-jeju",
+    "nohyeong-supermarket"
+  ],
+  "log": {
+    "seouldal": {
+      "status": "miss"
+    },
+    "coex": {
+      "status": "ok",
+      "file": "COEX Aquarium.jpg"
+    },
+    "apgujeong": {
+      "status": "miss"
+    },
+    "cheongdam": {
+      "status": "miss"
+    },
+    "busan-x-the-sky": {
+      "status": "ok",
+      "file": "Gwangandaegyo in 2019 - 1.jpg"
+    },
+    "lotte-world-adventure-busan": {
+      "status": "ok",
+      "file": "Giant Digger, Lotte World Adventure Busan, c. June 2022,.jpg"
+    },
+    "the-bay-101": {
+      "status": "miss"
+    },
+    "wolmido": {
+      "status": "miss"
+    },
+    "inspire-resort": {
+      "status": "miss"
+    },
+    "paradise-city": {
+      "status": "miss"
+    },
+    "hyundai-premium-outlet-songdo": {
+      "status": "miss"
+    },
+    "83-tower": {
+      "status": "miss"
+    },
+    "daegu-shinsegae": {
+      "status": "miss"
+    },
+    "aquaplanet-yeosu": {
+      "status": "ok",
+      "file": "Yeosu aqua planet.jpg"
+    },
+    "yeosu-nangman-pocha": {
+      "status": "miss"
+    },
+    "arte-museum-jeju": {
+      "status": "miss"
+    },
+    "981-park": {
+      "status": "ok",
+      "file": "9.81파크 제주 레이스981 승차장.jpg"
+    },
+    "nohyeong-supermarket": {
+      "status": "miss"
+    }
+  }
+}

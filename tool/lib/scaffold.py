@@ -200,10 +200,27 @@ def patch_all_shop_menu_galleries() -> list[str]:
     return notes
 
 
+def dish_region_tabs_html() -> str:
+    """Region filter tabs inserted above shop card grids on dish pages."""
+    return """    <div class="region-filter" data-dish-region-filter data-region-active="all">
+      <div class="tab-list tab-list-sm" role="tablist" aria-label="Region">
+        <button type="button" class="tab-btn tab-btn-sm is-active" role="tab" data-region-tab="all" aria-selected="true" data-i18n="common.regionTabAll">전체</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="sudo" aria-selected="false" data-i18n="common.regionTabSudo">수도권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="gangwon" aria-selected="false" data-i18n="common.regionTabGangwon">강원권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="chungcheong" aria-selected="false" data-i18n="common.regionTabChungcheong">충청권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="jeolla" aria-selected="false" data-i18n="common.regionTabJeolla">전라권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="gyeongsang" aria-selected="false" data-i18n="common.regionTabGyeongsang">경상권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="jeju" aria-selected="false" data-i18n="common.regionTabJeju">제주권</button>
+      </div>
+    </div>
+"""
+
+
 def render_dish_page(kind: str, slug: str, emoji: str = "🍽️") -> str:
     version = current_asset_version()
     back_key = "misc.backFoods" if kind == "meals" else "misc.backDesserts"
     prefix = "../../../../"
+    tabs = dish_region_tabs_html()
     return f"""<!DOCTYPE html>
 <html lang="ko" data-i18n-title="dishes.{slug}.title">
 <head>
@@ -239,7 +256,7 @@ def render_dish_page(kind: str, slug: str, emoji: str = "🍽️") -> str:
     </section>
 
     <h2 data-i18n="common.places">Places</h2>
-    <p class="tabs-help" data-i18n="common.shopsComing"></p>
+{tabs}    <p class="tabs-help" data-i18n="common.shopsComing"></p>
     <p data-i18n="common.emptyPlaces">등록된 곳이 아직 없습니다.</p>
   </main>
 
@@ -251,6 +268,7 @@ def render_dish_page(kind: str, slug: str, emoji: str = "🍽️") -> str:
 
   <script src="{prefix}i18n/messages.js?v={version}"></script>
   <script src="{prefix}js/i18n.js?v={version}"></script>
+  <script src="{prefix}js/dish-region-filter.js?v={version}"></script>
 </body>
 </html>
 """
@@ -698,8 +716,29 @@ def dish_card_html(kind: str, slug: str, emoji: str) -> str:
 """
 
 
-def shop_card_html(kind: str, dish_slug: str, shop_slug: str) -> str:
-    return f"""      <article class="card">
+def shop_card_html(
+    kind: str,
+    dish_slug: str,
+    shop_slug: str,
+    *,
+    region_group: str | None = None,
+) -> str:
+    rg = ""
+    if region_group:
+        rg = f' data-region-group="{region_group}"'
+    elif region_group is None:
+        # Resolve from i18n when possible (lazy import to avoid cycles).
+        try:
+            from . import i18n_store
+            from .region_groups import region_group_from_restaurant
+
+            ko = i18n_store.load_lang("ko")
+            entry = (ko.get("restaurants") or {}).get(shop_slug)
+            resolved = region_group_from_restaurant(entry if isinstance(entry, dict) else None)
+            rg = f' data-region-group="{resolved}"'
+        except Exception:
+            rg = ' data-region-group="sudo"'
+    return f"""      <article class="card"{rg}>
         <a href="./{shop_slug}/index.html">
           <img src="./{shop_slug}/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.{shop_slug}.name">
         </a>
@@ -727,8 +766,10 @@ def insert_before_card_grid_close(html: str, card_html: str) -> str:
         re.IGNORECASE | re.DOTALL,
     )
     if empty:
+        tabs = dish_region_tabs_html()
         grid = (
-            '<div class="card-grid">\n'
+            tabs
+            + '<div class="card-grid">\n'
             + card_html
             + "    </div>\n"
         )
@@ -744,6 +785,13 @@ def insert_before_card_grid_close(html: str, card_html: str) -> str:
             before,
             count=1,
         )
+        # Avoid duplicating tabs if already present
+        if "data-dish-region-filter" in before:
+            grid = (
+                '<div class="card-grid">\n'
+                + card_html
+                + "    </div>\n"
+            )
         return before + grid + after
 
     # Fallback: before </main>

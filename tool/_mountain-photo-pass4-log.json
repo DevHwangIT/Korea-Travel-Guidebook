@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "baegunsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "bangjangsan",
+    "ok": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "slug": "bangtaesan",
+    "ok": false,
+    "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+    "slug": "cheongwansan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "daeyasan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "deokhangsan",
+    "ok": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "slug": "duryunsan",
+    "ok": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "slug": "gangcheonsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "garisan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "gariwangsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "geumsusan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "gitdaebong",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "gongjaksan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "goryeosan",
+    "ok": false,
+    "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+    "slug": "gubyeongsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "gyebangsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "huiyangsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "hwangaksan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "hwangseoksan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "jaeyaksan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "jeombongsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "jogyesan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "joryeongsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "juheulsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "muhaksan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "myeongjisan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "myeongseongsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "namdeogyusan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "odaesan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "palbongsan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "paryeongsan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "seodaesan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "unaksan",
+    "ok": false,
+    "error": "no wiki image"
+  },
+  {
+    "slug": "unjangsan",
+    "ok": false,
+    "error": "no wiki image"
+  }
+]

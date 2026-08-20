@@ -76,19 +76,23 @@ def save_all(bundle: dict[str, dict[str, Any]]) -> None:
 
 def build_bundle() -> str:
     script = I18N_DIR / "build-bundle.py"
-    result = subprocess.run(
-        [sys.executable, str(script)],
-        cwd=str(ROOT),
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"build-bundle.py failed:\n{result.stdout}\n{result.stderr}"
+    last_err = ""
+    for attempt in range(5):
+        result = subprocess.run(
+            [sys.executable, str(script)],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
         )
-    return (result.stdout or "").strip() or "updated messages.js"
+        if result.returncode == 0:
+            return (result.stdout or "").strip() or "updated messages.js"
+        last_err = f"{result.stdout}\n{result.stderr}"
+        import time as _time
+
+        _time.sleep(0.5 * (attempt + 1))
+    raise RuntimeError(f"build-bundle.py failed:\n{last_err}")
 
 
 def get_nested(data: dict[str, Any], *keys: str, default: Any = None) -> Any:

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="buyHub.pageTitle" data-i18n-desc="buyHub.intro" data-seo-path="pages/buy/" data-seo-image="Images/menu/shopping.png">
 <head>
-  <!-- asset-v: 20260819160601 -->
+  <!-- asset-v: 20260821002336 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>쇼핑 및 놀거리 | Korea Travel Guide</title>
@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="쇼핑 및 놀거리 | Korea Travel Guide">
   <meta name="twitter:description" content="살 것과 함께, 외국인이 많이 즐기는 한국식 놀거리도 모았습니다.">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/menu/shopping.png">
-  <link rel="stylesheet" href="../../styles.css?v=20260819160601">
+  <link rel="stylesheet" href="../../styles.css?v=20260821002336">
 </head>
 <body class="hub-body hub-body--buy">
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -48,8 +48,8 @@
           </div>
           <div class="buy-choice-card__body">
             <span class="buy-choice-card__eyebrow" aria-hidden="true">Shopping</span>
-            <h3 data-i18n="buyHub.choiceShopping">쇼핑</h3>
-            <p data-i18n="buyHub.choiceShoppingDesc">일상용품·먹을 것·패션·뷰티를 모았습니다.</p>
+            <h3 data-i18n="buyHub.choiceShopping">쇼핑&기념품</h3>
+            <p data-i18n="buyHub.choiceShoppingDesc">일상용품·다이소·건강기능식품·과자·베이커리·음식·패션·뷰티를 모았습니다.</p>
             <span class="buy-choice-card__cta" data-i18n="common.viewMore">자세히 보기 →</span>
           </div>
         </a>
@@ -69,14 +69,18 @@
     </section>
 
     <section class="buy-hub-view buy-hub-view--shopping" data-buy-view="shopping" hidden aria-labelledby="buy-shopping-heading">
-      <h2 id="buy-shopping-heading" class="visually-hidden" data-i18n="buyHub.shoppingTitle">쇼핑</h2>
+      <h2 id="buy-shopping-heading" class="visually-hidden" data-i18n="buyHub.shoppingTitle">쇼핑&기념품</h2>
       <p class="tabs-help" data-i18n="buyHub.tapHint">카드를 누르면 이용 방법·팁을 자세히 볼 수 있습니다.</p>
       <div class="city-tabs" data-tabs="buy">
         <div class="tab-list" role="tablist" aria-label="Product categories">
           <button type="button" class="tab-btn" role="tab" data-buy-tab="daily" data-i18n="souvenir.catDaily">일상용품</button>
-          <button type="button" class="tab-btn" role="tab" data-buy-tab="food" data-i18n="souvenir.catFood">먹을 것</button>
-          <button type="button" class="tab-btn" role="tab" data-buy-tab="fashion" data-i18n="souvenir.catFashion">의류·패션</button>
-          <button type="button" class="tab-btn" role="tab" data-buy-tab="beauty" data-i18n="souvenir.catBeauty">뷰티·제품</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="daiso" data-i18n="souvenir.catDaiso">다이소</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="health" data-i18n="souvenir.catHealth">건강 및 기능식품</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="snacks" data-i18n="souvenir.catSnack">과자류</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="food" data-i18n="souvenir.catFood">음식</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="fashion" data-i18n="souvenir.catFashion">의류 및 패션</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="beauty" data-i18n="souvenir.catBeauty">뷰티</button>
+          <button type="button" class="tab-btn" role="tab" data-buy-tab="bakery" data-i18n="souvenir.catBakery">베이커리류</button>
         </div>
         <div class="tab-panels">
           <div class="tab-panel" role="tabpanel" data-buy-panel="daily" hidden>
@@ -97,14 +101,18 @@
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-              <a class="souvenir-card" href="../souvenir/olive/index.html">
-                <img src="../souvenir/olive/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.oliveTitle">
+              <a class="souvenir-card" href="../souvenir/kpop/index.html">
+                <img src="../souvenir/kpop/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.kpopTitle">
                 <div class="souvenir-card-body">
-                  <h3 data-i18n="souvenir.oliveTitle"></h3>
-                  <p data-i18n="souvenir.oliveDesc"></p>
+                  <h3 data-i18n="souvenir.kpopTitle"></h3>
+                  <p data-i18n="souvenir.kpopDesc"></p>
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" data-buy-panel="daiso" hidden>
+            <div class="souvenir-grid">
               <a class="souvenir-card" href="../souvenir/daiso/index.html">
                 <img src="../souvenir/daiso/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.daisoTitle">
                 <div class="souvenir-card-body">
@@ -113,43 +121,238 @@
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
+              <a class="souvenir-card" href="../souvenir/mommycare-sea-grape-skin-pack/index.html">
+                <img src="../souvenir/mommycare-sea-grape-skin-pack/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.mommycareSeaGrapeTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.mommycareSeaGrapeTitle"></h3>
+                  <p data-i18n="souvenir.mommycareSeaGrapeDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/sagol-hancup-teabag/index.html">
+                <img src="../souvenir/sagol-hancup-teabag/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.sagolHancupTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.sagolHancupTitle"></h3>
+                  <p data-i18n="souvenir.sagolHancupDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/banana-latte-protein-shake/index.html">
+                <img src="../souvenir/banana-latte-protein-shake/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.bananaLatteProteinTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.bananaLatteProteinTitle"></h3>
+                  <p data-i18n="souvenir.bananaLatteProteinDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/berry-apple-granola-cup/index.html">
+                <img src="../souvenir/berry-apple-granola-cup/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.berryAppleGranolaTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.berryAppleGranolaTitle"></h3>
+                  <p data-i18n="souvenir.berryAppleGranolaDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/all-the-better-low-sugar-cacao/index.html">
+                <img src="../souvenir/all-the-better-low-sugar-cacao/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.allTheBetterCacaoTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.allTheBetterCacaoTitle"></h3>
+                  <p data-i18n="souvenir.allTheBetterCacaoDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" data-buy-panel="health" hidden>
+            <div class="souvenir-grid">
+              <a class="souvenir-card" href="../souvenir/cheong-kwan-jang/index.html">
+                <img src="../souvenir/cheong-kwan-jang/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.cheongKwanJangTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.cheongKwanJangTitle"></h3>
+                  <p data-i18n="souvenir.cheongKwanJangDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+
+              <a class="souvenir-card" href="../souvenir/lacto-fit/index.html">
+                <img src="../souvenir/lacto-fit/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.lactoFitTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.lactoFitTitle"></h3>
+                  <p data-i18n="souvenir.lactoFitDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/korea-eundan-vitamin-c-1000/index.html">
+                <img src="../souvenir/korea-eundan-vitamin-c-1000/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.koreaEundanVitCTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.koreaEundanVitCTitle"></h3>
+                  <p data-i18n="souvenir.koreaEundanVitCDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" data-buy-panel="snacks" hidden>
+            <div class="souvenir-grid">
+              <a class="souvenir-card" href="../souvenir/pepero/index.html">
+                <img src="../souvenir/pepero/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.peperoTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.peperoTitle"></h3>
+                  <p data-i18n="souvenir.peperoDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/honey-butter-chips/index.html">
+                <img src="../souvenir/honey-butter-chips/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.honeyButterChipsTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.honeyButterChipsTitle"></h3>
+                  <p data-i18n="souvenir.honeyButterChipsDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/saeukkang/index.html">
+                <img src="../souvenir/saeukkang/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.saeukkangTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.saeukkangTitle"></h3>
+                  <p data-i18n="souvenir.saeukkangDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+
+              <a class="souvenir-card" href="../souvenir/market-o-brownies/index.html">
+                <img src="../souvenir/market-o-brownies/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.marketOBrowniesTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.marketOBrowniesTitle"></h3>
+                  <p data-i18n="souvenir.marketOBrowniesDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/choco-heim-couque/index.html">
+                <img src="../souvenir/choco-heim-couque/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.chocoHeimCouqueTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.chocoHeimCouqueTitle"></h3>
+                  <p data-i18n="souvenir.chocoHeimCouqueDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/oh-yes-choco-pie/index.html">
+                <img src="../souvenir/oh-yes-choco-pie/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.ohYesChocoPieTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.ohYesChocoPieTitle"></h3>
+                  <p data-i18n="souvenir.ohYesChocoPieDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/butter-waffle/index.html">
+                <img src="../souvenir/butter-waffle/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.butterWaffleTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.butterWaffleTitle"></h3>
+                  <p data-i18n="souvenir.butterWaffleDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/hotteok-bung-eo/index.html">
+                <img src="../souvenir/hotteok-bung-eo/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.hotteokBungeoTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.hotteokBungeoTitle"></h3>
+                  <p data-i18n="souvenir.hotteokBungeoDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/sable/index.html">
+                <img src="../souvenir/sable/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.sableTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.sableTitle"></h3>
+                  <p data-i18n="souvenir.sableDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/barley-cookie/index.html">
+                <img src="../souvenir/barley-cookie/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.barleyCookieTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.barleyCookieTitle"></h3>
+                  <p data-i18n="souvenir.barleyCookieDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/bichobi/index.html">
+                <img src="../souvenir/bichobi/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.bichobiTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.bichobiTitle"></h3>
+                  <p data-i18n="souvenir.bichobiDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/chaltteok-pie/index.html">
+                <img src="../souvenir/chaltteok-pie/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.chaltteokPieTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.chaltteokPieTitle"></h3>
+                  <p data-i18n="souvenir.chaltteokPieDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/kkobuk-chip/index.html">
+                <img src="../souvenir/kkobuk-chip/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.kkobukChipTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.kkobukChipTitle"></h3>
+                  <p data-i18n="souvenir.kkobukChipDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/bbang-bujang/index.html">
+                <img src="../souvenir/bbang-bujang/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.bbangBujangTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.bbangBujangTitle"></h3>
+                  <p data-i18n="souvenir.bbangBujangDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
             </div>
           </div>
           <div class="tab-panel" role="tabpanel" data-buy-panel="food" hidden>
             <div class="souvenir-grid">
-              <a class="souvenir-card" href="../souvenir/snack/index.html">
-                <img src="../souvenir/snack/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.snackTitle">
+              <a class="souvenir-card" href="../souvenir/buldak-bokkeum-myeon/index.html">
+                <img src="../souvenir/buldak-bokkeum-myeon/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.buldakBokkeumMyeonTitle">
                 <div class="souvenir-card-body">
-                  <h3 data-i18n="souvenir.snackTitle"></h3>
-                  <p data-i18n="souvenir.snackDesc"></p>
+                  <h3 data-i18n="souvenir.buldakBokkeumMyeonTitle"></h3>
+                  <p data-i18n="souvenir.buldakBokkeumMyeonDesc"></p>
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-              <a class="souvenir-card" href="../souvenir/ramen/index.html">
-                <img src="../souvenir/ramen/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.ramenTitle">
+              <a class="souvenir-card" href="../souvenir/yakgwa-hangwa-set/index.html">
+                <img src="../souvenir/yakgwa-hangwa-set/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.yakgwaHangwaSetTitle">
                 <div class="souvenir-card-body">
-                  <h3 data-i18n="souvenir.ramenTitle"></h3>
-                  <p data-i18n="souvenir.ramenDesc"></p>
+                  <h3 data-i18n="souvenir.yakgwaHangwaSetTitle"></h3>
+                  <p data-i18n="souvenir.yakgwaHangwaSetDesc"></p>
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-              <a class="souvenir-card" href="../souvenir/tea/index.html">
-                <img src="../souvenir/tea/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.teaTitle">
+
+<a class="souvenir-card" href="../souvenir/yangban-kim-bugak/index.html">
+                <img src="../souvenir/yangban-kim-bugak/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.yangbanKimBugakTitle">
                 <div class="souvenir-card-body">
-                  <h3 data-i18n="souvenir.teaTitle"></h3>
-                  <p data-i18n="souvenir.teaDesc"></p>
+                  <h3 data-i18n="souvenir.yangbanKimBugakTitle"></h3>
+                  <p data-i18n="souvenir.yangbanKimBugakDesc"></p>
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-              <a class="souvenir-card" href="../souvenir/honey/index.html">
-                <img src="../souvenir/honey/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.honeyTitle">
+              <a class="souvenir-card" href="../souvenir/jjawang-ramen/index.html">
+                <img src="../souvenir/jjawang-ramen/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.jjawangRamenTitle">
                 <div class="souvenir-card-body">
-                  <h3 data-i18n="souvenir.honeyTitle"></h3>
-                  <p data-i18n="souvenir.honeyDesc"></p>
+                  <h3 data-i18n="souvenir.jjawangRamenTitle"></h3>
+                  <p data-i18n="souvenir.jjawangRamenDesc"></p>
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-            </div>
+              <a class="souvenir-card" href="../souvenir/osulloc-jeju-green-tea/index.html">
+                <img src="../souvenir/osulloc-jeju-green-tea/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.osullocJejuGreenTeaTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.osullocJejuGreenTeaTitle"></h3>
+                  <p data-i18n="souvenir.osullocJejuGreenTeaDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+</div>
           </div>
           <div class="tab-panel" role="tabpanel" data-buy-panel="fashion" hidden>
             <div class="souvenir-grid">
@@ -185,10 +388,35 @@
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-            </div>
+            
+              <a class="souvenir-card" href="../souvenir/dr-reju-all/index.html">
+                <img src="../souvenir/dr-reju-all/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.drRejuAllTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.drRejuAllTitle"></h3>
+                  <p data-i18n="souvenir.drRejuAllDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+              <a class="souvenir-card" href="../souvenir/korean-traditional-accessories/index.html">
+                <img src="../souvenir/korean-traditional-accessories/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.koreanTraditionalAccessoriesTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.koreanTraditionalAccessoriesTitle"></h3>
+                  <p data-i18n="souvenir.koreanTraditionalAccessoriesDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
+</div>
           </div>
           <div class="tab-panel" role="tabpanel" data-buy-panel="beauty" hidden>
             <div class="souvenir-grid">
+              <a class="souvenir-card" href="../souvenir/olive/index.html">
+                <img src="../souvenir/olive/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.oliveTitle">
+                <div class="souvenir-card-body">
+                  <h3 data-i18n="souvenir.oliveTitle"></h3>
+                  <p data-i18n="souvenir.oliveDesc"></p>
+                  <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
+                </div>
+              </a>
               <a class="souvenir-card" href="../souvenir/sheet/index.html">
                 <img src="../souvenir/sheet/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.sheetTitle">
                 <div class="souvenir-card-body">
@@ -213,11 +441,15 @@
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
-              <a class="souvenir-card" href="../souvenir/kpop/index.html">
-                <img src="../souvenir/kpop/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.kpopTitle">
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" data-buy-panel="bakery" hidden>
+            <div class="souvenir-grid">
+              <a class="souvenir-card" href="../souvenir/nangman-sandwich/index.html">
+                <img src="../souvenir/nangman-sandwich/media/cover.jpg" alt="" data-i18n-attr="alt:souvenir.nangmanSandwichTitle">
                 <div class="souvenir-card-body">
-                  <h3 data-i18n="souvenir.kpopTitle"></h3>
-                  <p data-i18n="souvenir.kpopDesc"></p>
+                  <h3 data-i18n="souvenir.nangmanSandwichTitle"></h3>
+                  <p data-i18n="souvenir.nangmanSandwichDesc"></p>
                   <span class="souvenir-more" data-i18n="souvenir.readMore">자세히 보기 →</span>
                 </div>
               </a>
@@ -339,12 +571,12 @@
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-  <script src="../../js/site-config.js?v=20260819160601"></script>
-  <script src="../../i18n/messages.js?v=20260819160601"></script>
-  <script src="../../js/i18n.js?v=20260819160601"></script>
-  <script src="../../js/analytics.js?v=20260819160601"></script>
-  <script src="../../js/seo.js?v=20260819160601"></script>
-  <script src="../../js/region-tabs.js?v=20260819160601"></script>
-  <script src="../../js/buy-hub.js?v=20260819160601"></script>
+  <script src="../../js/site-config.js?v=20260821002336"></script>
+  <script src="../../i18n/messages.js?v=20260821002336"></script>
+  <script src="../../js/i18n.js?v=20260821002336"></script>
+  <script src="../../js/analytics.js?v=20260821002336"></script>
+  <script src="../../js/seo.js?v=20260821002336"></script>
+  <script src="../../js/region-tabs.js?v=20260821002336"></script>
+  <script src="../../js/buy-hub.js?v=20260821002336"></script>
 </body>
 </html>

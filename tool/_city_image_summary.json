@@ -1,0 +1,27 @@
+{
+  "target_slugs": 28,
+  "replaced_with_real_photos": 23,
+  "still_fallback": 5,
+  "still_fallback_slugs": [
+    "cheongdam",
+    "inspire-resort",
+    "paradise-city",
+    "arte-museum-jeju",
+    "nohyeong-supermarket"
+  ],
+  "notes": {
+    "seouldal": "Hongdae street (Commons) — no dedicated Seouldal moon photo found",
+    "busan-x-the-sky": "Haeundae Beach skyline (Commons) — Signiel/X the SKY exterior scarce",
+    "83-tower": "Same E-World park overview as eworld.jpg (tower sits in that complex)",
+    "hyundai-premium-outlet-songdo": "Songdo Central Park skyline (nearby Songdo)",
+    "yeosu-nangman-pocha": "Reused existing Commons-sourced port-yeosu night harbor photo",
+    "paradise-city": "Rejected Guns N' Roses album art; no usable Incheon resort photo on Commons",
+    "cheongdam": "Rejected wrong Apgujeong-station match; left as city.jpg fallback"
+  },
+  "tools": [
+    "tool/download_city_images.py",
+    "tool/download_city_images_pass2.py",
+    "tool/download_city_images_pass3.py",
+    "tool/download_city_images_final.py"
+  ]
+}

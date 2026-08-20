@@ -2,7 +2,7 @@
  * Render useful-Korean phrase lists; show EN/JA/all by active language.
  */
 (function () {
-  var CAT_ORDER = ["daily", "restaurant", "shopping", "transport", "emergency", "swear"];
+  var CAT_ORDER = ["daily", "restaurant", "store", "shopping", "transport", "emergency", "swear"];
   var BADGE = { ko: "금지", en: "Do not say", ja: "使用禁止" };
 
   function lang() {

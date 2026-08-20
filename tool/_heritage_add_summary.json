@@ -1,0 +1,19 @@
+{
+  "raw_parsed": 313,
+  "unique": 294,
+  "list_dups": 19,
+  "filtered_non_heritage": [
+    "완산칠봉",
+    "오대산 월정사 전나무숲길",
+    "부안 채석강",
+    "남해 독일마을",
+    "산방산",
+    "용두암",
+    "유성온천 문화유적",
+    "금강수목원 주변 역사유적",
+    "합천영상테마파크"
+  ],
+  "covered_unique_heritage": 285,
+  "missing": [],
+  "heritage_type_in_coords": 361
+}

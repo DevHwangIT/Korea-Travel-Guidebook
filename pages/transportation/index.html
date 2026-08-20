@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="misc.transportTitle" data-i18n-desc="misc.transportIntro" data-seo-path="pages/transportation/" data-seo-image="Images/menu/transportation.png">
 <head>
-  <!-- asset-v: 20260819160601 -->
+  <!-- asset-v: 20260821002336 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>명소 | Korea Travel Guide</title>
@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="명소 | Korea Travel Guide">
   <meta name="twitter:description" content="한반도 지도에서 핀을 눌러 명소를 살펴보세요.">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/menu/transportation.png">
-  <link rel="stylesheet" href="../../styles.css?v=20260819160601">
+  <link rel="stylesheet" href="../../styles.css?v=20260821002336">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body class="places-map-app">
@@ -115,7 +115,7 @@
               <label class="places-map-legend__label">
                 <input type="checkbox" class="places-map-legend__check" data-places-type-filter="nature" checked>
                 <span class="places-map-legend__swatch places-map-legend__swatch--nature" aria-hidden="true"></span>
-                <span data-i18n="transport.legendNature">자연</span>
+                <span data-i18n="transport.legendNature">야외명소</span>
               </label>
             </li>
             <li class="places-map-legend__item">
@@ -123,6 +123,35 @@
                 <input type="checkbox" class="places-map-legend__check" data-places-type-filter="heritage" checked>
                 <span class="places-map-legend__swatch places-map-legend__swatch--heritage" aria-hidden="true"></span>
                 <span data-i18n="transport.legendHeritage">문화재</span>
+              </label>
+            </li>
+
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="mountain" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--mountain" aria-hidden="true"></span>
+                <span data-i18n="transport.legendMountain">산</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="lake" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--lake" aria-hidden="true"></span>
+                <span data-i18n="transport.legendLake">호수</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="beach" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--beach" aria-hidden="true"></span>
+                <span data-i18n="transport.legendBeach">해수욕장</span>
+              </label>
+            </li>
+            <li class="places-map-legend__item">
+              <label class="places-map-legend__label">
+                <input type="checkbox" class="places-map-legend__check" data-places-type-filter="market" checked>
+                <span class="places-map-legend__swatch places-map-legend__swatch--market" aria-hidden="true"></span>
+                <span data-i18n="transport.legendMarket">전통 시장</span>
               </label>
             </li>
           </ul>
@@ -435,6 +464,7 @@
           <p class="places-map-panel__info-badge places-map-panel__info-badge--locker" data-places-panel-locker hidden data-i18n="transport.lockerBadge">물품보관 · 시간·빈칸은 앱/현장에서 확인</p>
           <p class="places-map-panel__info-badge places-map-panel__info-badge--port" data-places-panel-port hidden data-i18n="transport.portBadge">항구 · 여객·크루즈 거점</p>
           <p class="places-map-panel__info-badge places-map-panel__info-badge--bus-terminal" data-places-panel-bus-terminal hidden data-i18n="transport.busTerminalBadge">버스터미널 · 고속·시외 거점</p>
+          <p class="places-map-panel__info-badge places-map-panel__info-badge--market" data-places-panel-market hidden data-i18n="transport.marketBadge">전통 시장 · 먹거리·특산품</p>
           <p class="places-map-panel__desc" data-places-panel-desc></p>
           <p class="places-map-panel__how" data-places-panel-how></p>
 
@@ -504,15 +534,15 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="../../data/places/places-coords.js?v=20260819160601"></script>
-  <script src="../../data/metro/metro-data.js?v=20260819160601"></script>
-  <script src="../../data/metro/stations-data.js?v=20260819160601"></script>
-  <script src="../../js/site-config.js?v=20260819160601"></script>
-  <script src="../../i18n/messages.js?v=20260819160601"></script>
-  <script src="../../js/i18n.js?v=20260819160601"></script>
-  <script src="../../js/analytics.js?v=20260819160601"></script>
-  <script src="../../js/seo.js?v=20260819160601"></script>
-  <script src="../../js/content-body.js?v=20260819160601"></script>
-  <script src="../../js/places-map.js?v=20260819160601"></script>
+  <script src="../../data/places/places-coords.js?v=20260821002336"></script>
+  <script src="../../data/metro/metro-data.js?v=20260821002336"></script>
+  <script src="../../data/metro/stations-data.js?v=20260821002336"></script>
+  <script src="../../js/site-config.js?v=20260821002336"></script>
+  <script src="../../i18n/messages.js?v=20260821002336"></script>
+  <script src="../../js/i18n.js?v=20260821002336"></script>
+  <script src="../../js/analytics.js?v=20260821002336"></script>
+  <script src="../../js/seo.js?v=20260821002336"></script>
+  <script src="../../js/content-body.js?v=20260821002336"></script>
+  <script src="../../js/places-map.js?v=20260821002336"></script>
 </body>
 </html>

@@ -1,0 +1,482 @@
+[
+  {
+    "slug": "baegamsan",
+    "en": "Baegamsan",
+    "ko": "백암산"
+  },
+  {
+    "slug": "baegunsan",
+    "en": "Baegunsan",
+    "ko": "백운산"
+  },
+  {
+    "slug": "bangjangsan",
+    "en": "Bangjangsan",
+    "ko": "방장산"
+  },
+  {
+    "slug": "bangtaesan",
+    "en": "Bangtaesan",
+    "ko": "방태산"
+  },
+  {
+    "slug": "biseulsan",
+    "en": "Biseulsan",
+    "ko": "비슬산"
+  },
+  {
+    "slug": "bukhansan",
+    "en": "Bukhansan",
+    "ko": "북한산"
+  },
+  {
+    "slug": "byeonsan",
+    "en": "Byeonsan",
+    "ko": "변산"
+  },
+  {
+    "slug": "cheonggyesan",
+    "en": "Cheonggyesan",
+    "ko": "청계산"
+  },
+  {
+    "slug": "cheongoksan",
+    "en": "Cheongoksan",
+    "ko": "청옥산"
+  },
+  {
+    "slug": "cheongwansan",
+    "en": "Cheongwansan",
+    "ko": "천관산"
+  },
+  {
+    "slug": "cheonmasan",
+    "en": "Cheonmasan",
+    "ko": "천마산"
+  },
+  {
+    "slug": "cheonseongsan",
+    "en": "Cheonseongsan",
+    "ko": "천성산"
+  },
+  {
+    "slug": "chiaksan",
+    "en": "Chiaksan",
+    "ko": "치악산"
+  },
+  {
+    "slug": "chukryeongsan",
+    "en": "Chukryeongsan",
+    "ko": "축령산"
+  },
+  {
+    "slug": "daeamsan",
+    "en": "Daeamsan",
+    "ko": "대암산"
+  },
+  {
+    "slug": "daedunsan",
+    "en": "Daedunsan",
+    "ko": "대둔산"
+  },
+  {
+    "slug": "daeyasan",
+    "en": "Daeyasan",
+    "ko": "대야산"
+  },
+  {
+    "slug": "deogyusan",
+    "en": "Deogyusan",
+    "ko": "덕유산"
+  },
+  {
+    "slug": "deokhangsan",
+    "en": "Deokhangsan",
+    "ko": "덕항산"
+  },
+  {
+    "slug": "deoksungsan",
+    "en": "Deoksungsan",
+    "ko": "덕숭산"
+  },
+  {
+    "slug": "dobongsan",
+    "en": "Dobongsan",
+    "ko": "도봉산"
+  },
+  {
+    "slug": "doraksan",
+    "en": "Doraksan",
+    "ko": "도락산"
+  },
+  {
+    "slug": "duryunsan",
+    "en": "Duryunsan",
+    "ko": "두륜산"
+  },
+  {
+    "slug": "dutasan",
+    "en": "Dutasan",
+    "ko": "두타산"
+  },
+  {
+    "slug": "gajisan",
+    "en": "Gajisan",
+    "ko": "가지산"
+  },
+  {
+    "slug": "gamaksan",
+    "en": "Gamaksan",
+    "ko": "감악산"
+  },
+  {
+    "slug": "gangcheonsan",
+    "en": "Gangcheonsan",
+    "ko": "강천산"
+  },
+  {
+    "slug": "garisan",
+    "en": "Garisan",
+    "ko": "가리산"
+  },
+  {
+    "slug": "gariwangsan",
+    "en": "Gariwangsan",
+    "ko": "가리왕산"
+  },
+  {
+    "slug": "gayasan",
+    "en": "Gayasan",
+    "ko": "가야산"
+  },
+  {
+    "slug": "geomdansan",
+    "en": "Geomdansan",
+    "ko": "검단산"
+  },
+  {
+    "slug": "geumjeongsan",
+    "en": "Geumjeongsan",
+    "ko": "금정산"
+  },
+  {
+    "slug": "geumosan",
+    "en": "Geumosan",
+    "ko": "금오산"
+  },
+  {
+    "slug": "geumsan",
+    "en": "Geumsan",
+    "ko": "금산"
+  },
+  {
+    "slug": "geumsusan",
+    "en": "Geumsusan",
+    "ko": "금수산"
+  },
+  {
+    "slug": "gitdaebong",
+    "en": "Gitdaebong",
+    "ko": "깃대봉"
+  },
+  {
+    "slug": "gongjaksan",
+    "en": "Gongjaksan",
+    "ko": "공작산"
+  },
+  {
+    "slug": "goryeosan",
+    "en": "Goryeosan",
+    "ko": "고려산"
+  },
+  {
+    "slug": "gubongsan",
+    "en": "Gubongsan",
+    "ko": "구봉산"
+  },
+  {
+    "slug": "gubyeongsan",
+    "en": "Gubyeongsan",
+    "ko": "구병산"
+  },
+  {
+    "slug": "gwanaksan",
+    "en": "Gwanaksan",
+    "ko": "관악산"
+  },
+  {
+    "slug": "gwangdeoksan",
+    "en": "Gwangdeoksan",
+    "ko": "광덕산"
+  },
+  {
+    "slug": "gyebangsan",
+    "en": "Gyebangsan",
+    "ko": "계방산"
+  },
+  {
+    "slug": "gyeryongsan",
+    "en": "Gyeryongsan",
+    "ko": "계룡산"
+  },
+  {
+    "slug": "hallasan",
+    "en": "Hallasan",
+    "ko": "한라산"
+  },
+  {
+    "slug": "hambaeksan",
+    "en": "Hambaeksan",
+    "ko": "함백산"
+  },
+  {
+    "slug": "huiyangsan",
+    "en": "Huiyangsan",
+    "ko": "희양산"
+  },
+  {
+    "slug": "hwaaksan",
+    "en": "Hwaaksan",
+    "ko": "화악산"
+  },
+  {
+    "slug": "hwangaksan",
+    "en": "Hwangaksan",
+    "ko": "황악산"
+  },
+  {
+    "slug": "hwangmaesan",
+    "en": "Hwangmaesan",
+    "ko": "황매산"
+  },
+  {
+    "slug": "hwangseoksan",
+    "en": "Hwangseoksan",
+    "ko": "황석산"
+  },
+  {
+    "slug": "hwawangsan",
+    "en": "Hwawangsan",
+    "ko": "화왕산"
+  },
+  {
+    "slug": "jaeyaksan",
+    "en": "Jaeyaksan",
+    "ko": "재약산"
+  },
+  {
+    "slug": "jangansan",
+    "en": "Jangansan",
+    "ko": "장안산"
+  },
+  {
+    "slug": "jeoksangsan",
+    "en": "Jeoksangsan",
+    "ko": "적상산"
+  },
+  {
+    "slug": "jeombongsan",
+    "en": "Jeombongsan",
+    "ko": "점봉산"
+  },
+  {
+    "slug": "jirisan",
+    "en": "Jirisan",
+    "ko": "지리산"
+  },
+  {
+    "slug": "jogyesan",
+    "en": "Jogyesan",
+    "ko": "조계산"
+  },
+  {
+    "slug": "joryeongsan",
+    "en": "Joryeongsan",
+    "ko": "조령산"
+  },
+  {
+    "slug": "juheulsan",
+    "en": "Juheulsan",
+    "ko": "주흘산"
+  },
+  {
+    "slug": "juwangsan",
+    "en": "Juwangsan",
+    "ko": "주왕산"
+  },
+  {
+    "slug": "maisan",
+    "en": "Maisan",
+    "ko": "마이산"
+  },
+  {
+    "slug": "manisan",
+    "en": "Manisan",
+    "ko": "마니산"
+  },
+  {
+    "slug": "minjujisan",
+    "en": "Minjujisan",
+    "ko": "민주지산"
+  },
+  {
+    "slug": "mireuksan",
+    "en": "Mireuksan",
+    "ko": "미륵산"
+  },
+  {
+    "slug": "moaksan",
+    "en": "Moaksan",
+    "ko": "모악산"
+  },
+  {
+    "slug": "mudeungsan",
+    "en": "Mudeungsan",
+    "ko": "무등산"
+  },
+  {
+    "slug": "muhaksan",
+    "en": "Muhaksan",
+    "ko": "무학산"
+  },
+  {
+    "slug": "myeongjisan",
+    "en": "Myeongjisan",
+    "ko": "명지산"
+  },
+  {
+    "slug": "myeongseongsan",
+    "en": "Myeongseongsan",
+    "ko": "명성산"
+  },
+  {
+    "slug": "naejangsan",
+    "en": "Naejangsan",
+    "ko": "내장산"
+  },
+  {
+    "slug": "naeyeonsan",
+    "en": "Naeyeonsan",
+    "ko": "내연산"
+  },
+  {
+    "slug": "namdeogyusan",
+    "en": "Namdeogyusan",
+    "ko": "남덕유산"
+  },
+  {
+    "slug": "obongsan",
+    "en": "Obongsan",
+    "ko": "오봉산"
+  },
+  {
+    "slug": "odaesan",
+    "en": "Odaesan",
+    "ko": "오대산"
+  },
+  {
+    "slug": "palbongsan",
+    "en": "Palbongsan",
+    "ko": "팔봉산"
+  },
+  {
+    "slug": "palgongsan",
+    "en": "Palgongsan",
+    "ko": "팔공산"
+  },
+  {
+    "slug": "paryeongsan",
+    "en": "Paryeongsan",
+    "ko": "팔영산"
+  },
+  {
+    "slug": "samaksan",
+    "en": "Samaksan",
+    "ko": "삼악산"
+  },
+  {
+    "slug": "seodaesan",
+    "en": "Seodaesan",
+    "ko": "서대산"
+  },
+  {
+    "slug": "seonginbong",
+    "en": "Seonginbong",
+    "ko": "성인봉"
+  },
+  {
+    "slug": "seonunsan",
+    "en": "Seonunsan",
+    "ko": "선운산"
+  },
+  {
+    "slug": "seoraksan",
+    "en": "Seoraksan",
+    "ko": "설악산"
+  },
+  {
+    "slug": "sinbulsan",
+    "en": "Sinbulsan",
+    "ko": "신불산"
+  },
+  {
+    "slug": "sobaeksan",
+    "en": "Sobaeksan",
+    "ko": "소백산"
+  },
+  {
+    "slug": "songnisan",
+    "en": "Songnisan",
+    "ko": "속리산"
+  },
+  {
+    "slug": "soyosan",
+    "en": "Soyosan",
+    "ko": "소요산"
+  },
+  {
+    "slug": "suraksan",
+    "en": "Suraksan",
+    "ko": "수락산"
+  },
+  {
+    "slug": "taebaeksan",
+    "en": "Taebaeksan",
+    "ko": "태백산"
+  },
+  {
+    "slug": "unaksan",
+    "en": "Unaksan",
+    "ko": "운악산"
+  },
+  {
+    "slug": "unjangsan",
+    "en": "Unjangsan",
+    "ko": "운장산"
+  },
+  {
+    "slug": "unmunsan",
+    "en": "Unmunsan",
+    "ko": "운문산"
+  },
+  {
+    "slug": "wolchulsan",
+    "en": "Wolchulsan",
+    "ko": "월출산"
+  },
+  {
+    "slug": "woraksan",
+    "en": "Woraksan",
+    "ko": "월악산"
+  },
+  {
+    "slug": "yongmunsan",
+    "en": "Yongmunsan",
+    "ko": "용문산"
+  },
+  {
+    "slug": "yumyeongsan",
+    "en": "Yumyeongsan",
+    "ko": "유명산"
+  }
+]

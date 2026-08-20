@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="prepTips.pageTitle" data-i18n-desc="prepTips.intro" data-seo-path="pages/before-trip/" data-seo-image="Images/menu/before-trip.png">
 <head>
-  <!-- asset-v: 20260819160601 -->
+  <!-- asset-v: 20260821002336 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>여행 준비 &amp; 여행 팁 | Korea Travel Guide</title>
@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css?v=20260819160601">
+  <link rel="stylesheet" href="../../styles.css?v=20260821002336">
 </head>
 <body class="prep-page">
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -123,6 +123,8 @@
                   <li><button type="button" class="prep-map__child" data-prep-go="daily/map"><span data-i18n="tips.tabMap">지도 앱</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="daily/trash"><span data-i18n="tips.tabTrash">쓰레기통</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="daily/weekend"><span data-i18n="tips.tabWeekend">주말 숙소</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="daily/survey"><span data-i18n="tips.tabSurvey">설문·개인정보</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="daily/delivery"><span data-i18n="tips.tabDelivery">배달</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="daily/rain"><span data-i18n="tips.tabRain">비 오는 날</span></button></li>
                 </ul>
               </div>
@@ -137,6 +139,7 @@
                   <li><button type="button" class="prep-map__child" data-prep-go="restaurant/notip"><span data-i18n="tips.tabNoTip">팁</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="restaurant/queue"><span data-i18n="tips.tabQueue">웨이팅</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="restaurant/water"><span data-i18n="tips.tabWater">물·반찬</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="restaurant/smoking"><span data-i18n="tips.tabSmoking">흡연</span></button></li>
                 </ul>
               </div>
 
@@ -150,6 +153,9 @@
                   <li><button type="button" class="prep-map__child" data-prep-go="transport/rush"><span data-i18n="tips.tabRush">출퇴근</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="transport/exit"><span data-i18n="tips.tabExit">지하철 출구</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="transport/etiquette"><span data-i18n="tips.tabEtiquette">지하철 매너</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="transport/noise"><span data-i18n="tips.tabNoise">소음</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="transport/priority"><span data-i18n="tips.tabPriority">임산부 배려석</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="transport/solicitation"><span data-i18n="tips.tabSolicitation">권유·구걸</span></button></li>
                 </ul>
               </div>
 
@@ -163,6 +169,7 @@
                   <li><button type="button" class="prep-map__child" data-prep-go="shopping/daiso"><span data-i18n="tips.tabDaiso">다이소</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="shopping/duty"><span data-i18n="tips.tabDuty">면세·택스프리</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="shopping/market"><span data-i18n="tips.tabMarket">시장·번화가</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="shopping/specialty"><span data-i18n="tips.tabSpecialty">지역 특산품</span></button></li>
                 </ul>
               </div>
 
@@ -441,6 +448,22 @@
                   <p data-i18n="tips.weekendBody"></p>
                 </div>
               </article>
+              <article class="prep-map__sub" data-prep-sub="survey" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="tips.surveyTitle">설문·개인정보</h2>
+                  <p class="tip-mistake" data-i18n="tips.surveyMistake"></p>
+                  <div class="content-body" data-content-body data-body-path="tips.surveyCover"></div>
+                  <p data-i18n="tips.surveyBody"></p>
+                </div>
+              </article>
+              <article class="prep-map__sub" data-prep-sub="delivery" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="tips.deliveryTitle">늦은 시간 배달</h2>
+                  <p class="tip-mistake" data-i18n="tips.deliveryMistake"></p>
+                  <div class="content-body" data-content-body data-body-path="tips.deliveryCover"></div>
+                  <p data-i18n="tips.deliveryBody"></p>
+                </div>
+              </article>
               <article class="prep-map__sub" data-prep-sub="rain" hidden>
                 <div class="prep-map__sub-inner guide-article tip-article">
                   <h2 data-i18n="tips.rainTitle">비 오는 날</h2>
@@ -493,6 +516,14 @@
                   <p data-i18n="tips.waterBody"></p>
                 </div>
               </article>
+              <article class="prep-map__sub" data-prep-sub="smoking" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="tips.smokingTitle">실내 금연·흡연장</h2>
+                  <p class="tip-mistake" data-i18n="tips.smokingMistake"></p>
+                  <div class="content-body" data-content-body data-body-path="tips.smokingCover"></div>
+                  <p data-i18n="tips.smokingBody"></p>
+                </div>
+              </article>
             </div>
           </section>
 
@@ -533,6 +564,30 @@
                   <p class="tip-mistake" data-i18n="tips.etiquetteMistake"></p>
                   <div class="content-body" data-content-body data-body-path="tips.etiquetteCover"></div>
                   <p data-i18n="tips.etiquetteBody"></p>
+                </div>
+              </article>
+              <article class="prep-map__sub" data-prep-sub="noise" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="tips.noiseTitle">대중교통 소음</h2>
+                  <p class="tip-mistake" data-i18n="tips.noiseMistake"></p>
+                  <div class="content-body" data-content-body data-body-path="tips.noiseCover"></div>
+                  <p data-i18n="tips.noiseBody"></p>
+                </div>
+              </article>
+              <article class="prep-map__sub" data-prep-sub="priority" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="tips.priorityTitle">임산부 배려석</h2>
+                  <p class="tip-mistake" data-i18n="tips.priorityMistake"></p>
+                  <div class="content-body" data-content-body data-body-path="tips.priorityCover"></div>
+                  <p data-i18n="tips.priorityBody"></p>
+                </div>
+              </article>
+              <article class="prep-map__sub" data-prep-sub="solicitation" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="tips.solicitationTitle">지하철 권유·구걸</h2>
+                  <p class="tip-mistake" data-i18n="tips.solicitationMistake"></p>
+                  <div class="content-body" data-content-body data-body-path="tips.solicitationCover"></div>
+                  <p data-i18n="tips.solicitationBody"></p>
                 </div>
               </article>
             </div>
@@ -590,6 +645,17 @@
                   </div>
                 </div>
               </article>
+              <article class="prep-map__sub" data-prep-sub="specialty" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="shopping.specialtyTitle">지역 특산품</h2>
+                  <p class="tip-mistake" data-i18n="shopping.specialtyLead"></p>
+                  <div class="content-body" data-content-body data-body-path="shopping.specialtyBody"></div>
+                  <div data-content-body-fallback>
+                    <p data-i18n="shopping.specialty1"></p>
+                    <p data-i18n="shopping.specialty2"></p>
+                  </div>
+                </div>
+              </article>
             </div>
           </section>
 
@@ -644,12 +710,12 @@
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-  <script src="../../js/site-config.js?v=20260819160601"></script>
-  <script src="../../i18n/messages.js?v=20260819160601"></script>
-  <script src="../../js/i18n.js?v=20260819160601"></script>
-  <script src="../../js/analytics.js?v=20260819160601"></script>
-  <script src="../../js/seo.js?v=20260819160601"></script>
-  <script src="../../js/prep-topic-map.js?v=20260819160601"></script>
-  <script src="../../js/content-body.js?v=20260819160601"></script>
+  <script src="../../js/site-config.js?v=20260821002336"></script>
+  <script src="../../i18n/messages.js?v=20260821002336"></script>
+  <script src="../../js/i18n.js?v=20260821002336"></script>
+  <script src="../../js/analytics.js?v=20260821002336"></script>
+  <script src="../../js/seo.js?v=20260821002336"></script>
+  <script src="../../js/prep-topic-map.js?v=20260821002336"></script>
+  <script src="../../js/content-body.js?v=20260821002336"></script>
 </body>
 </html>

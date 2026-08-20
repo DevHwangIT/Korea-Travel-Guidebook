@@ -1,0 +1,31 @@
+{
+  "ok": [
+    "coex",
+    "apgujeong",
+    "busan-x-the-sky",
+    "the-bay-101",
+    "wolmido",
+    "paradise-city",
+    "83-tower"
+  ],
+  "miss": [
+    "seouldal",
+    "cheongdam",
+    "inspire-resort",
+    "hyundai-premium-outlet-songdo",
+    "daegu-shinsegae",
+    "yeosu-nangman-pocha",
+    "arte-museum-jeju",
+    "nohyeong-supermarket"
+  ],
+  "still": [
+    "seouldal",
+    "cheongdam",
+    "inspire-resort",
+    "hyundai-premium-outlet-songdo",
+    "daegu-shinsegae",
+    "yeosu-nangman-pocha",
+    "arte-museum-jeju",
+    "nohyeong-supermarket"
+  ]
+}

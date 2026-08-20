@@ -143,6 +143,78 @@ window.KOREAN_PHRASES = {
       "ja": "テイクアウトでお願いします"
     }
   ],
+  "store": [
+    {
+      "id": "bag-please",
+      "ko": "봉투 주실 수 있나요?",
+      "rom": "Bongtu jusil su innayo?",
+      "en": "Can I have a bag?",
+      "ja": "袋をいただけますか？"
+    },
+    {
+      "id": "bag-one",
+      "ko": "봉투 하나 주세요",
+      "rom": "Bongtu hana juseyo",
+      "en": "One bag, please",
+      "ja": "袋を一枚ください"
+    },
+    {
+      "id": "no-receipt",
+      "ko": "영수증 필요 없어요",
+      "rom": "Yeongsujeung piryo eopseoyo",
+      "en": "I don't need a receipt",
+      "ja": "レシートは不要です"
+    },
+    {
+      "id": "receipt-please",
+      "ko": "영수증 주세요",
+      "rom": "Yeongsujeung juseyo",
+      "en": "Receipt, please",
+      "ja": "レシートをください"
+    },
+    {
+      "id": "microwave",
+      "ko": "전자레인지 있어요?",
+      "rom": "Jeonjareinji isseoyo?",
+      "en": "Do you have a microwave?",
+      "ja": "電子レンジはありますか？"
+    },
+    {
+      "id": "heat-up",
+      "ko": "데워 주세요",
+      "rom": "Deweo juseyo",
+      "en": "Please heat it up",
+      "ja": "温めてください"
+    },
+    {
+      "id": "chopsticks",
+      "ko": "젓가락 주세요",
+      "rom": "Jeotgarak juseyo",
+      "en": "Chopsticks, please",
+      "ja": "箸をください"
+    },
+    {
+      "id": "spoon-fork",
+      "ko": "숟가락 주세요",
+      "rom": "Sutgarak juseyo",
+      "en": "A spoon, please",
+      "ja": "スプーンをください"
+    },
+    {
+      "id": "self-checkout",
+      "ko": "셀프 계산대 어디예요?",
+      "rom": "Self gyesandae eodiyeyo?",
+      "en": "Where is the self-checkout?",
+      "ja": "セルフレジはどこですか？"
+    },
+    {
+      "id": "hot-water",
+      "ko": "뜨거운 물 좀 주세요",
+      "rom": "Tteugeoun mul jom juseyo",
+      "en": "Hot water, please (for cup noodles)",
+      "ja": "お湯をください（カップ麺用）"
+    }
+  ],
   "shopping": [
     {
       "id": "how-much",

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="dishes.gamjatang.title">
 <head>
-  <!-- asset-v: 20260819160601 -->
+  <!-- asset-v: 20260821002336 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gamjatang | Korea Travel Guide</title>
-  <link rel="stylesheet" href="../../../../styles.css?v=20260819160601">
+  <link rel="stylesheet" href="../../../../styles.css?v=20260821002336">
 </head>
 <body>
   <nav class="lang-switch" aria-label="Language">
@@ -33,9 +33,20 @@
     </section>
 
     <h2 data-i18n="common.places">Places</h2>
-    <p class="tabs-help" data-i18n="common.shopsHelp"></p>
+        <div class="region-filter" data-dish-region-filter data-region-active="all">
+      <div class="tab-list tab-list-sm" role="tablist" aria-label="Region">
+        <button type="button" class="tab-btn tab-btn-sm is-active" role="tab" data-region-tab="all" aria-selected="true" data-i18n="common.regionTabAll">전체</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="sudo" aria-selected="false" data-i18n="common.regionTabSudo">수도권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="gangwon" aria-selected="false" data-i18n="common.regionTabGangwon">강원권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="chungcheong" aria-selected="false" data-i18n="common.regionTabChungcheong">충청권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="jeolla" aria-selected="false" data-i18n="common.regionTabJeolla">전라권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="gyeongsang" aria-selected="false" data-i18n="common.regionTabGyeongsang">경상권</button>
+        <button type="button" class="tab-btn tab-btn-sm" role="tab" data-region-tab="jeju" aria-selected="false" data-i18n="common.regionTabJeju">제주권</button>
+      </div>
+    </div>
+<p class="tabs-help" data-i18n="common.shopsHelp"></p>
     <div class="card-grid">
-      <article class="card">
+      <article class="card" data-region-group="sudo">
         <a href="./somunnan-seongsu-gamjatang/index.html">
           <img src="./somunnan-seongsu-gamjatang/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.somunnan-seongsu-gamjatang.name">
         </a>
@@ -43,7 +54,15 @@
         <p data-i18n="restaurants.somunnan-seongsu-gamjatang.menu"></p>
         <p><a href="./somunnan-seongsu-gamjatang/index.html" data-i18n="common.viewMore">View more →</a></p>
       </article>
-    </div>
+      <article class="card" data-region-group="sudo">
+        <a href="./cheongnyeon-gamjatang-gwanggyo/index.html">
+          <img src="./cheongnyeon-gamjatang-gwanggyo/media/cover.jpg" width="100%" alt="" data-i18n-attr="alt:restaurants.cheongnyeon-gamjatang-gwanggyo.name">
+        </a>
+        <h2><span data-i18n="restaurants.cheongnyeon-gamjatang-gwanggyo.name"></span></h2>
+        <p data-i18n="restaurants.cheongnyeon-gamjatang-gwanggyo.menu"></p>
+        <p><a href="./cheongnyeon-gamjatang-gwanggyo/index.html" data-i18n="common.viewMore">View more →</a></p>
+      </article>
+</div>
 
   </main>
 
@@ -53,8 +72,9 @@
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
-  <script src="../../../../i18n/messages.js?v=20260819160601"></script>
-  <script src="../../../../js/i18n.js?v=20260819160601"></script>
-  <script src="../../../../js/analytics.js?v=20260819160601"></script>
+  <script src="../../../../i18n/messages.js?v=20260821002336"></script>
+  <script src="../../../../js/i18n.js?v=20260821002336"></script>
+  <script src="../../../../js/dish-region-filter.js?v=20260821002336"></script>
+  <script src="../../../../js/analytics.js?v=20260821002336"></script>
 </body>
 </html>

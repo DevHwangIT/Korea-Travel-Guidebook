@@ -1,0 +1,207 @@
+[
+  {
+    "slug": "baegamsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "baegunsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "bangjangsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "bangtaesan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "cheongwansan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "daeyasan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "deokhangsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "duryunsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "gangcheonsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "garisan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "gariwangsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "geumsan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "geumsusan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "gitdaebong",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "gongjaksan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "goryeosan",
+    "ok": false,
+    "error": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+  },
+  {
+    "slug": "gubyeongsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "gyebangsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "huiyangsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "hwangaksan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "hwangseoksan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "hwawangsan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "jaeyaksan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "jeombongsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "jogyesan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "joryeongsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "juheulsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "manisan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "mireuksan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "muhaksan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "myeongjisan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "myeongseongsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "naeyeonsan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "namdeogyusan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "obongsan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "odaesan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "palbongsan",
+    "ok": true,
+    "kept": true
+  },
+  {
+    "slug": "paryeongsan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "seodaesan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "unaksan",
+    "ok": false,
+    "error": "no candidate"
+  },
+  {
+    "slug": "unjangsan",
+    "ok": false,
+    "error": "no candidate"
+  }
+]
