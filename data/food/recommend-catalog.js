@@ -723,6 +723,26 @@ window.FOOD_RECOMMEND_CATALOG = [
     "titleKey": "convenience.banana-milk_pageTitle"
   },
   {
+    "id": "binggrae-excellent",
+    "href": "../convenience-store/binggrae-excellent/index.html",
+    "kind": "quick",
+    "tags": [
+      "quickbite",
+      "combo"
+    ],
+    "titleKey": "convenience.binggrae-excellent_pageTitle"
+  },
+  {
+    "id": "binggrae-together",
+    "href": "../convenience-store/binggrae-together/index.html",
+    "kind": "quick",
+    "tags": [
+      "quickbite",
+      "combo"
+    ],
+    "titleKey": "convenience.binggrae-together_pageTitle"
+  },
+  {
     "id": "biyott",
     "href": "../convenience-store/biyott/index.html",
     "kind": "quick",
@@ -767,6 +787,16 @@ window.FOOD_RECOMMEND_CATALOG = [
       "mild"
     ],
     "titleKey": "convenience.carbonara_pageTitle"
+  },
+  {
+    "id": "chalddeok-ice",
+    "href": "../convenience-store/chalddeok-ice/index.html",
+    "kind": "quick",
+    "tags": [
+      "quickbite",
+      "combo"
+    ],
+    "titleKey": "convenience.chalddeok-ice_pageTitle"
   },
   {
     "id": "chicken-beer",
@@ -814,6 +844,16 @@ window.FOOD_RECOMMEND_CATALOG = [
       "combo"
     ],
     "titleKey": "convenience.gongganchun_pageTitle"
+  },
+  {
+    "id": "haitai-bonbon",
+    "href": "../convenience-store/haitai-bonbon/index.html",
+    "kind": "quick",
+    "tags": [
+      "quickbite",
+      "combo"
+    ],
+    "titleKey": "convenience.haitai-bonbon_pageTitle"
   },
   {
     "id": "ice-cup-ade",
