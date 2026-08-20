@@ -727,8 +727,9 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/binggrae-excellent/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "sweet",
+      "cold",
+      "quickbite"
     ],
     "titleKey": "convenience.binggrae-excellent_pageTitle"
   },
@@ -737,8 +738,9 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/binggrae-together/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "sweet",
+      "cold",
+      "quickbite"
     ],
     "titleKey": "convenience.binggrae-together_pageTitle"
   },
@@ -850,8 +852,10 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/haitai-bonbon/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "drink",
+      "cold",
+      "sweet",
+      "quickbite"
     ],
     "titleKey": "convenience.haitai-bonbon_pageTitle"
   },

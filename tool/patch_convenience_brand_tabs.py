@@ -18,13 +18,17 @@ from lib.cache_bust import read_version  # noqa: E402
 # Brand tags: common = sold across chains; others = exclusive / PB-famous.
 # Combos that only need widely available SKUs stay "common".
 PRODUCT_BRANDS: dict[str, str] = {
-    # Popular products
+    # Popular products — values: common | cu | gs | seven | emart24
     "biyott": "common",
     "store-kimbap": "common",
     "banana-milk": "common",
     "yonsei-cream-bread": "cu",  # CU signature cream bread
     "buldak-bokkeum-myeon": "common",
-    "ice-cup-ade": "gs",  # GS25 ice-cup drinks
+    "ice-cup-ade": "common",
+    "haitai-bonbon": "common",
+    "binggrae-excellent": "common",
+    "binggrae-together": "common",
+    "chalddeok-ice": "common",
     # Combos / recipes
     "gongganchun": "common",
     "markjeongsik": "common",
@@ -66,8 +70,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "세븐일레븐",
         "brandTabEmart24": "이마트24",
+        "sectionTabProduct": "인기제품",
+        "sectionTabCombo": "꿀조합",
         "brandFilterEmpty": "이 브랜드에 해당하는 항목이 없습니다.",
-        "brandTabsHelp": "공통은 여러 편의점에서 살 수 있는 제품·조합입니다. 브랜드 탭은 공통 + 해당 브랜드 상품을 보여 줍니다.",
+        "brandTabsHelp": "공통에서는 인기제품·꿀조합 탭으로 나뉩니다. CU·GS25·세븐일레븐 탭은 해당 브랜드 상품만 보여 줍니다.",
     },
     "en": {
         "brandTabCommon": "Common",
@@ -75,8 +81,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "7-Eleven",
         "brandTabEmart24": "Emart24",
+        "sectionTabProduct": "Popular",
+        "sectionTabCombo": "Combos",
         "brandFilterEmpty": "No items for this brand.",
-        "brandTabsHelp": "Common = sold at most chains. Brand tabs show common items plus that chain’s exclusives.",
+        "brandTabsHelp": "Under Common, switch Popular / Combos. Brand tabs (CU, GS25, 7-Eleven) show only that chain’s exclusives.",
     },
     "ja": {
         "brandTabCommon": "共通",
@@ -84,8 +92,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "セブンイレブン",
         "brandTabEmart24": "イーマート24",
+        "sectionTabProduct": "人気商品",
+        "sectionTabCombo": "おすすめ組合せ",
         "brandFilterEmpty": "このブランドの項目はありません。",
-        "brandTabsHelp": "共通は多くのコンビニで買える商品・組み合わせです。ブランドタブは共通＋その店舗限定を表示します。",
+        "brandTabsHelp": "共通では人気商品・組合せタブに分かれます。CU・GS25・セブンイレブンは店舗限定のみ表示します。",
     },
     "zh": {
         "brandTabCommon": "共通",
@@ -93,8 +103,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "7-Eleven",
         "brandTabEmart24": "Emart24",
+        "sectionTabProduct": "人气产品",
+        "sectionTabCombo": "推荐组合",
         "brandFilterEmpty": "该品牌暂无项目。",
-        "brandTabsHelp": "共通为多数便利店都有的商品/组合。品牌页签显示共通＋该品牌专属。",
+        "brandTabsHelp": "共通下可切换人气产品／推荐组合。CU、GS25、7-Eleven 页签仅显示该品牌专属。",
     },
     "zh-Hant": {
         "brandTabCommon": "共通",
@@ -102,8 +114,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "7-Eleven",
         "brandTabEmart24": "Emart24",
+        "sectionTabProduct": "人氣產品",
+        "sectionTabCombo": "推薦組合",
         "brandFilterEmpty": "此品牌尚無項目。",
-        "brandTabsHelp": "共通是多數超商都買得到的商品／組合。品牌分頁會顯示共通＋該品牌專屬。",
+        "brandTabsHelp": "共通下可切換人氣產品／推薦組合。CU、GS25、7-Eleven 分頁僅顯示該品牌專屬。",
     },
     "vi": {
         "brandTabCommon": "Chung",
@@ -111,8 +125,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "7-Eleven",
         "brandTabEmart24": "Emart24",
+        "sectionTabProduct": "Phổ biến",
+        "sectionTabCombo": "Combo",
         "brandFilterEmpty": "Không có mục cho thương hiệu này.",
-        "brandTabsHelp": "Chung = bán ở hầu hết chuỗi. Tab thương hiệu gồm mục chung + độc quyền của chuỗi đó.",
+        "brandTabsHelp": "Ở Chung, chọn Phổ biến / Combo. Tab CU, GS25, 7-Eleven chỉ hiện mục độc quyền.",
     },
     "th": {
         "brandTabCommon": "ทั่วไป",
@@ -120,8 +136,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "7-Eleven",
         "brandTabEmart24": "Emart24",
+        "sectionTabProduct": "ยอดนิยม",
+        "sectionTabCombo": "คอมโบ",
         "brandFilterEmpty": "ไม่มีรายการสำหรับแบรนด์นี้",
-        "brandTabsHelp": "ทั่วไป = มีในหลายร้านสะดวกซื้อ แท็บแบรนด์แสดงรายการทั่วไป + ของเฉพาะแบรนด์นั้น",
+        "brandTabsHelp": "แท็บทั่วไปแยกยอดนิยม/คอมโบ แท็บ CU·GS25·7-Eleven แสดงเฉพาะของแบรนด์นั้น",
     },
     "ru": {
         "brandTabCommon": "Общие",
@@ -129,8 +147,10 @@ I18N_KEYS = {
         "brandTabGs": "GS25",
         "brandTabSeven": "7-Eleven",
         "brandTabEmart24": "Emart24",
+        "sectionTabProduct": "Популярное",
+        "sectionTabCombo": "Комбо",
         "brandFilterEmpty": "Нет позиций для этого бренда.",
-        "brandTabsHelp": "Общие — товары/комбо в большинстве сетей. Вкладка бренда: общие + эксклюзивы сети.",
+        "brandTabsHelp": "В «Общие» — вкладки Популярное / Комбо. CU, GS25, 7-Eleven: только эксклюзивы сети.",
     },
 }
 
@@ -156,8 +176,10 @@ def update_i18n() -> None:
 
 
 def brand_tabs_html(brands_present: list[str]) -> str:
-    # Always common first; then exclusives found on page
-    order = ["common"] + [b for b in ("cu", "gs", "seven", "emart24") if b in brands_present]
+    # Always show core chains (empty state OK); emart24 only if present on page.
+    order = ["common", "cu", "gs", "seven"]
+    if "emart24" in brands_present:
+        order.append("emart24")
     buttons = []
     for i, b in enumerate(order):
         active = " is-active" if i == 0 else ""
@@ -168,13 +190,26 @@ def brand_tabs_html(brands_present: list[str]) -> str:
             f'        <button type="button" class="tab-btn tab-btn-sm{active}" role="tab" '
             f'data-brand-tab="{b}" aria-selected="{sel}" data-i18n="{key}">{fb}</button>'
         )
+    section_tabs = (
+        '      <div class="section-filter" data-section-filter>\n'
+        '        <div class="tab-list tab-list-sm" role="tablist" aria-label="Product category">\n'
+        '          <button type="button" class="tab-btn tab-btn-sm is-active" role="tab" '
+        'data-section-tab="product" aria-selected="true" '
+        'data-i18n="convenience.sectionTabProduct">인기제품</button>\n'
+        '          <button type="button" class="tab-btn tab-btn-sm" role="tab" '
+        'data-section-tab="combo" aria-selected="false" '
+        'data-i18n="convenience.sectionTabCombo">꿀조합</button>\n'
+        "        </div>\n"
+        "      </div>\n"
+    )
     return (
         '    <div class="brand-filter">\n'
         '      <p class="tabs-help" data-i18n="convenience.brandTabsHelp"></p>\n'
         '      <div class="tab-list tab-list-sm" role="tablist" aria-label="Store brand">\n'
         + "\n".join(buttons)
         + "\n      </div>\n"
-        "    </div>\n"
+        + section_tabs
+        + "    </div>\n"
     )
 
 
@@ -202,11 +237,41 @@ def patch_index(html: str, version: str) -> str:
         }
     )
 
+    # Tag product vs combo cards by section (split at comboTitle heading)
+    if "data-section=" not in html:
+        parts = re.split(
+            r'(<h2 class="section-heading"[^>]*data-i18n="convenience\.comboTitle"[^>]*>)',
+            html,
+            maxsplit=1,
+        )
+
+        def tag_section(chunk: str, section: str) -> str:
+            def one(m: re.Match[str]) -> str:
+                attrs = m.group(1) or ""
+                if re.search(r"\bdata-section\s*=", attrs):
+                    return m.group(0)
+                return f'<a class="combo-card"{attrs} data-section="{section}" href="{m.group(2)}">'
+
+            return re.sub(
+                r'<a class="combo-card"([^>]*)\shref="([^"]+)">',
+                one,
+                chunk,
+            )
+
+        if len(parts) == 3:
+            html = (
+                tag_section(parts[0], "product")
+                + parts[1]
+                + tag_section(parts[2], "combo")
+            )
+        else:
+            html = tag_section(html, "product")
+
     # Put filter attrs on list-pager scope so querySelector finds all combo-cards
     if "data-convenience-brand-filter" not in html:
         html = re.sub(
             r'(<div\s+data-list-pager)([^>]*>)',
-            r'\1 data-convenience-brand-filter data-brand-active="common" data-brand-item="a.combo-card"\2',
+            r'\1 data-convenience-brand-filter data-brand-active="common" data-section-active="product" data-brand-item="a.combo-card"\2',
             html,
             count=1,
             flags=re.IGNORECASE,

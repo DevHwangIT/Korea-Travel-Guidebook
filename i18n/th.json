@@ -27379,7 +27379,7 @@
     "brandTabSeven": "7-Eleven",
     "brandTabEmart24": "Emart24",
     "brandFilterEmpty": "ไม่มีรายการสำหรับแบรนด์นี้",
-    "brandTabsHelp": "ทั่วไป = มีในหลายร้านสะดวกซื้อ แท็บแบรนด์แสดงรายการทั่วไป + ของเฉพาะแบรนด์นั้น",
+    "brandTabsHelp": "แท็บทั่วไปแยกยอดนิยม/คอมโบ แท็บ CU·GS25·7-Eleven แสดงเฉพาะของแบรนด์นั้น",
     "chalddeok-iceTitle": "Chalddeok Ice",
     "chalddeok-iceDesc": "Lotte Chalddeok Ice — mochi-style ice cream",
     "chalddeok-ice_pageTitle": "Chalddeok Ice — convenience-store classic",
@@ -27403,7 +27403,9 @@
     "binggrae-together_pageTitle": "Binggrae Together — convenience family ice cream",
     "binggrae-together_lead": "Binggrae Together is a shareable family ice-cream tub — a freezer classic at convenience stores and marts.",
     "binggrae-together_tipTitle": "Tip",
-    "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts."
+    "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts.",
+    "sectionTabProduct": "ยอดนิยม",
+    "sectionTabCombo": "คอมโบ"
   },
   "shopping": {
     "intro": "ตั้งแต่ Olive Young และ Daiso ไปจนถึงสินค้าปลอดภาษีและตลาด — เคล็ดลับการช้อปปิ้งที่นักท่องเที่ยวถามถึงมากที่สุด",

@@ -917,7 +917,7 @@
     "brandTabSeven": "7-Eleven",
     "brandTabEmart24": "Emart24",
     "brandFilterEmpty": "Нет позиций для этого бренда.",
-    "brandTabsHelp": "Общие — товары/комбо в большинстве сетей. Вкладка бренда: общие + эксклюзивы сети.",
+    "brandTabsHelp": "В «Общие» — вкладки Популярное / Комбо. CU, GS25, 7-Eleven: только эксклюзивы сети.",
     "chalddeok-iceTitle": "Chalddeok Ice",
     "chalddeok-iceDesc": "Lotte Chalddeok Ice — mochi-style ice cream",
     "chalddeok-ice_pageTitle": "Chalddeok Ice — convenience-store classic",
@@ -941,6 +941,8 @@
     "binggrae-together_pageTitle": "Binggrae Together — convenience family ice cream",
     "binggrae-together_lead": "Binggrae Together is a shareable family ice-cream tub — a freezer classic at convenience stores and marts.",
     "binggrae-together_tipTitle": "Tip",
-    "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts."
+    "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts.",
+    "sectionTabProduct": "Популярное",
+    "sectionTabCombo": "Комбо"
   }
 }

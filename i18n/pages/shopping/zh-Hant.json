@@ -948,46 +948,6 @@
         "ru": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it."
       }
     ],
-    "chaltteokPieTitle": "糯米年糕派",
-    "chaltteokPieDesc": "樂天糯米年糕派 — 軟糯年糕夾巧克力奶油、外層巧克力塗層的常溫零食。",
-    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
-    "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
-    "chaltteokPieBody": [
-      {
-        "type": "text",
-        "ko": "찰떡파이는 롯데웰푸드(명가)의 상온 과자로, 쫄깃한 찰떡 안에 초코크림을 넣고 겉을 초콜릿으로 감싼 제품입니다. SPC 빚은 매장의 냉장 ‘찰떡담은파이’와는 다른, 편의점·마트 과자 코너 상품입니다.",
-        "en": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-        "ja": "チャルトクパイはロッテウェルフード（名家）の常温菓子。もちもち餅にチョコクリームを入れ、外側をチョコでコーティング。SPCビジュン店の冷蔵デザート「찰떡담은파이」とは別物で、コンビニ・マート菓子コーナーの定番です。",
-        "zh": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-        "zh-Hant": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-        "vi": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-        "th": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-        "ru": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\""
-      },
-      {
-        "type": "text",
-        "ko": "편의점·이마트·홈플러스 등에서 낱개·멀티팩으로 쉽게 구합니다. 상온 보관이 가능해 기념품으로 가져가기 좋고, 일본 관광객 사이에서도 인기가 있습니다.",
-        "en": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
-        "ja": "コンビニ・大型マートで単品・マルチパックが手に入りやすいです。常温保存できお土産向き。日本人旅行者にも人気です。",
-        "zh": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
-        "zh-Hant": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
-        "vi": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
-        "th": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
-        "ru": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors."
-      },
-      {
-        "type": "callout",
-        "ko": "구매 팁\n\n포장에 ‘찰떡파이’·롯데(명가) 표기를 확인하세요. 공항·관광지보다 대형마트 묶음이 대체로 저렴합니다.",
-        "en": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
-        "ja": "買い方\n\nパッケージの「チャルトクパイ」・ロッテ（名家）表示を確認。空港より大型マートのまとめ買いがお得なことが多いです。",
-        "zh": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
-        "zh-Hant": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
-        "vi": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
-        "th": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
-        "ru": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices."
-      }
-    ],
     "kkobukChipTitle": "烏龜脆片",
     "kkobukChipDesc": "好麗友烏龜脆片 — 四層烤製的龜殼狀玉米脆片。",
     "kkobukChipBody1": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
@@ -1702,6 +1662,46 @@
         "vi": "Mẹo mua\n\nSiêu thị thường rẻ hơn cửa hàng tiện lợi. Nhìn nhãn Samyang Buldak.",
         "th": "เคล็ดลับ\n\nห้างใหญ่มักถูกกว่าร้านสะดวกซื้อ ดูฉลากซัมยังบูลดัค",
         "ru": "Совет\n\nГипермаркеты часто дешевле магазинов у дома. Ищите этикетку Samyang Buldak."
+      }
+    ],
+    "chaltteokPieTitle": "糯米年糕派",
+    "chaltteokPieDesc": "樂天糯米年糕派 — 軟糯年糕夾巧克力奶油、外層巧克力塗層的常溫零食。",
+    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+    "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+    "chaltteokPieBody": [
+      {
+        "type": "text",
+        "ko": "찰떡파이는 롯데웰푸드(명가)의 상온 과자로, 쫄깃한 찰떡 안에 초코크림을 넣고 겉을 초콜릿으로 감싼 제품입니다. SPC 빚은 매장의 냉장 ‘찰떡담은파이’와는 다른, 편의점·마트 과자 코너 상품입니다.",
+        "en": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "ja": "チャルトクパイはロッテウェルフード（名家）の常温菓子。もちもち餅にチョコクリームを入れ、外側をチョコでコーティング。SPCビジュン店の冷蔵デザート「찰떡담은파이」とは別物で、コンビニ・マート菓子コーナーの定番です。",
+        "zh": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "zh-Hant": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "vi": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "th": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
+        "ru": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\""
+      },
+      {
+        "type": "text",
+        "ko": "편의점·이마트·홈플러스 등에서 낱개·멀티팩으로 쉽게 구합니다. 상온 보관이 가능해 기념품으로 가져가기 좋고, 일본 관광객 사이에서도 인기가 있습니다.",
+        "en": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "ja": "コンビニ・大型マートで単品・マルチパックが手に入りやすいです。常温保存できお土産向き。日本人旅行者にも人気です。",
+        "zh": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "zh-Hant": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "vi": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "th": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+        "ru": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n포장에 ‘찰떡파이’·롯데(명가) 표기를 확인하세요. 공항·관광지보다 대형마트 묶음이 대체로 저렴합니다.",
+        "en": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "ja": "買い方\n\nパッケージの「チャルトクパイ」・ロッテ（名家）表示を確認。空港より大型マートのまとめ買いがお得なことが多いです。",
+        "zh": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "zh-Hant": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "vi": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "th": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
+        "ru": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices."
       }
     ]
   },

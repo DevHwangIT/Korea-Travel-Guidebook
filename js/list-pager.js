@@ -165,9 +165,21 @@
       });
     }
 
+    function totalPagesFor(match) {
+      if (!match.length) return 1;
+      return Math.max(1, Math.ceil(match.length / pageSize));
+    }
+
+    function keepRootVisible() {
+      return (
+        grid.hasAttribute("data-convenience-brand-filter") ||
+        grid.getAttribute("data-pager-keep-root") === "1"
+      );
+    }
+
     function render() {
       var match = filtered();
-      var totalPages = Math.max(1, Math.ceil(match.length / pageSize));
+      var totalPages = totalPagesFor(match);
       if (state.page > totalPages) state.page = totalPages;
       if (state.page < 1) state.page = 1;
 
@@ -186,8 +198,15 @@
       });
 
       var noResults = match.length === 0;
-      ui.empty.hidden = !noResults;
-      grid.hidden = noResults;
+      var brandEmpty = grid.querySelector("[data-brand-empty]");
+      var brandOwnsEmpty = !!(brandEmpty && !brandEmpty.hidden);
+      ui.empty.hidden = !noResults || brandOwnsEmpty;
+      // Brand-filter scopes keep tabs/help visible when the filtered set is empty.
+      if (!keepRootVisible()) {
+        grid.hidden = noResults;
+      } else {
+        grid.hidden = false;
+      }
 
       // Nested section grids (e.g. convenience products + combos): hide empty blocks.
       grid.querySelectorAll(".combo-grid, .card-grid").forEach(function (nested) {
@@ -226,6 +245,7 @@
           btn.setAttribute("aria-label", t("common.listPage", "Page") + " " + num);
           if (num === state.page) btn.setAttribute("aria-current", "page");
           btn.addEventListener("click", function () {
+            if (num < 1 || num > totalPagesFor(filtered())) return;
             state.page = num;
             render();
             grid.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -243,6 +263,8 @@
     });
 
     ui.next.addEventListener("click", function () {
+      var totalPages = totalPagesFor(filtered());
+      if (state.page >= totalPages) return;
       state.page += 1;
       render();
       grid.scrollIntoView({ behavior: "smooth", block: "start" });

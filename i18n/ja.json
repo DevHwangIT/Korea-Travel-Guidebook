@@ -27355,7 +27355,7 @@
     "brandTabSeven": "セブンイレブン",
     "brandTabEmart24": "イーマート24",
     "brandFilterEmpty": "このブランドの項目はありません。",
-    "brandTabsHelp": "共通は多くのコンビニで買える商品・組み合わせです。ブランドタブは共通＋その店舗限定を表示します。",
+    "brandTabsHelp": "共通では人気商品・組合せタブに分かれます。CU・GS25・セブンイレブンは店舗限定のみ表示します。",
     "chalddeok-iceTitle": "チャルトッアイス",
     "chalddeok-iceDesc": "ロッテのチャルトッアイス — もち皮アイス",
     "chalddeok-ice_pageTitle": "チャルトッアイス — コンビニ人気アイス",
@@ -27379,7 +27379,9 @@
     "binggrae-together_pageTitle": "ビングレ トゥゲザー — コンビニファミリーアイス",
     "binggrae-together_lead": "みんなで分けやすいファミリーアイス。コンビニ・マート冷凍の定番です。",
     "binggrae-together_tipTitle": "ヒント",
-    "binggrae-together_tip": "季節限定味はSNSで話題に。溶ける前にホテルへ。"
+    "binggrae-together_tip": "季節限定味はSNSで話題に。溶ける前にホテルへ。",
+    "sectionTabProduct": "人気商品",
+    "sectionTabCombo": "おすすめ組合せ"
   },
   "shopping": {
     "intro": "オリーブヤングやダイソーから免税・市場まで、旅行者がよく聞くショッピングのヒントです。",

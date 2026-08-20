@@ -27354,7 +27354,7 @@
     "brandTabSeven": "7-Eleven",
     "brandTabEmart24": "Emart24",
     "brandFilterEmpty": "Không có mục cho thương hiệu này.",
-    "brandTabsHelp": "Chung = bán ở hầu hết chuỗi. Tab thương hiệu gồm mục chung + độc quyền của chuỗi đó.",
+    "brandTabsHelp": "Ở Chung, chọn Phổ biến / Combo. Tab CU, GS25, 7-Eleven chỉ hiện mục độc quyền.",
     "chalddeok-iceTitle": "Chalddeok Ice",
     "chalddeok-iceDesc": "Lotte Chalddeok Ice — mochi-style ice cream",
     "chalddeok-ice_pageTitle": "Chalddeok Ice — convenience-store classic",
@@ -27378,7 +27378,9 @@
     "binggrae-together_pageTitle": "Binggrae Together — convenience family ice cream",
     "binggrae-together_lead": "Binggrae Together is a shareable family ice-cream tub — a freezer classic at convenience stores and marts.",
     "binggrae-together_tipTitle": "Tip",
-    "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts."
+    "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts.",
+    "sectionTabProduct": "Phổ biến",
+    "sectionTabCombo": "Combo"
   },
   "shopping": {
     "intro": "Từ Olive Young và Daiso đến miễn thuế và chợ — mẹo mua sắm du khách hay hỏi nhất.",

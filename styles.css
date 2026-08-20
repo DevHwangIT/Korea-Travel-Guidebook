@@ -1385,6 +1385,14 @@ a.souvenir-card:hover {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.brand-filter .section-filter {
+  margin-top: 0.55rem;
+}
+
+.brand-filter .section-filter[hidden] {
+  display: none !important;
+}
+
 .region-filter-empty,
 .brand-filter-empty {
   margin: 0.75rem 0 1rem;

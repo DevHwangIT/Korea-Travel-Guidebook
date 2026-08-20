@@ -917,7 +917,7 @@
     "brandTabSeven": "세븐일레븐",
     "brandTabEmart24": "이마트24",
     "brandFilterEmpty": "이 브랜드에 해당하는 항목이 없습니다.",
-    "brandTabsHelp": "공통은 여러 편의점에서 살 수 있는 제품·조합입니다. 브랜드 탭은 공통 + 해당 브랜드 상품을 보여 줍니다.",
+    "brandTabsHelp": "공통에서는 인기제품·꿀조합 탭으로 나뉩니다. CU·GS25·세븐일레븐 탭은 해당 브랜드 상품만 보여 줍니다.",
     "chalddeok-iceTitle": "찰떡아이스",
     "chalddeok-iceDesc": "롯데제과 찰떡아이스 — 찹쌀떡 피의 아이스크림",
     "chalddeok-ice_pageTitle": "찰떡아이스 — 편의점 인기 아이스크림",
@@ -941,6 +941,8 @@
     "binggrae-together_pageTitle": "빙그레 투게더 — 편의점 패밀리 아이스크림",
     "binggrae-together_lead": "빙그레 투게더는 여러 명이 나눠 먹기 좋은 패밀리 아이스크림입니다. 편의점·마트 냉동 코너의 정석 제품이에요.",
     "binggrae-together_tipTitle": "팁",
-    "binggrae-together_tip": "시즌 한정 맛(흑임자 등)이 나오면 SNS에서 화제가 됩니다. 녹기 전에 호텔로 옮기세요."
+    "binggrae-together_tip": "시즌 한정 맛(흑임자 등)이 나오면 SNS에서 화제가 됩니다. 녹기 전에 호텔로 옮기세요.",
+    "sectionTabProduct": "인기제품",
+    "sectionTabCombo": "꿀조합"
   }
 }
