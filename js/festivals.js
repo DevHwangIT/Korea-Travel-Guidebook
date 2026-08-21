@@ -107,12 +107,41 @@
     var pointerId = null;
     var dragActive = false;
     var suppressClick = false;
+    var pressCard = null;
+    var linkOpened = false;
     var startX = 0;
     var startScroll = 0;
     var lastX = 0;
     var lastT = 0;
     var velocity = 0;
     var settleTimer = 0;
+
+    function openCardLink(card) {
+      if (!card || linkOpened) return;
+      var href = card.getAttribute("href");
+      if (!href) return;
+      linkOpened = true;
+      setTimeout(function () {
+        linkOpened = false;
+      }, 400);
+      // Prefer a real <a> activation over window.open(features) — the latter is
+      // often treated as a popup and blocked after pointer-capture drag setup.
+      var a = document.createElement("a");
+      a.href = href;
+      a.target = card.getAttribute("target") || "_blank";
+      a.rel = card.getAttribute("rel") || "noopener noreferrer";
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    function armClickSuppress() {
+      suppressClick = true;
+      setTimeout(function () {
+        suppressClick = false;
+      }, 0);
+    }
 
     function logicalOf(physical) {
       return ((physical % realCount) + realCount) % realCount;
@@ -371,21 +400,34 @@
     function endDrag(e) {
       if (pointerId === null || (e && e.pointerId !== pointerId)) return;
       try {
-        if (pointerId != null) track.releasePointerCapture(pointerId);
+        if (typeof track.hasPointerCapture === "function") {
+          if (track.hasPointerCapture(pointerId)) track.releasePointerCapture(pointerId);
+        } else {
+          track.releasePointerCapture(pointerId);
+        }
       } catch (_) {}
       pointerId = null;
       track.classList.remove("is-dragging");
 
-      if (!dragActive) {
+      var card = pressCard;
+      pressCard = null;
+      var cancelled = e && e.type === "pointercancel";
+      var wasDragging = dragActive;
+      dragActive = false;
+
+      // Tap (movement < DRAG_THRESHOLD): open official site.
+      // Native click is unreliable with touch-action:none + optional capture.
+      if (!wasDragging) {
         velocity = 0;
+        if (card && !cancelled) {
+          armClickSuppress();
+          openCardLink(card);
+        }
         return;
       }
 
-      dragActive = false;
-      suppressClick = true;
-      setTimeout(function () {
-        suppressClick = false;
-      }, 0);
+      // Real drag: suppress the following ghost click; do not navigate.
+      armClickSuppress();
 
       normalizeLoop();
       updateMotion();
@@ -409,15 +451,18 @@
 
       pointerId = e.pointerId;
       dragActive = false;
+      suppressClick = false;
+      pressCard =
+        e.target && e.target.closest
+          ? e.target.closest(".festivals-poster")
+          : null;
+      if (pressCard && !track.contains(pressCard)) pressCard = null;
       startX = e.clientX;
       lastX = e.clientX;
       lastT = performance.now();
       startScroll = track.scrollLeft;
       velocity = 0;
-
-      try {
-        track.setPointerCapture(e.pointerId);
-      } catch (_) {}
+      // Do not setPointerCapture until drag threshold — keeps taps clickable.
     });
 
     track.addEventListener("pointermove", function (e) {
@@ -434,6 +479,9 @@
       if (!dragActive && Math.abs(dx) >= DRAG_THRESHOLD) {
         dragActive = true;
         track.classList.add("is-dragging");
+        try {
+          track.setPointerCapture(pointerId);
+        } catch (_) {}
       }
 
       if (dragActive) {
@@ -454,13 +502,29 @@
     track.addEventListener("pointercancel", endDrag);
 
     cards.forEach(function (card) {
+      // Clones keep href/target via cloneNode; ensure blank target for safety.
+      if (!card.getAttribute("href")) return;
+      if (!card.getAttribute("target")) {
+        card.setAttribute("target", "_blank");
+      }
+      if (!card.getAttribute("rel")) {
+        card.setAttribute("rel", "noopener noreferrer");
+      }
+
       card.addEventListener(
         "click",
         function (e) {
-          if (suppressClick || dragActive) {
+          // After a drag (or pointerup that already opened): block ghost clicks.
+          if (suppressClick || dragActive || linkOpened) {
             e.preventDefault();
             e.stopPropagation();
+            return;
           }
+          // Fallback if pointerup did not open (e.g. keyboard activation).
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          e.stopPropagation();
+          openCardLink(card);
         },
         true
       );

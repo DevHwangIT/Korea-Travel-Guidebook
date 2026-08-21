@@ -1395,9 +1395,9 @@
     "koreanTraditionalAccessoriesDesc": "ของที่ระลึกจากเครื่องประดับสไตล์โนริแก บินยอ และฮันบก",
     "koreanTraditionalAccessoriesBody1": "เครื่องประดับแบบดั้งเดิมของเกาหลี เช่น เครื่องรางโนริเก กิ๊บติดผมบินยอ เข็มกลัด/พวงกุญแจชุดฮันบก ต่างหูมีลวดลาย เป็นของขวัญทางวัฒนธรรมแบบพกพา พบได้ในอินซาดง ตลาดทงอิน หมู่บ้านพื้นเมือง และมุมดั้งเดิมของห้างสรรพสินค้า",
     "koreanTraditionalAccessoriesBody2": "ร้านค้าอย่างเป็นทางการของหมู่บ้านพื้นเมืองเกาหลียังมีประโยชน์สำหรับสินค้าแบบดั้งเดิมอีกด้วย ตรวจสอบพื้นผิวโลหะ/ผ้าด้วยมือ และสอบถามเกี่ยวกับกระดาษห่อของขวัญ",
-    "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
+    "koreanTraditionalAccessoriesTip": "ทิปซื้อ\n\nร้านค้าหมู่บ้านพื้นเมืองเกาหลี: https://www.koreanfolk.co.kr/store — ตรวจสอบเวลาทำการ/การจัดส่งก่อนไป",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
-    "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",
+    "koreanTraditionalAccessoriesStoreLabel": "ร้านค้าหมู่บ้านพื้นเมืองเกาหลี →",
     "koreanTraditionalAccessoriesBody": [
       {
         "type": "text",
@@ -1435,9 +1435,9 @@
     ],
     "saeukkangTitle": "แซวกัง",
     "saeukkangDesc": "นงชิมแซวกัง — ของว่างรสกุ้งกรอบ คลาสสิกเกาหลี",
-    "saeukkangBody1": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
-    "saeukkangBody2": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
-    "saeukkangTip": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+    "saeukkangBody1": "แซวกคังเป็นขนมกุ้งกรุบกรอบอันเป็นเอกลักษณ์ของน้องชิม มีอาหารต้นตำรับ รสเผ็ด ข้าว และสีดำให้เลือกตามช่องทางสะดวกซื้อ",
+    "saeukkangBody2": "กระเป๋ามีขนาดใหญ่ — ถุงซิปช่วยจัดของ แพ็กใหญ่สามารถแชร์เป็นของขวัญได้อย่างง่ายดาย",
+    "saeukkangTip": "ทิปซื้อ\n\nไฮเปอร์มาร์เก็ตมักจะเอาชนะราคาสนามบิน มองหาป้ายหนองชิมแซ่กั้ง",
     "saeukkangBody": [
       {
         "type": "text",
@@ -1475,7 +1475,7 @@
     ],
     "honeyButterChipsTitle": "ฮันนี่บัตเตอร์ชิป",
     "honeyButterChipsDesc": "ฮันนี่บัตเตอร์ชิป Haitai — มันฝรั่งหวานเค็ม ของฝากยอดนิยม",
-    "honeyButterChipsBody1": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+    "honeyButterChipsBody1": "Honey Butter Chips คือมันฝรั่งทอดกรอบของ Haitai×Calbee ที่ปรุงรสด้วยเนยน้ำผึ้งรสหวานและเค็ม ซึ่งยังคงเป็นของขวัญชิ้นสำคัญหลังจากความนิยมในยุค 2010",
     "honeyButterChipsBody2": "ถุงใหญ่แตกง่าย วางกลางกระเป๋า เทียบรสถูกฤดูกาลด้วย",
     "honeyButterChipsTip": "เคล็ดลับ\n\nดูฉลาก Haitai Honey Butter Chip ของเลียนแบบมีเยอะ",
     "honeyButterChipsBody": [
@@ -1513,7 +1513,7 @@
         "ru": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов."
       }
     ],
-    "cheongKwanJangTitle": "ชองกวานจัง",
+    "cheongKwanJangTitle": "ชง กวาน จัง",
     "cheongKwanJangDesc": "KGC ชองกวานจัง — แบรนด์โสมแดงสติกและชุดของขวัญชั้นนำ",
     "cheongKwanJangBody1": "ชองกวานจังคือแบรนด์โสมแดงของ KGC — สติก Everytime สารสกัด และชุดของขวัญหาซื้อได้ตามห้าง ดิวตี้ฟรี สนามบิน",
     "cheongKwanJangBody2": "ซื้อจากร้านทางการ/ห้างใหญ่กันของปลอม สติกเหลวติดข้อจำกัดของเหลวบนเครื่อง — ใส่กระเป๋าโหลดหรือเลือกแบบผง/เม็ด",
@@ -1635,8 +1635,8 @@
     ],
     "chaltteokPieTitle": "พายข้าวเหนียว",
     "chaltteokPieDesc": "Lotte Chaltteok Pie — ข้าวเหนียวเหนียวนุ่มไส้ครีมช็อกโกแลต เคลือบช็อกโกแลต",
-    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+    "chaltteokPieBody1": "Chaltteok Pie เป็นของว่างที่ Lotte Wellfood จำหน่าย: เค้กข้าวเหนียวนุ่มสอดไส้ครีมช็อกโกแลตและเคลือบด้วยช็อกโกแลต เป็นร้านสะดวกซื้อ/ร้านขายของตามทางเดิน ไม่ใช่ \"พายไส้แชปซัล\" ของคาเฟ่เย็นๆ ของ SPC Bizeun",
+    "chaltteokPieBody2": "หาได้ง่ายแบบเดี่ยวหรือหลายแพ็คตามร้านสะดวกซื้อและไฮเปอร์มาร์เก็ต การจัดเก็บอุณหภูมิห้องทำให้เดินทางได้ง่าย ยังได้รับความนิยมจากนักท่องเที่ยวชาวญี่ปุ่นอีกด้วย",
     "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
     "chaltteokPieBody": [
       {
@@ -1674,10 +1674,10 @@
       }
     ],
     "eightSecondsTitle": "8Seconds",
-    "eightSecondsDesc": "Trendy Korean SPA — tees, outerwear, accessories",
-    "eightSecondsBody1": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
-    "eightSecondsBody2": "Myeongdong and mall stores are easy to find; start with the sale racks.",
-    "eightSecondsTip": "Use the cm size labels as your guide.",
+    "eightSecondsDesc": "สปาเกาหลีสุดอินเทรนด์ — เสื้อยืด เสื้อผ้าชั้นนอก เครื่องประดับ",
+    "eightSecondsBody1": "8Seconds เป็นแบรนด์สปาของเกาหลีที่สะท้อนเทรนด์ตามฤดูกาลอย่างรวดเร็ว เหมาะสำหรับเสื้อยืด เสื้อผ้าตัวนอกน้ำหนักเบา และเครื่องประดับ",
+    "eightSecondsBody2": "ร้านค้าเมียงดงและห้างสรรพสินค้าหาได้ง่าย เริ่มต้นด้วยชั้นวางขาย",
+    "eightSecondsTip": "ใช้ป้ายขนาดซม. เป็นแนวทาง",
     "eightSecondsBody": [
       {
         "type": "text",
@@ -1703,10 +1703,10 @@
       }
     ],
     "basicTitle": "Basic",
-    "basicDesc": "Simple, affordable everyday fashion",
-    "basicBody1": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
-    "basicBody2": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
-    "basicTip": "Basics and sock packs pack easily in a suitcase.",
+    "basicDesc": "แฟชั่นในชีวิตประจำวันที่เรียบง่ายและราคาไม่แพง",
+    "basicBody1": "Basic เน้นไปที่เสื้อยืดธรรมดา เสื้อถัก และการสวมใส่ในชีวิตประจำวัน ซึ่งสะดวกเมื่อคุณต้องการเสื้อผ้าที่ใช้งานได้จริงขณะเดินทาง",
+    "basicBody2": "เหมาะเป็นของที่มีประโยชน์มากกว่าของฝากที่ฉูดฉาด การแบ่งประเภทเปลี่ยนแปลงไปตามฤดูกาล",
+    "basicTip": "ถุงเท้าพื้นฐานและถุงเท้าบรรจุในกระเป๋าเดินทางได้อย่างง่ายดาย",
     "basicBody": [
       {
         "type": "text",
@@ -1732,10 +1732,10 @@
       }
     ],
     "shoopenTitle": "Shoopen",
-    "shoopenDesc": "Affordable socks, shoes, and accessories",
-    "shoopenBody1": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
-    "shoopenBody2": "Multi-packs beat singles; check Korean sizes (230–280).",
-    "shoopenTip": "Buy a spare pack early in the trip.",
+    "shoopenDesc": "ถุงเท้า รองเท้า และอุปกรณ์เสริมราคาไม่แพง",
+    "shoopenBody1": "Shoopen เป็นแบรนด์ราคาประหยัดสำหรับถุงเท้า กางเกงรัดรูป รองเท้าแตะ และรองเท้าเรียบง่าย ซึ่งเป็นที่นิยมสำหรับถุงเท้าสำรองสำหรับการเดินทาง",
+    "shoopenBody2": "มัลติแพ็คเอาชนะซิงเกิ้ล; ตรวจสอบไซส์เกาหลี (230–280)",
+    "shoopenTip": "ซื้อชุดอะไหล่ในช่วงต้นการเดินทาง",
     "shoopenBody": [
       {
         "type": "text",
@@ -1760,11 +1760,11 @@
         "ru": "Multi-packs beat singles; check Korean sizes (230–280)."
       }
     ],
-    "roundLabTitle": "Round Lab",
-    "roundLabDesc": "Dokdo toner, birch sunscreen — Olive Young favorites",
-    "roundLabBody1": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
-    "roundLabBody2": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
-    "roundLabTip": "Large stores in Myeongdong, Hongdae, and Gangnam stock more.",
+    "roundLabTitle": "แล็บทรงกลม",
+    "roundLabDesc": "โทนเนอร์ Dokdo ครีมกันแดดเบิร์ช — ผลิตภัณฑ์โปรดของ Olive Young",
+    "roundLabBody1": "โทนเนอร์/ครีม Dokdo ของ Round Lab และครีมกันแดดเบิร์ชมอยส์เจอร์มักเป็นตัวเลือกของ Olive Young สำหรับผู้มาเยือน",
+    "roundLabBody2": "เหมาะสำหรับกิจวัตรที่อ่อนโยนและให้ความชุ่มชื้น เริ่มต้นด้วยชั้นวาง Olive Young Picks",
+    "roundLabTip": "ร้านค้าขนาดใหญ่ในเมียงดง ฮงแด และกังนัม มีสต๊อกสินค้ามากขึ้น",
     "roundLabBody": [
       {
         "type": "text",
@@ -1790,10 +1790,10 @@
       }
     ],
     "anuaTitle": "Anua",
-    "anuaDesc": "Heartleaf 77 toner and serum",
-    "anuaBody1": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
-    "anuaBody2": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
-    "anuaTip": "Ask staff about app coupons and gift-with-purchase.",
+    "anuaDesc": "โทนเนอร์และเซรั่ม Heartleaf 77",
+    "anuaBody1": "โทนเนอร์และเซรั่ม Anua Heartleaf 77 เป็นหนึ่งในกลุ่มผลิตภัณฑ์บำรุงผิวเพื่อการผ่อนคลายที่ขายดีที่สุดของ Olive Young",
+    "anuaBody2": "ของขวัญยอดนิยมสำหรับผิวแพ้ง่ายหรือมีปัญหาผิว สอบถามเกี่ยวกับการปลอดภาษีก่อนชำระเงิน",
+    "anuaTip": "สอบถามพนักงานเกี่ยวกับคูปองแอปและการซื้อของขวัญ",
     "anuaBody": [
       {
         "type": "text",
@@ -1819,10 +1819,10 @@
       }
     ],
     "medihealTitle": "Mediheal",
-    "medihealDesc": "N.M.F Aquaring and other sheet masks",
-    "medihealBody1": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
-    "medihealBody2": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
-    "medihealTip": "Sensitive skin: look for gentle / centella labels.",
+    "medihealDesc": "N.M.F Aquaring และแผ่นมาส์กหน้าอื่นๆ",
+    "medihealBody1": "Mediheal มีชื่อเสียงในเรื่องแผ่นมาส์ก เช่น N.M.F Aquaring กล่องบรรจุ 10 แพ็คให้ของขวัญที่เป็นระเบียบเรียบร้อย",
+    "medihealBody2": "Olive Young และสินค้าปลอดภาษีมีตัวเลือกการตั้งค่าที่ชัดเจน ตรวจสอบวันหมดอายุและฉลากภาษาอังกฤษ",
+    "medihealTip": "ผิวแพ้ง่าย: มองหาฉลากอ่อนโยน/ใบบัวบก",
     "medihealBody": [
       {
         "type": "text",
@@ -1848,10 +1848,10 @@
       }
     ],
     "numbuzinTitle": "numbuzin",
-    "numbuzinDesc": "Numbered skincare and masks (No.1 / 3 / 5…)",
-    "numbuzinBody1": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
-    "numbuzinBody2": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
-    "numbuzinTip": "Tell staff your skin type before choosing.",
+    "numbuzinDesc": "สกินแคร์และมาส์กที่มีหมายเลขกำกับ (No.1 / 3 / 5…)",
+    "numbuzinBody1": "numbuzin ขึ้นชื่อในเรื่องสกินแคร์และมาส์กที่มีเลขกำกับ (หมายเลข 1, 3, 5 ฯลฯ)",
+    "numbuzinBody2": "รับคำแนะนำเรื่องปัญหาผิวได้ง่ายๆ ที่ Olive Young; ชุดของขวัญมินิ + ขนาดเต็มเป็นเรื่องปกติ",
+    "numbuzinTip": "แจ้งสภาพผิวของคุณกับพนักงานก่อนเลือก",
     "numbuzinBody": [
       {
         "type": "text",
@@ -1877,10 +1877,10 @@
       }
     ],
     "tirtirTitle": "TIRTIR",
-    "tirtirDesc": "Masks and mini cushions",
-    "tirtirBody1": "TIRTIR masks and mini cushions are popular travel and gift picks.",
-    "tirtirBody2": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
-    "tirtirTip": "Test cushion shade and coverage in store.",
+    "tirtirDesc": "หน้ากากและหมอนอิงขนาดเล็ก",
+    "tirtirBody1": "หน้ากาก TIRTIR และหมอนอิงขนาดเล็กคือของขวัญยอดนิยมสำหรับนักเดินทาง",
+    "tirtirBody2": "ชุดปลอดภาษีและ Olive Young มีความชัดเจน เมคอัพเฉดสีที่เข้ากันกับผู้ทดสอบ",
+    "tirtirTip": "ทดสอบสีเบาะและการปกปิดที่ร้าน",
     "tirtirBody": [
       {
         "type": "text",
@@ -1906,9 +1906,9 @@
       }
     ],
     "tocoboTitle": "Tocobo",
-    "tocoboDesc": "Cotton Soft sunscreen and sun sticks",
-    "tocoboBody1": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
-    "tocoboBody2": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+    "tocoboDesc": "ครีมกันแดด Cotton Soft และครีมกันแดด",
+    "tocoboBody1": "ครีมกันแดด Cotton Soft ของ Tocobo และกันแดดแบบแท่งคือตัวเลือกที่มีคราบขาวน้อยยอดนิยม",
+    "tocoboBody2": "แบบแท่งและขนาด ≤50มล. จะง่ายกว่าสำหรับขีดจำกัดของเหลวในห้องโดยสาร",
     "tocoboTip": "Start with Olive Young sunscreen picks.",
     "tocoboBody": [
       {

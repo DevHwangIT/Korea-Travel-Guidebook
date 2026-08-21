@@ -1395,9 +1395,9 @@
     "koreanTraditionalAccessoriesDesc": "Quà lưu niệm phụ kiện theo phong cách Norigae, binyeo và hanbok.",
     "koreanTraditionalAccessoriesBody1": "Các phụ kiện truyền thống của Hàn Quốc - bùa norigae, kẹp tóc binyeo, trâm cài/dây móc khóa hanbok, hoa tai có hoa văn - là những món quà văn hóa di động. Hãy tìm chúng ở Insadong, Chợ Tongin, các làng dân gian và các góc truyền thống của cửa hàng bách hóa.",
     "koreanTraditionalAccessoriesBody2": "Cửa hàng chính thức của Làng Dân gian Hàn Quốc cũng hữu ích cho các mặt hàng truyền thống. Kiểm tra bề mặt kim loại/vải bằng tay và hỏi về cách gói quà.",
-    "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
+    "koreanTraditionalAccessoriesTip": "Mẹo mua hàng\n\nCửa hàng Làng Dân gian Hàn Quốc: https://www.koreanfolk.co.kr/store - kiểm tra giờ/giao hàng trước khi bạn đi.",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
-    "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",
+    "koreanTraditionalAccessoriesStoreLabel": "Cửa hàng làng dân gian Hàn Quốc →",
     "koreanTraditionalAccessoriesBody": [
       {
         "type": "text",
@@ -1435,9 +1435,9 @@
     ],
     "saeukkangTitle": "Saeukkang",
     "saeukkangDesc": "Nongshim Saeukkang — snack tôm giòn, món kinh điển Hàn Quốc.",
-    "saeukkangBody1": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
-    "saeukkangBody2": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
-    "saeukkangTip": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+    "saeukkangBody1": "Saeukkang là món ăn vặt tôm giòn đặc trưng của Nongshim. Các biến thể nguyên bản, cay, cơm và đen tràn ngập các lối đi trong siêu thị và cửa hàng tiện lợi.",
+    "saeukkangBody2": "Túi cồng kềnh - túi zip giúp đóng gói. Nhiều gói dễ dàng chia sẻ làm quà tặng.",
+    "saeukkangTip": "Mẹo mua hàng\n\nCác đại siêu thị thường đánh bại giá sân bay. Hãy tìm nhãn Nongshim Saeukkang.",
     "saeukkangBody": [
       {
         "type": "text",
@@ -1475,7 +1475,7 @@
     ],
     "honeyButterChipsTitle": "Khoai tây bơ mật ong",
     "honeyButterChipsDesc": "Haitai Honey Butter Chips — khoai tây ngọt mặn, quà lưu niệm phổ biến.",
-    "honeyButterChipsBody1": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+    "honeyButterChipsBody1": "Honey Butter Chips là loại khoai tây chiên Haitai×Calbee với gia vị bơ mật ong ngọt mặn - vẫn là món quà chủ yếu sau thời kỳ bùng nổ những năm 2010 của chúng.",
     "honeyButterChipsBody2": "Túi cồng kềnh, dễ bục — để giữa vali. So cả vị theo mùa.",
     "honeyButterChipsTip": "Mẹo mua\n\nNhìn nhãn Haitai Honey Butter Chip — hàng na ná rất nhiều.",
     "honeyButterChipsBody": [
@@ -1635,8 +1635,8 @@
     ],
     "chaltteokPieTitle": "Bánh pie gạo nếp",
     "chaltteokPieDesc": "Lotte Chaltteok Pie — bánh nếp dẻo nhân kem sô-cô-la, bọc sô-cô-la.",
-    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+    "chaltteokPieBody1": "Chaltteok Pie là món ăn nhẹ ổn định trên kệ của Lotte Wellfood: bánh nếp dai nhân kem sô cô la và phủ sô cô la. Đó là mặt hàng ở cửa hàng tiện lợi/siêu thị - không phải quán cà phê ướp lạnh \"bánh nhân chapssal\" của SPC Bizeun.",
+    "chaltteokPieBody2": "Dễ dàng tìm thấy dưới dạng đơn lẻ hoặc nhiều gói tại các cửa hàng tiện lợi và đại siêu thị. Bảo quản ở nhiệt độ phòng giúp dễ dàng mang theo khi đi du lịch; cũng được du khách Nhật Bản ưa chuộng.",
     "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
     "chaltteokPieBody": [
       {
@@ -1674,10 +1674,10 @@
       }
     ],
     "eightSecondsTitle": "8Seconds",
-    "eightSecondsDesc": "Trendy Korean SPA — tees, outerwear, accessories",
-    "eightSecondsBody1": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
-    "eightSecondsBody2": "Myeongdong and mall stores are easy to find; start with the sale racks.",
-    "eightSecondsTip": "Use the cm size labels as your guide.",
+    "eightSecondsDesc": "SPA Hàn Quốc thời thượng — áo phông, áo khoác ngoài, phụ kiện",
+    "eightSecondsBody1": "8Seconds là thương hiệu SPA của Hàn Quốc phản ánh nhanh chóng các xu hướng theo mùa — phù hợp với áo phông, áo khoác ngoài nhẹ và phụ kiện.",
+    "eightSecondsBody2": "Các cửa hàng ở Myeongdong và trung tâm thương mại rất dễ tìm; bắt đầu với kệ bán hàng.",
+    "eightSecondsTip": "Sử dụng nhãn kích thước cm làm hướng dẫn cho bạn.",
     "eightSecondsBody": [
       {
         "type": "text",
@@ -1703,10 +1703,10 @@
       }
     ],
     "basicTitle": "Basic",
-    "basicDesc": "Simple, affordable everyday fashion",
-    "basicBody1": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
-    "basicBody2": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
-    "basicTip": "Basics and sock packs pack easily in a suitcase.",
+    "basicDesc": "Thời trang hàng ngày đơn giản, giá cả phải chăng",
+    "basicBody1": "Basic tập trung vào áo phông, áo dệt kim và trang phục hàng ngày đơn giản — tiện dụng khi bạn cần quần áo thiết thực khi đi du lịch.",
+    "basicBody2": "Tốt hơn cho những món đồ hữu ích hơn là những món quà lưu niệm hào nhoáng. Các loại thay đổi theo mùa.",
+    "basicTip": "Những thứ cơ bản và gói tất dễ dàng được đóng gói trong vali.",
     "basicBody": [
       {
         "type": "text",
@@ -1732,10 +1732,10 @@
       }
     ],
     "shoopenTitle": "Shoopen",
-    "shoopenDesc": "Affordable socks, shoes, and accessories",
-    "shoopenBody1": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
-    "shoopenBody2": "Multi-packs beat singles; check Korean sizes (230–280).",
-    "shoopenTip": "Buy a spare pack early in the trip.",
+    "shoopenDesc": "Tất, giày và phụ kiện giá cả phải chăng",
+    "shoopenBody1": "Shoopen là một thương hiệu bình dân chuyên cung cấp tất, quần bó, dép và giày đơn giản - phổ biến cho các loại tất du lịch dự phòng.",
+    "shoopenBody2": "Nhiều gói đánh đơn; kiểm tra kích cỡ của Hàn Quốc (230–280).",
+    "shoopenTip": "Mua một gói dự phòng sớm trong chuyến đi.",
     "shoopenBody": [
       {
         "type": "text",
@@ -1760,11 +1760,11 @@
         "ru": "Multi-packs beat singles; check Korean sizes (230–280)."
       }
     ],
-    "roundLabTitle": "Round Lab",
-    "roundLabDesc": "Dokdo toner, birch sunscreen — Olive Young favorites",
-    "roundLabBody1": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
-    "roundLabBody2": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
-    "roundLabTip": "Large stores in Myeongdong, Hongdae, and Gangnam stock more.",
+    "roundLabTitle": "Phòng thí nghiệm tròn",
+    "roundLabDesc": "Toner Dokdo, kem chống nắng bạch dương — Olive Young yêu thích",
+    "roundLabBody1": "Nước hoa hồng/kem Dokdo và kem chống nắng dưỡng ẩm bạch dương của Round Lab là những lựa chọn thường xuyên của Olive Young đối với du khách.",
+    "roundLabBody2": "Tốt cho thói quen dưỡng ẩm nhẹ nhàng. Bắt đầu với kệ Olive Young Picks.",
+    "roundLabTip": "Các cửa hàng lớn ở Myeongdong, Hongdae và Gangnam có nhiều hàng hơn.",
     "roundLabBody": [
       {
         "type": "text",
@@ -1790,10 +1790,10 @@
       }
     ],
     "anuaTitle": "Anua",
-    "anuaDesc": "Heartleaf 77 toner and serum",
-    "anuaBody1": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
-    "anuaBody2": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
-    "anuaTip": "Ask staff about app coupons and gift-with-purchase.",
+    "anuaDesc": "Nước hoa hồng và serum Heartleaf 77",
+    "anuaBody1": "Nước hoa hồng và serum Anua Heartleaf 77 nằm trong số những dòng chăm sóc da dịu nhẹ bán chạy nhất của Olive Young.",
+    "anuaBody2": "Quà tặng phổ biến cho làn da nhạy cảm hoặc gặp rắc rối. Hỏi về miễn thuế trước khi thanh toán.",
+    "anuaTip": "Hỏi nhân viên về phiếu giảm giá ứng dụng và quà tặng khi mua hàng.",
     "anuaBody": [
       {
         "type": "text",
@@ -1819,10 +1819,10 @@
       }
     ],
     "medihealTitle": "Mediheal",
-    "medihealDesc": "N.M.F Aquaring and other sheet masks",
-    "medihealBody1": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
-    "medihealBody2": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
-    "medihealTip": "Sensitive skin: look for gentle / centella labels.",
+    "medihealDesc": "N.M.F Aquaring và các loại mặt nạ giấy khác",
+    "medihealBody1": "Mediheal được biết đến với mặt nạ giấy như N.M.F Aquaring. Hộp 10 gói làm quà tặng gọn gàng.",
+    "medihealBody2": "Olive Young và miễn thuế có các lựa chọn rõ ràng; kiểm tra hạn sử dụng và ghi nhãn bằng tiếng Anh.",
+    "medihealTip": "Da nhạy cảm: tìm nhãn dịu nhẹ/ centella.",
     "medihealBody": [
       {
         "type": "text",
@@ -1848,10 +1848,10 @@
       }
     ],
     "numbuzinTitle": "numbuzin",
-    "numbuzinDesc": "Numbered skincare and masks (No.1 / 3 / 5…)",
-    "numbuzinBody1": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
-    "numbuzinBody2": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
-    "numbuzinTip": "Tell staff your skin type before choosing.",
+    "numbuzinDesc": "Đánh số dưỡng da và mặt nạ (No.1/3/5…)",
+    "numbuzinBody1": "numuzin được biết đến với các dòng sản phẩm chăm sóc da và mặt nạ được đánh số (số 1, 3, 5…).",
+    "numbuzinBody2": "Dễ dàng nhận được lời khuyên về các vấn đề về da tại Olive Young; bộ quà tặng mini + full size là phổ biến.",
+    "numbuzinTip": "Hãy cho nhân viên biết loại da của bạn trước khi lựa chọn.",
     "numbuzinBody": [
       {
         "type": "text",
@@ -1877,10 +1877,10 @@
       }
     ],
     "tirtirTitle": "TIRTIR",
-    "tirtirDesc": "Masks and mini cushions",
-    "tirtirBody1": "TIRTIR masks and mini cushions are popular travel and gift picks.",
-    "tirtirBody2": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
-    "tirtirTip": "Test cushion shade and coverage in store.",
+    "tirtirDesc": "Mặt nạ và đệm nhỏ",
+    "tirtirBody1": "Mặt nạ TIRTIR và đệm mini là những lựa chọn quà tặng và du lịch phổ biến.",
+    "tirtirBody2": "Bộ miễn thuế và Olive Young trong suốt; trang điểm phù hợp với bóng râm với người thử nghiệm.",
+    "tirtirTip": "Kiểm tra độ bóng và độ che phủ của đệm tại cửa hàng.",
     "tirtirBody": [
       {
         "type": "text",
@@ -1906,9 +1906,9 @@
       }
     ],
     "tocoboTitle": "Tocobo",
-    "tocoboDesc": "Cotton Soft sunscreen and sun sticks",
-    "tocoboBody1": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
-    "tocoboBody2": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+    "tocoboDesc": "Kem chống nắng và kem chống nắng Cotton Soft",
+    "tocoboBody1": "Kem chống nắng và kem chống nắng Cotton Soft của Tocobo là những lựa chọn phổ biến có độ trắng thấp.",
+    "tocoboBody2": "Dạng que và kích thước 50ml dễ dàng hơn cho việc giới hạn chất lỏng trong cabin.",
     "tocoboTip": "Start with Olive Young sunscreen picks.",
     "tocoboBody": [
       {

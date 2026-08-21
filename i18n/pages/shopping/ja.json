@@ -1385,9 +1385,9 @@
     "koreanTraditionalAccessoriesDesc": "ノリゲ、ビニョ、韓服風のアクセサリーのお土産。",
     "koreanTraditionalAccessoriesBody1": "韓国の伝統的なアクセサリー (ノリゲ チャーム、ビニョ ヘアピン、韓服ブローチ/キーホルダー、模様入りイヤリング) は、持ち運びに便利な文化的な贈り物になります。仁寺洞、通仁市場、民俗村、デパートの伝統コーナーなどで見つけてください。",
     "koreanTraditionalAccessoriesBody2": "韓国民俗村の公式ショップも伝統品を扱うのに便利です。金属や生地の仕上がりを手作業で確認し、ギフト包装についてもお問い合わせください。",
-    "koreanTraditionalAccessoriesTip": "買い方\n\n韓国民俗村ストア: https://www.koreanfolk.co.kr/store — 営業・配送を事前確認を。",
+    "koreanTraditionalAccessoriesTip": "購入のヒント\n\n韓国民俗村ストア: https://www.koreanfolk.co.kr/store — 行く前に営業時間と配送状況を確認してください。",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
-    "koreanTraditionalAccessoriesStoreLabel": "韓国民俗村ストア →",
+    "koreanTraditionalAccessoriesStoreLabel": "韓国民俗村店 →",
     "koreanTraditionalAccessoriesBody": [
       {
         "type": "text",
@@ -1425,9 +1425,9 @@
     ],
     "saeukkangTitle": "セウカン（エビせん）",
     "saeukkangDesc": "農心セウカン — エビ風味の定番スナック。",
-    "saeukkangBody1": "セウカンは農心の代表エビ風味スナック。オリジナル・辛口・米・ブラックなどがマートやコンビニにあります。",
-    "saeukkangBody2": "かさばるのでジップ袋が便利。マルチパックが配りやすいです。",
-    "saeukkangTip": "買い方\n\n空港より大型マートがお得。農心セウカン表示を確認。",
+    "saeukkangBody1": "セウカンは農心の代表的なコリコリとしたエビのスナックです。オリジナル、スパイシー、ライス、ブラックのバリエーションがマートやコンビニエンスストアの通路を埋め尽くしています。",
+    "saeukkangBody2": "バッグはかさばります。ジッパー付きバッグは梱包に役立ちます。マルチパックはギフトとして簡単にシェアできます。",
+    "saeukkangTip": "購入のヒント\n\n通常、ハイパーマーケットは空港の価格を上回ります。農心白康のラベルを探してください。",
     "saeukkangBody": [
       {
         "type": "text",
@@ -1465,7 +1465,7 @@
     ],
     "honeyButterChipsTitle": "ハニーバターチップ",
     "honeyButterChipsDesc": "ヘテのハニーバターチップ。甘じょっぱいで土産に人気。",
-    "honeyButterChipsBody1": "ハニーバターチップはヘテ×カルビーのポテチ。蜂蜜・バターの甘じょっぱい味。今も定番土産です。",
+    "honeyButterChipsBody1": "ハニーバターチップスは、甘じょっぱいハニーバター味付けのHaitai×Calbeeポテトチップスで、2010年代のブーム後もギフトの定番となっている。",
     "honeyButterChipsBody2": "かさばり破れやすいので荷物の中央に。季節限定もチェック。",
     "honeyButterChipsTip": "買い方\n\nヘテ・ハニーバターチップ表示を確認。類似品が多いです。",
     "honeyButterChipsBody": [
@@ -1503,7 +1503,7 @@
         "ru": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов."
       }
     ],
-    "cheongKwanJangTitle": "正官庄",
+    "cheongKwanJangTitle": "チャン・グァンジャン",
     "cheongKwanJangDesc": "韓国人参公社の正官庄。紅参スティック・ギフトセットの定番。",
     "cheongKwanJangBody1": "正官庄は韓国人参公社の紅参ブランド。エブリタイムスティック・濃縮液・ギフトが百貨店・免税・空港で人気です。",
     "cheongKwanJangBody2": "偽造防止のため公式・大型店で。液体スティックは機内制限対象なので預け入れか粉末・錠剤を。",
@@ -1625,8 +1625,8 @@
     ],
     "chaltteokPieTitle": "チャルトクパイ",
     "chaltteokPieDesc": "ロッテのチャルトクパイ — もちもち餅にチョコクリーム、外側はチョココーティング。",
-    "chaltteokPieBody1": "チャルトクパイはロッテウェルフード（名家）の常温菓子。もちもち餅にチョコクリームを入れ、外側をチョコでコーティング。SPCビジュン店の冷蔵デザート「찰떡담은파이」とは別物で、コンビニ・マート菓子コーナーの定番です。",
-    "chaltteokPieBody2": "コンビニ・大型マートで単品・マルチパックが手に入りやすいです。常温保存できお土産向き。日本人旅行者にも人気です。",
+    "chaltteokPieBody1": "チャルトックパイはロッテウェルフードの常温保存可能なスナックで、もちもちした餅にチョコレートクリームを詰め、チョコレートでコーティングしたものです。これはコンビニエンスストアやマートの通路にある商品で、SPC Bizeunのチルドカフェ「チャプサル入りパイ」ではない。",
+    "chaltteokPieBody2": "コンビニエンス ストアや大型スーパーマーケットで、シングルまたはマルチパックとして簡単に見つけることができます。室温で保管できるので旅行にも便利です。日本人観光客にも人気です。",
     "chaltteokPieTip": "買い方\n\nパッケージの「チャルトクパイ」・ロッテ（名家）表示を確認。空港より大型マートのまとめ買いがお得なことが多いです。",
     "chaltteokPieBody": [
       {
@@ -1664,10 +1664,10 @@
       }
     ],
     "eightSecondsTitle": "8Seconds",
-    "eightSecondsDesc": "Trendy Korean SPA — tees, outerwear, accessories",
-    "eightSecondsBody1": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
-    "eightSecondsBody2": "Myeongdong and mall stores are easy to find; start with the sale racks.",
-    "eightSecondsTip": "Use the cm size labels as your guide.",
+    "eightSecondsDesc": "トレンディな韓国の SPA — T シャツ、アウターウェア、アクセサリー",
+    "eightSecondsBody1": "8Seconds は、季節のトレンドを素早く反映する韓国の SPA ブランドで、T シャツ、ライトアウター、アクセサリーに適しています。",
+    "eightSecondsBody2": "明洞やモールの店舗は簡単に見つかります。まずは販売ラックから。",
+    "eightSecondsTip": "cmサイズラベルを目安としてご利用ください。",
     "eightSecondsBody": [
       {
         "type": "text",
@@ -1693,10 +1693,10 @@
       }
     ],
     "basicTitle": "Basic",
-    "basicDesc": "Simple, affordable everyday fashion",
-    "basicBody1": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
-    "basicBody2": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
-    "basicTip": "Basics and sock packs pack easily in a suitcase.",
+    "basicDesc": "シンプルで手頃な価格の日常ファッション",
+    "basicBody1": "Basic は、シンプルな T シャツ、ニット、日常着に焦点を当てており、旅行中に実用的な服が必要なときに便利です。",
+    "basicBody2": "派手なお土産よりも実用的なアイテムに適しています。季節により品揃えが変わります。",
+    "basicTip": "ベーシックパックとソックスパックはスーツケースに簡単に収納できます。",
     "basicBody": [
       {
         "type": "text",
@@ -1722,10 +1722,10 @@
       }
     ],
     "shoopenTitle": "Shoopen",
-    "shoopenDesc": "Affordable socks, shoes, and accessories",
-    "shoopenBody1": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
-    "shoopenBody2": "Multi-packs beat singles; check Korean sizes (230–280).",
-    "shoopenTip": "Buy a spare pack early in the trip.",
+    "shoopenDesc": "手頃な価格の靴下、靴、アクセサリー",
+    "shoopenBody1": "Shoopen は、靴下、タイツ、スリッパ、シンプルな靴を扱う手頃な価格のブランドで、旅行用の予備の靴下で人気があります。",
+    "shoopenBody2": "マルチパックはシングルよりも優れています。韓国のサイズ (230 ～ 280) を確認してください。",
+    "shoopenTip": "旅行の早い段階で予備のパックを購入してください。",
     "shoopenBody": [
       {
         "type": "text",
@@ -1750,11 +1750,11 @@
         "ru": "Multi-packs beat singles; check Korean sizes (230–280)."
       }
     ],
-    "roundLabTitle": "Round Lab",
-    "roundLabDesc": "Dokdo toner, birch sunscreen — Olive Young favorites",
-    "roundLabBody1": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
-    "roundLabBody2": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
-    "roundLabTip": "Large stores in Myeongdong, Hongdae, and Gangnam stock more.",
+    "roundLabTitle": "ラウンドラボ",
+    "roundLabDesc": "独島トナー、白樺日焼け止め — オリーブ ヤングのお気に入り",
+    "roundLabBody1": "ラウンド ラボの独島トナー/クリームとバーチ モイスチャー日焼け止めは、オリーブ ヤングの訪問者によく選ばれています。",
+    "roundLabBody2": "穏やかな水分補給のルーチンに適しています。まずはオリーブヤングピックの棚から。",
+    "roundLabTip": "明洞、弘大、江南の大型店の方が在庫が豊富です。",
     "roundLabBody": [
       {
         "type": "text",
@@ -1780,10 +1780,10 @@
       }
     ],
     "anuaTitle": "Anua",
-    "anuaDesc": "Heartleaf 77 toner and serum",
-    "anuaBody1": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
-    "anuaBody2": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
-    "anuaTip": "Ask staff about app coupons and gift-with-purchase.",
+    "anuaDesc": "ハートリーフ 77 トナーとセラム",
+    "anuaBody1": "アヌア ハートリーフ 77 トナーとセラムは、オリーブ ヤングのベストセラーの鎮静スキンケア ラインの 1 つです。",
+    "anuaBody2": "敏感肌やトラブル肌の方へのギフトに人気です。チェックアウト前に免税について尋ねてください。",
+    "anuaTip": "アプリクーポンや購入特典についてはスタッフまでお問い合わせください。",
     "anuaBody": [
       {
         "type": "text",
@@ -1809,10 +1809,10 @@
       }
     ],
     "medihealTitle": "Mediheal",
-    "medihealDesc": "N.M.F Aquaring and other sheet masks",
-    "medihealBody1": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
-    "medihealBody2": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
-    "medihealTip": "Sensitive skin: look for gentle / centella labels.",
+    "medihealDesc": "N.M.F アクアリングほかシートマスク",
+    "medihealBody1": "N.M.F アクアリングなどのシートマスクで知られるメディヒール。 10個入りの箱入りなので、ギフトにもぴったりです。",
+    "medihealBody2": "オリーブヤングと免税店には明確なセットオプションがあります。有効期限と英語のラベルを確認してください。",
+    "medihealTip": "敏感肌: 優しい/ツボクサのラベルを探してください。",
     "medihealBody": [
       {
         "type": "text",
@@ -1838,10 +1838,10 @@
       }
     ],
     "numbuzinTitle": "numbuzin",
-    "numbuzinDesc": "Numbered skincare and masks (No.1 / 3 / 5…)",
-    "numbuzinBody1": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
-    "numbuzinBody2": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
-    "numbuzinTip": "Tell staff your skin type before choosing.",
+    "numbuzinDesc": "番号付きスキンケアとマスク（No.1 / 3 / 5…）",
+    "numbuzinBody1": "numbuzin は、スキンケアやマスクの番号付きライン (No.1、3、5 など) で知られています。",
+    "numbuzinBody2": "Olive Young では肌に関するアドバイスが簡単に受けられます。ミニ+フルサイズのギフトセットが一般的です。",
+    "numbuzinTip": "選ぶ前にスタッフに肌タイプを伝えてください。",
     "numbuzinBody": [
       {
         "type": "text",
@@ -1867,10 +1867,10 @@
       }
     ],
     "tirtirTitle": "TIRTIR",
-    "tirtirDesc": "Masks and mini cushions",
-    "tirtirBody1": "TIRTIR masks and mini cushions are popular travel and gift picks.",
-    "tirtirBody2": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
-    "tirtirTip": "Test cushion shade and coverage in store.",
+    "tirtirDesc": "マスクとミニクッション",
+    "tirtirBody1": "TIRTIR マスクとミニクッションは旅行やギフトに人気です。",
+    "tirtirBody2": "免税セットとオリーブヤングセットはクリアです。テスターでメイクの色合いを合わせます。",
+    "tirtirTip": "店頭でクッションの色合いとカバー範囲をテ​​ストしてください。",
     "tirtirBody": [
       {
         "type": "text",
@@ -1896,9 +1896,9 @@
       }
     ],
     "tocoboTitle": "Tocobo",
-    "tocoboDesc": "Cotton Soft sunscreen and sun sticks",
-    "tocoboBody1": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
-    "tocoboBody2": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+    "tocoboDesc": "コットンソフト日焼け止めと日焼け止めスティック",
+    "tocoboBody1": "Tocobo の Cotton Soft 日焼け止めと日焼け止めスティックは、白かぶりの少ないオプションとして人気があります。",
+    "tocoboBody2": "スティックおよび 50ml 以下のサイズは、機内持ち込み液体制限に準拠しやすいです。",
     "tocoboTip": "Start with Olive Young sunscreen picks.",
     "tocoboBody": [
       {

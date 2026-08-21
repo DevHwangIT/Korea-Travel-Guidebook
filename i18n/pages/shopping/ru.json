@@ -1395,9 +1395,9 @@
     "koreanTraditionalAccessoriesDesc": "Сувенирные аксессуары в стиле норигэ, бине и ханбок.",
     "koreanTraditionalAccessoriesBody1": "Традиционные корейские аксессуары — подвески норигэ, заколки для волос бине, броши/брелки ханбок, серьги с узорами — становятся портативными культурными подарками. Найдите их в Инсадоне, на рынке Тонгин, в народных деревнях и традиционных уголках универмагов.",
     "koreanTraditionalAccessoriesBody2": "Официальный магазин Korean Folk Village также полезен традиционными товарами. Проверьте вручную отделку из металла/ткани и спросите о подарочной упаковке.",
-    "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
+    "koreanTraditionalAccessoriesTip": "Совет по покупке\n\nМагазин Korean Folk Village: https://www.koreanfolk.co.kr/store — перед походом проверьте часы работы и доставку.",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
-    "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",
+    "koreanTraditionalAccessoriesStoreLabel": "Магазин «Корейская народная деревня» →",
     "koreanTraditionalAccessoriesBody": [
       {
         "type": "text",
@@ -1435,9 +1435,9 @@
     ],
     "saeukkangTitle": "Сэуккан",
     "saeukkangDesc": "Nongshim Сэуккан — хрустящий креветочный снек, корейская классика.",
-    "saeukkangBody1": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
-    "saeukkangBody2": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
-    "saeukkangTip": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+    "saeukkangBody1": "Сауккан — фирменная хрустящая закуска из креветок Нонгшима. Оригинальные, острые, рисовые и черные варианты заполняют прилавки магазинов и магазинов.",
+    "saeukkangBody2": "Сумки громоздкие — пакеты на молнии помогают упаковать вещи. Мультиупаковками легко делиться в качестве подарков.",
+    "saeukkangTip": "Совет по покупке\n\nГипермаркеты обычно превосходят цены в аэропортах. Ищите этикетку Nongshim Saeukkang.",
     "saeukkangBody": [
       {
         "type": "text",
@@ -1475,7 +1475,7 @@
     ],
     "honeyButterChipsTitle": "Чипсы Honey Butter",
     "honeyButterChipsDesc": "Haitai Honey Butter Chips — сладко-солёные чипсы, популярный сувенир.",
-    "honeyButterChipsBody1": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+    "honeyButterChipsBody1": "Чипсы с медовым маслом — это картофельные чипсы Haitai × Calbee со сладко-соленой приправой из меда и масла, которые по-прежнему являются основным продуктом подарков после бума 2010-х годов.",
     "honeyButterChipsBody2": "Пакеты объёмные и могут порваться — кладите в середину багажа. Сравнивайте сезонные вкусы.",
     "honeyButterChipsTip": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов.",
     "honeyButterChipsBody": [
@@ -1513,7 +1513,7 @@
         "ru": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов."
       }
     ],
-    "cheongKwanJangTitle": "Cheong Kwan Jang",
+    "cheongKwanJangTitle": "Чеонг Кван Джанг",
     "cheongKwanJangDesc": "KGC Cheong Kwan Jang — флагманские стики красного женьшеня и подарочные наборы.",
     "cheongKwanJangBody1": "Cheong Kwan Jang — бренд красного женьшеня KGC: стики Everytime, экстракты и подарочные наборы в универмагах, duty-free и аэропортах.",
     "cheongKwanJangBody2": "Покупайте в официальных/крупных магазинах. Жидкие стики — ограничение ручной клади; сдавайте багаж или берите порошок/таблетки.",
@@ -1635,8 +1635,8 @@
     ],
     "chaltteokPieTitle": "Чхальток-пай",
     "chaltteokPieDesc": "Lotte Chaltteok Pie — тягучий рисовый пирог с шоколадным кремом в шоколадной глазури.",
-    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+    "chaltteokPieBody1": "Пирог Чалтток — это закуска длительного хранения от Lotte Wellfood: жевательный пирог из клейкого риса, наполненный шоколадным кремом и покрытый шоколадом. Это товар повседневного магазина/торгового зала, а не охлажденный «пирог с начинкой из чапсала» в кафе SPC Bizeun.",
+    "chaltteokPieBody2": "Легко найти по отдельности или в мультиупаковке в магазинах и гипермаркетах. Хранение при комнатной температуре делает его удобным для путешествий; также популярен среди японских посетителей.",
     "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
     "chaltteokPieBody": [
       {
@@ -1674,10 +1674,10 @@
       }
     ],
     "eightSecondsTitle": "8Seconds",
-    "eightSecondsDesc": "Trendy Korean SPA — tees, outerwear, accessories",
-    "eightSecondsBody1": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
-    "eightSecondsBody2": "Myeongdong and mall stores are easy to find; start with the sale racks.",
-    "eightSecondsTip": "Use the cm size labels as your guide.",
+    "eightSecondsDesc": "Модное корейское SPA — футболки, верхняя одежда, аксессуары",
+    "eightSecondsBody1": "8Seconds — корейский SPA-бренд, который быстро отражает сезонные тенденции: подходит для футболок, легкой верхней одежды и аксессуаров.",
+    "eightSecondsBody2": "Легко найти магазины Мёндон и торговых центров; начнем с продажи стоек.",
+    "eightSecondsTip": "В качестве ориентира используйте этикетки с размерами в см.",
     "eightSecondsBody": [
       {
         "type": "text",
@@ -1703,10 +1703,10 @@
       }
     ],
     "basicTitle": "Basic",
-    "basicDesc": "Simple, affordable everyday fashion",
-    "basicBody1": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
-    "basicBody2": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
-    "basicTip": "Basics and sock packs pack easily in a suitcase.",
+    "basicDesc": "Простая и доступная повседневная мода",
+    "basicBody1": "Basic фокусируется на простых футболках, трикотажных изделиях и повседневной одежде — это удобно, когда вам нужна практичная одежда во время путешествия.",
+    "basicBody2": "Лучше полезные вещи, чем кричащие сувениры. Ассортимент меняется в зависимости от сезона.",
+    "basicTip": "Базовые вещи и наборы носков легко упаковываются в чемодан.",
     "basicBody": [
       {
         "type": "text",
@@ -1732,10 +1732,10 @@
       }
     ],
     "shoopenTitle": "Shoopen",
-    "shoopenDesc": "Affordable socks, shoes, and accessories",
-    "shoopenBody1": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
-    "shoopenBody2": "Multi-packs beat singles; check Korean sizes (230–280).",
-    "shoopenTip": "Buy a spare pack early in the trip.",
+    "shoopenDesc": "Недорогие носки, обувь и аксессуары.",
+    "shoopenBody1": "Shoopen — бюджетный бренд носков, колготок, тапочек и простой обуви, популярный среди запасных носков для путешествий.",
+    "shoopenBody2": "Мульти-паки превосходят одиночные игры; проверьте корейские размеры (230–280).",
+    "shoopenTip": "Купите запасной комплект в начале поездки.",
     "shoopenBody": [
       {
         "type": "text",
@@ -1760,11 +1760,11 @@
         "ru": "Multi-packs beat singles; check Korean sizes (230–280)."
       }
     ],
-    "roundLabTitle": "Round Lab",
-    "roundLabDesc": "Dokdo toner, birch sunscreen — Olive Young favorites",
-    "roundLabBody1": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
-    "roundLabBody2": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
-    "roundLabTip": "Large stores in Myeongdong, Hongdae, and Gangnam stock more.",
+    "roundLabTitle": "Круглая лаборатория",
+    "roundLabDesc": "Тоник Dokdo, березовый солнцезащитный крем — фавориты Olive Young",
+    "roundLabBody1": "Тоник/крем Dokdo от Round Lab и солнцезащитный крем с березовой влагой часто выбирают посетители Olive Young.",
+    "roundLabBody2": "Подходит для нежных увлажняющих процедур. Начните с полок Olive Young Picks.",
+    "roundLabTip": "В крупных магазинах в Мёндоне, Хондэ и Каннаме имеется больше товаров.",
     "roundLabBody": [
       {
         "type": "text",
@@ -1790,10 +1790,10 @@
       }
     ],
     "anuaTitle": "Anua",
-    "anuaDesc": "Heartleaf 77 toner and serum",
-    "anuaBody1": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
-    "anuaBody2": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
-    "anuaTip": "Ask staff about app coupons and gift-with-purchase.",
+    "anuaDesc": "Тоник и сыворотка Heartleaf 77",
+    "anuaBody1": "Тоник и сыворотка Anua Heartleaf 77 входят в число самых продаваемых успокаивающих линий по уходу за кожей Olive Young.",
+    "anuaBody2": "Популярные подарки для чувствительной или проблемной кожи. Спросите о такс-фри перед оформлением заказа.",
+    "anuaTip": "Спросите сотрудников о купонах на приложения и подарках при покупке.",
     "anuaBody": [
       {
         "type": "text",
@@ -1819,10 +1819,10 @@
       }
     ],
     "medihealTitle": "Mediheal",
-    "medihealDesc": "N.M.F Aquaring and other sheet masks",
-    "medihealBody1": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
-    "medihealBody2": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
-    "medihealTip": "Sensitive skin: look for gentle / centella labels.",
+    "medihealDesc": "N.M.F Aquaring и другие тканевые маски",
+    "medihealBody1": "Mediheal известна такими тканевыми масками, как N.M.F Aquaring. Коробки по 10 упаковок станут отличным подарком.",
+    "medihealBody2": "Olive Young и Duty Free имеют четкие варианты набора; проверьте срок годности и маркировку на английском языке.",
+    "medihealTip": "Чувствительная кожа: ищите этикетки с нежной центеллой.",
     "medihealBody": [
       {
         "type": "text",
@@ -1848,10 +1848,10 @@
       }
     ],
     "numbuzinTitle": "numbuzin",
-    "numbuzinDesc": "Numbered skincare and masks (No.1 / 3 / 5…)",
-    "numbuzinBody1": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
-    "numbuzinBody2": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
-    "numbuzinTip": "Tell staff your skin type before choosing.",
+    "numbuzinDesc": "Пронумерованные средства по уходу за кожей и маски (№ 1 / 3 / 5…)",
+    "numbuzinBody1": "Нумбузин известен номерными линиями (№1, 3, 5 и т. д.) средств по уходу за кожей и масками.",
+    "numbuzinBody2": "Легко получить совет по проблемам кожи в Olive Young; Распространены подарочные наборы мини + полноразмерный.",
+    "numbuzinTip": "Прежде чем сделать выбор, сообщите персоналу свой тип кожи.",
     "numbuzinBody": [
       {
         "type": "text",
@@ -1877,10 +1877,10 @@
       }
     ],
     "tirtirTitle": "TIRTIR",
-    "tirtirDesc": "Masks and mini cushions",
-    "tirtirBody1": "TIRTIR masks and mini cushions are popular travel and gift picks.",
-    "tirtirBody2": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
-    "tirtirTip": "Test cushion shade and coverage in store.",
+    "tirtirDesc": "Маски и мини-подушки",
+    "tirtirBody1": "Маски и мини-подушки TIRTIR — популярный выбор для путешествий и подарков.",
+    "tirtirBody2": "Наборы Duty-free и Olive Young прозрачные; подбирайте оттенок макияжа с помощью тестеров.",
+    "tirtirTip": "Проверьте оттенок и покрытие подушки в магазине.",
     "tirtirBody": [
       {
         "type": "text",
@@ -1906,9 +1906,9 @@
       }
     ],
     "tocoboTitle": "Tocobo",
-    "tocoboDesc": "Cotton Soft sunscreen and sun sticks",
-    "tocoboBody1": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
-    "tocoboBody2": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+    "tocoboDesc": "Хлопок Мягкий солнцезащитный крем и солнцезащитные палочки",
+    "tocoboBody1": "Солнцезащитный крем и солнцезащитные палочки Tocobo Cotton Soft — популярные варианты с низким содержанием белого.",
+    "tocoboBody2": "Палочки и размеры ≤50 мл более удобны для ограничения количества жидкости в салоне.",
     "tocoboTip": "Start with Olive Young sunscreen picks.",
     "tocoboBody": [
       {

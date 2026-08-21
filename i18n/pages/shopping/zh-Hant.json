@@ -1395,9 +1395,9 @@
     "koreanTraditionalAccessoriesDesc": "Norigae、binyeo 和韓服風格的配件紀念品。",
     "koreanTraditionalAccessoriesBody1": "韓國傳統配件——norigae 飾物、binyeo 髮夾、韓服胸針/鑰匙圈、圖案耳環——是便攜式文化禮物。在仁寺洞、通仁市場、民俗村和百貨公司的傳統角落都可以找到它們。",
     "koreanTraditionalAccessoriesBody2": "韓國民俗村官方商店也販售傳統商品。用手檢查金屬/織物表面並詢問禮品包裝。",
-    "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
+    "koreanTraditionalAccessoriesTip": "購買秘訣\n\n韓國民俗村商店：https://www.koreanfolk.co.kr/store — 出發前檢查營業時間/外送狀況。",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
-    "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",
+    "koreanTraditionalAccessoriesStoreLabel": "韓國民俗村店 →",
     "koreanTraditionalAccessoriesBody": [
       {
         "type": "text",
@@ -1435,9 +1435,9 @@
     ],
     "saeukkangTitle": "蝦條",
     "saeukkangDesc": "農心蝦條 — 蝦味脆餅，韓國經典零食。",
-    "saeukkangBody1": "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.",
-    "saeukkangBody2": "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.",
-    "saeukkangTip": "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.",
+    "saeukkangBody1": "Saeukkang 是 Nongshim 的招牌脆蝦零食。原味、辣味、米飯和黑色變種充斥著市場和便利商店的過道。",
+    "saeukkangBody2": "袋子體積大－拉鍊袋有助於打包。多件裝很容易作為禮物分享。",
+    "saeukkangTip": "購買秘訣\n\n大型超市的價格通常會高於機場。尋找“Nongshim Saeukang”標籤。",
     "saeukkangBody": [
       {
         "type": "text",
@@ -1475,7 +1475,7 @@
     ],
     "honeyButterChipsTitle": "蜂蜜奶油洋芋片",
     "honeyButterChipsDesc": "海太蜂蜜奶油洋芋片 — 甜鹹口感，熱門伴手禮。",
-    "honeyButterChipsBody1": "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.",
+    "honeyButterChipsBody1": "蜂蜜黃油薯片是 Haitai×Calbee 薯片，搭配甜鹹蜂蜜黃油調味料，在 2010 年代的熱潮之後，仍然是一種禮物主食。",
     "honeyButterChipsBody2": "包裝鼓且易破，放在行李箱中間。也可看看限定口味。",
     "honeyButterChipsTip": "購買提示\n\n認準海太蜂蜜奶油洋芋片，仿品很多。",
     "honeyButterChipsBody": [
@@ -1513,7 +1513,7 @@
         "ru": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — много похожих брендов."
       }
     ],
-    "cheongKwanJangTitle": "正官莊",
+    "cheongKwanJangTitle": "鄭官章",
     "cheongKwanJangDesc": "韓國人參公社正官莊 — 紅參條與禮盒代表品牌。",
     "cheongKwanJangBody1": "正官莊是韓國人參公社的紅參品牌。Everytime條、濃縮液和禮盒在百貨食品區、免稅和機場很常見。",
     "cheongKwanJangBody2": "為防假貨請在官方或大型店購買。液體條受機上液體限制，可託運或選粉劑/片劑。",
@@ -1635,8 +1635,8 @@
     ],
     "chaltteokPieTitle": "糯米年糕派",
     "chaltteokPieDesc": "樂天糯米年糕派 — 軟糯年糕夾巧克力奶油、外層巧克力塗層的常溫零食。",
-    "chaltteokPieBody1": "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"",
-    "chaltteokPieBody2": "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.",
+    "chaltteokPieBody1": "Chaltteok Pie 是 Lotte Wellfood 的耐儲存零食：耐嚼的糯米蛋糕，裡面充滿了巧克力奶油，並塗有巧克力。這是便利商店/超市過道上的商品，而不是 SPC Bizeun 的冰鎮咖啡館“查普薩爾餡餅”。",
+    "chaltteokPieBody2": "在便利商店和大型超市很容易找到單件裝或多件裝。常溫儲存，方便旅行；也很受日本遊客歡迎。",
     "chaltteokPieTip": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
     "chaltteokPieBody": [
       {
@@ -1674,10 +1674,10 @@
       }
     ],
     "eightSecondsTitle": "8Seconds",
-    "eightSecondsDesc": "Trendy Korean SPA — tees, outerwear, accessories",
-    "eightSecondsBody1": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
-    "eightSecondsBody2": "Myeongdong and mall stores are easy to find; start with the sale racks.",
-    "eightSecondsTip": "Use the cm size labels as your guide.",
+    "eightSecondsDesc": "時尚韓國 SPA — T 卹、外套、配件",
+    "eightSecondsBody1": "8Seconds 是一個韓國 SPA 品牌，能夠快速反映季節性趨勢 - 適合 T 卹、輕便外套和配件。",
+    "eightSecondsBody2": "明洞和商場的商店很容易找到；從銷售貨架開始。",
+    "eightSecondsTip": "使用厘米尺寸標籤作為指導。",
     "eightSecondsBody": [
       {
         "type": "text",
@@ -1703,10 +1703,10 @@
       }
     ],
     "basicTitle": "Basic",
-    "basicDesc": "Simple, affordable everyday fashion",
-    "basicBody1": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
-    "basicBody2": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
-    "basicTip": "Basics and sock packs pack easily in a suitcase.",
+    "basicDesc": "簡單、實惠的日常時尚",
+    "basicBody1": "Basic 專注於簡單的 T 卹、針織衫和日常穿著 - 當您在旅行時需要實用的衣服時，這很方便。",
+    "basicBody2": "實用的物品比華而不實的紀念品好。品種隨季節變化。",
+    "basicTip": "基本款和襪子包可輕鬆放入行李箱中。",
     "basicBody": [
       {
         "type": "text",
@@ -1732,10 +1732,10 @@
       }
     ],
     "shoopenTitle": "Shoopen",
-    "shoopenDesc": "Affordable socks, shoes, and accessories",
-    "shoopenBody1": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
-    "shoopenBody2": "Multi-packs beat singles; check Korean sizes (230–280).",
-    "shoopenTip": "Buy a spare pack early in the trip.",
+    "shoopenDesc": "價格實惠的襪子、鞋子和配件",
+    "shoopenBody1": "Shoopen 是一個廉價品牌，主營襪子、褲襪、拖鞋和簡單的鞋子——備受歡迎的備用旅行襪。",
+    "shoopenBody2": "多件裝勝過單件裝；檢查韓國尺寸 (230–280)。",
+    "shoopenTip": "在旅行初期購買備用包。",
     "shoopenBody": [
       {
         "type": "text",
@@ -1760,11 +1760,11 @@
         "ru": "Multi-packs beat singles; check Korean sizes (230–280)."
       }
     ],
-    "roundLabTitle": "Round Lab",
-    "roundLabDesc": "Dokdo toner, birch sunscreen — Olive Young favorites",
-    "roundLabBody1": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
-    "roundLabBody2": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
-    "roundLabTip": "Large stores in Myeongdong, Hongdae, and Gangnam stock more.",
+    "roundLabTitle": "圓形實驗室",
+    "roundLabDesc": "獨島爽膚水、樺木防曬乳－Olive Young 的最愛",
+    "roundLabBody1": "Round Lab 的獨島爽膚水/乳霜和樺木保濕防曬霜是 Olive Young 遊客經常選擇的產品。",
+    "roundLabBody2": "適合溫和、保濕的日常護理。從 Olive Young Picks 貨架開始。",
+    "roundLabTip": "明洞、弘大和江南的大型商店庫存較多。",
     "roundLabBody": [
       {
         "type": "text",
@@ -1790,10 +1790,10 @@
       }
     ],
     "anuaTitle": "Anua",
-    "anuaDesc": "Heartleaf 77 toner and serum",
-    "anuaBody1": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
-    "anuaBody2": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
-    "anuaTip": "Ask staff about app coupons and gift-with-purchase.",
+    "anuaDesc": "Heartleaf 77 爽膚水與精華液",
+    "anuaBody1": "Anua Heartleaf 77 爽膚水和精華液是 Olive Young 最暢銷的鎮靜護膚系列之一。",
+    "anuaBody2": "適合敏感或問題肌膚的熱門禮物。結帳前詢問是否可以退稅。",
+    "anuaTip": "向工作人員詢問應用程式優惠券和購買贈品的資訊。",
     "anuaBody": [
       {
         "type": "text",
@@ -1819,10 +1819,10 @@
       }
     ],
     "medihealTitle": "Mediheal",
-    "medihealDesc": "N.M.F Aquaring and other sheet masks",
-    "medihealBody1": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
-    "medihealBody2": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
-    "medihealTip": "Sensitive skin: look for gentle / centella labels.",
+    "medihealDesc": "N.M.F Aquaring 和其他面膜",
+    "medihealBody1": "Mediheal 以 N.M.F Aquaring 等面膜而聞名。 10 盒裝是整潔的禮物。",
+    "medihealBody2": "Olive Young 和免稅店都有明確的選擇；檢查有效期限和英文標籤。",
+    "medihealTip": "敏感肌膚：尋找溫和/積雪草標籤。",
     "medihealBody": [
       {
         "type": "text",
@@ -1848,10 +1848,10 @@
       }
     ],
     "numbuzinTitle": "numbuzin",
-    "numbuzinDesc": "Numbered skincare and masks (No.1 / 3 / 5…)",
-    "numbuzinBody1": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
-    "numbuzinBody2": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
-    "numbuzinTip": "Tell staff your skin type before choosing.",
+    "numbuzinDesc": "編號保養品和麵膜（No.1 / 3 / 5…）",
+    "numbuzinBody1": "numbuzin 以護膚品和麵膜的編號系列（1、3、5 號等）而聞名。",
+    "numbuzinBody2": "在 Olive Young 輕鬆獲得皮膚問題建議；迷你+全尺寸的禮品套裝很常見。",
+    "numbuzinTip": "選擇前請告訴工作人員您的皮膚類型。",
     "numbuzinBody": [
       {
         "type": "text",
@@ -1877,10 +1877,10 @@
       }
     ],
     "tirtirTitle": "TIRTIR",
-    "tirtirDesc": "Masks and mini cushions",
-    "tirtirBody1": "TIRTIR masks and mini cushions are popular travel and gift picks.",
-    "tirtirBody2": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
-    "tirtirTip": "Test cushion shade and coverage in store.",
+    "tirtirDesc": "面具和迷你墊",
+    "tirtirBody1": "TIRTIR 面具和迷你靠墊是熱門的旅遊和禮品選擇。",
+    "tirtirBody2": "免稅和Olive Young套裝一目了然；與測試人員進行色調匹配的化妝。",
+    "tirtirTip": "在商店測試坐墊顏色和覆蓋範圍。",
     "tirtirBody": [
       {
         "type": "text",
@@ -1906,9 +1906,9 @@
       }
     ],
     "tocoboTitle": "Tocobo",
-    "tocoboDesc": "Cotton Soft sunscreen and sun sticks",
-    "tocoboBody1": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
-    "tocoboBody2": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+    "tocoboDesc": "棉質柔軟防曬乳和防曬棒",
+    "tocoboBody1": "Tocobo 的 Cotton Soft 防曬霜和防曬棒是受歡迎的低白度選擇。",
+    "tocoboBody2": "棒狀和≤50ml 的尺寸更容易滿足機艙液體限制。",
     "tocoboTip": "Start with Olive Young sunscreen picks.",
     "tocoboBody": [
       {
