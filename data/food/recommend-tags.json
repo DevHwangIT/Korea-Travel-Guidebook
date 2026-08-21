@@ -107,7 +107,7 @@
         "quickbite",
         "nosoup",
         "street",
-        "mild"
+        "hearty"
       ]
     },
     "samgyeopsal": {
@@ -473,6 +473,13 @@
       ]
     },
     "banana-milk": {
+      "tags": [
+        "drink",
+        "sweet",
+        "cold"
+      ]
+    },
+    "achim-haetsal": {
       "tags": [
         "drink",
         "sweet",

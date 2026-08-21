@@ -264,7 +264,7 @@
     "catDailyIntro": "旅行中常見的日常提示：地圖、垃圾、週末房價、問卷、外送、雨天等。",
     "catRestaurantIntro": "點餐、小費、等位、自助角、吸菸 — 在餐廳就能用的提示。",
     "catTransportIntro": "下車、換乘、高峰、出口、禮儀、噪音、專座、推銷 — 出行提示。票價與交通卡見「出發前」。",
-    "catShoppingIntro": "在此查看 Olive Young、大創、免稅、市場與地區特產提示。",
+    "catShoppingIntro": "在此查看 Olive Young、大創、免稅、市場與地區特產提示。 也收錄了輕看收據的小提示。",
     "tabMap": "地圖 App",
     "tabCash": "現金·刷卡",
     "tabTrash": "垃圾桶",
@@ -438,6 +438,7 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "地區特產"
+    "tabSpecialty": "地區特產",
+    "tabReceipt": "核對收據"
   }
 }

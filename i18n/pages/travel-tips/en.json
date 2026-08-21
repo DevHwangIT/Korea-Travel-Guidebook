@@ -263,7 +263,7 @@
     "catDailyIntro": "Everyday tips you will run into while traveling — maps, trash, weekend rates, surveys, delivery, and rainy days.",
     "catRestaurantIntro": "Practical dining tips — ordering, tipping, waiting, self-serve corners, and smoking rules.",
     "catTransportIntro": "Getting around — tap-out, rush hour, exits, manners, noise, priority seats, and rare subway solicitation. For fares and cards, see Before You Go.",
-    "catShoppingIntro": "Olive Young, Daiso, duty-free, markets, and regional specialties — all in one place.",
+    "catShoppingIntro": "Olive Young, Daiso, duty-free, markets, and regional specialties — all in one place. Includes a soft tip on checking your receipt.",
     "tabMap": "Maps",
     "tabCash": "Cash · Cards",
     "tabTrash": "Trash bins",
@@ -437,6 +437,7 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "Regional specialties"
+    "tabSpecialty": "Regional specialties",
+    "tabReceipt": "Check receipt"
   }
 }

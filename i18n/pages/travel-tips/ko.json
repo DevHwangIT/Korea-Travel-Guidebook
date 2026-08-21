@@ -263,7 +263,7 @@
     "catDailyIntro": "지도·쓰레기·주말 요금·설문·배달·비 오는 날처럼, 여행 중에 자주 맞닥뜨리는 일상 팁입니다.",
     "catRestaurantIntro": "주문·팁·웨이팅·셀프 코너·흡연 — 식당에서 바로 써먹는 팁입니다.",
     "catTransportIntro": "하차·환승, 출퇴근 혼잡, 지하철 출구, 매너·소음·배려석·권유 — 이동 중에 쓰는 팁입니다. 요금·카드 준비는 ‘떠나기 전에’를 보세요.",
-    "catShoppingIntro": "올리브영·다이소·면세·시장·지역 특산품 팁을 이 안에서 바로 확인하세요. (별도 페이지 이동 없음)",
+    "catShoppingIntro": "올리브영·다이소·면세·시장·지역 특산품 팁을 이 안에서 바로 확인하세요. 맨 앞 탭에서 영수증을 가볍게 확인하는 팁도 볼 수 있습니다.",
     "tabMap": "지도 앱",
     "tabCash": "현금·카드",
     "tabTrash": "쓰레기통",
@@ -437,6 +437,7 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "지역 특산품"
+    "tabSpecialty": "지역 특산품",
+    "tabReceipt": "영수증 확인"
   }
 }

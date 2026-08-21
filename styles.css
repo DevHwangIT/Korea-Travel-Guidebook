@@ -906,6 +906,18 @@ a.souvenir-card:hover {
   font-size: 1.05rem;
 }
 
+/* Detail hero: taller than list thumbs (.souvenir-card img = 160–200px).
+   Scoped so shared .combo-article-hero max-height does not crop list cards.
+   contain + soft fill: full product visible inside fixed hero box (no crop). */
+.souvenir-article > .combo-article-hero {
+  width: 100%;
+  height: clamp(340px, 70vw, 420px);
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
+  background: #f0f2f1;
+}
+
 /* Convenience combos */
 .section-heading {
   margin: 28px 0 14px;
@@ -913,11 +925,32 @@ a.souvenir-card:hover {
   font-size: 1.2rem;
 }
 
+/* Detail hero only (.combo-card img stays 180–200px).
+   Tall portrait frame; contain keeps full product inside without cropping. */
+.combo-article > .combo-article-hero {
+  width: 100%;
+  height: auto;
+  min-height: 480px;
+  max-height: 620px;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  object-position: center;
+  background: #f0f2f1;
+}
+
 .combo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-bottom: 28px;
+}
+
+/* Author display must not override HTML hidden (list-pager / section filter). */
+.combo-grid[hidden],
+.combo-card[hidden],
+.section-heading[hidden],
+.tabs-help[hidden] {
+  display: none !important;
 }
 
 .combo-card {
@@ -4542,103 +4575,316 @@ a.partner-strip__slot:focus-visible {
   line-height: 1.55;
 }
 
-.festivals-links {
-  margin: 0 0 8px;
+/* —— Festivals hub: large stacked posters + compact official chips —— */
+.hub-body--festivals {
+  --fest-ink: #1f2a26;
+  --fest-muted: #5a6860;
+  --fest-accent: #2f6b57;
+}
+
+.festivals-hub {
+  max-width: 960px;
+}
+
+.festivals-featured {
+  margin: 8px 0 4px;
   text-align: left;
 }
 
-.festivals-links h2 {
-  margin: 0 0 14px;
-  font-size: 1.2rem;
-  color: #1f2a26;
+.festivals-featured__head {
+  margin-bottom: 10px;
 }
 
-.festivals-link-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-  margin-bottom: 16px;
+.festivals-featured__head h2 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  color: var(--fest-ink);
 }
 
-@media (min-width: 640px) {
-  .festivals-link-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.festivals-featured__hint {
+  margin: 0;
+  color: var(--fest-muted);
+  font-size: 0.88rem;
 }
 
-.festivals-link-card {
+.festivals-deck {
+  --fest-card-w: 360px;
+  --fest-card-h: 504px;
+  --fest-overlap: -76px;
+  display: block;
+  margin: 0 -10px;
+  overflow: hidden;
+}
+
+.festivals-deck__track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+  /* Side padding centers first/last; vertical room for scale+lift so center card does not clip */
+  padding:
+    72px max(20px, calc(50% - (var(--fest-card-w) / 2))) 76px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+}
+
+.festivals-deck__track.is-dragging {
+  cursor: grabbing;
+}
+
+.festivals-deck__track::-webkit-scrollbar {
+  display: none;
+}
+
+.festivals-poster {
+  --fest-scale: 0.74;
+  --fest-opacity: 0.45;
+  --fest-lift: 0px;
+  --fest-x: 0px;
+  position: relative;
+  flex: 0 0 var(--fest-card-w);
+  width: var(--fest-card-w);
+  height: var(--fest-card-h);
+  min-width: var(--fest-card-w);
+  min-height: var(--fest-card-h);
+  max-width: var(--fest-card-w);
+  max-height: var(--fest-card-h);
+  margin-right: var(--fest-overlap);
+  border-radius: 22px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  isolation: isolate;
+  contain: layout;
+  transform-origin: center center;
+  transform:
+    translate3d(var(--fest-x), calc(14px - var(--fest-lift)), 0)
+    scale(var(--fest-scale));
+  opacity: var(--fest-opacity);
+  box-shadow: 0 12px 28px rgba(20, 40, 32, 0.18);
+  transition: box-shadow 0.35s ease;
+  backface-visibility: hidden;
+  -webkit-user-drag: none;
+}
+
+.festivals-deck__track.is-dragging .festivals-poster {
+  will-change: transform, opacity;
+}
+
+.festivals-poster:last-child {
+  margin-right: 0;
+}
+
+.festivals-poster.is-active {
+  box-shadow:
+    0 22px 44px rgba(20, 40, 32, 0.24),
+    0 0 0 1px rgba(47, 107, 87, 0.35);
+}
+
+.festivals-poster img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  background: #dfe8e3;
+}
+
+.festivals-poster.is-active img {
+  transform: scale(1);
+}
+
+.festivals-poster__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 28%, rgba(12, 20, 18, 0.82) 100%);
+}
+
+.festivals-poster__copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 18px 18px 16px;
-  border: 1px solid #d9e3de;
-  border-radius: 14px;
-  background:
-    linear-gradient(165deg, #f7faf8 0%, #ffffff 55%, #eef4f1 100%);
-  color: inherit;
-  text-decoration: none;
+  gap: 5px;
+  padding: 22px 20px 24px;
   text-align: left;
-  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.festivals-link-card:hover {
-  border-color: #9fb5aa;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(31, 58, 50, 0.08);
-}
-
-.festivals-link-card__eyebrow {
-  font-size: 0.75rem;
+.festivals-poster__copy h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.8vw, 1.55rem);
+  line-height: 1.25;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #3d6b5c;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
-.festivals-link-card h3 {
+.festivals-poster__copy p {
   margin: 0;
-  font-size: 1.08rem;
-  line-height: 1.35;
-  color: #1f2a26;
+  font-size: 0.9rem;
+  color: rgba(255, 248, 240, 0.9);
 }
 
-.festivals-link-card p {
-  margin: 0;
-  flex: 1;
-  color: #4a5650;
-  font-size: 0.92rem;
-  line-height: 1.5;
-}
-
-.festivals-link-card__cta {
-  margin-top: 4px;
-  font-size: 0.88rem;
+.festivals-poster__copy span {
+  margin-top: 8px;
+  font-size: 0.84rem;
   font-weight: 600;
-  color: #1f3a32;
+  color: #c8e6d8;
+}
+
+.festivals-deck__dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 2px 0 6px;
+}
+
+.festivals-deck__dot {
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(31, 42, 38, 0.2);
+  cursor: pointer;
+  transition: width 0.35s ease, background 0.3s ease;
+}
+
+.festivals-deck__dot.is-active {
+  width: 18px;
+  background: var(--fest-accent);
+}
+
+/* Official links — compact secondary */
+.festivals-official {
+  margin: 22px 0 6px;
+  padding-top: 14px;
+  border-top: 1px solid #e5ebe8;
+  text-align: left;
+}
+
+.festivals-official h2 {
+  margin: 0 0 2px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #3d4a45;
+}
+
+.festivals-official__help {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  color: #7a8680;
+  line-height: 1.4;
+}
+
+.festivals-official__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.festivals-official__chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 10px;
+  border: 1px solid #d5ddd8;
+  border-radius: 999px;
+  background: #f7f9f8;
+  color: #3a4541;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.festivals-official__chip:hover {
+  border-color: #9fb5aa;
+  background: #eef4f1;
+  text-decoration: none;
 }
 
 .festivals-attribution {
-  margin: 8px 0 24px;
-  padding: 14px 16px;
-  border-top: 1px solid #e5e5e5;
-  font-size: 0.88rem;
-  color: #5f6b64;
-  line-height: 1.55;
+  margin: 14px 0 8px;
+  padding-top: 10px;
+  border-top: 1px solid #e5ebe8;
+  font-size: 0.78rem;
+  color: #6a756f;
+  line-height: 1.5;
   text-align: left;
 }
 
 .festivals-attribution__line {
-  margin: 0 0 6px;
-  color: #333;
+  margin: 0 0 4px;
+  color: #44504b;
 }
 
 .festivals-attribution__note,
 .festivals-attribution__links {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 }
 
 .festivals-attribution__links a {
-  color: #1f3a32;
+  color: var(--fest-accent);
+}
+
+/* legacy unused */
+.festivals-guide-grid,
+.festivals-guide-card,
+.festivals-link-buttons,
+.festivals-link-btn,
+.festivals-pills,
+.festivals-pill {
+  display: none !important;
+}
+
+@media (max-width: 720px) {
+  .festivals-deck {
+    --fest-card-w: 300px;
+    --fest-card-h: 420px;
+    --fest-overlap: -60px;
+    margin: 0;
+  }
+
+  .festivals-deck__track {
+    padding:
+      62px max(16px, calc(50% - (var(--fest-card-w) / 2))) 66px;
+  }
+}
+
+@media (min-width: 900px) {
+  .festivals-deck {
+    --fest-card-w: 400px;
+    --fest-card-h: 560px;
+    --fest-overlap: -88px;
+  }
+
+  .festivals-deck__track {
+    padding:
+      80px max(24px, calc(50% - (var(--fest-card-w) / 2))) 84px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .festivals-poster,
+  .festivals-poster img,
+  .festivals-deck__dot {
+    transition: none !important;
+  }
 }
 
 @media (min-width: 961px) {
@@ -4664,6 +4910,7 @@ a.partner-strip__slot:focus-visible {
   body.places-map-app {
     padding: 0;
   }
+
 
   .page,
   .tip-map,
@@ -4947,13 +5194,18 @@ hr.section-rule {
   }
 }
 
+/* Detail hero only (.card img list thumbs stay cover-cropped).
+   Fixed box + contain: full shop photo visible, soft fill, no crop. */
+.shop-detail > .shop-photo,
 .shop-photo {
   display: block;
   margin: 0 0 16px;
   border-radius: 12px;
-  object-fit: cover;
-  max-height: 320px;
   width: 100%;
+  height: 320px;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
   background: #f0f2f1;
 }
 
@@ -9505,4 +9757,144 @@ body.welcome-popup-lock {
   }
 }
 
-/* Legacy prep-tips top-tab / card UI removed — outline groups live under .prep-map__group */}
+/* Legacy prep-tips top-tab / card UI removed — outline groups live under .prep-map__group */
+
+/* Always-visible prep extras (currency guide / entry checklist) */
+.prep-visible {
+  margin: 12px 0 22px;
+  padding: 14px 14px 16px;
+  border: 1px solid var(--prep-line, #d7e0dc);
+  border-radius: 12px;
+  background: #fff;
+}
+.prep-visible > h3 {
+  margin: 0 0 8px;
+  font-family: var(--prep-font-body, inherit);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--prep-ink, #1f2a26);
+}
+.prep-visible > h3 + .prep-visible__lead,
+.prep-currency__grid + h3 {
+  margin-top: 18px;
+}
+.prep-visible__lead,
+.prep-visible__note {
+  margin: 0 0 12px;
+  color: var(--prep-body, #3a4742);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+.prep-visible__note {
+  margin-top: 14px;
+  margin-bottom: 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--prep-accent, #2f6f5e);
+  background: var(--prep-soft, #eef6f2);
+  border-radius: 0 8px 8px 0;
+  font-weight: 600;
+}
+.prep-currency__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.prep-currency__grid--coins {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.prep-currency__card {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e5ece9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fbfcfc;
+}
+.prep-currency__card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  object-position: center;
+  background: #f3f6f5;
+}
+.prep-currency__card--coin img {
+  max-height: 120px;
+  padding: 8px;
+}
+.prep-currency__card h4 {
+  margin: 8px 10px 2px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #12201c;
+}
+.prep-currency__card p {
+  margin: 0 10px 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #3a4742;
+}
+.tip-detail .prep-visible {
+  margin-top: 16px;
+}
+/* Entry prep checklist: scannable lines (not interactive todo UI) */
+.content-body__checklist {
+  margin-bottom: 0.35rem;
+}
+.prep-check-list {
+  list-style: none;
+  margin: 0 0 1.1rem;
+  padding: 0;
+}
+.prep-check-list li {
+  position: relative;
+  margin: 0;
+  padding: 0.38rem 0 0.38rem 1.5rem;
+  line-height: 1.45;
+  font-size: 0.98rem;
+  color: #2c3d37;
+  border-bottom: 1px solid #e7eeea;
+}
+.prep-check-list li:last-child {
+  border-bottom: none;
+}
+.prep-check-list li::before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  top: 0.38rem;
+  color: var(--prep-accent, #2f6f5e);
+  font-size: 0.92em;
+  line-height: 1.45;
+  font-weight: 500;
+}
+.tip-detail .prep-check-list,
+.prep-map .prep-check-list {
+  max-width: 40rem;
+}
+
+/* Tip/prep hub + detail covers: full-width natural height (no short crop banners) */
+.prep-map .content-body__image img,
+.prep-map .menu-photo img,
+.tip-map .content-body__image img,
+.tip-map .menu-photo img,
+.tip-detail .content-body__image img,
+.tip-detail .menu-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+@media (max-width: 720px) {
+  .prep-currency__grid,
+  .prep-currency__grid--coins {
+    grid-template-columns: 1fr;
+  }
+}

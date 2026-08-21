@@ -263,7 +263,7 @@
     "catDailyIntro": "旅行中常见的日常提示：地图、垃圾、周末房价、问卷、外卖、雨天等。",
     "catRestaurantIntro": "点餐、小费、等位、自助角、吸烟 — 在餐厅就能用的提示。",
     "catTransportIntro": "下车、换乘、高峰、出口、礼仪、噪音、专座、推销 — 出行提示。票价与交通卡见「出发前」。",
-    "catShoppingIntro": "在此查看 Olive Young、大创、免税、市场与地区特产提示。",
+    "catShoppingIntro": "在此查看 Olive Young、大创、免税、市场与地区特产提示。 也收录了轻看收据的小提示。",
     "tabMap": "地图 App",
     "tabCash": "现金·刷卡",
     "tabTrash": "垃圾桶",
@@ -437,6 +437,7 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "地区特产"
+    "tabSpecialty": "地区特产",
+    "tabReceipt": "核对收据"
   }
 }

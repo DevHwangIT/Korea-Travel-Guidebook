@@ -263,7 +263,7 @@
     "catDailyIntro": "地図・ゴミ・週末料金・アンケート・配達・雨の日など、旅中によく出会う日常のヒントです。",
     "catRestaurantIntro": "注文・チップ・待ち・セルフコーナー・喫煙 — 食事場で使えるヒントです。",
     "catTransportIntro": "降車・乗換、ラッシュ、出口、マナー・騒音・優先席・勧誘 — 移動中のヒントです。運賃・カードは「出発前に」を参照。",
-    "catShoppingIntro": "オリーブヤング・ダイソー・免税・市場・地域特産のヒントをここで確認。",
+    "catShoppingIntro": "オリーブヤング・ダイソー・免税・市場・地域特産のヒントをここで確認。 レシートを軽く確認するヒントも含めています。",
     "tabMap": "地図アプリ",
     "tabCash": "現金·カード",
     "tabTrash": "ゴミ箱",
@@ -437,6 +437,7 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "地域特産品"
+    "tabSpecialty": "地域特産品",
+    "tabReceipt": "レシート確認"
   }
 }

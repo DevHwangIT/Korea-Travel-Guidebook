@@ -46,6 +46,10 @@
     pagePane.classList.remove("is-turning");
     void pagePane.offsetWidth;
     pagePane.classList.add("is-turning");
+    window.clearTimeout(pulsePageTurn._timer);
+    pulsePageTurn._timer = window.setTimeout(function () {
+      if (pagePane) pagePane.classList.remove("is-turning");
+    }, 480);
   }
 
   function parseHash() {

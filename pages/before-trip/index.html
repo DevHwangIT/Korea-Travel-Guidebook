@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="prepTips.pageTitle" data-i18n-desc="prepTips.intro" data-seo-path="pages/before-trip/" data-seo-image="Images/menu/before-trip.png">
 <head>
-  <!-- asset-v: 20260821013504 -->
+  <!-- asset-v: 20260821220047 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>여행 준비 &amp; 여행 팁 | Korea Travel Guide</title>
@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css?v=20260821013504">
+  <link rel="stylesheet" href="../../styles.css?v=20260821220047">
 </head>
 <body class="prep-page">
   <nav class="lang-switch" aria-label="Language"></nav>
@@ -38,7 +38,7 @@
 
     <header class="prep-map__masthead">
       <h1 data-i18n="prepTips.title">여행 준비 &amp; 여행 팁</h1>
-      <p class="article-lead prep-map__lead" data-i18n="prepTips.intro"></p>
+      <p class="article-lead prep-map__lead" data-i18n="prepTips.intro">떠나기 전 준비와 여행 중 바로 쓰는 팁을 한곳에서 확인하세요.</p>
     </header>
 
     <!-- Outline TOC (left) + article (right). Two vertical groups — not top tabs. -->
@@ -56,8 +56,9 @@
                 </button>
                 <ul id="prep-children-entry" class="prep-map__children" data-prep-children="entry" hidden>
                   <li><button type="button" class="prep-map__child" data-prep-go="entry/eri"><span data-i18n="beforeTrip.tabEri">전자입국신고(ERI)</span></button></li>
-                  <li><button type="button" class="prep-map__child" data-prep-go="entry/docs"><span data-i18n="beforeTrip.tabDocs">준비서류</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="entry/docs"><span data-i18n="beforeTrip.tabDocs">여권·비자</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="entry/immigration"><span data-i18n="beforeTrip.tabImmigration">입국 심사(SES)</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="entry/entry-prep"><span data-i18n="beforeTrip.tabEntryPrep">입국 준비 리스트</span></button></li>
                 </ul>
               </div>
 
@@ -68,6 +69,7 @@
                 </button>
                 <ul id="prep-children-money" class="prep-map__children" data-prep-children="money" hidden>
                   <li><button type="button" class="prep-map__child" data-prep-go="money/money"><span data-i18n="beforeTrip.tabMoney">현금·카드</span></button></li>
+                  <li><button type="button" class="prep-map__child" data-prep-go="money/currency"><span data-i18n="beforeTrip.tabCurrency">지폐·동전 안내</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="money/wowpass"><span data-i18n="beforeTrip.tabWowpass">Wow Pass</span></button></li>
                 </ul>
               </div>
@@ -165,6 +167,7 @@
                   <span class="prep-map__node-label" data-i18n="tips.catShopping">쇼핑</span>
                 </button>
                 <ul id="prep-children-shopping" class="prep-map__children" data-prep-children="shopping" hidden>
+                  <li><button type="button" class="prep-map__child" data-prep-go="shopping/receipt"><span data-i18n="tips.tabReceipt">영수증 확인</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="shopping/olive"><span data-i18n="tips.tabOlive">올리브영</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="shopping/daiso"><span data-i18n="tips.tabDaiso">다이소</span></button></li>
                   <li><button type="button" class="prep-map__child" data-prep-go="shopping/duty"><span data-i18n="tips.tabDuty">면세·택스프리</span></button></li>
@@ -198,7 +201,7 @@
           <section class="prep-map__region" id="prep-region-entry" data-prep-region="entry" hidden>
             <header class="prep-map__region-head">
               <h2 data-i18n="beforeTrip.catEntry">입국</h2>
-              <p class="prep-map__region-intro" data-i18n="beforeTrip.catEntryIntro"></p>
+              <p class="prep-map__region-intro" data-i18n="beforeTrip.catEntryIntro">서류와 전자입국신고, 공항 심사, 입국 전 준비 리스트까지 — 입국 전에 확인할 항목입니다.</p>
             </header>
             <div class="prep-map__subs">
               <article class="prep-map__sub" data-prep-sub="eri" hidden>
@@ -214,7 +217,7 @@
               </article>
               <article class="prep-map__sub" data-prep-sub="docs" hidden>
                 <div class="prep-map__sub-inner guide-article tip-article">
-                  <h2 data-i18n="beforeTrip.docsTitle">준비서류</h2>
+                  <h2 data-i18n="beforeTrip.docsTitle">여권 및 비자 확인</h2>
                   <div class="content-body" data-content-body data-body-path="beforeTrip.docsBody"></div>
                   <div data-content-body-fallback>
                     <p data-i18n="beforeTrip.docs1"></p>
@@ -225,15 +228,27 @@
               </article>
               <article class="prep-map__sub" data-prep-sub="immigration" hidden>
                 <div class="prep-map__sub-inner guide-article tip-article">
-                  <h2 data-i18n="beforeTrip.immigrationTitle">자동출입국심사 (SES)</h2>
+                  <h2 data-i18n="beforeTrip.immigrationTitle">입국 준비·자동출입국심사 (SES)</h2>
                   <div class="content-body" data-content-body data-body-path="beforeTrip.immigrationBody"></div>
                   <div data-content-body-fallback>
-                    <p data-i18n="beforeTrip.immigration1"></p>
-                    <p data-i18n="beforeTrip.immigration2"></p>
-                    <p data-i18n="beforeTrip.immigration3"></p>
+                    <p data-i18n="beforeTrip.immigration1">SES(Smart Entry Service)는 여권·지문·얼굴 정보로 전용 게이트를 통과하는 자동 출입국 심사입니다. 조건에 맞으면 사람 창구보다 빠른 경우가 많습니다.</p>
+                    <p data-i18n="beforeTrip.immigration2">등록외국인·일부 국적·사전등록자 등이 이용합니다. 등록 시 여권에 확인 도장 또는 SES 스티커가 붙을 수 있습니다.</p>
+                    <p data-i18n="beforeTrip.immigration3">대상·절차는 출입국·Hi Korea 등 공식 안내를 확인하세요.</p>
                   </div>
                 </div>
               </article>
+
+              <article class="prep-map__sub" data-prep-sub="entry-prep" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="beforeTrip.entryChecklistTitle">입국 준비 리스트</h2>
+                  <div class="content-body" data-content-body data-body-path="beforeTrip.entryChecklistBody"></div>
+                  <div data-content-body-fallback>
+                    <p data-i18n="beforeTrip.entryChecklist1">아래 내용을 확인하세요</p>
+                    <p data-i18n="beforeTrip.entryChecklist2">입국/신분부터 돈·통신·전자기기·옷·약·이동까지 짧게 점검하세요. 전자입국신고(e-Arrival/ERI)는 별도 탭입니다.</p>
+                  </div>
+                </div>
+              </article>
+
             </div>
           </section>
 
@@ -241,7 +256,7 @@
           <section class="prep-map__region" id="prep-region-money" data-prep-region="money" hidden>
             <header class="prep-map__region-head">
               <h2 data-i18n="beforeTrip.catMoney">돈</h2>
-              <p class="prep-map__region-intro" data-i18n="beforeTrip.catMoneyIntro"></p>
+              <p class="prep-map__region-intro" data-i18n="beforeTrip.catMoneyIntro">현금·카드·교통카드, 지폐·동전 구분, 관광객용 Wow Pass를 정리했습니다.</p>
             </header>
             <div class="prep-map__subs">
               <article class="prep-map__sub" data-prep-sub="money" hidden>
@@ -249,12 +264,67 @@
                   <h2 data-i18n="beforeTrip.moneyTitle">현금·카드·교통카드</h2>
                   <div class="content-body" data-content-body data-body-path="beforeTrip.moneyBody"></div>
                   <div data-content-body-fallback>
-                    <p data-i18n="beforeTrip.money1"></p>
-                    <p data-i18n="beforeTrip.money2"></p>
-                    <p data-i18n="beforeTrip.money3"></p>
+                    <p data-i18n="beforeTrip.money1">카드가 널리 되지만 시장·일부 가게는 현금이 필요합니다. ₩5~10만 원 정도를 준비하세요.</p>
+                    <p data-i18n="beforeTrip.money2">공항·시내 환전소·ATM을 비교하고, 카드 해외 수수료를 미리 확인하세요.</p>
+                    <p data-i18n="beforeTrip.money3">티머니 등 교통카드는 도착 첫날 편의점·역에서 구입·충전하세요. Wow Pass는 별도 탭을 참고하세요.</p>
                   </div>
                 </div>
               </article>
+              
+              <article class="prep-map__sub" data-prep-sub="currency" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="beforeTrip.moneyNotesTitle">한국 지폐 안내</h2>
+                  <p class="prep-visible__lead" data-i18n="beforeTrip.moneyNotesLead">색과 인물을 기억하면 거스름돈을 빠르게 구분할 수 있습니다.</p>
+                  <ul class="prep-currency__grid">
+                    <li class="prep-currency__card">
+                      <img src="../../Images/before-trip/money/won-1000.jpg" alt="₩1,000 지폐 — 파란색, 퇴계 이황" width="720" height="400" loading="lazy">
+                      <h4>₩1,000</h4>
+                      <p data-i18n="beforeTrip.moneyNote1000">파란색 · 퇴계 이황. 시장·작은 가게·잔돈에 가장 편합니다.</p>
+                    </li>
+                    <li class="prep-currency__card">
+                      <img src="../../Images/before-trip/money/won-5000.jpg" alt="₩5,000 지폐 — 주황·갈색, 율곡 이이" width="720" height="400" loading="lazy">
+                      <h4>₩5,000</h4>
+                      <p data-i18n="beforeTrip.moneyNote5000">주황·갈색 · 율곡 이이. 소액 결제에 자주 씁니다.</p>
+                    </li>
+                    <li class="prep-currency__card">
+                      <img src="../../Images/before-trip/money/won-10000.jpg" alt="₩10,000 지폐 — 초록, 세종대왕" width="720" height="400" loading="lazy">
+                      <h4>₩10,000</h4>
+                      <p data-i18n="beforeTrip.moneyNote10000">초록 · 세종대왕. 일상에서 가장 흔히 보는 지폐입니다.</p>
+                    </li>
+                    <li class="prep-currency__card">
+                      <img src="../../Images/before-trip/money/won-50000.jpg" alt="₩50,000 지폐 — 노랑, 신사임당" width="720" height="400" loading="lazy">
+                      <h4>₩50,000</h4>
+                      <p data-i18n="beforeTrip.moneyNote50000">노랑 · 신사임당. 큰 금액·환전 후 지갑에 많이 들어갑니다.</p>
+                    </li>
+                  </ul>
+                  <h3 data-i18n="beforeTrip.moneyCoinsTitle">한국 동전 안내</h3>
+                  <p class="prep-visible__lead" data-i18n="beforeTrip.moneyCoinsLead">₩10·₩50·₩100·₩500이 있습니다. 잔돈·자판기·교통카드 충전에 쓰입니다.</p>
+                  <ul class="prep-currency__grid prep-currency__grid--coins">
+                    <li class="prep-currency__card prep-currency__card--coin">
+                      <img src="../../Images/before-trip/money/coin-10.jpg" alt="₩10 동전" width="420" height="420" loading="lazy">
+                      <h4>₩10</h4>
+                      <p data-i18n="beforeTrip.moneyCoin10">가장 작은 단위. 거스름돈으로 받습니다.</p>
+                    </li>
+                    <li class="prep-currency__card prep-currency__card--coin">
+                      <img src="../../Images/before-trip/money/coin-50.jpg" alt="₩50 동전" width="420" height="420" loading="lazy">
+                      <h4>₩50</h4>
+                      <p data-i18n="beforeTrip.moneyCoin50">노란 빛의 작은 동전입니다.</p>
+                    </li>
+                    <li class="prep-currency__card prep-currency__card--coin">
+                      <img src="../../Images/before-trip/money/coin-100.jpg" alt="₩100 동전" width="420" height="420" loading="lazy">
+                      <h4>₩100</h4>
+                      <p data-i18n="beforeTrip.moneyCoin100">은색. 일상에서 자주 만납니다.</p>
+                    </li>
+                    <li class="prep-currency__card prep-currency__card--coin">
+                      <img src="../../Images/before-trip/money/coin-500.jpg" alt="₩500 동전" width="420" height="420" loading="lazy">
+                      <h4>₩500</h4>
+                      <p data-i18n="beforeTrip.moneyCoin500">가장 큰 동전. 잔돈·충전용으로 유용합니다.</p>
+                    </li>
+                  </ul>
+                  <p class="prep-visible__note" data-i18n="beforeTrip.moneyFxNote">원화 가치·환율이 궁금하면 화면 오른쪽 아래 ‘여행 도구’ → ‘환율’을 열어 참고하세요. 참고용이며 실제 환전·결제와 다를 수 있습니다.</p>
+                </div>
+              </article>
+
               <article class="prep-map__sub" data-prep-sub="wowpass" hidden>
                 <div class="prep-map__sub-inner guide-article tip-article">
                   <h2 data-i18n="beforeTrip.wowpassTitle">Wow Pass</h2>
@@ -600,6 +670,20 @@
               <p class="prep-map__region-intro" data-i18n="tips.catShoppingIntro"></p>
             </header>
             <div class="prep-map__subs">
+              <article class="prep-map__sub" data-prep-sub="receipt" hidden>
+                <div class="prep-map__sub-inner guide-article tip-article">
+                  <h2 data-i18n="shopping.receiptTitle">영수증 확인</h2>
+                  <p class="tip-mistake" data-i18n="shopping.receiptLead">결제 금액을 한 번만 보고 지나치는 것</p>
+                  <figure class="menu-photo content-body__image prep-receipt-cover">
+                    <img src="../../Images/shopping/receipt.jpg" alt="한국 영수증과 동전 예시" width="960" height="640" loading="eager">
+                  </figure>
+                  <p data-i18n="shopping.receipt1">계산 후 영수증에 내가 산 물건만 들어 있는지·결제 금액이 맞는지 가볍게 확인해 두면 마음이 놓입니다.</p>
+                  <p data-i18n="shopping.receipt2">대부분의 가게는 문제없지만, 아주 드물게 원하지 않은 품목이 함께 잡히는 경우가 있다고 하니 부담 없이 보면 충분합니다.</p>
+                  <aside class="content-body__callout" role="note">
+                    <p class="content-body__callout-text">의문이 있으면 정중히 직원에게 물어보면 됩니다. 대부분의 경우는 바로 확인해 줍니다.</p>
+                  </aside>
+                </div>
+              </article>
               <article class="prep-map__sub" data-prep-sub="olive" hidden>
                 <div class="prep-map__sub-inner guide-article tip-article">
                   <h2 data-i18n="shopping.oliveTitle">올리브영 팁</h2>
@@ -710,12 +794,12 @@
     <img src="../../Images/cover/footer-korea.png" width="100%" alt="Korea Travel">
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
-  <script src="../../js/site-config.js?v=20260821013504"></script>
-  <script src="../../i18n/messages.js?v=20260821013504"></script>
-  <script src="../../js/i18n.js?v=20260821013504"></script>
-  <script src="../../js/analytics.js?v=20260821013504"></script>
-  <script src="../../js/seo.js?v=20260821013504"></script>
-  <script src="../../js/prep-topic-map.js?v=20260821013504"></script>
-  <script src="../../js/content-body.js?v=20260821013504"></script>
+  <script src="../../js/site-config.js?v=20260821220047"></script>
+  <script src="../../i18n/messages.js?v=20260821220047"></script>
+  <script src="../../js/i18n.js?v=20260821220047"></script>
+  <script src="../../js/analytics.js?v=20260821220047"></script>
+  <script src="../../js/seo.js?v=20260821220047"></script>
+  <script src="../../js/prep-topic-map.js?v=20260821220047"></script>
+  <script src="../../js/content-body.js?v=20260821220047"></script>
 </body>
 </html>

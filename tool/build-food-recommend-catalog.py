@@ -139,6 +139,31 @@ def _merge_tags(base: list[str], override: dict | None) -> list[str]:
     return _dedupe_tags(tags)
 
 
+def _convenience_sections() -> dict[str, str]:
+    """Map slug → product|combo from pages/convenience-store/index.html cards."""
+    index = CONV_DIR / "index.html"
+    if not index.is_file():
+        return {}
+    try:
+        text = index.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return {}
+    out: dict[str, str] = {}
+    for m in re.finditer(
+        r'data-section\s*=\s*["\'](product|combo)["\'][^>]*href\s*=\s*["\']\./([^/"\']+)/',
+        text,
+        re.IGNORECASE,
+    ):
+        out[m.group(2)] = m.group(1).lower()
+    for m in re.finditer(
+        r'href\s*=\s*["\']\./([^/"\']+)/[^"\']*["\'][^>]*data-section\s*=\s*["\'](product|combo)["\']',
+        text,
+        re.IGNORECASE,
+    ):
+        out[m.group(1)] = m.group(2).lower()
+    return out
+
+
 def _category_entries(
     kind: str,
     root: Path,
@@ -147,6 +172,7 @@ def _category_entries(
     heuristics: list[tuple[re.Pattern[str], list[str]]],
     base_tags: list[str],
     overrides: dict,
+    section_map: dict[str, str] | None = None,
 ) -> list[dict]:
     out: list[dict] = []
     if not root.is_dir():
@@ -164,7 +190,14 @@ def _category_entries(
         # Skip obsolete redirect stubs (e.g. gomtang → gukbap) even without tags exclude.
         if _is_redirect_page(index):
             continue
-        tags = _merge_tags(base_tags + _heuristic_tags(slug, heuristics), ov)
+        item_base = list(base_tags)
+        if section_map is not None:
+            section = section_map.get(slug, "combo")
+            if section == "product":
+                item_base = ["quickbite"]
+            else:
+                item_base = ["quickbite", "combo"]
+        tags = _merge_tags(item_base + _heuristic_tags(slug, heuristics), ov)
         title_key = None
         if ov and ov.get("titleKey"):
             title_key = str(ov["titleKey"])
@@ -234,6 +267,7 @@ def build_catalog() -> list[dict]:
             QUICK_HEURISTICS,
             ["quickbite", "combo"],
             overrides,
+            section_map=_convenience_sections(),
         )
     )
     return catalog

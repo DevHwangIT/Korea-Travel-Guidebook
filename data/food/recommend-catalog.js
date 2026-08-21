@@ -497,7 +497,7 @@ window.FOOD_RECOMMEND_CATALOG = [
       "quickbite",
       "nosoup",
       "street",
-      "mild"
+      "hearty"
     ],
     "titleKey": "dishes.tteokbokki.title"
   },
@@ -688,6 +688,17 @@ window.FOOD_RECOMMEND_CATALOG = [
     "reasonKey": "foodLife.quiz.results.convenience.reason"
   },
   {
+    "id": "achim-haetsal",
+    "href": "../convenience-store/achim-haetsal/index.html",
+    "kind": "quick",
+    "tags": [
+      "drink",
+      "sweet",
+      "cold"
+    ],
+    "titleKey": "convenience.achim-haetsal_pageTitle"
+  },
+  {
     "id": "banana-americano",
     "href": "../convenience-store/banana-americano/index.html",
     "kind": "quick",
@@ -727,8 +738,7 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/binggrae-excellent/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "quickbite"
     ],
     "titleKey": "convenience.binggrae-excellent_pageTitle"
   },
@@ -737,8 +747,7 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/binggrae-together/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "quickbite"
     ],
     "titleKey": "convenience.binggrae-together_pageTitle"
   },
@@ -793,10 +802,18 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/chalddeok-ice/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "quickbite"
     ],
     "titleKey": "convenience.chalddeok-ice_pageTitle"
+  },
+  {
+    "id": "cheese-bokki-ramen",
+    "href": "../convenience-store/cheese-bokki-ramen/index.html",
+    "kind": "quick",
+    "tags": [
+      "quickbite"
+    ],
+    "titleKey": "convenience.cheese-bokki-ramen_pageTitle"
   },
   {
     "id": "chicken-beer",
@@ -850,8 +867,7 @@ window.FOOD_RECOMMEND_CATALOG = [
     "href": "../convenience-store/haitai-bonbon/index.html",
     "kind": "quick",
     "tags": [
-      "quickbite",
-      "combo"
+      "quickbite"
     ],
     "titleKey": "convenience.haitai-bonbon_pageTitle"
   },
@@ -877,6 +893,15 @@ window.FOOD_RECOMMEND_CATALOG = [
       "combo"
     ],
     "titleKey": "convenience.jikgguri_pageTitle"
+  },
+  {
+    "id": "kim-hyeja-dosirak",
+    "href": "../convenience-store/kim-hyeja-dosirak/index.html",
+    "kind": "quick",
+    "tags": [
+      "quickbite"
+    ],
+    "titleKey": "convenience.kim-hyeja-dosirak_pageTitle"
   },
   {
     "id": "kimbap-milk",

@@ -348,20 +348,20 @@
     "title": "Trước khi đi",
     "intro": "Hướng dẫn những việc cần chuẩn bị và kiểm tra trước khi khởi hành. Mẹo trong chuyến đi xem mục Mẹo du lịch.",
     "backHub": "← Trước khi đi",
-    "tabDocs": "Giấy tờ",
+    "tabDocs": "Hộ chiếu · Visa",
     "tabMoney": "Tiền mặt · Thẻ",
     "tabConnect": "Data · Viễn thông",
     "tabPower": "Điện · Phích cắm",
     "tabPack": "Hành lý · Đặt chỗ",
     "tabTaxi": "Taxi",
-    "docsTitle": "Giấy tờ du lịch",
-    "docs1": "Kiểm tra hộ chiếu còn hạn (thường ≥6 tháng sau ngày về) và xem có cần visa hoặc K-ETA không.",
-    "docs2": "Chuẩn bị địa chỉ khách sạn, mục đích lưu trú và vé khứ hồi. Khai e-Arrival (ERI) ở tab riêng.",
-    "docs3": "Bảo hiểm du lịch giúp chi phí y tế, mất đồ và chậm chuyến.",
+    "docsTitle": "Kiểm tra hộ chiếu và thị thực",
+    "docs1": "Hãy kiểm tra hộ chiếu còn hạn đủ lâu sau ngày về (thường ≥6 tháng).",
+    "docs2": "Tùy quốc tịch, bạn có thể cần visa hoặc K-ETA — kiểm tra lại hướng dẫn chính thức trước khi bay.",
+    "docs3": "K-ETA khác với thẻ e-Arrival (ERI). Khai ERI ở tab riêng.",
     "moneyTitle": "Tiền mặt, thẻ, giao thông",
-    "money1": "Thẻ phổ biến, nhưng chợ và một số quán cần tiền mặt — mang khoảng ₩50,000–100,000.",
-    "money2": "So sánh đổi tiền sân bay/trung tâm và ATM; kiểm tra phí giao dịch nước ngoài.",
-    "money3": "Mua thẻ giao thông kiểu T-money ngay ngày đầu. Xem tab Wow Pass cho thẻ trả trước du khách.",
+    "money1": "Thẻ dùng rộng rãi nhưng chợ và một số quán cần tiền mặt. Chuẩn bị khoảng ₩50.000–100.000.",
+    "money2": "So sánh quầy sân bay, điểm đổi tiền và ATM. Kiểm tra phí giao dịch nước ngoài trên thẻ.",
+    "money3": "Mua/nạp thẻ T-money ngày đầu tại cửa hàng tiện lợi hoặc ga. Xem tab Wow Pass nếu cần thẻ du lịch.",
     "connectTitle": "SIM, eSIM, dữ liệu",
     "connect1": "Lấy eSIM hoặc SIM để có data — chỉ Wi-Fi miễn phí thường không đủ cho bản đồ.",
     "connect2": "Cài và đăng nhập bản đồ (Naver/Kakao), dịch (Papago) và nhắn tin trước khi bay.",
@@ -381,55 +381,47 @@
       },
       {
         "type": "text",
-        "ko": "출국 2주 전, 서류부터 점검하세요\n\n한국 입국은 생각보다 ‘준비만 잘하면’ 수월합니다. 다만 여권 잔여 기간·비자/전자여행허가·숙소 주소처럼 기본 서류를 놓치면 공항에서 시간이 크게 늘어날 수 있어요.",
-        "en": "Two weeks out: start with documents\n\nEntry to Korea is usually smooth if the basics are ready — passport validity, visa/ETA, and a stay address. Missing these can cost you a long wait at the airport.",
-        "ja": "出発2週間前、まず書類チェック\n\n韓国入国は準備ができていればスムーズです。パスポート残存・ビザ/電子渡航認証・宿の住所など基本を落とすと空港で時間がかかります。",
-        "zh": "出发前两周，先检查证件\n\n如果基本材料齐全，韩国入境通常很顺利。护照有效期、签证/电子旅行许可、住宿地址等一旦遗漏，机场等候时间可能明显变长。",
-        "vi": "Kiểm tra tài liệu của bạn hai tuần trước khi khởi hành\n\nNhập cảnh Hàn Quốc dễ dàng hơn bạn nghĩ nếu chuẩn bị tốt. Tuy nhiên, nếu bạn bỏ lỡ các giấy tờ cơ bản như thời hạn còn lại của hộ chiếu, thị thực/giấy phép du lịch điện tử và địa chỉ chỗ ở, thời gian ở sân bay có thể tăng lên đáng kể.",
-        "th": "ตรวจสอบเอกสารของคุณสองสัปดาห์ก่อนออกเดินทาง\n\nเข้าเกาหลีง่ายกว่าที่คิดถ้าเตรียมตัวมาดี อย่างไรก็ตาม หากคุณพลาดเอกสารพื้นฐาน เช่น ระยะเวลาคงเหลือของหนังสือเดินทาง วีซ่า/ใบอนุญาตเดินทางอิเล็กทรอนิกส์ และที่อยู่ที่พัก เวลาที่สนามบินอาจเพิ่มขึ้นอย่างมาก",
-        "ru": "Проверьте свои документы за две недели до отъезда.\n\nВъехать в Корею проще, чем вы думаете, если хорошо подготовиться. Однако, если вы пропустите основные документы, такие как оставшийся срок действия паспорта, визу/электронное разрешение на поездку и адрес проживания, время в аэропорту может значительно увеличиться.",
-        "zh-Hant": "出發前兩週檢查您的文件\n\n如果你準備充分，進入韓國比你想像的要容易。然而，如果您錯過了護照剩餘期限、簽證/電子旅行許可和住宿地址等基本文件，在機場的時間可能會顯著增加。"
+        "ko": "출국 전, 여권과 입국 자격만 먼저 확인하세요\n\n짐·숙소·보험까지 한 번에 챙기는 목록은 ‘입국 준비 리스트’에 모아 두었습니다. 이 글에서는 공항에서 막히기 쉬운 두 가지—여권 유효기간과 비자·K-ETA—만 차분히 짚어 볼게요.",
+        "en": "Before you fly, check passport and entry permission first\n\nThe broader packing and prep list lives under Entry prep checklist. Here we focus on two things that can stop you at the gate: passport validity and visa / K-ETA.",
+        "ja": "出発前に、まずパスポートと入国資格だけ確認\n\n荷物・宿・保険までまとめた一覧は「入国準備リスト」にあります。ここでは空港で止まりやすい二つ—パスポート残存とビザ・K-ETA—だけを落ち着いて確認します。",
+        "zh": "出发前，先确认护照与入境资格\n\n行李、住宿、保险等更完整的清单在「入境准备清单」。这里只慢慢核对两件容易在机场卡住的事：护照有效期，以及签证 / K-ETA。",
+        "vi": "Trước khi bay, hãy kiểm tra hộ chiếu và điều kiện nhập cảnh trước\n\nDanh sách chuẩn bị rộng hơn (hành lý, chỗ ở, bảo hiểm…) nằm ở mục Danh sách chuẩn bị nhập cảnh. Ở đây chỉ tập trung vào hai việc dễ bị chặn tại cửa khẩu: hạn hộ chiếu và visa / K-ETA.",
+        "th": "ก่อนบิน ให้ตรวจพาสปอร์ตและสิทธิ์เข้าประเทศก่อน\n\nรายการเตรียมตัวกว้างๆ เช่น กระเป๋า ที่พัก ประกัน อยู่ในรายการเตรียมเข้าประเทศ ที่นี่โฟกัสแค่สองอย่างที่มักสะดุดที่สนามบิน: อายุพาสปอร์ต และวีซ่า / K-ETA",
+        "ru": "Перед вылетом сначала проверьте паспорт и право на въезд\n\nБолее полный список (вещи, жильё, страховка) — в «Списке подготовки к въезду». Здесь спокойно разберём два пункта, из‑за которых часто останавливают в аэропорту: срок паспорта и виза / K-ETA.",
+        "zh-Hant": "出發前，先確認護照與入境資格\n\n行李、住宿、保險等更完整的清單在「入境準備清單」。這裡只慢慢核對兩件容易在機場卡住的事：護照有效期，以及簽證 / K-ETA。"
       },
       {
         "type": "text",
-        "ko": "여권은 귀국일 기준 6개월 이상 남아 있는지 확인하세요. 국적에 따라 비자나 K-ETA 등 전자여행허가가 필요할 수 있으니, 출국 전 공식 안내를 한 번 더 보세요. 예약 확인서 PDF는 오프라인으로 저장해 두면 안심입니다.",
-        "en": "Confirm at least 6 months of passport validity beyond your return date. Depending on nationality you may need a visa or K-ETA — recheck official guidance. Save hotel/booking PDFs offline.",
-        "ja": "帰国日から6か月以上のパスポート残存を確認。国籍によりビザやK-ETAが必要です。予約確認PDFはオフライン保存を。",
-        "zh": "请确认护照在回国日期后仍至少有 6 个月有效期。按国籍可能需要签证或 K-ETA，出发前再核对官方说明，并把住宿/预订 PDF 离线保存。",
-        "vi": "Hãy chắc chắn rằng hộ chiếu của bạn còn hạn ít nhất 6 tháng vào ngày trở về. Tùy thuộc vào quốc tịch của bạn, bạn có thể cần thị thực hoặc giấy phép du lịch điện tử như K-ETA, vì vậy vui lòng kiểm tra lại thông tin chính thức một lần nữa trước khi rời khỏi đất nước. Việc lưu bản PDF xác nhận đặt phòng ngoại tuyến là an toàn.",
-        "th": "ตรวจสอบให้แน่ใจว่าหนังสือเดินทางของคุณเหลือเวลาอย่างน้อย 6 เดือนในวันที่เดินทางกลับ คุณอาจต้องมีวีซ่าหรือใบอนุญาตการเดินทางแบบอิเล็กทรอนิกส์ เช่น K-ETA ขึ้นอยู่กับสัญชาติของคุณ ดังนั้นโปรดตรวจสอบข้อมูลอย่างเป็นทางการอีกครั้งก่อนเดินทางออกนอกประเทศ สามารถบันทึกการยืนยันการจองในรูปแบบ PDF ออฟไลน์ได้อย่างปลอดภัย",
-        "ru": "Убедитесь, что до даты возвращения в вашем паспорте осталось не менее 6 месяцев. В зависимости от вашего гражданства вам может потребоваться виза или электронное разрешение на поездку, такое как K-ETA, поэтому, пожалуйста, проверьте официальную информацию еще раз, прежде чем покинуть страну. PDF-файл с подтверждением бронирования можно безопасно сохранить в автономном режиме.",
-        "zh-Hant": "確保您的護照距離回國日期還有至少 6 個月的效期。根據您的國籍，您可能需要簽證或電子旅行許可證（例如 K-ETA），因此請在出境前再次查看官方資訊。離線儲存預訂確認 PDF 是安全的。"
+        "ko": "여권 유효기간\n\n많은 항공사·입국 심사가 귀국일 기준 6개월 이상 남아 있는지를 봅니다. 여권 손상이나 빈 페이지가 부족한지도 함께 살펴 두면 안심입니다. 갱신이 필요하면 출국 일정에 여유를 두고 진행하세요.",
+        "en": "Passport validity\n\nAirlines and immigration often expect 6+ months of validity beyond your return date. Also glance at damage and blank pages for stamps. If you need a renewal, leave time before departure.",
+        "ja": "パスポート残存期間\n\n多くの航空会社・入国審査は帰国日から6か月以上の残存を求めます。傷みやスタンプ用の余白も見ておくと安心です。更新が必要なら出発前に余裕を持って。",
+        "zh": "护照有效期\n\n许多航司与入境审查要求回国日期后仍有至少 6 个月有效期。也建议顺便看一下护照是否破损、空白页是否够用。若需换发，请在出发前留出时间。",
+        "vi": "Hạn hộ chiếu\n\nNhiều hãng bay và hải quan thường yêu cầu hộ chiếu còn hạn ít nhất 6 tháng sau ngày về. Nên xem thêm tình trạng hư hỏng và trang trống để đóng dấu. Nếu cần gia hạn, hãy để thời gian trước ngày bay.",
+        "th": "อายุหนังสือเดินทาง\n\nสายการบินและการตรวจคนเข้าเมืองหลายแห่งมักต้องการอายุเหลืออย่างน้อย 6 เดือนหลังวันเดินทางกลับ ควรเช็คความเสียหายและหน้าว่างสำหรับตราประทับด้วย หากต้องต่ออายุ ให้เผื่อเวลาก่อนออกเดินทาง",
+        "ru": "Срок действия паспорта\n\nАвиакомпании и пограничный контроль часто требуют 6+ месяцев действия после даты возвращения. Заодно взгляните на повреждения и свободные страницы для штампов. Если нужно обновление — заложите время до вылета.",
+        "zh-Hant": "護照有效期\n\n許多航司與入境審查要求回國日期後仍有至少 6 個月有效期。也建議順便看一下護照是否破損、空白頁是否夠用。若需換發，請在出發前留出時間。"
       },
       {
         "type": "text",
-        "ko": "비자·K-ETA·여행 허가\n\n국적에 따라 무비자, 비자, 또는 K-ETA(전자여행허가)가 필요할 수 있습니다. 조건은 자주 바뀌니 출국 전 대사관·공식 안내를 한 번 더 확인하세요. K-ETA는 전자입국신고(e-Arrival/ERI)와 다릅니다. ERI는 별도 탭에서 작성합니다.",
-        "en": "Visa, K-ETA, and travel authorization\n\nDepending on nationality you may need visa-free entry, a visa, or K-ETA. Rules change — recheck embassy/official guidance before you fly. K-ETA is not the e-Arrival Card (ERI); file ERI in its own tab.",
-        "ja": "ビザ・K-ETA・渡航認証\n\n国籍によりノービザ、ビザ、K-ETAが必要です。条件は変わるので出発前に公式案内を再確認を。K-ETAは電子入国申告（e-Arrival/ERI）とは別です。ERIは別タブで作成します。",
-        "zh": "签证、K-ETA 与旅行许可\n\n按国籍可能免签、需签证或需 K-ETA。规则会变，出发前请再核对使馆/官方说明。K-ETA 不同于电子入境申报（e-Arrival/ERI）；ERI 请在对应分栏填写。",
-        "vi": "Visa, K-ETA, giấy phép du lịch\n\nTùy thuộc vào quốc tịch của bạn, bạn có thể cần thị thực, thị thực hoặc K-ETA (Ủy quyền Du lịch Điện tử). Các điều kiện thay đổi thường xuyên, vì vậy vui lòng kiểm tra thông tin chính thức hoặc đại sứ quán trước khi khởi hành. K-ETA khác với Báo cáo hàng đến điện tử (e-Arrival/ERI). ERI được hoàn thành trong một tab riêng biệt.",
-        "th": "วีซ่า, K-ETA, ใบอนุญาตการเดินทาง\n\nคุณอาจต้องมีวีซ่า วีซ่า หรือ K-ETA (การอนุมัติการเดินทางทางอิเล็กทรอนิกส์) ทั้งนี้ขึ้นอยู่กับสัญชาติของคุณ เงื่อนไขเปลี่ยนแปลงบ่อยครั้ง ดังนั้นโปรดตรวจสอบข้อมูลสถานทูตหรือทางการก่อนออกเดินทาง K-ETA แตกต่างจากรายงานการมาถึงทางอิเล็กทรอนิกส์ (e-Arrival/ERI) ERI เสร็จสมบูรณ์ในแท็บแยกต่างหาก",
-        "ru": "Виза, K-ETA, разрешение на поездку\n\nВ зависимости от вашего гражданства вам может потребоваться виза, виза или K-ETA (электронное разрешение на поездку). Условия часто меняются, поэтому перед отъездом проверьте посольство или официальную информацию. K-ETA отличается от электронного отчета о прибытии (e-Arrival/ERI). ЭРИ заполняется в отдельной вкладке.",
-        "zh-Hant": "簽證、K-ETA、旅行許可證\n\n根據您的國籍，您可能需要簽證、簽證或 K-ETA（電子旅行授權）。情況經常發生變化，因此請在出發前查看使館或官方資訊。 K-ETA 與電子到達報告 (e-Arrival/ERI) 不同。 ERI 在單獨的選項卡中完成。"
-      },
-      {
-        "type": "text",
-        "ko": "입국심사에서는 숙소 주소·체류 목적·귀국편을 물을 수 있습니다. 호텔명과 주소를 한국어/영어로 띄울 수 있게 준비하세요.",
-        "en": "Immigration may ask hotel address, purpose of stay, and return/onward ticket. Keep the hotel name ready in Korean/English.",
-        "ja": "入国審査で宿住所・滞在目的・帰国便を聞かれることがあります。宿名を韓国語/英語で出せるように。",
-        "zh": "入境审查时可能询问住宿地址、停留目的和回程/续程机票。请准备好酒店名称与地址（韩文/英文）。",
-        "vi": "Khi sàng lọc nhập cư, bạn có thể được hỏi địa chỉ chỗ ở, mục đích lưu trú và chuyến bay trở về. Hãy chuẩn bị hiển thị tên và địa chỉ khách sạn bằng tiếng Hàn/tiếng Anh.",
-        "th": "ในระหว่างการตรวจคนเข้าเมือง คุณอาจถูกถามถึงที่อยู่ที่พัก วัตถุประสงค์ในการเข้าพัก และเที่ยวบินขากลับ เตรียมแสดงชื่อและที่อยู่โรงแรมเป็นภาษาเกาหลี/อังกฤษ",
-        "ru": "Во время иммиграционного контроля вас могут попросить указать адрес вашего проживания, цель пребывания и обратный рейс. Будьте готовы указать название и адрес отеля на корейском/английском языке.",
-        "zh-Hant": "在移民檢查時，您可能會被要求提供住宿地址、停留目的和回程航班。準備好以韓語/英語顯示飯店名稱和地址。"
+        "ko": "비자·K-ETA\n\n국적에 따라 무비자, 비자, 또는 K-ETA(전자여행허가)가 필요할 수 있습니다. 조건은 자주 바뀌니 출국 전 대사관·공식 안내를 한 번 더 확인하세요. K-ETA는 전자입국신고(e-Arrival/ERI)와 다릅니다. ERI는 별도 탭에서 작성합니다.",
+        "en": "Visa and K-ETA\n\nDepending on nationality you may need visa-free entry, a visa, or K-ETA. Rules change — recheck embassy or official guidance before you fly. K-ETA is not the e-Arrival Card (ERI); file ERI in its own tab.",
+        "ja": "ビザ・K-ETA\n\n国籍によりノービザ、ビザ、またはK-ETA（電子渡航認証）が必要です。条件は変わるので出発前に大使館・公式案内を再確認を。K-ETAは電子入国申告（e-Arrival/ERI）とは別です。ERIは別タブで作成します。",
+        "zh": "签证与 K-ETA\n\n按国籍可能免签、需签证或需 K-ETA（电子旅行许可）。规则会变，出发前请再核对使馆或官方说明。K-ETA 不同于电子入境申报（e-Arrival/ERI）；ERI 请在对应分栏填写。",
+        "vi": "Visa và K-ETA\n\nTùy quốc tịch, bạn có thể được miễn thị thực, cần visa hoặc cần K-ETA (giấy phép du lịch điện tử). Quy định hay đổi — hãy kiểm tra lại đại sứ quán hoặc hướng dẫn chính thức trước khi bay. K-ETA khác thẻ e-Arrival (ERI); khai ERI ở tab riêng.",
+        "th": "วีซ่าและ K-ETA\n\nขึ้นกับสัญชาติ คุณอาจเข้าได้โดยไม่ต้องวีซ่า ต้องมีวีซ่า หรือต้องมี K-ETA (การอนุมัติเดินทางอิเล็กทรอนิกส์) เงื่อนไขเปลี่ยนบ่อย — ตรวจสถานทูตหรือข้อมูลทางการอีกครั้งก่อนบิน K-ETA ไม่ใช่บัตร e-Arrival (ERI) กรอก ERI ในแท็บแยก",
+        "ru": "Виза и K-ETA\n\nВ зависимости от гражданства может быть безвизовый въезд, виза или K-ETA (электронное разрешение). Правила меняются — перед вылетом перепроверьте посольство или официальные источники. K-ETA — это не электронная карта прибытия (e-Arrival/ERI); заполняйте ERI в отдельной вкладке.",
+        "zh-Hant": "簽證與 K-ETA\n\n依國籍可能免簽、需簽證或需 K-ETA（電子旅行許可）。規則會變，出發前請再核對使館或官方說明。K-ETA 不同於電子入境申報（e-Arrival/ERI）；ERI 請在對應分欄填寫。"
       },
       {
         "type": "callout",
-        "ko": "여행자보험은 진료비·분실·지연에 대비하는 기본값으로 두는 편이 마음이 편합니다.",
-        "en": "Treat travel insurance as a baseline for medical costs, lost items, and delays.",
-        "ja": "旅行保険は医療費・紛失・遅延への備えとして基本にしておくと安心です。",
-        "zh": "建议把旅行保险当作医疗费用、行李遗失与延误的基本保障。",
-        "vi": "Hãy coi bảo hiểm du lịch là nền tảng cho chi phí y tế, thất lạc đồ và trì hoãn chuyến đi."
+        "ko": "숙소·항공권·보험·비상 연락처처럼 넓은 준비 항목은 ‘입국 준비 리스트’에서 이어서 확인하세요.",
+        "en": "For lodging, tickets, insurance, and emergency contacts, continue with the Entry prep checklist.",
+        "ja": "宿・航空券・保険・緊急連絡先など広い準備は「入国準備リスト」で続けて確認を。",
+        "zh": "住宿、机票、保险、紧急联系人等更广的准备项，请继续看「入境准备清单」。",
+        "vi": "Với chỗ ở, vé máy bay, bảo hiểm và liên hệ khẩn cấp, hãy xem tiếp Danh sách chuẩn bị nhập cảnh.",
+        "th": "สำหรับที่พัก ตั๋วเครื่องบิน ประกัน และเบอร์ฉุกเฉิน ให้ดูต่อที่รายการเตรียมเข้าประเทศ",
+        "ru": "Жильё, билеты, страховку и экстренные контакты смотрите дальше в «Списке подготовки к въезду».",
+        "zh-Hant": "住宿、機票、保險、緊急聯絡人等更廣的準備項，請繼續看「入境準備清單」。"
       }
     ],
     "moneyBody": [
@@ -809,8 +801,8 @@
       }
     ],
     "tabImmigration": "Nhập cảnh (SES)",
-    "immigrationTitle": "Nhập cảnh tự động (SES)",
-    "immigration1": "SES (Smart Entry Service) là nhập cảnh tự động qua cổng riêng bằng hộ chiếu và sinh trắc. Nếu đủ điều kiện thường nhanh hơn quầy nhân viên.",
+    "immigrationTitle": "Chuẩn bị nhập cảnh & SES",
+    "immigration1": "SES (Smart Entry Service) là kiểm tra nhập cảnh tự động bằng hộ chiếu và sinh trắc học tại cổng riêng. Đủ điều kiện thường nhanh hơn quầy nhân viên.",
     "immigration2": "Dành cho người nước ngoài đã đăng ký, một số quốc tịch và khách đăng ký trước. Có thể gắn tem/nhãn SES trên hộ chiếu. Xác nhận trên trang Immigration / Hi Korea.",
     "immigration3": "Ở sân bay, theo biển SES / nhập cảnh tự động. Nếu không đủ điều kiện, dùng quầy người nước ngoài thường.",
     "eriBody": [
@@ -911,8 +903,8 @@
     "catMoney": "Tiền bạc",
     "catLife": "Đời sống",
     "catDining": "Ăn uống",
-    "catEntryIntro": "Giấy tờ, e-Arrival (ERI) và nhập cảnh sân bay — kiểm tra trước khi hạ cánh.",
-    "catMoneyIntro": "Tiền mặt, thẻ, thẻ giao thông và Wow Pass cho du khách.",
+    "catEntryIntro": "Giấy tờ, khai báo điện tử, kiểm soát sân bay và danh sách chuẩn bị nhập cảnh.",
+    "catMoneyIntro": "Tiền mặt/thẻ, nhận biết tiền giấy·xu, và Wow Pass cho khách du lịch.",
     "catLifeIntro": "Data và điện, hành lý và chỗ ở, giao thông và taxi, cùng vài lời chào cơ bản cho ngày đầu.",
     "catDiningIntro": "Văn hóa ăn uống và ăn một mình — nên biết trước khi đến.",
     "tabEri": "Đến điện tử (ERI)",
@@ -1202,7 +1194,528 @@
         "vi": "Xem thêm câu sẵn dùng trong Tiếng Hàn hữu ích. Chỉ cần đọc nhanh các tab hàng ngày, ăn uống và di chuyển trước khi bay cũng khiến những ngày đầu dễ chịu hơn."
       }
     ],
-    "holidays4": "Khi ngày lễ trùng cuối tuần (Thứ Bảy/Chủ Nhật), Hàn Quốc thường có ngày nghỉ bù (대체공휴일)—thường là Thứ Hai kế tiếp hoặc ngày làm việc gần nhất. Có thể thêm một ngày nghỉ, nên hãy kiểm tra lịch năm đó có ngày nghỉ bù không."
+    "holidays4": "Khi ngày lễ trùng cuối tuần (Thứ Bảy/Chủ Nhật), Hàn Quốc thường có ngày nghỉ bù (대체공휴일)—thường là Thứ Hai kế tiếp hoặc ngày làm việc gần nhất. Có thể thêm một ngày nghỉ, nên hãy kiểm tra lịch năm đó có ngày nghỉ bù không.",
+    "moneyNotesTitle": "Hướng dẫn tiền giấy Hàn Quốc",
+    "moneyNotesLead": "Nhớ màu và chân dung để phân biệt tiền thừa nhanh hơn. Ảnh bên dưới là won thật.",
+    "moneyNote1000": "Blue · Yi Hwang. Handy at markets and for small change.",
+    "moneyNote5000": "Orange-brown · Yi I. Common for small purchases.",
+    "moneyNote10000": "Green · King Sejong. The note you see most often.",
+    "moneyNote50000": "Yellow · Shin Saimdang. Common after exchanging larger amounts.",
+    "moneyCoinsTitle": "Hướng dẫn xu Hàn Quốc",
+    "moneyCoinsLead": "₩10, ₩50, ₩100, and ₩500 — used for change, vending, and transit top-ups.",
+    "moneyCoin10": "Smallest unit — usually given as change.",
+    "moneyCoin50": "Small yellowish coin.",
+    "moneyCoin100": "Silver-tone coin you meet often.",
+    "moneyCoin500": "Largest common coin — useful for change/top-ups.",
+    "moneyFxNote": "For a rough won value, open Travel tools (bottom-right) → Currency. Approximate only.",
+    "entryChecklistTitle": "Danh sách chuẩn bị nhập cảnh",
+    "entryChecklistLead": "Hãy kiểm tra các mục dưới đây",
+    "checkPassport": "Hạn hộ chiếu (còn 6+ tháng sau ngày về)",
+    "checkTicket": "Vé máy bay / vé khứ hồi",
+    "checkLodging": "Đặt chỗ & địa chỉ lưu trú (Hàn/Anh)",
+    "checkInsurance": "Bảo hiểm du lịch",
+    "checkVisa": "Visa hoặc K-ETA",
+    "checkCopy": "Bản sao hộ chiếu & file ảnh",
+    "checkEmergency": "Liên hệ khẩn cấp",
+    "checkExtraDocs": "Giấy mời / xác nhận công việc·học nếu cần",
+    "checkEri": "e-Arrival (ERI) — điền ở tab riêng",
+    "tabCurrency": "Tiền giấy · Xu",
+    "tabEntryPrep": "Danh sách chuẩn bị nhập cảnh",
+    "entryChecklistBody": [
+      {
+        "type": "image",
+        "src": "Images/before-trip/trip-checklist.png"
+      },
+      {
+        "type": "text",
+        "ko": "아래 내용을 확인하세요",
+        "en": "Check the items below",
+        "ja": "下記を確認しましょう",
+        "zh": "请确认以下内容",
+        "zh-Hant": "請確認以下內容",
+        "vi": "Hãy kiểm tra các mục dưới đây",
+        "th": "โปรดตรวจสอบรายการด้านล่าง",
+        "ru": "Проверьте пункты ниже"
+      },
+      {
+        "type": "checklist",
+        "ko": "입국/신분",
+        "en": "Entry & ID",
+        "ja": "入国・身分",
+        "zh": "入境/身份",
+        "zh-Hant": "入境/身分",
+        "vi": "Nhập cảnh / giấy tờ",
+        "th": "การเข้าเมือง / เอกสารตัวตน",
+        "ru": "Въезд и документы",
+        "items": [
+          {
+            "ko": "여권 유효기간 (귀국일+6개월)",
+            "en": "Passport validity (6+ months past return)",
+            "ja": "パスポート残存（帰国日+6か月）",
+            "zh": "护照有效期（回国日+6个月）",
+            "zh-Hant": "護照有效期（回國日+6個月）",
+            "vi": "Hạn hộ chiếu (còn 6+ tháng sau ngày về)",
+            "th": "อายุหนังสือเดินทาง (เหลือ 6+ เดือนหลังวันกลับ)",
+            "ru": "Срок паспорта (6+ месяцев после возвращения)"
+          },
+          {
+            "ko": "항공권 / 왕복 항공권",
+            "en": "Flights / round-trip tickets",
+            "ja": "航空券 / 往復航空券",
+            "zh": "机票 / 往返机票",
+            "zh-Hant": "機票 / 來回機票",
+            "vi": "Vé máy bay / vé khứ hồi",
+            "th": "ตั๋วเครื่องบิน / ตั๋วไป-กลับ",
+            "ru": "Билеты / туда-обратно"
+          },
+          {
+            "ko": "숙소 예약·주소 (한/영)",
+            "en": "Lodging booking & address (KO/EN)",
+            "ja": "宿泊予約・住所（韓/英）",
+            "zh": "住宿预订与地址（韩/英）",
+            "zh-Hant": "住宿預訂與地址（韓/英）",
+            "vi": "Đặt chỗ & địa chỉ lưu trú (Hàn/Anh)",
+            "th": "การจองที่พักและที่อยู่ (เกาหลี/อังกฤษ)",
+            "ru": "Бронь жилья и адрес (кор./англ.)"
+          },
+          {
+            "ko": "여행자보험",
+            "en": "Travel insurance",
+            "ja": "旅行保険",
+            "zh": "旅行保险",
+            "zh-Hant": "旅行保險",
+            "vi": "Bảo hiểm du lịch",
+            "th": "ประกันการเดินทาง",
+            "ru": "Страховка"
+          },
+          {
+            "ko": "비자 또는 K-ETA",
+            "en": "Visa or K-ETA",
+            "ja": "ビザまたは K-ETA",
+            "zh": "签证或 K-ETA",
+            "zh-Hant": "簽證或 K-ETA",
+            "vi": "Visa hoặc K-ETA",
+            "th": "วีซ่าหรือ K-ETA",
+            "ru": "Виза или K-ETA"
+          },
+          {
+            "ko": "여권 사본·사진 파일",
+            "en": "Passport copy & photo file",
+            "ja": "パスポートコピー・写真",
+            "zh": "护照复印件与证件照",
+            "zh-Hant": "護照影本與證件照",
+            "vi": "Bản sao hộ chiếu & file ảnh",
+            "th": "สำเนาหนังสือเดินทางและไฟล์รูป",
+            "ru": "Копия паспорта и фотофайл"
+          },
+          {
+            "ko": "비상 연락처",
+            "en": "Emergency contacts",
+            "ja": "緊急連絡先",
+            "zh": "紧急联系人",
+            "zh-Hant": "緊急聯絡人",
+            "vi": "Liên hệ khẩn cấp",
+            "th": "เบอร์ฉุกเฉิน",
+            "ru": "Экстренные контакты"
+          },
+          {
+            "ko": "필요 시 초청장·재직/재학 증명",
+            "en": "Invitation / work / school proof if needed",
+            "ja": "必要なら招待状・在職/在学証明",
+            "zh": "需要时邀请函、在职/在学证明",
+            "zh-Hant": "需要時邀請函、在職/在學證明",
+            "vi": "Giấy mời / xác nhận công việc·học nếu cần",
+            "th": "จดหมายเชิญ / หนังสือรับรองงาน·การศึกษาหากจำเป็น",
+            "ru": "Приглашение / справка с работы·учёбы при необходимости"
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "ko": "돈 & 결제",
+        "en": "Money & payments",
+        "ja": "お金・支払い",
+        "zh": "金钱与支付",
+        "zh-Hant": "金錢與支付",
+        "vi": "Tiền & thanh toán",
+        "th": "เงินและการชำระ",
+        "ru": "Деньги и оплата",
+        "items": [
+          {
+            "ko": "해외결제 카드 1~2장",
+            "en": "1–2 cards that work abroad",
+            "ja": "海外対応カード 1〜2枚",
+            "zh": "可海外刷卡 1–2 张",
+            "zh-Hant": "可海外刷卡 1–2 張",
+            "vi": "1–2 thẻ dùng được ở nước ngoài",
+            "th": "บัตรใช้ต่างประเทศได้ 1–2 ใบ",
+            "ru": "1–2 карты с оплатой за рубежом"
+          },
+          {
+            "ko": "비상용 현금",
+            "en": "Emergency cash",
+            "ja": "非常用現金",
+            "zh": "应急现金",
+            "zh-Hant": "應急現金",
+            "vi": "Tiền mặt khẩn cấp",
+            "th": "เงินสดฉุกเฉิน",
+            "ru": "Наличные на случай"
+          },
+          {
+            "ko": "원화 소액 (₩5~10만)",
+            "en": "Some won cash (₩50–100k)",
+            "ja": "少額のウォン（5〜10万）",
+            "zh": "少量韩元（₩5–10万）",
+            "zh-Hant": "少量韓元（₩5–10萬）",
+            "vi": "Ít won (₩50–100 nghìn)",
+            "th": "วอนจำนวนเล็กน้อย (₩50–100k)",
+            "ru": "Немного вон (₩50–100 тыс.)"
+          },
+          {
+            "ko": "카드 분실 대비 다른 결제수단",
+            "en": "Backup payment if a card is lost",
+            "ja": "紛失時の別の支払い手段",
+            "zh": "防丢卡的备用支付",
+            "zh-Hant": "防丟卡的備用支付",
+            "vi": "Thanh toán dự phòng nếu mất thẻ",
+            "th": "ช่องทางชำระสำรองหากบัตรหาย",
+            "ru": "Запасной способ оплаты"
+          },
+          {
+            "ko": "은행/카드 해외사용 설정",
+            "en": "Enable overseas card / ATM use",
+            "ja": "銀行/カードの海外利用設定",
+            "zh": "银行/卡海外使用设置",
+            "zh-Hant": "銀行/卡海外使用設定",
+            "vi": "Bật dùng thẻ/ATM nước ngoài",
+            "th": "เปิดใช้บัตร/ATM ต่างประเทศ",
+            "ru": "Включить зарубежные платежи/ATM"
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "ko": "원화 지폐·동전 구분과 Wow Pass는 ‘떠나기 전에’ → 돈 카테고리에서 이어서 볼 수 있습니다.",
+        "en": "Won notes/coins and Wow Pass: continue under Money in Before You Go.",
+        "ja": "ウォン紙幣・硬貨と Wow Pass は「出発前に」→お金カテゴリで続きます。",
+        "zh": "韩元纸币/硬币与 Wow Pass：在「出发前」→金钱分类继续查看。",
+        "zh-Hant": "韓元紙鈔/硬幣與 Wow Pass：在「出發前」→金錢分類繼續查看。",
+        "vi": "Tiền giấy/xu won và Wow Pass: xem tiếp mục Tiền trong Trước khi đi.",
+        "th": "ธนบัตร/เหรียญวอนและ Wow Pass: ดูต่อในหมวดเงินของ ก่อนเดินทาง",
+        "ru": "Банкноты/монеты вона и Wow Pass — в разделе «Деньги» в «Перед поездкой»."
+      },
+      {
+        "type": "checklist",
+        "ko": "휴대폰 & 인터넷",
+        "en": "Phone & internet",
+        "ja": "スマホ・インターネット",
+        "zh": "手机与网络",
+        "zh-Hant": "手機與網路",
+        "vi": "Điện thoại & internet",
+        "th": "มือถือและอินเทอร์เน็ต",
+        "ru": "Телефон и интернет",
+        "items": [
+          {
+            "ko": "언락(자급제) 여부",
+            "en": "Phone unlocked",
+            "ja": "ロック解除済みか",
+            "zh": "手机是否已解锁",
+            "zh-Hant": "手機是否已解鎖",
+            "vi": "Máy đã mở khóa",
+            "th": "ปลดล็อกเครื่องแล้วหรือยัง",
+            "ru": "Разблокирован ли телефон"
+          },
+          {
+            "ko": "한국용 eSIM / USIM / 포켓 Wi-Fi",
+            "en": "Korea eSIM / USIM / pocket Wi-Fi",
+            "ja": "韓国向け eSIM / USIM / ポケット Wi-Fi",
+            "zh": "韩国用 eSIM / USIM / 随身 Wi-Fi",
+            "zh-Hant": "韓國用 eSIM / USIM / 隨身 Wi-Fi",
+            "vi": "eSIM / USIM / Wi-Fi bỏ túi cho Hàn",
+            "th": "eSIM / USIM / พ็อกเก็ต Wi-Fi สำหรับเกาหลี",
+            "ru": "eSIM / USIM / карманный Wi-Fi для Кореи"
+          },
+          {
+            "ko": "충전 케이블·보조배터리·충전기",
+            "en": "Cable, power bank, charger",
+            "ja": "ケーブル・モバイルバッテリー・充電器",
+            "zh": "充电线、充电宝、充电器",
+            "zh-Hant": "充電線、行動電源、充電器",
+            "vi": "Cáp, pin dự phòng, củ sạc",
+            "th": "สายชาร์จ พาวเวอร์แบงก์ ที่ชาร์จ",
+            "ru": "Кабель, пауэрбанк, зарядка"
+          },
+          {
+            "ko": "지도·번역·교통·메신저 앱",
+            "en": "Maps, translate, transit, messenger apps",
+            "ja": "地図・翻訳・交通・メッセンジャーアプリ",
+            "zh": "地图、翻译、公交、即时通讯 App",
+            "zh-Hant": "地圖、翻譯、大眾運輸、即時通訊 App",
+            "vi": "App bản đồ, dịch, giao thông, nhắn tin",
+            "th": "แอปแผนที่ แปล ขนส่ง แชท",
+            "ru": "Карты, перевод, транспорт, мессенджер"
+          },
+          {
+            "ko": "해외 2단계 인증 확인",
+            "en": "Confirm 2FA works abroad",
+            "ja": "海外でも二段階認証できるか",
+            "zh": "确认海外两步验证可用",
+            "zh-Hant": "確認海外兩步驟驗證可用",
+            "vi": "Xác thực 2 bước hoạt động ở nước ngoài",
+            "th": "ตรวจ 2FA ใช้ต่างประเทศได้ไหม",
+            "ru": "Проверить 2FA за рубежом"
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "ko": "전자기기",
+        "en": "Electronics",
+        "ja": "電子機器",
+        "zh": "电子设备",
+        "zh-Hant": "電子設備",
+        "vi": "Thiết bị điện tử",
+        "th": "อุปกรณ์อิเล็กทรอนิกส์",
+        "ru": "Электроника",
+        "items": [
+          {
+            "ko": "콘센트 변환기 / 멀티 어댑터 (Type C/F)",
+            "en": "Plug / multi-adapter (Type C/F)",
+            "ja": "コンセント変換・マルチアダプター（Type C/F）",
+            "zh": "插座转换器 / 多国适配器（Type C/F）",
+            "zh-Hant": "插座轉換器 / 多國轉接頭（Type C/F）",
+            "vi": "Bộ chuyển ổ cắm / multi-adapter (Type C/F)",
+            "th": "หัวแปลงปลั๊ก / มัลติอะแดปเตอร์ (Type C/F)",
+            "ru": "Переходник / мультиадаптер (Type C/F)"
+          },
+          {
+            "ko": "노트북·태블릿·카메라·충전기",
+            "en": "Laptop / tablet / camera + chargers",
+            "ja": "ノート・タブレット・カメラ・充電器",
+            "zh": "笔记本 / 平板 / 相机与充电器",
+            "zh-Hant": "筆電 / 平板 / 相機與充電器",
+            "vi": "Laptop / tablet / máy ảnh + củ sạc",
+            "th": "โน้ตบุ๊ก / แท็บเล็ต / กล้อง + ที่ชาร์จ",
+            "ru": "Ноутбук / планшет / камера + зарядки"
+          },
+          {
+            "ko": "전열기구 전압 확인",
+            "en": "Check voltage for heat appliances",
+            "ja": "ドライヤーなど電熱器具の電圧確認",
+            "zh": "确认吹风机等电热器具电压",
+            "zh-Hant": "確認吹風機等電熱器具電壓",
+            "vi": "Kiểm tra điện áp máy sấy / thiết bị nhiệt",
+            "th": "ตรวจแรงดันไดร์เป่าผม / เครื่องความร้อน",
+            "ru": "Проверить напряжение фенов/нагревателей"
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "ko": "한국은 220V / 60Hz입니다. 스마트폰·노트북 충전기는 대개 100–240V라 어댑터만으로 충분한 경우가 많습니다. 자세한 플러그는 ‘전원·플러그’ 탭을 참고하세요.",
+        "en": "Korea is 220V / 60Hz. Most phone/laptop chargers accept 100–240V — an adapter is usually enough. See also Power & plugs.",
+        "ja": "韓国は 220V / 60Hz。スマホ・ノート充電器は多くが 100–240V 対応でアダプターだけで足りることが多いです。「電源・プラグ」も参照を。",
+        "zh": "韩国为 220V / 60Hz。多数手机/笔记本充电器支持 100–240V，一般只需适配器。也可参考「电源·插头」。",
+        "zh-Hant": "韓國為 220V / 60Hz。多數手機/筆電充電器支援 100–240V，一般只需轉接頭。也可參考「電源·插頭」。",
+        "vi": "Hàn là 220V / 60Hz. Hầu hết củ sạc điện thoại/laptop nhận 100–240V — thường chỉ cần adapter. Xem thêm Nguồn điện & phích cắm.",
+        "th": "เกาหลี 220V / 60Hz ที่ชาร์จมือถือ/โน้ตบุ๊กส่วนใหญ่รับ 100–240V — มักใช้อะแดปเตอร์พอ ดูแท็บปลั๊กไฟเพิ่มได้",
+        "ru": "В Корее 220V / 60Hz. Большинство зарядок телефонов/ноутбуков 100–240V — обычно хватает адаптера. См. также вкладку про розетки."
+      },
+      {
+        "type": "checklist",
+        "ko": "옷 & 개인용품",
+        "en": "Clothes & personal items",
+        "ja": "衣類・身の回り",
+        "zh": "衣物与个人用品",
+        "zh-Hant": "衣物與個人用品",
+        "vi": "Quần áo & đồ cá nhân",
+        "th": "เสื้อผ้าและของใช้ส่วนตัว",
+        "ru": "Одежда и личные вещи",
+        "items": [
+          {
+            "ko": "계절 의류·속옷·양말",
+            "en": "Seasonal clothes, underwear, socks",
+            "ja": "季節の服・下着・靴下",
+            "zh": "当季衣物、内衣、袜子",
+            "zh-Hant": "當季衣物、內衣、襪子",
+            "vi": "Đồ theo mùa, đồ lót, tất",
+            "th": "เสื้อผ้าตามฤดู ชุดชั้นใน ถุงเท้า",
+            "ru": "Сезонная одежда, бельё, носки"
+          },
+          {
+            "ko": "편한 신발·잠옷",
+            "en": "Comfortable shoes & sleepwear",
+            "ja": "歩きやすい靴・寝間着",
+            "zh": "舒适鞋与睡衣",
+            "zh-Hant": "舒適鞋與睡衣",
+            "vi": "Giày êm & đồ ngủ",
+            "th": "รองเท้าสบายและชุดนอน",
+            "ru": "Удобная обувь и пижама"
+          },
+          {
+            "ko": "우산·모자/선글라스",
+            "en": "Umbrella, hat / sunglasses",
+            "ja": "傘・帽子/サングラス",
+            "zh": "雨伞、帽子/墨镜",
+            "zh-Hant": "雨傘、帽子/墨鏡",
+            "vi": "Ô, mũ / kính mát",
+            "th": "ร่ม หมวก/แว่นกันแดด",
+            "ru": "Зонт, шляпа/очки"
+          },
+          {
+            "ko": "세면도구·화장품·렌즈/안경",
+            "en": "Toiletries, cosmetics, contacts/glasses",
+            "ja": "洗面用具・化粧品・コンタクト/眼鏡",
+            "zh": "洗漱、化妆品、隐形/眼镜",
+            "zh-Hant": "盥洗、化妝品、隱眼/眼鏡",
+            "vi": "Đồ vệ sinh, mỹ phẩm, kính áp/kính",
+            "th": "ของใช้ในห้องน้ำ เครื่องสำอาง คอนแทค/แว่น",
+            "ru": "Гигиена, косметика, линзы/очки"
+          },
+          {
+            "ko": "개인 필수 생활용품",
+            "en": "Everyday personal must-haves",
+            "ja": "個人の必需品",
+            "zh": "个人必备日常用品",
+            "zh-Hant": "個人必備日常用品",
+            "vi": "Đồ dùng thiết yếu cá nhân",
+            "th": "ของจำเป็นส่วนตัว",
+            "ru": "Личные must-have"
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "ko": "계절 옷차림을 기준으로, 실내 냉난방·비·바람용 여유 한 겹을 두면 편합니다.",
+        "en": "Dress for the season, plus one light layer for indoor AC/heating, rain, or wind.",
+        "ja": "季節服を基本に、室内の冷暖房や雨・風向けに一枚余裕があると安心です。",
+        "zh": "按季节穿衣，并为室内冷暖、雨或风准备一层薄外套。",
+        "zh-Hant": "按季節穿衣，並為室內冷暖、雨或風準備一層薄外套。",
+        "vi": "Mặc theo mùa và giữ thêm một lớp mỏng cho điều hòa/sưởi, mưa hoặc gió.",
+        "th": "แต่งตามฤดู และเผื่อชั้นบางๆ สำหรับแอร์/ฮีตเตอร์ ฝน หรือลม",
+        "ru": "Одевайтесь по сезону и держите лёгкий слой на кондиционер/отопление, дождь или ветер."
+      },
+      {
+        "type": "checklist",
+        "ko": "약",
+        "en": "Medicine",
+        "ja": "薬",
+        "zh": "药品",
+        "zh-Hant": "藥品",
+        "vi": "Thuốc",
+        "th": "ยา",
+        "ru": "Лекарства",
+        "items": [
+          {
+            "ko": "평소 복용약",
+            "en": "Regular prescriptions",
+            "ja": "常用薬",
+            "zh": "常备处方药",
+            "zh-Hant": "常備處方藥",
+            "vi": "Thuốc đang uống",
+            "th": "ยาประจำ",
+            "ru": "Постоянные препараты"
+          },
+          {
+            "ko": "진통제·소화제 등 상비약",
+            "en": "Basics (pain / digestive relief)",
+            "ja": "鎮痛・消化など常備薬",
+            "zh": "止痛/消化等常用药",
+            "zh-Hant": "止痛/消化等常用藥",
+            "vi": "Thuốc giảm đau / tiêu hóa…",
+            "th": "ยาแก้ปวด / ยาระบายอาหาร ฯลฯ",
+            "ru": "Базовые (обезболивающее / от желудка)"
+          },
+          {
+            "ko": "필요 시 처방전·소견서·성분명",
+            "en": "Prescription / letter & ingredient names if needed",
+            "ja": "必要なら処方箋・診断書・成分名",
+            "zh": "需要时处方/说明与成分名",
+            "zh-Hant": "需要時處方/說明與成分名",
+            "vi": "Đơn / giấy khám & tên thành phần nếu cần",
+            "th": "ใบสั่ง / ใบรับรองและชื่อส่วนประกอบหากจำเป็น",
+            "ru": "Рецепт / справка и названия веществ при необходимости"
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "ko": "처방·향정신성 등 규제 의약품은 한국 반입 규정을 출국 전에 확인하세요.",
+        "en": "For prescription or controlled medicines, check Korea’s import rules before you fly.",
+        "ja": "処方薬・規制薬は、韓国への持ち込みルールを出発前に確認を。",
+        "zh": "处方药、管制药品请出发前查清韩国入境规定。",
+        "zh-Hant": "處方藥、管制藥品請出發前查清韓國入境規定。",
+        "vi": "Thuốc kê đơn/kiểm soát: kiểm tra quy định nhập khẩu của Hàn trước khi bay.",
+        "th": "ยาตามใบสั่ง/ยาควบคุม: ตรวจกฎนำเข้าเกาหลีก่อนบิน",
+        "ru": "Рецептурные и контролируемые средства: заранее проверьте правила ввоза в Корею."
+      },
+      {
+        "type": "checklist",
+        "ko": "한국에서 이동",
+        "en": "Getting around in Korea",
+        "ja": "韓国での移動",
+        "zh": "在韩国出行",
+        "zh-Hant": "在韓國移動",
+        "vi": "Di chuyển tại Hàn",
+        "th": "การเดินทางในเกาหลี",
+        "ru": "Перемещения в Корее",
+        "items": [
+          {
+            "ko": "교통카드 구매·사용법",
+            "en": "How to buy & use a transit card",
+            "ja": "交通カードの買い方・使い方",
+            "zh": "交通卡购买与用法",
+            "zh-Hant": "交通卡購買與用法",
+            "vi": "Mua và dùng thẻ giao thông",
+            "th": "วิธีซื้อและใช้บัตรโดยสาร",
+            "ru": "Покупка и использование транспортной карты"
+          },
+          {
+            "ko": "공항→숙소 이동 계획",
+            "en": "Airport → lodging plan",
+            "ja": "空港→宿の移動計画",
+            "zh": "机场→住宿路线计划",
+            "zh-Hant": "機場→住宿路線計畫",
+            "vi": "Kế hoạch sân bay → chỗ ở",
+            "th": "แผนสนามบิน→ที่พัก",
+            "ru": "План аэропорт → жильё"
+          },
+          {
+            "ko": "숙소 한국어 주소 저장",
+            "en": "Save lodging address in Korean",
+            "ja": "宿の韓国語住所を保存",
+            "zh": "保存住宿韩文地址",
+            "zh-Hant": "儲存住宿韓文地址",
+            "vi": "Lưu địa chỉ chỗ ở bằng tiếng Hàn",
+            "th": "บันทึกที่อยู่ที่พักภาษาเกาหลี",
+            "ru": "Сохранить адрес жилья по-корейски"
+          },
+          {
+            "ko": "목적지 한국어 이름/주소 캡처",
+            "en": "Screenshot Korean names / addresses",
+            "ja": "行き先の韓国語名・住所をキャプチャ",
+            "zh": "截取目的地韩文名/地址",
+            "zh-Hant": "截取目的地韓文名/地址",
+            "vi": "Chụp tên/địa chỉ tiếng Hàn của điểm đến",
+            "th": "แคปชื่อ/ที่อยู่ภาษาเกาหลีของจุดหมาย",
+            "ru": "Скриншоты корейских названий/адресов"
+          }
+        ]
+      },
+      {
+        "type": "callout",
+        "ko": "전자입국신고(e-Arrival/ERI)와 SES 자동출입국은 같은 ‘입국’ 카테고리의 옆 탭에서 자세히 안내합니다.",
+        "en": "e-Arrival (ERI) and SES auto-gates are covered in neighboring tabs under Entry.",
+        "ja": "電子入国申告（e-Arrival/ERI）と SES 自動出入国は、同じ「入国」カテゴリの隣タブで詳しく案内しています。",
+        "zh": "电子入境申报（e-Arrival/ERI）与 SES 自动通关，在同一「入境」分类的相邻分栏有详细说明。",
+        "zh-Hant": "電子入境申報（e-Arrival/ERI）與 SES 自動通關，在同一「入境」分類的相鄰分欄有詳細說明。",
+        "vi": "e-Arrival (ERI) và cổng SES xem chi tiết ở các tab cạnh trong mục Nhập cảnh.",
+        "th": "e-Arrival (ERI) และ SES ดูรายละเอียดในแท็บข้างๆ ของหมวดเข้าเมือง",
+        "ru": "e-Arrival (ERI) и SES — в соседних вкладках раздела «Въезд»."
+      }
+    ],
+    "entryChecklist1": "Hãy kiểm tra các mục dưới đây",
+    "entryChecklist2": "Xem nhanh từ giấy tờ đến tiền, mạng, thiết bị, quần áo, thuốc và di chuyển. e-Arrival (ERI) ở tab riêng."
   },
   "emergency": {
     "pageTitle": "Khẩn cấp | Korea Travel Guide",
@@ -23936,7 +24449,7 @@
     "catDailyIntro": "Mẹo hàng ngày khi du lịch — bản đồ, rác, giá cuối tuần, khảo sát, giao đồ ăn, ngày mưa.",
     "catRestaurantIntro": "Mẹo ăn uống — gọi món, tip, chờ, tự phục vụ, hút thuốc.",
     "catTransportIntro": "Di chuyển — chạm thẻ, giờ cao điểm, lối ra, phép lịch sự, tiếng ồn, ghế ưu tiên, chào hàng. Về vé và thẻ, xem Trước khi đi.",
-    "catShoppingIntro": "Olive Young, Daiso, miễn thuế, chợ và đặc sản vùng — xem ngay tại đây.",
+    "catShoppingIntro": "Olive Young, Daiso, miễn thuế, chợ và đặc sản vùng — xem ngay tại đây. Có thêm mẹo nhẹ về kiểm tra hóa đơn.",
     "tabMap": "Bản đồ",
     "tabCash": "Tiền mặt · Thẻ",
     "tabTrash": "Thùng rác",
@@ -24110,7 +24623,8 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "Đặc sản vùng"
+    "tabSpecialty": "Đặc sản vùng",
+    "tabReceipt": "Kiểm tra hóa đơn"
   },
   "korean": {
     "pageTitle": "Tiếng Hàn hữu ích",
@@ -24734,7 +25248,7 @@
   "festivals": {
     "pageTitle": "Lễ hội & sự kiện | Korea Travel Guide",
     "title": "Lễ hội & sự kiện",
-    "intro": "Xem lễ hội và sự kiện theo vùng trên trang du lịch chính thức.",
+    "intro": "Browse highlight festivals as cards, then use the official guides below for more.",
     "back": "← Lễ hội & sự kiện",
     "linksTitle": "Liên kết chính thức",
     "linkVisitKoreaEyebrow": "ThămHàn Quốc",
@@ -24752,19 +25266,45 @@
     "openExternal": "Mở tab mới →",
     "sourceLabel": "Nguồn",
     "sourceName": "VisitKorea — Tổ chức Du lịch Hàn Quốc",
-    "sourceNote": "Lịch có thể thay đổi — luôn xác nhận trên các trang chính thức ở trên."
+    "sourceNote": "Dates may change — always check the official sites for the latest info.",
+    "featuredTitle": "Featured festivals & events",
+    "featuredHelp": "Swipe the cards sideways like a deck.",
+    "linksHelp": "Find more festivals in the official guides below.",
+    "openOfficial": "Official site →",
+    "sliderPrev": "Previous",
+    "sliderNext": "Next",
+    "eBiffTitle": "Busan International Film Festival",
+    "eBiffMeta": "Busan · October",
+    "eYeouidoTitle": "Yeongdeungpo Yeouido Spring Flower Festival",
+    "eYeouidoMeta": "Seoul · March–April",
+    "eBusanFwTitle": "Busan Fireworks Festival",
+    "eBusanFwMeta": "Busan · November",
+    "eHanwhaFwTitle": "Hanwha Seoul International Fireworks Festival",
+    "eHanwhaFwMeta": "Seoul · October",
+    "eWaterbombTitle": "WATERBOMB",
+    "eWaterbombMeta": "Seoul, Daegu, Busan & more · June–August",
+    "eHwacheonTitle": "Hwacheon Sancheoneo Ice Festival",
+    "eHwacheonMeta": "Hwacheon, Gangwon · January",
+    "eMudTitle": "Boryeong Mud Festival",
+    "eMudMeta": "Boryeong, Chungnam · July–August",
+    "eAndongTitle": "Andong International Maskdance Festival",
+    "eAndongMeta": "Andong, Gyeongbuk · September–October",
+    "ePentaportTitle": "Incheon Pentaport Rock Festival",
+    "ePentaportMeta": "Incheon · August",
+    "eSeoulMusicTitle": "Seoul Music Festival",
+    "eSeoulMusicMeta": "Seoul · October"
   },
   "souvenir": {
     "catDaily": "Đồ dùng hàng ngày",
     "catFood": "Thực phẩm",
     "catFashion": "Thời trang",
     "catBeauty": "Làm đẹp",
-    "maskTitle": "Khẩu trang KF94 (Jaksim, Bluedot…)",
-    "maskDesc": "Jaksim KF94, Bluedot, Aer — khẩu trang chống bụi được bán tại các hiệu thuốc, cửa hàng tiện lợi, Olive Young.",
+    "maskTitle": "KF94 masks",
+    "maskDesc": "Dust masks from pharmacies, convenience stores, and Olive Young",
     "stationeryTitle": "Monami, văn phòng phẩm mang tính biểu tượng và nhân vật",
     "stationeryDesc": "Bút Monami 153, Nhật ký biểu tượng, Giấy dán ghi chú Kakao Friends.",
-    "oliveTitle": "Phòng thí nghiệm tròn, Anua, Mediheal",
-    "oliveDesc": "Toner Dokdo, Anua Heartleaf, mặt nạ Mediheal — Bán chạy nhất của Olive Young.",
+    "oliveTitle": "Olive Young",
+    "oliveDesc": "Picks, sales, tax-free — Korea’s beauty shopping hub",
     "daisoTitle": "Hàng hóa du lịch & nhân vật Daiso",
     "daisoDesc": "Dây buộc cáp, túi sinh thái, dụng cụ ép kem đánh răng, sự hợp tác của Kakao Friends.",
     "snackTitle": "Pepero, khoai tây chiên bơ mật ong, bánh quy tôm",
@@ -24775,12 +25315,12 @@
     "teaDesc": "Nhân sâm CKJ, si-rô trà yuja, túi trà lúa mạch/ngô.",
     "honeyTitle": "Set mật ong, yakgwa & hangwa",
     "honeyDesc": "Mật ong keo, mật ong yuja, hộp quà yakgwa/hangwa.",
-    "uniqloTitle": "Uniqlo & SPA địa phương",
-    "uniqloDesc": "Những màu sắc chỉ có ở Hàn Quốc và những chiếc áo phông có hình nhân vật là những vật kỷ niệm phổ biến.",
-    "spaTitle": "Thông tin cơ bản về SPAO & 8Giây",
-    "spaDesc": "SPAO, 8Seconds, áo phông Uniqlo, đồ ngủ, tất — giá trị thời trang.",
-    "socksTitle": "Shoopen & gói tất giá trị",
-    "socksDesc": "Gói tất và quần bó Shoopen, SPAO, Daiso 3/5 đôi.",
+    "uniqloTitle": "Uniqlo",
+    "uniqloDesc": "Korea-only colors and character collab tees",
+    "spaTitle": "SPAO",
+    "spaDesc": "Character collabs and affordable SPA fashion",
+    "socksTitle": "Sock & tights packs",
+    "socksDesc": "Multi-packs from Daiso, SPAO, and more",
     "hanbokTitle": "Hanbok hiện đại và bùa chú",
     "hanbokDesc": "Ngoài dịch vụ cho thuê, bùa norigae, khăn tay và móc khóa mini cũng bán rất chạy.",
     "sheetTitle": "Mediheal, gây tê, TIRTIR",
@@ -24789,21 +25329,21 @@
     "sunscreenDesc": "Kem chống nắng nước ép bạch dương, kem chống nắng Tocobo, SPF dành cho trẻ em Green Finger, v.v.",
     "lipstickTitle": "rom&nd, Peripera, CLIO",
     "lipstickDesc": "Juicy Lasting Tint, Peripera Ink Velvet, CLIO Kill Cover.",
-    "kpopTitle": "Album, photocard & lightstick",
-    "kpopDesc": "Tower Records, Hottracks, Weverse — album và hàng hóa chính thức.",
+    "kpopTitle": "K-POP Photocard",
+    "kpopDesc": "Photocard chính thức từ Tower Records, Hottracks, Weverse.",
     "tapHint": "Nhấn vào thẻ để biết nơi mua và những lời khuyên thiết thực.",
     "readMore": "Đọc thêm →",
     "backList": "← Mua sắm & vui chơi",
     "tipTitle": "Mẹo mua hàng",
-    "maskBody1": "Lựa chọn phổ biến: Gói Jaksim KF94, Bluedot, Aer KF94/KF80 (5–10 tờ) từ các cửa hàng tiện lợi, Daiso, Olive Young hoặc hiệu thuốc — kích thước vali dễ dàng.",
-    "maskBody2": "Đối với chất khử trùng, kích cỡ du lịch (30–60ml) tại Olive Young hoặc các nhãn hiệu cửa hàng phù hợp với giới hạn chất lỏng tốt hơn so với chai lớn. Các hiệu thuốc lân cận thường đánh bại Myeongdong về tồn kho/giá trong mùa bụi.",
-    "maskTip": "Mẹo mua hàng\n\nKiểm tra nhãn KF94 và ngày đóng gói. Đối với quà tặng số lượng lớn, nhiều gói thuốc thường an toàn nhất.",
+    "maskBody1": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+    "maskBody2": "5–10 packs travel well. Check the KF grade and pack date.",
+    "maskTip": "For bulk, local pharmacy multipacks are often fine.",
     "stationeryBody1": "Các loại văn phòng phẩm nổi bật: Bộ bút Monami 153, nhật ký và nhãn dán Iconic/Qri, Kakao Friends/BT21 washi & ghi nhớ, sổ tay Alpha — Daiso, Artbox, Olive Young, các cửa hàng văn phòng phẩm.",
     "stationeryBody2": "Artbox/Alpha thường có số lượng cộng tác hạn chế; nhãn dán/bản ghi nhớ rất nhẹ cho các chuyến bay.",
     "stationeryTip": "Mẹo mua hàng\n\nBộ hộp đựng quà tặng; nạp lại / đĩa đơn cho chính bạn.",
-    "oliveBody1": "Những lựa chọn hàng đầu của Olive Young dành cho du khách: Nước hoa hồng/kem Round Lab Dokdo, Anua Heartleaf 77, ốc sên/BHA COSRX, mặt nạ giấy Mediheal &numuzin. Bắt đầu tại 'Olive Young Picks' / bức tường bán hàng.",
-    "oliveBody2": "Môi: rom&nd Juicy Lasting Tint, Peripera Ink Velvet. Kem dưỡng da tay: Illiyoon hay Camell có giá trị tốt hơn các loại mini uy tín bé nhỏ. Hỏi về miễn thuế trước khi thanh toán.",
-    "oliveTip": "Mẹo mua hàng\n\nCác cửa hàng lớn Myeongdong/Hongdae/Gangnam có lượng hàng dồi dào hơn các cửa hàng ở sân bay. Hỏi nhân viên về phiếu giảm giá ứng dụng và quà tặng khi mua hàng.",
+    "oliveBody1": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+    "oliveBody2": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+    "oliveTip": "For hyped items, go early or use pickup options.",
     "daisoBody1": "Những sản phẩm yêu thích của du khách: hộp đóng gói/dây buộc cáp, kẹp silicon, bảng nhỏ, dụng cụ ép kem đánh răng, túi đựng văn phòng phẩm Kakao Friends / Chiikawa / Sanrio — dễ dàng mua nhiều gói với giá cố định.",
     "daisoBody2": "Yêu cầu đệm trên kính/gốm sứ; sử dụng biển báo sàn cho Du lịch/Nhà kho/Nhà bếp. Các cửa hàng lân cận yên tĩnh hơn các chi nhánh du lịch.",
     "daisoTip": "Mẹo mua hàng\n\nCân giỏ hàng của bạn trước khi thanh toán; ưu tiên lấp chỗ trống cho vali của bạn.",
@@ -24819,15 +25359,15 @@
     "honeyBody1": "Quà lưu niệm ngọt ngào: Mật ong keo/hạt dẻ Hàn Quốc, si-rô gừng yuja, hộp yakgwa & hangwa ở Insadong, cửa hàng bách hóa, sân bay. Chọn hộp yakgwa có đệm.",
     "honeyBody2": "Các quy định về mật ong khác nhau tùy theo quốc gia - hãy kiểm tra hải quan. Thích dùng que/túi hơn lọ thủy tinh.",
     "honeyTip": "Mẹo mua hàng\n\nCác lọ có nhãn dán kín có hạn sử dụng sẽ đánh bại số lượng lớn thị trường mở để làm quà tặng và hải quan.",
-    "uniqloBody1": "Ngay cả các thương hiệu SPA toàn cầu cũng có những màu sắc, đồ họa và sự hợp tác nhân vật chỉ có ở Hàn Quốc. Áo phông số lượng có hạn là sản phẩm phổ biến chỉ được mua ở Hàn Quốc.",
-    "uniqloBody2": "Bán hàng theo mùa có tính cạnh tranh và các luồng miễn thuế đã quen thuộc. Luôn thử kích cỡ trong phòng thử đồ.",
-    "uniqloTip": "Các cửa hàng lớn (Myeongdong, Times Square, COEX) có lượng hàng tồn kho tốt hơn. Sử dụng cm trên nhãn - kích thước của Hàn Quốc thay đổi tùy theo thương hiệu.",
-    "spaBody1": "Thời trang giá trị: SPAO, 8Seconds, Uniqlo dành cho áo thun, PJ, tất, ô. Sự hợp tác của các nhân vật SPAO giảm xuống mỗi mùa.",
-    "spaBody2": "Kích thước KR có thể nhỏ - tăng kích thước nếu không chắc chắn và giữ lại biên lai.",
-    "spaTip": "Mẹo mua hàng\n\nSo sánh các cửa hàng Myeongdong/Hongdae/Gangnam; xem mùa bán hàng.",
-    "socksBody1": "Tất/quần giá rẻ: Shoopen, SPAO, Uniqlo, Daiso 3–5 gói. Những chiếc tất mang phong cách Hanbok và cá tính sẽ dễ dàng trở thành những món quà.",
-    "socksBody2": "Những phụ tùng hữu ích giữa chuyến đi - mua sớm. Kiểm tra kích thước KR (230–280) và ưu tiên các bộ được đóng gói riêng lẻ.",
-    "socksTip": "Mẹo mua hàng\n\nGói 3/5 cặp đánh bại các gói đơn và lấp đầy khoảng trống của vali.",
+    "uniqloBody1": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+    "uniqloBody2": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+    "uniqloTip": "Large stores in Myeongdong, Times Square, and COEX usually have better stock.",
+    "spaBody1": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+    "spaBody2": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+    "spaTip": "Compare Myeongdong, Hongdae, and Gangnam street shops; hunt sales.",
+    "socksBody1": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+    "socksBody2": "Individually wrapped packs travel well in suitcase gaps.",
+    "socksTip": "Multi-packs are usually cheaper than singles.",
     "hanbokBody1": "Ngoài hanbok cho thuê trong cung điện, áo kiểu hanbok hiện đại, bùa norigae, khăn tay và móc khóa mini còn là những món quà lưu niệm mang tính văn hóa di động.",
     "hanbokBody2": "Giá cửa hàng du lịch rất khác nhau - so sánh Insadong, Chợ Tongin và các góc truyền thống của cửa hàng bách hóa. Kiểm tra vải và khâu bằng tay.",
     "hanbokTip": "Thuê ảnh; mua những phụ kiện nhỏ mang về nhà. Hanbok đầy đủ cồng kềnh và nhăn nheo trong vali.",
@@ -24840,36 +25380,31 @@
     "lipstickBody1": "Quà lưu niệm trang điểm: rom&nd Juicy Lasting Tint / Glossing Gloss, Peripera Ink Velvet, phấn nền/kem CLIO Kill Cover, Espoir Be Velvet — Đồ đạc Olive Young.",
     "lipstickBody2": "Swatch màu tại cửa hàng. Những người độc thân hàng ngày + những đôi môi nhỏ thường đánh bại các bộ hàng miễn thuế về giá trị.",
     "lipstickTip": "Mẹo mua hàng\n\nYêu cầu nhân viên cung cấp tông màu trầm/ấm. Tâm trí kiểm tra vệ sinh và giữ biên lai trả lại.",
-    "kpopBody1": "Quà lưu niệm K-pop an toàn nhất: album/photocard/khẩu hiệu chính thức từ Tower Records Seoul, Hottracks, Kyobo và cửa sổ bật lên Weverse/Makestar. Hãy cảnh giác với hàng hóa đường phố không chính thức.",
-    "kpopBody2": "Kiểm tra các photocard được niêm phong và mở; đóng gói album chắc chắn. Vé/lightstick chỉ được bán qua các kênh chính thức.",
+    "kpopBody1": "Photocard K-pop an toàn nhất: hàng chính thức từ Tower Records Seoul, Hottracks, Kyobo và pop-up Weverse/Makestar. Hãy cảnh giác với hàng đường phố không chính thức.",
+    "kpopBody2": "Kiểm tra photocard còn niêm phong hay đã mở; bảo quản trong sleeve. Photocard cũ đắt tiền cần kiểm tra kỹ tính xác thực.",
     "kpopTip": "Mẹo mua hàng\n\nKiểm tra kỹ các tấm photocard cũ đắt tiền để xác thực.",
     "maskBody": [
       {
         "type": "text",
-        "ko": "외국인 기념품·실사용으로 많이 사는 건 작심(Jaksim) KF94, 블루닷(Bluedot), 아에르(Aer) 같은 KF94/KF80 마스크입니다. 편의점·다이소·올리브영·약국에 소량 팩(5~10매)이 많아 캐리어에 넣기 좋습니다.",
-        "en": "Popular picks: Jaksim KF94, Bluedot, Aer KF94/KF80 packs (5–10 sheets) from convenience stores, Daiso, Olive Young, or pharmacies — easy suitcase size.",
-        "ja": "人気はジャクシムKF94、Bluedot、AerなどのKF94/KF80。コンビニ・ダイソー・オリーブヤング・薬局の5〜10枚パックが荷物に入れやすいです。",
-        "vi": "Những thứ người nước ngoài thường mua về làm quà lưu niệm hoặc sử dụng thực tế là khẩu trang KF94/KF80 như Jaksim KF94, Bluedot, Aer. Có nhiều gói nhỏ (5 đến 10 tờ) có bán tại các cửa hàng tiện lợi, Daiso, Olive Young và các hiệu thuốc, nên rất phù hợp để bạn bỏ vào túi đựng.",
-        "th": "สิ่งที่ชาวต่างชาติมักซื้อเป็นของฝากหรือของใช้จริงคือ หน้ากาก KF94/KF80 เช่น Jaksim KF94, Bluedot และ Aer มีห่อเล็กๆ จำนวนมาก (5 ถึง 10 แผ่น) มีจำหน่ายตามร้านสะดวกซื้อ ไดโซะ โอลีฟยัง และร้านขายยา ซึ่งทำให้เหมาะที่จะพกติดตัวไปด้วย",
-        "ru": "Иностранцы часто покупают в качестве сувениров или для практического использования маски KF94/KF80, такие как Jaksim KF94, Bluedot и Aer. В магазинах, Daiso, Olive Young и аптеках можно приобрести множество небольших упаковок (от 5 до 10 листов), поэтому их удобно положить в переноску.",
-        "zh-Hant": "外國人常購買當紀念品或實用的就是Jaksim KF94、Bluedot、Aer等KF94/KF80口罩。便利商店、Daiso、Olive Young 和藥房有許多小包裝（5 至 10 張）出售，非常適合放入您的背袋中。"
+        "ko": "여행용으로 많이 사는 KF94(또는 KF80) 마스크입니다. 작심·블루닷·아에르 등 브랜드가 편의점·다이소·올리브영·약국에 소량 팩으로 많습니다.",
+        "en": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+        "ja": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+        "zh": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+        "zh-Hant": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+        "vi": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+        "th": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
+        "ru": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies."
       },
       {
         "type": "text",
-        "ko": "손소독제는 세타필·그린핑거 미니보다 편의점 PB나 올리브영 여행용(30~60ml)이 액체 제한에 맞습니다. 황사 시즌에는 명동보다 동네 약국이 재고·가격이 나은 경우가 많습니다.",
-        "en": "For sanitizer, travel sizes (30–60ml) at Olive Young or store brands fit liquid limits better than large bottles. Neighborhood pharmacies often beat Myeongdong on stock/price in dust season.",
-        "ja": "消毒ジェルは30〜60mlのトラベルサイズが液体制限に合うことが多いです。黄砂の季節は明洞より近所の薬局が在庫・価格で有利なことも。",
-        "vi": "Đối với nước rửa tay, loại du lịch PB hoặc Olive Young ở cửa hàng tiện lợi (30-60ml) phù hợp với giới hạn chất lỏng hơn Cetaphil hoặc Greenfinger mini. Trong mùa bụi vàng, các hiệu thuốc địa phương thường có hàng và giá tốt hơn Myeongdong.",
-        "th": "สำหรับเจลล้างมือ ร้านสะดวกซื้อ PB หรือ Olive Young ขนาดพกพา (30-60 มล.) มีปริมาณของเหลวที่จำกัดมากกว่า Cetaphil หรือ Greenfinger mini ในช่วงฤดูฝุ่นสีเหลือง ร้านขายยาในพื้นที่มักจะมีสินค้าคงคลังและราคาดีกว่าเมียงดง",
-        "ru": "Что касается дезинфицирующих средств для рук, дорожный размер PB или Olive Young (30–60 мл) из магазина повседневного спроса соответствует лимиту жидкости больше, чем Cetaphil или Greenfinger mini. В сезон желтой пыли в местных аптеках ассортимент и цены зачастую лучше, чем в Мёндоне.",
-        "zh-Hant": "對於洗手液，便利商店的 PB 或 Olive Young 旅行裝（30-60 毫升）比 Cetaphil 或 Greenfinger mini 更適合液體限制。黃沙季節期間，當地藥局的庫存和價格往往比明洞更好。"
-      },
-      {
-        "type": "callout",
-        "ko": "구매 팁\n\n‘KF94’ 표기와 포장 날짜를 확인하세요. 귀국용 대량 구매는 다이소·온라인보다 시중 약국 묶음이 무난합니다.",
-        "en": "Buying tip\n\nCheck the KF94 mark and pack date. For bulk gifts, pharmacy multipacks are usually safest.",
-        "ja": "買い方\n\nKF94表示と包装日を確認。まとめ買いは薬局のマルチパックが無難です。",
-        "vi": "Mẹo mua hàng\n\nKiểm tra nhãn KF94 và ngày đóng gói. Đối với quà tặng số lượng lớn, nhiều gói thuốc thường an toàn nhất."
+        "ko": "캐리어에 넣기 쉬운 5~10매 팩이 실용적입니다. ‘KF94’ 표기와 포장 날짜를 확인하세요.",
+        "en": "5–10 packs travel well. Check the KF grade and pack date.",
+        "ja": "5–10 packs travel well. Check the KF grade and pack date.",
+        "zh": "5–10 packs travel well. Check the KF grade and pack date.",
+        "zh-Hant": "5–10 packs travel well. Check the KF grade and pack date.",
+        "vi": "5–10 packs travel well. Check the KF grade and pack date.",
+        "th": "5–10 packs travel well. Check the KF grade and pack date.",
+        "ru": "5–10 packs travel well. Check the KF grade and pack date."
       }
     ],
     "stationeryBody": [
@@ -24904,30 +25439,25 @@
     "oliveBody": [
       {
         "type": "text",
-        "ko": "올리브영에서 외국인이 가장 많이 집는 라인은 라운드랩(독도 토너·크림), 아누아(어성초 77 토너·세럼), 코스알엑스 스네일/BHA, 메디힐·넘버즈인 시트마스크입니다. ‘올영픽’·세일 진열을 먼저 보면 실패가 적습니다.",
-        "en": "Top Olive Young picks for visitors: Round Lab Dokdo toner/cream, Anua Heartleaf 77, COSRX snail/BHA, Mediheal & numbuzin sheet masks. Start at ‘Olive Young Picks’ / sale walls.",
-        "ja": "人気はラウンドラボ（独島トナー等）、アヌア（ハートリーフ77）、COSRX、メディヒール/numbuzinシートマスク。「オールヨンプック」とセール棚から選ぶと失敗が少ないです。",
-        "vi": "Các dòng được người nước ngoài mua nhiều nhất tại Olive Young là Round Wrap (toner/kem Dokdo), Anua (toner/serum Houttuynia cordata 77), COSRX Snail/BHA, Mediheal, và mặt nạ giấy Numbersin. Nếu bạn nhìn vào 'Tất cả các lựa chọn trẻ' và màn hình bán hàng trước tiên, sẽ có ít khả năng thất bại hơn.",
-        "th": "ไลน์ที่ชาวต่างชาติมักเลือกซื้อที่ Olive Young ได้แก่ Round Wrap (โทนเนอร์/ครีม Dokdo), Anua (โทนเนอร์/เซรั่ม Houttuynia cordata 77), COSRX Snail/BHA, Mediheal และแผ่นมาส์ก Numbersin หากคุณดูที่การแสดง 'All Young Picks' และลดราคาก่อน โอกาสที่จะล้มเหลวก็น้อยลง",
-        "ru": "Линии, которые иностранцы чаще всего выбирают в Olive Young, — это Round Wrap (тонер/крем Dokdo), Anua (тонер/сыворотка Houttuynia cordata 77), COSRX Snail/BHA, Mediheal и тканевая маска Numbersin. Если вы сначала посмотрите на «Все молодые выборы» и распродажи, вероятность неудачи будет меньше.",
-        "zh-Hant": "外國人在Olive Young最常購買的產品有Round Wrap（獨島爽膚水/乳霜）、Anua（魚腥草77爽膚水/精華液）、COSRX Snail/BHA、Mediheal和Numbersin面膜。如果您先查看“All Young Picks”和銷售展示，那麼失敗的可能性就會較小。"
+        "ko": "올리브영은 외국인이 가장 많이 찾는 드럭스토어입니다. ‘올영픽’·세일 코너에서 시트마스크·선크림·틴트·스킨케어를 고르기 쉽고, 앱 쿠폰·증정 조합을 직원에게 물어보면 좋습니다.",
+        "en": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+        "ja": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+        "zh": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+        "zh-Hant": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+        "vi": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+        "th": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
+        "ru": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP."
       },
       {
         "type": "text",
-        "ko": "립은 롬앤 쥬시 라스팅 틴트, 페리페라 잉크 벨벳이 스테디고, 핸드크림은 카밀·록시땅 미니보다 국산 일리윤·카밀 대용량이 가성비가 좋습니다. 택스프리 가능 매장인지 계산 전 확인하세요.",
-        "en": "Lips: rom&nd Juicy Lasting Tint, Peripera Ink Velvet. Hand cream: Illiyoon or Camell are better value than tiny prestige minis. Ask about tax-free before checkout.",
-        "ja": "リップはrom&nd、ペリペラが定番。ハンドクリームはイリユン等がコスパ良好。会計前にTAX FREE可否を確認。",
-        "vi": "Đối với môi, Rom&Juicy Lasting Tint và Peripera Ink Velvet ổn định, còn đối với kem dưỡng tay, sản phẩm dung tích lớn Illiyoon và Camille sản xuất trong nước tiết kiệm chi phí hơn Camille và L'Occitane mini. Kiểm tra trước khi thanh toán để xem cửa hàng có cung cấp dịch vụ miễn thuế hay không.",
-        "th": "สำหรับริมฝีปาก Rom&Juicy Lasting Tint และ Peripera Ink Velvet มีความคงตัว และสำหรับครีมทามือ ผลิตภัณฑ์ Illiyoon และ Camille ที่ผลิตในประเทศซึ่งมีความจุขนาดใหญ่จะคุ้มค่ากว่า Camille และ L'Occitane mini ตรวจสอบก่อนชำระเงินเพื่อดูว่าร้านค้ามีบริการปลอดภาษีหรือไม่",
-        "ru": "Для губ устойчивы Rom&Juicy Lasting Tint и Peripera Ink Velvet, а для крема для рук более экономичны отечественные средства большой емкости Illiyoon и Camille, чем Camille и L’Occitane mini. Перед оплатой проверьте, предлагает ли магазин услугу беспошлинной торговли.",
-        "zh-Hant": "唇部方面，Rom&Juicy Lasting Tint和Peripera Ink Velvet表現穩健，護手霜方面，國產Illiyoon和Camille大容量產品比Camille和歐舒丹mini性價比更高。付款前請檢查商店是否提供免稅服務。"
-      },
-      {
-        "type": "callout",
-        "ko": "구매 팁\n\n명동·홍대·강남 대형점이 재고가 많고, 공항점은 품절이 잦습니다. 앱 쿠폰·증정품 조합을 직원에게 물어보세요.",
-        "en": "Buying tip\n\nBig Myeongdong/Hongdae/Gangnam stores have deeper stock than airport shops. Ask staff about app coupons and gift-with-purchase.",
-        "ja": "買い方\n\n明洞・弘大・江南の大型店が在庫豊富。空港店は欠品しがち。アプリクーポンも聞いてみて。",
-        "vi": "Mẹo mua hàng\n\nCác cửa hàng lớn Myeongdong/Hongdae/Gangnam có lượng hàng dồi dào hơn các cửa hàng ở sân bay. Hỏi nhân viên về phiếu giảm giá ứng dụng và quà tặng khi mua hàng."
+        "ko": "명동·홍대·강남 대형점이 재고가 많고, 공항점은 품절이 잦을 수 있습니다. 택스프리 가능 매장인지 계산 전 확인하세요.",
+        "en": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+        "ja": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+        "zh": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+        "zh-Hant": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+        "vi": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+        "th": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
+        "ru": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout."
       }
     ],
     "daisoBody": [
@@ -25078,94 +25608,73 @@
     "uniqloBody": [
       {
         "type": "text",
-        "ko": "유니클로·갭·ZARA 등 글로벌 SPA라도 한국 매장에는 한정 컬러·그래픽·캐릭터 콜라보가 따로 나오는 경우가 있습니다. ‘여기서만 본 티셔츠’를 기념으로 사는 여행객이 많습니다.",
-        "en": "Even global SPA brands stock Korea-only colors, graphics, and character collabs. Limited tees are a common only-in-Korea buy.",
-        "ja": "グローバルSPAでも韓国限定カラーやコラボTが出ることがあります。「ここでしか見た服」をお土産にする人も多いです。",
-        "vi": "Ngay cả SPA toàn cầu như Uniqlo, Gap và ZARA đôi khi cũng có sự hợp tác hạn chế về màu sắc, đồ họa và nhân vật riêng biệt trong các cửa hàng Hàn Quốc. Có rất nhiều du khách mua những chiếc áo phông ‘chỉ thấy ở đây’ làm quà lưu niệm.",
-        "th": "แม้แต่ SPA ระดับโลกอย่าง Uniqlo, Gap และ ZARA บางครั้งก็ยังมีสี กราฟิก และคาแรคเตอร์ที่จำกัดในความร่วมมือกันในร้านค้าเกาหลีอีกด้วย มีนักท่องเที่ยวจำนวนมากที่ซื้อ \"เสื้อยืดที่เห็นเฉพาะที่นี่\" เป็นของที่ระลึก",
-        "ru": "Даже глобальные SPA, такие как Uniqlo, Gap и ZARA, иногда предлагают ограниченное сотрудничество по цветам, графике и персонажам отдельно в корейских магазинах. Многие путешественники покупают в качестве сувениров футболки, которые можно увидеть только здесь.",
-        "zh-Hant": "即使是優衣庫、Gap 和 ZARA 等全球 SPA，有時也會在韓國商店單獨出售有限的色彩、圖形和角色合作商品。許多遊客會購買“只在這裡見過的T卹”作為紀念品。"
+        "ko": "유니클로 한국 매장에는 한정 컬러·그래픽·캐릭터 콜라보가 따로 나오는 경우가 많습니다. 여행 기념 티셔츠로 많이 고릅니다.",
+        "en": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+        "ja": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+        "zh": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+        "zh-Hant": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+        "vi": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+        "th": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
+        "ru": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs."
       },
       {
         "type": "text",
-        "ko": "시즌 세일 기간에는 가격 경쟁력이 좋고, 영수증·택스프리 절차도 비교적 익숙합니다. 피팅룸에서 사이즈를 꼭 확인해 두세요.",
-        "en": "Seasonal sales are competitive, and tax-free flows are familiar. Always try sizes in the fitting room.",
-        "ja": "セール時期は価格が魅力。免税手続きも比較的分かりやすいです。試着は必須。",
-        "vi": "Giá cả cạnh tranh trong thời gian bán hàng theo mùa, thủ tục nhận và miễn thuế tương đối quen thuộc. Hãy chắc chắn kiểm tra kích thước trong phòng thử đồ.",
-        "th": "ราคามีการแข่งขันกันในช่วงการขายตามฤดูกาล และขั้นตอนการรับสินค้าและการปลอดภาษีค่อนข้างคุ้นเคย อย่าลืมตรวจสอบขนาดในห้องลอง",
-        "ru": "Цены конкурентоспособны во время сезонных распродаж, а процедуры получения и освобождения от уплаты налогов относительно знакомы. Обязательно уточняйте размер в примерочной.",
-        "zh-Hant": "季節性銷售期間價格具競爭力，收據和免稅程序也相對熟悉。請務必在試衣間檢查尺寸。"
-      },
-      {
-        "type": "text",
-        "ko": "사는 팁\n\n명동·타임스퀘어·코엑스 등 대형 매장이 재고가 넉넉합니다. 한국 사이즈는 브랜드마다 다르니 라벨의 cm를 기준으로 고르세요.",
-        "en": "Buying tip\n\nLarge stores (Myeongdong, Times Square, COEX) have better stock. Use cm on the label — Korean sizing varies by brand.",
-        "ja": "買うときのヒント\n\n明洞・タイムスクエア・COEXなど大型店が在庫豊富。韓国サイズはブランド差があるのでcm表示を基準に。",
-        "vi": "lời khuyên khi mua hàng\n\nCác cửa hàng lớn như Myeongdong, Times Square và COEX có lượng hàng tồn kho dồi dào. Kích thước của Hàn Quốc khác nhau tùy theo thương hiệu, vì vậy hãy chọn dựa trên cm trên nhãn.",
-        "th": "เคล็ดลับในการซื้อ\n\nร้านค้าขนาดใหญ่ เช่น เมียงดง ไทม์สแควร์ และ COEX มีสินค้าคงคลังมากมาย ขนาดของเกาหลีแตกต่างกันไปตามแบรนด์ ดังนั้นควรเลือกตามขนาดซม. บนฉลาก",
-        "ru": "советы по покупке\n\nКрупные магазины, такие как Мёндон, Таймс-сквер и COEX, имеют достаточный ассортимент. Корейские размеры различаются в зависимости от бренда, поэтому выбирайте, ориентируясь на см, указанный на этикетке.",
-        "zh-Hant": "購買技巧\n\n明洞、時代廣場、COEX等大型商場庫存充足。韓國尺寸因品牌而異，因此請根據標籤上的公分進行選擇。"
+        "ko": "시즌 세일 때 가격 경쟁력이 좋고, 택스프리도 비교적 익숙합니다. 피팅룸에서 cm 사이즈를 확인하세요.",
+        "en": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+        "ja": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+        "zh": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+        "zh-Hant": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+        "vi": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+        "th": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
+        "ru": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room."
       }
     ],
     "spaBody": [
       {
         "type": "text",
-        "ko": "스파오·미쏘·에잇세컨즈·탑텐 같은 한국 SPA 브랜드는 트렌디한 캐주얼을 합리적인 가격에 살 수 있어, ‘옷도 사고 기념품도 된다’는 이유로 인기입니다.",
-        "en": "Korean SPA brands like Spao, Mixxo, 8Seconds, and Topten offer trendy casual wear at fair prices — clothing that doubles as a souvenir.",
-        "ja": "SPAOやMISSO、8Seconds、Toptenなど韓国SPAはトレンド感のある服が手頃。服そのものがお土産になります。",
-        "vi": "Các thương hiệu SPA Hàn Quốc như SPAO, Misso, 8 Seconds và Top Ten rất phổ biến vì bạn có thể mua được quần áo thường ngày hợp thời trang với giá cả hợp lý, cho phép bạn “mua quần áo và làm quà lưu niệm”.",
-        "th": "แบรนด์สปาของเกาหลี เช่น SPAO, Misso, 8 Seconds และ Top Ten ได้รับความนิยมเนื่องจากคุณสามารถซื้อเสื้อผ้าลำลองอินเทรนด์ในราคาที่สมเหตุสมผล ทำให้คุณสามารถ 'ซื้อเสื้อผ้าและทำของที่ระลึก' ได้",
-        "ru": "Корейские СПА-бренды, такие как SPAO, Misso, 8 Seconds и Top Ten, популярны, потому что здесь можно купить модную повседневную одежду по разумным ценам, что позволяет «купить одежду и сделать сувениры».",
-        "zh-Hant": "SPAO、Miso、8 Seconds、Top Ten等韓國SPA品牌因能以合理的價格買到時尚休閒服飾而廣受歡迎，讓你「買衣服又做伴手禮」。"
+        "ko": "스파오(SPAO)는 티셔츠·잠옷·캐릭터 콜라보로 유명한 한국 SPA 브랜드입니다. 시즌마다 애니·캐릭터 라인업이 나옵니다.",
+        "en": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+        "ja": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+        "zh": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+        "zh-Hant": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+        "vi": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+        "th": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
+        "ru": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season."
       },
       {
         "type": "text",
-        "ko": "캐릭터·예능·아이돌 콜라보 티셔츠와 계절 아우터가 잘 나갑니다. 얇은 옷 위주로 고르면 짐 무게를 덜 수 있습니다.",
-        "en": "Character, variety-show, and idol collab tees plus light outerwear sell well. Prefer thin pieces to save luggage weight.",
-        "ja": "キャラ・番組・アイドルコラボTや薄いアウターが人気。かさばらない薄い服が荷物に優しいです。",
-        "vi": "Áo phông và áo khoác ngoài theo mùa hợp tác với nhân vật, giải trí và thần tượng đang bán rất chạy. Lựa chọn chủ yếu quần áo mỏng có thể làm giảm trọng lượng hành lý của bạn.",
-        "th": "คาแรคเตอร์ ความบันเทิง และการร่วมงานกันของไอดอล เสื้อยืดและแจ๊กเก็ตตามฤดูกาลกำลังขายดี การเลือกเสื้อผ้าที่บางเป็นหลักสามารถลดน้ำหนักสัมภาระของคุณได้",
-        "ru": "Футболки с персонажами, развлечениями и сотрудничеством с айдолами и сезонная верхняя одежда хорошо продаются. Выбор преимущественно тонкой одежды может уменьшить вес вашего багажа.",
-        "zh-Hant": "角色、娛樂、偶像合作的 T 恤和季節性外套暢銷。主要選擇輕薄的衣服可以減輕行李的重量。"
-      },
-      {
-        "type": "text",
-        "ko": "사는 팁\n\n홍대·명동·강남 스트리트에 매장이 몰려 있습니다. 교환·환불 정책을 사진으로 남겨 두면 귀국 후 문제가 줄습니다.",
-        "en": "Buying tip\n\nStores cluster in Hongdae, Myeongdong, and Gangnam. Photo the return policy in case of issues after you fly home.",
-        "ja": "買うときのヒント\n\n弘大・明洞・江南に店舗が集まります。返品規定を写真に残しておくと安心です。",
-        "vi": "lời khuyên khi mua hàng\n\nCác cửa hàng tập trung ở phố Hongdae, Myeongdong và Gangnam. Chụp ảnh chính sách đổi/hoàn tiền của bạn sẽ giảm bớt vấn đề sau khi trở về nhà.",
-        "th": "เคล็ดลับในการซื้อ\n\nร้านค้ากระจุกตัวอยู่ที่ถนนฮงแด เมียงดง และถนนคังนัม การถ่ายรูปนโยบายการเปลี่ยน/ขอคืนเงินจะช่วยลดปัญหาหลังจากกลับถึงบ้าน",
-        "ru": "советы по покупке\n\nМагазины сосредоточены на улицах Хондэ, Мёндон и Каннам. Сфотографировав вашу политику обмена/возврата, вы уменьшите проблемы после возвращения домой.",
-        "zh-Hant": "購買技巧\n\n店鋪集中在弘大、明洞、江南街。將您的換貨/退款政策拍照可以減少回家後的問題。"
+        "ko": "사이즈는 한국 기준으로 타이트할 수 있어 한 치수 여유를 두고, 영수증을 보관하세요.",
+        "en": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+        "ja": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+        "zh": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+        "zh-Hant": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+        "vi": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+        "th": "Korean sizes can run small — size up if unsure, and keep the receipt.",
+        "ru": "Korean sizes can run small — size up if unsure, and keep the receipt."
       }
     ],
     "socksBody": [
       {
         "type": "text",
-        "ko": "양말·스타킹은 슈펜(Shoopen), 스파오, 유니클로, 다이소 묶음(3·5족)이 가성비가 좋습니다. 한복 버선 스타일·캐릭터 양말도 선물용으로 잘 나갑니다.",
-        "en": "Value socks/tights: Shoopen, SPAO, Uniqlo, Daiso 3–5 packs. Hanbok-style and character socks make easy gifts.",
-        "ja": "Shoopen、SPAO、ユニクロ、ダイソーのまとめ買いがコスパ良好。韓服風・キャラ靴下も土産に人気。",
-        "vi": "Đối với tất và tất dài, các gói Shoopen, Spao, Uniqlo và Daiso (3 và 5 đôi) rất đáng đồng tiền bát gạo. Tất Hanbok và tất nhân vật cũng là những món quà tuyệt vời.",
-        "th": "สำหรับถุงเท้าและถุงน่อง ชุด Shoopen, Spao, Uniqlo และ Daiso (3 และ 5 คู่) ถือว่าคุ้มค่าคุ้มราคา ถุงเท้าฮันบกและถุงเท้าคาแรคเตอร์ก็เป็นของขวัญที่ดีเช่นกัน",
-        "ru": "Что касается носков и чулок, то хорошим соотношением цены и качества являются комплекты Shoopen, Spao, Uniqlo и Daiso (3 и 5 пар). Носки ханбок и носки с персонажами также станут отличным подарком.",
-        "zh-Hant": "對於襪子和長襪，Shopen、Spao、Uniqlo 和 Daiso 捆綁包（3 雙和 5 雙）物有所值。韓服襪和人物襪也是很棒的禮物。"
+        "ko": "다이소·스파오·유니클로 등에서 파는 3·5족 양말·스타킹 묶음은 가성비가 좋고 선물용으로도 무난합니다.",
+        "en": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+        "ja": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+        "zh": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+        "zh-Hant": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+        "vi": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+        "th": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
+        "ru": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts."
       },
       {
         "type": "text",
-        "ko": "여행 중 여분으로 쓰기에도 좋아 출국 초반에 사 두는 사람이 많습니다. 사이즈(한국 230–280)를 확인하고 개별 포장 세트를 고르세요.",
-        "en": "Useful mid-trip spares — buy early. Check KR sizes (230–280) and prefer individually packed sets.",
-        "ja": "旅の予備にも。韓国サイズ(230–280)と個別包装を確認。",
-        "vi": "Nó rất tốt để sử dụng thêm khi đi du lịch nên rất nhiều người mua nó khi bắt đầu khởi hành. Kiểm tra kích cỡ (Hàn Quốc 230–280) và chọn một bộ được gói riêng.",
-        "th": "เหมาะสำหรับไว้ใช้เพิ่มเติมระหว่างการเดินทาง จึงมีผู้คนจำนวนมากซื้อมันตั้งแต่เริ่มออกเดินทาง ตรวจสอบขนาด (เกาหลี 230–280) และเลือกชุดที่ห่อแยกกัน",
-        "ru": "Он удобен для дополнительного использования во время путешествий, поэтому многие покупают его в начале отъезда. Проверьте размеры (корейский 230–280) и выберите комплект в индивидуальной упаковке.",
-        "zh-Hant": "它非常適合旅行時額外使用，因此許多人在出發之初就購買了它。檢查尺寸（韓國 230-280）並選擇獨立包裝的套裝。"
-      },
-      {
-        "type": "callout",
-        "ko": "구매 팁\n\n3·5족 팩이 낱개보다 저렴하고 캐리어 틈에 잘 들어갑니다.",
-        "en": "Buying tip\n\n3-/5-pair packs beat singles and fill suitcase gaps.",
-        "ja": "買い方\n\n3/5足パックが単品よりお得で隙間に入ります。",
-        "vi": "Mẹo mua hàng\n\nGói 3/5 cặp đánh bại các gói đơn và lấp đầy khoảng trống của vali."
+        "ko": "개별 포장 세트가 위생적이고 캐리어 틈에 잘 들어갑니다.",
+        "en": "Individually wrapped packs travel well in suitcase gaps.",
+        "ja": "Individually wrapped packs travel well in suitcase gaps.",
+        "zh": "Individually wrapped packs travel well in suitcase gaps.",
+        "zh-Hant": "Individually wrapped packs travel well in suitcase gaps.",
+        "vi": "Individually wrapped packs travel well in suitcase gaps.",
+        "th": "Individually wrapped packs travel well in suitcase gaps.",
+        "ru": "Individually wrapped packs travel well in suitcase gaps."
       }
     ],
     "hanbokBody": [
@@ -25290,8 +25799,8 @@
     "kpopBody": [
       {
         "type": "text",
-        "ko": "케이팝 기념품은 타워레코드(타워레코드 서울), 핫트랙스, 영풍문고·교보 핫트랙스, 공식 위버스/메이크스타 팝업에서 사는 정규 앨범·포토카드·슬로건이 안전합니다. 길거리 비공식 굿즈는 품질·저작권을 주의하세요.",
-        "en": "Safest K-pop souvenirs: official albums/photocards/slogans from Tower Records Seoul, Hottracks, Kyobo, and Weverse/Makestar pop-ups. Be wary of unofficial street merch.",
+        "ko": "케이팝 포토카드는 타워레코드(타워레코드 서울), 핫트랙스, 영풍문고·교보 핫트랙스, 공식 위버스/메이크스타 팝업에서 사는 정품이 안전합니다. 길거리 비공식 굿즈는 품질·저작권을 주의하세요.",
+        "en": "Safest K-pop photocards: official stock from Tower Records Seoul, Hottracks, Kyobo, and Weverse/Makestar pop-ups. Be wary of unofficial street merch.",
         "ja": "公式アルバム/トレカはタワーレコードソウル、Hottracks、教保、Weverse等で。路上の非公式グッズは注意。",
         "vi": "Đối với quà lưu niệm K-pop, album thông thường, thẻ ảnh và khẩu hiệu mua tại Tower Records (Tower Records Seoul), Hot Tracks, Youngpoong Bookstore, Kyobo Hot Tracks và cửa sổ bật lên chính thức của Weverse/Makestar đều an toàn. Hãy cẩn thận về chất lượng và bản quyền khi nói đến hàng hóa đường phố không chính thức.",
         "th": "สำหรับของที่ระลึกเคป๊อป อัลบั้มปกติ การ์ดรูปถ่าย และสโลแกนที่ซื้อที่ Tower Records (Tower Records Seoul), Hot Tracks, ร้านหนังสือ Youngpoong, Kyobo Hot Tracks และป๊อปอัปอย่างเป็นทางการของ Weverse/Makestar นั้นปลอดภัย ระมัดระวังเรื่องคุณภาพและลิขสิทธิ์เมื่อพูดถึงสินค้าข้างถนนที่ไม่เป็นทางการ",
@@ -25300,12 +25809,12 @@
       },
       {
         "type": "text",
-        "ko": "한정 포토카드는 개봉 여부를 확인하고, 항공 짐에는 앨범을 단단히 고정하세요. 콘서트 티켓·응원봉은 공식 채널만 이용합니다.",
-        "en": "Check sealed vs opened photocards; pack albums firmly. Tickets/light sticks only via official channels.",
-        "ja": "トレカの開封有無を確認し、アルバムは荷物で固定。チケット/ペンライトは公式のみ。",
-        "vi": "Kiểm tra xem thẻ ảnh có thời hạn đã được mở chưa và bảo quản album an toàn trong hành lý chuyến bay của bạn. Vé concert và lightstick chỉ được bán thông qua các kênh chính thức.",
-        "th": "โปรดตรวจสอบว่าได้เปิดการ์ดภาพถ่ายที่มีจำนวนจำกัดแล้วและเก็บอัลบั้มไว้อย่างปลอดภัยในสัมภาระบนเครื่องบินของคุณ บัตรคอนเสิร์ตและแท่งไฟมีจำหน่ายผ่านช่องทางการเท่านั้น",
-        "ru": "Проверьте, открыта ли фотокарточка с ограниченным сроком действия, и надежно закрепите альбом в багаже. Билеты на концерт и лайтстики доступны только по официальным каналам.",
+        "ko": "한정 포토카드는 개봉 여부를 확인하고, 슬리브·케이스에 넣어 보관하세요. 중고 포카는 정품 여부를 신중히 보세요.",
+        "en": "Check sealed vs opened photocards; keep them in sleeves. Scrutinize pricey second-hand cards for authenticity.",
+        "ja": "トレカの開封有無を確認し、スリーブで保管。高額中古は真贋を慎重に。",
+        "vi": "Kiểm tra photocard còn niêm phong hay đã mở; bảo quản trong sleeve. Photocard cũ đắt tiền cần kiểm tra kỹ tính xác thực.",
+        "th": "ตรวจสอบโฟโต้การ์ดที่ปิดผนึกและที่เปิดแล้ว เก็บในซอง โฟโต้การ์ดมือสองราคาแพงควรตรวจความแท้จริงอย่างระมัดระวัง",
+        "ru": "Проверьте, запечатана ли фотокарточка; храните в слейве. Дорогие б/у карты проверяйте на подлинность.",
         "zh-Hant": "請檢查限量照片卡是否已打開，並將相簿安全地放在您的飛行行李中。音樂會門票和螢光棒只能透過官方管道購買。"
       },
       {
@@ -26434,6 +26943,731 @@
         "th": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.",
         "ru": "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices."
       }
+    ],
+    "eightSecondsTitle": "8Seconds",
+    "eightSecondsDesc": "Trendy Korean SPA — tees, outerwear, accessories",
+    "eightSecondsBody1": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+    "eightSecondsBody2": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+    "eightSecondsTip": "Use the cm size labels as your guide.",
+    "eightSecondsBody": [
+      {
+        "type": "text",
+        "ko": "에잇세컨즈(8Seconds)는 시즌 트렌드를 빠르게 반영하는 한국 SPA입니다. 티셔츠·아우터·가방 등 여행 중 입기 좋은 아이템이 많습니다.",
+        "en": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+        "ja": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+        "zh": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+        "zh-Hant": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+        "vi": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+        "th": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.",
+        "ru": "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories."
+      },
+      {
+        "type": "text",
+        "ko": "명동·대형 쇼핑몰 매장이 찾기 쉽고, 세일 코너를 먼저 보면 실패가 적습니다.",
+        "en": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+        "ja": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+        "zh": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+        "zh-Hant": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+        "vi": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+        "th": "Myeongdong and mall stores are easy to find; start with the sale racks.",
+        "ru": "Myeongdong and mall stores are easy to find; start with the sale racks."
+      }
+    ],
+    "basicTitle": "Basic",
+    "basicDesc": "Simple, affordable everyday fashion",
+    "basicBody1": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+    "basicBody2": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+    "basicTip": "Basics and sock packs pack easily in a suitcase.",
+    "basicBody": [
+      {
+        "type": "text",
+        "ko": "베이직은 심플한 티·니트·데일리웨어 위주의 가성비 패션으로, 여행 중 ‘입을 옷’을 보충할 때 자주 고릅니다.",
+        "en": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+        "ja": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+        "zh": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+        "zh-Hant": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+        "vi": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+        "th": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.",
+        "ru": "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling."
+      },
+      {
+        "type": "text",
+        "ko": "화려한 기념품보다 실용 아이템을 원할 때 어울립니다. 매장·온라인 구성은 시즌마다 달라집니다.",
+        "en": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+        "ja": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+        "zh": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+        "zh-Hant": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+        "vi": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+        "th": "Better for useful pieces than flashy souvenirs. Assortments change by season.",
+        "ru": "Better for useful pieces than flashy souvenirs. Assortments change by season."
+      }
+    ],
+    "shoopenTitle": "Shoopen",
+    "shoopenDesc": "Affordable socks, shoes, and accessories",
+    "shoopenBody1": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+    "shoopenBody2": "Multi-packs beat singles; check Korean sizes (230–280).",
+    "shoopenTip": "Buy a spare pack early in the trip.",
+    "shoopenBody": [
+      {
+        "type": "text",
+        "ko": "슈펜(Shoopen)은 양말·스타킹·슬리퍼·간단한 슈즈를 저렴하게 살 수 있는 브랜드입니다. 여행용 여분 양말로 인기입니다.",
+        "en": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+        "ja": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+        "zh": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+        "zh-Hant": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+        "vi": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+        "th": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.",
+        "ru": "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks."
+      },
+      {
+        "type": "text",
+        "ko": "3·5족 묶음이 낱개보다 낫고, 한국 사이즈(230–280)를 확인하세요.",
+        "en": "Multi-packs beat singles; check Korean sizes (230–280).",
+        "ja": "Multi-packs beat singles; check Korean sizes (230–280).",
+        "zh": "Multi-packs beat singles; check Korean sizes (230–280).",
+        "zh-Hant": "Multi-packs beat singles; check Korean sizes (230–280).",
+        "vi": "Multi-packs beat singles; check Korean sizes (230–280).",
+        "th": "Multi-packs beat singles; check Korean sizes (230–280).",
+        "ru": "Multi-packs beat singles; check Korean sizes (230–280)."
+      }
+    ],
+    "roundLabTitle": "Round Lab",
+    "roundLabDesc": "Dokdo toner, birch sunscreen — Olive Young favorites",
+    "roundLabBody1": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+    "roundLabBody2": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+    "roundLabTip": "Large stores in Myeongdong, Hongdae, and Gangnam stock more.",
+    "roundLabBody": [
+      {
+        "type": "text",
+        "ko": "라운드랩은 독도 토너·크림, 자작나무 수분 선크림 등으로 올리브영 외국인 장바구니에 자주 들어갑니다.",
+        "en": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+        "ja": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+        "zh": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+        "zh-Hant": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+        "vi": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+        "th": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.",
+        "ru": "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors."
+      },
+      {
+        "type": "text",
+        "ko": "저자극·수분 라인을 찾는 여행객에게 추천됩니다. ‘올영픽’ 진열을 먼저 보세요.",
+        "en": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+        "ja": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+        "zh": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+        "zh-Hant": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+        "vi": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+        "th": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.",
+        "ru": "Good for gentle, hydrating routines. Start with Olive Young Picks shelves."
+      }
+    ],
+    "anuaTitle": "Anua",
+    "anuaDesc": "Heartleaf 77 toner and serum",
+    "anuaBody1": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+    "anuaBody2": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+    "anuaTip": "Ask staff about app coupons and gift-with-purchase.",
+    "anuaBody": [
+      {
+        "type": "text",
+        "ko": "아누아 어성초 77 토너·세럼은 올리브영에서 가장 잘 팔리는 진정 케어 중 하나입니다.",
+        "en": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+        "ja": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+        "zh": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+        "zh-Hant": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+        "vi": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+        "th": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.",
+        "ru": "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines."
+      },
+      {
+        "type": "text",
+        "ko": "민감·트러블 케어를 찾는 여행객 선물로도 인기입니다. 택스프리 매장인지 계산 전 확인하세요.",
+        "en": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+        "ja": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+        "zh": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+        "zh-Hant": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+        "vi": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+        "th": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.",
+        "ru": "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout."
+      }
+    ],
+    "medihealTitle": "Mediheal",
+    "medihealDesc": "N.M.F Aquaring and other sheet masks",
+    "medihealBody1": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+    "medihealBody2": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+    "medihealTip": "Sensitive skin: look for gentle / centella labels.",
+    "medihealBody": [
+      {
+        "type": "text",
+        "ko": "메디힐은 N.M.F 아쿠아링 등 시트마스크로 유명한 브랜드입니다. 박스 세트(10매)가 선물용으로 보기 좋습니다.",
+        "en": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+        "ja": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+        "zh": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+        "zh-Hant": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+        "vi": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+        "th": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.",
+        "ru": "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts."
+      },
+      {
+        "type": "text",
+        "ko": "올리브영·면세에서 구성이 명확한 세트를 고르세요. 유통기한·영문 표기가 있는 수출용도 있습니다.",
+        "en": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+        "ja": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+        "zh": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+        "zh-Hant": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+        "vi": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+        "th": "Olive Young and duty-free have clear set options; check expiry and English labeling.",
+        "ru": "Olive Young and duty-free have clear set options; check expiry and English labeling."
+      }
+    ],
+    "numbuzinTitle": "numbuzin",
+    "numbuzinDesc": "Numbered skincare and masks (No.1 / 3 / 5…)",
+    "numbuzinBody1": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+    "numbuzinBody2": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+    "numbuzinTip": "Tell staff your skin type before choosing.",
+    "numbuzinBody": [
+      {
+        "type": "text",
+        "ko": "넘버즈인(numbuzin)은 번호별 라인(1·3·5번 등)으로 유명한 스킨케어·마스크 브랜드입니다.",
+        "en": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+        "ja": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+        "zh": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+        "zh-Hant": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+        "vi": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+        "th": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.",
+        "ru": "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks."
+      },
+      {
+        "type": "text",
+        "ko": "올리브영에서 피부 고민별 추천을 받기 쉽고, 미니·본품 조합 선물이 많습니다.",
+        "en": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+        "ja": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+        "zh": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+        "zh-Hant": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+        "vi": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+        "th": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.",
+        "ru": "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common."
+      }
+    ],
+    "tirtirTitle": "TIRTIR",
+    "tirtirDesc": "Masks and mini cushions",
+    "tirtirBody1": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+    "tirtirBody2": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+    "tirtirTip": "Test cushion shade and coverage in store.",
+    "tirtirBody": [
+      {
+        "type": "text",
+        "ko": "티르티르(TIRTIR)는 마스크팩과 쿠션 미니로 여행·선물용으로 자주 추천됩니다.",
+        "en": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+        "ja": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+        "zh": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+        "zh-Hant": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+        "vi": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+        "th": "TIRTIR masks and mini cushions are popular travel and gift picks.",
+        "ru": "TIRTIR masks and mini cushions are popular travel and gift picks."
+      },
+      {
+        "type": "text",
+        "ko": "면세·올리브영 세트가 구성이 분명하고, 색조는 매장 테스터로 확인하세요.",
+        "en": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+        "ja": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+        "zh": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+        "zh-Hant": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+        "vi": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+        "th": "Duty-free and Olive Young sets are clear; shade-match makeup with testers.",
+        "ru": "Duty-free and Olive Young sets are clear; shade-match makeup with testers."
+      }
+    ],
+    "tocoboTitle": "Tocobo",
+    "tocoboDesc": "Cotton Soft sunscreen and sun sticks",
+    "tocoboBody1": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+    "tocoboBody2": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+    "tocoboTip": "Start with Olive Young sunscreen picks.",
+    "tocoboBody": [
+      {
+        "type": "text",
+        "ko": "토코보(Tocobo)는 코튼소프트 선크림·선스틱 등 백탁 적은 선케어로 인기입니다.",
+        "en": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+        "ja": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+        "zh": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+        "zh-Hant": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+        "vi": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+        "th": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.",
+        "ru": "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options."
+      },
+      {
+        "type": "text",
+        "ko": "항공 액체 제한 때문에 스틱·50ml 이하를 고르면 기내 반입이 수월합니다.",
+        "en": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+        "ja": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+        "zh": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+        "zh-Hant": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+        "vi": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+        "th": "Sticks and ≤50ml sizes are easier for cabin liquids limits.",
+        "ru": "Sticks and ≤50ml sizes are easier for cabin liquids limits."
+      }
+    ],
+    "greenFingerTitle": "Green Finger",
+    "greenFingerDesc": "Kids and family sun care",
+    "greenFingerBody1": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+    "greenFingerBody2": "Separate face/body products and check mineral vs chemical filters.",
+    "greenFingerTip": "Easy to find at pharmacies, Olive Young, and hypermarkets.",
+    "greenFingerBody": [
+      {
+        "type": "text",
+        "ko": "그린핑거는 키즈·패밀리용 선크림으로 잘 알려진 브랜드입니다. 아이와 함께 여행할 때 자주 고릅니다.",
+        "en": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+        "ja": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+        "zh": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+        "zh-Hant": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+        "vi": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+        "th": "Green Finger is known for kids/family sunscreens — handy for trips with children.",
+        "ru": "Green Finger is known for kids/family sunscreens — handy for trips with children."
+      },
+      {
+        "type": "text",
+        "ko": "얼굴·바디용을 나누고, 무기자차/유기자차 표기를 확인하세요.",
+        "en": "Separate face/body products and check mineral vs chemical filters.",
+        "ja": "Separate face/body products and check mineral vs chemical filters.",
+        "zh": "Separate face/body products and check mineral vs chemical filters.",
+        "zh-Hant": "Separate face/body products and check mineral vs chemical filters.",
+        "vi": "Separate face/body products and check mineral vs chemical filters.",
+        "th": "Separate face/body products and check mineral vs chemical filters.",
+        "ru": "Separate face/body products and check mineral vs chemical filters."
+      }
+    ],
+    "romandTitle": "rom&nd",
+    "romandDesc": "Juicy Lasting Tint and Glasting Gloss",
+    "romandBody1": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+    "romandBody2": "Shade-match with testers; singles + minis can beat gift sets.",
+    "romandTip": "Tell staff if you prefer warm or muted tones.",
+    "romandBody": [
+      {
+        "type": "text",
+        "ko": "롬앤(rom&nd) 쥬시 라스팅 틴트·글래스팅 글로스는 올리브영 고정 베스트 립입니다.",
+        "en": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+        "ja": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+        "zh": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+        "zh-Hant": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+        "vi": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+        "th": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.",
+        "ru": "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples."
+      },
+      {
+        "type": "text",
+        "ko": "색번호는 매장 테스터로 확인하세요. 단품+미니 조합이 세트보다 나을 때도 있습니다.",
+        "en": "Shade-match with testers; singles + minis can beat gift sets.",
+        "ja": "Shade-match with testers; singles + minis can beat gift sets.",
+        "zh": "Shade-match with testers; singles + minis can beat gift sets.",
+        "zh-Hant": "Shade-match with testers; singles + minis can beat gift sets.",
+        "vi": "Shade-match with testers; singles + minis can beat gift sets.",
+        "th": "Shade-match with testers; singles + minis can beat gift sets.",
+        "ru": "Shade-match with testers; singles + minis can beat gift sets."
+      }
+    ],
+    "periperaTitle": "Peripera",
+    "periperaDesc": "Ink Velvet and other tints",
+    "periperaBody1": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+    "periperaBody2": "Pigment can be strong — test shades and mind tester hygiene.",
+    "periperaTip": "Compare shade numbers in the Olive Young makeup aisle.",
+    "periperaBody": [
+      {
+        "type": "text",
+        "ko": "페리페라 잉크 벨벳 등 틴트는 가성비 좋은 한국 메이크업으로 선물·기념품으로 많이 삽니다.",
+        "en": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+        "ja": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+        "zh": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+        "zh-Hant": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+        "vi": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+        "th": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.",
+        "ru": "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs."
+      },
+      {
+        "type": "text",
+        "ko": "발색이 진한 편이니 테스터로 확인하고, 위생에 주의하세요.",
+        "en": "Pigment can be strong — test shades and mind tester hygiene.",
+        "ja": "Pigment can be strong — test shades and mind tester hygiene.",
+        "zh": "Pigment can be strong — test shades and mind tester hygiene.",
+        "zh-Hant": "Pigment can be strong — test shades and mind tester hygiene.",
+        "vi": "Pigment can be strong — test shades and mind tester hygiene.",
+        "th": "Pigment can be strong — test shades and mind tester hygiene.",
+        "ru": "Pigment can be strong — test shades and mind tester hygiene."
+      }
+    ],
+    "clioTitle": "CLIO",
+    "clioDesc": "Kill Cover foundation and cushions",
+    "clioBody1": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+    "clioBody2": "Ask for shade matching; mini cushions are great for travel.",
+    "clioTip": "Regular singles can beat duty-free sets on value.",
+    "clioBody": [
+      {
+        "type": "text",
+        "ko": "클리오 킬커버는 커버력 좋은 파운데이션·쿠션으로 올리브영에서 자주 추천됩니다.",
+        "en": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+        "ja": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+        "zh": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+        "zh-Hant": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+        "vi": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+        "th": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.",
+        "ru": "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage."
+      },
+      {
+        "type": "text",
+        "ko": "호수·피부타입 상담을 받고, 미니 쿠션은 여행용으로 좋습니다.",
+        "en": "Ask for shade matching; mini cushions are great for travel.",
+        "ja": "Ask for shade matching; mini cushions are great for travel.",
+        "zh": "Ask for shade matching; mini cushions are great for travel.",
+        "zh-Hant": "Ask for shade matching; mini cushions are great for travel.",
+        "vi": "Ask for shade matching; mini cushions are great for travel.",
+        "th": "Ask for shade matching; mini cushions are great for travel.",
+        "ru": "Ask for shade matching; mini cushions are great for travel."
+      }
+    ],
+    "jaksimMaskTitle": "Jaksim KF94 masks",
+    "jaksimMaskDesc": "A common KF94 sold at pharmacies and convenience stores",
+    "jaksimMaskBody1": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+    "jaksimMaskBody2": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+    "jaksimMaskTip": "For bulk, local pharmacy multipacks are often fine.",
+    "jaksimMaskBody": [
+      {
+        "type": "text",
+        "ko": "작심(Jaksim) KF94는 외국인이 기념·실사용으로 많이 사는 마스크입니다. 소량 팩이 캐리어에 넣기 좋습니다.",
+        "en": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+        "ja": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+        "zh": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+        "zh-Hant": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+        "vi": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+        "th": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.",
+        "ru": "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well."
+      },
+      {
+        "type": "text",
+        "ko": "편의점·다이소·올리브영·약국에 있습니다. ‘KF94’ 표기와 포장 날짜를 확인하세요.",
+        "en": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+        "ja": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+        "zh": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+        "zh-Hant": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+        "vi": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+        "th": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.",
+        "ru": "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date."
+      }
+    ],
+    "bluedotMaskTitle": "Bluedot masks",
+    "bluedotMaskDesc": "KF94/KF80 — convenience-store and pharmacy staple",
+    "bluedotMaskBody1": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+    "bluedotMaskBody2": "Stock can run low in dust season — try neighborhood pharmacies too.",
+    "bluedotMaskTip": "5–10 pack sizes are ideal for travel.",
+    "bluedotMaskBody": [
+      {
+        "type": "text",
+        "ko": "블루닷(Bluedot) 마스크는 편의점·약국에서 쉽게 보이는 KF94/KF80 라인입니다.",
+        "en": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+        "ja": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+        "zh": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+        "zh-Hant": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+        "vi": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+        "th": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.",
+        "ru": "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies."
+      },
+      {
+        "type": "text",
+        "ko": "황사·미세먼지 시즌에 재고가 빨리 줄어들 수 있어 동네 약국을 함께 보세요.",
+        "en": "Stock can run low in dust season — try neighborhood pharmacies too.",
+        "ja": "Stock can run low in dust season — try neighborhood pharmacies too.",
+        "zh": "Stock can run low in dust season — try neighborhood pharmacies too.",
+        "zh-Hant": "Stock can run low in dust season — try neighborhood pharmacies too.",
+        "vi": "Stock can run low in dust season — try neighborhood pharmacies too.",
+        "th": "Stock can run low in dust season — try neighborhood pharmacies too.",
+        "ru": "Stock can run low in dust season — try neighborhood pharmacies too."
+      }
+    ],
+    "aerMaskTitle": "Aer masks",
+    "aerMaskDesc": "KF94 — pharmacies and Olive Young",
+    "aerMaskBody1": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+    "aerMaskBody2": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+    "aerMaskTip": "Confirm KF grade and manufacture date on the pack.",
+    "aerMaskBody": [
+      {
+        "type": "text",
+        "ko": "아에르(Aer) KF94는 약국·올리브영에서 자주 보이는 마스크 브랜드입니다.",
+        "en": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+        "ja": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+        "zh": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+        "zh-Hant": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+        "vi": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+        "th": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.",
+        "ru": "Aer KF94 masks are commonly stocked at pharmacies and Olive Young."
+      },
+      {
+        "type": "text",
+        "ko": "착용감·사이즈(S/M/L)를 확인하고, 귀국용 대량은 무게를 계산하세요.",
+        "en": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+        "ja": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+        "zh": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+        "zh-Hant": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+        "vi": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+        "th": "Check fit sizes (S/M/L) and suitcase weight for bulk buys.",
+        "ru": "Check fit sizes (S/M/L) and suitcase weight for bulk buys."
+      }
+    ],
+    "monamiTitle": "Monami",
+    "monamiDesc": "153 ballpoint — a Korean stationery icon",
+    "monamiBody1": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+    "monamiBody2": "Gift case sets for others; refills/singles for yourself.",
+    "monamiTip": "Look for color sets and limited packages.",
+    "monamiBody": [
+      {
+        "type": "text",
+        "ko": "모나미 153 볼펜 세트는 한국 문구 기념품의 대표입니다. 다이소·문구점·아트박스에서 세트를 고르기 쉽습니다.",
+        "en": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+        "ja": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+        "zh": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+        "zh-Hant": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+        "vi": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+        "th": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.",
+        "ru": "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox."
+      },
+      {
+        "type": "text",
+        "ko": "선물용 케이스 세트, 본인용 리필·단품으로 나누어 사면 합리적입니다.",
+        "en": "Gift case sets for others; refills/singles for yourself.",
+        "ja": "Gift case sets for others; refills/singles for yourself.",
+        "zh": "Gift case sets for others; refills/singles for yourself.",
+        "zh-Hant": "Gift case sets for others; refills/singles for yourself.",
+        "vi": "Gift case sets for others; refills/singles for yourself.",
+        "th": "Gift case sets for others; refills/singles for yourself.",
+        "ru": "Gift case sets for others; refills/singles for yourself."
+      }
+    ],
+    "iconicTitle": "Iconic",
+    "iconicDesc": "Diaries, stickers, and planners",
+    "iconicBody1": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+    "iconicBody2": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+    "iconicTip": "Stickers and memo pads barely add luggage weight.",
+    "iconicBody": [
+      {
+        "type": "text",
+        "ko": "아이코닉은 다이어리·스티커·플래너로 인기인 문구 브랜드입니다. 가벼운 기념품으로 좋습니다.",
+        "en": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+        "ja": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+        "zh": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+        "zh-Hant": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+        "vi": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+        "th": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.",
+        "ru": "Iconic is popular for diaries, stickers, and planners — light souvenir stationery."
+      },
+      {
+        "type": "text",
+        "ko": "아트박스·아이코닉 매장·일부 올리브영·백화점 문구 코너에서 찾을 수 있습니다.",
+        "en": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+        "ja": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+        "zh": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+        "zh-Hant": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+        "vi": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+        "th": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.",
+        "ru": "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners."
+      }
+    ],
+    "kakaoFriendsStationeryTitle": "Kakao character goods",
+    "kakaoFriendsStationeryDesc": "Kakao Friends plush, stationery, and small gifts",
+    "kakaoFriendsStationeryBody1": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+    "kakaoFriendsStationeryBody2": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+    "kakaoFriendsStationeryTip": "Small keyrings, memos, and stickers make easy gifts.",
+    "kakaoFriendsStationeryBody": [
+      {
+        "type": "text",
+        "ko": "카카오 캐릭터 굿즈는 인형·키링·텀블러·문구·파우치 등 가벼운 기념품으로 인기입니다. 플래그십·아트박스·다이소·편의점 캐릭터 코너에서 찾을 수 있습니다.",
+        "en": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+        "ja": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+        "zh": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+        "zh-Hant": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+        "vi": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+        "th": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.",
+        "ru": "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners."
+      },
+      {
+        "type": "text",
+        "ko": "한정 콜라보는 플래그십·팝업이 재고가 나은 편입니다. 부피가 큰 인형은 캐리어 공간을 먼저 확인하세요.",
+        "en": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+        "ja": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+        "zh": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+        "zh-Hant": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+        "vi": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+        "th": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.",
+        "ru": "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush."
+      }
+    ],
+    "starbucksTumblerTitle": "Starbucks tumbler",
+    "starbucksTumblerDesc": "Korea-only and seasonal tumblers/mugs",
+    "starbucksTumblerBody1": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+    "starbucksTumblerBody2": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+    "starbucksTumblerTip": "New seasonal drops go quickly on launch weekends.",
+    "starbucksTumblerBody": [
+      {
+        "type": "text",
+        "ko": "스타벅스 한국 매장·리저브에서는 시즌·도시 한정 텀블러·머그가 자주 나옵니다. 여행 기념·선물로 많이 고릅니다.",
+        "en": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+        "ja": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+        "zh": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+        "zh-Hant": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+        "vi": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+        "th": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.",
+        "ru": "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs."
+      },
+      {
+        "type": "text",
+        "ko": "명동·강남·공항 인근 매장은 품절이 빠를 수 있어 여유 있게 방문하세요. 액체 제한 때문에 출국 전에는 비워 휴대하세요.",
+        "en": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+        "ja": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+        "zh": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+        "zh-Hant": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+        "vi": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+        "th": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.",
+        "ru": "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules."
+      }
+    ],
+    "vtCicaBubbleMaskTitle": "VT Cica Bubble Sparkling Mask",
+    "vtCicaBubbleMaskDesc": "Daiso VT cica bubble booster — travel-friendly packets",
+    "vtCicaBubbleMaskBody1": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+    "vtCicaBubbleMaskBody2": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+    "vtCicaBubbleMaskTip": "Search “시카 버블 / Cica Bubble” on Daiso mall or in-store kiosks.",
+    "vtCicaBubbleMaskBody": [
+      {
+        "type": "text",
+        "ko": "다이소에서 파는 VT 시카 버블 스파클링 부스터(마스크/부스터 팩)입니다. 크림 머드가 버블로 바뀌며 노폐물 흡착·진정 수분 케어용으로 여행객에게도 인기입니다.",
+        "en": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+        "ja": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+        "zh": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+        "zh-Hant": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+        "vi": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+        "th": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.",
+        "ru": "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost."
+      },
+      {
+        "type": "text",
+        "ko": "개별 포장이라 위생적이고 캐리어에 넣기 쉽습니다. 다이소몰·매장 재고를 확인하고, 피부 자극이 있으면 사용을 중단하세요.",
+        "en": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+        "ja": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+        "zh": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+        "zh-Hant": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+        "vi": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+        "th": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.",
+        "ru": "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs."
+      }
+    ],
+    "honeyButterAlmondTitle": "Honey Butter Almond",
+    "honeyButterAlmondDesc": "HBAF honey-butter almonds — a traveler staple snack",
+    "honeyButterAlmondBody1": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+    "honeyButterAlmondBody2": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+    "honeyButterAlmondTip": "Myeongdong HBAF stores are great for tasting multiple flavors.",
+    "honeyButterAlmondBody": [
+      {
+        "type": "text",
+        "ko": "HBAF(바프) 허니버터 아몬드는 꿀·버터 시즈닝을 입힌 아몬드 스낵으로, 외국인 관광객이 한국에서 꼭 사 가는 간식으로 유명합니다. 편의점·마트·명동 바프 매장에서 살 수 있습니다.",
+        "en": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+        "ja": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+        "zh": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+        "zh-Hant": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+        "vi": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+        "th": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.",
+        "ru": "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong."
+      },
+      {
+        "type": "text",
+        "ko": "지퍼백·소포장 구성이 많아 선물·기내용으로 편합니다. 유사 브랜드가 있으니 패키지의 HBAF/바프 표기를 확인하세요.",
+        "en": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+        "ja": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+        "zh": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+        "zh-Hant": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+        "vi": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+        "th": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.",
+        "ru": "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes."
+      }
+    ],
+    "americanoCoolingCandyTitle": "Americano cooling candy",
+    "americanoCoolingCandyDesc": "Coffee-flavored cooling candy in a tin (convenience-store hit)",
+    "americanoCoolingCandyBody1": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+    "americanoCoolingCandyBody2": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+    "americanoCoolingCandyTip": "Look for “Americano cooling” tins in the candy aisle.",
+    "americanoCoolingCandyBody": [
+      {
+        "type": "text",
+        "ko": "아메리카노 쿨링캔디는 아메리카노 풍미와 쿨링감을 담은 틴케이스 캔디입니다. 무설탕(자일리톨) 표기 제품이 많아 휴대용·기념 간식으로 편의점에서 화제가 됐습니다.",
+        "en": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+        "ja": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+        "zh": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+        "zh-Hant": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+        "vi": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+        "th": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.",
+        "ru": "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend."
+      },
+      {
+        "type": "text",
+        "ko": "당류 0g이어도 칼로리가 있을 수 있고, 자일리톨은 한꺼번에 많이 먹으면 배가 아플 수 있습니다. 라벨의 함량·주의사항을 확인하세요.",
+        "en": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+        "ja": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+        "zh": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+        "zh-Hant": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+        "vi": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+        "th": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.",
+        "ru": "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label."
+      }
+    ],
+    "bangatganSesameOilTitle": "Mill sesame oil (bangatgan)",
+    "bangatganSesameOilDesc": "Traditional sesame oil — a classic Korean pantry gift",
+    "bangatganSesameOilBody1": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+    "bangatganSesameOilBody2": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+    "bangatganSesameOilTip": "Check “방앗간”, sesame content, and pack date on the label.",
+    "bangatganSesameOilBody": [
+      {
+        "type": "text",
+        "ko": "방앗간 참기름은 참깨를 짜낸 고소한 참기름으로, 한국 집에서 나물·비빔밥·고기 양념에 쓰는 기본 조미유입니다. 선물 세트·소용량 병이 마트·한식 코너·온라인에 많습니다.",
+        "en": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+        "ja": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+        "zh": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+        "zh-Hant": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+        "vi": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+        "th": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.",
+        "ru": "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles."
+      },
+      {
+        "type": "text",
+        "ko": "직사광선을 피해 서늘한 곳에 두고, 개봉 후엔 가급적 빨리 드세요. 항공 액체 제한(기내 100ml)을 확인해 위탁 수하물로 보내는 편이 안전합니다.",
+        "en": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+        "ja": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+        "zh": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+        "zh-Hant": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+        "vi": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+        "th": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.",
+        "ru": "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles."
+      }
+    ],
+    "gyeongjuSipwonBreadTitle": "Gyeongju 10-won bread",
+    "gyeongjuSipwonBreadDesc": "Coin-stamped souvenir bread from Gyeongju",
+    "gyeongjuSipwonBreadBody1": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+    "gyeongjuSipwonBreadBody2": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+    "gyeongjuSipwonBreadTip": "Compare with Hwangnam bread and barley bread for a local pastry set.",
+    "gyeongjuSipwonBreadBody": [
+      {
+        "type": "text",
+        "ko": "경주 십원빵은 십원 주화 문양을 올린 기념 빵·디저트로, 경주 시내 베이커리·관광 안내 포인트에서 많이 삽니다. 사진 찍기 좋은 비주얼 간식입니다.",
+        "en": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+        "ja": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+        "zh": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+        "zh-Hant": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+        "vi": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+        "th": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.",
+        "ru": "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots."
+      },
+      {
+        "type": "text",
+        "ko": "당일 생산·유통기한이 짧은 편이니 당일 드시는 게 좋습니다. 경주 외 지역에서는 구하기 어려울 수 있습니다.",
+        "en": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+        "ja": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+        "zh": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+        "zh-Hant": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+        "vi": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+        "th": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.",
+        "ru": "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju."
+      }
     ]
   },
   "convenience": {
@@ -27380,10 +28614,28 @@
     "binggrae-together_tipTitle": "Tip",
     "binggrae-together_tip": "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts.",
     "sectionTabProduct": "Phổ biến",
-    "sectionTabCombo": "Combo"
+    "sectionTabCombo": "Combo",
+    "kim-hyeja-dosirakTitle": "Kim Hye-ja Dosirak",
+    "kim-hyeja-dosirakDesc": "GS25 signature lunch box — Kim Hye-ja brand",
+    "kim-hyeja-dosirak_pageTitle": "GS25 Kim Hye-ja Dosirak",
+    "kim-hyeja-dosirak_lead": "Kim Hye-ja Dosirak is a well-known GS25 convenience-store lunch-box line — rice and side dishes for a quick full meal.",
+    "kim-hyeja-dosirak_tipTitle": "Tip",
+    "kim-hyeja-dosirak_tip": "Sold at GS25. Microwave before eating and check the date.",
+    "cheese-bokki-ramenTitle": "Cheese Bokki Ramen",
+    "cheese-bokki-ramenDesc": "Cheesy tteokbokki-style cup ramen",
+    "cheese-bokki-ramen_pageTitle": "Cheese Bokki Ramen",
+    "cheese-bokki-ramen_lead": "Cheese Bokki ramen is a popular convenience-store cup noodle with cheesy tteokbokki-style seasoning — sweet-spicy and filling.",
+    "cheese-bokki-ramen_tipTitle": "Tip",
+    "cheese-bokki-ramen_tip": "Look for “치즈볶이 / Cheese Bokki” on the cup. Use a little less water if you like it thicker.",
+    "achim-haetsalTitle": "Achim Haetsal",
+    "achim-haetsalDesc": "Đồ uống gạo/ngũ cốc ngọt — món cổ điển cửa hàng tiện lợi",
+    "achim-haetsal_pageTitle": "Achim Haetsal — đồ uống gạo kinh điển",
+    "achim-haetsal_lead": "Achim Haetsal (Morning Sun) là đồ uống gạo và ngũ cốc ngọt của Woongjin — dễ thấy ở cửa hàng tiện lợi Hàn Quốc.",
+    "achim-haetsal_tipTitle": "Mẹo",
+    "achim-haetsal_tip": "Lắc kỹ trước khi uống. Uống lạnh ngon nhất."
   },
   "shopping": {
-    "intro": "Từ Olive Young và Daiso đến miễn thuế và chợ — mẹo mua sắm du khách hay hỏi nhất.",
+    "intro": "Từ Olive Young và Daiso đến miễn thuế và chợ — mẹo mua sắm du khách hay hỏi nhất. Cũng có mẹo nhẹ về việc nhìn hóa đơn sau thanh toán.",
     "backHub": "← Mẹo du lịch",
     "catBeauty": "Làm đẹp · Olive Young",
     "catDaily": "Daiso · Đời sống",
@@ -27651,6 +28903,38 @@
         "vi": "Sân bay, ga tàu, chợ và cửa hàng du lịch thường có góc đặc sản vùng. Kiểm tra hạn dùng, bảo quản và quy định mang lên máy bay.",
         "th": "สนามบิน สถานีรถไฟ ตลาด และร้านท่องเที่ยวมักมีมุมของฝากประจำภูมิภาค ตรวจวันหมดอายุและกฎนำขึ้นเครื่องก่อนซื้อ",
         "ru": "В аэропортах, на вокзалах, рынках и в туристических магазинах часто есть уголки региональных деликатесов. Проверяйте срок годности и правила провоза."
+      }
+    ],
+    "receiptTitle": "Kiểm tra hóa đơn",
+    "receiptLead": "Chỉ nhìn tổng tiền một lần rồi đi",
+    "receipt1": "Sau thanh toán, nhìn nhanh hóa đơn xem đúng món đã mua và đúng số tiền sẽ yên tâm hơn.",
+    "receipt2": "Hầu hết cửa hàng ổn; rất hiếm khi có món thừa — chỉ cần kiểm tra nhẹ nhàng.",
+    "receiptBody": [
+      {
+        "type": "image",
+        "src": "Images/shopping/receipt.jpg"
+      },
+      {
+        "type": "text",
+        "ko": "계산이 끝난 뒤, 영수증에 내가 산 물건만 들어 있는지·결제 금액이 맞는지 가볍게 한 번 보면 마음이 놓입니다. 대부분의 가게는 문제없지만, 아주 드물게 원하지 않은 품목이 함께 잡히는 경우가 있다고 하니, 부담 없이 확인해 두면 충분합니다.",
+        "en": "After paying, a quick glance at the receipt—that it lists only what you bought and matches what you meant to pay—is a calm habit. Most shops are fine; only very rarely might an extra item slip onto a bill, so a soft check is enough.",
+        "ja": "会計後、レシートに自分が買ったものだけがあるか・金額が合っているかを軽く確認すると安心です。ほとんどの店は問題ありませんが、ごく稀に意図しない品が載ることがあるとも言われるので、気軽に見ておけば十分です。",
+        "zh": "结账后，轻轻看一眼收据是否只含自己买的商品、金额是否符合预期，会更安心。多数店铺没问题；极少情况下可能混入多余商品，随手核对一下即可。",
+        "zh-Hant": "結帳後，輕輕看一眼收據是否只含自己買的商品、金額是否符合預期，會更安心。多數店鋪沒問題；極少情況下可能混入多餘商品，隨手核對一下即可。",
+        "vi": "Sau khi thanh toán, nhìn nhanh hóa đơn xem chỉ có món bạn mua và số tiền đúng ý định sẽ yên tâm hơn. Hầu hết cửa hàng ổn; rất hiếm khi có món thừa lọt vào bill — chỉ cần kiểm tra nhẹ nhàng.",
+        "th": "หลังจ่ายเงิน ลองกวาดตามใบเสร็จว่ามีแต่ของที่ซื้อและยอดตรงที่ตั้งใจไหม จะสบายใจขึ้น ร้านส่วนใหญ่ไม่มีปัญหา แต่หายากมากที่อาจมีรายการเกินปนมา — เช็กเบาๆ ก็พอ",
+        "ru": "После оплаты спокойно гляньте чек: там только купленное и сумма совпадает с ожидаемой. В большинстве мест всё в порядке; крайне редко на счёт может попасть лишнее — достаточно мягкой проверки."
+      },
+      {
+        "type": "callout",
+        "ko": "의문이 있으면 정중히 직원에게 물어보면 됩니다. 대부분의 경우는 바로 확인해 줍니다.",
+        "en": "If something looks off, a polite question to staff usually clears it up right away.",
+        "ja": "気になる点があれば、丁寧に店員に聞けば大丈夫。多くの場合すぐ確認してくれます。",
+        "zh": "若有疑问，礼貌地请店员核对即可，多数情况会马上帮您确认。",
+        "zh-Hant": "若有疑問，禮貌地請店員核對即可，多數情況會馬上幫您確認。",
+        "vi": "Nếu thấy lạ, hỏi nhân viên lịch sự là được — thường sẽ kiểm tra ngay.",
+        "th": "ถ้าสงสัย ถามพนักงานอย่างสุภาพได้ ส่วนใหญ่ช่วยเช็กให้ทันที",
+        "ru": "Если что-то смущает, вежливо спросите у персонала — чаще всего сразу проверят."
       }
     ]
   },
@@ -43056,5 +44340,11 @@
     "regionGyeongju": "Gyeongju",
     "regionBusan": "Busan",
     "regionJeju": "Jeju"
-  }
+  },
+  "chalddeok-iceTitle": "Chaltteok Ice",
+  "chalddeok-iceDesc": "Lotte Chaltteok Ice — popular ice cream",
+  "chalddeok-ice_pageTitle": "Lotte Chaltteok Ice",
+  "chalddeok-ice_lead": "Lotte Chaltteok Ice is a popular single ice cream from Korean convenience-store freezers — ice cream wrapped in a chewy rice-cake skin.",
+  "chalddeok-ice_tipTitle": "Tip",
+  "chalddeok-ice_tip": "It melts quickly in heat — eat it soon after buying."
 }

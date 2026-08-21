@@ -239,7 +239,7 @@
     "catDailyIntro": "Mẹo hàng ngày khi du lịch — bản đồ, rác, giá cuối tuần, khảo sát, giao đồ ăn, ngày mưa.",
     "catRestaurantIntro": "Mẹo ăn uống — gọi món, tip, chờ, tự phục vụ, hút thuốc.",
     "catTransportIntro": "Di chuyển — chạm thẻ, giờ cao điểm, lối ra, phép lịch sự, tiếng ồn, ghế ưu tiên, chào hàng. Về vé và thẻ, xem Trước khi đi.",
-    "catShoppingIntro": "Olive Young, Daiso, miễn thuế, chợ và đặc sản vùng — xem ngay tại đây.",
+    "catShoppingIntro": "Olive Young, Daiso, miễn thuế, chợ và đặc sản vùng — xem ngay tại đây. Có thêm mẹo nhẹ về kiểm tra hóa đơn.",
     "tabMap": "Bản đồ",
     "tabCash": "Tiền mặt · Thẻ",
     "tabTrash": "Thùng rác",
@@ -413,6 +413,7 @@
         "src": "Images/travel-tips/priority.jpg"
       }
     ],
-    "tabSpecialty": "Đặc sản vùng"
+    "tabSpecialty": "Đặc sản vùng",
+    "tabReceipt": "Kiểm tra hóa đơn"
   }
 }

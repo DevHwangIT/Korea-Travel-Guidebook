@@ -287,6 +287,30 @@
       }
       return renderPlainTextBlock(text);
     }
+    if (type === "checklist") {
+      var checkWrap = document.createElement("div");
+      checkWrap.className = "content-body__section content-body__checklist";
+      var checkTitle = textFor(block, lang).trim();
+      if (checkTitle) {
+        var checkH = document.createElement("h2");
+        checkH.className = "content-body__heading";
+        checkH.textContent = checkTitle;
+        checkWrap.appendChild(checkH);
+      }
+      var rawItems = Array.isArray(block.items) ? block.items : [];
+      var ul = document.createElement("ul");
+      ul.className = "prep-check-list";
+      for (var ci = 0; ci < rawItems.length; ci++) {
+        var itemText = textFor(rawItems[ci], lang).trim();
+        if (!itemText) continue;
+        var li = document.createElement("li");
+        li.textContent = itemText;
+        ul.appendChild(li);
+      }
+      if (!ul.childNodes.length) return checkTitle ? checkWrap : null;
+      checkWrap.appendChild(ul);
+      return checkWrap;
+    }
     if (type === "callout") {
       var call = document.createElement("aside");
       call.className = "guide-callout content-body__callout";
