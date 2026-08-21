@@ -1,0 +1,266 @@
+{
+  "Blue · Yi Hwang. Handy at markets and for small change.": {
+    "ja": "青 · 退渓・李滉。市場や少額の支払いに便利。",
+    "zh": "蓝色 · 退溪李滉。市场、小额找零最方便。",
+    "zh-Hant": "藍色 · 退溪李滉。市場、小額找零最方便。",
+    "vi": "Xanh dương · Toegye Yi Hwang. Thuận tiện ở chợ và tiền lẻ.",
+    "th": "สีฟ้า · อี ฮวัง (โทเอกเย). สะดวกในตลาดและเงินทอนเล็กน้อย",
+    "ru": "Синяя · Ли Хван (Твеге). Удобна на рынках и для мелкой сдачи."
+  },
+  "Orange-brown · Yi I. Common for small purchases.": {
+    "ja": "橙〜茶 · 栗谷・李珥。少額支払いに多い札。",
+    "zh": "橙褐 · 栗谷李珥。小额支付常用。",
+    "zh-Hant": "橙褐 · 栗谷李珥。小額支付常用。",
+    "vi": "Cam nâu · Yulgok Yi I. Thường dùng cho mua nhỏ.",
+    "th": "ส้มน้ำตาล · อี อี (ยูลกก). ใช้จ่ายเล็กน้อยบ่อย",
+    "ru": "Оранжево-коричневая · Ли И (Юльгок). Часто для мелких покупок."
+  },
+  "Green · King Sejong. The note you see most often.": {
+    "ja": "緑 · 世宗大王。いちばんよく見る紙幣。",
+    "zh": "绿色 · 世宗大王。日常最常见的纸币。",
+    "zh-Hant": "綠色 · 世宗大王。日常最常見的紙鈔。",
+    "vi": "Xanh lá · Vua Sejong. Tờ tiền gặp nhiều nhất.",
+    "th": "สีเขียว · พระเจ้าเซจง. ธนบัตรที่เจอบ่อยที่สุด",
+    "ru": "Зелёная · король Седжон. Самая частая купюра."
+  },
+  "Yellow · Shin Saimdang. Common after exchanging larger amounts.": {
+    "ja": "黄 · 申師任堂。大きめ両替のあとに多い札。",
+    "zh": "黄色 · 申师任堂。大额兑换后常见。",
+    "zh-Hant": "黃色 · 申師任堂。大額兌換後常見。",
+    "vi": "Vàng · Shin Saimdang. Thường thấy sau khi đổi số lớn.",
+    "th": "สีเหลือง · ชิน ไซมดัง. พบบ่อยหลังแลกเงินก้อนใหญ่",
+    "ru": "Жёлтая · Син Саимдан. Часто после крупного обмена."
+  },
+  "₩10, ₩50, ₩100, and ₩500 — used for change, vending, and transit top-ups.": {
+    "ja": "₩10・₩50・₩100・₩500。お釣り・自販機・交通カードチャージに。",
+    "zh": "有 ₩10、₩50、₩100、₩500，用于找零、贩卖机、交通卡充值。",
+    "zh-Hant": "有 ₩10、₩50、₩100、₩500，用於找零、販賣機、交通卡儲值。",
+    "vi": "Có ₩10, ₩50, ₩100 và ₩500 — dùng cho tiền thừa, máy bán hàng và nạp thẻ giao thông.",
+    "th": "มี ₩10, ₩50, ₩100 และ ₩500 — ใช้เป็นเงินทอน ตู้หยอด และเติมบัตรโดยสาร",
+    "ru": "₩10, ₩50, ₩100 и ₩500 — сдача, автоматы и пополнение проезда."
+  },
+  "Smallest unit — usually given as change.": {
+    "ja": "最小単位。だいたいお釣りで受け取ります。",
+    "zh": "最小面额，多为找零。",
+    "zh-Hant": "最小面額，多為找零。",
+    "vi": "Mệnh giá nhỏ nhất — thường nhận khi lấy tiền thừa.",
+    "th": "หน่วยเล็กสุด — มักได้เป็นเงินทอน",
+    "ru": "Самый мелкий номинал — обычно в сдаче."
+  },
+  "Small yellowish coin.": {
+    "ja": "黄色い小さめの硬貨。",
+    "zh": "偏黄的小硬币。",
+    "zh-Hant": "偏黃的小硬幣。",
+    "vi": "Đồng xu nhỏ hơi vàng.",
+    "th": "เหรียญเล็กสีเหลืองอ่อน",
+    "ru": "Маленькая желтоватая монета."
+  },
+  "Silver-tone coin you meet often.": {
+    "ja": "銀色。日常でよく使う硬貨。",
+    "zh": "银色，日常常见。",
+    "zh-Hant": "銀色，日常常見。",
+    "vi": "Màu bạc — gặp thường xuyên.",
+    "th": "เหรียญสีเงินที่เจอบ่อย",
+    "ru": "Серебристая монета, которую часто встречаете."
+  },
+  "Largest common coin — useful for change/top-ups.": {
+    "ja": "いちばん大きな常用硬貨。お釣りやチャージに便利。",
+    "zh": "最大常用硬币，适合找零/充值。",
+    "zh-Hant": "最大常用硬幣，適合找零/儲值。",
+    "vi": "Đồng xu lớn nhất thường dùng — tiện cho tiền thừa/nạp thẻ.",
+    "th": "เหรียญใหญ่ที่ใช้บ่อย — เหมาะกับเงินทอน/เติมบัตร",
+    "ru": "Крупнейшая ходовая монета — удобна для сдачи и пополнения."
+  },
+  "For a rough won value, open Travel tools (bottom-right) → Currency. Approximate only.": {
+    "ja": "ウォンの目安は画面右下「旅行ツール」→「為替」。参考値です。",
+    "zh": "想了解韩元大概价值，可打开右下角「旅行工具」→「汇率」。仅供参考。",
+    "zh-Hant": "想了解韓元大概價值，可打開右下角「旅行工具」→「匯率」。僅供參考。",
+    "vi": "Để ước lượng giá trị won, mở Công cụ du lịch (góc dưới phải) → Tỷ giá. Chỉ mang tính tham khảo.",
+    "th": "อยากดูค่าวอนคร่าวๆ เปิดเครื่องมือท่องเที่ยว (มุมล่างขวา) → สกุลเงิน เป็นค่าประมาณเท่านั้น",
+    "ru": "Для ориентира по вонам откройте «Путевые инструменты» (справа внизу) → «Валюта». Только приблизительно."
+  },
+  "Haitai Bonbon canned drink — fruity pulp soda/juice": {
+    "ja": "ヘテ・ボンボン缶 — 果肉入りフルーツソーダ／ジュース",
+    "zh": "海太 Bonbon 罐装饮料 — 带果肉的果汁汽水",
+    "zh-Hant": "海太 Bonbon 罐裝飲料 — 帶果肉的果汁汽水",
+    "vi": "Nước đóng lon Haitai Bonbon — soda/nước ép có xác trái cây",
+    "th": "เครื่องดื่มกระป๋อง Haitai Bonbon — โซดา/น้ำผลไม้มีเนื้อผลไม้",
+    "ru": "Haitai Bonbon в банке — фруктовая газировка/сок с мякотью"
+  },
+  "Haitai Bonbon — convenience canned drink": {
+    "ja": "ヘテ・ボンボン — コンビニの果肉入り缶ドリンク",
+    "zh": "海太 Bonbon — 便利店罐装果肉饮料",
+    "zh-Hant": "海太 Bonbon — 便利商店罐裝果肉飲料",
+    "vi": "Haitai Bonbon — nước lon cửa hàng tiện lợi",
+    "th": "Haitai Bonbon — เครื่องดื่มกระป๋องร้านสะดวกซื้อ",
+    "ru": "Haitai Bonbon — баночный напиток из магазинов у дома"
+  },
+  "Haitai Bonbon is a canned drink with fruit pulp (grape, orange, and more), easy to find in convenience-store drink aisles.": {
+    "ja": "ヘテ・ボンボンは果肉入りの缶ドリンク。ぶどう・オレンジなどがあり、コンビニの飲料コーナーでよく見かけます。",
+    "zh": "海太 Bonbon 是带果肉的罐装饮料，有葡萄、橙等口味，便利店饮料区常见。",
+    "zh-Hant": "海太 Bonbon 是帶果肉的罐裝飲料，有葡萄、橙等口味，便利商店飲料區常見。",
+    "vi": "Haitai Bonbon là nước lon có xác trái cây (nho, cam…), dễ thấy ở kệ đồ uống cửa hàng tiện lợi.",
+    "th": "Haitai Bonbon เป็นเครื่องดื่มกระป๋องมีเนื้อผลไม้ (องุ่น ส้ม ฯลฯ) หาง่ายในมุมเครื่องดื่มร้านสะดวกซื้อ",
+    "ru": "Haitai Bonbon — напиток в банке с мякотью (виноград, апельсин и др.), часто в холодильнике у дома."
+  },
+  "Gently shake or check for settled pulp. Grab a chilled can.": {
+    "ja": "飲む前に軽く振るか、果肉が沈んでいないか確認を。冷蔵の缶がおすすめ。",
+    "zh": "喝前轻轻摇匀，或确认果肉是否沉底。选冷藏罐更好喝。",
+    "zh-Hant": "喝前輕輕搖勻，或確認果肉是否沉底。選冷藏罐更好喝。",
+    "vi": "Lắc nhẹ hoặc kiểm tra xác trái cây lắng đáy. Nên lấy lon lạnh.",
+    "th": "เขย่าเบาๆ หรือดูว่าเนื้อผลไม้ตกก้นไหม เลือกกระป๋องเย็นจะดี",
+    "ru": "Перед питьём слегка встряхните или проверьте осевшую мякоть. Берите охлаждённую банку."
+  },
+  "Binggrae Excellent ice cream — cup/family tubs": {
+    "ja": "ビングレ・エクセレント — カップ／ファミリーアイス",
+    "zh": "宾格瑞 Excellent 冰淇淋 — 杯装/家庭装",
+    "zh-Hant": "Binggrae Excellent 冰淇淋 — 杯裝/家庭裝",
+    "vi": "Kem Binggrae Excellent — cốc/hộp gia đình",
+    "th": "ไอศกรีม Binggrae Excellent — ถ้วย/กล่องครอบครัว",
+    "ru": "Мороженое Binggrae Excellent — стаканчики/семейные ванны"
+  },
+  "Binggrae Excellent — convenience ice cream": {
+    "ja": "ビングレ・エクセレント — コンビニアイス",
+    "zh": "宾格瑞 Excellent — 便利店冰淇淋",
+    "zh-Hant": "Binggrae Excellent — 便利商店冰淇淋",
+    "vi": "Binggrae Excellent — kem cửa hàng tiện lợi",
+    "th": "Binggrae Excellent — ไอศกรีมร้านสะดวกซื้อ",
+    "ru": "Binggrae Excellent — мороженое из магазина у дома"
+  },
+  "Binggrae Excellent is a cup/family ice-cream line in convenience and mart freezers — vanilla, chocolate, and more.": {
+    "ja": "ビングレ・エクセレントはコンビニ・マート冷凍庫のカップ／ファミリーアイス。バニラ・チョコなど味が豊富です。",
+    "zh": "宾格瑞 Excellent 是便利店和超市冷冻柜里的杯装/家庭装冰淇淋，有香草、巧克力等口味。",
+    "zh-Hant": "Binggrae Excellent 是便利商店和超市冷凍櫃裡的杯裝/家庭裝冰淇淋，有香草、巧克力等口味。",
+    "vi": "Binggrae Excellent là dòng kem cốc/hộp gia đình trong tủ đông tiện lợi và siêu thị — vani, sô-cô-la và nhiều vị khác.",
+    "th": "Binggrae Excellent เป็นไอศกรีมถ้วย/กล่องครอบครัวในตู้แช่ร้านสะดวกซื้อและมาร์ท — วานิลลา ช็อกโกแลต และอื่น ๆ",
+    "ru": "Binggrae Excellent — линейка стаканчиков и семейных вёдер в морозилках магазинов: ваниль, шоколад и др."
+  },
+  "Family tubs fit hotel fridges; single cups are good for walks or late snacks.": {
+    "ja": "ファミリーサイズはホテルの冷蔵庫へ。単品カップは散歩や夜食向き。",
+    "zh": "家庭装适合放进酒店冰箱；单杯适合边走边吃或夜宵。",
+    "zh-Hant": "家庭裝適合放進飯店冰箱；單杯適合邊走邊吃或宵夜。",
+    "vi": "Hộp gia đình để tủ lạnh khách sạn; cốc đơn tiện đi bộ hoặc ăn khuya.",
+    "th": "กล่องครอบครัวใส่ตู้เย็นโรงแรมได้ ถ้วยเดี่ยวเหมาะเดินเล่นหรือของว่างดึก",
+    "ru": "Семейные упаковки — в холодильник отеля; стаканчики удобны на прогулке или ночью."
+  },
+  "Binggrae Together ice cream — shareable family tub": {
+    "ja": "ビングレ・トゥゲザー — シェアしやすいファミリーアイス",
+    "zh": "宾格瑞 Together 冰淇淋 — 可分享的家庭装",
+    "zh-Hant": "Binggrae Together 冰淇淋 — 可分享的家庭裝",
+    "vi": "Kem Binggrae Together — hộp gia đình để chia sẻ",
+    "th": "ไอศกรีม Binggrae Together — กล่องครอบครัวแบ่งกิน",
+    "ru": "Мороженое Binggrae Together — семейная ванна, чтобы делить"
+  },
+  "Binggrae Together — convenience family ice cream": {
+    "ja": "ビングレ・トゥゲザー — コンビニのファミリーアイス",
+    "zh": "宾格瑞 Together — 便利店家庭装冰淇淋",
+    "zh-Hant": "Binggrae Together — 便利商店家庭裝冰淇淋",
+    "vi": "Binggrae Together — kem hộp gia đình cửa hàng tiện lợi",
+    "th": "Binggrae Together — ไอศกรีมครอบครัวร้านสะดวกซื้อ",
+    "ru": "Binggrae Together — семейное мороженое из магазина у дома"
+  },
+  "Binggrae Together is a shareable family ice-cream tub — a freezer classic at convenience stores and marts.": {
+    "ja": "ビングレ・トゥゲザーはみんなで分けやすいファミリーアイス。コンビニ・マート冷凍コーナーの定番です。",
+    "zh": "宾格瑞 Together 是适合多人分享的家庭装冰淇淋，是便利店和超市冷冻区的经典。",
+    "zh-Hant": "Binggrae Together 是適合多人分享的家庭裝冰淇淋，是便利商店和超市冷凍區的經典。",
+    "vi": "Binggrae Together là hộp kem gia đình để chia sẻ — món kinh điển trong tủ đông tiện lợi và siêu thị.",
+    "th": "Binggrae Together เป็นไอศกรีมกล่องครอบครัวแบ่งกินได้ — ของคลาสสิกในตู้แช่ร้านสะดวกซื้อและมาร์ท",
+    "ru": "Binggrae Together — семейная ванна, которой удобно делиться; классика морозилок у дома и в гипермаркетах."
+  },
+  "Seasonal flavors (like black sesame) trend on SNS. Get it to a fridge before it melts.": {
+    "ja": "黒ごまなど季節限定味はSNSで話題に。溶ける前に冷蔵庫へ。",
+    "zh": "黑芝麻等季节限定口味常在社交平台刷屏。融化前尽快放进冰箱。",
+    "zh-Hant": "黑芝麻等季節限定口味常在社群刷屏。融化前儘快放進冰箱。",
+    "vi": "Vị theo mùa (như mè đen) hay sốt trên SNS. Cho vào tủ lạnh trước khi chảy.",
+    "th": "รสถูกฤดูกาล (เช่น งาดำ) มักฮิตบนโซเชียล รีบใส่ตู้เย็นก่อนละลาย",
+    "ru": "Сезонные вкусы (например чёрный кунжут) часто в тренде в соцсетях. Успейте в холодильник до таяния."
+  },
+  "GS25 signature lunch box — Kim Hye-ja brand": {
+    "ja": "GS25の看板弁当 — キム・ヘジャブランド",
+    "zh": "GS25 招牌便当 — 金惠子品牌",
+    "zh-Hant": "GS25 招牌便當 — 金惠子品牌",
+    "vi": "Cơm hộp biểu tượng GS25 — thương hiệu Kim Hye-ja",
+    "th": "ข้าวกล่องซิกเนเจอร์ GS25 — แบรนด์คิม ฮเยจา",
+    "ru": "Фирменный ланчбокс GS25 — бренд Ким Хеджа"
+  },
+  "GS25 Kim Hye-ja Dosirak": {
+    "ja": "GS25 キム・ヘジャ弁当",
+    "zh": "GS25 金惠子便当",
+    "zh-Hant": "GS25 金惠子便當",
+    "vi": "Cơm hộp Kim Hye-ja GS25",
+    "th": "ข้าวกล่องคิม ฮเยจา GS25",
+    "ru": "Ланчбокс Ким Хеджа GS25"
+  },
+  "Kim Hye-ja Dosirak is a well-known GS25 convenience-store lunch-box line — rice and side dishes for a quick full meal.": {
+    "ja": "キム・ヘジャ弁当はGS25の定番コンビニ弁当。ご飯とおかずがそろい、手早く一食になります。",
+    "zh": "金惠子便当是 GS25 知名便利店便当线，米饭配小菜，可快速当一餐。",
+    "zh-Hant": "金惠子便當是 GS25 知名便利商店便當線，米飯配小菜，可快速當一餐。",
+    "vi": "Cơm hộp Kim Hye-ja là dòng dosirak nổi tiếng của GS25 — cơm và món ăn kèm cho một bữa đủ chất nhanh.",
+    "th": "ข้าวกล่องคิม ฮเยจาเป็นสายโดชิรักดังของ GS25 — ข้าวกับกับข้าวครบมื้อเร็ว",
+    "ru": "Ланчбокс Ким Хеджа — известная линейка GS25: рис и гарниры для быстрого полноценного обеда."
+  },
+  "Sold at GS25. Microwave before eating and check the date.": {
+    "ja": "GS25で購入可。食べる前にレンジで温め、賞味期限を確認を。",
+    "zh": "在 GS25 有售。食用前微波加热，并核对日期。",
+    "zh-Hant": "在 GS25 有售。食用前微波加熱，並核對日期。",
+    "vi": "Bán tại GS25. Hâm lò vi sóng trước khi ăn và kiểm tra hạn dùng.",
+    "th": "ขายที่ GS25 อุ่นไมโครเวฟก่อนกินและดูวันหมดอายุ",
+    "ru": "Продаётся в GS25. Перед едой разогрейте в СВЧ и проверьте дату."
+  },
+  "Cheesy tteokbokki-style cup ramen": {
+    "ja": "チーズ味トッポギ風カップ麺",
+    "zh": "芝士辣炒年糕风味杯面",
+    "zh-Hant": "起司辣炒年糕風味杯麵",
+    "vi": "Mì ly vị tteokbokki phô mai",
+    "th": "ราเมนถ้วยสไตล์ท๊อกบกกีชีส",
+    "ru": "Лапша в стакане со вкусом сырного токпокки"
+  },
+  "Cheese Bokki ramen is a popular convenience-store cup noodle with cheesy tteokbokki-style seasoning — sweet-spicy and filling.": {
+    "ja": "チーズボッキラーメンは、トッポギ風の甘辛チーズ味が人気のコンビニカップ麺。ボリュームもあり一食・夜食に。",
+    "zh": "芝士炒年糕拉面是便利店人气杯面，带辣炒年糕式的甜辣芝士味，一餐或宵夜都很合适。",
+    "zh-Hant": "起司炒年糕拉麵是便利商店人氣杯麵，帶辣炒年糕式的甜辣起司味，一餐或宵夜都很合適。",
+    "vi": "Mì ly Cheese Bokki là món phổ biến ở tiện lợi với gia vị tteokbokki phô mai ngọt cay, no bụng.",
+    "th": "ราเมนชีสโบกกีเป็นบะหมี่ถ้วยฮิตในร้านสะดวกซื้อ รสท๊อกบกกีชีสหวานเผ็ด อิ่มท้อง",
+    "ru": "Сырный «Cheese Bokki» — популярная лапша в стакане с приправой в духе сырного токпокки: сладко-острая и сытная."
+  },
+  "Look for “치즈볶이 / Cheese Bokki” on the cup. Use a little less water if you like it thicker.": {
+    "ja": "カップの「치즈볶이 / Cheese Bokki」表記を確認。濃いめが好きならお湯を少し控えめに。",
+    "zh": "杯面上看「치즈볶이 / Cheese Bokki」字样。喜欢更浓可少加点水。",
+    "zh-Hant": "杯麵上看「치즈볶이 / Cheese Bokki」字樣。喜歡更濃可少加一點水。",
+    "vi": "Tìm chữ “치즈볶이 / Cheese Bokki” trên ly. thích đặc hơn thì cho ít nước hơn một chút.",
+    "th": "หาคำว่า “치즈볶이 / Cheese Bokki” บนถ้วย ชอบข้นให้ใส่น้ำน้อยลงหน่อย",
+    "ru": "Ищите на стакане «치즈볶이 / Cheese Bokki». Любите гуще — налейте чуть меньше воды."
+  },
+  "WATERBOMB": {
+    "ja": "ウォーターボム",
+    "zh": "WATERBOMB（水炸弹音乐节）",
+    "zh-Hant": "WATERBOMB（水炸彈音樂節）",
+    "vi": "WATERBOMB",
+    "th": "WATERBOMB",
+    "ru": "WATERBOMB"
+  },
+  "Festivals": {
+    "ja": "フェスティバル",
+    "zh": "庆典",
+    "zh-Hant": "慶典",
+    "vi": "Lễ hội",
+    "th": "เทศกาล",
+    "ru": "Фестивали"
+  },
+  "VisitKorea (English)": {
+    "ja": "VisitKorea（英語）",
+    "zh": "VisitKorea（英文）",
+    "zh-Hant": "VisitKorea（英文）",
+    "vi": "VisitKorea (tiếng Anh)",
+    "th": "VisitKorea (ภาษาอังกฤษ)",
+    "ru": "VisitKorea (English)"
+  },
+  "VisitKorea KR": {
+    "ja": "VisitKorea 韓国語",
+    "zh": "VisitKorea 韩文",
+    "zh-Hant": "VisitKorea 韓文",
+    "vi": "VisitKorea tiếng Hàn",
+    "th": "VisitKorea ภาษาเกาหลี",
+    "ru": "VisitKorea (KR)"
+  }
+}

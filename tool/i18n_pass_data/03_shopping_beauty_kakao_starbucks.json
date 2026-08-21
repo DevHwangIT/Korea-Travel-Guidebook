@@ -1,0 +1,626 @@
+{
+  "8Seconds is a Korean SPA brand that quickly reflects seasonal trends — good for tees, light outerwear, and accessories.": {
+    "ja": "エイトセカンズ（8Seconds）は季節トレンドを素早く反映する韓国SPA。Tシャツ・アウター・バッグなど旅中に着やすいアイテムが多いです。",
+    "zh": "8Seconds 是快速跟上季节潮流的韩国 SPA，T 恤、外套、配件等适合旅途穿着的单品很多。",
+    "zh-Hant": "8Seconds 是快速跟上季節潮流的韓國 SPA，T 恤、外套、配件等適合旅途穿著的單品很多。",
+    "vi": "8Seconds là SPA Hàn phản ánh xu hướng theo mùa nhanh — áo thun, áo khoác nhẹ và phụ kiện dễ mặc khi đi du lịch.",
+    "th": "8Seconds เป็น SPA เกาหลีที่สะท้อนเทรนด์ซีซันเร็ว — เสื้อยืด เสื้อคลุมเบา และแอ็กเซสซอรีใส่เที่ยวง่าย",
+    "ru": "8Seconds — корейский SPA, быстро ловящий сезонные тренды: футболки, лёгкий верх и аксессуары удобны в поездке."
+  },
+  "Myeongdong and mall stores are easy to find; start with the sale racks.": {
+    "ja": "明洞・大型モール店は見つけやすく、セール棚から見ると失敗が少ないです。",
+    "zh": "明洞和大型商场门店好找，先从特卖架看起更稳妥。",
+    "zh-Hant": "明洞和大型商場門市好找，先從特賣架看起更穩妥。",
+    "vi": "Cửa hàng Myeongdong và trung tâm thương mại dễ tìm; bắt đầu từ kệ sale.",
+    "th": "ร้านเมียงดงและห้างหาง่าย เริ่มที่ชั้นลดราคาก่อน",
+    "ru": "В Мёндоне и ТЦ магазины легко найти; начните со стоек со скидками."
+  },
+  "Basic focuses on simple tees, knits, and daily wear — handy when you need practical clothes while traveling.": {
+    "ja": "BasicはシンプルなT・ニット・デイリーウェア中心のコスパファッション。旅中に『着る服』を足すときに便利です。",
+    "zh": "Basic 主打简约 T 恤、针织和日常装，旅途中需要实用衣物时很合适。",
+    "zh-Hant": "Basic 主打簡約 T 恤、針織和日常裝，旅途中需要實用衣物時很合適。",
+    "vi": "Basic tập trung áo thun, len và đồ mặc hàng ngày giản dị — tiện khi cần quần áo thực dụng khi đi du lịch.",
+    "th": "Basic เน้นเสื้อยืด ถัก และชุดใส่ประจำวันเรียบง่าย — เหมาะตอนต้องการเสื้อผ้าใช้จริงระหว่างเที่ยว",
+    "ru": "Basic — простые футболки, трикотаж и повседневка; удобно, когда в поездке нужны практичные вещи."
+  },
+  "Better for useful pieces than flashy souvenirs. Assortments change by season.": {
+    "ja": "派手なおみやげより実用アイテム向け。品ぞろえは季節で変わります。",
+    "zh": "比起花哨纪念品，更适合买实用单品。货品随季节变化。",
+    "zh-Hant": "比起花哨紀念品，更適合買實用單品。貨品隨季節變化。",
+    "vi": "Hợp với món thực dụng hơn quà hoành tráng. Hàng đổi theo mùa.",
+    "th": "เหมาะของใช้จริงมากกว่าของฝากฉูดฉาด สินค้าเปลี่ยนตามซีซัน",
+    "ru": "Лучше для полезных вещей, чем для броских сувениров. Ассортимент меняется по сезону."
+  },
+  "Shoopen is a budget brand for socks, tights, slippers, and simple shoes — popular for spare travel socks.": {
+    "ja": "シューペン（Shoopen）は靴下・タイツ・スリッパ・シンプルなシューズが手頃。旅の予備靴下で人気です。",
+    "zh": "Shoopen 是平价袜子、丝袜、拖鞋和简单鞋款品牌，旅行备用袜很受欢迎。",
+    "zh-Hant": "Shoopen 是平價襪子、絲襪、拖鞋和簡單鞋款品牌，旅行備用襪很受歡迎。",
+    "vi": "Shoopen là thương hiệu giá tốt cho tất, quần tất, dép và giày đơn giản — phổ biến làm tất dự phòng khi đi du lịch.",
+    "th": "Shoopen เป็นแบรนด์ราคาย่อมเยาเรื่องถุงเท้า ถุงน่อง รองเท้าแตะ และรองเท้าเรียบง่าย — นิยมซื้อถุงเท้าสำรองตอนเที่ยว",
+    "ru": "Shoopen — бюджетные носки, колготки, тапочки и простая обувь; популярны запасные носки в поездке."
+  },
+  "Multi-packs beat singles; check Korean sizes (230–280).": {
+    "ja": "3〜5足パックの方が単品よりお得。韓国サイズ（230〜280）を確認を。",
+    "zh": "多双装通常优于单买。核对韩国尺码（230–280）。",
+    "zh-Hant": "多雙裝通常優於單買。核對韓國尺碼（230–280）。",
+    "vi": "Gói nhiều đôi hơn mua lẻ; kiểm tra size Hàn (230–280).",
+    "th": "มัลติแพ็กคุ้มกว่าซื้อเดี่ยว ตรวจไซซ์เกาหลี (230–280)",
+    "ru": "Мультипаки выгоднее штучных; смотрите корейский размер (230–280)."
+  },
+  "Round Lab’s Dokdo toner/cream and birch moisture sunscreen are frequent Olive Young picks for visitors.": {
+    "ja": "ラウンドラボの独島トナー・クリームや白樺水分サンスクリーンは、オリーブヤングの外国人カゴに入りやすい定番です。",
+    "zh": "Round Lab 的独岛爽肤水/面霜、白桦树保湿防晒常进旅客在 Olive Young 的购物篮。",
+    "zh-Hant": "Round Lab 的獨島化妝水/乳霜、白樺樹保濕防曬常進旅客在 Olive Young 的購物籃。",
+    "vi": "Toner/kem Dokdo và kem chống nắng birch của Round Lab thường được khách chọn tại Olive Young.",
+    "th": "โทนเนอร์/ครีม Dokdo และกันแดด birch ของ Round Lab มักอยู่ในตะกร้านักท่องเที่ยวที่ Olive Young",
+    "ru": "Тонер/крем Dokdo и берёзовый увлажняющий SPF Round Lab часто берут в Olive Young."
+  },
+  "Good for gentle, hydrating routines. Start with Olive Young Picks shelves.": {
+    "ja": "低刺激・保湿を求める旅人に。まずは『オールヨンピック』棚から。",
+    "zh": "适合温和保湿护肤。可先看 Olive Young Picks 货架。",
+    "zh-Hant": "適合溫和保濕保養。可先看 Olive Young Picks 貨架。",
+    "vi": "Hợp routine dịu nhẹ, cấp ẩm. Bắt đầu ở kệ Olive Young Picks.",
+    "th": "เหมาะรูทีนอ่อนโยนชุ่มชื้น เริ่มที่ชั้น Olive Young Picks",
+    "ru": "Для мягкого увлажняющего ухода. Начните с полок Olive Young Picks."
+  },
+  "Anua Heartleaf 77 toner and serum are among Olive Young’s best-selling calming skincare lines.": {
+    "ja": "アヌア ハートリーフ77トナー・セラムは、オリーブヤングでよく売れる鎮静ケアの一つです。",
+    "zh": "Anua 鱼腥草 77 爽肤水/精华是 Olive Young 最畅销的舒缓护肤线之一。",
+    "zh-Hant": "Anua 魚腥草 77 化妝水/精華是 Olive Young 最暢銷的舒緩保養線之一。",
+    "vi": "Toner và serum Heartleaf 77 của Anua nằm trong dòng làm dịu bán chạy nhất tại Olive Young.",
+    "th": "โทนเนอร์และเซรั่ม Heartleaf 77 ของ Anua เป็นสายบำรุงสงบผิวขายดีของ Olive Young",
+    "ru": "Тонер и сыворотка Anua Heartleaf 77 — среди бестселлеров успокаивающего ухода в Olive Young."
+  },
+  "Popular gifts for sensitive or troubled skin. Ask about tax-free before checkout.": {
+    "ja": "敏感・トラブル肌向けギフトにも人気。会計前に免税対応か確認を。",
+    "zh": "也适合作为敏感/问题肌礼物。结账前确认能否免税。",
+    "zh-Hant": "也適合作為敏感/問題肌禮物。結帳前確認能否免稅。",
+    "vi": "Quà phổ biến cho da nhạy cảm/kích ứng. Hỏi tax-free trước khi thanh toán.",
+    "th": "ของขวัญยอดนิยมสำหรับผิวแพ้ง่าย/มีปัญหา ถาม tax-free ก่อนจ่าย",
+    "ru": "Популярный подарок для чувствительной или проблемной кожи. Перед оплатой спросите про tax-free."
+  },
+  "Mediheal is known for sheet masks like N.M.F Aquaring. 10-pack boxes make tidy gifts.": {
+    "ja": "メディヒールはN.M.Fアクアリングなどシートマスクで有名。10枚ボックスがギフト向きです。",
+    "zh": "Mediheal 以 N.M.F Aquaring 等面膜闻名。10 片盒装适合送礼。",
+    "zh-Hant": "Mediheal 以 N.M.F Aquaring 等面膜聞名。10 片盒裝適合送禮。",
+    "vi": "Mediheal nổi tiếng với mặt nạ như N.M.F Aquaring. Hộp 10 miếng gọn làm quà.",
+    "th": "Mediheal ดังเรื่องมาสก์อย่าง N.M.F Aquaring กล่อง 10 แผ่นเหมาะเป็นของขวัญ",
+    "ru": "Mediheal известен тканевыми масками вроде N.M.F Aquaring. Коробки по 10 — аккуратный подарок."
+  },
+  "Olive Young and duty-free have clear set options; check expiry and English labeling.": {
+    "ja": "オリーブヤング・免税はセット構成がはっきり。賞味・使用期限と英語表記も確認を。",
+    "zh": "Olive Young 和免税店套装选项清晰；核对有效期和英文说明。",
+    "zh-Hant": "Olive Young 和免稅店套裝選項清晰；核對有效期和英文說明。",
+    "vi": "Olive Young và duty-free có set rõ ràng; kiểm tra hạn dùng và nhãn tiếng Anh.",
+    "th": "Olive Young และดิวตี้ฟรีมีเซ็ตชัด ตรวจวันหมดอายุและป้ายภาษาอังกฤษ",
+    "ru": "В Olive Young и duty-free наборы понятные; смотрите срок и английскую маркировку."
+  },
+  "numbuzin is known for numbered lines (No.1, 3, 5, etc.) of skincare and masks.": {
+    "ja": "ナンバーズインは番号ライン（No.1・3・5など）のスキンケア・マスクで知られます。",
+    "zh": "numbuzin 以编号系列（No.1、3、5 等）护肤和面膜闻名。",
+    "zh-Hant": "numbuzin 以編號系列（No.1、3、5 等）保養和面膜聞名。",
+    "vi": "numbuzin nổi tiếng với dòng đánh số (No.1, 3, 5…) cho skincare và mặt nạ.",
+    "th": "numbuzin ดังเรื่องไลน์เลข (No.1, 3, 5 ฯลฯ) ของสกินแคร์และมาสก์",
+    "ru": "numbuzin известен нумерованными линиями (No.1, 3, 5…) ухода и масок."
+  },
+  "Easy to get skin-concern advice at Olive Young; mini + full-size gift sets are common.": {
+    "ja": "オリーブヤングでは肌悩み別の相談がしやすく、ミニ＋本品のギフトも多いです。",
+    "zh": "在 Olive Young 容易按肤质咨询；迷你+正装礼盒也常见。",
+    "zh-Hant": "在 Olive Young 容易按膚質諮詢；迷你+正裝禮盒也常見。",
+    "vi": "Dễ hỏi tư vấn theo tình trạng da tại Olive Young; set mini + full-size phổ biến.",
+    "th": "ถามคำแนะนำตามปัญหาผิวที่ Olive Young ได้ง่าย เซ็ตมินิ+ไซซ์เต็มมีบ่อย",
+    "ru": "В Olive Young легко спросить совет по коже; часто есть мини + полноразмерные наборы."
+  },
+  "TIRTIR masks and mini cushions are popular travel and gift picks.": {
+    "ja": "ティルティルのマスクやミニクッションは旅・ギフトでよく選ばれます。",
+    "zh": "TIRTIR 面膜和迷你气垫是旅途和送礼常选。",
+    "zh-Hant": "TIRTIR 面膜和迷你氣墊是旅途和送禮常選。",
+    "vi": "Mặt nạ và cushion mini TIRTIR được chọn nhiều khi đi du lịch và làm quà.",
+    "th": "มาสก์และคุชชั่นมินิ TIRTIR เป็นตัวเลือกฮิตสำหรับเที่ยวและของขวัญ",
+    "ru": "Маски и мини-кушоны TIRTIR часто берут в поездку и в подарок."
+  },
+  "Duty-free and Olive Young sets are clear; shade-match makeup with testers.": {
+    "ja": "免税・オリーブヤングのセットは構成が明確。色味はテスターで合わせて。",
+    "zh": "免税与 Olive Young 套装构成清楚；彩妆请用试色核对。",
+    "zh-Hant": "免稅與 Olive Young 套裝構成清楚；彩妝請用試色核對。",
+    "vi": "Set duty-free và Olive Young rõ ràng; thử màu makeup bằng tester.",
+    "th": "เซ็ตดิวตี้ฟรีและ Olive Young ชัด ลองเฉดด้วยเทสเตอร์",
+    "ru": "Наборы duty-free и Olive Young понятны; тон подбирайте тестерами."
+  },
+  "Tocobo’s Cotton Soft sunscreen and sun sticks are popular low-white-cast options.": {
+    "ja": "トコボのコットンソフト日焼け止めやサンスティックは、白浮きしにくい選択肢として人気です。",
+    "zh": "Tocobo 的 Cotton Soft 防晒和防晒棒以白浮少而受欢迎。",
+    "zh-Hant": "Tocobo 的 Cotton Soft 防曬和防曬棒以白浮少而受歡迎。",
+    "vi": "Kem chống nắng Cotton Soft và sun stick của Tocobo được ưa vì ít trắng mặt.",
+    "th": "กันแดด Cotton Soft และซันสติกของ Tocobo นิยมเพราะขาวเทาน้อย",
+    "ru": "Cotton Soft SPF и стики Tocobo популярны как варианты с малым белым следом."
+  },
+  "Sticks and ≤50ml sizes are easier for cabin liquids limits.": {
+    "ja": "スティックや50ml以下なら機内液体制限にも対応しやすいです。",
+    "zh": "棒状或 ≤50ml 规格更易符合机上液体限制。",
+    "zh-Hant": "棒狀或 ≤50ml 規格更易符合機上液體限制。",
+    "vi": "Dạng stick và ≤50ml dễ hơn với giới hạn chất lỏng cabin.",
+    "th": "แบบสติกและ ≤50 มล. ผ่านกฎของเหลวบนเครื่องง่ายกว่า",
+    "ru": "Стики и объём ≤50 мл проще для правил жидкостей в салоне."
+  },
+  "Green Finger is known for kids/family sunscreens — handy for trips with children.": {
+    "ja": "グリーンフィンガーはキッズ・ファミリー用日焼け止めで知られ、子連れ旅行に便利です。",
+    "zh": "Green Finger 以儿童/家庭防晒闻名，带娃出行很实用。",
+    "zh-Hant": "Green Finger 以兒童/家庭防曬聞名，帶小孩出行很實用。",
+    "vi": "Green Finger nổi tiếng kem chống nắng trẻ em/gia đình — tiện khi đi cùng trẻ.",
+    "th": "Green Finger ดังเรื่องกันแดดเด็ก/ครอบครัว — สะดวกตอนเที่ยวกับเด็ก",
+    "ru": "Green Finger известен детскими/семейными SPF — удобно в поездке с детьми."
+  },
+  "Separate face/body products and check mineral vs chemical filters.": {
+    "ja": "顔用・ボディ用を分け、無機／有機フィルター表記も確認を。",
+    "zh": "脸部与身体分开选，并核对物理/化学防晒标示。",
+    "zh-Hant": "臉部與身體分開選，並核對物理/化學防曬標示。",
+    "vi": "Tách sản phẩm mặt/body và kiểm tra lọc khoáng vs hóa học.",
+    "th": "แยกหน้า/ตัว และดูฟิลเตอร์แร่เทียบเคมี",
+    "ru": "Разделяйте лицо/тело и смотрите минеральный или химический фильтр."
+  },
+  "rom&nd Juicy Lasting Tint and Glasting Gloss are Olive Young lipstick staples.": {
+    "ja": "rom&ndのジューシーラスティングティントやグラスティンググロスはオリーブヤングの定番リップです。",
+    "zh": "rom&nd Juicy Lasting Tint 与 Glasting Gloss 是 Olive Young 唇妆常青款。",
+    "zh-Hant": "rom&nd Juicy Lasting Tint 與 Glasting Gloss 是 Olive Young 唇妝常青款。",
+    "vi": "Juicy Lasting Tint và Glasting Gloss của rom&nd là son cố định tại Olive Young.",
+    "th": "Juicy Lasting Tint และ Glasting Gloss ของ rom&nd เป็นลิปประจำ Olive Young",
+    "ru": "rom&nd Juicy Lasting Tint и Glasting Gloss — постоянные лип-хиты Olive Young."
+  },
+  "Shade-match with testers; singles + minis can beat gift sets.": {
+    "ja": "色はテスターで合わせて。単品＋ミニの方がセットよりお得なことも。",
+    "zh": "用试色对色号；单品+迷你有时比礼盒更划算。",
+    "zh-Hant": "用試色對色號；單品+迷你有時比禮盒更划算。",
+    "vi": "Thử màu bằng tester; mua lẻ + mini đôi khi hơn set quà.",
+    "th": "จับคู่เฉดด้วยเทสเตอร์ เดี่ยว+มินิอาจคุ้มกว่าเซ็ตของขวัญ",
+    "ru": "Подбирайте оттенок тестерами; штучные + мини иногда выгоднее наборов."
+  },
+  "Peripera Ink Velvet tints are affordable Korean makeup favorites for gifts and souvenirs.": {
+    "ja": "ペリペラ インクベルベットなどのティントはコスパの良い韓国メイクで、ギフト・おみやげに人気です。",
+    "zh": "Peripera Ink Velvet 等唇釉是高性价比韩妆，常作礼物与伴手礼。",
+    "zh-Hant": "Peripera Ink Velvet 等唇釉是高性價比韓妝，常作禮物與伴手禮。",
+    "vi": "Tint Peripera Ink Velvet là makeup Hàn giá tốt, hay làm quà và kỷ niệm.",
+    "th": "ทินท์ Peripera Ink Velvet เป็นเมกอัปเกาหลีราคาดี ของขวัญและของฝากนิยม",
+    "ru": "Тинты Peripera Ink Velvet — доступный корейский макияж, частый подарок и сувенир."
+  },
+  "Pigment can be strong — test shades and mind tester hygiene.": {
+    "ja": "発色が強めなのでテスターで確認し、衛生にも注意を。",
+    "zh": "显色偏浓，请试色并注意试色器卫生。",
+    "zh-Hant": "顯色偏濃，請試色並注意試色器衛生。",
+    "vi": "Màu có thể đậm — thử shade và chú ý vệ sinh tester.",
+    "th": "สีอาจเข้ม — ลองเฉดและระวังสุขอนามัยเทสเตอร์",
+    "ru": "Пигмент может быть насыщенным — пробуйте оттенки и следите за гигиеной тестеров."
+  },
+  "CLIO Kill Cover foundations and cushions are Olive Young staples for fuller coverage.": {
+    "ja": "クリオ キルカバーのファンデ・クッションはカバー力重視でオリーブヤングの定番です。",
+    "zh": "CLIO Kill Cover 粉底与气垫以遮瑕力见长，是 Olive Young 常推款。",
+    "zh-Hant": "CLIO Kill Cover 粉底與氣墊以遮瑕力見長，是 Olive Young 常推款。",
+    "vi": "Kem nền và cushion CLIO Kill Cover là món cố định ở Olive Young khi cần độ che phủ cao.",
+    "th": "รองพื้นและคุชชั่น CLIO Kill Cover เป็นของประจำ Olive Young สำหรับปกปิดแน่น",
+    "ru": "Тональные и кушоны CLIO Kill Cover — постоянный выбор Olive Young для более плотного покрытия."
+  },
+  "Ask for shade matching; mini cushions are great for travel.": {
+    "ja": "色合わせを店員に相談を。ミニクッションは旅用にぴったりです。",
+    "zh": "可请店员协助对色；迷你气垫很适合旅行。",
+    "zh-Hant": "可請店員協助對色；迷你氣墊很適合旅行。",
+    "vi": "Nhờ match màu; cushion mini rất tiện khi đi du lịch.",
+    "th": "ขอให้จับคู่เฉดให้ มินิคุชชั่นเหมาะกับการเดินทาง",
+    "ru": "Попросите подобрать тон; мини-кушоны удобны в поездке."
+  },
+  "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs pack well.": {
+    "ja": "ジャクシムKF94はおみやげにも日常用にも人気。小分けパックが荷物に入れやすいです。",
+    "zh": "Jaksim KF94 既适合当伴手礼也适合日常用，小包装好收纳。",
+    "zh-Hant": "Jaksim KF94 既適合當伴手禮也適合日常用，小包裝好收納。",
+    "vi": "Khẩu trang Jaksim KF94 phổ biến làm quà và dùng hàng ngày. Gói nhỏ dễ bỏ vali.",
+    "th": "หน้ากาก Jaksim KF94 นิยมทั้งของฝากและใช้ประจำ แพ็กเล็กใส่กระเป๋าง่าย",
+    "ru": "Jaksim KF94 берут и на память, и для ежедневного ношения. Маленькие пачки удобно упаковать."
+  },
+  "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF94 labeling and pack date.": {
+    "ja": "コンビニ・ダイソー・オリーブヤング・薬局にあります。「KF94」表記と包装日を確認を。",
+    "zh": "便利店、Daiso、Olive Young、药店有售。核对 KF94 标示与包装日期。",
+    "zh-Hant": "便利商店、Daiso、Olive Young、藥局有售。核對 KF94 標示與包裝日期。",
+    "vi": "Có ở tiện lợi, Daiso, Olive Young và hiệu thuốc. Kiểm tra nhãn KF94 và ngày đóng gói.",
+    "th": "มีในร้านสะดวกซื้อ ไดโซ Olive Young และร้านยา ตรวจป้าย KF94 และวันบรรจุ",
+    "ru": "Ищите в магазинах у дома, Daiso, Olive Young и аптеках. Смотрите маркировку KF94 и дату на пачке."
+  },
+  "Monami 153 pen sets are classic Korean stationery souvenirs. Easy to find at Daiso, stationery shops, and Artbox.": {
+    "ja": "モナミ153ボールペンセットは韓国文具おみやげの定番。ダイソー・文具店・アートボックスでセットが選びやすいです。",
+    "zh": "慕那美 153 笔套装是韩国文具伴手礼经典，Daiso、文具店、Artbox 容易买到。",
+    "zh-Hant": "慕那美 153 筆套裝是韓國文具伴手禮經典，Daiso、文具店、Artbox 容易買到。",
+    "vi": "Bộ bút Monami 153 là quà văn phòng phẩm Hàn kinh điển. Dễ tìm ở Daiso, tiệm stationery và Artbox.",
+    "th": "ชุดปากกา Monami 153 เป็นของฝากเครื่องเขียนเกาหลีคลาสสิก หาง่ายที่ไดโซ ร้านเครื่องเขียน และ Artbox",
+    "ru": "Наборы ручек Monami 153 — классический канцсувенир. Легко найти в Daiso, канцмагазинах и Artbox."
+  },
+  "Gift case sets for others; refills/singles for yourself.": {
+    "ja": "人へのギフトはケースセット、自分用はリフィル・単品が合理的です。",
+    "zh": "送人选礼盒套装，自用选替芯/单支更划算。",
+    "zh-Hant": "送人選禮盒套裝，自用選替芯/單支更划算。",
+    "vi": "Tặng người khác thì set hộp; tự dùng thì ruột/đơn chiếc hợp lý hơn.",
+    "th": "ให้คนอื่นเลือกชุดกล่อง ของตัวเองใช้รีฟิล/ชิ้นเดี่ยวคุ้มกว่า",
+    "ru": "В подарок — набор в футляре; себе — стержни/поштучно."
+  },
+  "Iconic is popular for diaries, stickers, and planners — light souvenir stationery.": {
+    "ja": "アイコニックはダイアリー・ステッカー・プランナーで人気の軽い文具おみやげです。",
+    "zh": "Iconic 以手帐、贴纸、日程本受欢迎，是轻便文具伴手礼。",
+    "zh-Hant": "Iconic 以手帳、貼紙、行事曆受歡迎，是輕便文具伴手禮。",
+    "vi": "Iconic nổi tiếng sổ, sticker và planner — văn phòng phẩm kỷ niệm nhẹ.",
+    "th": "Iconic นิยมสมุด สติกเกอร์ และแพลนเนอร์ — เครื่องเขียนของฝากน้ำหนักเบา",
+    "ru": "Iconic популярен дневниками, стикерами и планерами — лёгкая канцелярия на память."
+  },
+  "Find it at Artbox, Iconic shops, and some Olive Young/department stationery corners.": {
+    "ja": "アートボックス・アイコニック店舗・一部オリーブヤング／百貨店の文具コーナーで見つかります。",
+    "zh": "可在 Artbox、Iconic 门店及部分 Olive Young/百货文具区找到。",
+    "zh-Hant": "可在 Artbox、Iconic 門市及部分 Olive Young/百貨文具區找到。",
+    "vi": "Tìm ở Artbox, cửa hàng Iconic và một số góc stationery Olive Young/department store.",
+    "th": "หาได้ที่ Artbox ร้าน Iconic และมุมเครื่องเขียนบางแห่งของ Olive Young/ห้าง",
+    "ru": "Ищите в Artbox, магазинах Iconic и части канц-уголков Olive Young/универмагов."
+  },
+  "Kakao character goods—plush, keyrings, tumblers, stationery, pouches—are popular light souvenirs. Find them at flagships, Artbox, Daiso, and convenience-store character corners.": {
+    "ja": "カカオキャラグッズ（ぬいぐるみ・キーリング・タンブラー・文具・ポーチ）は軽いおみやげとして人気。フラッグシップ・アートボックス・ダイソー・コンビニのキャラコーナーで見つかります。",
+    "zh": "Kakao 角色周边（玩偶、钥匙扣、随行杯、文具、收纳袋）是轻便伴手礼热门。旗舰店、Artbox、Daiso、便利店角色区都有。",
+    "zh-Hant": "Kakao 角色週邊（玩偶、鑰匙圈、隨行杯、文具、收納袋）是輕便伴手禮熱門。旗艦店、Artbox、Daiso、便利商店角色區都有。",
+    "vi": "Hàng nhân vật Kakao—thú bông, móc khóa, tumbler, stationery, pouch—là quà nhẹ phổ biến. Có ở flagship, Artbox, Daiso và góc nhân vật tiện lợi.",
+    "th": "ของตัวละครคาเคา—ตุ๊กตา พวงกุญแจ ทัมเบลอร์ เครื่องเขียน กระเป๋า—เป็นของฝากเบาๆ ยอดนิยม หาได้ที่แฟล็กชิป Artbox ไดโซ และมุมตัวละครร้านสะดวกซื้อ",
+    "ru": "Какао-персонажи — плюш, брелоки, тумблеры, канцтовары, косметички — лёгкий популярный сувенир. Ищите во флагманах, Artbox, Daiso и уголочках персонажей."
+  },
+  "Limited collabs are easier at flagships/pop-ups. Check suitcase space for large plush.": {
+    "ja": "限定コラボはフラッグシップ／ポップアップの在庫がマシなことが多いです。大きなぬいぐるみは荷物スペースを先に確認を。",
+    "zh": "限定联名通常旗舰店/快闪更有货。大玩偶先确认行李箱空间。",
+    "zh-Hant": "限定聯名通常旗艦店/快閃更有貨。大玩偶先確認行李箱空間。",
+    "vi": "Collab giới hạn dễ hơn ở flagship/pop-up. Kiểm tra chỗ vali với thú bông lớn.",
+    "th": "คอลแลบลิมิเต็ดหาได้ง่ายกว่าที่แฟล็กชิป/ป๊อปอัป เช็กที่กระเป๋าก่อนซื้อตุ๊กตาใหญ่",
+    "ru": "Лимитированные коллаборации проще во флагманах/попапах. Для крупного плюша сначала оцените место в чемодане."
+  },
+  "Korean Starbucks and Reserve stores often carry seasonal or city-limited tumblers and mugs that travelers buy as souvenirs.": {
+    "ja": "スターバックス韓国店・リザーブでは季節・都市限定のタンブラーやマグがよく出ます。旅の記念・ギフトに選ばれます。",
+    "zh": "韩国星巴克与臻选店常有季节/城市限定随行杯和马克杯，旅客常当纪念礼物购买。",
+    "zh-Hant": "韓國星巴克與臻選店常有季節/城市限定隨行杯和馬克杯，旅客常當紀念禮物購買。",
+    "vi": "Starbucks và Reserve tại Hàn thường có tumbler/cốc giới hạn theo mùa hoặc thành phố — du khách hay mua làm kỷ niệm.",
+    "th": "สตาร์บัคส์และรีเซิร์ฟในเกาหลีมักมีทัมเบลอร์/แก้วลิมิเต็ดตามซีซันหรือเมือง นักท่องเที่ยวนิยมซื้อเป็นของที่ระลึก",
+    "ru": "В корейских Starbucks и Reserve часто бывают сезонные или городские лимитированные тумблеры и кружки — их берут на память."
+  },
+  "Busy tourist stores sell out fast. Empty bottles before flying to meet liquids rules.": {
+    "ja": "観光エリア店は品切れが早いので余裕をもって。機内液体ルールのため出国前は空けて持ち運んで。",
+    "zh": "热门游客店容易售罄，请留出时间。为符合液体规定，登机前请倒空。",
+    "zh-Hant": "熱門遊客店容易售罄，請留出時間。為符合液體規定，登機前請倒空。",
+    "vi": "Cửa hàng đông khách hết hàng nhanh. Trước khi bay hãy đổ hết nước để đúng quy định chất lỏng.",
+    "th": "ร้านย่านท่องเที่ยวหมดไว เผื่อเวลาไว้ ก่อนบินเทของเหลวออกให้ผ่านกฎ",
+    "ru": "В туристических точках быстро разбирают. Перед вылетом опорожните бутылку из‑за правил жидкостей."
+  },
+  "VT Cica Bubble Sparkling Booster packs are a Daiso favorite. Cream-mud texture turns into bubbles for a quick clarifying/calming facial boost.": {
+    "ja": "ダイソーのVTシカバブルスパークリングブースター（マスク／ブースターパック）が人気。クリーム泥が泡に変わり、吸着・鎮静・保湿の短時間ケアに。",
+    "zh": "Daiso 的 VT 积雪草气泡 Sparkling Booster（面膜/安瓶包）很受欢迎。膏泥变气泡，适合快速清洁舒缓保湿。",
+    "zh-Hant": "Daiso 的 VT 積雪草氣泡 Sparkling Booster（面膜/安瓶包）很受歡迎。膏泥變氣泡，適合快速清潔舒緩保濕。",
+    "vi": "Gói VT Cica Bubble Sparkling Booster là món ưa thích ở Daiso. Kem-bùn hóa bọt cho bước làm sạch/dịu da nhanh.",
+    "th": "แพ็ก VT Cica Bubble Sparkling Booster เป็นของฮิตที่ไดโซ เนื้อครีมโคลนกลายเป็นฟองสำหรับบูสต์ผิวแบบล้าง/สงบเร็ว",
+    "ru": "Пачки VT Cica Bubble Sparkling Booster — фаворит Daiso. Крем-грязь превращается в пузырьки для быстрого очищения/успокоения."
+  },
+  "Individually wrapped and easy to pack. Check store/online stock and stop if irritation occurs.": {
+    "ja": "個別包装で衛生的・パッキングしやすい。店舗／オンライン在庫を確認し、刺激があれば使用を中止を。",
+    "zh": "独立包装卫生且好收纳。确认门店/线上库存，若刺激请停用。",
+    "zh-Hant": "獨立包裝衛生且好收納。確認門市/線上庫存，若刺激請停用。",
+    "vi": "Gói riêng vệ sinh và dễ mang. Kiểm tra tồn cửa hàng/online; ngưng nếu kích ứng.",
+    "th": "ห่อแยกถูกสุขลักษณะและพกง่าย เช็กสต็อกหน้าร้าน/ออนไลน์ หยุดใช้ถ้าระคายเคือง",
+    "ru": "Индивидуальная упаковка гигиенична и удобна в багаже. Проверьте наличие в магазине/онлайн; при раздражении прекратите использование."
+  },
+  "HBAF Honey Butter Almonds are honey-and-butter seasoned almonds that many visitors treat as a must-buy Korean snack. Find them at convenience stores, markets, and HBAF stores in Myeongdong.": {
+    "ja": "HBAF（バフ）ハニーバターアーモンドは蜂蜜・バター風味のアーモンドスナックで、旅行者が『韓国で必ず買う』間食の定番。コンビニ・マート・明洞のHBAF店で買えます。",
+    "zh": "HBAF 蜂蜜黄油杏仁是裹了蜂蜜黄油调味的杏仁零食，许多旅客视为必买韩国零食。便利店、超市、明洞 HBAF 店都有。",
+    "zh-Hant": "HBAF 蜂蜜奶油杏仁是裹了蜂蜜奶油調味的杏仁零食，許多旅客視為必買韓國零食。便利商店、超市、明洞 HBAF 店都有。",
+    "vi": "Hạnh nhân Honey Butter HBAF là snack hạnh nhân vị mật ong–bơ mà nhiều du khách coi là phải mua. Có ở tiện lợi, siêu thị và cửa hàng HBAF Myeongdong.",
+    "th": "อัลมอนด์ฮันนี่บัตเตอร์ HBAF เป็นของว่างอัลมอนด์รสน้ำผึ้ง–เนยที่นักท่องเที่ยวมักซื้อติดมือ มีในร้านสะดวกซื้อ มาร์ท และร้าน HBAF เมียงดง",
+    "ru": "Миндаль Honey Butter HBAF — орехи с мёдно-сливочной приправой, которые многие туристы считают must-buy. Ищите в магазинах у дома, маркетах и магазинах HBAF в Мёндоне."
+  },
+  "Zip bags and gift packs travel well. Check the HBAF branding to avoid lookalikes.": {
+    "ja": "ジッパー袋・ギフトパックは旅に便利。類似品があるのでパッケージのHBAF表記を確認を。",
+    "zh": "拉链袋和礼盒包装便于携带。有仿品，请认准包装上的 HBAF 标识。",
+    "zh-Hant": "拉鍊袋和禮盒包裝便於攜帶。有仿品，請認準包裝上的 HBAF 標識。",
+    "vi": "Túi zip và gói quà dễ mang theo. Kiểm tra thương hiệu HBAF để tránh hàng na ná.",
+    "th": "ถุงซิปและแพ็กของขวัญพกง่าย ตรวจโลโก้ HBAF เพื่อเลี่ยงของเลียนแบบ",
+    "ru": "Зип-пакеты и подарочные наборы удобны в дороге. Смотрите брендинг HBAF, чтобы не взять подделку."
+  },
+  "Starbucks tumbler": {
+    "ja": "スターバックス タンブラー",
+    "zh": "星巴克随行杯",
+    "zh-Hant": "星巴克隨行杯",
+    "vi": "Ly giữ nhiệt Starbucks",
+    "th": "ทัมเบลอร์สตาร์บัคส์",
+    "ru": "Тумблер Starbucks"
+  },
+  "Korea-only and seasonal tumblers/mugs": {
+    "ja": "韓国限定・季節のタンブラー／マグ",
+    "zh": "韩国限定与季节随行杯/马克杯",
+    "zh-Hant": "韓國限定與季節隨行杯/馬克杯",
+    "vi": "Tumbler/cốc giới hạn Hàn và theo mùa",
+    "th": "ทัมเบลอร์/แก้วเฉพาะเกาหลีและตามซีซัน",
+    "ru": "Корея-эксклюзивные и сезонные тумблеры/кружки"
+  },
+  "New seasonal drops go quickly on launch weekends.": {
+    "ja": "季節の新作は発売直後・週末にすぐ売り切れます。",
+    "zh": "季节新品在发售周末很快售罄。",
+    "zh-Hant": "季節新品在發售週末很快售罄。",
+    "vi": "Hàng mùa mới hết nhanh vào cuối tuần ra mắt.",
+    "th": "ของใหม่ตามซีซันหมดไวช่วงสุดสัปดาห์เปิดตัว",
+    "ru": "Сезонные новинки быстро разбирают в выходные запуска."
+  },
+  "VT Cica Bubble Sparkling Mask": {
+    "ja": "VTシカバブルスパークリングマスク",
+    "zh": "VT 积雪草气泡面膜",
+    "zh-Hant": "VT 積雪草氣泡面膜",
+    "vi": "Mặt nạ VT Cica Bubble Sparkling",
+    "th": "มาสก์ VT Cica Bubble Sparkling",
+    "ru": "Маска VT Cica Bubble Sparkling"
+  },
+  "Daiso VT cica bubble booster — travel-friendly packets": {
+    "ja": "ダイソー VTシカバブルブースター — 旅向き個別パック",
+    "zh": "Daiso VT 积雪草气泡安瓶 — 便携独立包装",
+    "zh-Hant": "Daiso VT 積雪草氣泡安瓶 — 便攜獨立包裝",
+    "vi": "Booster bọt VT cica Daiso — gói riêng tiện mang theo",
+    "th": "บูสเตอร์ฟอง VT cica ไดโซ — แพ็กเดี่ยวพกง่าย",
+    "ru": "VT cica bubble booster в Daiso — удобные дорожные пакетики"
+  },
+  "Search “시카 버블 / Cica Bubble” on Daiso mall or in-store kiosks.": {
+    "ja": "ダイソーモールや店内キオスクで『시카 버블 / Cica Bubble』と検索を。",
+    "zh": "在 Daiso 商城或店内机上搜索「시카 버블 / Cica Bubble」。",
+    "zh-Hant": "在 Daiso 商城或店內機上搜尋「시카 버블 / Cica Bubble」。",
+    "vi": "Tìm “시카 버블 / Cica Bubble” trên Daiso mall hoặc kiosk trong cửa hàng.",
+    "th": "ค้น “시카 버블 / Cica Bubble” บน Daiso mall หรือคีออสก์ในร้าน",
+    "ru": "Ищите «시카 버블 / Cica Bubble» на Daiso mall или киосках в магазине."
+  },
+  "Honey Butter Almond": {
+    "ja": "ハニーバターアーモンド",
+    "zh": "蜂蜜黄油杏仁",
+    "zh-Hant": "蜂蜜奶油杏仁",
+    "vi": "Hạnh nhân bơ mật ong",
+    "th": "อัลมอนด์ฮันนี่บัตเตอร์",
+    "ru": "Миндаль Honey Butter"
+  },
+  "HBAF honey-butter almonds — a traveler staple snack": {
+    "ja": "HBAFハニーバターアーモンド — 旅行者定番スナック",
+    "zh": "HBAF 蜂蜜黄油杏仁 — 旅客必买零食",
+    "zh-Hant": "HBAF 蜂蜜奶油杏仁 — 旅客必買零食",
+    "vi": "Hạnh nhân honey-butter HBAF — snack cố định của du khách",
+    "th": "อัลมอนด์ฮันนี่บัตเตอร์ HBAF — ของว่างติดกระเป๋านักท่องเที่ยว",
+    "ru": "Миндаль honey-butter HBAF — обязательный снек туристов"
+  },
+  "Myeongdong HBAF stores are great for tasting multiple flavors.": {
+    "ja": "明洞のHBAFストアは味見しながら複数フレーバーを選べます。",
+    "zh": "明洞 HBAF 店适合试吃并选多种口味。",
+    "zh-Hant": "明洞 HBAF 店適合試吃並選多種口味。",
+    "vi": "Cửa hàng HBAF Myeongdong tiện nếm và chọn nhiều vị.",
+    "th": "ร้าน HBAF เมียงดงเหมาะชิมและเลือกหลายรส",
+    "ru": "В магазинах HBAF в Мёндоне удобно пробовать разные вкусы."
+  },
+  "Kakao character goods": {
+    "ja": "カカオキャラグッズ",
+    "zh": "Kakao 角色周边",
+    "zh-Hant": "Kakao 角色週邊",
+    "vi": "Hàng nhân vật Kakao",
+    "th": "ของตัวละครคาเคา",
+    "ru": "Товары с персонажами Kakao"
+  },
+  "Kakao Friends plush, stationery, and small gifts": {
+    "ja": "カカオフレンズのぬいぐるみ・文具・小さなおみやげ",
+    "zh": "Kakao Friends 玩偶、文具与小礼物",
+    "zh-Hant": "Kakao Friends 玩偶、文具與小禮物",
+    "vi": "Thú bông, stationery và quà nhỏ Kakao Friends",
+    "th": "ตุ๊กตา เครื่องเขียน และของเล็ก ๆ Kakao Friends",
+    "ru": "Плюш, канцтовары и мелочи Kakao Friends"
+  },
+  "Small keyrings, memos, and stickers are low-commitment gifts.": {
+    "ja": "小さめキーリング・メモ・ステッカーは負担の少ないギフトです。",
+    "zh": "小钥匙扣、便签、贴纸是负担较轻的礼物。",
+    "zh-Hant": "小鑰匙圈、便條、貼紙是負擔較輕的禮物。",
+    "vi": "Móc khóa, memo và sticker nhỏ là quà nhẹ nhàng.",
+    "th": "พวงกุญแจ เมโม และสติกเกอร์เล็กเป็นของขวัญไม่หนักใจ",
+    "ru": "Маленькие брелоки, блокноты и стикеры — лёгкий подарок."
+  },
+  "Trendy Korean SPA — tees, outerwear, accessories": {
+    "ja": "トレンド感のある韓国SPA — T・アウター・小物",
+    "zh": "潮流韩国 SPA — T 恤、外套、配件",
+    "zh-Hant": "潮流韓國 SPA — T 恤、外套、配件",
+    "vi": "SPA Hàn hợp xu hướng — áo thun, áo khoác, phụ kiện",
+    "th": "SPA เกาหลีตามเทรนด์ — เสื้อยืด เสื้อคลุม แอ็กเซสซอรี",
+    "ru": "Трендовый корейский SPA — футболки, верх, аксессуары"
+  },
+  "Use the cm size labels as your guide.": {
+    "ja": "サイズはcm表記を目安に。",
+    "zh": "以厘米尺码标示为准。",
+    "zh-Hant": "以公分尺碼標示為準。",
+    "vi": "Lấy nhãn size cm làm chuẩn.",
+    "th": "ใช้ป้ายไซซ์ซม. เป็นเกณฑ์",
+    "ru": "Ориентируйтесь на размер в сантиметрах."
+  },
+  "Simple, affordable everyday fashion": {
+    "ja": "シンプルで手頃なデイリーファッション",
+    "zh": "简约平价日常时尚",
+    "zh-Hant": "簡約平價日常時尚",
+    "vi": "Thời trang hàng ngày đơn giản, giá tốt",
+    "th": "แฟชั่นใส่ประจำวันเรียบง่ายราคาดี",
+    "ru": "Простая и доступная повседневная мода"
+  },
+  "Basics and sock packs pack easily in a suitcase.": {
+    "ja": "ベーシックな服や靴下パックはスーツケースに入れやすいです。",
+    "zh": "基础款和袜子套装容易装进行李箱。",
+    "zh-Hant": "基礎款和襪子套裝容易裝進行李箱。",
+    "vi": "Đồ basic và gói tất dễ bỏ vali.",
+    "th": "เสื้อเบสิกและแพ็กถุงเท้าใส่กระเป๋าง่าย",
+    "ru": "Базовые вещи и пачки носков легко уложить в чемодан."
+  },
+  "Affordable socks, shoes, and accessories": {
+    "ja": "靴下・靴・小物が手頃",
+    "zh": "平价袜子、鞋与配件",
+    "zh-Hant": "平價襪子、鞋與配件",
+    "vi": "Tất, giày và phụ kiện giá tốt",
+    "th": "ถุงเท้า รองเท้า และแอ็กเซสซอรีราคาดี",
+    "ru": "Доступные носки, обувь и аксессуары"
+  },
+  "Buy a spare pack early in the trip.": {
+    "ja": "旅の序盤に予備パックを買っておくと安心です。",
+    "zh": "行程前段先买一包备用更安心。",
+    "zh-Hant": "行程前段先買一包備用更安心。",
+    "vi": "Nên mua gói dự phòng sớm trong chuyến đi.",
+    "th": "ซื้อแพ็กสำรองตั้งแต่ต้นทริปจะอุ่นใจ",
+    "ru": "Запасную пачку лучше купить в начале поездки."
+  },
+  "Dokdo toner, birch sunscreen — Olive Young favorites": {
+    "ja": "独島トナー・白樺サンスクリーン — オリーブヤング定番",
+    "zh": "独岛爽肤水、白桦防晒 — Olive Young 人气款",
+    "zh-Hant": "獨島化妝水、白樺防曬 — Olive Young 人氣款",
+    "vi": "Toner Dokdo, kem chống nắng birch — món ưa thích Olive Young",
+    "th": "โทนเนอร์ Dokdo กันแดด birch — ของฮิต Olive Young",
+    "ru": "Тонер Dokdo, берёзовый SPF — фавориты Olive Young"
+  },
+  "Large stores in Myeongdong, Hongdae, and Gangnam stock more.": {
+    "ja": "明洞・弘大・江南の大型店の方が在庫が多いです。",
+    "zh": "明洞、弘大、江南大店货更全。",
+    "zh-Hant": "明洞、弘大、江南大店貨更全。",
+    "vi": "Cửa hàng lớn Myeongdong, Hongdae, Gangnam tồn nhiều hơn.",
+    "th": "สาขาใหญ่เมียงดง ฮงแด คังนัมของเยอะกว่า",
+    "ru": "В крупных магазинах Мёндона, Хондэ и Каннама ассортимент шире."
+  },
+  "Heartleaf 77 toner and serum": {
+    "ja": "ハートリーフ77トナー・セラム",
+    "zh": "鱼腥草 77 爽肤水与精华",
+    "zh-Hant": "魚腥草 77 化妝水與精華",
+    "vi": "Toner và serum Heartleaf 77",
+    "th": "โทนเนอร์และเซรั่ม Heartleaf 77",
+    "ru": "Тонер и сыворотка Heartleaf 77"
+  },
+  "Ask staff about app coupons and gift-with-purchase.": {
+    "ja": "アプリクーポンや購入特典を店員に聞いてみて。",
+    "zh": "可向店员询问 App 优惠与满赠。",
+    "zh-Hant": "可向店員詢問 App 優惠與滿贈。",
+    "vi": "Hỏi nhân viên về coupon app và quà kèm hóa đơn.",
+    "th": "ถามพนักงานเรื่องคูปองแอปและของแถม",
+    "ru": "Спросите у персонала про купоны в приложении и подарки к покупке."
+  },
+  "N.M.F Aquaring and other sheet masks": {
+    "ja": "N.M.Fアクアリングなどシートマスク",
+    "zh": "N.M.F Aquaring 等贴片面膜",
+    "zh-Hant": "N.M.F Aquaring 等貼片面膜",
+    "vi": "N.M.F Aquaring và mặt nạ giấy khác",
+    "th": "N.M.F Aquaring และมาสก์แผ่นอื่น ๆ",
+    "ru": "N.M.F Aquaring и другие тканевые маски"
+  },
+  "Sensitive skin: look for gentle / centella labels.": {
+    "ja": "敏感肌は『低刺激・センテラ』表記を目安に。",
+    "zh": "敏感肌可找「温和 / 积雪草」标示。",
+    "zh-Hant": "敏感肌可找「溫和 / 積雪草」標示。",
+    "vi": "Da nhạy cảm: tìm nhãn gentle / centella.",
+    "th": "ผิวแพ้ง่าย: หาฉลากอ่อนโยน / เซนเทลลา",
+    "ru": "Чувствительной коже: ищите пометки gentle / centella."
+  },
+  "Numbered skincare and masks (No.1 / 3 / 5…)": {
+    "ja": "番号スキンケア・マスク（No.1／3／5…）",
+    "zh": "编号护肤与面膜（No.1 / 3 / 5…）",
+    "zh-Hant": "編號保養與面膜（No.1 / 3 / 5…）",
+    "vi": "Skincare và mặt nạ đánh số (No.1 / 3 / 5…)",
+    "th": "สกินแคร์และมาสก์เลข (No.1 / 3 / 5…)",
+    "ru": "Нумерованный уход и маски (No.1 / 3 / 5…)"
+  },
+  "Tell staff your skin type before choosing.": {
+    "ja": "選ぶ前に肌質を店員に伝えて。",
+    "zh": "挑选前先告诉店员肤质。",
+    "zh-Hant": "挑選前先告訴店員膚質。",
+    "vi": "Nói tình trạng da với nhân viên trước khi chọn.",
+    "th": "บอกประเภทผิวพนักงานก่อนเลือก",
+    "ru": "Перед выбором скажите персоналу тип кожи."
+  },
+  "Masks and mini cushions": {
+    "ja": "マスクとミニクッション",
+    "zh": "面膜与迷你气垫",
+    "zh-Hant": "面膜與迷你氣墊",
+    "vi": "Mặt nạ và cushion mini",
+    "th": "มาสก์และคุชชั่นมินิ",
+    "ru": "Маски и мини-кушоны"
+  },
+  "Test cushion shade and coverage in store.": {
+    "ja": "クッションの色味・カバー力は店頭で確認を。",
+    "zh": "气垫色号与遮瑕力请在店内试。",
+    "zh-Hant": "氣墊色號與遮瑕力請在店內試。",
+    "vi": "Thử màu và độ che phủ cushion tại cửa hàng.",
+    "th": "ลองเฉดและค่าปกปิดคุชชั่นในร้าน",
+    "ru": "Проверьте тон и покрытие кушона в магазине."
+  },
+  "Cotton Soft sunscreen and sun sticks": {
+    "ja": "コットンソフト日焼け止め・サンスティック",
+    "zh": "Cotton Soft 防晒与防晒棒",
+    "zh-Hant": "Cotton Soft 防曬與防曬棒",
+    "vi": "Kem chống nắng Cotton Soft và sun stick",
+    "th": "กันแดด Cotton Soft และซันสติก",
+    "ru": "Солнцезащитный Cotton Soft и стики"
+  },
+  "Start with Olive Young sunscreen picks.": {
+    "ja": "まずはオリーブヤングの日焼け止めピックから。",
+    "zh": "可先从 Olive Young 防晒精选看起。",
+    "zh-Hant": "可先從 Olive Young 防曬精選看起。",
+    "vi": "Bắt đầu với các lựa chọn kem chống nắng Olive Young.",
+    "th": "เริ่มที่กันแดดแนะนำของ Olive Young",
+    "ru": "Начните с подборок SPF в Olive Young."
+  },
+  "Kids and family sun care": {
+    "ja": "キッズ・ファミリーのサンケア",
+    "zh": "儿童与家庭防晒",
+    "zh-Hant": "兒童與家庭防曬",
+    "vi": "Chăm sóc nắng trẻ em và gia đình",
+    "th": "กันแดดเด็กและครอบครัว",
+    "ru": "Детский и семейный санскрин"
+  },
+  "Easy to find at pharmacies, Olive Young, and hypermarkets.": {
+    "ja": "薬局・オリーブヤング・大型マートで見つけやすいです。",
+    "zh": "药店、Olive Young、大型超市容易买到。",
+    "zh-Hant": "藥局、Olive Young、大型超市容易買到。",
+    "vi": "Dễ tìm ở hiệu thuốc, Olive Young và siêu thị lớn.",
+    "th": "หาง่ายที่ร้านยา Olive Young และไฮเปอร์มาร์เก็ต",
+    "ru": "Легко найти в аптеках, Olive Young и гипермаркетах."
+  },
+  "Juicy Lasting Tint and Glasting Gloss": {
+    "ja": "ジューシーラスティングティント＆グラスティンググロス",
+    "zh": "Juicy Lasting Tint 与 Glasting Gloss",
+    "zh-Hant": "Juicy Lasting Tint 與 Glasting Gloss",
+    "vi": "Juicy Lasting Tint và Glasting Gloss",
+    "th": "Juicy Lasting Tint และ Glasting Gloss",
+    "ru": "Juicy Lasting Tint и Glasting Gloss"
+  },
+  "Tell staff if you prefer warm or muted tones.": {
+    "ja": "ウォーム／ミュートの希望を店員に伝えて。",
+    "zh": "告诉店员你偏好暖调还是雾面色。",
+    "zh-Hant": "告訴店員你偏好暖調還是霧面色。",
+    "vi": "Nói nhân viên nếu thích tone ấm hoặc muted.",
+    "th": "บอกพนักงานถ้าชอบโทนอุ่นหรือมิวต์",
+    "ru": "Скажите, предпочитаете тёплые или приглушённые тона."
+  },
+  "Ink Velvet and other tints": {
+    "ja": "インクベルベットなどティント",
+    "zh": "Ink Velvet 等唇釉",
+    "zh-Hant": "Ink Velvet 等唇釉",
+    "vi": "Ink Velvet và tint khác",
+    "th": "Ink Velvet และทินท์อื่น ๆ",
+    "ru": "Ink Velvet и другие тинты"
+  },
+  "Compare shade numbers in the Olive Young makeup aisle.": {
+    "ja": "オリーブヤングのメイク棚で色番号を比較を。",
+    "zh": "在 Olive Young 彩妆区比较色号。",
+    "zh-Hant": "在 Olive Young 彩妝區比較色號。",
+    "vi": "So sánh số màu ở kệ makeup Olive Young.",
+    "th": "เทียบเลขเฉดที่ชั้นเมกอัป Olive Young",
+    "ru": "Сравнивайте номера оттенков в отделе макияжа Olive Young."
+  },
+  "Kill Cover foundation and cushions": {
+    "ja": "キルカバー ファンデーション・クッション",
+    "zh": "Kill Cover 粉底与气垫",
+    "zh-Hant": "Kill Cover 粉底與氣墊",
+    "vi": "Kem nền và cushion Kill Cover",
+    "th": "รองพื้นและคุชชั่น Kill Cover",
+    "ru": "Тональные и кушоны Kill Cover"
+  },
+  "Regular singles can beat duty-free sets on value.": {
+    "ja": "通常の単品の方が免税セットよりコスパが良いことも。",
+    "zh": "市售单品有时比免税套装更划算。",
+    "zh-Hant": "市售單品有時比免稅套裝更划算。",
+    "vi": "Mua lẻ thường đôi khi hơn set duty-free về giá trị.",
+    "th": "ซื้อเดี่ยวปกติอาจคุ้มกว่าเซ็ตดิวตี้ฟรี",
+    "ru": "Обычные штучные позиции иногда выгоднее duty-free наборов."
+  }
+}

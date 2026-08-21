@@ -1,0 +1,298 @@
+{
+  "KF94 masks": {
+    "ja": "KF94マスク",
+    "zh": "KF94口罩",
+    "zh-Hant": "KF94口罩",
+    "vi": "Khẩu trang KF94",
+    "th": "หน้ากาก KF94",
+    "ru": "Маски KF94"
+  },
+  "Dust masks from pharmacies, convenience stores, and Olive Young": {
+    "ja": "薬局・コンビニ・オリーブヤングで買える微細粉塵マスク",
+    "zh": "药店、便利店、Olive Young 的防尘口罩",
+    "zh-Hant": "藥局、便利商店、Olive Young 的防塵口罩",
+    "vi": "Khẩu trang bụi từ hiệu thuốc, cửa hàng tiện lợi và Olive Young",
+    "th": "หน้ากากกันฝุ่นจากร้านยา ร้านสะดวกซื้อ และ Olive Young",
+    "ru": "Пылезащитные маски в аптеках, магазинах у дома и Olive Young"
+  },
+  "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.": {
+    "ja": "旅行用によく買うKF94（またはKF80）マスク。ジャクシム・ブルードット・アエルなどがコンビニ・ダイソー・オリーブヤング・薬局の小分けパックで見つかります。",
+    "zh": "旅行常买 KF94（或 KF80）口罩。Jaksim、Bluedot、Aer 等品牌在便利店、Daiso、Olive Young、药店有小包装。",
+    "zh-Hant": "旅行常買 KF94（或 KF80）口罩。Jaksim、Bluedot、Aer 等品牌在便利商店、Daiso、Olive Young、藥局有小包裝。",
+    "vi": "Khẩu trang KF94 (hoặc KF80) là món mua phổ biến khi đi du lịch. Jaksim, Bluedot, Aer có gói nhỏ ở tiện lợi, Daiso, Olive Young và hiệu thuốc.",
+    "th": "หน้ากาก KF94 (หรือ KF80) เป็นของซื้อยอดนิยมตอนเที่ยว แบรนด์อย่าง Jaksim, Bluedot, Aer มีแพ็กเล็กในร้านสะดวกซื้อ ไดโซ Olive Young และร้านยา",
+    "ru": "Маски KF94 (или KF80) — частая покупка в поездке. Jaksim, Bluedot, Aer продаются маленькими пачками в магазинах у дома, Daiso, Olive Young и аптеках."
+  },
+  "5–10 packs travel well. Check the KF grade and pack date.": {
+    "ja": "5〜10枚パックが荷物に入れやすく実用的。「KF94」表記と包装日を確認を。",
+    "zh": "5–10 片装便于装进行李。核对 KF 等级和包装日期。",
+    "zh-Hant": "5–10 片裝便於裝進行李。核對 KF 等級和包裝日期。",
+    "vi": "Gói 5–10 cái dễ mang theo. Kiểm tra cấp KF và ngày đóng gói.",
+    "th": "แพ็ก 5–10 ชิ้นพกง่าย ตรวจเกรด KF และวันบรรจุ",
+    "ru": "Пачки по 5–10 штук удобны в дороге. Смотрите класс KF и дату на упаковке."
+  },
+  "For bulk, local pharmacy multipacks are often fine.": {
+    "ja": "まとめ買いは街の薬局のマルチパックが無難なことが多いです。",
+    "zh": "大量购买时，社区药店的多片装通常更稳妥。",
+    "zh-Hant": "大量購買時，社區藥局的多片裝通常更穩妥。",
+    "vi": "Mua số lượng lớn thì gói nhiều chiếc ở hiệu thuốc địa phương thường ổn.",
+    "th": "ซื้อเยอะมักเลือกมัลติแพ็กจากร้านยาแถวบ้านได้",
+    "ru": "Для опта часто удобны многоместные упаковки в районных аптеках."
+  },
+  "Jaksim KF94 masks": {
+    "ja": "ジャクシム KF94マスク",
+    "zh": "Jaksim KF94 口罩",
+    "zh-Hant": "Jaksim KF94 口罩",
+    "vi": "Khẩu trang Jaksim KF94",
+    "th": "หน้ากาก Jaksim KF94",
+    "ru": "Маски Jaksim KF94"
+  },
+  "A common KF94 sold at pharmacies and convenience stores": {
+    "ja": "薬局・コンビニでよく見るKF94",
+    "zh": "药店和便利店常见的 KF94",
+    "zh-Hant": "藥局和便利商店常見的 KF94",
+    "vi": "KF94 phổ biến ở hiệu thuốc và cửa hàng tiện lợi",
+    "th": "KF94 ที่พบบ่อยในร้านยาและร้านสะดวกซื้อ",
+    "ru": "Ходовой KF94 в аптеках и магазинах у дома"
+  },
+  "Jaksim KF94 masks are popular for both souvenirs and daily use. Small packs are easy to find.": {
+    "ja": "ジャクシムのKF94は記念品にも日常用にも人気。小分けパックが見つけやすいです。",
+    "zh": "Jaksim KF94 既适合当伴手礼也适合日常用，小包装容易买到。",
+    "zh-Hant": "Jaksim KF94 既適合當伴手禮也適合日常用，小包裝容易買到。",
+    "vi": "Khẩu trang Jaksim KF94 phổ biến làm quà và dùng hàng ngày. Gói nhỏ dễ tìm.",
+    "th": "หน้ากาก Jaksim KF94 นิยมทั้งของฝากและใช้ประจำ แพ็กเล็กหาง่าย",
+    "ru": "Jaksim KF94 берут и на память, и для повседневности. Маленькие пачки легко найти."
+  },
+  "Find them at convenience stores, Daiso, Olive Young, and pharmacies. Check KF grade and date.": {
+    "ja": "コンビニ・ダイソー・オリーブヤング・薬局で入手可。KF等級と日付を確認を。",
+    "zh": "便利店、Daiso、Olive Young、药店有售。核对 KF 等级和日期。",
+    "zh-Hant": "便利商店、Daiso、Olive Young、藥局有售。核對 KF 等級和日期。",
+    "vi": "Có ở tiện lợi, Daiso, Olive Young và hiệu thuốc. Kiểm tra cấp KF và ngày.",
+    "th": "มีในร้านสะดวกซื้อ ไดโซ Olive Young และร้านยา ตรวจเกรด KF และวัน",
+    "ru": "Ищите в магазинах у дома, Daiso, Olive Young и аптеках. Проверьте класс KF и дату."
+  },
+  "Bluedot masks": {
+    "ja": "ブルードットマスク",
+    "zh": "Bluedot 口罩",
+    "zh-Hant": "Bluedot 口罩",
+    "vi": "Khẩu trang Bluedot",
+    "th": "หน้ากาก Bluedot",
+    "ru": "Маски Bluedot"
+  },
+  "KF94/KF80 — convenience-store and pharmacy staple": {
+    "ja": "KF94/KF80 — コンビニ・薬局の定番",
+    "zh": "KF94/KF80 — 便利店与药店常备",
+    "zh-Hant": "KF94/KF80 — 便利商店與藥局常備",
+    "vi": "KF94/KF80 — món quen ở tiện lợi và hiệu thuốc",
+    "th": "KF94/KF80 — ของติดร้านสะดวกซื้อและร้านยา",
+    "ru": "KF94/KF80 — привычный выбор в магазинах и аптеках"
+  },
+  "Bluedot masks are easy-to-find KF94/KF80 options at convenience stores and pharmacies.": {
+    "ja": "ブルードットはコンビニ・薬局で見つけやすいKF94/KF80です。",
+    "zh": "Bluedot 是便利店和药店容易买到的 KF94/KF80。",
+    "zh-Hant": "Bluedot 是便利商店和藥局容易買到的 KF94/KF80。",
+    "vi": "Bluedot là lựa chọn KF94/KF80 dễ tìm ở tiện lợi và hiệu thuốc.",
+    "th": "Bluedot เป็น KF94/KF80 ที่หาง่ายในร้านสะดวกซื้อและร้านยา",
+    "ru": "Bluedot — легко найти KF94/KF80 в магазинах у дома и аптеках."
+  },
+  "Stock can run low in dust season — try neighborhood pharmacies too.": {
+    "ja": "黄砂・微細粉塵の季節は品薄になりがち。近所の薬局も見てみて。",
+    "zh": "沙尘季可能缺货，也可去社区药店看看。",
+    "zh-Hant": "沙塵季可能缺貨，也可去社區藥局看看。",
+    "vi": "Mùa bụi có thể hết hàng — thử thêm hiệu thuốc gần chỗ ở.",
+    "th": "ฤดูฝุ่นของอาจหมด — ลองร้านยาแถวบ้านด้วย",
+    "ru": "В сезон пыли может не хватать — загляните и в районные аптеки."
+  },
+  "5–10 pack sizes are ideal for travel.": {
+    "ja": "旅行には5〜10枚パックがちょうどよいです。",
+    "zh": "旅行用 5–10 片装最合适。",
+    "zh-Hant": "旅行用 5–10 片裝最合適。",
+    "vi": "Gói 5–10 cái lý tưởng khi đi du lịch.",
+    "th": "แพ็ก 5–10 ชิ้นเหมาะกับการเดินทาง",
+    "ru": "Для поездки удобны пачки по 5–10 штук."
+  },
+  "Aer masks": {
+    "ja": "アエルマスク",
+    "zh": "Aer 口罩",
+    "zh-Hant": "Aer 口罩",
+    "vi": "Khẩu trang Aer",
+    "th": "หน้ากาก Aer",
+    "ru": "Маски Aer"
+  },
+  "KF94 — pharmacies and Olive Young": {
+    "ja": "KF94 — 薬局・オリーブヤング",
+    "zh": "KF94 — 药店与 Olive Young",
+    "zh-Hant": "KF94 — 藥局與 Olive Young",
+    "vi": "KF94 — hiệu thuốc và Olive Young",
+    "th": "KF94 — ร้านยาและ Olive Young",
+    "ru": "KF94 — аптеки и Olive Young"
+  },
+  "Aer KF94 masks are commonly stocked at pharmacies and Olive Young.": {
+    "ja": "アエルのKF94は薬局・オリーブヤングでよく置いてあります。",
+    "zh": "Aer KF94 在药店和 Olive Young 常见。",
+    "zh-Hant": "Aer KF94 在藥局和 Olive Young 常見。",
+    "vi": "Khẩu trang Aer KF94 thường có ở hiệu thuốc và Olive Young.",
+    "th": "หน้ากาก Aer KF94 มักมีในร้านยาและ Olive Young",
+    "ru": "Aer KF94 часто есть в аптеках и Olive Young."
+  },
+  "Check fit sizes (S/M/L) and suitcase weight for bulk buys.": {
+    "ja": "サイズ（S/M/L）とまとめ買い時の荷物重量を確認を。",
+    "zh": "核对尺码（S/M/L），大量购买时也留意行李重量。",
+    "zh-Hant": "核對尺碼（S/M/L），大量購買時也留意行李重量。",
+    "vi": "Kiểm tra size (S/M/L) và cân nặng hành lý nếu mua nhiều.",
+    "th": "ตรวจไซซ์ (S/M/L) และน้ำหนักกระเป๋าถ้าซื้อเยอะ",
+    "ru": "Проверьте размер (S/M/L) и вес багажа при большой покупке."
+  },
+  "Confirm KF grade and manufacture date on the pack.": {
+    "ja": "パッケージのKF等級と製造日を確認を。",
+    "zh": "确认包装上的 KF 等级和生产日期。",
+    "zh-Hant": "確認包裝上的 KF 等級和生產日期。",
+    "vi": "Xác nhận cấp KF và ngày sản xuất trên bao bì.",
+    "th": "ยืนยันเกรด KF และวันผลิตบนแพ็ก",
+    "ru": "Сверьте класс KF и дату производства на пачке."
+  },
+  "Picks, sales, tax-free — Korea’s beauty shopping hub": {
+    "ja": "オールヨンピック・セール・免税 — 韓国ビューティーのハブ",
+    "zh": "Olive Young Picks、特卖、免税 — 韩国美妆购物枢纽",
+    "zh-Hant": "Olive Young Picks、特賣、免稅 — 韓國美妝購物樞紐",
+    "vi": "Picks, sale, tax-free — trung tâm mua sắm làm đẹp Hàn Quốc",
+    "th": "Picks ลดราคา ปลอดภาษี — ศูนย์ช้อปบิวตี้เกาหลี",
+    "ru": "Picks, скидки, tax-free — хаб корейской косметики"
+  },
+  "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.": {
+    "ja": "オリーブヤングは旅行者がいちばん訪れるドラッグストア。「オールヨンピック」やセール棚でマスク・日焼け止め・ティント・スキンケアを選び、アプリクーポンやプレゼントも店員に聞いてみて。",
+    "zh": "Olive Young 是旅客最常去的药妆店。先看 Olive Young Picks 和特卖区选面膜、防晒、唇釉、护肤，并向店员询问 App 优惠与赠品。",
+    "zh-Hant": "Olive Young 是旅客最常去的藥妝店。先看 Olive Young Picks 和特賣區選面膜、防曬、唇釉、保養，並向店員詢問 App 優惠與贈品。",
+    "vi": "Olive Young là drugstore du khách đến nhiều nhất. Bắt đầu với Olive Young Picks và kệ sale để chọn mặt nạ, kem chống nắng, tint, skincare; hỏi nhân viên về coupon app và quà tặng.",
+    "th": "Olive Young คือดรักสโตร์ที่นักท่องเที่ยวไปมากสุด เริ่มที่ Olive Young Picks และชั้นลดราคา เลือกมาสก์ กันแดด ทินท์ สกินแคร์ แล้วถามพนักงานเรื่องคูปองแอปและของแถม",
+    "ru": "Olive Young — аптека-косметика, куда чаще всего заходят туристы. Начните с Olive Young Picks и распродажи: маски, SPF, тинты, уход; спросите про купоны в приложении и подарки."
+  },
+  "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.": {
+    "ja": "明洞・弘大・江南の大型店は在庫が豊富。空港店は欠品が早いことも。会計前に免税対応か確認を。",
+    "zh": "明洞、弘大、江南大店货更全；机场店更容易售罄。结账前确认能否免税。",
+    "zh-Hant": "明洞、弘大、江南大店貨更全；機場店更容易售罄。結帳前確認能否免稅。",
+    "vi": "Cửa hàng lớn Myeongdong/Hongdae/Gangnam tồn nhiều hơn; cửa hàng sân bay hết hàng nhanh hơn. Xác nhận tax-free trước khi thanh toán.",
+    "th": "สาขาใหญ่เมียงดง/ฮงแด/คังนัมของเยอะกว่า ร้านสนามบินหมดไวกว่า ยืนยัน tax-free ก่อนจ่าย",
+    "ru": "Крупные магазины в Мёндоне, Хондэ и Каннаме полнее; в аэропорту быстрее разбирают. Перед оплатой уточните tax-free."
+  },
+  "For hyped items, go early or use pickup options.": {
+    "ja": "人気品は朝イチか、オンライン受け取りを活用を。",
+    "zh": "爆款建议早去，或使用线上取货。",
+    "zh-Hant": "爆款建議早去，或使用線上取貨。",
+    "vi": "Món sốt nên đi sớm hoặc dùng nhận hàng pickup.",
+    "th": "ของฮิตไปเช้าหรือใช้รับสินค้าออนไลน์",
+    "ru": "На хайповые позиции приходите рано или берите самовывоз."
+  },
+  "Korea-only colors and character collab tees": {
+    "ja": "韓国限定カラー・キャラクターコラボTシャツ",
+    "zh": "韩国限定配色与角色联名 T 恤",
+    "zh-Hant": "韓國限定配色與角色聯名 T 恤",
+    "vi": "Màu độc quyền Hàn và áo collab nhân vật",
+    "th": "สีเฉพาะเกาหลีและเสื้อคอลแลบตัวละคร",
+    "ru": "Корея-эксклюзивные цвета и футболки с коллабами"
+  },
+  "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.": {
+    "ja": "韓国のユニクロには限定カラー・グラフィック・キャラクターコラボが別途出ることが多く、旅行のおみやげTに選ばれます。",
+    "zh": "韩国优衣库常有限定配色、图案和角色联名，旅客常当纪念 T 恤购买。",
+    "zh-Hant": "韓國優衣庫常有限定配色、圖案和角色聯名，旅客常當紀念 T 恤購買。",
+    "vi": "Uniqlo Hàn thường có màu, họa tiết và collab nhân vật riêng — nhiều du khách mua làm kỷ niệm.",
+    "th": "ยูนิโคล่เกาหลีมักมีสี กราฟิก และคอลแลบตัวละครเฉพาะ นักท่องเที่ยวนิยมซื้อเป็นของที่ระลึก",
+    "ru": "В корейской Uniqlo часто бывают эксклюзивные цвета, принты и коллаборации — их берут на память."
+  },
+  "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.": {
+    "ja": "セール時のコスパが良く、免税手続きにも慣れています。フィッティングルームでcmサイズを確認を。",
+    "zh": "促销时性价比高，免税流程也较熟悉。试衣间请核对厘米尺码。",
+    "zh-Hant": "促銷時性價比高，免稅流程也較熟悉。試衣間請核對公分尺碼。",
+    "vi": "Sale cạnh tranh và quy trình tax-free quen thuộc. Kiểm tra size cm trong phòng thử đồ.",
+    "th": "ช่วงลดราคาคุ้ม และ tax-free ค่อนข้างคุ้นเคย ตรวจไซซ์ซม. ในห้องลอง",
+    "ru": "На распродажах выгодно, tax-free привычен. В примерочной смотрите размер в см."
+  },
+  "Large stores in Myeongdong, Times Square, and COEX usually have better stock.": {
+    "ja": "明洞・タイムスクエア・COEXの大型店は在庫が充実しがちです。",
+    "zh": "明洞、Times Square、COEX 大店通常货更齐。",
+    "zh-Hant": "明洞、Times Square、COEX 大店通常貨更齊。",
+    "vi": "Cửa hàng lớn ở Myeongdong, Times Square và COEX thường tồn tốt hơn.",
+    "th": "สาขาใหญ่เมียงดง Times Square และ COEX มักมีของครบกว่า",
+    "ru": "В крупных магазинах Мёндона, Times Square и COEX ассортимент обычно шире."
+  },
+  "Character collabs and affordable SPA fashion": {
+    "ja": "キャラクターコラボとコスパの良いSPAファッション",
+    "zh": "角色联名与高性价比 SPA 时尚",
+    "zh-Hant": "角色聯名與高性價比 SPA 時尚",
+    "vi": "Collab nhân vật và thời trang SPA giá tốt",
+    "th": "คอลแลบตัวละครและแฟชั่น SPA ราคาดี",
+    "ru": "Коллаборации и доступная SPA-мода"
+  },
+  "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.": {
+    "ja": "SPAO（スパオ）はTシャツ・ルームウェア・キャラクターコラボで知られる韓国SPA。季節ごとにアニメ・キャララインが出ます。",
+    "zh": "SPAO 是以 T 恤、睡衣和角色联名闻名的韩国 SPA 品牌，每季都有动画/角色系列。",
+    "zh-Hant": "SPAO 是以 T 恤、睡衣和角色聯名聞名的韓國 SPA 品牌，每季都有動畫/角色系列。",
+    "vi": "SPAO là thương hiệu SPA Hàn nổi tiếng với áo thun, đồ ngủ và collab nhân vật thay đổi theo mùa.",
+    "th": "SPAO เป็นแบรนด์ SPA เกาหลีดังเรื่องเสื้อยืด ชุดนอน และคอลแลบตัวละครที่เปลี่ยนตามซีซัน",
+    "ru": "SPAO — корейский SPA-бренд футболок, домашней одежды и сезонных коллабораций с персонажами."
+  },
+  "Korean sizes can run small — size up if unsure, and keep the receipt.": {
+    "ja": "韓国サイズは小さめのことが多いので、迷ったら一回り上を。レシートは保管を。",
+    "zh": "韩国尺码可能偏小，不确定就选大一码，并保留收据。",
+    "zh-Hant": "韓國尺碼可能偏小，不確定就選大一碼，並保留收據。",
+    "vi": "Size Hàn có thể chật — không chắc thì lên một size và giữ hóa đơn.",
+    "th": "ไซซ์เกาหลีอาจเล็ก — ไม่ชัวร์ให้ขยับขึ้นหนึ่งไซซ์ และเก็บใบเสร็จ",
+    "ru": "Корейские размеры часто маломерят — при сомнении берите больше и сохраните чек."
+  },
+  "Compare Myeongdong, Hongdae, and Gangnam street shops; hunt sales.": {
+    "ja": "明洞・弘大・江南のロードショップを比較し、セール時期を狙うとお得です。",
+    "zh": "可比较明洞、弘大、江南街边店，并留意促销季。",
+    "zh-Hant": "可比較明洞、弘大、江南街邊店，並留意促銷季。",
+    "vi": "So sánh cửa hàng đường phố Myeongdong, Hongdae, Gangnam; săn sale.",
+    "th": "เทียบร้านริมถนนเมียงดง ฮงแด คังนัม แล้วลุ้นช่วงลดราคา",
+    "ru": "Сравните уличные магазины Мёндона, Хондэ и Каннама; ловите распродажи."
+  },
+  "Sock & tights packs": {
+    "ja": "靴下・タイツのパック",
+    "zh": "袜子/丝袜套装",
+    "zh-Hant": "襪子/絲襪套裝",
+    "vi": "Set tất & quần tất",
+    "th": "แพ็กถุงเท้าและถุงน่อง",
+    "ru": "Наборы носков и колготок"
+  },
+  "Multi-packs from Daiso, SPAO, and more": {
+    "ja": "ダイソー・SPAOなどのまとめ買いパック",
+    "zh": "Daiso、SPAO 等的多双装",
+    "zh-Hant": "Daiso、SPAO 等的多雙裝",
+    "vi": "Gói nhiều đôi từ Daiso, SPAO…",
+    "th": "มัลติแพ็กจากไดโซ SPAO และอื่น ๆ",
+    "ru": "Мультипаки в Daiso, SPAO и др."
+  },
+  "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.": {
+    "ja": "ダイソー・SPAO・ユニクロなどの3〜5足パックはコスパが良く、おみやげにも無難です。",
+    "zh": "Daiso、SPAO、优衣库等的 3–5 双装性价比高，也适合当礼物。",
+    "zh-Hant": "Daiso、SPAO、優衣庫等的 3–5 雙裝性價比高，也適合當禮物。",
+    "vi": "Gói tất 3–5 đôi ở Daiso, SPAO, Uniqlo… giá tốt và dễ làm quà.",
+    "th": "แพ็กถุงเท้า 3–5 คู่จากไดโซ SPAO ยูนิโคล่คุ้มและให้เป็นของฝากได้",
+    "ru": "Упаковки по 3–5 пар в Daiso, SPAO, Uniqlo и похожих магазинах — выгодно и удобно в подарок."
+  },
+  "Individually wrapped packs travel well in suitcase gaps.": {
+    "ja": "個別包装パックは衛生的で、スーツケースの隙間に入りやすいです。",
+    "zh": "独立包装更卫生，也容易塞进行李缝隙。",
+    "zh-Hant": "獨立包裝更衛生，也容易塞進行李縫隙。",
+    "vi": "Gói bọc riêng vệ sinh và dễ nhét khe vali.",
+    "th": "แพ็กห่อแยกถูกสุขลักษณะและยัดช่องกระเป๋าได้",
+    "ru": "Индивидуальная упаковка гигиенична и хорошо заполняет щели в чемодане."
+  },
+  "Multi-packs are usually cheaper than singles.": {
+    "ja": "まとめパックの方が単品より安いことが多いです。",
+    "zh": "多双装通常比单双更便宜。",
+    "zh-Hant": "多雙裝通常比單雙更便宜。",
+    "vi": "Gói nhiều đôi thường rẻ hơn mua lẻ.",
+    "th": "มัลติแพ็กมักถูกกว่าซื้อทีละคู่",
+    "ru": "Мультипаки обычно дешевле штучных."
+  },
+  "Kakao Friends stationery": {
+    "ja": "カカオフレンズ文具・グッズ",
+    "zh": "Kakao Friends 文具周边",
+    "zh-Hant": "Kakao Friends 文具週邊",
+    "vi": "Văn phòng phẩm Kakao Friends",
+    "th": "เครื่องเขียน Kakao Friends",
+    "ru": "Канцтовары Kakao Friends"
+  }
+}

@@ -30,50 +30,50 @@
     "catFashion": "服装与时尚",
     "catBeauty": "美妆",
     "maskTitle": "KF94 masks",
-    "maskDesc": "Dust masks from pharmacies, convenience stores, and Olive Young",
+    "maskDesc": "药店、便利店和 Olive Young 的防尘口罩",
     "stationeryTitle": "Monami，标志性，人物文具",
     "stationeryDesc": "Monami 153、标志性日记、Kakao Friends Memoji。",
-    "oliveTitle": "Olive Young",
-    "oliveDesc": "Picks, sales, tax-free — Korea’s beauty shopping hub",
+    "oliveTitle": "奥莉芙·杨",
+    "oliveDesc": "精选、销售、免税——韩国的美容购物中心",
     "daisoTitle": "大创旅行·角色杂货",
     "daisoDesc": "理线器、环保袋、牙膏挤压器、Kakao Friends 和 Chiik 杂货。",
     "snackTitle": "Pepero、蜂蜜黄油片、虾片",
     "snackDesc": "Pepero、蜂蜜黄油片、虾片、洋葱圈、珍宝珠果冻等超市和便利店的畅销产品。",
-    "ramenTitle": "布尔达克、查帕吉蒂、浣熊",
+    "ramenTitle": "布尔达克、查帕盖蒂、内古里",
     "ramenDesc": "Samyang Buldak Bokkeum Ramen、Nongshim Chapagetti、Neoguri 和 Shin Ramyun 多件装。",
     "teaTitle": "正官庄、柚子茶、大麦茶",
     "teaDesc": "正官庄红参、柚子提取物、圆形和大麦茶袋礼品套装。",
     "honeyTitle": "蜂蜜、药果、韩国传统甜点套装",
     "honeyDesc": "金合欢蜜、柚子蜜、药果/韩式点心礼盒。",
     "uniqloTitle": "Uniqlo",
-    "uniqloDesc": "Korea-only colors and character collab tees",
+    "uniqloDesc": "仅限韩国的颜色和人物合作 T 恤",
     "spaTitle": "SPAO",
-    "spaDesc": "Character collabs and affordable SPA fashion",
-    "socksTitle": "Sock & tights packs",
-    "socksDesc": "Multi-packs from Daiso, SPAO, and more",
+    "spaDesc": "角色联名和实惠的 SPA 时尚",
+    "socksTitle": "袜子和紧身衣包",
+    "socksDesc": "Daiso、SPAO 等多件装",
     "hanbokTitle": "日常生活韩服及配饰",
     "hanbokDesc": "除了可供体验的租赁韩服外，作为伴手礼，手帕、迷你韩服钥匙扣等也很受欢迎。",
     "sheetTitle": "提尔提尔梅迪惠尔数字旅馆",
     "sheetDesc": "Mediheal N.M.F，数字舒缓，TirTir 面膜盒套装。",
     "sunscreenTitle": "Round Lab、Tocobo、Green Finger",
     "sunscreenDesc": "圆形实验室桦木防晒霜、Tocobo 防晒棒、Green Finger Kids 等",
-    "lipstickTitle": "罗姆与佩里佩拉·克里奥",
-    "lipstickDesc": "Rom&Juicy Lasting Tint、Peripera Ink、Clio Kill Cover。",
-    "kpopTitle": "K-POP 照片卡",
+    "lipstickTitle": "rom&nd、Peripera、CLIO",
+    "lipstickDesc": "Juicy Lasting Tint、Peripera Ink Velvet、CLIO Kill Cover。",
+    "kpopTitle": "K-POP 小卡",
     "kpopDesc": "Tower Records、Hot Tracks、Weverse Shop 官方照片卡。",
     "tapHint": "如果您点击该卡片，您可以看到有关居住地点的详细信息以及选择地点的提示。",
     "readMore": "了解更多→",
     "backList": "← 购物 & 娱乐",
     "tipTitle": "购买技巧",
-    "maskBody1": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
-    "maskBody2": "5–10 packs travel well. Check the KF grade and pack date.",
-    "maskTip": "For bulk, local pharmacy multipacks are often fine.",
+    "maskBody1": "KF94（或 KF80）口罩是常见的旅行购买。 Jaksim、Bluedot 和 Aer 等品牌以小包装形式在便利店、Daiso、Olive Young 和药店出售。",
+    "maskBody2": "5-10 包旅行方便。检查 KF 等级和包装日期。",
+    "maskTip": "对于散装产品，当地药房的多件装通常就可以。",
     "stationeryBody1": "作为文具纪念品，Monami 153 圆珠笔套装、Iconic/Curie 日记/贴纸、Kakao Friends/BT21 备忘录/遮蔽胶带、Alpha 便签/荧光笔套装在 Daiso、Artbox、Olive Young 和文具店很受欢迎。",
     "stationeryBody2": "很高兴在 Artbox、Alpha 和 Ibis 商店找到有限的合作产品，轻质贴纸和便条减轻了飞行的重量负担。",
     "stationeryTip": "购买技巧\n\n套装适合送礼，补充装/单件适合个人使用。",
-    "oliveBody1": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
-    "oliveBody2": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
-    "oliveTip": "For hyped items, go early or use pickup options.",
+    "oliveBody1": "Olive Young 是旅客最常光顾的药店。从 Olive Young Picks 开始，并销售面膜、防晒霜、染发剂和护肤品的货架；向工作人员询问应用优惠券和 GWP。",
+    "oliveBody2": "大型明洞/弘大/江南商店库存较多；机场商店卖得更快。结帐前确认免税。",
+    "oliveTip": "对于大肆宣传的商品，请尽早购买或使用自提选项。",
     "daisoBody1": "外国人经常在Daiso买到的是旅行压缩包、扎带、硅胶钳、迷你切菜板、牙刷消毒器和牙膏勺，以及Kakao Friends、Chiik和Sanrio合作的文具和小袋。价格相同，因此您可以毫无负担地打包多件物品。",
     "daisoBody2": "对于易碎玻璃和陶瓷，请索取包装材料，并在每层楼的信息板上查找“旅行/存储/厨房”。旅游景点的队伍可能会很长，因此晚上和居民区的分店会比较安静。",
     "daisoTip": "购买技巧\n\n付款前测量重量并选择适合载体间隙的物品。",
@@ -89,15 +89,15 @@
     "honeyBody1": "作为甜蜜的纪念品，国产金合欢、栗子蜂蜜、柚子、生姜汁、传统草药、韩国糖果、牛奶水果礼品套装在仁寺洞、百货商店和机场都很畅销。对于易碎药物，请选择带缓冲包装的产品。",
     "honeyBody2": "对于蜂蜜、航空液体和农产品检疫规定因国家而异。退货前请检查您所在国家/地区的海关规定，我们建议您使用棍棒和袋子，而不是小玻璃瓶。",
     "honeyTip": "购买技巧\n\n带有密封标签和有效期的产品比散装市场产品更有利于送礼和检疫。",
-    "uniqloBody1": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
-    "uniqloBody2": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
-    "uniqloTip": "Large stores in Myeongdong, Times Square, and COEX usually have better stock.",
-    "spaBody1": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
-    "spaBody2": "Korean sizes can run small — size up if unsure, and keep the receipt.",
-    "spaTip": "Compare Myeongdong, Hongdae, and Gangnam street shops; hunt sales.",
-    "socksBody1": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
-    "socksBody2": "Individually wrapped packs travel well in suitcase gaps.",
-    "socksTip": "Multi-packs are usually cheaper than singles.",
+    "uniqloBody1": "韩国优衣库商店经常出售独特的颜色、图案和角色联名商品，游客可以购买这些商品作为纪念品。",
+    "uniqloBody2": "销售具有竞争力，免税程序也很熟悉。在试衣间检查厘米尺寸。",
+    "uniqloTip": "明洞、时代广场和COEX等大型商店通常有更好的库存。",
+    "spaBody1": "SPAO 是韩国 SPA 品牌，以 T 恤、睡衣和随季节变化的角色合作而闻名。",
+    "spaBody2": "韩国尺码可能偏小——如果不确定，请加大尺码，并保留收据。",
+    "spaTip": "比较明洞、弘大和江南街的商店；狩猎销售。",
+    "socksBody1": "Daiso、SPAO、Uniqlo 和类似商店的 3-5 双袜子和连裤袜套装是超值且方便的礼物。",
+    "socksBody2": "单独包装的包装可以很好地放在行李箱的间隙中。",
+    "socksTip": "多件装通常比单件装便宜。",
     "hanbokBody1": "除了出租旧宫廷韩服外，日常韩服风格的夹克、衬衫、旗袍、手帕、迷你韩服钥匙圈等小纪念品也很畅销。",
     "hanbokBody2": "旅游地的土特产店价格差别很大，可以比较一下仁寺洞、通仁市场、百货商店等传统角落。检查面料并手工整理是个好主意。",
     "hanbokTip": "如果目的是为了拍摄体验，可以租用道具或作为礼物。大尺寸的韩服在背带中非常褶皱且笨重。",
@@ -548,10 +548,10 @@
     "catSnack": "零食",
     "catBakery": "烘焙",
     "peperoTitle": "Pepero",
-    "peperoDesc": "Lotte Pepero — almond, nude, chocolate stick snacks, a classic gift.",
-    "peperoBody1": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
-    "peperoBody2": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
-    "peperoTip": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+    "peperoDesc": "Lotte Pepero — 杏仁、裸色、巧克力棒零食，经典礼物。",
+    "peperoBody1": "Pepero 是乐天的饼干棒零食——涂有巧克力/奶油，或填充“裸色”版本。杏仁味、裸味味、原味味和时令味充斥着超市、便利店和大创。",
+    "peperoBody2": "佩佩罗日（11 月 11 日）前后礼品套装热销。夏天巧克力会融化——在出发前购买或冷藏。",
+    "peperoTip": "购买秘诀\n\n多件装很容易分享。大型超市的价格通常会高于机场/游客的价格。",
     "peperoBody": [
       {
         "type": "text",
@@ -587,11 +587,11 @@
         "ru": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices."
       }
     ],
-    "marketOBrowniesTitle": "Market O Brownies",
-    "marketOBrowniesDesc": "Orion Market O brownies — soft chocolate brownie snacks.",
-    "marketOBrowniesBody1": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
-    "marketOBrowniesBody2": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
-    "marketOBrowniesTip": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+    "marketOBrowniesTitle": "Market O 布朗尼蛋糕",
+    "marketOBrowniesDesc": "Orion Market O 布朗尼蛋糕 — 软巧克力布朗尼零食。",
+    "marketOBrowniesBody1": "Market O 布朗尼是 Orion 的软巧克力布朗尼系列，在便利店和超市零食货架上很容易找到。",
+    "marketOBrowniesBody2": "多件包可共享；礼包也会出现。检查日期并远离热源。",
+    "marketOBrowniesTip": "购买秘诀\n\n寻找 Market O 标签并比较季节性口味（如果有）。",
     "marketOBrowniesBody": [
       {
         "type": "text",
@@ -627,11 +627,11 @@
         "ru": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available."
       }
     ],
-    "chocoHeimCouqueTitle": "Choco Heim & Couque D’asse",
+    "chocoHeimCouqueTitle": "乔科·海姆和库克·达斯",
     "chocoHeimCouqueDesc": "可瑞安巧克力海姆与可口达斯 — 经典巧克力/白奶油夹心饼干。",
-    "chocoHeimCouqueBody1": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
-    "chocoHeimCouqueBody2": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
-    "chocoHeimCouqueTip": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+    "chocoHeimCouqueBody1": "Choco Heim 和 Couque D’asse 是皇冠的招牌三明治饼干，脆饼干之间夹有巧克力或白奶油——甜点饼干，而不是咸味三明治。",
+    "chocoHeimCouqueBody2": "盒子和合装包在集市和礼品角很常见。混合白色和巧克力口味可制成精美的礼品套装。",
+    "chocoHeimCouqueTip": "购买秘诀\n\n小心包装——饼干很容易破裂。小包装比大盒子运输更安全。",
     "chocoHeimCouqueBody": [
       {
         "type": "text",
@@ -667,11 +667,11 @@
         "ru": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes."
       }
     ],
-    "ohYesChocoPieTitle": "Oh Yes与巧克力派",
+    "ohYesChocoPieTitle": "哦，是的和巧克力派",
     "ohYesChocoPieDesc": "海太Oh Yes（方形蛋糕）与好丽友巧克力派（圆形夹棉花糖）— 巧克力涂层派类。",
-    "ohYesChocoPieBody1": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
-    "ohYesChocoPieBody2": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
-    "ohYesChocoPieTip": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+    "ohYesChocoPieBody1": "Haitai Oh Yes 是一款带有奶油和巧克力涂层的方形软蛋糕。 Orion 巧克力派是圆形的，蛋糕层之间夹有棉花糖——相同的“派零食”家族，不同的形状和馅料。",
+    "ohYesChocoPieBody2": "以单件或盒装形式出售。巧克力涂层在夏天会融化——保持凉爽。",
+    "ohYesChocoPieTip": "购买秘诀\n\n盒装套装是很好的礼物。区分它们：方形巧克力派与圆形巧克力派。",
     "ohYesChocoPieBody": [
       {
         "type": "text",
@@ -709,9 +709,9 @@
     ],
     "butterWaffleTitle": "黄油华夫饼干",
     "butterWaffleDesc": "可瑞安黄油华夫 — 华夫纹路酥脆黄油饼干，适合配咖啡。",
-    "butterWaffleBody1": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
-    "butterWaffleBody2": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
-    "butterWaffleTip": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+    "butterWaffleBody1": "皇冠黄油华夫饼是一款长期运行的酥脆饼干，具有华夫饼格子和浓郁的黄油香气。独立包装的盒子在超市和便利店很常见。",
+    "butterWaffleBody2": "适合与咖啡或茶搭配，并且易于包装。打开后尽快食用，以保持酥脆。",
+    "butterWaffleTip": "购买秘诀\n\n寻找皇冠黄油华夫饼标签；多件装优惠很常见。",
     "butterWaffleBody": [
       {
         "type": "text",
@@ -749,8 +749,8 @@
     ],
     "hotteokBungeoTitle": "糖饼馅真鲤鱼面包",
     "hotteokBungeoDesc": "好丽友糖饼馅真鲤鱼面包 — 鱼形蛋糕夹黑糖、肉桂、坚果风味糖饼馅。",
-    "hotteokBungeoBody1": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
-    "hotteokBungeoBody2": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+    "hotteokBungeoBody1": "Orion Cham Bungeoppan 的变体，灵感来自街头鱼面包和 hotteok——一种耐储存的蛋糕小吃，含有红糖、肉桂、杏仁和花生馅料。不是街头小吃摊上那种热腾腾的糕点。",
+    "hotteokBungeoBody2": "在便利店和超市以盒装/合装包形式出售。有些包装建议用微波炉短暂加热以获得更软的填充物。",
     "hotteokBungeoTip": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
     "hotteokBungeoBody": [
       {
@@ -789,9 +789,9 @@
     ],
     "sableTitle": "沙布列",
     "sableDesc": "海太沙布列 — 酥脆法式黄油曲奇，长青畅销品。",
-    "sableBody1": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
-    "sableBody2": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
-    "sableTip": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+    "sableBody1": "Haitai Sablé 是韩国标志性饼干：质地酥脆，带有温和的甜味和黄油味。在超市和便利小吃通道很容易找到。",
+    "sableBody2": "与咖啡或茶搭配，不会太甜，是一份安全的成人礼物。选择缓冲良好的背包；它们很容易折断。",
+    "sableTip": "购买秘诀\n\n寻找 Haitai Sablé。大型超市的多件装商品往往比便利店的价格便宜。",
     "sableBody": [
       {
         "type": "text",
@@ -829,8 +829,8 @@
     ],
     "barleyCookieTitle": "大麦饼干",
     "barleyCookieDesc": "大麦风味干面包/饼干 — 香而不甜的韩式小食伴手礼。",
-    "barleyCookieBody1": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
-    "barleyCookieBody2": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+    "barleyCookieBody1": "“大麦饼干”包括烤大麦饼干、饼干和饼干——例如市场饼干货架上的发酵大麦硬饼干，或混合到传统的礼品品种中。",
+    "barleyCookieBody2": "微甜；与茶或咖啡搭配。礼品罐或拉链包装包装良好。",
     "barleyCookieTip": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
     "barleyCookieBody": [
       {
@@ -869,8 +869,8 @@
     ],
     "bichobiTitle": "比巧比",
     "bichobiDesc": "好丽友比巧比 — 全麦饼干夹榛果巧克力的夹心饼干。",
-    "bichobiBody1": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
-    "bichobiBody2": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+    "bichobiBody1": "Bichobi 是 Orion 的三明治饼干：枫糖全麦饼干，中间夹有榛子巧克力。这不是海泰“Bichoco”。",
+    "bichobiBody2": "常见于超市、便利店、礼品角；草莓版和特别版也出现了。深受游客欢迎。夏天观看融化的巧克力。",
     "bichobiTip": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
     "bichobiBody": [
       {
@@ -909,9 +909,9 @@
     ],
     "kkobukChipTitle": "乌龟脆片",
     "kkobukChipDesc": "好丽友乌龟脆片 — 四层烤制的龟壳状玉米脆片。",
-    "kkobukChipBody1": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
-    "kkobukChipBody2": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
-    "kkobukChipTip": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+    "kkobukChipBody1": "Kkobuk 薯片是 Orion 的四层脆脆零食——与其说是薯片，不如说是玉米零食——有清汤、巧克力和其他口味。",
+    "kkobukChipBody2": "笨重——用压缩袋或拉链袋装行李。超市多件装的价格往往比便利价格高。",
+    "kkobukChipTip": "购买秘诀\n\n夏天巧克力味容易融化；咸味的味道更适合旅行。",
     "kkobukChipBody": [
       {
         "type": "text",
@@ -949,9 +949,9 @@
     ],
     "bbangBujangTitle": "面包部长系列",
     "bbangBujangDesc": "农心面包部长 — 复刻盐面包、巧克力面包、咸甜麻花等的烘焙风零食。",
-    "bbangBujangBody1": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
-    "bbangBujangBody2": "Pick one flavor or mix a gift set. Names can change by season.",
-    "bbangBujangTip": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+    "bbangBujangBody1": "Bbang Bujang 是 Nongshim 的烘焙零食品牌：羊角面包、盐面包和巧克力面包风格的薯片，加上咸焦糖曲奇——面包店口味的松脆零食，经常放在一起。",
+    "bbangBujangBody2": "选择一种口味或混合礼品套装。名称可能会因季节而变化。",
+    "bbangBujangTip": "购买秘诀\n\n检查 Nongshim Bbang Bujang 标志和过敏原标签（小麦/乳制品）。",
     "bbangBujangBody": [
       {
         "type": "text",
@@ -1029,11 +1029,11 @@
     ],
     "catDaiso": "大创",
     "catHealth": "健康与功能食品",
-    "drRejuAllTitle": "Dr.Reju-All Advanced PDRN Cream",
-    "drRejuAllDesc": "Dr.Reju-All Advanced PDRN Rejuvenating Cream — popular travel skincare gift.",
-    "drRejuAllBody1": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
-    "drRejuAllBody2": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml). Try a tester if available.",
-    "drRejuAllTip": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+    "drRejuAllTitle": "Dr.Reju-All 高级 PDRN 霜",
+    "drRejuAllDesc": "Dr.Reju-All 高级 PDRN 焕肤霜 — 流行的旅行护肤礼物。",
+    "drRejuAllBody1": "Dr.Reju-All 高级 PDRN 焕肤霜强调 PDRN 焕肤霜。旅客经常在 Olive Young、药店和百货美容楼层找到它。",
+    "drRejuAllBody2": "检查尺寸、英文标签和有效期。面霜计入机舱液体限制（100 毫升）。如果可用，请尝试使用测试仪。",
+    "drRejuAllTip": "购买秘诀\n\n在官方或主要商店购买并检查您所在国家/地区的液体/海关规则。",
     "drRejuAllBody": [
       {
         "type": "text",
@@ -1069,11 +1069,11 @@
         "ru": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules."
       }
     ],
-    "mommycareSeaGrapeTitle": "Mommy Care Sea Grape Skin Pack",
-    "mommycareSeaGrapeDesc": "Mommy Care sea-grape skin pack at Daiso — budget sheet/skincare.",
-    "mommycareSeaGrapeBody1": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
-    "mommycareSeaGrapeBody2": "Check ingredients and skin-type labels; patch-test if sensitive. Look in Daiso beauty/mask aisles.",
-    "mommycareSeaGrapeTip": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+    "mommycareSeaGrapeTitle": "妈咪护理海葡萄面膜",
+    "mommycareSeaGrapeDesc": "大创妈妈护理海葡萄皮肤包 — 预算表/护肤品。",
+    "mommycareSeaGrapeBody1": "Mommy Care 海葡萄面膜是大创 (Daiso) 常见的经济型护肤品。轻松储存旅行或礼物。",
+    "mommycareSeaGrapeBody2": "检查成分和肤质标签；如果敏感，请进行补丁测试。看看大创美容/面膜通道。",
+    "mommycareSeaGrapeTip": "购买秘诀\n\n社区或大型大创商店的库存通常比旅游景点的库存要多。",
     "mommycareSeaGrapeBody": [
       {
         "type": "text",
@@ -1109,11 +1109,11 @@
         "ru": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots."
       }
     ],
-    "sagolHancupTitle": "Sagol Han-cup Tea Bags",
-    "sagolHancupDesc": "Daiso Sagol Han-cup tea bags — easy bone-broth-style cup.",
-    "sagolHancupBody1": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
-    "sagolHancupBody2": "Check sodium and allergen labels. Hotel kettles work fine.",
-    "sagolHancupTip": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+    "sagolHancupTitle": "沙果汉杯茶袋",
+    "sagolHancupDesc": "Daiso Sagol 汉杯茶袋 — 简单的骨汤式茶杯。",
+    "sagolHancupBody1": "Sagol Han-cup 茶包浸泡在热水中，可快速饮用骨汤。大创 (Daiso) 是热门旅行/露营地。",
+    "sagolHancupBody2": "检查钠和过敏原标签。酒店的水壶很好用。",
+    "sagolHancupTip": "购买秘诀\n\n袋泡茶比液体汤更适合飞行。",
     "sagolHancupBody": [
       {
         "type": "text",
@@ -1138,11 +1138,11 @@
         "ru": "Buying tip\n\nTea-bag format is easier for flights than liquid soup."
       }
     ],
-    "bananaLatteProteinTitle": "Banana Latte Protein Shake",
-    "bananaLatteProteinDesc": "Daiso banana-latte protein shake — easy protein drink.",
-    "bananaLatteProteinBody1": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
-    "bananaLatteProteinBody2": "Check dairy/allergen labels. Drink chilled RTD soon after opening.",
-    "bananaLatteProteinTip": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+    "bananaLatteProteinTitle": "香蕉拿铁蛋白奶昔",
+    "bananaLatteProteinDesc": "大创香蕉拿铁蛋白奶昔——简单的蛋白质饮料。",
+    "bananaLatteProteinBody1": "香蕉拿铁蛋白奶昔是大创在早餐或路上锻炼后轻松享用的饮品。",
+    "bananaLatteProteinBody2": "检查乳制品/过敏原标签。开封后立即饮用冷藏的 RTD。",
+    "bananaLatteProteinTip": "购买秘诀\n\n粉末包比液体更容易运输；检查 RTD 瓶上的日期。",
     "bananaLatteProteinBody": [
       {
         "type": "text",
@@ -1167,11 +1167,11 @@
         "ru": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles."
       }
     ],
-    "berryAppleGranolaTitle": "Berry Apple Granola Cup",
-    "berryAppleGranolaDesc": "Daiso Berry Apple granola cup — berry-apple cereal cup.",
-    "berryAppleGranolaBody1": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
-    "berryAppleGranolaBody2": "Check nut/gluten allergens. Cup format is hotel-friendly.",
-    "berryAppleGranolaTip": "Buying tip\n\nCheck the date and keep dry after opening.",
+    "berryAppleGranolaTitle": "浆果苹果格兰诺拉麦片杯",
+    "berryAppleGranolaDesc": "Daiso 浆果苹果麦片杯 — 浆果苹果麦片杯。",
+    "berryAppleGranolaBody1": "浆果苹果格兰诺拉麦片杯是大创的早餐/零食，带有浆果苹果的气息，可与牛奶或酸奶搭配。",
+    "berryAppleGranolaBody2": "检查坚果/麸质过敏原。杯赛形式适合酒店。",
+    "berryAppleGranolaTip": "购买秘诀\n\n打开后检查日期并保持干燥。",
     "berryAppleGranolaBody": [
       {
         "type": "text",
@@ -1196,11 +1196,11 @@
         "ru": "Buying tip\n\nCheck the date and keep dry after opening."
       }
     ],
-    "allTheBetterCacaoTitle": "All the Better Low-Sugar Cacao",
-    "allTheBetterCacaoDesc": "Daiso All the Better low-sugar cacao — less-sweet cacao treat.",
-    "allTheBetterCacaoBody1": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
-    "allTheBetterCacaoBody2": "Low-sugar still may have calories/caffeine — read the label. Small packs travel well.",
-    "allTheBetterCacaoTip": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+    "allTheBetterCacaoTitle": "更好的低糖可可",
+    "allTheBetterCacaoDesc": "Daiso All the Better 低糖可可 — 甜度较低的可可。",
+    "allTheBetterCacaoBody1": "All the Better 低糖可可是大创精选的低糖零食或热可可。",
+    "allTheBetterCacaoBody2": "低糖食品仍可能含有卡路里/咖啡因——请阅读标签。小包很适合旅行。",
+    "allTheBetterCacaoTip": "购买秘诀\n\n将“低糖/无糖”声明与实际含糖量进行比较。",
     "allTheBetterCacaoBody": [
       {
         "type": "text",
@@ -1225,11 +1225,11 @@
         "ru": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams."
       }
     ],
-    "lactoFitTitle": "Lacto-Fit",
-    "lactoFitDesc": "Chong Kun Dang Lacto-Fit — popular Korean probiotic supplement.",
-    "lactoFitBody1": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
-    "lactoFitBody2": "Read functional-food labels and dosing. Check your country’s import rules. Kids vs adult lines differ.",
-    "lactoFitTip": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+    "lactoFitTitle": "拉克托-菲特",
+    "lactoFitDesc": "Chong Kun Dang Lacto-Fit — 韩国流行的益生菌补充剂。",
+    "lactoFitBody1": "Lacto-Fit 是 Chong Kun Dang Health 的一款畅销益生菌。棒状包装在药店、Olive Young 和超市很常见。",
+    "lactoFitBody2": "阅读功能性食品标签和剂量。检查您所在国家/地区的进口规则。儿童与成人的线路有所不同。",
+    "lactoFitTip": "购买秘诀\n\n比较 Olive Young 和 mart 捆绑优惠。",
     "lactoFitBody": [
       {
         "type": "text",
@@ -1265,11 +1265,11 @@
         "ru": "Buying tip\n\nCompare Olive Young and mart bundle deals."
       }
     ],
-    "koreaEundanVitCTitle": "Korea Eundan Vitamin C 1000",
-    "koreaEundanVitCDesc": "Korea Eundan Vitamin C 1000 — portable vitamin C tablets.",
-    "koreaEundanVitCBody1": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
-    "koreaEundanVitCBody2": "Check 1000mg per tablet and daily limits; take after meals if your stomach is sensitive.",
-    "koreaEundanVitCTip": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+    "koreaEundanVitCTitle": "高丽银丹维生素C 1000",
+    "koreaEundanVitCDesc": "高丽银丹维生素 C 1000 — 便携式维生素 C 片剂。",
+    "koreaEundanVitCBody1": "高丽银丹维生素 C 1000 是韩国常见的维生素 C 补充剂，在药店、便利店、Olive Young 和超市均有销售。",
+    "koreaEundanVitCBody2": "检查每片 1000mg 和每日限量；如果您的肠胃敏感，请饭后服用。",
+    "koreaEundanVitCTip": "购买秘诀\n\n旅行迷你包/箱可以很好地放入手提箱中。",
     "koreaEundanVitCBody": [
       {
         "type": "text",
@@ -1294,11 +1294,11 @@
         "ru": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase."
       }
     ],
-    "yangbanKimBugakTitle": "Yangban Gim Bugak Series",
-    "yangbanKimBugakDesc": "Yangban gim bugak — crispy fried seaweed snack series.",
-    "yangbanKimBugakBody1": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
-    "yangbanKimBugakBody2": "Oily/salty — eat soon after opening and keep dry.",
-    "yangbanKimBugakTip": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+    "yangbanKimBugakTitle": "两班金五乐系列",
+    "yangbanKimBugakDesc": "Yangban gim bugak — 脆皮油炸海苔零食系列。",
+    "yangbanKimBugakBody1": "两班的gim bugak系列是脆皮炸海苔。市场、纪念品专柜和机场常见的礼品小吃。",
+    "yangbanKimBugakBody2": "油腻/咸味——开封后尽快食用并保持干燥。",
+    "yangbanKimBugakTip": "购买秘诀\n\n打包至行李箱中心；合装包很容易分享。",
     "yangbanKimBugakBody": [
       {
         "type": "text",
@@ -1323,11 +1323,11 @@
         "ru": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share."
       }
     ],
-    "jjawangRamenTitle": "Nongshim Jjawang Ramen",
-    "jjawangRamenDesc": "Nongshim Jjawang — rich jjajang (black bean) ramen.",
-    "jjawangRamenBody1": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
-    "jjawangRamenBody2": "Many versions drain water then mix sauce. Double-bag liquid packets in luggage.",
-    "jjawangRamenTip": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+    "jjawangRamenTitle": "农心酱王拉面",
+    "jjawangRamenDesc": "Nongshim Jjawang——浓郁的jjajang（黑豆）拉面。",
+    "jjawangRamenBody1": "Nongshim Jjawang 是一种带有浓郁黑豆酱的拉面。通常以多件装的形式与 Chapagetti 一起购买，作为可食用的纪念品。",
+    "jjawangRamenBody2": "许多版本沥干水然后混合酱汁。行李中的双袋液体包。",
+    "jjawangRamenTip": "购买秘诀\n\n大型超市拉面的价格通常会高于便利店的价格。",
     "jjawangRamenBody": [
       {
         "type": "text",
@@ -1352,11 +1352,11 @@
         "ru": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices."
       }
     ],
-    "osullocJejuGreenTeaTitle": "Osulloc Jeju Pure Green Tea & Sweets",
-    "osullocJejuGreenTeaDesc": "Osulloc Jeju pure green tea bags and green-tea sweets.",
-    "osullocJejuGreenTeaBody1": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
-    "osullocJejuGreenTeaBody2": "Tea bags travel light; protect cookies from crushing/heat. Official stores have clearer gift sets.",
-    "osullocJejuGreenTeaTip": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+    "osullocJejuGreenTeaTitle": "Osulloc济州纯绿茶和糖果",
+    "osullocJejuGreenTeaDesc": "Osulloc Jeju 纯绿茶袋和绿茶糖果。",
+    "osullocJejuGreenTeaBody1": "Osulloc的济州纯绿茶袋和绿茶饼干是济州/首尔茶馆、百货商店和机场的经典茶礼品。",
+    "osullocJejuGreenTeaBody2": "茶包旅行轻便；保护饼干免受压碎/受热。官方商店有更清晰的礼品套装。",
+    "osullocJejuGreenTeaTip": "购买秘诀\n\n比较济州茶博物馆、明洞和百货商店的布景。",
     "osullocJejuGreenTeaBody": [
       {
         "type": "text",
@@ -1381,10 +1381,10 @@
         "ru": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets."
       }
     ],
-    "koreanTraditionalAccessoriesTitle": "Korean Traditional Accessories",
-    "koreanTraditionalAccessoriesDesc": "Norigae, binyeo, and hanbok-style accessory souvenirs.",
-    "koreanTraditionalAccessoriesBody1": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
-    "koreanTraditionalAccessoriesBody2": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand and ask about gift wrap.",
+    "koreanTraditionalAccessoriesTitle": "韩国传统饰品",
+    "koreanTraditionalAccessoriesDesc": "Norigae、binyeo 和韩服风格的配饰纪念品。",
+    "koreanTraditionalAccessoriesBody1": "韩国传统配饰——norigae 饰物、binyeo 发夹、韩服胸针/钥匙圈、图案耳环——是便携式文化礼品。在仁寺洞、通仁市场、民俗村和百货公司的传统角落都可以找到它们。",
+    "koreanTraditionalAccessoriesBody2": "韩国民俗村官方商店也出售传统商品。用手检查金属/织物表面并询问礼品包装。",
     "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
     "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",

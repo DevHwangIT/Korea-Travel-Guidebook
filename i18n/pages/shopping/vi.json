@@ -29,11 +29,11 @@
     "catFashion": "Thời trang",
     "catBeauty": "Làm đẹp",
     "maskTitle": "KF94 masks",
-    "maskDesc": "Dust masks from pharmacies, convenience stores, and Olive Young",
+    "maskDesc": "Khẩu trang chống bụi từ hiệu thuốc, cửa hàng tiện lợi và Olive Young",
     "stationeryTitle": "Monami, văn phòng phẩm mang tính biểu tượng và nhân vật",
     "stationeryDesc": "Bút Monami 153, Nhật ký biểu tượng, Giấy dán ghi chú Kakao Friends.",
-    "oliveTitle": "Olive Young",
-    "oliveDesc": "Picks, sales, tax-free — Korea’s beauty shopping hub",
+    "oliveTitle": "Olive trẻ",
+    "oliveDesc": "Lựa chọn, bán hàng, miễn thuế — trung tâm mua sắm làm đẹp của Hàn Quốc",
     "daisoTitle": "Hàng hóa du lịch & nhân vật Daiso",
     "daisoDesc": "Dây buộc cáp, túi sinh thái, dụng cụ ép kem đánh răng, sự hợp tác của Kakao Friends.",
     "snackTitle": "Pepero, khoai tây chiên bơ mật ong, bánh quy tôm",
@@ -45,11 +45,11 @@
     "honeyTitle": "Set mật ong, yakgwa & hangwa",
     "honeyDesc": "Mật ong keo, mật ong yuja, hộp quà yakgwa/hangwa.",
     "uniqloTitle": "Uniqlo",
-    "uniqloDesc": "Korea-only colors and character collab tees",
+    "uniqloDesc": "Màu sắc và đặc điểm chỉ có ở Hàn Quốc",
     "spaTitle": "SPAO",
-    "spaDesc": "Character collabs and affordable SPA fashion",
-    "socksTitle": "Sock & tights packs",
-    "socksDesc": "Multi-packs from Daiso, SPAO, and more",
+    "spaDesc": "Hợp tác nhân vật và thời trang SPA giá cả phải chăng",
+    "socksTitle": "Gói tất & quần bó",
+    "socksDesc": "Nhiều gói từ Daiso, SPAO, v.v.",
     "hanbokTitle": "Hanbok hiện đại và bùa chú",
     "hanbokDesc": "Ngoài dịch vụ cho thuê, bùa norigae, khăn tay và móc khóa mini cũng bán rất chạy.",
     "sheetTitle": "Mediheal, gây tê, TIRTIR",
@@ -58,21 +58,21 @@
     "sunscreenDesc": "Kem chống nắng nước ép bạch dương, kem chống nắng Tocobo, SPF dành cho trẻ em Green Finger, v.v.",
     "lipstickTitle": "rom&nd, Peripera, CLIO",
     "lipstickDesc": "Juicy Lasting Tint, Peripera Ink Velvet, CLIO Kill Cover.",
-    "kpopTitle": "K-POP Photocard",
+    "kpopTitle": "Thẻ ảnh K-POP",
     "kpopDesc": "Photocard chính thức từ Tower Records, Hottracks, Weverse.",
     "tapHint": "Nhấn vào thẻ để biết nơi mua và những lời khuyên thiết thực.",
     "readMore": "Đọc thêm →",
     "backList": "← Mua sắm & vui chơi",
     "tipTitle": "Mẹo mua hàng",
-    "maskBody1": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
-    "maskBody2": "5–10 packs travel well. Check the KF grade and pack date.",
-    "maskTip": "For bulk, local pharmacy multipacks are often fine.",
+    "maskBody1": "Khẩu trang KF94 (hoặc KF80) thường được mua khi đi du lịch. Các thương hiệu như Jaksim, Bluedot và Aer được bán dưới dạng gói nhỏ tại các cửa hàng tiện lợi, Daiso, Olive Young và hiệu thuốc.",
+    "maskBody2": "5–10 gói du lịch tốt. Kiểm tra lớp KF và ngày đóng gói.",
+    "maskTip": "Đối với số lượng lớn, nhiều gói hiệu thuốc địa phương thường phù hợp.",
     "stationeryBody1": "Các loại văn phòng phẩm nổi bật: Bộ bút Monami 153, nhật ký và nhãn dán Iconic/Qri, Kakao Friends/BT21 washi & ghi nhớ, sổ tay Alpha — Daiso, Artbox, Olive Young, các cửa hàng văn phòng phẩm.",
     "stationeryBody2": "Artbox/Alpha thường có số lượng cộng tác hạn chế; nhãn dán/bản ghi nhớ rất nhẹ cho các chuyến bay.",
     "stationeryTip": "Mẹo mua hàng\n\nBộ hộp đựng quà tặng; nạp lại / đĩa đơn cho chính bạn.",
-    "oliveBody1": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
-    "oliveBody2": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
-    "oliveTip": "For hyped items, go early or use pickup options.",
+    "oliveBody1": "Olive Young là hiệu thuốc được du khách ghé thăm nhiều nhất. Bắt đầu với Olive Young Picks và bán các kệ mặt nạ, kem chống nắng, tông màu và sản phẩm chăm sóc da; hỏi nhân viên về phiếu giảm giá ứng dụng và GWP.",
+    "oliveBody2": "Các cửa hàng lớn ở Myeongdong/Hongdae/Gangnam có nhiều hàng hơn; cửa hàng ở sân bay bán hết nhanh hơn. Xác nhận miễn thuế trước khi thanh toán.",
+    "oliveTip": "Đối với các mặt hàng được quảng cáo rầm rộ, hãy đến sớm hoặc sử dụng các tùy chọn nhận hàng.",
     "daisoBody1": "Những sản phẩm yêu thích của du khách: hộp đóng gói/dây buộc cáp, kẹp silicon, bảng nhỏ, dụng cụ ép kem đánh răng, túi đựng văn phòng phẩm Kakao Friends / Chiikawa / Sanrio — dễ dàng mua nhiều gói với giá cố định.",
     "daisoBody2": "Yêu cầu đệm trên kính/gốm sứ; sử dụng biển báo sàn cho Du lịch/Nhà kho/Nhà bếp. Các cửa hàng lân cận yên tĩnh hơn các chi nhánh du lịch.",
     "daisoTip": "Mẹo mua hàng\n\nCân giỏ hàng của bạn trước khi thanh toán; ưu tiên lấp chỗ trống cho vali của bạn.",
@@ -88,15 +88,15 @@
     "honeyBody1": "Quà lưu niệm ngọt ngào: Mật ong keo/hạt dẻ Hàn Quốc, si-rô gừng yuja, hộp yakgwa & hangwa ở Insadong, cửa hàng bách hóa, sân bay. Chọn hộp yakgwa có đệm.",
     "honeyBody2": "Các quy định về mật ong khác nhau tùy theo quốc gia - hãy kiểm tra hải quan. Thích dùng que/túi hơn lọ thủy tinh.",
     "honeyTip": "Mẹo mua hàng\n\nCác lọ có nhãn dán kín có hạn sử dụng sẽ đánh bại số lượng lớn thị trường mở để làm quà tặng và hải quan.",
-    "uniqloBody1": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
-    "uniqloBody2": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
-    "uniqloTip": "Large stores in Myeongdong, Times Square, and COEX usually have better stock.",
-    "spaBody1": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
-    "spaBody2": "Korean sizes can run small — size up if unsure, and keep the receipt.",
-    "spaTip": "Compare Myeongdong, Hongdae, and Gangnam street shops; hunt sales.",
-    "socksBody1": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
-    "socksBody2": "Individually wrapped packs travel well in suitcase gaps.",
-    "socksTip": "Multi-packs are usually cheaper than singles.",
+    "uniqloBody1": "Các cửa hàng Uniqlo Hàn Quốc thường có màu sắc, đồ họa và hình ảnh cộng tác nhân vật độc quyền mà khách du lịch mua làm quà lưu niệm.",
+    "uniqloBody2": "Bán hàng có tính cạnh tranh và các thủ tục miễn thuế đã quen thuộc. Kiểm tra kích thước cm trong phòng thử đồ.",
+    "uniqloTip": "Các cửa hàng lớn ở Myeongdong, Times Square và COEX thường có lượng hàng tốt hơn.",
+    "spaBody1": "SPAO là thương hiệu SPA Hàn Quốc nổi tiếng với áo phông, quần áo ngủ và các kiểu phối hợp nhân vật thay đổi theo mùa.",
+    "spaBody2": "Kích thước của Hàn Quốc có thể nhỏ - tăng kích thước nếu không chắc chắn và giữ lại biên lai.",
+    "spaTip": "So sánh các cửa hàng trên phố Myeongdong, Hongdae và Gangnam; săn sale.",
+    "socksBody1": "Gói tất và quần bó 3–5 đôi từ Daiso, SPAO, Uniqlo và các cửa hàng tương tự là những món quà dễ dàng và có giá trị tốt.",
+    "socksBody2": "Các gói được gói riêng lẻ di chuyển tốt trong các khoảng trống của vali.",
+    "socksTip": "Nhiều gói thường rẻ hơn đơn lẻ.",
     "hanbokBody1": "Ngoài hanbok cho thuê trong cung điện, áo kiểu hanbok hiện đại, bùa norigae, khăn tay và móc khóa mini còn là những món quà lưu niệm mang tính văn hóa di động.",
     "hanbokBody2": "Giá cửa hàng du lịch rất khác nhau - so sánh Insadong, Chợ Tongin và các góc truyền thống của cửa hàng bách hóa. Kiểm tra vải và khâu bằng tay.",
     "hanbokTip": "Thuê ảnh; mua những phụ kiện nhỏ mang về nhà. Hanbok đầy đủ cồng kềnh và nhăn nheo trong vali.",
@@ -558,10 +558,10 @@
     "catSnack": "Đồ ăn vặt",
     "catBakery": "Tiệm bánh",
     "peperoTitle": "Pepero",
-    "peperoDesc": "Lotte Pepero — almond, nude, chocolate stick snacks, a classic gift.",
-    "peperoBody1": "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.",
-    "peperoBody2": "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.",
-    "peperoTip": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.",
+    "peperoDesc": "Lotte Pepero - đồ ăn nhẹ hạnh nhân, màu kem, sô cô la, một món quà cổ điển.",
+    "peperoBody1": "Pepero là món ăn nhẹ dạng que bánh quy của Lotte - được phủ sô cô la/kem hoặc có nhân trong phiên bản “Nude”. Hương vị hạnh nhân, màu tự nhiên, nguyên bản và theo mùa tràn ngập các siêu thị, cửa hàng tiện lợi và Daiso.",
+    "peperoBody2": "Bộ quà tặng bùng nổ vào dịp Ngày Pepero (11/11). Vào mùa hè sô cô la có thể tan chảy - mua gần giờ khởi hành hoặc để nguội.",
+    "peperoTip": "Mẹo mua hàng\n\nNhiều gói rất dễ chia sẻ. Các đại siêu thị thường đánh bại giá sân bay/khách du lịch.",
     "peperoBody": [
       {
         "type": "text",
@@ -597,11 +597,11 @@
         "ru": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices."
       }
     ],
-    "marketOBrowniesTitle": "Market O Brownies",
-    "marketOBrowniesDesc": "Orion Market O brownies — soft chocolate brownie snacks.",
-    "marketOBrowniesBody1": "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.",
-    "marketOBrowniesBody2": "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.",
-    "marketOBrowniesTip": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.",
+    "marketOBrowniesTitle": "Chợ O Brownies",
+    "marketOBrowniesDesc": "Orion Market O brownies - đồ ăn nhẹ làm từ sô cô la mềm.",
+    "marketOBrowniesBody1": "Market O brownies là dòng bánh hạnh nhân sô cô la mềm của Orion, dễ dàng tìm thấy ở các cửa hàng tiện lợi và các quầy bán đồ ăn nhanh trong siêu thị.",
+    "marketOBrowniesBody2": "Gói nhiều phần có thể chia sẻ được; gói quà cũng xuất hiện. Kiểm tra ngày và tránh xa nhiệt.",
+    "marketOBrowniesTip": "Mẹo mua hàng\n\nTìm nhãn Market O và so sánh hương vị theo mùa nếu có.",
     "marketOBrowniesBody": [
       {
         "type": "text",
@@ -637,11 +637,11 @@
         "ru": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available."
       }
     ],
-    "chocoHeimCouqueTitle": "Choco Heim & Couque D’asse",
+    "chocoHeimCouqueTitle": "Choco Heim & Couque D'asse",
     "chocoHeimCouqueDesc": "Crown Choco Heim & Couque D’asse — bánh quy kẹp kem sô-cô-la/trắng kinh điển.",
-    "chocoHeimCouqueBody1": "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.",
-    "chocoHeimCouqueBody2": "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.",
-    "chocoHeimCouqueTip": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.",
+    "chocoHeimCouqueBody1": "Choco Heim và Couque D'asse là những loại bánh quy sandwich đặc trưng của Crown với sô cô la hoặc kem trắng ở giữa những chiếc bánh quy giòn - bánh quy tráng miệng, không phải bánh mì mặn.",
+    "chocoHeimCouqueBody2": "Hộp và nhiều gói thường thấy ở các siêu thị và góc quà tặng. Sự kết hợp giữa hương vị trắng và sô cô la sẽ tạo nên một bộ quà tặng tuyệt vời.",
+    "chocoHeimCouqueTip": "Mẹo mua hàng\n\nĐóng gói cẩn thận - bánh quy dễ gãy. Gói nhỏ hơn đi lại an toàn hơn hộp lớn.",
     "chocoHeimCouqueBody": [
       {
         "type": "text",
@@ -677,11 +677,11 @@
         "ru": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes."
       }
     ],
-    "ohYesChocoPieTitle": "Oh Yes & Choco Pie",
+    "ohYesChocoPieTitle": "Ồ Vâng & Bánh Choco Pie",
     "ohYesChocoPieDesc": "Haitai Oh Yes (bánh vuông) và Orion Choco Pie (tròn, kẹp marshmallow).",
-    "ohYesChocoPieBody1": "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.",
-    "ohYesChocoPieBody2": "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.",
-    "ohYesChocoPieTip": "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.",
+    "ohYesChocoPieBody1": "Haitai Oh Yes là một chiếc bánh mềm hình vuông với lớp phủ kem và sô cô la. Orion Choco Pie có hình tròn với kẹo dẻo giữa các lớp bánh - cùng họ “bánh snack”, hình dạng và nhân khác nhau.",
+    "ohYesChocoPieBody2": "Bán dưới dạng đĩa đơn hoặc hộp. Lớp phủ sô cô la có thể tan chảy vào mùa hè - hãy giữ mát.",
+    "ohYesChocoPieTip": "Mẹo mua hàng\n\nBộ đóng hộp làm quà tặng tốt. Hãy phân biệt chúng: hình vuông Oh Yes và hình tròn Choco Pie.",
     "ohYesChocoPieBody": [
       {
         "type": "text",
@@ -719,9 +719,9 @@
     ],
     "butterWaffleTitle": "Bánh waffle bơ",
     "butterWaffleDesc": "Crown Butter Waffle — bánh quy bơ giòn họa tiết waffle, hợp với cà phê.",
-    "butterWaffleBody1": "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.",
-    "butterWaffleBody2": "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.",
-    "butterWaffleTip": "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.",
+    "butterWaffleBody1": "Bánh quế bơ của Crown là một loại bánh quy giòn để lâu với lưới bánh quế và mùi thơm bơ đậm đà. Hộp được bọc riêng lẻ phổ biến ở các siêu thị và cửa hàng tiện lợi.",
+    "butterWaffleBody2": "Kết hợp tốt với cà phê hoặc trà và đóng gói dễ dàng. Ăn ngay sau khi mở để chúng giữ được độ giòn.",
+    "butterWaffleTip": "Mẹo mua hàng\n\nHãy tìm nhãn Bánh quế bơ Crown; giao dịch nhiều gói là phổ biến.",
     "butterWaffleBody": [
       {
         "type": "text",
@@ -759,8 +759,8 @@
     ],
     "hotteokBungeoTitle": "Bánh cá nhân hotteok",
     "hotteokBungeoDesc": "Orion bánh cá nhân hotteok — bánh hình cá nhân đường nâu, quế, hạt.",
-    "hotteokBungeoBody1": "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.",
-    "hotteokBungeoBody2": "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.",
+    "hotteokBungeoBody1": "Một biến thể Bungeoppang của Orion Cham lấy cảm hứng từ bánh mì cá đường phố và hotteok — một loại bánh ăn nhẹ có sẵn với đường nâu, quế, hạnh nhân và đậu phộng. Không phải món bánh ngọt nóng hổi trên đường phố.",
+    "hotteokBungeoBody2": "Bán theo hộp/gói nhiều lần tại các cửa hàng tiện lợi và siêu thị. Một số gói gợi ý khởi động lò vi sóng trong thời gian ngắn để nhân mềm hơn.",
     "hotteokBungeoTip": "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.",
     "hotteokBungeoBody": [
       {
@@ -799,9 +799,9 @@
     ],
     "sableTitle": "Sablé",
     "sableDesc": "Haitai Sablé — bánh quy bơ kiểu Pháp giòn, món kinh điển lâu năm.",
-    "sableBody1": "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.",
-    "sableBody2": "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.",
-    "sableTip": "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.",
+    "sableBody1": "Haitai Sablé là loại bánh quy đặc trưng của Hàn Quốc: kết cấu giòn với vị ngọt nhẹ và hương bơ. Dễ dàng tìm thấy trong các siêu thị và lối đi ăn nhẹ tiện lợi.",
+    "sableBody2": "Kết hợp với cà phê hoặc trà và không quá ngọt — một món quà an toàn dành cho người lớn. Chọn những gói có đệm tốt; chúng dễ bị gãy.",
+    "sableTip": "Mẹo mua hàng\n\nHãy tìm Haitai Sablé. Các siêu thị đa dạng thường đánh bại mức giá tiện lợi.",
     "sableBody": [
       {
         "type": "text",
@@ -839,8 +839,8 @@
     ],
     "barleyCookieTitle": "Bánh lúa mạch",
     "barleyCookieDesc": "Bánh quy/lúa mạch — thơm, ít ngọt, quà ăn vặt kiểu Hàn.",
-    "barleyCookieBody1": "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.",
-    "barleyCookieBody2": "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.",
+    "barleyCookieBody1": "“Bánh quy lúa mạch” bao gồm bánh quy giòn, bánh quy và bánh quy lúa mạch thơm ngon - ví dụ: bánh cứng lúa mạch lên men trong các lối đi bán bánh quy giòn ở siêu thị, hoặc trộn vào các loại quà tặng truyền thống.",
+    "barleyCookieBody2": "Ngọt nhẹ; cặp với trà hoặc cà phê. Hộp quà tặng hoặc gói zip đóng gói tốt.",
     "barleyCookieTip": "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.",
     "barleyCookieBody": [
       {
@@ -879,8 +879,8 @@
     ],
     "bichobiTitle": "Bichobi",
     "bichobiDesc": "Orion Bichobi — bánh quy lúa mì nguyên cám kẹp sô-cô-la hạt phỉ.",
-    "bichobiBody1": "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”",
-    "bichobiBody2": "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.",
+    "bichobiBody1": "Bichobi là loại bánh quy sandwich của Orion: bánh quy làm từ lúa mì nguyên hạt tráng men với sô cô la hạt dẻ ở giữa. Đó không phải là Haitai “Bichoco”.",
+    "bichobiBody2": "Phổ biến ở các siêu thị, cửa hàng tiện lợi và góc quà tặng; dâu tây và phiên bản đặc biệt cũng xuất hiện. Phổ biến với du khách. Xem sô cô la tan chảy vào mùa hè.",
     "bichobiTip": "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.",
     "bichobiBody": [
       {
@@ -919,9 +919,9 @@
     ],
     "kkobukChipTitle": "Kkobuk Chip",
     "kkobukChipDesc": "Orion Kkobuk — snack bắp bốn lớp giòn như mai rùa.",
-    "kkobukChipBody1": "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.",
-    "kkobukChipBody2": "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.",
-    "kkobukChipTip": "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.",
+    "kkobukChipBody1": "Khoai tây chiên Kkobuk là món ăn nhẹ giòn bốn lớp của Orion - giống món ăn nhẹ từ ngô hơn là khoai tây chiên - với nước dùng, sô cô la và các hương vị khác.",
+    "kkobukChipBody2": "Cồng kềnh - nén hoặc túi zip cho hành lý. Các gói đa năng của Mart thường đánh bại mức giá tiện lợi.",
+    "kkobukChipTip": "Mẹo mua hàng\n\nHương vị sô cô la dễ tan vào mùa hè; hương vị thơm ngon du lịch tốt hơn.",
     "kkobukChipBody": [
       {
         "type": "text",
@@ -959,9 +959,9 @@
     ],
     "bbangBujangTitle": "Dòng Bbang Bujang",
     "bbangBujangDesc": "Nongshim Bbang Bujang — snack bakery mô phỏng bánh muối, bánh sô-cô-la, xoắn mặn ngọt…",
-    "bbangBujangBody1": "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.",
-    "bbangBujangBody2": "Pick one flavor or mix a gift set. Names can change by season.",
-    "bbangBujangTip": "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).",
+    "bbangBujangBody1": "Bbang Bujang là thương hiệu bánh mì ăn nhẹ của Nongshim: bánh sừng bò, bánh mì muối và bánh mì sô cô la giòn kiểu, cùng với các loại caramel mặn xoắn - hương vị cửa hàng bánh mì như đồ ăn nhẹ giòn, thường được xếp cùng nhau.",
+    "bbangBujangBody2": "Chọn một hương vị hoặc trộn một bộ quà tặng. Tên có thể thay đổi theo mùa.",
+    "bbangBujangTip": "Mẹo mua hàng\n\nKiểm tra logo Nongshim Bbang Bujang và nhãn chất gây dị ứng (lúa mì/sữa).",
     "bbangBujangBody": [
       {
         "type": "text",
@@ -1039,11 +1039,11 @@
     ],
     "catDaiso": "Daiso",
     "catHealth": "Sức khỏe & thực phẩm chức năng",
-    "drRejuAllTitle": "Dr.Reju-All Advanced PDRN Cream",
-    "drRejuAllDesc": "Dr.Reju-All Advanced PDRN Rejuvenating Cream — popular travel skincare gift.",
-    "drRejuAllBody1": "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.",
-    "drRejuAllBody2": "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml). Try a tester if available.",
-    "drRejuAllTip": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.",
+    "drRejuAllTitle": "Kem Dr.Reju-All Advanced PDRN",
+    "drRejuAllDesc": "Kem trẻ hóa Dr.Reju-All Advanced PDRN — món quà chăm sóc da du lịch phổ biến.",
+    "drRejuAllBody1": "Kem trẻ hóa Dr.Reju-All Advanced PDRN làm nổi bật PDRN cho một loại kem trẻ hóa. Du khách thường tìm thấy nó ở Olive Young, hiệu thuốc và các tầng làm đẹp.",
+    "drRejuAllBody2": "Kiểm tra kích thước, nhãn tiếng Anh và hạn sử dụng. Kem được tính vào giới hạn chất lỏng trong cabin (100ml). Hãy thử một máy kiểm tra nếu có.",
+    "drRejuAllTip": "Mẹo mua hàng\n\nMua tại các cửa hàng chính thức hoặc lớn và kiểm tra các quy định về thanh khoản/hải quan của quốc gia bạn.",
     "drRejuAllBody": [
       {
         "type": "text",
@@ -1079,11 +1079,11 @@
         "ru": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules."
       }
     ],
-    "mommycareSeaGrapeTitle": "Mommy Care Sea Grape Skin Pack",
-    "mommycareSeaGrapeDesc": "Mommy Care sea-grape skin pack at Daiso — budget sheet/skincare.",
-    "mommycareSeaGrapeBody1": "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.",
-    "mommycareSeaGrapeBody2": "Check ingredients and skin-type labels; patch-test if sensitive. Look in Daiso beauty/mask aisles.",
-    "mommycareSeaGrapeTip": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.",
+    "mommycareSeaGrapeTitle": "Gói dưỡng da nho biển Mommy Care",
+    "mommycareSeaGrapeDesc": "Gói dưỡng da nho biển Mommy Care tại Daiso — bảng ngân sách/chăm sóc da.",
+    "mommycareSeaGrapeBody1": "Gói dưỡng da nho biển Mommy Care là sản phẩm chăm sóc da bình dân phổ biến được tìm thấy tại Daiso. Dễ dàng dự trữ khi đi du lịch hoặc quà tặng.",
+    "mommycareSeaGrapeBody2": "Kiểm tra thành phần và nhãn loại da; kiểm tra bản vá nếu nhạy cảm. Hãy tìm các lối đi làm đẹp/mặt nạ của Daiso.",
+    "mommycareSeaGrapeTip": "Mẹo mua hàng\n\nCác cửa hàng Daiso lân cận hoặc lớn thường có hàng tốt hơn các điểm du lịch.",
     "mommycareSeaGrapeBody": [
       {
         "type": "text",
@@ -1119,11 +1119,11 @@
         "ru": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots."
       }
     ],
-    "sagolHancupTitle": "Sagol Han-cup Tea Bags",
-    "sagolHancupDesc": "Daiso Sagol Han-cup tea bags — easy bone-broth-style cup.",
-    "sagolHancupBody1": "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.",
-    "sagolHancupBody2": "Check sodium and allergen labels. Hotel kettles work fine.",
-    "sagolHancupTip": "Buying tip\n\nTea-bag format is easier for flights than liquid soup.",
+    "sagolHancupTitle": "Túi trà Sagol Han-cup",
+    "sagolHancupDesc": "Túi trà Daiso Sagol Han-cup - cốc kiểu nước hầm xương dễ uống.",
+    "sagolHancupBody1": "Túi trà Sagol Han-cup ngâm trong nước nóng để có đồ uống nhanh như nước luộc xương. Du lịch/cắm trại phổ biến ở Daiso.",
+    "sagolHancupBody2": "Kiểm tra nhãn natri và chất gây dị ứng. Ấm đun nước khách sạn hoạt động tốt.",
+    "sagolHancupTip": "Mẹo mua hàng\n\nDạng túi trà dễ bay hơn so với dạng súp dạng lỏng.",
     "sagolHancupBody": [
       {
         "type": "text",
@@ -1148,11 +1148,11 @@
         "ru": "Buying tip\n\nTea-bag format is easier for flights than liquid soup."
       }
     ],
-    "bananaLatteProteinTitle": "Banana Latte Protein Shake",
-    "bananaLatteProteinDesc": "Daiso banana-latte protein shake — easy protein drink.",
-    "bananaLatteProteinBody1": "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.",
-    "bananaLatteProteinBody2": "Check dairy/allergen labels. Drink chilled RTD soon after opening.",
-    "bananaLatteProteinTip": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.",
+    "bananaLatteProteinTitle": "Protein lắc chuối Latte",
+    "bananaLatteProteinDesc": "Daiso chuối-latte protein lắc - thức uống giàu protein dễ dàng.",
+    "bananaLatteProteinBody1": "Sinh tố protein chuối-latte là món Daiso dễ dàng dùng cho bữa sáng hoặc sau khi tập luyện trên đường.",
+    "bananaLatteProteinBody2": "Kiểm tra nhãn sữa/chất gây dị ứng. Uống RTD ướp lạnh ngay sau khi mở.",
+    "bananaLatteProteinTip": "Mẹo mua hàng\n\nGói bột di chuyển dễ dàng hơn chất lỏng; kiểm tra ngày trên chai RTD.",
     "bananaLatteProteinBody": [
       {
         "type": "text",
@@ -1177,11 +1177,11 @@
         "ru": "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles."
       }
     ],
-    "berryAppleGranolaTitle": "Berry Apple Granola Cup",
-    "berryAppleGranolaDesc": "Daiso Berry Apple granola cup — berry-apple cereal cup.",
-    "berryAppleGranolaBody1": "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.",
-    "berryAppleGranolaBody2": "Check nut/gluten allergens. Cup format is hotel-friendly.",
-    "berryAppleGranolaTip": "Buying tip\n\nCheck the date and keep dry after opening.",
+    "berryAppleGranolaTitle": "Cốc Granola Berry táo",
+    "berryAppleGranolaDesc": "Cốc granola Daiso Berry Apple - cốc ngũ cốc berry-táo.",
+    "berryAppleGranolaBody1": "Cốc granola Berry Apple là bữa sáng/bữa ăn nhẹ của Daiso với hương vị táo-berry - kết hợp với sữa hoặc sữa chua.",
+    "berryAppleGranolaBody2": "Kiểm tra chất gây dị ứng hạt/gluten. Định dạng cốc thân thiện với khách sạn.",
+    "berryAppleGranolaTip": "Mẹo mua hàng\n\nKiểm tra ngày và giữ khô sau khi mở.",
     "berryAppleGranolaBody": [
       {
         "type": "text",
@@ -1206,11 +1206,11 @@
         "ru": "Buying tip\n\nCheck the date and keep dry after opening."
       }
     ],
-    "allTheBetterCacaoTitle": "All the Better Low-Sugar Cacao",
-    "allTheBetterCacaoDesc": "Daiso All the Better low-sugar cacao — less-sweet cacao treat.",
-    "allTheBetterCacaoBody1": "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.",
-    "allTheBetterCacaoBody2": "Low-sugar still may have calories/caffeine — read the label. Small packs travel well.",
-    "allTheBetterCacaoTip": "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.",
+    "allTheBetterCacaoTitle": "Cacao ít đường càng tốt hơn",
+    "allTheBetterCacaoDesc": "Daiso All the Better cacao ít đường - món cacao ít ngọt.",
+    "allTheBetterCacaoBody1": "Ca cao ít đường All the Better là lựa chọn của Daiso dành cho đồ ăn nhẹ ít ngọt hoặc ca cao nóng.",
+    "allTheBetterCacaoBody2": "Ít đường vẫn có thể chứa calo/caffeine - hãy đọc nhãn. Gói nhỏ đi du lịch tốt.",
+    "allTheBetterCacaoTip": "Mẹo mua hàng\n\nSo sánh tuyên bố 'ít đường / không đường' với số gam đường thực tế.",
     "allTheBetterCacaoBody": [
       {
         "type": "text",
@@ -1236,10 +1236,10 @@
       }
     ],
     "lactoFitTitle": "Lacto-Fit",
-    "lactoFitDesc": "Chong Kun Dang Lacto-Fit — popular Korean probiotic supplement.",
-    "lactoFitBody1": "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.",
-    "lactoFitBody2": "Read functional-food labels and dosing. Check your country’s import rules. Kids vs adult lines differ.",
-    "lactoFitTip": "Buying tip\n\nCompare Olive Young and mart bundle deals.",
+    "lactoFitDesc": "Chong Kun Dang Lacto-Fit — thực phẩm bổ sung men vi sinh phổ biến của Hàn Quốc.",
+    "lactoFitBody1": "Lacto-Fit là loại men vi sinh bán chạy nhất của Chong Kun Dang Health. Gói dạng que thường được bán ở các hiệu thuốc, Olive Young và siêu thị.",
+    "lactoFitBody2": "Đọc nhãn thực phẩm chức năng và liều lượng. Kiểm tra các quy tắc nhập khẩu của quốc gia bạn. Dòng trẻ em và người lớn khác nhau.",
+    "lactoFitTip": "Mẹo mua hàng\n\nSo sánh các giao dịch theo gói của Olive Young và mart.",
     "lactoFitBody": [
       {
         "type": "text",
@@ -1275,11 +1275,11 @@
         "ru": "Buying tip\n\nCompare Olive Young and mart bundle deals."
       }
     ],
-    "koreaEundanVitCTitle": "Korea Eundan Vitamin C 1000",
-    "koreaEundanVitCDesc": "Korea Eundan Vitamin C 1000 — portable vitamin C tablets.",
-    "koreaEundanVitCBody1": "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.",
-    "koreaEundanVitCBody2": "Check 1000mg per tablet and daily limits; take after meals if your stomach is sensitive.",
-    "koreaEundanVitCTip": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.",
+    "koreaEundanVitCTitle": "Hàn Quốc Eundan Vitamin C 1000",
+    "koreaEundanVitCDesc": "Korea Eundan Vitamin C 1000 — viên vitamin C cầm tay.",
+    "koreaEundanVitCBody1": "Korea Eundan Vitamin C 1000 là sản phẩm bổ sung vitamin C phổ biến của Hàn Quốc được bán tại các hiệu thuốc, cửa hàng tiện lợi, Olive Young, siêu thị.",
+    "koreaEundanVitCBody2": "Kiểm tra 1000mg mỗi viên và giới hạn hàng ngày; uống sau bữa ăn nếu dạ dày của bạn nhạy cảm.",
+    "koreaEundanVitCTip": "Mẹo mua hàng\n\nGói/hộp du lịch nhỏ được đóng gói gọn gàng trong vali.",
     "koreaEundanVitCBody": [
       {
         "type": "text",
@@ -1304,11 +1304,11 @@
         "ru": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase."
       }
     ],
-    "yangbanKimBugakTitle": "Yangban Gim Bugak Series",
-    "yangbanKimBugakDesc": "Yangban gim bugak — crispy fried seaweed snack series.",
-    "yangbanKimBugakBody1": "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.",
-    "yangbanKimBugakBody2": "Oily/salty — eat soon after opening and keep dry.",
-    "yangbanKimBugakTip": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.",
+    "yangbanKimBugakTitle": "Dòng sản phẩm Yangban Gim Bugak",
+    "yangbanKimBugakDesc": "Yangban gim bugak - loạt món ăn vặt rong biển chiên giòn.",
+    "yangbanKimBugakBody1": "Món gim bugak của Yangban là rong biển chiên giòn. Đồ ăn nhẹ quà tặng phổ biến ở các siêu thị, góc lưu niệm và sân bay.",
+    "yangbanKimBugakBody2": "Dầu/mặn - ăn ngay sau khi mở và giữ khô.",
+    "yangbanKimBugakTip": "Mẹo mua hàng\n\nĐóng gói vào trung tâm vali; nhiều gói rất dễ chia sẻ.",
     "yangbanKimBugakBody": [
       {
         "type": "text",
@@ -1333,11 +1333,11 @@
         "ru": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share."
       }
     ],
-    "jjawangRamenTitle": "Nongshim Jjawang Ramen",
-    "jjawangRamenDesc": "Nongshim Jjawang — rich jjajang (black bean) ramen.",
-    "jjawangRamenBody1": "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.",
-    "jjawangRamenBody2": "Many versions drain water then mix sauce. Double-bag liquid packets in luggage.",
-    "jjawangRamenTip": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.",
+    "jjawangRamenTitle": "Ramen Nongshim Jjawang",
+    "jjawangRamenDesc": "Nongshim Jjawang - ramen jjajang (đậu đen) đậm đà.",
+    "jjawangRamenBody1": "Nongshim Jjawang là món mì ramen với nước sốt đậu đen đậm đà. Thường được mua theo gói với Chapagetti làm quà lưu niệm có thể ăn được.",
+    "jjawangRamenBody2": "Nhiều phiên bản xả nước rồi trộn nước sốt. Gói chất lỏng túi đôi trong hành lý.",
+    "jjawangRamenTip": "Mẹo mua hàng\n\nƯu đãi ramen ở đại siêu thị thường cao hơn giá ở cửa hàng tiện lợi.",
     "jjawangRamenBody": [
       {
         "type": "text",
@@ -1362,11 +1362,11 @@
         "ru": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices."
       }
     ],
-    "osullocJejuGreenTeaTitle": "Osulloc Jeju Pure Green Tea & Sweets",
-    "osullocJejuGreenTeaDesc": "Osulloc Jeju pure green tea bags and green-tea sweets.",
-    "osullocJejuGreenTeaBody1": "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.",
-    "osullocJejuGreenTeaBody2": "Tea bags travel light; protect cookies from crushing/heat. Official stores have clearer gift sets.",
-    "osullocJejuGreenTeaTip": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.",
+    "osullocJejuGreenTeaTitle": "Trà xanh và kẹo nguyên chất Osulloc Jeju",
+    "osullocJejuGreenTeaDesc": "Túi trà xanh nguyên chất Osulloc Jeju và kẹo trà xanh.",
+    "osullocJejuGreenTeaBody1": "Túi trà xanh nguyên chất Jeju và bánh quy trà xanh của Osulloc là những món quà trà cổ điển từ các quán trà, cửa hàng bách hóa và sân bay Jeju/Seoul.",
+    "osullocJejuGreenTeaBody2": "Túi trà du lịch nhẹ; bảo vệ cookie khỏi bị nghiền/nhiệt. Các cửa hàng chính thức có bộ quà tặng rõ ràng hơn.",
+    "osullocJejuGreenTeaTip": "Mẹo mua hàng\n\nSo sánh Bảo tàng Trà Jeju, Myeongdong và các cửa hàng bách hóa.",
     "osullocJejuGreenTeaBody": [
       {
         "type": "text",
@@ -1391,10 +1391,10 @@
         "ru": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets."
       }
     ],
-    "koreanTraditionalAccessoriesTitle": "Korean Traditional Accessories",
-    "koreanTraditionalAccessoriesDesc": "Norigae, binyeo, and hanbok-style accessory souvenirs.",
-    "koreanTraditionalAccessoriesBody1": "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.",
-    "koreanTraditionalAccessoriesBody2": "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand and ask about gift wrap.",
+    "koreanTraditionalAccessoriesTitle": "Phụ Kiện Truyền Thống Hàn Quốc",
+    "koreanTraditionalAccessoriesDesc": "Quà lưu niệm phụ kiện theo phong cách Norigae, binyeo và hanbok.",
+    "koreanTraditionalAccessoriesBody1": "Các phụ kiện truyền thống của Hàn Quốc - bùa norigae, kẹp tóc binyeo, trâm cài/dây móc khóa hanbok, hoa tai có hoa văn - là những món quà văn hóa di động. Hãy tìm chúng ở Insadong, Chợ Tongin, các làng dân gian và các góc truyền thống của cửa hàng bách hóa.",
+    "koreanTraditionalAccessoriesBody2": "Cửa hàng chính thức của Làng Dân gian Hàn Quốc cũng hữu ích cho các mặt hàng truyền thống. Kiểm tra bề mặt kim loại/vải bằng tay và hỏi về cách gói quà.",
     "koreanTraditionalAccessoriesTip": "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
     "koreanTraditionalAccessoriesStoreLabel": "Korean Folk Village store →",

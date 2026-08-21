@@ -29,50 +29,50 @@
     "catFashion": "衣類・ファッション",
     "catBeauty": "ビューティー",
     "maskTitle": "KF94 masks",
-    "maskDesc": "Dust masks from pharmacies, convenience stores, and Olive Young",
+    "maskDesc": "薬局、コンビニ、オリーブヤングの防塵マスク",
     "stationeryTitle": "モナミ・Iconic・キャラ文具",
     "stationeryDesc": "モナミ153、Iconic手帳、カカオフレンズ付箋。",
-    "oliveTitle": "Olive Young",
-    "oliveDesc": "Picks, sales, tax-free — Korea’s beauty shopping hub",
+    "oliveTitle": "オリーブ・ヤング",
+    "oliveDesc": "厳選、販売、免税 — 韓国のビューティー ショッピング ハブ",
     "daisoTitle": "ダイソー旅行・キャラグッズ",
     "daisoDesc": "ケーブル整理、エコバッグ、歯磨き粉絞り、カカオフレンズ等。",
     "snackTitle": "ペペロ・ハニーバターチップ・エビせん",
     "snackDesc": "ペペロ、ハニーバターチップ、セウカンなどマート・コンビニの定番。",
-    "ramenTitle": "ブルダック・チャパゲティ・ノグリ",
+    "ramenTitle": "ブルダック、チャパゲティ、ノグリ",
     "ramenDesc": "三養ブルダック、農心チャパゲティ・ノグリ・辛ラーメンのマルチ。",
     "teaTitle": "正官庄・柚子茶・麦茶",
     "teaDesc": "正官庄紅参、柚子茶、麦・とうもろこしティーバッグセット。",
     "honeyTitle": "はちみつ・薬菓・韓菓セット",
     "honeyDesc": "アカシア蜂蜜、柚子蜜、薬菓・韓菓のギフト箱。",
     "uniqloTitle": "Uniqlo",
-    "uniqloDesc": "Korea-only colors and character collab tees",
+    "uniqloDesc": "韓国限定カラーとキャラクターのコラボTシャツ",
     "spaTitle": "SPAO",
-    "spaDesc": "Character collabs and affordable SPA fashion",
-    "socksTitle": "Sock & tights packs",
-    "socksDesc": "Multi-packs from Daiso, SPAO, and more",
+    "spaDesc": "キャラクターコラボやお手頃価格のSPAファッション",
+    "socksTitle": "ソックス&タイツパック",
+    "socksDesc": "ダイソーやSPAOなどのマルチパック",
     "hanbokTitle": "生活韓服・小物",
     "hanbokDesc": "レンタル以外に、ノリゲやハンカチ、ミニキーホルダーも人気です。",
     "sheetTitle": "メディヒール・numbuzin・TIRTIR",
     "sheetDesc": "メディヒールN.M.F、numbuzin、TIRTIRのボックスセット。",
     "sunscreenTitle": "ラウンドラボ・Tocobo・グリーンフィンガー",
     "sunscreenDesc": "白樺サンクリーム、Tocoboサンスティック、子ども用SPFなど。",
-    "lipstickTitle": "rom&nd・ペリペラ・CLIO",
-    "lipstickDesc": "ジューシーラスティングティント、インクベルベット、キルカバー。",
-    "kpopTitle": "K-POP フォトカード",
+    "lipstickTitle": "ロムアンド、ペリペラ、クリオ",
+    "lipstickDesc": "ジューシー ラスティング ティント、ペリペラ インク ベルベット、CLIO キル カバー。",
+    "kpopTitle": "K-POPフォトカード",
     "kpopDesc": "タワーレコード・Hottracks・Weverseの公式トレカ。",
     "tapHint": "カードを押すと購入場所と選び方のコツが見られます。",
     "readMore": "詳しく見る →",
     "backList": "← ショッピング＆遊び",
     "tipTitle": "買うときのヒント",
-    "maskBody1": "KF94 (or KF80) masks are a common travel buy. Brands like Jaksim, Bluedot, and Aer come in small packs at convenience stores, Daiso, Olive Young, and pharmacies.",
-    "maskBody2": "5–10 packs travel well. Check the KF grade and pack date.",
-    "maskTip": "For bulk, local pharmacy multipacks are often fine.",
+    "maskBody1": "KF94 (または KF80) マスクは旅行用によく購入されます。 Jaksim、Bluedot、Aer などのブランドは、コンビニエンス ストア、ダイソー、オリーブ ヤング、薬局で小さなパックで販売されています。",
+    "maskBody2": "5 ～ 10 個のパックは持ち運びに便利です。 KF グレードと梱包日を確認してください。",
+    "maskTip": "大量の場合は、地元の薬局のマルチパックで十分なことがよくあります。",
     "stationeryBody1": "モナミ153セット、Iconic手帳/シール、カカオ/BT21マスキング、Alphaノートなどがダイソーやアートボックスで人気。",
     "stationeryBody2": "限定コラボはアートボックス等が狙い目。シール類は軽くて土産向き。",
     "stationeryTip": "買い方\n\n贈り物はケースセット、自分用は単品が合理的。",
-    "oliveBody1": "Olive Young is the drugstore travelers visit most. Start with Olive Young Picks and sale shelves for masks, sunscreen, tints, and skincare; ask staff about app coupons and GWP.",
-    "oliveBody2": "Large Myeongdong/Hongdae/Gangnam stores stock more; airport shops sell out faster. Confirm tax-free before checkout.",
-    "oliveTip": "For hyped items, go early or use pickup options.",
+    "oliveBody1": "オリーブ ヤングは旅行者が最もよく訪れるドラッグストアです。オリーブ ヤング ピックとマスク、日焼け止め、ティント、スキンケアの販売棚から始めます。アプリクーポンやGWPについてはスタッフにお問い合わせください。",
+    "oliveBody2": "明洞/弘大/江南の大型店では在庫が豊富です。空港の売店は売り切れるのが早いです。チェックアウト前に免税を確認してください。",
+    "oliveTip": "話題のアイテムを購入するには、早めに行くか、ピックアップ オプションを使用してください。",
     "daisoBody1": "人気は圧縮袋・ケーブルタイ、シリコントング、ミニまな板、歯磨き粉絞り、カカオフレンズ/ちいかわ/サンリオ文具。均一価格でまとめ買いしやすいです。",
     "daisoBody2": "割れ物は梱包を依頼。案内板で旅行/収納/キッチンを。観光地店は混雑しがち。",
     "daisoTip": "買い方\n\n会計前に重さを確認し、隙間に入る小物中心に。",
@@ -88,15 +88,15 @@
     "honeyBody1": "アカシア/栗蜂蜜、柚子・生姜茶、薬菓・韓菓セットが仁寺洞や百貨店・空港で人気。割れやすい薬菓は緩衝包装を。",
     "honeyBody2": "蜂蜜は国ごとに持ち込み規制あり。スティック/パウチが安心。",
     "honeyTip": "買い方\n\n密封ラベルと期限表示のある製品を選びましょう。",
-    "uniqloBody1": "Korean Uniqlo stores often carry exclusive colors, graphics, and character collabs that travelers buy as souvenirs.",
-    "uniqloBody2": "Sales are competitive and tax-free procedures are familiar. Check cm sizes in the fitting room.",
-    "uniqloTip": "Large stores in Myeongdong, Times Square, and COEX usually have better stock.",
-    "spaBody1": "SPAO is a Korean SPA brand known for tees, sleepwear, and character collaborations that change by season.",
-    "spaBody2": "Korean sizes can run small — size up if unsure, and keep the receipt.",
-    "spaTip": "Compare Myeongdong, Hongdae, and Gangnam street shops; hunt sales.",
-    "socksBody1": "3–5 pair sock and tights packs from Daiso, SPAO, Uniqlo, and similar stores are good value and easy gifts.",
-    "socksBody2": "Individually wrapped packs travel well in suitcase gaps.",
-    "socksTip": "Multi-packs are usually cheaper than singles.",
+    "uniqloBody1": "韓国のユニクロ店舗では、旅行者がお土産として購入する限定カラー、グラフィック、キャラクターコラボ商品が多く販売されています。",
+    "uniqloBody2": "販売は競争力があり、免税手続きはよく知られています。試着室でcmサイズをご確認ください。",
+    "uniqloTip": "明洞、タイムズスクエア、COEX の大型店の在庫は通常より豊富です。",
+    "spaBody1": "SPAO は、T シャツやスリープウェア、季節ごとに変わるキャラクターとのコラボレーションで知られる韓国の SPA ブランドです。",
+    "spaBody2": "韓国のサイズは小さい場合があります。不明な場合はサイズを大きくし、レシートを保管してください。",
+    "spaTip": "明洞、弘大、江南通りのお店を比較;販売を狩る。",
+    "socksBody1": "ダイソー、SPAO、ユニクロなどの靴下とタイツの3～5足パックは、お手頃でギフトにも最適です。",
+    "socksBody2": "個別に包装されたパックはスーツケースの隙間にうまく収まります。",
+    "socksTip": "通常、マルチパックはシングルよりも安くなります。",
     "hanbokBody1": "レンタル韓服以外に、生活韓服風トップス、ノリゲ、ハンカチ、ミニキーホルダーなど小物土産も人気です。",
     "hanbokBody2": "観光地は価格差が大きいので、仁寺洞・通仁市場・百貨店の伝統コーナーを比較を。生地と縫製を手で確認。",
     "hanbokTip": "写真ならレンタル、持ち帰りなら小物が現実的。本格韓服はかさばりしわになりやすいです。",
@@ -548,10 +548,10 @@
     "catSnack": "お菓子",
     "catBakery": "ベーカリー",
     "peperoTitle": "ペペロ",
-    "peperoDesc": "ロッテのペペロ。アーモンド・ヌードなど定番のお土産スティック菓子。",
-    "peperoBody1": "ペペロはロッテのスティック菓子。チョコ・クリームコーティング、ヌードは中にクリーム。アーモンド・ヌード・季節限定がマートやコンビニにあります。",
-    "peperoBody2": "11月11日のペペロデー前後はギフトセットが増えます。夏は溶けやすいので出発直前や涼しい保管を。",
-    "peperoTip": "買い方\n\nマルチパックが配りやすいです。空港より大型マートがお得なことが多いです。",
+    "peperoDesc": "ロッテ ペペロ — アーモンド、ヌード、チョコレート スティック スナック、定番のギフト。",
+    "peperoBody1": "ペペロはロッテのビスケットスティックスナックで、チョコレート/クリームでコーティングされているか、「ヌード」バージョンが詰められています。アーモンド、ヌード、オリジナル、季節のフレーバーがマート、コンビニ、ダイソーに並びます。",
+    "peperoBody2": "ペペロの日（11月11日）の前後にはギフトセットがブームになります。夏にはチョコレートが溶ける可能性があるため、出発近くに購入するか、冷やしておいてください。",
+    "peperoTip": "購入のヒント\n\nマルチパックは共有が簡単です。通常、ハイパーマーケットは空港や観光客向けの価格を上回ります。",
     "peperoBody": [
       {
         "type": "text",
@@ -587,11 +587,11 @@
         "ru": "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices."
       }
     ],
-    "marketOBrowniesTitle": "マーケットOブラウニー",
-    "marketOBrowniesDesc": "オリオン Market Oシリーズのしっとりチョコブラウニー。",
-    "marketOBrowniesBody1": "Market Oブラウニーはオリオンのしっとりチョコブラウニー。コンビニ・マートで見つけやすいです。",
-    "marketOBrowniesBody2": "複数枚入りでシェアしやすく、ギフトセットもあります。賞味期限と高温を避けて。",
-    "marketOBrowniesTip": "買い方\n\nMarket O表示を確認し、季節限定があれば比較を。",
+    "marketOBrowniesTitle": "マーケット・オー・ブラウニー",
+    "marketOBrowniesDesc": "Orion Market O ブラウニー – ソフトチョコレートブラウニースナック。",
+    "marketOBrowniesBody1": "マーケット オー ブラウニーは、オリオンのソフト チョコレート ブラウニー シリーズで、コンビニエンス ストアやマートのスナックコーナーで簡単に見つけることができます。",
+    "marketOBrowniesBody2": "複数ピースのパックは共有可能です。ギフトバンドルも登場。日付を確認し、熱を避けて保管してください。",
+    "marketOBrowniesTip": "購入のヒント\n\nMarket O のラベルを探し、入手可能な場合は季節のフレーバーを比較してください。",
     "marketOBrowniesBody": [
       {
         "type": "text",
@@ -627,11 +627,11 @@
         "ru": "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available."
       }
     ],
-    "chocoHeimCouqueTitle": "チョコヘイム・ククダス",
+    "chocoHeimCouqueTitle": "チョコハイム＆ククダス",
     "chocoHeimCouqueDesc": "クラウン チョコヘイム・ククダス — チョコ／ホワイトクリームサンドの定番。",
-    "chocoHeimCouqueBody1": "チョコヘイムとククダスはクラウンの代表サンドビスケット。チョコまたはホワイトクリーム入り。食事サンドとは別物です。",
-    "chocoHeimCouqueBody2": "マートやお土産コーナーに箱・マルチがあります。ホワイトとチョコをセットにすると良いです。",
-    "chocoHeimCouqueTip": "買い方\n\n割れやすいので荷物の中央に。大きすぎる箱より携帯パックが安心です。",
+    "chocoHeimCouqueBody1": "チョコハイムとクークダスは、サクサクしたクッキーの間にチョコレートまたはホワイトクリームを挟んだクラウンの代表的なサンドイッチビスケットです。風味豊かなサンドイッチではなく、デザートビスケットです。",
+    "chocoHeimCouqueBody2": "ボックスやマルチパックは、マートやギフト コーナーでよく見られます。ホワイト味とチョコレート味を組み合わせたギフトセットです。",
+    "chocoHeimCouqueTip": "購入のヒント\n\n慎重に梱包してください。ビスケットは壊れやすいためです。小さなパックは、巨大な箱よりも安全に移動できます。",
     "chocoHeimCouqueBody": [
       {
         "type": "text",
@@ -667,11 +667,11 @@
         "ru": "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes."
       }
     ],
-    "ohYesChocoPieTitle": "オイエス・チョコパイ",
+    "ohYesChocoPieTitle": "オーイエス＆チョコパイ",
     "ohYesChocoPieDesc": "ヘテ オイエス（四角ケーキ）とオリオン チョコパイ（丸・マシュマロ）— チョココーティング系。",
-    "ohYesChocoPieBody1": "オイエス（ヘテ）は四角いソフトケーキにクリーム＋チョココーティング。チョコパイ（オリオン）は丸型でマシュマロ入り。形と中身が違います。",
-    "ohYesChocoPieBody2": "コンビニの個包装からマートの箱まであります。夏は溶けやすいので涼しい保管を。",
-    "ohYesChocoPieTip": "買い方\n\nギフトは箱セットがおすすめ。四角オイエスと丸チョコパイを区別して。",
+    "ohYesChocoPieBody1": "Haitai Oh Yesは、クリームとチョコレートでコーティングされた四角いソフトケーキです。オリオンチョコパイは丸いケーキの層の間にマシュマロが入っています。同じ「パイスナック」ファミリーですが、形と中身が異なります。",
+    "ohYesChocoPieBody2": "シングルまたはボックスで販売されます。夏はチョコレートコーティングが溶けてしまうことがありますので、冷やしておいてください。",
+    "ohYesChocoPieTip": "購入のヒント\n\nボックス入りのセットはギフトにも最適です。見分け方：四角いオーイエスと丸いチョコパイ。",
     "ohYesChocoPieBody": [
       {
         "type": "text",
@@ -709,9 +709,9 @@
     ],
     "butterWaffleTitle": "バターワッフル",
     "butterWaffleDesc": "クラウン バターワッフル — ワッフル模様のサクサクバタービスケット。コーヒーに合う定番。",
-    "butterWaffleBody1": "バターワッフルはクラウンの定番。薄いワッフル格子の香ばしいバタービスケットで、個包装ボックスがマート・コンビニに多いです。",
-    "butterWaffleBody2": "コーヒーやお茶に合い、荷物にも入れやすいです。開封後は早めに。",
-    "butterWaffleTip": "買い方\n\n「クラウン バターワッフル」表示を。まとめ売りが多いです。",
+    "butterWaffleBody1": "クラウンのバターワッフルは、ワッフルグリッドと強いバターの香りを備えたロングセラーのサクサクビスケットです。個別包装された箱は、マートやコンビニエンス ストアで一般的です。",
+    "butterWaffleBody2": "コーヒーや紅茶との相性も良く、詰めやすいです。サクサク感を保つため、開封後はお早めにお召し上がりください。",
+    "butterWaffleTip": "購入のヒント\n\nクラウンバターワッフルのラベルを探してください。マルチパック取引が一般的です。",
     "butterWaffleBody": [
       {
         "type": "text",
@@ -749,8 +749,8 @@
     ],
     "hotteokBungeoTitle": "ホットク入りチャムたい焼き",
     "hotteokBungeoDesc": "オリオン ホットク入りチャムたい焼き — たい焼き型ケーキに黒糖・シナモン・ナッツ風フィリング。",
-    "hotteokBungeoBody1": "オリオン「チャムたい焼き」系。屋台のたい焼き・ホットクがモチーフの常温ケーキ菓子。黒糖・シナモン・アーモンド・ピーナッツ風フィリング。屋台の焼きたてとは別物です。",
-    "hotteokBungeoBody2": "コンビニ・マートの箱・マルチで。短時間レンジで中が柔らかくなる案内もあります。",
+    "hotteokBungeoBody1": "屋台の魚のパンとホットクからインスピレーションを得たオリオン チャム ブンゴッパンのバリエーション。黒砂糖、シナモン、アーモンド、ピーナッツの詰め物が入った保存可能なケーキ スナックです。屋台のホットペストリーではありません。",
+    "hotteokBungeoBody2": "コンビニエンスストアやマートなどでボックス/マルチパックで販売されています。一部のパックでは、中身を柔らかくするために電子レンジで簡単に温めることを推奨しています。",
     "hotteokBungeoTip": "買い方\n\nオリオン「ホットク入りチャムたい焼き」表示を。オリジナルと並ぶことが多いです。",
     "hotteokBungeoBody": [
       {
@@ -789,9 +789,9 @@
     ],
     "sableTitle": "サブレ",
     "sableDesc": "ヘテ サブレ — サクサクのフランス風バタークッキー。長年の定番。",
-    "sableBody1": "サブレはヘテの代表クッキー。サクサク食感と控えめな甘さ・バター風味。マート・コンビニ菓子コーナーで箱・まとめ売りがあります。",
-    "sableBody2": "コーヒーやお茶に合い、甘さ控えめで大人の土産にも。割れやすいので緩衝があるものを。",
-    "sableTip": "買い方\n\nヘテ サブレ表示を。大型マートまとめがコンビニより安いことが多いです。",
+    "sableBody1": "ヘテサブレは韓国を代表するクッキーです。サクサクした食感とマイルドな甘さとバターの風味が特徴です。マートやコンビニエンススナックの通路で簡単に見つけることができます。",
+    "sableBody2": "コーヒーや紅茶と合わせても甘すぎず、安心できる大人のギフトです。クッション性の高いパックを選びましょう。 they break easily.",
+    "sableTip": "購入のヒント\n\nハイタイサブレを探してください。ハイパーマーケットのマルチパックはコンビニエンス価格を上回ることがよくあります。",
     "sableBody": [
       {
         "type": "text",
@@ -829,8 +829,8 @@
     ],
     "barleyCookieTitle": "ボリクッキー",
     "barleyCookieDesc": "麦風味の乾パン・クッキー — 香ばしく甘さ控えめの韓国風おやつ土産。",
-    "barleyCookieBody1": "ボリクッキーは麦の香ばしい乾パン・ビスケット類。マートの乾パンコーナーや伝統菓子ギフトに混ざることもあります。",
-    "barleyCookieBody2": "甘さ控えめでお茶に合います。ギフトパックがあると便利です。",
+    "barleyCookieBody1": "「大麦クッキー」とは、香ばしい大麦クラッカー、ビスケット、クッキーを指します。マートのクラッカーの通路にある発酵大麦乾パン、または伝統的なギフトの詰め合わせに混ぜて売られています。",
+    "barleyCookieBody2": "ほんのり甘い。紅茶やコーヒーと合わせて。ギフト用の缶やジップパックはうまく梱包できます。",
     "barleyCookieTip": "買い方\n\n大型マート・百貨店・仁寺洞で「보리」・乾パンを。ブランドで名前が違います。",
     "barleyCookieBody": [
       {
@@ -869,8 +869,8 @@
     ],
     "bichobiTitle": "ビチョビ",
     "bichobiDesc": "オリオン ビチョビ — 全粒粉ビスケットにヘーゼルナッツチョコを挟んだサンド菓子。",
-    "bichobiBody1": "ビチョビはオリオンのサンドビスケット。メイプルの全粒粉ビスケットにヘーゼルナッツ入りチョコを挟みます。ヘテの「ビチョコ」とは別商品です。",
-    "bichobiBody2": "マート・コンビニ・土産コーナーで見つけやすく、いちごなど派生もあります。夏は溶けに注意。",
+    "bichobiBody1": "Bichobi はオリオンのサンドイッチ ビスケットです。メープル グレーズをかけた全粒粉クッキーの間にヘーゼル ナッツ チョコレートが挟まれています。ハイタイ「ビチョコ」ではありません。",
+    "bichobiBody2": "マートやコンビニエンスストア、ギフトコーナーなどでよく見かける。イチゴバージョンと特別バージョンも登場します。観光客に人気。夏には溶けるチョコレートを眺めてください。",
     "bichobiTip": "買い方\n\nパッケージの「ビチョビ」・オリオン表示を確認。品切れしやすいので見かけたら早めに。",
     "bichobiBody": [
       {
@@ -909,9 +909,9 @@
     ],
     "kkobukChipTitle": "コブクチップ",
     "kkobukChipDesc": "オリオン コブクチップ — 亀の甲羅のような4層コーンスナック。",
-    "kkobukChipBody1": "コブクチップはオリオンの4層スナック。ポテトチップスではなくコーン系で、コンソメ・チョコなど味があります。",
-    "kkobukChipBody2": "かさばるのでジップ袋推奨。コンビニよりマートまとめがお得なことが多いです。",
-    "kkobukChipTip": "買い方\n\n夏はチョコ味より塩味が安心です。",
+    "kkobukChipBody1": "コブック チップスは、コンソメ、チョコレート、その他のフレーバーが入ったオリオンの 4 層のカリカリ スナックです。ポテトチップスというよりもコーン スナックに近いです。",
+    "kkobukChipBody2": "かさばる場合は、圧縮袋またはジッパー袋に入れて荷物に入れます。マート マルチパックはコンビニエンス価格を上回ることがよくあります。",
+    "kkobukChipTip": "購入のヒント\n\n夏はチョコレートフレーバーが溶けやすくなります。風味豊かな風味がよりよく伝わります。",
     "kkobukChipBody": [
       {
         "type": "text",
@@ -949,9 +949,9 @@
     ],
     "bbangBujangTitle": "パン部長シリーズ",
     "bbangBujangDesc": "農心パン部長 — 塩パン・チョコパン・ソルティねじりなどパン風ベイカリースナック。",
-    "bbangBujangBody1": "パン部長は農心のベイカリースナック。クロワッサン・塩パン・チョコパン風、ソルティねじりなど。コンビニ・マートで並んで売られることが多いです。",
-    "bbangBujangBody2": "1味でも、詰め合わせでも土産になります。季節で名前が変わることも。",
-    "bbangBujangTip": "買い方\n\n農心パン部長のロゴとアレルギー表示（小麦・乳）を確認。",
+    "bbangBujangBody1": "バン ブジャンは農心のベーカリー スナック ブランドです。クロワッサン、塩パン、チョコレートブレッド風のポテトチップスに塩キャラメルを加えたもので、パン屋のフレーバーがカリカリのスナックとして並べられていることがよくあります。",
+    "bbangBujangBody2": "1つのフレーバーを選択するか、ギフトセットを組み合わせてください。季節によって名前が変わる場合があります。",
+    "bbangBujangTip": "購入のヒント\n\n農心パンブジャンのロゴとアレルゲンラベル（小麦/乳製品）を確認してください。",
     "bbangBujangBody": [
       {
         "type": "text",
@@ -1029,11 +1029,11 @@
     ],
     "catDaiso": "ダイソー",
     "catHealth": "健康・機能性食品",
-    "drRejuAllTitle": "ドクターリジュオール Advanced PDRNクリーム",
-    "drRejuAllDesc": "Dr.Reju-All Advanced PDRN Rejuvenating Cream — 旅の記念スキンケア。",
-    "drRejuAllBody1": "ドクターリジュオールのPDRNリジュベネーティングクリーム。オリーブヤングやドラッグストアで探す旅行者が多いです。",
-    "drRejuAllBody2": "容量・成分表示・期限を確認。機内液体制限(100ml)に注意。テスターがあれば試してから。",
-    "drRejuAllTip": "買い方\n\n公式・大型店で購入し、帰国時の液体・税関ルールを確認を。",
+    "drRejuAllTitle": "Dr.Reju-All アドバンスト PDRN クリーム",
+    "drRejuAllDesc": "Dr.Reju-All Advanced PDRN Rejuvenating Cream — 人気の旅行用スキンケア ギフト。",
+    "drRejuAllBody1": "Dr.Reju-All Advanced PDRN Rejuvenating Cream は、PDRN を強調した若返りクリームです。旅行者は、オリーブ ヤング、ドラッグストア、デパートの美容フロアでよくこの製品を見つけます。",
+    "drRejuAllBody2": "サイズ、英語ラベル、有効期限を確認してください。クリームは機内液体制限（100ml）にカウントされます。テスターがあれば試してみましょう。",
+    "drRejuAllTip": "購入のヒント\n\n公式ストアまたは主要なストアで購入し、あなたの国の液体/関税規則を確認してください。",
     "drRejuAllBody": [
       {
         "type": "text",
@@ -1069,11 +1069,11 @@
         "ru": "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules."
       }
     ],
-    "mommycareSeaGrapeTitle": "マミケア 海ぶどうスキンパック",
-    "mommycareSeaGrapeDesc": "ダイソーのマミケア海ぶどうスキンパック — コスパスキンケア。",
-    "mommycareSeaGrapeBody1": "ダイソーでよく見かけるマミケア海ぶどうスキンパック。旅の補給・お土産に複数買いしやすいです。",
-    "mommycareSeaGrapeBody2": "成分と肌質表示を確認。敏感肌はパッチテストを。ビューティ/マスク売り場へ。",
-    "mommycareSeaGrapeTip": "買い方\n\n観光地より住宅街・大型店のほうが在庫が多いことがあります。",
+    "mommycareSeaGrapeTitle": "マミーケア海ぶどうスキンパック",
+    "mommycareSeaGrapeDesc": "ダイソーのマミーケア海ぶどうスキンパック - 予算シート/スキンケア。",
+    "mommycareSeaGrapeBody1": "マミーケア海ぶどうスキンパックは、ダイソーでよく見かける手頃な価格のスキンケアです。旅行やギフト用にストックしやすいです。",
+    "mommycareSeaGrapeBody2": "成分と肌タイプのラベルを確認してください。敏感な場合はパッチテストを行ってください。ダイソーの美容・マスクコーナーを覗いてみてください。",
+    "mommycareSeaGrapeTip": "購入のヒント\n\n観光地よりも近隣の店舗や大型のダイソーの方が在庫が充実していることが多いです。",
     "mommycareSeaGrapeBody": [
       {
         "type": "text",
@@ -1109,11 +1109,11 @@
         "ru": "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots."
       }
     ],
-    "sagolHancupTitle": "サゴルハンカップティーバッグ",
-    "sagolHancupDesc": "ダイソーのサゴルハンカップ — 簡単骨スープ風ティー。",
-    "sagolHancupBody1": "熱湯でサゴル風の一杯が作れるティーバッグ。ダイソーの旅・キャンプ向けとして人気です。",
-    "sagolHancupBody2": "ナトリウム・アレルギー表示を確認。ホテルの湯沸かしでもOK。",
-    "sagolHancupTip": "買い方\n\n液体スープよりティーバッグのほうが機内持ち込みしやすいです。",
+    "sagolHancupTitle": "サゴル ハンカップ ティーバッグ",
+    "sagolHancupDesc": "ダイソー サゴル ハンカップ ティーバッグ - 簡単ボーンブロス風カップ。",
+    "sagolHancupBody1": "サゴル ハンカップ ティーバッグをお湯に浸すと、骨スープ風のドリンクが簡単に楽しめます。ダイソーで人気の旅行・キャンプが見つかる。",
+    "sagolHancupBody2": "ナトリウムとアレルゲンのラベルを確認してください。ホテルのケトルは問題なく使えます。",
+    "sagolHancupTip": "購入のヒント\n\n液体スープよりもティーバッグ形式の方が飛行機に乗りやすいです。",
     "sagolHancupBody": [
       {
         "type": "text",
@@ -1139,10 +1139,10 @@
       }
     ],
     "bananaLatteProteinTitle": "バナナラテプロテインシェイク",
-    "bananaLatteProteinDesc": "ダイソーのバナナラテプロテイン — 手軽なタンパク飲料。",
-    "bananaLatteProteinBody1": "バナナラテ風プロテインは旅の朝・運動後の補給に。ダイソーで手軽に買えます。",
-    "bananaLatteProteinBody2": "乳・アレルギー表示を確認。冷蔵RTDは開封後早めに。",
-    "bananaLatteProteinTip": "買い方\n\n粉末は液体制限に有利。RTDは期限を確認。",
+    "bananaLatteProteinDesc": "ダイソーのバナナラテプロテインシェイク - 簡単プロテインドリンク。",
+    "bananaLatteProteinBody1": "バナナラテプロテインシェイクは、朝食や外出先でのトレーニング後に簡単に手に入るダイソーの商品です。",
+    "bananaLatteProteinBody2": "乳製品/アレルゲンのラベルを確認してください。冷やしたRTDは開封後すぐにお飲みください。",
+    "bananaLatteProteinTip": "購入のヒント\n\n粉末パックは液体よりも持ち運びが簡単です。 RTD ボトルの日付を確認してください。",
     "bananaLatteProteinBody": [
       {
         "type": "text",
@@ -1168,10 +1168,10 @@
       }
     ],
     "berryAppleGranolaTitle": "ベリーアップルグラノーラカップ",
-    "berryAppleGranolaDesc": "ダイソーのベリーアップルグラノーラカップ。",
-    "berryAppleGranolaBody1": "ベリー・アップル風のカップグラノーラ。牛乳やヨーグルトと一緒に朝食・おやつに。",
-    "berryAppleGranolaBody2": "ナッツ・グルテン表示を確認。カップ型はホテルでも食べやすいです。",
-    "berryAppleGranolaTip": "買い方\n\n賞味期限と開封後の湿気に注意。",
+    "berryAppleGranolaDesc": "ダイソー ベリーアップルグラノーラカップ — ベリーアップルシリアルカップ。",
+    "berryAppleGranolaBody1": "ベリーアップル グラノーラ カップは、ベリーアップルの雰囲気を持つダイソーの朝食兼スナックで、牛乳やヨーグルトと合わせてご利用いただけます。",
+    "berryAppleGranolaBody2": "ナッツ/グルテンのアレルゲンを確認してください。カップ形式はホテルに優しいです。",
+    "berryAppleGranolaTip": "購入のヒント\n\n日付を確認し、開封後は乾燥した状態で保管してください。",
     "berryAppleGranolaBody": [
       {
         "type": "text",
@@ -1196,11 +1196,11 @@
         "ru": "Buying tip\n\nCheck the date and keep dry after opening."
       }
     ],
-    "allTheBetterCacaoTitle": "オールザベター低糖カカオ",
-    "allTheBetterCacaoDesc": "ダイソーの低糖カカオ — 甘さ控えめ。",
-    "allTheBetterCacaoBody1": "オールザベター低糖カカオは甘さ控えめのカカオ。おやつやホットチョコ用に。",
-    "allTheBetterCacaoBody2": "低糖でもカロリーやカフェインがある場合あり。ラベル確認を。",
-    "allTheBetterCacaoTip": "買い方\n\n『低糖・無糖』表示と実際の糖質量を照合を。",
+    "allTheBetterCacaoTitle": "より良い低糖カカオ",
+    "allTheBetterCacaoDesc": "ダイソー オールザベター 低糖カカオ - 甘さ控えめのカカオおやつ。",
+    "allTheBetterCacaoBody1": "オールベター低糖カカオは、甘さ控えめのスナックやホットココアにおすすめのダイソー商品です。",
+    "allTheBetterCacaoBody2": "低糖質でもカロリーやカフェインが含まれている可能性がありますので、ラベルを読んでください。小さなパックは持ち運びに便利です。",
+    "allTheBetterCacaoTip": "購入のヒント\n\n「低糖/無糖」の表示と実際の砂糖のグラム数を比較してください。",
     "allTheBetterCacaoBody": [
       {
         "type": "text",
@@ -1226,10 +1226,10 @@
       }
     ],
     "lactoFitTitle": "ラクトフィット",
-    "lactoFitDesc": "鍾根堂健康のラクトフィット — 人気の乳酸菌サプリ。",
-    "lactoFitBody1": "ラクトフィットは韓国で人気の乳酸菌。薬局・オリーブヤング・マートのスティックタイプが定番です。",
-    "lactoFitBody2": "機能性表示と摂取方法を確認。帰国時の持ち込みルールも。子ども用と大人用を区別。",
-    "lactoFitTip": "買い方\n\nセールやセットが多いので価格比較を。",
+    "lactoFitDesc": "Chong Kun Dang Lacto-Fit — 人気のある韓国のプロバイオティクスサプリメント。",
+    "lactoFitBody1": "ラクトフィットは、Chong Kun Dang Health のベストセラーのプロバイオティクスです。スティックパックは薬局、オリーブヤング、マートなどでよく売られています。",
+    "lactoFitBody2": "機能性食品のラベルと用量を読んでください。あなたの国の輸入規則を確認してください。子供と大人のラインは異なります。",
+    "lactoFitTip": "購入のヒント\n\nオリーブヤングとマートのバンドルセールを比較してください。",
     "lactoFitBody": [
       {
         "type": "text",
@@ -1265,11 +1265,11 @@
         "ru": "Buying tip\n\nCompare Olive Young and mart bundle deals."
       }
     ],
-    "koreaEundanVitCTitle": "高麗銀丹ビタミンC 1000",
-    "koreaEundanVitCDesc": "高麗銀丹ビタミンC 1000 — 携帯しやすいビタミンC。",
-    "koreaEundanVitCBody1": "高麗銀丹のビタミンC 1000は薬局・コンビニ・オリーブヤングなどで買える定番サプリです。",
-    "koreaEundanVitCBody2": "1錠1000mgと1日摂取量を確認。胃が弱い人は食後に。",
-    "koreaEundanVitCTip": "買い方\n\n旅用ミニパックが荷物に入れやすいです。",
+    "koreaEundanVitCTitle": "韓国ウンダン ビタミンC 1000",
+    "koreaEundanVitCDesc": "韓国 Eundan ビタミン C 1000 — 携帯用ビタミン C タブレット。",
+    "koreaEundanVitCBody1": "韓国ウンダンビタミンC 1000は、薬局、コンビニエンスストア、オリーブヤング、マートで販売されている一般的な韓国のビタミンCサプリメントです。",
+    "koreaEundanVitCBody2": "1 錠あたり 1000mg と 1 日の制限量を確認してください。胃が敏感な場合は食後に服用してください。",
+    "koreaEundanVitCTip": "購入のヒント\n\nトラベルミニパック/ケースはスーツケースにぴったり収まります。",
     "koreaEundanVitCBody": [
       {
         "type": "text",
@@ -1294,11 +1294,11 @@
         "ru": "Buying tip\n\nTravel mini packs/cases pack well in a suitcase."
       }
     ],
-    "yangbanKimBugakTitle": "ヤンバン海苔ブガクシリーズ",
-    "yangbanKimBugakDesc": "ヤンバンの海苔ブガク — サクサク韓国スナック。",
-    "yangbanKimBugakBody1": "海苔を揚げたブガクスナック。マートや空港のお土産に人気です。",
-    "yangbanKimBugakBody2": "油と塩分あり。開封後は早めに、湿気を避けて。",
-    "yangbanKimBugakTip": "買い方\n\n割れやすいので荷物の中央へ。個包装マルチが配りやすいです。",
+    "yangbanKimBugakTitle": "両班金北楽シリーズ",
+    "yangbanKimBugakDesc": "両班キムブガク - サクサク揚げた海苔スナックシリーズ。",
+    "yangbanKimBugakBody1": "両班のキムブガクシリーズは海苔をカリカリに揚げたものです。マートやお土産コーナー、空港などでよく見かけるお土産用のスナック。",
+    "yangbanKimBugakBody2": "油っぽい/塩辛い - 開封後はすぐに食べ、乾燥した状態に保ってください。",
+    "yangbanKimBugakTip": "購入のヒント\n\nスーツケースセンターに詰めてください。マルチパックは共有が簡単です。",
     "yangbanKimBugakBody": [
       {
         "type": "text",
@@ -1323,11 +1323,11 @@
         "ru": "Buying tip\n\nPack in the suitcase center; multipacks are easy to share."
       }
     ],
-    "jjawangRamenTitle": "農心チャワンラーメン",
-    "jjawangRamenDesc": "農心チャワン — 濃厚ジャジャンソース麺。",
-    "jjawangRamenBody1": "濃厚なジャジャンソースが特徴。チャパゲティと一緒にマルチパックでお土産にする人も多いです。",
-    "jjawangRamenBody2": "湯切りしてソースを絡めるタイプが多いです。液状ソースはジップ袋に。",
-    "jjawangRamenTip": "買い方\n\n大型マートのラーメン特価がお得なことが多いです。",
+    "jjawangRamenTitle": "農心のチャワンラーメン",
+    "jjawangRamenDesc": "農心ジャーワン — 濃厚なジャージャン（黒豆）ラーメン。",
+    "jjawangRamenBody1": "農心チャワンは濃厚な黒豆ソースがかかったラーメンです。食用のお土産として、チャパゲッティと一緒にマルチパックで購入されることがよくあります。",
+    "jjawangRamenBody2": "多くのバージョンでは水を切ってからソースを混ぜます。液体のパケットを二重袋に入れて手荷物に入れます。",
+    "jjawangRamenTip": "購入のヒント\n\nハイパーマーケットのラーメンのセール価格は通常、コンビニエンスストアの価格を上回ります。",
     "jjawangRamenBody": [
       {
         "type": "text",
@@ -1352,11 +1352,11 @@
         "ru": "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices."
       }
     ],
-    "osullocJejuGreenTeaTitle": "オスルロク済州純粋緑茶・緑茶菓子",
-    "osullocJejuGreenTeaDesc": "オスルロクの済州純粋緑茶ティーバッグと緑茶のお菓子。",
-    "osullocJejuGreenTeaBody1": "済州純粋緑茶ティーバッグと緑茶クッキーはティーハウス・百貨店・空港の定番お土産です。",
-    "osullocJejuGreenTeaBody2": "ティーバッグは軽く持ち帰りやすい。菓子は割れ・溶けに注意。",
-    "osullocJejuGreenTeaTip": "買い方\n\n済州ティーミュージアム・明洞・百貨店セットを比較を。",
+    "osullocJejuGreenTeaTitle": "オソルロク済州純緑茶＆スイーツ",
+    "osullocJejuGreenTeaDesc": "オソルロク済州純緑茶ティーバッグと緑茶スイーツ。",
+    "osullocJejuGreenTeaBody1": "オソルロックの済州純緑茶ティーバッグと緑茶クッキーは、済州/ソウルのティーハウス、デパート、空港で定番のお茶ギフトです。",
+    "osullocJejuGreenTeaBody2": "ティーバッグは軽く持ち運びできます。クッキーを粉砕や熱から守ります。公式ストアでは、より明確なギフトセットが用意されています。",
+    "osullocJejuGreenTeaTip": "購入のヒント\n\n済州茶博物館、明洞、デパートのセットを比較。",
     "osullocJejuGreenTeaBody": [
       {
         "type": "text",
@@ -1381,10 +1381,10 @@
         "ru": "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets."
       }
     ],
-    "koreanTraditionalAccessoriesTitle": "韓国伝統アクセサリー",
-    "koreanTraditionalAccessoriesDesc": "ノリゲ・かんざし・韓服小物などの伝統アクセサリー。",
-    "koreanTraditionalAccessoriesBody1": "ノリゲ、かんざし、韓服ブローチ・キーホルダーなど持ち帰りやすい文化土産。仁寺洞・通仁市場・民俗村・百貨店の伝統コーナーで選べます。",
-    "koreanTraditionalAccessoriesBody2": "韓国民俗村公式ストアでも伝統小物を探せます。金具・生地の仕上がりを確認し、ギフト包装を聞いてみてください。",
+    "koreanTraditionalAccessoriesTitle": "韓国の伝統アクセサリー",
+    "koreanTraditionalAccessoriesDesc": "ノリゲ、ビニョ、韓服風のアクセサリーのお土産。",
+    "koreanTraditionalAccessoriesBody1": "韓国の伝統的なアクセサリー (ノリゲ チャーム、ビニョ ヘアピン、韓服ブローチ/キーホルダー、模様入りイヤリング) は、持ち運びに便利な文化的な贈り物になります。仁寺洞、通仁市場、民俗村、デパートの伝統コーナーなどで見つけてください。",
+    "koreanTraditionalAccessoriesBody2": "韓国民俗村の公式ショップも伝統品を扱うのに便利です。金属や生地の仕上がりを手作業で確認し、ギフト包装についてもお問い合わせください。",
     "koreanTraditionalAccessoriesTip": "買い方\n\n韓国民俗村ストア: https://www.koreanfolk.co.kr/store — 営業・配送を事前確認を。",
     "koreanTraditionalAccessoriesStoreUrl": "https://www.koreanfolk.co.kr/store",
     "koreanTraditionalAccessoriesStoreLabel": "韓国民俗村ストア →",

@@ -1,0 +1,1410 @@
+{
+  "Tip": {
+    "ja": "ヒント",
+    "zh": "小贴士",
+    "zh-Hant": "小提醒",
+    "vi": "Mẹo",
+    "th": "เคล็ดลับ",
+    "ru": "Совет"
+  },
+  "English": {
+    "ja": "英語",
+    "zh": "英文",
+    "zh-Hant": "英文",
+    "vi": "Tiếng Anh",
+    "th": "ภาษาอังกฤษ",
+    "ru": "English"
+  },
+  "Taxi": {
+    "ja": "タクシー",
+    "zh": "出租车",
+    "zh-Hant": "計程車",
+    "vi": "Taxi",
+    "th": "แท็กซี่",
+    "ru": "Такси"
+  },
+  "Wow Pass": {
+    "ja": "Wow Pass",
+    "zh": "Wow Pass",
+    "zh-Hant": "Wow Pass",
+    "vi": "Wow Pass",
+    "th": "Wow Pass",
+    "ru": "Wow Pass"
+  },
+  "VisitKorea": {
+    "ja": "VisitKorea",
+    "zh": "VisitKorea",
+    "zh-Hant": "VisitKorea",
+    "vi": "VisitKorea",
+    "th": "VisitKorea",
+    "ru": "VisitKorea"
+  },
+  "CU": {
+    "ja": "CU",
+    "zh": "CU",
+    "zh-Hant": "CU",
+    "vi": "CU",
+    "th": "CU",
+    "ru": "CU"
+  },
+  "GS25": {
+    "ja": "GS25",
+    "zh": "GS25",
+    "zh-Hant": "GS25",
+    "vi": "GS25",
+    "th": "GS25",
+    "ru": "GS25"
+  },
+  "7-Eleven": {
+    "ja": "セブンイレブン",
+    "zh": "7-Eleven",
+    "zh-Hant": "7-Eleven",
+    "vi": "7-Eleven",
+    "th": "7-Eleven",
+    "ru": "7-Eleven"
+  },
+  "Emart24": {
+    "ja": "Emart24",
+    "zh": "Emart24",
+    "zh-Hant": "Emart24",
+    "vi": "Emart24",
+    "th": "Emart24",
+    "ru": "Emart24"
+  },
+  "Daiso": {
+    "ja": "ダイソー",
+    "zh": "名创优品(Daiso)",
+    "zh-Hant": "大創(Daiso)",
+    "vi": "Daiso",
+    "th": "ไดโซ",
+    "ru": "Daiso"
+  },
+  "Uniqlo": {
+    "ja": "ユニクロ",
+    "zh": "优衣库",
+    "zh-Hant": "優衣庫",
+    "vi": "Uniqlo",
+    "th": "ยูนิโคล่",
+    "ru": "Uniqlo"
+  },
+  "SPAO": {
+    "ja": "SPAO（スパオ）",
+    "zh": "SPAO",
+    "zh-Hant": "SPAO",
+    "vi": "SPAO",
+    "th": "SPAO",
+    "ru": "SPAO"
+  },
+  "8Seconds": {
+    "ja": "8Seconds（エイトセカンズ）",
+    "zh": "8Seconds",
+    "zh-Hant": "8Seconds",
+    "vi": "8Seconds",
+    "th": "8Seconds",
+    "ru": "8Seconds"
+  },
+  "Basic": {
+    "ja": "Basic（ベーシック）",
+    "zh": "Basic",
+    "zh-Hant": "Basic",
+    "vi": "Basic",
+    "th": "Basic",
+    "ru": "Basic"
+  },
+  "Shoopen": {
+    "ja": "Shoopen（シューペン）",
+    "zh": "Shoopen",
+    "zh-Hant": "Shoopen",
+    "vi": "Shoopen",
+    "th": "Shoopen",
+    "ru": "Shoopen"
+  },
+  "Round Lab": {
+    "ja": "ラウンドラボ",
+    "zh": "Round Lab",
+    "zh-Hant": "Round Lab",
+    "vi": "Round Lab",
+    "th": "Round Lab",
+    "ru": "Round Lab"
+  },
+  "Anua": {
+    "ja": "アヌア",
+    "zh": "Anua",
+    "zh-Hant": "Anua",
+    "vi": "Anua",
+    "th": "Anua",
+    "ru": "Anua"
+  },
+  "Mediheal": {
+    "ja": "メディヒール",
+    "zh": "美迪惠尔",
+    "zh-Hant": "Mediheal",
+    "vi": "Mediheal",
+    "th": "Mediheal",
+    "ru": "Mediheal"
+  },
+  "numbuzin": {
+    "ja": "ナンバーズイン",
+    "zh": "numbuzin",
+    "zh-Hant": "numbuzin",
+    "vi": "numbuzin",
+    "th": "numbuzin",
+    "ru": "numbuzin"
+  },
+  "TIRTIR": {
+    "ja": "ティルティル",
+    "zh": "TIRTIR",
+    "zh-Hant": "TIRTIR",
+    "vi": "TIRTIR",
+    "th": "TIRTIR",
+    "ru": "TIRTIR"
+  },
+  "Tocobo": {
+    "ja": "トコボ",
+    "zh": "Tocobo",
+    "zh-Hant": "Tocobo",
+    "vi": "Tocobo",
+    "th": "Tocobo",
+    "ru": "Tocobo"
+  },
+  "Green Finger": {
+    "ja": "グリーンフィンガー",
+    "zh": "Green Finger",
+    "zh-Hant": "Green Finger",
+    "vi": "Green Finger",
+    "th": "Green Finger",
+    "ru": "Green Finger"
+  },
+  "rom&nd": {
+    "ja": "rom&nd（ロムアンド）",
+    "zh": "rom&nd",
+    "zh-Hant": "rom&nd",
+    "vi": "rom&nd",
+    "th": "rom&nd",
+    "ru": "rom&nd"
+  },
+  "Peripera": {
+    "ja": "ペリペラ",
+    "zh": "Peripera",
+    "zh-Hant": "Peripera",
+    "vi": "Peripera",
+    "th": "Peripera",
+    "ru": "Peripera"
+  },
+  "CLIO": {
+    "ja": "CLIO（クリオ）",
+    "zh": "CLIO",
+    "zh-Hant": "CLIO",
+    "vi": "CLIO",
+    "th": "CLIO",
+    "ru": "CLIO"
+  },
+  "Monami": {
+    "ja": "モナミ",
+    "zh": "慕那美",
+    "zh-Hant": "慕那美",
+    "vi": "Monami",
+    "th": "โมนามิ",
+    "ru": "Monami"
+  },
+  "Iconic": {
+    "ja": "アイコニック",
+    "zh": "Iconic",
+    "zh-Hant": "Iconic",
+    "vi": "Iconic",
+    "th": "Iconic",
+    "ru": "Iconic"
+  },
+  "Pepero": {
+    "ja": "ペペロ",
+    "zh": "派派乐",
+    "zh-Hant": "Pepero",
+    "vi": "Pepero",
+    "th": "เปเปโร",
+    "ru": "Pepero"
+  },
+  "Haitai Bonbon": {
+    "ja": "ヘテ・ボンボン",
+    "zh": "海太 Bonbon",
+    "zh-Hant": "海太 Bonbon",
+    "vi": "Haitai Bonbon",
+    "th": "Haitai Bonbon",
+    "ru": "Haitai Bonbon"
+  },
+  "Binggrae Excellent": {
+    "ja": "ビングレ・エクセレント",
+    "zh": "宾格瑞 Excellent",
+    "zh-Hant": "Binggrae Excellent",
+    "vi": "Binggrae Excellent",
+    "th": "Binggrae Excellent",
+    "ru": "Binggrae Excellent"
+  },
+  "Binggrae Together": {
+    "ja": "ビングレ・トゥゲザー",
+    "zh": "宾格瑞 Together",
+    "zh-Hant": "Binggrae Together",
+    "vi": "Binggrae Together",
+    "th": "Binggrae Together",
+    "ru": "Binggrae Together"
+  },
+  "Kim Hye-ja Dosirak": {
+    "ja": "キム・ヘジャ弁当",
+    "zh": "金惠子便当",
+    "zh-Hant": "金惠子便當",
+    "vi": "Cơm hộp Kim Hye-ja",
+    "th": "ข้าวกล่องคิม ฮเยจา",
+    "ru": "Ланчбокс Ким Хеджа"
+  },
+  "Cheese Bokki Ramen": {
+    "ja": "チーズボッキラーメン",
+    "zh": "芝士炒年糕拉面",
+    "zh-Hant": "起司炒年糕拉麵",
+    "vi": "Mì Cheese Bokki",
+    "th": "ราเมนชีสโบกกี",
+    "ru": "Сырный Cheese Bokki"
+  },
+  "Achim Haetsal": {
+    "ja": "アチムヘッサル（朝の日差し）",
+    "zh": "早晨阳光",
+    "zh-Hant": "早晨陽光",
+    "vi": "Achim Haetsal (Ánh nắng buổi sáng)",
+    "th": "อาชิมแฮซัล",
+    "ru": "Ачим Хэцаль"
+  },
+  "Sablé": {
+    "ja": "サブレ",
+    "zh": "Sablé",
+    "zh-Hant": "Sablé",
+    "vi": "Sablé",
+    "th": "Sablé",
+    "ru": "Sablé"
+  },
+  "Bichobi": {
+    "ja": "ビチョビ",
+    "zh": "Bichobi",
+    "zh-Hant": "Bichobi",
+    "vi": "Bichobi",
+    "th": "Bichobi",
+    "ru": "Bichobi"
+  },
+  "Cheong Kwan Jang": {
+    "ja": "正官庄",
+    "zh": "正官庄",
+    "zh-Hant": "正官庄",
+    "vi": "Cheong Kwan Jang",
+    "th": "ชองกวานจัง",
+    "ru": "Чонгванджан"
+  },
+  "Gongganchun": {
+    "ja": "空間春",
+    "zh": "空间春",
+    "zh-Hant": "空間春",
+    "vi": "Gongganchun",
+    "th": "กงกันชุน",
+    "ru": "Конганчун"
+  },
+  "Eolbaksa": {
+    "ja": "オルバクサ",
+    "zh": "얼박사",
+    "zh-Hant": "얼박사",
+    "vi": "Eolbaksa",
+    "th": "ออลบักซา",
+    "ru": "Ольбакса"
+  },
+  "Jikgguri": {
+    "ja": "ジッククリ",
+    "zh": "직꾸리",
+    "zh-Hant": "직꾸리",
+    "vi": "Jikgguri",
+    "th": "จิกกูรี",
+    "ru": "Чиккури"
+  },
+  "Biyott": {
+    "ja": "ビヨット",
+    "zh": "Biyott",
+    "zh-Hant": "Biyott",
+    "vi": "Biyott",
+    "th": "บิยอต",
+    "ru": "Биётт"
+  },
+  "Oh Yes & Choco Pie": {
+    "ja": "オイエス＆チョコパイ",
+    "zh": "Oh Yes 与巧克力派",
+    "zh-Hant": "Oh Yes 與巧克力派",
+    "vi": "Oh Yes & Choco Pie",
+    "th": "Oh Yes & Choco Pie",
+    "ru": "Oh Yes и Choco Pie"
+  },
+  "Lacto-Fit": {
+    "ja": "ラクトフィット",
+    "zh": "乐多飞",
+    "zh-Hant": "樂多飛",
+    "vi": "Lacto-Fit",
+    "th": "Lacto-Fit",
+    "ru": "Lacto-Fit"
+  },
+  "Market O Brownies": {
+    "ja": "Market O ブラウニー",
+    "zh": "Market O 布朗尼",
+    "zh-Hant": "Market O 布朗尼",
+    "vi": "Brownie Market O",
+    "th": "บราวนี่ Market O",
+    "ru": "Брауни Market O"
+  },
+  "Choco Heim & Couque D’asse": {
+    "ja": "チョコハイム＆ククダス",
+    "zh": "Choco Heim 与 Couque D’asse",
+    "zh-Hant": "Choco Heim 與 Couque D’asse",
+    "vi": "Choco Heim & Couque D’asse",
+    "th": "Choco Heim & Couque D’asse",
+    "ru": "Choco Heim и Couque D’asse"
+  },
+  "Americano cooling candy packs coffee flavor with a cooling finish in a pocket tin. Sugar-free xylitol versions became a convenience-store trend.": {
+    "ja": "アメリカーノクーリングキャンディは、コーヒー風味と清涼感のティン缶キャンディ。無糖（キシリトール）表記が多く、携帯・記念おやつとしてコンビニで話題になりました。",
+    "zh": "美式咖啡清凉糖是装在小铁盒里的咖啡味清凉糖果。无糖（木糖醇）款很多，作为便携纪念零食在便利店很火。",
+    "zh-Hant": "美式咖啡清涼糖是裝在小鐵盒裡的咖啡味清涼糖果。無糖（木糖醇）款很多，作為便攜紀念零食在便利商店很夯。",
+    "vi": "Kẹo làm mát Americano mang vị cà phê và cảm giác mát trong hộp thiếc bỏ túi. Bản không đường (xylitol) thành xu hướng ở cửa hàng tiện lợi.",
+    "th": "ลูกอมเย็นอเมริกาโน่ใส่รสกาแฟกับความเย็นในกระป๋องพกพา รุ่นไม่มีน้ำตาล (ไซลิทอล) ฮิตในร้านสะดวกซื้อ",
+    "ru": "Охлаждающие конфеты Americano — кофейный вкус и свежесть в карманной банке. Безсахарные варианты с ксилитом стали трендом магазинов у дома."
+  },
+  "Sugar-free is not calorie-free. High xylitol can upset the stomach if you eat too much—read the label.": {
+    "ja": "糖類0gでもカロリーがあることがあり、キシリトールを一度に多く摂るとお腹が痛くなることも。ラベルの量・注意を確認を。",
+    "zh": "无糖不等于无热量。木糖醇一次吃太多可能闹肚子——请看标签。",
+    "zh-Hant": "無糖不等於無熱量。木糖醇一次吃太多可能鬧肚子——請看標籤。",
+    "vi": "Không đường không có nghĩa là không calo. Xylitol nhiều có thể đau bụng — đọc nhãn.",
+    "th": "ไม่มีน้ำตาลไม่ได้แปลว่าไม่มีแคลอรี ไซลิทอลเยอะอาจปวดท้อง — อ่านฉลาก",
+    "ru": "Без сахара ≠ без калорий. Много ксилита может расстроить желудок — читайте этикетку."
+  },
+  "Bangatgan (mill) sesame oil is pressed sesame oil used in namul, bibimbap, and marinades. Gift sets and small bottles are easy to find in markets and Korean grocery aisles.": {
+    "ja": "パンアッカン（搾油所）のごま油はナムル・ビビンバ・肉の下味に使う定番。ギフトセットや小瓶がマート・韓国食材コーナーに多いです。",
+    "zh": "bangatgan（榨油坊）香油是拌菜、拌饭、腌肉常用的压榨芝麻油。礼盒和小瓶在超市、韩食货架很好找。",
+    "zh-Hant": "bangatgan（榨油坊）香油是拌菜、拌飯、醃肉常用的壓榨芝麻油。禮盒和小瓶在超市、韓食貨架很好找。",
+    "vi": "Dầu mè bangatgan (xưởng ép) dùng cho namul, bibimbap và ướp. Set quà và chai nhỏ dễ thấy ở chợ và kệ đồ Hàn.",
+    "th": "น้ำมันงา bangatgan (โรงคั้น) ใช้กับนามุล บิบิมบับ และหมัก มีชุดของขวัญและขวดเล็กในตลาด/มุมอาหารเกาหลี",
+    "ru": "Кунжутное масло bangatgan (маслодавильня) — для намуль, пибимпапа и маринадов. Наборы и маленькие бутылки легко найти на рынках и в корейских рядах."
+  },
+  "Store cool and away from light; use soon after opening. For flights, check liquids rules—checked baggage is safer than cabin for larger bottles.": {
+    "ja": "直射日光を避け涼しく保管し、開封後は早めに。航空の液体ルールを確認し、大きい瓶は預け入れが安全です。",
+    "zh": "避光阴凉存放，开封后尽快用完。登机请核对液体规定——大瓶更适合托运。",
+    "zh-Hant": "避光陰涼存放，開封後儘快用完。登機請核對液體規定——大瓶更適合托運。",
+    "vi": "Bảo quản mát, tránh sáng; dùng sớm sau mở. Kiểm tra quy định chất lỏng — hành lý ký gửi an toàn hơn với chai lớn.",
+    "th": "เก็บเย็นห่างแสง ใช้เร็วหลังเปิด ตรวจกฎของเหลว — กระเป๋าโหลดปลอดภัยกว่าสำหรับขวดใหญ่",
+    "ru": "Храните в прохладе без света; после вскрытия используйте быстрее. На рейсе смотрите правила жидкостей — крупные бутылки лучше в багаж."
+  },
+  "Gyeongju sipwon (10-won) bread is a souvenir bake stamped like the 10-won coin—popular around downtown Gyeongju bakeries and tourist spots.": {
+    "ja": "慶州の十ウォンパンは10ウォン硬貨モチーフの記念パン。慶州市内のベーカリーや観光スポットで人気です。",
+    "zh": "庆州十元面包是印有十元硬币图案的纪念烘焙，庆州市区面包店和景点很常见。",
+    "zh-Hant": "慶州十元麵包是印有十元硬幣圖案的紀念烘焙，慶州市區麵包店和景點很常見。",
+    "vi": "Bánh sipwon (10 won) Gyeongju là bánh kỷ niệm in hình đồng 10 won — phổ biến ở tiệm bánh và điểm du lịch trung tâm Gyeongju.",
+    "th": "ขนมปังสิบวอนเมืองคยองจูเป็นของฝากปั๊มลายเหรียญ 10 วอน — นิยมตามเบเกอรีและจุดท่องเที่ยวในเมือง",
+    "ru": "Хлеб «сипвон» (10 вон) в Кёнджу — выпечка с оттиском монеты; популярен в пекарнях центра и у туристических точек."
+  },
+  "Often same-day fresh with a short shelf life—eat soon. Harder to find outside Gyeongju.": {
+    "ja": "当日焼き・賞味が短いことが多いので早めに。慶州以外では手に入りにくいです。",
+    "zh": "多为当日新鲜、保质期短——尽快吃。庆州以外较难买到。",
+    "zh-Hant": "多為當日新鮮、保存期限短——儘快吃。慶州以外較難買到。",
+    "vi": "Thường làm trong ngày, hạn ngắn — ăn sớm. Ngoài Gyeongju khó tìm hơn.",
+    "th": "มักสดวันเดียวกันอายุสั้น — กินเร็ว นอกคยองจูหายาก",
+    "ru": "Часто свежий в день выпечки, короткий срок — ешьте скорее. Вне Кёнджу найти сложнее."
+  },
+  "Pepero is Lotte’s biscuit stick snack — coated in chocolate/cream, or filled in “Nude” versions. Almond, nude, original, and seasonal flavors fill marts, convenience stores, and Daiso.": {
+    "ja": "ペペロはロッテの棒ビスケット。チョコ／クリームコーティングや中に詰めた「ヌード」。アーモンド・ヌード・オリジナル・季節味がマート・コンビニ・ダイソーに多いです。",
+    "zh": "派派乐是乐天的棒状饼干，外裹巧克力/奶油，或「Nude」夹心。杏仁、Nude、原味与季节限定在超市、便利店、Daiso 很多。",
+    "zh-Hant": "Pepero 是樂天的棒狀餅乾，外裹巧克力/奶油，或「Nude」夾心。杏仁、Nude、原味與季節限定在超市、便利商店、Daiso 很多。",
+    "vi": "Pepero là bánh que Lotte — phủ sô-cô-la/kem hoặc nhân “Nude”. Vị hạnh nhân, nude, gốc và theo mùa đầy siêu thị, tiện lợi và Daiso.",
+    "th": "เปเปโรเป็นขนมแท่งลอตเต้ — เคลือบช็อก/ครีม หรือไส้ Nude มีรสอัลมอนด์ นูด ออริจินัล และตามซีซันในมาร์ท ร้านสะดวกซื้อ และไดโซ",
+    "ru": "Pepero — палочки Lotte в шоколаде/креме или с начинкой Nude. Миндаль, Nude, классика и сезонные вкусы — в маркетах, у дома и Daiso."
+  },
+  "Gift sets boom around Pepero Day (Nov 11). In summer chocolate can melt — buy near departure or keep cool.": {
+    "ja": "11月11日ペペロデー前後はギフトセットが増えます。夏はチョコが溶けるので出発直前か涼しい保管を。",
+    "zh": "11 月 11 日派派乐节前后礼盒大增。夏天巧克力会化——临近出发再买或冷藏。",
+    "zh-Hant": "11 月 11 日 Pepero Day 前後禮盒大增。夏天巧克力會化——臨近出發再買或冷藏。",
+    "vi": "Set quà tăng quanh Pepero Day (11/11). Mùa hè sô-cô-la chảy — mua gần giờ bay hoặc giữ mát.",
+    "th": "ชุดของขวัญพุ่งช่วง Pepero Day (11 พ.ย.) ฤดูร้อนช็อกละลาย — ซื้อใกล้บินหรือเก็บเย็น",
+    "ru": "Подарочные наборы пик около Pepero Day (11.11). Летом шоколад тает — берите ближе к вылету или держите в холоде."
+  },
+  "Buying tip\n\nMultipacks are easy to share. Hypermarkets usually beat airport/tourist prices.": {
+    "ja": "購入のヒント\n\nマルチパックは分けやすい。空港・観光地より大型マートの方が安いことが多いです。",
+    "zh": "购买提示\n\n多包装好分享。大型超市通常比机场/景区更便宜。",
+    "zh-Hant": "購買提示\n\n多包裝好分享。大型超市通常比機場/景區更便宜。",
+    "vi": "Mẹo mua\n\nGói nhiều dễ chia. Siêu thị lớn thường rẻ hơn sân bay/điểm du lịch.",
+    "th": "ทิปซื้อ\n\nมัลติแพ็กแบ่งง่าย ไฮเปอร์มาร์เก็ตมักถูกกว่าสนามบิน/แหล่งท่องเที่ยว",
+    "ru": "Совет\n\nМультипаки удобно дарить. В гипермаркетах обычно дешевле, чем в аэропорту/у туристов."
+  },
+  "Market O brownies are Orion’s soft chocolate brownie line, easy to find in convenience stores and mart snack aisles.": {
+    "ja": "Market Oブラウニーはオリオンのしっとりチョコブラウニー。コンビニ・マートのお菓子棚で見つけやすいです。",
+    "zh": "Market O 布朗尼是好丽友的软巧克力布朗尼，便利店和超市零食区很好找。",
+    "zh-Hant": "Market O 布朗尼是好麗友的軟巧克力布朗尼，便利商店和超市零食區很好找。",
+    "vi": "Brownie Market O là dòng brownie mềm sô-cô-la của Orion, dễ thấy ở tiện lợi và kệ snack siêu thị.",
+    "th": "บราวนี่ Market O เป็นบราวนี่ช็อกนุ่มของ Orion หาง่ายในร้านสะดวกซื้อและชั้นขนมมาร์ท",
+    "ru": "Брауни Market O — мягкая шоколадная линейка Orion; легко найти в магазинах у дома и на полках маркетов."
+  },
+  "Multipiece packs are shareable; gift bundles appear too. Check the date and keep out of heat.": {
+    "ja": "複数入りは分けやすく、ギフト束もある。日付を確認し熱を避けて。",
+    "zh": "多片装好分享，也有礼盒。核对日期并避开高温。",
+    "zh-Hant": "多片裝好分享，也有禮盒。核對日期並避開高溫。",
+    "vi": "Gói nhiều miếng dễ chia; cũng có bó quà. Kiểm tra hạn và tránh nóng.",
+    "th": "แพ็กหลายชิ้นแบ่งง่าย มีชุดของขวัญด้วย ตรวจวันและเลี่ยงความร้อน",
+    "ru": "Многоштучные пачки удобно делить; бывают и подарочные. Смотрите дату и берегите от жары."
+  },
+  "Buying tip\n\nLook for the Market O label and compare seasonal flavors if available.": {
+    "ja": "購入のヒント\n\n『Market O』表記を確認し、季節味があれば比較を。",
+    "zh": "购买提示\n\n认准 Market O 标示，有季节口味可比较。",
+    "zh-Hant": "購買提示\n\n認準 Market O 標示，有季節口味可比較。",
+    "vi": "Mẹo mua\n\nTìm nhãn Market O và so vị theo mùa nếu có.",
+    "th": "ทิปซื้อ\n\nดูป้าย Market O และเทียบรสถูกฤดูกาลถ้ามี",
+    "ru": "Совет\n\nИщите маркировку Market O и сравнивайте сезонные вкусы."
+  },
+  "Choco Heim and Couque D’asse are Crown’s signature sandwich biscuits with chocolate or white cream between crisp cookies — dessert biscuits, not savory sandwiches.": {
+    "ja": "チョコハイムとククダスはクラウンの定番サンドビスケット。サクサククッキーにチョコ／ホワイトクリーム。食事のサンドイッチではありません。",
+    "zh": "Choco Heim 与 Couque D’asse 是好丽友/Crown 招牌夹心饼干，酥脆饼干夹巧克力或白奶油——是甜点饼干，不是咸味三明治。",
+    "zh-Hant": "Choco Heim 與 Couque D’asse 是 Crown 招牌夾心餅乾，酥脆餅乾夾巧克力或白奶油——是甜點餅乾，不是鹹味三明治。",
+    "vi": "Choco Heim và Couque D’asse là bánh quy kẹp nổi tiếng của Crown với kem sô-cô-la hoặc trắng giữa lớp giòn — bánh tráng miệng, không phải sandwich mặn.",
+    "th": "Choco Heim และ Couque D’asse เป็นบิสกิตแซนด์ของ Crown ไส้ครีมช็อกหรือขาวระหว่างคุกกี้กรอบ — ของหวาน ไม่ใช่แซนด์วิชคาว",
+    "ru": "Choco Heim и Couque D’asse — фирменные сэндвич-печенья Crown с шоколадом или белым кремом между хрустящими коржами; это десерт, не солёный сэндвич."
+  },
+  "Boxes and multipacks are common in marts and gift corners. Mixing white and chocolate flavors makes a nice gift set.": {
+    "ja": "マート・ギフトコーナーに箱・マルチが多い。ホワイトとチョコを混ぜると良いギフトになります。",
+    "zh": "超市和礼品区常见盒装/多包装。白巧与巧克力口味搭配很好送礼。",
+    "zh-Hant": "超市和禮品區常見盒裝/多包裝。白巧與巧克力口味搭配很好送禮。",
+    "vi": "Hộp và gói nhiều phổ biến ở siêu thị và góc quà. Trộn vị trắng và sô-cô-la thành set đẹp.",
+    "th": "กล่องและมัลติแพ็กมีบ่อยในมาร์ทและมุมของฝาก ผสมรสขาวกับช็อกเป็นชุดของขวัญดี",
+    "ru": "Коробки и мультипаки часты в маркетах и сувенирных уголках. Белый и шоколадный вкусы хорошо сочетаются в подарок."
+  },
+  "Buying tip\n\nPack carefully — biscuits break easily. Smaller packs travel safer than giant boxes.": {
+    "ja": "購入のヒント\n\n割れやすいので丁寧に。巨大箱より小さなパックが旅向き。",
+    "zh": "购买提示\n\n易碎请小心装。小包装比大箱更适合旅行。",
+    "zh-Hant": "購買提示\n\n易碎請小心裝。小包裝比大箱更適合旅行。",
+    "vi": "Mẹo mua\n\nĐóng cẩn — bánh dễ vỡ. Gói nhỏ an toàn hơn hộp khổng lồ.",
+    "th": "ทิปซื้อ\n\nแพ็กดีๆ — บิสกิตแตกง่าย แพ็กเล็กปลอดภัยกว่ากล่องยักษ์",
+    "ru": "Совет\n\nУпаковывайте аккуратно — печенье легко крошится. Маленькие пачки безопаснее огромных коробок."
+  },
+  "Haitai Oh Yes is a square soft cake with cream and chocolate coating. Orion Choco Pie is round with marshmallow between cake layers — same “pie snack” family, different shape and filling.": {
+    "ja": "ヘテのオイエスは四角いソフトケーキにクリーム＋チョココーティング。オリオンのチョコパイは丸く、ケーキの間にマシュマロ。同じパイ系でも形と中身が違います。",
+    "zh": "海太 Oh Yes 是方形软蛋糕夹奶油再裹巧克力；好丽友巧克力派是圆形、蛋糕层之间是棉花糖——同属派类零食，形状和内馅不同。",
+    "zh-Hant": "海太 Oh Yes 是方形軟蛋糕夾奶油再裹巧克力；好麗友巧克力派是圓形、蛋糕層之間是棉花糖——同屬派類零食，形狀和內餡不同。",
+    "vi": "Haitai Oh Yes là bánh mềm vuông kem phủ sô-cô-la. Orion Choco Pie tròn với marshmallow giữa lớp bánh — cùng họ “pie snack” nhưng khác hình và nhân.",
+    "th": "Haitai Oh Yes เป็นเค้กนุ่มสี่เหลี่ยมไส้ครีมเคลือบช็อก Orion Choco Pie กลมไส้มาร์ชเมลโลว์ — ตระกูลเดียวกันแต่รูปและไส้ต่าง",
+    "ru": "Haitai Oh Yes — квадратный мягкий кекс с кремом и шоколадной глазурью. Orion Choco Pie — круглый с маршмеллоу между слоями: одна семья «паев», разные форма и начинка."
+  },
+  "Sold as singles or boxes. Chocolate coating can melt in summer — keep cool.": {
+    "ja": "単品・箱どちらも。夏はチョコが溶けるので涼しく。",
+    "zh": "有单颗也有盒装。夏天涂层会化——请保持阴凉。",
+    "zh-Hant": "有單顆也有盒裝。夏天塗層會化——請保持陰涼。",
+    "vi": "Bán lẻ hoặc hộp. Lớp sô-cô-la mùa hè chảy — giữ mát.",
+    "th": "ขายเดี่ยวหรือกล่อง เคลือบช็อกฤดูร้อนละลาย — เก็บเย็น",
+    "ru": "Продают поштучно и коробками. Глазурь летом тает — держите в прохладе."
+  },
+  "Buying tip\n\nBoxed sets make good gifts. Tell them apart: square Oh Yes vs round Choco Pie.": {
+    "ja": "購入のヒント\n\n箱セットはギフト向き。四角オイエスと丸チョコパイを区別して。",
+    "zh": "购买提示\n\n盒装适合送礼。分清：方形 Oh Yes 与圆形巧克力派。",
+    "zh-Hant": "購買提示\n\n盒裝適合送禮。分清：方形 Oh Yes 與圓形巧克力派。",
+    "vi": "Mẹo mua\n\nHộp set hợp làm quà. Phân biệt: Oh Yes vuông vs Choco Pie tròn.",
+    "th": "ทิปซื้อ\n\nชุดกล่องเหมาะเป็นของขวัญ แยก Oh Yes สี่เหลี่ยม กับ Choco Pie กลม",
+    "ru": "Совет\n\nКоробки хороши в подарок. Различайте: квадратный Oh Yes и круглый Choco Pie."
+  },
+  "Crown’s Butter Waffle is a long-running crisp biscuit with a waffle grid and strong butter aroma. Individually wrapped boxes are common in marts and convenience stores.": {
+    "ja": "クラウンのバターワッフルは格子模様とバター香の定番サクサクビスケット。個別包装の箱がマート・コンビニに多いです。",
+    "zh": "Crown 黄油华夫是长销酥脆饼干，有华夫格纹和浓郁黄油香。独立包装盒在超市、便利店常见。",
+    "zh-Hant": "Crown 奶油鬆餅餅乾是長銷酥脆餅乾，有鬆餅格紋和濃郁奶油香。獨立包裝盒在超市、便利商店常見。",
+    "vi": "Butter Waffle của Crown là bánh quy giòn lâu năm với vân waffle và hương bơ đậm. Hộp bọc riêng phổ biến ở siêu thị và tiện lợi.",
+    "th": "Butter Waffle ของ Crown เป็นบิสกิตกรอบยอดนิยมลายวาฟเฟิลกลิ่นเนยแรง กล่องห่อแยกมีบ่อยในมาร์ทและร้านสะดวกซื้อ",
+    "ru": "Butter Waffle Crown — давний хрустящий бисквит с вафельной сеткой и ярким сливочным ароматом. Индивидуально упакованные коробки часты в маркетах и у дома."
+  },
+  "Pairs well with coffee or tea and packs easily. Eat soon after opening so they stay crisp.": {
+    "ja": "コーヒーやお茶に合い、荷物にも入れやすい。開封後はサクサクのうちに。",
+    "zh": "配咖啡或茶，也好收纳。开封后尽快吃完以保持酥脆。",
+    "zh-Hant": "配咖啡或茶，也好收納。開封後儘快吃完以保持酥脆。",
+    "vi": "Hợp với cà phê/trà và dễ đóng gói. Ăn sớm sau mở để còn giòn.",
+    "th": "เข้ากับกาแฟ/ชา และแพ็กง่าย กินเร็วหลังเปิดให้คงความกรอบ",
+    "ru": "Хорошо к кофе/чаю и легко упаковывается. После вскрытия ешьте скорее, пока хрустит."
+  },
+  "Buying tip\n\nLook for the Crown Butter Waffle label; multipack deals are common.": {
+    "ja": "購入のヒント\n\n『クラウン バターワッフル』表記を。まとめ買いセールが多いです。",
+    "zh": "购买提示\n\n认准 Crown Butter Waffle 标示；多包装促销常见。",
+    "zh-Hant": "購買提示\n\n認準 Crown Butter Waffle 標示；多包裝促銷常見。",
+    "vi": "Mẹo mua\n\nTìm nhãn Crown Butter Waffle; deal gói nhiều phổ biến.",
+    "th": "ทิปซื้อ\n\nดูป้าย Crown Butter Waffle มัลติแพ็กมีบ่อย",
+    "ru": "Совет\n\nИщите маркировку Crown Butter Waffle; мультипаки часто по акции."
+  },
+  "Honey Butter Chips are Haitai×Calbee potato chips with sweet-salty honey-butter seasoning — still a gift staple after their 2010s boom.": {
+    "ja": "ハニーバターチップはヘテ×カルビーのポテトチップ。甘じょっぱいハニーバター味で、2010年代ブーム後も定番ギフトです。",
+    "zh": "蜂蜜黄油薯片是海太×Calbee 的薯片，甜咸蜂蜜黄油味——2010年代爆红后仍是伴手礼经典。",
+    "zh-Hant": "蜂蜜奶油洋芋片是海太×Calbee 的洋芋片，甜鹹蜂蜜奶油味——2010年代爆紅後仍是伴手禮經典。",
+    "vi": "Honey Butter Chips là khoai tây Haitai×Calbee vị mật–bơ ngọt mặn — vẫn là quà cố định sau cơn sốt thập niên 2010.",
+    "th": "ฮันนี่บัตเตอร์ชิปเป็นมันฝรั่ง Haitai×Calbee รสหวานเค็มน้ำผึ้ง–เนย — ยังเป็นของฝากคลาสสิกหลังบูมยุค 2010",
+    "ru": "Honey Butter Chips — чипсы Haitai×Calbee со сладко-солёной мёдно-сливочной приправой; после бума 2010-х всё ещё классический подарок."
+  },
+  "Bags are bulky — zip bags help packing. Multipacks are easy to share as gifts.": {
+    "ja": "袋がかさばるのでジッパー袋が便利。マルチはギフトで分けやすいです。",
+    "zh": "袋子体积大——用拉链袋更好装。多包装好当礼物分享。",
+    "zh-Hant": "袋子體積大——用拉鍊袋更好裝。多包裝好當禮物分享。",
+    "vi": "Túi cồng kềnh — túi zip giúp đóng gói. Gói nhiều dễ chia làm quà.",
+    "th": "ถุงใหญ่ — ถุงซิปช่วยแพ็ก มัลติแพ็กแบ่งของขวัญง่าย",
+    "ru": "Пакеты объёмные — зип-пакеты помогают. Мультипаки удобно дарить и делить."
+  },
+  "Buying tip\n\nHypermarkets usually beat airport prices. Look for the Nongshim Saeukkang label.": {
+    "ja": "購入のヒント\n\n空港より大型マートが安いことが多い。『農心 セウッカン』表記を。",
+    "zh": "购买提示\n\n大型超市通常比机场便宜。认准农心虾条标示。",
+    "zh-Hant": "購買提示\n\n大型超市通常比機場便宜。認準農心蝦條標示。",
+    "vi": "Mẹo mua\n\nSiêu thị lớn thường rẻ hơn sân bay. Tìm nhãn Nongshim Saeukkang.",
+    "th": "ทิปซื้อ\n\nไฮเปอร์มาร์เก็ตมักถูกกว่าสนามบิน ดูป้าย Nongshim Saeukkang",
+    "ru": "Совет\n\nВ гипермаркетах обычно дешевле аэропорта. Ищите маркировку Nongshim Saeukkang."
+  },
+  "Saeukkang is Nongshim’s signature crunchy shrimp snack. Original, spicy, rice, and black variants fill mart and convenience aisles.": {
+    "ja": "セウッカンは農心の定番エビ味スナック。オリジナル・辛口・米・ブラックなどマート・コンビニに並びます。",
+    "zh": "虾条是农心招牌脆虾味零食。原味、辣味、米制、黑版等摆满超市与便利店货架。",
+    "zh-Hant": "蝦條是農心招牌脆蝦味零食。原味、辣味、米製、黑版等擺滿超市與便利商店貨架。",
+    "vi": "Saeukkang là snack tôm giòn biểu tượng của Nongshim. Bản gốc, cay, gạo và đen đầy kệ siêu thị và tiện lợi.",
+    "th": "แซวกังเป็นขนมกุ้งกรอบซิกเนเจอร์ของ Nongshim มีออริจินัล เผ็ด ข้าว และแบล็กเต็มชั้นมาร์ทและร้านสะดวกซื้อ",
+    "ru": "Saeukkang — фирменный хрустящий креветочный снек Nongshim. Оригинал, острый, рисовый и чёрный варианты заполняют полки."
+  },
+  "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml).": {
+    "ja": "容量・英語ラベル・期限を確認。クリーム類は機内液体制限（100ml）に入ります。",
+    "zh": "核对容量、英文标签和有效期。乳霜计入机上液体限制（100ml）。",
+    "zh-Hant": "核對容量、英文標籤和有效期。乳霜計入機上液體限制（100ml）。",
+    "vi": "Kiểm tra dung tích, nhãn tiếng Anh và hạn. Kem tính vào giới hạn chất lỏng cabin (100ml).",
+    "th": "ตรวจขนาด ป้ายอังกฤษ และวันหมดอายุ ครีมนับในกฎของเหลวบนเครื่อง (100 มล.)",
+    "ru": "Проверьте объём, английские этикетки и срок. Кремы входят в лимит жидкостей в салоне (100 мл)."
+  },
+  "Check size, English labels, and expiry. Creams count toward cabin liquid limits (100ml). Try a tester if available.": {
+    "ja": "容量・英語ラベル・期限を確認。クリームは機内100ml制限に。テスターがあれば先に試して。",
+    "zh": "核对容量、英文标签和有效期。乳霜计入机上100ml限制。有试用品可先试。",
+    "zh-Hant": "核對容量、英文標籤和有效期。乳霜計入機上100ml限制。有試用品可先試。",
+    "vi": "Kiểm tra dung tích, nhãn Anh và hạn. Kem vào giới hạn 100ml. Thử tester nếu có.",
+    "th": "ตรวจขนาด ป้ายอังกฤษ และวันหมดอายุ ครีมนับ 100 มล. ลองเทสเตอร์ถ้ามี",
+    "ru": "Проверьте объём, английские этикетки и срок. Кремы — в лимит 100 мл. Если есть тестер — попробуйте."
+  },
+  "Check ingredients and skin-type labels; patch-test if sensitive.": {
+    "ja": "成分・肌タイプ表記を確認。敏感ならパッチテストを。",
+    "zh": "核对成分与肤质标示；敏感肌请先局部测试。",
+    "zh-Hant": "核對成分與膚質標示；敏感肌請先局部測試。",
+    "vi": "Kiểm tra thành phần và nhãn loại da; patch-test nếu da nhạy.",
+    "th": "ตรวจส่วนผสมและป้ายประเภทผิว แพตช์เทสต์ถ้าแพ้ง่าย",
+    "ru": "Смотрите состав и тип кожи; при чувствительности сделайте патч-тест."
+  },
+  "Check ingredients and skin-type labels; patch-test if sensitive. Look in Daiso beauty/mask aisles.": {
+    "ja": "成分・肌タイプを確認し、敏感ならパッチテスト。ダイソーの美容・マスク棚をまず見て。",
+    "zh": "核对成分与肤质；敏感请局部测试。先看 Daiso 美妆/面膜区。",
+    "zh-Hant": "核對成分與膚質；敏感請局部測試。先看 Daiso 美妝/面膜區。",
+    "vi": "Kiểm tra thành phần và loại da; patch-test nếu nhạy. Xem kệ beauty/mask Daiso trước.",
+    "th": "ตรวจส่วนผสมและประเภทผิว แพตช์เทสต์ถ้าแพ้ ดูชั้นบิวตี้/มาสก์ไดโซก่อน",
+    "ru": "Смотрите состав и тип кожи; патч-тест при чувствительности. Сначала полки beauty/mask в Daiso."
+  },
+  "Read functional-food labels and dosing. Check your country’s import rules.": {
+    "ja": "機能性表示と摂取方法を読み、帰国時の自国ルールを確認を。",
+    "zh": "阅读功能食品标示与用量，并核对回国入境规定。",
+    "zh-Hant": "閱讀機能食品標示與用量，並核對回國入境規定。",
+    "vi": "Đọc nhãn thực phẩm chức năng và liều dùng. Kiểm tra quy định nhập cảnh nước bạn.",
+    "th": "อ่านฉลากอาหารเพื่อสุขภาพและปริมาณ ตรวจกฎนำเข้าของประเทศคุณ",
+    "ru": "Читайте маркировку БАД и дозировку. Проверьте правила ввоза своей страны."
+  },
+  "Read functional-food labels and dosing. Check your country’s import rules. Kids vs adult lines differ.": {
+    "ja": "機能性表示と摂取方法を読み、帰国ルールを確認。子ども用と大人用は別ラインです。",
+    "zh": "阅读功能食品标示与用量，核对回国规定。儿童线与成人线不同。",
+    "zh-Hant": "閱讀機能食品標示與用量，核對回國規定。兒童線與成人線不同。",
+    "vi": "Đọc nhãn và liều dùng; kiểm tra quy định nhập cảnh. Dòng trẻ em và người lớn khác nhau.",
+    "th": "อ่านฉลากและปริมาณ ตรวจกฎนำเข้า ไลน์เด็กกับผู้ใหญ่ต่างกัน",
+    "ru": "Читайте этикетку и дозировку; проверьте ввоз. Детские и взрослые линейки разные."
+  },
+  "153 ballpoint — a Korean stationery icon": {
+    "ja": "153ボールペン — 韓国文具のアイコン",
+    "zh": "153 圆珠笔 — 韩国文具图标",
+    "zh-Hant": "153 原子筆 — 韓國文具圖騰",
+    "vi": "Bút bi 153 — biểu tượng stationery Hàn",
+    "th": "ปากกา 153 — ไอคอนเครื่องเขียนเกาหลี",
+    "ru": "Шариковая 153 — икона корейской канцелярии"
+  },
+  "Look for color sets and limited packages.": {
+    "ja": "カラーセットや限定パッケージを探して。",
+    "zh": "可找彩色套装和限定包装。",
+    "zh-Hant": "可找彩色套裝和限定包裝。",
+    "vi": "Tìm bộ màu và gói giới hạn.",
+    "th": "หาชุดสีและแพ็กลิมิเต็ด",
+    "ru": "Ищите цветовые наборы и лимитированные упаковки."
+  },
+  "Diaries, stickers, and planners": {
+    "ja": "ダイアリー・ステッカー・プランナー",
+    "zh": "手帐、贴纸与日程本",
+    "zh-Hant": "手帳、貼紙與行事曆",
+    "vi": "Sổ, sticker và planner",
+    "th": "สมุด สติกเกอร์ และแพลนเนอร์",
+    "ru": "Дневники, стикеры и планеры"
+  },
+  "Stickers and memo pads barely add luggage weight.": {
+    "ja": "ステッカーやメモは荷物重量をほとんど増やしません。",
+    "zh": "贴纸和便签几乎不增加行李重量。",
+    "zh-Hant": "貼紙和便條幾乎不增加行李重量。",
+    "vi": "Sticker và memo hầu như không tăng cân hành lý.",
+    "th": "สติกเกอร์และเมโมแทบไม่เพิ่มน้ำหนักกระเป๋า",
+    "ru": "Стикеры и блокноты почти не добавляют вес багажа."
+  },
+  "Small keyrings, memos, and stickers make easy gifts.": {
+    "ja": "小さめキーリング・メモ・ステッカーは気軽なギフトです。",
+    "zh": "小钥匙扣、便签、贴纸是轻松好送的礼物。",
+    "zh-Hant": "小鑰匙圈、便條、貼紙是輕鬆好送的禮物。",
+    "vi": "Móc khóa, memo và sticker nhỏ là quà dễ tặng.",
+    "th": "พวงกุญแจ เมโม และสติกเกอร์เล็กเป็นของขวัญง่าย ๆ",
+    "ru": "Маленькие брелоки, блокноты и стикеры — лёгкий подарок."
+  },
+  "Americano cooling candy": {
+    "ja": "アメリカーノクーリングキャンディ",
+    "zh": "美式咖啡清凉糖",
+    "zh-Hant": "美式咖啡清涼糖",
+    "vi": "Kẹo làm mát Americano",
+    "th": "ลูกอมเย็นอเมริกาโน่",
+    "ru": "Охлаждающие конфеты Americano"
+  },
+  "Coffee-flavored cooling candy in a tin (convenience-store hit)": {
+    "ja": "コーヒー風味の清涼キャンディ（コンビニ人気）",
+    "zh": "铁盒咖啡味清凉糖（便利店热门）",
+    "zh-Hant": "鐵盒咖啡味清涼糖（便利商店熱門）",
+    "vi": "Kẹo làm mát vị cà phê trong hộp thiếc (hit tiện lợi)",
+    "th": "ลูกอมเย็นรสกาแฟในกระป๋อง (ฮิตร้านสะดวกซื้อ)",
+    "ru": "Кофейные охлаждающие конфеты в банке (хит у дома)"
+  },
+  "Look for “Americano cooling” tins in the candy aisle.": {
+    "ja": "キャンディ棚で『アメリカーノクーリング』のティン缶を探して。",
+    "zh": "在糖果区找「Americano cooling」铁盒。",
+    "zh-Hant": "在糖果區找「Americano cooling」鐵盒。",
+    "vi": "Tìm hộp “Americano cooling” ở kệ kẹo.",
+    "th": "หากระป๋อง “Americano cooling” ที่ชั้นลูกอม",
+    "ru": "Ищите банки «Americano cooling» в отделе конфет."
+  },
+  "Mill sesame oil (bangatgan)": {
+    "ja": "パンアッカンのごま油",
+    "zh": "榨油坊香油",
+    "zh-Hant": "榨油坊香油",
+    "vi": "Dầu mè bangatgan",
+    "th": "น้ำมันงา bangatgan",
+    "ru": "Кунжутное масло bangatgan"
+  },
+  "Traditional sesame oil — a classic Korean pantry gift": {
+    "ja": "伝統のごま油 — 韓国の定番キッチンギフト",
+    "zh": "传统香油 — 经典韩国家居伴手礼",
+    "zh-Hant": "傳統香油 — 經典韓國家居伴手禮",
+    "vi": "Dầu mè truyền thống — quà bếp Hàn kinh điển",
+    "th": "น้ำมันงาดั้งเดิม — ของฝากครัวเกาหลีคลาสสิก",
+    "ru": "Традиционное кунжутное масло — классический кухонный подарок"
+  },
+  "Check “방앗간”, sesame content, and pack date on the label.": {
+    "ja": "ラベルで『방앗간』・ごま含有量・製造日を確認を。",
+    "zh": "标签上核对「방앗간」、芝麻含量和包装日期。",
+    "zh-Hant": "標籤上核對「방앗간」、芝麻含量和包裝日期。",
+    "vi": "Kiểm tra “방앗간”, hàm lượng mè và ngày đóng trên nhãn.",
+    "th": "ตรวจ “방앗간” ปริมาณงา และวันบรรจุบนฉลาก",
+    "ru": "На этикетке смотрите «방앗간», содержание кунжута и дату."
+  },
+  "Gyeongju 10-won bread": {
+    "ja": "慶州十ウォンパン",
+    "zh": "庆州十元面包",
+    "zh-Hant": "慶州十元麵包",
+    "vi": "Bánh 10 won Gyeongju",
+    "th": "ขนมปัง 10 วอนคยองจู",
+    "ru": "Хлеб 10 вон из Кёнджу"
+  },
+  "Coin-stamped souvenir bread from Gyeongju": {
+    "ja": "慶州の硬貨スタンプ記念パン",
+    "zh": "庆州硬币压印纪念面包",
+    "zh-Hant": "慶州硬幣壓印紀念麵包",
+    "vi": "Bánh kỷ niệm in hình xu từ Gyeongju",
+    "th": "ขนมปังของฝากปั๊มเหรียญจากคยองจู",
+    "ru": "Сувенирный хлеб с оттиском монеты из Кёнджу"
+  },
+  "Compare with Hwangnam bread and barley bread for a local pastry set.": {
+    "ja": "黄南パンや大麦パンと並べて地元スイーツセットに。",
+    "zh": "可与黄南面包、大麦面包一起组成当地甜点组合。",
+    "zh-Hant": "可與黃南麵包、大麥麵包一起組成當地甜點組合。",
+    "vi": "So với bánh Hwangnam và bánh lúa mạch thành set bánh địa phương.",
+    "th": "เทียบกับขนมปังฮวังนัมและขนมปังข้าวบาร์เลย์เป็นชุดของฝากท้องถิ่น",
+    "ru": "Сравните с хлебом Хваннам и ячменным — получится местный набор выпечки."
+  },
+  "Lotte Pepero — almond, nude, chocolate stick snacks, a classic gift.": {
+    "ja": "ロッテ ペペロ — アーモンド・ヌードなど定番ギフト棒菓子。",
+    "zh": "乐天派派乐 — 杏仁、Nude 等经典棒状伴手礼。",
+    "zh-Hant": "樂天 Pepero — 杏仁、Nude 等經典棒狀伴手禮。",
+    "vi": "Lotte Pepero — que hạnh nhân, nude… quà kinh điển.",
+    "th": "Lotte Pepero — แท่งอัลมอนด์ นูด ฯลฯ ของฝากคลาสสิก",
+    "ru": "Lotte Pepero — миндаль, Nude и др.; классический подарок."
+  },
+  "Orion Market O brownies — soft chocolate brownie snacks.": {
+    "ja": "オリオン Market Oブラウニー — しっとりチョコブラウニー。",
+    "zh": "好丽友 Market O 布朗尼 — 软巧克力布朗尼零食。",
+    "zh-Hant": "好麗友 Market O 布朗尼 — 軟巧克力布朗尼零食。",
+    "vi": "Brownie Orion Market O — snack brownie mềm sô-cô-la.",
+    "th": "บราวนี่ Orion Market O — ของว่างบราวนี่ช็อกนุ่ม",
+    "ru": "Брауни Orion Market O — мягкие шоколадные снеки."
+  },
+  "Dr.Reju-All Advanced PDRN Cream": {
+    "ja": "Dr.Reju-All Advanced PDRNクリーム",
+    "zh": "Dr.Reju-All Advanced PDRN 面霜",
+    "zh-Hant": "Dr.Reju-All Advanced PDRN 乳霜",
+    "vi": "Kem Dr.Reju-All Advanced PDRN",
+    "th": "ครีม Dr.Reju-All Advanced PDRN",
+    "ru": "Крем Dr.Reju-All Advanced PDRN"
+  },
+  "Dr.Reju-All Advanced PDRN Rejuvenating Cream — popular travel skincare gift.": {
+    "ja": "Dr.Reju-All Advanced PDRNクリーム — 旅のスキンケアギフトに人気。",
+    "zh": "Dr.Reju-All Advanced PDRN 焕肤霜 — 热门旅行护肤礼物。",
+    "zh-Hant": "Dr.Reju-All Advanced PDRN 煥膚霜 — 熱門旅行保養禮物。",
+    "vi": "Kem Dr.Reju-All Advanced PDRN — quà skincare du lịch phổ biến.",
+    "th": "ครีม Dr.Reju-All Advanced PDRN — ของขวัญสกินแคร์เที่ยวยอดนิยม",
+    "ru": "Крем Dr.Reju-All Advanced PDRN — популярный travel-подарок для ухода."
+  },
+  "Mommy Care Sea Grape Skin Pack": {
+    "ja": "マミーケア シーグレープスキンパック",
+    "zh": "Mommy Care 海葡萄护肤贴",
+    "zh-Hant": "Mommy Care 海葡萄護膚貼",
+    "vi": "Skin pack nho biển Mommy Care",
+    "th": "สกินแพ็กสาหร่ายองุ่น Mommy Care",
+    "ru": "Скин-пак Mommy Care с морским виноградом"
+  },
+  "Mommy Care sea-grape skin pack at Daiso — budget sheet/skincare.": {
+    "ja": "ダイソーのマミーケア海ぶどうスキンパック — コスパのシート／スキンケア。",
+    "zh": "Daiso 的 Mommy Care 海葡萄护肤贴 — 平价面膜/护肤。",
+    "zh-Hant": "Daiso 的 Mommy Care 海葡萄護膚貼 — 平價面膜/保養。",
+    "vi": "Skin pack nho biển Mommy Care tại Daiso — sheet/skincare giá tốt.",
+    "th": "สกินแพ็กสาหร่ายองุ่น Mommy Care ที่ไดโซ — สกินแคร์ราคาย่อมเยา",
+    "ru": "Скин-пак Mommy Care с морским виноградом в Daiso — бюджетный уход."
+  },
+  "Sagol Han-cup Tea Bags": {
+    "ja": "サゴルハンカップティーバッグ",
+    "zh": "牛骨汤一杯茶包",
+    "zh-Hant": "牛骨湯一杯茶包",
+    "vi": "Trà túi Sagol Han-cup",
+    "th": "ชาซากอลฮันคัพ",
+    "ru": "Чайные пакетики Sagol Han-cup"
+  },
+  "Daiso Sagol Han-cup tea bags — easy bone-broth-style cup.": {
+    "ja": "ダイソーのサゴルハンカップティーバッグ — 手軽な骨スープ風。",
+    "zh": "Daiso 牛骨汤一杯茶包 — 方便的骨汤风味杯。",
+    "zh-Hant": "Daiso 牛骨湯一杯茶包 — 方便的骨湯風味杯。",
+    "vi": "Trà túi Sagol Han-cup Daiso — tách nước dùng xương dễ làm.",
+    "th": "ชาซากอลฮันคัพไดโซ — น้ำซุปกระดูกแบบง่าย",
+    "ru": "Пакетики Sagol Han-cup в Daiso — быстрый «костный» бульонный напиток."
+  },
+  "Check sodium and allergen labels. Hotel kettles work fine.": {
+    "ja": "ナトリウム・アレルゲン表示を確認。ホテルのケトルでもOK。",
+    "zh": "核对钠与过敏原标示。酒店热水壶即可冲泡。",
+    "zh-Hant": "核對鈉與過敏原標示。飯店熱水壺即可沖泡。",
+    "vi": "Kiểm tra natri và dị ứng. Ấm khách sạn dùng được.",
+    "th": "ตรวจโซเดียมและสารแพ้ กาต้มน้ำโรงแรมใช้ได้",
+    "ru": "Смотрите натрий и аллергены. Чайник в отеле подойдёт."
+  },
+  "Banana Latte Protein Shake": {
+    "ja": "バナナラテプロテインシェイク",
+    "zh": "香蕉拿铁蛋白奶昔",
+    "zh-Hant": "香蕉拿鐵蛋白奶昔",
+    "vi": "Sữa protein banana latte",
+    "th": "เชคโปรตีนบานาน่าลาเต้",
+    "ru": "Протеиновый шейк banana latte"
+  },
+  "Daiso banana-latte protein shake — easy protein drink.": {
+    "ja": "ダイソーのバナナラテプロテイン — 手軽なプロテイン飲料。",
+    "zh": "Daiso 香蕉拿铁蛋白饮 — 方便的蛋白质饮料。",
+    "zh-Hant": "Daiso 香蕉拿鐵蛋白飲 — 方便的蛋白質飲料。",
+    "vi": "Protein banana-latte Daiso — đồ uống protein dễ dùng.",
+    "th": "โปรตีนบานาน่าลาเต้ไดโซ — เครื่องดื่มโปรตีนง่าย ๆ",
+    "ru": "Протеиновый banana-latte в Daiso — простой белковый напиток."
+  },
+  "Check dairy/allergen labels. Drink chilled RTD soon after opening.": {
+    "ja": "乳・アレルゲン表示を確認。冷蔵RTDは開封後すぐ飲んで。",
+    "zh": "核对乳制品/过敏原。即饮冷藏款开封后尽快喝完。",
+    "zh-Hant": "核對乳製品/過敏原。即飲冷藏款開封後儘快喝完。",
+    "vi": "Kiểm tra sữa/dị ứng. RTD lạnh uống sớm sau mở.",
+    "th": "ตรวจนม/สารแพ้ RTD เย็นดื่มเร็วหลังเปิด",
+    "ru": "Смотрите молочное/аллергены. Охлаждённый RTD пейте сразу после открытия."
+  },
+  "Berry Apple Granola Cup": {
+    "ja": "ベリーアップルグラノーラカップ",
+    "zh": "莓果苹果谷物杯",
+    "zh-Hant": "莓果蘋果穀物杯",
+    "vi": "Cốc granola Berry Apple",
+    "th": "ถ้วยกราโนล่า Berry Apple",
+    "ru": "Стаканчик гранолы Berry Apple"
+  },
+  "Daiso Berry Apple granola cup — berry-apple cereal cup.": {
+    "ja": "ダイソーのベリーアップルグラノーラカップ — ベリー＆アップルのシリアルカップ。",
+    "zh": "Daiso 莓果苹果谷物杯 — 莓果苹果风味麦片杯。",
+    "zh-Hant": "Daiso 莓果蘋果穀物杯 — 莓果蘋果風味麥片杯。",
+    "vi": "Cốc granola Berry Apple Daiso — ngũ cốc vị berry-táo.",
+    "th": "ถ้วยกราโนล่า Berry Apple ไดโซ — ซีเรียลรสเบอร์รี–แอปเปิล",
+    "ru": "Стаканчик Berry Apple в Daiso — злаки с ягодно-яблочным вкусом."
+  },
+  "Check nut/gluten allergens. Cup format is hotel-friendly.": {
+    "ja": "ナッツ・グルテンアレルギーを確認。カップ型はホテル向き。",
+    "zh": "核对坚果/麸质过敏原。杯装适合酒店食用。",
+    "zh-Hant": "核對堅果/麩質過敏原。杯裝適合飯店食用。",
+    "vi": "Kiểm tra dị ứng hạt/gluten. Dạng cốc tiện ở khách sạn.",
+    "th": "ตรวจสารแพ้ถั่ว/กลูเตน แบบถ้วยเหมาะโรงแรม",
+    "ru": "Смотрите орехи/глютен. Формат стаканчика удобен в отеле."
+  },
+  "All the Better Low-Sugar Cacao": {
+    "ja": "オールザベター低糖カカオ",
+    "zh": "All the Better 低糖可可",
+    "zh-Hant": "All the Better 低糖可可",
+    "vi": "Cacao ít đường All the Better",
+    "th": "โกโก้หวานน้อย All the Better",
+    "ru": "Какао All the Better с пониженным сахаром"
+  },
+  "Daiso All the Better low-sugar cacao — less-sweet cacao treat.": {
+    "ja": "ダイソーのオールザベター低糖カカオ — 控えめな甘さのカカオ。",
+    "zh": "Daiso All the Better 低糖可可 — 不那么甜的可可小食。",
+    "zh-Hant": "Daiso All the Better 低糖可可 — 不那麼甜的可可小食。",
+    "vi": "Cacao ít đường All the Better Daiso — món cacao ít ngọt.",
+    "th": "โกโก้หวานน้อย All the Better ไดโซ — ของว่างโกโก้หวานน้อย",
+    "ru": "Низкосахарное какао All the Better в Daiso — менее сладкий какао-перекус."
+  },
+  "Low-sugar still may have calories/caffeine — read the label. Small packs travel well.": {
+    "ja": "低糖でもカロリー／カフェインがあり得るのでラベルを。小パックは旅向き。",
+    "zh": "低糖仍可能有热量/咖啡因——请看标签。小包装适合旅行。",
+    "zh-Hant": "低糖仍可能有熱量/咖啡因——請看標籤。小包裝適合旅行。",
+    "vi": "Ít đường vẫn có thể có calo/caffeine — đọc nhãn. Gói nhỏ tiện mang.",
+    "th": "หวานน้อยก็ยังมีแคลอรี/คาเฟอีนได้ — อ่านฉลาก แพ็กเล็กพกง่าย",
+    "ru": "Меньше сахара ≠ без калорий/кофеина — читайте этикетку. Маленькие пачки удобны в дороге."
+  },
+  "Chong Kun Dang Lacto-Fit — popular Korean probiotic supplement.": {
+    "ja": "鍾根堂ラクトフィット — 人気の韓国乳酸菌サプリ。",
+    "zh": "钟根堂乐多飞 — 热门韩国益生菌保健品。",
+    "zh-Hant": "鍾根堂樂多飛 — 熱門韓國益生菌保健品。",
+    "vi": "Lacto-Fit Chong Kun Dang — thực phẩm bổ sung probiotic Hàn phổ biến.",
+    "th": "Lacto-Fit Chong Kun Dang — โพรไบโอติกเกาหลียอดนิยม",
+    "ru": "Lacto-Fit Chong Kun Dang — популярный корейский пробиотик."
+  },
+  "Korea Eundan Vitamin C 1000": {
+    "ja": "高麗銀丹ビタミンC 1000",
+    "zh": "高丽银丹维生素C 1000",
+    "zh-Hant": "高麗銀丹維生素C 1000",
+    "vi": "Korea Eundan Vitamin C 1000",
+    "th": "Korea Eundan Vitamin C 1000",
+    "ru": "Korea Eundan Vitamin C 1000"
+  },
+  "Korea Eundan Vitamin C 1000 — portable vitamin C tablets.": {
+    "ja": "高麗銀丹ビタミンC 1000 — 携帯しやすいビタミンC錠。",
+    "zh": "高丽银丹维生素C 1000 — 便携维C片。",
+    "zh-Hant": "高麗銀丹維生素C 1000 — 便攜維C片。",
+    "vi": "Korea Eundan Vitamin C 1000 — viên C dễ mang theo.",
+    "th": "Korea Eundan Vitamin C 1000 — เม็ดวิตามินซีพกง่าย",
+    "ru": "Korea Eundan Vitamin C 1000 — удобные таблетки витамина C."
+  },
+  "Check 1000mg per tablet and daily limits; take after meals if your stomach is sensitive.": {
+    "ja": "1錠1000mgと一日上限を確認。胃が弱いなら食後に。",
+    "zh": "核对每片1000mg与每日上限；肠胃敏感请餐后服用。",
+    "zh-Hant": "核對每片1000mg與每日上限；腸胃敏感請餐後服用。",
+    "vi": "Kiểm tra 1000mg/viên và giới hạn ngày; uống sau ăn nếu dạ dày nhạy.",
+    "th": "ตรวจ 1000 มก./เม็ดและขีดวัน กินหลังอาหารถ้ากระเพาะแพ้ง่าย",
+    "ru": "Смотрите 1000 мг на таблетку и суточный лимит; при чувствительном желудке — после еды."
+  },
+  "Yangban Gim Bugak Series": {
+    "ja": "ヤンバンキム キムブガクシリーズ",
+    "zh": "两班海苔脆片系列",
+    "zh-Hant": "兩班海苔脆片系列",
+    "vi": "Dòng gim bugak Yangban",
+    "th": "ซีรีส์กิมบูกัก Yangban",
+    "ru": "Серия gim bugak Yangban"
+  },
+  "Yangban gim bugak — crispy fried seaweed snack series.": {
+    "ja": "ヤンバンのキムブガク — サクサク揚げ海苔スナック。",
+    "zh": "两班海苔脆片 — 酥脆油炸海苔零食系列。",
+    "zh-Hant": "兩班海苔脆片 — 酥脆油炸海苔零食系列。",
+    "vi": "Gim bugak Yangban — snack rong biển chiên giòn.",
+    "th": "กิมบูกัก Yangban — ของว่างสาหร่ายทอดกรอบ",
+    "ru": "Gim bugak Yangban — хрустящие жареные снеки из нори."
+  },
+  "Oily/salty — eat soon after opening and keep dry.": {
+    "ja": "油っぽく塩気あり。開封後は早めに、湿気を避けて。",
+    "zh": "偏油偏咸——开封后尽快吃，并保持干燥。",
+    "zh-Hant": "偏油偏鹹——開封後儘快吃，並保持乾燥。",
+    "vi": "Dầu/mặn — ăn sớm sau mở và giữ khô.",
+    "th": "มัน/เค็ม — กินเร็วหลังเปิดและเก็บให้แห้ง",
+    "ru": "Жирно/солёно — ешьте скорее после вскрытия и берегите от влаги."
+  },
+  "Nongshim Jjawang Ramen": {
+    "ja": "農心チャワンラーメン",
+    "zh": "农心炸王拉面",
+    "zh-Hant": "農心炸王拉麵",
+    "vi": "Mì Nongshim Jjawang",
+    "th": "ราเมน Nongshim Jjawang",
+    "ru": "Рамён Nongshim Jjawang"
+  },
+  "Nongshim Jjawang — rich jjajang (black bean) ramen.": {
+    "ja": "農心チャワン — 濃厚ジャジャン（黒豆）ラーメン。",
+    "zh": "农心炸王 — 浓郁炸酱（黑豆）拉面。",
+    "zh-Hant": "農心炸王 — 濃郁炸醬（黑豆）拉麵。",
+    "vi": "Nongshim Jjawang — mì jjajang (đậu đen) đậm đà.",
+    "th": "Nongshim Jjawang — ราเมนจาจัง (ถั่วดำ) เข้มข้น",
+    "ru": "Nongshim Jjawang — насыщенный чхаджан (чёрные бобы)."
+  },
+  "Many versions drain water then mix sauce. Double-bag liquid packets in luggage.": {
+    "ja": "水を切ってソースを絡めるタイプが多い。液体パケットはジッパー袋に二重に。",
+    "zh": "多数款式是沥水后拌酱。液体包请在行李里再套一层袋。",
+    "zh-Hant": "多數款式是瀝水後拌醬。液體包請在行李裡再套一層袋。",
+    "vi": "Nhiều bản đổ nước rồi trộn sốt. Gói lỏng để túi zip hai lớp trong hành lý.",
+    "th": "หลายรุ่นเทน้ำแล้วคลุกซอส ซองของเหลวใส่ถุงซิปสองชั้นในกระเป๋า",
+    "ru": "Многие версии: слить воду и смешать с соусом. Жидкие пакеты — в двойной зип-пакет."
+  },
+  "Osulloc Jeju Pure Green Tea & Sweets": {
+    "ja": "オスルロク済州ピュア緑茶＆スイーツ",
+    "zh": "雪绿茶济州纯绿茶与甜品",
+    "zh-Hant": "雪綠茶濟州純綠茶與甜品",
+    "vi": "Trà xanh Jeju Osulloc & bánh ngọt",
+    "th": "ชาเขียวเจจู Osulloc และของหวาน",
+    "ru": "Osulloc Jeju Pure Green Tea и сладости"
+  },
+  "Osulloc Jeju pure green tea bags and green-tea sweets.": {
+    "ja": "オスルロクの済州ピュア緑茶ティーバッグと緑茶スイーツ。",
+    "zh": "雪绿茶济州纯绿茶茶包与绿茶甜品。",
+    "zh-Hant": "雪綠茶濟州純綠茶茶包與綠茶甜品。",
+    "vi": "Túi trà xanh Jeju Osulloc và bánh ngọt trà xanh.",
+    "th": "ชาเขียวเจจู Osulloc และของหวานชาเขียว",
+    "ru": "Пакетики чистого зелёного чая Osulloc с Чеджу и сладости."
+  },
+  "Tea bags travel light; protect cookies from crushing/heat. Official stores have clearer gift sets.": {
+    "ja": "ティーバッグは軽く、クッキーは割れ・熱に注意。公式店のギフトセットが分かりやすいです。",
+    "zh": "茶包轻便；饼干防压防热。官方店礼盒更清晰。",
+    "zh-Hant": "茶包輕便；餅乾防壓防熱。官方店禮盒更清晰。",
+    "vi": "Túi trà nhẹ; bảo vệ bánh khỏi đè/nóng. Cửa hàng chính thức có set quà rõ hơn.",
+    "th": "ชาถุงเบา กันคุกกี้แตก/ร้อน ร้านทางการมีชุดของขวัญชัดกว่า",
+    "ru": "Пакетики лёгкие; печенье берегите от давления/жары. В официальных магазинах наборы понятнее."
+  },
+  "Korean Traditional Accessories": {
+    "ja": "韓国伝統アクセサリー",
+    "zh": "韩国传统饰品",
+    "zh-Hant": "韓國傳統飾品",
+    "vi": "Phụ kiện truyền thống Hàn",
+    "th": "แอ็กเซสซอรีดั้งเดิมเกาหลี",
+    "ru": "Корейские традиционные аксессуары"
+  },
+  "Norigae, binyeo, and hanbok-style accessory souvenirs.": {
+    "ja": "ノリゲ・ピニョ・韓服風のアクセサリーおみやげ。",
+    "zh": "诺里盖、发簪与韩服风饰品伴手礼。",
+    "zh-Hant": "諾里蓋、髮簪與韓服風飾品伴手禮。",
+    "vi": "Norigae, binyeo và phụ kiện phong cách hanbok.",
+    "th": "นอริแก บินยอ และของฝากสไตล์ฮันบก",
+    "ru": "Норигэ, пиньо и аксессуары в стиле ханбока."
+  },
+  "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand.": {
+    "ja": "韓国民俗村の公式ストアも伝統小物に便利。金属・生地の仕上がりは手で確認を。",
+    "zh": "韩国民俗村官方商店也适合买传统小物。请亲手检查金属/布料做工。",
+    "zh-Hant": "韓國民俗村官方商店也適合買傳統小物。請親手檢查金屬/布料做工。",
+    "vi": "Cửa hàng chính thức Korean Folk Village cũng hữu ích cho đồ truyền thống. Kiểm tra kim loại/vải bằng tay.",
+    "th": "ร้านทางการหมู่บ้านพื้นบ้านเกาหลีก็ดีสำหรับของดั้งเดิม ตรวจโลหะ/ผ้าด้วยมือ",
+    "ru": "Официальный магазин Korean Folk Village тоже полезен для традиционных вещей. Проверьте металл/ткань руками."
+  },
+  "The Korean Folk Village official store is also useful for traditional goods. Check metal/fabric finish by hand and ask about gift wrap.": {
+    "ja": "韓国民俗村の公式ストアも伝統小物に便利。金属・生地を手で確認し、ギフト包装も聞いてみて。",
+    "zh": "韩国民俗村官方商店也适合买传统小物。亲手检查金属/布料，并询问礼品包装。",
+    "zh-Hant": "韓國民俗村官方商店也適合買傳統小物。親手檢查金屬/布料，並詢問禮品包裝。",
+    "vi": "Cửa hàng Korean Folk Village hữu ích cho đồ truyền thống. Kiểm tra kim loại/vải và hỏi gói quà.",
+    "th": "ร้านหมู่บ้านพื้นบ้านเกาหลีดีสำหรับของดั้งเดิม ตรวจโลหะ/ผ้าและถามห่อของขวัญ",
+    "ru": "Магазин Korean Folk Village удобен для традиционных товаров. Проверьте металл/ткань и спросите про упаковку."
+  },
+  "Buying tip\n\nBrowse the Korean Folk Village store (https://www.koreanfolk.co.kr/store). Check hours/shipping before visiting or ordering.": {
+    "ja": "購入のヒント\n\n韓国民俗村ストア（https://www.koreanfolk.co.kr/store）を。訪問・注文前に時間／配送を確認を。",
+    "zh": "购买提示\n\n浏览韩国民俗村商店（https://www.koreanfolk.co.kr/store）。到访或下单前核对营业/配送。",
+    "zh-Hant": "購買提示\n\n瀏覽韓國民俗村商店（https://www.koreanfolk.co.kr/store）。到訪或下單前核對營業/配送。",
+    "vi": "Mẹo mua\n\nXem cửa hàng Korean Folk Village (https://www.koreanfolk.co.kr/store). Kiểm tra giờ/giao hàng trước khi đến hoặc đặt.",
+    "th": "ทิปซื้อ\n\nดูร้าน Korean Folk Village (https://www.koreanfolk.co.kr/store) ตรวจเวลา/จัดส่งก่อนไปหรือสั่ง",
+    "ru": "Совет\n\nСмотрите магазин Korean Folk Village (https://www.koreanfolk.co.kr/store). Перед визитом/заказом проверьте часы/доставку."
+  },
+  "Buying tip\n\nKorean Folk Village store: https://www.koreanfolk.co.kr/store — check hours/shipping before you go.": {
+    "ja": "購入のヒント\n\n韓国民俗村ストア: https://www.koreanfolk.co.kr/store — 行く前に営業・配送を確認を。",
+    "zh": "购买提示\n\n韩国民俗村商店：https://www.koreanfolk.co.kr/store — 出发前核对营业/配送。",
+    "zh-Hant": "購買提示\n\n韓國民俗村商店：https://www.koreanfolk.co.kr/store — 出發前核對營業/配送。",
+    "vi": "Mẹo mua\n\nCửa hàng Korean Folk Village: https://www.koreanfolk.co.kr/store — kiểm tra giờ/giao hàng trước khi đi.",
+    "th": "ทิปซื้อ\n\nร้าน Korean Folk Village: https://www.koreanfolk.co.kr/store — ตรวจเวลา/จัดส่งก่อนไป",
+    "ru": "Совет\n\nМагазин Korean Folk Village: https://www.koreanfolk.co.kr/store — перед поездкой проверьте часы/доставку."
+  },
+  "Korean Folk Village store →": {
+    "ja": "韓国民俗村ストア →",
+    "zh": "韩国民俗村商店 →",
+    "zh-Hant": "韓國民俗村商店 →",
+    "vi": "Cửa hàng Korean Folk Village →",
+    "th": "ร้าน Korean Folk Village →",
+    "ru": "Магазин Korean Folk Village →"
+  },
+  "Crispy honey cookies with bitter coffee — a Korean tea-time combo from the convenience store.": {
+    "ja": "甘くサクサクな薬菓とビターコーヒーの韓国式ティータイム。コンビニですぐ楽しめます。",
+    "zh": "酥脆蜂蜜药果配苦咖啡——便利店就能搞定的韩式下午茶。",
+    "zh-Hant": "酥脆蜂蜜藥果配苦咖啡——便利商店就能搞定的韓式下午茶。",
+    "vi": "Bánh mật ong giòn với cà phê đắng — trà chiều kiểu Hàn từ cửa hàng tiện lợi.",
+    "th": "คุกกี้น้ำผึ้งกรอบคู่กาแฟขม — ทีไทม์เกาหลีจากร้านสะดวกซื้อ",
+    "ru": "Хрустящее медовое печенье с горьким кофе — корейский tea-time из магазина у дома."
+  },
+  "Buying tip\n\nLook for Haitai Honey Butter Chip — lookalikes abound.": {
+    "ja": "購入のヒント\n\n『ヘテ ハニーバターチップ』表記を。似た商品が多いです。",
+    "zh": "购买提示\n\n认准海太 Honey Butter Chip——仿品很多。",
+    "zh-Hant": "購買提示\n\n認準海太 Honey Butter Chip——仿品很多。",
+    "vi": "Mẹo mua\n\nTìm nhãn Haitai Honey Butter Chip — hàng na ná rất nhiều.",
+    "th": "ทิปซื้อ\n\nดูป้าย Haitai Honey Butter Chip ของเลียนแบบมีเยอะ",
+    "ru": "Совет\n\nИщите Haitai Honey Butter Chip — похожих брендов много."
+  },
+  "Bags are bulky and can tear — pack in the middle of your suitcase. Compare seasonal flavors too.": {
+    "ja": "袋がかさばり破れやすいので荷物の中央へ。季節味も比較を。",
+    "zh": "袋子体积大且易破——放在行李中间。也可比较季节口味。",
+    "zh-Hant": "袋子體積大且易破——放在行李中間。也可比較季節口味。",
+    "vi": "Túi cồng kềnh dễ rách — để giữa vali. So cả vị theo mùa.",
+    "th": "ถุงใหญ่ฉีกง่าย — วางกลางกระเป๋า เทียบรสถูกฤดูกาลด้วย",
+    "ru": "Пакеты объёмные и рвутся — кладите в середину чемодана. Сравнивайте и сезонные вкусы."
+  },
+  "An Orion Cham Bungeoppang variant inspired by street fish bread and hotteok — a shelf-stable cake snack with brown sugar, cinnamon, almond, and peanut filling. Not the hot street-stall pastry.": {
+    "ja": "オリオン『チャムブンオパン』系の変形。屋台のたい焼き・ホットク着想の常温ケーキ菓子で、黒糖・シナモン・アーモンド・ピーナッツ入り。屋台の熱々たい焼きとは別物です。",
+    "zh": "好丽友「参鱼形面包」系列变体，灵感来自街头鲷鱼烧与糖饼——常温蛋糕点心，黑糖、肉桂、杏仁、花生馅。不是摊上现做热的那一种。",
+    "zh-Hant": "好麗友「參魚形麵包」系列變體，靈感來自街頭鯛魚燒與糖餅——常溫蛋糕點心，黑糖、肉桂、杏仁、花生餡。不是攤上現做熱的那一種。",
+    "vi": "Biến thể Orion Cham Bungeoppang lấy cảm hứng từ bánh cá đường phố và hotteok — bánh cake để được ở nhiệt độ phòng với nhân đường nâu, quế, hạnh nhân, đậu phộng. Không phải bánh nóng ngoài đường.",
+    "th": "รุ่น Orion Cham Bungeoppang แรงบันดาลใจจากขนมปังปลาข้างทางและฮอตทอก — เค้กเก็บอุณหภูมิห้องไส้น้ำตาลทรายแดง อบเชย อัลมอนด์ ถั่ว — ไม่ใช่ของร้อนข้างทาง",
+    "ru": "Вариант Orion Cham Bungeoppang в духе уличного «рыбного» хлеба и хоттока — стабильный при комнатной температуре кекс с начинкой из тростникового сахара, корицы, миндаля и арахиса. Не горячая уличная выпечка."
+  },
+  "Sold in boxes/multipacks at convenience stores and marts. Some packs suggest a brief microwave warm-up for a softer filling.": {
+    "ja": "コンビニ・マートで箱／マルチ販売。中身を柔らかくするため短時間レンジ案内もある。",
+    "zh": "便利店、超市有盒装/多包装。有的包装建议短暂微波让馅更软。",
+    "zh-Hant": "便利商店、超市有盒裝/多包裝。有的包裝建議短暫微波讓餡更軟。",
+    "vi": "Bán hộp/gói nhiều ở tiện lợi và siêu thị. Một số gói gợi ý hâm lò ngắn cho nhân mềm hơn.",
+    "th": "ขายกล่อง/มัลติที่ร้านสะดวกซื้อและมาร์ท บางแพ็กแนะนำอุ่นไมโครสั้นๆ ให้ไส้วนขึ้น",
+    "ru": "Продают коробками/мультипаками у дома и в маркетах. На части упаковок советуют короткий прогрев в СВЧ для более мягкой начинки."
+  },
+  "Buying tip\n\nCheck Orion “호떡품은 참붕어빵” on the pack — often shelved next to original Cham Bungeoppang.": {
+    "ja": "購入のヒント\n\nパッケージ『호떡품은 참붕어빵』を確認。オリジナルのチャムブンオパンの隣に並ぶことが多いです。",
+    "zh": "购买提示\n\n包装上看「호떡품은 참붕어빵」——常与原版参鱼形面包并排。",
+    "zh-Hant": "購買提示\n\n包裝上看「호떡품은 참붕어빵」——常與原版參魚形麵包並排。",
+    "vi": "Mẹo mua\n\nTìm “호떡품은 참붕어빵” trên bao — thường kệ cạnh Cham Bungeoppang gốc.",
+    "th": "ทิปซื้อ\n\nดู “호떡품은 참붕어빵” บนแพ็ก มักวางข้าง Cham Bungeoppang เดิม",
+    "ru": "Совет\n\nИщите на пачке «호떡품은 참붕어빵» — часто рядом с обычным Cham Bungeoppang."
+  },
+  "Haitai Sablé is a signature Korean cookie: crisp texture with mild sweetness and butter notes. Easy to find in mart and convenience snack aisles.": {
+    "ja": "ヘテのサブレは韓国の定番クッキー。サクサクで控えめな甘さ・バター感。マート・コンビニのお菓子棚で見つけやすいです。",
+    "zh": "海太 Sablé 是韩国招牌饼干：酥脆、甜度温和带黄油香。超市与便利店零食区很好找。",
+    "zh-Hant": "海太 Sablé 是韓國招牌餅乾：酥脆、甜度溫和帶奶油香。超市與便利商店零食區很好找。",
+    "vi": "Haitai Sablé là cookie biểu tượng Hàn: giòn, ngọt nhẹ và vị bơ. Dễ thấy ở kệ snack siêu thị và tiện lợi.",
+    "th": "Haitai Sablé เป็นคุกกี้ซิกเนเจอร์เกาหลี กรอบหวานเบาและกลิ่นเนย หาง่ายในชั้นขนมมาร์ทและร้านสะดวกซื้อ",
+    "ru": "Haitai Sablé — фирменное корейское печенье: хруст, мягкая сладость и сливочные ноты. Легко найти на полках маркетов и у дома."
+  },
+  "Pairs with coffee or tea and is not overly sweet — a safe adult gift. Choose well-cushioned packs; they break easily.": {
+    "ja": "コーヒーやお茶に合い甘すぎないので大人のギフトにも。割れやすいので緩衝のある包装を。",
+    "zh": "配咖啡或茶不过甜，适合送大人。易碎请选有缓冲的包装。",
+    "zh-Hant": "配咖啡或茶不過甜，適合送大人。易碎請選有緩衝的包裝。",
+    "vi": "Hợp cà phê/trà, không quá ngọt — quà an toàn cho người lớn. Chọn gói đệm tốt; dễ vỡ.",
+    "th": "เข้ากับกาแฟ/ชา ไม่หวานเกิน — ของขวัญผู้ใหญ่ เลือกแพ็กกันกระแทก แตกง่าย",
+    "ru": "К кофе/чаю, не слишком сладко — безопасный взрослый подарок. Берите с амортизацией; легко ломается."
+  },
+  "Buying tip\n\nLook for Haitai Sablé. Hypermarket multipacks often beat convenience prices.": {
+    "ja": "購入のヒント\n\n『ヘテ サブレ』を。大型マートのまとめがコンビニより安いことが多いです。",
+    "zh": "购买提示\n\n认准海太 Sablé。大型超市多包装常比便利店便宜。",
+    "zh-Hant": "購買提示\n\n認準海太 Sablé。大型超市多包裝常比便利商店便宜。",
+    "vi": "Mẹo mua\n\nTìm Haitai Sablé. Gói nhiều siêu thị lớn thường rẻ hơn tiện lợi.",
+    "th": "ทิปซื้อ\n\nดู Haitai Sablé มัลติแพ็กไฮเปอร์มาร์เก็ตมักถูกกว่าร้านสะดวกซื้อ",
+    "ru": "Совет\n\nИщите Haitai Sablé. Мультипаки в гипермаркетах часто дешевле, чем у дома."
+  },
+  "“Barley cookies” cover toasty barley crackers, biscuits, and cookies — e.g. fermented barley hardtack in mart cracker aisles, or mixed into traditional gift assortments.": {
+    "ja": "『大麦クッキー』は香ばしい大麦クラッカー・ビスケット・クッキー全般。発酵大麦乾パンなどマートの乾パン棚や伝統菓子ギフトにも混ざります。",
+    "zh": "「大麦饼干」泛指带大麦香的脆饼、饼干与曲奇——如超市干粮区的发酵大麦硬饼，或混在传统礼盒里。",
+    "zh-Hant": "「大麥餅乾」泛指帶大麥香的脆餅、餅乾與曲奇——如超市乾糧區的發酵大麥硬餅，或混在傳統禮盒裡。",
+    "vi": "“Bánh lúa mạch” gồm cracker, biscuit và cookie thơm lúa mạch — ví dụ bánh cứng lúa mạch lên men ở kệ cracker, hoặc trong set quà truyền thống.",
+    "th": "“คุกกี้ข้าวบาร์เลย์” รวมแครกเกอร์ บิสกิต คุกกี้กลิ่นข้าวบาร์เลย์ — เช่น แครกเกอร์หมักในชั้นมาร์ท หรือในชุดของฝากดั้งเดิม",
+    "ru": "«Ячменное печенье» — тосты-крекеры, бисквиты и печенье с ароматом ячменя: например ферментированный ячменный галет в ряду крекеров или в традиционных наборах."
+  },
+  "Mildly sweet; pairs with tea or coffee. Gift tins or zip packs pack well.": {
+    "ja": "甘さ控えめでお茶・コーヒー向き。ギフト缶やジッパーパックが便利。",
+    "zh": "甜度温和，适合配茶或咖啡。礼盒铁罐或拉链袋好收纳。",
+    "zh-Hant": "甜度溫和，適合配茶或咖啡。禮盒鐵罐或拉鍊袋好收納。",
+    "vi": "Ngọt nhẹ; hợp trà/cà phê. Hộp thiếc hoặc túi zip dễ mang.",
+    "th": "หวานเบา เข้ากับชา/กาแฟ กระป๋องของขวัญหรือถุงซิปแพ็กง่าย",
+    "ru": "Слабо сладко; к чаю/кофе. Подарочные банки или зип-пакеты удобны в багаже."
+  },
+  "Buying tip\n\nSearch “보리” / barley crackers in hypermarkets, department food halls, and Insadong — names vary by brand.": {
+    "ja": "購入のヒント\n\n大型マート・百貨店食品館・仁寺洞で『보리』／大麦クラッカーを。ブランドで名前が違います。",
+    "zh": "购买提示\n\n在大型超市、百货食品区、仁寺洞搜「보리」/大麦饼干——品牌名称各异。",
+    "zh-Hant": "購買提示\n\n在大型超市、百貨食品區、仁寺洞搜「보리」/大麥餅乾——品牌名稱各異。",
+    "vi": "Mẹo mua\n\nTìm “보리” / barley crackers ở siêu thị lớn, food hall và Insadong — tên đổi theo hãng.",
+    "th": "ทิปซื้อ\n\nค้น “보리” / barley crackers ในไฮเปอร์มาร์เก็ต ฟู้ดฮอลล์ และอินซาดง — ชื่อต่างตามแบรนด์",
+    "ru": "Совет\n\nИщите «보리» / barley crackers в гипермаркетах, фуд-холлах и Инсадонг — названия зависят от бренда."
+  },
+  "Bichobi is Orion’s sandwich biscuit: maple-glazed whole-wheat cookies with hazelnut chocolate in between. It is not Haitai “Bichoco.”": {
+    "ja": "ビチョビはオリオンのサンドビスケット。メープルがけ全粒粉クッキーにヘーゼルチョコ。ヘテの『ビチョコ』とは別です。",
+    "zh": "Bichobi 是好丽友夹心饼干：枫糖全麦饼干夹榛果巧克力。不是海太的「Bichoco」。",
+    "zh-Hant": "Bichobi 是好麗友夾心餅乾：楓糖全麥餅乾夾榛果巧克力。不是海太的「Bichoco」。",
+    "vi": "Bichobi là bánh kẹp Orion: cookie lúa mì nguyên cám phủ maple với sô-cô-la hạt phỉ. Không phải “Bichoco” của Haitai.",
+    "th": "Bichobi เป็นบิสกิตแซนด์ Orion คุกกี้โฮลวีตเคลือบเมเปิลไส้ช็อกเฮเซลนัต ไม่ใช่ “Bichoco” ของ Haitai",
+    "ru": "Bichobi — сэндвич Orion: цельнозерновые печенья с кленовым глянцем и шоколадной начинкой с фундуком. Это не Haitai «Bichoco»."
+  },
+  "Common in marts, convenience stores, and gift corners; strawberry and special editions appear too. Popular with visitors. Watch melting chocolate in summer.": {
+    "ja": "マート・コンビニ・ギフトコーナーでよく見かける。いちごや限定も。旅行者にも人気。夏はチョコの溶けに注意。",
+    "zh": "超市、便利店、礼品区常见；也有草莓和限定。游客也爱买。夏天注意巧克力融化。",
+    "zh-Hant": "超市、便利商店、禮品區常見；也有草莓和限定。遊客也愛買。夏天注意巧克力融化。",
+    "vi": "Phổ biến ở siêu thị, tiện lợi và góc quà; có bản dâu và limited. Du khách cũng thích. Mùa hè tránh sô-cô-la chảy.",
+    "th": "พบบ่อยในมาร์ท ร้านสะดวกซื้อ และมุมของฝาก มีรสสตรอว์เบอร์รีและลิมิเต็ด นักท่องเที่ยวนิยม ฤดูร้อนระวังช็อกละลาย",
+    "ru": "Часто в маркетах, у дома и сувенирных уголках; бывают клубника и лимитки. Популярно у туристов. Летом следите, чтобы шоколад не растаял."
+  },
+  "Buying tip\n\nLook for Orion “비쵸비 / Bichobi” on the pack. It can sell out — grab it when you see it.": {
+    "ja": "購入のヒント\n\nパッケージ『비쵸비 / Bichobi』を。品切れしやすいので見つけたら確保を。",
+    "zh": "购买提示\n\n包装上看「비쵸비 / Bichobi」。容易售罄——看到就买。",
+    "zh-Hant": "購買提示\n\n包裝上看「비쵸비 / Bichobi」。容易售罄——看到就買。",
+    "vi": "Mẹo mua\n\nTìm Orion “비쵸비 / Bichobi” trên bao. Hay hết hàng — thấy thì lấy.",
+    "th": "ทิปซื้อ\n\nดู Orion “비쵸비 / Bichobi” บนแพ็ก ของหมดง่าย — เจอแล้วรีบซื้อ",
+    "ru": "Совет\n\nИщите на пачке Orion «비쵸비 / Bichobi». Часто разбирают — берите сразу."
+  },
+  "Kkobuk chips are Orion’s four-layer crunchy snack — more a corn snack than potato chips — in consommé, chocolate, and other flavors.": {
+    "ja": "꼬북칩はオリオンの四層サクサクスナック。ポテトよりコーン寄り。コンソメ・チョコなど味があります。",
+    "zh": "꼬북칩（龟壳脆）是好丽友四层脆片——更像玉米零食而非薯片，有清汤、巧克力等口味。",
+    "zh-Hant": "꼬북칩（龜殼脆）是好麗友四層脆片——更像玉米零食而非洋芋片，有清湯、巧克力等口味。",
+    "vi": "Kkobuk chips là snack bốn lớp giòn của Orion — nghiêng bắp hơn khoai — vị nước dùng, sô-cô-la…",
+    "th": "꼬북칩 เป็นสแน็กสี่ชั้นกรอบของ Orion — แนวข้าวโพดมากกว่ามันฝรั่ง — รสคอนซอมเม ช็อก ฯลฯ",
+    "ru": "Kkobuk chips — четырёхслойный хруст Orion, ближе к кукурузному снеку, чем к чипсам: консоме, шоколад и др."
+  },
+  "Bulky — compress or zip-bag for luggage. Mart multipacks often beat convenience prices.": {
+    "ja": "かさばるので圧縮かジッパー袋を。マートのまとめがコンビニより安いことが多いです。",
+    "zh": "体积大——压缩或用拉链袋。超市多包装常比便利店便宜。",
+    "zh-Hant": "體積大——壓縮或用拉鍊袋。超市多包裝常比便利商店便宜。",
+    "vi": "Cồng kềnh — nén hoặc túi zip. Gói nhiều siêu thị thường rẻ hơn tiện lợi.",
+    "th": "ใหญ่ — อัดหรือใส่ถุงซิป มัลติแพ็กมาร์ทมักถูกกว่าร้านสะดวกซื้อ",
+    "ru": "Объёмно — сожмите или зип-пакет. Мультипаки в маркете часто дешевле, чем у дома."
+  },
+  "Buying tip\n\nChocolate flavors melt easily in summer; savory flavors travel better.": {
+    "ja": "購入のヒント\n\nチョコ味は夏に溶けやすい。塩味の方が旅向き。",
+    "zh": "购买提示\n\n巧克力味夏天易化；咸味更适合旅途。",
+    "zh-Hant": "購買提示\n\n巧克力味夏天易化；鹹味更適合旅途。",
+    "vi": "Mẹo mua\n\nVị sô-cô-la mùa hè dễ chảy; vị mặn mang đi tốt hơn.",
+    "th": "ทิปซื้อ\n\nรสช็อกฤดูร้อนละลายง่าย รสคาวพกดีกว่า",
+    "ru": "Совет\n\nШоколадные вкусы летом тают; солёные лучше в дороге."
+  },
+  "Bbang Bujang is Nongshim’s bakery-snack brand: croissant-, salt-bread-, and chocolate-bread–style crisps, plus salty caramel twists — bread-shop flavors as crunchy snacks, often shelved together.": {
+    "ja": "パンブジャンは農心のベーカリースナック。クロワッサン・塩パン・チョコパン風や塩キャラメルねじりなど、パン屋の味をサクサクに。並んで陳列されることが多いです。",
+    "zh": "빵부장是农心烘焙零食品牌：可颂、盐面包、巧克力面包风脆片，还有咸焦糖麻花——把面包店口味做成脆片，常并排陈列。",
+    "zh-Hant": "빵부장是農心烘焙零食品牌：可頌、鹽麵包、巧克力麵包風脆片，還有鹹焦糖麻花——把麵包店口味做成脆片，常並排陳列。",
+    "vi": "Bbang Bujang là thương hiệu snack tiệm bánh của Nongshim: bánh kiểu croissant, bánh muối, bánh sô-cô-la và xoắn caramel mặn — hương tiệm bánh dạng giòn, thường xếp cạnh nhau.",
+    "th": "Bbang Bujang เป็นแบรนด์สแน็กเบเกอรีของ Nongshim แนวครัวซองต์ ขนมปังเกลือ ขนมปังช็อก และเกลียวคาราเมลเค็ม — รสร้านขนมปังแบบกรอบ มักวางคู่กัน",
+    "ru": "Bbang Bujang — пекарский снек Nongshim: хруст в духе круассана, солёного хлеба, шоколадного хлеба и солёно-карамельных жгутов; вкусы пекарни, часто рядом на полке."
+  },
+  "Pick one flavor or mix a gift set. Names can change by season.": {
+    "ja": "一味だけでも、混ぜてギフトセットでも。名前は季節で変わることがあります。",
+    "zh": "可单买一种或混成礼盒。名称可能随季节变化。",
+    "zh-Hant": "可單買一種或混成禮盒。名稱可能隨季節變化。",
+    "vi": "Chọn một vị hoặc trộn set quà. Tên có thể đổi theo mùa.",
+    "th": "เลือกหนึ่งรสหรือผสมชุดของขวัญ ชื่ออาจเปลี่ยนตามซีซัน",
+    "ru": "Берите один вкус или смешайте подарочный набор. Названия могут меняться по сезону."
+  },
+  "Buying tip\n\nCheck the Nongshim Bbang Bujang logo and allergen labels (wheat/dairy).": {
+    "ja": "購入のヒント\n\n『農心 パンブジャン』ロゴとアレルゲン（小麦／乳）を確認を。",
+    "zh": "购买提示\n\n核对农心 Bbang Bujang 标志与过敏原（小麦/乳制品）。",
+    "zh-Hant": "購買提示\n\n核對農心 Bbang Bujang 標誌與過敏原（小麥/乳製品）。",
+    "vi": "Mẹo mua\n\nKiểm tra logo Nongshim Bbang Bujang và dị ứng (lúa mì/sữa).",
+    "th": "ทิปซื้อ\n\nดูโลโก้ Nongshim Bbang Bujang และสารแพ้ (ข้าวสาลี/นม)",
+    "ru": "Совет\n\nСмотрите логотип Nongshim Bbang Bujang и аллергены (пшеница/молочка)."
+  },
+  "Dr.Reju-All Advanced PDRN Rejuvenating Cream highlights PDRN for a rejuvenating cream. Travelers often find it at Olive Young, drugstores, and department beauty floors.": {
+    "ja": "Dr.Reju-All Advanced PDRNクリームはPDRNを打ち出したリジュビネイティングクリーム。オリーブヤング・ドラッグストア・百貨店美容フロアで探す人が多いです。",
+    "zh": "Dr.Reju-All Advanced PDRN 焕肤霜主打 PDRN。旅客常在 Olive Young、药妆店、百货美妆层找到。",
+    "zh-Hant": "Dr.Reju-All Advanced PDRN 煥膚霜主打 PDRN。旅客常在 Olive Young、藥妝店、百貨美妝層找到。",
+    "vi": "Kem Dr.Reju-All Advanced PDRN nhấn mạnh PDRN. Du khách thường thấy ở Olive Young, drugstore và tầng beauty.",
+    "th": "ครีม Dr.Reju-All Advanced PDRN เน้น PDRN นักท่องเที่ยวมักเจอที่ Olive Young ดรักสโตร์ และชั้นบิวตี้ห้าง",
+    "ru": "Крем Dr.Reju-All Advanced PDRN делает акцент на PDRN. Туристы часто находят его в Olive Young, аптеках-косметике и beauty-этажах."
+  },
+  "Buying tip\n\nBuy at official or major stores and check your country’s liquid/customs rules.": {
+    "ja": "購入のヒント\n\n公式・大型店で買い、帰国の液体／税関ルールを確認を。",
+    "zh": "购买提示\n\n在官方或大型店购买，并核对回国液体/海关规定。",
+    "zh-Hant": "購買提示\n\n在官方或大型店購買，並核對回國液體/海關規定。",
+    "vi": "Mẹo mua\n\nMua ở cửa hàng chính thức/lớn và kiểm tra quy định chất lỏng/hải quan nước bạn.",
+    "th": "ทิปซื้อ\n\nซื้อที่ร้านทางการ/ใหญ่ และตรวจกฎของเหลว/ศุลกากรของประเทศคุณ",
+    "ru": "Совет\n\nПокупайте в официальных/крупных магазинах и проверьте правила жидкостей/таможни своей страны."
+  },
+  "Mommy Care sea-grape skin packs are a common budget skincare find at Daiso. Easy to stock up for travel or gifts.": {
+    "ja": "マミーケア海ぶどうスキンパックはダイソーの定番コスパスキンケア。旅用・ギフトにまとめ買いしやすいです。",
+    "zh": "Mommy Care 海葡萄护肤贴是 Daiso 常见平价护肤。方便旅途囤货或送礼。",
+    "zh-Hant": "Mommy Care 海葡萄護膚貼是 Daiso 常見平價保養。方便旅途囤貨或送禮。",
+    "vi": "Skin pack nho biển Mommy Care là skincare giá tốt quen ở Daiso. Dễ mua nhiều cho chuyến đi hoặc làm quà.",
+    "th": "สกินแพ็กสาหร่ายองุ่น Mommy Care เป็นสกินแคร์ราคาดีติดไดโซ ซื้อตุนเที่ยวหรือของขวัญง่าย",
+    "ru": "Скин-паки Mommy Care с морским виноградом — частый бюджетный уход в Daiso. Удобно запастись в поездку или в подарок."
+  },
+  "Buying tip\n\nNeighborhood or large Daiso stores often have better stock than tourist spots.": {
+    "ja": "購入のヒント\n\n観光地より住宅地・大型ダイソーの在庫が厚いことが多いです。",
+    "zh": "购买提示\n\n住宅区或大型 Daiso 往往比景区店货更齐。",
+    "zh-Hant": "購買提示\n\n住宅區或大型 Daiso 往往比景區店貨更齊。",
+    "vi": "Mẹo mua\n\nDaiso khu dân cư hoặc lớn thường tồn tốt hơn điểm du lịch.",
+    "th": "ทิปซื้อ\n\nไดโซย่านบ้านหรือสาขาใหญ่มักของครบกว่าจุดท่องเที่ยว",
+    "ru": "Совет\n\nВ районных или крупных Daiso ассортимент обычно лучше, чем у туристов."
+  },
+  "Sagol Han-cup tea bags steep in hot water for a quick bone-broth-style drink. Popular travel/camping find at Daiso.": {
+    "ja": "サゴルハンカップティーバッグは熱湯で骨スープ風の一杯に。ダイソーで旅・キャンプ用に人気です。",
+    "zh": "牛骨汤一杯茶包用热水冲出骨汤风味。Daiso 里旅行/露营常买。",
+    "zh-Hant": "牛骨湯一杯茶包用熱水沖出骨湯風味。Daiso 裡旅行/露營常買。",
+    "vi": "Trà túi Sagol Han-cup pha nước nóng thành đồ uống kiểu nước dùng xương. Phổ biến cho du lịch/camping ở Daiso.",
+    "th": "ชาซากอลฮันคัพชงน้ำร้อนได้เครื่องดื่มแนวน้ำซุปกระดูก นิยมเที่ยว/แคมป์ที่ไดโซ",
+    "ru": "Пакетики Sagol Han-cup завариваются кипятком в «костный» напиток. Популярны для поездок/кемпинга в Daiso."
+  },
+  "Buying tip\n\nTea-bag format is easier for flights than liquid soup.": {
+    "ja": "購入のヒント\n\n液体スープよりティーバッグの方が機内持ち込みしやすいです。",
+    "zh": "购买提示\n\n茶包形态比液体汤更适合登机。",
+    "zh-Hant": "購買提示\n\n茶包形態比液體湯更適合登機。",
+    "vi": "Mẹo mua\n\nDạng túi trà dễ lên máy bay hơn nước dùng lỏng.",
+    "th": "ทิปซื้อ\n\nแบบซองชาขึ้นเครื่องง่ายกว่าซุปเหลว",
+    "ru": "Совет\n\nФормат пакетиков проще для самолёта, чем жидкий суп."
+  },
+  "Banana-latte protein shakes are an easy Daiso grab for breakfast or post-workout on the road.": {
+    "ja": "バナナラテプロテインはダイソーで朝や運動後に手軽に。",
+    "zh": "香蕉拿铁蛋白饮是 Daiso 方便的早餐或旅途运动后补给。",
+    "zh-Hant": "香蕉拿鐵蛋白飲是 Daiso 方便的早餐或旅途運動後補給。",
+    "vi": "Sữa protein banana-latte là món Daiso dễ lấy cho bữa sáng hoặc sau tập khi đi đường.",
+    "th": "เชคโปรตีนบานาน่าลาเต้เป็นของคว้าง่ายที่ไดโซสำหรับเช้าหรือหลังออกกำลังระหว่างเที่ยว",
+    "ru": "Протеиновые banana-latte в Daiso — лёгкий завтрак или пост-тренировочный перекус в дороге."
+  },
+  "Buying tip\n\nPowder packs travel easier than liquids; check dates on RTD bottles.": {
+    "ja": "購入のヒント\n\nパウダーは液体より旅向き。RTDは期限を確認を。",
+    "zh": "购买提示\n\n粉剂比液体更好带；即饮瓶请看日期。",
+    "zh-Hant": "購買提示\n\n粉劑比液體更好帶；即飲瓶請看日期。",
+    "vi": "Mẹo mua\n\nBột dễ mang hơn chất lỏng; kiểm tra hạn chai RTD.",
+    "th": "ทิปซื้อ\n\nผงพกง่ายกว่าของเหลว ตรวจวันขวด RTD",
+    "ru": "Совет\n\nПорошок удобнее жидкостей; на RTD смотрите дату."
+  },
+  "Berry Apple granola cups are a Daiso breakfast/snack with berry-apple vibes — pair with milk or yogurt.": {
+    "ja": "ベリーアップルグラノーラカップはダイソーの朝食／おやつ。牛乳やヨーグルトと一緒に。",
+    "zh": "莓果苹果谷物杯是 Daiso 的早餐/零食，配牛奶或酸奶。",
+    "zh-Hant": "莓果蘋果穀物杯是 Daiso 的早餐/零食，配牛奶或優格。",
+    "vi": "Cốc granola Berry Apple là bữa sáng/snack Daiso vị berry-táo — ăn với sữa hoặc sữa chua.",
+    "th": "ถ้วยกราโนล่า Berry Apple เป็นเช้า/ของว่างไดโซแนวเบอร์รี–แอปเปิล — คู่กับนมหรือโยเกิร์ต",
+    "ru": "Стаканчики Berry Apple — завтрак/перекус Daiso с ягодно-яблочным настроением; к молоку или йогурту."
+  },
+  "Buying tip\n\nCheck the date and keep dry after opening.": {
+    "ja": "購入のヒント\n\n日付を確認し、開封後は湿気を避けて。",
+    "zh": "购买提示\n\n核对日期，开封后保持干燥。",
+    "zh-Hant": "購買提示\n\n核對日期，開封後保持乾燥。",
+    "vi": "Mẹo mua\n\nKiểm tra hạn và giữ khô sau mở.",
+    "th": "ทิปซื้อ\n\nตรวจวันและเก็บให้แห้งหลังเปิด",
+    "ru": "Совет\n\nСмотрите дату и держите сухим после вскрытия."
+  },
+  "All the Better low-sugar cacao is a Daiso pick for less-sweet snacks or hot cocoa.": {
+    "ja": "オールザベター低糖カカオはダイソーの『甘さ控えめ』おやつ／ホットココア向け。",
+    "zh": "All the Better 低糖可可是 Daiso 偏淡甜零食或热可可之选。",
+    "zh-Hant": "All the Better 低糖可可是 Daiso 偏淡甜零食或熱可可之選。",
+    "vi": "Cacao ít đường All the Better là lựa chọn Daiso cho snack ít ngọt hoặc cacao nóng.",
+    "th": "โกโก้หวานน้อย All the Better เป็นตัวเลือกไดโซสำหรับของว่างหวานน้อยหรือโกโก้ร้อน",
+    "ru": "Низкосахарное какао All the Better в Daiso — для менее сладких перекусов или горячего какао."
+  },
+  "Buying tip\n\nCompare ‘low sugar / sugar-free’ claims with the actual sugar grams.": {
+    "ja": "購入のヒント\n\n『低糖／無糖』表記と実際の糖質量(g)を比べて。",
+    "zh": "购买提示\n\n把「低糖/无糖」宣称与实际糖克数对照。",
+    "zh-Hant": "購買提示\n\n把「低糖/無糖」宣稱與實際糖克數對照。",
+    "vi": "Mẹo mua\n\nSo tuyên bố ‘ít đường / không đường’ với số gam đường thật.",
+    "th": "ทิปซื้อ\n\nเทียบคำว่า ‘หวานน้อย / ไม่มีน้ำตาล’ กับกรัมน้ำตาลจริง",
+    "ru": "Совет\n\nСверяйте «low sugar / sugar-free» с фактическими граммами сахара."
+  },
+  "Lacto-Fit is a bestselling probiotic from Chong Kun Dang Health. Stick packs are common at pharmacies, Olive Young, and marts.": {
+    "ja": "ラクトフィットは鍾根堂健康の人気乳酸菌。薬局・オリーブヤング・マートでスティックが多いです。",
+    "zh": "乐多飞是钟根堂健康畅销益生菌。药店、Olive Young、超市常见条状包装。",
+    "zh-Hant": "樂多飛是鍾根堂健康暢銷益生菌。藥局、Olive Young、超市常見條狀包裝。",
+    "vi": "Lacto-Fit là probiotic bán chạy của Chong Kun Dang Health. Gói stick phổ biến ở hiệu thuốc, Olive Young và siêu thị.",
+    "th": "Lacto-Fit เป็นโพรไบโอติกขายดีของ Chong Kun Dang Health แพ็กสติกพบบ่อยที่ร้านยา Olive Young และมาร์ท",
+    "ru": "Lacto-Fit — бестселлер-пробиотик Chong Kun Dang Health. Стик-пачки часты в аптеках, Olive Young и маркетах."
+  },
+  "Buying tip\n\nCompare Olive Young and mart bundle deals.": {
+    "ja": "購入のヒント\n\nオリーブヤングとマートのまとめ価格を比較を。",
+    "zh": "购买提示\n\n比较 Olive Young 与超市捆绑价。",
+    "zh-Hant": "購買提示\n\n比較 Olive Young 與超市捆綁價。",
+    "vi": "Mẹo mua\n\nSo deal gói Olive Young và siêu thị.",
+    "th": "ทิปซื้อ\n\nเทียบดีลชุด Olive Young กับมาร์ท",
+    "ru": "Совет\n\nСравнивайте комплекты Olive Young и маркетов."
+  },
+  "Korea Eundan Vitamin C 1000 is a common Korean vitamin C supplement sold at pharmacies, convenience stores, Olive Young, and marts.": {
+    "ja": "高麗銀丹ビタミンC 1000は韓国でよく買うビタミンC。薬局・コンビニ・オリーブヤング・マートにあります。",
+    "zh": "高丽银丹维生素C 1000是常见韩国维C补充剂，药店、便利店、Olive Young、超市有售。",
+    "zh-Hant": "高麗銀丹維生素C 1000是常見韓國維C補充劑，藥局、便利商店、Olive Young、超市有售。",
+    "vi": "Korea Eundan Vitamin C 1000 là thực phẩm bổ sung vitamin C phổ biến ở hiệu thuốc, tiện lợi, Olive Young và siêu thị.",
+    "th": "Korea Eundan Vitamin C 1000 เป็นวิตามินซีเกาหลีที่พบบ่อยในร้านยา ร้านสะดวกซื้อ Olive Young และมาร์ท",
+    "ru": "Korea Eundan Vitamin C 1000 — распространённый корейский витамин C в аптеках, у дома, Olive Young и маркетах."
+  },
+  "Buying tip\n\nTravel mini packs/cases pack well in a suitcase.": {
+    "ja": "購入のヒント\n\n旅用ミニパック／ケースがスーツケースに入れやすいです。",
+    "zh": "购买提示\n\n旅行迷你装/盒子很好装进行李箱。",
+    "zh-Hant": "購買提示\n\n旅行迷你裝/盒子很好裝進行李箱。",
+    "vi": "Mẹo mua\n\nGói/case mini du lịch dễ bỏ vali.",
+    "th": "ทิปซื้อ\n\nแพ็ก/เคสมินิเที่ยวใส่กระเป๋าง่าย",
+    "ru": "Совет\n\nДорожные мини-пачки/кейсы удобно класть в чемодан."
+  },
+  "Yangban’s gim bugak series is crispy fried seaweed. Common gift snack in marts, souvenir corners, and airports.": {
+    "ja": "ヤンバンのキムブガクはサクサク揚げ海苔。マート・記念品コーナー・空港のギフトスナック定番です。",
+    "zh": "两班海苔脆片系列是酥脆油炸海苔。超市、纪念品区和机场常见伴手礼。",
+    "zh-Hant": "兩班海苔脆片系列是酥脆油炸海苔。超市、紀念品區和機場常見伴手禮。",
+    "vi": "Dòng gim bugak Yangban là rong biển chiên giòn. Snack quà phổ biến ở siêu thị, góc lưu niệm và sân bay.",
+    "th": "ซีรีส์กิมบูกัก Yangban เป็นสาหร่ายทอดกรอบ ของว่างของฝากพบบ่อยในมาร์ท มุมของที่ระลึก และสนามบิน",
+    "ru": "Серия gim bugak Yangban — хрустящие жареные водоросли. Частый подарочный снек в маркетах, сувенирных уголках и аэропортах."
+  },
+  "Buying tip\n\nPack in the suitcase center; multipacks are easy to share.": {
+    "ja": "購入のヒント\n\n割れやすいので荷物の中央へ。マルチは分けやすいです。",
+    "zh": "购买提示\n\n放在行李中间；多包装好分享。",
+    "zh-Hant": "購買提示\n\n放在行李中間；多包裝好分享。",
+    "vi": "Mẹo mua\n\nĐể giữa vali; gói nhiều dễ chia.",
+    "th": "ทิปซื้อ\n\nวางกลางกระเป๋า มัลติแพ็กแบ่งง่าย",
+    "ru": "Совет\n\nКладите в середину чемодана; мультипаки удобно делить."
+  },
+  "Nongshim Jjawang is ramen with a rich black-bean sauce. Often bought in multipacks with Chapagetti as edible souvenirs.": {
+    "ja": "農心チャワンは濃厚黒豆ソースのラーメン。チャパゲティと一緒にマルチで『食べるおみやげ』にされがちです。",
+    "zh": "农心炸王是浓郁黑豆酱拉面。常与炸酱面一起买多包装当作可食用伴手礼。",
+    "zh-Hant": "農心炸王是濃郁黑豆醬拉麵。常與炸醬麵一起買多包裝當作可食用伴手禮。",
+    "vi": "Nongshim Jjawang là mì sốt đậu đen đậm. Hay mua gói nhiều cùng Chapagetti làm quà ăn được.",
+    "th": "Nongshim Jjawang เป็นราเมนซอสถั่วดำเข้ม มักซื้อมัลติคู่ Chapagetti เป็นของฝากกินได้",
+    "ru": "Nongshim Jjawang — рамён с насыщенным соусом из чёрных бобов. Часто берут мультипаками вместе с Chapagetti как съедобный сувенир."
+  },
+  "Buying tip\n\nHypermarket ramen deals usually beat convenience-store prices.": {
+    "ja": "購入のヒント\n\n大型マートのラーメン特価がコンビニより安いことが多いです。",
+    "zh": "购买提示\n\n大型超市泡面特价通常比便利店便宜。",
+    "zh-Hant": "購買提示\n\n大型超市泡麵特價通常比便利商店便宜。",
+    "vi": "Mẹo mua\n\nDeal mì siêu thị lớn thường rẻ hơn tiện lợi.",
+    "th": "ทิปซื้อ\n\nดีลราเมนไฮเปอร์มาร์เก็ตมักถูกกว่าร้านสะดวกซื้อ",
+    "ru": "Совет\n\nАкции на рамён в гипермаркетах обычно выгоднее, чем у дома."
+  },
+  "Osulloc’s Jeju pure green tea bags and green-tea cookies are classic tea gifts from Jeju/Seoul tea houses, department stores, and airports.": {
+    "ja": "オスルロクの済州ピュア緑茶ティーバッグと緑茶クッキーは、済州／ソウルのティーハウス・百貨店・空港の定番お茶ギフトです。",
+    "zh": "雪绿茶济州纯绿茶茶包与绿茶饼干是济州/首尔茶屋、百货和机场的经典茶礼。",
+    "zh-Hant": "雪綠茶濟州純綠茶茶包與綠茶餅乾是濟州/首爾茶屋、百貨和機場的經典茶禮。",
+    "vi": "Túi trà xanh Jeju Osulloc và bánh trà xanh là quà trà kinh điển từ quán trà Jeju/Seoul, department store và sân bay.",
+    "th": "ชาเขียวเจจู Osulloc และคุกกี้ชาเขียวเป็นของฝากชาคลาสสิกจากร้านชาเจจู/โซล ห้าง และสนามบิน",
+    "ru": "Пакетики чистого зелёного чая Osulloc с Чеджу и печенье к чаю — классический чайный подарок из чайных домов Чеджу/Сеула, универмагов и аэропортов."
+  },
+  "Buying tip\n\nCompare Jeju Tea Museum, Myeongdong, and department-store sets.": {
+    "ja": "購入のヒント\n\n済州ティーミュージアム・明洞・百貨店セットを比較を。",
+    "zh": "购买提示\n\n比较济州茶博物馆、明洞与百货套装。",
+    "zh-Hant": "購買提示\n\n比較濟州茶博物館、明洞與百貨套裝。",
+    "vi": "Mẹo mua\n\nSo set Jeju Tea Museum, Myeongdong và department store.",
+    "th": "ทิปซื้อ\n\nเทียบชุด Jeju Tea Museum เมียงดง และห้าง",
+    "ru": "Совет\n\nСравнивайте наборы Jeju Tea Museum, Мёндона и универмагов."
+  },
+  "Korean traditional accessories — norigae charms, binyeo hairpins, hanbok brooches/keyrings, patterned earrings — make portable cultural gifts. Find them in Insadong, Tongin Market, folk villages, and department-store traditional corners.": {
+    "ja": "ノリゲ・ピニョ・韓服ブローチ／キーリング・文様ピアスなど韓国伝統アクセは持ち運びやすい文化ギフト。仁寺洞・通仁市場・民俗村・百貨店の伝統コーナーで。",
+    "zh": "诺里盖、发簪、韩服胸针/钥匙扣、纹样耳环等韩国传统饰品是便携文化礼物。可在仁寺洞、通仁市场、民俗村、百货传统专区找到。",
+    "zh-Hant": "諾里蓋、髮簪、韓服胸針/鑰匙圈、紋樣耳環等韓國傳統飾品是便攜文化禮物。可在仁寺洞、通仁市場、民俗村、百貨傳統專區找到。",
+    "vi": "Phụ kiện truyền thống Hàn — norigae, binyeo, ghim/ móc khóa hanbok, hoa tai họa tiết — là quà văn hóa dễ mang. Tìm ở Insadong, chợ Tongin, làng dân tộc và góc truyền thống department store.",
+    "th": "แอ็กเซสซอรีดั้งเดิมเกาหลี — นอริแก บินยอ เข็มกลัด/พวงกุญแจฮันบก ต่างหูลาย — ของขวัญวัฒนธรรมพกง่าย หาได้ที่อินซาดง ตลาดทงอิน หมู่บ้านพื้นบ้าน และมุมดั้งเดิมในห้าง",
+    "ru": "Традиционные аксессуары — норигэ, пиньо, броши/брелоки в стиле ханбока, серьги с узором — портативный культурный подарок. Ищите в Инсадонг, на рынке Тонъин, в фольклорных деревнях и традиционных уголках универмагов."
+  },
+  "Chaltteok Pie is Lotte Wellfood's shelf-stable snack: chewy sticky-rice cake filled with chocolate cream and coated in chocolate. It is a convenience-store/mart aisle item — not SPC Bizeun's chilled cafe \"chapssal-filled pie.\"": {
+    "ja": "チャルトッパイはロッテウェルフードの常温スナック。もちもち餅にチョコクリームを入れチョコで包む。コンビニ／マート商品で、SPCビズンの冷蔵『チャプサルパイ』とは別です。",
+    "zh": "찰떡파이是乐天 Wellfood 的常温零食：Q弹糯米糕夹巧克力奶油再裹巧克力。是便利店/超市货架商品——不是 SPC 빚은 的冷藏咖啡店「糯米派」。",
+    "zh-Hant": "찰떡파이是樂天 Wellfood 的常溫零食：Q彈糯米糕夾巧克力奶油再裹巧克力。是便利商店/超市貨架商品——不是 SPC 빚은 的冷藏咖啡店「糯米派」。",
+    "vi": "Chaltteok Pie là snack để được ở nhiệt độ phòng của Lotte Wellfood: bánh gạo nếp dai nhân kem sô-cô-la phủ sô-cô-la. Là hàng kệ tiện lợi/siêu thị — không phải “bánh chapssal” lạnh của SPC Bizeun.",
+    "th": "Chaltteok Pie เป็นของว่างอุณหภูมิห้องของ Lotte Wellfood แป้งข้าวเหนียวหนึบไส้ครีมช็อกเคลือบช็อก เป็นของชั้นร้านสะดวกซื้อ/มาร์ท — ไม่ใช่พายชาพซัลเย็นของ SPC Bizeun",
+    "ru": "Chaltteok Pie — стабильный при комнатной температуре снек Lotte Wellfood: жевательный рисовый тток с шоколадным кремом в глазури. Это полка у дома/маркета, не охлаждённый «чапссаль-пай» кафе SPC Bizeun."
+  },
+  "Easy to find as singles or multipacks at convenience stores and hypermarkets. Room-temperature storage makes it travel-friendly; also popular with Japanese visitors.": {
+    "ja": "コンビニ・大型マートで単品／マルチが手に入りやすい。常温保管で旅向き。日本人旅行者にも人気です。",
+    "zh": "便利店和大卖场有单颗/多包装。常温保存适合旅行；日本游客也爱买。",
+    "zh-Hant": "便利商店和大賣場有單顆/多包裝。常溫保存適合旅行；日本遊客也愛買。",
+    "vi": "Dễ tìm lẻ hoặc gói nhiều ở tiện lợi và siêu thị lớn. Bảo quản thường làm quà mang đi dễ; người Nhật cũng thích.",
+    "th": "หาง่ายแบบเดี่ยวหรือมัลติในร้านสะดวกซื้อและไฮเปอร์มาร์เก็ต เก็บอุณหภูมิห้องพกง่าย นักท่องเที่ยวญี่ปุ่นก็ชอบ",
+    "ru": "Легко найти поштучно или мультипаками у дома и в гипермаркетах. Комнатная температура удобна в дороге; популярно и у японских туристов."
+  },
+  "Buying tip\n\nLook for \"찰떡파이 / Chaltteok Pie\" and the Lotte (Myungga) label. Hypermarket multipacks usually beat tourist-spot prices.": {
+    "ja": "購入のヒント\n\n『찰떡파이 / Chaltteok Pie』とロッテ（名家）表記を。観光地より大型マートのまとめが安いことが多いです。",
+    "zh": "购买提示\n\n认准「찰떡파이 / Chaltteok Pie」与乐天（名家）标示。大卖场多包装通常比景区便宜。",
+    "zh-Hant": "購買提示\n\n認準「찰떡파이 / Chaltteok Pie」與樂天（名家）標示。大賣場多包裝通常比景區便宜。",
+    "vi": "Mẹo mua\n\nTìm \"찰떡파이 / Chaltteok Pie\" và nhãn Lotte (Myungga). Gói nhiều siêu thị lớn thường rẻ hơn điểm du lịch.",
+    "th": "ทิปซื้อ\n\nดู \"찰떡파이 / Chaltteok Pie\" และป้าย Lotte (Myungga) มัลติแพ็กไฮเปอร์มาร์เก็ตมักถูกกว่าจุดท่องเที่ยว",
+    "ru": "Совет\n\nИщите «찰떡파이 / Chaltteok Pie» и маркировку Lotte (Myungga). Мультипаки в гипермаркетах обычно дешевле туристических точек."
+  },
+  "Buying tip\n\nLook for the Haitai Honey Butter Chip label — many lookalikes.": {
+    "ja": "購入のヒント\n\n『ヘテ ハニーバターチップ』表記を。似た商品が多いです。",
+    "zh": "购买提示\n\n认准海太 Honey Butter Chip——仿品很多。",
+    "zh-Hant": "購買提示\n\n認準海太 Honey Butter Chip——仿品很多。",
+    "vi": "Mẹo mua\n\nTìm nhãn Haitai Honey Butter Chip — hàng na ná rất nhiều.",
+    "th": "ทิปซื้อ\n\nดูป้าย Haitai Honey Butter Chip ของเลียนแบบมีเยอะ",
+    "ru": "Совет\n\nИщите этикетку Haitai Honey Butter Chip — похожих брендов много."
+  }
+}
