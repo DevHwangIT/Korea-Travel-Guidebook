@@ -44385,7 +44385,7 @@
     "regionBusan": "Busan",
     "regionJeju": "Jeju",
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "Lộ trình trực tiếp",
       "bannerTitle": "Nhận gợi ý lịch trình theo thời gian thực.",
       "bannerCta": "Bắt đầu",
       "title": "Quiz lịch trình",
@@ -45118,7 +45118,14 @@
       },
       "guideEyebrow": "Hướng dẫn tour Seoul",
       "scheduleLabel": "Lịch trình trong ngày",
-      "fullRouteLabel": "Lộ trình trên bản đồ"
+      "fullRouteLabel": "Lộ trình trên bản đồ",
+      "meta": {
+        "totalTime": "Tổng thời gian",
+        "stops": "Điểm tham quan",
+        "start": "Giờ bắt đầu",
+        "finish": "Kết thúc",
+        "hours": "{hours} giờ"
+      }
     },
     "regionComingSoon": "Lịch trình gợi ý cho {region} sẽ được thêm sau.",
     "scheduleComingSoon": "Lịch trình theo số ngày (trong ngày, 1 đêm 2 ngày…) sẽ được thêm sau.",

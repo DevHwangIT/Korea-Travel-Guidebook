@@ -236,7 +236,10 @@
     var mins = b[0] * 60 + b[1] - (a[0] * 60 + a[1]);
     if (mins <= 0) return "";
     var hours = Math.round((mins / 60) * 10) / 10;
-    return String(hours) + "h";
+    return t("travelCourses.seoulCurated.meta.hours", "{hours}h").replace(
+      "{hours}",
+      String(hours)
+    );
   }
 
   function courseMeta(course) {
@@ -280,7 +283,7 @@
       var parts = splitRoute(copy.route);
       var hop =
         '<li class="course-guide-route__hop" aria-hidden="true">' +
-        '<svg viewBox="0 0 20 20"><circle cx="10.2" cy="3.7" r="1.7"></circle><path d="M7.2 17.5l1.8-5.1-2.1-2.5 3.4-2.1 2.4 1.5 2.5 6.4"></path><path d="M8.4 8.7l3.8 2.1"></path></svg>' +
+        '<svg viewBox="0 0 20 20"><path d="M7 4.8l6 5.2-6 5.2"></path></svg>' +
         "</li>";
       var flow = parts
         .map(function (name, idx) {
@@ -305,7 +308,7 @@
         '<div class="course-guide-route">' +
         '<p class="course-guide-route__kicker">' +
         '<span class="course-guide-route__icon" aria-hidden="true">' +
-        '<svg viewBox="0 0 20 20"><path d="M4 10h12"></path><path d="M12.5 6.5L16 10l-3.5 3.5"></path></svg>' +
+        '<svg viewBox="0 0 20 20"><circle cx="4.4" cy="14.8" r="1.7"></circle><circle cx="10" cy="5.2" r="1.7"></circle><circle cx="15.6" cy="12.6" r="1.7"></circle><path d="M5.7 13.4C7.1 11.2 8.4 7.8 10 6.8M11.5 6.6C12.8 8.2 13.9 10.4 14.6 11.2"></path></svg>' +
         "</span>" +
         escapeHtml(routeLabel) +
         "</p>" +

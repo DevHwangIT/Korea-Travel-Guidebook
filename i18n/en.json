@@ -47195,7 +47195,14 @@
       },
       "guideEyebrow": "Seoul course guide",
       "scheduleLabel": "Day timetable",
-      "fullRouteLabel": "Route on the map"
+      "fullRouteLabel": "Route on the map",
+      "meta": {
+        "totalTime": "Total time",
+        "stops": "Stops",
+        "start": "Start",
+        "finish": "Finish",
+        "hours": "{hours}h"
+      }
     },
     "regionComingSoon": "{region} recommended courses will be added later.",
     "scheduleComingSoon": "Courses by trip length (day trip, 1 night 2 days, and more) will be added later.",

@@ -44375,7 +44375,7 @@
     "regionBusan": "釜山",
     "regionJeju": "济州岛",
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "实时路线",
       "bannerTitle": "实时获取旅行路线推荐。",
       "bannerCta": "开始推荐",
       "title": "路线问答",
@@ -45108,7 +45108,14 @@
       },
       "guideEyebrow": "首尔行程指南",
       "scheduleLabel": "一日行程",
-      "fullRouteLabel": "地图上的移动路线"
+      "fullRouteLabel": "地图上的移动路线",
+      "meta": {
+        "totalTime": "总时长",
+        "stops": "游览点",
+        "start": "开始时间",
+        "finish": "结束",
+        "hours": "{hours}小时"
+      }
     },
     "regionComingSoon": "{region}推荐路线将于日后追加。",
     "scheduleComingSoon": "按行程天数（一日游、1晚2天等）的路线将于日后追加。",

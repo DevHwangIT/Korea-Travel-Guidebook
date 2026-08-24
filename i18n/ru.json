@@ -44410,7 +44410,7 @@
     "regionBusan": "Пусан",
     "regionJeju": "Чеджу",
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "Курс в реальном времени",
       "bannerTitle": "Получите маршрут в реальном времени.",
       "bannerCta": "Начать",
       "title": "Подбор маршрута",
@@ -45143,7 +45143,14 @@
       },
       "guideEyebrow": "Гид по маршрутам Сеула",
       "scheduleLabel": "Расписание дня",
-      "fullRouteLabel": "Маршрут на карте"
+      "fullRouteLabel": "Маршрут на карте",
+      "meta": {
+        "totalTime": "Всего времени",
+        "stops": "Точки маршрута",
+        "start": "Начало",
+        "finish": "Финиш",
+        "hours": "{hours} ч"
+      }
     },
     "regionComingSoon": "Рекомендованные маршруты по региону «{region}» будут добавлены позже.",
     "scheduleComingSoon": "Маршруты по длительности поездки (день, 1 ночь 2 дня и т. д.) будут добавлены позже.",

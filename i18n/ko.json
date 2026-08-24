@@ -46435,7 +46435,7 @@
     "regionBusan": "부산",
     "regionJeju": "제주도",
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "실시간 코스",
       "bannerTitle": "실시간으로 여행 코스를 추천받으세요.",
       "bannerCta": "추천받기",
       "title": "여행 코스 추천",
@@ -47168,7 +47168,14 @@
       },
       "guideEyebrow": "서울 코스 안내",
       "scheduleLabel": "하루 일정",
-      "fullRouteLabel": "지도상 이동 경로"
+      "fullRouteLabel": "지도상 이동 경로",
+      "meta": {
+        "totalTime": "총 소요 시간",
+        "stops": "방문 포인트",
+        "start": "시작 시간",
+        "finish": "마무리",
+        "hours": "{hours}시간"
+      }
     },
     "regionComingSoon": "{region} 추천 코스는 추후 추가될 예정입니다.",
     "scheduleComingSoon": "당일·1박2일 등 일정별 코스는 추후 추가될 예정입니다.",

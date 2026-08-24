@@ -28,6 +28,13 @@
       "intro": "Hướng dẫn lịch trình một ngày tại Seoul. Chọn tiêu đề để đọc tổng quan, lộ trình và thời gian biểu.",
       "routeLabel": "Lộ trình tổng quan",
       "tipsLabel": "Mẹo",
+      "meta": {
+        "totalTime": "Tổng thời gian",
+        "stops": "Điểm tham quan",
+        "start": "Giờ bắt đầu",
+        "finish": "Kết thúc",
+        "hours": "{hours} giờ"
+      },
       "openCourse": "Xem tour",
       "courses": {
         "c01": {
@@ -572,7 +579,7 @@
       "fullRouteLabel": "Lộ trình trên bản đồ"
     },
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "Lộ trình trực tiếp",
       "bannerTitle": "Nhận gợi ý lịch trình theo thời gian thực.",
       "bannerCta": "Bắt đầu",
       "title": "Quiz lịch trình",

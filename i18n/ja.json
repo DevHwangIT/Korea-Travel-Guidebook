@@ -44374,7 +44374,7 @@
     "regionBusan": "釜山",
     "regionJeju": "済州島",
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "リアルタイムコース",
       "bannerTitle": "リアルタイムで旅コースをおすすめします。",
       "bannerCta": "おすすめを受ける",
       "title": "旅コース診断",
@@ -45107,7 +45107,14 @@
       },
       "guideEyebrow": "ソウルコース案内",
       "scheduleLabel": "一日の時間割",
-      "fullRouteLabel": "地図上の移動経路"
+      "fullRouteLabel": "地図上の移動経路",
+      "meta": {
+        "totalTime": "所要時間",
+        "stops": "訪問スポット",
+        "start": "開始時刻",
+        "finish": "終了",
+        "hours": "{hours}時間"
+      }
     },
     "regionComingSoon": "{region}のおすすめコースは今後追加予定です。",
     "scheduleComingSoon": "日帰り・1泊2日など日程別コースは今後追加予定です。",

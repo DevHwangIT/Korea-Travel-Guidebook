@@ -28,6 +28,13 @@
       "intro": "ソウルを1日で巡る定番コースのガイドです。タイトルを選ぶと紹介・動線・時間割が開きます。",
       "routeLabel": "ルート一覧",
       "tipsLabel": "ヒント",
+      "meta": {
+        "totalTime": "所要時間",
+        "stops": "訪問スポット",
+        "start": "開始時刻",
+        "finish": "終了",
+        "hours": "{hours}時間"
+      },
       "openCourse": "コースを見る",
       "courses": {
         "c01": {
@@ -572,7 +579,7 @@
       "fullRouteLabel": "地図上の移動経路"
     },
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "リアルタイムコース",
       "bannerTitle": "リアルタイムで旅コースをおすすめします。",
       "bannerCta": "おすすめを受ける",
       "title": "旅コース診断",

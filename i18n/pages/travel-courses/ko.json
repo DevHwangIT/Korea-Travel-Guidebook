@@ -24,7 +24,7 @@
       "guideEyebrow": "{region} 코스 안내"
     },
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "실시간 코스",
       "bannerTitle": "실시간으로 여행 코스를 추천받으세요.",
       "bannerCta": "추천받기",
       "title": "여행 코스 추천",
@@ -216,6 +216,13 @@
       "intro": "서울을 하루 만에 알차게 도는 대표 코스 설명서입니다. 타이틀을 고르면 소개·동선·시간표가 펼쳐집니다.",
       "routeLabel": "한눈에 보는 루트",
       "tipsLabel": "팁",
+      "meta": {
+        "totalTime": "총 소요 시간",
+        "stops": "방문 포인트",
+        "start": "시작 시간",
+        "finish": "마무리",
+        "hours": "{hours}시간"
+      },
       "openCourse": "코스 보기",
       "courses": {
         "c01": {

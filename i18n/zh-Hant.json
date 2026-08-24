@@ -44410,7 +44410,7 @@
     "regionBusan": "釜山",
     "regionJeju": "濟州島",
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "即時路線",
       "bannerTitle": "即時取得旅行路線推薦。",
       "bannerCta": "開始推薦",
       "title": "路線問答",
@@ -45143,7 +45143,14 @@
       },
       "guideEyebrow": "首爾行程指南",
       "scheduleLabel": "一日行程",
-      "fullRouteLabel": "地圖上的移動路線"
+      "fullRouteLabel": "地圖上的移動路線",
+      "meta": {
+        "totalTime": "總時長",
+        "stops": "遊覽點",
+        "start": "開始時間",
+        "finish": "結束",
+        "hours": "{hours}小時"
+      }
     },
     "regionComingSoon": "{region}推薦路線將於日後追加。",
     "scheduleComingSoon": "依行程天數（一日遊、1晚2天等）的路線將於日後追加。",

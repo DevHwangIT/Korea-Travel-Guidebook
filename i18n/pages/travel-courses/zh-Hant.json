@@ -28,6 +28,13 @@
       "intro": "精選首爾一日行程說明。選擇標題即可閱讀概述、動線與時間表。",
       "routeLabel": "路線一覽",
       "tipsLabel": "小提示",
+      "meta": {
+        "totalTime": "總時長",
+        "stops": "遊覽點",
+        "start": "開始時間",
+        "finish": "結束",
+        "hours": "{hours}小時"
+      },
       "openCourse": "查看路線",
       "courses": {
         "c01": {
@@ -572,7 +579,7 @@
       "fullRouteLabel": "地圖上的移動路線"
     },
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "即時路線",
       "bannerTitle": "即時取得旅行路線推薦。",
       "bannerCta": "開始推薦",
       "title": "路線問答",

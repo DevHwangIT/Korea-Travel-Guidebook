@@ -216,6 +216,13 @@
       "intro": "Guidebook-style day itineraries for Seoul. Pick a title to read the overview, route outline, and timetable.",
       "routeLabel": "Route at a glance",
       "tipsLabel": "Tips",
+      "meta": {
+        "totalTime": "Total time",
+        "stops": "Stops",
+        "start": "Start",
+        "finish": "Finish",
+        "hours": "{hours}h"
+      },
       "openCourse": "View course",
       "courses": {
         "c01": {

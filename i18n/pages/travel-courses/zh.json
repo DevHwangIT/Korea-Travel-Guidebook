@@ -28,6 +28,13 @@
       "intro": "精选首尔一日行程说明。选择标题即可阅读概述、动线与时间表。",
       "routeLabel": "路线一览",
       "tipsLabel": "小贴士",
+      "meta": {
+        "totalTime": "总时长",
+        "stops": "游览点",
+        "start": "开始时间",
+        "finish": "结束",
+        "hours": "{hours}小时"
+      },
       "openCourse": "查看路线",
       "courses": {
         "c01": {
@@ -572,7 +579,7 @@
       "fullRouteLabel": "地图上的移动路线"
     },
     "quiz": {
-      "bannerEyebrow": "Live course",
+      "bannerEyebrow": "实时路线",
       "bannerTitle": "实时获取旅行路线推荐。",
       "bannerCta": "开始推荐",
       "title": "路线问答",
