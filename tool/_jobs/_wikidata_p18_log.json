@@ -1,0 +1,595 @@
+{
+  "ok": 2,
+  "miss": 117,
+  "remaining": 143,
+  "missed": [
+    {
+      "slug": "bus-terminal-ulsan",
+      "ko": "울산고속버스터미널",
+      "en": "Ulsan Express Bus Terminal"
+    },
+    {
+      "slug": "arte-museum-jeju",
+      "ko": "아르떼뮤지엄 제주",
+      "en": "ARTE Museum Jeju"
+    },
+    {
+      "slug": "nohyeong-supermarket",
+      "ko": "노형슈퍼마켓",
+      "en": "Nohyeong Supermarket"
+    },
+    {
+      "slug": "dalseong-wetland",
+      "ko": "달성습지",
+      "en": "Dalseong Wetland"
+    },
+    {
+      "slug": "yeojaman",
+      "ko": "여자만",
+      "en": "Yeoja Bay"
+    },
+    {
+      "slug": "gangcheonsan",
+      "ko": "강천산",
+      "en": "Gangcheonsan"
+    },
+    {
+      "slug": "cheongwansan",
+      "ko": "천관산",
+      "en": "Cheongwansan"
+    },
+    {
+      "slug": "paryeongsan",
+      "ko": "팔영산",
+      "en": "Paryeongsan"
+    },
+    {
+      "slug": "hwangaksan",
+      "ko": "황악산",
+      "en": "Hwangaksan"
+    },
+    {
+      "slug": "gubyeongsan",
+      "ko": "구병산",
+      "en": "Gubyeongsan"
+    },
+    {
+      "slug": "unjangsan",
+      "ko": "운장산",
+      "en": "Unjangsan"
+    },
+    {
+      "slug": "deokhangsan",
+      "ko": "덕항산",
+      "en": "Deokhangsan"
+    },
+    {
+      "slug": "namdeogyusan",
+      "ko": "남덕유산",
+      "en": "Namdeogyusan"
+    },
+    {
+      "slug": "bangjangsan",
+      "ko": "방장산",
+      "en": "Bangjangsan"
+    },
+    {
+      "slug": "gyebangsan",
+      "ko": "계방산",
+      "en": "Gyebangsan"
+    },
+    {
+      "slug": "gitdaebong",
+      "ko": "깃대봉",
+      "en": "Gitdaebong"
+    },
+    {
+      "slug": "sipripo-beach",
+      "ko": "십리포해수욕장",
+      "en": "Sipripo Beach"
+    },
+    {
+      "slug": "manseongni-black-sand-beach",
+      "ko": "만성리검은모래해변",
+      "en": "Manseongni Black Sand Beach"
+    },
+    {
+      "slug": "jukdo-beach-yangyang",
+      "ko": "죽도해수욕장",
+      "en": "Jukdo Beach"
+    },
+    {
+      "slug": "goraebul-beach",
+      "ko": "고래불해수욕장",
+      "en": "Goraebul Beach"
+    },
+    {
+      "slug": "wolpo-beach",
+      "ko": "월포해수욕장",
+      "en": "Wolpo Beach"
+    },
+    {
+      "slug": "gujora-beach",
+      "ko": "구조라해수욕장",
+      "en": "Gujora Beach"
+    },
+    {
+      "slug": "wahyeon-sand-forest-beach",
+      "ko": "와현모래숲해변",
+      "en": "Wahyeon Sand Forest Beach"
+    },
+    {
+      "slug": "myeongsasipri-beach",
+      "ko": "명사십리해수욕장",
+      "en": "Myeongsasipri Beach"
+    },
+    {
+      "slug": "yulpo-pine-beach",
+      "ko": "율포솔밭해수욕장",
+      "en": "Yulpo Pine Grove Beach"
+    },
+    {
+      "slug": "namyeol-sunrise-beach",
+      "ko": "남열해돋이해수욕장",
+      "en": "Namyeol Sunrise Beach"
+    },
+    {
+      "slug": "seonyudo-beach",
+      "ko": "선유도해수욕장",
+      "en": "Seonyudo Beach"
+    },
+    {
+      "slug": "byeonsan-beach",
+      "ko": "변산해수욕장",
+      "en": "Byeonsan Beach"
+    },
+    {
+      "slug": "chunjangdae-beach",
+      "ko": "춘장대해수욕장",
+      "en": "Chunjangdae Beach"
+    },
+    {
+      "slug": "jinha-beach",
+      "ko": "진하해수욕장",
+      "en": "Jinha Beach"
+    },
+    {
+      "slug": "munhaksanseot",
+      "ko": "문학산성",
+      "en": "Munhaksanseong Fortress"
+    },
+    {
+      "slug": "oryundae-hanguksungyojabakmulgwan",
+      "ko": "오륜대 한국순교자박물관",
+      "en": "Oryundae Korean Martyrs Museum"
+    },
+    {
+      "slug": "busanhat-je1budu-geundaeyusan",
+      "ko": "부산항 제1부두 근대유산",
+      "en": "Busan Port Pier 1 Modern Heritage"
+    },
+    {
+      "slug": "daegueumseot-yujeok",
+      "ko": "대구읍성 유적",
+      "en": "Daegu Eupseong Remains"
+    },
+    {
+      "slug": "isathwa-gotaek",
+      "ko": "이상화 고택",
+      "en": "Yi Sang-hwa Historic House"
+    },
+    {
+      "slug": "seosatdon-gotaek",
+      "ko": "서상돈 고택",
+      "en": "Seo Sang-don Historic House"
+    },
+    {
+      "slug": "gukchaebosatundotginyeolgwan",
+      "ko": "국채보상운동기념관",
+      "en": "National Debt Redemption Movement Memorial"
+    },
+    {
+      "slug": "yuksinsa",
+      "ko": "육신사",
+      "en": "Yukshinsa Shrine"
+    },
+    {
+      "slug": "nalpyeotmunssibonrisegeoji",
+      "ko": "남평문씨본리세거지",
+      "en": "Nampyeong Mun Clan Village"
+    },
+    {
+      "slug": "andotminsokchon",
+      "ko": "안동민속촌",
+      "en": "Andong Folk Village"
+    },
+    {
+      "slug": "jebiwon-seokbul",
+      "ko": "제비원 석불",
+      "en": "Jebiwon Stone Buddha"
+    },
+    {
+      "slug": "bothwatsa",
+      "ko": "봉황사",
+      "en": "Bonghwangsa Temple"
+    },
+    {
+      "slug": "imokdae",
+      "ko": "이목대",
+      "en": "Imokdae"
+    },
+    {
+      "slug": "nalgosanseot",
+      "ko": "남고산성",
+      "en": "Namgosanseong Fortress"
+    },
+    {
+      "slug": "gotju-chutcheotgalyeot",
+      "ko": "공주 충청감영",
+      "en": "Chungcheong Gamyeong Site"
+    },
+    {
+      "slug": "gotju-jemincheon-yeoksamunhwageori",
+      "ko": "공주 제민천 역사문화거리",
+      "en": "Jemincheon Historic Street"
+    },
+    {
+      "slug": "sotsanri-gobungun",
+      "ko": "송산리 고분군",
+      "en": "Songsan-ri Tumuli"
+    },
+    {
+      "slug": "gwanbukriyujeok",
+      "ko": "관북리유적",
+      "en": "Gwanbuk-ri Historic Site"
+    },
+    {
+      "slug": "neutsanri-gobungun",
+      "ko": "능산리 고분군",
+      "en": "Neungsan-ri Tumuli"
+    },
+    {
+      "slug": "seotheutsanseot",
+      "ko": "성흥산성",
+      "en": "Seongheungsanseong Fortress"
+    },
+    {
+      "slug": "goseot-watgokmaeul",
+      "ko": "고성 왕곡마을",
+      "en": "Wanggok Village"
+    },
+    {
+      "slug": "danyat-ondalgwangwatji",
+      "ko": "단양 온달관광지",
+      "en": "Ondal Tourist Site"
+    },
+    {
+      "slug": "iksan-watgutriyujeok",
+      "ko": "익산 왕궁리유적",
+      "en": "Wanggung-ri Historic Site"
+    },
+    {
+      "slug": "muju-jeoksatsanseot",
+      "ko": "무주 적상산성",
+      "en": "Jeoksangsanseong Fortress"
+    },
+    {
+      "slug": "nalwon-gwathanruwon",
+      "ko": "남원 광한루원",
+      "en": "Gwanghalluwon Garden"
+    },
+    {
+      "slug": "nalwon-manboksaji",
+      "ko": "남원 만복사지",
+      "en": "Manboksa Temple Site"
+    },
+    {
+      "slug": "ilsil-saseondae",
+      "ko": "임실 사선대",
+      "en": "Sasandae"
+    },
+    {
+      "slug": "jeoteum-museotseowon",
+      "ko": "정읍 무성서원",
+      "en": "Museongseowon"
+    },
+    {
+      "slug": "dalyat-sikyeotjeot",
+      "ko": "담양 식영정",
+      "en": "Sigyeongjeong Pavilion"
+    },
+    {
+      "slug": "dalyat-myeotokheon",
+      "ko": "담양 명옥헌",
+      "en": "Myeongokheon Garden"
+    },
+    {
+      "slug": "jatseot-pilalseowon",
+      "ko": "장성 필암서원",
+      "en": "Pilamseowon"
+    },
+    {
+      "slug": "gatjin-dasanchodat",
+      "ko": "강진 다산초당",
+      "en": "Dasanchodang"
+    },
+    {
+      "slug": "yeosu-heutguksa",
+      "ko": "여수 흥국사",
+      "en": "Heungguksa Temple"
+    },
+    {
+      "slug": "yeosu-chutminsa",
+      "ko": "여수 충민사",
+      "en": "Chungminsa Shrine"
+    },
+    {
+      "slug": "gukrimasiamunhwajeondat",
+      "ko": "국립아시아문화전당",
+      "en": "Asia Culture Center"
+    },
+    {
+      "slug": "wolbotseowon",
+      "ko": "월봉서원",
+      "en": "Wolbongseowon"
+    },
+    {
+      "slug": "chwigajeot",
+      "ko": "취가정",
+      "en": "Chwigajeong"
+    },
+    {
+      "slug": "gwatju-5-18-minjuhwaundot-gwanryeon-sajeok",
+      "ko": "광주 5·18 민주화운동 관련 사적",
+      "en": "May 18 Democratization Movement Sites"
+    },
+    {
+      "slug": "nalhae-geulsan-borial",
+      "ko": "남해 금산 보리암",
+      "en": "Boriam Hermitage"
+    },
+    {
+      "slug": "hamcheon-hwatmaesanseot",
+      "ko": "합천 황매산성",
+      "en": "Hwangmaesanseong Fortress"
+    },
+    {
+      "slug": "sancheot-mokmyeonsibaeyuji",
+      "ko": "산청 목면시배유지",
+      "en": "Cotton Cultivation Historic Site"
+    },
+    {
+      "slug": "goseot-sothakdotgobungun",
+      "ko": "고성 송학동고분군",
+      "en": "Songhak-dong Tumuli"
+    },
+    {
+      "slug": "chatnyeot-gyodot-sothyeondot-gobungun",
+      "ko": "창녕 교동·송현동 고분군",
+      "en": "Gyodong & Songhyeon-dong Tumuli"
+    },
+    {
+      "slug": "cheonjeonri-gakseok",
+      "ko": "천전리 각석",
+      "en": "Cheonjeon-ri Petroglyphs"
+    },
+    {
+      "slug": "seoknalsa",
+      "ko": "석남사",
+      "en": "Seongnamsa Temple"
+    },
+    {
+      "slug": "daegokbakmulgwan",
+      "ko": "대곡박물관",
+      "en": "Daegok Museum"
+    },
+    {
+      "slug": "cheoyotal",
+      "ko": "처용암",
+      "en": "Cheoyongam Rock"
+    },
+    {
+      "slug": "dotchundat",
+      "ko": "동춘당",
+      "en": "Dongchundang"
+    },
+    {
+      "slug": "hoedeokhyatgyo",
+      "ko": "회덕향교",
+      "en": "Hoedeok Hyanggyo"
+    },
+    {
+      "slug": "daejeongeunhyeondaesajeonsigwan",
+      "ko": "대전근현대사전시관",
+      "en": "Daejeon Modern History Exhibition Hall"
+    },
+    {
+      "slug": "sejotdaewat-yeotreut-gwanryeon-yeoksamunhwagwon",
+      "ko": "세종대왕 영릉 관련 역사문화권",
+      "en": "King Sejong Yeongneung Heritage Area"
+    },
+    {
+      "slug": "dokrakjeot",
+      "ko": "독락정",
+      "en": "Dongnakjeong Pavilion"
+    },
+    {
+      "slug": "seonbichon",
+      "ko": "선비촌",
+      "en": "Seonbichon Village"
+    },
+    {
+      "slug": "museolmaeul",
+      "ko": "무섬마을",
+      "en": "Museom Village"
+    },
+    {
+      "slug": "yeotju-geundaeyeoksamunhwageori",
+      "ko": "영주 근대역사문화거리",
+      "en": "Yeongju Modern History Culture Street"
+    },
+    {
+      "slug": "totyeot-chutryeolsa",
+      "ko": "통영 충렬사",
+      "en": "Tongyeong Chungnyeolsa"
+    },
+    {
+      "slug": "totyeotseotji",
+      "ko": "통영성지",
+      "en": "Tongyeong Fortress Site"
+    },
+    {
+      "slug": "chakryatmyo",
+      "ko": "착량묘",
+      "en": "Changnyangmyo Shrine"
+    },
+    {
+      "slug": "sotgatjeot",
+      "ko": "송강정",
+      "en": "Songgangjeong Pavilion"
+    },
+    {
+      "slug": "okjeongobungun",
+      "ko": "옥전고분군",
+      "en": "Okjeon Tumuli"
+    },
+    {
+      "slug": "hamcheon-salgahyatgyo",
+      "ko": "합천 삼가향교",
+      "en": "Samga Hyanggyo"
+    },
+    {
+      "slug": "jatgihyatgyo",
+      "ko": "장기향교",
+      "en": "Janggi Hyanggyo",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%EC%9E%A5%EA%B8%B0%ED%96%A5%EA%B5%90.jpg"
+    },
+    {
+      "slug": "heuthaehyatgyo",
+      "ko": "흥해향교",
+      "en": "Heunghae Hyanggyo"
+    },
+    {
+      "slug": "sanjeong-lake",
+      "ko": "산정호수",
+      "en": "Sanjeong Lake"
+    },
+    {
+      "slug": "wangsong-lake",
+      "ko": "왕송호수",
+      "en": "Wangsong Lake"
+    },
+    {
+      "slug": "homyeong-lake",
+      "ko": "호명호수",
+      "en": "Homyeong Lake"
+    },
+    {
+      "slug": "geumgwang-lake",
+      "ko": "금광호수",
+      "en": "Geumgwang Lake"
+    },
+    {
+      "slug": "seolbong-lake",
+      "ko": "설봉호",
+      "en": "Seolbong Lake"
+    },
+    {
+      "slug": "soyang-lake",
+      "ko": "소양호",
+      "en": "Soyang Lake"
+    },
+    {
+      "slug": "songji-lake",
+      "ko": "송지호",
+      "en": "Songji Lake",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Songji%20Lake%20B%207.JPG"
+    },
+    {
+      "slug": "hongcheon-palbong-lake",
+      "ko": "팔봉산 홍천강·호수권",
+      "en": "Palbongsan Hongcheon River & Lake Area"
+    },
+    {
+      "slug": "paro-lake",
+      "ko": "파로호",
+      "en": "Paro Lake"
+    },
+    {
+      "slug": "soyang-lake-inje",
+      "ko": "소양호 상류권",
+      "en": "Soyang Lake Upper Reaches"
+    },
+    {
+      "slug": "cheongpung-lake",
+      "ko": "청풍호",
+      "en": "Cheongpung Lake"
+    },
+    {
+      "slug": "goesan-lake",
+      "ko": "괴산호",
+      "en": "Goesan Lake"
+    },
+    {
+      "slug": "daecheong-lake",
+      "ko": "대청호",
+      "en": "Daecheong Lake"
+    },
+    {
+      "slug": "sapgyo-lake",
+      "ko": "삽교호",
+      "en": "Sapgyo Lake"
+    },
+    {
+      "slug": "boryeong-lake",
+      "ko": "보령호",
+      "en": "Boryeong Lake"
+    },
+    {
+      "slug": "eunpa-lake-park",
+      "ko": "은파호수공원",
+      "en": "Eunpa Lake Park"
+    },
+    {
+      "slug": "naejang-lake",
+      "ko": "내장호",
+      "en": "Naejang Lake"
+    },
+    {
+      "slug": "yeongsan-lake",
+      "ko": "영산호",
+      "en": "Yeongsan Lake"
+    },
+    {
+      "slug": "damyang-lake",
+      "ko": "담양호",
+      "en": "Damyang Lake"
+    },
+    {
+      "slug": "jangseong-lake",
+      "ko": "장성호",
+      "en": "Jangseong Lake",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%EC%9E%A5%EC%84%B1%ED%98%B8.JPG"
+    },
+    {
+      "slug": "junam-reservoir",
+      "ko": "주남저수지",
+      "en": "Junam Reservoir"
+    },
+    {
+      "slug": "andong-lake",
+      "ko": "안동호",
+      "en": "Andong Lake"
+    },
+    {
+      "slug": "bomun-lake",
+      "ko": "보문호",
+      "en": "Bomun Lake"
+    },
+    {
+      "slug": "yeongcheon-lake",
+      "ko": "영천호",
+      "en": "Yeongcheon Lake"
+    }
+  ]
+}

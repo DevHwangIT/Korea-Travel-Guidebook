@@ -1,5 +1,18 @@
 # Admin (localhost)
 
+## tool 폴더
+
+일상적으로 쓰는 것은 여기만 보면 됩니다.
+
+| 파일 | 용도 |
+|------|------|
+| `content-admin.bat` / `content-admin.py` | 로컬 관리자 CMS |
+| `update-version.bat` / `update-version.py` | 먹거리 카탈로그 + HTML `?v=` 갱신 |
+| `build-food-recommend-catalog.py` | 먹거리 퀴즈 카탈로그만 재생성 |
+| `generate-sitemap.py` | `sitemap.xml` 재생성 |
+| `lib/` · `static/` | CMS·버전 bump가 쓰는 코드 |
+| `_jobs/` | 일회성 패치·이미지 수집 (공개 사이트에서 안 씀) |
+
 ## 올바르게 열기
 
 1. `tool/content-admin.bat` 더블클릭 (또는 `python tool/content-admin.py`)
@@ -65,4 +78,4 @@ Section `/section?id=fun`. Public cards: `pages/buy/index.html#fun` → `pages/f
 - 상호 사진: `shop_image` → `pages/foods/{meals|desserts}/{dish}/{shop}/media/cover.jpg`
 - i18n 필드: `sourceType`, `placeUrl`, `mapsUrl`, `mapsEmbedUrl`, `mapsProvider`, `phone`, `hours`, `previewImage`, `menuItems`, `photos`, `placeId`
 - 플레이스 보강: `POST /api/shop/resolve` 가 네이버 Apollo 상태를 파싱해 전화·영업시간·메뉴·사진을 채움 (막히면 기존 값 유지)
-- 일괄 보강: `python tool/migrate_shop_enrich.py` (이미지·메뉴를 `media/`에 로컬 저장)
+- 일괄 보강: `python tool/_jobs/migrate_shop_enrich.py` (이미지·메뉴를 `media/`에 로컬 저장)

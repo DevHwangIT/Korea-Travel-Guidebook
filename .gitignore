@@ -34,3 +34,6 @@ Desktop.ini
 tmp/
 temp/
 .scratch/
+
+# Local npm leftovers (this site is static HTML; no Node runtime)
+node_modules/

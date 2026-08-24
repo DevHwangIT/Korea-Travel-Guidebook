@@ -1924,6 +1924,11 @@
     var fromI18n = placeField(slug, "image");
     if (fromI18n) list.push(fromI18n);
     if (meta.image) list.push(meta.image);
+    if (kind) {
+      list.push("Images/places/" + kind + "/" + slug + ".jpg");
+      list.push("Images/places/" + kind + "/" + slug + ".png");
+      list.push("Images/places/" + kind + "/" + slug + ".webp");
+    }
     list.push("Images/places/" + slug + ".jpg");
     list.push("Images/places/" + slug + ".png");
     list.push("Images/places/" + slug + ".webp");

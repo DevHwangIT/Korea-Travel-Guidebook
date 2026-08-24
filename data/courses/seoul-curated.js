@@ -2,15 +2,15 @@
 window.SEOUL_CURATED_COURSES = [
   {
     "id": "c01",
-    "cover": "../../Images/places/gyeongbok.jpg",
+    "cover": "../../Images/places/heritage/gyeongbok.jpg",
     "stops": [
       {
         "time": "09:00",
-        "image": "../../Images/places/gyeongbok.jpg"
+        "image": "../../Images/places/heritage/gyeongbok.jpg"
       },
       {
         "time": "11:00",
-        "image": "../../Images/places/bukchon.jpg"
+        "image": "../../Images/places/heritage/bukchon.jpg"
       },
       {
         "time": "12:30",
@@ -19,29 +19,29 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/ssamziegil.jpg"
+        "image": "../../Images/places/_courses/ssamziegil.jpg"
       },
       {
         "time": "15:30",
-        "image": "../../Images/places/ikseon-dong.jpg"
+        "image": "../../Images/places/_courses/ikseon-dong.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/gwangjang-market.jpg"
+        "image": "../../Images/places/market/gwangjang-market.jpg"
       },
       {
         "time": "19:00",
-        "image": "../../Images/places/cheonggyecheon.jpg"
+        "image": "../../Images/places/nature/cheonggyecheon.jpg"
       }
     ]
   },
   {
     "id": "c02",
-    "cover": "../../Images/places/myeongdong.jpg",
+    "cover": "../../Images/places/city/myeongdong.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/myeongdong.jpg"
+        "image": "../../Images/places/city/myeongdong.jpg"
       },
       {
         "time": "12:00",
@@ -50,20 +50,20 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "13:30",
-        "image": "../../Images/places/namsan.jpg",
+        "image": "../../Images/places/city/namsan.jpg",
         "place": "namsan-park"
       },
       {
         "time": "15:00",
-        "image": "../../Images/places/n-seoul-tower.jpg"
+        "image": "../../Images/places/_courses/n-seoul-tower.jpg"
       },
       {
         "time": "17:30",
-        "image": "../../Images/places/namdaemun-market.jpg"
+        "image": "../../Images/places/market/namdaemun-market.jpg"
       },
       {
         "time": "19:00",
-        "image": "../../Images/places/seoullo-7017.jpg"
+        "image": "../../Images/places/_courses/seoullo-7017.jpg"
       },
       {
         "time": "20:00",
@@ -74,15 +74,15 @@ window.SEOUL_CURATED_COURSES = [
   },
   {
     "id": "c03",
-    "cover": "../../Images/places/seoul-forest.jpg",
+    "cover": "../../Images/places/nature/seoul-forest.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/seoul-forest.jpg"
+        "image": "../../Images/places/nature/seoul-forest.jpg"
       },
       {
         "time": "11:30",
-        "image": "../../Images/places/seongsu-cafe.jpg"
+        "image": "../../Images/places/_courses/seongsu-cafe.jpg"
       },
       {
         "time": "13:00",
@@ -91,11 +91,11 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:30",
-        "image": "../../Images/places/seongsu-popup.jpg"
+        "image": "../../Images/places/_courses/seongsu-popup.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/ttukseom-hangang.jpg"
+        "image": "../../Images/places/_courses/ttukseom-hangang.jpg"
       },
       {
         "time": "19:00",
@@ -104,17 +104,17 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "20:30",
-        "image": "../../Images/places/konkuk-university.jpg"
+        "image": "../../Images/places/_courses/konkuk-university.jpg"
       }
     ]
   },
   {
     "id": "c04",
-    "cover": "../../Images/places/yeonnam-cafe.jpg",
+    "cover": "../../Images/places/_courses/yeonnam-cafe.jpg",
     "stops": [
       {
         "time": "10:30",
-        "image": "../../Images/places/yeonnam-cafe.jpg"
+        "image": "../../Images/places/_courses/yeonnam-cafe.jpg"
       },
       {
         "time": "12:00",
@@ -123,19 +123,19 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "13:30",
-        "image": "../../Images/places/hongdae-street.jpg"
+        "image": "../../Images/places/_courses/hongdae-street.jpg"
       },
       {
         "time": "15:30",
-        "image": "../../Images/places/hongdae-shops.jpg"
+        "image": "../../Images/places/_courses/hongdae-shops.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/mangwon-market.jpg"
+        "image": "../../Images/places/market/mangwon-market.jpg"
       },
       {
         "time": "18:30",
-        "image": "../../Images/places/mangwon-hangang.jpg"
+        "image": "../../Images/places/_courses/mangwon-hangang.jpg"
       },
       {
         "time": "20:00",
@@ -146,15 +146,15 @@ window.SEOUL_CURATED_COURSES = [
   },
   {
     "id": "c05",
-    "cover": "../../Images/places/coex.jpg",
+    "cover": "../../Images/places/city/coex.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/coex.jpg"
+        "image": "../../Images/places/city/coex.jpg"
       },
       {
         "time": "11:00",
-        "image": "../../Images/places/byeolmadang-library.jpg"
+        "image": "../../Images/places/city/byeolmadang-library.jpg"
       },
       {
         "time": "12:30",
@@ -163,38 +163,38 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/boteunsa.jpg"
+        "image": "../../Images/places/heritage/boteunsa.jpg"
       },
       {
         "time": "16:00",
-        "image": "../../Images/places/jamsil-skyline.jpg",
+        "image": "../../Images/places/_courses/jamsil-skyline.jpg",
         "place": "seokchon-lake"
       },
       {
         "time": "16:30",
-        "image": "../../Images/places/seokchon-lake.jpg"
+        "image": "../../Images/places/lake/seokchon-lake.jpg"
       },
       {
         "time": "18:00",
-        "image": "../../Images/places/lotte-world.jpg"
+        "image": "../../Images/places/city/lotte-world.jpg"
       },
       {
         "time": "20:00",
-        "image": "../../Images/places/lotte-tower.jpg"
+        "image": "../../Images/places/city/lotte-tower.jpg"
       }
     ]
   },
   {
     "id": "c06",
-    "cover": "../../Images/places/naksan-park.jpg",
+    "cover": "../../Images/places/nature/naksan-park.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/naksan-park.jpg"
+        "image": "../../Images/places/nature/naksan-park.jpg"
       },
       {
         "time": "11:30",
-        "image": "../../Images/places/ihwa-mural-village.jpg"
+        "image": "../../Images/places/_courses/ihwa-mural-village.jpg"
       },
       {
         "time": "13:00",
@@ -203,15 +203,15 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "15:00",
-        "image": "../../Images/places/dongdaemun.jpg"
+        "image": "../../Images/places/city/dongdaemun.jpg"
       },
       {
         "time": "15:30",
-        "image": "../../Images/places/ddp.jpg"
+        "image": "../../Images/places/_courses/ddp.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/dongdaemun-market.jpg"
+        "image": "../../Images/places/market/dongdaemun-market.jpg"
       },
       {
         "time": "19:00",
@@ -220,17 +220,17 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "20:30",
-        "image": "../../Images/places/cheonggyecheon.jpg"
+        "image": "../../Images/places/nature/cheonggyecheon.jpg"
       }
     ]
   },
   {
     "id": "c07",
-    "cover": "../../Images/places/the-hyundai-seoul.jpg",
+    "cover": "../../Images/places/_courses/the-hyundai-seoul.jpg",
     "stops": [
       {
         "time": "10:30",
-        "image": "../../Images/places/the-hyundai-seoul.jpg"
+        "image": "../../Images/places/_courses/the-hyundai-seoul.jpg"
       },
       {
         "time": "12:30",
@@ -239,17 +239,17 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/yeouido.jpg",
+        "image": "../../Images/places/_courses/yeouido.jpg",
         "place": "hangang-yeouido"
       },
       {
         "time": "16:00",
-        "image": "../../Images/places/hangang-yeouido-cafe.jpg",
+        "image": "../../Images/places/_courses/hangang-yeouido-cafe.jpg",
         "place": "hangang-yeouido"
       },
       {
         "time": "17:30",
-        "image": "../../Images/places/hangang-cruise.jpg",
+        "image": "../../Images/places/_courses/hangang-cruise.jpg",
         "place": "hangang-yeouido"
       },
       {
@@ -259,22 +259,22 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "20:30",
-        "image": "../../Images/places/hangang-yeouido.jpg",
+        "image": "../../Images/places/nature/hangang-yeouido.jpg",
         "place": "hangang-yeouido"
       }
     ]
   },
   {
     "id": "c08",
-    "cover": "../../Images/places/gyeongbok.jpg",
+    "cover": "../../Images/places/heritage/gyeongbok.jpg",
     "stops": [
       {
         "time": "09:30",
-        "image": "../../Images/places/gyeongbok.jpg"
+        "image": "../../Images/places/heritage/gyeongbok.jpg"
       },
       {
         "time": "11:30",
-        "image": "../../Images/places/seochon.jpg"
+        "image": "../../Images/places/_courses/seochon.jpg"
       },
       {
         "time": "12:30",
@@ -283,20 +283,20 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/seochon-cafe.jpg"
+        "image": "../../Images/places/_courses/seochon-cafe.jpg"
       },
       {
         "time": "15:30",
-        "image": "../../Images/places/gwathwamun.jpg"
+        "image": "../../Images/places/heritage/gwathwamun.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/cheonggyecheon.jpg",
+        "image": "../../Images/places/nature/cheonggyecheon.jpg",
         "place": "cheonggyecheon-plaza"
       },
       {
         "time": "18:30",
-        "image": "../../Images/places/euljiro.jpg"
+        "image": "../../Images/places/_courses/euljiro.jpg"
       },
       {
         "time": "20:00",
@@ -307,11 +307,11 @@ window.SEOUL_CURATED_COURSES = [
   },
   {
     "id": "c09",
-    "cover": "../../Images/places/hannam-dong.jpg",
+    "cover": "../../Images/places/_courses/hannam-dong.jpg",
     "stops": [
       {
         "time": "11:00",
-        "image": "../../Images/places/hannam-dong.jpg"
+        "image": "../../Images/places/_courses/hannam-dong.jpg"
       },
       {
         "time": "12:30",
@@ -320,16 +320,16 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/itaewon-street.jpg",
+        "image": "../../Images/places/_courses/itaewon-street.jpg",
         "place": "hannam-dong"
       },
       {
         "time": "16:00",
-        "image": "../../Images/places/itaewon.jpg"
+        "image": "../../Images/places/city/itaewon.jpg"
       },
       {
         "time": "17:30",
-        "image": "../../Images/places/gyeongnidan-gil.jpg"
+        "image": "../../Images/places/_courses/gyeongnidan-gil.jpg"
       },
       {
         "time": "19:00",
@@ -338,17 +338,17 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "20:30",
-        "image": "../../Images/places/namsan.jpg"
+        "image": "../../Images/places/city/namsan.jpg"
       }
     ]
   },
   {
     "id": "c10",
-    "cover": "../../Images/places/namdaemun-market.jpg",
+    "cover": "../../Images/places/market/namdaemun-market.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/namdaemun-market.jpg"
+        "image": "../../Images/places/market/namdaemun-market.jpg"
       },
       {
         "time": "12:00",
@@ -357,15 +357,15 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "13:30",
-        "image": "../../Images/places/myeongdong.jpg"
+        "image": "../../Images/places/city/myeongdong.jpg"
       },
       {
         "time": "15:30",
-        "image": "../../Images/places/gwangjang-market.jpg"
+        "image": "../../Images/places/market/gwangjang-market.jpg"
       },
       {
         "time": "17:30",
-        "image": "../../Images/places/ikseon-dong.jpg"
+        "image": "../../Images/places/_courses/ikseon-dong.jpg"
       },
       {
         "time": "19:00",
@@ -374,18 +374,18 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "20:30",
-        "image": "../../Images/places/cheonggyecheon.jpg",
+        "image": "../../Images/places/nature/cheonggyecheon.jpg",
         "place": "cheonggyecheon-plaza"
       }
     ]
   },
   {
     "id": "c11",
-    "cover": "../../Images/places/lotte-world.jpg",
+    "cover": "../../Images/places/city/lotte-world.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/lotte-world.jpg"
+        "image": "../../Images/places/city/lotte-world.jpg"
       },
       {
         "time": "12:00",
@@ -394,15 +394,15 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "13:30",
-        "image": "../../Images/places/seokchon-lake.jpg"
+        "image": "../../Images/places/lake/seokchon-lake.jpg"
       },
       {
         "time": "15:00",
-        "image": "../../Images/places/songridan-gil.jpg"
+        "image": "../../Images/places/_courses/songridan-gil.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/lotte-tower.jpg"
+        "image": "../../Images/places/city/lotte-tower.jpg"
       },
       {
         "time": "19:00",
@@ -413,11 +413,11 @@ window.SEOUL_CURATED_COURSES = [
   },
   {
     "id": "c12",
-    "cover": "../../Images/places/bus-terminal-seoul-express.jpg",
+    "cover": "../../Images/places/bus-terminal/bus-terminal-seoul-express.jpg",
     "stops": [
       {
         "time": "11:00",
-        "image": "../../Images/places/bus-terminal-seoul-express.jpg"
+        "image": "../../Images/places/bus-terminal/bus-terminal-seoul-express.jpg"
       },
       {
         "time": "13:00",
@@ -426,11 +426,11 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:30",
-        "image": "../../Images/places/sebit-seom.jpg"
+        "image": "../../Images/places/_courses/sebit-seom.jpg"
       },
       {
         "time": "16:00",
-        "image": "../../Images/places/hangang-banpo.jpg",
+        "image": "../../Images/places/nature/hangang-banpo.jpg",
         "place": "hangang-banpo"
       },
       {
@@ -440,17 +440,17 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "20:00",
-        "image": "../../Images/places/hangang-banpo-fountain.jpg"
+        "image": "../../Images/places/_courses/hangang-banpo-fountain.jpg"
       }
     ]
   },
   {
     "id": "c13",
-    "cover": "../../Images/places/national-museum-korea.jpg",
+    "cover": "../../Images/places/_courses/national-museum-korea.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/national-museum-korea.jpg"
+        "image": "../../Images/places/_courses/national-museum-korea.jpg"
       },
       {
         "time": "12:30",
@@ -459,16 +459,16 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/yongridan-gil.jpg"
+        "image": "../../Images/places/_courses/yongridan-gil.jpg"
       },
       {
         "time": "16:00",
-        "image": "../../Images/places/itaewon-street.jpg",
+        "image": "../../Images/places/_courses/itaewon-street.jpg",
         "place": "yongridan-gil"
       },
       {
         "time": "18:00",
-        "image": "../../Images/places/ichon-hangang.jpg"
+        "image": "../../Images/places/_courses/ichon-hangang.jpg"
       },
       {
         "time": "20:00",
@@ -479,15 +479,15 @@ window.SEOUL_CURATED_COURSES = [
   },
   {
     "id": "c14",
-    "cover": "../../Images/places/seongbuk-dong.jpg",
+    "cover": "../../Images/places/_courses/seongbuk-dong.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/hansung-univ.jpg"
+        "image": "../../Images/places/_courses/hansung-univ.jpg"
       },
       {
         "time": "10:30",
-        "image": "../../Images/places/seongbuk-dong.jpg"
+        "image": "../../Images/places/_courses/seongbuk-dong.jpg"
       },
       {
         "time": "12:00",
@@ -496,15 +496,15 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "13:30",
-        "image": "../../Images/places/gilsatsa.jpg"
+        "image": "../../Images/places/heritage/gilsatsa.jpg"
       },
       {
         "time": "15:00",
-        "image": "../../Images/places/bukjeong-village.jpg"
+        "image": "../../Images/places/_courses/bukjeong-village.jpg"
       },
       {
         "time": "17:00",
-        "image": "../../Images/places/daehangno.jpg"
+        "image": "../../Images/places/_courses/daehangno.jpg"
       },
       {
         "time": "19:00",
@@ -515,11 +515,11 @@ window.SEOUL_CURATED_COURSES = [
   },
   {
     "id": "c15",
-    "cover": "../../Images/places/seoul-forest.jpg",
+    "cover": "../../Images/places/nature/seoul-forest.jpg",
     "stops": [
       {
         "time": "10:00",
-        "image": "../../Images/places/seoul-forest.jpg"
+        "image": "../../Images/places/nature/seoul-forest.jpg"
       },
       {
         "time": "12:00",
@@ -528,16 +528,16 @@ window.SEOUL_CURATED_COURSES = [
       },
       {
         "time": "14:00",
-        "image": "../../Images/places/seongsu-cafe.jpg"
+        "image": "../../Images/places/_courses/seongsu-cafe.jpg"
       },
       {
         "time": "16:30",
-        "image": "../../Images/places/cheongdam-fashion.jpg",
+        "image": "../../Images/places/_courses/cheongdam-fashion.jpg",
         "place": "apgujeong-rodeo"
       },
       {
         "time": "18:00",
-        "image": "../../Images/places/dosan-park.jpg"
+        "image": "../../Images/places/_courses/dosan-park.jpg"
       },
       {
         "time": "19:30",

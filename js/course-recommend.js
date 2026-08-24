@@ -34,34 +34,34 @@
     {
       id: "region",
       options: [
-        { id: "seoul", image: "Images/places/gyeongbok.jpg" },
-        { id: "gyeonggi", image: "Images/places/suwon.jpg" },
-        { id: "incheon", image: "Images/places/songdo.jpg" },
-        { id: "gyeongju", image: "Images/places/bulguksa.jpg" },
-        { id: "busan", image: "Images/places/haeundae.jpg" },
-        { id: "jeju", image: "Images/places/seongsan.jpg" },
+        { id: "seoul", image: "Images/places/heritage/gyeongbok.jpg" },
+        { id: "gyeonggi", image: "Images/places/heritage/suwon.jpg" },
+        { id: "incheon", image: "Images/places/city/songdo.jpg" },
+        { id: "gyeongju", image: "Images/places/heritage/bulguksa.jpg" },
+        { id: "busan", image: "Images/places/beach/haeundae.jpg" },
+        { id: "jeju", image: "Images/places/nature/seongsan.jpg" },
       ],
     },
     {
       id: "vibe",
       options: [
-        { id: "nature", image: "Images/places/naksan-park.jpg" },
-        { id: "heritage", image: "Images/places/bukchon.jpg" },
-        { id: "city", image: "Images/places/hongdae-street.jpg" },
+        { id: "nature", image: "Images/places/nature/naksan-park.jpg" },
+        { id: "heritage", image: "Images/places/heritage/bukchon.jpg" },
+        { id: "city", image: "Images/places/_courses/hongdae-street.jpg" },
       ],
     },
     {
       id: "mobility",
       options: [
-        { id: "transit", image: "Images/places/bus-terminal-seoul-express.jpg" },
-        { id: "rent", image: "Images/places/gapyeong.jpg" },
-        { id: "mix", image: "Images/places/seoullo-7017.jpg" },
+        { id: "transit", image: "Images/places/bus-terminal/bus-terminal-seoul-express.jpg" },
+        { id: "rent", image: "Images/places/nature/gapyeong.jpg" },
+        { id: "mix", image: "Images/places/_courses/seoullo-7017.jpg" },
       ],
     },
     {
       id: "budget",
       options: [
-        { id: "thrifty", image: "Images/places/gwangjang-market.jpg" },
+        { id: "thrifty", image: "Images/places/market/gwangjang-market.jpg" },
         { id: "mid", image: "Images/places/food-baekban.jpg" },
         { id: "splurge", image: "Images/places/food-galbijjim.jpg" },
       ],
@@ -69,9 +69,9 @@
     {
       id: "pace",
       options: [
-        { id: "relax", image: "Images/places/dosan-park.jpg" },
-        { id: "balanced", image: "Images/places/ikseon-dong.jpg" },
-        { id: "active", image: "Images/places/namsan.jpg" },
+        { id: "relax", image: "Images/places/_courses/dosan-park.jpg" },
+        { id: "balanced", image: "Images/places/_courses/ikseon-dong.jpg" },
+        { id: "active", image: "Images/places/city/namsan.jpg" },
       ],
     },
   ];

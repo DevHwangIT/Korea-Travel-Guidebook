@@ -1,0 +1,17 @@
+{
+  "copied_from_existing": 0,
+  "downloaded": [
+    "bus-terminal-east-seoul",
+    "bus-terminal-nambu",
+    "bus-terminal-busan",
+    "bus-terminal-daegu",
+    "bus-terminal-daejeon",
+    "bus-terminal-gwangju",
+    "bus-terminal-incheon",
+    "bus-terminal-suwon"
+  ],
+  "miss": [],
+  "ok": 8,
+  "miss_count": 0,
+  "placeholder_remaining": 235
+}

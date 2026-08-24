@@ -220,8 +220,7 @@ def verify_asset_versions(
         if len(issues) > 40:
             lines.append(f"  ... +{len(issues) - 40} more")
         lines.append(
-            "Fix: python tool/update-version.py "
-            "(or python scripts/apply-cache-bust.py)"
+            "Fix: python tool/update-version.py"
         )
         raise SystemExit("\n".join(lines))
     return summary

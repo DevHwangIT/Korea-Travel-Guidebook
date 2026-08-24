@@ -47,18 +47,18 @@ Korea-Travel-Guidebook/
 │   ├── menu/           # 메인 메뉴 타일
 │   ├── foods/hub/      # 음식 가이드 허브 헤더
 │   ├── before-trip/    # 떠나기 전 본문 이미지 (i18n body src)
-│   └── transport/      # 지하철 도식 등
+│   ├── transport/      # 지하철 도식 등
+│   └── places/         # 명소 사진 (필터 type 폴더 + _types 폴백 + food-/quiz-)
 │                       # 가게·음식·기념품·편의점·놀거리 상세 사진은
 │                       # pages/.../{slug}/media/ 에 둠 (pages/README.md)
 ├── audio/korean/       # 유용한 한국어 음성
 ├── data/
 │   ├── food/           # recommend-catalog.js (먹거리 퀴즈 카탈로그)
 │   ├── places/         # places-coords.js (명소·안내 핀 좌표)
-│   └── metro/          # (레거시) 지하철 GeoJSON — 현재 HTML에서 미사용
+│   └── metro/          # 지하철 노선 GeoJSON (places-map / metro-map)
 ├── i18n/               # ko.json / en.json / ja.json → messages.js
 ├── js/                 # 프론트 스크립트
-├── scripts/            # 빌드·마이그레이션용 Python
-├── tool/               # 버전 bump · 로컬 콘텐츠 관리
+├── tool/               # 관리자 CMS · 버전 bump · 일회성 작업은 tool/_jobs/
 ├── templates/          # HTML 템플릿
 └── components/         # (예비) 공통 조각
 ```
@@ -77,7 +77,7 @@ Korea-Travel-Guidebook/
 수동으로 할 때:
 
 1. `js/cache-version.js`의 `SITE_ASSET_VERSION` 확인/수정
-2. `python scripts/apply-cache-bust.py` 실행 → 로컬 `styles.css` / `i18n/*.js` / `js/*.js` / `data/**/*.js` 참조에 `?v=...` 일괄 반영
+2. `python tool/update-version.py` 실행 → 로컬 `styles.css` / `i18n/*.js` / `js/*.js` / `data/**/*.js` 참조에 `?v=...` 일괄 반영
 3. 커밋 후 푸시
 
 외부 CDN(Leaflet, Google Fonts 등) URL은 건드리지 않습니다.
@@ -135,8 +135,8 @@ Korea-Travel-Guidebook/
 | `tool/update-version.bat` | 먹거리 추천 카탈로그 갱신 + 캐시 버전 bump + HTML `?v=` 일괄 적용 |
 | `tool/content-admin.bat` | 로컬 콘텐츠 관리 UI (음식·가게 CRUD) |
 | `tool/build-food-recommend-catalog.py` | 먹거리 퀴즈 카탈로그 생성 |
+| `tool/generate-sitemap.py` | 공개 URL sitemap.xml 재생성 |
 | `i18n/build-bundle.py` | 언어 JSON → messages.js |
-| `scripts/apply-cache-bust.py` | 버전을 HTML의 로컬 CSS/JS `?v=`에 일괄 적용 |
 | `js/cache-version.js` | 에셋 캐시 버전 (단일 소스) |
 | `js/site-config.js` | 사이트 origin · SEO 기본값 (`TOUR_API_KEY`는 추후용 예약) |
 | `js/festivals.js` | (미연결) 추후 TourAPI용 예약 스텁 |

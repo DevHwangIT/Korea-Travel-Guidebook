@@ -69,8 +69,8 @@ Merge order for each language: residual `{lang}.json` (fallback) â†’ `common/` â
 ## One-time split (already done if folders exist)
 
 ```bash
-python tool/migrate_i18n_split.py          # write sources + verify
-python tool/migrate_i18n_split.py --dry-run
+python tool/_jobs/migrate_i18n_split.py          # write sources + verify
+python tool/_jobs/migrate_i18n_split.py --dry-run
 ```
 
 ## CMS / auto-translate
