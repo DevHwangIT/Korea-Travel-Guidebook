@@ -15,6 +15,7 @@
       "title": "Khuyến nghị thực phẩm",
       "progress": "{current} / {total}",
       "back": "Mặt sau",
+      "next": "Tiếp",
       "close": "Đóng",
       "restart": "Thử lại",
       "resultEyebrow": "Lựa chọn hôm nay",
@@ -28,6 +29,12 @@
             "meal": "Một bữa ăn hợp lý",
             "dessert": "Thứ gì đó ngọt ngào",
             "quick": "Nhanh chóng và dễ dàng"
+          },
+          "lead": "Gợi ý món Hàn hợp khẩu vị lúc này.",
+          "hints": {
+            "meal": "Bữa đứng đắn — cơm, thịt hoặc tô nóng",
+            "dessert": "Café, bingsu, bánh ngọt",
+            "quick": "Kimbap hoặc tiện lợi, nhanh gọn"
           }
         },
         "spicy": {
@@ -36,6 +43,12 @@
             "love": "Mang lại sức nóng!",
             "mild": "Chỉ một chút thôi",
             "no": "Giữ nó nhẹ nhàng"
+          },
+          "lead": "Độ cay giúp thu hẹp thực đơn.",
+          "hints": {
+            "love": "Tteokbokki, mala, canh cay đều được",
+            "mild": "Cay nhẹ như kalguksu",
+            "no": "Kimbap hoặc cơm set vị dịu"
           }
         },
         "dessertVibe": {
@@ -44,6 +57,12 @@
             "icy": "Bingsu lạnh",
             "bakery": "Bánh mì mềm",
             "coffee": "Quán cà phê nghỉ giải lao"
+          },
+          "lead": "Chọn mood món ngọt bạn muốn.",
+          "hints": {
+            "icy": "Bingsu hoặc kem cho mát",
+            "bakery": "Bánh mì mềm và tiệm bánh",
+            "coffee": "Nghỉ café cùng ly cà phê"
           }
         },
         "soup": {
@@ -51,6 +70,11 @@
           "options": {
             "yes": "Có - một cái bát ấm",
             "no": "Làm ơn đừng có nước dùng"
+          },
+          "lead": "Có nước hay không đổi cả bữa.",
+          "hints": {
+            "yes": "Tô nóng — gukbap hoặc stew",
+            "no": "Nướng, xào, không nước"
           }
         },
         "protein": {
@@ -59,6 +83,12 @@
             "meat": "Thịt nghiêm trọng",
             "chicken": "Món gà",
             "light": "Nhẹ / thân thiện với rau"
+          },
+          "lead": "Ưu tiên nguyên liệu chính bạn muốn.",
+          "hints": {
+            "meat": "Ba chỉ, sườn om — thịt đúng nghĩa",
+            "chicken": "Gà rán, dakgalbi, dakhanmari",
+            "light": "Bibimbap hoặc cơm set nhẹ"
           }
         },
         "mood": {
@@ -68,6 +98,13 @@
             "cold": "Lạnh lùng - Tôi muốn sự ấm áp",
             "rain": "Cảm giác mưa / ẩm ướt",
             "any": "Cái gì cũng được"
+          },
+          "lead": "Thời tiết và tâm trạng chọn tô.",
+          "hints": {
+            "hot": "Tô mát như naengmyeon",
+            "cold": "Món ấm như gukbap",
+            "rain": "Canh nóng khi trời ẩm",
+            "any": "Món quen, hợp mọi ngày"
           }
         },
         "quickStyle": {
@@ -76,6 +113,12 @@
             "combo": "Combo cửa hàng tiện lợi",
             "noodles": "Ramen/mì đơn giản",
             "roll": "Một cuộn kimbap"
+          },
+          "lead": "Chọn kiểu ăn nhanh vẫn vừa miệng.",
+          "hints": {
+            "combo": "Combo tiện lợi đang hot",
+            "noodles": "Ramen hoặc mì đơn giản",
+            "roll": "Một cuốn kimbap mang đi"
           }
         }
       },

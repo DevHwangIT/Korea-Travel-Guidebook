@@ -164,6 +164,12 @@
             "meal": "A proper meal",
             "dessert": "Something sweet",
             "quick": "Quick & easy"
+          },
+          "lead": "We’ll recommend Korean food that fits your craving.",
+          "hints": {
+            "meal": "A proper sit-down — rice, meat, or a hearty bowl",
+            "dessert": "Cafés, bingsu, bread, and something sweet",
+            "quick": "Kimbap or convenience-store food, fast and easy"
           }
         },
         "spicy": {
@@ -172,6 +178,12 @@
             "love": "Bring the heat!",
             "mild": "Just a little",
             "no": "Keep it mild"
+          },
+          "lead": "Heat level helps us narrow the menu.",
+          "hints": {
+            "love": "Tteokbokki, mala, spicy stews — bring it on",
+            "mild": "A gentle kick, like kalguksu",
+            "no": "Mild kimbap or home-style rice sets"
           }
         },
         "dessertVibe": {
@@ -180,6 +192,12 @@
             "icy": "Icy bingsu",
             "bakery": "Soft bakery bread",
             "coffee": "Café break"
+          },
+          "lead": "Pick the sweet mood you want right now.",
+          "hints": {
+            "icy": "Bingsu or ice cream to cool down",
+            "bakery": "Soft bread and bakery treats",
+            "coffee": "A café break with coffee"
           }
         },
         "soup": {
@@ -187,6 +205,11 @@
           "options": {
             "yes": "Yes — a warm bowl",
             "no": "No broth, please"
+          },
+          "lead": "Broth or no broth changes the whole meal.",
+          "hints": {
+            "yes": "A warm bowl — gukbap or stew",
+            "no": "Grills and stir-fries without soup"
           }
         },
         "protein": {
@@ -195,6 +218,12 @@
             "meat": "Serious meat",
             "chicken": "Chicken dishes",
             "light": "Light / veggie-friendly"
+          },
+          "lead": "We’ll lead with the protein you want.",
+          "hints": {
+            "meat": "Samgyeopsal, galbi-jjim, and serious meat",
+            "chicken": "Fried chicken, dakgalbi, dakhanmari",
+            "light": "Bibimbap or a lighter rice set"
           }
         },
         "mood": {
@@ -204,6 +233,13 @@
             "cold": "Chilly — I want warmth",
             "rain": "Rainy / damp vibes",
             "any": "Anything’s fine"
+          },
+          "lead": "Weather and mood steer the bowl we pick.",
+          "hints": {
+            "hot": "A cold bowl like naengmyeon",
+            "cold": "Something warming, like gukbap",
+            "rain": "A hot stew when the weather is damp",
+            "any": "Crowd-pleasers that work any day"
           }
         },
         "quickStyle": {
@@ -212,6 +248,12 @@
             "combo": "Convenience-store combos",
             "noodles": "Ramen / simple noodles",
             "roll": "A roll of kimbap"
+          },
+          "lead": "Choose the fastest bite that still feels right.",
+          "hints": {
+            "combo": "Popular convenience-store combos",
+            "noodles": "Ramen or a simple noodle cup",
+            "roll": "One roll of kimbap to go"
           }
         }
       },
@@ -272,7 +314,8 @@
           "name": "Ramen + egg",
           "reason": "A traveler classic — quick noodles you can cook in-store."
         }
-      }
+      },
+      "next": "Next"
     }
   },
   "prepHub": {
@@ -46404,7 +46447,7 @@
   "travelCourses": {
     "pageTitle": "Travel course recommendations | Korea Travel Guide",
     "title": "Travel course recommendations",
-    "intro": "We are preparing travel courses by region and trip length.",
+    "intro": "Browse curated regional courses and get a live personalized itinerary.",
     "catPickLabel": "Schedule",
     "catDay": "Day trip",
     "cat1n2d": "1 night 2 days",
@@ -46417,6 +46460,749 @@
     "regionIncheon": "Incheon",
     "regionGyeongju": "Gyeongju",
     "regionBusan": "Busan",
-    "regionJeju": "Jeju Island"
+    "regionJeju": "Jeju Island",
+    "quiz": {
+      "bannerEyebrow": "Live course",
+      "bannerTitle": "Get a travel course recommended in real time.",
+      "bannerCta": "Start",
+      "title": "Course quiz",
+      "progress": "{current} / {total}",
+      "back": "Back",
+      "close": "Close",
+      "restart": "Find another course",
+      "resultEyebrow": "Your course",
+      "resultLabel": "Result",
+      "defaultReason": "We built a realistic timed route using your answers and travel distances.",
+      "emptyPlaces": "Not enough sights for this region yet. Try another region.",
+      "dayLabel": "Day {n}",
+      "questions": {
+        "party": {
+          "prompt": "How many people?",
+          "options": {
+            "solo": "Solo",
+            "couple": "Two (couple/friends)",
+            "friends": "Friends / small group",
+            "family": "Family"
+          },
+          "lead": "We’ll match a course to your travel style.",
+          "hints": {
+            "solo": "Wander alleys and cafés at your own pace",
+            "couple": "Walkable views, nights, and date-friendly stops",
+            "friends": "Streets, food, and popular spots with friends",
+            "family": "An easy-going plan that works for kids and adults"
+          }
+        },
+        "duration": {
+          "prompt": "How long is the trip?",
+          "options": {
+            "day": "Day trip",
+            "1n2d": "1 night 2 days",
+            "2n3d": "2 nights 3 days",
+            "3n4d": "3 nights 4 days"
+          },
+          "lead": "We’ll split the route to fit your days.",
+          "hints": {
+            "day": "One day — hit the highlights",
+            "1n2d": "One overnight, a little more room to breathe",
+            "2n3d": "Two-plus days to go a bit deeper",
+            "3n4d": "Nearly four days across several neighborhoods"
+          }
+        },
+        "region": {
+          "prompt": "Which region?",
+          "options": {
+            "seoul": "Seoul",
+            "gyeonggi": "Gyeonggi",
+            "incheon": "Incheon",
+            "gyeongju": "Gyeongju",
+            "busan": "Busan",
+            "jeju": "Jeju"
+          },
+          "lead": "Sights and food will follow the region you pick.",
+          "hints": {
+            "seoul": "Palaces, hanok, the Hangang, and trendy streets",
+            "gyeonggi": "Suwon, folk villages, and easy Seoul day trips",
+            "incheon": "Songdo, Chinatown, and handy airport access",
+            "gyeongju": "Bulguksa, royal tombs, and Silla heritage",
+            "busan": "Haeundae, Gamcheon, and a coastal city vibe",
+            "jeju": "Oreum, beaches, and Hallasan island time"
+          }
+        },
+        "vibe": {
+          "prompt": "What vibe do you want?",
+          "options": {
+            "nature": "Nature & scenery",
+            "heritage": "Heritage & history",
+            "city": "City & people"
+          },
+          "lead": "We’ll prioritize places that match the mood.",
+          "hints": {
+            "nature": "Parks, river, mountains, and sea views",
+            "heritage": "Palaces, temples, hanok, and museums",
+            "city": "Shopping, cafés, and busy streets"
+          }
+        },
+        "mobility": {
+          "prompt": "How will you get around?",
+          "options": {
+            "transit": "Mostly transit",
+            "rent": "Rental / own car",
+            "mix": "Mix as needed"
+          },
+          "lead": "Travel times flex with how you get around.",
+          "hints": {
+            "transit": "Mostly subway and bus",
+            "rent": "Rental or your own car for freedom",
+            "mix": "Transit in town, a car for longer hops"
+          }
+        },
+        "budget": {
+          "prompt": "Budget style?",
+          "options": {
+            "thrifty": "Keep it thrifty",
+            "mid": "Moderate",
+            "splurge": "Spend a bit more"
+          },
+          "lead": "Meals and stops will match your spend style.",
+          "hints": {
+            "thrifty": "Markets, street food, and public transit",
+            "mid": "Balanced meals and admission fees",
+            "splurge": "Room for restaurants, views, and experiences"
+          }
+        },
+        "pace": {
+          "prompt": "Trip pace?",
+          "options": {
+            "relax": "Relaxed & easy",
+            "balanced": "Balanced",
+            "active": "Active & packed"
+          },
+          "lead": "Choose how many stops to pack into a day.",
+          "hints": {
+            "relax": "One or two places, unhurried",
+            "balanced": "A mix of sights and downtime",
+            "active": "Walk more and cover extra spots"
+          }
+        }
+      },
+      "slot": {
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "evening": "Evening"
+      },
+      "meal": {
+        "lunch": "Lunch",
+        "dinner": "Dinner",
+        "snack": "Snack & dessert"
+      },
+      "placeType": {
+        "city": "City",
+        "nature": "Nature",
+        "heritage": "Heritage",
+        "mountain": "Mountain",
+        "beach": "Beach",
+        "lake": "Lake",
+        "market": "Market"
+      },
+      "save": "Save on this device",
+      "saveDone": "Saved on this device",
+      "saveFail": "Could not save. Check your browser storage settings.",
+      "savedTitle": "Courses saved on this device",
+      "savedEmpty": "No saved courses yet. Tap the bookmark icon after a recommendation to save on this device.",
+      "savedAt": "Saved {when}",
+      "openSaved": "Open",
+      "deleteSaved": "Delete",
+      "savedViewTitle": "Course saved on this device",
+      "timelineTitle": "Timed route",
+      "moveTransit": "↓ Move by transit",
+      "moveRent": "↓ Drive / rental",
+      "moveMix": "↓ Transit or car",
+      "stayRelax": "Take it slow (~2–3 hours)",
+      "stayBalanced": "Browse at ease (~1.5–2 hours)",
+      "stayActive": "Quick highlights (~1–1.5 hours)",
+      "moveDetail": "↓ About {minutes} min · {mode} ({from} → {to})",
+      "durationStay": "About {minutes} min",
+      "doLabel": "What to do",
+      "howLabel": "Getting there",
+      "introLabel": "About",
+      "placeFallbackDesc": "{name} — a top {type} spot in {region}.",
+      "howFallback": "Search '{name}' in Kakao Map or Naver Map for transit and walking routes.",
+      "mealFallbackDesc": "{name} — a popular local dish. Check the guide page for restaurant picks.",
+      "activity": {
+        "default": "Explore the highlight, take photos, and enjoy nearby walks or shopping.",
+        "city": "Stroll the streets, shop, grab coffee, and catch night views.",
+        "heritage": "Tour palaces/temples, museums, and hanbok experiences at an easy pace.",
+        "nature": "Walk scenic trails, stop at viewpoints, and rest in the park.",
+        "mountain": "Hike or take a cable car if available; adjust for weather and fitness.",
+        "beach": "Walk the shore, take ocean photos, and enjoy sunset breezes.",
+        "lake": "Enjoy lakeside walks, cycling, or a light picnic.",
+        "market": "Browse local food and souvenirs; try street snacks."
+      },
+      "mealActivity": {
+        "lunch": "Eat nearby and recharge for the afternoon.",
+        "dinner": "Wrap up the day with a popular local dish.",
+        "snack": "Take a short break with cafe dessert or a street snack."
+      },
+      "savedLocalNote": "Stored only in this browser on your phone or PC — never sent to our servers. Not visible on other devices or browsers.",
+      "modeTransit": "transit",
+      "modeRent": "car",
+      "modeMix": "transit/car",
+      "next": "Next"
+    },
+    "seoulCurated": {
+      "pickLabel": "Seoul curated courses",
+      "intro": "Guidebook-style day itineraries for Seoul. Pick a title to read the overview, route outline, and timetable.",
+      "routeLabel": "Route at a glance",
+      "tipsLabel": "Tips",
+      "openCourse": "View course",
+      "courses": {
+        "c01": {
+          "title": "Gyeongbokgung · Bukchon · Insadong",
+          "summary": "A classic Seoul day: palace grounds, hanok alleys, Insadong crafts, Ikseon café vibes…",
+          "route": "Gyeongbokgung → Bukchon → Insadong → Ikseondong → Gwangjang Market → Cheonggyecheon",
+          "tips": "Wearing hanbok often means free palace entry. Bukchon is residential—keep voices down and be mindful when photographing.",
+          "stops": [
+            {
+              "name": "Gyeongbokgung Palace",
+              "desc": "Tour Geunjeongjeon and Gyeonghoeru at an easy pace."
+            },
+            {
+              "name": "Bukchon Hanok Village",
+              "desc": "Walk the tiled rooftops and viewpoint alleys of Gahoe-dong."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Tea houses, bibimbap, and Korean set menus."
+            },
+            {
+              "name": "Ssamziegil & Insadong street",
+              "desc": "Browse crafts, souvenirs, and street snacks along gallery-lined alleys."
+            },
+            {
+              "name": "Ikseondong café",
+              "desc": "Hanok cafés and bakeries for an afternoon dessert break."
+            },
+            {
+              "name": "Gwangjang Market",
+              "desc": "Try mayak gimbap, bindaetteok, and yukhoe—share a few plates before…"
+            },
+            {
+              "name": "Cheonggyecheon walk",
+              "desc": "End with an easy waterside walk and night lights."
+            }
+          ]
+        },
+        "c02": {
+          "title": "Myeongdong · Namsan · City center",
+          "summary": "Shopping plus skyline views: Myeongdong, Namsan & N Seoul Tower, Namdaemun Market…",
+          "route": "Myeongdong → Namsan → N Seoul Tower → Namdaemun Market → Seoul Station / Seoullo",
+          "tips": "Sunset and night views at N Seoul Tower are popular—budget time for cable car or bus queues.",
+          "stops": [
+            {
+              "name": "Myeongdong shopping",
+              "desc": "Beauty, fashion, and street food."
+            },
+            {
+              "name": "Lunch",
+              "desc": "From kalguksu to global chains—try side alleys if main streets are…"
+            },
+            {
+              "name": "Namsan walk",
+              "desc": "Take the loop road or walk up toward the tower; on clear days walking…"
+            },
+            {
+              "name": "N Seoul Tower",
+              "desc": "City panorama from the observatory—golden hour is great for photos."
+            },
+            {
+              "name": "Namdaemun Market",
+              "desc": "Clothes, household goods, and market meals like grilled fish or noodles."
+            },
+            {
+              "name": "Seoul Station · Seoullo 7017",
+              "desc": "Pause on the elevated park for skyline views around sunset."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Return to Myeongdong or chase neon alleys and old-school eateries in…"
+            }
+          ]
+        },
+        "c03": {
+          "title": "Seongsu · Seoul Forest",
+          "summary": "Green park mornings, Seongsu cafés and pop-ups, then Hangang vibes and a Konkuk…",
+          "route": "Seoul Forest → Seongsu → Ttukseom Hangang Park → Konkuk Univ. area",
+          "tips": "Weekend afternoons in Seongsu are crowded—go early or on weekdays for cafés.",
+          "stops": [
+            {
+              "name": "Seoul Forest",
+              "desc": "Start on the lawns and paths; bike rentals are available."
+            },
+            {
+              "name": "Seongsu café streets",
+              "desc": "Converted warehouses, bakeries, and concept stores near Seongsu Station."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Brunch and casual kitchens—arrive early for popular spots."
+            },
+            {
+              "name": "Pop-ups & shops",
+              "desc": "Seasonal pop-ups and design stores; check what’s on before you go."
+            },
+            {
+              "name": "Ttukseom Hangang Park",
+              "desc": "Nearby river park for bikes, picnics, and sunset photos."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Casual chicken, gopchang, and Asian eats around the station."
+            },
+            {
+              "name": "Konkuk streets at night",
+              "desc": "Wander the lit shopping streets to wrap up."
+            }
+          ]
+        },
+        "c04": {
+          "title": "Hongdae · Yeonnam · Mangwon",
+          "summary": "Yeonnam alleys, Hongdae street energy, Mangwon Market snacks, and Hangang sunset—then…",
+          "route": "Yeonnam → Hongdae → Mangwon Market → Mangwon Hangang Park → Hongdae",
+          "tips": "Hongdae peaks at night. Use station lockers if you’re carrying shopping bags.",
+          "stops": [
+            {
+              "name": "Yeonnam-dong",
+              "desc": "Quiet cafés and shops; add Gyeongui Line Forest Park if you like a…"
+            },
+            {
+              "name": "Lunch",
+              "desc": "Brunch spots fill up on weekends—aim for opening time."
+            },
+            {
+              "name": "Hongdae streets",
+              "desc": "Busking, murals, and street fashion—easy to lose track of time."
+            },
+            {
+              "name": "Cafés & shopping",
+              "desc": "Vintage, beauty, and lifestyle stores with coffee breaks in between."
+            },
+            {
+              "name": "Mangwon Market",
+              "desc": "Local market bites—pack some snacks for the river if you like."
+            },
+            {
+              "name": "Mangwon Hangang Park",
+              "desc": "Sunset breeze, bikes, and picnic vibes."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Return for dinner, neon streets, and nightlife."
+            }
+          ]
+        },
+        "c05": {
+          "title": "Gangnam · Jamsil",
+          "summary": "COEX and Starfield Library, Bongeunsa Temple, then Seokchon Lake, Lotte World Mall…",
+          "route": "COEX → Bongeunsa → Seokchon Lake → Lotte World Mall → Seoul Sky",
+          "tips": "COEX to Bongeunsa is a short walk. Book Seoul Sky for night views if you can.",
+          "stops": [
+            {
+              "name": "COEX",
+              "desc": "Mall, aquarium, and indoor events—good weather backup."
+            },
+            {
+              "name": "Starfield Library",
+              "desc": "Iconic book-wall photo stop; a short visit is enough."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Food court or nearby restaurants before the temple."
+            },
+            {
+              "name": "Bongeunsa",
+              "desc": "A calm temple framed by glass towers."
+            },
+            {
+              "name": "Transfer to Jamsil",
+              "desc": "About 15–25 minutes on Line 2 toward Jamsil/Seokchon."
+            },
+            {
+              "name": "Seokchon Lake",
+              "desc": "Lakeside walk with Lotte Tower in the background."
+            },
+            {
+              "name": "Lotte World Mall",
+              "desc": "Shopping, aquarium, and easy dinner options under one roof."
+            },
+            {
+              "name": "Seoul Sky or Jamsil night view",
+              "desc": "Observatory views—or enjoy the tower lights from the lake."
+            }
+          ]
+        },
+        "c06": {
+          "title": "Dongdaemun · Daehangno",
+          "summary": "Naksan views, Daehangno theater streets, DDP architecture, Dongdaemun shopping, then…",
+          "route": "Naksan Park → Daehangno → DDP → Dongdaemun → Gwangjang Market → Cheonggyecheon",
+          "tips": "Walk the fortress wall at Naksan. DDP looks especially good after dark.",
+          "stops": [
+            {
+              "name": "Naksan Park",
+              "desc": "City views along the old city wall—soft morning light is lovely."
+            },
+            {
+              "name": "Ihwa Mural Village · Daehangno",
+              "desc": "Murals plus indie theaters and café streets."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Student-friendly prices: cutlets, soups, and global casual food."
+            },
+            {
+              "name": "Transfer to Dongdaemun",
+              "desc": "Subway or bus toward DDP and the fashion district."
+            },
+            {
+              "name": "DDP",
+              "desc": "Explore the curved design plaza and any open exhibitions."
+            },
+            {
+              "name": "Dongdaemun shopping",
+              "desc": "Fashion malls by day; night-market energy after dark."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Market classics for a hearty evening—go early on weekends."
+            },
+            {
+              "name": "Cheonggyecheon",
+              "desc": "Night stroll to finish."
+            }
+          ]
+        },
+        "c07": {
+          "title": "Hangang · Yeouido",
+          "summary": "Shop The Hyundai Seoul, then spend the afternoon on Yeouido Hangang Park with bikes, a…",
+          "route": "The Hyundai Seoul → Yeouido Park → Yeouido Hangang Park → Hangang night view",
+          "tips": "Reserve river cruises ahead. A picnic mat makes the park much more comfortable.",
+          "stops": [
+            {
+              "name": "The Hyundai Seoul",
+              "desc": "A huge lifestyle mall—start slow in the morning."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Mall restaurants or Yeouido business-district kitchens."
+            },
+            {
+              "name": "Yeouido Hangang Park",
+              "desc": "Grass, bike paths, and skyline views—rent a bike if you can."
+            },
+            {
+              "name": "Café break by the river",
+              "desc": "Coffee from a park café or convenience store, then sit by the water."
+            },
+            {
+              "name": "Cruise or long walk",
+              "desc": "Take a Hangang cruise or simply walk until sunset."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Eat near the park or National Assembly area."
+            },
+            {
+              "name": "Hangang night view",
+              "desc": "Bridge lights reflecting on the river."
+            }
+          ]
+        },
+        "c08": {
+          "title": "Seochon · Gwanghwamun",
+          "summary": "Palace morning, Seochon hanok cafés, Gwanghwamun Square, then Cheonggyecheon and…",
+          "route": "Gyeongbokgung → Seochon → Gwanghwamun → Cheonggyecheon → Euljiro",
+          "tips": "Seochon is usually quieter than Bukchon. Tiny cafés may have waits.",
+          "stops": [
+            {
+              "name": "Gyeongbokgung",
+              "desc": "Arrive at opening for lighter crowds; check gate routes in advance."
+            },
+            {
+              "name": "Seochon",
+              "desc": "Tongin/Okin hanok lanes with workshops and galleries."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Korean homes-style spots and café brunch tucked in alleys."
+            },
+            {
+              "name": "Café alley stroll",
+              "desc": "Dessert stops and craft shops at a slow pace."
+            },
+            {
+              "name": "Gwanghwamun Square",
+              "desc": "Gate views, statues, and the open plaza."
+            },
+            {
+              "name": "Cheonggyecheon",
+              "desc": "Follow the stream toward Euljiro."
+            },
+            {
+              "name": "Euljiro",
+              "desc": "Print shops, old diners, and trendy bars share the same alleys."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Classic Korean taverns or cocktail bars to close the day."
+            }
+          ]
+        },
+        "c09": {
+          "title": "Itaewon · Hannam",
+          "summary": "Hannam’s polished cafés and boutiques, then Itaewon, Gyeongnidan-gil, Haebangchon…",
+          "route": "Hannam → Itaewon → Gyeongnidan-gil → Haebangchon → Namsan",
+          "tips": "Expect hills—wear comfortable shoes. Weekends get busy after dark.",
+          "stops": [
+            {
+              "name": "Hannam-dong",
+              "desc": "Upscale cafés, galleries, and concept stores—best by day."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Brunch and global restaurants; reservations help."
+            },
+            {
+              "name": "Cafés & boutiques",
+              "desc": "Design shopping with coffee breaks."
+            },
+            {
+              "name": "Itaewon",
+              "desc": "International streets for people-watching and shopping."
+            },
+            {
+              "name": "Gyeongnidan-gil",
+              "desc": "Hillside cafés with terrace views."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Characterful restaurants and bars in steep alleys."
+            },
+            {
+              "name": "Namsan night views",
+              "desc": "Catch the skyline from Namsan’s lower paths or viewpoints."
+            }
+          ]
+        },
+        "c10": {
+          "title": "Markets & food trail",
+          "summary": "A food-first day linking Namdaemun, Myeongdong, Gwangjang, Ikseon, Jongno, and…",
+          "route": "Namdaemun Market → Myeongdong → Gwangjang Market → Ikseondong → Jongno → Cheonggyecheon",
+          "tips": "Most stalls take cards, but tiny stands may prefer cash.",
+          "stops": [
+            {
+              "name": "Namdaemun Market",
+              "desc": "Start with market energy—noodles and small bites work well."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Sit-down market restaurants; shared tables are common."
+            },
+            {
+              "name": "Myeongdong",
+              "desc": "Digest with shopping and street desserts."
+            },
+            {
+              "name": "Gwangjang Market",
+              "desc": "Round two: yukhoe, bindaetteok, and savory pancakes."
+            },
+            {
+              "name": "Ikseondong",
+              "desc": "Hanok cafés for a sweet pause."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Izakaya-style and Korean pubs near Jongno/Ikseon."
+            },
+            {
+              "name": "Cheonggyecheon",
+              "desc": "A light after-dinner walk."
+            }
+          ]
+        },
+        "c11": {
+          "title": "Jamsil · Songridan-gil",
+          "summary": "Lotte World Mall, Seokchon Lake, Songridan-gil cafés, and Seoul Sky—all in the Jamsil…",
+          "route": "Lotte World Mall → Seokchon Lake → Songridan-gil → Seoul Sky",
+          "tips": "Songridan-gil sits on the east side of the lake—pair a full lake loop with café time.",
+          "stops": [
+            {
+              "name": "Lotte World Mall",
+              "desc": "Morning shopping and indoor attractions."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Food hall or nearby restaurants."
+            },
+            {
+              "name": "Seokchon Lake",
+              "desc": "Scenic walk with tower views; beautiful in every season."
+            },
+            {
+              "name": "Songridan-gil cafés",
+              "desc": "Trendy cafés and dessert spots."
+            },
+            {
+              "name": "Seoul Sky",
+              "desc": "Observatory views—enter near sunset if possible."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Eat back at the mall or around Jamsil Station."
+            }
+          ]
+        },
+        "c12": {
+          "title": "Hangang · Banpo",
+          "summary": "Express Bus Terminal & Seorae village vibes, Some Sevit, Banpo Hangang Park picnic…",
+          "route": "Express Bus Terminal → Some Sevit → Banpo Hangang Park",
+          "tips": "The Banpo Moonlight Rainbow Fountain schedule changes by season—check before you go.",
+          "stops": [
+            {
+              "name": "Express Bus Terminal · Parnie Station area",
+              "desc": "Mall and café complex to start the day."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Department-store or terminal food courts."
+            },
+            {
+              "name": "Some Sevit",
+              "desc": "Floating islands on the Hangang—great exterior photos."
+            },
+            {
+              "name": "Banpo Hangang Park",
+              "desc": "Bikes, walks, and picnics with easy convenience stores nearby."
+            },
+            {
+              "name": "Hangang picnic",
+              "desc": "Snacks and sunset on the grass."
+            },
+            {
+              "name": "Night view & fountain",
+              "desc": "Bridge lights and the fountain show when operating."
+            }
+          ]
+        },
+        "c13": {
+          "title": "Yongsan · Ichon",
+          "summary": "National Museum of Korea, Yongsan lunch, Yongridan-gil cafés, then Ichon Hangang Park.",
+          "route": "National Museum of Korea → Yongsan → Yongridan-gil → Ichon Hangang Park",
+          "tips": "The museum is huge—pick highlights. Check closed days for special exhibits.",
+          "stops": [
+            {
+              "name": "National Museum of Korea",
+              "desc": "History and art collections plus outdoor gardens."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Yongsan Station / I’Park Mall dining options."
+            },
+            {
+              "name": "Yongridan-gil",
+              "desc": "Cafés and restaurants near the electronics market area."
+            },
+            {
+              "name": "Cafés & shopping",
+              "desc": "Slow café hopping and lifestyle stores."
+            },
+            {
+              "name": "Ichon Hangang Park",
+              "desc": "River walk and bikes with soft sunset light."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Stay in Yongsan or drift toward Itaewon for dinner."
+            }
+          ]
+        },
+        "c14": {
+          "title": "Northern Seoul · Seongbuk-dong",
+          "summary": "Quiet Seongbuk-dong lanes, Gilseongsa Temple, Bukjeong village cafés, then dinner in…",
+          "route": "Seongbuk-dong → Gilseongsa → Bukjeong Village → Daehangno",
+          "tips": "Expect slopes—comfortable shoes and a relaxed pace help.",
+          "stops": [
+            {
+              "name": "Hansung Univ. Station area",
+              "desc": "Gateway toward Seongbuk-dong by bus or taxi."
+            },
+            {
+              "name": "Seongbuk-dong stroll",
+              "desc": "Stone walls, embassies, and quiet hanok streets."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Eat in Seongbuk-dong or nearby Hyehwa."
+            },
+            {
+              "name": "Gilseongsa",
+              "desc": "A peaceful temple pocket in the city."
+            },
+            {
+              "name": "Bukjeong Village · cafés",
+              "desc": "Hill views and photo-friendly café corners."
+            },
+            {
+              "name": "Daehangno",
+              "desc": "Theaters, street performers, and cafés."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Plenty of casual restaurants to end the day."
+            }
+          ]
+        },
+        "c15": {
+          "title": "Seoul Forest · Hangang · Apgujeong",
+          "summary": "From Seoul Forest and Seongsu into Apgujeong Rodeo and Dosan Park for a polished…",
+          "route": "Seoul Forest → Seongsu → Apgujeong Rodeo → Dosan Park",
+          "tips": "Seongsu to Apgujeong is an easy subway/taxi hop. Book dinner around Dosan if you’re set on a popular spot.",
+          "stops": [
+            {
+              "name": "Seoul Forest",
+              "desc": "Morning walk and photos before Seongsu fills up."
+            },
+            {
+              "name": "Lunch",
+              "desc": "Brunch or lunch at a Seongsu favorite."
+            },
+            {
+              "name": "Seongsu cafés & shops",
+              "desc": "Cafés, pop-ups, and concept stores."
+            },
+            {
+              "name": "Apgujeong Rodeo",
+              "desc": "Fashion and beauty streets for window shopping."
+            },
+            {
+              "name": "Dosan Park",
+              "desc": "A green pause with galleries and cafés nearby."
+            },
+            {
+              "name": "Dinner",
+              "desc": "Stylish restaurants and bars to close the night."
+            }
+          ]
+        }
+      },
+      "guideEyebrow": "Seoul course guide",
+      "scheduleLabel": "Day timetable",
+      "fullRouteLabel": "Route on the map"
+    },
+    "regionComingSoon": "{region} recommended courses will be added later.",
+    "scheduleComingSoon": "Courses by trip length (day trip, 1 night 2 days, and more) will be added later.",
+    "curated": {
+      "pickLabel": "{region} recommended courses",
+      "intro": "A guidebook of signature courses for this region. When they are added, pick a title to see the intro, route, and timetable.",
+      "guideEyebrow": "{region} course guide"
+    }
   }
 }

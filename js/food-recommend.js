@@ -17,12 +17,23 @@
     {
       id: "craving",
       options: [
-        { id: "meal", kinds: { meal: 6 }, tags: { hearty: 1 } },
-        { id: "dessert", kinds: { dessert: 6 }, tags: { sweet: 1 } },
+        {
+          id: "meal",
+          kinds: { meal: 6 },
+          tags: { hearty: 1 },
+          image: "Images/places/food-baekban.jpg",
+        },
+        {
+          id: "dessert",
+          kinds: { dessert: 6 },
+          tags: { sweet: 1 },
+          image: "pages/foods/desserts/cafe/media/cover.jpg",
+        },
         {
           id: "quick",
           kinds: { quick: 5 },
           tags: { quickbite: 2, portable: 1, combo: 1 },
+          image: "pages/foods/meals/kimbap/media/cover.jpg",
         },
       ],
     },
@@ -32,9 +43,9 @@
         return a.craving === "meal" || a.craving === "quick";
       },
       options: [
-        { id: "love", tags: { spicy: 4 } },
-        { id: "mild", tags: { mild: 3, spicy: 1 } },
-        { id: "no", tags: { mild: 3, nonspicy: 2 } },
+        { id: "love", tags: { spicy: 4 }, image: "Images/places/food-budae.jpg" },
+        { id: "mild", tags: { mild: 3, spicy: 1 }, image: "pages/foods/meals/kalguksu/media/cover.jpg" },
+        { id: "no", tags: { mild: 3, nonspicy: 2 }, image: "pages/foods/meals/kimbap/media/cover.jpg" },
       ],
     },
     {
@@ -43,9 +54,21 @@
         return a.craving === "dessert";
       },
       options: [
-        { id: "icy", tags: { icy: 5, cold: 2 } },
-        { id: "bakery", tags: { bakery: 5 } },
-        { id: "coffee", tags: { coffee: 5 } },
+        {
+          id: "icy",
+          tags: { icy: 5, cold: 2 },
+          image: "pages/foods/desserts/bingsu/media/cover.jpg",
+        },
+        {
+          id: "bakery",
+          tags: { bakery: 5 },
+          image: "pages/foods/desserts/bread/media/cover.jpg",
+        },
+        {
+          id: "coffee",
+          tags: { coffee: 5 },
+          image: "pages/foods/desserts/cafe/media/cover.jpg",
+        },
       ],
     },
     {
@@ -54,8 +77,8 @@
         return a.craving === "meal";
       },
       options: [
-        { id: "yes", tags: { soup: 4, warm: 1 } },
-        { id: "no", tags: { nosoup: 3, grill: 1 } },
+        { id: "yes", tags: { soup: 4, warm: 1 }, image: "pages/foods/meals/gukbap/media/cover.jpg" },
+        { id: "no", tags: { nosoup: 3, grill: 1 }, image: "Images/places/food-samgyeopsal.jpg" },
       ],
     },
     {
@@ -64,9 +87,17 @@
         return a.craving === "meal";
       },
       options: [
-        { id: "meat", tags: { meat: 4, pork: 1, grill: 1 } },
-        { id: "chicken", tags: { chicken: 4 } },
-        { id: "light", tags: { light: 3, veggie: 2 } },
+        {
+          id: "meat",
+          tags: { meat: 4, pork: 1, grill: 1 },
+          image: "Images/places/food-samgyeopsal.jpg",
+        },
+        { id: "chicken", tags: { chicken: 4 }, image: "pages/foods/meals/yangnyeom-chicken/media/cover.jpg" },
+        {
+          id: "light",
+          tags: { light: 3, veggie: 2 },
+          image: "pages/foods/meals/bibimbap/media/cover.jpg",
+        },
       ],
     },
     {
@@ -75,10 +106,14 @@
         return a.craving === "meal" || a.craving === "dessert";
       },
       options: [
-        { id: "hot", tags: { cold: 4, icy: 1 } },
-        { id: "cold", tags: { warm: 4, soup: 1 } },
-        { id: "rain", tags: { soup: 2, warm: 2, spicy: 1 } },
-        { id: "any", tags: { balanced: 1 } },
+        {
+          id: "hot",
+          tags: { cold: 4, icy: 1 },
+          image: "pages/foods/meals/naengmyeon/media/cover.jpg",
+        },
+        { id: "cold", tags: { warm: 4, soup: 1 }, image: "pages/foods/meals/gukbap/media/cover.jpg" },
+        { id: "rain", tags: { soup: 2, warm: 2, spicy: 1 }, image: "Images/places/food-budae.jpg" },
+        { id: "any", tags: { balanced: 1 }, image: "Images/places/food-baekban.jpg" },
       ],
     },
     {
@@ -87,9 +122,18 @@
         return a.craving === "quick";
       },
       options: [
-        { id: "combo", tags: { combo: 5 }, kinds: { quick: 2 } },
-        { id: "noodles", tags: { noodles: 5, quickbite: 1 } },
-        { id: "roll", tags: { roll: 5, portable: 2 } },
+        {
+          id: "combo",
+          tags: { combo: 5 },
+          kinds: { quick: 2 },
+          image: "pages/convenience-store/kim-hyeja-dosirak/media/cover.jpg",
+        },
+        {
+          id: "noodles",
+          tags: { noodles: 5, quickbite: 1 },
+          image: "pages/convenience-store/buldak-bokkeum-myeon/media/cover.jpg",
+        },
+        { id: "roll", tags: { roll: 5, portable: 2 }, image: "pages/foods/meals/kimbap/media/cover.jpg" },
       ],
     },
   ];
@@ -103,6 +147,7 @@
   var tagScores = {};
   var kindScores = {};
   var lastFocus = null;
+  var pendingChoice = null;
 
   function catalog() {
     var list = window.FOOD_RECOMMEND_CATALOG;
@@ -282,6 +327,29 @@
     }
   }
 
+  function optionThumbSrc(opt) {
+    if (opt && opt.image) {
+      return "../../" + String(opt.image).replace(/^\.\//, "");
+    }
+    return "../../Images/menu/foods.png";
+  }
+
+  function optionThumbFallback() {
+    return "../../Images/menu/foods.png";
+  }
+
+  function setPendingChoice(optionId) {
+    pendingChoice = optionId;
+    if (!dialog) return;
+    dialog.querySelectorAll("[data-food-quiz-option]").forEach(function (btn) {
+      var on = btn.getAttribute("data-food-quiz-option") === optionId;
+      btn.classList.toggle("is-selected", on);
+      btn.setAttribute("aria-checked", on ? "true" : "false");
+    });
+    var nextBtn = dialog.querySelector("[data-food-quiz-next]");
+    if (nextBtn) nextBtn.disabled = !optionId;
+  }
+
   function renderQuestion() {
     var panel = dialog.querySelector("[data-food-quiz-panel]");
     if (!panel) return;
@@ -304,24 +372,53 @@
     var title = dialog.querySelector("[data-food-quiz-heading]");
     if (title) title.textContent = t("foodLife.quiz.title", "먹거리 추천");
 
-    var prompt = t(
-      "foodLife.quiz.questions." + q.id + ".prompt",
-      q.id
-    );
+    var prompt = t("foodLife.quiz.questions." + q.id + ".prompt", q.id);
+    var lead = t("foodLife.quiz.questions." + q.id + ".lead", "");
+    if (lead === "foodLife.quiz.questions." + q.id + ".lead") lead = "";
+    var nextLbl = t("foodLife.quiz.next", "다음");
+    var fallbackImg = optionThumbFallback();
+    pendingChoice = answers[qid] || null;
 
     var optsHtml = q.options
       .map(function (opt) {
+        var selected = pendingChoice === opt.id;
         var label = t(
           "foodLife.quiz.questions." + q.id + ".options." + opt.id,
           opt.id
         );
+        var hint = t(
+          "foodLife.quiz.questions." + q.id + ".hints." + opt.id,
+          ""
+        );
+        if (hint === "foodLife.quiz.questions." + q.id + ".hints." + opt.id) {
+          hint = "";
+        }
+        var src = optionThumbSrc(opt);
         return (
-          '<button type="button" class="food-quiz-option" data-food-quiz-option="' +
+          '<button type="button" class="food-quiz-option' +
+          (selected ? " is-selected" : "") +
+          '" data-food-quiz-option="' +
           opt.id +
+          '" role="radio" aria-checked="' +
+          (selected ? "true" : "false") +
           '">' +
+          '<img class="food-quiz-option__thumb" src="' +
+          escapeAttr(src) +
+          '" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'' +
+          escapeAttr(fallbackImg) +
+          '\'">' +
+          '<span class="food-quiz-option__copy">' +
           '<span class="food-quiz-option__label">' +
           escapeHtml(label) +
-          "</span></button>"
+          "</span>" +
+          (hint
+            ? '<span class="food-quiz-option__hint">' +
+              escapeHtml(hint) +
+              "</span>"
+            : "") +
+          "</span>" +
+          '<span class="food-quiz-option__radio" aria-hidden="true"></span>' +
+          "</button>"
         );
       })
       .join("");
@@ -333,17 +430,31 @@
       '<p class="food-quiz-prompt">' +
       escapeHtml(prompt) +
       "</p>" +
-      '<div class="food-quiz-options" role="group" aria-label="' +
+      (lead
+        ? '<p class="food-quiz-lead">' + escapeHtml(lead) + "</p>"
+        : "") +
+      '<div class="food-quiz-options" role="radiogroup" aria-label="' +
       escapeAttr(prompt) +
       '">' +
       optsHtml +
-      "</div></div>";
+      "</div>" +
+      '<button type="button" class="food-quiz-next" data-food-quiz-next' +
+      (pendingChoice ? "" : " disabled") +
+      ">" +
+      escapeHtml(nextLbl) +
+      "</button></div>";
 
     panel.querySelectorAll("[data-food-quiz-option]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        chooseOption(btn.getAttribute("data-food-quiz-option"));
+        setPendingChoice(btn.getAttribute("data-food-quiz-option"));
       });
     });
+    var nextBtn = panel.querySelector("[data-food-quiz-next]");
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        if (pendingChoice) chooseOption(pendingChoice);
+      });
+    }
   }
 
   function renderResult() {
@@ -466,6 +577,7 @@
   function startQuiz(keepOpen) {
     answers = {};
     historyStack = [];
+    pendingChoice = null;
     resetScores();
     rebuildActiveFromAnswers();
     stepIndex = 0;

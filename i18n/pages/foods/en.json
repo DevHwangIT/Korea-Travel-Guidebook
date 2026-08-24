@@ -15,6 +15,7 @@
       "title": "Food recommendation",
       "progress": "{current} / {total}",
       "back": "Back",
+      "next": "Next",
       "close": "Close",
       "restart": "Try again",
       "resultEyebrow": "Today’s pick",
@@ -28,6 +29,12 @@
             "meal": "A proper meal",
             "dessert": "Something sweet",
             "quick": "Quick & easy"
+          },
+          "lead": "We’ll recommend Korean food that fits your craving.",
+          "hints": {
+            "meal": "A proper sit-down — rice, meat, or a hearty bowl",
+            "dessert": "Cafés, bingsu, bread, and something sweet",
+            "quick": "Kimbap or convenience-store food, fast and easy"
           }
         },
         "spicy": {
@@ -36,6 +43,12 @@
             "love": "Bring the heat!",
             "mild": "Just a little",
             "no": "Keep it mild"
+          },
+          "lead": "Heat level helps us narrow the menu.",
+          "hints": {
+            "love": "Tteokbokki, mala, spicy stews — bring it on",
+            "mild": "A gentle kick, like kalguksu",
+            "no": "Mild kimbap or home-style rice sets"
           }
         },
         "dessertVibe": {
@@ -44,6 +57,12 @@
             "icy": "Icy bingsu",
             "bakery": "Soft bakery bread",
             "coffee": "Café break"
+          },
+          "lead": "Pick the sweet mood you want right now.",
+          "hints": {
+            "icy": "Bingsu or ice cream to cool down",
+            "bakery": "Soft bread and bakery treats",
+            "coffee": "A café break with coffee"
           }
         },
         "soup": {
@@ -51,6 +70,11 @@
           "options": {
             "yes": "Yes — a warm bowl",
             "no": "No broth, please"
+          },
+          "lead": "Broth or no broth changes the whole meal.",
+          "hints": {
+            "yes": "A warm bowl — gukbap or stew",
+            "no": "Grills and stir-fries without soup"
           }
         },
         "protein": {
@@ -59,6 +83,12 @@
             "meat": "Serious meat",
             "chicken": "Chicken dishes",
             "light": "Light / veggie-friendly"
+          },
+          "lead": "We’ll lead with the protein you want.",
+          "hints": {
+            "meat": "Samgyeopsal, galbi-jjim, and serious meat",
+            "chicken": "Fried chicken, dakgalbi, dakhanmari",
+            "light": "Bibimbap or a lighter rice set"
           }
         },
         "mood": {
@@ -68,6 +98,13 @@
             "cold": "Chilly — I want warmth",
             "rain": "Rainy / damp vibes",
             "any": "Anything’s fine"
+          },
+          "lead": "Weather and mood steer the bowl we pick.",
+          "hints": {
+            "hot": "A cold bowl like naengmyeon",
+            "cold": "Something warming, like gukbap",
+            "rain": "A hot stew when the weather is damp",
+            "any": "Crowd-pleasers that work any day"
           }
         },
         "quickStyle": {
@@ -76,6 +113,12 @@
             "combo": "Convenience-store combos",
             "noodles": "Ramen / simple noodles",
             "roll": "A roll of kimbap"
+          },
+          "lead": "Choose the fastest bite that still feels right.",
+          "hints": {
+            "combo": "Popular convenience-store combos",
+            "noodles": "Ramen or a simple noodle cup",
+            "roll": "One roll of kimbap to go"
           }
         }
       },
