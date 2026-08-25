@@ -45,7 +45,8 @@
     return b === f;
   }
 
-  function apply(root, filter, section) {
+  function apply(root, filter, section, opts) {
+    opts = opts || {};
     var brandFilter =
       filter != null
         ? filter
@@ -102,12 +103,20 @@
     });
     root.setAttribute("data-section-active", sectionFilter);
 
-    document.dispatchEvent(
-      new CustomEvent("guide:filterchange", {
-        bubbles: true,
-        detail: { filter: brandFilter, section: sectionFilter },
-      })
-    );
+    if (!opts.skipUrl && window.GuideUrlState) {
+      window.GuideUrlState.patch(
+        { brand: brandFilter, section: sectionFilter },
+        { brand: "common", section: "product" }
+      );
+    }
+    if (!opts.silent) {
+      document.dispatchEvent(
+        new CustomEvent("guide:filterchange", {
+          bubbles: true,
+          detail: { filter: brandFilter, section: sectionFilter },
+        })
+      );
+    }
   }
 
   function bind(root) {
@@ -134,7 +143,14 @@
       });
     });
 
+    var fromBrand = window.GuideUrlState
+      ? String(window.GuideUrlState.get("brand") || "").toLowerCase()
+      : "";
+    var fromSection = window.GuideUrlState
+      ? String(window.GuideUrlState.get("section") || "").toLowerCase()
+      : "";
     var initialBrand =
+      fromBrand ||
       root.getAttribute("data-brand-active") ||
       (root.querySelector("[data-brand-tab].is-active") &&
         root
@@ -142,13 +158,14 @@
           .getAttribute("data-brand-tab")) ||
       "common";
     var initialSection =
+      fromSection ||
       root.getAttribute("data-section-active") ||
       (root.querySelector("[data-section-tab].is-active") &&
         root
           .querySelector("[data-section-tab].is-active")
           .getAttribute("data-section-tab")) ||
       "product";
-    apply(root, initialBrand, initialSection);
+    apply(root, initialBrand, initialSection, { skipUrl: true });
   }
 
   function init() {
@@ -168,7 +185,8 @@
         apply(
           root,
           root.getAttribute("data-brand-active") || "common",
-          root.getAttribute("data-section-active") || "product"
+          root.getAttribute("data-section-active") || "product",
+          { silent: true, skipUrl: true }
         );
       });
   });

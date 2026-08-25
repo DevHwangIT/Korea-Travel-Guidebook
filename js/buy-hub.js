@@ -159,7 +159,12 @@
       applyCopy(current);
     });
 
-    setView(parseHashView(), {
+    var view = parseHashView();
+    var tabQ = window.GuideUrlState
+      ? String(window.GuideUrlState.get("tab") || "")
+      : "";
+    if (view === "choice" && tabQ) view = "shopping";
+    setView(view, {
       syncHash: true,
       replaceHash: true,
       animateChoice: true,

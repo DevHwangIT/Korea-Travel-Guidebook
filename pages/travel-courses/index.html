@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="travelCourses.pageTitle" data-i18n-desc="travelCourses.intro" data-seo-path="pages/travel-courses/" data-seo-image="Images/menu/travel-courses.png">
 <head>
-  <!-- asset-v: 20260825061208 -->
+  <!-- asset-v: 20260826055939 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>여행 코스 추천 | Korea Travel Guide</title>
@@ -23,7 +23,7 @@
   <meta name="twitter:title" content="여행 코스 추천 | Korea Travel Guide">
   <meta name="twitter:description" content="지역별 추천 코스와 실시간 맞춤 추천을 한곳에서 확인하세요.">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/menu/travel-courses.png">
-  <link rel="stylesheet" href="../../styles.css?v=20260825061208">
+  <link rel="stylesheet" href="../../styles.css?v=20260826055939">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
@@ -42,18 +42,24 @@
         <span class="cat-select-label" data-i18n="travelCourses.regionPickLabel">지역</span>
         <select class="cat-select" data-courseRegion-select aria-label="Region" data-i18n-attr="aria-label:travelCourses.regionPickLabel">
           <option value="seoul" data-i18n="travelCourses.regionSeoul">서울</option>
-          <option value="gyeonggi" data-i18n="travelCourses.regionGyeonggi">경기</option>
           <option value="incheon" data-i18n="travelCourses.regionIncheon">인천</option>
-          <option value="gyeongju" data-i18n="travelCourses.regionGyeongju">경주</option>
+          <option value="gyeonggi" data-i18n="travelCourses.regionGyeonggi">경기도</option>
+          <option value="gangwon" data-i18n="travelCourses.regionGangwon">강원도</option>
+          <option value="chungcheong" data-i18n="travelCourses.regionChungcheong">충청도</option>
+          <option value="jeolla" data-i18n="travelCourses.regionJeolla">전라도</option>
+          <option value="gyeongsang" data-i18n="travelCourses.regionGyeongsang">경상도</option>
           <option value="busan" data-i18n="travelCourses.regionBusan">부산</option>
           <option value="jeju" data-i18n="travelCourses.regionJeju">제주도</option>
         </select>
       </label>
       <div class="tab-list prep-cat-list" role="tablist" aria-label="Region" data-i18n-attr="aria-label:travelCourses.regionPickLabel">
         <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" data-courseRegion-tab="seoul" data-i18n="travelCourses.regionSeoul">서울</button>
-        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="gyeonggi" data-i18n="travelCourses.regionGyeonggi">경기</button>
         <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="incheon" data-i18n="travelCourses.regionIncheon">인천</button>
-        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="gyeongju" data-i18n="travelCourses.regionGyeongju">경주</button>
+        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="gyeonggi" data-i18n="travelCourses.regionGyeonggi">경기도</button>
+        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="gangwon" data-i18n="travelCourses.regionGangwon">강원도</button>
+        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="chungcheong" data-i18n="travelCourses.regionChungcheong">충청도</button>
+        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="jeolla" data-i18n="travelCourses.regionJeolla">전라도</button>
+        <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="gyeongsang" data-i18n="travelCourses.regionGyeongsang">경상도</button>
         <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="busan" data-i18n="travelCourses.regionBusan">부산</button>
         <button type="button" class="tab-btn" role="tab" data-courseRegion-tab="jeju" data-i18n="travelCourses.regionJeju">제주도</button>
       </div>
@@ -62,14 +68,23 @@
         <div class="tab-panel guide-article tip-article is-active" role="tabpanel" data-courseRegion-panel="seoul">
           <div class="region-curated seoul-curated" data-region-curated="seoul"></div>
         </div>
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="gyeonggi" hidden>
-          <div class="region-curated" data-region-curated="gyeonggi"></div>
-        </div>
         <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="incheon" hidden>
           <div class="region-curated" data-region-curated="incheon"></div>
         </div>
-        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="gyeongju" hidden>
-          <div class="region-curated" data-region-curated="gyeongju"></div>
+        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="gyeonggi" hidden>
+          <div class="region-curated" data-region-curated="gyeonggi"></div>
+        </div>
+        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="gangwon" hidden>
+          <div class="region-curated" data-region-curated="gangwon"></div>
+        </div>
+        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="chungcheong" hidden>
+          <div class="region-curated" data-region-curated="chungcheong"></div>
+        </div>
+        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="jeolla" hidden>
+          <div class="region-curated" data-region-curated="jeolla"></div>
+        </div>
+        <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="gyeongsang" hidden>
+          <div class="region-curated" data-region-curated="gyeongsang"></div>
         </div>
         <div class="tab-panel guide-article tip-article" role="tabpanel" data-courseRegion-panel="busan" hidden>
           <div class="region-curated" data-region-curated="busan"></div>
@@ -126,18 +141,26 @@
     <p class="footer-note" data-i18n="common.footer">© Korea Travel Guide</p>
   </footer>
 
-  <script src="../../js/site-config.js?v=20260825061208"></script>
-  <script src="../../i18n/messages.js?v=20260825061208"></script>
-  <script src="../../js/i18n.js?v=20260825061208"></script>
-  <script src="../../js/analytics.js?v=20260825061208"></script>
-  <script src="../../js/seo.js?v=20260825061208"></script>
-  <script src="../../js/region-tabs.js?v=20260825061208"></script>
-  <script src="../../data/places/places-coords.js?v=20260825061208"></script>
-  <script src="../../data/food/recommend-catalog.js?v=20260825061208"></script>
-  <script src="../../data/courses/seoul-curated.js?v=20260825061208"></script>
-  <script src="../../data/courses/curated-by-region.js?v=20260825061208"></script>
+  <script src="../../js/site-config.js?v=20260826055939"></script>
+  <script src="../../i18n/messages.js?v=20260826055939"></script>
+  <script src="../../js/i18n.js?v=20260826055939"></script>
+  <script src="../../js/analytics.js?v=20260826055939"></script>
+  <script src="../../js/seo.js?v=20260826055939"></script>
+  <script src="../../js/region-tabs.js?v=20260826055939"></script>
+  <script src="../../data/places/places-coords.js?v=20260826055939"></script>
+  <script src="../../data/food/recommend-catalog.js?v=20260826055939"></script>
+  <script src="../../data/courses/seoul-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/gyeonggi-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/incheon-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/gangwon-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/chungcheong-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/jeolla-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/gyeongsang-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/busan-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/jeju-curated.js?v=20260826055939"></script>
+  <script src="../../data/courses/curated-by-region.js?v=20260826055939"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="../../js/seoul-curated-courses.js?v=20260825061208"></script>
-  <script src="../../js/course-recommend.js?v=20260825061208"></script>
+  <script src="../../js/seoul-curated-courses.js?v=20260826055939"></script>
+  <script src="../../js/course-recommend.js?v=20260826055939"></script>
 </body>
 </html>

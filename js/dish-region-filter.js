@@ -64,7 +64,8 @@
     return empty;
   }
 
-  function apply(root, group) {
+  function apply(root, group, opts) {
+    opts = opts || {};
     var list = cards(root);
     var visible = 0;
     list.forEach(function (card) {
@@ -88,6 +89,9 @@
       btn.setAttribute("aria-selected", on ? "true" : "false");
     });
     root.setAttribute("data-region-active", group);
+    if (!opts.skipUrl && window.GuideUrlState) {
+      window.GuideUrlState.patch({ region: group }, { region: "all" });
+    }
   }
 
   function bind(root) {
@@ -98,7 +102,12 @@
         apply(root, btn.getAttribute("data-region-tab") || "all");
       });
     });
+    var fromQuery = "";
+    if (window.GuideUrlState) {
+      fromQuery = String(window.GuideUrlState.get("region") || "").toLowerCase();
+    }
     var initial =
+      (GROUPS.indexOf(fromQuery) >= 0 ? fromQuery : "") ||
       root.getAttribute("data-region-active") ||
       (root.querySelector("[data-region-tab].is-active") &&
         root
@@ -106,7 +115,7 @@
           .getAttribute("data-region-tab")) ||
       "all";
     if (GROUPS.indexOf(initial) < 0) initial = "all";
-    apply(root, initial);
+    apply(root, initial, { skipUrl: true });
   }
 
   function init() {
@@ -122,7 +131,7 @@
   document.addEventListener("guide:langchange", function () {
     document.querySelectorAll("[data-dish-region-filter]").forEach(function (root) {
       var g = root.getAttribute("data-region-active") || "all";
-      apply(root, g);
+      apply(root, g, { skipUrl: true });
     });
   });
 })();

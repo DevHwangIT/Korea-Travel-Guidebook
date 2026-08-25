@@ -156,6 +156,30 @@
     var ui = createControls(grid);
     var state = { page: 1, query: "" };
 
+    function readUrlState() {
+      var pageRaw = 1;
+      var queryRaw = "";
+      if (window.GuideUrlState) {
+        pageRaw = parseInt(window.GuideUrlState.get("page") || "1", 10);
+        queryRaw = String(window.GuideUrlState.get("q") || "")
+          .replace(/\s+/g, " ")
+          .trim()
+          .toLowerCase();
+      }
+      if (!pageRaw || pageRaw < 1) pageRaw = 1;
+      state.page = pageRaw;
+      state.query = queryRaw;
+      if (queryRaw) ui.input.value = window.GuideUrlState.get("q") || "";
+    }
+
+    function writeUrlState() {
+      if (!window.GuideUrlState) return;
+      window.GuideUrlState.patch(
+        { page: state.page, q: state.query },
+        { page: 1, q: "" }
+      );
+    }
+
     function filtered() {
       var q = state.query;
       return items.filter(function (el) {
@@ -253,6 +277,8 @@
           ui.pages.appendChild(btn);
         });
       }
+
+      writeUrlState();
     }
 
     ui.prev.addEventListener("click", function () {
@@ -288,11 +314,17 @@
       render();
     });
 
+    var keepUrlPage = true;
     document.addEventListener("guide:filterchange", function () {
-      state.page = 1;
+      if (keepUrlPage) {
+        keepUrlPage = false;
+      } else {
+        state.page = 1;
+      }
       render();
     });
 
+    readUrlState();
     render();
   }
 

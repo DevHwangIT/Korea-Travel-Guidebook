@@ -16,13 +16,6 @@
     "regionGyeongju": "Gyeongju",
     "regionBusan": "Busan",
     "regionJeju": "Jeju Island",
-    "regionComingSoon": "{region} recommended courses will be added later.",
-    "scheduleComingSoon": "Courses by trip length (day trip, 1 night 2 days, and more) will be added later.",
-    "curated": {
-      "pickLabel": "{region} recommended courses",
-      "intro": "A guidebook of signature courses for this region. When they are added, pick a title to see the intro, route, and timetable.",
-      "guideEyebrow": "{region} course guide"
-    },
     "quiz": {
       "bannerEyebrow": "Live course",
       "bannerTitle": "Get a travel course recommended in real time.",
@@ -30,7 +23,6 @@
       "title": "Course quiz",
       "progress": "{current} / {total}",
       "back": "Back",
-      "next": "Next",
       "close": "Close",
       "restart": "Find another course",
       "resultEyebrow": "Your course",
@@ -79,16 +71,24 @@
             "incheon": "Incheon",
             "gyeongju": "Gyeongju",
             "busan": "Busan",
-            "jeju": "Jeju"
+            "jeju": "Jeju Island",
+            "gangwon": "Gangwon",
+            "chungcheong": "Chungcheong",
+            "jeolla": "Jeolla",
+            "gyeongsang": "Gyeongsang"
           },
           "lead": "Sights and food will follow the region you pick.",
           "hints": {
-            "seoul": "Palaces, hanok, the Hangang, and trendy streets",
+            "seoul": "Palaces, hanok, the Hangang, and trendy streets in one city",
             "gyeonggi": "Suwon, folk villages, and easy Seoul day trips",
             "incheon": "Songdo, Chinatown, and handy airport access",
             "gyeongju": "Bulguksa, royal tombs, and Silla heritage",
-            "busan": "Haeundae, Gamcheon, and a coastal city vibe",
-            "jeju": "Oreum, beaches, and Hallasan island time"
+            "busan": "Haeundae, Gamcheon, and Jagalchi by the sea",
+            "jeju": "Oreum, beaches, and Hallasan on an island trip",
+            "gangwon": "Seoraksan, Gangneung, and the East Sea",
+            "chungcheong": "Baekje sites in Gongju and Buyeo, plus west-coast beaches",
+            "jeolla": "Jeonju hanok village, Yeosu, and Boseong tea fields",
+            "gyeongsang": "Gyeongju, Andong Hahoe, Tongyeong, and more of Yeongnam"
           }
         },
         "vibe": {
@@ -155,8 +155,8 @@
       },
       "meal": {
         "lunch": "Lunch",
-        "snack": "Snack & dessert",
-        "dinner": "Dinner"
+        "dinner": "Dinner",
+        "snack": "Snack & dessert"
       },
       "placeType": {
         "city": "City",
@@ -172,7 +172,6 @@
       "saveFail": "Could not save. Check your browser storage settings.",
       "savedTitle": "Courses saved on this device",
       "savedEmpty": "No saved courses yet. Tap the bookmark icon after a recommendation to save on this device.",
-      "savedLocalNote": "Stored only in this browser on your phone or PC — never sent to our servers. Not visible on other devices or browsers.",
       "savedAt": "Saved {when}",
       "openSaved": "Open",
       "deleteSaved": "Delete",
@@ -181,9 +180,6 @@
       "moveTransit": "↓ Move by transit",
       "moveRent": "↓ Drive / rental",
       "moveMix": "↓ Transit or car",
-      "modeTransit": "transit",
-      "modeRent": "car",
-      "modeMix": "transit/car",
       "stayRelax": "Take it slow (~2–3 hours)",
       "stayBalanced": "Browse at ease (~1.5–2 hours)",
       "stayActive": "Quick highlights (~1–1.5 hours)",
@@ -207,22 +203,20 @@
       },
       "mealActivity": {
         "lunch": "Eat nearby and recharge for the afternoon.",
-        "snack": "Take a short break with cafe dessert or a street snack.",
-        "dinner": "Wrap up the day with a popular local dish."
-      }
+        "dinner": "Wrap up the day with a popular local dish.",
+        "snack": "Take a short break with cafe dessert or a street snack."
+      },
+      "savedLocalNote": "Stored only in this browser on your phone or PC — never sent to our servers. Not visible on other devices or browsers.",
+      "modeTransit": "transit",
+      "modeRent": "car",
+      "modeMix": "transit/car",
+      "next": "Next"
     },
     "seoulCurated": {
       "pickLabel": "Seoul curated courses",
       "intro": "Guidebook-style day itineraries for Seoul. Pick a title to read the overview, route outline, and timetable.",
       "routeLabel": "Route at a glance",
       "tipsLabel": "Tips",
-      "meta": {
-        "totalTime": "Total time",
-        "stops": "Stops",
-        "start": "Start",
-        "finish": "Finish",
-        "hours": "{hours}h"
-      },
       "openCourse": "View course",
       "courses": {
         "c01": {
@@ -764,7 +758,2220 @@
       },
       "guideEyebrow": "Seoul course guide",
       "scheduleLabel": "Day timetable",
-      "fullRouteLabel": "Route on the map"
-    }
+      "fullRouteLabel": "Route on the map",
+      "meta": {
+        "totalTime": "Total time",
+        "stops": "Stops",
+        "start": "Start",
+        "finish": "Finish",
+        "hours": "{hours}h"
+      }
+    },
+    "regionComingSoon": "{region} recommended courses will be added later.",
+    "scheduleComingSoon": "Courses by trip length (day trip, 1 night 2 days, and more) will be added later.",
+    "curated": {
+      "pickLabel": "{region} recommended courses",
+      "intro": "A guidebook of signature courses for this region. When they are added, pick a title to see the intro, route, and timetable.",
+      "guideEyebrow": "{region} course guide",
+      "mobility": {
+        "transit": "Best by transit",
+        "car": "Best by car",
+        "mix": "Transit or car",
+        "transitShort": "Transit",
+        "carShort": "Car",
+        "mixShort": "Mixed"
+      },
+      "noticeLabel": "Good to know",
+      "gyeonggi": {
+        "pickLabel": "Gyeonggi curated courses",
+        "intro": "Day courses around Gyeonggi—Suwon, Gapyeong, Paju, Everland, the Korean Folk Village, Yangpyeong, Gwangmyeong, Namhansanseong, Pocheon, and Yeoju. Pick a title to see the intro, route, and timetable.",
+        "guideEyebrow": "Gyeonggi course guide",
+        "courses": {
+          "c01": {
+            "title": "Suwon Hwaseong · Haenggung-dong",
+            "summary": "UNESCO Hwaseong and Haenggung, lunch and cafés in Haenggung-dong, then Banghwasuryujeong and fortress lights. Easy by subway and bus.",
+            "route": "Hwaseong Fortress → Hwaseong Haenggung → Haenggung-dong → Banghwasuryujeong",
+            "tips": "The wall walk is long—wear comfortable shoes. Suwon Station and Haenggung are easy by subway and bus.",
+            "stops": [
+              {
+                "name": "Suwon Hwaseong",
+                "desc": "Walk the walls around Janganmun and Paldalmun for fortress views."
+              },
+              {
+                "name": "Hwaseong Haenggung",
+                "desc": "Jeongjo’s temporary palace—tour the main halls at an easy pace."
+              },
+              {
+                "name": "Haenggung-dong lunch",
+                "desc": "Korean meals and snacks in the alleys in front of the palace."
+              },
+              {
+                "name": "Haengnidangil",
+                "desc": "Cafés and small shops in the lanes east of the palace."
+              },
+              {
+                "name": "Banghwasuryujeong",
+                "desc": "Northeast pavilion and Yongyeon pond; beautiful near sunset."
+              },
+              {
+                "name": "Hwaseong night views",
+                "desc": "Finish with a slow walk along the lit fortress walls."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Gapyeong highlights",
+            "summary": "Nami Island, then Petite France and the Italian Village, finishing at the Garden of Morning Calm. A car (or tour van) makes the hops easy.",
+            "route": "Nami Island → Petite France → Garden of Morning Calm",
+            "tips": "Allow ferry-queue time at Nami. Check seasonal hours for the garden. Linking all three by transit alone is tight.",
+            "stops": [
+              {
+                "name": "Nami Island",
+                "desc": "Metasequoia lane, bikes, and riverside paths at an easy pace."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Eat on the island or near the Gapyeong pier."
+              },
+              {
+                "name": "Petite France · Italian Village",
+                "desc": "European-style sets and souvenir lanes."
+              },
+              {
+                "name": "Garden of Morning Calm",
+                "desc": "Themed gardens and trails—check last entry."
+              },
+              {
+                "name": "Finish",
+                "desc": "End at the garden and head back toward Seoul or Chuncheon."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Paju DMZ course",
+            "summary": "Imjingak Peace Nuri, a DMZ tour, then a slower afternoon in Heyri Art Village. A car or reserved tour is the practical way.",
+            "route": "Imjingak → DMZ → Heyri Art Village",
+            "tips": "DMZ sites usually need a passport and advance booking. Walk-up tickets can sell out. Wear comfortable shoes.",
+            "stops": [
+              {
+                "name": "Imjingak Peace Nuri",
+                "desc": "Freedom Bridge, prayer ribbons, and the park—start with the border story."
+              },
+              {
+                "name": "DMZ tour",
+                "desc": "Dora Observatory, the Third Tunnel, and the day’s circuit. A guided tour is the safer option."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Eat at Imjingak or in Paju town."
+              },
+              {
+                "name": "Heyri Art Village",
+                "desc": "Galleries, studios, and walking paths."
+              },
+              {
+                "name": "Café",
+                "desc": "A slow café stop in Heyri."
+              },
+              {
+                "name": "Finish",
+                "desc": "Head back toward Seoul before dark."
+              }
+            ],
+            "notice": "DMZ sites change reservation, ID, and entry rules often. Check Gyeonggi Tourism and the site itself before you go."
+          },
+          "c04": {
+            "title": "Everland day",
+            "summary": "A full day inside Everland: safari and rides, gardens, dinner, then the parade and night shows—no extra destinations.",
+            "route": "Everland — full park day",
+            "tips": "On weekends, arrive at opening. Parade times change by season. Everline, shuttles, or a car all work.",
+            "stops": [
+              {
+                "name": "Enter Everland",
+                "desc": "Arrive at opening and check wait times and a walking loop."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Garden food court or a themed restaurant."
+              },
+              {
+                "name": "Safari & rides",
+                "desc": "Safari World and headline attractions in the afternoon."
+              },
+              {
+                "name": "Gardens & more rides",
+                "desc": "Four Seasons Garden and anything you skipped."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in the park and claim a night-show spot."
+              },
+              {
+                "name": "Parade & night shows",
+                "desc": "Seasonal parade, lights, and closing entertainment."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Korean Folk Village course",
+            "summary": "Traditional houses, shows, and crafts at the Korean Folk Village, then Bojeong café street in the evening.",
+            "route": "Korean Folk Village → Bojeong café street",
+            "tips": "Give the village at least half a day. Check the performance board at the gate. Bojeong is near Jukjeon and Bojeong on the Bundang Line.",
+            "stops": [
+              {
+                "name": "Korean Folk Village",
+                "desc": "An open-air Joseon village—start with houses and the market lane."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Traditional Korean meals inside the village."
+              },
+              {
+                "name": "Shows & workshops",
+                "desc": "Pick the day’s nongak, tightrope, or craft sessions."
+              },
+              {
+                "name": "Leave the village",
+                "desc": "Exit before dusk and move to Bojeong."
+              },
+              {
+                "name": "Bojeong café street",
+                "desc": "Dessert and downtime near Jukjeon."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Casual dinner around Bojeong or Jukjeon."
+              }
+            ],
+            "notice": "DMZ sites often require advance booking, ID, and changing entry rules. Check Gyeonggi Tourism and the facility before you go."
+          },
+          "c06": {
+            "title": "Yangpyeong Dumulmeori course",
+            "summary": "Dumulmeori and Semiwon, then a riverside café and a Namhangang walk. Spread out—easier by car.",
+            "route": "Dumulmeori → Semiwon → Yangpyeong café → Namhangang",
+            "tips": "Dumulmeori is busy weekend mornings. Semiwon’s lotus peaks in summer. Riverside cafés often have tight parking.",
+            "stops": [
+              {
+                "name": "Dumulmeori",
+                "desc": "Where the Bukhangang and Namhangang meet—photo spots and paths."
+              },
+              {
+                "name": "Semiwon",
+                "desc": "Lotus ponds, water gardens, and boardwalks."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Korean restaurants near Dumulmeori or Semiwon."
+              },
+              {
+                "name": "Riverside café",
+                "desc": "A slow coffee with a Namhangang view."
+              },
+              {
+                "name": "Namhangang walk",
+                "desc": "An easy stroll along the river."
+              },
+              {
+                "name": "Finish",
+                "desc": "Head back toward Seoul before dark."
+              }
+            ]
+          },
+          "c07": {
+            "title": "Gwangmyeong Cave course",
+            "summary": "Gwangmyeong Cave, then the traditional market and downtown cafés. Workable by subway and bus.",
+            "route": "Gwangmyeong Cave → Gwangmyeong Traditional Market → downtown",
+            "tips": "The cave is cool and floors can be damp. The market sits near Cheolsan Station. Link cave and market by bus or taxi.",
+            "stops": [
+              {
+                "name": "Gwangmyeong Cave",
+                "desc": "A former mine turned attraction—Golden Waterfall, wine cellar, and light art."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Restaurants at the cave complex."
+              },
+              {
+                "name": "Gwangmyeong Traditional Market",
+                "desc": "Food and side streets around Cheolsan."
+              },
+              {
+                "name": "Café",
+                "desc": "A downtown Gwangmyeong café."
+              },
+              {
+                "name": "Finish",
+                "desc": "Back to Seoul from Cheolsan or Gwangmyeong Station."
+              }
+            ]
+          },
+          "c08": {
+            "title": "Namhansanseong course",
+            "summary": "UNESCO fortress walls, a village lunch, more ramparts, then a café. Reachable by bus from Seoul.",
+            "route": "Namhansanseong → fortress village → café",
+            "tips": "Buses reach the fortress. Trails are hilly—wear good shoes. It can be windy when the weather turns.",
+            "stops": [
+              {
+                "name": "Namhansanseong",
+                "desc": "UNESCO walls around the south gate."
+              },
+              {
+                "name": "Wall walk",
+                "desc": "Follow the ramparts for views."
+              },
+              {
+                "name": "Village lunch",
+                "desc": "Mountain-vegetable bibimbap and local restaurants."
+              },
+              {
+                "name": "More fortress",
+                "desc": "West gate, the temporary palace site, and leftover stretches."
+              },
+              {
+                "name": "Café",
+                "desc": "A café inside the fortress village."
+              },
+              {
+                "name": "Finish",
+                "desc": "Bus down and back to Seoul."
+              }
+            ]
+          },
+          "c09": {
+            "title": "Pocheon nature course",
+            "summary": "Pocheon Art Valley’s quarry lake, then Sanjeong Lake for a walk and café. You will want a car.",
+            "route": "Pocheon Art Valley → Sanjeong Lake",
+            "tips": "Art Valley charges admission and weekend parking fills up. A full loop of Sanjeong Lake is long. Buses between the two are infrequent.",
+            "stops": [
+              {
+                "name": "Pocheon Art Valley",
+                "desc": "A granite quarry turned lake, viewpoints, and sculpture park."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Eat near Art Valley."
+              },
+              {
+                "name": "Sanjeong Lake",
+                "desc": "Walk the shore with Myeongseongsan behind the water."
+              },
+              {
+                "name": "Walk · café",
+                "desc": "A lakeside café or a shorter extra stroll."
+              },
+              {
+                "name": "Finish",
+                "desc": "Drive back toward Seoul from Pocheon."
+              }
+            ]
+          },
+          "c10": {
+            "title": "Yeoju history & shopping",
+            "summary": "Silleuksa and King Sejong’s tomb, then Yeoju Premium Outlets. Spread out—easier by car.",
+            "route": "Silleuksa → King Sejong’s tomb → Yeoju Outlet",
+            "tips": "Silleuksa sits on the Namhangang—pair it with a riverside walk. The outlet gets busy weekend evenings.",
+            "stops": [
+              {
+                "name": "Silleuksa",
+                "desc": "Riverside temple and stone pagoda."
+              },
+              {
+                "name": "Namhangang walk",
+                "desc": "A short stroll in front of the temple."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Restaurants at the temple area."
+              },
+              {
+                "name": "King Sejong’s tomb",
+                "desc": "Yeongneung—walk the royal tomb woods."
+              },
+              {
+                "name": "Yeoju Premium Outlets",
+                "desc": "Brand shopping and a rest."
+              },
+              {
+                "name": "Finish",
+                "desc": "End at the outlet and drive back."
+              }
+            ]
+          },
+          "c11": {
+            "title": "Icheon ceramics course",
+            "summary": "Yespark (ceramic village) and Cerapia—Icheon’s pottery day. A car helps between sites.",
+            "route": "Yespark → Icheon Cerapia → downtown",
+            "tips": "Studios may need a booking for hands-on sessions. Cerapia is mostly outdoors—watch the weather.",
+            "stops": [
+              {
+                "name": "Icheon Ceramic Village",
+                "desc": "Walk Yespark’s studio streets and browse pottery."
+              },
+              {
+                "name": "Icheon lunch",
+                "desc": "Local rice meals and Korean food."
+              },
+              {
+                "name": "Icheon Cerapia",
+                "desc": "Ceramic park, exhibitions, and viewpoints."
+              },
+              {
+                "name": "Workshop or café",
+                "desc": "Optional making class, then coffee."
+              },
+              {
+                "name": "Icheon dinner",
+                "desc": "Dinner in downtown Icheon."
+              }
+            ]
+          },
+          "c12": {
+            "title": "Yeoju history & outlet course",
+            "summary": "Silleuksa and King Sejong’s tomb, then Yeoju Premium Outlets. Spread out—easier by car.",
+            "route": "Silleuksa → King Sejong’s tomb → Yeoju Outlet",
+            "tips": "Silleuksa sits on the Namhangang—pair it with a riverside walk. The outlet gets busy weekend evenings.",
+            "stops": [
+              {
+                "name": "Silleuksa",
+                "desc": "Riverside temple and stone pagoda."
+              },
+              {
+                "name": "Namhangang walk",
+                "desc": "A short stroll in front of the temple."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Restaurants at the temple area."
+              },
+              {
+                "name": "King Sejong’s tomb",
+                "desc": "Yeongneung—walk the royal tomb woods."
+              },
+              {
+                "name": "Yeoju Premium Outlets",
+                "desc": "Brand shopping and a rest."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Outlet food hall or Yeoju town."
+              }
+            ]
+          },
+          "c13": {
+            "title": "Siheung · Oido course",
+            "summary": "Gaetgol wetlands, then Oido’s red lighthouse and seafood. Easy on Line 4.",
+            "route": "Gaetgol Park → Oido → coastal street",
+            "tips": "Gaetgol is known for sunset and reeds. Expect waits for grilled clams at dinner.",
+            "stops": [
+              {
+                "name": "Gaetgol Eco Park",
+                "desc": "Former salt-flat wetlands and boardwalks."
+              },
+              {
+                "name": "Lunch",
+                "desc": "A simple meal near the park."
+              },
+              {
+                "name": "Oido",
+                "desc": "A coastal village at the edge of Siheung."
+              },
+              {
+                "name": "Red lighthouse walk",
+                "desc": "The landmark lighthouse and breakwater."
+              },
+              {
+                "name": "Café",
+                "desc": "A sea-breeze café stop."
+              },
+              {
+                "name": "Clams & seafood dinner",
+                "desc": "Dinner on Oido’s seafood street."
+              }
+            ]
+          },
+          "c14": {
+            "title": "Ansan Daebudo course",
+            "summary": "Daebudo, Bada Hyanggi Arboretum, and Tando Port sunset. You’ll want a car on the island.",
+            "route": "Daebudo → Bada Hyanggi Arboretum → Tando Port",
+            "tips": "Sunset time shifts by season. Weekend parking at Tando fills early.",
+            "stops": [
+              {
+                "name": "Daebudo",
+                "desc": "An island linked by the Sihwa seawall—start a coastal drive."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Seafood or Korean meals on the island."
+              },
+              {
+                "name": "Bada Hyanggi Arboretum",
+                "desc": "An island arboretum with trails and a greenhouse."
+              },
+              {
+                "name": "Tando Port",
+                "desc": "A small harbor famous for sunset."
+              },
+              {
+                "name": "Sunset",
+                "desc": "Watch the Yellow Sea from the breakwater."
+              },
+              {
+                "name": "Daebudo dinner",
+                "desc": "Dinner at the harbor before heading back."
+              }
+            ]
+          },
+          "c15": {
+            "title": "Seongnam · Namhansanseong course",
+            "summary": "Walk UNESCO Namhansanseong, then Pangyo for cafés and dinner—workable by transit.",
+            "route": "Namhansanseong → Pangyo",
+            "tips": "Buses reach the fortress. Trails are hilly—wear good shoes. Pangyo Station is on the Shinbundang Line.",
+            "stops": [
+              {
+                "name": "Namhansanseong",
+                "desc": "UNESCO walls and the fortress village."
+              },
+              {
+                "name": "Village lunch",
+                "desc": "Mountain-vegetable bibimbap and local restaurants."
+              },
+              {
+                "name": "Wall walk",
+                "desc": "More ramparts toward the south and west gates."
+              },
+              {
+                "name": "To Pangyo",
+                "desc": "Bus down, then Shinbundang Line to Pangyo."
+              },
+              {
+                "name": "Hyundai Dept. · Pangyo café",
+                "desc": "Mall time and Techno Valley cafés."
+              },
+              {
+                "name": "Pangyo dinner",
+                "desc": "Dinner around Pangyo Station."
+              }
+            ]
+          }
+        }
+      },
+      "incheon": {
+        "pickLabel": "Incheon curated courses",
+        "intro": "Day courses around Incheon—Chinatown, the Open Port, Wolmido, Songdo, Yeongjong, and Ganghwa. Pick a title to see the intro, route, and timetable.",
+        "guideEyebrow": "Incheon course guide",
+        "courses": {
+          "c01": {
+            "title": "Chinatown · Open Port · Wolmido",
+            "summary": "The classic first-day loop official Incheon tourism promotes: Chinatown and Jayu Park, then the Open Port and Sinpo Market, ending on Wolmido at night. Easy by subway and short taxi hops.",
+            "route": "Chinatown → Jayu Park → Open Port → Sinpo Market → Wolmido",
+            "tips": "Incheon Station (Line 1, Suin–Bundang) is next to Chinatown and the Open Port. Use a bus or taxi for Wolmido. Sinpo Market gets busy on weekends.",
+            "stops": [
+              {
+                "name": "Incheon Chinatown",
+                "desc": "Walk the lanes around Inhwamun and the street gates."
+              },
+              {
+                "name": "Jayu Park",
+                "desc": "MacArthur statue and a view over the harbor and Open Port."
+              },
+              {
+                "name": "Chinatown lunch",
+                "desc": "Jajangmyeon, kungalppang, and other Chinatown staples."
+              },
+              {
+                "name": "Open Port culture district",
+                "desc": "Western-style modern buildings and museum streets."
+              },
+              {
+                "name": "Sinpo International Market",
+                "desc": "Sinpo chicken gangjeong and market alleys."
+              },
+              {
+                "name": "Wolmido",
+                "desc": "Seaside walk, rides, or the Wolmi Sea Train."
+              },
+              {
+                "name": "Wolmido dinner & night view",
+                "desc": "Eat by the water after the lights come on."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Songdo International City",
+            "summary": "The modern-Korea skyline visitors come to photograph: Central Park and Tri-bowl, Hyundai Premium Outlet, then the park again after dark. Official Incheon tourism lists the park and outlet as Songdo’s headline stops.",
+            "route": "Central Park → Tri-bowl → Hyundai Premium Outlet → Central Park at night",
+            "tips": "Incheon Line 1 Central Park Station sits by the park. Bus or taxi is easier for the outlet. Golden hour around the canal is the photo window.",
+            "stops": [
+              {
+                "name": "Songdo Central Park",
+                "desc": "Walk the canal paths under the skyline."
+              },
+              {
+                "name": "Songdo lunch",
+                "desc": "Restaurants around the park."
+              },
+              {
+                "name": "Tri-bowl & park stroll",
+                "desc": "The bowl-shaped landmark and more waterfront."
+              },
+              {
+                "name": "Hyundai Premium Outlet",
+                "desc": "Brand shopping and an indoor break."
+              },
+              {
+                "name": "Central Park again",
+                "desc": "Return for golden hour on the canal."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Songdo’s restaurant streets."
+              },
+              {
+                "name": "Songdo night view",
+                "desc": "Lit towers reflected on the park water."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Yeongjong · Eulwangni coast",
+            "summary": "A beach day that fits a spare day before or after Incheon Airport. Masian Beach and an ocean-view café, then Eulwangni for a walk, sunset, and dinner.",
+            "route": "Masian Beach → ocean-view café → Eulwangni Beach",
+            "tips": "Masian sits on Muui-do, linked to Yeongjong by bridge. Hop between beaches by bus or taxi. West Sea tides change the shoreline a lot—check the tide.",
+            "stops": [
+              {
+                "name": "Masian Beach",
+                "desc": "A headline beach for the Yeongjong–Muui area. Sand and café streets."
+              },
+              {
+                "name": "Lunch by the beach",
+                "desc": "Seafood or simple Korean meals along the shore."
+              },
+              {
+                "name": "Ocean-view café",
+                "desc": "An afternoon looking at the water."
+              },
+              {
+                "name": "Eulwangni Beach",
+                "desc": "Yeongjong’s well-known west-coast beach."
+              },
+              {
+                "name": "Beach walk",
+                "desc": "The breakwater and sand at an easy pace."
+              },
+              {
+                "name": "Sunset",
+                "desc": "Wait for the Yellow Sea sunset."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Grilled clams or other seaside meals."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Yeongjong · Paradise City",
+            "summary": "Paradise City and Masian Beach are the Yeongjong pair official Incheon tourism highlights. Art, shops, and resort spaces first, then the beach for café time and sunset.",
+            "route": "Paradise City → Masian Beach",
+            "tips": "The Incheon Airport Maglev stops at Paradise City Station. Masian is toward Muui-do. Check same-day hours for resort venues.",
+            "stops": [
+              {
+                "name": "Paradise City",
+                "desc": "Start with the resort’s public spaces and lobby."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Eat inside the complex."
+              },
+              {
+                "name": "Art, shops, venues",
+                "desc": "Pick open exhibitions, shops, or spa time."
+              },
+              {
+                "name": "Masian Beach",
+                "desc": "Cross toward Muui-do and walk the shore."
+              },
+              {
+                "name": "Café",
+                "desc": "Rest with an ocean view."
+              },
+              {
+                "name": "Sunset & dinner",
+                "desc": "Stay for sunset, then eat by the beach."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Ganghwa history",
+            "summary": "A pick for visitors curious about Korean history, temple culture, or the inter-Korean border. Jeondeungsa, Ganghwa’s historic sites, then the Ganghwa Peace Observatory.",
+            "route": "Jeondeungsa → Ganghwa historic area → Ganghwa Peace Observatory",
+            "tips": "Distances on Ganghwa are long—rent a car or use taxis. Check Peace Observatory hours and ID rules before you go.",
+            "stops": [
+              {
+                "name": "Jeondeungsa",
+                "desc": "Ganghwa’s main temple. Walk the bell pavilion and grounds."
+              },
+              {
+                "name": "Ganghwa lunch",
+                "desc": "Korean meals near the temple or Onsu-ri."
+              },
+              {
+                "name": "Ganghwa historic area",
+                "desc": "Dolmens and other heritage sites on the island."
+              },
+              {
+                "name": "Ganghwa Peace Observatory",
+                "desc": "Look over the Han River estuary toward the north."
+              },
+              {
+                "name": "Café",
+                "desc": "A drink near the observatory."
+              },
+              {
+                "name": "Finish",
+                "desc": "Head back toward Ganghwa Bridge before it gets late."
+              }
+            ],
+            "notice": "Ganghwa Peace Observatory hours and entry rules can change. Check Incheon tourism and the site notice before you go."
+          },
+          "c06": {
+            "title": "Ganghwa nature & coast",
+            "summary": "A driving day from Jeondeungsa to Dongmak Beach and the Ganghwa shore. Coast cafés, a slow drive, and sunset are the point.",
+            "route": "Jeondeungsa → Dongmak Beach → Ganghwa coast",
+            "tips": "Coast buses are sparse—rent a car or use taxis. Dongmak is known for mudflats and sunset; check the tide.",
+            "stops": [
+              {
+                "name": "Jeondeungsa",
+                "desc": "Open the day at the mountain temple."
+              },
+              {
+                "name": "Ganghwa lunch",
+                "desc": "Eat near the temple."
+              },
+              {
+                "name": "Dongmak Beach",
+                "desc": "Walk Ganghwa’s southern beach and mudflats."
+              },
+              {
+                "name": "Coast café",
+                "desc": "Rest with a sea view."
+              },
+              {
+                "name": "Coast drive",
+                "desc": "A slow run along Ganghwa’s shore roads."
+              },
+              {
+                "name": "Sunset",
+                "desc": "Close the day on the Yellow Sea light."
+              }
+            ]
+          }
+        }
+      },
+      "gangwon": {
+        "pickLabel": "Gangwon curated courses",
+        "intro": "Day courses across Seoraksan and Sokcho, Gangneung’s coast, Nami Island and Chuncheon, Daegwallyeong, Yangyang, Donghae–Samcheok, and Cheorwon.",
+        "guideEyebrow": "Gangwon course guide",
+        "courses": {
+          "c01": {
+            "title": "Sokcho · Seoraksan",
+            "summary": "Seoraksan and Gwongeumseong, then Sokcho’s fish market, beach, Oeongchi coastal trail, and Daepo Port—the strongest Gangwon day.",
+            "route": "Seoraksan → Sokcho Market → Sokcho Beach → Oeongchi → Daepo Port",
+            "tips": "Check cable-car queues and weather. The market is busy at lunch. Wear walking shoes for Oeongchi.",
+            "stops": [
+              {
+                "name": "Seoraksan National Park",
+                "desc": "Start around Sogongwon and the Ulsanbawi area."
+              },
+              {
+                "name": "Cable car · Gwongeumseong",
+                "desc": "Ride up for ridge and East Sea views."
+              },
+              {
+                "name": "Sokcho Tourist Fish Market",
+                "desc": "Lunch on raw fish and market snacks."
+              },
+              {
+                "name": "Sokcho Beach",
+                "desc": "Walk the East Sea shoreline."
+              },
+              {
+                "name": "Oeongchi coastal trail",
+                "desc": "Follow the cliffside path above the waves."
+              },
+              {
+                "name": "Daepo Port",
+                "desc": "Finish with harbor views and dinner."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Gangneung sea · café",
+            "summary": "Gyeongpo Lake and Beach, Jungang Market, Anmok coffee street, and Gangmun Beach—sea and cafés, not forced history stops.",
+            "route": "Gyeongpo → Gangneung Jungang Market → Anmok → Gangmun",
+            "tips": "Anmok is crowded on weekends. Bring a layer for the wind.",
+            "stops": [
+              {
+                "name": "Gyeongpodae · Gyeongpo Lake",
+                "desc": "Walk the lake and pavilion area."
+              },
+              {
+                "name": "Gyeongpo Beach",
+                "desc": "Stroll between pines and sand."
+              },
+              {
+                "name": "Jungang Market lunch",
+                "desc": "Eat Gangneung food in the market lanes."
+              },
+              {
+                "name": "Anmok coffee street",
+                "desc": "Coffee with a sea view."
+              },
+              {
+                "name": "Gangmun Beach",
+                "desc": "Continue along the linked shoreline."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat after sunset in Gangneung."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Chuncheon · Nami Island",
+            "summary": "Nami Island, dakgalbi lunch, the Samaksan lake cable car, Uiam Lake, and downtown Chuncheon.",
+            "route": "Nami Island → Chuncheon → Samaksan cable car → Uiam Lake",
+            "tips": "Allow ferry time at Nami. Check cable-car weather closures.",
+            "stops": [
+              {
+                "name": "Nami Island",
+                "desc": "Walk the metasequoia lanes."
+              },
+              {
+                "name": "Chuncheon dakgalbi lunch",
+                "desc": "Eat spicy stir-fried chicken in town."
+              },
+              {
+                "name": "Samaksan lake cable car",
+                "desc": "Cross Uiam Lake by gondola."
+              },
+              {
+                "name": "Uiam Lake",
+                "desc": "Pause for lakeside views."
+              },
+              {
+                "name": "Chuncheon downtown",
+                "desc": "Walk Myeong-dong and the market, then dinner."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Pyeongchang · Daegwallyeong",
+            "summary": "Sheep farm, highland roads, Woljeongsa and the fir-tree path—best for visitors who want nature and snow-country scenery.",
+            "route": "Daegwallyeong → Woljeongsa → fir forest path",
+            "tips": "Check farm hours and weather. The temple path can be slippery.",
+            "stops": [
+              {
+                "name": "Daegwallyeong Sheep Farm",
+                "desc": "See sheep on the highland pasture."
+              },
+              {
+                "name": "Pyeongchang lunch",
+                "desc": "Eat near the farm or temple."
+              },
+              {
+                "name": "Daegwallyeong area",
+                "desc": "Drive the ridge for open views."
+              },
+              {
+                "name": "Woljeongsa",
+                "desc": "Visit the Odaesan temple grounds."
+              },
+              {
+                "name": "Fir forest path",
+                "desc": "Walk the thousand-year fir avenue."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Yangyang surf · coast",
+            "summary": "Naksansa, Naksan Beach, Hajodae and Surfyy Beach—a Yangyang shoreline day.",
+            "route": "Naksansa → Naksan Beach → Hajodae → Surfyy Beach",
+            "tips": "Surf beaches change with season and swell. Time the sunset.",
+            "stops": [
+              {
+                "name": "Naksansa",
+                "desc": "Temple and Uisangdae above the East Sea."
+              },
+              {
+                "name": "Yangyang lunch",
+                "desc": "Eat near Naksan."
+              },
+              {
+                "name": "Naksan Beach",
+                "desc": "Walk the sand below the temple."
+              },
+              {
+                "name": "Hajodae · Surfyy Beach",
+                "desc": "Sea stacks and surf culture."
+              },
+              {
+                "name": "Sunset · dinner",
+                "desc": "Watch the light drop, then eat."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Donghae · Samcheok coast",
+            "summary": "Chuam Candle Rock, Dokjaebi Sky Valley, and Mukho’s Nongol mural alleys.",
+            "route": "Chuam → Dokjaebi Sky Valley → Mukho Port",
+            "tips": "Sky Valley is high—skip if you dislike heights. Nongol alleys are steep.",
+            "stops": [
+              {
+                "name": "Chuam Candle Rock",
+                "desc": "See the sea stack from the lookout."
+              },
+              {
+                "name": "Chuam Beach",
+                "desc": "Walk the sand under the rock."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Squid and seafood near Chuam or Mukho."
+              },
+              {
+                "name": "Dokjaebi Sky Valley",
+                "desc": "Cliff walkways and sky attractions."
+              },
+              {
+                "name": "Mukho Port · Nongol",
+                "desc": "Murals and harbor views."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Seafood in Mukho."
+              }
+            ]
+          },
+          "c07": {
+            "title": "Cheorwon Hantangang · DMZ",
+            "summary": "Columnar-joint trail, Goseokjeong, and Cheorwon DMZ—Hantangang is on Korea’s tourism 100 list.",
+            "route": "Hantangang → Goseokjeong → Cheorwon DMZ",
+            "tips": "DMZ tours need ID, bookings, and run on set days.",
+            "stops": [
+              {
+                "name": "Hantangang columnar-joint trail",
+                "desc": "Walk the cliff path above basalt columns."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Makguksu or Korean food near Goseokjeong."
+              },
+              {
+                "name": "Goseokjeong",
+                "desc": "The river rock and park."
+              },
+              {
+                "name": "Cheorwon DMZ tour",
+                "desc": "Follow the official security-tour route."
+              },
+              {
+                "name": "End",
+                "desc": "Return from Cheorwon."
+              }
+            ]
+          }
+        }
+      },
+      "chungcheong": {
+        "pickLabel": "Chungcheong curated courses",
+        "intro": "Baekje Gongju and Buyeo, Danyang activities, Daecheon Beach, Taean sunsets, and Daejeon city.",
+        "guideEyebrow": "Chungcheong course guide",
+        "courses": {
+          "c01": {
+            "title": "Gongju Baekje history",
+            "summary": "Gongsanseong, Sanseong Market, King Muryeong’s tomb, the Gongju museum, and Jemincheon old town.",
+            "route": "Gongsanseong → Sanseong Market → Royal tombs → Gongju National Museum → Jemincheon",
+            "tips": "Check indoor tomb-museum routing. Wear walking shoes on the fortress.",
+            "stops": [
+              {
+                "name": "Gongsanseong",
+                "desc": "Walk the Baekje walls above the Geumgang."
+              },
+              {
+                "name": "Sanseong Market lunch",
+                "desc": "Eat in the market lanes."
+              },
+              {
+                "name": "Tomb of King Muryeong",
+                "desc": "Royal tombs and exhibition halls."
+              },
+              {
+                "name": "Gongju National Museum",
+                "desc": "Baekje finds from the tombs."
+              },
+              {
+                "name": "Jemincheon old town",
+                "desc": "Walk the stream and downtown alleys."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Gongju."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Buyeo Baekje history",
+            "summary": "Busosanseong, Gungnamji, Buyeo National Museum, and Jeongnimsaji—same era as Gongju, different mood.",
+            "route": "Busosanseong → Gungnamji → Buyeo National Museum → Jeongnimsaji",
+            "tips": "Busosanseong has a climb. Gungnamji is best near sunset.",
+            "stops": [
+              {
+                "name": "Busosanseong",
+                "desc": "Walk the last Baekje fortress woods."
+              },
+              {
+                "name": "Buyeo lunch",
+                "desc": "Eat near the fortress."
+              },
+              {
+                "name": "Gungnamji",
+                "desc": "Loop the palace pond."
+              },
+              {
+                "name": "Buyeo National Museum",
+                "desc": "See the gilt-bronze incense burner and more."
+              },
+              {
+                "name": "Jeongnimsaji",
+                "desc": "Five-story pagoda and temple site."
+              },
+              {
+                "name": "Buyeo downtown",
+                "desc": "Dinner in town."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Danyang nature · activities",
+            "summary": "Dodamsambong, Mancheonha Skywalk, the river trail, paragliding or Café San, then Guyeong Market.",
+            "route": "Dodamsambong → Mancheonha Skywalk → Danyanggang trail → paragliding → market",
+            "tips": "Skywalk and paragliding need weather and bookings.",
+            "stops": [
+              {
+                "name": "Dodamsambong",
+                "desc": "Three river peaks from the lookout."
+              },
+              {
+                "name": "Mancheonha Skywalk",
+                "desc": "Glass walk over the cliff."
+              },
+              {
+                "name": "Danyang lunch",
+                "desc": "Garlic and local stews in town."
+              },
+              {
+                "name": "Danyanggang trail",
+                "desc": "Cliff path beside the river."
+              },
+              {
+                "name": "Paragliding or Café San",
+                "desc": "Fly or take in the view from Café San."
+              },
+              {
+                "name": "Guyeong Market",
+                "desc": "Snacks and souvenirs."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Boryeong Daecheon Beach",
+            "summary": "Beach, seafood, Sky Bike, cafés, and a West Sea sunset—strong in summer; Mud Festival keeps it famous.",
+            "route": "Daecheon Beach → Sky Bike → shore → sunset",
+            "tips": "Summer and festival days are packed. Check Sky Bike hours.",
+            "stops": [
+              {
+                "name": "Daecheon Beach",
+                "desc": "Open the day on the West Sea sand."
+              },
+              {
+                "name": "Seafood lunch",
+                "desc": "Eat near the beach."
+              },
+              {
+                "name": "Daecheon Sky Bike",
+                "desc": "Ride the coastal rail bike."
+              },
+              {
+                "name": "Beach café",
+                "desc": "Coffee with a sea view."
+              },
+              {
+                "name": "Shore walk",
+                "desc": "Walk the sand before dusk."
+              },
+              {
+                "name": "Sunset",
+                "desc": "West Sea colors."
+              },
+              {
+                "name": "Dinner",
+                "desc": "More seafood in Daecheon."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Taean West Sea sunset",
+            "summary": "Anmyeondo and Kkotji Beach, cafés, and the famous rock sunset—theme the day around sea and light.",
+            "route": "Anmyeondo → Kkotji Beach → West Sea sunset",
+            "tips": "Aim for the Halmi/Harabi rocks at sunset. Transit is thin.",
+            "stops": [
+              {
+                "name": "Anmyeondo forest or Kkotji",
+                "desc": "Start in the woods or at Kkotji."
+              },
+              {
+                "name": "Taean lunch",
+                "desc": "Eat on Anmyeondo."
+              },
+              {
+                "name": "Kkotji Beach",
+                "desc": "Walk toward the twin sea rocks."
+              },
+              {
+                "name": "Café · coast walk",
+                "desc": "Pause, then walk again."
+              },
+              {
+                "name": "Kkotji sunset",
+                "desc": "Sun dropping between the rocks."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Taean."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Daejeon city · science",
+            "summary": "National Science Museum, Expo Hanbit Tower, Seongsimdang and Jungang-ro, then old downtown—useful near Cheongju Airport and KTX.",
+            "route": "Science Museum → Expo → Seongsimdang → old Daejeon",
+            "tips": "Seongsimdang queues on weekends. Check museum hours.",
+            "stops": [
+              {
+                "name": "National Science Museum",
+                "desc": "Hands-on exhibitions."
+              },
+              {
+                "name": "Daejeon lunch",
+                "desc": "Kalguksu or Korean food near Expo."
+              },
+              {
+                "name": "Expo Park · Hanbit Tower",
+                "desc": "Walk the plaza and tower."
+              },
+              {
+                "name": "Seongsimdang · Jungang-ro",
+                "desc": "Famous bread, then the main street."
+              },
+              {
+                "name": "Old downtown",
+                "desc": "Eunhaeng-dong and Daeheung-dong."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in the old center."
+              }
+            ]
+          }
+        }
+      },
+      "jeolla": {
+        "pickLabel": "Jeolla curated courses",
+        "intro": "Jeonju Hanok Village, Yeosu night sea, Suncheon Bay, Damyang bamboo, Boseong tea, and Mokpo’s modern port streets.",
+        "guideEyebrow": "Jeolla course guide",
+        "courses": {
+          "c01": {
+            "title": "Jeonju Hanok Village",
+            "summary": "Village, Gyeonggijeon, bibimbap, Jeondong Cathedral, Omokdae, hanok cafés, and Nambu Market—the first Jeolla pick.",
+            "route": "Hanok Village → Gyeonggijeon → Jeondong Cathedral → Omokdae → Nambu Market",
+            "tips": "Rent hanbok in the morning. Weekends are packed.",
+            "stops": [
+              {
+                "name": "Jeonju Hanok Village",
+                "desc": "Walk the tiled-roof lanes."
+              },
+              {
+                "name": "Gyeonggijeon",
+                "desc": "Shrine of Taejo’s portrait."
+              },
+              {
+                "name": "Bibimbap lunch",
+                "desc": "Jeonju bibimbap or Korean food."
+              },
+              {
+                "name": "Jeondong Cathedral",
+                "desc": "Red-brick church among hanok."
+              },
+              {
+                "name": "Omokdae",
+                "desc": "Hill view over the village."
+              },
+              {
+                "name": "Hanok café · craft",
+                "desc": "Tea or a short traditional workshop."
+              },
+              {
+                "name": "Nambu Market · Youth Mall",
+                "desc": "Evening market and youth mall."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Jeonju Korean food."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Yeosu sea · night views",
+            "summary": "Odongdo, seafood, cable car, Dolsan Park, Yi Sun-sin Square, Nangman pocha, and the night sea.",
+            "route": "Odongdo → cable car → Dolsan Park → Yi Sun-sin Square → night sea",
+            "tips": "Cable-car waits run long. Pocha streets open later.",
+            "stops": [
+              {
+                "name": "Odongdo",
+                "desc": "Camellia paths and the breakwater."
+              },
+              {
+                "name": "Seafood lunch",
+                "desc": "Gejang and fish in Yeosu."
+              },
+              {
+                "name": "Marine cable car",
+                "desc": "Gondolas over the water."
+              },
+              {
+                "name": "Dolsan Park",
+                "desc": "City and sea from the hill."
+              },
+              {
+                "name": "Yi Sun-sin Square",
+                "desc": "Hamel lighthouse and the waterfront."
+              },
+              {
+                "name": "Nangman pocha street",
+                "desc": "Casual evening drinks and snacks."
+              },
+              {
+                "name": "Yeosu night sea",
+                "desc": "Lit harbor views."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Suncheon garden · wetland",
+            "summary": "Suncheon Bay National Garden, the wetland, Yongsan Observatory, and sunset—the nature day in Jeolla.",
+            "route": "National Garden → Suncheon Bay wetland → Yongsan Observatory",
+            "tips": "Garden and wetland sit apart; plan transfer time.",
+            "stops": [
+              {
+                "name": "National Garden",
+                "desc": "Walk lakes and themed gardens."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Eat between garden and wetland."
+              },
+              {
+                "name": "Suncheon Bay wetland",
+                "desc": "Reed boardwalks."
+              },
+              {
+                "name": "Yongsan Observatory",
+                "desc": "The whole wetland from above."
+              },
+              {
+                "name": "Sunset",
+                "desc": "Golden reeds at dusk."
+              },
+              {
+                "name": "Suncheon dinner",
+                "desc": "Eat in town."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Damyang bamboo",
+            "summary": "Juknokwon, Gwanbangjerim, tteokgalbi, the metasequoia road, cafés, and Metaprovence.",
+            "route": "Juknokwon → Gwanbangjerim → Metasequoia Road → Metaprovence",
+            "tips": "Use the pedestrian side of the tree road.",
+            "stops": [
+              {
+                "name": "Juknokwon",
+                "desc": "Bamboo forest paths."
+              },
+              {
+                "name": "Gwanbangjerim",
+                "desc": "Riverside zelkova grove."
+              },
+              {
+                "name": "Tteokgalbi · bamboo rice",
+                "desc": "Damyang lunch specialties."
+              },
+              {
+                "name": "Metasequoia Road",
+                "desc": "Photo stop under the trees."
+              },
+              {
+                "name": "Damyang café",
+                "desc": "Rest near the road."
+              },
+              {
+                "name": "Metaprovence",
+                "desc": "European-style shops."
+              },
+              {
+                "name": "End",
+                "desc": "Head back from Damyang."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Boseong tea · coast",
+            "summary": "Green-tea terraces, a tea café, then Yulpo Beach—easy to photograph.",
+            "route": "Boseong tea fields → Yulpo Beach",
+            "tips": "Follow field photo rules. Yulpo can be windy.",
+            "stops": [
+              {
+                "name": "Boseong tea fields",
+                "desc": "Walk the terraces."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Hot-pot rice near the fields."
+              },
+              {
+                "name": "Tea café",
+                "desc": "Green-tea drinks and sweets."
+              },
+              {
+                "name": "Yulpo Beach",
+                "desc": "Drop down to the shore."
+              },
+              {
+                "name": "Coast walk",
+                "desc": "Slow walk at Yulpo."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat near Boseong or Beolgyo."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Mokpo modern streets · sea",
+            "summary": "Modern historic district, marine cable car, Yudalsan, Gatbawi and Peace Plaza, seafood dinner.",
+            "route": "Modern streets → cable car → Yudalsan → Peace Plaza",
+            "tips": "Yudalsan is a climb. Cable cars pause in wind.",
+            "stops": [
+              {
+                "name": "Modern historic district",
+                "desc": "Colonial-era streets."
+              },
+              {
+                "name": "Mokpo lunch",
+                "desc": "Gukbap or Korean food."
+              },
+              {
+                "name": "Marine cable car",
+                "desc": "Ride over the water."
+              },
+              {
+                "name": "Yudalsan",
+                "desc": "City and archipelago views."
+              },
+              {
+                "name": "Gatbawi · Peace Plaza",
+                "desc": "Coast and hat-shaped rocks."
+              },
+              {
+                "name": "Seafood dinner",
+                "desc": "Fish market and harbor."
+              }
+            ]
+          }
+        }
+      },
+      "busan": {
+        "pickLabel": "Busan curated courses",
+        "intro": "Haeundae and Gwangalli, Gamcheon and Jagalchi, Songdo and Yeongdo, Haedong Yonggungsa in Gijang, and Seomyeon–Jeonpo.",
+        "guideEyebrow": "Busan course guide",
+        "courses": {
+          "c01": {
+            "title": "Haeundae · Cheongsapo · Gwangalli",
+            "summary": "The first-visit Busan day: Haeundae, Dongbaekseom, Blueline Park, Cheongsapo observatory, Gwangalli night.",
+            "route": "Haeundae → Dongbaekseom → Cheongsapo → Gwangalli",
+            "tips": "Check Blueline waits. Gwangandaegyo looks best from the beach at night.",
+            "stops": [
+              {
+                "name": "Haeundae Beach",
+                "desc": "Start on Busan’s famous sand."
+              },
+              {
+                "name": "Dongbaekseom · The Bay 101",
+                "desc": "Camellia island and Marine City views."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Milmyeon or raw fish in Haeundae."
+              },
+              {
+                "name": "Blueline Park · Cheongsapo",
+                "desc": "Coastal train toward Cheongsapo."
+              },
+              {
+                "name": "Cheongsapo observatory",
+                "desc": "Cliff lookout over the East Sea."
+              },
+              {
+                "name": "Gwangalli Beach",
+                "desc": "Bridge views across the bay."
+              },
+              {
+                "name": "Dinner · bridge lights",
+                "desc": "Eat with Gwangandaegyo lit up."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Gamcheon · Jagalchi · Nampo",
+            "summary": "Culture village, fish market, BIFF Square, Gukje Market, Yongdusan, Nampo—old Busan in one day.",
+            "route": "Gamcheon → Jagalchi → BIFF Square → Gukje Market → Yongdusan → Nampo",
+            "tips": "Gamcheon is steep. Jagalchi peaks at lunch.",
+            "stops": [
+              {
+                "name": "Gamcheon Culture Village",
+                "desc": "Painted alleys and views."
+              },
+              {
+                "name": "Jagalchi Market lunch",
+                "desc": "Fish and seafood in the market."
+              },
+              {
+                "name": "BIFF Square",
+                "desc": "Handprints and cinema square."
+              },
+              {
+                "name": "Gukje Market",
+                "desc": "Packed traditional stalls."
+              },
+              {
+                "name": "Yongdusan · Busan Tower",
+                "desc": "Tower and port outlook."
+              },
+              {
+                "name": "Nampo",
+                "desc": "Old downtown streets."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Dwaeji-gukbap in Nampo."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Songdo · Yeongdo coast",
+            "summary": "Songdo Beach, marine cable car, Amnam Park, Huinnyeoul Village, Yeongdo cafés.",
+            "route": "Songdo Beach → cable car → Amnam Park → Huinnyeoul → Yeongdo",
+            "tips": "Cable cars pause in wind. Huinnyeoul alleys are steep and narrow.",
+            "stops": [
+              {
+                "name": "Songdo Beach",
+                "desc": "West Busan sand."
+              },
+              {
+                "name": "Songdo marine cable car",
+                "desc": "Gondolas over the water."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Gukbap near Songdo or Yeongdo."
+              },
+              {
+                "name": "Amnam Park",
+                "desc": "Headland paths at Songdo."
+              },
+              {
+                "name": "Huinnyeoul Culture Village",
+                "desc": "Cliff houses above the sea."
+              },
+              {
+                "name": "Yeongdo café",
+                "desc": "Coffee on the island."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat on Yeongdo."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Gijang · Haedong Yonggungsa",
+            "summary": "Temple in the waves, Gijang coast, Osiria, cafés, sunset.",
+            "route": "Haedong Yonggungsa → Gijang coast → Osiria → coast café",
+            "tips": "Go early to the temple. Sunset is best on the Gijang shore.",
+            "stops": [
+              {
+                "name": "Haedong Yonggungsa",
+                "desc": "Temple beside the surf."
+              },
+              {
+                "name": "Gijang coast",
+                "desc": "Rocks around the temple."
+              },
+              {
+                "name": "Seafood lunch",
+                "desc": "Crab and fish in Gijang."
+              },
+              {
+                "name": "Ananti · Osiria",
+                "desc": "Resort and outlet cluster."
+              },
+              {
+                "name": "Coast café",
+                "desc": "Sea-view coffee."
+              },
+              {
+                "name": "Gijang sunset",
+                "desc": "Evening light on the water."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Gijang."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Yeongdo focus",
+            "summary": "Taejongdae, Huinnyeoul, Jeolyeong coastal trail, cafés, Busan Port night—slow sea day.",
+            "route": "Taejongdae → Huinnyeoul → Jeolyeong trail → Yeongdo café",
+            "tips": "Choose the Danubi train or walking paths at Taejongdae.",
+            "stops": [
+              {
+                "name": "Taejongdae",
+                "desc": "Cliffs and lighthouse at Yeongdo’s tip."
+              },
+              {
+                "name": "Yeongdo lunch",
+                "desc": "Baekban or gukbap."
+              },
+              {
+                "name": "Huinnyeoul Culture Village",
+                "desc": "Cliff village walk."
+              },
+              {
+                "name": "Jeolyeong coastal trail",
+                "desc": "Southern boardwalk."
+              },
+              {
+                "name": "Yeongdo café",
+                "desc": "Another sea-view stop."
+              },
+              {
+                "name": "Port night · dinner",
+                "desc": "Harbor lights."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Seomyeon · Jeonpo local",
+            "summary": "Seomyeon, Jeonpo cafés and shops, shopping, dinner, and night streets—how younger Busan actually hangs out.",
+            "route": "Seomyeon → Jeonpo → Seomyeon",
+            "tips": "Jeonpo is spread out. Nights crowd Seomyeon’s underground mall.",
+            "stops": [
+              {
+                "name": "Seomyeon",
+                "desc": "Busan’s crossroads."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Milmyeon or gukbap."
+              },
+              {
+                "name": "Jeonpo café street",
+                "desc": "Cafés and small stores."
+              },
+              {
+                "name": "Concept shops",
+                "desc": "Independent shops in the alleys."
+              },
+              {
+                "name": "Seomyeon shopping",
+                "desc": "Malls and underground arcades."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Busan food in Seomyeon."
+              },
+              {
+                "name": "Seomyeon night",
+                "desc": "Neon and late streets."
+              }
+            ]
+          }
+        }
+      },
+      "gyeongsang": {
+        "pickLabel": "Gyeongsang curated courses",
+        "intro": "Day courses across Gyeongbuk, Gyeongnam, Daegu, and Ulsan—Gyeongju, Andong Hahoe, Tongyeong, Geoje Oedo, Pohang, Daegu, Ulsan, and Haeinsa. Busan has its own tab.",
+        "guideEyebrow": "Gyeongsang course guide",
+        "courses": {
+          "c01": {
+            "title": "Gyeongju Silla",
+            "summary": "Bulguksa, lunch on Hwangnidan-gil, Daereungwon, Cheomseongdae, Gyochon and Woljeonggyo, then Donggung and Wolji at night.",
+            "route": "Bulguksa → Hwangnidan lunch → Daereungwon → Cheomseongdae → Gyochon · Woljeonggyo → Donggung · Wolji",
+            "tips": "Bulguksa is quieter early. Check Donggung night hours. Bus and taxi in town.",
+            "stops": [
+              {
+                "name": "Bulguksa",
+                "desc": "Walk the compound; Seokguram is a separate ticket uphill."
+              },
+              {
+                "name": "Hwangnidan lunch",
+                "desc": "Ssambap or Korean food in hanok lanes."
+              },
+              {
+                "name": "Daereungwon",
+                "desc": "Tumuli around Cheonmachong."
+              },
+              {
+                "name": "Cheomseongdae",
+                "desc": "The Silla observatory up close."
+              },
+              {
+                "name": "Gyochon · Woljeonggyo",
+                "desc": "Hanok lanes and the rebuilt bridge."
+              },
+              {
+                "name": "Donggung and Wolji night",
+                "desc": "Lit pond to finish."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Andong Hahoe",
+            "summary": "Buyongdae overlook, Hahoe Village, lunch, the mask museum, Byeongsan Seowon, and Woryeonggyo. Best by car.",
+            "route": "Buyongdae → Hahoe → lunch → mask museum → Byeongsan Seowon → Woryeonggyo → dinner",
+            "tips": "Hahoe charges admission. Byeongsan Seowon is a drive from the village. Woryeonggyo is beautiful after dark.",
+            "stops": [
+              {
+                "name": "Buyongdae",
+                "desc": "Hahoe across the Nakdonggang."
+              },
+              {
+                "name": "Hahoe Village",
+                "desc": "UNESCO folk village lanes."
+              },
+              {
+                "name": "Andong lunch",
+                "desc": "Jjimdak or heotjesabap."
+              },
+              {
+                "name": "Mask museum · dance",
+                "desc": "Hahoe masks; check show times."
+              },
+              {
+                "name": "Byeongsan Seowon",
+                "desc": "Mandaeru hall and the river academy."
+              },
+              {
+                "name": "Woryeonggyo",
+                "desc": "The wooden lake bridge."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Salted mackerel in Andong."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Tongyeong",
+            "summary": "Tongyeong cable car and Mireuksan views, Jungang Market lunch, Dongpirang, Gangguan harbor, and Yi Sun-sin Park.",
+            "route": "Cable car → Mireuksan → market lunch → Dongpirang → Gangguan → Yi Sun-sin Park → dinner",
+            "tips": "Cable-car waits are common. Dongpirang is steep. Chungmu gimbap is the classic lunch.",
+            "stops": [
+              {
+                "name": "Tongyeong cable car",
+                "desc": "Up Mireuksan."
+              },
+              {
+                "name": "Mireuksan view",
+                "desc": "Hallyeohaesang below."
+              },
+              {
+                "name": "Jungang Market lunch",
+                "desc": "Chungmu gimbap."
+              },
+              {
+                "name": "Dongpirang mural village",
+                "desc": "Hill alleys with murals."
+              },
+              {
+                "name": "Gangguan",
+                "desc": "Harbor under Dongpirang."
+              },
+              {
+                "name": "Yi Sun-sin Park",
+                "desc": "A walk on Tongyeong’s sea."
+              },
+              {
+                "name": "Tongyeong dinner",
+                "desc": "Seafood to close."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Geoje Oedo",
+            "summary": "Cruise to Haegeumgang and Oedo Botania, Geoje lunch, then Windy Hill and Sinseondae. Oedo boats depend on weather.",
+            "route": "Pier → Haegeumgang → Oedo Botania → lunch → Windy Hill → Sinseondae → dinner",
+            "tips": "Oedo boats cancel in bad weather—check the day’s sailings. A rental car helps on Geoje’s coast.",
+            "stops": [
+              {
+                "name": "Ferry pier",
+                "desc": "Board the Oedo boat."
+              },
+              {
+                "name": "Haegeumgang",
+                "desc": "Sea stacks from the deck."
+              },
+              {
+                "name": "Oedo Botania",
+                "desc": "Walk the island gardens."
+              },
+              {
+                "name": "Geoje lunch",
+                "desc": "Seafood."
+              },
+              {
+                "name": "Windy Hill",
+                "desc": "Grass and open sea."
+              },
+              {
+                "name": "Sinseondae",
+                "desc": "More coastal rocks."
+              },
+              {
+                "name": "Geoje dinner",
+                "desc": "Korean food in town."
+              }
+            ],
+            "notice": "Oedo Botania boats cancel or change route in high waves, fog, or wind. Check the operator before you leave."
+          },
+          "c05": {
+            "title": "Pohang Space Walk",
+            "summary": "Jukdo Market, lunch, Yeongildae Beach, Space Walk, a coast café, and Yeongildae night views.",
+            "route": "Jukdo Market → lunch → Yeongildae Beach → Space Walk → café → night views",
+            "tips": "Space Walk has height/health limits and queues. Jukdo is liveliest in the morning. Bus from Pohang Station.",
+            "stops": [
+              {
+                "name": "Jukdo Market",
+                "desc": "Fish alleys."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Mulhoe."
+              },
+              {
+                "name": "Yeongildae Beach",
+                "desc": "Sand and the shore."
+              },
+              {
+                "name": "Space Walk",
+                "desc": "The slide lookout at Hwanho Park."
+              },
+              {
+                "name": "Coast café",
+                "desc": "A rest with a sea view."
+              },
+              {
+                "name": "Yeongildae night",
+                "desc": "Shore lights to finish."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Pohang Homigot · Guryongpo",
+            "summary": "Homigot, Guryongpo Japanese house street, lunch, the port, a coast café, and back to Pohang. Best by car.",
+            "route": "Homigot → Japanese houses → lunch → Guryongpo Port → café → back to Pohang",
+            "tips": "Homigot is a sunrise spot—mornings can be busy. Guryongpo alleys and parking are tight. Buses are infrequent.",
+            "stops": [
+              {
+                "name": "Homigot",
+                "desc": "The Hand of Harmony and Korea’s eastern tip."
+              },
+              {
+                "name": "Japanese house street",
+                "desc": "Colonial-era wooden lanes."
+              },
+              {
+                "name": "Guryongpo lunch",
+                "desc": "Gwamegi and seafood."
+              },
+              {
+                "name": "Guryongpo Port",
+                "desc": "The fishing harbor."
+              },
+              {
+                "name": "Café · coast",
+                "desc": "A rest with a sea view."
+              },
+              {
+                "name": "Back to Pohang",
+                "desc": "Return before dark."
+              }
+            ]
+          },
+          "c07": {
+            "title": "Daegu",
+            "summary": "Seomun Market, Daegu lunch, the modern-culture alley, Dongseong-ro, Apsan Observatory, and night views. Easy by metro.",
+            "route": "Seomun Market → lunch → modern alley → Dongseong-ro → Apsan Observatory → night views",
+            "tips": "Seomun is a morning market. Dongseong-ro is walkable. Apsan has a cable car and buses.",
+            "stops": [
+              {
+                "name": "Seomun Market",
+                "desc": "Daegu’s main traditional market."
+              },
+              {
+                "name": "Daegu lunch",
+                "desc": "Makchang or ttara-gukbap."
+              },
+              {
+                "name": "Modern-culture alley",
+                "desc": "Colonial-era buildings in Gyesan-dong."
+              },
+              {
+                "name": "Dongseong-ro",
+                "desc": "The central shopping street."
+              },
+              {
+                "name": "Apsan Observatory",
+                "desc": "The city below."
+              },
+              {
+                "name": "Apsan night",
+                "desc": "Lights and dinner."
+              }
+            ]
+          },
+          "c08": {
+            "title": "Ulsan",
+            "summary": "Taehwa River National Garden, lunch, Daewangam Park, Ilsan Beach, a coast walk, and dinner.",
+            "route": "Taehwa Garden → lunch → Daewangam Park → Ilsan Beach → coast walk → dinner",
+            "tips": "Garden and Daewangam are apart—bus or taxi. Daewangam has a long coastal walk.",
+            "stops": [
+              {
+                "name": "Taehwa River National Garden",
+                "desc": "Bamboo forest and the river."
+              },
+              {
+                "name": "Ulsan lunch",
+                "desc": "Eonyang bulgogi or Korean food."
+              },
+              {
+                "name": "Daewangam Park",
+                "desc": "Sea stacks and the lighthouse."
+              },
+              {
+                "name": "Ilsan Beach",
+                "desc": "Sand next to Daewangam."
+              },
+              {
+                "name": "Coast walk",
+                "desc": "Breakwater and more shore."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Seafood on the coast."
+              }
+            ]
+          },
+          "c09": {
+            "title": "Hapcheon Haeinsa",
+            "summary": "Haeinsa, the Tripitaka Koreana, a Gayasan walk, and a café rest. Temple day only. The finish has no photo.",
+            "route": "Haeinsa → lunch → Tripitaka · temple → Gayasan walk → café → finish",
+            "tips": "Janggyeong Panjeon limits indoor photos. Mountain-vegetable sets are the classic lunch. Hapcheon is rental car or intercity bus.",
+            "stops": [
+              {
+                "name": "Haeinsa",
+                "desc": "The old temple under Gayasan."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Mountain-vegetable Korean food."
+              },
+              {
+                "name": "Tripitaka · temple",
+                "desc": "Janggyeong Panjeon and the grounds."
+              },
+              {
+                "name": "Gayasan walk",
+                "desc": "A short forest path around the temple."
+              },
+              {
+                "name": "Café · rest",
+                "desc": "Tea after you come down."
+              },
+              {
+                "name": "Finish",
+                "desc": "Back toward Daegu or Gwangju before dark."
+              }
+            ]
+          }
+        }
+      },
+      "jeju": {
+        "pickLabel": "Jeju curated courses",
+        "intro": "Day courses around Jeju—Seongsan and Udo, Hyeopjae and Aewol, Seogwipo falls, Jungmun, Hallasan, Jeju City markets, eastern oreum, and Sanbangsan. Pick a title to see the intro, route, and timetable.",
+        "guideEyebrow": "Jeju course guide",
+        "courses": {
+          "c01": {
+            "title": "Seongsan · east Jeju",
+            "summary": "Seongsan Ilchulbong and Seopjikoji, lunch, Aqua Planet or a café, Gwangchigi Beach, and dinner around Seongsan.",
+            "route": "Seongsan → Seopjikoji → lunch → Aqua Planet / café → Gwangchigi → dinner",
+            "tips": "Ilchulbong is quieter in the morning. The summit is steep stairs. Check Aqua Planet hours.",
+            "stops": [
+              {
+                "name": "Seongsan Ilchulbong",
+                "desc": "Climb the crater ridge."
+              },
+              {
+                "name": "Seopjikoji",
+                "desc": "Grass and coastal rocks."
+              },
+              {
+                "name": "Seongsan lunch",
+                "desc": "Haemul-ttukbaegi or similar."
+              },
+              {
+                "name": "Aqua Planet or café",
+                "desc": "The aquarium or an ocean-view café."
+              },
+              {
+                "name": "Gwangchigi Beach",
+                "desc": "Sand facing Ilchulbong."
+              },
+              {
+                "name": "Seongsan dinner",
+                "desc": "Jeju black pork."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Udo day trip",
+            "summary": "Seongsan Port to Udo, a coast loop, lunch, Geommeolle and Hagosudong, peanut ice cream, back to Seongsan.",
+            "route": "Seongsan Port → Udo → coast loop → lunch → Geommeolle → café ice cream → back",
+            "tips": "Udo ferries cancel in high waves. E-carts and scooters are easiest on the island. Don’t miss the last boat.",
+            "stops": [
+              {
+                "name": "Seongsan Port",
+                "desc": "Board the Udo ferry."
+              },
+              {
+                "name": "Arrive on Udo",
+                "desc": "Step onto the island."
+              },
+              {
+                "name": "Udo coast loop",
+                "desc": "East cliffs and west beaches."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Seafood."
+              },
+              {
+                "name": "Geommeolle · Hagosudong",
+                "desc": "Black pebbles or white sand."
+              },
+              {
+                "name": "Café · peanut ice cream",
+                "desc": "Udo’s peanut dessert."
+              },
+              {
+                "name": "Back to Seongsan",
+                "desc": "Catch the last ferry."
+              }
+            ],
+            "notice": "Udo ferries can cancel for swell, fog, or wind. Check Seongsan Port the same day and do not miss the last return boat."
+          },
+          "c03": {
+            "title": "Hyeopjae · west Jeju",
+            "summary": "Hyeopjae and Geumneung beaches, Hallim lunch, Osulloc Tea Museum, a west-coast café, and sunset.",
+            "route": "Hyeopjae → Geumneung → Hallim lunch → Osulloc → café → sunset",
+            "tips": "Hyeopjae faces Biyangdo with emerald water. Osulloc may charge admission. Sunset is best on the coast road.",
+            "stops": [
+              {
+                "name": "Hyeopjae Beach",
+                "desc": "Emerald water and Biyangdo."
+              },
+              {
+                "name": "Geumneung Beach",
+                "desc": "The next stretch of sand."
+              },
+              {
+                "name": "Hallim lunch",
+                "desc": "Gogi-guksu."
+              },
+              {
+                "name": "Osulloc Tea Museum",
+                "desc": "Tea fields and the museum."
+              },
+              {
+                "name": "West café",
+                "desc": "Tea and dessert."
+              },
+              {
+                "name": "Coast sunset",
+                "desc": "West-coast light."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Aewol · Handam",
+            "summary": "Aewol coast road and Handam walk, lunch, café street, Gwakji Beach, sunset, and dinner.",
+            "route": "Aewol coast → Handam walk → lunch → cafés → Gwakji Beach → sunset → dinner",
+            "tips": "Handam has one-way traffic and tight parking. Café street queues on weekends. A rental car helps.",
+            "stops": [
+              {
+                "name": "Aewol coast road",
+                "desc": "A slow drive by the sea."
+              },
+              {
+                "name": "Handam coastal walk",
+                "desc": "Basalt shore path."
+              },
+              {
+                "name": "Aewol lunch",
+                "desc": "Seafood or Korean food."
+              },
+              {
+                "name": "Café street",
+                "desc": "Aewol’s café alleys."
+              },
+              {
+                "name": "Gwakji Beach",
+                "desc": "Wide sand."
+              },
+              {
+                "name": "Sunset",
+                "desc": "Coast light."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Black pork."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Seogwipo waterfalls",
+            "summary": "Jeongbang Falls, Seogwipo town and Olle Market lunch, Cheonjiyeon Falls, Saeyeongyo and Saeseom, then the Seogwipo coast and dinner.",
+            "route": "Jeongbang → downtown → Olle Market lunch → Cheonjiyeon → Saeyeongyo · Saeseom → coast → dinner",
+            "tips": "Jeongbang falls into the sea. Check Cheonjiyeon evening hours. Downtown is walkable.",
+            "stops": [
+              {
+                "name": "Jeongbang Falls",
+                "desc": "The waterfall into the sea."
+              },
+              {
+                "name": "Seogwipo downtown",
+                "desc": "The harbor town."
+              },
+              {
+                "name": "Olle Market lunch",
+                "desc": "Okdom or Korean food."
+              },
+              {
+                "name": "Cheonjiyeon Falls",
+                "desc": "A forest waterfall."
+              },
+              {
+                "name": "Saeyeongyo · Saeseom",
+                "desc": "The bridge and island path."
+              },
+              {
+                "name": "Seogwipo coast",
+                "desc": "The shore road."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Black pork."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Jungmun",
+            "summary": "Jusangjeolli and Jungmun Beach, lunch, Yeomiji Botanical Garden or a museum, the resort belt, a coast café, and dinner.",
+            "route": "Jusangjeolli → Jungmun Beach → lunch → Yeomiji / museum → resort → café → dinner",
+            "tips": "Jusangjeolli has strong waves. The resort belt is large—shuttle or taxi. Stay in Jungmun; don’t mix other sightseeing.",
+            "stops": [
+              {
+                "name": "Jusangjeolli",
+                "desc": "Coastal basalt columns."
+              },
+              {
+                "name": "Jungmun Beach",
+                "desc": "Black-sand shore."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Seafood."
+              },
+              {
+                "name": "Yeomiji or a museum",
+                "desc": "Greenhouses or an indoor exhibit."
+              },
+              {
+                "name": "Jungmun resort belt",
+                "desc": "Walk the hotel zone."
+              },
+              {
+                "name": "Coast café",
+                "desc": "A rest with a sea view."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Black pork."
+              }
+            ]
+          },
+          "c07": {
+            "title": "Hallasan",
+            "summary": "A hiking-only day. Dawn start at Seongpanak or Gwaneumsa, summit or Witseoreum, descent, then black-pork dinner. Do not mix other sightseeing.",
+            "route": "Trailhead → summit / Witseoreum → descent → black-pork dinner",
+            "tips": "Seongpanak and Gwaneumsa require reservations. Pick Witseoreum instead of the summit if weather or fitness is limited. Do not add other sights.",
+            "stops": [
+              {
+                "name": "Start hiking",
+                "desc": "Enter Seongpanak or Gwaneumsa trail."
+              },
+              {
+                "name": "Summit or Witseoreum",
+                "desc": "Rest at Baeknokdam or Witseoreum."
+              },
+              {
+                "name": "Descent",
+                "desc": "Come down the same trail."
+              },
+              {
+                "name": "Black-pork dinner",
+                "desc": "Recover at a restaurant below the mountain."
+              }
+            ],
+            "notice": "Hallasan Seongpanak and Gwaneumsa trails need advance booking. Same-day walk-up may be refused. Check national-park notices."
+          },
+          "c08": {
+            "title": "Jeju City · markets",
+            "summary": "Yongduam and Yongyeon valley, lunch, Jejummok Gwandea and old downtown, Dongmun Market, Tapdong shore, and market-food dinner.",
+            "route": "Yongduam → Yongyeon → lunch → Jejummok Gwandea → Dongmun Market → Tapdong → market food",
+            "tips": "Yongduam is a short stop. Dongmun Market is best in the evening. City buses and taxis are enough.",
+            "stops": [
+              {
+                "name": "Yongduam",
+                "desc": "The dragon-head rock."
+              },
+              {
+                "name": "Yongyeon valley · coast",
+                "desc": "A short gorge and shore walk."
+              },
+              {
+                "name": "Jeju City lunch",
+                "desc": "Gogi-guksu."
+              },
+              {
+                "name": "Jejummok Gwandea · old town",
+                "desc": "The old office and alleys."
+              },
+              {
+                "name": "Dongmun Market",
+                "desc": "Market lanes."
+              },
+              {
+                "name": "Tapdong shore",
+                "desc": "The seaside promenade."
+              },
+              {
+                "name": "Market dinner",
+                "desc": "Eat in the market."
+              }
+            ]
+          },
+          "c09": {
+            "title": "East forest · oreum",
+            "summary": "Bijarim Forest, Woljeongri Beach lunch, Yongnuni Oreum or a nearby oreum, Sehwa Beach, and an east-coast café dinner. Best by car.",
+            "route": "Bijarim → Woljeongri Beach → lunch → Yongnuni Oreum → Sehwa Beach → café dinner",
+            "tips": "Bijarim’s dirt path is slippery. Oreum walks depend on wind and fitness. Woljeongri cafés are crowded.",
+            "stops": [
+              {
+                "name": "Bijarim",
+                "desc": "The thousand-year nutmeg-yew forest."
+              },
+              {
+                "name": "Woljeongri Beach",
+                "desc": "Emerald water."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Seafood or a café brunch."
+              },
+              {
+                "name": "Yongnuni Oreum or nearby",
+                "desc": "A gentle ridge climb."
+              },
+              {
+                "name": "Sehwa Beach",
+                "desc": "A quieter east-coast stretch."
+              },
+              {
+                "name": "East café · dinner",
+                "desc": "Finish at a café or restaurant."
+              }
+            ]
+          },
+          "c10": {
+            "title": "Sanbangsan · southwest",
+            "summary": "Sanbangsan and Yongmeori Coast, lunch, Songaksan, Sagye coast, and a southwest sunset. Best by car.",
+            "route": "Sanbangsan → Yongmeori Coast → lunch → Songaksan → Sagye coast → sunset",
+            "tips": "Yongmeori can close in high waves or tide. Songaksan is a short climb. Sunset is classic at Sagye or Songak.",
+            "stops": [
+              {
+                "name": "Sanbangsan",
+                "desc": "The cliff mountain and Sanbanggul cave."
+              },
+              {
+                "name": "Yongmeori Coast",
+                "desc": "The dragon-head shore."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Seafood around Sagye or Sanbang."
+              },
+              {
+                "name": "Songaksan",
+                "desc": "A short ridge toward Marado."
+              },
+              {
+                "name": "Sagye coast",
+                "desc": "Shore with Sanbangsan in view."
+              },
+              {
+                "name": "Southwest sunset",
+                "desc": "Close with the light."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "regionGangwon": "Gangwon",
+    "regionChungcheong": "Chungcheong",
+    "regionJeolla": "Jeolla",
+    "regionGyeongsang": "Gyeongsang"
   }
 }

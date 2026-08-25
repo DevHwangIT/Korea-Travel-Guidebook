@@ -554,6 +554,85 @@
         "cold",
         "sweet"
       ]
+    },
+    "juk": {
+      "tags": [
+        "soup",
+        "warm",
+        "mild",
+        "light",
+        "nonspicy"
+      ]
+    },
+    "jaecheopguk": {
+      "tags": [
+        "soup",
+        "seafood",
+        "warm",
+        "light",
+        "mild"
+      ]
+    },
+    "agu-jjim": {
+      "tags": [
+        "seafood",
+        "spicy",
+        "hearty",
+        "nosoup",
+        "share"
+      ]
+    },
+    "chapssal-kwabaegi": {
+      "tags": [
+        "sweet",
+        "snack",
+        "street",
+        "portable",
+        "quickbite"
+      ]
+    },
+    "mandu": {
+      "tags": [
+        "portable",
+        "nosoup",
+        "mild",
+        "hearty",
+        "meat"
+      ]
+    },
+    "hamburger": {
+      "tags": [
+        "portable",
+        "quickbite",
+        "nosoup",
+        "mild",
+        "hearty"
+      ]
+    },
+    "nakji": {
+      "tags": [
+        "seafood",
+        "spicy",
+        "nosoup",
+        "hearty"
+      ]
+    },
+    "galbitang": {
+      "tags": [
+        "soup",
+        "warm",
+        "meat",
+        "hearty",
+        "mild"
+      ]
+    },
+    "hoetjip": {
+      "tags": [
+        "seafood",
+        "cold",
+        "nosoup",
+        "light"
+      ]
     }
   }
 }

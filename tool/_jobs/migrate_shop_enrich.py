@@ -22,10 +22,13 @@ import time
 from pathlib import Path
 from typing import Any
 
-TOOL_DIR = Path(__file__).resolve().parent
-ROOT = TOOL_DIR.parent
-if str(TOOL_DIR) not in sys.path:
-    sys.path.insert(0, str(TOOL_DIR))
+JOBS_DIR = Path(__file__).resolve().parent
+TOOL_PKG = JOBS_DIR.parent
+ROOT = TOOL_PKG.parent
+if str(TOOL_PKG) not in sys.path:
+    sys.path.insert(0, str(TOOL_PKG))
+if str(JOBS_DIR) not in sys.path:
+    sys.path.insert(0, str(JOBS_DIR))
 
 from lib import i18n_store  # noqa: E402
 from lib.cache_bust import bump_asset_version  # noqa: E402

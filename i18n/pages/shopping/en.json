@@ -2387,6 +2387,566 @@
         "th": "มักสดวันเดียวกันอายุสั้น — กินเร็ว นอกคยองจูหายาก",
         "ru": "Часто свежий в день выпечки, короткий срок — ешьте скорее. Вне Кёнджу найти сложнее."
       }
+    ],
+    "gwangcheonKimTitle": "Gwangcheon Gim (seaweed)",
+    "gwangcheonKimDesc": "Chungnam Gwangcheon seaweed — seasoned gim gift packs.",
+    "gwangcheonKimBody1": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+    "gwangcheonKimBody2": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+    "gwangcheonKimTip": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+    "gwangcheonKimBody": [
+      {
+        "type": "text",
+        "ko": "광천김은 충남 홍성 광천 일대에서 나는 김으로, 마트·전통시장·공항에서 한국 음식으로 많이 사 가는 기념품입니다. 조미김은 밥반찬·간식으로 바로 먹을 수 있습니다.",
+        "en": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+        "ja": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+        "zh": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+        "zh-Hant": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+        "vi": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+        "th": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports.",
+        "ru": "Gwangcheon gim is seaweed from Hongseong, Chungnam. Travelers often buy seasoned sheets as a light Korean food souvenir at marts, markets, and airports."
+      },
+      {
+        "type": "text",
+        "ko": "습기와 눌림에 약하니 지퍼백에 넣고 캐리어 중앙에 두세요. 기름·소금이 있는 조미김은 개봉 후 빨리 먹는 편이 좋습니다.",
+        "en": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+        "ja": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+        "zh": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+        "zh-Hant": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+        "vi": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+        "th": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening.",
+        "ru": "Keep packs dry and uncrushed in the middle of your suitcase. Eat seasoned gim soon after opening."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n대형마트 묶음이 관광지보다 저렴한 경우가 많고, 선물용은 개별 포장 세트를 고르세요.",
+        "en": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+        "ja": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+        "zh": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+        "zh-Hant": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+        "vi": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+        "th": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share.",
+        "ru": "Buying tip\n\nHypermarket multipacks are usually cheaper than tourist shops; pick individually wrapped gift sets to share."
+      }
+    ],
+    "nongshimJangkalguksuTitle": "Nongshim Spicy Jangkalguksu",
+    "nongshimJangkalguksuDesc": "Nongshim spicy jang-kalguksu instant noodles.",
+    "nongshimJangkalguksuBody1": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+    "nongshimJangkalguksuBody2": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+    "nongshimJangkalguksuTip": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+    "nongshimJangkalguksuBody": [
+      {
+        "type": "text",
+        "ko": "농심 얼큰 장칼국수는 된장소스 칼국수 맛을 매콤하게 낸 봉지라면입니다. 불닭·짜왕과 함께 마트 라면 코너에서 사 가기 좋은 한국 음식 기념품입니다.",
+        "en": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+        "ja": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+        "zh": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+        "zh-Hant": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+        "vi": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+        "th": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles.",
+        "ru": "Nongshim spicy jang-kalguksu is bag ramen with a spicy soybean-paste noodle taste. A easy Korean food souvenir next to Buldak and Jjawang in mart ramen aisles."
+      },
+      {
+        "type": "text",
+        "ko": "스프·액상 소스는 지퍼백에 한 번 더 넣어 주세요. 이마트·홈플러스 특가가 편의점보다 저렴한 경우가 많습니다.",
+        "en": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+        "ja": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+        "zh": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+        "zh-Hant": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+        "vi": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+        "th": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices.",
+        "ru": "Double-bag soup and sauce packets. Hypermarket deals usually beat convenience-store prices."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n멀티팩으로 사고, 조리법은 봉지 뒷면을 확인하세요.",
+        "en": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+        "ja": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+        "zh": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+        "zh-Hant": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+        "vi": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+        "th": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag.",
+        "ru": "Buying tip\n\nBuy a multipack and check the cooking steps on the back of the bag."
+      }
+    ],
+    "ottogiChamkkaeNoodleTitle": "Ottogi Sesame Noodles",
+    "ottogiChamkkaeNoodleDesc": "Ottogi sesame noodles — nutty sesame sauce ramen.",
+    "ottogiChamkkaeNoodleBody1": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+    "ottogiChamkkaeNoodleBody2": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+    "ottogiChamkkaeNoodleTip": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+    "ottogiChamkkaeNoodleBody": [
+      {
+        "type": "text",
+        "ko": "오뚜기 참깨누들은 참깨 소스를 비벼 먹는 라면입니다. 매운 라면보다 덜 맵고 고소해서, 매운 음식을 부담스러워하는 여행객 선물로도 무난합니다.",
+        "en": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+        "ja": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+        "zh": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+        "zh-Hant": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+        "vi": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+        "th": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat.",
+        "ru": "Ottogi Chamkkae Noodle is mixed with a sesame sauce. Milder and nuttier than spicy ramyeon, so it works as a gift for travelers who skip heat."
+      },
+      {
+        "type": "text",
+        "ko": "물을 버리고 소스를 비비는 타입이 많습니다. 액상 소스는 캐리어에서 새지 않게 지퍼백에 넣으세요.",
+        "en": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+        "ja": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+        "zh": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+        "zh-Hant": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+        "vi": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+        "th": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage.",
+        "ru": "Many versions drain the water then mix sauce. Bag liquid packets so they do not leak in luggage."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n대형마트 라면 코너·온라인 묶음이 찾기 쉽습니다.",
+        "en": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+        "ja": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+        "zh": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+        "zh-Hant": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+        "vi": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+        "th": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks.",
+        "ru": "Buying tip\n\nLook in hypermarket ramen aisles or online multipacks."
+      }
+    ],
+    "ahriCupRamenTitle": "AHRI Cup Ramen",
+    "ahriCupRamenDesc": "AHRI cup ramen (packaged as ARIH) — Ari Modern Noodle.",
+    "ahriCupRamenBody1": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+    "ahriCupRamenBody2": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+    "ahriCupRamenTip": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+    "ahriCupRamenBody": [
+      {
+        "type": "text",
+        "ko": "AHRI 컵라면은 패키지에 ARIH·아리로 적힌 모던 누들 컵라면입니다. 색이 다른 맛 여러 종이 있어 기념품으로 사 가기 좋습니다. 편의점·온라인에서 재고가 들쭉날쭉합니다.",
+        "en": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+        "ja": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+        "zh": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+        "zh-Hant": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+        "vi": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+        "th": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online.",
+        "ru": "AHRI cup ramen is labeled ARIH / Ari Modern Noodle on the cup. Several color-coded flavors make a fun souvenir set. Stock jumps around at convenience stores and online."
+      },
+      {
+        "type": "text",
+        "ko": "컵라면은 부피가 크니 캐리어 공간을 확인하고, 액상 스프는 지퍼백에 넣어 주세요. 한정판은 정가·중고가를 비교하세요.",
+        "en": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+        "ja": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+        "zh": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+        "zh-Hant": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+        "vi": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+        "th": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices.",
+        "ru": "Cups take space in a suitcase. Bag sauce packets. For limited editions, compare official and resale prices."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n공식 판매처·대형마트 재고를 먼저 보고, 관광지 프리미엄은 피하세요.",
+        "en": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+        "ja": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+        "zh": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+        "zh-Hant": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+        "vi": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+        "th": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices.",
+        "ru": "Buying tip\n\nCheck official or hypermarket stock first and skip tourist-markup prices."
+      }
+    ],
+    "chaltteokDameunPieTitle": "Chaltteok-Dameun Pie",
+    "chaltteokDameunPieDesc": "Chaltteok-filled pies and cookies — a mart snack-aisle favorite.",
+    "chaltteokDameunPieBody1": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+    "chaltteokDameunPieBody2": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+    "chaltteokDameunPieTip": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+    "chaltteokDameunPieBody": [
+      {
+        "type": "text",
+        "ko": "찰떡 담은파이는 청우(CW) 초코파이 찰떡·찰떡쿠키, 롯데 찰떡파이처럼 속에 찰떡이 들어간 파이·쿠키를 말합니다. 편의점·마트 상온 과자 코너에서 쉽게 찾습니다.",
+        "en": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+        "ja": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+        "zh": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+        "zh-Hant": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+        "vi": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+        "th": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles.",
+        "ru": "Chaltteok-Dameun Pie covers chewy rice-cake pies and cookies such as CW Choco Pie Chaltteok, CW Chaltteok Cookie, and Lotte Chaltteok Pie. Find them in convenience-store and mart snack aisles."
+      },
+      {
+        "type": "text",
+        "ko": "박스 포장이라 깨지지 않게 옷 사이에 넣으세요. 대형마트 묶음이 공항보다 저렴합니다.",
+        "en": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+        "ja": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+        "zh": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+        "zh-Hant": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+        "vi": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+        "th": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices.",
+        "ru": "Boxes crush easily — pack between clothes. Hypermarket multipacks beat airport prices."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n롯데 찰떡파이와 청우 찰떡 쿠키를 헷갈리지 말고, 유통기한을 확인하세요.",
+        "en": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+        "ja": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+        "zh": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+        "zh-Hant": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+        "vi": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+        "th": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date.",
+        "ru": "Buying tip\n\nDon’t mix up Lotte Chaltteok Pie and CW chaltteok cookies; check the expiry date."
+      }
+    ],
+    "yegamCheeseGratinTitle": "Yegam Cheese Gratin",
+    "yegamCheeseGratinDesc": "Orion Yegam cheese-gratin flavor — a sweet-potato snack.",
+    "yegamCheeseGratinBody1": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+    "yegamCheeseGratinBody2": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+    "yegamCheeseGratinTip": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+    "yegamCheeseGratinBody": [
+      {
+        "type": "text",
+        "ko": "예감은 오리온의 고구마 스낵이고, 치즈그라탕맛은 고소하고 짭짤한 시즌·한정 맛입니다. 편의점·마트 과자 코너에서 찾기 좋습니다.",
+        "en": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+        "ja": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+        "zh": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+        "zh-Hant": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+        "vi": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+        "th": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles.",
+        "ru": "Yegam is Orion’s sweet-potato snack; cheese-gratin is a savory limited flavor. Easy to find in convenience-store and mart snack aisles."
+      },
+      {
+        "type": "text",
+        "ko": "봉지가 부풀어 잘 찢어지니 캐리어에 세게 누르지 마세요. 시즌 맛은 재고가 빨리 떨어질 수 있습니다.",
+        "en": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+        "ja": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+        "zh": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+        "zh-Hant": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+        "vi": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+        "th": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out.",
+        "ru": "Bags puff and tear easily — do not crush them in luggage. Limited flavors can sell out."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n편의점보다 대형마트 묶음이 저렴한 경우가 많습니다.",
+        "en": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+        "ja": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+        "zh": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+        "zh-Hant": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+        "vi": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+        "th": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores.",
+        "ru": "Buying tip\n\nHypermarket multipacks are often cheaper than convenience stores."
+      }
+    ],
+    "mallangCowTitle": "Mallang Cow",
+    "mallangCowDesc": "Lotte Mallang Cow — a soft caramel chewy candy.",
+    "mallangCowBody1": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+    "mallangCowBody2": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+    "mallangCowTip": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+    "mallangCowBody": [
+      {
+        "type": "text",
+        "ko": "말랑카우는 롯데의 말랑한 캐러멜 캔디입니다. 작아서 가방에 넣기 쉽고, 한국 과자 선물 묶음에 자주 들어갑니다.",
+        "en": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+        "ja": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+        "zh": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+        "zh-Hant": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+        "vi": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+        "th": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles.",
+        "ru": "Mallang Cow is Lotte’s soft caramel candy. Small and easy to pack, it often shows up in Korean snack gift piles."
+      },
+      {
+        "type": "text",
+        "ko": "더운 날에는 녹을 수 있으니 기내 반입·그늘 보관을 권합니다. 편의점·마트에서 쉽게 삽니다.",
+        "en": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+        "ja": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+        "zh": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+        "zh-Hant": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+        "vi": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+        "th": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts.",
+        "ru": "It can melt in heat — keep it in the cabin or shade. Easy to buy at convenience stores and marts."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n낱개 봉지가 나눠 주기 좋고, 유통기한을 확인하세요.",
+        "en": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+        "ja": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+        "zh": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+        "zh-Hant": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+        "vi": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+        "th": "Buying tip\n\nSmall packs are easy to share; check the expiry date.",
+        "ru": "Buying tip\n\nSmall packs are easy to share; check the expiry date."
+      }
+    ],
+    "aceCrackerTitle": "Haitai Ace",
+    "aceCrackerDesc": "Haitai Ace — a light fermented cracker.",
+    "aceCrackerBody1": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+    "aceCrackerBody2": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+    "aceCrackerTip": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+    "aceCrackerBody": [
+      {
+        "type": "text",
+        "ko": "에이스는 해태의 담백한 크래커로, 한국에서 오래 사랑받은 과자입니다. 너무 달지 않아 차·커피와 같이 기념품으로 사기 좋습니다.",
+        "en": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+        "ja": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+        "zh": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+        "zh-Hant": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+        "vi": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+        "th": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir.",
+        "ru": "Ace is Haitai’s light cracker and a long-time Korean staple. Not too sweet, so it pairs well with tea or coffee as a souvenir."
+      },
+      {
+        "type": "text",
+        "ko": "박스 포장이라 깨지지 않게 옷 사이에 넣으세요. 대형마트 대용량이 공항보다 저렴합니다.",
+        "en": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+        "ja": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+        "zh": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+        "zh-Hant": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+        "vi": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+        "th": "Boxes can crush — pack between clothes. Large mart packs beat airport prices.",
+        "ru": "Boxes can crush — pack between clothes. Large mart packs beat airport prices."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n이마트·홈플러스 과자 코너에서 묶음을 고르세요.",
+        "en": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+        "ja": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+        "zh": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+        "zh-Hant": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+        "vi": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+        "th": "Buying tip\n\nPick a multipack in the hypermarket snack aisle.",
+        "ru": "Buying tip\n\nPick a multipack in the hypermarket snack aisle."
+      }
+    ],
+    "gosomiTitle": "Gosomi",
+    "gosomiDesc": "Orion Gosomi — a sesame-savory cracker.",
+    "gosomiBody1": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+    "gosomiBody2": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+    "gosomiTip": "Buying tip\n\nFamily or multipacks are better value than singles.",
+    "gosomiBody": [
+      {
+        "type": "text",
+        "ko": "고소미는 오리온의 참깨 풍미 크래커입니다. 에이스·예감과 함께 한국 과자 세트로 사 가기 좋은 스테디셀러입니다.",
+        "en": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+        "ja": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+        "zh": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+        "zh-Hant": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+        "vi": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+        "th": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set.",
+        "ru": "Gosomi is Orion’s sesame-flavored cracker. A steady seller to pack with Ace and Yegam in a Korean snack set."
+      },
+      {
+        "type": "text",
+        "ko": "봉지가 쉽게 구겨지니 상자나 옷 사이에 넣어 주세요. 편의점·마트에서 구합니다.",
+        "en": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+        "ja": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+        "zh": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+        "zh-Hant": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+        "vi": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+        "th": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts.",
+        "ru": "Bags crease easily — pack in a box or between clothes. Sold at convenience stores and marts."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n대용량·묶음이 낱개보다 가성비가 좋습니다.",
+        "en": "Buying tip\n\nFamily or multipacks are better value than singles.",
+        "ja": "Buying tip\n\nFamily or multipacks are better value than singles.",
+        "zh": "Buying tip\n\nFamily or multipacks are better value than singles.",
+        "zh-Hant": "Buying tip\n\nFamily or multipacks are better value than singles.",
+        "vi": "Buying tip\n\nFamily or multipacks are better value than singles.",
+        "th": "Buying tip\n\nFamily or multipacks are better value than singles.",
+        "ru": "Buying tip\n\nFamily or multipacks are better value than singles."
+      }
+    ],
+    "jocheongYugwaTitle": "Jocheong Yugwa",
+    "jocheongYugwaDesc": "Nongshim jocheong yugwa — puffed rice snacks with grain syrup.",
+    "jocheongYugwaBody1": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+    "jocheongYugwaBody2": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+    "jocheongYugwaTip": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+    "jocheongYugwaBody": [
+      {
+        "type": "text",
+        "ko": "조청유과는 농심이 만든 유과 스낵으로, 조청의 달콤함과 바삭한 식감이 특징입니다. 한과를 부담 없이 맛보고 싶을 때 마트에서 사기 좋습니다.",
+        "en": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+        "ja": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+        "zh": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+        "zh-Hant": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+        "vi": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+        "th": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks.",
+        "ru": "Nongshim Jocheong Yugwa is a puffed traditional sweet with grain-syrup flavor. An easy mart way to try hangwa-style snacks."
+      },
+      {
+        "type": "text",
+        "ko": "바삭해서 잘 부서지므로 캐리어 위쪽보다 옷 사이에 넣으세요. 단맛이 있어 차와 잘 맞습니다.",
+        "en": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+        "ja": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+        "zh": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+        "zh-Hant": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+        "vi": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+        "th": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea.",
+        "ru": "It crushes easily — pack between clothes, not on top. The sweetness pairs well with tea."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n농심 과자 코너·대형마트에서 구하세요.",
+        "en": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+        "ja": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+        "zh": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+        "zh-Hant": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+        "vi": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+        "th": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets.",
+        "ru": "Buying tip\n\nFind it in the Nongshim snack section at hypermarkets."
+      }
+    ],
+    "chocoChipTitle": "Choco Chip",
+    "chocoChipDesc": "Orion Choco Chip — chocolate-chip cookies.",
+    "chocoChipBody1": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+    "chocoChipBody2": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+    "chocoChipTip": "Buying tip\n\nHypermarket packs beat airport prices.",
+    "chocoChipBody": [
+      {
+        "type": "text",
+        "ko": "초코칩은 오리온의 초코칩 쿠키로, 한국 편의점·마트에서 흔히 보는 과자입니다. 달콤해서 아이·친구 선물용 묶음에 넣기 좋습니다.",
+        "en": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+        "ja": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+        "zh": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+        "zh-Hant": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+        "vi": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+        "th": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends.",
+        "ru": "Orion Choco Chip is a common convenience-store cookie. Sweet enough to drop into a snack pile for kids or friends."
+      },
+      {
+        "type": "text",
+        "ko": "초콜릿은 더운 날 녹을 수 있으니 기내 반입을 권합니다. 낱개 포장 멀티팩이 나눠 주기 쉽습니다.",
+        "en": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+        "ja": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+        "zh": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+        "zh-Hant": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+        "vi": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+        "th": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share.",
+        "ru": "Chocolate can melt in heat — keep it in the cabin. Individually wrapped multipacks are easy to share."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n대형마트 묶음이 공항 가격보다 저렴합니다.",
+        "en": "Buying tip\n\nHypermarket packs beat airport prices.",
+        "ja": "Buying tip\n\nHypermarket packs beat airport prices.",
+        "zh": "Buying tip\n\nHypermarket packs beat airport prices.",
+        "zh-Hant": "Buying tip\n\nHypermarket packs beat airport prices.",
+        "vi": "Buying tip\n\nHypermarket packs beat airport prices.",
+        "th": "Buying tip\n\nHypermarket packs beat airport prices.",
+        "ru": "Buying tip\n\nHypermarket packs beat airport prices."
+      }
+    ],
+    "drCpuMulgwangAmpouleTitle": "Dr.CPU Water-Glow Ampoule Shot",
+    "drCpuMulgwangAmpouleDesc": "Daiso Dr.CPU water-glow ampoule shot — a travel-size hydrating ampoule.",
+    "drCpuMulgwangAmpouleBody1": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+    "drCpuMulgwangAmpouleBody2": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+    "drCpuMulgwangAmpouleTip": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+    "drCpuMulgwangAmpouleBody": [
+      {
+        "type": "text",
+        "ko": "닥터CPU 물광앰플샷은 다이소에서 파는 소용량 수분 앰플입니다. 균일가라 여러 개 담기 좋고, 여행·선물용 스킨케어로 자주 집습니다.",
+        "en": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+        "ja": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+        "zh": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+        "zh-Hant": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+        "vi": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+        "th": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts.",
+        "ru": "Dr.CPU water-glow ampoule shots are small hydrating ampoules at Daiso. The fixed price makes it easy to grab several for travel or gifts."
+      },
+      {
+        "type": "text",
+        "ko": "액체류라 기내 수하물 100ml 제한을 확인하고, 파우치에 넣어 새지 않게 하세요. 피부 자극이 있으면 사용을 중단하세요.",
+        "en": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+        "ja": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+        "zh": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+        "zh-Hant": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+        "vi": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+        "th": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts.",
+        "ru": "Liquids count toward the 100ml cabin limit — pouch them against leaks. Stop if your skin reacts."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n다이소몰·매장 키오스크에서 ‘물광앰플’로 검색해 보세요.",
+        "en": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+        "ja": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+        "zh": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+        "zh-Hant": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+        "vi": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+        "th": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks.",
+        "ru": "Buying tip\n\nSearch “물광앰플” on Daiso Mall or in-store kiosks."
+      }
+    ],
+    "yujaTeaTitle": "Yuja Tea",
+    "yujaTeaDesc": "Yuja tea — citron marmalade tea to stir into water.",
+    "yujaTeaBody1": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+    "yujaTeaBody2": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+    "yujaTeaTip": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+    "yujaTeaBody": [
+      {
+        "type": "text",
+        "ko": "유자차는 유자청을 따뜻한 물에 풀어 마시는 한국 차입니다. 마트·백화점·공항에서 병·선물세트로 많이 팔리고, 감기 기운·겨울 선물로도 고릅니다.",
+        "en": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+        "ja": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+        "zh": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+        "zh-Hant": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+        "vi": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+        "th": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift.",
+        "ru": "Yuja tea is Korean citron marmalade stirred into hot water. Sold in jars and gift sets at marts, department stores, and airports — a common winter or feel-better gift."
+      },
+      {
+        "type": "text",
+        "ko": "유리병은 무겁고 깨지니 완충재를 요청하세요. 당도가 높아 보관은 개봉 후 냉장하는 제품이 많습니다.",
+        "en": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+        "ja": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+        "zh": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+        "zh-Hant": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+        "vi": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+        "th": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening.",
+        "ru": "Glass jars are heavy and breakable — ask for padding. Many are high-sugar; refrigerate after opening."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n플라스틱·파우치형이 비행기에 더 안전하고, 선물용은 백화점 세트가 포장이 깔끔합니다.",
+        "en": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+        "ja": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+        "zh": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+        "zh-Hant": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+        "vi": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+        "th": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts.",
+        "ru": "Buying tip\n\nPlastic or pouches travel safer than glass; department-store sets look nicer as gifts."
+      }
+    ],
+    "rejuranSkinProtectionMaskTitle": "REJURAN Skin Protection Mask",
+    "rejuranSkinProtectionMaskDesc": "REJURAN Skin Protection Mask — a sheet mask from Olive Young.",
+    "rejuranSkinProtectionMaskBody1": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+    "rejuranSkinProtectionMaskBody2": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+    "rejuranSkinProtectionMaskTip": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+    "rejuranSkinProtectionMaskBody": [
+      {
+        "type": "text",
+        "ko": "REJURAN 스킨 프로텍션 마스크는 올리브영에서 찾기 쉬운 리쥬란 시트 마스크입니다. 한국 화장품 기념품으로 낱장·박스 모두 인기입니다.",
+        "en": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+        "ja": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+        "zh": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+        "zh-Hant": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+        "vi": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+        "th": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes.",
+        "ru": "REJURAN Skin Protection Mask is a sheet mask easy to find at Olive Young. Popular as a K-beauty souvenir in singles or boxes."
+      },
+      {
+        "type": "text",
+        "ko": "박스 포장은 구겨지지 않게 캐리어 중앙에 넣으세요. 피부 타입·성분표를 확인하고, 행사 기간 묶음이 저렴합니다.",
+        "en": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+        "ja": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+        "zh": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+        "zh-Hant": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+        "vi": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+        "th": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper.",
+        "ru": "Keep boxes uncrushed in the middle of your bag. Check your skin type and INCI list; sale bundles are cheaper."
+      },
+      {
+        "type": "callout",
+        "ko": "구매 팁\n\n올리브영 앱·매장 재고를 확인하고, 공항 면세보다 시내 행사를 먼저 보세요.",
+        "en": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+        "ja": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+        "zh": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+        "zh-Hant": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+        "vi": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+        "th": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free.",
+        "ru": "Buying tip\n\nCheck Olive Young app/store stock; downtown sales often beat airport duty-free."
+      }
     ]
   },
   "shopping": {

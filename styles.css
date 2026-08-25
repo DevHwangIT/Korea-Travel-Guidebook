@@ -1567,6 +1567,11 @@ a.souvenir-card:hover {
   row-gap: 6px;
 }
 
+.travel-course-tabs > .prep-cat-list .tab-btn {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+}
+
 .travel-course-ia-label {
   margin: 0;
   padding: 14px 16px 4px;
@@ -1752,6 +1757,7 @@ a.souvenir-card:hover {
 }
 
 .course-guide-chip__label {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1772,6 +1778,96 @@ a.souvenir-card:hover {
 .course-guide-chip.is-active .course-guide-chip__num {
   background: rgba(255, 255, 255, 0.22);
   color: #fff;
+}
+
+.course-guide-mob {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.course-guide-mob.is-transit {
+  background: rgba(36, 110, 232, 0.12);
+  color: #1d5ec4;
+}
+
+.course-guide-mob.is-car {
+  background: rgba(196, 146, 42, 0.16);
+  color: #8a6414;
+}
+
+.course-guide-mob.is-mix {
+  background: rgba(31, 107, 92, 0.12);
+  color: #1f6b5c;
+}
+
+.course-guide-chip.is-active .course-guide-mob {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.course-guide-detail__mob {
+  margin: 8px 0 0;
+}
+
+.course-guide-detail__mob .course-guide-mob {
+  font-size: 0.74rem;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.course-guide-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f3f7ff 0%, #e8effc 100%);
+  border: 1px solid rgba(36, 110, 232, 0.16);
+}
+
+.course-guide-notice__icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  color: #246ee8;
+  flex: 0 0 auto;
+}
+
+.course-guide-notice__icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.course-guide-notice__kicker {
+  margin: 0 0 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #1d5ec4;
+}
+
+.course-guide-notice__text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #243a58;
 }
 
 .course-guide-detail {
@@ -2283,7 +2379,6 @@ a.souvenir-card:hover {
   background: #eef2f0;
   position: relative;
   z-index: 0;
-  isolation: isolate;
 }
 
 .course-guide-map__layout {
@@ -2338,21 +2433,6 @@ a.souvenir-card:hover {
   width: 100%;
   height: 100%;
   font-family: inherit;
-  z-index: 0;
-}
-
-.course-guide-map .leaflet-pane,
-.course-guide-map .leaflet-map-pane,
-.course-guide-map .leaflet-tile-pane,
-.course-guide-map .leaflet-overlay-pane,
-.course-guide-map .leaflet-shadow-pane,
-.course-guide-map .leaflet-marker-pane,
-.course-guide-map .leaflet-tooltip-pane,
-.course-guide-map .leaflet-popup-pane,
-.course-guide-map .leaflet-control-container,
-.course-guide-map .leaflet-top,
-.course-guide-map .leaflet-bottom {
-  z-index: 0;
 }
 
 .leaflet-div-icon.course-guide-map-pin {

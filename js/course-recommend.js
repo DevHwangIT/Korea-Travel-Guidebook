@@ -35,9 +35,12 @@
       id: "region",
       options: [
         { id: "seoul", image: "Images/places/heritage/gyeongbok.jpg" },
-        { id: "gyeonggi", image: "Images/places/heritage/suwon.jpg" },
         { id: "incheon", image: "Images/places/city/songdo.jpg" },
-        { id: "gyeongju", image: "Images/places/heritage/bulguksa.jpg" },
+        { id: "gyeonggi", image: "Images/places/heritage/suwon.jpg" },
+        { id: "gangwon", image: "Images/places/mountain/seoraksan.jpg" },
+        { id: "chungcheong", image: "Images/places/heritage/gotsanseot.jpg" },
+        { id: "jeolla", image: "Images/places/heritage/jeonju.jpg" },
+        { id: "gyeongsang", image: "Images/places/heritage/bulguksa.jpg" },
         { id: "busan", image: "Images/places/beach/haeundae.jpg" },
         { id: "jeju", image: "Images/places/nature/seongsan.jpg" },
       ],
@@ -776,6 +779,19 @@
     return s;
   }
 
+  function regionSet(id) {
+    if (id === "gyeongsang" || id === "gyeongju") {
+      return { gyeongsang: 1, gyeongju: 1 };
+    }
+    var set = {};
+    if (id) set[id] = 1;
+    return set;
+  }
+
+  function placeInRegion(place, region) {
+    return !!(place && regionSet(region)[place.region]);
+  }
+
   function pickTopPlaces(n) {
     var region = answers.region;
     var scored = [];
@@ -784,7 +800,7 @@
       var p = list[i];
       if (!p || !p.slug) continue;
       if (EXCLUDE_TYPES[p.type]) continue;
-      if (p.region !== region) continue;
+      if (!placeInRegion(p, region)) continue;
       scored.push({ place: p, score: scorePlace(p) });
     }
     scored.sort(function (a, b) {

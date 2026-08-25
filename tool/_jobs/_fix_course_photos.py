@@ -1,236 +1,323 @@
 # -*- coding: utf-8 -*-
-"""Replace mismatched Seoul course photos with local dish shots or Commons files."""
+"""Fetch missing Incheon/Gyeonggi course photos from Wikimedia Commons."""
 from __future__ import annotations
 
-import io
-import shutil
+import json
 import ssl
 import time
-import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from PIL import Image
+ROOT = Path(__file__).resolve().parents[2]
+IMG = ROOT / "Images" / "places" / "_courses"
+FOOD = ROOT / "Images" / "places"
+UA = "KoreaTravelGuidebook/1.0 (course photo review; educational; rate-limited)"
 
-ROOT = Path(__file__).resolve().parents[1]
-PLACES = ROOT / "Images" / "places"
-UA = "KoreaTravelGuidebook/1.0 (course photo audit; educational; rate-limited)"
-CTX = ssl._create_unverified_context()
-SLEEP = 7.5
-
-LOCAL_COPIES = [
-    # dest, src — dish photos already in the repo
-    (
-        PLACES / "food-toast.jpg",
-        ROOT / "pages/foods/desserts/toast/media/cover.jpg",
-    ),
-    (
-        PLACES / "food-chicken.jpg",
-        ROOT / "pages/foods/meals/dakgangjeong/media/cover.jpg",
-    ),
-    (
-        PLACES / "food-chicken-hbc.jpg",
-        ROOT / "pages/foods/meals/dakgangjeong/media/cover.jpg",
-    ),
-    (
-        PLACES / "food-kalguksu.jpg",
-        ROOT / "pages/foods/meals/guksu/media/cover.jpg",
-    ),
+JOBS = [
+    {
+        "dest": IMG / "wolmido-sea.jpg",
+        "titles": [
+            "Wolmido Island.jpg",
+            "Wolmido.jpg",
+            "Wolmi Island Incheon.jpg",
+            "Incheon Wolmido.jpg",
+            "월미도.jpg",
+            "Wolmido seashore.jpg",
+        ],
+        "search": "Wolmido Incheon beach sea",
+    },
+    {
+        "dest": IMG / "jayu-park-view.jpg",
+        "titles": [
+            "Jayu Park Incheon.jpg",
+            "Freedom Park Incheon.jpg",
+            "Incheon Jayu Park.jpg",
+            "MacArthur statue Jayu Park.jpg",
+            "Jayu Park.jpg",
+            "자유공원 인천.jpg",
+        ],
+        "search": "Jayu Park Incheon MacArthur",
+    },
+    {
+        "dest": IMG / "paradise-city-resort.jpg",
+        "titles": [
+            "Paradise City Incheon.jpg",
+            "Paradise City Hotel Incheon.jpg",
+            "Paradise City Yeongjong.jpg",
+            "파라다이스시티 인천.jpg",
+            "Paradise City.jpg",
+        ],
+        "search": "Paradise City Incheon hotel resort",
+    },
+    {
+        "dest": IMG / "masian-beach.jpg",
+        "titles": [
+            "Masian Beach.jpg",
+            "마시안해변.jpg",
+            "Masian Beach Incheon.jpg",
+            "Muuido beach.jpg",
+            "Muui Island beach.jpg",
+        ],
+        "search": "Masian Beach Muuido Incheon",
+    },
+    {
+        "dest": IMG / "eulwangni-empty.jpg",
+        "titles": [
+            "Eulwangri Beach.jpg",
+            "Eurwangni Beach.jpg",
+            "을왕리해수욕장.jpg",
+            "Eulwangni Beach Incheon.jpg",
+            "Yeongjongdo beach.jpg",
+        ],
+        "search": "Eulwangri Beach Incheon Yeongjong",
+    },
+    {
+        "dest": IMG / "dongmak-beach.jpg",
+        "titles": [
+            "Dongmak Beach.jpg",
+            "동막해수욕장.jpg",
+            "Dongmak Beach Ganghwa.jpg",
+            "Ganghwa Dongmak.jpg",
+            "Ganghwado beach.jpg",
+        ],
+        "search": "Dongmak Beach Ganghwa",
+    },
+    {
+        "dest": IMG / "ganghwa-peace.jpg",
+        "titles": [
+            "Ganghwa Peace Observatory.jpg",
+            "강화평화전망대.jpg",
+            "Ganghwa Peace Observatory 01.jpg",
+            "Ganghwado Peace Observatory.jpg",
+        ],
+        "search": "Ganghwa Peace Observatory",
+    },
+    {
+        "dest": IMG / "songdo-park-clean.jpg",
+        "titles": [
+            "Songdo Central Park.jpg",
+            "Songdo IBD Central Park.jpg",
+            "송도 센트럴파크.jpg",
+            "Songdo International City Central Park.jpg",
+            "Songdo canal.jpg",
+        ],
+        "search": "Songdo Central Park canal Incheon",
+    },
+    {
+        "dest": IMG / "nami-island.jpg",
+        "titles": [
+            "Nami Island.jpg",
+            "Namiseom.jpg",
+            "남이섬.jpg",
+            "Nami Island metasequoia.jpg",
+            "Namiseom Gapyeong.jpg",
+        ],
+        "search": "Nami Island Gapyeong metasequoia",
+    },
+    {
+        "dest": IMG / "heyri-clean.jpg",
+        "titles": [
+            "Heyri Art Valley.jpg",
+            "Heyri Art Village.jpg",
+            "Paju Heyri.jpg",
+            "헤이리 예술마을.jpg",
+            "Heyri.jpg",
+        ],
+        "search": "Heyri Art Village Paju architecture",
+    },
+    {
+        "dest": IMG / "pocheon-art-clean.jpg",
+        "titles": [
+            "Pocheon Art Valley.jpg",
+            "포천아트밸리.jpg",
+            "Cheonjuho Lake Pocheon.jpg",
+            "Pocheon Art Valley lake.jpg",
+        ],
+        "search": "Pocheon Art Valley quarry lake",
+    },
+    {
+        "dest": IMG / "dora-observatory.jpg",
+        "titles": [
+            "Dora Observatory.jpg",
+            "Dora Observatory Paju.jpg",
+            "도라전망대.jpg",
+            "Dorasan Observatory.jpg",
+        ],
+        "search": "Dora Observatory Paju building",
+    },
+    {
+        "dest": FOOD / "food-jajang.jpg",
+        "titles": [
+            "Jjajangmyeon.jpg",
+            "Jajangmyeon.jpg",
+            "Korean jajangmyeon.jpg",
+            "짜장면.jpg",
+            "Jjajangmyeon 01.jpg",
+        ],
+        "search": "Jjajangmyeon Korean noodles",
+    },
+    {
+        "dest": FOOD / "food-seafood.jpg",
+        "titles": [
+            "Korean seafood stew.jpg",
+            "Haemul-jeongol.jpg",
+            "Jogae-gui.jpg",
+            "Korean grilled clams.jpg",
+            "Haemul-tang.jpg",
+            "Korean seafood.jpg",
+        ],
+        "search": "Korean seafood stew haemul",
+    },
+    {
+        "dest": IMG / "everland-garden.jpg",
+        "titles": [
+            "Everland Four Seasons Garden.jpg",
+            "Everland flower garden.jpg",
+            "Everland Yongin.jpg",
+            "에버랜드.jpg",
+        ],
+        "search": "Everland garden flowers Yongin",
+    },
+    {
+        "dest": IMG / "gwangmyeong-market.jpg",
+        "titles": [
+            "Gwangmyeong Traditional Market.jpg",
+            "광명전통시장.jpg",
+            "Gwangmyeong market.jpg",
+        ],
+        "search": "Gwangmyeong Traditional Market",
+    },
+    {
+        "dest": IMG / "yeoju-outlet.jpg",
+        "titles": [
+            "Yeoju Premium Outlets.jpg",
+            "여주프리미엄아울렛.jpg",
+            "Yeoju Premium Outlet.jpg",
+        ],
+        "search": "Yeoju Premium Outlets",
+    },
+    {
+        "dest": IMG / "sinpo-market.jpg",
+        "titles": [
+            "Sinpo International Market.jpg",
+            "신포국제시장.jpg",
+            "Sinpo Market Incheon.jpg",
+        ],
+        "search": "Sinpo International Market Incheon",
+    },
 ]
 
-PNG_TO_JPEG = [
-    PLACES / "food-hotteok.jpg",
-    PLACES / "mangwon-market.jpg",
-]
-
-# dest filename -> exact Commons File: titles (first usable wins)
-COMMONS = {
-    "n-seoul-tower.jpg": [
-        "Namsan Tower, Seoul - Namsan2299.jpg",
-        "Namsan Seoul Tower.jpg",
-        "N Seoul Tower.jpg",
-        "Korea-Seoul-N.Seoul.Tower-02.jpg",
-        "N Seoul Tower Panorama Night.jpg",
-        "Namsan.JPG",
-    ],
-    "food-kalguksu.jpg": [
-        "Kalguksu.jpg",
-        "Korean.cuisine-Kalguksu-01.jpg",
-        "Kalguksu 1.jpg",
-    ],
-    "food-kimbap.jpg": [
-        "Gimbap.jpg",
-        "Kimbap.jpg",
-        "Korean cuisine-Gimbap-01.jpg",
-        "Gimbap 1.jpg",
-    ],
-    "food-gukbap.jpg": [
-        "Dwaeji-gukbap.jpg",
-        "Seolleongtang.jpg",
-        "Sundae-gukbap.jpg",
-        "Dwaeji gukbap.jpg",
-    ],
-    "food-dakhanmari.jpg": [
-        "Dak-hanmari.jpg",
-        "Korean.cuisine-Dakhanmari-01.jpg",
-        "Dakhanmari.jpg",
-        "Dak hanmari.jpg",
-    ],
-    "food-cafe.jpg": [
-        "Caffe latte.jpg",
-        "Cafe latte.jpg",
-        "Latte art.jpg",
-        "Iced caffe latte.jpg",
-        "Cafe Americano.jpg",
-    ],
-    "food-samgyeopsal.jpg": [
-        "Samgyeopsal.jpg",
-        "Korean barbecue-Samgyeopsal-01.jpg",
-        "Samgyeopsal 1.jpg",
-    ],
-    "food-bindaetteok.jpg": [
-        "Bindaetteok.jpg",
-        "Korean pancake-Bindaetteok-01.jpg",
-        "Bindaetteok 1.jpg",
-    ],
-    "cheongdam-fashion.jpg": [
-        "Garosu-gil in Sinsa-dong, Seoul.jpg",
-        "Cheongdam-dong.jpg",
-        "Apgujeong Rodeo Street.jpg",
-        "Sinsa-dong Garosu-gil Seoul.jpg",
-    ],
-    "seochon.jpg": [
-        "Seochon scene.jpg",
-        "Sejong Village.jpg",
-        "TongIn Market Entrance.jpg",
-    ],
-    "songridan-gil.jpg": [
-        "Lotte World Tower and Seokchon Lake.jpg",
-        "Seokchon Lake and Lotte World Tower.jpg",
-        "Seokchon Lake Seoul.jpg",
-    ],
-    "duryunsan.jpg": [
-        "11-03956.JPG",
-        "Duryunsan.jpg",
-        "Duryunsan Provincial Park.jpg",
-    ],
-}
+CTX = None
+REJECT = ("portrait", "selfie", "map", "logo", "svg", "diagram", "stamp", "crowd")
 
 
-def log(*a):
-    print(*a, flush=True)
+def ssl_ctx():
+    global CTX
+    if CTX is None:
+        try:
+            import certifi
+
+            CTX = ssl.create_default_context(cafile=certifi.where())
+        except Exception:
+            CTX = ssl._create_unverified_context()
+    return CTX
 
 
-def is_jpeg(data: bytes) -> bool:
-    return len(data) >= 3 and data[:3] == b"\xff\xd8\xff"
+def http_get(url: str, timeout: int = 90) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=timeout, context=ssl_ctx()) as r:
+        return r.read()
 
 
-def to_jpeg_bytes(data: bytes, max_side: int = 1600) -> bytes:
-    if is_jpeg(data) and len(data) < 2_400_000:
-        return data
-    im = Image.open(io.BytesIO(data)).convert("RGB")
-    im.thumbnail((max_side, max_side), Image.Resampling.LANCZOS)
-    buf = io.BytesIO()
-    im.save(buf, "JPEG", quality=86, optimize=True)
-    return buf.getvalue()
+def special_filepath(title: str, width: int = 1280) -> str:
+    enc = urllib.parse.quote(title.replace(" ", "_"))
+    return f"https://commons.wikimedia.org/wiki/Special:FilePath/{enc}?width={width}"
 
 
-def http_get(url: str) -> bytes:
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": UA,
-            "Accept": "image/*,*/*;q=0.8",
-            "Referer": "https://commons.wikimedia.org/",
-        },
+def commons_search(query: str, limit: int = 8) -> list[str]:
+    api = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(
+        {
+            "action": "query",
+            "list": "search",
+            "srsearch": query,
+            "srnamespace": "6",
+            "srlimit": str(limit),
+            "format": "json",
+        }
     )
-    delay = 12.0
-    for attempt in range(6):
-        try:
-            with urllib.request.urlopen(req, timeout=90, context=CTX) as r:
-                return r.read()
-        except urllib.error.HTTPError as e:
-            if e.code in (429, 503) and attempt < 5:
-                log(f"    HTTP {e.code} sleep {delay:.0f}s")
-                time.sleep(delay)
-                delay = min(delay * 1.6, 90)
-                continue
-            raise
-    raise RuntimeError("download failed")
+    try:
+        data = json.loads(http_get(api).decode())
+    except Exception as exc:
+        print(f"  search err: {exc}", flush=True)
+        return []
+    out = []
+    for item in data.get("query", {}).get("search", []):
+        t = item.get("title", "")
+        if t.startswith("File:"):
+            out.append(t[5:])
+    return out
 
 
-def save_jpeg(dest: Path, data: bytes) -> int:
-    jpeg = to_jpeg_bytes(data)
-    if len(jpeg) < 12000:
-        raise RuntimeError(f"too small {len(jpeg)}")
-    dest.write_bytes(jpeg)
-    return len(jpeg)
+def ok_title(title: str) -> bool:
+    low = title.lower()
+    if low.endswith((".pdf", ".svg", ".gif", ".tif", ".tiff", ".djvu", ".webm")):
+        return False
+    return not any(b in low for b in REJECT)
 
 
-def copy_local() -> None:
-    for dest, src in LOCAL_COPIES:
-        if not src.exists():
-            log(f"SKIP copy missing {src}")
-            continue
-        data = src.read_bytes()
-        n = save_jpeg(dest, data)
-        log(f"COPY {src.name} -> {dest.name} ({n})")
+def save_image(url: str, dest: Path) -> bool:
+    try:
+        data = http_get(url)
+    except Exception as exc:
+        print(f"  dl err: {exc}", flush=True)
+        return False
+    if len(data) < 12000:
+        print(f"  too small ({len(data)})", flush=True)
+        return False
+    head = data[:32].lstrip()
+    if head.startswith(b"<") or head.startswith(b"<!DO"):
+        print("  rejected html", flush=True)
+        return False
+    if not (data[:3] == b"\xff\xd8\xff" or data[:8] == b"\x89PNG\r\n\x1a\n" or data[:4] == b"RIFF"):
+        print("  bad magic", flush=True)
+        return False
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(data)
+    return True
 
 
-def convert_pngs() -> None:
-    for path in PNG_TO_JPEG:
-        if not path.exists():
-            continue
-        data = path.read_bytes()
-        if is_jpeg(data):
-            log(f"ALREADY JPEG {path.name}")
-            continue
-        n = save_jpeg(path, data)
-        log(f"CONVERT PNG->JPEG {path.name} ({n})")
-
-
-def try_commons(dest_name: str, titles: list[str]) -> bool:
-    dest = PLACES / dest_name
+def fetch_one(job: dict) -> bool:
+    dest = job["dest"]
+    titles = list(job.get("titles") or [])
+    for t in commons_search(job.get("search") or dest.stem, limit=8):
+        if t not in titles:
+            titles.append(t)
     for title in titles:
-        url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(
-            title.replace(" ", "_")
-        )
-        log(f"  try {title}")
-        try:
-            data = http_get(url)
-        except Exception as exc:  # noqa: BLE001
-            log(f"    fail {exc}")
-            time.sleep(SLEEP)
+        if not ok_title(title):
+            print(f"  skip title: {title}", flush=True)
             continue
-        if data[:1] == b"<" or len(data) < 12000:
-            log(f"    not image ({len(data)})")
-            time.sleep(SLEEP)
-            continue
-        try:
-            n = save_jpeg(dest, data)
-        except Exception as exc:  # noqa: BLE001
-            log(f"    jpeg fail {exc}")
-            time.sleep(SLEEP)
-            continue
-        log(f"  OK {dest_name} <- {title} ({n})")
-        time.sleep(SLEEP)
-        return True
+        print(f"  try {title}", flush=True)
+        if save_image(special_filepath(title), dest):
+            print(f"+ {dest.name} <- {title} ({dest.stat().st_size})", flush=True)
+            return True
+        time.sleep(1.2)
+    print(f"! FAIL {dest.name}", flush=True)
     return False
 
 
-def main() -> None:
-    copy_local()
-    convert_pngs()
-    failed = []
-    for i, (dest_name, titles) in enumerate(COMMONS.items(), 1):
-        log(f"[{i}/{len(COMMONS)}] {dest_name}")
-        if not try_commons(dest_name, titles):
-            failed.append(dest_name)
-            log(f"  NONE worked for {dest_name}")
-        time.sleep(1.5)
-    log("FAILED:", failed or "none")
+def main() -> int:
+    ok = fail = 0
+    for job in JOBS:
+        print(f"\n## {job['dest'].name}", flush=True)
+        if fetch_one(job):
+            ok += 1
+        else:
+            fail += 1
+        time.sleep(2.0)
+    print(f"\ndone ok={ok} fail={fail}", flush=True)
+    return 0 if fail == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

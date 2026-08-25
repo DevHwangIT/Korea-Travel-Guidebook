@@ -18,6 +18,64 @@
  *   If no match → en (international default), except Korean language/region (ko* / *-KR) → ko.
  *   Saved korea-guide-lang always wins; never override an existing user choice on later loads.
  */
+
+/** Query-string helpers for list page / tab restore (keeps ?lang= and hash). */
+window.GuideUrlState = {
+  get: function (name) {
+    try {
+      return new URLSearchParams(window.location.search).get(name) || "";
+    } catch (e) {
+      return "";
+    }
+  },
+  patch: function (values, defaults) {
+    try {
+      var url = new URL(window.location.href);
+      Object.keys(values || {}).forEach(function (key) {
+        var value = values[key];
+        var fallback = defaults && Object.prototype.hasOwnProperty.call(defaults, key)
+          ? defaults[key]
+          : "";
+        if (value == null || String(value) === "" || String(value) === String(fallback)) {
+          url.searchParams.delete(key);
+        } else {
+          url.searchParams.set(key, String(value));
+        }
+      });
+      var next = url.pathname + url.search + url.hash;
+      if (window.location.pathname + window.location.search + window.location.hash === next) {
+        return;
+      }
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, "", next);
+      }
+    } catch (e) {
+      /* file:// */
+    }
+  },
+  restoreBackLink: function () {
+    var link = document.querySelector("main .back-link a[href], .page .back-link a[href]");
+    if (!link || !document.referrer) return;
+    var dest;
+    var ref;
+    try {
+      dest = new URL(link.getAttribute("href"), window.location.href);
+      ref = new URL(document.referrer);
+    } catch (e) {
+      return;
+    }
+    if (ref.origin !== window.location.origin) return;
+    function norm(path) {
+      return String(path || "/")
+        .replace(/\/index\.html$/i, "/")
+        .replace(/\/+$/, "/") || "/";
+    }
+    if (norm(dest.pathname) !== norm(ref.pathname)) return;
+    if (!ref.search && !ref.hash) return;
+    link.setAttribute("href", ref.pathname + ref.search + ref.hash);
+  },
+};
+
 (function () {
   /** @type {{ code: string, label: string }[]} */
   var GUIDE_LANGS = [
@@ -509,6 +567,9 @@
       });
     }
     renderLangSwitchers(lang);
+    if (window.GuideUrlState && typeof window.GuideUrlState.restoreBackLink === "function") {
+      window.GuideUrlState.restoreBackLink();
+    }
     load(lang).then(function () {
       ensureWelcomePopupScript();
       ensureTravelUtilsScript();

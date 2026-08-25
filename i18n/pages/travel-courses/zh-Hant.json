@@ -11,30 +11,212 @@
     "empty": "計畫盡快產生並加入推薦路線。",
     "regionPickLabel": "地區",
     "regionSeoul": "首爾",
-    "regionGyeonggi": "京畿",
+    "regionGyeonggi": "京畿道",
     "regionIncheon": "仁川",
     "regionGyeongju": "慶州",
     "regionBusan": "釜山",
     "regionJeju": "濟州島",
-    "regionComingSoon": "{region}推薦路線將於日後追加。",
-    "scheduleComingSoon": "依行程天數（一日遊、1晚2天等）的路線將於日後追加。",
-    "curated": {
-      "pickLabel": "{region}推薦路線",
-      "intro": "本地區的代表路線指南。路線上線後，選擇標題即可查看介紹、動線與時刻表。",
-      "guideEyebrow": "{region}路線指南"
+    "quiz": {
+      "bannerEyebrow": "即時路線",
+      "bannerTitle": "即時取得旅行路線推薦。",
+      "bannerCta": "開始推薦",
+      "title": "路線問答",
+      "progress": "{current} / {total}",
+      "back": "上一步",
+      "close": "關閉",
+      "restart": "重新找路線",
+      "resultEyebrow": "專屬路線",
+      "resultLabel": "結果",
+      "defaultReason": "依您的回答與移動距離，按時段安排較現實的行程。",
+      "emptyPlaces": "此地區景點資料不足，請換個地區試試。",
+      "dayLabel": "第 {n} 天",
+      "questions": {
+        "party": {
+          "prompt": "幾個人一起去？",
+          "options": {
+            "solo": "一個人",
+            "couple": "兩人（情侶／朋友）",
+            "friends": "朋友／小團體",
+            "family": "家人"
+          },
+          "lead": "依旅行風格為你搭配更合適的路線。",
+          "hints": {
+            "solo": "用自己的步調慢慢逛巷弄和咖啡店",
+            "couple": "適合兩人散步、看夜景的約會行程",
+            "friends": "和朋友一起逛街區、美食和熱門景點",
+            "family": "大人小孩都能輕鬆跟上的行程"
+          }
+        },
+        "duration": {
+          "prompt": "行程幾天？",
+          "options": {
+            "day": "一日遊",
+            "1n2d": "1晚2天",
+            "2n3d": "2晚3天",
+            "3n4d": "3晚4天"
+          },
+          "lead": "依行程天數拆分每天的路線。",
+          "hints": {
+            "day": "只玩今天，抓住重點景點",
+            "1n2d": "住一晚，節奏更從容",
+            "2n3d": "兩天以上，把一個地區看深一點",
+            "3n4d": "將近四天，分幾個街區慢慢逛"
+          }
+        },
+        "region": {
+          "prompt": "去哪個地區？",
+          "options": {
+            "seoul": "首爾",
+            "gyeonggi": "京畿道",
+            "incheon": "仁川",
+            "gyeongju": "慶州",
+            "busan": "釜山",
+            "jeju": "濟州島",
+            "gangwon": "江原道",
+            "chungcheong": "忠清道",
+            "jeolla": "全羅道",
+            "gyeongsang": "慶尚道"
+          },
+          "lead": "依你選的地區搭配景點與美食。",
+          "hints": {
+            "seoul": "宮殿、韓屋、漢江與潮流街區集於一城",
+            "gyeonggi": "水原、民俗村等首爾近郊",
+            "incheon": "松島、唐人街，去機場也方便",
+            "gyeongju": "佛國寺、大陵園等新羅古都",
+            "busan": "海雲台、甘川、札嘎其的海濱城市",
+            "jeju": "火山丘、海灘、漢拏山的海島之旅",
+            "gangwon": "雪嶽山、江陵、束草，山海兼備",
+            "chungcheong": "公州、扶餘百濟遺跡與西海岸",
+            "jeolla": "全州韓屋村、麗水、寶城茶園",
+            "gyeongsang": "慶州、安東河回、統營等嶺南"
+          }
+        },
+        "vibe": {
+          "prompt": "比較喜歡哪種氛圍？",
+          "options": {
+            "nature": "自然風景",
+            "heritage": "文化遺產",
+            "city": "城市與人氣街區"
+          },
+          "lead": "會優先選擇符合氛圍的地點。",
+          "hints": {
+            "nature": "公園、漢江、山海風景為主",
+            "heritage": "慢慢逛宮殿、寺廟、韓屋和博物館",
+            "city": "購物、咖啡和熱鬧街區"
+          }
+        },
+        "mobility": {
+          "prompt": "怎麼移動？",
+          "options": {
+            "transit": "大眾運輸為主",
+            "rent": "租車／自駕",
+            "mix": "依情況搭配"
+          },
+          "lead": "依出行方式調整路線距離。",
+          "hints": {
+            "transit": "以地鐵和公車為主",
+            "rent": "租車或自駕更自由",
+            "mix": "市區搭大眾運輸，遠一點再開車"
+          }
+        },
+        "budget": {
+          "prompt": "預算風格？",
+          "options": {
+            "thrifty": "盡量省錢",
+            "mid": "適中",
+            "splurge": "稍有餘裕"
+          },
+          "lead": "餐飲和行程會貼近你的花費習慣。",
+          "hints": {
+            "thrifty": "市場、街頭小吃和大眾運輸為主",
+            "mid": "正餐和門票都適中",
+            "splurge": "給餐廳、觀景和體驗留餘地"
+          }
+        },
+        "pace": {
+          "prompt": "旅行節奏？",
+          "options": {
+            "relax": "輕鬆休息",
+            "balanced": "張弛有度",
+            "active": "多逛多看"
+          },
+          "lead": "決定一天要逛幾個點。",
+          "hints": {
+            "relax": "一兩處慢慢看，不趕",
+            "balanced": "景點和休息都兼顧",
+            "active": "多走路、多打卡"
+          }
+        }
+      },
+      "slot": {
+        "morning": "上午",
+        "afternoon": "下午",
+        "evening": "傍晚"
+      },
+      "meal": {
+        "lunch": "午餐",
+        "dinner": "晚餐",
+        "snack": "小吃·甜點"
+      },
+      "placeType": {
+        "city": "城市",
+        "nature": "自然",
+        "heritage": "文化歷史",
+        "mountain": "山",
+        "beach": "海灘",
+        "lake": "湖",
+        "market": "市場"
+      },
+      "save": "儲存到本裝置",
+      "saveDone": "已儲存到本裝置",
+      "saveFail": "無法儲存，請檢查瀏覽器儲存設定。",
+      "savedTitle": "本裝置已儲存的路線",
+      "savedEmpty": "還沒有儲存的路線。取得推薦後，點書籤圖示即可儲存到本裝置。",
+      "savedAt": "儲存於 {when}",
+      "openSaved": "查看",
+      "deleteSaved": "刪除",
+      "savedViewTitle": "本裝置已儲存的路線",
+      "timelineTitle": "分時段行程路線",
+      "moveTransit": "↓ 大眾運輸前往",
+      "moveRent": "↓ 自駕／租車前往",
+      "moveMix": "↓ 大眾運輸或自駕前往",
+      "stayRelax": "悠閒遊覽（約2–3小時）",
+      "stayBalanced": "適中遊覽（約1.5–2小時）",
+      "stayActive": "快速打卡（約1–1.5小時）",
+      "moveDetail": "↓ 約{minutes}分鐘 · {mode}（{from} → {to}）",
+      "durationStay": "約{minutes}分鐘",
+      "doLabel": "怎麼玩",
+      "howLabel": "怎麼去",
+      "introLabel": "介紹",
+      "placeFallbackDesc": "{name} — {region}的代表性{type}。",
+      "howFallback": "在Kakao Map或Naver Map搜尋「{name}」查看交通與步行路線。",
+      "mealFallbackDesc": "{name} — 當地人氣美食。可在指南頁面查看餐廳資訊。",
+      "activity": {
+        "default": "巡覽代表景點、拍照，並享受周邊散步和購物。",
+        "city": "街景漫步、購物、咖啡、夜景和拍照。",
+        "heritage": "慢慢參觀宮殿/寺廟、博物館，體驗韓服等。",
+        "nature": "沿步道和觀景點拍照，在公園休息。",
+        "mountain": "以登山、展望台、纜車（如有）為主，依天氣和體力調整。",
+        "beach": "海邊散步、拍海景、欣賞日落和夜景。",
+        "lake": "湖邊散步、騎行或輕鬆野餐。",
+        "market": "逛當地美食和特產，嚐嚐街頭小吃。"
+      },
+      "mealActivity": {
+        "lunch": "在附近餐廳慢慢用餐，為下午行程做準備。",
+        "dinner": "用當地人氣料理結束一天。",
+        "snack": "用咖啡、甜點或街頭小吃稍作休息，補充體力。"
+      },
+      "savedLocalNote": "無需帳號，僅儲存在本手機/電腦的瀏覽器中，不會上傳到伺服器，其他裝置或瀏覽器看不到。",
+      "modeTransit": "大眾運輸",
+      "modeRent": "自駕",
+      "modeMix": "大眾運輸／自駕",
+      "next": "下一步"
     },
     "seoulCurated": {
       "pickLabel": "首爾推薦路線",
       "intro": "精選首爾一日行程說明。選擇標題即可閱讀概述、動線與時間表。",
       "routeLabel": "路線一覽",
       "tipsLabel": "小提示",
-      "meta": {
-        "totalTime": "總時長",
-        "stops": "遊覽點",
-        "start": "開始時間",
-        "finish": "結束",
-        "hours": "{hours}小時"
-      },
       "openCourse": "查看路線",
       "courses": {
         "c01": {
@@ -576,195 +758,2220 @@
       },
       "guideEyebrow": "首爾行程指南",
       "scheduleLabel": "一日行程",
-      "fullRouteLabel": "地圖上的移動路線"
+      "fullRouteLabel": "地圖上的移動路線",
+      "meta": {
+        "totalTime": "總時長",
+        "stops": "遊覽點",
+        "start": "開始時間",
+        "finish": "結束",
+        "hours": "{hours}小時"
+      }
     },
-    "quiz": {
-      "bannerEyebrow": "即時路線",
-      "bannerTitle": "即時取得旅行路線推薦。",
-      "bannerCta": "開始推薦",
-      "title": "路線問答",
-      "progress": "{current} / {total}",
-      "back": "上一步",
-      "next": "下一步",
-      "close": "關閉",
-      "restart": "重新找路線",
-      "resultEyebrow": "專屬路線",
-      "resultLabel": "結果",
-      "defaultReason": "依您的回答與移動距離，按時段安排較現實的行程。",
-      "emptyPlaces": "此地區景點資料不足，請換個地區試試。",
-      "dayLabel": "第 {n} 天",
-      "questions": {
-        "party": {
-          "prompt": "幾個人一起去？",
-          "options": {
-            "solo": "一個人",
-            "couple": "兩人（情侶／朋友）",
-            "friends": "朋友／小團體",
-            "family": "家人"
+    "regionComingSoon": "{region}推薦路線將於日後追加。",
+    "scheduleComingSoon": "依行程天數（一日遊、1晚2天等）的路線將於日後追加。",
+    "curated": {
+      "pickLabel": "{region}推薦路線",
+      "intro": "本地區的代表路線指南。路線上線後，選擇標題即可查看介紹、動線與時刻表。",
+      "guideEyebrow": "{region}路線指南",
+      "mobility": {
+        "transit": "建議大眾運輸",
+        "car": "建議自駕",
+        "mix": "大眾運輸或自駕",
+        "transitShort": "大眾運輸",
+        "carShort": "自駕",
+        "mixShort": "均可"
+      },
+      "noticeLabel": "提示",
+      "gyeonggi": {
+        "pickLabel": "京畿推薦路線",
+        "intro": "從水原、加平、坡州到愛寶樂園、民俗村、楊平、光明、南漢山城、抱川、驪州，用一天走完京畿。點標題即可看介紹、動線和時刻表。",
+        "guideEyebrow": "京畿路線指南",
+        "courses": {
+          "c01": {
+            "title": "水原華城·行宮洞路線",
+            "summary": "世界遺產華城與行宮，行宮洞用餐和咖啡，再到訪華隨柳亭與城牆夜景。捷運公車都方便。",
+            "route": "水原華城 → 華城行宮 → 行宮洞 → 訪華隨柳亭",
+            "tips": "城牆路程較長，請穿舒適鞋。水原站和行宮捷運、公車都方便。",
+            "stops": [
+              {
+                "name": "水原華城",
+                "desc": "沿長安門、八達門一帶城牆步行，俯瞰華城。"
+              },
+              {
+                "name": "華城行宮",
+                "desc": "正祖的臨時宮殿，慢慢參觀正殿與洛南軒。"
+              },
+              {
+                "name": "行宮洞午餐",
+                "desc": "在行宮前巷弄吃韓餐或小吃。"
+              },
+              {
+                "name": "行里團路",
+                "desc": "行宮東側巷弄的咖啡館和小店歇腳。"
+              },
+              {
+                "name": "訪華隨柳亭",
+                "desc": "東北角樓與龍淵，黃昏景色很好。"
+              },
+              {
+                "name": "水原華城夜景",
+                "desc": "沿著亮燈的城牆散步收尾。"
+              }
+            ]
           },
-          "lead": "依旅行風格為你搭配更合適的路線。",
-          "hints": {
-            "solo": "用自己的步調慢慢逛巷弄和咖啡店",
-            "couple": "適合兩人散步、看夜景的約會行程",
-            "friends": "和朋友一起逛街區、美食和熱門景點",
-            "family": "大人小孩都能輕鬆跟上的行程"
-          }
-        },
-        "duration": {
-          "prompt": "行程幾天？",
-          "options": {
-            "day": "一日遊",
-            "1n2d": "1晚2天",
-            "2n3d": "2晚3天",
-            "3n4d": "3晚4天"
+          "c02": {
+            "title": "加平代表路線",
+            "summary": "從南怡島到小法國、義大利村，再以晨靜樹木園收尾。站點分散，建議自駕。",
+            "route": "南怡島 → 小法國 → 晨靜樹木園",
+            "tips": "南怡島請預留碼頭等候。樹木園請查季節開放時間。只靠大眾運輸串三站會很趕。",
+            "stops": [
+              {
+                "name": "南怡島",
+                "desc": "水杉大道、自行車和江邊步道，慢慢走。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在島上或加平碼頭附近用餐。"
+              },
+              {
+                "name": "小法國·義大利村",
+                "desc": "歐式布景和紀念品小街。"
+              },
+              {
+                "name": "晨靜樹木園",
+                "desc": "主題花園和步道，請確認最晚入園。"
+              },
+              {
+                "name": "結束",
+                "desc": "在樹木園收尾，返回首爾或春川方向。"
+              }
+            ]
           },
-          "lead": "依行程天數拆分每天的路線。",
-          "hints": {
-            "day": "只玩今天，抓住重點景點",
-            "1n2d": "住一晚，節奏更從容",
-            "2n3d": "兩天以上，把一個地區看深一點",
-            "3n4d": "將近四天，分幾個街區慢慢逛"
-          }
-        },
-        "region": {
-          "prompt": "去哪個地區？",
-          "options": {
-            "seoul": "首爾",
-            "gyeonggi": "京畿",
-            "incheon": "仁川",
-            "gyeongju": "慶州",
-            "busan": "釜山",
-            "jeju": "濟州"
+          "c03": {
+            "title": "坡州非軍事區路線",
+            "summary": "從臨津閣和平公園開始，參加非軍事區參觀，下午在Heyri藝術村放慢節奏。建議自駕或預約團。",
+            "route": "臨津閣 → 非軍事區 → Heyri藝術村",
+            "tips": "非軍事區設施通常要護照和預約。當天窗口可能買不到。請穿舒適鞋。",
+            "stops": [
+              {
+                "name": "臨津閣和平公園",
+                "desc": "先在自由之橋、許願絲帶和公園感受邊界與和平。"
+              },
+              {
+                "name": "非軍事區參觀",
+                "desc": "都羅展望臺、第三地道等當日路線。跟團更穩妥。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在臨津閣景區或坡州市區用餐。"
+              },
+              {
+                "name": "Heyri藝術村",
+                "desc": "走畫廊、工坊和步道。"
+              },
+              {
+                "name": "咖啡",
+                "desc": "在Heyri的咖啡館慢慢歇腳。"
+              },
+              {
+                "name": "結束",
+                "desc": "天黑前返回首爾方向。"
+              }
+            ],
+            "notice": "非軍事區相關設施的預約、證件和入場條件經常變動。出發前請核對京畿觀光公社及該設施公告。"
           },
-          "lead": "依你選的地區搭配景點與美食。",
-          "hints": {
-            "seoul": "宮殿、韓屋、漢江和潮流街區都在這",
-            "gyeonggi": "水原、民俗村等首爾近郊",
-            "incheon": "松島、唐人街，去機場也方便",
-            "gyeongju": "佛國寺、大陵園等新羅古都",
-            "busan": "海雲台、甘川、札嘎其的海濱城市",
-            "jeju": "火山丘、海灘和漢拏山的島嶼行"
-          }
-        },
-        "vibe": {
-          "prompt": "比較喜歡哪種氛圍？",
-          "options": {
-            "nature": "自然風景",
-            "heritage": "文化遺產",
-            "city": "城市與人氣街區"
+          "c04": {
+            "title": "愛寶樂園路線",
+            "summary": "愛寶樂園一整天：野生動物世界、遊樂設施、花園，晚餐後再看花車與夜間節目。不出園。",
+            "route": "愛寶樂園一日集中",
+            "tips": "週末請開園即入。花車時間隨季節變化。愛寶線、接駁車或自駕都可以。",
+            "stops": [
+              {
+                "name": "愛寶樂園入園",
+                "desc": "開園入場，先看排隊時間和動線。"
+              },
+              {
+                "name": "午餐",
+                "desc": "花園美食區或主題餐廳。"
+              },
+              {
+                "name": "野生動物世界·遊樂設施",
+                "desc": "下午集中玩野生動物世界和熱門項目。"
+              },
+              {
+                "name": "花園·其他設施",
+                "desc": "四季花園和剩下的遊樂項目。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "在園內吃晚飯，占好夜間位置。"
+              },
+              {
+                "name": "花車·夜間節目",
+                "desc": "看當季花車、燈光和演出收尾。"
+              }
+            ]
           },
-          "lead": "會優先選擇符合氛圍的地點。",
-          "hints": {
-            "nature": "公園、漢江、山海風景為主",
-            "heritage": "慢慢逛宮殿、寺廟、韓屋和博物館",
-            "city": "購物、咖啡和熱鬧街區"
-          }
-        },
-        "mobility": {
-          "prompt": "怎麼移動？",
-          "options": {
-            "transit": "大眾運輸為主",
-            "rent": "租車／自駕",
-            "mix": "依情況搭配"
+          "c05": {
+            "title": "韓國民俗村路線",
+            "summary": "在韓國民俗村看傳統房屋、演出和體驗，傍晚到校正洞咖啡街歇腳。",
+            "route": "韓國民俗村 → 校正洞咖啡街",
+            "tips": "民俗村至少留半天。在門口看演出時刻表。校正洞靠近盆唐線竹田、校正站。",
+            "stops": [
+              {
+                "name": "韓國民俗村",
+                "desc": "再現朝鮮時代村落的露天博物館。先看房屋和集市。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在村內餐廳吃傳統韓餐。"
+              },
+              {
+                "name": "傳統演出·體驗",
+                "desc": "選當天的農樂、走鋼絲或工坊體驗。"
+              },
+              {
+                "name": "民俗村參觀結束",
+                "desc": "天黑前出園，前往校正洞。"
+              },
+              {
+                "name": "校正洞咖啡街",
+                "desc": "竹田附近的咖啡巷吃甜點歇腳。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "在校正、竹田一帶吃晚飯。"
+              }
+            ],
+            "notice": "DMZ相關設施常需預約、證件，且入場規則會變。出發前請向京畿觀光公社及該設施確認。"
           },
-          "lead": "依出行方式調整路線距離。",
-          "hints": {
-            "transit": "以地鐵和公車為主",
-            "rent": "租車或自駕更自由",
-            "mix": "市區搭大眾運輸，遠一點再開車"
-          }
-        },
-        "budget": {
-          "prompt": "預算風格？",
-          "options": {
-            "thrifty": "盡量省錢",
-            "mid": "適中",
-            "splurge": "稍有餘裕"
+          "c06": {
+            "title": "楊平兩水頭路線",
+            "summary": "兩水頭與洗美苑，再去江邊咖啡館和南漢江散步。點與點有距離，建議自駕。",
+            "route": "兩水頭 → 洗美苑 → 楊平咖啡 → 南漢江",
+            "tips": "兩水頭週末上午較擠。洗美苑荷花盛於夏季。江邊咖啡館停車位常常很緊。",
+            "stops": [
+              {
+                "name": "兩水頭",
+                "desc": "北漢江與南漢江交會的碼頭。拍照點和步道。"
+              },
+              {
+                "name": "洗美苑",
+                "desc": "荷花、水生花園和棧道。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在兩水頭或洗美苑附近的韓餐館用餐。"
+              },
+              {
+                "name": "江邊咖啡",
+                "desc": "看著南漢江慢慢喝一杯。"
+              },
+              {
+                "name": "南漢江散步",
+                "desc": "沿江邊路慢慢走。"
+              },
+              {
+                "name": "結束",
+                "desc": "天黑前返回首爾方向。"
+              }
+            ]
           },
-          "lead": "餐飲和行程會貼近你的花費習慣。",
-          "hints": {
-            "thrifty": "市場、街頭小吃和大眾運輸為主",
-            "mid": "正餐和門票都適中",
-            "splurge": "給餐廳、觀景和體驗留餘地"
-          }
-        },
-        "pace": {
-          "prompt": "旅行節奏？",
-          "options": {
-            "relax": "輕鬆休息",
-            "balanced": "張弛有度",
-            "active": "多逛多看"
+          "c07": {
+            "title": "光明洞窟路線",
+            "summary": "光明洞窟之後去光明傳統市場和市區咖啡館。捷運公車可完成。",
+            "route": "光明洞窟 → 光明傳統市場 → 光明市區",
+            "tips": "洞內偏涼，地面可能潮溼。市場靠近鐵山站。洞窟到市場坐公車或計程車。",
+            "stops": [
+              {
+                "name": "光明洞窟",
+                "desc": "廢礦改成的主題洞穴。黃金瀑布、葡萄酒窖和燈光裝置。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在洞窟景區餐廳用餐。"
+              },
+              {
+                "name": "光明傳統市場",
+                "desc": "在鐵山一帶市場吃小吃、逛巷弄。"
+              },
+              {
+                "name": "咖啡",
+                "desc": "在光明市區咖啡館歇腳。"
+              },
+              {
+                "name": "結束",
+                "desc": "從鐵山站或光明站返回首爾。"
+              }
+            ]
           },
-          "lead": "決定一天要逛幾個點。",
-          "hints": {
-            "relax": "一兩處慢慢看，不趕",
-            "balanced": "景點和休息都兼顧",
-            "active": "多走路、多打卡"
+          "c08": {
+            "title": "南漢山城路線",
+            "summary": "世界遺產南漢山城走城牆和山城村，再以咖啡館收尾。從首爾坐公車可到。",
+            "route": "南漢山城 → 山城村 → 咖啡",
+            "tips": "有公車上山。城牆有坡，請穿舒適鞋。陰天風會很大。",
+            "stops": [
+              {
+                "name": "南漢山城",
+                "desc": "世界遺產城牆與南門一帶。"
+              },
+              {
+                "name": "城牆散步",
+                "desc": "沿城牆慢慢走，看風景。"
+              },
+              {
+                "name": "山城村午餐",
+                "desc": "山菜拌飯等山城餐廳。"
+              },
+              {
+                "name": "南漢山城再走一段",
+                "desc": "西門、行宮遺址等剩餘路段。"
+              },
+              {
+                "name": "咖啡",
+                "desc": "在山城村裡的咖啡館歇腳。"
+              },
+              {
+                "name": "結束",
+                "desc": "坐公車下山返回首爾。"
+              }
+            ]
+          },
+          "c09": {
+            "title": "抱川自然路線",
+            "summary": "抱川藝術谷採石湖再到山井湖散步喝咖啡。建議自駕。",
+            "route": "抱川藝術谷 → 山井湖",
+            "tips": "藝術谷需門票，週末停車較滿。山井湖一圈不短。兩地之間公車很少。",
+            "stops": [
+              {
+                "name": "抱川藝術谷",
+                "desc": "花崗岩採石場改成的湖、觀景臺和雕塑園。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在藝術谷附近用餐。"
+              },
+              {
+                "name": "山井湖",
+                "desc": "以明星山為背景沿湖散步。"
+              },
+              {
+                "name": "散步·咖啡",
+                "desc": "在湖邊咖啡館歇腳，或再走一小段。"
+              },
+              {
+                "name": "結束",
+                "desc": "從抱川返回首爾方向。"
+              }
+            ]
+          },
+          "c10": {
+            "title": "驪州歷史·購物路線",
+            "summary": "神勒寺、世宗大王陵之後去驪州奧特萊斯。點與點較遠，建議自駕。",
+            "route": "神勒寺 → 世宗大王陵 → 驪州奧特萊斯",
+            "tips": "神勒寺在南漢江邊，適合江邊散步。奧特萊斯週末傍晚較擠。",
+            "stops": [
+              {
+                "name": "神勒寺",
+                "desc": "江邊寺院與多層石塔。"
+              },
+              {
+                "name": "南漢江散步",
+                "desc": "寺前江邊走一小段。"
+              },
+              {
+                "name": "午餐",
+                "desc": "景區餐廳用餐。"
+              },
+              {
+                "name": "世宗大王陵",
+                "desc": "英陵，走陵園林道。"
+              },
+              {
+                "name": "驪州奧特萊斯",
+                "desc": "品牌購物與休息。"
+              },
+              {
+                "name": "結束",
+                "desc": "在奧特萊斯收尾後返回。"
+              }
+            ]
+          },
+          "c11": {
+            "title": "利川陶瓷路線",
+            "summary": "Yespark陶瓷藝術村與利川陶瓷主題公園。兩地有距離，建議自駕。",
+            "route": "Yespark → 利川陶瓷園 → 利川市區",
+            "tips": "工坊體驗可能要預約。陶瓷園戶外展多，請看天氣。",
+            "stops": [
+              {
+                "name": "利川陶瓷藝術村",
+                "desc": "走Yespark工坊街看陶器。"
+              },
+              {
+                "name": "利川午餐",
+                "desc": "利川米飯等當地韓餐。"
+              },
+              {
+                "name": "利川陶瓷園",
+                "desc": "公園、展覽與觀景。"
+              },
+              {
+                "name": "體驗·咖啡",
+                "desc": "可選陶藝體驗後喝咖啡。"
+              },
+              {
+                "name": "利川晚餐",
+                "desc": "在市區吃晚飯。"
+              }
+            ]
+          },
+          "c12": {
+            "title": "驪州歷史奧特萊斯路線",
+            "summary": "神勒寺、世宗大王陵之後去驪州奧特萊斯。點與點較遠，建議自駕。",
+            "route": "神勒寺 → 世宗大王陵 → 驪州奧特萊斯",
+            "tips": "神勒寺在南漢江邊，適合江邊散步。奧特萊斯週末傍晚較擠。",
+            "stops": [
+              {
+                "name": "神勒寺",
+                "desc": "江邊寺院與多層石塔。"
+              },
+              {
+                "name": "南漢江散步",
+                "desc": "寺前江邊走一小段。"
+              },
+              {
+                "name": "午餐",
+                "desc": "景區餐廳用餐。"
+              },
+              {
+                "name": "世宗大王陵",
+                "desc": "英陵，走陵園林道。"
+              },
+              {
+                "name": "驪州奧特萊斯",
+                "desc": "品牌購物與休息。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "奧特萊斯美食層或驪州市區。"
+              }
+            ]
+          },
+          "c13": {
+            "title": "始興·烏耳島路線",
+            "summary": "從潟湖生態園到烏耳島紅燈塔與海鮮。4號線方便。",
+            "route": "潟湖生態園 → 烏耳島 → 海岸街",
+            "tips": "潟湖以晚霞和蘆葦出名。晚上烤蛤可能要排隊。",
+            "stops": [
+              {
+                "name": "潟湖生態園",
+                "desc": "舊鹽田濕地與木棧道。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在公園附近簡單用餐。"
+              },
+              {
+                "name": "烏耳島",
+                "desc": "始興盡頭的海岸小鎮。"
+              },
+              {
+                "name": "紅燈塔·海岸散步",
+                "desc": "標誌紅燈塔與防波堤。"
+              },
+              {
+                "name": "咖啡",
+                "desc": "吹海風的咖啡館。"
+              },
+              {
+                "name": "烤蛤·海鮮晚餐",
+                "desc": "在烏耳島海鮮街吃晚飯。"
+              }
+            ]
+          },
+          "c14": {
+            "title": "安山大阜島路線",
+            "summary": "大阜島、海香樹木園與炭島港日落。島上幾乎必須自駕。",
+            "route": "大阜島 → 海香樹木園 → 炭島港",
+            "tips": "日落時間隨季節變化。週末炭島港請早停車。",
+            "stops": [
+              {
+                "name": "大阜島",
+                "desc": "經始華防潮堤相連，開始海岸兜風。"
+              },
+              {
+                "name": "午餐",
+                "desc": "島上吃海鮮或韓餐。"
+              },
+              {
+                "name": "海香樹木園",
+                "desc": "西海島嶼樹木園，步道與溫室。"
+              },
+              {
+                "name": "炭島港",
+                "desc": "以日落聞名的小港。"
+              },
+              {
+                "name": "日落",
+                "desc": "在防波堤看西海落日。"
+              },
+              {
+                "name": "大阜島晚餐",
+                "desc": "在港口吃晚飯再返回。"
+              }
+            ]
+          },
+          "c15": {
+            "title": "城南·南漢山城路線",
+            "summary": "世界遺產南漢山城走城牆，下午在板橋購物晚餐。大眾運輸友好。",
+            "route": "南漢山城 → 板橋",
+            "tips": "有公車上山。城牆有坡，請穿舒適鞋。板橋站在新盆唐線。",
+            "stops": [
+              {
+                "name": "南漢山城",
+                "desc": "世界遺產城牆與山城村落。"
+              },
+              {
+                "name": "山城村午餐",
+                "desc": "山菜拌飯等山城餐廳。"
+              },
+              {
+                "name": "城牆散步",
+                "desc": "再走南門、西門一帶。"
+              },
+              {
+                "name": "前往板橋",
+                "desc": "坐公車下山，轉新盆唐線。"
+              },
+              {
+                "name": "現代百貨·板橋咖啡",
+                "desc": "商場與科技谷咖啡館。"
+              },
+              {
+                "name": "板橋晚餐",
+                "desc": "在板橋站一帶吃晚飯。"
+              }
+            ]
           }
         }
       },
-      "slot": {
-        "morning": "上午",
-        "afternoon": "下午",
-        "evening": "傍晚"
+      "incheon": {
+        "pickLabel": "仁川推薦路線",
+        "intro": "從中華街、開港場、月尾島到松島、永宗島、江華島，用一天走完仁川。點標題即可看介紹、動線和時刻表。",
+        "guideEyebrow": "仁川路線指南",
+        "courses": {
+          "c01": {
+            "title": "中華街·開港場·月尾島路線",
+            "summary": "仁川官方觀光常推的代表動線。從中華街和自由公園開始，看開港場、新浦市場，在月尾島夜景收尾。地鐵加短程計程車很方便。",
+            "route": "中華街 → 自由公園 → 開港場 → 新浦市場 → 月尾島",
+            "tips": "仁川站（1號線、水仁盆唐）靠近中華街和開港場。去月尾島坐公車或計程車。新浦市場週末較擠。",
+            "stops": [
+              {
+                "name": "仁川中華街",
+                "desc": "從仁華門和牌樓走進巷弄。"
+              },
+              {
+                "name": "自由公園",
+                "desc": "麥克阿瑟銅像，港口與開港場一覽無遺。"
+              },
+              {
+                "name": "中華街午餐",
+                "desc": "炸醬麵、空心餅等中華街小吃。"
+              },
+              {
+                "name": "開港場文化區",
+                "desc": "西洋近代建築和博物館街。"
+              },
+              {
+                "name": "新浦國際市場",
+                "desc": "新浦雞米花和市場巷。"
+              },
+              {
+                "name": "月尾島",
+                "desc": "海邊散步、遊樂園或月尾海列車。"
+              },
+              {
+                "name": "月尾島晚餐·夜景",
+                "desc": "燈亮後看海吃晚飯。"
+              }
+            ]
+          },
+          "c02": {
+            "title": "松島國際城市路線",
+            "summary": "適合展示現代韓國城市的一天。走中央公園和Tri-bowl，在現代名品奧特萊斯歇腳，再回公園看夜景。",
+            "route": "中央公園 → Tri-bowl → 現代名品奧特萊斯 → 中央公園夜景",
+            "tips": "仁川1號線中央公園站就在公園旁。去奧特萊斯坐公車或計程車較方便。黃昏運河最適合拍照。",
+            "stops": [
+              {
+                "name": "松島中央公園",
+                "desc": "沿運河和天際線散步。"
+              },
+              {
+                "name": "松島午餐",
+                "desc": "公園周邊用餐。"
+              },
+              {
+                "name": "Tri-bowl·公園散步",
+                "desc": "碗形地標和更多水岸。"
+              },
+              {
+                "name": "現代名品奧特萊斯",
+                "desc": "品牌購物和室內休息。"
+              },
+              {
+                "name": "中央公園",
+                "desc": "黃昏回到運河邊。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "在松島餐飲街用餐。"
+              },
+              {
+                "name": "松島夜景",
+                "desc": "燈亮後的公園與高樓收尾。"
+              }
+            ]
+          },
+          "c03": {
+            "title": "永宗島·乙旺里海邊路線",
+            "summary": "適合仁川機場入境或出境前後多出來的一天。先去馬詩安海灘和海景咖啡，再去乙旺里散步、看日落、吃晚飯。",
+            "route": "馬詩安海灘 → 海景咖啡 → 乙旺里海水浴場",
+            "tips": "馬詩安在舞衣島，有橋連永宗島。海灘之間坐公車或計程車。西海潮差大，先看潮汐。",
+            "stops": [
+              {
+                "name": "馬詩安海灘",
+                "desc": "永宗·舞衣一帶的代表海灘，沙灘和咖啡街。"
+              },
+              {
+                "name": "海邊午餐",
+                "desc": "海鮮或簡單韓餐。"
+              },
+              {
+                "name": "海景咖啡",
+                "desc": "對著海度過下午。"
+              },
+              {
+                "name": "乙旺里海水浴場",
+                "desc": "轉到永宗島西岸代表海灘。"
+              },
+              {
+                "name": "海灘散步",
+                "desc": "慢慢走防波堤和沙灘。"
+              },
+              {
+                "name": "日落",
+                "desc": "等西海夕陽。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "海邊烤蛤等收尾。"
+              }
+            ]
+          },
+          "c04": {
+            "title": "永宗島·百樂達斯城路線",
+            "summary": "仁川官方觀光推介的永宗代表景點。先在百樂達斯城看藝術、購物和設施，下午轉到馬詩安海灘看日落。",
+            "route": "百樂達斯城 → 馬詩安海灘",
+            "tips": "仁川機場磁浮在百樂達斯城站停。馬詩安往舞衣島方向。當天先查度假村設施營業時間。",
+            "stops": [
+              {
+                "name": "百樂達斯城",
+                "desc": "從度假村外觀和大廳開始。"
+              },
+              {
+                "name": "午餐",
+                "desc": "在園區內用餐。"
+              },
+              {
+                "name": "藝術·購物·設施",
+                "desc": "選當天開放的展覽、商店或水療。"
+              },
+              {
+                "name": "馬詩安海灘",
+                "desc": "往舞衣島方向走沙灘。"
+              },
+              {
+                "name": "咖啡",
+                "desc": "海景咖啡休息。"
+              },
+              {
+                "name": "日落·晚餐",
+                "desc": "看完夕陽在海邊吃晚飯。"
+              }
+            ]
+          },
+          "c05": {
+            "title": "江華島歷史路線",
+            "summary": "適合關心韓國歷史、傳統文化或南北關係的旅客。先看傳燈寺和江華歷史文化圈，再到江華和平展望台。",
+            "route": "傳燈寺 → 江華歷史圈 → 江華和平展望台",
+            "tips": "江華島路程長，建議租車或搭計程車。和平展望台請先查開放時間和證件要求。",
+            "stops": [
+              {
+                "name": "傳燈寺",
+                "desc": "江華代表寺院。看大鐘樓和寺院。"
+              },
+              {
+                "name": "江華島午餐",
+                "desc": "寺院或溫水里一帶韓餐。"
+              },
+              {
+                "name": "江華歷史文化圈",
+                "desc": "看支石墓等島上遺址。"
+              },
+              {
+                "name": "江華和平展望台",
+                "desc": "眺望漢江河口和北側。"
+              },
+              {
+                "name": "咖啡",
+                "desc": "展望臺附近休息。"
+              },
+              {
+                "name": "結束",
+                "desc": "天黑前從江華大橋方向返回。"
+              }
+            ],
+            "notice": "江華和平展望台開放時間和入場條件可能變化。出發前請查仁川觀光與現場公告。"
+          },
+          "c06": {
+            "title": "江華島自然·海邊路線",
+            "summary": "從傳燈寺出發，接到東幕海灘和江華海岸。海邊咖啡、開車兜風和日落是重點。",
+            "route": "傳燈寺 → 東幕海灘 → 江華海岸",
+            "tips": "江華海岸公車很少，建議租車或搭計程車。東幕以灘塗和日落出名，先看潮汐。",
+            "stops": [
+              {
+                "name": "傳燈寺",
+                "desc": "從山寺開始一天。"
+              },
+              {
+                "name": "江華島午餐",
+                "desc": "寺院附近用餐。"
+              },
+              {
+                "name": "東幕海灘",
+                "desc": "走江華南部海灘和灘塗。"
+              },
+              {
+                "name": "海岸咖啡",
+                "desc": "對著海休息。"
+              },
+              {
+                "name": "海岸兜風",
+                "desc": "沿江華海岸公路慢慢開。"
+              },
+              {
+                "name": "日落",
+                "desc": "看西海夕陽收尾。"
+              }
+            ]
+          }
+        }
       },
-      "meal": {
-        "lunch": "午餐",
-        "dinner": "晚餐",
-        "snack": "小吃·甜點"
+      "gangwon": {
+        "pickLabel": "Gangwon curated courses",
+        "intro": "Day courses across Seoraksan and Sokcho, Gangneung’s coast, Nami Island and Chuncheon, Daegwallyeong, Yangyang, Donghae–Samcheok, and Cheorwon.",
+        "guideEyebrow": "Gangwon course guide",
+        "courses": {
+          "c01": {
+            "title": "Sokcho · Seoraksan",
+            "summary": "Seoraksan and Gwongeumseong, then Sokcho’s fish market, beach, Oeongchi coastal trail, and Daepo Port—the strongest Gangwon day.",
+            "route": "Seoraksan → Sokcho Market → Sokcho Beach → Oeongchi → Daepo Port",
+            "tips": "Check cable-car queues and weather. The market is busy at lunch. Wear walking shoes for Oeongchi.",
+            "stops": [
+              {
+                "name": "Seoraksan National Park",
+                "desc": "Start around Sogongwon and the Ulsanbawi area."
+              },
+              {
+                "name": "Cable car · Gwongeumseong",
+                "desc": "Ride up for ridge and East Sea views."
+              },
+              {
+                "name": "Sokcho Tourist Fish Market",
+                "desc": "Lunch on raw fish and market snacks."
+              },
+              {
+                "name": "Sokcho Beach",
+                "desc": "Walk the East Sea shoreline."
+              },
+              {
+                "name": "Oeongchi coastal trail",
+                "desc": "Follow the cliffside path above the waves."
+              },
+              {
+                "name": "Daepo Port",
+                "desc": "Finish with harbor views and dinner."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Gangneung sea · café",
+            "summary": "Gyeongpo Lake and Beach, Jungang Market, Anmok coffee street, and Gangmun Beach—sea and cafés, not forced history stops.",
+            "route": "Gyeongpo → Gangneung Jungang Market → Anmok → Gangmun",
+            "tips": "Anmok is crowded on weekends. Bring a layer for the wind.",
+            "stops": [
+              {
+                "name": "Gyeongpodae · Gyeongpo Lake",
+                "desc": "Walk the lake and pavilion area."
+              },
+              {
+                "name": "Gyeongpo Beach",
+                "desc": "Stroll between pines and sand."
+              },
+              {
+                "name": "Jungang Market lunch",
+                "desc": "Eat Gangneung food in the market lanes."
+              },
+              {
+                "name": "Anmok coffee street",
+                "desc": "Coffee with a sea view."
+              },
+              {
+                "name": "Gangmun Beach",
+                "desc": "Continue along the linked shoreline."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat after sunset in Gangneung."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Chuncheon · Nami Island",
+            "summary": "Nami Island, dakgalbi lunch, the Samaksan lake cable car, Uiam Lake, and downtown Chuncheon.",
+            "route": "Nami Island → Chuncheon → Samaksan cable car → Uiam Lake",
+            "tips": "Allow ferry time at Nami. Check cable-car weather closures.",
+            "stops": [
+              {
+                "name": "Nami Island",
+                "desc": "Walk the metasequoia lanes."
+              },
+              {
+                "name": "Chuncheon dakgalbi lunch",
+                "desc": "Eat spicy stir-fried chicken in town."
+              },
+              {
+                "name": "Samaksan lake cable car",
+                "desc": "Cross Uiam Lake by gondola."
+              },
+              {
+                "name": "Uiam Lake",
+                "desc": "Pause for lakeside views."
+              },
+              {
+                "name": "Chuncheon downtown",
+                "desc": "Walk Myeong-dong and the market, then dinner."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Pyeongchang · Daegwallyeong",
+            "summary": "Sheep farm, highland roads, Woljeongsa and the fir-tree path—best for visitors who want nature and snow-country scenery.",
+            "route": "Daegwallyeong → Woljeongsa → fir forest path",
+            "tips": "Check farm hours and weather. The temple path can be slippery.",
+            "stops": [
+              {
+                "name": "Daegwallyeong Sheep Farm",
+                "desc": "See sheep on the highland pasture."
+              },
+              {
+                "name": "Pyeongchang lunch",
+                "desc": "Eat near the farm or temple."
+              },
+              {
+                "name": "Daegwallyeong area",
+                "desc": "Drive the ridge for open views."
+              },
+              {
+                "name": "Woljeongsa",
+                "desc": "Visit the Odaesan temple grounds."
+              },
+              {
+                "name": "Fir forest path",
+                "desc": "Walk the thousand-year fir avenue."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Yangyang surf · coast",
+            "summary": "Naksansa, Naksan Beach, Hajodae and Surfyy Beach—a Yangyang shoreline day.",
+            "route": "Naksansa → Naksan Beach → Hajodae → Surfyy Beach",
+            "tips": "Surf beaches change with season and swell. Time the sunset.",
+            "stops": [
+              {
+                "name": "Naksansa",
+                "desc": "Temple and Uisangdae above the East Sea."
+              },
+              {
+                "name": "Yangyang lunch",
+                "desc": "Eat near Naksan."
+              },
+              {
+                "name": "Naksan Beach",
+                "desc": "Walk the sand below the temple."
+              },
+              {
+                "name": "Hajodae · Surfyy Beach",
+                "desc": "Sea stacks and surf culture."
+              },
+              {
+                "name": "Sunset · dinner",
+                "desc": "Watch the light drop, then eat."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Donghae · Samcheok coast",
+            "summary": "Chuam Candle Rock, Dokjaebi Sky Valley, and Mukho’s Nongol mural alleys.",
+            "route": "Chuam → Dokjaebi Sky Valley → Mukho Port",
+            "tips": "Sky Valley is high—skip if you dislike heights. Nongol alleys are steep.",
+            "stops": [
+              {
+                "name": "Chuam Candle Rock",
+                "desc": "See the sea stack from the lookout."
+              },
+              {
+                "name": "Chuam Beach",
+                "desc": "Walk the sand under the rock."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Squid and seafood near Chuam or Mukho."
+              },
+              {
+                "name": "Dokjaebi Sky Valley",
+                "desc": "Cliff walkways and sky attractions."
+              },
+              {
+                "name": "Mukho Port · Nongol",
+                "desc": "Murals and harbor views."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Seafood in Mukho."
+              }
+            ]
+          },
+          "c07": {
+            "title": "Cheorwon Hantangang · DMZ",
+            "summary": "Columnar-joint trail, Goseokjeong, and Cheorwon DMZ—Hantangang is on Korea’s tourism 100 list.",
+            "route": "Hantangang → Goseokjeong → Cheorwon DMZ",
+            "tips": "DMZ tours need ID, bookings, and run on set days.",
+            "stops": [
+              {
+                "name": "Hantangang columnar-joint trail",
+                "desc": "Walk the cliff path above basalt columns."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Makguksu or Korean food near Goseokjeong."
+              },
+              {
+                "name": "Goseokjeong",
+                "desc": "The river rock and park."
+              },
+              {
+                "name": "Cheorwon DMZ tour",
+                "desc": "Follow the official security-tour route."
+              },
+              {
+                "name": "End",
+                "desc": "Return from Cheorwon."
+              }
+            ]
+          }
+        }
       },
-      "placeType": {
-        "city": "城市",
-        "nature": "自然",
-        "heritage": "文化歷史",
-        "mountain": "山",
-        "beach": "海灘",
-        "lake": "湖",
-        "market": "市場"
+      "chungcheong": {
+        "pickLabel": "Chungcheong curated courses",
+        "intro": "Baekje Gongju and Buyeo, Danyang activities, Daecheon Beach, Taean sunsets, and Daejeon city.",
+        "guideEyebrow": "Chungcheong course guide",
+        "courses": {
+          "c01": {
+            "title": "Gongju Baekje history",
+            "summary": "Gongsanseong, Sanseong Market, King Muryeong’s tomb, the Gongju museum, and Jemincheon old town.",
+            "route": "Gongsanseong → Sanseong Market → Royal tombs → Gongju National Museum → Jemincheon",
+            "tips": "Check indoor tomb-museum routing. Wear walking shoes on the fortress.",
+            "stops": [
+              {
+                "name": "Gongsanseong",
+                "desc": "Walk the Baekje walls above the Geumgang."
+              },
+              {
+                "name": "Sanseong Market lunch",
+                "desc": "Eat in the market lanes."
+              },
+              {
+                "name": "Tomb of King Muryeong",
+                "desc": "Royal tombs and exhibition halls."
+              },
+              {
+                "name": "Gongju National Museum",
+                "desc": "Baekje finds from the tombs."
+              },
+              {
+                "name": "Jemincheon old town",
+                "desc": "Walk the stream and downtown alleys."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Gongju."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Buyeo Baekje history",
+            "summary": "Busosanseong, Gungnamji, Buyeo National Museum, and Jeongnimsaji—same era as Gongju, different mood.",
+            "route": "Busosanseong → Gungnamji → Buyeo National Museum → Jeongnimsaji",
+            "tips": "Busosanseong has a climb. Gungnamji is best near sunset.",
+            "stops": [
+              {
+                "name": "Busosanseong",
+                "desc": "Walk the last Baekje fortress woods."
+              },
+              {
+                "name": "Buyeo lunch",
+                "desc": "Eat near the fortress."
+              },
+              {
+                "name": "Gungnamji",
+                "desc": "Loop the palace pond."
+              },
+              {
+                "name": "Buyeo National Museum",
+                "desc": "See the gilt-bronze incense burner and more."
+              },
+              {
+                "name": "Jeongnimsaji",
+                "desc": "Five-story pagoda and temple site."
+              },
+              {
+                "name": "Buyeo downtown",
+                "desc": "Dinner in town."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Danyang nature · activities",
+            "summary": "Dodamsambong, Mancheonha Skywalk, the river trail, paragliding or Café San, then Guyeong Market.",
+            "route": "Dodamsambong → Mancheonha Skywalk → Danyanggang trail → paragliding → market",
+            "tips": "Skywalk and paragliding need weather and bookings.",
+            "stops": [
+              {
+                "name": "Dodamsambong",
+                "desc": "Three river peaks from the lookout."
+              },
+              {
+                "name": "Mancheonha Skywalk",
+                "desc": "Glass walk over the cliff."
+              },
+              {
+                "name": "Danyang lunch",
+                "desc": "Garlic and local stews in town."
+              },
+              {
+                "name": "Danyanggang trail",
+                "desc": "Cliff path beside the river."
+              },
+              {
+                "name": "Paragliding or Café San",
+                "desc": "Fly or take in the view from Café San."
+              },
+              {
+                "name": "Guyeong Market",
+                "desc": "Snacks and souvenirs."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Boryeong Daecheon Beach",
+            "summary": "Beach, seafood, Sky Bike, cafés, and a West Sea sunset—strong in summer; Mud Festival keeps it famous.",
+            "route": "Daecheon Beach → Sky Bike → shore → sunset",
+            "tips": "Summer and festival days are packed. Check Sky Bike hours.",
+            "stops": [
+              {
+                "name": "Daecheon Beach",
+                "desc": "Open the day on the West Sea sand."
+              },
+              {
+                "name": "Seafood lunch",
+                "desc": "Eat near the beach."
+              },
+              {
+                "name": "Daecheon Sky Bike",
+                "desc": "Ride the coastal rail bike."
+              },
+              {
+                "name": "Beach café",
+                "desc": "Coffee with a sea view."
+              },
+              {
+                "name": "Shore walk",
+                "desc": "Walk the sand before dusk."
+              },
+              {
+                "name": "Sunset",
+                "desc": "West Sea colors."
+              },
+              {
+                "name": "Dinner",
+                "desc": "More seafood in Daecheon."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Taean West Sea sunset",
+            "summary": "Anmyeondo and Kkotji Beach, cafés, and the famous rock sunset—theme the day around sea and light.",
+            "route": "Anmyeondo → Kkotji Beach → West Sea sunset",
+            "tips": "Aim for the Halmi/Harabi rocks at sunset. Transit is thin.",
+            "stops": [
+              {
+                "name": "Anmyeondo forest or Kkotji",
+                "desc": "Start in the woods or at Kkotji."
+              },
+              {
+                "name": "Taean lunch",
+                "desc": "Eat on Anmyeondo."
+              },
+              {
+                "name": "Kkotji Beach",
+                "desc": "Walk toward the twin sea rocks."
+              },
+              {
+                "name": "Café · coast walk",
+                "desc": "Pause, then walk again."
+              },
+              {
+                "name": "Kkotji sunset",
+                "desc": "Sun dropping between the rocks."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Taean."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Daejeon city · science",
+            "summary": "National Science Museum, Expo Hanbit Tower, Seongsimdang and Jungang-ro, then old downtown—useful near Cheongju Airport and KTX.",
+            "route": "Science Museum → Expo → Seongsimdang → old Daejeon",
+            "tips": "Seongsimdang queues on weekends. Check museum hours.",
+            "stops": [
+              {
+                "name": "National Science Museum",
+                "desc": "Hands-on exhibitions."
+              },
+              {
+                "name": "Daejeon lunch",
+                "desc": "Kalguksu or Korean food near Expo."
+              },
+              {
+                "name": "Expo Park · Hanbit Tower",
+                "desc": "Walk the plaza and tower."
+              },
+              {
+                "name": "Seongsimdang · Jungang-ro",
+                "desc": "Famous bread, then the main street."
+              },
+              {
+                "name": "Old downtown",
+                "desc": "Eunhaeng-dong and Daeheung-dong."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in the old center."
+              }
+            ]
+          }
+        }
       },
-      "save": "儲存到本裝置",
-      "saveDone": "已儲存到本裝置",
-      "saveFail": "無法儲存，請檢查瀏覽器儲存設定。",
-      "savedTitle": "本裝置已儲存的路線",
-      "savedEmpty": "還沒有儲存的路線。取得推薦後，點書籤圖示即可儲存到本裝置。",
-      "savedLocalNote": "無需帳號，僅儲存在本手機/電腦的瀏覽器中，不會上傳到伺服器，其他裝置或瀏覽器看不到。",
-      "savedAt": "儲存於 {when}",
-      "openSaved": "查看",
-      "deleteSaved": "刪除",
-      "savedViewTitle": "本裝置已儲存的路線",
-      "timelineTitle": "分時段行程路線",
-      "moveTransit": "↓ 大眾運輸前往",
-      "moveRent": "↓ 自駕／租車前往",
-      "moveMix": "↓ 大眾運輸或自駕前往",
-      "stayRelax": "悠閒遊覽（約2–3小時）",
-      "stayBalanced": "適中遊覽（約1.5–2小時）",
-      "stayActive": "快速打卡（約1–1.5小時）",
-      "moveDetail": "↓ 約{minutes}分鐘 · {mode}（{from} → {to}）",
-      "durationStay": "約{minutes}分鐘",
-      "doLabel": "怎麼玩",
-      "howLabel": "怎麼去",
-      "introLabel": "介紹",
-      "placeFallbackDesc": "{name} — {region}的代表性{type}。",
-      "howFallback": "在Kakao Map或Naver Map搜尋「{name}」查看交通與步行路線。",
-      "mealFallbackDesc": "{name} — 當地人氣美食。可在指南頁面查看餐廳資訊。",
-      "activity": {
-        "default": "巡覽代表景點、拍照，並享受周邊散步和購物。",
-        "city": "街景漫步、購物、咖啡、夜景和拍照。",
-        "heritage": "慢慢參觀宮殿/寺廟、博物館，體驗韓服等。",
-        "nature": "沿步道和觀景點拍照，在公園休息。",
-        "mountain": "以登山、展望台、纜車（如有）為主，依天氣和體力調整。",
-        "beach": "海邊散步、拍海景、欣賞日落和夜景。",
-        "lake": "湖邊散步、騎行或輕鬆野餐。",
-        "market": "逛當地美食和特產，嚐嚐街頭小吃。"
+      "jeolla": {
+        "pickLabel": "Jeolla curated courses",
+        "intro": "Jeonju Hanok Village, Yeosu night sea, Suncheon Bay, Damyang bamboo, Boseong tea, and Mokpo’s modern port streets.",
+        "guideEyebrow": "Jeolla course guide",
+        "courses": {
+          "c01": {
+            "title": "Jeonju Hanok Village",
+            "summary": "Village, Gyeonggijeon, bibimbap, Jeondong Cathedral, Omokdae, hanok cafés, and Nambu Market—the first Jeolla pick.",
+            "route": "Hanok Village → Gyeonggijeon → Jeondong Cathedral → Omokdae → Nambu Market",
+            "tips": "Rent hanbok in the morning. Weekends are packed.",
+            "stops": [
+              {
+                "name": "Jeonju Hanok Village",
+                "desc": "Walk the tiled-roof lanes."
+              },
+              {
+                "name": "Gyeonggijeon",
+                "desc": "Shrine of Taejo’s portrait."
+              },
+              {
+                "name": "Bibimbap lunch",
+                "desc": "Jeonju bibimbap or Korean food."
+              },
+              {
+                "name": "Jeondong Cathedral",
+                "desc": "Red-brick church among hanok."
+              },
+              {
+                "name": "Omokdae",
+                "desc": "Hill view over the village."
+              },
+              {
+                "name": "Hanok café · craft",
+                "desc": "Tea or a short traditional workshop."
+              },
+              {
+                "name": "Nambu Market · Youth Mall",
+                "desc": "Evening market and youth mall."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Jeonju Korean food."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Yeosu sea · night views",
+            "summary": "Odongdo, seafood, cable car, Dolsan Park, Yi Sun-sin Square, Nangman pocha, and the night sea.",
+            "route": "Odongdo → cable car → Dolsan Park → Yi Sun-sin Square → night sea",
+            "tips": "Cable-car waits run long. Pocha streets open later.",
+            "stops": [
+              {
+                "name": "Odongdo",
+                "desc": "Camellia paths and the breakwater."
+              },
+              {
+                "name": "Seafood lunch",
+                "desc": "Gejang and fish in Yeosu."
+              },
+              {
+                "name": "Marine cable car",
+                "desc": "Gondolas over the water."
+              },
+              {
+                "name": "Dolsan Park",
+                "desc": "City and sea from the hill."
+              },
+              {
+                "name": "Yi Sun-sin Square",
+                "desc": "Hamel lighthouse and the waterfront."
+              },
+              {
+                "name": "Nangman pocha street",
+                "desc": "Casual evening drinks and snacks."
+              },
+              {
+                "name": "Yeosu night sea",
+                "desc": "Lit harbor views."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Suncheon garden · wetland",
+            "summary": "Suncheon Bay National Garden, the wetland, Yongsan Observatory, and sunset—the nature day in Jeolla.",
+            "route": "National Garden → Suncheon Bay wetland → Yongsan Observatory",
+            "tips": "Garden and wetland sit apart; plan transfer time.",
+            "stops": [
+              {
+                "name": "National Garden",
+                "desc": "Walk lakes and themed gardens."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Eat between garden and wetland."
+              },
+              {
+                "name": "Suncheon Bay wetland",
+                "desc": "Reed boardwalks."
+              },
+              {
+                "name": "Yongsan Observatory",
+                "desc": "The whole wetland from above."
+              },
+              {
+                "name": "Sunset",
+                "desc": "Golden reeds at dusk."
+              },
+              {
+                "name": "Suncheon dinner",
+                "desc": "Eat in town."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Damyang bamboo",
+            "summary": "Juknokwon, Gwanbangjerim, tteokgalbi, the metasequoia road, cafés, and Metaprovence.",
+            "route": "Juknokwon → Gwanbangjerim → Metasequoia Road → Metaprovence",
+            "tips": "Use the pedestrian side of the tree road.",
+            "stops": [
+              {
+                "name": "Juknokwon",
+                "desc": "Bamboo forest paths."
+              },
+              {
+                "name": "Gwanbangjerim",
+                "desc": "Riverside zelkova grove."
+              },
+              {
+                "name": "Tteokgalbi · bamboo rice",
+                "desc": "Damyang lunch specialties."
+              },
+              {
+                "name": "Metasequoia Road",
+                "desc": "Photo stop under the trees."
+              },
+              {
+                "name": "Damyang café",
+                "desc": "Rest near the road."
+              },
+              {
+                "name": "Metaprovence",
+                "desc": "European-style shops."
+              },
+              {
+                "name": "End",
+                "desc": "Head back from Damyang."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Boseong tea · coast",
+            "summary": "Green-tea terraces, a tea café, then Yulpo Beach—easy to photograph.",
+            "route": "Boseong tea fields → Yulpo Beach",
+            "tips": "Follow field photo rules. Yulpo can be windy.",
+            "stops": [
+              {
+                "name": "Boseong tea fields",
+                "desc": "Walk the terraces."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Hot-pot rice near the fields."
+              },
+              {
+                "name": "Tea café",
+                "desc": "Green-tea drinks and sweets."
+              },
+              {
+                "name": "Yulpo Beach",
+                "desc": "Drop down to the shore."
+              },
+              {
+                "name": "Coast walk",
+                "desc": "Slow walk at Yulpo."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat near Boseong or Beolgyo."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Mokpo modern streets · sea",
+            "summary": "Modern historic district, marine cable car, Yudalsan, Gatbawi and Peace Plaza, seafood dinner.",
+            "route": "Modern streets → cable car → Yudalsan → Peace Plaza",
+            "tips": "Yudalsan is a climb. Cable cars pause in wind.",
+            "stops": [
+              {
+                "name": "Modern historic district",
+                "desc": "Colonial-era streets."
+              },
+              {
+                "name": "Mokpo lunch",
+                "desc": "Gukbap or Korean food."
+              },
+              {
+                "name": "Marine cable car",
+                "desc": "Ride over the water."
+              },
+              {
+                "name": "Yudalsan",
+                "desc": "City and archipelago views."
+              },
+              {
+                "name": "Gatbawi · Peace Plaza",
+                "desc": "Coast and hat-shaped rocks."
+              },
+              {
+                "name": "Seafood dinner",
+                "desc": "Fish market and harbor."
+              }
+            ]
+          }
+        }
       },
-      "mealActivity": {
-        "lunch": "在附近餐廳慢慢用餐，為下午行程做準備。",
-        "dinner": "用當地人氣料理結束一天。",
-        "snack": "用咖啡、甜點或街頭小吃稍作休息，補充體力。"
+      "busan": {
+        "pickLabel": "Busan curated courses",
+        "intro": "Haeundae and Gwangalli, Gamcheon and Jagalchi, Songdo and Yeongdo, Haedong Yonggungsa in Gijang, and Seomyeon–Jeonpo.",
+        "guideEyebrow": "Busan course guide",
+        "courses": {
+          "c01": {
+            "title": "Haeundae · Cheongsapo · Gwangalli",
+            "summary": "The first-visit Busan day: Haeundae, Dongbaekseom, Blueline Park, Cheongsapo observatory, Gwangalli night.",
+            "route": "Haeundae → Dongbaekseom → Cheongsapo → Gwangalli",
+            "tips": "Check Blueline waits. Gwangandaegyo looks best from the beach at night.",
+            "stops": [
+              {
+                "name": "Haeundae Beach",
+                "desc": "Start on Busan’s famous sand."
+              },
+              {
+                "name": "Dongbaekseom · The Bay 101",
+                "desc": "Camellia island and Marine City views."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Milmyeon or raw fish in Haeundae."
+              },
+              {
+                "name": "Blueline Park · Cheongsapo",
+                "desc": "Coastal train toward Cheongsapo."
+              },
+              {
+                "name": "Cheongsapo observatory",
+                "desc": "Cliff lookout over the East Sea."
+              },
+              {
+                "name": "Gwangalli Beach",
+                "desc": "Bridge views across the bay."
+              },
+              {
+                "name": "Dinner · bridge lights",
+                "desc": "Eat with Gwangandaegyo lit up."
+              }
+            ]
+          },
+          "c02": {
+            "title": "Gamcheon · Jagalchi · Nampo",
+            "summary": "Culture village, fish market, BIFF Square, Gukje Market, Yongdusan, Nampo—old Busan in one day.",
+            "route": "Gamcheon → Jagalchi → BIFF Square → Gukje Market → Yongdusan → Nampo",
+            "tips": "Gamcheon is steep. Jagalchi peaks at lunch.",
+            "stops": [
+              {
+                "name": "Gamcheon Culture Village",
+                "desc": "Painted alleys and views."
+              },
+              {
+                "name": "Jagalchi Market lunch",
+                "desc": "Fish and seafood in the market."
+              },
+              {
+                "name": "BIFF Square",
+                "desc": "Handprints and cinema square."
+              },
+              {
+                "name": "Gukje Market",
+                "desc": "Packed traditional stalls."
+              },
+              {
+                "name": "Yongdusan · Busan Tower",
+                "desc": "Tower and port outlook."
+              },
+              {
+                "name": "Nampo",
+                "desc": "Old downtown streets."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Dwaeji-gukbap in Nampo."
+              }
+            ]
+          },
+          "c03": {
+            "title": "Songdo · Yeongdo coast",
+            "summary": "Songdo Beach, marine cable car, Amnam Park, Huinnyeoul Village, Yeongdo cafés.",
+            "route": "Songdo Beach → cable car → Amnam Park → Huinnyeoul → Yeongdo",
+            "tips": "Cable cars pause in wind. Huinnyeoul alleys are steep and narrow.",
+            "stops": [
+              {
+                "name": "Songdo Beach",
+                "desc": "West Busan sand."
+              },
+              {
+                "name": "Songdo marine cable car",
+                "desc": "Gondolas over the water."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Gukbap near Songdo or Yeongdo."
+              },
+              {
+                "name": "Amnam Park",
+                "desc": "Headland paths at Songdo."
+              },
+              {
+                "name": "Huinnyeoul Culture Village",
+                "desc": "Cliff houses above the sea."
+              },
+              {
+                "name": "Yeongdo café",
+                "desc": "Coffee on the island."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat on Yeongdo."
+              }
+            ]
+          },
+          "c04": {
+            "title": "Gijang · Haedong Yonggungsa",
+            "summary": "Temple in the waves, Gijang coast, Osiria, cafés, sunset.",
+            "route": "Haedong Yonggungsa → Gijang coast → Osiria → coast café",
+            "tips": "Go early to the temple. Sunset is best on the Gijang shore.",
+            "stops": [
+              {
+                "name": "Haedong Yonggungsa",
+                "desc": "Temple beside the surf."
+              },
+              {
+                "name": "Gijang coast",
+                "desc": "Rocks around the temple."
+              },
+              {
+                "name": "Seafood lunch",
+                "desc": "Crab and fish in Gijang."
+              },
+              {
+                "name": "Ananti · Osiria",
+                "desc": "Resort and outlet cluster."
+              },
+              {
+                "name": "Coast café",
+                "desc": "Sea-view coffee."
+              },
+              {
+                "name": "Gijang sunset",
+                "desc": "Evening light on the water."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Eat in Gijang."
+              }
+            ]
+          },
+          "c05": {
+            "title": "Yeongdo focus",
+            "summary": "Taejongdae, Huinnyeoul, Jeolyeong coastal trail, cafés, Busan Port night—slow sea day.",
+            "route": "Taejongdae → Huinnyeoul → Jeolyeong trail → Yeongdo café",
+            "tips": "Choose the Danubi train or walking paths at Taejongdae.",
+            "stops": [
+              {
+                "name": "Taejongdae",
+                "desc": "Cliffs and lighthouse at Yeongdo’s tip."
+              },
+              {
+                "name": "Yeongdo lunch",
+                "desc": "Baekban or gukbap."
+              },
+              {
+                "name": "Huinnyeoul Culture Village",
+                "desc": "Cliff village walk."
+              },
+              {
+                "name": "Jeolyeong coastal trail",
+                "desc": "Southern boardwalk."
+              },
+              {
+                "name": "Yeongdo café",
+                "desc": "Another sea-view stop."
+              },
+              {
+                "name": "Port night · dinner",
+                "desc": "Harbor lights."
+              }
+            ]
+          },
+          "c06": {
+            "title": "Seomyeon · Jeonpo local",
+            "summary": "Seomyeon, Jeonpo cafés and shops, shopping, dinner, and night streets—how younger Busan actually hangs out.",
+            "route": "Seomyeon → Jeonpo → Seomyeon",
+            "tips": "Jeonpo is spread out. Nights crowd Seomyeon’s underground mall.",
+            "stops": [
+              {
+                "name": "Seomyeon",
+                "desc": "Busan’s crossroads."
+              },
+              {
+                "name": "Lunch",
+                "desc": "Milmyeon or gukbap."
+              },
+              {
+                "name": "Jeonpo café street",
+                "desc": "Cafés and small stores."
+              },
+              {
+                "name": "Concept shops",
+                "desc": "Independent shops in the alleys."
+              },
+              {
+                "name": "Seomyeon shopping",
+                "desc": "Malls and underground arcades."
+              },
+              {
+                "name": "Dinner",
+                "desc": "Busan food in Seomyeon."
+              },
+              {
+                "name": "Seomyeon night",
+                "desc": "Neon and late streets."
+              }
+            ]
+          }
+        }
       },
-      "modeTransit": "大眾運輸",
-      "modeRent": "自駕",
-      "modeMix": "大眾運輸／自駕"
-    }
+      "gyeongsang": {
+        "pickLabel": "慶尚推薦路線",
+        "intro": "慶州、安東河回、統營、巨濟外島、浦項、大邱、蔚山、海印寺。釜山在單獨分頁。",
+        "guideEyebrow": "慶尚路線指南",
+        "courses": {
+          "c01": {
+            "title": "慶州新羅路線",
+            "summary": "佛國寺、黃里團路午餐、大陵苑、瞻星臺、校村與月精橋，東宮月池夜景。",
+            "route": "佛國寺 → 黃里團路 → 大陵苑 → 瞻星臺 → 校村·月精橋 → 東宮月池",
+            "tips": "佛國寺早晨較清靜。確認東宮月池夜間開放。市區公車計程車。",
+            "stops": [
+              {
+                "name": "佛國寺",
+                "desc": "慢走伽藍；石窟庵需另購票上山。"
+              },
+              {
+                "name": "黃里團路午餐",
+                "desc": "韓屋巷裡的包飯或韓餐。"
+              },
+              {
+                "name": "大陵苑",
+                "desc": "走天馬塚一帶古墳。"
+              },
+              {
+                "name": "瞻星臺",
+                "desc": "近看新羅天文臺。"
+              },
+              {
+                "name": "校村·月精橋",
+                "desc": "韓屋村與復原橋。"
+              },
+              {
+                "name": "東宮月池夜景",
+                "desc": "亮燈蓮池收尾。"
+              }
+            ]
+          },
+          "c02": {
+            "title": "安東河回路線",
+            "summary": "芙蓉臺俯瞰河回村，午餐後面具博物館、屏山書院、月映橋。建議自駕。",
+            "route": "芙蓉臺 → 河回村 → 午餐 → 面具博物館 → 屏山書院 → 月映橋 → 晚餐",
+            "tips": "河回需門票。屏山書院需從村子開車。月映橋日落後最美。",
+            "stops": [
+              {
+                "name": "芙蓉臺",
+                "desc": "俯瞰洛東江對岸的河回。"
+              },
+              {
+                "name": "河回村",
+                "desc": "走聯合國教科文民俗村。"
+              },
+              {
+                "name": "安東午餐",
+                "desc": "燉雞或虛祭祀飯。"
+              },
+              {
+                "name": "河回面具博物館",
+                "desc": "看面具並確認演出。"
+              },
+              {
+                "name": "屏山書院",
+                "desc": "晚對樓與江邊書院。"
+              },
+              {
+                "name": "月映橋",
+                "desc": "走湖上木橋。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "安東鹹鯖魚收尾。"
+              }
+            ]
+          },
+          "c03": {
+            "title": "統營路線",
+            "summary": "統營纜車與彌勒山展望、中央市場午餐、東避梁、江口灣、李舜臣公園。",
+            "route": "纜車 → 彌勒山 → 中央市場 → 東避梁 → 江口灣 → 李舜臣公園 → 晚餐",
+            "tips": "纜車常排隊。東避梁坡陡。忠武紫菜包飯是經典午餐。",
+            "stops": [
+              {
+                "name": "統營纜車",
+                "desc": "上彌勒山。"
+              },
+              {
+                "name": "彌勒山展望",
+                "desc": "俯瞰閑麗水道。"
+              },
+              {
+                "name": "中央市場午餐",
+                "desc": "忠武紫菜包飯。"
+              },
+              {
+                "name": "東避梁壁畫村",
+                "desc": "走坡上壁畫巷。"
+              },
+              {
+                "name": "江口灣",
+                "desc": "東避梁下的港口。"
+              },
+              {
+                "name": "李舜臣公園",
+                "desc": "走統營海濱。"
+              },
+              {
+                "name": "統營晚餐",
+                "desc": "海鮮收尾。"
+              }
+            ]
+          },
+          "c04": {
+            "title": "巨濟外島路線",
+            "summary": "遊輪看海金剛與外島植物園，巨濟午餐後風之丘、神仙臺。外島班船看天氣。",
+            "route": "碼頭 → 海金剛 → 外島植物園 → 午餐 → 風之丘 → 神仙臺 → 晚餐",
+            "tips": "外島船遇惡劣天氣停航，務必確認當日班次。巨濟海岸建議租車。",
+            "stops": [
+              {
+                "name": "遊輪碼頭",
+                "desc": "上外島船。"
+              },
+              {
+                "name": "海金剛",
+                "desc": "甲板上的奇岩。"
+              },
+              {
+                "name": "外島植物園",
+                "desc": "走島上花園。"
+              },
+              {
+                "name": "巨濟午餐",
+                "desc": "海鮮。"
+              },
+              {
+                "name": "風之丘",
+                "desc": "草原與海。"
+              },
+              {
+                "name": "神仙臺",
+                "desc": "再看海岸奇岩。"
+              },
+              {
+                "name": "巨濟晚餐",
+                "desc": "市區韓餐。"
+              }
+            ],
+            "notice": "外島植物園遊輪遇大浪、霧、大風會停航或改線，出發前請查船公司。"
+          },
+          "c05": {
+            "title": "浦項太空步道路線",
+            "summary": "竹島市場午餐、迎日臺海灘、太空步道、海景咖啡、迎日臺夜景。",
+            "route": "竹島市場 → 午餐 → 迎日臺 → 太空步道 → 咖啡 → 夜景",
+            "tips": "太空步道有身高健康限制和排隊。竹島上午最熱鬧。從浦項站搭公車。",
+            "stops": [
+              {
+                "name": "竹島市場",
+                "desc": "走水產巷。"
+              },
+              {
+                "name": "午餐",
+                "desc": "水回（冷海鮮湯）。"
+              },
+              {
+                "name": "迎日臺海水浴場",
+                "desc": "沙灘與海岸。"
+              },
+              {
+                "name": "太空步道",
+                "desc": "環湖公園滑梯展望臺。"
+              },
+              {
+                "name": "海景咖啡",
+                "desc": "看海休息。"
+              },
+              {
+                "name": "迎日臺夜景",
+                "desc": "海岸燈光收尾。"
+              }
+            ]
+          },
+          "c06": {
+            "title": "浦項虎尾串·九龍浦路線",
+            "summary": "虎尾串、九龍浦日式家屋街、午餐、港口、海景咖啡，再回浦項。建議自駕。",
+            "route": "虎尾串 → 日式家屋街 → 午餐 → 九龍浦港 → 咖啡 → 返回浦項",
+            "tips": "虎尾串是日出點，早晨可能擠。九龍浦停車巷子窄。公車班次少。",
+            "stops": [
+              {
+                "name": "虎尾串",
+                "desc": "相生之手與朝鮮半島最東端。"
+              },
+              {
+                "name": "日式家屋街",
+                "desc": "走日據時期木屋巷。"
+              },
+              {
+                "name": "九龍浦午餐",
+                "desc": "過鯷魚與海鮮。"
+              },
+              {
+                "name": "九龍浦港",
+                "desc": "看漁港。"
+              },
+              {
+                "name": "咖啡·海岸",
+                "desc": "看海休息。"
+              },
+              {
+                "name": "返回浦項",
+                "desc": "天黑前返回。"
+              }
+            ]
+          },
+          "c07": {
+            "title": "大邱路線",
+            "summary": "西門市場午餐、近代文化巷、東城路、前山展望臺與夜景。捷運方便。",
+            "route": "西門市場 → 午餐 → 近代巷 → 東城路 → 前山展望臺 → 夜景",
+            "tips": "西門以早市為主。東城路可步行。前山有纜車和公車。",
+            "stops": [
+              {
+                "name": "西門市場",
+                "desc": "大邱代表傳統市場。"
+              },
+              {
+                "name": "大邱午餐",
+                "desc": "烤肥腸或湯飯。"
+              },
+              {
+                "name": "近代文化巷",
+                "desc": "桂山洞近代建築。"
+              },
+              {
+                "name": "東城路",
+                "desc": "大邱中心購物街。"
+              },
+              {
+                "name": "前山展望臺",
+                "desc": "俯瞰市區。"
+              },
+              {
+                "name": "前山夜景",
+                "desc": "夜景與晚餐。"
+              }
+            ]
+          },
+          "c08": {
+            "title": "蔚山路線",
+            "summary": "太和江國家庭園午餐、大王岩公園、日山海水浴場、海岸散步與晚餐。",
+            "route": "太和江庭園 → 午餐 → 大王岩公園 → 日山海灘 → 海岸散步 → 晚餐",
+            "tips": "庭園與大王岩有距離，需公車或計程車。大王岩海岸步道較長。",
+            "stops": [
+              {
+                "name": "太和江國家庭園",
+                "desc": "十里竹林與江邊。"
+              },
+              {
+                "name": "蔚山午餐",
+                "desc": "彦陽烤肉等韓餐。"
+              },
+              {
+                "name": "大王岩公園",
+                "desc": "奇岩海岸與燈塔。"
+              },
+              {
+                "name": "日山海水浴場",
+                "desc": "大王岩旁沙灘。"
+              },
+              {
+                "name": "海岸散步",
+                "desc": "防波堤與海岸。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "海岸海鮮。"
+              }
+            ]
+          },
+          "c09": {
+            "title": "陜川海印寺路線",
+            "summary": "海印寺與八萬大藏經、伽倻山散步與咖啡。寺院一日。結束站無照片。",
+            "route": "海印寺 → 午餐 → 八萬大藏經 → 伽倻山散步 → 咖啡 → 結束",
+            "tips": "藏經板殿限制室內拍照。山菜套餐是經典午餐。陜川靠租車或長途汽車。",
+            "stops": [
+              {
+                "name": "海印寺",
+                "desc": "伽倻山下的古寺。"
+              },
+              {
+                "name": "午餐",
+                "desc": "山菜韓餐。"
+              },
+              {
+                "name": "八萬大藏經",
+                "desc": "藏經板殿與寺內。"
+              },
+              {
+                "name": "伽倻山散步",
+                "desc": "寺周林道短走。"
+              },
+              {
+                "name": "咖啡·休息",
+                "desc": "下山後喝茶。"
+              },
+              {
+                "name": "結束",
+                "desc": "天黑前返回大邱或光州。"
+              }
+            ]
+          }
+        }
+      },
+      "jeju": {
+        "pickLabel": "濟州推薦路線",
+        "intro": "城山牛島、挾才涯月、西歸浦瀑布、中文、漢拏山、濟州市市場、東部岳、山房山，用一天走濟州。",
+        "guideEyebrow": "濟州路線指南",
+        "courses": {
+          "c01": {
+            "title": "城山東路線",
+            "summary": "城山日出峰與涉地可支、午餐、水族館或咖啡、光崎海灘、城山晚餐。",
+            "route": "城山日出峰 → 涉地可支 → 午餐 → 水族館 → 光崎 → 晚餐",
+            "tips": "日出峰早晨較清靜。登頂臺階很陡。確認水族館時間。",
+            "stops": [
+              {
+                "name": "城山日出峰",
+                "desc": "登上火山口山脊。"
+              },
+              {
+                "name": "涉地可支",
+                "desc": "走草原與海岸奇岩。"
+              },
+              {
+                "name": "城山午餐",
+                "desc": "海鮮砂鍋等。"
+              },
+              {
+                "name": "水族館或咖啡",
+                "desc": "選水族館或海景咖啡。"
+              },
+              {
+                "name": "光崎海灘",
+                "desc": "面對日出峰的沙灘。"
+              },
+              {
+                "name": "城山晚餐",
+                "desc": "濟州黑豬收尾。"
+              }
+            ]
+          },
+          "c02": {
+            "title": "牛島一日路線",
+            "summary": "從城山港上牛島，環島海岸、午餐、劍末勒與下古水、花生冰淇淋，再回城山。",
+            "route": "城山港 → 上島 → 環島 → 午餐 → 劍末勒 → 冰淇淋 → 返回",
+            "tips": "牛島船遇大浪停航。島上電動車、滑板車最方便。別誤末班船。",
+            "stops": [
+              {
+                "name": "城山港",
+                "desc": "上牛島船。"
+              },
+              {
+                "name": "上島",
+                "desc": "下島開始一天。"
+              },
+              {
+                "name": "環島海岸",
+                "desc": "東崖與西灘。"
+              },
+              {
+                "name": "午餐",
+                "desc": "海鮮。"
+              },
+              {
+                "name": "劍末勒·下古水",
+                "desc": "黑卵石或白沙。"
+              },
+              {
+                "name": "花生冰淇淋",
+                "desc": "牛島花生甜品。"
+              },
+              {
+                "name": "返回城山",
+                "desc": "坐末班船回來。"
+              }
+            ],
+            "notice": "牛島客船可能因浪、霧、大風停航。請當天確認城山港船班，不要錯過末班返回船。"
+          },
+          "c03": {
+            "title": "挾才西部路線",
+            "summary": "挾才與金能海灘、翰林午餐、雪綠茶博物館、西部咖啡、日落。",
+            "route": "挾才 → 金能 → 翰林午餐 → 雪綠 → 咖啡 → 日落",
+            "tips": "挾才可見飛揚島的碧海。雪綠或收門票。日落以海岸公路為正統。",
+            "stops": [
+              {
+                "name": "挾才海水浴場",
+                "desc": "碧海與飛揚島。"
+              },
+              {
+                "name": "金能海灘",
+                "desc": "再走旁邊沙灘。"
+              },
+              {
+                "name": "翰林午餐",
+                "desc": "肉麵。"
+              },
+              {
+                "name": "雪綠茶博物館",
+                "desc": "茶田與博物館。"
+              },
+              {
+                "name": "西部咖啡",
+                "desc": "茶與甜點。"
+              },
+              {
+                "name": "海岸日落",
+                "desc": "西部晚霞。"
+              }
+            ]
+          },
+          "c04": {
+            "title": "涯月閑潭路線",
+            "summary": "涯月海岸公路與閑潭步道、午餐、咖啡街、郭支海灘、日落與晚餐。",
+            "route": "涯月海岸 → 閑潭 → 午餐 → 咖啡街 → 郭支 → 日落 → 晚餐",
+            "tips": "閑潭單行且停車緊。咖啡街週末排隊。建議租車。",
+            "stops": [
+              {
+                "name": "涯月海岸公路",
+                "desc": "沿海慢開。"
+              },
+              {
+                "name": "閑潭海岸步道",
+                "desc": "走玄武岩海岸。"
+              },
+              {
+                "name": "涯月午餐",
+                "desc": "海鮮或韓餐。"
+              },
+              {
+                "name": "咖啡街",
+                "desc": "涯月咖啡巷。"
+              },
+              {
+                "name": "郭支海水浴場",
+                "desc": "寬沙灘休息。"
+              },
+              {
+                "name": "日落",
+                "desc": "海岸晚霞。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "黑豬收尾。"
+              }
+            ]
+          },
+          "c05": {
+            "title": "西歸浦瀑布路線",
+            "summary": "正房瀑布、西歸浦市區與偶來市場午餐、天地淵瀑布、新緣橋與新島、西歸浦海岸晚餐。",
+            "route": "正房瀑布 → 市區 → 偶來市場 → 天地淵 → 新緣橋 → 海岸 → 晚餐",
+            "tips": "正房瀑布墜入海中。確認天地淵晚間開放。市區可步行。",
+            "stops": [
+              {
+                "name": "正房瀑布",
+                "desc": "墜入海的瀑布。"
+              },
+              {
+                "name": "西歸浦市區",
+                "desc": "走港口小鎮。"
+              },
+              {
+                "name": "偶來市場午餐",
+                "desc": "嘉臘魚或韓餐。"
+              },
+              {
+                "name": "天地淵瀑布",
+                "desc": "慢看林中瀑布。"
+              },
+              {
+                "name": "新緣橋·新島",
+                "desc": "走橋與島步道。"
+              },
+              {
+                "name": "西歸浦海岸",
+                "desc": "海岸公路。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "黑豬收尾。"
+              }
+            ]
+          },
+          "c06": {
+            "title": "中文路線",
+            "summary": "柱狀節理與中文海灘、午餐、如美地植物園或博物館、中文觀光區、海景咖啡與晚餐。",
+            "route": "柱狀節理 → 中文海灘 → 午餐 → 如美地 → 觀光區 → 咖啡 → 晚餐",
+            "tips": "柱狀節理浪大。中文觀光區很大，搭接駁或計程車。只走中文，不要混其他景點。",
+            "stops": [
+              {
+                "name": "柱狀節理",
+                "desc": "看海岸玄武岩柱。"
+              },
+              {
+                "name": "中文海水浴場",
+                "desc": "走黑沙灘。"
+              },
+              {
+                "name": "午餐",
+                "desc": "海鮮。"
+              },
+              {
+                "name": "如美地或博物館",
+                "desc": "溫室花園或室內展覽。"
+              },
+              {
+                "name": "中文觀光區",
+                "desc": "走度假區。"
+              },
+              {
+                "name": "海岸咖啡",
+                "desc": "看海休息。"
+              },
+              {
+                "name": "晚餐",
+                "desc": "黑豬收尾。"
+              }
+            ]
+          },
+          "c07": {
+            "title": "漢拏山路線",
+            "summary": "純登山日。黎明從城板岳或觀音寺出發，到山頂或上世岳，下山後黑豬晚餐。不要混其他觀光。",
+            "route": "登山開始 → 山頂/上世岳 → 下山 → 黑豬晚餐",
+            "tips": "城板岳、觀音寺需預約。天氣或體力不夠就改上世岳。不要加入其他景點。",
+            "stops": [
+              {
+                "name": "登山開始",
+                "desc": "進入城板岳或觀音寺步道。"
+              },
+              {
+                "name": "山頂或上世岳",
+                "desc": "在白鹿潭或上世岳休息。"
+              },
+              {
+                "name": "下山",
+                "desc": "沿同一條步道下來。"
+              },
+              {
+                "name": "黑豬晚餐",
+                "desc": "在山下餐廳恢復體力。"
+              }
+            ],
+            "notice": "漢拏山城板岳、觀音寺需提前預約，當天現場可能進不去。請查國家公園公告。"
+          },
+          "c08": {
+            "title": "濟州市市場路線",
+            "summary": "龍頭岩與龍淵溪谷、午餐、濟州牧官衙與老城、東門市場、塔洞海岸、市場小吃晚餐。",
+            "route": "龍頭岩 → 龍淵 → 午餐 → 牧官衙 → 東門市場 → 塔洞 → 市場小吃",
+            "tips": "龍頭岩很快看完。東門市場晚上才熱鬧。市區公車計程車即可。",
+            "stops": [
+              {
+                "name": "龍頭岩",
+                "desc": "看龍頭岩。"
+              },
+              {
+                "name": "龍淵溪谷·海岸",
+                "desc": "短走溪谷與海岸。"
+              },
+              {
+                "name": "濟州市午餐",
+                "desc": "肉麵。"
+              },
+              {
+                "name": "濟州牧官衙·老城",
+                "desc": "官衙與巷弄。"
+              },
+              {
+                "name": "東門市場",
+                "desc": "走市場巷。"
+              },
+              {
+                "name": "塔洞海岸散步",
+                "desc": "海邊步道。"
+              },
+              {
+                "name": "市場小吃晚餐",
+                "desc": "在市場吃晚飯。"
+              }
+            ]
+          },
+          "c09": {
+            "title": "東部森林岳路線",
+            "summary": "榧子林、月汀里海灘午餐、龍目岳或附近岳、細花海灘、東部咖啡。建議自駕。",
+            "route": "榧子林 → 月汀里 → 午餐 → 龍目岳 → 細花 → 咖啡",
+            "tips": "榧子林土路濕滑。岳看風力和體力。月汀里咖啡很擠。",
+            "stops": [
+              {
+                "name": "榧子林",
+                "desc": "走千年榧樹林。"
+              },
+              {
+                "name": "月汀里海灘",
+                "desc": "碧海。"
+              },
+              {
+                "name": "午餐",
+                "desc": "海鮮或咖啡早午餐。"
+              },
+              {
+                "name": "龍目岳或附近岳",
+                "desc": "登平緩山脊。"
+              },
+              {
+                "name": "細花海灘",
+                "desc": "較安靜的東部沙灘。"
+              },
+              {
+                "name": "東部咖啡·晚餐",
+                "desc": "在咖啡或餐廳收尾。"
+              }
+            ]
+          },
+          "c10": {
+            "title": "山房山西南路線",
+            "summary": "山房山與龍頭海岸、午餐、松岳山、沙溪海岸、西南日落。建議自駕。",
+            "route": "山房山 → 龍頭海岸 → 午餐 → 松岳山 → 沙溪 → 日落",
+            "tips": "龍頭海岸大浪或漲潮可能關閉。松岳山是短岳。日落以沙溪、松岳為正統。",
+            "stops": [
+              {
+                "name": "山房山",
+                "desc": "看斷崖山與山房窟。"
+              },
+              {
+                "name": "龍頭海岸",
+                "desc": "走龍頭形海岸。"
+              },
+              {
+                "name": "午餐",
+                "desc": "沙溪、山房一帶海鮮。"
+              },
+              {
+                "name": "松岳山",
+                "desc": "短脊上看馬羅島方向。"
+              },
+              {
+                "name": "沙溪海岸",
+                "desc": "面對山房山的海岸。"
+              },
+              {
+                "name": "西南日落",
+                "desc": "晚霞收尾。"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "regionGangwon": "江原道",
+    "regionChungcheong": "忠清道",
+    "regionJeolla": "全羅道",
+    "regionGyeongsang": "慶尚道"
   }
 }

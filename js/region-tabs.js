@@ -19,6 +19,15 @@
     if (select && select.value !== name) {
       select.value = name;
     }
+    try {
+      document.dispatchEvent(
+        new CustomEvent("guide:tabschange", {
+          detail: { kind: kind, name: name },
+        })
+      );
+    } catch (e) {
+      /* ignore */
+    }
     if (kind === "courseRegion") {
       var regionPanel = root.querySelector(
         '[data-courseRegion-panel="' + name + '"]'
@@ -52,7 +61,7 @@
     }
   }
 
-  function bind(root, kind, onChange) {
+  function bind(root, kind, onChange, initialName) {
     var buttons = root.querySelectorAll("[data-" + kind + "-tab]");
     var select = root.querySelector("[data-" + kind + "-select]");
     if (!buttons.length && !select) return;
@@ -77,6 +86,18 @@
     var first = select
       ? select.value || (select.options[0] && select.options[0].value)
       : buttons[0] && buttons[0].getAttribute("data-" + kind + "-tab");
+    if (initialName) {
+      var hasBtn = root.querySelector(
+        "[data-" + kind + '-tab="' + initialName + '"]'
+      );
+      var hasOpt = false;
+      if (select) {
+        Array.prototype.forEach.call(select.options, function (opt) {
+          if (opt.value === initialName) hasOpt = true;
+        });
+      }
+      if (hasBtn || hasOpt) first = initialName;
+    }
     if (first) activate(root, first, kind);
   }
 
@@ -150,6 +171,8 @@
 
     function applyHash(state) {
       if (!state || !state.cat) return false;
+      var aliases = { gyeongju: "gyeongsang" };
+      if (aliases[state.cat]) state.cat = aliases[state.cat];
       var catBtn = root.querySelector(
         "[data-" + catKind + '-tab="' + state.cat + '"]'
       );
@@ -209,9 +232,60 @@
     });
   }
 
+  function bindQueryRoot(root, kinds, paramKey) {
+    var catKind = kinds[0];
+    if (!catKind || !paramKey) return;
+    var wanted = "";
+    if (window.GuideUrlState) {
+      wanted = String(window.GuideUrlState.get(paramKey) || "").toLowerCase();
+    }
+    var firstTab = root.querySelector("[data-" + catKind + "-tab]");
+    var defaultName = firstTab
+      ? firstTab.getAttribute("data-" + catKind + "-tab")
+      : "";
+
+    function syncFromUi(name) {
+      if (!window.GuideUrlState) return;
+      var values = {};
+      var defaults = {};
+      values[paramKey] = name;
+      defaults[paramKey] = defaultName;
+      window.GuideUrlState.patch(values, defaults);
+    }
+
+    kinds.forEach(function (kind) {
+      bind(
+        root,
+        kind,
+        kind === catKind
+          ? function (name) {
+              syncFromUi(name);
+            }
+          : null,
+        kind === catKind ? wanted : ""
+      );
+    });
+    nestedRoots(root).forEach(function (nested) {
+      var nestedKinds = (nested.getAttribute("data-tabs") || "")
+        .split(",")
+        .map(function (k) {
+          return k.trim();
+        })
+        .filter(Boolean);
+      nestedKinds.forEach(function (k) {
+        bind(nested, k);
+      });
+    });
+  }
+
   function bindRoot(root, kinds) {
     if (root.hasAttribute("data-hash-tabs")) {
       bindHashRoot(root, kinds);
+      return;
+    }
+    var queryKey = root.getAttribute("data-query-tabs");
+    if (queryKey) {
+      bindQueryRoot(root, kinds, queryKey);
       return;
     }
     kinds.forEach(function (kind) {

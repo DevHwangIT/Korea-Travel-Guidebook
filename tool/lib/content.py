@@ -158,6 +158,14 @@ MEAL_DISH_SLUGS_FALLBACK = {
     "tangsuyuk",
     "korean-chinese",
     "baekban",
+    "juk",
+    "jaecheopguk",
+    "agu-jjim",
+    "mandu",
+    "hamburger",
+    "nakji",
+    "galbitang",
+    "hoetjip",
 }
 
 # Top-level dessert hubs only (brand shops like paris-baguette / sulbing live under bread / bingsu).
@@ -171,6 +179,7 @@ DESSERT_DISH_SLUGS_FALLBACK = {
     "ice-cream",
     "bungeoppang",
     "nangman-sandwich",
+    "chapssal-kwabaegi",
 }
 
 
@@ -582,11 +591,7 @@ def create_dish(
 
     page.parent.mkdir(parents=True, exist_ok=True)
     default_emoji = emoji or ("🍽️" if kind == "meals" else "🍰")
-    page.write_text(
-        render_dish_page(kind, slug, default_emoji),
-        encoding="utf-8",
-        newline="\n",
-    )
+    _write_text_retry(page, render_dish_page(kind, slug, default_emoji))
     notes.append(f"페이지 생성: {page.relative_to(ROOT).as_posix()}")
 
     hub = hub_index_path(kind)
@@ -595,7 +600,7 @@ def create_dish(
         html = insert_before_card_grid_close(
             html, dish_card_html(kind, slug, default_emoji)
         )
-        hub.write_text(html, encoding="utf-8", newline="\n")
+        _write_text_retry(hub, html)
         notes.append(f"허브 카드 추가: {hub.relative_to(ROOT).as_posix()}")
 
     media = dish_media_dir(kind, slug)
