@@ -97,6 +97,7 @@ window.GuideUrlState = {
   var cache = {};
   var welcomeScriptQueued = false;
   var travelUtilsScriptQueued = false;
+  var analyticsScriptQueued = false;
 
   var LANG_ALIASES = {
     "zh-hans": "zh",
@@ -251,6 +252,27 @@ window.GuideUrlState = {
       encodeURIComponent(window.SITE_ASSET_VERSION || "");
     s.async = true;
     s.setAttribute("data-guide-welcome", "1");
+    (document.body || document.documentElement).appendChild(s);
+  }
+
+  /** Sitewide GA4 events — inject when the page did not already include analytics.js. */
+  function ensureAnalyticsScript() {
+    if (analyticsScriptQueued || window.__GUIDE_ANALYTICS_BOUND__) return;
+    if (
+      document.querySelector('script[data-guide-analytics="1"]') ||
+      document.querySelector('script[src*="analytics.js"]')
+    ) {
+      analyticsScriptQueued = true;
+      return;
+    }
+    analyticsScriptQueued = true;
+    var s = document.createElement("script");
+    s.src =
+      scriptDir() +
+      "analytics.js?v=" +
+      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+    s.async = true;
+    s.setAttribute("data-guide-analytics", "1");
     (document.body || document.documentElement).appendChild(s);
   }
 
@@ -570,6 +592,7 @@ window.GuideUrlState = {
     if (window.GuideUrlState && typeof window.GuideUrlState.restoreBackLink === "function") {
       window.GuideUrlState.restoreBackLink();
     }
+    ensureAnalyticsScript();
     load(lang).then(function () {
       ensureWelcomePopupScript();
       ensureTravelUtilsScript();

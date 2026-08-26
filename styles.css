@@ -238,6 +238,28 @@ a:hover {
   text-align: left;
 }
 
+.site-share {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0 10px;
+  padding: 4px 10px;
+  border: 1px solid #c5d5ce;
+  border-radius: 999px;
+  background: #fff;
+  color: #2d4a40;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.site-share:hover,
+.site-share:focus-visible {
+  background: #f3f7f5;
+  outline: none;
+}
+
 .home-title {
   margin: 14px 0 8px;
   font-family: "Noto Sans KR", sans-serif;

@@ -893,6 +893,16 @@
     };
   }
 
+  function analyticsPlaceClick(slug, kind) {
+    try {
+      document.dispatchEvent(
+        new CustomEvent("guide:placeclick", {
+          detail: { slug: slug || "", kind: kind || "place" },
+        })
+      );
+    } catch (e) {}
+  }
+
   function bindStationTooltip(marker, label) {
     if (!label) return;
     marker.bindTooltip(label, {
@@ -906,6 +916,7 @@
         L.DomEvent.stopPropagation(ev.originalEvent);
       }
       marker.openTooltip();
+      analyticsPlaceClick(label, "metro");
     });
   }
 
@@ -2171,6 +2182,7 @@
       btn.addEventListener("click", function () {
         setDrawer(false);
         focusPlace(item.slug);
+        analyticsPlaceClick(item.slug, "place");
       });
       li.appendChild(btn);
       list.appendChild(li);
@@ -2265,6 +2277,7 @@
       });
       marker.on("click", function () {
         focusPlace(slug);
+        analyticsPlaceClick(slug, "place");
       });
       markersBySlug[slug] = marker;
     });

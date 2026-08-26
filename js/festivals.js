@@ -132,6 +132,17 @@
       a.rel = card.getAttribute("rel") || "noopener noreferrer";
       a.style.display = "none";
       document.body.appendChild(a);
+      try {
+        var title = card.querySelector("h3");
+        document.dispatchEvent(
+          new CustomEvent("guide:festivalclick", {
+            detail: {
+              id: card.getAttribute("data-festival-id") || "",
+              name: title ? String(title.textContent || "").replace(/\s+/g, " ").trim() : "",
+            },
+          })
+        );
+      } catch (err) {}
       a.click();
       document.body.removeChild(a);
     }

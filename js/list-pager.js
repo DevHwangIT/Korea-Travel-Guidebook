@@ -307,6 +307,17 @@
         state.query = value;
         state.page = 1;
         render();
+        if (value.length >= 2 && window.GuideAnalytics && window.GuideAnalytics.event) {
+          var path = String(location.pathname || "").toLowerCase();
+          var listKind = "";
+          if (path.indexOf("/meals") >= 0) listKind = "meals";
+          else if (path.indexOf("/desserts") >= 0) listKind = "desserts";
+          else if (path.indexOf("/convenience") >= 0) listKind = "convenience";
+          window.GuideAnalytics.event("search", {
+            search_term: value.slice(0, 40),
+            item_category: listKind,
+          });
+        }
       }, 120);
     });
 

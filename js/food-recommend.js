@@ -470,6 +470,13 @@
     var eyebrow = t("foodLife.quiz.resultEyebrow", "오늘의 추천");
     var cta = t("foodLife.quiz.viewMore", t("common.viewMore", "자세히 보기 →"));
     var again = t("foodLife.quiz.restart", "다시 하기");
+    analyticsEvent("quiz_complete", {
+      quiz_id: "food",
+      item_id: winner && winner.id ? winner.id : "",
+      item_category: (winner && winner.kind) || "",
+      craving: (answers && answers.craving) || "",
+      spicy: (answers && answers.spicy) || "",
+    });
 
     var bar = dialog.querySelector("[data-food-quiz-bar]");
     if (bar) bar.style.width = "100%";
@@ -574,6 +581,14 @@
     renderQuestion();
   }
 
+  function analyticsEvent(name, params) {
+    try {
+      if (window.GuideAnalytics && typeof window.GuideAnalytics.event === "function") {
+        window.GuideAnalytics.event(name, params);
+      }
+    } catch (e) {}
+  }
+
   function startQuiz(keepOpen) {
     answers = {};
     historyStack = [];
@@ -583,6 +598,7 @@
     stepIndex = 0;
     setOpen(true);
     renderQuestion();
+    analyticsEvent("quiz_start", { quiz_id: "food" });
   }
 
   function refreshBannerCopy() {

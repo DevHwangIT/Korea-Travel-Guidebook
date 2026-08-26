@@ -1448,6 +1448,11 @@
         var ok = saveCourse(course);
         if (ok) {
           markToolbarSaved(saveBtn);
+          analyticsEvent("save_course", {
+            quiz_id: "course",
+            item_id: (course && course.id) || "",
+            region: (course && course.answers && course.answers.region) || "",
+          });
         } else {
           var fail = t(
             "travelCourses.quiz.saveFail",
@@ -1541,6 +1546,15 @@
     lastCourse = buildCourse();
     viewingSavedId = null;
     renderCourseView(lastCourse, { readOnly: false });
+    analyticsEvent("quiz_complete", {
+      quiz_id: "course",
+      item_id: (lastCourse && lastCourse.id) || "",
+      item_category: (answers && answers.vibe) || "",
+      region: (answers && answers.region) || "",
+      party: (answers && answers.party) || "",
+      pace: (answers && answers.pace) || "",
+      budget: (answers && answers.budget) || "",
+    });
   }
 
   function openSavedCourse(id) {
@@ -1701,6 +1715,14 @@
     renderQuestion();
   }
 
+  function analyticsEvent(name, params) {
+    try {
+      if (window.GuideAnalytics && typeof window.GuideAnalytics.event === "function") {
+        window.GuideAnalytics.event(name, params);
+      }
+    } catch (e) {}
+  }
+
   function startQuiz() {
     answers = { duration: "day" };
     historyStack = [];
@@ -1712,6 +1734,7 @@
     stepIndex = 0;
     setOpen(true);
     renderQuestion();
+    analyticsEvent("quiz_start", { quiz_id: "course" });
   }
 
   function refreshBannerCopy() {
