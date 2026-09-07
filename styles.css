@@ -271,6 +271,24 @@ a:hover {
   text-align: center;
 }
 
+.home-about {
+  margin: 1.35rem 0 0;
+  text-align: left;
+}
+
+.home-about h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: #1f3a32;
+}
+
+.home-about p {
+  margin: 0 0 0.75rem;
+  line-height: 1.7;
+  color: #2c3a36;
+}
+
 .site-tagline {
   margin: 8px 0 0;
   font-size: 0.9rem;
@@ -5451,7 +5469,12 @@ a.partner-strip__slot:focus-visible {
   outline: none;
 }
 
+.partner-strip:has(.partner-strip__slot--empty):not(:has(a.partner-strip__slot)) {
+  display: none;
+}
+
 .partner-strip__slot--empty {
+  display: none;
   background: repeating-linear-gradient(
     -45deg,
     #fff,

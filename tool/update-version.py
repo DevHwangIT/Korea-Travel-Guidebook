@@ -34,6 +34,20 @@ def main() -> int:
     except Exception as exc:  # noqa: BLE001
         print(f"먹거리 추천 카탈로그 갱신 실패: {exc}", file=sys.stderr)
 
+    try:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location(
+            "bake_visible_text", TOOL_DIR / "bake-visible-text.py"
+        )
+        bake_mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bake_mod)
+        bake_rc = bake_mod.main()
+        if bake_rc:
+            print("본문 미리 채우기 실패", file=sys.stderr)
+    except Exception as exc:  # noqa: BLE001
+        print(f"본문 미리 채우기 실패: {exc}", file=sys.stderr)
+
     summary = bump_asset_version()
     version = summary["version"]
     print(

@@ -98,6 +98,7 @@ window.GuideUrlState = {
   var welcomeScriptQueued = false;
   var travelUtilsScriptQueued = false;
   var analyticsScriptQueued = false;
+  var adsScriptQueued = false;
 
   var LANG_ALIASES = {
     "zh-hans": "zh",
@@ -273,6 +274,30 @@ window.GuideUrlState = {
       encodeURIComponent(window.SITE_ASSET_VERSION || "");
     s.async = true;
     s.setAttribute("data-guide-analytics", "1");
+    (document.body || document.documentElement).appendChild(s);
+  }
+
+  /** Sitewide AdSense verification + content-page units. */
+  function ensureAdsScript() {
+    if (adsScriptQueued || window.__GUIDE_ADS_BOUND__) return;
+    if (
+      document.querySelector('script[data-guide-ads="1"]') ||
+      document.querySelector('script[src*="/js/ads.js"]')
+    ) {
+      adsScriptQueued = true;
+      return;
+    }
+    adsScriptQueued = true;
+    if (!window.ADSENSE_CLIENT) {
+      window.ADSENSE_CLIENT = "ca-pub-7139367317436403";
+    }
+    var s = document.createElement("script");
+    s.src =
+      scriptDir() +
+      "ads.js?v=" +
+      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+    s.async = true;
+    s.setAttribute("data-guide-ads", "1");
     (document.body || document.documentElement).appendChild(s);
   }
 
@@ -593,6 +618,7 @@ window.GuideUrlState = {
       window.GuideUrlState.restoreBackLink();
     }
     ensureAnalyticsScript();
+    ensureAdsScript();
     load(lang).then(function () {
       ensureWelcomePopupScript();
       ensureTravelUtilsScript();

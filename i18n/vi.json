@@ -93,7 +93,7 @@
     "menuKorean": "Tiếng Hàn hữu ích",
     "menuEmergency": "Khẩn cấp",
     "partnerTitle": "Đối tác & gợi ý",
-    "partnerHint": "Ứng dụng hữu ích và liên kết đối tác sẽ sớm có.",
+    "partnerHint": "Ứng dụng và thông tin hữu ích nằm trong mục Chuẩn bị & thông tin.",
     "contactTitle": "Yêu cầu & Phản hồi",
     "contactLineTitle": "Có câu hỏi về Hàn Quốc? Nhắn chúng tôi trên LINE.",
     "contactLineLabel": "ID DÒNG",
@@ -110,7 +110,12 @@
     "privacyLink": "Thông báo quyền riêng tư",
     "adsPolicyLink": "Chính sách quảng cáo",
     "menuPrepTips": "Chuẩn bị du lịch & Mẹo",
-    "menuTravelCourses": "Đề xuất khóa học du lịch"
+    "menuTravelCourses": "Đề xuất khóa học du lịch",
+    "aboutTitle": "Vì sao có cẩm nang này",
+    "about1": "Chuyến đi Hàn Quốc đầu tiên có thể khiến việc nhỏ — tàu điện, thẻ, gọi món — khó hơn bạn nghĩ. Đây là cẩm nang miễn phí gom nhập cảnh, đi lại, ăn uống, mua sắm, vui chơi và lễ hội để dùng trước và trong chuyến đi.",
+    "about2": "Mỗi mục có giải thích ngắn và địa điểm do người đã đi thật sự giới thiệu. Nếu thấy sai hoặc có mẹo hay hơn, hãy gửi qua phần liên hệ bên dưới.",
+    "about3": "Bạn có thể đổi tiếng Hàn, Anh, Nhật, Trung và các ngôn ngữ khác. Phần chuẩn bị có khai báo nhập cảnh điện tử và thẻ giao thông; ẩm thực có bữa chính, tráng miệng và cửa hàng tiện lợi.",
+    "about4": "Cẩm nang dùng miễn phí. Một số trang có thể hiện quảng cáo Google, tách biệt với nội dung hướng dẫn. Thông báo quyền riêng tư và quảng cáo nằm ở liên kết cuối trang."
   },
   "privacy": {
     "pageTitle": "Quyền riêng tư & quảng cáo | Korea Travel Guide",

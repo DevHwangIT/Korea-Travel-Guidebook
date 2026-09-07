@@ -181,8 +181,15 @@
     openDialog(dialog);
   }
 
+  function isCrawler() {
+    var ua = String(navigator.userAgent || "").toLowerCase();
+    return /mediapartners-google|googlebot|adsbot-google|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot/.test(
+      ua
+    );
+  }
+
   function boot() {
-    // Slight delay so first paint / partner strip settle; modal stacks above (z-index 90).
+    if (isCrawler()) return;
     window.setTimeout(showIfNeeded, 280);
   }
 

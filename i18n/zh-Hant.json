@@ -93,7 +93,7 @@
     "menuKorean": "有用的韓語",
     "menuEmergency": "緊急資訊",
     "partnerTitle": "合作推薦",
-    "partnerHint": "我們正在準備應用程式和附屬鏈接來幫助您旅行。",
+    "partnerHint": "實用應用和出行說明請到選單裡的「準備·案内」。",
     "contactTitle": "查詢及回饋",
     "contactLineTitle": "關於韓國​​是什麼意思，如有疑問請聯繫Line。",
     "contactLineLabel": "線路編號",
@@ -110,7 +110,12 @@
     "privacyLink": "個人資訊告知",
     "adsPolicyLink": "廣告相關政策",
     "menuPrepTips": "旅行準備 & 旅行提示",
-    "menuTravelCourses": "旅遊路線推薦"
+    "menuTravelCourses": "旅遊路線推薦",
+    "aboutTitle": "為什麼做這份指南",
+    "about1": "第一次來韓國時，地鐵、交通卡、點餐這些小事往往比想像中難。本站把入境、交通、美食、購物、娛樂和節日整理在一處，方便出發前和旅途中隨時查看，完全免費。",
+    "about2": "每個欄目都有簡短說明，以及實際去過的人推薦的店和地點。若發現錯誤或有更好的建議，請透過下方聯絡方式告知，我們會審核後更新。",
+    "about3": "語言可切換為韓語、英語、日語、中文等。出行準備介紹電子入境申報和交通卡，美食涵蓋正餐、甜點和便利商店，購物與娛樂涵蓋伴手禮和韓國式休閒。",
+    "about4": "指南免費使用。部分頁面底部可能顯示 Google 廣告，廣告與正文內容無關。個人資訊和廣告說明見頁面底部連結。"
   },
   "privacy": {
     "pageTitle": "個人資訊與廣告告知 | Korea Travel Guide",
