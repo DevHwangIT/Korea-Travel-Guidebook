@@ -61,6 +61,8 @@
     "partnerDots": "合作店铺",
     "partnerGenreRestaurant": "餐馆",
     "partnerGenreCafe": "咖啡",
-    "partnerGenreShop": "商店"
+    "partnerGenreShop": "商店",
+    "partnerExpand": "展开合作店铺",
+    "partnerCollapse": "收起合作店铺"
   }
 }

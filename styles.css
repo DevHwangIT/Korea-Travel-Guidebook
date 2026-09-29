@@ -5518,6 +5518,10 @@ a.partner-strip__slot:focus-visible {
   box-shadow: 0 10px 28px rgba(70, 48, 28, 0.08);
 }
 
+.home-featured__teaser {
+  display: none;
+}
+
 .home-featured__head {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -5779,6 +5783,100 @@ a.partner-strip__slot:focus-visible {
 .home-featured__cta:focus-visible {
   background: #5a412f;
   outline: none;
+}
+
+@media (max-width: 1079px) {
+  .home-page .home-layout > .home-featured {
+    display: none;
+  }
+
+  .home-page .home-featured {
+    max-width: 720px;
+    width: 100%;
+    margin: 16px auto 8px;
+  }
+
+  .home-featured__teaser {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) auto 22px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 8px 10px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .home-featured__teaser-img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #efe4d6;
+  }
+
+  .home-featured__teaser-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+  }
+
+  .home-featured__teaser-kicker {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #8a7462;
+    letter-spacing: 0.02em;
+  }
+
+  .home-featured__teaser-name {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #3d2c20;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .home-featured__teaser-genre {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #6b4f3a;
+    color: #fff8f0;
+    font-size: 0.68rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .home-featured__teaser-chev {
+    display: inline-flex;
+    color: #6b4f3a;
+    transition: transform 0.18s ease;
+  }
+
+  .home-featured.is-open .home-featured__teaser-chev {
+    transform: rotate(180deg);
+  }
+
+  .home-featured__head {
+    display: none;
+  }
+
+  .home-featured:not(.is-open) .home-featured__panel {
+    display: none;
+  }
+
+  .home-featured.is-open .home-featured__panel {
+    border-top: 1px solid #eadfd0;
+  }
 }
 
 /* Home: partner strip sits at page bottom (in-flow, no rail/FAB) */
@@ -6214,9 +6312,9 @@ a.partner-strip__slot:focus-visible {
   }
 
   .home-featured {
-    max-width: 420px;
+    max-width: 720px;
     width: 100%;
-    margin: 0 auto;
+    margin: 16px auto 8px;
   }
 
   .lang-switch {

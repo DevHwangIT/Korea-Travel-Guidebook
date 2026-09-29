@@ -61,6 +61,8 @@
     "partnerDots": "제휴 가게",
     "partnerGenreRestaurant": "음식점",
     "partnerGenreCafe": "카페",
-    "partnerGenreShop": "상점"
+    "partnerGenreShop": "상점",
+    "partnerExpand": "제휴 가게 펼치기",
+    "partnerCollapse": "제휴 가게 접기"
   }
 }

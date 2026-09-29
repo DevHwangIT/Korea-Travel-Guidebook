@@ -61,6 +61,8 @@
     "partnerDots": "Cửa hàng đối tác",
     "partnerGenreRestaurant": "Nhà hàng",
     "partnerGenreCafe": "Café",
-    "partnerGenreShop": "Cửa hàng"
+    "partnerGenreShop": "Cửa hàng",
+    "partnerExpand": "Mở cửa hàng liên kết",
+    "partnerCollapse": "Thu gọn cửa hàng liên kết"
   }
 }

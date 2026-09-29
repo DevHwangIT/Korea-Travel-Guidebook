@@ -133,7 +133,9 @@
     "partnerDots": "ร้านพันธมิตร",
     "partnerGenreRestaurant": "ร้านอาหาร",
     "partnerGenreCafe": "คาเฟ่",
-    "partnerGenreShop": "ร้านค้า"
+    "partnerGenreShop": "ร้านค้า",
+    "partnerExpand": "เปิดร้านพันธมิตร",
+    "partnerCollapse": "ปิดร้านพันธมิตร"
   },
   "privacy": {
     "pageTitle": "ความเป็นส่วนตัวและโฆษณา | Korea Travel Guide",

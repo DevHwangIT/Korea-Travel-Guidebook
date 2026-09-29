@@ -133,7 +133,9 @@
     "partnerDots": "Партнёры",
     "partnerGenreRestaurant": "Ресторан",
     "partnerGenreCafe": "Кафе",
-    "partnerGenreShop": "Магазин"
+    "partnerGenreShop": "Магазин",
+    "partnerExpand": "Показать партнёра",
+    "partnerCollapse": "Скрыть партнёра"
   },
   "privacy": {
     "pageTitle": "Конфиденциальность и реклама | Korea Travel Guide",

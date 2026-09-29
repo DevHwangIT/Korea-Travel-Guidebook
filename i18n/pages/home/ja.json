@@ -61,6 +61,8 @@
     "partnerDots": "提携店",
     "partnerGenreRestaurant": "飲食店",
     "partnerGenreCafe": "カフェ",
-    "partnerGenreShop": "店舗"
+    "partnerGenreShop": "店舗",
+    "partnerExpand": "提携店を開く",
+    "partnerCollapse": "提携店を閉じる"
   }
 }

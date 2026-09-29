@@ -26,6 +26,7 @@
   var followRaf = 0;
   var refreshTimer = 0;
   var bound = false;
+  var skipToggle = false;
 
   function normalizeShopLang(code) {
     if (!code) return "";
@@ -388,13 +389,80 @@
     if (imgEl) {
       imgEl.addEventListener("load", kickFollow);
     }
-    var genreEl = rail.querySelector("[data-partner-genre]");
-    if (genreEl) genreEl.textContent = genreLabel(shop);
+    var genreLabelText = genreLabel(shop);
+    var genreEls = rail.querySelectorAll("[data-partner-genre]");
+    var gi;
+    for (gi = 0; gi < genreEls.length; gi++) {
+      genreEls[gi].textContent = genreLabelText;
+    }
+    var teaserImg = rail.querySelector("[data-partner-teaser-img]");
+    if (teaserImg) {
+      teaserImg.src = img;
+      teaserImg.alt = "";
+    }
+    var teaserName = rail.querySelector("[data-partner-teaser-name]");
+    if (teaserName) teaserName.textContent = name;
+    syncTeaser();
     kickFollow();
   }
 
   function desktopFollow() {
     return window.matchMedia && window.matchMedia("(min-width: 1080px)").matches;
+  }
+
+  function compactMode() {
+    return !desktopFollow();
+  }
+
+  function placeRail() {
+    if (!rail) return;
+    var layout = document.querySelector(".home-layout");
+    if (!layout) return;
+    var intro = layout.querySelector(".home-intro");
+    var rest = layout.querySelector(".home-rest");
+    var footer = rest && rest.querySelector(".site-footer");
+    var ads = rest && rest.querySelector(".ad-slot");
+    if (compactMode()) {
+      var anchor = footer || ads;
+      if (anchor && anchor.parentNode && rail.nextElementSibling !== anchor) {
+        anchor.parentNode.insertBefore(rail, anchor);
+      }
+    } else if (intro && intro.parentNode) {
+      if (intro.nextElementSibling !== rail) {
+        intro.parentNode.insertBefore(rail, intro.nextSibling);
+      }
+      rail.classList.remove("is-open");
+      rail.style.transform = "";
+    }
+    syncTeaser();
+  }
+
+  function syncTeaser() {
+    if (!rail) return;
+    var btn = rail.querySelector("[data-partner-toggle]");
+    if (!btn) return;
+    var open = compactMode() && rail.classList.contains("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute(
+      "aria-label",
+      open
+        ? t("home.partnerCollapse", "제휴 가게 접기")
+        : t("home.partnerExpand", "제휴 가게 펼치기")
+    );
+  }
+
+  function toggleRail(ev) {
+    if (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+    }
+    if (!rail || !compactMode()) return;
+    if (skipToggle) {
+      skipToggle = false;
+      return;
+    }
+    rail.classList.toggle("is-open");
+    syncTeaser();
   }
 
   function followStep() {
@@ -437,6 +505,7 @@
   function bindFollow() {
     window.addEventListener("scroll", kickFollow, { passive: true });
     window.addEventListener("resize", function () {
+      placeRail();
       if (!desktopFollow()) {
         followY = 0;
         if (rail) rail.style.transform = "";
@@ -457,6 +526,11 @@
       });
     }
     el.addEventListener("click", function (ev) {
+      var toggle = ev.target && ev.target.closest && ev.target.closest("[data-partner-toggle]");
+      if (toggle) {
+        toggleRail(ev);
+        return;
+      }
       var dot = ev.target && ev.target.closest && ev.target.closest("[data-partner-dot]");
       if (!dot || shops.length < 2) return;
       var i = Number(dot.getAttribute("data-partner-dot"));
@@ -486,6 +560,7 @@
         var dx = ev.changedTouches[0].clientX - touchX;
         touchX = null;
         if (Math.abs(dx) < 48) return;
+        skipToggle = true;
         show(index + (dx < 0 ? 1 : -1));
         startTimer();
       },
@@ -582,6 +657,7 @@
       bind(el);
       bound = true;
     }
+    placeRail();
     loadAll();
   }
 
@@ -589,6 +665,7 @@
     if (!rail || !shops.length) return;
     renderCard(shops[index]);
     renderDots();
+    syncTeaser();
     kickFollow();
   }
 

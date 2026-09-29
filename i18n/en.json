@@ -133,7 +133,9 @@
     "partnerDots": "Partner shops",
     "partnerGenreRestaurant": "Restaurant",
     "partnerGenreCafe": "Cafe",
-    "partnerGenreShop": "Shop"
+    "partnerGenreShop": "Shop",
+    "partnerExpand": "Show partner shop",
+    "partnerCollapse": "Hide partner shop"
   },
   "privacy": {
     "pageTitle": "Privacy & advertising notice | Korea Travel Guide",
