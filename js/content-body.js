@@ -213,15 +213,25 @@
     if (s.indexOf("media/") === 0 || s.indexOf("./media/") === 0) {
       s = s.replace(/^\.\//, "");
       try {
-        return new URL(s, document.baseURI || window.location.href).href;
+        return withAssetVersion(new URL(s, document.baseURI || window.location.href).href);
       } catch (e) {
         var base = String(window.location.href || "").replace(/[^\/]*$/, "");
-        return base + s;
+        return withAssetVersion(base + s);
       }
     }
     if (s.charAt(0) === "/") s = s.slice(1);
     // Legacy Images/... and site-root-relative pages/.../media/...
-    return prefix + s;
+    return withAssetVersion(prefix + s);
+  }
+
+  function withAssetVersion(url) {
+    try {
+      var v = window.SITE_ASSET_VERSION;
+      if (!v || !url || String(url).indexOf("?") >= 0) return url;
+      return url + "?v=" + encodeURIComponent(String(v));
+    } catch (e) {
+      return url;
+    }
   }
 
   function appendTextWithBreaks(el, text) {

@@ -28,7 +28,18 @@
     "bodyShare": "Ẩm thực và thông tin trên trang sẽ không chỉ dựa vào nội dung ngẫu nhiên trên web — chúng tôi ưu tiên những nơi người thực sự đã đến nói là ngon/tốt. Nếu bạn có trải nghiệm hay nhà hàng đáng nhớ từ chuyến đi Hàn Quốc, vui lòng xem phần liên hệ/góp ý ở cuối trang chính. Bạn có thể chia sẻ mẹo hoặc tìm thông tin liên hệ tại đó; chúng tôi sẽ xem xét để bổ sung vào hướng dẫn.",
     "hideToday": "Không hiện lại hôm nay",
     "confirm": "OK",
-    "close": "Đóng"
+    "close": "Đóng",
+    "updatesTitle": "Cập nhật gần đây",
+    "updatedLabel": "Sửa lần cuối",
+    "updatePartner": "Đã thêm cửa hàng đối tác.",
+    "updatePrep": "Bổ sung và chỉnh sửa mẹo chuẩn bị chuyến đi.",
+    "notesTitle": "Lưu ý",
+    "notePhotos": "Ảnh nhà hàng chỉ đăng khi được chia sẻ trực tiếp, vì lý do bản quyền.",
+    "noteHotels": "Chưa có kế hoạch thêm khách sạn gợi ý. Nếu cần sẽ bổ sung sau.",
+    "noteTips": "Biết quán đáng thử thì gửi email hoặc LINE ở cuối trang chủ.",
+    "noteGuide": "Người vận hành trang không phải hướng dẫn viên chuyên nghiệp và không nhận hướng dẫn chuyên nghiệp.",
+    "noteHelp": "( Tuy nhiên, nếu bạn lần đầu tới Hàn Quốc và cần giúp, khi yêu cầu chúng tôi có thể hướng dẫn và hỗ trợ đơn giản. )",
+    "noteCost": "[ ※ Chi phí cá nhân khi đi chơi—ăn uống, đi lại, vé vào cửa, v.v.—người hướng dẫn không đài thọ. ]"
   },
   "travelUtils": {
     "title": "Công cụ du lịch",

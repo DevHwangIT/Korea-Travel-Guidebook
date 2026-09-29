@@ -1,0 +1,93 @@
+{
+  "id": "mooaa",
+  "name": "MOOAA",
+  "url": "https://app.catchtable.co.kr/ct/shop/mooaa",
+  "image": "cover.jpg",
+  "phone": "02-3445-3300",
+  "instagram": "mooaa.kr",
+  "english": true,
+  "genre": "restaurant",
+  "i18n": {
+    "ko": {
+      "tagline": "신사·가로수길 14석 계절 가이세키",
+      "area": "서울 신사동",
+      "address": "서울특별시 강남구 논현로151길 33, 2층",
+      "englishLabel": "영어 접객·요리 설명 가능",
+      "lunch": "가이세키 85,000원",
+      "dinner": "가이세키 125,000원",
+      "hours": "12:00–21:30 · 예약제",
+      "about": "가로수길에서 8년째 14석만 받는 계절 가이세키입니다. 한·일 제철 식재료로 24절기를 코스에 담고, 음식·그릇·공간이 계절과 함께 바뀝니다. 핫승(八寸)이 제철 요리와 작가의 그릇, 생화와 풀로 계절의 풍경을 먼저 보여 주고, 전시는 약 두 달마다 바뀝니다. 지금은 최석재 Craft Archive Chapter 28 《질서의 잔상과 순환》입니다."
+    },
+    "en": {
+      "tagline": "14-seat seasonal kaiseki in Sinsa",
+      "area": "Sinsa, Seoul",
+      "address": "2F, 33 Nonhyeon-ro 151-gil, Gangnam-gu, Seoul",
+      "englishLabel": "English hospitality & dish notes",
+      "lunch": "Kaiseki KRW 85,000",
+      "dinner": "Kaiseki KRW 125,000",
+      "hours": "12:00–21:30 · reservation only",
+      "about": "In its eighth year on Garosu-gil, this 14-seat seasonal kaiseki follows Korea’s 24 solar terms with Korean and Japanese produce. Dishes, tableware, and the room change with the season. Hassun opens with that landscape—plates, artists’ vessels, flowers, and greenery—and a new artist show rotates about every two months. Now: Craft Archive Chapter 28, Choi Suk Jae’s “Trace of Order.”"
+    },
+    "ja": {
+      "tagline": "新沙・カロスキル 14席の季節会席",
+      "area": "ソウル・新沙",
+      "address": "ソウル特別市江南区論峴路151ギル33、2階",
+      "englishLabel": "英語接客・料理説明あり",
+      "lunch": "会席 85,000ウォン",
+      "dinner": "会席 125,000ウォン",
+      "hours": "12:00–21:30 · 予約制",
+      "about": "カロスキル8年目、14席だけの季節会席です。韓日の旬で二十四節気をコースに映し、料理・器・空間が季節とともに変わります。八寸が旬の料理と作家の器、生花と草で季節の風景を先に見せ、展示は約2か月ごとに替わります。現在はチェ・ソクジェ Craft Archive Chapter 28『秩序の残像と循環』です。"
+    },
+    "zh": {
+      "tagline": "新沙林荫道 14席时令会席",
+      "area": "首尔新沙洞",
+      "address": "首尔特别市江南区论岘路151街33号2层",
+      "englishLabel": "可英语接待并讲解菜品",
+      "lunch": "会席 85,000韩元",
+      "dinner": "会席 125,000韩元",
+      "hours": "12:00–21:30 · 仅预约",
+      "about": "林荫道开业八年，仅14席。以韩日当季食材把二十四节气写进套餐，菜品、器皿与空间随季节变化。招牌八寸先以时令料理、作家器物、鲜花与绿植呈现季节风景，展览约每两个月更换。目前为崔锡宰 Craft Archive Chapter 28《秩序的残像与循环》。"
+    },
+    "zh-Hant": {
+      "tagline": "新沙林蔭道 14席時令會席",
+      "area": "首爾新沙洞",
+      "address": "首爾特別市江南區論峴路151街33號2樓",
+      "englishLabel": "可英語接待並講解菜品",
+      "lunch": "會席 85,000韓元",
+      "dinner": "會席 125,000韓元",
+      "hours": "12:00–21:30 · 僅預約",
+      "about": "林蔭道開業八年，僅14席。以韓日當季食材把二十四節氣寫進套餐，菜品、器皿與空間隨季節變化。招牌八寸先以時令料理、作家器物、鮮花與綠植呈現季節風景，展覽約每兩個月更換。目前為崔錫宰 Craft Archive Chapter 28《秩序的殘像與循環》。"
+    },
+    "vi": {
+      "tagline": "Kaiseki 14 chỗ tại Sinsa",
+      "area": "Sinsa, Seoul",
+      "address": "Tầng 2, 33 Nonhyeon-ro 151-gil, Gangnam-gu, Seoul",
+      "englishLabel": "Tiếp đón và giải thích món bằng tiếng Anh",
+      "lunch": "Kaiseki 85.000 KRW",
+      "dinner": "Kaiseki 125.000 KRW",
+      "hours": "12:00–21:30 · chỉ nhận đặt chỗ",
+      "about": "Năm thứ tám trên Garosu-gil, chỉ 14 chỗ. Kaiseki theo 24 tiết khí với nguyên liệu Hàn–Nhật; món, chén bát và không gian đổi theo mùa. Hassun mở đầu bằng cảnh mùa — món, đồ gốm nghệ sĩ, hoa và cây — và triển lãm mới khoảng hai tháng một lần. Hiện tại: Craft Archive Chapter 28, Choi Suk Jae."
+    },
+    "th": {
+      "tagline": "ไคเซกิ 14 ที่นั่งที่ชินซา",
+      "area": "ชินซา โซล",
+      "address": "ชั้น 2, 33 Nonhyeon-ro 151-gil, Gangnam-gu, Seoul",
+      "englishLabel": "ต้อนรับและอธิบายเมนูเป็นภาษาอังกฤษ",
+      "lunch": "ไคเซกิ 85,000 KRW",
+      "dinner": "ไคเซกิ 125,000 KRW",
+      "hours": "12:00–21:30 · จองล่วงหน้า",
+      "about": "ปีที่แปดบนการอซูกิล ที่นั่ง 14 ที่ ไคเซกิตาม 24 ฤดูกาล วัตถุดิบเกาหลี–ญี่ปุ่น อาหาร ภาชนะ และห้องเปลี่ยนตามฤดู ฮัตสึนเปิดด้วยทิวทัศน์ฤดู — อาหารตามฤดู ภาชนะศิลปิน ดอกไม้และใบไม้ นิทรรศการใหม่ประมาณทุกสองเดือน ปัจจุบัน Craft Archive Chapter 28 โดย Choi Suk Jae"
+    },
+    "ru": {
+      "tagline": "Сезонный кайсэки на 14 мест в Синса",
+      "area": "Синса, Сеул",
+      "address": "2F, 33 Nonhyeon-ro 151-gil, Gangnam-gu, Seoul",
+      "englishLabel": "Английский сервис и пояснения к блюдам",
+      "lunch": "Кайсэки 85 000 KRW",
+      "dinner": "Кайсэки 125 000 KRW",
+      "hours": "12:00–21:30 · только по записи",
+      "about": "Восьмой год на Гаросугиль, 14 мест. Сезонный кайсэки по 24 солнечным терминам, продукты из Кореи и Японии; блюда, посуда и зал меняются с сезоном. Хассун сначала показывает пейзаж сезона — блюда, авторская керамика, цветы и зелень. Новая выставка примерно раз в два месяца. Сейчас Craft Archive Chapter 28, Choi Suk Jae."
+    }
+  },
+  "instagramUrl": "https://www.instagram.com/mooaa.kr/"
+}

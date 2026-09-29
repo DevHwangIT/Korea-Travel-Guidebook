@@ -25,6 +25,7 @@ SKIP_DIR_NAMES = {
     "media",
     "components",
     "templates",
+    "partners",
 }
 
 I18N_TAG = re.compile(

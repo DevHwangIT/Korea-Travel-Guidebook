@@ -23,6 +23,17 @@
  *   share_page          share or copy this page
  *   click_tool          travel-tools FAB (FX / weather / …)
  *   click_contact       email or LINE
+ *   click_partner       partner card outbound (name or reserve)
+ *   generate_lead       partner 「예약하기」 only — mark as a GA4 conversion
+ *   view_promotion      partner card impression (CTR = lead / view per item_id)
+ *
+ * Partner marketing (per shop, even after more partners are added)
+ *   item_id             partner slug (mooaa, …)
+ *   partner_cta         reserve | name
+ *   timezone, local_hour, hour_band, country_hint
+ *   Country/city still come from GA4 geo (IP). Register custom dimensions:
+ *   item_id, partner_cta, timezone, country_hint, local_hour, hour_band,
+ *   browser_language, device_hint.
  *
  * Quality
  *   scroll_75   read most of a long page
@@ -55,6 +66,9 @@
 
   if (window.__GUIDE_ANALYTICS_BOUND__) return;
   window.__GUIDE_ANALYTICS_BOUND__ = true;
+  if (/(?:^|[?&])ga4_debug=1(?:&|$)/.test(String(location.search || ""))) {
+    window.GA4_DEBUG = true;
+  }
 
   function currentLang() {
     try {
@@ -114,6 +128,227 @@
       return new URL(href, location.href);
     } catch (e) {
       return null;
+    }
+  }
+
+  var TZ_COUNTRY = {
+    "Asia/Seoul": "KR",
+    "Asia/Tokyo": "JP",
+    "Asia/Osaka": "JP",
+    "Asia/Shanghai": "CN",
+    "Asia/Chongqing": "CN",
+    "Asia/Harbin": "CN",
+    "Asia/Urumqi": "CN",
+    "Asia/Taipei": "TW",
+    "Asia/Hong_Kong": "HK",
+    "Asia/Macau": "MO",
+    "Asia/Singapore": "SG",
+    "Asia/Bangkok": "TH",
+    "Asia/Ho_Chi_Minh": "VN",
+    "Asia/Saigon": "VN",
+    "Asia/Manila": "PH",
+    "Asia/Jakarta": "ID",
+    "Asia/Kuala_Lumpur": "MY",
+    "Asia/Dubai": "AE",
+    "Asia/Kolkata": "IN",
+    "Asia/Calcutta": "IN",
+    "Australia/Sydney": "AU",
+    "Australia/Melbourne": "AU",
+    "Australia/Brisbane": "AU",
+    "Australia/Perth": "AU",
+    "Pacific/Auckland": "NZ",
+    "America/New_York": "US",
+    "America/Chicago": "US",
+    "America/Denver": "US",
+    "America/Los_Angeles": "US",
+    "America/Phoenix": "US",
+    "America/Anchorage": "US",
+    "Pacific/Honolulu": "US",
+    "America/Toronto": "CA",
+    "America/Vancouver": "CA",
+    "America/Sao_Paulo": "BR",
+    "America/Mexico_City": "MX",
+    "Europe/London": "GB",
+    "Europe/Paris": "FR",
+    "Europe/Berlin": "DE",
+    "Europe/Rome": "IT",
+    "Europe/Madrid": "ES",
+    "Europe/Amsterdam": "NL",
+    "Europe/Moscow": "RU",
+  };
+  var DOW = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+
+  function localeRegion() {
+    try {
+      if (typeof Intl !== "undefined" && Intl.Locale) {
+        var loc = new Intl.Locale(navigator.language || navigator.userLanguage || "");
+        if (typeof loc.maximize === "function") loc = loc.maximize();
+        if (loc.region) return String(loc.region).toUpperCase();
+      }
+    } catch (e) {}
+    var m = String(navigator.language || navigator.userLanguage || "").match(
+      /[-_]([A-Za-z]{2})$/
+    );
+    return m ? m[1].toUpperCase() : "";
+  }
+
+  function hourBand(hour) {
+    if (hour < 6) return "night";
+    if (hour < 12) return "morning";
+    if (hour < 18) return "afternoon";
+    return "evening";
+  }
+
+  function deviceHint() {
+    var w = window.innerWidth || 0;
+    if (w && w <= 768) return "mobile";
+    if (w && w <= 1080) return "tablet";
+    if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches && w <= 900) {
+      return "mobile";
+    }
+    return "desktop";
+  }
+
+  function visitContext() {
+    var now = new Date();
+    var tz = "";
+    try {
+      tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    } catch (e) {}
+    var hour = now.getHours();
+    var qs = { utm_source: "", utm_medium: "", utm_campaign: "" };
+    try {
+      var search = new URLSearchParams(location.search || "");
+      qs.utm_source = search.get("utm_source") || "";
+      qs.utm_medium = search.get("utm_medium") || "";
+      qs.utm_campaign = search.get("utm_campaign") || "";
+    } catch (e2) {}
+    var refHost = "";
+    try {
+      if (document.referrer) refHost = new URL(document.referrer).hostname;
+    } catch (e3) {}
+    var region = localeRegion();
+    var tzCountry = TZ_COUNTRY[tz] || "";
+    return {
+      timezone: tz,
+      tz_offset: -now.getTimezoneOffset(),
+      local_hour: hour,
+      local_dow: DOW[now.getDay()] || String(now.getDay()),
+      hour_band: hourBand(hour),
+      browser_language: String(navigator.language || navigator.userLanguage || "").slice(0, 20),
+      country_hint: region || tzCountry || "",
+      device_hint: deviceHint(),
+      utm_source: qs.utm_source || "",
+      utm_medium: qs.utm_medium || "",
+      utm_campaign: qs.utm_campaign || "",
+      referrer_host: String(refHost || "").slice(0, 80),
+    };
+  }
+
+  function partnerSurface(el) {
+    if (el && el.closest) {
+      var rail = el.closest("[data-partner-surface], [data-partner-rail]");
+      if (rail) {
+        return rail.getAttribute("data-partner-surface") || "home_featured";
+      }
+    }
+    return "home_featured";
+  }
+
+  function partnerPayload(el, extra) {
+    extra = extra || {};
+    var id =
+      (el && el.getAttribute && el.getAttribute("data-partner-id")) || extra.id || "";
+    var name =
+      (el && el.getAttribute && el.getAttribute("data-partner-name")) || extra.name || id;
+    var href =
+      (el && (el.getAttribute("href") || el.href)) || extra.url || "";
+    var slot =
+      (el && el.getAttribute && el.getAttribute("data-partner-cta-slot")) || extra.slot || "";
+    var host = "";
+    try {
+      if (href) host = new URL(href, location.href).hostname.replace(/^www\./, "");
+    } catch (e) {}
+    var ctx = visitContext();
+    var surface = extra.surface || partnerSurface(el);
+    var payload = {
+      item_id: id,
+      item_name: String(name || "").replace(/\s+/g, " ").trim().slice(0, 80),
+      item_category: "partner_shop",
+      item_list_id: surface,
+      partner_cta: slot,
+      link_url: String(href || "").slice(0, 200),
+      link_domain: host,
+      timezone: ctx.timezone,
+      local_hour: ctx.local_hour,
+      local_dow: ctx.local_dow,
+      hour_band: ctx.hour_band,
+      browser_language: ctx.browser_language,
+      country_hint: ctx.country_hint,
+      device_hint: ctx.device_hint,
+      utm_source: ctx.utm_source,
+      utm_medium: ctx.utm_medium,
+      utm_campaign: ctx.utm_campaign,
+      referrer_host: ctx.referrer_host,
+    };
+    return payload;
+  }
+
+  function promotionFields(payload, slot) {
+    return {
+      creative_slot: slot,
+      promotion_id: payload.item_id,
+      promotion_name: payload.item_name,
+      items: [
+        {
+          item_id: payload.item_id,
+          item_name: payload.item_name,
+          item_category: "partner_shop",
+          item_list_id: payload.item_list_id,
+          item_list_name: "partner_shops",
+        },
+      ],
+    };
+  }
+
+  function mergePayload(a, b) {
+    var out = {};
+    [a, b].forEach(function (src) {
+      Object.keys(src || {}).forEach(function (key) {
+        if (src[key] != null && src[key] !== "") out[key] = src[key];
+      });
+    });
+    return out;
+  }
+
+  function trackPartnerView(detail) {
+    var payload = partnerPayload(null, detail || {});
+    track("view_promotion", mergePayload(payload, promotionFields(payload, "card")));
+  }
+
+  function trackPartnerClick(el) {
+    var payload = partnerPayload(el, {});
+    track("click_partner", payload);
+    track(
+      "select_promotion",
+      mergePayload(payload, promotionFields(payload, payload.partner_cta || "cta"))
+    );
+    if (payload.partner_cta === "reserve") {
+      track("generate_lead", {
+        item_id: payload.item_id,
+        item_name: payload.item_name,
+        item_list_id: payload.item_list_id,
+        currency: "KRW",
+        lead_type: "partner_reserve",
+        timezone: payload.timezone,
+        country_hint: payload.country_hint,
+        local_hour: payload.local_hour,
+        local_dow: payload.local_dow,
+        hour_band: payload.hour_band,
+        device_hint: payload.device_hint,
+        browser_language: payload.browser_language,
+        link_domain: payload.link_domain,
+      });
     }
   }
 
@@ -314,14 +549,23 @@
         console.log("[guide-analytics]", name, payload);
       } catch (e) {}
     }
+    try {
+      recentEvents.push({ event: name, params: payload });
+      if (recentEvents.length > 12) recentEvents.shift();
+    } catch (e2) {}
     if (typeof window.gtag === "function") {
       window.gtag("event", name, payload);
     }
   }
 
+  var recentEvents = [];
+
   window.GuideAnalytics = {
     event: track,
     contentGroup: contentGroup,
+    partnerView: trackPartnerView,
+    partnerClick: trackPartnerClick,
+    recent: recentEvents,
   };
 
   var cfg = window.SITE_CONFIG || {};
@@ -362,7 +606,10 @@
       language: currentLang(),
       content_group: contentGroup(),
     });
-    gtag("set", "user_properties", { guide_lang: currentLang() });
+    var tzProp = visitContext().timezone || "";
+    gtag("set", "user_properties", tzProp
+      ? { guide_lang: currentLang(), visitor_tz: tzProp }
+      : { guide_lang: currentLang() });
   }
 
   var langReady = false;
@@ -442,6 +689,12 @@
   document.addEventListener("click", function (ev) {
     var t = ev.target;
     if (!t || !t.closest) return;
+
+    var partnerCta = t.closest("[data-partner-cta]");
+    if (partnerCta) {
+      trackPartnerClick(partnerCta);
+      return;
+    }
 
     var regionBtn =
       t.closest("[data-region-tab]") ||

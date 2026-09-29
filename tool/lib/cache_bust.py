@@ -83,6 +83,8 @@ def is_local_site_asset(url_path: str) -> bool:
         return True
     if bare.startswith("data/") or "/data/" in normalized:
         return True
+    if (bare.startswith("partners/") or "/partners/" in normalized) and bare.endswith(".js"):
+        return True
     return False
 
 

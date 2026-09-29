@@ -43,6 +43,24 @@
     "about1": "初めての韓国旅行では、地下鉄・カード・注文など小さなことが意外と難しいものです。このサイトは、入国・交通・グルメ・買い物・遊び・祭りを一箇所にまとめた無料ガイドです。",
     "about2": "各メニューには短い説明と、実際に訪れた人が良かったと勧めた店・場所を載せています。誤りやより良いヒントがあれば、下のお問い合わせから教えてください。",
     "about3": "言語は韓国語・英語・日本語・中国語などに切り替えられます。旅行準備では電子入国申告と交通カード、グルメでは食事・デザート・コンビニ、買い物と遊びではお土産と韓国らしい余暇を選べます。",
-    "about4": "利用は無料です。一部ページ下部にGoogle広告が表示されることがあり、広告はガイド本文とは別です。個人情報・広告の案内はページ下部のリンクから確認できます。"
+    "about4": "利用は無料です。一部ページ下部にGoogle広告が表示されることがあり、広告はガイド本文とは別です。個人情報・広告の案内はページ下部のリンクから確認できます。",
+    "featuredDining": "提携店",
+    "featuredDiningSub": "パートナーショップ",
+    "partnerViewDetails": "予約する",
+    "partnerEnglish": "英語対応",
+    "partnerLang": "言語",
+    "partnerLunch": "ランチ",
+    "partnerDinner": "ディナー",
+    "partnerHours": "時間",
+    "partnerBooking": "予約",
+    "partnerPointSeason": "季節のコース",
+    "partnerPointSignature": "シグネチャー",
+    "partnerPointShow": "展示",
+    "partnerNext": "次の提携店",
+    "partnerSns": "SNS",
+    "partnerDots": "提携店",
+    "partnerGenreRestaurant": "飲食店",
+    "partnerGenreCafe": "カフェ",
+    "partnerGenreShop": "店舗"
   }
 }

@@ -121,6 +121,25 @@ window.GuideUrlState = {
     return "./js/";
   }
 
+  /** Prefer baked SITE_ASSET_VERSION; else reuse i18n.js ?v= so injected scripts cache-bust. */
+  function assetVersion() {
+    if (window.SITE_ASSET_VERSION) return String(window.SITE_ASSET_VERSION);
+    try {
+      var scripts = document.getElementsByTagName("script");
+      for (var i = 0; i < scripts.length; i++) {
+        var src = scripts[i].src || "";
+        if (/i18n\.js(\?|$)/i.test(src)) {
+          var m = src.match(/[?&]v=([^&]+)/);
+          if (m) {
+            window.SITE_ASSET_VERSION = decodeURIComponent(m[1]);
+            return window.SITE_ASSET_VERSION;
+          }
+        }
+      }
+    } catch (e) {}
+    return "";
+  }
+
   function i18nDir() {
     return scriptDir().replace(/\/js\/?$/, "/i18n/");
   }
@@ -250,7 +269,7 @@ window.GuideUrlState = {
     s.src =
       scriptDir() +
       "welcome-popup.js?v=" +
-      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+      encodeURIComponent(assetVersion());
     s.async = true;
     s.setAttribute("data-guide-welcome", "1");
     (document.body || document.documentElement).appendChild(s);
@@ -271,7 +290,7 @@ window.GuideUrlState = {
     s.src =
       scriptDir() +
       "analytics.js?v=" +
-      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+      encodeURIComponent(assetVersion());
     s.async = true;
     s.setAttribute("data-guide-analytics", "1");
     (document.body || document.documentElement).appendChild(s);
@@ -295,7 +314,7 @@ window.GuideUrlState = {
     s.src =
       scriptDir() +
       "ads.js?v=" +
-      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+      encodeURIComponent(assetVersion());
     s.async = true;
     s.setAttribute("data-guide-ads", "1");
     (document.body || document.documentElement).appendChild(s);
@@ -313,7 +332,7 @@ window.GuideUrlState = {
     s.src =
       scriptDir() +
       "travel-utils.js?v=" +
-      encodeURIComponent(window.SITE_ASSET_VERSION || "");
+      encodeURIComponent(assetVersion());
     s.async = true;
     s.setAttribute("data-guide-travel-utils", "1");
     (document.body || document.documentElement).appendChild(s);

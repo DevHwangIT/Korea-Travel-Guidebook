@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" data-i18n-title="home.pageTitle" data-i18n-desc="home.desc" data-seo-path="" data-seo-image="Images/cover/korea-cover.png">
 <head>
-  <!-- asset-v: 20260907110908 -->
+  <!-- asset-v: 20260929233058 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-adsense-account" content="ca-pub-7139367317436403">
@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="Korea Travel Guide">
   <meta name="twitter:description" content="한국 여행을 조금 더 편하고 맛있게 즐길 수 있도록 만든 작은 여행 가이드입니다. (KR/EN/JP/中文)">
   <meta name="twitter:image" content="https://korea-guidebook.cloud/Images/cover/korea-cover.png">
-  <link rel="stylesheet" href="./styles.css?v=20260907110908">
+  <link rel="stylesheet" href="./styles.css?v=20260929233058">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,7 +65,7 @@
   <nav class="lang-switch" aria-label="Language"></nav>
 
   <div class="home-layout">
-    <div class="home-main">
+    <div class="home-intro">
       <div>
         <img src="./Images/cover/korea-cover.png"
              width="100%"
@@ -78,16 +78,65 @@
         <hr>
 
         <p data-i18n="home.desc">한국 여행을 조금 더 편하고 맛있게 즐길 수 있도록 만든 작은 여행 가이드입니다.</p>
-
-        <section class="home-about" aria-labelledby="home-about-heading">
-          <h2 id="home-about-heading" data-i18n="home.aboutTitle">이 가이드를 만든 이유</h2>
-          <p data-i18n="home.about1">한국을 처음 여행하면 지하철·카드·식당 주문처럼 작은 일이 생각보다 어렵습니다. 이 사이트는 방문객이 출발 전부터 현장에서 바로 쓰도록, 입국·교통·먹거리·쇼핑·놀거리·축제를 한곳에서 정리한 무료 가이드입니다.</p>
-          <p data-i18n="home.about2">메뉴마다 짧은 설명과, 실제로 다녀온 분들이 좋다고 한 가게·장소를 모았습니다. 틀린 정보나 더 좋은 팁이 있으면 아래 문의로 알려 주세요. 검토한 뒤 가이드에 반영합니다.</p>
-          <p data-i18n="home.about3">언어는 한국어·영어·일본어·중국어 등으로 바꿀 수 있습니다. 여행 준비에서는 전자입국신고와 교통카드, 먹거리에서는 식사·디저트·편의점, 쇼핑과 놀거리에서는 기념품과 한국식 여가를 고를 수 있습니다.</p>
-          <p data-i18n="home.about4">이용은 무료입니다. 일부 페이지 하단에는 Google 광고가 표시될 수 있으며, 광고는 가이드 내용과 별개입니다. 개인정보·광고 안내는 페이지 하단 링크에서 확인할 수 있습니다.</p>
-        </section>
       </div>
+    </div>
 
+    <aside class="home-featured" data-partner-rail data-partner-surface="home_featured" aria-labelledby="home-featured-heading">
+      <div class="home-featured__inner">
+        <div class="home-featured__head">
+          <span class="home-featured__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 10h16M5 10l1.5-4h11L19 10M6 10v9h12v-9M10 19v-5h4v5"/></svg>
+          </span>
+          <div>
+            <h2 id="home-featured-heading" class="home-featured__title" data-i18n="home.featuredDining">제휴 가게</h2>
+            <p class="home-featured__sub" data-i18n="home.featuredDiningSub">파트너 샵</p>
+            <p class="home-featured__genre" data-partner-genre>음식점</p>
+          </div>
+          <button type="button" class="home-featured__next" data-partner-next data-i18n-attr="aria-label:home.partnerNext" aria-label="다음 제휴 가게" hidden>
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+        <div class="home-featured__card" data-partner-card>
+          <div class="home-featured__photo">
+            <img src="./partners/mooaa/cover.jpg" alt="MOOAA" width="640" height="480">
+            <span class="home-featured__badge">서울 신사동</span>
+          </div>
+          <div class="home-featured__body">
+            <a class="home-featured__name" data-partner-cta data-partner-cta-slot="name" data-partner-id="mooaa" data-partner-name="MOOAA" href="https://app.catchtable.co.kr/ct/shop/mooaa" target="_blank" rel="noopener noreferrer">MOOAA<span aria-hidden="true"> ›</span></a>
+            <p class="home-featured__tagline">신사·가로수길 14석 계절 가이세키</p>
+            <p class="home-featured__about">가로수길에서 8년째 14석만 받는 계절 가이세키입니다. 한·일 제철 식재료로 24절기를 코스에 담고, 음식·그릇·공간이 계절과 함께 바뀝니다. 핫승(八寸)이 제철 요리와 작가의 그릇, 생화와 풀로 계절의 풍경을 먼저 보여 주고, 전시는 약 두 달마다 바뀝니다. 지금은 최석재 Craft Archive Chapter 28 《질서의 잔상과 순환》입니다.</p>
+            <ul class="home-featured__meta">
+              <li class="home-featured__fact">
+                <span class="home-featured__ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 18.5V8.5c0-1 .8-1.8 1.8-1.8h8.4c1 0 1.8.8 1.8 1.8v6.2c0 1-.8 1.8-1.8 1.8H8.2L4 18.5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M14.5 11.6h3.7c.9 0 1.6.7 1.6 1.6v4.2L18 16.2h-3"/></svg></span>
+                <div><span class="home-featured__fact-k">언어</span><span class="home-featured__fact-v">영어 접객·요리 설명 가능</span></div>
+              </li>
+              <li class="home-featured__fact">
+                <span class="home-featured__ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 4v7m0 0c0 2-1.4 3-2.8 3M8 11c0 2 1.4 3 2.8 3M8 11v9M16.5 4v16M15 5c1.2 2 1.5 3.5 1.5 5M18 5c-1.2 2-1.5 3.5-1.5 5"/></svg></span>
+                <div><span class="home-featured__fact-k">런치</span><span class="home-featured__fact-v">가이세키 85,000원</span></div>
+              </li>
+              <li class="home-featured__fact">
+                <span class="home-featured__ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 4v7m0 0c0 2-1.4 3-2.8 3M8 11c0 2 1.4 3 2.8 3M8 11v9M16.5 4v16M15 5c1.2 2 1.5 3.5 1.5 5M18 5c-1.2 2-1.5 3.5-1.5 5"/></svg></span>
+                <div><span class="home-featured__fact-k">디너</span><span class="home-featured__fact-v">가이세키 125,000원</span></div>
+              </li>
+              <li class="home-featured__fact">
+                <span class="home-featured__ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 8v4.5L15 14"/></svg></span>
+                <div><span class="home-featured__fact-k">이용시간</span><span class="home-featured__fact-v">12:00–21:30 · 예약제</span></div>
+              </li>
+              <li class="home-featured__fact">
+                <span class="home-featured__ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><rect x="6" y="6" width="12" height="12" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16.2" cy="7.8" r="0.9" fill="currentColor"/></svg></span>
+                <div><span class="home-featured__fact-k">SNS</span><span class="home-featured__fact-v"><a class="home-featured__fact-a" href="https://www.instagram.com/mooaa.kr/" target="_blank" rel="noopener noreferrer">@mooaa.kr</a></span></div>
+              </li>
+            </ul>
+            <a class="home-featured__cta" data-partner-cta data-partner-cta-slot="reserve" data-partner-id="mooaa" data-partner-name="MOOAA" href="https://app.catchtable.co.kr/ct/shop/mooaa" target="_blank" rel="noopener noreferrer">예약하기 <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+        <div class="home-featured__dots" data-partner-dots role="tablist" data-i18n-attr="aria-label:home.partnerDots" aria-label="제휴 가게">
+          <button type="button" class="home-featured__dot is-on" aria-current="true" aria-label="1" disabled></button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="home-rest">
       <hr>
 
       <div class="menu">
@@ -219,11 +268,13 @@
   <p class="i18n-fallback" data-i18n-fallback data-i18n="misc.i18nFallback" hidden>번역 파일을 불러오지 못했습니다. 로컬 서버로 열어 주세요. (예: npx serve .)</p>
 
   <script>window.ADSENSE_CLIENT = "ca-pub-7139367317436403";</script>
-  <script src="./js/site-config.js?v=20260907110908"></script>
-  <script src="./i18n/messages.js?v=20260907110908"></script>
-  <script src="./js/i18n.js?v=20260907110908"></script>
-  <script src="./js/analytics.js?v=20260907110908"></script>
-  <script src="./js/seo.js?v=20260907110908"></script>
-  <script src="./js/ads.js?v=20260907110908"></script>
+  <script src="./js/site-config.js?v=20260929233058"></script>
+  <script src="./i18n/messages.js?v=20260929233058"></script>
+  <script src="./js/i18n.js?v=20260929233058"></script>
+  <script src="./js/analytics.js?v=20260929233058"></script>
+  <script src="./js/seo.js?v=20260929233058"></script>
+  <script src="./js/ads.js?v=20260929233058"></script>
+  <script src="./partners/catalog.js?v=20260929233058"></script>
+  <script src="./js/partner-shops.js?v=20260929233058"></script>
 </body>
 </html>

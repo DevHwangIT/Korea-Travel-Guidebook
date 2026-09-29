@@ -43,6 +43,24 @@
     "about1": "A first trip to Korea can make small things — subway cards, restaurant orders — feel harder than expected. This free guide gathers entry, transit, food, shopping, fun, and festivals in one place so visitors can use it before and during the trip.",
     "about2": "Each section has short explanations and places that travelers actually recommended. If you spot a mistake or have a better tip, please write through the contact form below. We review notes and update the guide.",
     "about3": "You can switch Korean, English, Japanese, Chinese, and more. Prep pages cover electronic travel authorization and transit cards; food covers meals, desserts, and convenience stores; shopping and fun cover souvenirs and Korean-style leisure.",
-    "about4": "The guide is free to use. Some pages may show Google ads, which are separate from the editorial content. Privacy and advertising notices are linked at the bottom of the page."
+    "about4": "The guide is free to use. Some pages may show Google ads, which are separate from the editorial content. Privacy and advertising notices are linked at the bottom of the page.",
+    "featuredDining": "Partner shops",
+    "featuredDiningSub": "Partner shop",
+    "partnerViewDetails": "Reserve",
+    "partnerEnglish": "English available",
+    "partnerLang": "Language",
+    "partnerLunch": "Lunch",
+    "partnerDinner": "Dinner",
+    "partnerHours": "Hours",
+    "partnerBooking": "Booking",
+    "partnerPointSeason": "Seasonal course",
+    "partnerPointSignature": "Signature",
+    "partnerPointShow": "Exhibition",
+    "partnerNext": "Next partner shop",
+    "partnerSns": "SNS",
+    "partnerDots": "Partner shops",
+    "partnerGenreRestaurant": "Restaurant",
+    "partnerGenreCafe": "Cafe",
+    "partnerGenreShop": "Shop"
   }
 }

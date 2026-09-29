@@ -7,6 +7,17 @@
 (function () {
   var STORAGE_KEY = "korea-guide-welcome-hide-date";
   var DIALOG_ID = "guide-welcome-dialog";
+  var UPDATED_ISO = "2026-09-29";
+  var DATE_LOCALES = {
+    ko: "ko-KR",
+    en: "en-US",
+    ja: "ja-JP",
+    zh: "zh-CN",
+    "zh-Hant": "zh-TW",
+    vi: "vi-VN",
+    th: "th-TH",
+    ru: "ru-RU",
+  };
 
   function todayLocal() {
     var d = new Date();
@@ -67,6 +78,37 @@
     return cur == null || cur === "" ? fallback : String(cur);
   }
 
+  function currentLang() {
+    try {
+      if (window.GuideI18n && typeof window.GuideI18n.getLang === "function") {
+        return window.GuideI18n.getLang() || "en";
+      }
+    } catch (e) {}
+    return document.documentElement.lang || "en";
+  }
+
+  function formatUpdatedDate() {
+    try {
+      var locale = DATE_LOCALES[currentLang()] || "en-US";
+      return new Date(UPDATED_ISO + "T00:00:00").toLocaleDateString(locale, {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
+    } catch (e) {
+      return UPDATED_ISO;
+    }
+  }
+
+  function fillUpdated(root) {
+    if (!root || !root.querySelectorAll) return;
+    var stamp = formatUpdatedDate();
+    root.querySelectorAll("[data-welcome-updated]").forEach(function (el) {
+      el.setAttribute("datetime", UPDATED_ISO);
+      el.textContent = stamp;
+    });
+  }
+
   function applyI18n(root) {
     root.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
@@ -83,6 +125,7 @@
         el.setAttribute(attr, t(key, el.getAttribute(attr) || ""));
       });
     });
+    fillUpdated(root);
   }
 
   function closeDialog(dialog, hideToday) {
@@ -141,6 +184,27 @@
       '  <div class="welcome-popup__body">' +
       '    <p data-i18n="welcome.body">한국을 방문하시는 분들이 조금 더 편리하고 유익하게 여행하시길 바라며 만들었습니다. 이용은 무료이며, 개선이 필요하시면 언제든 의견을 남겨 주세요. 여행을 준비 중이시거나 여행 중이신 모든 분들께 행복한 시간이 되기를 바랍니다.</p>' +
       '    <p data-i18n="welcome.bodyShare">사이트에 소개되는 맛집·정보는 웹에서 무작위로 모은 내용만이 아니라, 실제로 다녀오신 분들이 좋다고 하신 곳을 바탕으로 담아 가려 합니다. 한국 여행에서 좋았던 경험이나 추천 식당이 있으시면 메인 페이지 하단의 문의·피드백 영역을 확인해 주세요. 팁을 공유하시거나 연락처를 찾으실 수 있으며, 검토 후 가이드에 반영하겠습니다.</p>' +
+      '    <section class="welcome-popup__news" aria-labelledby="guide-welcome-updates">' +
+      '      <div class="welcome-popup__news-head">' +
+      '        <h3 id="guide-welcome-updates" class="welcome-popup__h" data-i18n="welcome.updatesTitle">최근 수정</h3>' +
+      '        <p class="welcome-popup__updated"><span data-i18n="welcome.updatedLabel">마지막 수정일</span> <time datetime="2026-09-29" data-welcome-updated>2026. 9. 29.</time></p>' +
+      "      </div>" +
+      '      <ul class="welcome-popup__list">' +
+      '        <li data-i18n="welcome.updatePartner">제휴 가게를 추가했습니다.</li>' +
+      '        <li data-i18n="welcome.updatePrep">여행 준비 팁을 보강하고, 기존 내용도 고쳤습니다.</li>' +
+      "      </ul>" +
+      '      <h3 class="welcome-popup__h" data-i18n="welcome.notesTitle">안내</h3>' +
+      '      <ul class="welcome-popup__notes">' +
+      '        <li data-i18n="welcome.notePhotos">식당 사진은 저작권 때문에, 직접 공유받은 경우에만 올립니다.</li>' +
+      '        <li data-i18n="welcome.noteHotels">추천 호텔은 아직 계획이 없습니다. 필요하면 그때 추가하겠습니다.</li>' +
+      '        <li data-i18n="welcome.noteTips">가볼 만한 식당은 하단 이메일이나 LINE으로 알려 주세요.</li>' +
+      "        <li>" +
+      '          <span data-i18n="welcome.noteGuide">사이트 운영자는 전문 가이드가 아니라, 전문적인 안내는 받지않고 있습니다.</span>' +
+      '          <span class="welcome-popup__paren" data-i18n="welcome.noteHelp">( 다만, 한국을 처음 방문하셔서 도움이 필요한 분에 한해 요청하실 경우 간단한 안내와 도움을 드릴 수 있습니다. )</span>' +
+      '          <span class="welcome-popup__bracket" data-i18n="welcome.noteCost">[ ※ 관광 중 발생하는 식사, 교통, 입장료 등의 개인적인 경비는 안내자가 부담하지 않습니다. ]</span>' +
+      "        </li>" +
+      "      </ul>" +
+      "    </section>" +
       "  </div>" +
       '  <label class="welcome-popup__check">' +
       '    <input type="checkbox" data-welcome-hide-today>' +
@@ -198,9 +262,10 @@
     if (!dialog) return;
     if (window.GuideI18n && typeof window.GuideI18n.apply === "function") {
       window.GuideI18n.apply(dialog);
-    } else if (!dialog.hidden) {
+    } else {
       applyI18n(dialog);
     }
+    fillUpdated(dialog);
   });
 
   if (document.readyState === "loading") {

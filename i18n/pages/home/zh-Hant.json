@@ -43,6 +43,24 @@
     "about1": "第一次來韓國時，地鐵、交通卡、點餐這些小事往往比想像中難。本站把入境、交通、美食、購物、娛樂和節日整理在一處，方便出發前和旅途中隨時查看，完全免費。",
     "about2": "每個欄目都有簡短說明，以及實際去過的人推薦的店和地點。若發現錯誤或有更好的建議，請透過下方聯絡方式告知，我們會審核後更新。",
     "about3": "語言可切換為韓語、英語、日語、中文等。出行準備介紹電子入境申報和交通卡，美食涵蓋正餐、甜點和便利商店，購物與娛樂涵蓋伴手禮和韓國式休閒。",
-    "about4": "指南免費使用。部分頁面底部可能顯示 Google 廣告，廣告與正文內容無關。個人資訊和廣告說明見頁面底部連結。"
+    "about4": "指南免費使用。部分頁面底部可能顯示 Google 廣告，廣告與正文內容無關。個人資訊和廣告說明見頁面底部連結。",
+    "featuredDining": "合作店舖",
+    "featuredDiningSub": "合作店",
+    "partnerViewDetails": "預約",
+    "partnerEnglish": "可英語接待",
+    "partnerLang": "語言",
+    "partnerLunch": "午餐",
+    "partnerDinner": "晚餐",
+    "partnerHours": "營業時間",
+    "partnerBooking": "預約",
+    "partnerPointSeason": "時令套餐",
+    "partnerPointSignature": "招牌",
+    "partnerPointShow": "展覽",
+    "partnerNext": "下一家合作店舖",
+    "partnerSns": "社交",
+    "partnerDots": "合作店舖",
+    "partnerGenreRestaurant": "餐館",
+    "partnerGenreCafe": "咖啡",
+    "partnerGenreShop": "商店"
   }
 }

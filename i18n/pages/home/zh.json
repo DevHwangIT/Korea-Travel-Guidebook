@@ -43,6 +43,24 @@
     "about1": "第一次来韩国时，地铁、交通卡、点餐这些小事往往比想象中难。本站把入境、交通、美食、购物、娱乐和节日整理在一处，方便出发前和旅途中随时查看，完全免费。",
     "about2": "每个栏目都有简短说明，以及实际去过的人推荐的店和地点。若发现错误或有更好的建议，请通过下方联系方式告知，我们会审核后更新。",
     "about3": "语言可切换为韩语、英语、日语、中文等。出行准备介绍电子入境申报和交通卡，美食覆盖正餐、甜点和便利店，购物与娱乐覆盖伴手礼和韩国式休闲。",
-    "about4": "指南免费使用。部分页面底部可能显示 Google 广告，广告与正文内容无关。个人信息和广告说明见页面底部链接。"
+    "about4": "指南免费使用。部分页面底部可能显示 Google 广告，广告与正文内容无关。个人信息和广告说明见页面底部链接。",
+    "featuredDining": "合作店铺",
+    "featuredDiningSub": "合作店",
+    "partnerViewDetails": "预约",
+    "partnerEnglish": "可英语接待",
+    "partnerLang": "语言",
+    "partnerLunch": "午餐",
+    "partnerDinner": "晚餐",
+    "partnerHours": "营业时间",
+    "partnerBooking": "预约",
+    "partnerPointSeason": "时令套餐",
+    "partnerPointSignature": "招牌",
+    "partnerPointShow": "展览",
+    "partnerNext": "下一家合作店铺",
+    "partnerSns": "社交",
+    "partnerDots": "合作店铺",
+    "partnerGenreRestaurant": "餐馆",
+    "partnerGenreCafe": "咖啡",
+    "partnerGenreShop": "商店"
   }
 }
